@@ -108,6 +108,8 @@ for meeting in name_of_meetings:
     speakers_das = []
     speakers_das_descriptions = []
     for c in string.ascii_uppercase:
+        speaker_das = []
+        speaker_das_descriptions = []
         try:
             tree = ET.parse(os.path.join(data_directory, dialogue_acts_folder, meeting + '.' + c + '.dialog-act.xml'))
             root = tree.getroot()
@@ -116,31 +118,32 @@ for meeting in name_of_meetings:
                 for child in da:
                     if str(child.tag).find('pointer') != -1:
                         href = child.get('href').split('#')[1]
-                        speakers_das_descriptions.append(default_das_dict[href])
+                        speaker_das_descriptions.append(default_das_dict[href])
                     elif str(child.tag).find('child') != -1:
                         href = child.get('href').split('#')
                         speaker = href[0][href[0].find('.') + 1]
                         start_word = int(href[1][href[1].find('words') + 5: href[1].find(')')])
                         end_word = int(href[1][href[1].rfind('words') + 5: href[1].rfind(')')])
                         selected_words = speakers_words[ord(speaker) - ord('A')][
-                                                            start_word:end_word + 1]
+                                         start_word:end_word + 1]
                         words_in_da.append(selected_words)
-                speakers_das.append(words_in_da)
-                # TODO
-                # das_words.append(words_in_da)
+                speaker_das.append(words_in_da)
+            speakers_das.append(speaker_das)
+            speakers_das_descriptions.append(speaker_das_descriptions)
             # writing the dialogue_acts file
             da_file = open(output_dir_for_meeting + "/dialogue_acts_" + str(c) + ".txt", "w+")
-            for desc in speakers_das_descriptions:
+            for desc in speaker_das_descriptions:
                 da_file.write(str(desc) + "\n")
             da_file.close()
             # writing the transcripts by da
             transcrpits_by_da = open(output_dir_for_meeting + "/transcrpits_by_da_" + str(c) + ".txt", "w+")
-            for das_it in speakers_das:
+            for das_it in speaker_das:
                 for words_of_each_speaker in das_it:
                     for word_it in words_of_each_speaker:
                         transcrpits_by_da.write(word_it + " ")
                     transcrpits_by_da.write('\n')
                 transcrpits_by_da.write('\n')
+            # speakers_das.append(speaker_das)
         except FileNotFoundError:
             pass
 
@@ -148,35 +151,30 @@ for meeting in name_of_meetings:
     try:
         summ = ET.parse(os.path.join(data_directory, extractive_sum_folder, meeting + '.extsumm.xml'))
         root = summ.getroot()
-        for summ in root:
+        das_in_summary = []
+        for ext_summ in root:
             # descriptions.append(topic.get('other_description'))
-            words_in_summary = []
-            for child in summ:
+            for child in ext_summ:
                 if str(child.tag).find('pointer') != -1:
                     pass
                 elif str(child.tag).find('child') != -1:
                     href = child.get('href').split('#')
                     speaker = href[0][href[0].find('.') + 1]
-                    start_word = int(href[1][href[1].find('dharshi') + 8: href[1].find(')')])
-                    end_word = int(href[1][href[1].rfind('dharshi') + 8: href[1].rfind(')')])
-                    selected_words = [speaker + ': '] + speakers_das[ord(speaker) - ord('A')][start_word:end_word + 1]
-                    words_in_topic.append(selected_words)
+                    start_da = int(href[1][href[1].find('dharshi') + 8: href[1].find(')')])
+                    end_da = int(href[1][href[1].rfind('dharshi') + 8: href[1].rfind(')')])
+                    selected_das = [speaker + ': '] + speakers_das[ord(speaker) - ord('A')][start_da:end_da + 1]
+                    das_in_summary.append(selected_das)
                     # print(child.attrib)
                     # print(child.tag, child.attrib, child.text)
-            topics_words.append(words_in_topic)
+            # topics_words.append(words_in_topic)
         # create a directory for meeting
         output_dir_for_meeting = os.path.join(output, meeting)
         if not os.path.exists(output_dir_for_meeting):
             os.makedirs(output_dir_for_meeting)
-        # writing the topic file
-        topic_file = open(output_dir_for_meeting + "/topic.txt", "w+")
-        for desc in descriptions:
-            topic_file.write(str(desc) + "\n")
-        topic_file.close()
         # writing the transcripts by topic
-        transcrpits_by_topic = open(output_dir_for_meeting + "/transcrpits_by_topic.txt", "w+")
-        for topics_it in topics_words:
-            for words_of_each_speaker in topics_it:
+        extractiv_summary = open(output_dir_for_meeting + "/extractiv_summary.txt", "w+")
+        for da in das_in_summary:
+            for words_of_each_da in da:
                 for word_it in words_of_each_speaker:
                     transcrpits_by_topic.write(word_it + " ")
                 transcrpits_by_topic.write('\n')
