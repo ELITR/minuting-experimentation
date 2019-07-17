@@ -1,6 +1,6 @@
-import os, sys, codecs, re, string
+
+import os, sys, codecs, re, string, argparse
 import nltk
-import word_attraction
 import numpy as np
 from sklearn.cluster import KMeans
 from nltk import PerceptronTagger
@@ -60,19 +60,57 @@ def core_tokenize(text, alb=False):
 
     return text
 
+# removes dialogue speakers of the form A:, B: etc
+def remove_speakers(text):
+	text = re.sub(r'[A-Z]:', '', text)
+	return text
+
 # lowercase and tokenize
-def clean_text(text):
+def clean_text(text, speakers=True, lower=False):
 	'''
 	:param text: long string of input text
+	:param lower: lowercase or not the input text - boolean
+	:param speakers: keep or remove speakers from dialogues - boolean
 	:return clean_text: long string of lowercased and tokenized input string
 	'''
-    # convert to lower case
-    text = text.lower()
-    # strip extra white space
-    text = re.sub(' +', ' ', text)
-    # strip leading and trailing white space
-    text = text.strip()
-    # tokenize with core_tokenize
-    clean_text = core_tokenize(text)
-    return clean_text
+	# remove speakers from dialogues if required
+	if not speakers:
+		text = remove_speakers(text)
+
+	# strip extra white space
+	text = re.sub(r' +', ' ', text)
+	# strip leading and trailing white space
+	text = text.strip()
+
+	# convert to lowercase if required
+	if lower:
+	    text = text.lower()
+
+	# tokenize with core_tokenize
+	clean_text = core_tokenize(text)
+	return clean_text
+
+# main 
+if __name__=="__main__":
+	parser = argparse.ArgumentParser()
+	parser.add_argument('--src_file', default='./src.txt', help='src_file')
+	args = parser.parse_args()
+
+	# create name of output file
+	path, in_file = os.path.split(args.src_file)
+	out_file= os.path.join(path, 'clean_' + in_file)
+
+	# read text from input file
+	with open(args.src_file, 'rt') as in_f:
+		in_text = in_f.read()
+
+	# apply cleaning operations
+	out_text = clean_text(in_text, speakers=False, lower=True)
+
+	# write to output file
+	with open(out_file, 'wt') as out_f:
+		out_f.write(out_text)
+
+
+
 
