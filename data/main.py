@@ -6,7 +6,7 @@ output_root = './output'
 if not os.path.exists(output_root):
     os.makedirs(output_root)
 
-data_root = './data'
+data_root = './input'
 words_folder = 'words'
 topics_folder = 'topics'
 segments_folder = 'segments'
