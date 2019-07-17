@@ -1,2 +1,2 @@
 # minuting-experimentation
-The code for conducting preliminary experiment with automatic minuting.
+The MDSF code for conducting preliminary experiment with automatic minuting.
