@@ -210,7 +210,8 @@ def get_speaker_dialogue_acts(data_root, dialogue_acts_folder, meeting_name, spe
     root = tree.getroot()
     for da in root:
         words_in_da = []
-        index = int(da.get('{http://nite.sourceforge.net/}id')[da.get('{http://nite.sourceforge.net/}id').rfind('.') + 1:])
+        index = int(
+            da.get('{http://nite.sourceforge.net/}id')[da.get('{http://nite.sourceforge.net/}id').rfind('.') + 1:])
         for child in da:
             if str(child.tag).find('pointer') != -1:
                 href = child.get('href').split('#')[1]
@@ -325,6 +326,85 @@ def save_meeting_extractive_summary(output_root, meeting, das_in_summary):
         extractiv_summary.write('\n\n')
 
 
+def get_the_abstractive_summary(data_root, abstractive_sum_folder, meeting_name):
+    """
+
+    :param data_root:
+    :param abstractive_sum_folder:
+    :param meeting:
+    """
+    summ = ET.parse(os.path.join(data_root, abstractive_sum_folder, meeting_name + '.abssumm.xml'))
+    root = summ.getroot()
+    summaries = OrderedDict()
+    for abstracts in root.findall('abstract'):
+        for sentence in abstracts.findall('sentence'):
+            summaries[sentence.get('{http://nite.sourceforge.net/}id')] = 'abstract: ' + sentence.text
+
+    for actions in root.findall('actions'):
+        for sentence in actions.findall('sentence'):
+            summaries[sentence.get('{http://nite.sourceforge.net/}id')] = 'action: ' + sentence.text
+
+    for decisions in root.findall('decisions'):
+        for sentence in decisions.findall('sentence'):
+            summaries[sentence.get('{http://nite.sourceforge.net/}id')] = 'decisions: ' + sentence.text
+
+    for problems in root.findall('problems'):
+        for sentence in problems.findall('sentence'):
+            summaries[sentence.get('{http://nite.sourceforge.net/}id')] = 'problems: ' + sentence.text
+
+    for issues in root.findall('issues'):
+        for sentence in issues.findall('sentence'):
+            summaries[sentence.get('{http://nite.sourceforge.net/}id')] = 'problems: ' + sentence.text
+    return summaries
+
+
+def get_the_dialogue_acts_related_to_abssumms(data_root, extractive_sum_folder, meeting_name, speakers_das, abs_summeries):
+    summ = ET.parse(os.path.join(data_root, extractive_sum_folder, meeting_name + '.summlink.xml'))
+    root = summ.getroot()
+    summ_to_da_dict = OrderedDict()
+    for summlink in root.findall('summlink'):
+        selected_das = []
+        summary_id = ''
+        for pointer in summlink:
+            if pointer.get('role') == 'extractive':
+                href = pointer.get('href').split('#')
+                speaker = href[0][href[0].find('.') + 1]
+                da_id = int(href[1][href[1].find('dharshi') + 8: href[1].find(')')])
+                # end_da = int(href[1][href[1].rfind('dharshi') + 8: href[1].rfind(')')])
+                selected_das = speakers_das[ord(speaker) - ord('A')][da_id]
+                selected_das.insert(0, speaker + ': ')
+            elif pointer.get('role') == 'abstractive':
+                href = pointer.get('href').split('#')
+                summary_id = href[1][href[1].find('id') + 3: -1 ]
+                if summary_id in summ_to_da_dict:
+                    summ_to_da_dict[summary_id].append(selected_das)
+                else:
+                    summ_to_da_dict[summary_id] = [selected_das]
+    return summ_to_da_dict
+
+
+def save_meeting_abs_summaries_and_related_das(output_root, meeting, abs_summeries, summ_to_da_dict):
+    """
+
+    :param output_root:
+    :param meeting:
+    :param abs_summeries:
+    :param summ_to_da_dict:
+    """
+    # create a directory for meeting
+    output_dir_for_meeting = os.path.join(output_root, meeting)
+    if not os.path.exists(output_dir_for_meeting):
+        os.makedirs(output_dir_for_meeting)
+
+    # writing the summary file
+    abstractiv_summary = open(output_dir_for_meeting + "/abstractive_summary.txt", "w+")
+    for abs_summ in abs_summeries:
+        for da in summ_to_da_dict.get(abs_summ):
+            for word in da:
+                abstractiv_summary.write(word + ' ')
+            abstractiv_summary.write('\n')
+        abstractiv_summary.write('abstractive_summary-' + abs_summeries.get(abs_summ) + '\n\n')
+
 for meeting in name_of_meetings:
     # list of speakers each containing their list of words
     speakers_words = get_speakers_words(data_root, topics_folder, words_folder, meeting)
@@ -360,8 +440,16 @@ for meeting in name_of_meetings:
         save_meeting_extractive_summary(output_root, meeting, das_in_summary)
     except FileNotFoundError:
         pass
-print("Done!")
 
+    # abstractive_summary
+    try:
+        abs_summeries = get_the_abstractive_summary(data_root, abstractive_sum_folder, meeting)
+        summ_to_da_dict = get_the_dialogue_acts_related_to_abssumms(data_root, extractive_sum_folder, meeting, speakers_das, abs_summeries)
+        save_meeting_abs_summaries_and_related_das(output_root, meeting, abs_summeries, summ_to_da_dict)
+    except Exception as e:
+        print(e)
+
+print("Done!")
 
 # tree1 = ET.parse('data/words/ES2002a.A.words.xml')
 # root1 = tree1.getroot()
