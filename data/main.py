@@ -274,9 +274,6 @@ def save_meeting_dialogue_acts_descriptions(output_root, meeting_name, speaker_d
     return
 
 
-# get set of meetings' names
-name_of_meetings = {x.split('.')[0] for x in os.listdir(os.path.join(data_root, words_folder))}
-
 
 def get_extractive_summary(data_root, extractive_sum_folder, meeting_name, speakers_das):
     """
@@ -295,11 +292,20 @@ def get_extractive_summary(data_root, extractive_sum_folder, meeting_name, speak
             if str(child.tag).find('child') != -1:
                 href = child.get('href').split('#')
                 speaker = href[0][href[0].find('.') + 1]
-                start_da = int(href[1][href[1].find('dharshi') + 8: href[1].find(')')])
-                end_da = int(href[1][href[1].rfind('dharshi') + 8: href[1].rfind(')')])
+                ids = href[1].split('..')
+
                 selected_das = [speaker + ': ']
+                start_da = int(ids[0][ids[0].rfind('.') + 1:ids[0].rfind(')')])
+                if len(ids) == 1:
+                    end_da = start_da
+                else:
+                    end_da = int(ids[1][ids[1].rfind('.') + 1:ids[1].rfind(')')])
                 for i in range(start_da, end_da + 1):
-                    selected_das.append(speakers_das[ord(speaker) - ord('A')][i])
+                    try:
+                        selected_das.append(speakers_das[ord(speaker) - ord('A')][i])
+                    except KeyError as e:
+                        # some dialogue acts are missing, its natural.
+                        pass
                 das_in_summary.append(selected_das)
     return das_in_summary
 
@@ -358,7 +364,7 @@ def get_the_abstractive_summary(data_root, abstractive_sum_folder, meeting_name)
     return summaries
 
 
-def get_the_dialogue_acts_related_to_abssumms(data_root, extractive_sum_folder, meeting_name, speakers_das, abs_summeries):
+def get_the_dialogue_acts_related_to_abssumms(data_root, extractive_sum_folder, meeting_name, speakers_das):
     summ = ET.parse(os.path.join(data_root, extractive_sum_folder, meeting_name + '.summlink.xml'))
     root = summ.getroot()
     summ_to_da_dict = OrderedDict()
@@ -369,9 +375,9 @@ def get_the_dialogue_acts_related_to_abssumms(data_root, extractive_sum_folder, 
             if pointer.get('role') == 'extractive':
                 href = pointer.get('href').split('#')
                 speaker = href[0][href[0].find('.') + 1]
-                da_id = int(href[1][href[1].find('dharshi') + 8: href[1].find(')')])
+                da_id = int(href[1][href[1].rfind('.') + 1: href[1].find(')')])
                 # end_da = int(href[1][href[1].rfind('dharshi') + 8: href[1].rfind(')')])
-                selected_das = speakers_das[ord(speaker) - ord('A')][da_id]
+                selected_das = speakers_das[ord(speaker) - ord('A')][da_id].copy()
                 selected_das.insert(0, speaker + ': ')
             elif pointer.get('role') == 'abstractive':
                 href = pointer.get('href').split('#')
@@ -399,11 +405,20 @@ def save_meeting_abs_summaries_and_related_das(output_root, meeting, abs_summeri
     # writing the summary file
     abstractiv_summary = open(output_dir_for_meeting + "/abstractive_summary.txt", "w+")
     for abs_summ in abs_summeries:
-        for da in summ_to_da_dict.get(abs_summ):
-            for word in da:
-                abstractiv_summary.write(word + ' ')
-            abstractiv_summary.write('\n')
+        if summ_to_da_dict.get(abs_summ) is None:
+            # some abstract summaries are not mapped to any dialogue acts
+            abstractiv_summary.write('None\n')
+        else:
+            for da in summ_to_da_dict.get(abs_summ):
+                for word in da:
+                    abstractiv_summary.write(word + ' ')
+                abstractiv_summary.write('\n')
         abstractiv_summary.write('abstractive_summary-' + abs_summeries.get(abs_summ) + '\n\n')
+
+
+# get set of meetings' names
+name_of_meetings = {x.split('.')[0] for x in os.listdir(os.path.join(data_root, words_folder))}
+name_of_meetings = sorted(name_of_meetings)
 
 for meeting in name_of_meetings:
     # list of speakers each containing their list of words
@@ -444,10 +459,10 @@ for meeting in name_of_meetings:
     # abstractive_summary
     try:
         abs_summeries = get_the_abstractive_summary(data_root, abstractive_sum_folder, meeting)
-        summ_to_da_dict = get_the_dialogue_acts_related_to_abssumms(data_root, extractive_sum_folder, meeting, speakers_das, abs_summeries)
+        summ_to_da_dict = get_the_dialogue_acts_related_to_abssumms(data_root, extractive_sum_folder, meeting, speakers_das)
         save_meeting_abs_summaries_and_related_das(output_root, meeting, abs_summeries, summ_to_da_dict)
     except Exception as e:
-        print(e)
+        raise e
 
 print("Done!")
 
