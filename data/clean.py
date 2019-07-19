@@ -4,13 +4,14 @@ import nltk
 import numpy as np
 from sklearn.cluster import KMeans
 from nltk import PerceptronTagger
+from nltk import tokenize
 from nltk.stem import PorterStemmer
 from nltk import word_tokenize, sent_tokenize
 from nltk.tokenize.treebank import TreebankWordTokenizer
 from tqdm import *
 
 # function that tokenizes text same as Stanford CoreNLP
-def core_tokenize(text, alb=False):
+def core_tokenize(text, alb=False, keep_speakers=False):
     ''' Takes a text string and returns tokenized string using NLTK word_tokenize 
     same as in Stanford CoreNLP. space, \n \t are lost. "" are replace by ``''
     '''
@@ -65,8 +66,8 @@ def remove_speakers(text):
 	text = re.sub(r'[A-Z]:', '', text)
 	return text
 
-# lowercase and tokenize
-def clean_text(text, speakers=True, lower=False):
+# run with keep_speakers=False, lower=True to replicate TSD-28-
+def clean_text(text, keep_speakers=True, lower=False):
 	'''
 	:param text: long string of input text
 	:param lower: lowercase or not the input text - boolean
@@ -74,11 +75,9 @@ def clean_text(text, speakers=True, lower=False):
 	:return clean_text: long string of lowercased and tokenized input string
 	'''
 	# remove speakers from dialogues if required
-	if not speakers:
+	if not keep_speakers:
 		text = remove_speakers(text)
 
-	# strip extra white space
-	text = re.sub(r' +', ' ', text)
 	# strip leading and trailing white space
 	text = text.strip()
 
@@ -86,26 +85,47 @@ def clean_text(text, speakers=True, lower=False):
 	if lower:
 	    text = text.lower()
 
-	# tokenize with core_tokenize
-	clean_text = core_tokenize(text)
+	# split in sentences 
+	sent_list = tokenize.sent_tokenize(text)
+
+	# tokenize each sentence with core_tokenize
+	sent_list = list(map(core_tokenize, sent_list))
+
+	# correct speakers A : to A:
+	sent_list = [re.sub(r'([a-zA-Z])\s+(:)', r'\1\2', sent) for sent in sent_list]
+
+	# correct description < other > to <other>
+	sent_list = [re.sub(r'<\s(([\w]+))\s>', r'<\1>', sent) for sent in sent_list]
+
+	# add <EOS> at the end of each sentence
+	sent_list = [s + ' <EOS>' for s in sent_list]
+
+	# join together all sentences in one text
+	clean_text = ' '.join(sent_list)
+
 	return clean_text
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--src', default='./src', help='source file')
+parser.add_argument('--dest', default='./dest', help='destination file')
+args = parser.parse_args()
 
 # main 
 if __name__=="__main__":
-	parser = argparse.ArgumentParser()
-	parser.add_argument('--src_file', default='./src.txt', help='src_file')
-	args = parser.parse_args()
-
+	if len(sys.argv) != 5:
+		print("usage: python script --src <source_file> --dest <dest_file>")
+		sys.exit()
+		
 	# create name of output file
-	path, in_file = os.path.split(args.src_file)
-	out_file= os.path.join(path, 'clean_' + in_file)
+	in_file = args.src
+	out_file= args.dest
 
 	# read text from input file
-	with open(args.src_file, 'rt') as in_f:
+	with open(in_file, 'rt') as in_f:
 		in_text = in_f.read()
 
 	# apply cleaning operations
-	out_text = clean_text(in_text, speakers=False, lower=True)
+	out_text = clean_text(in_text, keep_speakers=False, lower=True)
 
 	# write to output file
 	with open(out_file, 'wt') as out_f:
