@@ -11,7 +11,7 @@ from nltk.tokenize.treebank import TreebankWordTokenizer
 from tqdm import *
 
 # function that tokenizes text same as Stanford CoreNLP
-def core_tokenize(text, alb=False, keep_speakers=False):
+def core_tokenize(text, alb=False):
     ''' Takes a text string and returns tokenized string using NLTK word_tokenize 
     same as in Stanford CoreNLP. space, \n \t are lost. "" are replace by ``''
     '''
