@@ -1,0 +1,147 @@
+D:  In order to see what the functional requirements were to be found , um 
+D:  a hundred people were tested in a usability laboratory 
+D:  Custome Customers and users don't like the way remote controls look , 
+D:  they don't like the way they feel , 
+D:  they don't think they match their operating behaviour , 
+D:  and an example is what we were talking about , the buttons , they only use ten per cent of the buttons , 
+D:  I don't know what R_S_I_ means . 
+D:  So the most important buttons are those to do with channel selection . 
+D:  yeah so and and people like to zap a lot apparently , 
+D:  Channel selection , teletext , volume , and power . 
+D:  The other ones are the settings , and they're used less than  you know zero point eight to zero point five times per hour , 
+D:  and this means that I think we can we could have like a a button for all the settings , 
+D:  about the screen , and speech recognition , some people are more willing than others to actually pay for that . 
+D:  And if we look at the market , f people from well from fifteen to thirty five year old year olds , 
+D:  um ninety one to seventy six percent of people in that age range are willing to pay more for this sort of product , 
+D:  while people that are above thirty five years ol um years old go from thirty five percent to eight percent , 
+D:  but I think that the people that actually do buy remotes m more are those like teenagers and young professionals and um , most likely , 
+abst_sum - abstract: The Marketing Expert gave a presentation about user requirements as shown through a usability study and demonstrated that only a small number of functions on a remote were used with frequency.
+
+D:  and I think we should design according to these buttons . 
+abst_sum - abstract: She suggested focusing the interface design on the most frequently used functions.
+
+C:  This my presentation about the uh technical functions design 
+C:  and I basically just tried to focus on um <other> just what what functions we need and how to make that the best function for the user . 
+C:  And okay so basically um <other> I think i uh like it is really important that we sort of get this done in a user friendly and fashionable way . 
+C:  you know keeping buttons together that  like close together that um <other> are used in the same way , 
+C:  keeping the number of buttons the uh leas you know to a minimum , 
+C:  um but basically we need to make sure that it turns on and off the T_V_ . 
+C:  or do we need to have like functions for cable or V_C_R_ ? 
+C:  <other> I just thought that these two remotes were pretty boring , 
+C:  And I think we can find something that's more fun to look at and use than either of those . 
+C:  uh but I mean I think we sh can sort of think about things like um <other> like colour and you know size , shapes , that sort of thing , to best fit the user . 
+abst_sum - abstract: The User Interface Designer presented some questions that should be considered in making the device user-friendly and displayed two existing remote controls for comparison.
+
+B:  Okay so this is on the working design , which is sort of the uh mechanical functions of the remote , 
+B:  Um so I think we need two basic functions which is just the basic remote functions , 
+B:  the user can input a channel or volume setting and it will be output to the T_V_ . 
+B:  And also we talked about um a location function where maybe you could press a button on the T_V_ and it would send sort of signal to the remote where it would beep or flash or vibrate or whatever to tell you where the remote is . 
+B:  So the components we need are an energy source to power the remote , 
+B:  processor to take the information , 
+B:  and we also need something on the remote that would receive the location signal and have an output , like possibly a beep or a vibration . 
+B:  Um so my personal preferences for how to build the remote would probably be uh , battery for the energy source , 
+B:  um a button pad for input , 
+B:  I_R_ transmitter to communicate to the T_V_ , 
+B:  and I'd probably say a buzzer for the location function on the remote itself . 
+abst_sum - abstract: The Industrial Designer discussed the necessary internal components and how they operated together, and presented her preferences for the type of each component to be used.
+
+A:  and then I just wanna mention some new project requirements that came in . 
+A:  Um , teletext is apparently outdated , so  <laugh> due to internet popularity , so that's off the list . Um , 
+A:  also our remote should be used only for television , um , 
+A:  Um and also we need to incorporate our corporate image onto this , 
+abst_sum - abstract: The Project Manager gave the group several new requirements for the project.
+
+A:  So we need to make some decisions on the remote control functions . 
+C:  so do we wanna go ahead and design this thing with the finder button ? 
+B:  It's easy to implement . 
+B:  but uh I mean speech recognition is really hard to programme , 
+A:  if you consider our budget , to h have speech recognition programmed in every single remote might be a little pricey . 
+B:  and I was thinking , I_R_ is line of sight , so unless the remote is like actually in front of the T_V_ it's not gonna work , 
+B:  um so probably like a radio signal like on a on a cell phone . 
+B:  Yeah , so it would be a two part package . 
+D:  Do you still want to build a little thing next to the telly or to p hang on the wall 
+A:  We probably leave that . 
+C:  So then our target age group would be the nineteen to thirty five range , 
+D:  You don't need a light . 
+A:  And like if the if the phone's under the couch , you might not see the light , so 
+C:  Then it can live anywhere . 
+A:  like um if you can yeah if you can call it then it's  
+abst_sum - abstract: The group discussed several product features and decided that the remote will feature a locator function and will not feature speech recognition.
+
+A:  'Cause that that is something we have to decide , is whether we want to have V_C_R_ capabilities . 
+A:  And and if we're if we're targeting young professionals and teenagers , I mean it's gonna be D_V_D_ type , that's the the technology these days . 
+abst_sum - abstract: The group discussed whether or not the remote should control multiple devices.
+
+C:  I think still though , it shouldn't be that hard to take  like just reduce the number of buttons you know , 
+C:  like 'cause if you just have like one menu button , that works like with a 
+C:  you know , or you can just kind of scroll through the options u that come up on the T_V_ . 
+A:  So we definitely want a power button and numbers . 
+C:  That sort of like joystick flat touch thing , yeah . 
+C:  but do you need a screen then , do you have to have a screen then ? 
+D:  you can have the number on the telly going like one two three four five once you scroll and then  
+D:  if you actually just want to zap , you can have like a thing <other> like that , and that , and then it can just be plus and minus . 
+C:  Well y you have to you have to like be able to change the function of it to like  
+D:  w right if you're on the channel let's say , then you press on the middle and then if you do that again the volume goes up , and if you do that it goes down . 
+C:  like it could be a cool sort of you know , because it could be circular , you know , or something weird like that , just  
+C:  So  but I'm saying like , does it make sense to have like some kind of a button , 
+C:  so like you're  if you're on T_V_ , like you can switch channels , 
+C:  but then if uh if you're on D_V_D_ then like the channel bu like the the region of the disc that was for channels is for like switching to different tracks 
+abst_sum - abstract: They discussed important button functions to include and increasing usability by incorporating a scroll wheel in the design.
+
+C:  But the only thing is like , iPods are so expensive , 
+B:  I don't think it's the wheel dealy . 
+A:  Um so everyone's gonna go finish their questionnaire , 
+A:  uh then when we come back after lunch we'll have thirty minutes of individual work , 
+A:  um yeah , so think about the things we've discussed and bring some new ideas to our next meeting . 
+abst_sum - abstract: The Project Manager instructed the other participants to fill out a questionnaire and to work on their individual presentations for the next meeting.
+
+A:  Um so everyone's gonna go finish their questionnaire , 
+abst_sum - action: All participants will fill out a questionnaire after the meeting.
+
+A:  uh then when we come back after lunch we'll have thirty minutes of individual work , 
+A:  um yeah , so think about the things we've discussed and bring some new ideas to our next meeting . 
+abst_sum - action: The Designers and the Marketing Expert will work on their individual presentations.
+
+B:  It's easy to implement . 
+C:  so do we wanna go ahead and design this thing with the finder button ? 
+B:  um so probably like a radio signal like on a on a cell phone . 
+B:  Yeah , so it would be a two part package . 
+abst_sum - decisions: A locator device separate from the remote will be incorporated into the design, which will operate with radio signal.
+
+A:  if you consider our budget , to h have speech recognition programmed in every single remote might be a little pricey . 
+abst_sum - decisions: Speech recognition will not be used.
+
+C:  So then our target age group would be the nineteen to thirty five range , 
+abst_sum - decisions: The group decided that their target marketing group would be mostly teenagers and young professionals.
+
+D:  Do you still want to build a little thing next to the telly or to p hang on the wall 
+A:  We probably leave that . 
+abst_sum - decisions: There will not be a stand in which the remote is placed when not in use.
+
+A:  like um if you can yeah if you can call it then it's  
+C:  Then it can live anywhere . 
+abst_sum - decisions: The group decided that the locator function eliminated the need for this component.
+
+D:  You don't need a light . 
+A:  And like if the if the phone's under the couch , you might not see the light , so 
+abst_sum - decisions: The locator function will not involve an LED indicator; the remote will simply emit a sound when located.
+
+A:  So we definitely want a power button and numbers . 
+abst_sum - decisions: The main interface will include a power button.
+
+C:  like it could be a cool sort of you know , because it could be circular , you know , or something weird like that , just  
+C:  That sort of like joystick flat touch thing , yeah . 
+abst_sum - decisions: The main interface will include a scroll wheel function in place of a number pad.
+
+D:  Um , how do I put this  
+D:  So what happens it doesn't work ? 
+C:  Could you just plug it back into hers 
+B:  The cable might be a little loose or something . 
+C:  Okay so now I need to press F_ eight , what is it ? 
+C:  What's function ? 
+abst_sum - problems: Some of the group members had difficulties with their computers in opening their presentations.
+
+A:  You know actually our our new project requirements , I'm not sure if they meant o onl use only for television as in not for D_V_D_ or just not internet type things . 
+A:  So I'll I'll check that and update you on the next  
+abst_sum - problems: The new requirements from the management regarding use with multiple devices were unclear.
+

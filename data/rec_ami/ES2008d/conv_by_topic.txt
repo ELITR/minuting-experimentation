@@ -1,0 +1,449 @@
+A:  Okay um , welcome to our detailed design meeting . I'm pretty excited . Let's start it's approximately fifteen forty or something like that . Okay um the agenda  we're gonna do an opening and then um I'll talk about the minutes from the last meeting , what we d discussed um , then we'll have the prototype presentation and a look at the evaluation criteria . We'll look at the finances and finally a  do a production evaluation and close . So , starting off with the um last  the last one , oh I don't have it here um , but we talked about energy , we're gonna use a kinetic battery um , we want to use a simple chip , because we're not gonna need a a shuffle um , we're gonna need a scroll um , we're choosing a latex case w in fruity colours that's curved and um we're using push buttons uh with a supplement of an on-screen menu . And it sounded like we had set um like eight or nine buttons , including five pre-set channels . Okay ? Let's do the look and feel design presentation first . 
+
+
+C:  Right , do you wanna start ? 
+B:  Right , well we made three different prototypes and I guess we'll start with with this one . Um we have our colours not  are not fixed , but this is the general shape . Um it's  you hold it sort of either like like this in your left hand or you switch it over and uh it's easily adaptable to either hand . You can push the buttons with your thumb like a mobile phone , or you can push them with your index finger of your other hand , or even  I mean there's a whole variety , you can hold it like this and press it with your same index finger . Uh we have the on off button at the tip , very visible , very big . We have our up and down buttons , which are also gonna be our channel selectors , and we have our little menu button here . If you push  if you're just pushing these normally , they're the menu buttons , if  uh the volume buttons rather . If you press select once , they become channel changing buttons . If we press select three times , the menu with the other features and pro possibly also with your T_V_ channel choices shows up , and you have your five presets down here . Um if people wanna grab hold of that , see how it feels in your hand . That's our number one prototype . Um do you wanna present the potato , or shall I present the Martian ? 
+A:   like a little lightning in it . 
+C:  Okay , um  
+A:  The little lightning bolt in it , very cute . 
+C:  What  We call that one the rhombus , uh the rhombus . Um this one is known as the potato , uh it's 
+D:  I could  
+A:  The v the rhombus rhombus ? 
+B:  That's the rhombus , yep . 
+D:  <laugh> 
+C:  it's a <laugh> how can I present it ? It's an ergonomic shape , so it it fits in your hand nicely . Um 
+B:  <laugh> 
+C:  it's designed to be used either in your left hand or or in your right hand . Um I've gone here just for just for four buttons on this one . Um the two blue buttons here are for adjusting the volume . So you've got volume up and volume down on the other side here . Um the red ones are for uh changing channels , channel up and channel down and that's um moves between your favourite channels that you've selected . Uh this middle button here brings up the on-screen menu and when you're working in the on-screen menu you use the other four buttons to navigate around the menu system and the middle button uh to select and that's basically it , that's the potato . 
+A:  Um on , off ? 
+C:  Uh that would be one of your channels , basically , so like channel zero would be t to switch switch the machine off , yeah . 
+A:  Okay . Yeah we turn it off . 
+D:  Could the middle button of the on-screen menu function as a power button ? 
+C:  Um not really , it would make it hard to turn the machine off , to turn your T_V_ off . 
+B:   
+A:  Mm-hmm . 
+B:  If you pressed and held it maybe . 
+C:  Yeah yeah , that that'd be one way of doing it , yeah . That'd work , yeah . 
+D:  If you like held it down , that would be on off . 
+B:  Yeah . On off , that's a possibility , yeah . 
+A:  Okay . 
+B:  And then finally we have um the Martian or the pear , either way . Um it's a bit different , just a little bit more of a creative feel . Uh you have the on off toggle stem on the top . <laugh> We have the five preset seeds <laugh> . 
+A:  <laugh> 
+B:  <laugh> And then you have on the sides to make it a little bit more three-dimensional , you have your channel changing , volume changing buttons and your menu button right here in the middle . So , that's for your consideration as well , plus it's an interesting talking point to have standing up . We figured it could stand up like this on your table , if you wanted it to , if I made the bot the bottom flat . <laugh> 
+C:  Let's pass . 
+A:  Uh-huh . 
+D:  Sorry , what's the yellow one in the middle , I forgot . 
+A:  <laugh> 
+B:  <laugh> Uh the menu select button . <laugh> 
+A:   Very interesting . <laugh> I think that one's my favourite . 
+C:  So that's  
+B:  <laugh> 
+C:  So that's our three prototypes . Um basically , in terms of making decisions , what we'd need to do is first of all decide on a form uh which of the three different shapes we want , then decide what kind of button layout we want , how many buttons , and then to choose what colours we want to make the buttons and if we wanna put any text on the device , like label on the buttons or put a brand name or or a logo on it or whatever . 
+D:  <cough> 
+A:  Mm-hmm . 
+
+
+A:  It's kind of like uh like a joystick kind of thing , you know , kinda push it <sounds imitating joystick> . 
+B:  <laugh> Ooh . 
+C:  <laugh> Cool . 
+B:  <laugh> Hey . 
+A:  'Kay . 
+B:  <other> 
+A:  Maybe a little smaller than that  . 
+B:  No , I kinda like it . That's hard to miss . 
+C:  <laugh> It makes look more fruity as well . 
+B:  <laugh> 
+A:  Oh it does , it's kind of like  
+C:  It's like a deformed foot , I dunno . 
+B:  <laugh> <laugh>  <laugh> 
+C:  <laugh> 
+A:  There it could have a stem like that , 'cause I do l kind of like the stem . 
+B:  <laugh> Like  <laugh> 
+C:  Yeah . 
+B:  <laugh> 
+A:  Yeah . It almost helps you ge keep a grip too , 'cause it goes in between fingers  . 
+C:  Yeah . 
+B:  Yeah . Interesting . 
+A:  I like this one . Variety of colours are nice . 
+B:  Okay , is that where people are leaning then , the potato ? 
+D:  Okay , so which one are we sort of roughly looking at to address whether or not it meets our s um necessities , the yellowy one is that  
+B:  The potato ? Are we leaning towards the potato ? 
+C:  Potato . 
+A:  <other> I think so . 
+D:  Okay , well we can obviously change it after we go through each different one . So basically what we need to do is some of the things that we've talked about before we need to make sure that that remote actually does conform to the things that we said it was going to . So what we sort of wanna do is that we each need to separately 
+B:  Okay . Okay . 
+D:  rank each of the following things and then I'll tabulate an average just to make sure that it does meet that . So we'll just go through them one at a time and we'll just go around and each of you can tell me on a scale of one to seven with one being really extremely true 
+B:  Okay . 
+D:  and seven being not true at all , or false , if the remote that we've created conforms to the following criteria . So we can do this one first . 
+D:  And does it meet our like demographic need sort of for international appeal , that whole thing ? Just that it would se serve our audience . I don't see why not . 
+A:  Mm-hmm . I think as long  if we offer in a  in at least three different colour arrangements . Um yeah , that's good . 
+B:  Yeah . 
+D:  Mm-hmm . 
+A:  So I'll give it a a two  . 
+B:  Yeah , I'll say two . 
+D:  Alright , did anyone have any other features that they think were important that we didn't talk about ? 
+A:  Well um we didn't we didn't address the fact that it does need to b have a corporate logo , so let's let's make sure we keep that in mind that we ha that one of our colours concepts is corporate and has an R_R_ on it . All of them should have R_R_ , yeah . 
+B:  Shall we uh  Well I think all of them should have an R_R_ . 
+D:  And so we're gonna do that , so it will address it , fine . 
+A:  Mm-hmm . Mm 'kay . 
+D:  Okay . That's me . 
+A:  Lovely . 
+
+
+A:  Okay , now we're gonna look at finances . Um I have an Excel sheet that we're actually gonna calculate the cost um , 
+A:  Special form ? They're all kind of just push button , right ? 
+B:  No , I think they're fine . Material , we want them rubber as well probably , yeah . 
+C:  Yeah . 
+A:  Special material ? Uh . Oh do  I have to do it per button , do I ? 
+B:  No , I don't think so . I think they're  if they're all gonna be rubber then it  that's what it matters . 
+A:  Okay . 
+D:  Yeah , 'cause it wouldn't make sense otherwise , 'cause for the whole mat case material it's only one . It's  I mean it's two to make it rubber . Oh wait , so maybe . 
+B:  Yeah . 
+A:  Yeah . Mm-hmm . 
+B:  Yeah . Okay . 
+D:   
+A:  Thirteen point seven . 
+B:  Oh oh . 
+A:  Yeah , what can we reduce ? 
+B:  Okay , let's have our buttons all be one colour . 
+D:  Mm , I kind of like the buttons . 
+A:  Let's see what that would do . It's only gonna bring us down to thirteen point three anyway . 
+B:  <other> Alright . 
+A:  Okay um , are we sure this is double-curved ? Maybe it's single-curved , we have no idea . 
+B:  Uh . We have no idea . I dunno , I didn't get any pictures . <laugh> It's single curved . Why not ? 
+D:  It's single curved . 
+A:  Well it's not the  yeah . Okay , it's the kinetic battery that's kind of expensive , but we have a simple chip , single curve , 
+D:  <cough> 
+A:  case material is rubber and it's a special colour , but that's important . Six buttons  we have to have six buttons . 
+B:  Yeah . That is important . How did it get more expensive , what did you just change ? It was it was thirteen and now it's fifteen . 
+A:  What ? No , okay , maybe not . I don't know what just happened . Now it's twelve . 
+D:  We 
+B:  <other> 
+C:  What was our target price again ? 
+B:  Twelve point five . Hey hey . 
+A:  Twelve point five . 
+C:  Twelve point five . So we're just just about there . 
+A:  So we're okay , I think . 
+B:  We're all set then . 
+A:  Yeah . 
+D:   
+B:  Ish . 
+A:  Okay , we're all set . Um save . I saved that to our um our big shared folder , so you know . Um okay , back to agenda . 
+B:  Alright . 
+A:  <other> 
+B:  Yes . 
+D:  Yeah , they are . 
+C:  Yeah . 
+A:  Um are the  are the costs under twelve fifty Euro ? Yes . 
+
+
+A:  Let's move on to the project evaluation . Project process . Satisfaction with for example the room for creativity , leadership , teamwork , the means , any new ideas found . So I guess what we're gonna talk about here is just evaluating how we created this project , the information we got on the news , how we used it , if we were able to um , you know , use our creativity with the information , um how how well I guess I led it , um the  how well we worked together as a team , um the digital pens , the whiteboard . 
+D:  <cough> 
+B:  Well . 
+A:  Okay . 
+B:  I felt very creative . <laugh> I enjoyed making the prototypes . 
+C:  <laugh> I think we've been successful in that we've achieved almost all of the design goals that we've set  and we've come up with a finished project and we just about got  cost . 
+B:  Yeah . I think we could've done even better with a little bit more information , like what's a single-curved case , how many colours , what do colours count 
+A:  Mm-hmm . Mm-hmm . 
+B:  things , but given given what we had I think that we did we did really well . Um I think we worked together pretty well . 
+C:  Yeah . 
+D:  Yeah , I mean <other> if I'd had more market research on the  fruits and vegetables , maybe we could've taken that into account . 
+C:  <laugh> 
+A:  Mm-hmm . 
+B:  Yeah  . <laugh> But the fruits and vegetables , they really  my creativity , so . 
+A:  <laugh> 
+D:  I know , I really did , the the whole mango idea was great . No , I mean 
+B:  <laugh> Do you think we could  
+C:  <laugh> 
+D:  I thought the pen was a little distracting for me personally , like its heaviness , and like just being so conscious of like turning the pages , I dunno . That was a bit of a distraction . That was the last one , like I chose not to do a PowerPoint 'cause I didn't think it made sense to , so I liked that I had the option to do that and just to take my own notes and that whole sort of thing . 
+B:  Yeah . 
+A:  Mm-hmm . 
+C:  Yeah . 
+D:  <cough> 
+A:  I think we all made um very significant contributions , I don't think anybody dominated it , which I thought was really good , like each of us was able to um like each of you had your information and I uh I tried to facilitate it without like taking over , um  
+B:  Yeah . 
+A:  I like our little finished products . 
+B:  <laugh> Can we market this as the mango remote ? Should we have that somewhere on the packaging ? 
+D:  <laugh> They're funny . 
+A:  Really cute . 
+C:  <laugh> 
+D:  I kind of want one . 
+C:  <laugh> 
+B:  I have a little R_R_ . 
+D:  I'm trying to think of a good pun that I could add there  . 
+B:  <laugh> 
+A:  I know , let's think of it like a little jingle . 
+D:  <other> 
+B:  <laugh> 
+A:  Um . 
+D:  I like the R_R_ , that's gonna be etched in . 
+B:  Yes . Hopefully not with just my fingernail at some point but um it's quite a useful little gadget . All thanks to Iain for the design of that one . 
+A:   . Okay um new ideas found ? 
+B:  Mm . What did we find for new ideas ? People should really base their remotes on fruits and vegetables . 
+A:  Definitely . Or or at least be c p creative enough to think of toggle switches mm 
+C:  Yeah . 
+
+
+A:  Um okay , closing . Are the costs within the budget ? Is the project evaluated ? Now there's the final questionnaire and meeting summary . Um so , this is the great product kids , I think we've created something really interesting and that we have a market for it , um especially if we can produce it at twelve point three which we hope um  
+B:  Yes . Yeah . 
+A:  yeah . Make sure in your questionnaire to put down criticisms of 
+B:  <laugh> 
+D:  Yeah , Real Reaction 
+A:  both the process and the um the final results and  <other> . <laugh> 
+
+
+A:  I do like the Martian remote . If we could choose more than one , that would be my second choice . 
+D:  . 
+B:  <laugh> 
+C:  <laugh> 
+D:  Oh , that would definitely be my second choice . 
+C:  Mm . 
+A:  Although the tog toggle 
+D:  <laugh> 
+B:  <laugh> 
+A:  I'm afraid I would  
+C:  That's cool . Let's all let's all go for the yellow   
+D:  I would break it . <other> I would break it . 
+A:  It's cool . I think I would break it . 
+B:  <other> It started because I wanted to have it as st as a stem and then <laugh>  alright , so  
+C:  Break the stem off . 
+D:  Oh that's funny <laugh> . 
+B:  <laugh> <laugh> Is  it started as a pear , but then it started looking more and more like a Martian when I put the  
+A:  <laugh> Oh yeah , it's kind of a penguin . 
+D:  Kind of looks like a penguin , like <laugh> with no eye <laugh> . 
+C:  <laugh> 
+B:  <laugh> Take me to your leader . <laugh>  
+D:  I like that it stands up . 
+A:  Mm-mm . 
+B:  Wow , maybe I should market it to some remote control company now . 
+C:  <laugh> 
+B:  So are are  <laugh> poor little thing . <laugh> 
+A:  <laugh> 
+C:  <laugh> That was bound to happen 
+D:  <laugh> Oh , sad . 
+
+
+A:  Mm 'kay , congratulations . Um . Anything else to say ? 
+D:  Nothing will come up until after our meeting's supposed to be over , its all timed . 
+A:  Alright . 
+B:  Oh . 
+
+
+A:  Um anybody have  <laugh> I got more master classes , anybody else wanna like take a master's class ? 
+D:  Oh . <laugh> 
+B:  <laugh> It's really funny that you got spam in your work emails . 
+D:  <laugh> 
+C:  <laugh> 
+A:  Yeah , but check it out . So like there are all these like links , they don't go anywhere . 
+B:  <laugh> 
+D:  <laugh> 
+A:  But all that you need to keep in mind your  knowledge management . Um just wanna make sure you do . 
+B:  <laugh> 
+D:  <laugh> 
+C:  <laugh> 
+D:  <laugh> No the first one that you sent like I didn't realise that it was a joke and I was like why did she send this to us ? It's very it's very work relevant , 'cause people send spam a lot . 
+B:  <laugh> <laugh> 
+A:  <laugh> Oh  
+B:  <laugh> 
+A:  It is . 
+B:  <other> 
+A:  Yes definitely  
+
+
+A:  I'm very sad that I didn't get any links to the corporate website . 
+B:  <other> Let's see , what did I get through the corporate website ? It's just inspiration about circuit boards . 
+D:  Oh here you can you can view . 
+A:   . 
+D:  You can just see what's up . 
+A:  Wow . 
+D:  Yeah it's it's really deep . Hold on . Takes a little while to get excited to load . That  the Excel thing is pretty cool . Here , like , basically it's like inspiration , basically I'm gonna give you two sentences on fashion and 
+A:  Yes . I love Excel , it's one of my favourite programs . 
+B:  Yeah , that is pretty neat . 
+D:  that kind of thing , see . You didn't miss out that much . 
+A:  I see , mm . 
+B:  Yeah , my inspiration from from last time is the in interior of a remote control being taken apart bit by bit , talking about circuit boards . I learned a lot actually . I could probably take apart a remote control now if I really needed to . 
+A:  Spongy . 
+C:  <laugh> Mm 
+D:  Oh wow . This one was cooler . I got a whole table and everything . 
+B:  Now I have all about circuits and chips and transponders and  I wrote it all down , because I thought it would be relevant , like all the different parts of the inside of a remote control , but then they're like , you don't actually need this  you just need to talk about the case . 
+D:  That's like mine it was like , would you prefer an L_C_D_ screen or a multifunction remote control ? And then it didn't have like any kind of table , like awesome , I'm glad they asked that question and didn't report the result <laugh> . 
+B:  It's really interesting though . 
+A:  I I thought it was a little tricky having to hand around this thing . 
+B:  Yeah . 
+D:  Yeah . 
+C:  . Yeah 
+A:  We had a lot of the um  otherwise the technology  today was kinda cool . 
+C:  . I think . Yeah 
+B:  That was really neat how I got emails and  
+C:  . We didn't we didn't use the whiteboard that much 
+A:  Mm-hmm . No . Although I don't see how we could have very l at least for me I  
+B:  No . 
+C:  . 
+B:  I  yeah . If I'd gotten pictures of the different parts of the case , the different looks of the case , I would have probably drawn them up , but  
+A:  Mm . 
+D:  'Cause we weren't like voting on anything and I think usually , like whiteboards are good , you know like crossing out ideas , or like if we had had like a brainstorming period . 
+B:  Yeah , we could've put our brainstorming stuff up there rather than just talking about it , but with only four people it doesn't really make sense . I think if you had a larger group  
+A:  Mm-hmm . 
+D:  But I thought we were good orally . Get crazy . 
+A:  And with and with the PowerPoint that we can all look at , like you can do all those things pretty much on PowerPoint as that's not as necessary to have . 
+B:  Yeah . 
+C:  <other> Yeah 
+D:  And these might've made us more willing to like take notes than to like write up them here , 'cause we all needed them separately , kind of on the whiteboards in this room . 
+A:  Mm . Mm-hmm . 
+D:   
+B:  Because we're all gonna be working in different places . We  if we were all gonna stay in here all the time , then having the notes up on the whiteboard would've been alright , but everyone needs their own , like specific notes , I guess . 
+D:  Yeah . 
+A:  Mm-hmm . Now when you were um creating your um prototypes here , did you work together or did you like do separate projects ? 
+C:  . Uh we we worked together , um but we were making like we sort of made different shapes and then discussed how the how the buttons might work , um and how we could like improve on the on the design 
+B:  Yeah . 
+A:  Mm-hmm . 
+B:  Yeah . So it was a bit of both really , we just kind of started out by each taking a colour of clay and just fooling around with it and I came up with that rhombus shape and he came up with the sort of potatoey , mangoey shape , and then just went from there really . 
+A:  Mm-hmm . Cool . 
+B:  It was fun . <laugh> <laugh> So well done with the management , I felt well managed . 
+A:  Oh thanks . 
+C:  . I think we did well in first of all giving our meetings the time , and second we 
+A:  It's kinda fun . 
+C:  actually we we did a good job of making firm decisions at the ends of the meetings 
+A:  Mm . 
+D:  Sorry . <laugh> 
+C:  . And I  
+B:  <laugh> That happened to me all the time though . 
+C:  <laugh> I know what happens sometimes is that you tend to sort of have meetings and then people sorta drift away without anything actually really being decided . But I think here we got we got clear and and decisive decisive points  at the end of the meetings , so that we we knew where to go on from there 
+A:  Mm-hmm . 
+B:  Yeah , I was quite worried at the end of the last meeting that we weren't getting  we didn't really have enough information to make firm decisions , but we were able to do it regardless , so . 
+A:  Mm-hmm . 
+B:  I'm not usually a very decisive person , so it helped to have people say this needs to be done in five minutes . 
+A:  This is what we'll do . 
+C:  . Yeah 
+A:  I found that we did  we could have used another five or ten minutes sometimes in the meetings . 
+C:  . Yeah , for some of the meetings , yeah 
+B:  Especially last time , yeah . 
+A:  Mm-hmm . Yeah I think the last time we had a lot of information , but at the same time not quite enough , you know what I mean , like we we couldn't answer every single question . 
+B:  Yeah ,   Yeah . 
+C:  . Yeah 
+B:  Yeah . Right . 
+A:  <other> Um but  
+B:  And I I felt the first two meetings , that I was coming in with no information , and not sort of 
+A:  Mm . 
+B:  made me really like , ooh I don't know <laugh> , throwing together PowerPoint out of no no information and then last time it was like the opposite . I had so much information and so much to talk about . 
+A:  It was interesting what came out like later , like as I was doing the  when I was doing the breakdown on the agenda that they gave me um , that more points came out from your presentation even . 
+B:  Yeah . Mm . 
+A:  Um . I'm a little  I am a little disappointed that we didn't do a  um something for losing the remote , because that was kind of a big point . 
+B:  Yeah .  that was something like  in order to talk about that we would've had to have actual knowledge about circuit boards and <laugh> things like  
+A:  About  yeah . 
+D:  Well the problem was , even when we just were creating from the Excel file , there wasn't like a option to select to somehow have it included , so there was no  we could be like yeah , it has it included . There was no way for us to have 
+C:  . Yeah 
+A:  Mm-hmm . 
+B:  Yeah . I think we were  
+A:  Mm-hmm . Considered the re yeah . 
+D:  written down that it was really there . 
+B:  Yeah . I think we were just getting overenthusiastic with the task <laugh> . I think we really got into it , I mean I got into it as the day went on and I got really like , ooh I'm designing a remote control , I dunno if that's just me , but  
+D:  <cough> 
+A:  Well it's interesting that they  Mm-hmm , yeah  . It was interesting though that they put that fifty percent of people say they have frustration with losing their remote and yet they didn't provide us with information to um  we weren't provided with information to discuss that . 
+B:  Yeah . 
+D:  Yeah . 
+A:  I know that like people people have like things they can put on their keys that you press it and it'll beep , but I but I'm sure that would require some kind of technology that  
+B:  Yeah . 
+C:  . Yeah 
+A:  I just don't know what it is , but  
+B:  I think there are some of those like infomercial remotes that have things so you won't lose them . 
+A:  Mm . 
+B:  I dunno . I mean we were talking about it and like i in my household at least , there's only about two places that the remote is ever 'cause there's only one T_V_ and 
+A:  Hmm . 
+B:  there's only like three chairs . 
+D:  That's like saying you're never gonna lose your keys , and I always do , anyway . You'll lose 'em in your pocket , like you just will forget that  or you like put it down somewhere that like made sense and then not remember , there's always ways to lose things . 
+A:  Mm-hmm . Mm . 
+B:  Yeah . 
+A:  It d yeah , it depends on how organised you are personally , but  
+B:  Yeah , or like I guess what the setup of the house is too . 
+A:  Mm-hmm . 
+B:  But , I mean  I am notorious for losing my keys , I just  I guess I've just never lost the remote . I put my keys in the refrigerator the other night <laugh> and couldn't find them . 'Cause I was putting groceries away . 
+A:  <laugh> <laugh> 
+C:  . 
+D:  That's funny . 
+A:  <laugh> Oh . 
+B:  You you're taking stuff from a bag and putting them in the refrigerator and then go back to my room . 
+A:  Can't get in . <other> 
+B:  Can't get in , look all around the kitchen . Definitely in the vegetable drawer . 
+A:  <laugh> 
+D:  That's funny . 
+B:  So <laugh> . 
+D:  I always do that , leaving it in my coat , and then like using a different coat . 
+B:  Mm . 
+A:  Yep . 
+B:  But I guess it's 'cause we don't carry remotes around that much . 
+D:  Yeah . Can't really take it into the other room . 
+B:  Yeah . Maybe with our little robot one we could've had him have a  robot , alien , pear , whatever he is , have a little voice like , I am located  
+D:  <laugh> 
+B:  Oh a G_P_S_ system , <laugh> internal G_P_S_ . 
+D:  <laugh> 
+C:  <laugh> 
+D:  Oh man . Here you go . 
+A:  <other> We should make one that walks by itself . <laugh> 
+B:  Although if it's sitting still for too long . <laugh> Yes I  
+C:  <laugh> 
+D:  That really could get up and walk away <laugh> . 
+B:  <laugh>  
+A:  Or or like some crazy like electro-magnet , that you push it and it'll go zoom to the T_V_ and stick there . <laugh> 
+B:  Or little  
+C:  <laugh> 
+B:  <laugh> <other> Or just just a wheel , you know . 
+A:  <laugh> 
+B:  Just if you  <other> like you'd have a remote for your remote , that'll  . <laugh> 
+C:  <laugh> <other> Yeah 
+A:  Well , but if you could attach them to the T_V_ , then you can  . 
+B:   zoom  Yeah . Hmm . All kinds of possibilities . 
+A:  Mm . Okay . Sorry , I'm just um trying to update my minutes . I decided to  you know how I sent you the email saying that PowerPoint minutes will be complimentary , rather than like repeating them . Just gonna make  I'm making full minutes , so that it'll include all of the agenda and all that . 'Cause that seems a little more useful . 
+B:  Yeah . Oh . Wow . 'Cause you've had like the most typing and organising to do . 
+A:  But I didn't have like information to sloth through either , so  
+B:  Yeah , I guess  How much of your PowerPoint was already done for you , every meeting . 
+A:  Most of it , mm-hmm . I added slides , um I added a couple slides each time , but that was about it . 
+B:  Oh . Okay . Yeah , I didn't even think about adding slides , 'cause I would just get slides with titles on them and fill them all in w didn't even think about adding more . 
+A:  Mm . Well , the thing was they would provide y an agenda with s like several points , but it wouldn't have a slide for each point . And that's the only way I remember that I need to go other that point .  I know personally when I do PowerPoint , that's what I do and so  I had it once , even if it was just like the title of it , like the three presentations , and I would do your three . 
+B:  Ah yeah. . Right . 
+D:  You have you have to have the slogan on it or can it just be like  
+A:  The slogan on it ? No no no . 
+B:  No , no , definitely not . 
+D:  Okay good . 
+B:  We <laugh>  
+D:  <laugh> 'Cause I was like , it could go around the outside . <laugh> 
+B:  <laugh> No , I don't think we need to  I think the R_ and R_ , especially if the yellow and black one . 
+C:  . 
+A:  I think we just need the um the R_R_ , yeah . 
+D:  Is it yellow and blue ? 
+B:  Or yellow and blue . Lemme go to the web page . 
+A:  Yeah , I was just kinda going by the web page , 'cause they didn't give me any clear , like yellow , grey , or  . 
+D:  Oh I guess it is black , grey . Grey is better than black , doesn't look so bumblebeeish . 
+A:  I don't really like yellow in general . 
+D:  Hey now I understand the random like newsclippings . 
+A:  But it  
+B:  Finish meeting now . <laugh> 
+D:   
+A:  Wasn't it interesting that um  I thought it was interesting that our market marketing um expert did not agree with the marketing um 
+D:  <laugh> Yes . 
+C:  <laugh> 
+B:  <laugh> 
+A:  the marketing choices , you know , like <laugh> that was a bit of a conflict . 
+B:  <laugh> 
+D:  I will I just feel like if you're really doing like a a really big market evaluation , you wouldn't just have like one set of source , it's kind of an  they were so not backed up , it would just be a sentence  like we did a survey , this is what people said . 
+B:  <other> 
+A:  <laugh> 
+B:  Yeah . 
+D:  S mm , I dunno . 
+A:  People are stupid . 
+B:  I guess it i it sort of a grey , isn't it ? Yellow and grey , but then the slogan's in blue . 
+D:  Well we got some grey and we got some blue buttons , we're good . 
+B:  Yeah . Well we don't have the right colour clay anyway . 
+A:  Maybe , like  I don't know .  That could always be  . 
+B:  Well we're not , sadly , going to actually be producing this , so <laugh> . 
+A:  Oh . 
+D:  If they ever come out with potato  
+B:  <laugh> Potato mango shaped remotes . 
+D:  I'm gonna have to  
+A:  I'm claiming it intellectual property . 
+B:  <laugh> 
+D:  Yeah . 
+B:  I can't believe a whole day is gone . I don't feel like it's been that long . 
+D:  I know . 
+B:  Get sucked in . Mm I haven't gotten questionnaire eight yet . 
+
+

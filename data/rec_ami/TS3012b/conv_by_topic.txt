@@ -1,0 +1,260 @@
+A:  Wait for the marketing director actually , so . Anyways . Uh . See , shall we wait ? I'm not sure if he's late or delayed or whatever , so I'm gonna start soon , we have now  don't have much time anyway . There you are , okay . 
+B:  Oh , there he is . 
+D:  Yes . Sorry , a little bit of pl little problem with computer . 
+C:  Okay , we  
+A:  Uh no problem . We're about to start , so have a seat . Okay , welcome again . Today , functional design phase . 
+D:  <cough>  . 
+A:  I'll take you over the minutes of last last meeting . Okay , that was just to get to know each other , have a little thoughts on what your vision is and  on this project , so  
+D:  Uh . 
+A:  I put the minutes on the  I made on the on the p the the project share , so if you wanna review them , they're there . I will do so after every meeting , so if you have some information you wanna take back you can find it there . Anyways , um today three presentations , from every one of you . Um after that I got some new project requirements from project board , so we're gonna go af go after  over this later . But I wanna start with uh stuff you did first , so we can see what everybody came up with . And after that we can have the new requirements and share some thoughts , so . Who would like  wanna go first ? 
+
+
+D:  Yeah , sure , no problem . Um there was a little problem with my computer so not uh the whole uh presentation uh  
+B:  Go ahead . 
+A:  Take it . <other> Anyway , let's see what you have . 
+D:  Yeah . Um  Okay , and 
+A:  Uh it's still a bit open . 
+D:  I want to open the my s oh no . 
+A:  You should close it on your own notebook , I guess . Yeah . So there ? Okay . 
+D:  Oh no , that's okay . Uh slide show . 
+D:  Yeah . 
+B:  Okay . 
+D:  Yeah . Um  Uh my personal preferences is uh a button for my favourite channel , so I can uh I dunno , so I can zap to my uh 
+B:   
+D:  f uh quick uh to my favourite channel wh what I uh  so , the remote mu must see or um must um <other> see wha what mine preferences are for which channel , so I can zap t to  
+A:  Okay , you don't set it yourself , it just remembers the channel that you are on most , for example . You want the  you want it to be programmed , for example y programmed f or you want it to recognise your favourite channel ? Let's see , you you spend twenty minutes each day on that channel , so it recognises your favourite channel . 
+D:  What ? Yeah . Yeah . Recognise  Yeah . Yeah , that's uh what my personal preference like . 
+A:  Okay , so it's it it does  it recognise itself , you don't have to set it  Okay . 
+D:  No , itself . Maybe it's easier to <laugh> to sell it , but  
+A:  Okay . 
+D:  I don't know it's manageable , but we will uh we will see . Yeah , it's a little bit uh it's the end of it . It's a little bit uh I lost it , the computer uh crashed , so . 
+A:  I see . Okay . 
+B:  Okay . Shall I go 
+A:  <other> No problem , it's it's okay , that's  
+
+
+A:  Yeah , go ahead . 
+B:  ? Okay . 
+D:  Yeah . 
+B:  So , some technical functions . 
+D:  Darn computer . 
+B:  Basically I have some issues which you discussed earlier . Uh let's just start with the method . <other> It sounds really easy , what does the user do , what does the th remote control do , but there are quite some issues . 
+D:  Yeah . 
+B:  So the things I'm going to concentrate on are the user aspect , because the technical aspect , that's pretty much covered . We can do that . What goes wrong <other> at the user . Gets the remote control . Where is the remote control ? We've all had it once , I want to watch some television , where's the remote control ? That was one of your ideas which you posted in the network folder , a really good idea . Uh these are just the issues . I come to some uh personal experience , findings , possible solutions later . Searches for the button . 
+D:  Yeah . Yeah . 
+A:  That seems very good . 
+B:  There are many buttons on a remote control which are not clear . Uh so either we lose those or we try to make it a little bit more clear . Uh also symbols tend to fade after a while . 
+D:  Mm uh . 
+A:  Mm-hmm . 
+B:  There's nothing more annoying than faded symbols , because you don't know which channel is this button , so possibly we could find uh something for that , yes . Uh covered that . Oh yes , user presses the button . Um usually when you have a lot of buttons , buttons are small . So you press more once remote control goes 
+A:  Okay , so have it more  make it more durable actually . Okay . Okay , so the buttons should be  
+B:  kablouey or something like that , so we have to pay attention not to put too mun too many buttons on uh the remote control . <other> And possibly also the size , so more important buttons , bigger si 
+A:  Mm-hmm . Yeah . Wow . The s Yeah . Make it  make them bigger . Even more durable uh . 
+B:  So this is basically what I h had in mind in the  fade-proof symbols , locator , a sound , uh so clear we should stick to existing symbols , but maybe we could do a little uh investigation to see whether some symbols are uh  need to be replaced by others . Uh  
+A:  Okay . 
+B:  This I pretty much covered . <other> So what we want to go to is not this one , but more  less buttons , easy , some bigger buttons . 
+A:  Yeah , it's true . 
+D:  Yeah . 
+B:  So that's basically uh what I had in mind . 
+A:  Yeah , that's clear . 
+B:  This is not the final design , this is just a general idea of how I'd like to see uh basically the general idea . 
+A:  No , of course uh  Yeah . I must say that it  
+B:  <other> So that was it . 
+A:  Hmm . That was it . Okay , that was good . So we agree on the the part that we need to get something on the on the remote to find it somewhere and increase it  the durability of of the thing , so  The other aspects , we'll just see how  what you came up with and what's possible for that budget . 
+B:  Yeah , I think it's a really good idea . Yeah . Yeah . 
+A:  Okay . 
+
+
+C:  Okay , that's fine . Um . Okay , now work a little with me . Okay . Well , let's start it as it is . Okay , uh the method . There are a few questions that need to be answered , uh you already uh talked about it a little bit . Which buttons are wanted , uh is our remote control universal or should it be programmable . Uh if it should be programmeab grammeale then we need um something like a mode that you can switch it . Because then the buttons have to send out a different signal then they would normally do . And uh how big is the remote control uh going to be ? I'll tell you why that's important to me . Um there are a lot of technical parts in the remote control , so uh uh that's <other> why I also would like to say uh go a little bit easy on the designs , uh I heard ab uh you talking about beeps and about uh video screens , but uh the material inside and the technical aspects are quite complex already . 
+A:  <cough> Mm-hmm . Mm-hmm . 
+C:  So keep in mind that everything that you keep uh  think of , it has to b to be built . So it's  that's not as easy as it s might look like . Uh material study , I'm working on that um for the the costs . I have to check out how far I can go with that . Normally , a circuit board is made of fibreglass uh and the wires are made of copper . Uh that is how it is done and all the remote controls work that way , I think we can just go on with that . Um then I've read more integration of materials means less cost for the production . The more we can make uh at once uh in one piece , uh that is cheaper . 
+A:  Yeah . <other> Of course , hmm . 
+B:  Okay . 
+A:  You mean integrate them all into the circuit board . Okay . 
+C:  Exactly , so if we make a circuit board with the the connections already on it , then that's cheaper . So we have to <other> make something that's not too difficult in design again . <other> This is what look like uh looks like if you press one button , so this is not the entire thing . You have the the power coming in , then you have like a switch . The switch uh uh <other> uh if you p press it then some electrical charge goes into the processor , that thinks over a Morse code , that's how you should see it . The Morse code goes to the amplifier , then uh the signal is sent to two uh light bulbs . You have infrared and an interv um <other> uh how to say it ? Uh a light in indication , light that you know that it's functioning . 
+A:  <other> Yeah , okay . So you have  Mm-hmm . 
+C:  Uh here again , that's my story about the different modes , if you do want to make remote uh universal , then the processor has to uh make up a different Morse code when some button is pressed . That makes it much more complex , so we really need to have a look , do we want that or not . Uh I don't have any personal p uh preferences uh so far , except for uh the materials to be used uh light , that they are light . 
+A:  Okay . Okay . That was it ? I'll get back to my thing then . 
+C:  <other> That was it . 
+A:  Uh  
+
+
+A:  Okay , back this up  to the screen . So I got some new information on the project specifications are changing a little . Like you said uh teletext is not not very popular anymore because the uh the internet , nowadays people don't use the teletext anymore or hardly , so it can either  Well , I don't think we should remove the button , because there are always people who are using it . But I don't think it should be <other> very  it should be one of the big buttons for example . Just put it somewhere or under second option or whatever . It's not important anymore . Um we're targeting young people now , because our um  
+B:  Yeah . 
+A:  <other> This is a new product and with this new product we want to appeal to younger people , which are  um the younger people were defined under forty . I so I think it's  that's also good with the fashion and everything , so yeah . 
+D:  Uh . Yeah . 
+C:  Hmm . 
+D:  B Yeah , and they want to pay for it and uh  
+A:  They want to pay for it , people are willing to spend money actually to buy a um remote that they like . If they like the way it looks , the way it functions , so they're actually gonna spend uh spend money on it . 
+D:  With more  Where  with more technical specifications 
+A:  Yeah .  <other> see how far we can go with it anyway , so  And one thing that should be important is that the corporate l colour and slogan are recognisable , which is apparently <laugh> black and yellow , but  
+D:  in the  Yeah . 
+A:  I'm not sure if we  I think we should keep the the logo in mind , because with colours you can uh have a lot of uh fashionable colours and everything on it , which suits everybody's taste . So  
+
+
+C:  Go ahead . 
+D:  Yeah , with with an L_C_D_ screen you can  
+A:  Oh yeah . I think we should lose the L_C_D_ screen , like you said . I think for example it's it's huge  I think the L_C_D_ is huge , it consumes batteries like hell . 
+C:  Y Yes , I think so too . 
+D:  Why ? Nokia w 
+B:  Yeah . 
+D:  Uh . 
+A:  I think it takes up a lot of a lot of power . It costs a lot , I think . What we could do , what could be possible , is maybe not an L_C_D_ screen but with a preview , but y I'm not sure if it's even possible <other> . For example , a little T_V_ guide . 
+C:  Yeah . 
+B:  And it costs too much to fabricate , so we're on a tight budget here . 
+C:  Okay , uh  
+D:  Okay . 
+C:  Mm . Hmm . 
+A:  Like you have a little  just just a text only , not colour , just a little text thing so you can use your remote as a T_V_ guide . I'm not sure it's even possible , but maybe okay , make it  Yeah , find a little compromise in that , but  What did I write down ? I think the p yeah , the beep is a very simple thing to imple implement , just make a button on your T_V_ and just hit the button , it beeps somewhere . I think it's easy to implement , we should go for that . Uh speech recognition . 
+C:  Mm-hmm . 
+D:  Yeah . 
+C:  Hmm . I have to check that out , I'm not sure . 
+D:  Yeah . 
+C:  That must be possible . Ja . I'm sorry , whe where do you wanna hit the T_  you wanna <other>  we want a button on the television .  In th okay , but that rules out a universal remote control . 
+B:  And it's  
+A:  I thin <other> Yeah , I mean where else should you put it ? 
+C:  Because that's not possible uh . 
+A:  Yeah , but <other> how are you gonna use that if your  I mean if your remote control is lost , how are you gonna press  where are you gonna press the button ? 
+C:  Uh . Yeah . Exactly . 
+B:  Maybe just a slap-on sticker with a button which sends out a small signal . 
+A:  A slap-on sticker . Oh , you mean as like a separate thing you can attach to your T_V_ . Yeah , that could be possible . A little little box you can attach to your T_V_ is fine then , okay . 
+D:  Mm uh . 
+B:  Yeah , exactly . 
+C:  Okay , then uh I'd I'd like to know now if we want the uh universal remote control or not , because that's uh determines everything I'm gonna do . If not  Okay . 
+A:  I think it's universal . I think we should go for universal , because apparently we're a separate company making separate c remote controls to sell to a lot of diverse people . I think universal remote control should be possible . 
+D:  Yeah . Um  
+C:  Okay , then I go for that . 
+D:  Everyone uh wants to buy it , so we w yeah . 
+A:  Yeah , I think we're targeting everyone , so remote  
+C:  Yeah . Okay . No , it's fine with me , but then I know what to look for . 
+A:  Okay , universal is good . Speech recognition , I think it's very hard , because we're selling across multiple countries . So I think implementing speech recognition is such a small um apparatus , it's very hard to do . 
+D:  Yeah . Or one . Or when you say one two uh i it uh it's enough , right ? But  
+B:  And it's  
+A:  Yeah , but I don't see Arabian people speaking one , two uh whatever . 
+D:  Oh yeah . 
+B:  Besides that , the technology isn't really super yet , so that <other> is a problem in implementing this . 
+A:  It's  Yeah . It's not a mature technology , I think it takes a lot of memory and everything in in a remote control , so  
+D:  Yeah . <other> Okay . 
+B:  It's a good idea , but it's just not  I don't think the market's ripe for that yet . 
+A:  I don't think it should be implemented in a remote control yet uh . What else do we have ? Um well you should you should look into the in into the materials that are real durable . 
+C:  Uh-huh . 
+D:  Yeah . 
+C:  Mm-hmm . 
+D:  Yeah . 
+C:  Exactly . 
+B:  Yeah . 
+C:  Hmm . <other> 
+A:  Um anyway , yeah , this is what we're gonna do afterwards , just lunch break and have more individual work after that , so let's see what we  let's see we  So you have to come up with a components concept , yeah . I want some  you should do some trend-watching , because even if we're if we're gonna do those covers and everything , what people really want , that's what we need to know in this phase , because that's gonna be the essential final design that we're gonna come up with . 
+D:  Yeah . Yeah . Okay . 
+A:  <other> Um  
+A:  <other> Yeah , we should do a little thing about design , because it looks boring really to me . Even if you put it  even if you put a different cover on it , it looks  still looks boring , so . 
+D:  <laugh> Different colours maybe . 
+C:  Hmm . And the design , it should differ . This is Philips , huh ? Philips has this . 
+D:  But all  
+A:  I have no clue . I just drew something what  which would fit into your hand easily . 
+B:  Well , I had basically  
+C:  Okay . Hmm . Uh . 
+B:  Something like this . To make it kind of futuristic . 
+C:  Mm . Oh , I realise if we make it small , then it needs to be a little thicker , because I need to put all the electronics in it . If we make it s uh smaller , uh less wide , then we need to m make it a little thicker , because I have to put all the electronics in it . 
+A:  I think it's a very  Sorry ? Yeah ? Okay . Mm-hmm . Yeah , but you have to j just keep in mind it shouldn't be too heavy . I mean we can stick it in in there , I think . Huh even if  in the worst case we can even  Could you give me the pen back ? 
+D:  Okay . 
+C:  No . 
+B:  So what kind of  Yeah , sure . 
+A:  So let's say that people would want an L_C_D_ thing . Let's take take the basic design again , what we  oh , crap  uh came up with . I'll just make it a little bigger now . So a transmitter here . Anyway . We could  let's say we have an L_C_D_ screen , people want an L_C_D_ screen . So then we should probably put it here . 
+D:  <other> 
+A:  It doesn't have to be really big , but just just have to be  has to be there . Think it's a good place , people don't  
+C:  Hmm . 
+D:  If you're reading from top to bottom , I think it's better to put it uh at the top . It's j <other> 
+A:  No ? It's not that uh  it's not the most important function , it's just an extra thing , it just  you press the buttons on top , because your finger is on top . 
+C:  Me too . Ah but  . 
+D:  <other> Uh . But i if you if you are going to uh put the L_C_D_ on it , <other> I think it's very important to use it , uh because it's <other>  use it uh 
+A:  How can you use an L_C_D_ screen ? 
+D:  But nee the function of it . <other> So you can use it maximum , because uh it's a lot  it costs a lot . So  
+A:  Yeah , but why I  I'm not sure . 
+B:  Now it's pretty much tucked away in your hand . 
+A:  Uh if you t if you press a button , you can see it , ri I'm not sure wha I'm trying to imagine myself what it would look like . 
+C:  Hmm . No . M I personally would prefer it on the top . 
+B:  I'm  
+A:  You would prefer it n Okay . So we have three people saying it should be on top . 
+D:  Yeah . 
+C:  Huh . 
+A:  Okay , but then you would would s have to stack away your buttons somewhere else . Anyways . 
+C:  But it  Hmm . 
+D:  It's expensive to build it , so 
+C:  Mm . 
+A:  Uh this looks a little  
+D:  you must use the maximum of it . 
+B:  I'm still not convinced of the  
+A:  About the L_C_D_s thing . Well if it if it's if it's possible wi if it's not too expensive , we should include it , because it's it's cool . <laugh> 
+B:  Yeah . 
+C:  Hmm . They want it uh . <other> We should just try to make that if it's possible . If it is possible we should really do it , but we need that information . 
+D:  Huh . Uh . But uh  
+C:  Also keep in mind again , the L_C_D_ screen is very flat , but it needs transistors , resistors , I don't know what more and that needs space . So I have to look if that's possible . 
+D:  Yeah , I know uh . 
+C:  But if we  
+B:  So basically  can I  what we have to decide now is uh what goes on top . Do we put the volume control and the channel control here , or do we put it on he Would we like to press it in the middle ? 
+A:  <other> Uh we have green now uh  
+D:  In middle of it . 
+A:  Or maybe we should m we could uh draw draw something a bit  that has it on on on the bottom . Maybe in a circle for example , like we  like in this example . I think this is not good , but for  we could make circular buttons for example . 
+D:  In the middle . 
+C:  Hmm . 
+A:  For up and down , ma make it a circle on it , because it  
+B:  Yes , but we do agree that we <other> keep this at the centre , because it's basically the most important function . 
+D:  <other> Yeah . 
+A:  I think the channel button should be in the centre . Channel button should be st stick together , for example here in this section . Because it's uh  
+D:  It's the most import yeah . 
+B:  Well , that would make them quite small . So maybe you'd put them here . 
+A:  We're not sure about the size anyway , just a general design . You can make it as big as you want . For example if you take uh  
+B:  Yes , but a big remote control probably not something which people would like . 
+C:  Hmm . 
+A:  No , let's see . For example just  
+C:  If we have a a space issue , we can also lose one battery . It is rechargeable , so we can stick with one instead of two . That might be an option . 
+A:  Yeah . I don't think if we if we even use an L_C_D_ screen , we need to , definitely . 
+D:   . 
+C:  Yeah , but if we need two batteries and an L_C_D_ screen , that means a lot of space that we need . But it has to be a little bit heavier . 
+A:  Yeah , but we have to see what the si what the size is . The L_C_D_ doesn't have to nee doesn't need to be very big . 
+C:  Okay . 
+D:    
+C:  No , but the things behind it .  space . 
+A:  Mm let's see . 
+C:  Like a process uh . 
+D:  Finish meeting now . It's on your computer . 
+A:  Finish meeting now . Okay , we will . So either  
+B:  So would we like this or would we like the  
+A:  We either we have to decide what what people want . Either this one , this this could be the luxurious one . 
+C:  I like this one more . 
+A:  So we have channel buttons here . I'm just drawing something uh . Uh  I think this would this would look cool . You could have it for example  small buttons here for some extra functions , so if your basic function's here , we should  like we decided before , programmes up and down , 
+D:  Uh . 
+C:  Mm . 
+A:  and volume here . 
+B:  Let's see what we have here . 
+D:  Or  And uh what about speech recognition uh  
+A:  <other> Well you can just  no , I'm not sure if we can do that , but we could put a microphone in here for example . 
+D:  Yeah , yeah , but  or or an L_C_D_ or an uh speech . I think it's  L_C_D_ is better now . 
+C:  Mm . 
+A:  Just to do research into both , w what it costs and what it takes for space . But let's cut the meeting for now yes . 
+D:  Yeah . 
+C:  I'll try to . 
+D:  Yeah . 
+C:  One more uh thing I'd like to say , uh let's give this uh a name , and not like some vague serial number that no one understands , like with cars . Shall we all try uh to think about a name ? 
+B:  Okay . 
+D:  Yeah , okay , yeah , that's <laugh>  yeah , that's okay . 
+B:  So I think of a name . 
+A:  Yeah , let's think of a name , okay . Uh okay . 
+D:  Oh , good . 
+
+
+A:  Okay , at anyways , the the minutes will be on the on the web shortly , so there we go uh . 
+B:  So  Yes , go and finish up and I'll see you at lunch . 
+A:  <other> 
+D:  Yeah . 
+C:  Good luck . 
+A:  Yeah , to all . 
+D:  Same . 
+B:  Yeah . 
+A:   
+C:  Yeah , I've  Do we uh save the  ? 
+A:   
+D:   .  . 
+
+

@@ -1,0 +1,288 @@
+B:  we'll start with the minutes of the last meeting . 
+B:  discussed the possibility of a macro facility , interac interacting the T_V_ a bit more , um mentioning of bar-code , joystick for user manipulation , um and ergonomics of the remote control as well . 
+B:  Um it's come to my attention the following . 
+B:  Teletext has become outdated due to the populat popularity of the internet . 
+B:  Remote control should only be used for the T_V_ . Um due for uh time to market and possibly also cost issues . 
+B:  Um also key is the corporate image should stay recognisable , 
+B:  um f uh your colour and slogan of course is down at the bottom there . 
+B:  Just to say quickly uh I would have thought that only being used for a television the macro facility may now not be required . 
+B:  to the point in my opinion anyway that it might not be worth pursuing . 
+B:  Um if anybody disagrees we can uh definitely say so . 
+B:  Um I'd like to if possible hear from our Marketing Expert first , 
+abst_sum - abstract: The project manager recapped the events of the previous meeting and briefed the team on some new requirements the team must follow when designing the remote.
+
+C:  Functional requirement by me Ebenezer . <other> 
+C:  we did some research , 
+C:  we asked one hundred people their opinions on remote controls . 
+C:  We asked some uh open ended questions , 
+C:  and we asked some very specific questions , 
+C:  Please bear in mind this is only a hundred people , 
+C:  so even when the groups are divided into fifteen to twenty five , twenty five to thirty five , there's only maybe ten people <other> fifteen people in each group . 
+C:  some the bad stuff we got , 
+C:  remotes are often lost . 
+C:  <other> Most buttons are not used any more , 
+C:  like you said , teletext is outdated now . 
+C:  there's just a lot of stuff that no one really uses . 
+C:  Takes too long to master the remote control . 
+C:  I've seen some remote controls that are big , 
+C:  they have a lot of buttons , 
+C:  you have to hold down more than one key at one time to do something , 
+C:  Some of the good stuff we got . 
+C:  Between the age of uh fifteen and twenty five , most people would be willing to pay extra for voice recognition software . 
+C:  um most people want remote controls to be pretty , 
+C:  they want it to be fancy , 
+C:  th they they want it to be different , 
+abst_sum - abstract: The marketing expert presented research on consumer preferences and user requirements for remotes.
+
+C:  Finally , my opinion . 
+C:  The voice recognition thing is cool . 
+C:  And uh voice recognition , the software , open source software exist already . 
+C:  It's a bit sketchy at some times , uh , you're not gonna get good always accurate results , 
+C:  but for a very fixed number of words , 
+C:  how many different words can you have for a remote control , 
+C:  up , down , left , right , channel five , channel seven , 
+C:  For a fixed vocabulary it works quite well . 
+C:  I'm pretty sure people would buy it . 
+C:  I mean most people use a remote control for switching to channels , 
+C:  So if you have to say up , up , up , up , if you have to do that all the time , then people might get a bit fed up with that 
+C:  <other> However , <other> oh , because the voice recognition software exists already , 
+C:  there's no need to spend money on research and development , 
+C:  but this does mean the need for microphones in the in the remote control , 
+C:  which is an unusual feature in my opinion . 
+C:  But if we do have the voice recognition thing , there's a lot of stuff that you can uh get rid of . 
+C:  there're two options . 
+C:  Either you have voice recognition by itself , 
+C:  which I think is a bit impractical for like night time if you wanna be watching television and you wanna be quiet , 
+C:  or I don't know you have a visitor coming round and the remote's only trained for you , it's a bit impractical to have just voice recognition by itself . 
+C:  So you can have voice recognition and a regular remote . 
+C:  But imagine you got rid of the regular remote part , then you can design the remote to look any way you want it to look , 
+C:  but is it practical to have a voice recognition system in a remote control , 
+C:  Um , will people will people be willing to wait for the the period that it'll take to train the remote , 
+C:  <other> I think a lot of young people will buy the remote control , if they have the money , 
+C:  but would they return it after a while 
+abst_sum - abstract: The marketing expert also presented information regarding voice recognition and what demographic finds the feature appealing.
+
+A:  this is a <other> brief run through of the um of the technical functions of the remote . 
+A:  the presentation is uh already slightly obsolete 
+A:  because I <other> had in mind something that would uh be i be aimed at controlling multiple devices 
+A:  I've looked at <other> looked at a num <other> uh couple of other uh remote control models just for an idea of basic design principles . Um 
+A:  <other> Um um basically the job of the device is to send commands to an appliance , in this case the television set . 
+A:  Um and there's two main trends in th in the sort of design practice . 
+A:  On the one hand  and this uh this particularly relates to its sort of earliest models where with you know i so so many buttons on it 
+A:  Um giving you every possible function that the that the device has , the remote control controls . 
+A:  it creates a rather user unfriendly interface . 
+A:  And on the other hand there's a user focused approach 
+A:  that pares things down to just what <other> what is most likely to get used . Um <other> 
+A:  and of course there is a certain amount of sort of loss of function here obviously , 
+A:  And so you go for something that's fairly intuitive to use , 
+A:  My own view is that we should definitely be going for a user focused design . 
+A:  Um but uh the pro <other> I think the problem with a lot of the sort of user focused designs that are about is that they sort of make assumptions in advance 
+A:  about what uh what a given user's going to uh want mo want to do from <other> want it to do most . 
+A:  something that's uh <other> something that is more programmable , 
+A:  that uh perh perhaps has the full range of functions available to it 
+A:  but you can then specify yourself what you're most likely to want . 
+A:  um I liked Ebenezer's idea of including a joystick in that and uh possibly a sort of fairly minimal number of sort of function buttons , 
+A:  you then have some sort of basic display on it 
+A:  so that if you're um sort of cha changing from different modes for the device it'll tell you just exactly what uh you know each direction of the uh of the um joystick's <other> going to do or wha or what each function button's going to do . 
+abst_sum - abstract: The user interface designer described the technical functions of a remote and stressed the need for a user focused design.
+
+D:  I'm responsible for working design , 
+D:  uh , this is basically the inside going on of the the uh remote control . 
+D:  So we have the energy source , 
+D:  we have the user interface , 
+D:  Uh the sender will push the button , 
+D:  the chip will respond , 
+D:  Do we need uh many buttons , 
+D:  or do we need l many light bulbs 
+D:  Um , the joystick is another thing , 
+D:  if we were gonna add that , um , there'd be more components to deal with that . 
+D:  you have the energy source obviously connected to the chip , 
+D:  You have the switch turn it on , 
+D:  infrared bulb , uh will contact the T_V_ 
+D:  do we need on the control uh different buttons to decide , or different light bulbs , 
+D:  Um , I dunno what we should decide on that . 
+abst_sum - abstract: The industrial designer discussed the interior workings of a remote.
+
+B:  I hear what the Marketing Expert's saying about <other> um voice activated control . 
+B:  However I've got a couple of worries about that . <other> 
+B:  The power required , um and the ability to the cost , it seems like for uh an embedded system , this could cause us issues . 
+B:  Um voice activation could be an interesting idea 
+B:  but I think that our Ind Industrial Designer would probably upon some research say that it's maybe not feasible . 
+B:  however the idea of a joystick and then maybe an L_C_D_ which has been kind of put forward so far , 
+B:  but if you can control almost all of the functionality from the display , I don't know how much power an L_C_D_ would take , 
+B:  literally um if you can imagine the display maybe slightly larger than um those on a <other> a mobile phone , 
+B:  something where you can read an an um fair amount of information , 
+B:  traverse maybe quite a few menus , 
+B:  Um and then we could have like say the common buttons as you say , volume control , changing channels  
+A:   I I was thinking that the remote <other> the um <other> sort of default functions for the joystick would be up and down for uh volume , left and right for channels . 
+D:  Do you think that people will get mixed up , 
+D:  they'll be looking at this screen and that screen 
+A:  Um I think probably for the first couple of hours of using it 
+A:  but we should probably try to stick to black and white . 
+A:  Si si simply to keep m keep the unit cost down . 
+B:  I imagine as well that the actual L_C_D_ and maybe to a certain extent the joystick as well would be for the additional functionality . 
+B:  Um and you can still have the main buttons that allow the people to turn the machine on and off , d up and down , 
+B:  maybe we have the fol um the joystick as a separate one for the other functions then , 
+B:  that there's just a a small number of as you were saying uh buttons that have already been defined . 
+B:  we go for the nice standard um up and down for and volume control . 
+A:  if you i if you wanted to access further functions i <other> you you then get to sort of menu navigation . 
+A:  I mean with things like ch with things like tuning and channels um you know adjusting brightn uh brightness and <other> fiddly things that no one really bothers with , most T_V_s these days actually have menus anyway 
+B:  something else that you brought up was uh the ability to lose a remote , 
+B:  but have any of you ever seen those odd little key rings 
+B:  where if you whistle , it will beep and you  tell you where it is . 
+C:  I had one of those , 
+C:  because it it went off all the time accidentally . 
+B:  the other option of course is that um the 
+C:  The clapping one . <other> 
+B:  Um digital telephones , uh for example , one unit has  
+B:  somewhere where there's a button , 
+B:  of course you have to have that base unit , 
+B:  but maybe it's a button that you attach to the T_V_ . 
+B:  Something which you when you press that , it would beep to give its location away , on the remote unit . 
+B:  again say what , it would be a small transmitter , um watch battery type scenario I would say , 
+B:  that might be something that we could look into . 
+B:  that could be something that separates us a bit from the market as well . 
+abst_sum - abstract: The team then discussed the option to include voice recognition, LCD, and a feature to locate a misplaced remote.
+
+C:  but I think we don't have a specific audience , 
+C:  like what is our target audience , 
+B:  <other> I think it could probably be aimed at most people who've used a mobile . 
+B:  Um , if we are if we were to follow that avenue , we might be s you know um we're kind of almost relying on their experience with a mobile phone I suppose . 
+A:  <other> Um maybe then our market should be T_V_ manufacturers , rather than the public . 
+B:  However I don't know exactly where we'll be going with that , 
+C:  It's just , the way I figure it , twelve point five Euros per unit , we have to sell at least like three million or something like that , 
+A:  Um , if we do end up trying to market this to television manufacturers then the um then the transmitter could actually be built into the television . 
+abst_sum - abstract: The team briefly discussed who they were aiming their product to along with the idea of marketing their product to television manufacturers.
+
+B:  do we go for a small joystick that would operate say changing channels , up and down , 
+B:  Um we have to decide exactly what we're going to do with the remote . 
+B:  and then , what , another button that would say that it's now being used to manoeuvre round the L_C_D_ . 
+D:  Should volume be important in the joystick , do you think ? 
+B:  We could use say the left and right for changing channels 
+B:  we could maybe even go as far as saying power button , small joystick , L_C_D_ , 
+B:  and with the possibility of pushing down on the joystick to say okay ? 
+A:  Actually I would say maybe two two function buttons , the  y we're now using the menus button and um and an og and an okay button . 
+A:  I mean certainly something I've found with the joystick on mo the joysticks on mobile phones is that a lot of the time th the device mistakes you trying to move it in one direction or the other for pushing down for okay . 
+A:  <other> The o the o the other dis design constraint I think we should bear in mind is that people are you know very much used to using a remote control one handedly , 
+B:  Do we incorporate the idea of trying to f locate the remote control again via a beeping noise ? 
+D:  Yeah , think so . 
+B:  So that would require a um transmitter maybe attached to the T_V_ , 
+B:  and <other> what , a basically a small microphone um on the actual unit , 
+D:  Light bulb as well , 
+A:  a small speaker you mean . 
+B:  th e the true fact , considering the cost of an L_E_D_ , we could just incorporate it anyway . 
+B:  you could go for quite an interesting design . 
+B:  something that can make it stand out slightly . 
+D:  I should just look at um the speaker ,  the speaker and an L_E_D_ . 
+abst_sum - abstract: The team also decided on some features to include in their product.
+
+None
+abst_sum - action: *NA*
+
+B:  Teletext has become outdated due to the populat popularity of the internet . 
+abst_sum - decisions: The team will not work with teletext.
+
+B:  Remote control should only be used for the T_V_ . Um due for uh time to market and possibly also cost issues . 
+abst_sum - decisions: The remote will only control televisions.
+
+B:  Um also key is the corporate image should stay recognisable , 
+B:  um f uh your colour and slogan of course is down at the bottom there . 
+abst_sum - decisions: The corporate image must be recognizable on the remote.
+
+B:  we could maybe even go as far as saying power button , small joystick , L_C_D_ , 
+abst_sum - decisions: The remote will have a power button.
+
+B:  we could maybe even go as far as saying power button , small joystick , L_C_D_ , 
+abst_sum - decisions: The remote will have a small joystick.
+
+B:  we could maybe even go as far as saying power button , small joystick , L_C_D_ , 
+abst_sum - decisions: The remote will have LCD.
+
+None
+abst_sum - decisions: The remote will have a menu button.
+
+B:  and with the possibility of pushing down on the joystick to say okay ? 
+abst_sum - decisions: Instead of an "okay" button, the user will push down on the joystick.
+
+B:  Do we incorporate the idea of trying to f locate the remote control again via a beeping noise ? 
+D:  Yeah , think so . 
+abst_sum - decisions: The remote will have a beeping noise which goes off when a user is trying to locate it.
+
+C:  <other> However , <other> oh , because the voice recognition software exists already , 
+C:  So if you have to say up , up , up , up , if you have to do that all the time , then people might get a bit fed up with that 
+C:  I'm pretty sure people would buy it . 
+C:  For a fixed vocabulary it works quite well . 
+C:  And uh voice recognition , the software , open source software exist already . 
+C:  The voice recognition thing is cool . 
+C:  but for a very fixed number of words , 
+C:  It's a bit sketchy at some times , uh , you're not gonna get good always accurate results , 
+C:  I mean most people use a remote control for switching to channels , 
+C:  there's no need to spend money on research and development , 
+C:  but this does mean the need for microphones in the in the remote control , 
+C:  which is an unusual feature in my opinion . 
+C:  But if we do have the voice recognition thing , there's a lot of stuff that you can uh get rid of . 
+C:  there're two options . 
+C:  Either you have voice recognition by itself , 
+C:  which I think is a bit impractical for like night time if you wanna be watching television and you wanna be quiet , 
+C:  or I don't know you have a visitor coming round and the remote's only trained for you , it's a bit impractical to have just voice recognition by itself . 
+C:  So you can have voice recognition and a regular remote . 
+C:  But imagine you got rid of the regular remote part , then you can design the remote to look any way you want it to look , 
+C:  but is it practical to have a voice recognition system in a remote control , 
+C:  Um , will people will people be willing to wait for the the period that it'll take to train the remote , 
+C:  <other> I think a lot of young people will buy the remote control , if they have the money , 
+C:  but would they return it after a while 
+B:  I hear what the Marketing Expert's saying about <other> um voice activated control . 
+B:  However I've got a couple of worries about that . <other> 
+B:  The power required , um and the ability to the cost , it seems like for uh an embedded system , this could cause us issues . 
+B:  Um voice activation could be an interesting idea 
+B:  but I think that our Ind Industrial Designer would probably upon some research say that it's maybe not feasible . 
+abst_sum - problems: Whether to include voice recognition as a feature on the remote.
+
+B:  but if you can control almost all of the functionality from the display , I don't know how much power an L_C_D_ would take , 
+B:  literally um if you can imagine the display maybe slightly larger than um those on a <other> a mobile phone , 
+B:  something where you can read an an um fair amount of information , 
+B:  traverse maybe quite a few menus , 
+D:  Do you think that people will get mixed up , 
+D:  they'll be looking at this screen and that screen 
+A:  Um I think probably for the first couple of hours of using it 
+abst_sum - problems: Whether to include LCD.
+
+A:   I I was thinking that the remote <other> the um <other> sort of default functions for the joystick would be up and down for uh volume , left and right for channels . 
+B:  I imagine as well that the actual L_C_D_ and maybe to a certain extent the joystick as well would be for the additional functionality . 
+B:  maybe we have the fol um the joystick as a separate one for the other functions then , 
+B:  do we go for a small joystick that would operate say changing channels , up and down , 
+D:  Should volume be important in the joystick , do you think ? 
+B:  We could use say the left and right for changing channels 
+B:  and with the possibility of pushing down on the joystick to say okay ? 
+A:  I mean certainly something I've found with the joystick on mo the joysticks on mobile phones is that a lot of the time th the device mistakes you trying to move it in one direction or the other for pushing down for okay . 
+abst_sum - problems: What functions the joystick controls.
+
+B:  I imagine as well that the actual L_C_D_ and maybe to a certain extent the joystick as well would be for the additional functionality . 
+A:  if you i if you wanted to access further functions i <other> you you then get to sort of menu navigation . 
+A:  I mean with things like ch with things like tuning and channels um you know adjusting brightn uh brightness and <other> fiddly things that no one really bothers with , most T_V_s these days actually have menus anyway 
+B:  and then , what , another button that would say that it's now being used to manoeuvre round the L_C_D_ . 
+abst_sum - problems: What functions the LCD controls.
+
+A:  I mean most of the uh of the replacement remote market is sort of  remote control rationalisation . 
+A:  you want one wo <other> y you want one that'll do the job of all of them . 
+B:  this is a requirement that we have to stick to I'm afraid , 
+A:  um would that include um access to say <other> interactive functions on digital or cable ? 
+B:  I would say so , yes , 
+B:  I would say that the design spec we've been  with is for the television only for now . 
+abst_sum - problems: Having a remote which controls multiple devices.
+
+B:  the other option of course is that um the 
+C:  The clapping one . <other> 
+B:  Um digital telephones , uh for example , one unit has  
+B:  somewhere where there's a button , 
+B:  of course you have to have that base unit , 
+B:  but maybe it's a button that you attach to the T_V_ . 
+B:  Something which you when you press that , it would beep to give its location away , on the remote unit . 
+B:  again say what , it would be a small transmitter , um watch battery type scenario I would say , 
+B:  So that would require a um transmitter maybe attached to the T_V_ , 
+B:  and <other> what , a basically a small microphone um on the actual unit , 
+D:  Light bulb as well , 
+A:  a small speaker you mean . 
+B:  th e the true fact , considering the cost of an L_E_D_ , we could just incorporate it anyway . 
+abst_sum - problems: What sort of components are necessary for the feature which allows the user to locate a misplaced remote.
+

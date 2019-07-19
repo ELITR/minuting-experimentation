@@ -1,0 +1,221 @@
+C:  All hooked up . <laugh> Okay , so now we are here at the functional design meeting . Um <other> hopefully this meeting I'll be doing a little bit less talking than I did last time 'cause this is when you get to show us what you've been doing individually . The agenda for the meeting , I put it in the sh shared documents folder . I don't know if that meant that you could see it or not . 
+D:  <other> 
+C:  Did anyone ? No . Oh well . Um I'll try and do that for the next meeting as well so if you check in there , there's a shared project documents folder . Um and it should be in there . 
+D:  No . 
+A:  Mm . 
+D:  Mm . Um um wi on on a what ? Oh project project documents , yeah , yeah , yeah , okay . 
+C:  Project documents , yeah . So I'll put it in there . Is it best if I send you an email maybe , to let you know it's there ? 
+D:  Oh okay , yeah . Yes , I think so . 
+C:  Yep . I'll do that next time . Um <other> I'll act as secretary for this meeting and just take minutes as we go through , and then I'll send them to you after the meeting . The main the main focus of this meeting is your presentations that you've been preparing during the time , so we'll go through each of you one by one . Um then we need to briefly discuss the new project requirements that were sent to us . I just sent at the last minute , I'm sorry about that , but we can see how that affects what you were you were doing . Um and then we need to , by the end of the meeting come to some kind of decision on who our target group's going to be and what the functions of the remote control  that's the the main goal is to come up with those two things , target group and functions of the remote control . And we've got forty minutes to do that in . 
+D:  Yeah , the last minute , yeah , yeah . Yeah . 
+C:  So I would 
+A:  You said uh targ target groups , what does that mean ? 
+C:  say  yeah ? 
+D:  <other> Um  
+C:  As uh who it is that we're going to be trying to sell this thing to , yeah . 
+A:  Uh okay , 'kay . So are  
+C:  So we need to  yeah , we need to have a fairly defined group that that we want to focus on and then look at the functions um of the dem remote control itself . 
+A:  Okay . 
+
+
+C:  So with that I think it's best if I hand over to you . Does anyone have a preference for going first ? 
+A:  Alright . <other> I can go first , yeah . 
+C:  You wanna go first ? Okay , so we need to unplug my laptop and plug in yours . 
+D:  Okay . Hmm . 
+A:  <other> 
+C:  I assume we just pull it out ? 
+D:  Mm . 
+A:  <other> <other> Right . Um <other> so f from the  
+C:  Just before you start , to make it easier , would you three mind emailing me your presentations ? Once we  you don't have to do it now but when  once you go back , just so that I don't have to scribble everything down . 
+D:  Okay , yeah , afterwards , yeah , okay . 
+A:  Right sure . Uh okay . <other> 
+
+
+A:  <other> So n uh with uh with regard to the <other> uh working design of this uh uh remote control uh I've identified um <other> a few basic uh components of the remote and uh <other> se uh from the design , functional design perspective um w I c we can now uh know wha what exactly the components are and how how they work together with each other . <other> <other> So <other> <other> this is the method that uh I'll mostly be following in my um <other> in my uh role . Um the identification of the components , uh and uh since since I'm dealing only with the technical aspects , I would need feedback from the marketing person uh and <laugh> uh from the user interface person . Uh we'll then integrate this into the product design at a technical level and uh basically update and come up with a new design , so it's a cyclical process . 
+C:  Hmm . 
+A:  <other> Okay , so <other> these were the basic findings from today . The last three bullets have been integrated from uh the last minute uh email . Uh I just quickly jotted them down . Um <other> so basically uh the  as I told you the identification of how the remote control works and what are the various parts to it uh and what are the different processes um <other> and how the parts uh communicate with each other . Um <other> okay , so e the mee email said that teletext is now outdated , so we need to do away with that functionality of the remote control . Um also uh the remote control should be used only for television , because incorporating other features um makes it more comp complex . And the reason why teletext is outdated because uh of internet and uh the availability of internet over television . How however , our our remote control would only be dealing uh with the <other> the use for television , <other> in order to keep things simple . Um <other> also the management wants that um our design should be unique uh it  so <other> it should incorporate um colour and the slogan uh that our company um has it as its standard . <other> Okay , so he he here is a functional overview of the remote control . Um <other> there's basically an energy source at the heart uh which feeds into the chip and the user interface . The user interf interface communicates with the chip , so <other> I'll basic go over to the  Okay . <other> So <other> if uh if this is our energy source and this is a cell , uh it communicates  uh it feeds energy into the into the chip , which basically finds out h uh how how to do everything . There is a user interface here . <other> So whe when the user presses a button , it feeds into the chip and the chip then generates a response and takes the response to an infrared terminal , um which then  so the output of the chip is an infrared bit code , which is then communicated <other> to the remote site , which h has an infrared receiver . Um the there can be uh a bulb here or something to indicate whether the remote is on or communicating . Um so these are the essent so a all the functionality of the remote control , whatever new functions that we need to do , um make the chip more complicated uh and bigger , basically . 
+C:  Mm-hmm . 
+A:  <other> Okay . <other> Um so <other> i in my personal preferences um <other> I'm hoping that we can ke keep the design as simple and clear as possible . This would uh help us uh to upgrade our technology at a future point of time . And uh also if we can incorporate uh the latest features in our chip design , so that our um <other> uh remote control does not become outdated soon and it's compatible with mot most uh televisions . <other> That's about it . <other> So anything that you would like to know or <other>  
+D:  <other> Thanks . 
+C:  Okay . Do you have any um i idea about costs at this point ? <other> Br 
+A:  <other> No , I don't have any idea about what each component costs . Um yeah . 
+C:  Okay . 
+A:  <other> Anything else ? 
+C:  'Cause that's something to consider , I guess , if we're if we're using more advanced technology , it might 
+A:  Yeah . Certainly , yeah . So so tha yeah , <other> we definitely need to operate within our constraints , but um <other> unfortunately I I do not have any data , so uh I just identified the functional components for that . 
+C:  increase the price . Yeah . That's fine . Are there any more questions , or shall we just skip straight to the next one and then we can discuss all of them together at the end ? 
+D:  <other> I think we need like some general discussion at the end probably . 
+C:  Yeah , I think that will do . Okay , so do you want to  
+A:  Yeah , okay . 
+D:  Yeah . Yeah , I think since since we were discussing some um design issues then I I I would like to continue  okay , yeah . 
+C:  Yes , shall shall we pull this up ? I think that has to come out of there . 
+A:  Yeah . 
+C:  Yeah . 
+A:  Mm 'kay . 
+D:  <other> Thanks . Oh i 
+C:  Yeah , I thought those last minute things , they're gonna hit you the worst . <laugh> 
+D:  <laugh> Okay , I hope  wait . Should it just  
+A:  I it'll take some time . 
+C:  It ta takes a little  
+D:  There's just nothing . 
+C:  Oh , and have you  you need to then also press on yours , function F_ eight , so the blue function key at the bottom and F_ eight . 
+D:  Oh right , right , right , um  Okay . Nothin okay , something is coming up . 
+A:  Oh , there it is , yeah . <other> It'll come up , it  um uh no signal . 
+C:  <other> Now it's coming , computer no signal . 
+D:  No signal ? Why ? 
+C:  Maybe again ? 
+A:  Yeah yeah , it says something now , adjusting  
+D:  Oh . My my computer went blank now . 
+C:  Okay , adjusting . 
+D:  Adjusting . But <laugh> I don't see anything I don't see anything on my computer now . This is the problem , but  
+C:  There we go , there we go . 
+A:  Okay . Oh , that's strange . 
+C:  Oh , if you press if you press function and that again there's there's usually three modes , one where it's only here , one where it's only there , and one where it's both . 
+A:  Okay . 
+D:  Um  . 
+A:  And one more time . 
+C:  Okay , so one more time . 
+D:  Uh now it's  okay . No ? No . 
+C:  Should  yeah just wait for a moment , adjusting . 
+A:  Mm . 
+D:  Oh okay . 
+C:  <other> Okay . 
+D:  Okay , that's fine , that's good . 
+
+
+D:  Okay , let's start from the beginning . So I'm going to speak about technical functions design uh just like some <other> some first issues that came up . Um 'kay , so the method I was um adopting at this point , it's not um for the for the whole um period of the um <other> all the project but it's just at th at this very moment . Um uh my method was um to look at um other <other> um remote controls , uh so mostly just by searching on the web and to see what um functionality they used . And then um after having got this inspiration and having compared what I found on the web um just to think about what the de what the user really needs and what um what the user might desire as additional uh functionalities . 
+C:  Mm-hmm . 
+D:  <other> And yeah , and then just to um <other> put the main function of the remote control in in words . Um so the findings uh were <other> um that the main function of the remote control is is just sending messages to the television set , so this quite straightforward . And uh w some of the main functions would be switching on , switching off , uh then the user would like to switch the channel um for example just m changing to the next channel to to flip through all all of the possible channels , or then mm <other> uh the other possibility would be that um she might just want to choose one particular channel , so we would need the numbers . And and also the volume is very important . Um <other> um <other> I als okay . 
+C:  Mm-hmm . 
+A:  <other> Sorry , cou could you go back for a second ? Uh switching on off channel , uh volume , <other> okay , that's great . 
+D:  'Kay . Um um among the findings I found that m m most of the curr mm presently available remote controls also include other mm <other> functionalities um in their design , like operating a V_C_R_ , but they don't seem to be able to deal with D_V_D_ players , but then <other> there are  surely there are many other functionali functions that could possibly be added to them , but according to the last minute update um actually um we do not want to have all this complicated functions added to our design . So my personal preferences would be uh to keep the mm the whole remote control small um just like the physical size . And then it must be easy to use , so it must follow some conventions um like whereabouts you find the on off button and maybe the colour tends to be red or something . 
+C:  Mm-hmm . 
+A:  <other> 
+D:  Um then  <other> yeah , the must-have buttons would be on off and then <other> the channel numbers and then um <other> the one that allows us to go to the next or the previous channel , and then volume has to be there . But then um other functionalities um <other> could be just  uh there could be a menu button and you could change things on the screen then , um for example brightness and mm similar functions could be just um <other> done through the menu . And yeah , the last question I had about whether we wanted to incorporate n uh more functionalities , the answer was already no because of the last minute update . So at the  for the time being that's uh that's all . If you have questions  
+C:  Mm-hmm . Yeah . If  I mean that was the the directive that came through from management , but if we had a a decent case for  that we really think it's important to include video and D_V_D_ , I could get back to them and see . It's w it's just whether it's worth arguing about . 
+D:  Yeah , and also it's it's um  other question is uh because there are so many different  
+B:  <other> 
+D:  And there are so many different things that could possibly be included because besides video and D_V_D_ there are the mm um video C_D_s and whatever , so it might be problematic to to choose between all these possible things . 
+C:  Mm-hmm . Yeah . Mm-hmm . Okay . Are there any questions for clarification of Maarika before we go on to the next one ? 
+A:   <other> So in the u user interface requirements uh uh uh we we have been able to identify what are the basic buttons that we do want . Um but um <other> so so at this stage , uh how we go about implementing those button we will not identify or  I mean in  we can completely do away with buttons and uh have some kind of a fancy user interface or something like that . But uh is is there any uh uh any thoughts on that ? 
+D:  Um well , I think the buttons are still mm kind of the most um easy for the user to use , I mean um what other options would you have ? A little screen or something , but this would be really kind of I think a lot of learning for the user and and I mean the user just wants to get um get a result um quickly , not to spend time in like um giving several orders um I dunno . I think I th I would I would think the put the buttons , but if if you have other mm proposals um . 
+A:  Right . Yeah , and it'll make the costs  yeah . Right . 
+C:  Mm-hmm . 
+A:  Uh I think the co costs will also play a big role when we come to know about them . So well we can probably wait until t we have more knowledge on that . Uh i if the if the costs allow , we can have like an L_C_D_ display and uh with um  because we do want something fancy and fashionable as well . So yeah ? Cool . 
+C:  Mm . 
+D:  Yeah . 
+C:  Mm . 
+D:  Yeah . Mm-hmm . 
+C:  Mm-hmm . 
+D:  Yep . 
+
+
+C:  Sure , we can discuss that maybe after the next one . Do you want to  yeah . 
+B:  Cool . Do you wanna give me the little cable thing ? 
+D:  Uh am I going in the right direction ? <laugh> No . <laugh> <other> Wait . 
+B:  <laugh> Yeah . 
+D:  Okay , here it comes . 
+C:  Oh , I'm getting hungry . <laugh> 
+D:  Okay , here you are . 
+B:  Cool . Ah , that's why it won't meet . <laugh> Okay , cool . 
+C:  You set ? 
+B:  Yep , cool . Okay , functional requirements . 
+C:  Uh we need to do the function key thing so that it comes up on here . 
+B:  Alright , yeah . 
+C:  Hello . 
+A:   try to press  oh , okay , yep . 
+C:  Is it plugged in prop it's working ? Okay . 
+B:  It's working . 
+C:  Excellent . 
+B:  Cool , okay . So what I have , wh where I've got my information from is a survey where the usability lab um observed remote control use with um a hundred subjects and then they gave them a questionnaire . Um so it was all about , you know , how people feel about the look and feel of the remote control , you know . What's the most annoying things about remote controls and um the possibility of speech recognition and L_C_D_ screens in remote control . Not that they actually gave me any answers on the L_C_D_ screens , so I should have taken that bit out , but anyway . 
+A:  <other> 
+B:  Um okay , so . What they found is that people don't like how current remote controls are , so you know , definitely you should be looking at something quite different . Um seventy five percent of users find most remote controls ugly . <other> Uh the other twenty five percent have no fashion sense . Uh eighty percent of users would spend more to get um you know , a nice looking remote control . Um current remote controls , they don't match the user behaviour well , as you'll see on the next slide . Um I dunno what zapping is , but  
+C:  <laugh> It's um switching between channels , sort of randomly going through . 
+B:  Oh , right . But you have that little thing that comes up at the bottom and tells you what's on . Um okay , fifty percent of users say they only use ten percent of the buttons , so that's going back to what , you know , we were saying earlier about , you know , do you need all the buttons on the remote control , they just make it look ugly . Okay ? Cool . Um so this is my little graph thing . 
+C:  <laugh> 
+A:  Mm . Right . 
+C:  Mm . Ooh , that's a bit difficult to see . 
+B:  Mm k 
+C:  If you explain it to us it'll be fine . 
+B:  Okay , well , I can send it to all of you . What it is is um it's cones , 'cause I thought they'd be more exciting . Um but  ooh where's it go ? 
+C:  Yeah . I liked the , I liked the litt ooh come back . 
+B:  Back . Oh . 
+C:  No . 
+B:  Oh yes , cool . Okay , I'm gonna stop playing with the little pointy thing . Um okay , so like what it shows is how much things are used relatively and what you can clearly see from that is the thing that's used most is the channel selection . What you can't see is volume selection , it's a little bit higher than all the others . 
+C:  <laugh> 
+A:  Mm-hmm . 
+C:  Okay . Mm-hmm , that's the next one along , yeah ? <other> 
+B:  Yeah , so what the graph shows is that , you know , power , channel selection and volume selection are important , and the rest of them , you know , nobody really uses and so that's the the numbers along the top represent their like um their importance , you know , so on a scale of one to ten , how important is that and , you know , channel selection and volume selection are absolutely essential , and the power , well it's not quite so essential , apparently , although I don't understand how it couldn't be , <laugh> um and everything else , I think , you know , you can forget about having those buttons on the remote control , 'cause they're just not needed , and they're not used . 
+C:  Mm-hmm . Mm-hmm . 
+A:  <laugh> 
+C:  Mm-hmm . 
+B:  Okay . This is the bit that the email messed up for me and that's what I was fiddling about with at the beginning of the thing . <laugh> Okay , cool . So um okay , so this is what people find annoying about remote controls . Uh that they get lost , that the uh you know , they're not intuitive and that they're bad for repetitive strain injury . I think if you're watching enough T_V_ to get repetitive strain injury from um you know , watching T_V_ , then <laugh> that's the least of your problems , but you know , <laugh> it's up there . Um that  yeah . Okay , so um I mean the the R_S_I_ thing would be that , like when you have the computer keyboards and you keep your wrists up would be something that encourages  you want something with an ergonomic t design that encourages good use of the remote control and you know , not straining your wrists watching T_V_ <laugh> . 
+C:  Mm-hmm . <laugh> <laugh> The remote control . <laugh> 
+A:  Mm . Right . 
+C:  Mm-hmm . 
+A:  Mm-hmm . 
+C:  <laugh> 
+D:  <laugh> 
+B:  <laugh> Yes . Okay , cool . Right , um sorry this is pink because I was copying and pasting the table , and I didn't have time to white it out again . Um okay , but that shows how people  whether they would pay more for voice recognition software . So you can see from that that , you know , younger people to the age of thirty five are quite likely to pay quite a lot more f well quite  are quite likely to pay more for voice recognition software , whereas as people get older , they're a bit more sceptical about it and they're less willing to to try it . Um so clearly voice recognition is something to think about , but um you know I d I do wonder how well that would work given that a T_V_ , you know , tends to be people talking and um , you know , how are you going to stop it from just flipping channels whilst watching T_V_ . Um okay ? 
+A:  Hmm . 
+C:  That's alright . Mm . 
+A:  Right . 
+B:  Cool . Um okay , so these are my personal preferences . <other> So you have sleek , stylish , sophisticated , you know , so something that's , you know , a bit cool . Um you know , functional , so it's useful , but minimalist . Um there's a there's an important thing that , you know , people use when , you know , when you're filling up your home , you know , a lot of people fill up their home with bits of crap , basically , you know , and you've got all this stuff , and you're just like , what the hell is that , who is ever gonna use it ? You know , so things should either be functional or beautiful or preferably both , so I think we need to aim for both . Um okay , then a long battery life , like you were talking about earlier and um , you know , I was thinking that solar power would be quite cool because , you know , your remote control just sits there , and you could just sit it in the sunshine and save the environment a bit . Um and then like a locator , so you know , kind of like you have for a mobile phone or  not a mobile phone  
+A:  Mm . Mm . <laugh> Mm . Some kind of a ring , some  
+C:  Keys and things like that , yeah . Whistle and it <other> screams at you , yeah . 
+B:  Yeah , that's it , you know . I know , it's weird . My flatmate and I were talking about this on the way into uni this morning and I was like I need to get one for everything . <laugh> So yeah , so maybe something where you clap and then it beeps , something <other>  a kind of sound that you don't often hear on the T_V_ , you know , 'cause you don't want your remote control beeping every five minutes , 'cause you you'd then deliberately lose it by throwing it out the window or something . So okay ? Cool . That's me . <laugh> 
+C:  <laugh> 
+A:  <laugh> 
+C:  Mm-hmm . 
+A:  Right . 
+C:  <laugh> 
+A:  Hmm . 
+C:  That's you , excellent . 
+A:  Okay , that's great , thanks . 
+D:  <other> Um that's very good , very interesting . 
+C:  Um . I'm just gonna tick yes . 
+
+
+C:  So , we've got about ten , fifteen minutes to discuss 
+A:  Mm . <other> 
+
+
+C:  What we have to do now is to go back to our little places , complete our questionnaire and some sort of summarisation , which y you'll get immediately by email . Send me your presentations so that I can use them to make the minutes , and then we've got a lunch break and after lunch we go back to our own little stations and have thirty minutes more work . Um I'll put the minutes in that project documents folder , but I'll send you an email when I do it , so that you know . It should be on your desktop , so on the  yeah . So I'll put it  I'll put them there as soon as I've written them . 
+A:   
+D:  Mm-hmm . 
+A:  So where exactly is this i Ah , okay . Yeah . 
+D:  Yeah . <other> Did you find it ? It's just  yeah , yeah . 
+A:  Yeah , yeah in that one , right yeah . 
+C:  Yeah , and email them round . 
+B:  Oh , so y you want our um PowerPoint presentations in there , hey ? 
+C:  Yeah , that would be great . 
+B:  Okay . 
+D:  Oh so so we'll just put them i there , we we  yeah , w we won't even  okay . 
+C:  Oh yeah , put them in there . Yeah , then you don't have to email them . 
+B:  There you go . But is everyone's called functional requirements ? 
+C:  No , they're all called something slightly different . Technical requirements and something something , yeah . So , if you put them in there , we'll all be able to see them and refer to them if we need to . 
+A:  No . 
+B:  Okay , so that's good . That's me done . 
+D:  Yeah . 
+B:  Okay , cool . 
+C:  Um <other> as to where we're going from here , you're going to look at the components concept . Yeah ? Whatever that means . 
+A:  Right . 
+D:  Yeah . 
+C:  Yeah . 
+A:  <other> I guess I'll find out . <laugh> 
+D:  <laugh> 
+C:  You'll be looking <laugh> you'll be looking at the user interface concept , on something conceptual and you're watching trends to see how we go and surely voice recognition'll fall off the map or something that  um we'll keep keep our options op hmm ? 
+B:  <laugh> 
+D:  Uh something conceptual , yeah . 
+B:  <laugh> 
+A:  Wha what was it again that I was supposed to look into ? Con components , oh . 
+C:  Components , yeah . 
+D:  Hmm . <other> Sorry , but um the next meeting um are we going to have it um right after lunch or <other> shall we prepare our  
+C:  No , we have we have  after lunch we have thirty minutes to ourselves to prepare , so that's fine , w before lunch we just have to complete the questionnaire and some sort of summary . 
+D:  To prepare , okay , yeah , that's good . Okay . 
+C:  Okay ? Right on time . Okay , <other> so you can  I guess we'll see you for lunch in a sec ? <other> 
+D:  <other> Cool . <laugh> 
+B:  <other> 
+D:  Okay , see you . 
+
+
