@@ -29,6 +29,7 @@ A:  Um <other> the second is the technical functional design ,
 A:  um what effect should the remote have ? 
 A:  Um and the last one is the working design . 
 A:  How exactly does it work in the technical sense . 
+descriptions: Inform Elicit-Inform Inform Offer Inform Inform Inform Inform Inform Inform Inform Inform Suggest Offer Suggest Inform Elicit-Assessment Suggest Assess Inform Inform Inform Suggest Inform Inform Inform Inform Inform Inform Inform Inform 
 abst_sum - abstract: The project manager opened the meeting and introduced the project, describing what the project would involve, the role of each participant and the agenda for the first meeting.
 
 A:  <other> Okay , um before we think about remote control we will um work with some of the tools we have uh here . 
@@ -53,12 +54,14 @@ A:  Um Roo , could you do the same please ?
 A:  But a different animal with a different colour and a different line width . 
 A:  It it should be a cat . 
 A:  Okay , so um you can use this at any time during the presentation if you want to . 
+descriptions: Suggest Inform Inform Inform Inform Inform Assess Inform Inform Inform Suggest Suggest Elicit-Inform Inform Inform Inform Suggest Inform Suggest Suggest Assess Inform 
 abst_sum - abstract: He the demonstrated the equipment the group would be using, and the group practiced using the SMARTboard by drawing their favourite animals.
 
 A:  the remote control we are going to develop um will have a selling price of about twenty five Euros . 
 A:  Uh the profit we are looking for for this product is fifty million Euros , 
 A:  we uh we will focus this internationally , 
 A:  And um the production costs should not be more than uh twelve Euro fifty , 
+descriptions: Inform Inform Inform Inform 
 abst_sum - abstract: The project manager then went over the project budget.
 
 A:  maybe the time for Sebastian to show his presentation . 
@@ -82,6 +85,7 @@ B:  But all the T_V_s are uh equipped with infrared , so
 B:  you should equip infrared and Bluetooth together in one remote . 
 C:  but that's uh something we should discuss 
 C:  but take these things into account when you start the discussion . 
+descriptions: Suggest Offer Inform Inform Offer Inform Offer Offer Inform Inform Inform Inform Suggest Inform Inform Suggest Assess Inform Suggest Suggest Suggest 
 abst_sum - abstract: The industrial designer gave a brief presentation about his role and his initial ideas for the project, suggesting that the remote should be used for multiple devices and that the group should consider using bluetooth rather than infrared.
 
 A:  Um I I do think it's time now to to discuss uh mm some things . 
@@ -97,11 +101,13 @@ A:  Or what we should take um in account when developing such a product ?
 D:  Uh I think most most things have already been said , 
 D:  And uh , yeah , infrared might be an issue . 
 D:  like uh control multiple devices . 
+descriptions: Suggest Inform Inform Inform Inform Inform Elicit-Offer-Or-Suggestion Suggest Elicit-Inform Elicit-Offer-Or-Suggestion Inform Inform Inform 
 abst_sum - abstract: The project manager then asked the others about their initial ideas.
 
 B:  Um well , the interoperability , just like uh Sebastian said , 
 B:  um the remote should work on different T_V_s or even different 
 B:  devices ? 
+descriptions: Inform Inform Inform 
 abst_sum - abstract: The user interface designer agreed that the remote should control multiple devices.
 
 C:  And you you see uh the buttons as a as a means of doing this ? 
@@ -139,6 +145,7 @@ B:  So it it don't have to be a lightning or or a fancy
 B:   well , it can be for design , of course . 
 B:  The digits of uh the the painting on the buttons should not fade . 
 B:  Always have s the soft buttons , always uh clear the the the paint on it . 
+descriptions: Elicit-Inform Elicit-Inform Inform Inform Inform Inform Inform Inform Inform Suggest Suggest Suggest Elicit-Inform Inform Assess Assess Stall Inform Suggest Inform Suggest Offer Inform Inform Suggest Inform Suggest Suggest Suggest Suggest Inform Inform Inform Suggest Inform 
 abst_sum - abstract: They also discussed having glow in the dark buttons, using bluetooth instead of infrared and using a display and/or a joystick instead of conventional buttons.
 
 A:  because because we wa we want to develop a trendy product . 
@@ -147,6 +154,7 @@ C:  So that's a big problem , I think .
 A:  twelve Euro fifty , yeah . 
 C:  I think the the financial part of this project uh implicates that it's not going to be a high high-end product . 
 C:  The cost price is very low . 
+descriptions: Inform Assess Assess Inform Inform Inform 
 abst_sum - abstract: However, they were unsure about what the budget would allow.
 
 A:  Um uh d I think the device should either be rechargeable very easily 
@@ -159,6 +167,7 @@ A:  Well does it ?
 B:  I know it from the cell phone . 
 C:  Well , cell phones have uh integrated Bluetooth also and , well , it's  it seems to work uh quite okay . 
 B:  But you can't you can't use Bluetooth all the time , twenty four hours a day . 
+descriptions: Suggest Suggest Inform Suggest Assess Inform Elicit-Inform Inform Inform Inform 
 abst_sum - abstract: The project manager suggested that the remote should be rechargeable or not use much power, but this might be difficult if using bluetooth.
 
 A:  Okay . Gentlemen , I'm afraid we do not have any more time . 
@@ -167,37 +176,46 @@ A:  Um next meeting starts in thirty minutes
 A:  and um , well , you know your o your individual actions 
 A:  or your personal coach will probably email you about th it . 
 A:  See you in thirty minutes . 
+descriptions: Inform Suggest Inform Inform Inform Inform 
 abst_sum - abstract: The project manager closed the meeting.
 
 A:  <other> so we will go back to our own uh work . 
 A:  and um , well , you know your o your individual actions 
+descriptions: Suggest Inform 
 abst_sum - action: Each member of the group will work on their individual tasks.
 
 A:  or your personal coach will probably email you about th it . 
+descriptions: Inform 
 abst_sum - action: They will receive information from their personal coaches.
 
 A:  Um and first of all it should be original , it should be trendy and user-friendly . 
 A:  it's a remote control , 
 A:  this new product we are are g are going to develop , um 
+descriptions: Inform Inform Inform 
 abst_sum - decisions: The group will design a trendy, original and user-friendly remote control.
 
 A:  the remote control we are going to develop um will have a selling price of about twenty five Euros . 
 A:  Uh the profit we are looking for for this product is fifty million Euros , 
+descriptions: Inform Inform 
 abst_sum - decisions: The remote control will be sold for 25 euros with a profit aim of 50 million euros.
 
 A:  we uh we will focus this internationally , 
+descriptions: Inform 
 abst_sum - decisions: The remote will be sold internationally.
 
 A:  And um the production costs should not be more than uh twelve Euro fifty , 
+descriptions: Inform 
 abst_sum - decisions: The production costs should be no more than 12.50 euros.
 
 B:  um the remote should work on different T_V_s or even different 
 B:  devices ? 
+descriptions: Inform Inform 
 abst_sum - decisions: The remote will control multiple devices.
 
 C:  Yes , I think it should be something like that . 
 B:  I think it's a universal remote control for customers to buy just new in uh a store . 
 C:  we're just developing this product , and we want to sell it to a very broad uh public , 
+descriptions: Assess Inform Inform 
 abst_sum - decisions: The remote will be sold directly to individual consumers rather than companies.
 
 B:  I think it's a universal remote control for customers to buy just new in uh a store . 
@@ -208,12 +226,14 @@ A:  Okay , so we're we're going business to consumer ,
 B:  Yeah , I do I don't know that . 
 C:  We're not developing this product for a specific vendor , are we ? 
 B:  don't have the information for it . 
+descriptions: Inform Assess Inform Elicit-Inform Assess Inform Elicit-Inform Inform 
 abst_sum - problems: The group were unsure about whether they would be selling their product directly to consumers or to electronics manufacturers.
 
 C:  Yes , but there's a cost limitation too . 
 C:  So that's a big problem , I think . 
 C:  I think the the financial part of this project uh implicates that it's not going to be a high high-end product . 
 C:  The cost price is very low . 
+descriptions: Assess Assess Inform Inform 
 abst_sum - problems: It was felt that the low production costs would not allow them to create a trendy high-end product.
 
 A:  maybe we could um for example uh only light the buttons that are um uh applicable at that moment or  
@@ -223,5 +243,6 @@ A:  Well does it ?
 B:  I know it from the cell phone . 
 C:  Well , cell phones have uh integrated Bluetooth also and , well , it's  it seems to work uh quite okay . 
 B:  But you can't you can't use Bluetooth all the time , twenty four hours a day . 
+descriptions: Suggest Assess Inform Elicit-Inform Inform Inform Inform 
 abst_sum - problems: Whether using glow in the dark buttons and bluetooth would mean that the remote consumes too much energy.
 

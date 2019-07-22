@@ -7,6 +7,7 @@ C:  Then I need to say some st a few things about finance ,
 C:  'cause we have to check that it's within the finance criteria . 
 C:  Um and then we'll be making sure that our product fits both the evaluation criteria from Cat and the financial limits . 
 C:  Um and then we uh will have a brief evaluation of the whole process of production and design that we've been through . 
+descriptions: Inform Inform Elicit-Offer-Or-Suggestion Assess Inform Inform Inform Inform Inform 
 abst_sum - abstract: The project manager opens this detailed design meeting by going over the agenda.
 
 D:  so will you maybe start with like the mm the shape and things 
@@ -21,6 +22,7 @@ B:  Is it to scale , or do you think you can make it a bit smaller ?
 D:  Um it could be made a bit smaller , 
 C:  And it's  <other> with the the black and yellow you're even in the right colours . 
 D:  Yeah , I think um we could do l the logo in grey , as it is on the website . 
+descriptions: Elicit-Offer-Or-Suggestion Offer Inform Elicit-Inform Assess Inform Assess Inform Elicit-Inform Inform Assess Suggest 
 abst_sum - abstract: The designers present the prototype, which they decided to make the color and shape of a banana.
 
 A:  <laugh> Um so basically it's the it's the flip open thing again . 
@@ -48,6 +50,7 @@ C:  if it's a scroll and click so you hold it in ?
 C:  But if you hold it in , 
 D:  <other> And okay , so i so the the voice recognition is also just part of it . 
 D:  You can't really see it in the interface . 
+descriptions: Inform Inform Inform Inform Elicit-Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Suggest Inform Inform Suggest Suggest Inform Inform 
 abst_sum - abstract: They demonstrate the remote components, showing how it flips open on the side and features a LCD and scroll inside.
 
 B:  So what we're gonna do is prefer  prepare the evaluation of the new design . 
@@ -101,6 +104,7 @@ C:  What do you reckon , five , six ?
 D:  Six . 
 C:  Put fashion in electronics . 
 D:  Fruit fruit and vegetables are fashionable these days , so . 
+descriptions: Inform Inform Inform Inform Inform Inform Inform Inform Suggest Elicit-Inform Suggest Inform Inform Elicit-Assessment Suggest Suggest Suggest Suggest Assess Suggest Inform Elicit-Inform Inform Inform Inform Inform Inform Inform Assess Inform Inform Inform Suggest Inform Assess Elicit-Assessment Inform Inform Inform Inform Inform Inform Inform Assess Inform Inform Inform Suggest Assess Elicit-Assessment Inform 
 abst_sum - abstract: The marketing expert gives the product evaluation, which is based on the criteria of attractiveness, whether it matches operation behavior of the user, locatability, intuitiveness, ergonomic design, and how technologically innovative it is.
 
 B:  maybe give it a five , I would say ? 
@@ -129,6 +133,7 @@ D:  So I think we've done very well ,
 D:  The average is about six and something . 
 D:  <other> Six point five , yeah . 
 B:  that's pretty good , I think . 
+descriptions: Suggest Suggest Assess Suggest Inform Inform Inform Assess Inform Inform Inform Suggest Elicit-Assessment Inform Inform Inform Inform Inform Inform Suggest Assess Inform Assess Inform Assess Assess 
 abst_sum - abstract: They rate the product using a 7 point scale and come up with an average score of 6.5.
 
 C:  so we've looked at the prototype presentation and the evaluation criteria . 
@@ -161,6 +166,7 @@ A:  if it is pushbutton then you got a zero point five ,
 A:  it's a scroll wheel  so we we've put it's pushbutton and scroll wheel and L_C_D_ display , 
 C:  So , as we can see , that's way too expensive down here . 
 C:  Our budget's twelve point five . 
+descriptions: Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Suggest Suggest Inform Inform Inform Inform Inform Inform Inform Assess Inform Inform Assess Inform Inform Inform Inform 
 abst_sum - abstract: The group goes on to calculate the production cost and finds they are over the budget.
 
 B:  Yeah , the sample sensor will have to go , 
@@ -202,6 +208,7 @@ A:  <other> But we lose the locator .
 D:  so we still have the locate . 
 C:  We're gonna have a beep . 
 D:  It can come in the same colour as the the case . 
+descriptions: Inform Inform Inform Inform Inform Inform Inform Inform Inform Suggest Inform Inform Inform Suggest Inform Elicit-Inform Elicit-Inform Inform Inform Inform Inform Inform Inform Suggest Suggest Inform Inform Suggest Inform Elicit-Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform 
 abst_sum - abstract: They have discussion and decide to eliminate the sample speaker locator and the scroll wheel inside.
 
 C:  so it would be good if we could just have a little talk about the project itself and how it went , 
@@ -220,6 +227,7 @@ C:  New ideas found .
 C:  Not quite sure what about . 
 D:  Well it's it's it's pretty new , 
 B:  I think we'd like to think the ideas were new , 
+descriptions: Suggest Inform Inform Inform Inform Inform Elicit-Assessment Assess Assess Inform Assess Assess Inform Comment-About-Understanding Inform Inform 
 abst_sum - abstract: The team discusses the project process- saying that they had to cut out some creativity in order to meet the budget because they had not known the cost of features beforehand.
 
 D:  I was I was satisfied with with the leadership , yeah . 
@@ -234,6 +242,7 @@ A:  Mm . I guess it was a fairly small group ,
 A:  so all of us got to express our opinions , yeah . 
 D:  And my main difficulty was the the time pressure . 
 B:  sometimes it's like a little bit rushed . 
+descriptions: Assess Inform Inform Inform Inform Assess Assess Elicit-Inform Inform Inform Inform Assess 
 abst_sum - abstract: They were satisfied with the leadership but felt rushed for time.
 
 C:  costs are within budget , 
@@ -249,60 +258,75 @@ C:  Right , so we have to complete the final questionnaire and meeting summary w
 A:  Was there a questionnaire already sent ? 
 B:  Do we have to go back into the other room or can we stay in here now ? 
 C:  I don't see why you can't stay here , really . 
+descriptions: Inform Inform Inform Elicit-Offer-Or-Suggestion Inform Inform Inform Be-Positive Inform Inform Elicit-Inform Elicit-Inform Inform 
 abst_sum - abstract: They finish the meeting 5 minutes early and the project manager tells them what is left to complete.
 
 C:  Right , so we have to complete the final questionnaire and meeting summary when they send it . 
 A:  Was there a questionnaire already sent ? 
+descriptions: Inform Elicit-Inform 
 abst_sum - action: The team needs to complete the final questionaire and meeting summary.
 
 A:  <other> Okay . So um basically going with our trend of vegetables and <laugh>  we selected the colour and approximate shape of banana . 
 A:  And it flips open on the side , so it opens like that . 
+descriptions: Inform Inform 
 abst_sum - decisions: The remote will be black/yellow color and the shape of a banana.
 
 None
+
 abst_sum - decisions: Remote flips open on side.
 
 A:  and uh <other> the the L_C_D_ and and the scroll are inside . 
+descriptions: Inform 
 abst_sum - decisions: LCD and push buttons inside flip-open door.
 
 None
+
 abst_sum - decisions: The LCD will display the main menu, which offers various options.
 
 D:  So we have that n uh channels here starting from um uh one two three  
 D:  And then , well this is on off button . 
 D:  The volume is is scrolling . 
+descriptions: Inform Inform Inform 
 abst_sum - decisions: Has an on/off button, channel flipping, volume scroller on side.
 
 D:  Yeah , I think um we could do l the logo in grey , as it is on the website . 
+descriptions: Suggest 
 abst_sum - decisions: Corporate logo will be in grey.
 
 C:  One simple battery . 
 C:  The chip , we're going for an advanced chip on print . 
+descriptions: Inform Inform 
 abst_sum - decisions: Remote uses one simple battery and an advanced chip.
 
 C:  Um single-curved surface , so that we can fold it . 
+descriptions: Inform 
 abst_sum - decisions: Single-curved surface.
 
 C:  And it's  the whole thing's made of rubber , is that  
+descriptions: Elicit-Inform 
 abst_sum - decisions: Rubber case material.
 
 D:  but we could just have some some very very easy device that just beeps . 
 C:  We're gonna have a beep . 
+descriptions: Suggest Inform 
 abst_sum - decisions: Locator will have a beep instead of a speaker.
 
 B:  left-handed people can't normally write right-handed , 
 A:  Um the the only thing that we were considering was that uh this thing is kind of more for right-handed people than for left-handed people , 
 D:  so y so we we might do we might want to do like a uh another m <other> model another another version , which is like exactly the mirror image of this one . 
 A:  It might be a little clumsy when when it opens up , right , 
+descriptions: Inform Inform Suggest Assess 
 abst_sum - problems: When rating the product on how well it matches the user's behavior, they found that the product is more convenient for right-handed people and less so for those who are left-handed.
 
 C:  'cause the  I mean the the standard layout for numbers is three three three and one , rather than the way you've got it . 
 D:  If <other> uh uh if this means intuitive , if it means the way people kind of are used to finding things 
 A:  but uh it's a good technology , I mean once they get used to it . 
 C:  but it's not the immediate thing that you're used to . 
+descriptions: Inform Inform Inform Inform 
 abst_sum - problems: When rating whether the product is intuitive, the layout is different,a good technology but less standard.
 
 C:  but it's not the immediate thing that you're used to . 
+descriptions: Inform 
 abst_sum - problems: It could be more difficult to get used to.
 
 C:  So , as we can see , that's way too expensive down here . 
@@ -314,9 +338,11 @@ C:  We're point three over at the moment .
 B:  Unless we just take off the scroll wheel altogether 
 A:  Instead of scrolling here we have two buttons here , up  for up and down . 
 D:  The only the only problem being that at the end we had to cut some things down because of the the budget we had . 
+descriptions: Inform Inform Inform Suggest Inform Inform Suggest Inform Inform 
 abst_sum - problems: The team had to cut out some features in order to make the budget.
 
 A:  I think uh n one thing that was lacking uh was that we did not know what the various things cost to begin with . 
 B:  If we'd had that sheet at the beginning  should've been like , okay , so we can have that lot , let's just throw it together and do what we can . 
+descriptions: Inform Inform 
 abst_sum - problems: This happened because they had not known beforehand the cost of such features.
 

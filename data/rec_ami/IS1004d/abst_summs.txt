@@ -3,6 +3,7 @@ A:  then we have a p presentation of prototype of you two ,
 A:  No L_C_D_ , no speech recognition technology , okay , 
 A:  we went through a b to a banana look and feel for the remote control . 
 A:  <other> And also the use of a basis station for battery ch charging and uh also to um call the to call the mot mote remote control when it is lost . 
+descriptions: Offer Inform Inform Inform Inform 
 abst_sum - abstract: The project manager goes through the minutes of the last meeting.
 
 C:  So final design . Final design . 
@@ -30,6 +31,7 @@ C:  If you are just leaving like that it'll be much longer .
 C:  Pricing is  was a factor so that's why we have gone for a regular chip only not the advanced chip . 
 D:  And what about people who want to use digits ? 
 C:  Yeah . So there was there was a constraint that the surface area which we have on this banana on one side because of the shape . 
+descriptions: Inform Inform Inform Inform Inform Inform Elicit-Inform Inform Inform Inform Inform Inform Inform Elicit-Inform Inform Inform Inform Inform Assess Inform Inform Inform Inform Elicit-Inform Inform 
 abst_sum - abstract: They have the prototype presentation and talk about the final design, features, and power source, type of chip and weight of the remote.
 
 A:  So we have to go through now evaluations . 
@@ -38,6 +40,7 @@ D:  so we must users must say i if it's true or is  or if it's false in a in a s
 C:  Why this strange factor of seven ? 
 D:  Because it should be an even it should be an even uh scale , 
 D:  I think I sh I <cough> I could write the criteria in the on the whiteboard ? 
+descriptions: Inform Inform Inform Elicit-Inform Inform Suggest 
 abst_sum - abstract: They go through the evaulations, using the a list of criteria made by the marketing expert.
 
 D:  Okay let's let's evaluate if it's fancy or  
@@ -77,6 +80,7 @@ B:  If it was  change my remote control of my D_V_D_ player for a Mando banana t
 B:  I'd say a three . 
 C:  <laugh> So it's somewhere three point five I think . 
 A:  So maybe maybe w we can we should stick to general feeling . We can had uh have a  out of these numbers , which which is that well we should go for it . 
+descriptions: Elicit-Assessment Assess Assess Assess Assess Assess Elicit-Assessment Assess Elicit-Inform Inform Inform Assess Elicit-Assessment Assess Assess Assess Inform Assess Assess Assess Assess Elicit-Inform Assess Inform Inform Inform Assess Assess Assess Assess Assess Elicit-Assessment Assess Assess Assess Inform Suggest 
 abst_sum - abstract: They rate each criteria on a scale of 0 (true) to 7 (false): how fancy it is, how handy it is, how functional, how cool it is, whether they would spend twenty five euro for it, and whether they would change their current remote for this one.
 
 A:  Um well we are going to calculate the production costs . 
@@ -90,10 +94,12 @@ C:  And we have sample speaker .
 B:  <laugh> Yeah well pl the base station is made out of m many units of <laugh> plastic . 
 C:  So might be ninety centimes for the the remaining things which  the cord and everything which'll go  
 A:  so we have margin for that stuff . 
+descriptions: Inform Inform Inform Inform Suggest Inform Inform Inform Inform Inform Inform 
 abst_sum - abstract: Next they do a cost estimate for production.
 
 B:  Well we decided against the solar cells so  
 C:  I think rechargeable batteries will take care of the power thing . 
+descriptions: Inform Assess 
 abst_sum - abstract: In doing this, they decide against solar cells and go with the rechargable batteries.
 
 C:  So we have the regular chip on the print , which is one . 
@@ -105,11 +111,13 @@ A:  We have three .
 A:  We have two scroll , and we have three push buttons . 
 B:  Okay it's gonna have to be plastic . 
 B:  Make it plastic instead of rubber . 
+descriptions: Inform Inform Inform Elicit-Inform Inform Inform Inform Assess Suggest 
 abst_sum - abstract: They keep the regular chip, stick with plastic, put two scroll wheels and three push buttons, and make it a special shade of yellow.
 
 A:  <other> I put single curved . 
 C:  To reduce the cost , it's okay . 
 B:  So I mean if we're if we're over budget then maybe we could we could rethink that . 
+descriptions: Inform Assess Suggest 
 abst_sum - abstract: They eliminate the turbo button and give the remote a single curve because of budget restrictions.
 
 A:  So we can go to  through to project evaluation . 
@@ -126,36 +134,46 @@ B:  So but I think that's something we need to to work on next time is really fi
 B:  I think that's actually something that should be in version two , is the ability to you know to control things other than the T_V_ 
 A:  I think we we can go 
 A:   Okay so thanks very much . 
+descriptions: Suggest Assess Elicit-Assessment Inform Inform Assess Assess Suggest Assess Assess Suggest Suggest Suggest Be-Positive 
 abst_sum - abstract: They briefly evaulate the project process and close the meeting.
 
 None
+
 abst_sum - action: *NA*
 
 B:  well first first of all we made a an attractive <laugh> base station uh with a banana leaf uh look and feel um and uh 
+descriptions: Inform 
 abst_sum - decisions: It will be shaped like a banana, with an base station resembling a banana leaf for it to sit on.
 
 B:  which you know one on the the left for the uh volume and the one on the right for for the channel 
+descriptions: Inform 
 abst_sum - decisions: The volume scroll wheel will be on the left, channel scroll on the right.
 
 B:  This is a teletext button . 
 C:  once you press the teletext button then the scroll buttons they are more for teletext , they are no more for channel or vol volume . 
+descriptions: Inform Inform 
 abst_sum - decisions: Will contain a teletext button, when pressed teletext appears and channel selector can be used to navigate through the teletext.
 
 B:  <other> And this is the uh the infrared uh port . 
 B:  in the uh in the base station we have the the button at the front for uh for calling the uh the banana . 
+descriptions: Inform Inform 
 abst_sum - decisions: Infared port on top of banana as well as bottom front of base station.
 
 None
+
 abst_sum - decisions: The control will be the approx.
 
 B:  It's it's uh it's about the weight of a banana . 
 C:  And we have put these different colours so that people don't mistake them mistake it as a banana . 
+descriptions: Inform Inform 
 abst_sum - decisions: Weight of an actual banana but a special shade of yellow.
 
 None
+
 abst_sum - decisions: Will be made of plastic.
 
 A:  We have three . 
+descriptions: Inform 
 abst_sum - decisions: Three push buttons.
 
 C:  No eight or eight or ten hours of working . 
@@ -163,17 +181,21 @@ C:  If you are just leaving like that it'll be much longer .
 B:  I don't really know if the solar cells are actually necessary any more if you have a recharging base station . 
 B:  Well we decided against the solar cells so  
 C:  I think rechargeable batteries will take care of the power thing . 
+descriptions: Inform Inform Assess Inform Assess 
 abst_sum - decisions: For pricing reasons eliminate solar cells - use rechargable batteries as power source, base station used for battery-charging which should last 8-10 hours depending on frequency of use.
 
 C:  Pricing is  was a factor so that's why we have gone for a regular chip only not the advanced chip . 
 C:  So we have the regular chip on the print , which is one . 
+descriptions: Inform Inform 
 abst_sum - decisions: For pricing reasons they will use a regular chip for the control rather than advanced one.
 
 A:  <other> I put single curved . 
 C:  To reduce the cost , it's okay . 
+descriptions: Inform Assess 
 abst_sum - decisions: For pricing reasons the remote will have a single, not double curve.
 
 None
+
 abst_sum - decisions: For pricing reasons they eliminate the turbo button.
 
 C:  Pricing is  was a factor so that's why we have gone for a regular chip only not the advanced chip . 
@@ -186,5 +208,6 @@ B:  Okay it's gonna have to be plastic .
 B:  So I mean if we're if we're over budget then maybe we could we could rethink that . 
 B:  but you know the turbo button does add that extra class . 
 B:  Make it plastic instead of rubber . 
+descriptions: Inform Inform Assess Inform Inform Assess Assess Suggest Assess Suggest 
 abst_sum - problems: For pricing reasons they had to use a regular chip instead of advanced, single curve instead of double, rechargable batteries instead of solar cells, and eliminate the turbo button.
 

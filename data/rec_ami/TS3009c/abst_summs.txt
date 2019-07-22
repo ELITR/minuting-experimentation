@@ -1,15 +1,18 @@
 D:  It's very important that uh the control is fancy looking and good uh feeling . 
 D:  <other> Um , technological technological innovations , that's uh regarded very highly too . 
 D:  <other> Uh the last point is easy to use . 
+descriptions: Inform Inform Inform 
 abst_sum - abstract: For the conceptual design, the marketing expert talked about the public's preference for looks and texture over technological innovation; however, they both seem to be more important than ease of use.
 
 D:  So it must be very bright , very colourful . 
 D:  Fruit and vegetables are cool . 
 A:  Well the the handy thing about our fronts is that we can follow these trends e ev every year . 
+descriptions: Inform Inform Inform 
 abst_sum - abstract: The current fashion among younger people favours bright colours and fruit and vegetable themes: pertinent exchangeable fronts can express such trends on the remote.
 
 D:  Uh furthermore uh material , that's your part , should be very strong . 
 D:  I was thinking of something like uh <other> well uh iron plate over it , 
+descriptions: Inform Suggest 
 abst_sum - abstract: Materials also need to be strong: the marketing expert suggested an iron-plate or titanium front.
 
 C:  Uh the buttons of course rubber , 
@@ -19,29 +22,35 @@ C:  And uh kinetic and and and dynamos are are not very practical , I think , fo
 C:  Um f as uh for the buttons , simple push buttons . 
 C:  No uh otherwi uh no um difficult scroll things or some uh things like that , 
 C:  so we uh we do have to consider uh of we have to use a more advanced chip , 
+descriptions: Inform Suggest Inform Assess Inform Suggest Inform 
 abst_sum - abstract: The industrial designer suggested they use rubber push buttons (and no scroll wheel), simple battery (instead of solar cells or kinetic dynamo), and advanced chip.
 
 B:  Um it's not really speech recognition , 
 B:  and then once you uh talk to the remote , then um he will a answer with the the prerecorded message that you left . 
 B:  No it doesn't does not do anything . 
+descriptions: Inform Inform Inform 
 abst_sum - abstract: Speech recognition can be implemented, but it does not link speech commands to remote control actions.
 
 C:  Uh they like soft materials uh with primary colours . 
 C:  And also they like curved round shapes . 
+descriptions: Inform Inform 
 abst_sum - abstract: He also advised that the users within the target group prefer primary colours, soft textures and curved shapes.
 
 C:  Can you draw it now ? 
+descriptions: Suggest 
 abst_sum - abstract: The team drew a provisional prototype.
 
 C:  And then below is the L_C_D_ screen ? 
 C:  Those are the the cha the channel buttons of course ? 
 D:  Yeah , fine . <laugh> 
 B:  And oh I think as you can see so , the L_C_D_ screen does look better uh at the lower end , or at the bottom . 
+descriptions: Elicit-Inform Elicit-Inform Assess Assess 
 abst_sum - abstract: They placed the LCD below the buttons.
 
 D:  But we need a we need a a recording recording button for the speech uh part . 
 B:  if we decide to uh to implement that , maybe we should . 
 B:  Well the speaker and the microphone , I think , are the same uh little hole thingy . 
+descriptions: Inform Suggest Inform 
 abst_sum - abstract: If it is implemented, a recording button, microphone and speaker need to be included in the design.
 
 C:  Well a case ? Uh that's me . 
@@ -49,28 +58,35 @@ C:  <other> Yeah but the non-removable elements of the of the remote , so not th
 C:  And then the front is made of plastic . 
 A:  Titanium back , plastic front . 
 A:  Okay . 
+descriptions: Inform Suggest Suggest Inform Assess 
 abst_sum - abstract: Finally, they decided to have a titanium case with plastic front and the company logo and slogan engraved.
 
 D:  I think we can launch a couple of packages . 
 A:  Launch different lines at once . 
+descriptions: Suggest Inform 
 abst_sum - abstract: Packages with a variety of changeable fronts will be launched.
 
 A:  Industry designer ,  . User Interface , Mike . You're going to work together on a prototype drawing on the SMARTboard . 
+descriptions: Inform 
 abst_sum - action: The industrial designer and the user interface designer will work on a drawing of a prototype, where they will also sort out the details about the buttons.
 
 A:  Uh I don't know what product evaluation exactly means , 
+descriptions: Inform 
 abst_sum - action: The marketing expert will carry out an evaluation of the product.
 
 C:  Uh the buttons of course rubber , 
 C:  I think everyone agrees . 
+descriptions: Inform Inform 
 abst_sum - decisions: The push buttons are going to be made of rubber.
 
 C:  so we uh we do have to consider uh of we have to use a more advanced chip , 
 C:  But we do use an L_C_D_ screen , 
+descriptions: Inform Inform 
 abst_sum - decisions: The chip needs to be an advanced one to be compatible with the LCD screen that is going to be incorporated in the design.
 
 A:  Well the the handy thing about our fronts is that we can follow these trends e ev every year . 
 D:  Yeah , that's great . 
+descriptions: Inform Assess 
 abst_sum - decisions: Making changeable fascias can allow for the integration of this or future fashion trends in the device.
 
 B:  Well , as I said uh earlier I think the uh L_C_D_ screen should be uh positioned at the lower end of the remote . 
@@ -78,13 +94,16 @@ C:  Those are the the cha the channel buttons of course ?
 C:  And then below is the L_C_D_ screen ? 
 B:  And oh I think as you can see so , the L_C_D_ screen does look better uh at the lower end , or at the bottom . 
 D:  Yeah , fine . <laugh> 
+descriptions: Suggest Elicit-Inform Elicit-Inform Assess Assess 
 abst_sum - decisions: The team agreed to place the LCD at the bottom of the device, below the buttons.
 
 B:  Um the buttons for screen width and general settings and  uh and that kind of stuff <laugh> 
+descriptions: Suggest 
 abst_sum - decisions: TV settings will be included in menus there instead of having separate buttons for them.
 
 A:  Maybe a a cheap voice recording . 
 C:  We all agree on that . Yeah . 
+descriptions: Suggest Inform 
 abst_sum - decisions: They will implement speech recognition as well, because their target group like such gimmicks.
 
 C:  Well a case ? Uh that's me . 
@@ -94,17 +113,21 @@ A:  Titanium back , plastic front .
 A:  Okay . 
 B:  Will we use uh round buttons or square ones for the for the numbers ? 
 D:  Yeah . Round . 
+descriptions: Inform Suggest Suggest Inform Assess Elicit-Inform Inform 
 abst_sum - decisions: The case will be titanium with a plastic front with rounded buttons.
 
 D:  So uh a little corner of titanium . 
+descriptions: Inform 
 abst_sum - decisions: Parts of the front (like the bottom where the LCD is and the top corner where the logo is) will also be titanium.
 
 A:  all the all the inside work of our remote is uh standard work . 
+descriptions: Inform 
 abst_sum - decisions: The chip is going to be a standard one.
 
 D:  I think we can launch a couple of packages . 
 A:  Launch different lines at once . 
 C:  Yeah but you you can have some basic colours , 
+descriptions: Suggest Inform Suggest 
 abst_sum - decisions: They will launch the product with various fronts to choose from including a couple of basic colours or fruit and vegetable themes to go with the current fashion.
 
 C:  But you can put it on the back , 
@@ -112,24 +135,29 @@ B:  Ah the logo should be on the top I think .
 B:  Right corner , yes . 
 A:  Yes , slogan from company on the back with logo 
 A:  and logo also on the front 
+descriptions: Suggest Suggest Assess Other Other 
 abst_sum - decisions: The logo will be both at the front and the back of the remote; the company slogan will be engraved at the back.
 
 C:  Soft materials is of course uh agai again a bit a contradiction with uh our uh material choice of what you said , 
+descriptions: Inform 
 abst_sum - problems: The team found a possible conflict between the need for strong materials and the customers' preference for soft textures.
 
 C:  Y Hard plastic i is of course uh pretty pretty tough , 
 C:  but it doesn't have a really really tough look . So  
 D:  But the feel of plastic isn't strong . <other> 
+descriptions: Inform Inform Assess 
 abst_sum - problems: Plastic may be strong, but it does not necessarily look it.
 
 B:  and then once you uh talk to the remote , then um he will a answer with the the prerecorded message that you left . 
 B:  Um it's not really speech recognition , 
 B:  No it doesn't does not do anything . 
+descriptions: Inform Inform Inform 
 abst_sum - problems: The version of speech recognition discussed does not link voice commands to actual device actions.
 
 D:  When you want an other colour on the front , it doesn't match . 
 C:  and it doesn't really matter if we have a purple front on it or a orange front . 
 C:  but you know b Titanium is very basic colour , 
+descriptions: Inform Inform Inform 
 abst_sum - problems: Changing the front colours may make the front clash with the titanium, but it was also thought neutral enough for it not to matter.
 
 C:  Well yeah . Um I think um <other> a logo , our company logo , and the slogan should be or could be  
@@ -140,5 +168,6 @@ B:  Ah the logo should be on the top I think .
 B:  Right corner , yes . 
 A:  Yes , slogan from company on the back with logo 
 A:  and logo also on the front 
+descriptions: Suggest Inform Inform Suggest Suggest Assess Other Other 
 abst_sum - problems: They wondered whether to use both the logo and the slogan on the device and where it would be best for them to be placed.
 

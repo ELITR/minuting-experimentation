@@ -11,6 +11,7 @@ A:  Um they wanted limited buttons and simplicity .
 A:  Um the iPod , we really liked the look of that . 
 A:  the materials for the case , the different energy sources , the different types of chips , 
 A:  um and made a decision on what we were going to use to make our remote . 
+descriptions: Inform Offer Suggest Suggest Suggest Suggest Inform Inform Inform Inform Inform Inform Inform 
 abst_sum - abstract: The project manager opened the meeting and read the minutes of the previous meeting.
 
 C:  basically we we st went with the colour yellow . 
@@ -24,6 +25,7 @@ C:  It's as simple as you , we could make it really .
 B:  Plastic covered with rubber . 
 C:  T the actual thing might be smaller . 
 B:  It's a quick on-off button . 
+descriptions: Inform Inform Inform Inform Inform Inform Suggest Inform Inform Inform Inform 
 abst_sum - abstract: The industrial designer and user interface designer presented the prototype they created, which was designed to look like a banana.
 
 D:  You guys are gonna help me do an evaluation of the criteria . 
@@ -39,6 +41,7 @@ D:  Um spongy material ?
 D:  did we put the fashion in electronics ? 
 D:  Now we just gotta calculate . 
 D:  Okay we'll say two point four two . 
+descriptions: Suggest Inform Inform Inform Elicit-Assessment Elicit-Assessment Elicit-Assessment Elicit-Assessment Elicit-Assessment Elicit-Assessment Elicit-Assessment Inform Inform 
 abst_sum - abstract: The marketing expert conducted an evaluation of the prototype.
 
 A:  I think it's definitely different than anything else out there . 
@@ -46,6 +49,7 @@ B:  I'd say , when it comes to the ergonomics , the form and stuff , yes that's 
 B:  So uh to answer that honestly I would rather say like uh , we have not solved the problem completely with the ugly remote because the colour is ugly , definitely . 
 B:  I mean I much prefer something like brushed chrome with that form . 
 D:  <laugh> Four is fair . 
+descriptions: Assess Assess Assess Assess Elicit-Assessment 
 abst_sum - abstract: The team found that, although the overall design of the prototype was attractive, its yellow color was ugly.
 
 B:  It's very intuitive , I think yeah . 
@@ -58,6 +62,7 @@ B:  Which makes this thing raise hell when you remove it too far from the televi
 B:  That can't cost much . 
 B:  Let's add one of those features and say yes . <laugh> 
 A:  Two . 
+descriptions: Assess Inform Assess Assess Suggest Suggest Inform Inform Suggest Assess 
 abst_sum - abstract: The team rated the prototype highly on its ease of use and felt that its yellow color and shape detracted slightly from its ability to be misplaced and that a feature which causes the remote to make noise based on its proximity to a television needed to be added.
 
 B:  It's all just stolen technology when it comes down to  <laugh> <other> 
@@ -68,6 +73,7 @@ B:  It's not a one though .
 A:  Probably a four at most . 
 D:  I'd say we did . 
 B:  <other> Well the recent fashion is rather displayed in the in the L_C_D_ and the way you operate it than the form and the colour , 
+descriptions: Assess Assess Assess Assess Assess Assess Assess Assess 
 abst_sum - abstract: The team thought the prototype was fashionable and not technologically innovative or spongy.
 
 A:  Now we get to do the budget numbers . 
@@ -82,12 +88,14 @@ B:  That's not a special colour .
 B:  It's a specially ugly colour , but it's not special . 
 A:  Well we only have one button so really we shouldn't be charged , 
 A:  <laugh> we shouldn't be charged anything for the the button supplements . 
+descriptions: Inform Inform Elicit-Inform Inform Inform Inform Elicit-Inform Inform Assess Assess Inform Inform 
 abst_sum - abstract: The project manager led the team in calculating the production costs of the remote and ensuring that they aligned with the project budget.
 
 A:  So our total is fifteen point five . 
 A:  by three Euros over . 
 C:  you could maybe take out the L_C_D_ dis display even , 
 B:  Right . We may not need it . 
+descriptions: Inform Inform Suggest Assess 
 abst_sum - abstract: The costs were over budget, so the team opted to exclude the LCD from their design to meet their budget.
 
 A:  I think that perhaps the project evaluation's just supposed to be completed by me . 
@@ -100,33 +108,42 @@ A:  and um I think it was um interesting as you guys brought up more um informat
 B:  Super super . 
 A:  I had some problem with the pen I think , 
 D:  Minus your PowerPoint fiasco . 
+descriptions: Inform Inform Elicit-Assessment Assess Assess Assess Assess Assess Assess Assess 
 abst_sum - abstract: The team conducted an evaluation of the project process and found that they performed well and were somewhat satisfied by the resources available to them.
 
 None
+
 abst_sum - action: *NA*
 
 B:  Which makes this thing raise hell when you remove it too far from the television . 
 B:  Let's add one of those features and say yes . <laugh> 
+descriptions: Inform Suggest 
 abst_sum - decisions: The remote will make some sort of noise based on its proximity to a television.
 
 B:  Two . 
+descriptions: Inform 
 abst_sum - decisions: The remote will use two batteries.
 
 B:  That's the advanced chip-on-print , yeah . 
+descriptions: Inform 
 abst_sum - decisions: The remote will use an advanced chip-on-print.
 
 A:  'Kay then the case is a  Probably it's double curved . 
+descriptions: Inform 
 abst_sum - decisions: The remote will be double curved.
 
 A:  Case materials are 
 B:  Plastic . 
+descriptions: Elicit-Inform Inform 
 abst_sum - decisions: The remote case will be made of plastic.
 
 B:  That's not a special colour . 
 B:  It's a specially ugly colour , but it's not special . 
+descriptions: Assess Assess 
 abst_sum - decisions: The remote will come in a special color.
 
 B:  Right . We may not need it . 
+descriptions: Assess 
 abst_sum - decisions: The remote will not use an LCD.
 
 C:  But um if we were to , if we were , that , the speech recognition . That , we could maybe just use that solely for the the finding thing . 
@@ -134,10 +151,12 @@ B:  Y you could add an extra feature actually .
 B:  Which makes this thing raise hell when you remove it too far from the television . 
 B:  That can't cost much . 
 B:  Let's add one of those features and say yes . <laugh> 
+descriptions: Suggest Suggest Inform Inform Suggest 
 abst_sum - problems: What feature to include to prevent the remote from getting lost.
 
 A:  Well we only have one button so really we shouldn't be charged , 
 A:  <laugh> we shouldn't be charged anything for the the button supplements . 
+descriptions: Inform Inform 
 abst_sum - problems: What sort of button supplements the remote requires.
 
 A:  by three Euros over . 
@@ -145,5 +164,6 @@ A:  So our total is fifteen point five .
 C:  What if we completely took out the the one single button we've got on . 
 C:  I suppose the L_C_D_ C_ display's the one that's pushing it up a bit though . 
 C:  you could maybe take out the L_C_D_ dis display even , 
+descriptions: Inform Inform Suggest Inform Suggest 
 abst_sum - problems: How to meet the project budget.
 

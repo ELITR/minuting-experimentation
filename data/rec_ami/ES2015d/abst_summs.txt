@@ -1,10 +1,12 @@
 A:  Um the agenda for this meeting <other> is um  we'll initially have the prototype presentation by our two designers . 
 A:  And then we will evaluate it , given the criteria that um that we gave gave it . 
 A:  And um talk about our finances , whether we were under or over our budget . 
+descriptions: Inform Inform Inform 
 abst_sum - abstract: The project manager opens the meeting by stating the agenda.
 
 C:  It's a pretty simple design . 
 C:  It's um based on a mango ? 
+descriptions: Inform Elicit-Inform 
 abst_sum - abstract: The designers give the prototype presentation, showing their simple design that is based on a mango.
 
 C:  And we have the company logo here 
@@ -12,6 +14,7 @@ C:  It's in the middle of one of the little R_s .
 C:  And then the other one is the power . 
 B:  So it's palm-held . 
 C:  buttons are accessible from your thumb . 
+descriptions: Inform Inform Inform Inform Inform 
 abst_sum - abstract: They point out the company logo and LED, and demonstrate how the device is palm-held and thumb-acessible.
 
 C:  And this is just if you've got like eleven or twelve or thirt the plus . 
@@ -32,6 +35,7 @@ B:  But we're thinking that , seeing as we're having it in interchangeable casin
 B:  like banana could be black and yellow , watermelon red and green , 
 B:  Banana's more representative of our colour scheme , like the company  the yellow and black . 
 B:  or vanilla might be the most popular if it just uh blends in 
+descriptions: Inform Inform Elicit-Inform Inform Elicit-Inform Suggest Assess Inform Inform Inform Inform Inform Inform Suggest Inform Suggest Inform Inform 
 abst_sum - abstract: They also discuss the numerical, volume, channel, and power buttons as well as the color scheme.
 
 A:  Evaluation criteria is next in line . 
@@ -39,6 +43,7 @@ D:  Um , we're gonna be doing an evaluation report together based on the protopt
 D:  Um and looking looking back at my notes from our  both our conceptual and our functional meetings , um I made a list of what our original requirements and goals were , 
 D:  Um and we're gonna do it on a one to seven scale where one is true and seven is false . 
 D:  So basically the lower p the lower the points the better . 
+descriptions: Inform Inform Inform Inform Inform 
 abst_sum - abstract: The marketing expert administers the product evaluation, and they rate each of the ten criteria on a scale of 1-7.
 
 D:  Do we have a fancy look-and-feel ? 
@@ -109,10 +114,12 @@ B:  the factor that we've been least successful in confronting .
 B:  Four I think . 
 D:  <other> Um , did we stay true to our motto and put the fashion into electronics ? 
 A:  But maybe more like two 
+descriptions: Elicit-Assessment Assess Assess Assess Inform Assess Assess Elicit-Assessment Elicit-Assessment Inform Inform Inform Inform Assess Inform Suggest Assess Elicit-Assessment Assess Assess Comment-About-Understanding Assess Elicit-Assessment Inform Suggest Inform Assess Elicit-Inform Suggest Assess Elicit-Assessment Elicit-Assessment Elicit-Assessment Suggest Assess Inform Inform Inform Inform Assess Elicit-Assessment Assess Assess Elicit-Assessment Elicit-Assessment Elicit-Inform Inform Inform Inform Inform Suggest Inform Elicit-Assessment Assess Assess Elicit-Assessment Elicit-Assessment Assess Suggest Assess Elicit-Assessment Inform Suggest Assess Assess Assess Elicit-Assessment Assess 
 abst_sum - abstract: The criteria includes fancy look-and-feel, technological innovation, ease of use, look, whether people would be willing to spend 25 Euros for it, whether its operating behavior matches the average user, ease of finding when lost, ease of learning to use, whether it will minimize RSI, incorporation of company colors and logo, and whether it follows the motto.
 
 A:  <other> Alright so based on this evaluation , do we average them out sorta thing ? 
 A:  Yeah it is one point nine . 
+descriptions: Elicit-Inform Inform 
 abst_sum - abstract: They average the scores and get 1.9.
 
 A:  So we need to tally up how much our w our product will be costing . 
@@ -122,6 +129,7 @@ A:  Um , we're using plastic and rubber ,
 A:  So it's like special colour  well we'll have two colours 
 A:  Well one colour for the case , one colour for the buttons . 
 A:  So um our operating cost is twelve twenty Euros . 
+descriptions: Suggest Inform Inform Inform Inform Inform Inform 
 abst_sum - abstract: They check the product costing and find that their operating cost is 12.20 Euros.
 
 B:  I mean we weren't really given a lot of time , or materials , yeah , to go about our design task . 
@@ -134,39 +142,50 @@ A:  I think we worked great as a team .
 A:  We needed more Play Doh colours . 
 D:  The computer programmes are good . 
 D:  Yeah well I guess we really  it  we bounced off of each other , 
+descriptions: Inform Assess Inform Assess Assess Assess Assess Assess Assess Assess 
 abst_sum - abstract: In evaluating the project process they are pleased with their creativity, leadership, timing, teamwork, discussions, and overall product given the resources they had.
 
 B:  Fantastic . 
 B:  Thank you very much . <laugh> 
+descriptions: Assess Be-Positive 
 abst_sum - abstract: They close the meeting by thanking one another.
 
 None
+
 abst_sum - action: *NA*
 
 B:  um we went for like a a circular design for the numbers 
 B:  Okay , as for the colours , we were presented with um a limited range of colours for this prototype . 
+descriptions: Inform Inform 
 abst_sum - decisions: Numbers have a circular design.
 
 B:  Um and we're thinking to carry-on with the fruit and vegetable theme , the colour um combination just could just be named after different fruit , 
 B:  But we're thinking that , seeing as we're having it in interchangeable casing anyway , 
 B:  like banana could be black and yellow , watermelon red and green , 
+descriptions: Suggest Inform Suggest 
 abst_sum - decisions: Casing will be interchangable and color schemes will be named and colored after fruits and vegetables.
 
 A:  So it's like special colour  well we'll have two colours 
+descriptions: Inform 
 abst_sum - decisions: Will be two colors, one for case and one for buttons.
 
 A:  Um we're using a regular chip . 
+descriptions: Inform 
 abst_sum - decisions: Will use a regular chip.
 
 A:  Um , it's cur it's double curved , so its curved all around . 
+descriptions: Inform 
 abst_sum - decisions: The remote will be double-curved.
 
 A:  Um , we're using plastic and rubber , 
+descriptions: Inform 
 abst_sum - decisions: Will be made of plastic and rubber (rubber on remote for comfort).
 
 None
+
 abst_sum - decisions: Product costing is 1.20 Euros.
 
 None
+
 abst_sum - problems: *NA*.
 

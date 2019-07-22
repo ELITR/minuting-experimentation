@@ -6,6 +6,7 @@ A:  we need uh to know the the user uh needs
 A:  we want to know how it going to work 
 A:  third part <laugh> uh I don't remember <laugh> 
 A:  let's go for the three presentations , 
+descriptions: Elicit-Inform Inform Inform Inform Elicit-Inform Elicit-Offer-Or-Suggestion Inform Suggest 
 abst_sum - abstract: The project manager opened the meeting and stated the agenda to the team members.
 
 A:  so first um Marketing Expert . 
@@ -43,6 +44,7 @@ C:  Yeah , it's electromagnetic waves or something kind of maybe uh effect .
 D:  but we have to take this into account . 
 D:  now I remember what is R_S_I_ <laugh> 
 D:  it's repetitivity stress injury . 
+descriptions: Suggest Inform Inform Offer Suggest Elicit-Inform Elicit-Inform Inform Inform Inform Assess Assess Assess Inform Suggest Inform Inform Inform Assess Inform Suggest Inform Inform Inform Suggest Inform Inform Inform Inform Inform Elicit-Inform Inform Suggest Inform Inform 
 abst_sum - abstract: The marketing expert discussed the findings of a survey which indicated that current remotes are ugly, difficult to use, have a number of unused buttons, frustrate users when misplaced, and contribute to RSI.
 
 D:  So we've listed a couple of uh 
@@ -81,6 +83,7 @@ D:  But uh I think they are  they are those uh who might be more interested in a
 D:  In general the the early adopters of a new device are young people , 
 D:  Then teletext is useless for them I think , 
 D:  Because they they have other means of finding their information . Yeah . 
+descriptions: Inform Inform Inform Assess Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Assess Inform Inform Inform Inform Inform Inform Inform Inform Suggest Inform Inform Elicit-Offer-Or-Suggestion Suggest Inform Inform Inform Inform 
 abst_sum - abstract: The marketing expert also stated that young users like speech recognition and that users in general want buttons for power, channel selection, volume control, and a few lesser used settings.
 
 B:  my name is Mark Dwight , 
@@ -161,6 +164,7 @@ C:  so we can have more functions for T_V_
 B:  Could we carry out some research if we w really need this , 
 B:  like how many people really need to go to channel number twenty five and then to sixty four ? 
 D:  <laugh> I'll check in my department if there's someone specialist in that . <laugh> 
+descriptions: Inform Inform Inform Offer Assess Suggest Suggest Assess Inform Inform Inform Inform Suggest Suggest Assess Suggest Elicit-Assessment Inform Inform Suggest Inform Inform Suggest Suggest Suggest Suggest Suggest Suggest Suggest Suggest Suggest Suggest Inform Inform Inform Elicit-Inform Inform Inform Suggest Inform Inform Inform Suggest Assess Inform Elicit-Inform Elicit-Inform Inform Elicit-Inform Inform Inform Inform Inform Inform Assess Suggest Inform Suggest Elicit-Offer-Or-Suggestion Inform Inform Inform Suggest Inform Suggest Suggest Inform Inform Inform Suggest Inform Suggest Suggest Inform Suggest Elicit-Assessment Elicit-Inform Offer 
 abst_sum - abstract: The user interface designer presented existing remotes to exemplify the need for simpler designs, discussed the use of components such as titanium and a back-lit LCD screen, and discussed other features to consider such as color options.
 
 C:  Uh as you know , I am mister Ramaro . 
@@ -217,6 +221,7 @@ C:  so user can say okay , suppose they're watching a tennis match or something 
 C:  because we have only very few words like like power , switch on or some like 
 C:  so we try to only recognise those words 
 C:  and and because we can't really say user to say same wording 
+descriptions: Inform Inform Offer Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Suggest Inform Inform Suggest Inform Inform Suggest Suggest Offer Suggest Suggest Inform Suggest Suggest Suggest Inform Inform Elicit-Inform Inform Elicit-Assessment Elicit-Assessment Suggest Suggest Assess Suggest Suggest Elicit-Assessment Suggest Suggest Suggest Assess Assess Inform Inform Inform Suggest Assess Fragment Inform Suggest Suggest 
 abst_sum - abstract: The industrial designer discussed the interior workings of a remote and how to handle universal capability and speech recognition.
 
 A:  we're now going to l have the lunch break . 
@@ -239,35 +244,43 @@ D:  I I heard of devices where you just uh whistle them
 D:  because of the the frequency they they just answer to that . 
 D:  You can clap . Can you ? 
 C:  But it's a good feature I guess yeah 
+descriptions: Suggest Suggest Suggest Inform Suggest Suggest Suggest Inform Suggest Assess Assess Elicit-Assessment Suggest Suggest Assess Comment-About-Understanding Inform Inform Elicit-Inform Assess 
 abst_sum - abstract: After the project manager's closing, the project manager recapped some decisions and the team discussed how to handle the issue of locating a remote when misplaced.
 
 A:  you will focus on the component concept um 
+descriptions: Suggest 
 abst_sum - action: The industrial designer will focus on the components concept.
 
 A:  uh of course the U_I_D_ Mark will be uh focused on the user interface concept 
+descriptions: Suggest 
 abst_sum - action: The user interface designer will focus on the user interface concept.
 
 A:  and uh our m Market Expert Sammy Benjo uh on the trend watching . 
+descriptions: Suggest 
 abst_sum - action: The marketing expert will work on trend watching
 
 A:  I have been told that we uh don't consider teletext , 
 A:  that it's out of date now because of internet . 
 A:  And we have um maybe we have to  we say , only for T_V_ , not teletext ? 
+descriptions: Inform Inform Suggest 
 abst_sum - decisions: The team will not work with teletext.
 
 A:  Since we were targeting a really soon uh uh date for the the the um i issuing of this uh remote control 
 A:  I think we will only concentrate on T_V_ for the moment 
 A:  and then maybe m make it more generalised  yeah . 
 A:  And we have um maybe we have to  we say , only for T_V_ , not teletext ? 
+descriptions: Inform Assess Suggest Suggest 
 abst_sum - decisions: The team will concentrate on making a remote only for televisions and then make their product more generalized later.
 
 C:  even automatic on off is also a bit problematic , 
 A:  Uh I think automatic on off control uh it's not possible . 
+descriptions: Assess Assess 
 abst_sum - decisions: An automatic on/off feature will not be used.
 
 A:  but i like we talk about um universal uh remote control . 
 A:  I think we will only concentrate on T_V_ for the moment 
 A:  and then maybe m make it more generalised  yeah . 
+descriptions: Inform Assess Suggest 
 abst_sum - problems: Making the remote universal.
 
 D:  You know these days we have hundreds of channels , 
@@ -275,6 +288,7 @@ D:  for instance if I want to go to  directly to channel twenty five , how would
 B:  Basically you use just four or five channels , 
 D:  One thing is that as I said in my presentation people really do like to z zap . 
 D:  So even if they are only watching four or five channels , I think they want to zap out of the one hundred channels , 
+descriptions: Inform Elicit-Offer-Or-Suggestion Inform Inform Inform 
 abst_sum - problems: Users habits in jumping from channel to channel.
 
 C:  we can have another , like uh s simple speech recogniser on our D_S_B_ chip . 
@@ -284,11 +298,13 @@ D:  The user uh will just be able to say uh please can you uh pump up the vo pum
 D:  or or it will be something like volume , up , down . 
 C:  so we try to only recognise those words 
 C:  and and because we can't really say user to say same wording 
+descriptions: Suggest Inform Inform Elicit-Assessment Elicit-Assessment Suggest Suggest 
 abst_sum - problems: How speech recognition commands work.
 
 D:  Think of a all these young people who would love to say that this remote control only works for them , 
 D:  So in in a given room there might be more than one remote control . 
 D:  We would uh have each one and uh with our own personal uh settings . 
+descriptions: Inform Inform Suggest 
 abst_sum - problems: Allowing users in the same household to have their own remotes with personal settings.
 
 B:  Like , you want to find it , you shout 
@@ -298,5 +314,6 @@ B:  Just beeps ?
 D:  I I heard of devices where you just uh whistle them 
 D:  because of the the frequency they they just answer to that . 
 D:  You can clap . Can you ? 
+descriptions: Suggest Suggest Assess Comment-About-Understanding Inform Inform Elicit-Inform 
 abst_sum - problems: How to locate a remote when misplaced.
 

@@ -2,11 +2,13 @@ A:  <other> We're here to have a kick-off meeting for the design of a  f for the
 A:  and we speak about this tool we're going to design and try to make a project plan , 
 A:  Um I think the important points we have to t talk about are uh it's functional design , it's conceptual design , and desail detailed design . 
 A:   and for that we're going um all to work individually and then have meeting during the whole day . 
+descriptions: Inform Inform Inform Inform 
 abst_sum - abstract: The project manager opened the meeting and introduced the upcoming project to the team members.
 
 A:  Um , so <laugh> let's try the whiteboard <laugh> . 
 A:  <other> Um so any of you who want to go . 
 B:  It's gonna be not my favourite one but the one I can draw . 
+descriptions: Suggest Elicit-Offer-Or-Suggestion Inform 
 abst_sum - abstract: The team members then participated in an exercise in which each team member drew his favorite animal and discussed why he liked the particular animal.
 
 A:  Let's talk about money . 
@@ -14,10 +16,12 @@ D:  So . Twenty five Euro for a remote control .
 B:  <laugh> On the international market . 
 C:  Yeah , we're to sell two million then . 
 A:  Mm <other> for a production cost of mm twelve fifty Euros maximum . 
+descriptions: Suggest Inform Inform Inform Inform 
 abst_sum - abstract: After the drawing exercise, the project manager discussed selling prices and production costs for the remote the team will design.
 
 C:  Yeah , we're to sell two million then . 
 B:  <laugh> On the international market . 
+descriptions: Inform Inform 
 abst_sum - abstract: The project manager also indicated that the remote will be sold internationally and that two million remotes are expected to be sold.
 
 A:  So any of you have experience in remote controls ? <laugh> 
@@ -46,6 +50,7 @@ C:  But they keep generally their t slash slash uh this thing and then the dash 
 D:  And then back to the one I was before , 
 A:  yeah , that would be cool . 
 B:  Go back button is good . 
+descriptions: Elicit-Inform Assess Inform Suggest Suggest Assess Suggest Assess Suggest Elicit-Assessment Suggest Assess Suggest Inform Assess Suggest Assess Suggest Inform Inform Inform Inform Inform Inform Assess Assess 
 abst_sum - abstract: The team then discussed their experiences using remotes in the past and what features to consider implementing in the remote they will produce.
 
 A:  <laugh> So that could be a great um <other> application . 
@@ -73,6 +78,7 @@ C:  But they keep generally their t slash slash uh this thing and then the dash 
 D:  And then back to the one I was before , 
 A:  yeah , that would be cool . 
 B:  Go back button is good . 
+descriptions: Assess Inform Suggest Suggest Assess Suggest Assess Suggest Elicit-Assessment Suggest Assess Suggest Inform Assess Suggest Assess Suggest Inform Inform Inform Inform Inform Inform Assess Assess 
 abst_sum - abstract: The team members discussed child proof capabilities, color options, how to adapt a remote for left-handed users, a "go back" function, the size of a remote, buttons, and LCD screens.
 
 A:  Um we're going to meet again in thirty minutes 
@@ -84,46 +90,57 @@ D:  So what does M_E_ means ?
 B:  Market Expert . 
 D:  Uh that's me . 
 D:  the user requirement specifications , 
+descriptions: Inform Inform Suggest Suggest Inform Elicit-Inform Inform Inform Other 
 abst_sum - abstract: The project manager closed the meeting and gave the team members their assignments and then one of the team members briefly went over his role on the team.
 
 A:  and uh I want you to mm <other> work on these ideas 
 A:  and try to make a uh <other> the ones , <other> make um  to decide what what are the ones important and what are the one that we don't want . 
+descriptions: Inform Suggest 
 abst_sum - action: The team members will work on the ideas which arose during the meeting and decide which ones are useful and which ones should be discarded.
 
 A:  <other> And um m maybe more in the technical parts what uh do we want to do . 
+descriptions: Suggest 
 abst_sum - action: The team members will work on the technical aspects of the remote
 
 D:  So . Twenty five Euro for a remote control . 
+descriptions: Inform 
 abst_sum - decisions: The remote will be sold for 25 Euro.
 
 A:  Mm <other> for a production cost of mm twelve fifty Euros maximum . 
+descriptions: Inform 
 abst_sum - decisions: The production costs for the remote will be 12.50 Euro maximum.
 
 A:  Remote controls children proof . 
+descriptions: Inform 
 abst_sum - decisions: The remote will be child proof.
 
 A:  No , that's a good idea . 
 D:  colourful , maybe  
 C:  Yeah even we can change colours , no ? 
 C:  like the phones and these things we c yeah . 
+descriptions: Assess Suggest Suggest Assess 
 abst_sum - decisions: The remote will be colorful and will have different colored changeable face plates.
 
 C:  Uh maybe we can change the colours that  at least the frame . 
 C:  Maybe I think even we can keep two switches and then we can uh only make one working . 
 C:  and if I'm left-hander I use this switch to follow the main operations . 
+descriptions: Suggest Suggest Inform 
 abst_sum - decisions: The remote will be adaptable so that it can be used by right-handed and left-handed people.
 
 B:  Go back button is good . 
+descriptions: Assess 
 abst_sum - decisions: The remote will feature a button which allows the user to return to the previous channel he was viewing.
 
 C:  And it should be really  small and  . 
 A:  Small also ? 
 C:  at least it should hold in your hand n properly , like  . 
+descriptions: Suggest Elicit-Assessment Assess 
 abst_sum - problems: Size of remote.
 
 B:  no screens , it's too complex . 
 A:  Mm . So , some kind of idea uh with um um <other> cellular phone with a a screen that will tell you what  
 D:  <laugh> Too expensive for twelve Euro ? 
+descriptions: Assess Suggest Assess 
 abst_sum - problems: Whether to include a screen similar to one found on a cell phone on the remote.
 
 C:  and if I'm left-hander I use this switch to follow the main operations . 
@@ -131,5 +148,6 @@ A:  may need more than three mm three button , three mm possibilities , ye yeah 
 B:  But for standard actions you usually what do you do , you change channels , you adjust volume , and nothing else . 
 D:  but for instance when you change channels you can have  you can just go to the next one or go to channel twenty five . 
 C:  But they keep generally their t slash slash uh this thing and then the dash dash and then you can put  yeah , you can only have one bit . 
+descriptions: Inform Inform Inform Inform Inform 
 abst_sum - problems: How many buttons and actions to include on the remote.
 

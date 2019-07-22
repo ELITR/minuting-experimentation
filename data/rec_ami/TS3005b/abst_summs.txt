@@ -26,6 +26,7 @@ C:  Perhaps soft touch , uh touch screen uh buttons
 C:  because uh the rubber buttons are always uh uh they uh slightly uh they can be slightly damaged , 
 C:  uh so the numbers on the buttons are not possible uh to read anymore . 
 C:  And uh well as I said uh before th uh we can uh make several designs . <other> 
+descriptions: Inform Inform Offer Inform Inform Elicit-Offer-Or-Suggestion Offer Offer Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Assess Suggest Suggest Inform Inform Suggest 
 abst_sum - abstract: The project manager opened the meeting and then the industrial designer discussed the interior workings of a remote along with his personal preferences for the appearance of a remote.
 
 B:  and I looked at uh technical functions design of the remote . 
@@ -43,6 +44,7 @@ B:  And then uh make it  I would make so that you can could uh use it on more th
 B:  If you have one that uh uh does with the vi the the video , it could also work with uh with the stereo , 
 B:  you could reuse the buttons 
 B:  And it should be a user friendly , clear buttons , and not too much . 
+descriptions: Inform Inform Inform Inform Inform Inform Inform Inform Suggest Inform Suggest Suggest Inform Suggest Suggest 
 abst_sum - abstract: The user interface designer discussed the technical functions of a remote and indicated that a user centered approach to designing the interface would be preferable.
 
 D:  <other> We're going to j discuss the functional requirements of the remote , 
@@ -72,6 +74,7 @@ D:  Because they use the remote control often more often ,
 D:  and are more technical than the ol older people . 
 D:  So we have to keep in mind to to focus not a lot  not that much on the younger pep younger people , 
 D:  but also somewhat on the elderly people . 
+descriptions: Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Suggest Inform Inform Suggest Suggest Suggest Assess Suggest Inform Suggest Suggest Inform Inform Inform Inform Suggest Suggest 
 abst_sum - abstract: The marketing expert discussed the functional requirements of a remote and user tendencies in using remotes.
 
 D:  So we don't have to make it very small , like uh like a mobile phone or something , 
@@ -83,6 +86,7 @@ D:  but an L_C_D_ screen , the problem with the L_ sc L_C_D_ screen is that elde
 D:  so those  they  those have to h be find very easily . 
 D:  but like I said , L_C_D_ screen is easily to use 
 D:  And it should be easy to use . Especially the volume buttons , the channel buttes buttons and the number buttons to zap through the channels . 
+descriptions: Suggest Suggest Suggest Inform Suggest Assess Suggest Assess Suggest 
 abst_sum - abstract: The marketing expert indicated that an ideal remote would include an LCD screen, would not be too small in size, and is easy to use.
 
 A:  <other> I dunno uh did everyone receive an email with uh the new project requirements ? 
@@ -214,24 +218,30 @@ C:  I think it looks a lot more fancy if you use uh if you don't have any button
 A:  So actually we're going to create a a button-less uh remote . No buttons at all . 
 A:  that's might be a unique selling point , huh for a remote . 
 A:  postpone further discussion to uh our next meeting , 
+descriptions: Elicit-Inform Assess Inform Inform Inform Assess Inform Inform Inform Inform Suggest Comment-About-Understanding Inform Suggest Inform Suggest Suggest Inform Assess Assess Inform Inform Inform Assess Inform Suggest Inform Inform Elicit-Inform Inform Inform Elicit-Assessment Inform Inform Inform Elicit-Inform Inform Inform Suggest Inform Suggest Inform Assess Inform Inform Elicit-Offer-Or-Suggestion Suggest Inform Inform Inform Elicit-Assessment Suggest Inform Assess Suggest Suggest Suggest Suggest Inform Inform Inform Suggest Suggest Suggest Inform Elicit-Assessment Suggest Suggest Assess Inform Suggest Inform Suggest Suggest Suggest Suggest Elicit-Inform Inform Inform Be-Positive Elicit-Inform Suggest Inform Inform Assess Elicit-Assessment Assess Elicit-Offer-Or-Suggestion Elicit-Assessment Inform Inform Inform Suggest Assess Comment-About-Understanding Inform Inform Inform Comment-About-Understanding Inform Suggest Elicit-Inform Inform Suggest Inform Suggest Elicit-Assessment Inform Suggest Comment-About-Understanding Inform Elicit-Inform Inform Elicit-Inform Inform Suggest Elicit-Assessment Suggest Suggest Suggest Assess Inform Suggest Inform Inform Assess Inform Suggest Suggest 
 abst_sum - abstract: The project manager briefed the team on some new requirements and led them in a discussion in which the team discussed their target group and made decisions on the appearance and functions of their upcoming product.
 
 None
+
 abst_sum - action: *NA*
 
 A:  Um teletext does  has become outdated since the popularity of the internet . 
 A:  <other> So that's uh the first thing we I think we should pay less attention to uh teletext . 
+descriptions: Inform Inform 
 abst_sum - decisions: The team will not pay any attention to teletext.
 
 A:  Uh the remote control should only be used for the television , 
 A:  otherwise the project becomes more complex , 
+descriptions: Inform Assess 
 abst_sum - decisions: The remote will only be used for televisions.
 
 A:  and new product should reach a new market with customers that are younger than forty , 
+descriptions: Inform 
 abst_sum - decisions: The product needs to reach a new market with customers under forty.
 
 A:  And uh a last point , but also very important , our corporate image should stay recognisable in our products , 
 A:  which means that our uh corporate colour and slogan must be implemented in the new design . 
+descriptions: Inform Inform 
 abst_sum - decisions: The corporate image must be recognizable in the product.
 
 C:  perhaps we should we should focus on that L_C_D_ screen . 
@@ -242,47 +252,58 @@ D:  And other other less important things are screen settings , audio settings ,
 A:  I've written down an an on or off button , volume selection , channel selection , uh the digits from one to zero , huh . Um  or from zero to nine . Uh a digits button to switch uh between one and two digits , mute button , a separate menu for teletext , a battery indicator . 
 D:  we could also implement a audio settings , screen settings and channel settings , but as sub-menus . 
 D:  Channel settings . 
+descriptions: Suggest Suggest Inform Inform Inform Inform Suggest Inform 
 abst_sum - decisions: The remote will have buttons within the LCD display for power, volume selection, channel selection, digits from zero to nine, mute, a menu for teletext, a battery indicator, to access double digits, screen settings, channel settings, and audio settings.
 
 A:  we're going for an L_C_D_ screen ? 
 D:  I think it's the most easier thing , 
 A:  But for now it's L_C_D_ . Okay . 
+descriptions: Elicit-Assessment Inform Inform 
 abst_sum - decisions: The remote will feature an LCD screen.
 
 A:  and we could make an a a separate menu on the L_C_D_ uh screen for teletext . 
 A:  so not too much teletext support , but in a separate menu , 
+descriptions: Suggest Inform 
 abst_sum - decisions: The LCD screen will have a separate menu for teletext.
 
 D:  so I think it's better when th the T_V_ shuts down , the remote shuts down . 
+descriptions: Suggest 
 abst_sum - decisions: The remote will shut down when the television shuts down.
 
 C:  And go to standby mode when you don't use it , 
+descriptions: Suggest 
 abst_sum - decisions: The remote will go into standby when idle.
 
 A:  And maybe a low battery indicator ? On the screen . 
+descriptions: Suggest 
 abst_sum - decisions: The LCD screen will have a low battery indicator.
 
 D:  of put it in a recharger . Charger . 
 A:  So we are going for the for the recharger . 
+descriptions: Inform Elicit-Assessment 
 abst_sum - decisions: The remote will have a rechargeable battery which comes with a charger.
 
 A:  But would it be useful to imple implement both ? 
 D:  Yeah , if the costs al allow it . <laugh> 
 C:  it should be done . If it could be done , should be done . 
 A:  so we only do this when we have enough money left . 
+descriptions: Elicit-Assessment Assess Assess Comment-About-Understanding 
 abst_sum - decisions: The remote will be capable of speech recognition if there is enough money left in the team's budget.
 
 C:  so make it possible to not uh display uh a button at ten points 
 C:  Functional designs uh for the elderly uh you could make it possible to enlarge the screen , 
 A:  And uh the possibility to uh enlarge buttons or to have large buttons 
+descriptions: Suggest Suggest Inform 
 abst_sum - decisions: The remote will allow users to have the possibility to enlarge the buttons.
 
 None
+
 abst_sum - decisions: The remote will have a general menu with the most used functions.
 
 B:  So we don't have any normal buttons 
 C:  I think it looks a lot more fancy if you use uh if you don't have any buttons on the s on on remote control . 
 A:  So actually we're going to create a a button-less uh remote . No buttons at all . 
+descriptions: Elicit-Inform Assess Inform 
 abst_sum - decisions: The remote will be button-less.
 
 C:  But I think that uh that collides with our mission to make it very cheap . 
@@ -292,29 +313,35 @@ D:  I don't have any costs here ,
 D:  if it costs  gets too much , too expensive , then yeah , we should be sticking to rubber buttons . 
 C:  I think that that they will send you some information about uh the cost of L_C_D_ uh screens . 
 C:  if you uh you receive an email about that , uh can you post it in the  
+descriptions: Assess Inform Inform Inform Suggest Inform Suggest 
 abst_sum - problems: How much an LCD screen costs.
 
 B:  but also on the older , 
 B:  and will they use it if it only has an L_C_D_ screen ? 
 D:  but market share fro for for forty years and younger is higher than that of sixty five and younger . 
+descriptions: Inform Elicit-Inform Inform 
 abst_sum - problems: If consumers over forty will want a remote with an LCD screen.
 
 D:  And a teletext , but that is not of the question . 
 B:  But shouldn't you put a button of  for teletext on the  for the people who want to use it ? 
 A:  and we could make an a a separate menu on the L_C_D_ uh screen for teletext . 
+descriptions: Inform Elicit-Assessment Suggest 
 abst_sum - problems: Whether to include buttons for teletext.
 
 D:  power supply is one of the most important things . 
 B:  Perhaps you should be able to to switch the control off . 
 B:  If you have an L_C_D_ screen that's burns all the time I dunno . 
+descriptions: Inform Suggest Inform 
 abst_sum - problems: What sort of power supply to use since the LCD screen requires a large amount of power.
 
 C:  uh it should be uh a standard move to to put your remote control in the charger when you're done watching television , 
+descriptions: Suggest 
 abst_sum - problems: What to do if people forget to recharge the batteries in their remote.
 
 B:  <laugh> But then you also have to s have somewhere where you can put a remo recharger near your couch 
 B:  because otherwise you have to walk a long way when you twoft want to turn on the T_V_ . 
 C:  just a cable , or a even a a a a a charger where you can mount it on . Something like that , 
+descriptions: Suggest Inform Suggest 
 abst_sum - problems: Where consumers will place the charger.
 
 A:  And you said something about speech recognition ? 
@@ -333,6 +360,7 @@ B:  that you say volume up , and then it goes up ,
 C:  Certain systems already exist , I think . 
 B:  Then you also have to have different languages if we go international . 
 A:  so we only do this when we have enough money left . 
+descriptions: Elicit-Inform Inform Inform Be-Positive Elicit-Inform Suggest Inform Inform Assess Elicit-Assessment Assess Elicit-Offer-Or-Suggestion Elicit-Assessment Inform Inform Comment-About-Understanding 
 abst_sum - problems: Whether to implement speech recognition.
 
 D:  Maybe only the on and o on and off button . 
@@ -346,5 +374,6 @@ C:  because uh when you touch the L_C_D_ screen when it is in standby mode , it 
 B:  I guess if you use the L_C_D_ screen , you first have to search where is the on button , 
 B:  But if you have a normal on button on the on the remote , then you do the on , 
 C:  I think it looks a lot more fancy if you use uh if you don't have any buttons on the s on on remote control . 
+descriptions: Suggest Elicit-Assessment Suggest Suggest Suggest Assess Inform Suggest Inform Inform Assess 
 abst_sum - problems: Whether the remote should feature a regular power button or if the power button should be integrated with the LCD display.
 

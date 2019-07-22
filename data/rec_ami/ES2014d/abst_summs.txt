@@ -19,17 +19,21 @@ A:  so uh but there would be a cost implication on that ,
 C:  Well the colours wouldn't  like that's  they wouldn't be too important , 
 C:  but we didn't have any white Play-Doh . 
 B:  Yes , we'll have the slide-away . 
+descriptions: Inform Suggest Inform Inform Inform Inform Inform Assess Inform Elicit-Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform 
 abst_sum - abstract: The first prototype for the remote control was made of single-curved rubber with a total of 16 rubber buttons (some of them in a slide-out panel) with a cherry design on top.
 
 A:  Okay , so , by the fact that we've got uh the simple chip and the uh kinetic energy source , we've got a single curved case . We've got a rubber uh case materials supplements . 
 B:  I  switching around those th um on the electronics we got the sample sensor . 
+descriptions: Inform Inform 
 abst_sum - abstract: It uses kinetic energy and has a sample sensor for the speech recognition.
 
 D:  So , we've all got a note of  it's thirteen point seven , isn't it , with everything we want on . 
+descriptions: Inform 
 abst_sum - abstract: The initial cost was calculated at 13.70 Euros.
 
 D:  Shall we shall we evaluate the prototype as we've got it now first , 
 D:  and then sort of make decisions about what needs to be changed after ? 
+descriptions: Suggest Suggest 
 abst_sum - abstract: Although over budget, the team decided to evaluate this prototype before making any changes.
 
 D:  and we evaluate the prototype against some criteria that we've formulated . 
@@ -89,6 +93,7 @@ C:  go to a three ?
 D:  Well , but I think we said that w Because you got rid of the rubber , we put an extra an extra sort of fruit um shape on one of the buttons . 
 D:  well , we could have lemon shaped ones with the volume ones or something . <laugh> 
 B:  <other> As an overall product which has to be quite cheap , we've just about achieved everything . 
+descriptions: Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Assess Elicit-Inform Inform Suggest Elicit-Assessment Inform Inform Inform Inform Inform Inform Inform Inform Suggest Inform Assess Inform Inform Inform Inform Elicit-Inform Elicit-Inform Inform Offer Inform Inform Assess Inform Inform Inform Suggest Inform Suggest Inform Suggest Assess Elicit-Assessment Inform Inform Inform Suggest Suggest Inform Suggest Inform 
 abst_sum - abstract: On a scale from 1 (true) to 7 (false) they rated it on the basis of the following criteria: fancy design (2), technological innovation (2), ease of use (1), incorporation of fashion elements (2), and brand recognition (2).
 
 A:  you have a in plastic rather than rubber , then that would uh enable you to get  you could keep kinetic then , you could keep your sample sensor , and 
@@ -116,6 +121,7 @@ B:  So I think that should still be okay .
 A:  , in this one , you've actually got three colours of buttons . Well 
 D:  we've got point two to play with if you really wanted to . 
 A:  , we decided that the blue ones were the um the standard colour . So 
+descriptions: Inform Inform Inform Inform Elicit-Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform 
 abst_sum - abstract: Changing the rubber case to plastic reduced the cost and allowed for an extra button-form and colour.
 
 A:  we're now on to project process . Now 
@@ -143,6 +149,7 @@ A:  how do you reckon teamwork went ? To
 D:  That went okay , yeah . 
 B:  I guess we all had separate ideas and then discussed them . 
 A:  uh go uh reasonably well . Okay 
+descriptions: Inform Inform Inform Offer Elicit-Assessment Assess Inform Inform Inform Assess Inform Inform Inform Inform Inform Inform Elicit-Assessment Inform Inform Assess Inform Elicit-Assessment Assess Inform Other 
 abst_sum - abstract: The team were reasonably satisfied with the project in terms of teamwork and creativity, although they thought that the flow of information was sometimes disjointed.
 
 C:  I think it maybe could have been a slightly more creative project . 
@@ -152,6 +159,7 @@ D:  I mean this one seems  . From the website it looks  it's quite innovative ,
 D:  <other> I don't think sort of the budget um allowed us to do anything  
 A:   bit arbitrary . <laugh> Mm-hmm 
 D:  Well , I mean I don't think it  I just don't think it fitted in with the rest of their products . 
+descriptions: Assess Assess Assess Inform Inform Assess Inform 
 abst_sum - abstract: However, the idea of designing a remote control seemed unexciting, especially since the requirements restricted it to TV only, and the budget was too small.
 
 D:   we did find a new idea , 
@@ -163,11 +171,13 @@ B:  Yeah , so it's just like the same products , but just put together in a diff
 A:  ideas found , so one or two .  
 D:  Kinetic powered remote control . Um , 
 C:  Voice um recognition thing . 
+descriptions: Inform Inform Fragment Inform Inform Inform Inform Inform Inform 
 abst_sum - abstract: Finally, some new ideas were also found in the form of kinetic energy source and use of speech recognition.
 
 A:  , don't forget to complete final questionnaire and meeting summary . Then 
 D:  I think that we've got two questionnaires 
 D:  and a report on the last meeting . 
+descriptions: Inform Inform Inform 
 abst_sum - action: The team have two questionnaires and a report on the last meeting to complete before they finish.
 
 C:  Y no , it's a slightly curved around the sides . <laugh> 
@@ -177,35 +187,45 @@ C:  Yeah , and cherries are fun , summery .
 C:  And did we make it a cherry officially ? 
 A:  . I 
 A:  Okay , so , by the fact that we've got uh the simple chip and the uh kinetic energy source , we've got a single curved case . We've got a rubber uh case materials supplements . 
+descriptions: Inform Assess Inform Inform Elicit-Inform Inform Inform 
 abst_sum - decisions: The remote will be single-curved with a cherry design on top.
 
 A:  we're going for plastic , yes ? Yep 
+descriptions: Elicit-Inform 
 abst_sum - decisions: The case will be made of plastic.
 
 A:  , we decided that the blue ones were the um the standard colour . So 
 C:  I think if they were just all small round blue buttons , it'd be fine . 
+descriptions: Inform Inform 
 abst_sum - decisions: The buttons will be made of rubber mostly in a light blue colour.
 
 D:  well , we could have lemon shaped ones with the volume ones or something . <laugh> 
+descriptions: Suggest 
 abst_sum - decisions: However, volume and channel buttons will be different from the rest.
 
 D:  <other> Yeah , I mean the volume buttons could be lemons or something , maybe . <laugh> 
 D:  well , we could have lemon shaped ones with the volume ones or something . <laugh> 
+descriptions: Suggest Suggest 
 abst_sum - decisions: Volume buttons will be lemon-shaped and coloured.
 
 None
+
 abst_sum - decisions: A slide-out panel with extra buttons for less-used functions is included.
 
 None
+
 abst_sum - decisions: The buttons in this panel will all be in the standard blue colour.
 
 A:  Okay , so , by the fact that we've got uh the simple chip and the uh kinetic energy source , we've got a single curved case . We've got a rubber uh case materials supplements . 
+descriptions: Inform 
 abst_sum - decisions: A simple chip is going to support the electronics of the device.
 
 A:  the speech feature . How 
+descriptions: Inform 
 abst_sum - decisions: A sample sensor was included to add speech recognition.
 
 B:  Um , well we've still got the kinetic energy . Um  
+descriptions: Inform 
 abst_sum - decisions: The remote is going to be powered by kinetic energy.
 
 B:  So  decide we've lost a little bit on the fashion 
@@ -214,6 +234,7 @@ C:  How much of a difference would it make if we made the case in plastic ?
 C:  If the buttons are rubber that might be spongy enough . 
 A:  we're going for plastic , yes ? Yep 
 D:  <other> Lose a little bit on the fashion , yeah , but  
+descriptions: Inform Inform Elicit-Inform Inform Elicit-Inform Inform 
 abst_sum - problems: After changing the case material from rubber to plastic, it was debated that the loss of sponginess does affect the fancy appeal and trendiness of the remote.
 
 C:  it's got the cherry and the sponginess . 
@@ -221,16 +242,19 @@ D:   And that would sort of maybe keep us close on the sort of the fashion type 
 D:  Maybe other ones could be something else shaped . 
 D:  So it's w if we've if we've put in for another special form on a button , then maybe they could be <other> a different shape . 
 D:  <other> Yeah , I mean the volume buttons could be lemons or something , maybe . <laugh> 
+descriptions: Inform Inform Inform Suggest Suggest 
 abst_sum - problems: On the other hand, it was argued that the special colours and form compensated for that.
 
 A:  , but you've got the company logo on there , which 
 A:  would effectively be a stick-on badge . So 
 D:  Whether whether that's considered to be sort of part of the corporate identity , I don't know . <laugh> 
+descriptions: Inform Inform Inform 
 abst_sum - problems: The team were not certain to what extent the prototype satisfied recognisability of the corporate identity.
 
 D:  Did you get told what the company colour is or  
 B:  I'm still not quite sure we've established that . 
 A:  so long as our company's logo is framed w in the same way as that with a like a black outline . Fact 
 A:  basically , even if you had a silver  <other> the same colour of silver on your display , because you've got effectively a double edging on the uh on the logo , it means that it splits off what your logo is from the from the product . And 
+descriptions: Elicit-Inform Inform Inform Inform 
 abst_sum - problems: They were not certain what the colour of the company logo should be and how the logo should be displayed.
 

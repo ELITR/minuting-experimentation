@@ -9,6 +9,7 @@ A:  and have your three presentations .
 A:  Um I'll talk about the new project requirements I've just received , 
 A:  and then we have to make a decision on our remote control functions . 
 A:  Uh we need to keep in mind the user requirement specification , what needs and desires are to be fulfilled , the  functions design , what effects the apparatus should have , and the working design , how the apparatus actually works to fulfil its function . 
+descriptions: Inform Fragment Inform Elicit-Inform Inform Offer Inform Inform Inform Inform Inform 
 abst_sum - abstract: The project manager opened the meeting and stated the agenda.
 
 D:  I don't know if you guys are able to get access to um the report that was online 
@@ -39,6 +40,7 @@ D:  although they didn't have any details on what people's preferences on that w
 D:  also just the phenomenon that less is more when it comes to the buttons on the remote 
 D:  make sure that , you know , something like an audio setting isn't given as much importance and visibility on the remote as something like channel changing that's used a lot more often . 
 D:  And basically in order for us to win over to the consumer we just need to focus on what it looks like , 
+descriptions: Elicit-Inform Elicit-Inform Offer Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Assess Inform Elicit-Inform Inform Inform Inform Inform Inform Suggest Inform Inform Suggest Suggest Suggest 
 abst_sum - abstract: The marketing expert discussed user preferences in terms of the appearance and use of remotes, finding that users wanted fancier looking remotes, disliked losing their remotes, wanted remotes with fewer buttons, frequently use the channel changing and volume buttons, and that younger users wanted speech recognition.
 
 C:  I'm gonna talk about the technical technical functions design of the remote control um . 
@@ -63,6 +65,7 @@ C:  Um personally wa what I want from a remote control is a device that's simple
 C:  uh it's got big buttons for doing the things I do most often , changing the volume , changing the channel . 
 C:  that's ergonomically designed . 
 C:  I think there's there's certainly a market for technology that looks cool . 
+descriptions: Inform Suggest Inform Inform Suggest Elicit-Inform Elicit-Inform Suggest Suggest Suggest Inform Suggest Inform Suggest Inform Suggest Inform Inform Inform Inform Suggest Inform 
 abst_sum - abstract: The user interface designer described how a remote works and how to go about designing one.
 
 C:  I had a look on the  on the web uh to see if I could find a few examples of existing television remote controls . 
@@ -75,6 +78,7 @@ C:  The one on the right is a lot more basic .
 C:  It would be a lot quicker to learn to use it , 
 C:  Uh there's a lot of features that are missing from that remote control . 
 C:  everything you might possibly want to do is there , 
+descriptions: Inform Elicit-Assessment Elicit-Offer-Or-Suggestion Inform Inform Inform Inform Inform Inform Inform 
 abst_sum - abstract: He presented two remotes currently on the market and the advantages and disadvantages to each design.
 
 B:  this is our working design presentation . 
@@ -93,6 +97,7 @@ B:  the components that we find here are the energy source , you know the batter
 B:  And <laugh> personal preferences , besides the fact that I can't spell , we need a long-lasting energy source , 
 B:  We need a chip that works well with the user interface , 
 B:  and we need a reliable and clear infra-red signal , 
+descriptions: Inform Assess Inform Inform Inform Inform Inform Inform Inform Assess Inform Inform Inform Suggest Suggest Suggest 
 abst_sum - abstract: The industrial designer described the interior workings of a remote.
 
 A:  requirements . We have a couple new requirements 
@@ -168,41 +173,53 @@ B:  But you could maybe have it in a little charging station like a mobile phone
 C:  Yeah , that's that's possible . Yeah . 
 B:  that might contribute to less people losing it too if it <laugh> it stays in one place . 
 A:  that's <other> that's a good idea , 
+descriptions: Inform Inform Inform Elicit-Inform Inform Inform Inform Inform Inform Inform Inform Inform Suggest Inform Inform Inform Inform Suggest Inform Inform Elicit-Inform Inform Inform Inform Inform Inform Elicit-Assessment Assess Inform Inform Elicit-Inform Inform Elicit-Inform Suggest Elicit-Assessment Elicit-Assessment Suggest Suggest Suggest Inform Elicit-Offer-Or-Suggestion Inform Suggest Elicit-Offer-Or-Suggestion Inform Inform Elicit-Assessment Assess Inform Elicit-Inform Inform Inform Offer Suggest Elicit-Assessment Assess Inform Inform Suggest Suggest Elicit-Assessment Elicit-Assessment Inform Inform Inform Inform Inform Elicit-Assessment Suggest Suggest Assess Inform Assess 
 abst_sum - abstract: The project manager briefed the team on some new requirements and led them in a discussion about their target group, the option to include speech recognition, how to find a remote when lost, and batteries.
 
 A:  Um after the meeting we're gonna each complete a sks um a questionnaire and a summaries  summary . 
+descriptions: Inform 
 abst_sum - action: Each team member will complete a questionnaire and a summary.
 
 A:  After that we have thirty minutes of individual work . 
+descriptions: Inform 
 abst_sum - action: The team members will spend time on their individual work.
 
 A:  Um I'll make sure to put up um the minutes and the project documentation and including these PowerPoint slides . 
+descriptions: Offer 
 abst_sum - action: The project manager will post the minutes and project documentation.
 
 A:  If everyone could do that as well , that'd be great . 
+descriptions: Suggest 
 abst_sum - action: The team members will post their project documentation.
 
 A:  I_ um I_D_ Industrial Design you've your components concept , 
+descriptions: Inform 
 abst_sum - action: The industrial designer will work on the components concept.
 
 A:  User Interface , the user interface concept , 
+descriptions: Inform 
 abst_sum - action: The user interface designer will work on the user interface concept.
 
 A:  market trend wa watching . 
+descriptions: Inform 
 abst_sum - action: The marketing expert will work on trend watching
 
 A:  We didn't bring it up yet , or at all in the meetings so far , 
 A:  but we're not gonna work with teletext 
+descriptions: Inform Inform 
 abst_sum - decisions: The team will not work with teletext.
 
 A:  like your question earlier um whether this is going to be t for television , video , or etcetera . Just for television . That's what we're focused on . 
+descriptions: Inform 
 abst_sum - decisions: The remote will be used only with televisions.
 
 A:  Um and finally there's more marketing , I think , um , our corporate image has to be recognisable . 
 A:  while we're gonna make it look pretty we need to use our colour and our slogan i in the new design . 
+descriptions: Inform Suggest 
 abst_sum - decisions: The corporate image must be recognizable on the remote.
 
 C:  Si simplicity and fashion . 
+descriptions: Suggest 
 abst_sum - decisions: The team's design will focus on simplicity and fashion.
 
 C:  Si simplicity and fashion . 
@@ -210,15 +227,19 @@ C:  I think the product appeals across a quite a broad range of ages .
 C:  so it's going to appeal to people , maybe people who have problems with technology , you know , people who get scared by having lots of buttons , 
 D:  maybe we don't have to defi define the target group by the demographic of age , 
 A:  So maybe it's more useful to d d to define objectives like fashion and simplicity than to find specific target group as far as age is  
+descriptions: Suggest Inform Inform Suggest Suggest 
 abst_sum - decisions: Rather than define a specific target group by age, the team will define objectives such as fashion and simplicity instead.
 
 A:  Um so we want something to keep it from getting lost . 
+descriptions: Inform 
 abst_sum - decisions: The remote will contain a function to aid in its recovery when lost.
 
 A:  And <other> we want um we want large buttons for the essential things . 
+descriptions: Inform 
 abst_sum - decisions: The remote will have large buttons for essential functions.
 
 A:  We want a possibility to um to get um a possibility to get the extra functions . 
+descriptions: Inform 
 abst_sum - decisions: The remote will have a possibility to get extra functions.
 
 D:  'Cause then 's like people who don't wanna ever look at them , never even have to see them 
@@ -226,10 +247,12 @@ D:  and then you could like pull something out ,
 D:  that had like the main buttons 
 D:  like if it was just a simple , either this way or this way , 
 C:  Which are kind of hidden away in some way 
+descriptions: Inform Suggest Suggest Suggest Inform 
 abst_sum - decisions: The buttons for extra, infrequently used functions will be hidden in the design in some manner.
 
 A:  that's <other> that's a good idea , 
 B:  But you could maybe have it in a little charging station like a mobile phone , or like a little cradle for your iPod . 
+descriptions: Assess Suggest 
 abst_sum - decisions: The remote will have a charging station.
 
 B:  if we're gonna say that function um fashion  we put the fashion in in electronics then you  automatically , I think , a sort of younger group that  that's  who's gonna be attracted to this . 
@@ -243,6 +266,7 @@ A:  S voice recognition ,
 B:  but I th I think regardless we're we're aiming for the under sixty five or something . 
 A:  can we narrow it down to maybe um teenagers and families ? 
 A:  It's it's hard to narrow it down . 
+descriptions: Inform Elicit-Inform Inform Inform Inform Elicit-Assessment Assess Inform Suggest Elicit-Assessment Assess 
 abst_sum - problems: Deciding on a target group.
 
 A:  Are we gonna use that as one of our functions ? 
@@ -252,12 +276,14 @@ C:  And I wonder if we can get voice recognition into that twelve and a half Eur
 D:  And if the whole idea is you're using a remote then why would you have voice , 
 D:  like you know what I mean and then it's like you wouldn't need a remote 
 C:  It's for , like , the ultimately lazy people , 
+descriptions: Elicit-Assessment Assess Inform Inform Elicit-Inform Inform Inform 
 abst_sum - problems: Whether to include speech recognition in the design of the remote.
 
 A:  which includes um an emphasis on making the infra-red very functional , 
 D:  What can you do to like make the infra-red more functional , 
 A:  I think it's a lot <other> to do with battery , 
 D:  So 's just the quality of the chip . 
+descriptions: Inform Elicit-Offer-Or-Suggestion Inform Inform 
 abst_sum - problems: How to make infra-red more functional.
 
 A:  Battery ? Do we need a long-life battery ? 
@@ -265,5 +291,6 @@ C:  We should maybe investigate whether it needs a battery at all .
 B:  But you could maybe have it in a little charging station like a mobile phone , or like a little cradle for your iPod . 
 C:  Yeah , that's that's possible . Yeah . 
 B:  that might contribute to less people losing it too if it <laugh> it stays in one place . 
+descriptions: Elicit-Assessment Suggest Suggest Assess Inform 
 abst_sum - problems: What sort of battery to use.
 

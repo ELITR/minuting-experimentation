@@ -12,6 +12,7 @@ D:  Alright I I already did a little bit of research after our first meeting whe
 D:  and it looks to me that within the budget that we're looking at the uh the whole house idea really isn't gonna be possible . 
 D:  And then I found on the internet from from my research that some extended electronic entertainment control should be possible . 
 D:  At the budget that we're looking at and at the price point we're looking at , we should be able to make it work the T_V_ , the V_C_R_ , the stereo set um maybe something else cute like a coffee pot or one other appliance or maybe a lamp . 
+descriptions: Inform Suggest Inform Suggest Offer Assess Suggest Offer Inform Inform Inform Inform Inform Inform 
 abst_sum - abstract: The meeting begins and the marketing expert starts her presentation promptly, telling them that her research shows they need a focus- it is not possible to make a device that works on the whole house.
 
 A:  <other> Uh okay , can can I at this point interject um something ? 
@@ -19,6 +20,7 @@ A:  Um we have received instruction from higher up that certain things should no
 A:  Um the one thing for example  something to eliminate maybe that's the teletext , 
 A:  and according to to higher management the  it should only control the T_V_ , 
 A:  and the third thing that they wanna make sure um that their  that the corporate image is being maintained , and that the corporate colour and design are being used on the product , 
+descriptions: Offer Inform Inform Inform Inform 
 abst_sum - abstract: The project manager steps in and informs them that they have instructions to eliminate the teletext idea because it is too complicated, and also said they must maintain the corporate image by using corporate designs and colors.
 
 D:  Um alright now <other> other things that I found out on  in my research is that the complaints that people have about the remote controls that are out there now . 
@@ -32,6 +34,7 @@ D:  We have to have as few buttons as possible ,
 D:  because more buttons is more confusion , 
 D:  So we've gotta concentrate on the features that help you find it , 
 D:  Um and then maybe a motto , like we put fashion in electronics might be something we can use in our marketing campaign . 
+descriptions: Inform Inform Inform Suggest Suggest Inform Suggest Suggest Inform Suggest Suggest 
 abst_sum - abstract: The marketing expert resumes, talking about how remotes often get lost and that a light emitter might be useful.
 
 C:  Uh so today I'm going to talk about the working design of the remote controller . 
@@ -46,6 +49,7 @@ C:  if suppose a child is playing with the remote controller and a and she she o
 C:  like uh uh you should be able to lock your remote controller so that uh um whatever buttons are pressed by a child they can't be like y you i you if you have ki kids and all then they'll be pl playing with the remote controllers so can lock the remote controller . 
 C:  And uh different shapes that we can do 
 C:  And uh uh of course there should be a case where we can keep all the things 
+descriptions: Inform Inform Inform Inform Inform Assess Inform Suggest Inform Inform Suggest Inform 
 abst_sum - abstract: The industrial designer gives her presentation, talking about components, materials, and energy sources.
 
 C:  And uh different shapes that we can do 
@@ -61,6 +65,7 @@ D:  because I think there's a lot of argument to be made for one button for one 
 D:  <laugh> So um maybe having buttons be various shapes might be a help too . 
 D:  You know , like the  a triangle is for the volume and a square is for changing channels , so that people can uh develop a tactile sense of it . 
 C:  And uh display clock i if you want more features then we can display a clock 
+descriptions: Suggest Suggest Elicit-Inform Inform Elicit-Assessment Suggest Suggest Suggest Suggest Assess Suggest Suggest Suggest 
 abst_sum - abstract: They discuss giving the control different shapes to suit both adults and children, making the buttons various shapes, and putting a display clock on the control.
 
 B:  As uh User Interface Designer I did a little research to find out what are the features which a user would like to have on their remote . 
@@ -73,6 +78,7 @@ B:  And it should have an uh it can have an alarm clock
 B:  and then to save electricity uh there should not be uh much s move uh lots of circuits and all that . 
 B:  And um uh as uh uh this is my personal preference that it should be in the shape of a T_ in alphabet for more compactability . 
 A:  and um I dunno what you feel about whether we can just say we have one target group and for this one target group we're gonna design this one thing <other> 
+descriptions: Inform Inform Inform Inform Inform Inform Suggest Suggest Suggest Elicit-Assessment 
 abst_sum - abstract: The interface designer presents, talking about the features users like on a remote and suggesting that they make the remote a T-shape and add an alarm clock function.
 
 A:  However uh the decision we have to take in this meeting is who is our target group . 
@@ -89,29 +95,36 @@ A:  They have like removable plastic cases , so you can have a striped one or yo
 A:  that in each package you know you have  you you have  you have for example uh <other> you have let's say a fluorescent blue on it but then you have uh another colour or stripe whatever that already comes in a package . 
 D:  Well we may have to come back to one or two of these points at our next meeting but um  
 C:  If we do some more research , maybe we  . 
+descriptions: Inform Inform Inform Inform Assess Inform Assess Inform Inform Elicit-Assessment Inform Suggest Suggest Suggest 
 abst_sum - abstract: They discuss their target group and the possibility of removable plastic cases.
 
 C:  If we do some more research , maybe we  . 
 A:  If money permits we can address some features for some subgroups within that . 
 A:  Do we agree on on that in principle , like money will tell whether we will be able to do that or not . 
 A:  So now I understand it's lunch break . 
+descriptions: Suggest Suggest Elicit-Assessment Inform 
 abst_sum - abstract: They close the meeting deciding to do more research on the plastic cases.
 
 None
+
 abst_sum - action: *NA*
 
 D:  and it looks to me that within the budget that we're looking at the uh the whole house idea really isn't gonna be possible . 
 D:  At the budget that we're looking at and at the price point we're looking at , we should be able to make it work the T_V_ , the V_C_R_ , the stereo set um maybe something else cute like a coffee pot or one other appliance or maybe a lamp . 
+descriptions: Inform Inform 
 abst_sum - decisions: They cannot make a device that works on the whole house- will need a focus.
 
 A:  Um the one thing for example  something to eliminate maybe that's the teletext , 
+descriptions: Inform 
 abst_sum - decisions: They will eliminate teletext.
 
 A:  and the third thing that they wanna make sure um that their  that the corporate image is being maintained , and that the corporate colour and design are being used on the product , 
+descriptions: Inform 
 abst_sum - decisions: They will maintain the corporate image by using the proper designs and colors.
 
 A:  but <other> uh the target group as a whole is is basically everybody with a T_V_ . 
 A:  I I think to sum it up the target group is basically everybody . 
+descriptions: Inform Assess 
 abst_sum - decisions: Their target group is basically everybody who owns a TV.
 
 A:  <other> Now , talking about the target group which is in a sense everybody , 
@@ -125,15 +138,18 @@ A:  The question is only whether our budget will allow to have more than one des
 A:  but <other> uh the target group as a whole is is basically everybody with a T_V_ . 
 A:  They have like removable plastic cases , so you can have a striped one or you can have a fluorescent blue one , or whatever , 
 A:  that in each package you know you have  you you have  you have for example uh <other> you have let's say a fluorescent blue on it but then you have uh another colour or stripe whatever that already comes in a package . 
+descriptions: Inform Inform Inform Assess Elicit-Assessment Inform Assess Inform Inform Inform Suggest 
 abst_sum - problems: They are concerned about making the control marketable to a wide range of age groups, and have discussed making removable plastic covers so that the look is changeable.
 
 D:  can we is it even feasible to make one one remote control with something for everyone , or would we have to use the same electronics and make three different shapes ? 
 D:  Well we may have to come back to one or two of these points at our next meeting but um  
 C:  If we do some more research , maybe we  . 
 A:  If money permits we can address some features for some subgroups within that . 
+descriptions: Elicit-Assessment Suggest Suggest Suggest 
 abst_sum - problems: However, they need to do more research on this topic.
 
 A:  If money permits we can address some features for some subgroups within that . 
 A:  Do we agree on on that in principle , like money will tell whether we will be able to do that or not . 
+descriptions: Suggest Elicit-Assessment 
 abst_sum - problems: They do not know if their budget will allow them to include all the features they would like to such as a light emitter, clock, alarm clock, and child lock.
 

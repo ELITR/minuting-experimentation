@@ -1,6 +1,7 @@
 D:  Do you know how how I can wake it up ? 
 C:  I've lost my screen . Uh  <laugh> 
 B:  Never close your laptop . 
+descriptions: Elicit-Inform Inform Inform 
 abst_sum - abstract: The marketing expert and industrial designer had problems with their laptops.
 
 A:  Well , welcome to the kick-off meeting . 
@@ -11,9 +12,11 @@ A:  Uh , some of the <other> oje objectives are that is has to be original , tre
 A:  Um , I  oh forget  I forget the whole acquaintance part , but we we all know each other . 
 A:  Uh we begin with the functional design , then we go to the conceptual design and the detailed design . 
 A:  Every uh level of design consists of some individual work , and we uh close it with a meeting . 
+descriptions: Inform Inform Inform Inform Inform Inform Inform Inform 
 abst_sum - abstract: The project manager opened the meeting and introduced the project, to design a remote control.
 
 A:  Uh , some of the <other> oje objectives are that is has to be original , trendy , and user-friendly . 
+descriptions: Inform 
 abst_sum - abstract: The remote should be trendy, original and user friendly.
 
 A:  Okay , first we're gonna um uh gonna try some different things with the tools we have over here , so you get acquainted with these uh um uh meeting tools . 
@@ -30,6 +33,7 @@ A:  Well , I'm gonna draw um a p piranha . Uh , a fish .
 A:  And uh  so in the format menu you can choose the different uh colours and uh pen widths . 
 B:  but the easiest animal I can think is is a bird . 
 A:  and then we are uh through the tool training , I guess . 
+descriptions: Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Offer Inform Inform Inform 
 abst_sum - abstract: The project manager explained how to use the SMARTboard, and the group did a tool training exercise, using the SMARTboard to draw their favourite animals.
 
 A:  Okay , this is uh something about the project finance . 
@@ -37,6 +41,7 @@ A:  The selling price of our remote control is gonna be twenty five Euros .
 A:  And our profit aim is fifteen million Euros . 
 A:  The market range is international , so it's gonna be sold world-wide , 
 A:  and the production cost should be a maximum of twelve Euro fifty per remote control . 
+descriptions: Inform Inform Inform Inform Inform 
 abst_sum - abstract: The project manager talked about the budget and projected profit.
 
 A:  well , we're gonna brainstorm about uh what kind of kemoro romo remote control it's gonna be . 
@@ -47,12 +52,14 @@ D:  uh grouped buttons , you know .
 A:  And uh , is it gonna be a remote control that's um  what it can be used for different kind of equipment , like your T_V_ and your home stereo ? 
 A:  Or someth something special , like uh M_P_ three player inside of it , or uh  
 A:  Okay . Maybe with different type of fronts or uh  
+descriptions: Suggest Inform Inform Suggest Suggest Elicit-Offer-Or-Suggestion Suggest Suggest 
 abst_sum - abstract: The group discussed initial ideas for the remote, including that it should be a simple design with grouped buttons.
 
 D:  Well I was I was thinking uh since a T_V_ is uh mostly used together with a V_C_R_ or D_V_D_ player or recorder , and not with a stereo , I think it should be good to include functions for V_C_R_s and D_V_D_ players , recorders . 
 B:   I thought it was only for television . 
 B:  So so we probably don't have to have to uh have the functions for D_V_D_ player or V_C_R_ . 
 A:  Yeah , but most television remote controls support other functions as well . 
+descriptions: Suggest Inform Assess Assess 
 abst_sum - abstract: They discussed whether the remote should include functions for controlling video and DVD players.
 
 A:  The the Industrial Designer will w or the working design , of course , 
@@ -62,45 +69,57 @@ A:  And the Management Expert of uh  the Marketing Expert . User requirements sp
 A:  I'm gonna wri uh write some stuff down 
 A:  I'm gonna make some minutes or take some minutes . <laugh> 
 A:  We'll see each other in uh thirty minutes . 
+descriptions: Inform Stall Inform Inform Offer Offer Inform 
 abst_sum - abstract: The project manager went over the roles of the participants and closed the meeting.
 
 A:  The the Industrial Designer will w or the working design , of course , 
+descriptions: Inform 
 abst_sum - action: The industrial designer will work on the working design.
 
 A:  The User Interface Designer <other> 
 A:  the technical functions design . 
+descriptions: Stall Inform 
 abst_sum - action: The user interface designer will work on the technical functions design.
 
 A:  And the Management Expert of uh  the Marketing Expert . User requirements specifi 
+descriptions: Inform 
 abst_sum - action: The marketing expert will work on user requirements.
 
 A:  I'm gonna wri uh write some stuff down 
 A:  I'm gonna make some minutes or take some minutes . <laugh> 
+descriptions: Offer Offer 
 abst_sum - action: The project manager will write up the meeting minutes and put them in the project folder.
 
 A:  Uh , some of the <other> oje objectives are that is has to be original , trendy , and user-friendly . 
+descriptions: Inform 
 abst_sum - decisions: The group will design a trendy, original and user friendly television remote control.
 
 A:  The selling price of our remote control is gonna be twenty five Euros . 
+descriptions: Inform 
 abst_sum - decisions: The remote will be sold for 25 Euros.
 
 A:  and the production cost should be a maximum of twelve Euro fifty per remote control . 
+descriptions: Inform 
 abst_sum - decisions: It will cost no more than 12.5 Euros to make.
 
 A:  And our profit aim is fifteen million Euros . 
+descriptions: Inform 
 abst_sum - decisions: The profit aim is 15 million Euros.
 
 A:  The market range is international , so it's gonna be sold world-wide , 
+descriptions: Inform 
 abst_sum - decisions: The remote will be sold internationally.
 
 D:  Do you know how how I can wake it up ? 
 C:  I've lost my screen . Uh  <laugh> 
 B:  Never close your laptop . 
+descriptions: Elicit-Inform Inform Inform 
 abst_sum - problems: The marketing expert and industrial designer had problems with their laptops.
 
 D:  Well I was I was thinking uh since a T_V_ is uh mostly used together with a V_C_R_ or D_V_D_ player or recorder , and not with a stereo , I think it should be good to include functions for V_C_R_s and D_V_D_ players , recorders . 
 B:   I thought it was only for television . 
 B:  So so we probably don't have to have to uh have the functions for D_V_D_ player or V_C_R_ . 
 A:  Yeah , but most television remote controls support other functions as well . 
+descriptions: Suggest Inform Assess Assess 
 abst_sum - problems: The group were not sure whether the remote control should include functions for controlling video and DVD players, or if it should only be for television.
 

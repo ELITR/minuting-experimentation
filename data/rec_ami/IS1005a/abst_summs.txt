@@ -8,6 +8,7 @@ D:  'Kay . So my name's Bob Morris .
 D:  I'm the Marketing Expert for this project . 
 C:  My name is Hamed Getabdar , 
 C:  and uh I'm going to be Interface Designer in this project . 
+descriptions: Inform Inform Inform Suggest Inform Inform Inform Inform Inform Inform 
 abst_sum - abstract: The project manager opened the meeting and had the team members introduce themselves by name and their role in the project.
 
 A:  We are talking about the project plan , 
@@ -19,12 +20,14 @@ A:  For example we can try to write what is our our favourite animal and write t
 A:  So I will ask you all to do the same . 
 B:  Well sh should I draw the picture of the animal ? 
 A:  Yeah , yeah , you can draw the picture , of course <laugh> . 
+descriptions: Inform Inform Inform Inform Inform Inform Inform Elicit-Assessment Assess 
 abst_sum - abstract: The project manager introduced the upcoming project to the team and then had the team members participate in a tool training exercise in which each member drew his favorite animal on the white board and discussed what he liked about the animal.
 
 A:  Uh we are going to to sell  we want to sell uh this remote control for twenty five Euro Euro . 
 A:  And uh our expected profit will be around fifty million Euro . 
 A:  And uh we are trying to to have a market all around the world . 
 A:  We expect a production cost of maximum uh twelve point fifty Euro . 
+descriptions: Inform Inform Inform Inform 
 abst_sum - abstract: The project manager also discussed selling prices and the project budget.
 
 A:  Um , so we can start today to have a first idea of what we want to do what are our experiments with remote control , and any idea ? 
@@ -39,23 +42,30 @@ A:   Are you not afraid that if you take your remote control you can move the sl
 B:  Yeah but we can we can think of these things afterwards , 
 C:  I uh I prefer um remote control working with radio waves , 
 C:  because remote control working with infra-red rays you should you should you should keep it in a specific direction and then try it hard to tune  . 
+descriptions: Suggest Inform Inform Inform Inform Suggest Inform Suggest Elicit-Assessment Suggest Assess Inform 
 abst_sum - abstract: The team then discussed their experiences with remotes, focusing on various features they would like to see in the remote they will produce, as well as features they find unappealing in current remotes.
 
 A:  Uh the the interface interface developer will work on the on the design of the remote control , 
+descriptions: Inform 
 abst_sum - action: The interface designer will work on the technical functions of the remote.
 
 A:  you are going to try to to find the user requirements f uh for the remote control . 
+descriptions: Inform 
 abst_sum - action: The marketing expert will find the user requirements for the remote
 
 A:  Uh we are going to to sell  we want to sell uh this remote control for twenty five Euro Euro . 
+descriptions: Inform 
 abst_sum - decisions: The remote will sell for 25 Euro.
 
 A:  And uh we are trying to to have a market all around the world . 
+descriptions: Inform 
 abst_sum - decisions: The remote will be sold internationally.
 
 A:  We expect a production cost of maximum uh twelve point fifty Euro . 
+descriptions: Inform 
 abst_sum - decisions: The production costs cannot exceed 12.50 Euro.
 
 None
+
 abst_sum - problems: *NA*.
 

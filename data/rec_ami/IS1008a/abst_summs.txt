@@ -13,6 +13,7 @@ C:  And I'm Christine ,
 C:  and my role in this uh scenario is to be the industrial designer . 
 A:  So who is uh marketing , nobody in the market 
 D:  Marketing is uh , is me <laugh> . 
+descriptions: Be-Positive Offer Inform Inform Suggest Inform Inform Inform Inform Elicit-Inform Elicit-Inform Inform Inform Elicit-Inform Inform 
 abst_sum - abstract: The group introduced themselves to each other and discussed their roles in the project.
 
 A:  So thanks for coming for the meeting first of all , 
@@ -28,6 +29,7 @@ D:  We'll have to  simply we'll have to work on it together .
 A:  so uh by when you think you can uh give me some kind of uh project plan , okay , 
 D:  Certainly by the next meeting . 
 A:  so there's any questions or uh first of all about uh this project ? 
+descriptions: Be-Positive Inform Suggest Inform Suggest Elicit-Inform Inform Elicit-Inform Inform Inform Elicit-Inform Inform Elicit-Inform 
 abst_sum - abstract: The Project Manager opened a discussion about the project plan and asked the Marketing Expert to prepare an overall plan for the project.
 
 C:  What is the goal of the project ? 
@@ -45,6 +47,7 @@ D:  Something uh visual that has something that will will draw people to buy the
 D:  because I think everybody's experienced with uh remote controls , 
 D:  we're have to come up with a new idea on how to make it a lot easier to use , 
 D:  'cause a lot of times uh spend uh half a day through the instruction book trying to figure out how to use it . 
+descriptions: Elicit-Inform Suggest Suggest Suggest Inform Inform Inform Inform Inform Suggest Inform Inform Inform Inform Inform 
 abst_sum - abstract: The Marketing Expert presented the initial aim of the project: the creation of a fresh, user-friendly remote control device.
 
 A:  Christine , what about your uh the industrial design plan ? 
@@ -78,6 +81,7 @@ A:  if you need some help , uh so let me know .
 A:  So , who are the people you need uh from the marketing or uh the technical side or uh the administration point of view , okay , to add in any documentation , or some technical point of view , 
 A:  And uh Ed uh so what's  what do you think about uh this uh project for the remote control 
 A:  and d do you have some already planned something for your marketing strategy or uh the sales strategy ? 
+descriptions: Elicit-Offer-Or-Suggestion Elicit-Inform Inform Inform Inform Inform Inform Inform Elicit-Inform Inform Inform Elicit-Offer-Or-Suggestion Elicit-Offer-Or-Suggestion Suggest Fragment Inform Elicit-Inform Inform Inform Inform Suggest Suggest Suggest Inform Inform Inform Elicit-Inform Suggest Suggest Elicit-Assessment Elicit-Inform 
 abst_sum - abstract: The Project Manager asked the Industrial Designer to create a functional design plan for the device, then asked the Marketing Expert about ideas for the sales strategy.
 
 D:  Well not yet other than uh doing research and taking remote controls and looking what other companies have to do uh , what they're building , their designs , their ideas , 
@@ -86,6 +90,7 @@ D:  It should be a fairly large market because uh the number of people that uh  
 D:  uh th I agree it has to be something  it has to be something new , 
 D:  Whether it works or not , they have to first say I like this , I like the design , 
 D:  and then it's gotta be simple to use . 
+descriptions: Inform Inform Inform Assess Inform Inform 
 abst_sum - abstract: The Marketing Expert presented an initial sales plan: to analyze the competition and to pinpoint the target marketing group.
 
 A:  Yes , so what I uh prefer maybe uh you need to interact uh more with the Christine , okay , 
@@ -109,6 +114,7 @@ B:  So I think all three groups will need to interact quite a bit .
 A:  Okay and please please copy all the mails , okay , all the discussions to me , okay , 
 B:  Yeah , we can C_C_ him on any discussions or documents that are passed around . 
 A:  But what I request , okay ,  keep Ed in the loop , okay , in between your uh meeting and Christine meeting , because uh he should know what's happening . 
+descriptions: Suggest Inform Inform Suggest Suggest Elicit-Inform Elicit-Inform Inform Suggest Suggest Inform Suggest Inform Elicit-Inform Inform Offer Inform Inform Suggest Offer Inform 
 abst_sum - abstract: The Project Manager instructed all participants to work together on their respective design plans.
 
 B:  So , the immediate next step is to start determining the functional design , or 
@@ -118,27 +124,34 @@ A:  so then we can discuss about uh further things .
 C:  Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ? 
 A:  Yes , I will . Yes . 
 A:  And if anything you need anytime so please either you can call me , or just send me email , or uh just come and uh knock my door , okay , 
+descriptions: Elicit-Inform Inform Inform Inform Elicit-Offer-Or-Suggestion Offer Suggest 
 abst_sum - abstract: The Project Manager decided that the design plans will be discussed at the next meeting, and that the next step will be to come up with a functional design of the device.
 
 A:  Okay , so I think it's uh maybe if we can uh give me some kind of your uh the sales plan , okay , including the technical what uh she's going to talk to you within the team , okay , then it will help me to discuss with the management for further , okay , and put it in the the proper project plan . 
 A:  and how we are going to compete in the market , okay , in the the technically , or in the sales wise , okay , the commercial wise , okay . 
+descriptions: Suggest Suggest 
 abst_sum - action: The Marketing Expert will prepare a sales plan for the product and discuss the project budget and the sales strategy.
 
 A:  To come up with the functional design and uh to discuss with Ed , okay , and how it's going to be work , 
+descriptions: Inform 
 abst_sum - action: The Industrial Designer will prepare an initial functional design.
 
 A:  and uh first of all with your user acceptance , okay , how it looks like and how it's going to be work in the market , okay , 
 B:  I mean my job from what I understood was to look at the usability requirements and make sure that the product is usable , it's acceptable to the people who are gonna use it and look at the best ways to do that . 
+descriptions: Inform Inform 
 abst_sum - action: The User Interface Designer will contribute studies on user requirements to the functional design.
 
 C:  Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ? 
 A:  Yes , I will . Yes . 
+descriptions: Elicit-Offer-Or-Suggestion Offer 
 abst_sum - action: The Project Manager will post his presentation to be available for all participants.
 
 A:  so then we can discuss about uh further things . 
+descriptions: Inform 
 abst_sum - decisions: The group will discuss the design plans of the three experts at the next meeting.
 
 B:  So , the immediate next step is to start determining the functional design , or 
+descriptions: Elicit-Inform 
 abst_sum - decisions: The group will first work on a functional design of the device.
 
 D:  Well not yet other than uh doing research and taking remote controls and looking what other companies have to do uh , what they're building , their designs , their ideas , 
@@ -147,5 +160,6 @@ C:  I actually didn't know we were designing a remote control ,
 C:  Um the website I went to look at had some announcements about an introduction of a um uh some sort of a seven inch um monitor , 
 C:  and um I understood that that was the project goal . 
 C:  Um I just did s see that we were starting a new project together 
+descriptions: Inform Inform Inform Inform Inform Inform 
 abst_sum - problems: The group did not receive sufficient information about the project in advance to be prepared to create a project plan in the first meeting.
 

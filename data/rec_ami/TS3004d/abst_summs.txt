@@ -1,6 +1,7 @@
 A:  So these are the um last notes we I made . 
 A:  F You're going to show your pr prototype presentation after me . 
 A:  If anything doesn't look right , just say it to me then . 
+descriptions: Inform Inform Suggest 
 abst_sum - abstract: The project manager presented the agenda and the minutes from the previous meeting.
 
 B:  Are we doing the the speech recognition ? 
@@ -12,6 +13,7 @@ B:  <other> It's may maybe uh a bit stronger as well .
 B:  Yeah , we're gonna use the advanced chip then . 
 A:  No , you have a different chip for speech recognition . So  
 A:  So I already calculated that and it's still in the budget . 
+descriptions: Elicit-Offer-Or-Suggestion Assess Suggest Elicit-Offer-Or-Suggestion Assess Assess Inform Inform Inform 
 abst_sum - abstract: The group discussed speech recognition , whether the remote should slide open or fold open, and what type of chip they should use.
 
 C:  Yeah , we just made a Word file with the basic elements . 
@@ -36,19 +38,23 @@ B:  F the form well , we've taken that from the iPod , other popular technical d
 B:  Um we'll use hard plastic . Since that allows us to use uh two D_ buttons , uh non-rubber buttons . 
 B:  We have decided uh <other> in the the channel buttons , there's a little uh colour around it . 
 B:  And also in the num-pads , there's also colour  light behind it . 
+descriptions: Inform Inform Suggest Suggest Inform Inform Inform Elicit-Inform Assess Inform Elicit-Inform Assess Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform 
 abst_sum - abstract: The designers presented the prototype, which resembles an ipod in appearance, and is made of transparent coloured plastic.
 
 C:  Uh colour changeable , and also transparent . 
+descriptions: Suggest 
 abst_sum - abstract: The colours will be changeable.
 
 B:  Um on-off buttons , text buttons , mute buttons are together and at a place they easily are , easy to find . 
 B:  Um the on-off button is a bit bigger , uh so it stands out . 
 B:  It's <other> basically the be standard place for scrollwheel , as far as I know . 
 B:  It's uh twelve buttons . 
+descriptions: Inform Inform Inform Inform 
 abst_sum - abstract: The remote has both buttons and a scroll wheel.
 
 B:  We have decided uh <other> in the the channel buttons , there's a little uh colour around it . 
 B:  And also in the num-pads , there's also colour  light behind it . 
+descriptions: Inform Inform 
 abst_sum - abstract: The number buttons have a back-light.
 
 C:  Okay , maybe we use this button for the  
@@ -67,6 +73,7 @@ D:  That's the one uh that you use if you search for a page , uh like seven hund
 D:  If you if you turn teletext on , you you set the seven hundred , and you turn it off , then the next time you turn it on , it still stays on seven hundred ? 
 A:  That's a functionality for the television . <other> 
 C:  uh the remote can send like the the code for seven hundred , page seven hundred to the television . Th th th if you switch it on . 
+descriptions: Suggest Inform Inform Suggest Inform Inform Inform Inform Suggest Inform Suggest Inform Inform Inform Assess Inform 
 abst_sum - abstract: The group discussed adding extra buttons/functions.
 
 D:  Yeah , I made some criteria uh , so we can uh ev evaluate our model . 
@@ -107,6 +114,7 @@ C:  Like a a f banana kind of front .
 D:  So we give ourself a three or something . 
 A:  Yeah , it is one point eight three . 
 D:  A perfect score . <laugh> 
+descriptions: Inform Suggest Suggest Suggest Assess Elicit-Offer-Or-Suggestion Suggest Suggest Assess Assess Suggest Inform Assess Assess Suggest Inform Elicit-Assessment Assess Assess Assess Assess Elicit-Assessment Assess Assess Assess Assess Inform Inform Elicit-Assessment Assess Elicit-Assessment Assess Assess Suggest Suggest Suggest Inform Assess 
 abst_sum - abstract: The prototype was evaluated and received an average overall score of 1.8.
 
 A:  Okay , let's have a look at this one here , the production cost of it . 
@@ -117,6 +125,7 @@ C:  Can we make that for uh h twenty cents ? <laugh>
 A:  The b the button supplements , I didn't I d I was wondering if this special colour maybe was  
 A:  <laugh> But this is expensive , the sample speaker . 
 B:  Is that uh included ? In the twelve Euro or 
+descriptions: Suggest Inform Inform Elicit-Inform Elicit-Inform Elicit-Inform Inform Elicit-Inform 
 abst_sum - abstract: The project manager went through the finances, and the total cost came to 12.3 euros, although this did not include the cost of the recharger, which was not on the price list.
 
 A:  So we can do the project evalu evaluation now for uh for everything together . 
@@ -151,26 +160,32 @@ D:  To gather , or to uh work together , uh or new ideas for
 C:  Yeah , but still , you couldn't make a fancy a f you couldn't make a a prototype out of this . Because we don't have any sizes and  
 C:  Yeah , but it  You can't possibly do that in such a short time , I think . 
 B:  Yeah , this this is just the idea phase , 
+descriptions: Suggest Elicit-Assessment Assess Assess Assess Inform Assess Assess Inform Assess Assess Assess Assess Assess Assess Elicit-Assessment Assess Assess Assess Assess Assess Assess Assess Assess Assess Assess Other Inform Elicit-Inform Assess Assess Assess 
 abst_sum - abstract: The group evaluated the project process, and were generally pleased with their creativity and teamwork, but were unsatisfied with the equipment.
 
 A:  I think just  I just write a final report . 
 C:  Fill in the questionnaire . 
+descriptions: Offer Inform 
 abst_sum - action: The group have to fill out a final questionnaire.
 
 C:  <other> Uh the material should be hard plastic . 
 C:  Uh colour changeable , and also transparent . 
+descriptions: Suggest Suggest 
 abst_sum - decisions: The remote will be made of hard, transparent coloured plastic, and will come in different colours.
 
 B:  It's uh twelve buttons . 
 B:  It's <other> basically the be standard place for scrollwheel , as far as I know . 
+descriptions: Inform Inform 
 abst_sum - decisions: The remote will include buttons and a scroll wheel.
 
 None
+
 abst_sum - decisions: The remote control will feature speech recognition and a slide-out second level.
 
 C:  Well we haven't had time to design that , the slide pad . 
 D:  And h how does the second level come out ? 
 D:  Uh it slides uh along ? 
+descriptions: Inform Elicit-Inform Elicit-Inform 
 abst_sum - problems: The designers had not included the slide-out second level in their drawing of the prototype.
 
 A:  So how many functions do you need for for uh the microphone ? 
@@ -181,15 +196,18 @@ B:  Yes , you need options to configure it , and after that you don't need 'em a
 B:  I can imagine you need at least four buttons or something . So  
 C:  So here are multiple speech buttons , 
 C:  I don't know how many . 
+descriptions: Elicit-Inform Assess Inform Elicit-Inform Assess Inform Inform Inform 
 abst_sum - problems: The group were unsure how many extra buttons would be needed for speech recognition.
 
 B:  Uh I think we <other> we got wrong information at the wrong time . 
 B:  I think that was the m biggest problem . 
+descriptions: Assess Assess 
 abst_sum - problems: The group felt the information they got was not always useful, or was not given to them at the right time.
 
 C:  It's kind of weird that we <other> we get this information now , afterwards . 
 B:  Like uh the prices . 
 B:  If we knew that before , we could have uh had discussion really uh s really quicker . 
+descriptions: Assess Assess Assess 
 abst_sum - problems: It was felt that the group should have received the information about costs before designing the prototype.
 
 A:  Digital pen is horrible . 
@@ -199,5 +217,6 @@ C:  Yeah , i if if it would be faster , it would be great .
 D:  Yeah , the drawings are are hard to make , I think . 
 C:  Just old fashioned kinda blackboard style . 
 C:  But you might as well do it in normal computer style . 
+descriptions: Assess Assess Assess Assess Assess Assess Assess 
 abst_sum - problems: The group had problems with the smart board and digital pens.
 

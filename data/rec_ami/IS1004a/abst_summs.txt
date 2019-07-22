@@ -1,16 +1,20 @@
 A:  So , we're here today to to have our first kick-off meeting about uh this new project we're going to tak to talk about in a few minutes . 
 A:  Um so I will be uh Sebastian the Project Manager . 
+descriptions: Inform Inform 
 abst_sum - abstract: The project manager Sebastian opens the meeting.
 
 B:  I'm uh Michael . I'm the user interface designer . 
 D:  Hi I'm Guillermo  . I'm the Marketing Expert . 
 C:  And I am Hemant , the industrial designer . 
+descriptions: Inform Inform Inform 
 abst_sum - abstract: The rest introduce themselves, including Michael the interface designer, Guillermo the marketing expert, and Hemant the industrial designer.
 
 A:  So , the goal of this project is to uh developed a new remote control . 
+descriptions: Inform 
 abst_sum - abstract: The project manager states the goal of the project, which is to develop a new remote control.
 
 A:  Um it should be original , trendy , and also user friendly . 
+descriptions: Inform 
 abst_sum - abstract: It should be original, trendy, and user-friendly.
 
 A:  As usual we will follow the the project method um <cough> that we are using in the  in our company . 
@@ -20,6 +24,7 @@ A:  The second's a conceptual design ,
 A:  and then the detailed design . 
 A:  During each step uh of each design we wi you will work uh s separately , individually on uh your specific tasks 
 A:  and will m we will meet to um to discuss and take decisions about uh what you've you've you did and what uh we will do next . 
+descriptions: Suggest Inform Inform Inform Inform Suggest Suggest 
 abst_sum - abstract: He also mentions the three-step project- functional design, conceptual design, and detailed design.
 
 A:  so uh we are going to go through the white board and take some um s some notes or do some drawings . 
@@ -28,18 +33,23 @@ B:  Well , I don't really have a favourite animal , but um
 B:  <other> I'm gonna <other>  about the uh spider 
 D:  I dunno why , but <cough> when I was a child I I wanted to be a a panther 
 C:  So , not the favourite animal , but I think I'll draw elephant . 
+descriptions: Suggest Inform Inform Offer Inform Offer 
 abst_sum - abstract: Then they take turns drawing their favorite animal on the white board.
 
 A:  so another important part of the project is about money , 
+descriptions: Inform 
 abst_sum - abstract: After that they briefly discuss finances.
 
 A:  So <cough> we should target selling price of twenty-five Euro for this remote control 
+descriptions: Suggest 
 abst_sum - abstract: The remote control's target selling price of twenty-five Euro dollars and will be for the international market.
 
 A:  which which would generate a profit of of um <cough> fifty million Euros , okay . 
+descriptions: Inform 
 abst_sum - abstract: They need to generate a profit of fifty million Euros.
 
 None
+
 abst_sum - abstract: The question of whether the remote control should be for a specific device was brought up but not answered.
 
 A:  So we need to close the meeting . 
@@ -47,37 +57,47 @@ A:  So um you have to work on the on the working design ,
 A:  you have to uh work on the technical functions , 
 A:  and uh you have to work on us user requirements specs , 
 A:  Um you will receive some information by emails , i as usual . 
+descriptions: Suggest Inform Inform Inform Inform 
 abst_sum - abstract: The project manager closes the meeting, telling each group member what he is responsible for and reminding them that they will receive more information by email.
 
 A:  So um you have to work on the on the working design , 
 A:  you have to uh work on the technical functions , 
 A:  and uh you have to work on us user requirements specs , 
+descriptions: Inform Inform Inform 
 abst_sum - action: The project manager designates each group member's task- working on the working design, technical functions, or user requirement specs.
 
 A:  Um you will receive some information by emails , i as usual . 
+descriptions: Inform 
 abst_sum - action: They will receive more information by email.
 
 A:  So , the goal of this project is to uh developed a new remote control . 
+descriptions: Inform 
 abst_sum - decisions: The project goal is to develop a new remote control.
 
 A:  So <cough> we should target selling price of twenty-five Euro for this remote control 
+descriptions: Suggest 
 abst_sum - decisions: The target selling price will be 25 Euro dollars.
 
 A:  And we should target the inter an international market . 
+descriptions: Suggest 
 abst_sum - decisions: They will target the international market.
 
 A:  which which would generate a profit of of um <cough> fifty million Euros , okay . 
+descriptions: Inform 
 abst_sum - decisions: They will generate a proft of fifty million Euros.
 
 B:  is this a stand-alone unit that we're gonna be selling ? 
+descriptions: Elicit-Inform 
 abst_sum - problems: A group member asks whether it is going to be a stand-alone unit, or one that requires a T.V. beforehand.
 
 A:  So um we should decide which kind of remote control we want to uh we want to uh we want to go . 
 A:  should it be um specific remote control to some specific device ? 
 A:  Should it be a universal one ? 
+descriptions: Suggest Elicit-Assessment Elicit-Assessment 
 abst_sum - problems: They did not decide yet what type of remote control to produce- whether it should be for a specific device or universal.
 
 B:  so , it seems the the first thing that they've kinda specified is the price like based on how much profit we wanna make , 
 B:  but I guess if that's  if that's the requirement that we need to to design the the product to actually fit that that price bracket 
+descriptions: Inform Suggest 
 abst_sum - problems: The main concern is that they do not know what the product is, yet they have to make it fit that price bracket.
 

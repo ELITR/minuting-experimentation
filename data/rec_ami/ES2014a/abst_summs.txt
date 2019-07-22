@@ -8,6 +8,7 @@ B:  I'm Nick .
 B:  I am the Industrial Designer . 
 A:  And I'm Alastair 
 A:  and I'm the project leader . 
+descriptions: Inform Suggest Inform Inform Inform Inform Inform Inform Inform Inform 
 abst_sum - abstract: The group introduced themselves and their roles to each other.
 
 A:  Right , so agenda of the first meeting . 
@@ -24,6 +25,7 @@ A:  and therefore to uh to get a bigger market share and bigger audience .
 A:  method of doing this is uh split up as you can see into uh <other> the functional design , the conceptional design , and the detailed design 
 A:  in each of these uh phases we'll uh basically be handing over to yourselves , the designers of this uh this device . 
 A:  And uh having uh meetings so that we can uh during the course of the day um come up with a better better inst implement than we had before . 
+descriptions: Inform Inform Elicit-Inform Inform Other Comment-About-Understanding Inform Inform Inform Inform Inform Inform Inform Inform 
 abst_sum - abstract: The Project Manager introduced the project aim and agenda to the group.
 
 A:  So we've got tool training . 
@@ -36,6 +38,7 @@ B:  Um <laugh> and I like my animal that looks nothing like a bear because um I 
 D:  Um I'm gonna go for the dog , 
 A:  So what my daughters have got at the moment is they've got uh a few fish 
 A:  and so hopefully um won't prove too difficult to draw . 
+descriptions: Inform Inform Inform Inform Elicit-Offer-Or-Suggestion Inform Inform Inform Inform Inform 
 abst_sum - abstract: The group acquainted themselves with the meeting-room equipment by drawing on the whiteboard.
 
 A:  Work has been done on uh this uh project where by um twenty five Euros is uh the uh expected uh selling price . 
@@ -43,6 +46,7 @@ A:  So we're looking to sell internationally , not just in Europe .
 A:  We're looking at um having our production costs limited to uh twelve and an half Euro per unit . 
 A:  And therefore making a profit margin of uh  well not actually a profit margin it's uh  because obviously you're gonna have overheads and various other costs to uh take uh from uh from that to give you your profit margin per unit . 
 A:  And so depending what the uh the overhead uh costs are will determine uh how many units we're uh looking to sell or projecting to sell at this point in time . 
+descriptions: Inform Inform Inform Inform Inform 
 abst_sum - abstract: The Project Manager discussed the projected production cost and price point for the device.
 
 A:  Experience with remote control , first ideas . New remote . 
@@ -76,12 +80,14 @@ A:  Whilst at the same time you want , as you rightly said , one remote for all 
 A:  And so these are probably mutually exclusive options 
 A:  you could argue that experience of using devices and similar devices as people get more and more used to using remotes , 
 D:  So it's possible that we could devise a system where where you're you're basically sort of holding a a miniature computer which is controlling all your your sort of your television , your stereo , 
+descriptions: Other Inform Elicit-Inform Inform Suggest Inform Inform Inform Inform Elicit-Inform Inform Inform Suggest Inform Inform Elicit-Inform Inform Inform Inform Inform Suggest Suggest Inform Suggest Inform Inform Inform Inform Inform Inform Suggest 
 abst_sum - abstract: The group began a discussion about their own experiences with using remote controls and about usability features to be included in the design.
 
 A:  Specific instructions will be sent to you by your person by your personal coach . 
 A:  Okay , so we've got um the working design for I_D_ . 
 A:  For U_I_D_ the technical functions design . 
 A:  Marketing , the user requirement specification . 
+descriptions: Inform Inform Inform Inform 
 abst_sum - abstract: The Project Manager instructed the Industrial Designer to prepare the working design, the User Interface Designer to research technical functions, and the Marketing Expert to prepare the user requirement specification.
 
 C:  I'm not exactly clear on what we're designing the rem remote for . 
@@ -91,15 +97,19 @@ B:  so maybe we should just stick to that unless we get told otherwise .
 A:  That's true , 
 A:  'cause during during the course of our day we might make decisions based on information or meetings that would change <other> where we're going . 
 A:  But at this point in time I think you're right that uh  shall we make it just a T_V_ . 
+descriptions: Comment-About-Understanding Elicit-Inform Inform Suggest Assess Inform Inform 
 abst_sum - abstract: The group discussed the function of the prototype and decided that they should restrict the remote to television for the time being.
 
 A:  Okay , so we've got um the working design for I_D_ . 
+descriptions: Inform 
 abst_sum - action: The Industrial Deigner will prepare the working design.
 
 A:  For U_I_D_ the technical functions design . 
+descriptions: Inform 
 abst_sum - action: The User Interface Designer will research technical functions.
 
 A:  Marketing , the user requirement specification . 
+descriptions: Inform 
 abst_sum - action: The Marketing Expert will prepare the user requirement specification.
 
 C:  I'm not exactly clear on what we're designing the rem remote for . 
@@ -108,8 +118,10 @@ B:  I think you just said at the start it was a television remote control ,
 B:  so maybe we should just stick to that unless we get told otherwise . 
 A:  That's true , 
 A:  But at this point in time I think you're right that uh  shall we make it just a T_V_ . 
+descriptions: Comment-About-Understanding Elicit-Inform Inform Suggest Assess Inform 
 abst_sum - decisions: The group discussed the function of the prototype and decided that they should restrict the remote to television for the time being instead of allowing it to control multiple devices.
 
 None
+
 abst_sum - problems: NA.
 

@@ -16,12 +16,14 @@ C:  Yeah , but I expected also the wheel would be cheap but you tell me that it 
 A:  But it can be uh battery consuming , no ? 
 A:  To have the light always on ? 
 B:  Yeah , a little bit . 
+descriptions: Inform Inform Inform Inform Suggest Inform Elicit-Inform Suggest Inform Inform Elicit-Inform Inform Inform Inform Inform Elicit-Inform Elicit-Inform Inform 
 abst_sum - abstract: The Industrial Designer presented the functional components that will appear in the prototype, and discussed with the group the high cost of the wheel sensor and the possibility of incorporating speech recognition.
 
 C:  So I just look at some current designs uh on the web , of usually more complicated remote controls . 
 C:  And let's look at two of them because uh th even though they have many buttons they look quite simple . 
 C:  So it's basically more or less how we would like it , with a big volume control , big channel control , and mute and power , 
 C:  So basically , w software we will build will look more or less the same as these two . 
+descriptions: Inform Suggest Inform Suggest 
 abst_sum - abstract: The User Interface Designer presented existing remote controls to help show the interface of the prototype.
 
 C:  And in our case we just uh reject the buttons what we don't need and it become even simpler . 
@@ -31,12 +33,14 @@ C:  I think that the volume and the buttons that are there on the top are not ve
 C:  Uh you just need to put the channel numbers somewhere a bit out of the way . 
 C:  Uh so we could just basically use one just wheel 
 C:  and uh user could use just the wheel to do everything with the channels in that case . 
+descriptions: Suggest Inform Suggest Inform Suggest Suggest Inform 
 abst_sum - abstract: He showed how the new design will be more simple and ergonomic than the models he displayed by eliminating extra functions.
 
 D:  And there is a fashion watchers in Paris and Milan that have detected the following trends , 
 D:  uh fruits and vegetables will be the most important theme for clothes , shoes , and furnitures . 
 D:  <other> So , maybe if our <laugh> remote control have to be a fruit form or vegetable form <laugh> 
 D:  <laugh> And the mm the material is expected to be spongy . 
+descriptions: Inform Inform Suggest Inform 
 abst_sum - abstract: The Marketing Expert presented news about trends in fashion and in the market that will be incorporated into the design.
 
 D:  <other> So , maybe if our <laugh> remote control have to be a fruit form or vegetable form <laugh> 
@@ -45,10 +49,12 @@ C:  I think we can certainly just put the electronics in a spongy thing ,
 A:  Yeah , because it's robust . 
 A:  Maybe uh um <other> a colour that remember some fruit uh , things like that . 
 A:  Yeah . Maybe pear yeah or something like that . 
+descriptions: Suggest Inform Inform Assess Suggest Suggest 
 abst_sum - abstract: A fruit and vegetable theme and spongy materials are popular trends that will be used in the design.
 
 A:  <laugh> I think p spongy is good because it it will be robust as well . 
 A:  I think we can keep the wheel 
+descriptions: Assess Suggest 
 abst_sum - abstract: The group finalized which features they wanted to integrate into the design.
 
 C:  Well the obvious thing is a banana , I guess . 
@@ -57,44 +63,56 @@ B:  but when the banana is curving like that , with the wheel on the top and to 
 C:  You can also take into account the fact that the banana fits with the colour scheme of our company . 
 B:  So we will just use a a standard battery ? 
 A:  I think it's the box that should be spongy , banana's shape . 
+descriptions: Inform Inform Suggest Inform Elicit-Inform Inform 
 abst_sum - abstract: They decided to make the remote shaped like a banana and spongy, to have the buttons lighted, to have a wheel sensor at the top of the device, and to use only a standard chip and battery that would not accomodate speech recognition.
 
 None
+
 abst_sum - abstract: The Project Manager instructed the User Interface Designer and the Industrial Designer to construct the prototype, and announced that the prototype would be evaluated in the next meeting.
 
 None
+
 abst_sum - action: The Industrial Designer and the User Interface Designer will construct a prototype for the product.
 
 None
+
 abst_sum - action: The group will evaluate the prototype according to whether or not it meets the requirements of users.
 
 A:  <laugh> I think p spongy is good because it it will be robust as well . 
 A:  I think we can keep the wheel 
 B:  chip imprint we know exactly which one we are going to use . 
+descriptions: Assess Suggest Inform 
 abst_sum - decisions: The group decided on the features that will be incorporated into the design of the prototype.
 
 A:  Banana is also yellow so you you can't lost your remote control then . 
 C:  You can also take into account the fact that the banana fits with the colour scheme of our company . 
 A:  I think it's the box that should be spongy , banana's shape . 
+descriptions: Inform Inform Inform 
 abst_sum - decisions: The remote will be shaped and colored like a banana, and be covered in a spongy material.
 
 None
+
 abst_sum - decisions: The buttons will be lighted.
 
 A:  I think it's innovative to use the mm the wheel because I think no one else has . 
 D:  that's why I think we have to keep that if it's possible . 
 B:  but when the banana is curving like that , with the wheel on the top and to control , 
+descriptions: Inform Suggest Suggest 
 abst_sum - decisions: The group decided to keep the wheel sensor despite the added cost.
 
 B:  but when the banana is curving like that , with the wheel on the top and to control , 
+descriptions: Suggest 
 abst_sum - decisions: It will be placed at the top of the banana shape.
 
 None
+
 abst_sum - decisions: The group decided to simply use a standard chip that will not accomodate speech recognition, as this feature will be eliminated from the functional design.
 
 B:  So we will just use a a standard battery ? 
+descriptions: Elicit-Inform 
 abst_sum - decisions: The remote will use standard batteries.
 
 None
+
 abst_sum - problems: NA.
 

@@ -15,9 +15,11 @@ D:  And if we look at the market , f people from well from fifteen to thirty fiv
 D:  um ninety one to seventy six percent of people in that age range are willing to pay more for this sort of product , 
 D:  while people that are above thirty five years ol um years old go from thirty five percent to eight percent , 
 D:  but I think that the people that actually do buy remotes m more are those like teenagers and young professionals and um , most likely , 
+descriptions: Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform Inform 
 abst_sum - abstract: The Marketing Expert gave a presentation about user requirements as shown through a usability study and demonstrated that only a small number of functions on a remote were used with frequency.
 
 D:  and I think we should design according to these buttons . 
+descriptions: Suggest 
 abst_sum - abstract: She suggested focusing the interface design on the most frequently used functions.
 
 C:  This my presentation about the uh technical functions design 
@@ -30,6 +32,7 @@ C:  or do we need to have like functions for cable or V_C_R_ ?
 C:  <other> I just thought that these two remotes were pretty boring , 
 C:  And I think we can find something that's more fun to look at and use than either of those . 
 C:  uh but I mean I think we sh can sort of think about things like um <other> like colour and you know size , shapes , that sort of thing , to best fit the user . 
+descriptions: Inform Inform Inform Suggest Suggest Inform Inform Assess Assess Suggest 
 abst_sum - abstract: The User Interface Designer presented some questions that should be considered in making the device user-friendly and displayed two existing remote controls for comparison.
 
 B:  Okay so this is on the working design , which is sort of the uh mechanical functions of the remote , 
@@ -43,12 +46,14 @@ B:  Um so my personal preferences for how to build the remote would probably be 
 B:  um a button pad for input , 
 B:  I_R_ transmitter to communicate to the T_V_ , 
 B:  and I'd probably say a buzzer for the location function on the remote itself . 
+descriptions: Inform Inform Inform Inform Inform Inform Inform Suggest Suggest Suggest Suggest 
 abst_sum - abstract: The Industrial Designer discussed the necessary internal components and how they operated together, and presented her preferences for the type of each component to be used.
 
 A:  and then I just wanna mention some new project requirements that came in . 
 A:  Um , teletext is apparently outdated , so  <laugh> due to internet popularity , so that's off the list . Um , 
 A:  also our remote should be used only for television , um , 
 A:  Um and also we need to incorporate our corporate image onto this , 
+descriptions: Offer Inform Inform Inform 
 abst_sum - abstract: The Project Manager gave the group several new requirements for the project.
 
 A:  So we need to make some decisions on the remote control functions . 
@@ -66,10 +71,12 @@ D:  You don't need a light .
 A:  And like if the if the phone's under the couch , you might not see the light , so 
 C:  Then it can live anywhere . 
 A:  like um if you can yeah if you can call it then it's  
+descriptions: Suggest Elicit-Assessment Assess Inform Assess Inform Inform Inform Elicit-Assessment Assess Inform Assess Inform Inform Inform 
 abst_sum - abstract: The group discussed several product features and decided that the remote will feature a locator function and will not feature speech recognition.
 
 A:  'Cause that that is something we have to decide , is whether we want to have V_C_R_ capabilities . 
 A:  And and if we're if we're targeting young professionals and teenagers , I mean it's gonna be D_V_D_ type , that's the the technology these days . 
+descriptions: Suggest Assess 
 abst_sum - abstract: The group discussed whether or not the remote should control multiple devices.
 
 C:  I think still though , it shouldn't be that hard to take  like just reduce the number of buttons you know , 
@@ -86,6 +93,7 @@ C:  like it could be a cool sort of you know , because it could be circular , yo
 C:  So  but I'm saying like , does it make sense to have like some kind of a button , 
 C:  so like you're  if you're on T_V_ , like you can switch channels , 
 C:  but then if uh if you're on D_V_D_ then like the channel bu like the the region of the disc that was for channels is for like switching to different tracks 
+descriptions: Assess Inform Inform Assess Suggest Elicit-Inform Suggest Suggest Inform Inform Suggest Elicit-Assessment Inform Inform 
 abst_sum - abstract: They discussed important button functions to include and increasing usability by incorporating a scroll wheel in the design.
 
 C:  But the only thing is like , iPods are so expensive , 
@@ -93,44 +101,55 @@ B:  I don't think it's the wheel dealy .
 A:  Um so everyone's gonna go finish their questionnaire , 
 A:  uh then when we come back after lunch we'll have thirty minutes of individual work , 
 A:  um yeah , so think about the things we've discussed and bring some new ideas to our next meeting . 
+descriptions: Inform Inform Inform Inform Suggest 
 abst_sum - abstract: The Project Manager instructed the other participants to fill out a questionnaire and to work on their individual presentations for the next meeting.
 
 A:  Um so everyone's gonna go finish their questionnaire , 
+descriptions: Inform 
 abst_sum - action: All participants will fill out a questionnaire after the meeting.
 
 A:  uh then when we come back after lunch we'll have thirty minutes of individual work , 
 A:  um yeah , so think about the things we've discussed and bring some new ideas to our next meeting . 
+descriptions: Inform Suggest 
 abst_sum - action: The Designers and the Marketing Expert will work on their individual presentations.
 
 B:  It's easy to implement . 
 C:  so do we wanna go ahead and design this thing with the finder button ? 
 B:  um so probably like a radio signal like on a on a cell phone . 
 B:  Yeah , so it would be a two part package . 
+descriptions: Assess Elicit-Assessment Inform Inform 
 abst_sum - decisions: A locator device separate from the remote will be incorporated into the design, which will operate with radio signal.
 
 A:  if you consider our budget , to h have speech recognition programmed in every single remote might be a little pricey . 
+descriptions: Assess 
 abst_sum - decisions: Speech recognition will not be used.
 
 C:  So then our target age group would be the nineteen to thirty five range , 
+descriptions: Inform 
 abst_sum - decisions: The group decided that their target marketing group would be mostly teenagers and young professionals.
 
 D:  Do you still want to build a little thing next to the telly or to p hang on the wall 
 A:  We probably leave that . 
+descriptions: Elicit-Assessment Assess 
 abst_sum - decisions: There will not be a stand in which the remote is placed when not in use.
 
 A:  like um if you can yeah if you can call it then it's  
 C:  Then it can live anywhere . 
+descriptions: Inform Inform 
 abst_sum - decisions: The group decided that the locator function eliminated the need for this component.
 
 D:  You don't need a light . 
 A:  And like if the if the phone's under the couch , you might not see the light , so 
+descriptions: Assess Inform 
 abst_sum - decisions: The locator function will not involve an LED indicator; the remote will simply emit a sound when located.
 
 A:  So we definitely want a power button and numbers . 
+descriptions: Assess 
 abst_sum - decisions: The main interface will include a power button.
 
 C:  like it could be a cool sort of you know , because it could be circular , you know , or something weird like that , just  
 C:  That sort of like joystick flat touch thing , yeah . 
+descriptions: Suggest Suggest 
 abst_sum - decisions: The main interface will include a scroll wheel function in place of a number pad.
 
 D:  Um , how do I put this  
@@ -139,9 +158,11 @@ C:  Could you just plug it back into hers
 B:  The cable might be a little loose or something . 
 C:  Okay so now I need to press F_ eight , what is it ? 
 C:  What's function ? 
+descriptions: Elicit-Inform Elicit-Inform Suggest Inform Elicit-Inform Elicit-Inform 
 abst_sum - problems: Some of the group members had difficulties with their computers in opening their presentations.
 
 A:  You know actually our our new project requirements , I'm not sure if they meant o onl use only for television as in not for D_V_D_ or just not internet type things . 
 A:  So I'll I'll check that and update you on the next  
+descriptions: Inform Offer 
 abst_sum - problems: The new requirements from the management regarding use with multiple devices were unclear.
 

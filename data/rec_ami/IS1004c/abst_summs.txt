@@ -1,13 +1,16 @@
 A:  So today is um our third meeting . 
 A:  It will be about the conceptual design <other> uh . 
+descriptions: Inform Inform 
 abst_sum - abstract: The project manager opens the meeting, stating that it is about conceptual design.
 
 A:  um . We decided not to go for speech recognition technologies because of some reasons 
 A:  and we are not decided about u the use of L_C_D_ screen on on the remote control because of costs . 
 A:  Uh at the end of the meeting we should take decision on that point . 
+descriptions: Inform Inform Suggest 
 abst_sum - abstract: He restates the last meeting's descision that they will not do speech recognition technology but says they still have to decide whether to use an LCD screen.
 
 A:  So each of you have some presentatio presentation to perform 
+descriptions: Inform 
 abst_sum - abstract: Then they move on to the three presentations.
 
 D:  I investigate deeper the preference of the users . 
@@ -20,6 +23,7 @@ D:  all this fashion it's <cough> it's fruit and the the the theme is fruit and 
 D:  And also <cough> in the in the U_S_A_ the the current  the mor the most popular feeling it's it's a spongy . 
 B:  What what do you mean by <laugh> fruit and vegetables and spongy ? 
 D:  I didn't miss and I saw that the fruit , there are many fr pictures of fruits and vegetables in the clothes . 
+descriptions: Inform Inform Inform Inform Inform Inform Inform Inform Elicit-Inform Inform 
 abst_sum - abstract: The marketing expert is first to present, and he talks about making a pleasant-looking device, particularly one that favors current trends.
 
 B:  So we're not gonna have a remote control in the shape of of a banana , 
@@ -40,12 +44,15 @@ A:  Maybe too long .
 A:  and you you you will not have pla enough  a lot of place to put a L_C_D_ on a banana also . 
 D:  and also it's  I'm not convinced about this L_C_D_ 
 D:  Uh do you want a an L_C_D_ with twenty five Euros ? <laugh> 
+descriptions: Assess Inform Elicit-Offer-Or-Suggestion Inform Suggest Suggest Elicit-Offer-Or-Suggestion Assess Assess Suggest Elicit-Assessment Assess Inform Inform Assess Inform Assess Elicit-Assessment 
 abst_sum - abstract: They then begin talking about using a fruit, vegetable, or natural object as the shape of the remote, the logo, or for the buttons.
 
 A:  you're simply looking s to a remote control that looks like a banana with few buttons  with only a few buttons . 
+descriptions: Assess 
 abst_sum - abstract: Eventually they decide to make the device the shape of a banana.
 
 A:  So you are User Interface guy . 
+descriptions: Suggest 
 abst_sum - abstract: Next, the user interface specialist presents.
 
 B:  Okay . So I received an email um around lunchtime letting me know that the brilliant minds at our technology division had developed an integrated programmable sample sensor sample speaker unit , 
@@ -55,10 +62,12 @@ B:  it's it'll recognize uh I guess keywords , but you know keywords in a certai
 A:  So this is not s really to do to to do control . 
 B:  It's designed it's designed as a fun kind of thing , 
 A:   yeah comp <laugh> completely pointless <laugh> for the inter for  from the interaction point of v point of view  . 
+descriptions: Inform Inform Elicit-Inform Inform Elicit-Inform Inform Assess 
 abst_sum - abstract: He annouces that the technology division of their company has developed an integrated programmeable sample speaker unit, which would allow a person to have a conversation with the remote control.
 
 B:  I guess you could build that in , you could you could link the the recognition of a certain phrase to some function on on the remote control . 
 B:  but it basically means we c we can kind of consider this from uh you know uh a theoretical or usability kind of viewpoint without worrying too much about you know how to develop it because we have this already done . 
+descriptions: Suggest Suggest 
 abst_sum - abstract: They have the option of using that technology.
 
 B:  I've just done a quick mock-up of uh uh some of the features of our <laugh> potential funky-looking uh remote control  
@@ -66,29 +75,36 @@ B:  but I mean we can discuss about what other kind of buttons we need , um .
 B:  it's just you know a couple of scroll wheels and a button cause it's hard to get so many buttons on a banana 
 B:  well , I guess you need an on and off switch , 
 B:  but you could you could o you could turn it turn it on by taking the top off the banana maybe , you know , 
+descriptions: Inform Suggest Inform Inform Suggest 
 abst_sum - abstract: He shows them his plan what the remote control could look like and the features it might have.
 
 B:  But um , I've just indicated here , we could have actually two scroll wheels , 
 B:  <other> But I think it's important , you know , to have two scroll wheels because , you know , you want one for for the channel , but you also want one for for the volume , 
+descriptions: Suggest Assess 
 abst_sum - abstract: He suggests putting two scroll wheels- one for changing the channel and another for the volume.
 
 B:  I've also included this turbo button 
 B:  because I think , you know , every design should have a turbo button , 
 B:  so with this turbo button you can , say , skip over t channels if uh , you know , if I'm if I'm going  if I'm scrolling past them 
+descriptions: Inform Assess Inform 
 abst_sum - abstract: He also included a turbo button for speed, which he thinks every design should have.
 
 A:  So i it looks like we're going completely to forget about the L_C_D_ thing . 
+descriptions: Assess 
 abst_sum - abstract: Since they can only charge twenty-five euro they decide to eliminate the LCD screen idea.
 
 B:  It might be useful to have some kind of base station , 
 B:  even if it's just you press on a button on it and uh and the remote control starts beeping , you know , this is a way of finding the remote . 
+descriptions: Suggest Suggest 
 abst_sum - abstract: After that the interface specialist talks about having a base station for the purpose of finding the remote control when lost.
 
 None
+
 abst_sum - abstract: The user could simply press a button on the base station and the remote control would start beeping.
 
 C:  So this is going to be about the component design . 
 C:  So first thing is we need power source for the remote control . 
+descriptions: Inform Inform 
 abst_sum - abstract: Lastly, the industrial designer presents, discussing the power source of the remote control.
 
 C:  So I was of the idea that we can have two kind of power supplies , 
@@ -96,20 +112,24 @@ C:  one is the usual batteries which are there ,
 C:  they could be chargeable batteries if there's a basis station kind of thing 
 C:  and on top of that we can have solar cells , 
 C:  when the lighting conditions are good they can be used so it'll be pretty uh innovative kind . 
+descriptions: Suggest Suggest Inform Suggest Inform 
 abst_sum - abstract: He suggests that they could have one of two kinds of power supplies- the usual batteries or rechargable ones if there is to be a base station and they could place solar cells on top for times when the lighting is good.
 
 C:  Then uh we need plastic with some elasticity so that if your  if the remote control falls it's not broken directly into pieces , 
 B:  I guess that fits in with the spongy kind of design philosophy . 
+descriptions: Suggest Assess 
 abst_sum - abstract: He talks about using plastic with elasticity so that the remote would not break into pieces if it fell, which relates to their earlier discussion about giving it a spongy design.
 
 C:  but plastic is I think is the most appropriate one , 
 C:  it'll bring the cost down 
 A:  Yeah but it's more easier to do a banana in plastic than uh in wood . 
+descriptions: Assess Inform Assess 
 abst_sum - abstract: Plastic is also less costly than other options of wood or titanum.
 
 C:  and then it should be double curve . 
 C:  The s science for the ease of handling and there are some other issues why we need double curve . 
 C:  with plastic you can have double curve but with uh certain other materials we cannot have double curve . 
+descriptions: Suggest Inform Inform 
 abst_sum - abstract: In addition, he talks about giving the control a double curve, curves on both the sides so that it is easy to hold and handle.
 
 B:  but are we set on the banana idea ? 
@@ -118,11 +138,13 @@ A:  Yes it is .
 B:  Yeah , okay , so capsicum or pepper . Yeah . 
 B:  <other> I don't know , it seems a little bit kind of bulky to me , like 
 B:  But  like a banana you can you can be holding like this and have the scroll wheel kind of on top 
+descriptions: Elicit-Assessment Assess Assess Assess Assess Inform 
 abst_sum - abstract: They do not yet seem set about the idea of making it a banana shape, and one group member feels that the shape is not handy.
 
 C:  Then uh there are different kind of chips , 
 C:  one one is the basic chip and the regular chip and one an adva advanced chip . 
 C:  Pricing is a factor for us , that's why we'll go for the regular chip . 
+descriptions: Inform Inform Assess 
 abst_sum - abstract: The industrial desiger tells them they will use a regular chip rather than the advanced one since pricing is a factor.
 
 C:  So you're having the basis station and there is a button , 
@@ -130,6 +152,7 @@ C:  if you press that button wherever the remote it'll start beeping so you know
 B:  <other> I think that's a pretty handy feature . 
 D:  Yeah but I'm a bit worried about the budget .  
 C:  basis station is nothing more , just it's a wire which is coming from the main cable and uh you're having one socket on which the thing sits . 
+descriptions: Inform Inform Assess Assess Inform 
 abst_sum - abstract: They agree on having base station with the remote.
 
 B:  I'm just wondering actually , 'cause , you know , I  this whole fruit thing with the banana , it's um it seemed like  it first seems a bit kind of uh niche , like only a few people would really want a banana , 
@@ -138,6 +161,7 @@ B:  You know , rather than having it kind of you know yellow and really looking 
 A:  If you make something that looks like a banana it should have the colour of a banana . 
 B:  maybe  like still in the shape of a banana . 
 B:  Um , but you know , just maybe maybe not exactly the same texture as a banana 
+descriptions: Assess Suggest Suggest Assess Suggest Suggest 
 abst_sum - abstract: They go on to have discussion, with one member suggesting that they make the banana more stylized so that it looks less like a banana- for example, it could be silver.
 
 A:  So we need to take some de decisions about um <other> about what we're going to do . 
@@ -148,14 +172,17 @@ A:  and your tur turbo turbo uh button .
 B:  Yeah , which  I think it's it's probably best actually on the on the underneath of the the device , 
 A:  And and you have two wheels . 
 B:  Oh we need a we need a power um on off switch as well . 
+descriptions: Suggest Inform Inform Inform Inform Assess Inform Inform 
 abst_sum - abstract: After that the project manager has them discuss/reiterate the decisions made during the meeting:  no LCD screen, the remote will have a base station, a RF for beeping, a button on the base station to press, possibly a stylish banana-shape for the control, 2 scroll wheels to control the volume and channels at the thumb level, a turbo button perhaps underneath the device, on/off button for the TV.
 
 A:  You have to uh work on the look and feel uh design 
 A:  and you have to work on the user interface , 
 A:  in fact you two you have to work together to model the first uh f first prototype . 
+descriptions: Inform Inform Inform 
 abst_sum - action: Before the next meeting, the interface specialist and industrial designer have to work together on the user interface and the look/feel design.
 
 A:  Uh Marketing Expert uh have to go to product evaluation . 
+descriptions: Inform 
 abst_sum - action: The marketing expert has to look up product evaluation.
 
 A:  So this is out of discussion . 
@@ -164,6 +191,7 @@ A:  So i it looks like we're going completely to forget about the L_C_D_ thing .
 A:  No we can we can't use that . 
 B:  Well , I f I think it's probably more than , than our  can handle because it's designed for a coffee machine , you know , to say hello in the morning . 
 C:  L_C_D_ has already been ruled out , A_S_R_ has been ruled out . 
+descriptions: Assess Assess Assess Assess Assess Inform 
 abst_sum - decisions: Thus far, LCD and ASR have been ruled out.
 
 A:  <laugh> We'll have a base station extra uh on the side . 
@@ -172,12 +200,15 @@ A:  and your tur turbo turbo uh button .
 B:  Yeah , which  I think it's it's probably best actually on the on the underneath of the the device , 
 A:  And and you have two wheels . 
 B:  Oh we need a we need a power um on off switch as well . 
+descriptions: Inform Inform Inform Assess Inform Inform 
 abst_sum - decisions: The remote will have a base station, a button on the base station to press, 2 scroll wheels for the channels and volume, a turbo button (possibly underneath the device), and an on/off button for the TV.
 
 B:  but are we set on the banana idea ? 
+descriptions: Elicit-Assessment 
 abst_sum - problems: The group has not yet agreed on whether the remote should be banana-shaped.
 
 B:  Well , I dunno if the traditional user is gonna buy a a banana remote 
 C:  But you know our targets are very high , means fifty million Euros is the profit which we want make . 
+descriptions: Assess Inform 
 abst_sum - problems: There is concern that the shape is not handy and might make the product less marketable- that would be a problem since they have to meet the fifty million euros profit goal.
 

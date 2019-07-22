@@ -2,39 +2,48 @@ A:  the new project requirements ,
 A:  but we should not um support teletext in the remote , 
 A:  Um the remote control should only be used for television , 
 A:  <other> then for Roo , as well uh important , the corporate image should be recognisable in our product . 
+descriptions: Inform Inform Inform Inform 
 abst_sum - abstract: There are some new requirements for the project: the device will have to be for TV only, they should ignore the teletext function, as it is dated, and, also, the remote should be recognisable as a Real Reaction product.
 
 A:  Uh the third requirement is that we should focus on customers that are younger than uh forty , 
+descriptions: Inform 
 abst_sum - abstract: The target group will be people below 40.
 
 B:  But my  in  my opinion , the the easy to use R_C_ is uh the best uh possi possibility for us . 
+descriptions: Assess 
 abst_sum - abstract: The UI preferred an easy-to-use remote to a multi-function one.
 
 C:  And the m most easy way to do this is by uh sending pulses of infrared light to a T_V_ set . 
 C:  The user interface connected to a chip , 
 C:  which is connected to the sender , 
 C:  which generates messages using uh infrared light , 
+descriptions: Inform Inform Inform Inform 
 abst_sum - abstract: The function of the remote is relatively simple: by pressing a button a current is passed to the chip, and defines what signal is to be sent to the receiver (the TV) via infrared.
 
 C:  personally I think we should infra use infrared , 
 C:  Uh another important point is uh we really should use uh energy uh sparse , friendly components . 
 C:  <other> Um for cost-effectiveness , we should really use a very low-cost uh circuit board , 
+descriptions: Suggest Suggest Suggest 
 abst_sum - abstract: The use of infrared, energy-efficient power source and cheap circuit was suggested.
 
 C:  And um the money we save on using this we can use uh for elaborate fancy lighting uh techniques , blinking LEDs and all that kind of fancy stuff . 
 A:  It should be an easy interface with not so much buttons . S just a a p a p a volume and a programme one . And um <other> um yeah , some some fancy lights . 
+descriptions: Suggest Inform 
 abst_sum - abstract: The remote could light up via LED's placed inside.
 
 D:  The buttons to zap are used the  about uh fifteen hundred times , 
 D:  And uh lots of people complained they kin can't find their remote control . 
+descriptions: Inform Inform 
 abst_sum - abstract: Functions like zapping are very prevalent, as well as complaints about remotes being easy to lose.
 
 A:  do you think the market would would respond to uh a simple  
 D:  if we um include other uh innovative functions  <laugh> uh then they uh might , 
 D:  'cause young people uh like new features . 
+descriptions: Elicit-Inform Inform Inform 
 abst_sum - abstract: It also transpires that customers like innovative technology like speech recognition.
 
 None
+
 abst_sum - abstract: The design can focus on such customer needs, like finding a mechanism to locate a lost remote.
 
 A:  but I want um the kind of functions , for example uh th the most important are volume and uh programme selecting . 
@@ -42,95 +51,120 @@ A:  Dual channel watch .
 C:  when you add uh speech recognition to your remote control , uh it's very easy to change uh the channel . That's one thing . 
 A:  but keep the programme and the volume , 
 C:  we've decided to implement a seemingly uh easy design . 
+descriptions: Inform Elicit-Inform Inform Suggest Inform 
 abst_sum - abstract: The functions of the remote will include a back button to switch between two channels, volume, program selection, and speech recognition, with a focus on simplicity of design.
 
 A:  Um maybe Sebastian should have uh a detailed look later on and um come up with a solution , 
+descriptions: Suggest 
 abst_sum - action: The industrial designer will look into what would be an appropriate technology to help users find their remote, when it is lost.
 
 A:  Um I will put the minutes I just made in the project documents folder . 
+descriptions: Offer 
 abst_sum - action: The project manager will add the minutes into the project folder.
 
 A:  Um <other> the Interface Designer , um I would like to  the next meeting I would like to receive the uh components concept . 
+descriptions: Inform 
 abst_sum - action: The ID will present the components concept.
 
 A:  User Interface Designer , uh Roo , I would like to see the user interface c uh concept . 
+descriptions: Inform 
 abst_sum - action: The UI will present the user interface concept.
 
 A:  I'm sure the marketing expert will receive uh t uh you will do some trend watching . 
+descriptions: Inform 
 abst_sum - action: The marketing expert will need to find information on current trends.
 
 C:  And um the money we save on using this we can use uh for elaborate fancy lighting uh techniques , blinking LEDs and all that kind of fancy stuff . 
 A:  It should be an easy interface with not so much buttons . S just a a p a p a volume and a programme one . And um <other> um yeah , some some fancy lights . 
+descriptions: Suggest Inform 
 abst_sum - decisions: LED's can be used to light up the remote.
 
 B:  I think it's the same as in the cell phone , just light in in the device that that shines on all the buttons , 
+descriptions: Inform 
 abst_sum - decisions: Using them sparsely, as in mobile phones, could bring down the cost.
 
 D:  So we might want to build in a feature to uh support them . Some uh audio signal . Like uh home phones . 
 A:  m maybe um w we uh we do agree on on the thing that the remote should have such a function , if it's possible within the costs and all that kind of things . 
 D:  Yeah . 
+descriptions: Suggest Suggest Backchannel 
 abst_sum - decisions: It would be a good idea to integrate a mechanism for finding the remote control, when the user loses it.
 
 B:  And do we even uh prefer the sound above the the LEDs , the lightning uh function ? 
 C:  I I think so , 
+descriptions: Elicit-Assessment Assess 
 abst_sum - decisions: The latter would be preferable to implementing a backlight into the remote.
 
 B:  It's just an easy uh way of of a round button what  which can be pushed in four directions . Instead of a stick . 
 B:  just a round uh button should be the trick , I think . 
+descriptions: Suggest Suggest 
 abst_sum - decisions: A single, large, round button can be used for both volume and channel selection by using the four separate quadrants.
 
 A:  Dual channel watch . 
+descriptions: Elicit-Inform 
 abst_sum - decisions: Another button to switch between two channels could also be implemented.
 
 A:  but I want um the kind of functions , for example uh th the most important are volume and uh programme selecting . 
 C:  when you add uh speech recognition to your remote control , uh it's very easy to change uh the channel . That's one thing . 
 A:  but keep the programme and the volume , 
 A:  It should be an easy interface with not so much buttons . S just a a p a p a volume and a programme one . And um <other> um yeah , some some fancy lights . 
+descriptions: Inform Inform Suggest Inform 
 abst_sum - decisions: The remote will also include volume and program selection, and speech recognition.
 
 D:  And uh if we if we could inc uh include a c a cradle in which it could recharge , then there wouldn't be uh a big problem . 
+descriptions: Suggest 
 abst_sum - decisions: A recharging cradle can be added to compensate for the extra energy consumption.
 
 B:  if we use the LEDs , i does it use much more energy 
+descriptions: Elicit-Inform 
 abst_sum - problems: LED's would signify extra energy consumption.
 
 C:  they're p f uh power friendly LEDs also . 
 C:  Uh no , they're uh they're a little bit more expensive , 
+descriptions: Inform Inform 
 abst_sum - problems: Power-saving LED's are available, but these could be more expensive.
 
 D:  So we might want to build in a feature to uh support them . Some uh audio signal . Like uh home phones . 
 B:  I don't think people would bother walking to the T_V_ and press that button because they lost the  their remote . 
 C:  There's no um elaborate technique uh used in this uh kind of equipment . 
+descriptions: Suggest Inform Inform 
 abst_sum - problems: It's difficult to choose a technique to find a lost remote.
 
 A:  maybe maybe like clapping in your hands , 
 C:  Because how can you separate the clapping sound from other sounds . 
+descriptions: Suggest Elicit-Inform 
 abst_sum - problems: They cannot install a special button on a TV, and using a special signal, like clapping, is tricky, because it needs to be differentiated from normal sounds.
 
 B:  But we can have just uh uh a home stat uh f a base station next to the T_V_ . Just a little antenna or uh something . 
 B:   just a base station next to the T_V_ is the best possibility . 
 C:  But that will be very costly , I think . 
+descriptions: Suggest Assess Inform 
 abst_sum - problems: Similarly, using an extra base station would probably be too costly.
 
 C:  But um before I do that I w I want to warn you that uh by implementing this kind of a function the technical design will become more complicated 
+descriptions: Inform 
 abst_sum - problems: Adding such features may complicate the design and escalate costs.
 
 A:  And and do we want um the ten digits ? 
 B:  I wouldn't buy it personally . A remote control without the ten digits . 
 C:  But I think these uh ten uh buttons look a bit dull . 
 A:  Uh  If if we would um drop the ten digits 
+descriptions: Elicit-Assessment Assess Assess Suggest 
 abst_sum - problems: There was a challenge regarding the need of the digit channels, based on the fact that they are not often used, and they also look dull.
 
 A:  You c <other> you can d make them very fancy 
+descriptions: Suggest 
 abst_sum - problems: Despite that, customers may want them to be on a remote; furthermore, they can be designed in a more attractive way.
 
 C:  maybe it can be combined with the find the remote control . 
 C:  when you add uh speech recognition to your remote control , uh it's very easy to change uh the channel . That's one thing . 
+descriptions: Suggest Inform 
 abst_sum - problems: The discussion also focused on their replacement with speech recognition, as the latter helps with locating the remote as well.
 
 C:  but I'm afraid it will be a bit costly . 
+descriptions: Inform 
 abst_sum - problems: However, this solution may prove too expensive.
 
 A:  although we are focussing on younger people uh to make it uh profitable uh  Profitable . We we  yeah , we still need to take in account the the bit older people . 
+descriptions: Elicit-Inform 
 abst_sum - problems: An expanded target group may have to be taken into account in order to achieve the projected sales and profits.
 
