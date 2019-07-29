@@ -1,0 +1,245 @@
+A:  Alright . 
+A:  OK . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  Hi . 
+A:  Uh - huh . Nice to meet you . 
+A:  Hmm . 
+A:  Yes . 
+A:  S 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yes , very much so . 
+A:  Yes . 
+A:  Yes . 
+A:  Yeah . 
+A:  Um we 're here through Sunday , 
+A:  so 
+A:  All through Friday would be fine . 
+A:  Mm - hmm . 
+A:  Yes . Sure . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  So at eleven ? 
+A:  Thursday around eleven ? 
+A:  OK . 
+A:  Yeah obviously . 
+A:  Oh , OK . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  OK . 
+A:  Oh , OK . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Oh , OK . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Oh 
+A:  Well the obvious one would be if  if you envision this as a module within SmartKom , where exactly would that Sit ? 
+A:  That 's the d 
+A:  OK , yeah . 
+A:  Makes perfect sense . 
+A:  Yes . 
+A:  Well it 's supposed to do . 
+A:  Yeah 
+A:  Yeah . 
+A:  Yeah . 
+A:  Well f from my understanding of what the people at Phillips were originally trying to do doesn't seem to quite fit into SmartKom currently 
+A:  so what they 're really doing right now is only selecting among the alternatives , the hypotheses that they 're given enriched by the domain knowledge and the um discourse modeler and so on . 
+A:  So if  if this is additional information that could be merged in by them . 
+A:  And then it would be available to action planning and  and others . 
+A:  Well there 're  there 're two levels of  of giving an answer and I guess on both levels I don't have any um further questions . 
+A:  uh the  the two levels will be as far as I 'm concerned as  uh standing here for the generation module 
+A:  and the other is  is my understanding of what SmartKom uh is supposed to be 
+A:  and I  I think that fits in perfectly 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yes . 
+A:  Yep . 
+A:  Yes . 
+A:  Yep . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yep . 
+A:  So  my suggestion then is that you um look into the currently ongoing discussion about how the action plans are supposed to look like . 
+A:  And they 're currently um Agreeing or  or in the process of agreeing on an X M L - ification of um something like a state - transition network of how dialogues would proceed . 
+A:  and  The  these um transition networks uh will be what the action planner interprets in a sense . 
+A:  Well uh Marcus Lerkult is actually implementing that stuff 
+A:  and Marcus and Michael together are um leading the discussion there , 
+A:  yeah . 
+A:  Yep . 
+A:  Definitely . 
+A:  Mm - hmm . 
+A:  Yes . 
+A:  OK . 
+A:  No . 
+A:  No , in SmartKom terminology that 's um called a function that 's modeled by a function modeler . 
+A:  And it 's th that 's completely um encapsulated from th the dialogue system . 
+A:  That 's simply a functionality that you give data as in a query 
+A:  and then you get back from that mmm , a functioning model um which might be a planner or a VCR or whatever . 
+A:  um some result and that 's then  then used . 
+A:  Yeah , yeah . 
+A:  Yeah , in that  in that sense 
+A:  yes , 
+A:  dialogue act , 
+A:  yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Clearly . 
+A:  Yes . 
+A:  Mm - hmm . 
+A:  Yep . 
+A:  Yep . 
+A:  Probably not enough , 
+A:  I mean an  another uh more basic point there is that the current um tasks and therefore th the concepts in this ac 
+A:  what 's called the action plan and what 's really the dialogue manager . 
+A:  um is based on slots that have to be filled 
+A:  and the um kind of values in these slots would be fixed things like the a time or a movie title or something like this 
+A:  whereas in the a um tourist domain it might be an entire route . 
+A:  Set - based , or even very complex structured information in these slots 
+A:  and I 'm not sure if  if complex slots of that type are really um being taken into consideration . 
+A:  So that 's  that 's really something we 
+A:  Mm - hmm . 
+A:  I mean nothing 's being completely settled there 
+A:  so this is really an ongoing discussion 
+A:  and that 's 
+A:  Mm - hmm . 
+A:  Yes . 
+A:  Yep . 
+A:  Mm - hmm . 
+A:  Right . 
+A:  Yes . 
+A:  hmm 
+A:  That would 
+A:  b but that  I think that  that uh point has been realized 
+A:  and it 's  it 's not really um been defined yet 
+A:  but there 's gonna be some kind of feedback and input from uh the action planner into all the analysis modules , telling them what to expect and what the current state of the discourse is . 
+A:  Beyond what 's currently being implemented which is just word lists . 
+A:  Of  of special interest . 
+A:  Yes , Yes , Mm - hmm yeah . 
+A:  The specifics aren't really there yet . 
+A:  Yes . 
+A:  So , there 's work to do there . 
+A:  hmm 
+A:  Yeah . 
+A:  And even on  on a more basic level the  the action planner actually needs to be able to have um an expressive power that can deal with these structures . 
+A:  And not just um say um  um the dialogue um will consist of ten possible states and th these states really are fixed in  in a certain sense . 
+A:  You have to  
+A:  That 'd be nice . 
+A:  It oughta be called a  a dialogue manager . 
+A:  cuz that 's what everybody else calls it . 
+A:  Yeah . 
+A:  Depends on who you talk to how . 
+A:  We 'll see . 
+A:  I 'll go check , 
+A:  cause I completely agree . 
+A:  Yeah , 
+A:  and I think this is just for historical reasons within uh , the preparation phase of the project 
+A:  and not because somebody actually believes it ought to be action planner . 
+A:  So if there is resistance against changing it , that 's just because " Oh , We don't want to change things . " 
+A:  That  that not deep reason 
+A:  Hmm 
+A:  Yeah , Marcus . 
+A:  Wh - where 's ? 
+A:  Yeah , he 's  he started um I think January . 
+A:  And he 's gonna be responsible for the implementation of this action planner . 
+A:  Dialogue manager . 
+A:  No , 
+A:  no he 's completely gonna rewrite everything . In Java . 
+A:  OK so that 's interesting . 
+A:  hmm 
+A:  No . 
+A:  No , that 's gonna be phased out . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah 
+A:  but that doesn't necessarily contradict um an architecture where there really is a pers a def well - defined interface . 
+A:  and  and 
+A:  Mm - hmm . 
+A:  Yes 
+A:  Sure , 
+A:  ye yeah I  I think that 's  that 's the um concept that people have , 
+A:  yep . 
+A:  And  and the  the underlying idea of course is that there is something like kernel modules with kernel functionality that you can plug uh certain applications like tourist information or um the home scenario with uh controlling a VCR and so on . 
+A:  And then extend it to an arbitrary number of applications eventually . 
+A:  So  wouldn't 
+A:  That 's an additional reason to have this well - defined interface 
+A:  and keep these things like uh tourist information external . 
+A:  And then call it external services . 
+A:  But of course the  the more complex  
+A:  yep . 
+A:  Yeah . 
+A:  Hmm . 
+A:  Hmm . 
+A:  Hmm . 
+A:  Tubingen was at least involved in putting the chunks together 
+A:  I  can't quite recall whether they actually produced the chunks in the first place . 
+A:  Or wh 
+A:  Right . 
+A:  Yeah 
+A:  Well you s and  and especially you did some  some 
+A:  um , l um 
+A:  was a learning - based approach which learned from a big corpus of  of trees . 
+A:  And yes the  it  the chunk parser was a finite - state machine that um Mark Light originally w worked on in  while he was in Tuebingen 
+A:  and then somebody else in Tuebingen picked that up . So it was done in Tuebingen , 
+A:  yeah . 
+A:  Definitely . 
+A:  Yeah I guess it 's similar . 
+A:  Mm - hmm . 
+A:  n Well I think  I think there 's some misunderstanding here 
+A:  it 's  Morphix is not used on - line . 
+A:  s so the lexicon might be derived by Morphix 
+A:  but What  what 's happening on - line is just um um a  a retrieval from the lexicon which would give all the stemming information 
+A:  so it would be a full foreign lexicon . 
+A:  Yep . 
+A:  Sure , 
+A:  right . 
+A:  uh  uh  I think we 're expect  
+A:  Yeah , there  there 's the um practice talk . 
+A:  Yeah , that  that 's what we were planning to do . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yep , yep . 
+A:  And how do you envision um the  the um this deep semantic to be worked with . 
+A:  Would it be highly ambiguous if 
+A:  and then there would be another module that takes that um highly underspecified deep semantic construction 
+A:  and map it onto the current context to find out what the person really was talking about in that context . 
+A:  or  or a  
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Oh , OK . 
+A:  th 
+A:  Mm - hmm . 
+A:  Yeah , OK . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah 
+A:  OK , 
+A:  Yeah , 
+A:  yep yep yep yep 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Yeah , 
+A:  oh yeah , 
+A:  I see , 
+A:  yeah yeah , really . 
+A:  Alright . 

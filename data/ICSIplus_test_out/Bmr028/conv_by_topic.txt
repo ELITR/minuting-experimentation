@@ -1,0 +1,2242 @@
+A:  And we 're going . 
+A:  <mouth> <inbreath> 
+C:  <inbreath> <clears throat> 
+C:  By the way , I 'll  I  I won't be here  next Thursday . I 'll be out of town . <mouth> But  
+A:  <mouth> OK . 
+A:  Actually , I  may not be here either . So  
+A:  I gotta double check the dates . But , <inbreath> anyway . 
+A:  <inbreath> 
+
+
+A:  So the only status ite well , first of all we h haven't decided whether we 're 
+A:  <inbreath> 
+A:  Meeting Recorder data issues , or 
+A:  recognition this week . 
+A:  I think we were recognition . 
+C:  <inbreath> 
+C:  Wha - what was on the list ? Th - the  I mean , I sent you a couple things , although I don't remember them . 
+A:  You only sent me one thing , which was demo status . 
+A:  And asking which one we were on this week .  <laugh> 
+C:  Right . 
+C:  Ah . That was the second thing . Right . <laugh> Right . 
+D:  <laugh> 
+A:  So should we simply assert that this week we are 
+A:  recognition , and next week data issues , and  ? 
+F:  Hmm . 
+B:  I think that 's correct . 
+F:  Yeah . I think so , too . Yeah . 
+B:  Yeah . 
+A:  And , uh  
+A:  <inbreath> 
+A:  So , I think what we should probably do is any 
+A:  quick , small stuff we can do every week . 
+A:  So  like Morgan asked about the demo status . We can go ahead and talk about that a little bit . 
+A:  <inbreath> 
+A:  And then do  
+A:  then alternate in more depth . <outbreath> 
+
+
+
+
+A:  So , uh , demo status . First of all , I did a little thing for Liz with the Transcriber tool , 
+A:  that , um  first of all , it uses the forced alignments , 
+A:  <inbreath> 
+A:  so that the words appear , 
+A:  uh , in their own segments , 
+A:  rather than in long  
+I:  Oh . 
+A:  in long chunks . She said that that  
+A:  she thought that was a much better idea for 
+A:  the other stuff she 's working on . 
+I:  Yeah . That 's great . 
+A:  Um  
+A:  And that works fine except it 's even slower to load . It 's already pretty slow to load . 
+E:  <inbreath> Yeah . <outbreath> It 's slow . 
+D:  Yeah . It 's more segments ? Or  ?  Yeah . 
+I:  Is that because the transcripts get longer ? The f transcript file gets longer ? 
+C:  <mike noise> 
+D:  Yeah . 
+A:  Yeah . 
+D:  Yep . 
+A:  Yep . 
+A:  And the Transcriber tool is just 
+C:  <mike noise> 
+A:  not very good n at  <outbreath> 
+I:  But th but that 's  that 's n You didn't have to change 
+A:  at that . <outbreath> 
+I:  the software for that yet . Right ? It 's just formatting the right kind of , uh , XML  ? 
+A:  Correct . 
+A:  Yeah , it 's just writing conversion tools from the 
+A:  format 
+A:  that the 
+A:  aligner  
+A:  Actually th he did a 
+A:  SRT file for it . 
+I:  Mm - hmm . OK . 
+A:  And then just back into Transcriber  Transcriber format . 
+I:  Oh , good . That 's very good . OK . 
+A:  <inbreath> Yeah . So my  my decision was , for the first pass for this demo that 
+A:  Liz was talking about  I decided that I would do , 
+I:  Mm - hmm . 
+A:  um , only enough to get it working , as opposed to any coding . 
+I:  Right . 
+A:  And so the other thing I sh she wanted to display the stylized F zeroes , I think they 're called ? 
+A:  Is that right ? 
+E:  Yeah . The  linear fit . 
+I:  Mm - hmm . 
+A:  And , uh  
+A:  So what I did is I just took the file with those in it , converted it so that it looks like an audio file . 
+I:  Right . 
+A:  <inbreath> 
+A:  And , so you s it shows that instead of the wavefile . 
+A:  And so that  that 's working , and I think it actually looks pretty good . 
+I:  Cool . 
+I:  Mm - hmm . 
+A:  <inbreath> Um , I 'd like someone who 's more familiar with it to look at it because when I was looking at it , 
+A:  <inbreath> 
+A:  we seemed to have 
+E:  <mouth> 
+A:  lots of stuff going on when 
+A:  no one 's saying anything . 
+E:  That 's just background speech . 
+A:  Ah . 
+I:  <laugh> 
+E:  Yeah . 
+B:  <inbreath> So do you have to pad that out ? 
+E:  So . 
+B:  Uh , so that it looks like it 's an eight kilohertz sampled thing ? Or  ? 
+A:  No . I   the 
+A:  audio file you can specify any sampling rate . 
+A:  And so I s I specified  instead of , 
+A:  you know , sixteen thousand or eight thousand , I specified a hundred . 
+D:  <laugh> 
+B:  Mmm . 
+A:  Um , 
+A:  and , the only problem with that is that there 's a bug in 
+A:  Transcriber , 
+A:  that if the sample rate is too low , when it tries to compute the shape file , 
+A:  it fails . 
+I:  Hmm . 
+A:  Um , and crashes . 
+A:  Um  
+A:  But the solution to that is just , 
+A:  set the option so it doesn't compute the shape file , 
+H:  <mike noise> 
+A:  <inbreath> 
+A:  and it will work and the only problem with that is you can't , 
+A:  uh , zoom out on it . You can zoom in , but not out . 
+E:  <mouth> 
+C:  What 's a shape file ? 
+A:  <mouth> <inbreath> 
+A:  The shape file is  If you think about a wavefile , sixteen thousand samples per second is way too many to display on the screen . 
+C:  <clears throat> 
+C:  Mm - hmm . 
+A:  So what Transcriber does , is it computes a  another thing to display based on the 
+E:  We 're talking about  We 're talking about that demo .  
+H:  Yeah .  <mike noise, adjustment in progress> 
+H:  Tried that , and it died .  <mike noise> 
+A:  waveform . And it displays it at  
+E:  Yeah . Did it ?  
+H:  <mike noise> 
+A:  And it allows you to show m many different resolutions . So there 's a little 
+A:  user interface component that lets you sh select the resolution . 
+H:  Great !  <mike noise, adjustment in progress> 
+H:  <mike noise, adjustment in progress> 
+C:  I see . 
+A:  And if you don't compute the wavefile , you can't 
+A:  zoom 
+A:  out . You can't get a larger view of it . But you can zoom in . 
+I:  Hmm . 
+A:  Um  
+A:  And that 's alright , because at  at a hundred samples that 's already pretty far  out . 
+A:  And , uh  so I think it looks pretty good , but I 'll let Liz look at it and see what she thinks . 
+I:  Hmm . 
+H:  I  I got the wavefile but   
+H:  Sorry . I got the wavefile , but I couldn't get the words yet . But the  the wavefile part looks  looks good . 
+C:  <mike noise> 
+A:  OK . 
+H:  <mike noise, adjustment in progress> 
+I:  <mouth> 
+A:  We should  
+A:  If you were having problems with the words , we should 
+A:  figure out why . 
+H:  I  I 'll have done  I 'm probably doing something wrong . 
+A:  OK .  
+A:  <inbreath> But , so , anyway , I think that looks pretty good . The only  the only other thing we might wanna do with that is be able to display more than one waveform . 
+H:  <mike noise> Hmm . 
+H:  <mike noise> 
+A:  And that actually shouldn't be too slow , 
+A:  uh , because it 's much lower resolution than a full waveform . 
+D:  Yeah . 
+D:  <mike noise> 
+A:  <inbreath> 
+A:  The problem with it is just it does require coding . 
+E:  Yeah . It migh 
+A:  And so it would be much better to get , 
+A:  uh , Dave Gelbart to do that than me , because he 's familiar with the code , 
+A:  and is more likely to be able to get it to work quickly . 
+E:  It 'd be nice if we can do , like , a quick hack , just so we can play  the audio file , too . 
+H:  Right . 
+H:  <mike noise> 
+E:  Um , with th with the display . Like , even if we  I think that even if we didn't display the waveform ,  
+A:  Oh , OK . 
+E:  it might be better to , rather , play the waveform than display it . 
+E:  I mean , like , if we were to choose  I don't know , if I were to choose between one or the other , I 'd rather have it played . 
+A:  Mm - hmm . 
+H:  Yeah . <mike noise> 
+A:  I understand what you mean . 
+H:  <mike noise> 
+E:  And then displayed . 
+A:  <mouth> Right . 
+A:  Ps - 
+A:  <inbreath> But for the demo maybe it doesn't matter . I 'm not sure whether you wanna do the demo live anyway , or just screen shots of what we have . 
+C:  <breath> <mouth> I don't know . 
+A:  The problem with doing it live is it takes so long to load , 
+A:  that , um  
+I:  So this  the  
+I:  this  uh , the sluggishness of the loading is all due to the parsing of the XML format . Right ? 
+H:  <mike noise> 
+C:  <mouth> 
+A:  <inbreath> Um , w I was talking to Dave Gelbart about that and apparently it 's not 
+A:  actually the parsing of the XML raw  
+A:  <inbreath> 
+A:  that 
+A:  going from the XML to an internal  t tree structure is pretty fast . 
+A:  <inbreath> 
+I:  Hmm . 
+A:  But then it walks the tree to assemble its dat internal data structures and that 's slow . 
+I:  Mmm . 
+B:  <mouth> Seems like you should be able to spawn that off into a background process , because <breath> 
+C:  <mouth> 
+B:  not everything is displayed in that tree at once . Right ? 
+A:  <inbreath> 
+A:  Uh , no . But what it does is it actually assembles all the user interface components then . 
+I:  But  d y 
+B:  Right . 
+A:  And then displays all the user interface components . 
+C:  <inbreath> U I 'm  I 'm confused . Uh , is  is this downloading something that happens once ? 
+B:  Seems like you wanna ass 
+A:  Yes . 
+C:  And  and then when you d display different things , it 's fine ? 
+C:  So , in that case  
+I:  No . Whenever you load a new  meeting or a new  transcript . Right . 
+A:  A new transcript . 
+D:  Yep . 
+C:  Well , a new meeting , a transcript . Right . But  but  
+C:  i i for  but for  
+A:  Or audio file . 
+A:  Well , actually the audio files are pretty fast , too . 
+C:  for presentation in , uh  
+D:  Yeah . 
+E:  Yeah . 
+C:  Uh  I wouldn't be  
+I:  You just have to have the thing running before you open your laptop . 
+A:  <inbreath> 
+E:  Yeah . 
+H:  Yeah . 
+A:  Right . The only problem with that is if anything goes wrong  or if you wanna switch from one thing to another . 
+H:  Right . 
+E:  Yeah . <laugh> 
+C:  <inbreath> 
+C:  Go wrong ?  <laugh> 
+E:  <laugh> 
+I:  <breath-laugh> 
+D:  Yeah . 
+G:  <laugh-breath> 
+C:  I see . Yeah . <laugh> 
+D:  <cough> 
+H:  Right . 
+H:  I guess for the demo you can always 
+H:  play  just store the pieces that you 're gonna display and play those as separate files , if we can't , you know , actually do it . 
+I:  Just make shorter files . 
+H:  But it 's  you know , it  it 's  Yeah . 
+A:  That 's true . We could just subset it . 
+I:  <laugh> 
+A:  That 's a good idea . That 's actually probably the right thing to do . 
+I:  Yeah . 
+H:  And just 
+H:  make it l 
+D:  Yep . 
+A:  You know , just take 
+A:  f ten minutes instead of an hour and a half . 
+D:  Yeah . Th - that 's what I did for  for my talk . 
+C:  <inbreath> Oh ! Oh , you 're downloading a whole meeting . 
+A:  Yeah . 
+H:  <sigh> 
+C:  Oh , yeah that @ @ . 
+D:  Yeah . 
+A:  Yeah . So that  that 's actually  the  definitely the way to do it . 
+I:  <laugh> 
+A:  That 's a good idea .  
+D:  Yeah . 
+C:  Yeah .  
+C:  And then still do it ahead of time , but then at least you 're covered if  if , uh  
+A:  Yeah , if there are any problems . 
+C:  <inbreath> if there 's a problem . 
+H:  Right . 
+A:  Yeah , I mean , even five minutes is probably enough . 
+E:  <laugh> 
+I:  <laugh> 
+D:  Huh . 
+H:  Right . 
+H:  So , what happened to  Is it st possible at all to display the words in their aligned locations ? 
+A:  That 's what I did . 
+H:  OK . So . Sorry , I missed  OK . Great ! But it  OK . 
+A:  Yeah . 
+I:  You missed that part . <laugh> 
+E:  <laugh> 
+D:  <breath-laugh> 
+B:  <breath-laugh> 
+C:  <breath-laugh> 
+H:  I couldn't get the words and the waveform at the same time for some reason , and there must be some  
+H:  I 'll  I 'll work on it with Don and see what I 'm doing wrong . 
+A:  Yeah . I mean , just ask  Just come by my office . I can show you as well .  
+H:  OK . Great ! Well , thanks a lot . That 's really great . 
+A:  Right .  
+A:  <inbreath> 
+
+
+H:  Sorry this microphone 's moving around . 
+H:  <mike noise> I can't put this over my ear .  
+E:  <breath-laugh> 
+H:  <mike noise> 
+A:  <laugh> 
+B:  <breath-laugh> 
+D:  <laugh> 
+C:  <breath-laugh> 
+F:  It could  Do you have to put it in your ear ? 
+A:  <inbreath> 
+A:  You c you clip that part over your ear . 
+H:  <mike noise> I can  I can do that but there 's no orientation where the   
+E:  <breath-laugh> 
+H:  <mike noise> <laugh> 
+C:  <breath-laugh> 
+A:  <laugh> 
+D:  <laugh> 
+H:  Darn ! 
+H:  <laugh> <mike noise> 
+A:  <inbreath> Anyway .  We 'll all watch Liz play with the mike . 
+C:  <laugh> 
+I:  <breath-laugh> 
+E:  <laugh> 
+D:  <laugh> 
+I:  <breath-laugh> 
+F:  I Does it really need to go in her ear ? That  that bud ? It doesn't have to go in her ear . Right ? 
+A:  <inbreath> Um  
+A:  Uh , no . It doesn't have to , but that  that 's  I find that 's the only way to wear it . 
+F:  Oh , wow . 
+D:  <laugh> 
+A:  Is that the bud 's in the ear and that the link is over it . 
+C:  This bud 's for  No . 
+
+
+A:  And for the information retrieval , 
+A:  uh , Don has been working on that . So . 
+E:  Yeah . So , it 's coming along . Um  
+A:  It looks like it 
+E:  Just hacking  Dan 's code and m stepping through it . But , I think  it 's close . 
+H:  <more minor mike noise> 
+A:  Great .  
+E:  And we should be there pretty soon , with at least , like  
+C:  <mike noise> 
+E:  at least with , 
+E:  you know , being able to search over 
+C:  <mike noise> 
+E:  c certain amount of meetings , just , like , really basic stuff . Just asking fo looking for a word , and looking through a bunch of different meetings . 
+I:  <mike noise> 
+I:  <mike noise> 
+E:  And if we have time , I 'll also add , you know , like , choosing which speakers you wanna include , 
+E:  and stuff . But  
+C:  OK . Well , I 'm gonna start working on this the week after next , so that 's the point when I 'll need to look more carefully at what y what  
+C:  what you guys have . 
+E:  So , is the end of the month still  the  
+C:  <mouth> Right . The week after  th th 
+E:  the d ? 
+C:  The Monday the week after next is July second , which is the first day I get back . So  
+E:  OK . 
+E:  OK . 
+A:  <inbreath> Yeah . So I think for the L 
+A:  stuff Liz was talking about , we have something that 'll work now . 
+A:  And Liz can look at it and see if she wants anything else . 
+A:  <inbreath> 
+A:  Maybe we can work on doing  displaying multiple  or displaying one and playing back the other . 
+H:  <inbreath> So do you think it 's  reasonable to display more than one  before the demo ? Cuz   
+A:  <mouth> 
+A:  Um , I think I 'd h I 'd have to ask Dave . I did it once before and it was just so slow to scroll , 
+C:  <breath-laugh> 
+A:  that I gave up . 
+H:  Huh . 
+A:  But , 
+A:  the advantage is that these things are much lower sampling rate . And so then it might be alright . 
+H:  Right . 
+H:  OK . Let me know . 
+E:  Morgan , when 's the demo ? 
+C:  <mouth> Well , uh , I 'm giving a talk 
+C:  on 
+C:  <inbreath> 
+C:  July 
+C:  sixteenth . It 's a Mon - Monday in 
+I:  <mouth> <inbreath> 
+C:  four weeks ? 
+I:  So  
+C:  Three weeks ? 
+C:  Um . Yeah . So it 's  Yeah . I think it must be three and a half weeks . Uh , cuz July  
+C:  <mouth> The  the meeting is July sixteenth through eighteenth . 
+C:  And , uh , my talk 's the first day . So . 
+E:  OK . 
+C:  I 'm flying out there the Sunday before . So . 
+C:  Um  
+I:  <sniff> Hmm . 
+I:  <three tongue taps>  
+C:  I guess , you know , it 'd be 
+C:  desirable  if , a week ahead of that , we basically had  thought we had it , 
+C:  which would allow a week for 
+C:  <breath-laugh> 
+E:  <breath-laugh> 
+I:  <breath-laugh> 
+E:  For realizing we don't ? <laugh> 
+A:  Oh , that 's right . 
+C:  re - iterating . 
+C:  <laugh> Yeah . Pretty much . Yeah . 
+H:  <laugh> 
+D:  <laugh> 
+I:  <laugh> 
+A:  <mouth> 
+
+
+I:  If  if raw speed is the problem  This thing is written in Tcl . Right ? 
+A:  Tcl . 
+I:  Y I mean , John Osterhaut , uh  
+I:  Y you know , he started his own company based on Tcl stuff , and maybe they have the native code compiler or something . <inbreath> 
+A:  I mean , we could check . I don't think they do . 
+A:  Um , there was actually a  Java back - end that apparently is actually a little faster . 
+A:  It generates byte code . 
+I:  Hmm . 
+H:  <mouth> 
+A:  <inbreath> 
+A:  But , uh  
+C:  It 's always exciting to hear that Java 's faster than something . 
+A:  Yeah . <laugh> 
+C:  <laugh> 
+E:  <breath-laugh> 
+F:  <breath> 
+I:  <laugh> 
+A:  Well , 
+A:  e everything is faster than Tcl - TK . It 's a string substitution language , basically . 
+C:  Yeah . 
+C:  <laugh> 
+I:  <breath-laugh> 
+A:  I should probably beep that out in case John Osterhaut ever listens . But  
+H:  <laugh> 
+B:  <breath-laugh> 
+F:  But Tcl is wonderful . 
+F:  <laugh> 
+H:  <laugh> 
+C:  <laugh> 
+A:  Well , it is wonderful . 
+G:  <laugh> 
+I:  <laugh> 
+E:  <laugh> 
+D:  <laugh> 
+A:  It is , for prototyping and user interface . It 's just really  the language is awful . 
+F:  There you go . 
+H:  <laugh> 
+C:  <laugh> 
+F:  Oh . 
+D:  <laugh> 
+G:  <laugh> 
+E:  <laugh> 
+I:  <breath-laugh> 
+C:  Beep .  <laugh> 
+F:  <laugh> Yeah .  
+H:  <laugh> 
+A:  <laugh> Beep , y right . <laugh> 
+A:  <laugh> 
+E:  <breath-laugh> <breath-laugh> 
+A:  But let me tell you how I really feel . <laugh> 
+C:  <laugh> 
+I:  <laugh> 
+F:  <laugh> 
+B:  <breath-laugh> 
+G:  <laugh> 
+H:  <laugh> 
+C:  We 're all entitled to our opinions here . 
+C:  <inbreath> 
+A:  Yep . 
+F:  Yeah . I like it . It 's great .  
+
+
+A:  Then the other 
+A:  issue related to that is data release . If we wanna show this in public , it should be 
+A:  releas So , I , uh , haven't gotten any other replies from the original email 
+A:  asking for approval . So I sent out another set this morning . 
+H:  <outbreath> 
+C:  <sniff> 
+C:  I th I saw that . 
+A:  And , uh , we 'll see if we get any responses . 
+H:  I just did it . <laugh> But it is  I did wanna say that , um  
+A:  Very good .  
+B:  <breath-laugh> 
+A:  Did you notice I put in the filter ? 
+H:  No ! 
+H:  No ! No ! <laugh> I just figured you p 
+A:  Go ahead . <laugh> 
+A:  There 's a link there that now says if you want to search by  
+H:  Oh , my gosh . 
+A:  filter by a regular expression , you can . 
+H:  OK . 
+I:  <breath-laugh> 
+H:  Terrific . <inbreath> 
+A:  I put that in just for you . 
+H:  Well , since you didn't answer the emai So there was a q question I had asked Adam whether it 's possible to search only for your own 
+E:  <laugh> 
+H:  name  your own utterances , so that you know you don't have to go through the whole meeting , and  <inbreath> 
+H:  Um , and I didn't hear back . So I thought " OK . It 's probably too hard . He 's overloaded . I won't say anything . I 'll just do it " . <laugh> 
+A:  <laugh> 
+H:  Great . 
+H:  OK . So , anyway I looked at everybody else 's stu <laugh> 
+A:  It 's actually an arbitrary  arbitrary regular expression . But if you search your name , 
+H:  Good . 
+H:  So th <click> 
+A:  you 'll get all of the things you said and any time anyone said your name . So . 
+H:  That 's great . 
+C:  And it 's  it 's case insensitive ? Yeah . 
+A:  Correct . 
+H:  That 's great . 
+B:  Did you actually look through your  transcripts ? Or  you just approved them all . 
+H:  Uh  Well  <laugh> 
+B:  I just approved all mine . I didn't look at them . 
+H:  <vocal squeak> I sort of spot - checked . I was trying to remember  
+B:  <laugh> 
+I:  <mouth> Oh , darn . I haven't done that yet . Er  OK . 
+H:  I couldn't find the  
+H:  the keywords for things <laugh> that I thought I had said wrong . So . 
+D:  @ @  <mike noise> 
+C:  <laugh> 
+A:  It 's hard to find . 
+H:  That makes it g 
+B:  That 's a compliment to you . 
+B:  He said it 's hard to find things you say wrong . 
+E:  <laugh> 
+A:  Hmm . 
+H:  It 's hard to find anything that you say in these . <laugh> 
+C:  <laugh> 
+B:  <laugh> 
+G:  <laugh> 
+A:  Yep . 
+H:  Great . Well , thanks for the filter . Uh , it 's really useful , tha Cuz if you 're only at part of a meeting , or something  
+A:  You really do have to sort of r 
+C:  So , we have our first information retrieval 
+F:  <laugh> 
+C:  example . It 's a regular expression <laugh> 
+A:  Yeah . That 's right . 
+A:  <laugh> 
+H:  Yeah ! That 's actually  Well , it 's useful . 
+C:  searcher . 
+C:  <laugh> 
+A:  And it demonstrates why it doesn't work , because you really wanna go acro more than one meeting . 
+C:  Yeah . 
+C:  Yeah . 
+A:  And you need a better user interface for displaying the results . So . 
+H:  But this helps a lot . 
+A:  Yeah . 
+C:  You wanna say , " Where are al where  Find all the contentious things I said . " 
+H:  Great . Thanks . 
+F:  <laugh> 
+A:  Yeah , really .  
+C:  <laugh> 
+B:  <laugh> Find everything that should be bleeped . 
+A:  <laugh> 
+G:  <laugh> 
+C:  <laugh> 
+B:  <laugh> 
+A:  That 's right . Th - we do have that bi nice marker  is that , n n 
+F:  <mike noise> 
+A:  because we all know we 're being recorded , whenever anyone says anything like that , we then have a conversation about bleeping it out . So . 
+I:  <mike noise> 
+H:  Right . 
+H:  We - 
+H:  Yeah . You can search for " beep " or " bleep " . 
+D:  <laugh> 
+B:  @ @  
+A:  Yep . 
+C:  Yeah . 
+H:  In somebody else 's turn . 
+A:  <mouth> 
+
+
+A:  Um . Oh . And also we actually have a few people who have still not filled out speaker forms . 
+H:  <mike noise> 
+A:  Specifically in the NSA ones , and I noticed that when I tried to , uh  
+C:  <mike noise> 
+A:  uh , generate 
+A:  the transcripts for NSA . That there are a few with no speaker forms . 
+A:  And so , uh , I have a  
+A:  I sent out yet another this morning , which I think makes six total emails that I 've sent to these people , and so I think we need to escalate to some other method of trying to contact them . 
+I:  <laugh> 
+C:  <mike noise> 
+C:  Um  
+C:  <mouth> 
+C:  Right . 
+I:  Stalk them @ @ at their   
+C:  <inbreath> Has  has  has Joachim Sokol replied ? Or  ? 
+A:  <laugh> 
+I:  Like in the morning , when I leave for work . 
+A:  Nope . 
+F:  <mouth> I think , maybe talk to him first in person ? That 's what I would  think . 
+C:  He 's  not around , is the only problem . 
+F:  <clears throat> Mm - hmm . 
+F:  Oh , is that right ? Oh . I saw him  I saw him on Tuesday . 
+C:  Yeah . Otherwise , it 'd be a good idea . 
+I:  <breath> 
+I:  @ @  
+C:  <breath> 
+I:  <inbreath> <laugh> 
+C:  Yeah . He popped in . But , I mean , he 's basically gone . 
+F:  Oh , OK . 
+I:  Cold calling at lunch time ? Uh , dinner time , I mean .  
+I:  <laugh> 
+A:  Well , if I could find phone numbers , that would certainly work . But . 
+B:  <laugh> 
+E:  <laugh> 
+F:  Well , did you ask Lila ? Cuz I bet she has this information . 
+A:  Yeah , that 's a good idea . I 'll ask her if she can con track some of them down . 
+C:  Yeah . 
+F:  Yeah . 
+C:  Yeah . And  and tell her  You know . 
+C:  Tell her your specific problem . She 'll fix  
+F:  <inbreath> And it  
+F:  M 
+F:  And , uh , then there 's still m um  
+F:  Miguel is still an active member of the group and he 's  What I mean is , he 's an active member and he 's still here . 
+E:  <mike noise> 
+C:  He 's right there . Yeah . 
+A:  Mm - hmm . 
+F:  Very helpful . 
+A:  Yeah , I didn't actually 
+A:  see who they all were . 
+A:  Um , a couple of them were , like , people at IBM who were here for one of the IBM meetings and one  a guy from SRI who was at one of the SRI meetings . 
+C:  Yeah . 
+A:  And so , uh , those might be harder to track down . 
+F:  <mouth> Most of them , though , really were visitors here and Lila should have contacts with them . 
+A:  Yep . 
+F:  Nice meetings , by the way . Yeah . 
+A:  I mean , they  they were people who didn't have accounts at ICSI , so they 're  they 're harder to find . 
+F:  <mouth> <inbreath> 
+F:  Well , not the ones that  
+F:  Are you su ? 
+F:  Are you sure ?  
+A:  Am I sure about what ? 
+F:  Yeah . NSA - one and NSA - three ? We 're talking about those ? 
+A:  There were other people also . 
+F:  <inbreath> 
+A:  There were other c other people also who didn't ha fill out the speaker forms , in addition to the N S As . Yeah . 
+C:  I i in  in other meetings . Yeah . 
+F:  Oh , oh . I see . OK . Fine . <outbreath> 
+C:  <inbreath> Well , SRI people , easy to f find . <laugh> 
+H:  Yeah .  
+A:  Yeah .  
+C:  And , uh , IBM people , also . Just let us know . I mean  
+H:  <page being turned> 
+C:  Just  we certainly have their email . 
+F:  <mouth> But I knew everybody in the NSA meetings . 
+A:  Mm - hmm . 
+F:  So th I 'm sure that we have , uh , fresh , you know , information on them . 
+A:  Right . 
+A:  Yeah . None of the e emails bounced , so I know they 're going somewhere . 
+D:  <laugh> 
+F:  Good . OK . 
+C:  Right . 
+C:  <sniff> 
+A:  <clears throat> 
+A:  That 's all I have . 
+
+
+
+
+A:  You wanna talk about recognition ? 
+I:  <breath-laugh> 
+I:  Chuck , you wanna talk about recognition ?  
+B:  <breath-laugh> I haven't done anything . I was  
+A:  <laugh> 
+A:  J T Liz , you wanna talk about recognition ? Thilo , you wanna talk about recognition ?  
+C:  <laugh> <mike noise> 
+E:  <laugh> 
+G:  <laugh> 
+B:  <laugh> 
+I:  <laugh> 
+D:  <laugh> 
+B:  I was away for a couple of days .  So . 
+H:  <laugh> 
+B:  I haven't done a   
+H:  We 're sort of in a 
+I:  <breath-laugh> 
+C:  <mike noise> 
+H:  stage where we 're  uh , Don 's going through getting some of the next meetings that Jane s has . And , uh , 
+H:  you know , creating a second database . So we haven't actually run anything yet . We need to get a critical mass for that . 
+I:  However , I just got an email from Thilo saying that 
+I:  we are ready to run  
+I:  I mean , we have segmentations for the old meetings 
+H:  And check the segmentations . Yeah . 
+I:  that  are from his segmenter , and so  
+E:  Mm - hmm . 
+I:  <mike noise> You  you had three different versions , with different , like , pause thresholds  between the segments ? 
+H:  Great . 
+D:  Yep . 
+D:  Yep . 
+D:  Yeah . Just  Yeah . Just smooth the  the output of the  of the 
+I:  Right . And you recommended using the one with two s maximum of two seconds ? But two s 
+D:  detector . 
+D:  Yeah . 
+H:  A  What do you mean , a different pause threshold ? Do you mean a  ? 
+D:  Yep . 
+E:  <ingressive whistle>  
+D:  <inbreath> Or you can  Yeah . You can use 
+D:  the one with one second or whatever . I  I  I  There 's no  not much difference between the  the one - second and the two - second one . 
+I:  Mm - hmm . 
+I:  <mouth> I mean , the only advantage to using the longer threshold would be that you run less risk of missing some  
+A:  Backchannel .  
+I:  some speech . Right ? 
+D:  And I think  wouldn't it be better 
+D:  to  to have 
+D:  a little longer sequences for the recognizer ? B eh because of the language model ? As sometimes it happens that  that it cuts off within a s 
+H:  Yeah . 
+I:  <mouth> But two seconds is pretty long . So  <mouth> 
+C:  <clears throat> 
+C:  <sniff> 
+D:  Yeah . But , we can be sure that as  Or we can be  er 
+I:  <clears throat> 
+H:  No , it 's not bad . That 's good . 
+D:  not  not 
+D:  totally sure , but 
+I:  Hmm . 
+D:  we can be somehow sure that there is nothing  not  no speech between those . So , it  it  
+I:  Hmm . 
+H:  i ye Yeah . th u 
+B:  What does the two - second threshold mean ? 
+D:  I think i it doesn't  It 's the same as in the  the smoother for the  
+H:  I th I think that 's g that 's good . 
+D:  <mouth> 
+H:  <inbreath> <outbreath> <inbreath> 
+D:  IBM thing . 
+A:  <mouth> It combines them if it 's  if the pause is longer than  
+D:  Yeah . 
+H:  It 's  it 's no more than six words . So  Roughly . On average . That 's pretty good , I think . It 's better than a  
+B:  Ah . 
+D:  So . Yeah . 
+I:  Hmm . 
+D:  So . 
+A:  Right . So the  the trade - off is you get longer utterances , but you miss fewer utterances . 
+D:  But  
+D:  Yeah . But  but the  the chunks are already sh 
+D:  i in general , are short . So  I  I t I think it would be better to have  to have more of them concatenated together , in order to have 
+I:  Mmm . 
+D:  better language model or language modeling . 
+I:  I think two seconds  mmm  
+D:  I don't know . 
+I:  I would maybe go with one second . I don't know , it 's a  <inbreath> 
+A:  Well , take a look  
+D:  Yeah . 
+D:  Do that . Yeah . 
+I:  See what the length distribution is . Yeah . 
+D:  Yeah . But  but y there 's  there 's really not much difference between the one - second and the two - second . So just  take the one  the one - second one . 
+I:  Really ? 
+B:  <inbreath> I wouldn't think that 
+I:  <inbreath> Uh  bu I 'm  I 'm  I 'm just scared that with two seconds you get  you get , um  
+B:  the language model would 
+H:  Yeah . 
+B:  continue across two seconds . 
+H:  Well , yeah . Y you do , becau 
+I:  <mouth> you  you get false recognitions . You 're gonna  
+I:  Yeah , you 're gonna hurt yourself occasionally by having  missing the language model context . But you might 
+I:  hurt yourself more by having 
+I:  misrecognitions due to  background speech , or , uh , y noise , or whatever . 
+D:  I  I 'm not too afraid ab about that as 
+D:  w when there  when there would be something  some background speech or something  there wo there would be a  a chunk in another 
+I:  <mouth> Oh , I see . Then  Oh , I see . OK . 
+D:  <breath> 
+H:  Yeah . I think it 's better . 
+D:  channel , and when there is s something in between , I con I  I do not concatenate them . It 's just when there is  when they are sequentially and  
+I:  Oh , right . Oh , that 's  
+H:  The longer is better . There 's  there 's  th 
+I:  Mm - hmm . OK . Sure . 
+D:  So . I wou I would use th 
+H:  Beca - 
+H:  There 's a l there 's a lot of these cases just like now , where I c 
+I:  We can try them all and see which works better . <laugh> 
+D:  Yeah . 
+A:  <laugh> 
+H:  people say " uh  uh " when they 're trying to ta and there 's about a half - second pause to a second in between and then another word , 
+I:  Mm - hmm . 
+D:  Yep . 
+I:  <mouth> OK . 
+H:  and it 's much better if we can keep those together , I think . 
+A:  Yeah . It 's , uh , funny looking at some of the transcripts . I was filtering by  person , 
+E:  <laugh> 
+I:  Mm - hmm . 
+A:  and in one of the  one of the early meetings , one pers particular person , 
+A:  almost the only thing they said the entire meeting was " yeah " , " uh - huh " .  It was just a whole list of them . 
+H:  <breath-laugh>  
+F:  <mouth> I bet I know who that was . Yeah . 
+I:  <mouth> OK . So  so we need to split the waveforms , then . Or do you already have them split up ? No , you don't . Right ? 
+A:  It was very funny . 
+I:  So  so , I guess Don  would need your help to  
+D:  No . 
+F:  <laugh> 
+I:  to create a new set of split , uh , meetings . 
+E:  Sure . 
+H:  You know , you just fake the format that you take as input with the synch times to a new set of synch times , and  
+I:  If  
+D:  We could  
+I:  Right . 
+D:  Mmm . 
+
+
+A:  Uh , do we know about disk ? 
+I:  But th <laugh> Oh , yeah . There 's that pressure . <laugh> 
+E:  <breath-laugh> 
+A:  Uh , Abbott disk ? 
+C:  Uh . I know they 're in . 
+A:  OK . 
+C:  <inbreath> And , uh  But I don't know . I think he was  Wasn't he asking about  ? 
+B:  Wel - 
+B:  He had a problem . Right ? 
+A:  Yep . 
+D:  Yep . 
+H:  Oh . 
+C:  Well , there was an issue . He wanted to take it down . And then he tried  
+B:  H he did , and then it didn't work , and  
+A:  Couldn't format them . No . 
+B:  I didn't hear anything after that . 
+A:  <inbreath> The only reason I 'm asking is , you 're gonna need space to 
+A:  split them up . And so I wanted to make sure we had some available for you . 
+E:  <clears throat> I still have , like , <outbreath> probably  
+D:  <breath-laugh> 
+E:  six , seven , eight gig on my disk . 
+D:  <laugh> 
+C:  <mike noise> 
+A:  OK . So we 're OK  we 're still OK for another couple days , then ? 
+H:  And I have  I have like another un - backed  I ha have another six gig , which Jeremy , if you 're not using , can  on XA . 
+D:  <laugh> 
+E:  Yeah . 
+C:  Wel - 
+A:  So we 're OK for  for a couple weeks , then . 
+C:  Markham probably needs u 
+C:  H he probably needs us to approve another time to take things down . Right ? In order to do that ? 
+H:  To you . 
+B:  <inbreath> Yeah . He  he didn't say  he hasn't said anything to me about it . 
+C:  I thought he  I thought he said in that mail that he would need to take it down another time . So I think he  
+B:  Yeah . I think  
+A:  Y yeah . He just didn't say when . So  
+B:  Yeah . He  
+C:  Well , no . I think he wanted u us to tell him 
+H:  How about during the picnic ? 
+A:  Ah . 
+C:  when . 
+H:  <laugh> 
+C:  <laugh> Yeah . I 'm sure he 'd love to  <laugh> 
+A:  Yeah . I 'm sure he 'd appreciate that .  
+E:  <laugh> 
+B:  <laugh> 
+H:  <laugh> Sorry .  <laugh> 
+G:  <laugh> 
+D:  <laugh> 
+A:  Well , m my feeling about that 
+C:  Fortunately , Markham 's not a transcriber . But , um  <laugh> 
+A:  is p is p 
+E:  <laugh> 
+H:  Beep . <laugh> 
+E:  <laugh> 
+A:  Well , OK . That 's the point . 
+C:  <laugh> 
+A:  So it 's Jane  that we have to coordinate that through . 
+A:  Uh , what I was gonna say is , as soon as possible , and I 'm willing to not work for an hour to get it done . 
+C:  <sniff> 
+A:  Uh , but  
+C:  " I might not work . "   
+I:  <laugh> <noise>  Oops .  I 'm sorry . 
+H:  <laugh> 
+F:  <clinking in background> 
+C:  <sound of clinking in background> 
+C:  <laugh> 
+D:  Oops !  
+E:  Whoa !  
+C:  " I 'm  I 'm willing to not work for an hour . "  I know you 're willing to not work for an hour . 
+A:  <laugh> 
+I:  <laugh> 
+E:  <laugh> 
+A:  Because when Abbott 's  Yeah , right . Because when Abbott is down you can't work .  
+E:  <laugh> 
+H:  <laugh> 
+D:  <laugh> 
+C:  But , I th <laugh> 
+G:  <laugh> 
+H:  You 're really dedicated , if you 're  No matter how you parse that one . 
+E:  Yea - <laugh> 
+G:  <laugh> 
+A:  <laugh> 
+D:  <laugh> 
+G:  <laugh> 
+H:  <laugh> 
+A:  <inbreath> 
+I:  OK . 
+A:  But , uh , I think the per the people it 
+C:  <laugh> 
+D:  <mike noise> 
+A:  disrupts the most are the transcribers . 
+F:  Well , you know , uh , I  All I need to do is mail , um  
+F:  send them m a mail like two days in advance so they can schedule their time . 
+E:  <outbreath> 
+F:  I did that with the last outage . I j I wrote to them letting them know that this w 
+A:  OK . 
+I:  Hmm . 
+C:  I 
+C:  So , OK , it sounds like Markham should almost decide when he wants to do it , and tell us , as long as  
+F:  was not , um  
+A:  So early next week . 
+A:  And just as long as we have a little warning . 
+C:  Yeah . 
+H:  So that means we can't , 
+F:  Yeah . 
+H:  um , save meeting data either . Right ? 
+A:  Uh , just not during that time when it 's down . But that  it should be down for an hour . 
+H:  So it just can't  so we can't have two meetings in a row where the first meeting 's during that hour . That 's all I meant . 
+A:  Right . 
+A:  Well , no , we can store them here . 
+H:  That  that 's happening , like , today . 
+A:  We can store them here . 
+A:  You  we just run the risk  that if you have a crash we lose the data . So . 
+H:  Temporarily . 
+B:  They 're stored on Popcorn . 
+F:  This is on Popcorn ? Or  ? 
+H:  Well , no . I mea I mean , the fir Oh , jus OK . 
+D:  <mike noise> 
+A:  Yep . 
+F:  This is on Popcorn or something ? Yeah ? OK . 
+A:  Yep . 
+C:  <breath> 
+C:  We store  we store our data on Popcorn . 
+A:  Anything else ? 
+C:  That 's really great . 
+C:  <laugh> I was just thinking we store our data on Popcorn . How many  how many institutes can you <laugh> say do that ? OK . 
+I:  <inbreath> <breath-laugh> 
+H:  <laugh> 
+D:  <laugh-snort> 
+A:  Excuse me ? 
+B:  <laugh> 
+G:  <breath-laugh> 
+D:  <laugh> 
+B:  <laugh> 
+A:  Yep . <laugh> 
+I:  Pop goes the data . <laugh> 
+G:  <laugh> 
+E:  <laugh> 
+C:  <breath> 
+C:  Uh , g megabytes and mega many megabytes , too . 
+C:  <inbreath> 
+B:  <laugh> 
+C:  Um , what  what , uh  ? 
+A:  We have a kernel on Popcorn , too .  
+H:  <laugh> 
+B:  <laugh> 
+C:  <laugh> 
+A:  <laugh> 
+F:  <laugh> 
+G:  <laugh> 
+D:  <laugh> 
+I:  Right .   
+I:  <laugh> 
+E:  <outbreath> 
+C:  <outbreath> <laugh> 
+A:  <laugh> 
+E:  <laugh> 
+D:  <laugh> 
+F:  That 's very good . <laugh> 
+B:  <laugh> 
+
+
+C:  So uh , what  what 's on your queue for  for recognition experiments ? Let 's talk about that for a second , maybe . 
+I:  u un 
+I:  Can I have butter on my meeting ? <laugh> 
+A:  <laugh> 
+B:  <mouth> 
+B:  <mouth> Uh  
+F:  What was the question ? 
+C:  What  what was on his queue for recognition experiments ? 
+F:  OK .  
+B:  <mouth> Um , 
+B:  I 'm rebuilding the net that we 're gonna use for the tandem 
+B:  stuff . And so what I 'm doing is , <inbreath> 
+B:  um , putting in 
+A:  Mmm .  
+B:  the stream 
+B:  reader into the Quicknet libraries for the SRI feature files . 
+C:  <mike noise> 
+F:  <mike noise> 
+B:  <breath> 
+B:  An - Which is the right way to do it . I mean , when we did our first experiments and I was , <breath> 
+B:  uh , creating SRI feature files from the ICSI front - end , I just had perl scripts , you know , and <breath> 
+B:  hacked a bunch of stuff together just to get it going . But the r the right way to do it is to 
+H:  <mike noise>  
+B:  integrate it in with the ICSI tools . And so , <inbreath> 
+B:  that 's what I 'm doing now . And so once I get that done , then I 'll generate 
+B:  the P - files I need . <inbreath> Cuz we already have the feature files 
+C:  Mm - hmm . 
+B:  in the SRI format . So what I need to do is , make it so that the  
+B:  the Quicknet stuff can read those . And , uh  
+I:  I is that independent or related to  also being able to write out the , uh , feature file  i in the SRI format f r 
+B:  <outbreath> 
+B:  It 's both . There 's a  there 's an input stream and an output stream . 
+I:  <breath> 
+A:  Input reader and an output stream . Yeah . 
+I:  Oh , OK . So then you could use , um  
+B:  Yeah . 
+I:  You could use , um  
+I:  <mouth smack>  uh , like Feacalc and s just specify 
+I:  as an output format 
+A:  Yeah . That 's the point . 
+I:  the  the  Oh , OK . 
+I:  Th - t I 'm just ignorant about the <inbreath> 
+B:  Yeah . 
+B:  <laugh> 
+A:  Yeah . So , if  if you  
+I:  sof software architecture of this thing . <laugh> 
+A:  Right . Quicknet is a very nice stream - based library , so without too much effort , once he has the classes written we can incorporate it into all the standard tools . 
+I:  Uh - huh . 
+I:  Oh , cool . 
+A:  So . 
+I:  Great . 
+B:  <mouth> 
+B:  So , then it 's t uh , tandem experiments after that ? 
+I:  <breath> 
+C:  Uh - huh . 
+A:  <mouth> And at some point , I 'd like to get back to , uh , 
+C:  Yeah . 
+A:  porting Quicknet to the multiprocessor Linux box . 
+A:  You know , I  I have forward passes working , but I haven't done training yet . 
+C:  Um , I think it would be ne neat at some point  in this  to do , 
+C:  um , a recognition , 
+C:  uh , pass 
+C:  on one of the PZM 
+C:  mikes for these s same 
+H:  <inbreath> Yeah . 
+I:  For the meeting ? 
+C:  meetings that you 've been gi n gi bi I mean , 
+C:  it 's gonna be terrible , but , you know , we  we just don't know how terrible . 
+I:  Mm - hmm . 
+C:  And  
+H:  Ye - It 's also an interesting problem to come up with the reference . 
+I:  Mm - hmm . 
+H:  <inbreath> So , 
+H:  the reference file 
+H:  for the relative times at which  So  
+A:  Oh , yeah . That 's really hard . 
+I:  <breath> 
+H:  Well , i it 's an interesting question , because I was thinking " well you can force align 
+A:  It 's not determined . 
+H:  the transcriber transcripts , and then of course , you try to merge them in time . 
+C:  Mm - hmm .  
+H:  But how do you score ? " 
+A:  <inbreath> I think the first pass is  throw out words which are overlapped . 
+I:  <breath> 
+H:  I mean it 's just an interesting problem . 
+A:  That would be a good first pass . 
+A:  Just ignore everything that has any overlap . 
+I:  Mmm . 
+H:  Right . I mean , there 's a whole sort of dis Right . We  Right . 
+C:  <inbreath> Yeah . Cuz you have a set of scores about that , so maybe then , that wouldn't be so bad . 
+H:  But there 's a whole interesting discussion , cuz of course the alignments are not perfect either , and so  um . In fact , we actually 
+C:  Oh .  
+A:  Right . 
+C:  Yeah . 
+H:  don't have a  a p 
+C:  But  that 'd be a hell of a lot better than what we do with just these . And  
+H:  I mean , it it 's worth trying . I  
+H:  Right . Right . 
+C:  and  and , again , if you rule out the overlap , you have some numbers for that , cuz that 's yet another  
+C:  But , I  I 'm just concerned , of course , about that  
+H:  Oh , I see . You mean when only one person is  talki Yes . We could  we could try tha Right . 
+A:  Yep . 
+C:  Cuz you have scores for that for the other case . And  
+H:  Right . Exactly . 
+I:  Mm - hmm . 
+H:  Yeah . We  we should try  
+C:  We just don't know how 
+C:  bad it will be . I mean , one of the things that Dave was noticing  we were talking this morning  
+E:  Hmm . 
+C:  is that i it seems like  and we do don't know 
+C:  this in detail , but it seems like you 're getting a lot from the channel adaptation , the speaker adaptation , and so forth . 
+I:  Mmm . 
+I:  Mm - hmm . 
+C:  <inbreath> 
+C:  Um . So you are , already , in that recognizer , doing something 
+I:  Mmm . 
+C:  that is likely to affect , uh , the  the far - field microphone , uh , formant . So , it may not  
+I:  Right . 
+C:  I mean , it 's gonna be bad , 
+I:  Right . 
+C:  but , uh , it may not be , like , " won't decode " kind of bad . It might  might only be that it 
+I:  Right . 
+E:  <breath-laugh> 
+C:  goes from forty percent to eighty , or something like that .  
+A:  Yeah , eighty percent . 
+A:  Yeah .  
+I:  Right . 
+H:  Do you assume you know the speaker 
+H:  when you do this ? 
+C:  I want us to assume the exac whatever it was you assumed 
+I:  You just di you just  
+C:  when you did the other  the  the close mike . 
+H:  Well , th r Well , there , there 's only one person who it can be , because they own that microphone . I 'm just wondering  There 's  
+I:  <mike noise> 
+I:  Right . 
+I:  Yeah . That  that becomes another problem , actually . 
+E:  Well , and then you have the gender detection  <breath> 
+H:  No - It 's not a pro 
+D:  Yeah . 
+A:  Well , but for a   
+H:  Right . And  
+A:  But , for s for scoring , you can do it or not do it as you choose . So . 
+C:  Oh , I 'm  
+I:  <inbreath> n s 
+H:  R right . But in terms of  for norm for adaptation . Right . 
+C:  But you 're saying for this  For the adaptation , you mean . 
+I:  <inbreath> 
+I:  So , d s so  fo not  well , for everything . For  s for  f even feature normalization , for , uh , vocal tract length estimation , <inbreath> 
+H:  You know , do you do a supervised adaptation  ? 
+C:  Right . 
+H:  Ye - All of these adaptations ha 
+I:  all of  all of these assume you know who 's speaking . So , 
+H:  assume that the same person  
+D:  Mmm . 
+B:  <mike noise> 
+I:  you would have to do a speaker segmentation first on the far - field micropho signal . 
+H:  Yeah . 
+D:  <laugh> 
+A:  <mouth> N well , but you can use the  
+A:  when you 're doing the scoring  Since you 're  you 're gonna be scoring against transcript , you can use  
+C:  <inbreath> 
+I:  You mean you wanna cheat . 
+A:  Well , you 're doing that anyway . 
+H:  N Well . I was just aski 
+I:  No . If  i i 
+F:  Ooo .  I don't like that term . I don't like that term . 
+A:  So ch chea try to cheat in the same way that you 're doing with the close - talking . 
+I:  <laugh> 
+C:  I  
+H:  Actually , the s Those are two  
+F:  I don't like that term . 
+C:  I have  
+I:  OK . We g we 're gonna bleep that out . <laugh> 
+C:  I  
+C:  I have a suggestion . Do the simplest thing first . 
+I:  <breath-laugh> 
+A:  Yeah , right .  <breath> 
+C:  <inbreath> Because we 're gonna want to know that anyway . 
+H:  So , wait , the simplest thing is you cheat , saying  
+C:  In other words , if you d 
+C:  No . It 's  No . It 's even simpler thing than that , is just that you don't know . 
+I:  You mean you do you don't do all those normalizations . 
+A:  Yeah . 
+C:  Yeah . 
+H:  Oh , you m y totally unadapted . Uh . Right . 
+A:  Just do  or a free ri Yeah . 
+C:  Yeah . Because you can get a number  uh , for that with the other as well . Right ? You can turn those things off . Right ? 
+I:  <mouth> Um , actually  <laugh> We don't have any models . Um , you can  
+H:  <vocal squeak> Yeah . 
+D:  <laugh> 
+H:  i i 
+H:  No . You can  
+I:  Um   
+H:  You can use a speaker  eh  What about gender detection ? 
+I:  A actually , it 's that  it 's  it 's  We would have to retrain models that are not  that have none of that stuff , 
+I:  uh , 
+I:  in it . But actually we could  
+I:  We can just run it , assuming that it 's all one speaker , basically . And see what happens . 
+C:  Yeah . 
+C:  Yeah . 
+C:  <inbreath> Yeah . And then put it in correctly and see how much that helps . I mean , I was just thinking , do the one that 's easiest first , 
+I:  <laugh> 
+H:  Yeah . 
+I:  Yeah . 
+C:  because you wanna know  how much that 's helping you in these cases anyhow . 
+I:  <inbreath> Actually  
+D:  But d 
+D:  do you have gender - dependent models ? 
+I:  Actually , no . Th - th 
+I:  Sorry . 
+D:  A Are the models gender - dependent ? 
+E:  Mmm . 
+I:  Yeah . 
+A:  Yeah . They 're all gender - dependent . So we would have to at least do that . 
+H:  Yeah .  Yeah . So . You can r No . You can run both . And you can s 
+D:  So  
+I:  <breath-laugh> 
+I:  No , actually  
+D:  Yeah . 
+D:  Yeah . 
+I:  No , actually , what  Here 's  here 's what we would usually do u under these circumstances . 
+A:  And pick whichever 's better . 
+E:  <laugh> 
+I:  We would actually  we would run some sort of segmentation . 
+D:  <clears throat> 
+I:  Thilo 's is as  good as any , probably . 
+E:  <laugh> 
+I:  Um , and then we would do an unsupervised clustering of  of the segments , to  and  and put 
+I:  the similar ones into bins that would be sort of pseudo - speakers . And then we would do our standard processing on these pseudo - speakers . 
+C:  Mm - hmm . 
+I:  <inbreath> And that turns out to work very well on Broadcast News , SPINE  those types of tasks , where you don't have 
+I:  the speaker segmentation given to you . 
+A:  S does the clustering  ? Do you give it sort of a target number of clusters ? Or is it  ?  
+I:  <mouth> Um , you can either do it by target number or by some measure of dissimilarity that you use as a threshold . 
+A:  adapted in some way ? 
+A:  Mm - hmm . 
+A:  That 's what I 'm just thinking one of the big differences with Broadcast News and these meetings is we have m many fewer participants . 
+H:  The other thing is that you actually have 
+I:  Right . 
+H:  direction here . So , 
+H:  unlike these corpora that are recorded with other microphones , like  The right way to do this I guess , w 
+H:  you know , in the future would be , well , in general , Thilo 's sitting there , and this PZM is gonna  You know , he 's roughly  in that location . 
+A:  Speaker ID . Yeah . 
+A:  <inbreath> Well , there 're different ways of thinking about it . I mean that  that would be true if w you had a meeting situation with multiple mikes . 
+A:  But if you only had your PDA sitting in front of you  
+H:  Well , any case where the people are not all sitting at the same place and they 're not moving around too much . 
+A:  And you have more than one mike . 
+C:  Yeah . If you don't have one  more than one mike , you don't have a very good handle on location . 
+H:  W well , you have distance , and you have  
+C:  That 's  it 's not enough . 
+H:  <inbreath> 
+H:  I mean , that , 
+H:  um , Jane 's  i n The pickup of Adam on this mike is gonna be different than me , in terms of energy and so forth over the whole meeting . 
+A:  <mouth> Oh , so just from clustering . You might be able to cluster it better because of that . 
+H:  You might get some clustering from the speaker and some of it from the characteristics of the distance , and   
+C:  Mmm .  
+A:  From mike . Yeah . 
+C:  Yeah . 
+C:  <inbreath> 
+C:  But , say , if  if you had a  
+A:  And transfer functions . 
+C:  a cardioid mike or something sitting someplace , then  <breath> 
+H:  Right . Exactly . 
+C:  sitting there , then it would  Its  its response to him would be about the same as the response to him , and so on . 
+I:  Well , you can do  
+A:  Well , I think there 're lots of  
+I:  <mouth> You can  you can  you can do certain normalizations like , you know , gain control , <inbreath> 
+H:  They 're both picked up in the clustering , I guess . 
+A:  lots of ways of doing it . 
+C:  Mm - hmm .  
+I:  uh , before you do the clustering to rule out those  those types of things . 
+H:  Or to just do the clustering , knowing that you 're capturing 
+H:  both . It 's just that the kind of clustering we 've done before hasn't had that , 
+C:  I see . 
+H:  uh , distance factor , or 
+H:  location factor in it in the same way . And so we 're not really 
+C:  Yeah . 
+H:  modeling it directly . If somebody does , we sh maybe we add that because I think it would be a pretty big difference . When you listen , 
+I:  Mmm .  
+A:  Yeah . That 's an interesting  
+I:  <breath-laugh> 
+H:  you can sort of tell where people are , not which s you know , side , but   
+A:  It 's a big difference . Yeah . 
+I:  OK . That would be fun  
+I:  fun to try . 
+A:  Well , humans are really good at that  
+A:  transfer function through the head , and things like that . So you know , even if you only have one ear , 
+H:  Right . Even with one microphone . 
+C:  Yeah . 
+A:  you can still get  get good transfers . So  
+C:  Yeah . 
+H:  Right . So our  our clustering is not gonna be intelligent that way . It 's just gonna pick up whatever energy difference , or whatever , is   
+A:  Yeah . 
+C:  <inbreath> But  
+C:  Anyway , I  I 'd  it 'd be neat to have that , because you know we 've been at this for a little while and we don't have  have  
+I:  Mm - hmm . 
+
+
+I:  So , b speaking of Linux . So  <inbreath> 
+I:  Th - there 's some 
+I:  i impetus at , um , 
+I:  <mouth> SRI to actually 
+I:  <breath> u u p th  
+I:  uh , build  support Linux as a platform . So . 
+I:  <laugh> What that means is , <laugh> once we have , uh , everything running on Linux we can 
+A:  Mm - hmm . 
+B:  <breath-laugh> 
+H:  n Run all our jobs on your machines .   
+I:  also use a Li - <inbreath> eh 
+H:  <laugh> Sorry .  <laugh> 
+D:  <laugh> 
+I:  Yeah . Exac - <laugh> 
+B:  <mouth> We don't have too many . We just have that  
+C:  <laugh> 
+B:  just have a few Linux machin <breath> 
+I:  I mean , if you can't use all the processors on whatever machine , we 'll help you with that . <laugh> 
+B:  <breath-laugh> 
+C:  <laugh> 
+A:  Yeah . That 's right .  
+A:  Well , that 's the nice thing about it , is that  
+D:  <laugh> 
+G:  <laugh> 
+A:  i since it 's coarse parallelism you don't have to do anything special . 
+E:  <breath-laugh> 
+I:  Right . Exactly . 
+D:  <laugh> 
+A:  So . I mean that would be a fine use for b for that machine . 
+I:  Yeah . 
+I:  <laugh> 
+I:  So it 's just , uh  
+C:  Oh , I know what it was   
+A:  Five more processors . 
+I:  Uh . Yeah . 
+C:  <inbreath> 
+C:  Um . Yeah . U um  
+C:  Some  
+I:  Or if  uh , you know , in the future , if Linux machines become like way cheaper , than , <mouth> uh , you know , Solaris machines , then  
+I:  you know , that wouldn't be a reason not to  use Linux anymore . So . 
+A:  Yep . 
+C:  Yeah . 
+I:  <breath> 
+C:  <inbreath> 
+
+
+
+
+C:  any results yet with  with conversational speech at a distance . 
+I:  OK . 
+C:  So , um  
+C:  <inbreath> 
+A:  Yeah .  
+I:  Hmm . 
+C:  We should at least get  a first one . 
+A:  Something . Yeah . 
+H:  OK . Hmm . 
+F:  Mm - hmm .  
+C:  Um , and the other thing  This would kind of be a Hail Mary , but  but , uh  <laugh> 
+A:  <breath-laugh> 
+C:  Uh , Dave does have this stuff that is helping on digits , and , you know , and so with  then it 'd be , you know , just throw that in and see . 
+I:  Oh , yeah . Then we should  
+A:  Yeah . So it 'd be cool to see if it helped . 
+I:  Well , first you have to filter the whole training set and retrain . <breath-laugh> 
+H:  Yeah . 
+E:  Mm - hmm . 
+C:  Yeah . 
+A:  That would be  ft quick , 
+H:  Mm - hmm . 
+I:  <laugh> 
+C:  <breath-laugh> 
+A:  <laugh> 
+A:  since I think he did it in Matlab . <laugh> 
+C:  <laugh> 
+I:  <laugh> 
+E:  <laugh> 
+G:  <laugh> 
+C:  Uh , well , he can do it in something else . But , I mean  <laugh> you know , it 's  
+F:  Hmm . Interesting .  
+A:  Yep . 
+I:  <laugh> Right . <laugh> 
+A:  Can't you export C from Matlab , 
+C:  Um  
+C:  Actually , we 're experimenting with phase stuff now , and  and , uh , thi this , uh  
+A:  or is that Mathematica ? 
+C:  first result he got , uh , was really great . It actually , uh  uh  
+C:  <breath> didn't exactly eliminate the reverberation , but it completely got rid of the speech . 
+A:  <laugh> 
+E:  <laugh> 
+C:  <laugh> 
+D:  <laugh> 
+I:  <inbreath> Oh . 
+G:  <laugh> 
+I:  That would solve all of our problems . Wouldn't it ? <laugh> <mike noise> 
+F:  Wow .  
+C:  Yeah . Well , I was thinking that . So , it 's  <laugh> 
+E:  <laugh> 
+A:  Well , so just take the inverse and you 're fine .  
+I:  <mike noise> 
+C:  That 's  
+F:  <laugh> 
+C:  You think I didn't s <laugh> tell him that ? 
+G:  <breath-laugh> 
+A:  <laugh> 
+E:  <laugh> 
+C:  No . I got pretty excited , because it completely got rid of the speech . So , I was thinking " well , so , 
+E:  <laugh> 
+A:  So that 's a speech detector . That 's great . 
+C:  you know , it could be useful for lots of things " . So , we have to  <laugh> 
+F:  That 's interesting . 
+F:  Did it get rid of other stuff , too , though ? 
+I:  Hmm . 
+C:  What ? 
+A:  Yeah . Just subtract that  
+F:  Did it get rid of other stuff besides the speech ? OK .  Wow . Interesting . 
+C:  Well , we have to sort of check that out . That 's  
+A:  subtract that from the original signal and you 're set . 
+H:  <breath-laugh> 
+E:  <laugh> 
+C:  Yeah . 
+D:  <laugh> 
+I:  <laugh> 
+C:  Yeah . 
+A:  <breath-laugh>  
+F:  <inbreath> 
+I:  Right . Then you can do like an  you can estimate the  
+A:  Noise estimate . Signal to noise . That 's great . 
+I:  the noise estimates . Right ? Yeah . 
+H:  Mm - hmm . 
+C:  Reminds me of when th when Herve and I were first playing with c uh , context - dependent things for nets , and  
+C:  and at one point we took out the speech input , so we <breath> 
+C:  only had priors , and our performance went up . 
+A:  <laugh> No .  
+C:  <laugh> 
+E:  <laugh> 
+F:  <mouth> 
+I:  Mmm  <laugh> Yeah . <laugh> 
+G:  <laugh> 
+A:  <laugh> 
+E:  <laugh> 
+F:  Wow . 
+A:  I guess that 's why Herve always talks about using the priors as one of the mixtures in  in his all - ways combos . 
+I:  Hmm . 
+C:  S Yeah .  
+C:  Well , of course it was a bug . But , I mean , it 's  it 's a  but it was pretty 
+A:  But still  <laugh> 
+C:  f f <laugh> It was pretty funny anyway . <laugh> 
+F:  Wow . Interesting . 
+I:  Yeah . 
+F:  Hmm .  
+C:  <breath-laugh> 
+A:  So if you run  er , your recognizer with all probabilities equal , what do you get out ? 
+I:  <mouth> 
+A:  Probably garbage . 
+B:  Whatever the language model says . <breath-laugh> 
+A:  I bet the pruning  
+D:  Yep . 
+A:  The pruning probably prunes everything out . 
+I:  You get out Switchboard . That 's just the lang the language model . <laugh> 
+C:  <laugh> 
+E:  <laugh> 
+B:  <breath-laugh> 
+G:  <laugh> 
+A:  Yeah . That 's right .  <laugh> 
+F:  <inbreath> 
+C:  So that 's how it was generated . 
+I:  Ha -  
+
+
+I:  Yeah . So we have this new speaker adaptation . 
+I:  Um  
+I:  A  b Oh , it 's a s sort of feature normalization t 
+I:  uh , like f speaker adaptation , which , 
+I:  uh , which I wr which I  wrote about in the last status report , which seems to be helping about a percent and a half on 
+I:  Hub - five . 
+I:  So , um . We haven't tried that yet on the meetings , uh , but hopefully it 'll help there , too . 
+F:  <inbreath> I wanna ask , um  So , you know that the data  I ' v I have upgraded it considerably . So I 've probably made  
+F:  I probably corrected something like , 
+E:  <mike noise> 
+F:  well , s It 's really a substantial amount of things that I 've caught , changed  um , added to it . 
+F:  Including a lot of , uh , backchannels . So , when you 're d running things , if you run it on the old  
+A:  <mouth> 
+F:  So . If you  if you  run it on the new version , then the numbers will be  
+I:  Hmm . 
+F:  um , and you compare it to the  to runs on the old version , then you 're gonna end up with more of an improvement than would actually be the case . 
+A:  Different . 
+I:  Mm - hmm . 
+I:  Well , we  we have a frozen  we do all our experiments with a frozen version of the transcripts as of , I don't know  
+F:  As of February ? 
+I:  A a as of  no , a little  I don't know . When  when did we 
+E:  <mike noise> 
+I:  grab the transcripts ? 
+F:  So a l 
+F:  Like the HLT paper ? 
+E:  The b for the f ? It was m m March , probably . 
+H:  F Sorry . 
+I:  The  <inbreath> 
+H:  For these meetings ? 
+I:  We 're talking about which  which version we 're using for evaluating the recognition . Which version of the transcripts . 
+H:  Right . They 're somewhere in between 
+H:  January and late March , or something like that ? 
+E:  Yeah . Something around there . 
+F:  OK . Well , so long as you have the same baseline , then  you 'll be able to tell . 
+A:  But they are channelized ones , though ? 
+I:  No , no . Yeah . O obviously . Yeah . 
+H:  N 
+H:  N 
+H:  They 're meetings that are now channelized , but they were not from  
+I:  The  uh , the other thing is  
+F:  So long as i so long as it 's the same baseline you 'll be able to tell . But  but I 'm just gonn I 'm just saying that if you were to compare that with running that on the new data , 
+I:  Th - the  the  
+E:  <mike noise> 
+I:  Hmm . And  
+F:  that it would be an  a more optimistic outcome . 
+I:  Well , the  and the other thing is , it takes only a  a minute to rescore all the old outputs with  If you had new transcripts , then 
+I:  we j we just re rescore the old  
+A:  Right . Cuz you haven't done any training . 
+I:  Sorry ? 
+C:  <mike noise> 
+A:  Right . Cuz we 're not doing it for training . 
+H:  Yeah . We haven't a modified the recognizer at all . So , actually , um , 
+A:  Right . So it 's really  it would be really easy to re - do it . 
+I:  W we just  We save  
+H:  at some point we should update and rescore everything with , you know , the corrected transcripts , 
+I:  <inbreath> Well , the  the  
+A:  Yeah . It 'd be interesting just to see i how much it changes . I bet it wouldn't change a lot . 
+H:  just to h 
+I:  Right .  
+E:  <mouth> What are the nature of most of the changes ? 
+A:  <breath> 
+A:  We can take  we can have a pool . <laugh> 
+F:  Yeah . 
+H:  Sometimes the changes are , um , 
+H:  cases where the recognizer would get it wrong anyway , cuz it was some word that we didn't have in the vocabulary , or  
+I:  <loud inbreath> 
+A:  That 's just what I was thinking . 
+I:  So , I  I  The thing is , when  
+C:  <mike noise> 
+H:  But it does help to get the backchannels back in , and things like that . 
+I:  Right . 
+I:  <mouth> 
+I:  So , whenever the  Right now , the s the scoring is based on segments . 
+I:  <mouth> 
+I:  Um , which is not great because , for instance  
+I:  So  so , the  the <mike noise> other way to do the scoring is using a  a NIST format called 
+I:  STM . S uh , Segment Time Marked , where  
+A:  Yep . I  we know about it . 
+I:  <mouth> So , um , I have to convert the , uh , transcripts into this format , and then the scoring program actually looks at the times . And , 
+E:  <mike noise> 
+E:  <mike noise>  
+I:  uh , you know , it  You can have a different segmentation in your recognizer output than in your references , and it will still do the right thing . 
+I:  So , that 's what we need to basically , uh , to  Hmm ? 
+A:  Tran - 
+A:  Transcriber will export STM . 
+C:  <mike noise> <thump in background> 
+I:  Oh . 
+A:  In case you care . 
+I:  Well . But then there 's other changes . So . I mean , there 's other  
+A:  OK . 
+C:  <inbreath> <clears throat> 
+I:  We  we strip away a lot of the 
+I:  mark - up , 
+I:  uh , in the transcripts , which , 
+I:  you know , isn't relevant to the scoring of the speech recognition output . So  
+A:  Right . 
+H:  Would that  ? 
+H:  Doesn't that only change the scoring if a word has moved into a different segment ? I mean , I don't 
+H:  think that 's  har I hardly ever see that . I think most of them are pretty good . 
+I:  <inbreath> No . I mean if  suppo I  I assume you also changed some boundaries . Right ? 
+F:  Mmm . I did . 
+I:  So , if we want to use new transcripts with a different segmentation , then we can't use them in the current way we do scoring . 
+I:  We have to  m m switch to this o 
+H:  Oh , you mean you would need to re - run the recognition . 
+I:  No . We have to r 
+I:  There 's a difference  
+H:  I mean , if you re - ran the recognition , then you just run it  Oh , I see . If you wanna use the old  
+I:  Right . Right . 
+H:  You can actually never , though , really infer what you would get with a different  
+C:  <clears throat> 
+I:  That 's true . 
+H:  You know ? It 's  it 's probably more fair to re - run the whole th re - run that . 
+H:  Uh , in other words , it 's not 
+H:  really a scoring script problem . It 's  
+I:  No . But if you w just want to see what  
+I:  Like , suppose you fixed some typ No , Jane fixed some typos and you wanna see what effect does that have on the 
+I:  word error , then 
+A:  Right . But  but  
+I:  we can f we c 
+H:  Y Yeah . Yeah . 
+A:  If the segments change , that won't work . 
+H:  You  It 'll sort of work , but it 's not exactly what you would maybe get from recognition . You never know . <laugh> 
+A:  Well , I mean , what happens if you break one segment into two ? 
+H:  <breath> 
+A:  Suddenly the don they don't match at all and you can't line them up anymore . 
+F:  <mouth> 
+H:  <inbreath> 
+I:  No , but that 's what the pr Well , that 's what I 'm saying . You can line them up based on the times . 
+H:  Well , you c You  you s 
+H:  You can  
+H:  Yeah . 
+I:  So the scoring program with  if you give it an STM reference file , 
+I:  it will actually compare the words based on their time marks . So therefore , you can , 
+A:  Right . 
+H:  Yeah . 
+I:  um  
+A:  Does STM do it per word , or por per utterance ? 
+I:  It 's per utterance , but it  it allows  As long as you hypothesize the word in the right segment in the reference , it gives you 
+A:  Th - what I thought . 
+A:  Alright . 
+I:  credit for that . So it does a  <inbreath> 
+I:  it does a word alignment , like you have to do for scoring , but it constrains the words to lie within the t the time bins of the reference . <inbreath> 
+H:  Mm - hmm . 
+A:  And then it does also some  
+A:  Within the segment . Yep . 
+A:  I see . 
+I:  And  fo for you to get a credit for it . So . 
+F:  That sounds great . 
+I:  So  so , it 's  it should be just a straightforward re - formatting issue of the references . So . 
+
+
+F:  Yeah . I mean , t y I was thinking , th the other day , that this 
+F:  <inbreath> 
+F:  is not just conversational speech . The fact that is has so much technological jargon in it . I it makes it  
+F:  u 
+F:  considerably harder to , um  
+F:  me e e e 
+F:  to transcribe and to  to double check and all those things . So , <inbreath> 
+F:  I think you 're gonna find a substantial gain in terms of the word ac accuracy . 
+F:  So long as those words are in your vocabulary . <laugh> 
+H:  Well , it definitely helps with , um , forced alignment , too , because , 
+A:  One percent . <laugh> 
+F:  <laugh> 
+I:  <breath-laugh> 
+H:  you know , whe when we know the  the  the true words and we 're adding them to the vocabulary and training a language model and so forth for future meetings , especially the  
+H:  like , the front - end meetings or meetings with a lot of  jargon in them , that 
+H:  is not represented in Switchboard or 
+H:  CallHome , then it  
+H:  then it really helps . So  
+F:  Well , all of them are . All of our  all of our meetings have a lot of jargon in them . But we know what those words are . 
+H:  Yeah . 
+F:  I mean , I don't know 
+F:  how you get them into the vocabulary , but it would seem @ @  
+
+
+F:  Now , I have to  I have to <laugh>  I really need to , uh , raise a question about the term " cheating " . <laugh> OK ? 
+F:  And the reason is , um , if I understand that , 
+F:  " cheating " is a term which is used to apply for basically what all of linguistics  corpus linguistics does , and what  
+F:  what my transcribers are doing and what I do , <laugh> which is a methodology whereby you actually physically mark 
+A:  <mouth> All  al 
+F:  things in the data . Like the transcription , like the words that are actually there . 
+A:  All we mean by that is that we 're giving the recognizer more information 
+A:  than it would 
+A:  have if you were running it raw , 
+F:  <inbreath> Yeah . 
+A:  over a meeting that no person has ever listened to or transcribed . 
+F:  OK . I mean , that  that part is OK . But I  but I do wonder sometimes if it might be possible to use 
+F:  <inbreath> a term that 's a little bit less evaluative , like , um , " hand - marked " .  <laugh> 
+I:  <laugh> 
+C:  <inbreath> Uh , but cheating is  is  p Sure . But chea but cheating is  is  is  
+D:  <laugh> 
+C:  pretty commonly used to mean this . It really is  <clears throat> 
+I:  It 's a  it 's a technical term . 
+H:  It  I guess it  It 's been around for a long time , and it  
+G:  <laugh> 
+A:  It is . Yep . 
+E:  <laugh> 
+C:  Yeah . 
+H:  it 's sort of , um  Because it 's so 
+H:  strong a word , people don't take it that seriously , in  It 's not negatively viewed . It just really means  
+E:  <loud outbreath> 
+I:  <mike noise> <breath> 
+C:  <inbreath> Yeah . I i i i  
+C:  I it 's  i 
+C:  It 's even more than that . I think it  it really gives a very strong 
+C:  perspective , that you know 
+C:  that what you were doing is not an un - biased experiment . 
+C:  If you don't say that , then people think " oh , they did that and they threw that , but that doesn't represent what would happen in the real world " . 
+C:  <inbreath> 
+C:  But if you say " we did a n cheating experiment " , which is really the standard way you 'd say it , 
+C:  it says you deliberately put in a piece of me information that you would not have in the real world so that you can learn something . 
+C:  Just as part  as your process . So it 's  I d I don't know , I  <breath> 
+I:  <breath-laugh> 
+F:  OK . I guess what I 'm  I 'm thinking , is just in  if  uh , when these are presented in an inte interdisciplinary context , 
+C:  i <outbreath> 
+I:  <laugh> 
+F:  it might be nice to add that explanation ? Cuz otherwise it sounds like a pejorative statement on an alternative methodology ? 
+I:  <breath-laugh> 
+F:  Cuz it sounds like  
+F:  it sort of devalues the  
+F:  the , um , 
+F:  all  other approach , which is to  to put those distinctions in . 
+I:  <breath-laugh> 
+I:  <breath-laugh>  
+C:  Maybe . I  I 've heard this at ICSLP for years and years and years , though . 
+C:  I mean , it 's  it 's pretty  pretty common . People say this . 
+I:  If  i Well , you i i in a  To a broader audience you could call it a diagnostic experiment , rather than a cheating experiment . <laugh> 
+H:  <inbreath> 
+D:  <laugh> 
+A:  <laugh> 
+H:  Actually , Jane is right . Like , in conversation analysis , I 've never heard people use this , because they 're not using an automatic system . So , it really  
+I:  But they don't run experiments . 
+C:  Yeah . 
+H:  Right . I 'm j Well , you can do experiments , but the  it 's cheating relative to what we call a system where we can completely control this black box . And it 's not a very 
+A:  <laugh> 
+I:  <laugh> 
+D:  <laugh> 
+F:  <mouth> 
+C:  <laugh> 
+G:  <laugh> 
+F:  They can do experiments . 
+G:  <breath-laugh> 
+C:  <cough> 
+H:  smart system . It  it only knows what we give it . 
+H:  And if w If it knows more than we would really give it when it runs , we call it cheating . But it 's  
+H:  Yeah , it 's f only used in a community that 
+H:  does some type of computational modeling , I think . It 's really not used in any kind of community doing experiments on human perception , or  
+C:  Yeah . In pattern recognition , or in  
+C:  Yeah . 
+C:  Right . 
+H:  You know . So  she certainly can 
+C:  Yeah . It 's machine  machine experiments . Um , <clears throat> I mean , w when  when the , uh , the neural net 
+E:  <clears throat> 
+H:  define it . 
+C:  w uh  wave hit in the mid - eighties , 
+C:  and by the late eighties there were  uh , we were reviewing thousands of papers that were 
+A:  <laugh> 
+C:  <laugh> coming out in neural nets . It was really hot . Everybody thought it would do everything . 
+C:  <breath> 
+C:  Um , and a really common error that people were making was , they were just reporting 
+C:  their , uh  uh , classification results on the data that they were training on . 
+F:  <laugh> 
+C:  And so I think it was  it was  
+I:  <laugh-breath> 
+C:  it was very important for people then who were doing something diagnostic to say " hey , I know I 'm doing something that isn't kosher " . 
+I:  Hmm . 
+C:  And to make it really clear that they knew it . So that was , I think , why  why it became a popular term . 
+F:  <inbreath> Yeah , it just seems like , you know , i if it were " bootstrapping " , or if it were  I mean , there are other ways to maybe get the point across . 
+C:  But it isn't bootstrapping . Uh , it 's  it 's really cheating . 
+I:  <mike noise> 
+A:  It 's us it 's using information you wouldn't normally have . So . 
+C:  It 's just ng Yeah . Yeah . <breath> 
+F:  <inbreath> Hu - Well . OK . 
+C:  But it 's cheating in a way that 's pril It 's  it 's announcing to everybody " hey , I 'm cheating , by doing this . " 
+I:  <outbreath> 
+C:  It 's saying  so it 's all above the table . I 'm actually using this other thing . 
+F:  OK . 
+C:  That 's  that 's  that 's the reason . <breath> 
+F:  OK . Alright . 
+C:  Bootstrapping would imply it was actually legitimate in some kind of way . 
+A:  Hmm . 
+F:  <mouth> Well , I  I think  
+C:  But  <outbreath> 
+F:  <outbreath> 
+A:  We 're not de - legitimizing the data . We 're de - legitimizing the experiment . 
+F:  <inbreath> 
+A:  We 're not saying that the data is cheating data . We 're saying th we are cheating by using this data . 
+C:  Yeah . 
+F:  OK . 
+C:  Yeah . 
+A:  Because normally you wouldn't have that data available . 
+F:  OK . 
+F:  OK . 
+C:  Yeah . 
+F:  <inbreath> Does seem to me that it  that it carries over some baggage with it . That , uh , 
+C:  Anyway . 
+F:  <inbreath> 
+F:  i that  I can understand it in context as you described it . 
+F:  <inbreath> But , it  it seems to me that  
+F:  u um , it does import some negative evaluation , that , 
+F:  um , would maybe not be good if  It has shock value , and 
+C:  It has some shock value . 
+C:  Which is part of why it 's used . 
+F:  to the wr to the wrong audience , I think that that might be t <laugh> a negative shock . <laugh> 
+H:  <mouth> Yeah . I thi I think to the wrong audience , I agree that , um , p 
+C:  Uh - huh . 
+I:  <mouth> It 's like a disclaimer . 
+H:  to the wrong audie we should just explain what it  what it means here , and that it 's a common term , and 
+F:  Yeah . We started with hand - marked data , or with , uh , t you know , hand - transcribed data , or   
+I:  <mike noise> 
+H:  we 're  
+A:  Shoot .   
+D:  <laugh> 
+F:  Yeah . Did you break the microphone ? 
+G:  <laugh> 
+H:  Yeah . 
+A:  Just the clip . <laugh> 
+F:  Nnn . OK . <laugh> OK . Well , I feel better now . Thank you very much . 
+C:  <laugh> 
+E:  <laugh> 
+I:  Now we have to l delete that expletive . <laugh> 
+H:  Hmm . The first time I heard that , I  I thought , you know , the same thing and I guess you ju after a while it becomes 
+E:  <laugh> Thank you , Andreas . <laugh> 
+F:  <laugh> 
+I:  <laugh> 
+B:  <laugh> 
+D:  <laugh> 
+A:  It 's p it  it really is part of the jargon . 
+H:  almost a  It 's a bu bit of a  
+C:  <breath> But it 's also is  
+H:  a humbling thing when somebody says that . If they get good results but we were cheating on this feature because we took it for granted even though we  can't really assume that , 
+E:  <laugh> 
+C:  Right . 
+H:  then it 's actually the opposite . It 's  
+F:  <inbreath> The trouble is , that  you know , I understand it in that context , but it  but it 
+F:  is almost resentful . It 's almost like , 
+F:  you know , resentful of the data , resentful of the , um , 
+I:  <breath-laugh> 
+F:  the hard work that 's going into preparing the data is   <laugh> 
+A:  <mouth> Well  
+A:  <breath-laugh> 
+C:  No , no . It has  I don't think you 're saying the data is cheating . I think you 're saying 
+H:  Well , it 's  it 's  
+A:  That 's what I was saying . 
+F:  <laugh> 
+D:  Yeah . 
+C:  " in my experiment , I cheated in this way " . I mean , another is what Liz was talking about , how 
+F:  <laugh> 
+C:  in the Switchboard tests  in all the Switchboard tests we 've been g doing , 
+C:  we 've been making the same er uh , same  uh , uh , standard  
+C:  using the same standard way of  of getting the data to test on . 
+A:  <mouth> 
+C:  Which means that we weren't actually running it on  on , uh , on data that had  had no speech . 
+C:  And , in a sense , that was cheating . 
+D:  <mike noise> <sniff> 
+F:  OK . 
+C:  So i so it  it 's  it 's a good wake - up call if people " well , 
+C:  we have this performance but you have to keep in mind , we 're doing  we 're  we 're not 
+C:  doing the whole real task in this way and this way and this way . But , 
+C:  I 'll convince you that  that it 's still important for you to listen to what I have to say next because of this and this . " 
+F:  OK . OK . 
+H:  <breath-laugh> 
+C:  And so it 's just a way of putting it all out on the table , uh , as opposed to  
+A:  Uh , and it 's used for a lot of different types of data . So , segment whether you have segmentation or not , is it male or female or not  
+A:  <breath> 
+C:  Yeah . 
+A:  Um , do you know the signal - to - noise ? Like , that 's another one I see all the time , where 
+F:  Mmm . 
+C:  Yeah . Sure . 
+I:  <outbreath> 
+A:  <breath> 
+A:  you assume it 's known . 
+F:  Oh , interesting . 
+C:  Yeah . 
+A:  And you say it 's cheating because  you don't actually compute it . 
+I:  Hmm . 
+F:  I didn't know that . Huh ! 
+C:  <mouth> 
+C:  In  
+C:  In the multi - band experiments , in the first one , we really wanted to find out , " what if you knew which band was really noisy ? " 
+F:  <mouth> Uh - huh ! 
+A:  N Right . 
+C:  I mean , suppose you just know that . 
+A:  Same cheating . 
+C:  And then  then , even if you know that , can that help you ? I mean , what can  what strategy can you do , to do well 
+I:  Hmm . 
+C:  without that particular band in the spectrum ? <breath> 
+C:  And so that was important to know as a baseline . 
+C:  And  and then , once you knew that , then s you go " well , now how do I know that that 's noisy ? " 
+I:  Hmm . 
+F:  OK . 
+C:  And  and  and , uh  But , y you know , I  I should also say that there 's a lot of  It 's not just the word " cheating " . But there 's lots of other things that we talk about , <breath> 
+C:  which , as soon as you go outside of your narrow little group , 
+C:  it gets very , very confusing to people . 
+F:  <inbreath> Oh , sure . Terminology is always context dependent . No question about it . 
+A:  Mm - hmm . 
+C:  And  I i i i <outbreath> 
+F:  It 's just  that it seems like  the  the point without the negative evaluation would be  
+F:  However , you know , if i I understand your point . That it  th it has a long tradition in this field  I didn't realize . And is used  This is interesting what  
+C:  <inbreath> 
+I:  <inbreath> Uh  <outbreath> 
+A:  It 's not even really negative . 
+F:  what Adam said about it being used also for 
+F:  a bunch of other , uh , dimensions . 
+C:  Well , the example I was thinking of , also , was this w thing that  that Herve and  and Hynek and I made about , uh , increasing the error rate . <inbreath> 
+C:  And , so we  we did a number of papers , and talks , and so forth about , uh  w uh , i the  the virtues of increasing the error rate . 
+F:  Oh . <laugh> 
+C:  <breath> 
+E:  <laugh> 
+C:  OK . And  I mean , and the whole point of it was , not that it was good to increase your error rate , but it was good to 
+F:  <laugh> 
+C:  be willing 
+C:  to risk increasing your error rate by trying risky things , and trying  Because there 's this notion of a local minimum , that if you just have 
+C:  <breath> 
+C:  some system that 's very complex , and you t you  
+I:  <breath> 
+C:  <breath> you turn some knobs to try to make it better and better , you 'll never get out of this local minimum . You have to be willing 
+A:  Fine - tune little bits . 
+I:  <breath> 
+F:  Mm - hmm .  
+I:  Mmm . 
+C:  <breath> 
+F:  Interesting . 
+C:  to jump to something that 's quite different . And the first time you jump to something quite different , or maybe the first ten times or a hundred times you do , 
+C:  <breath> 
+C:  it 's gonna be much much worse , because you 've optimized the other system . 
+C:  <breath> 
+C:  So the effect  the immediate effect is gonna be to increase your error rate . <breath> 
+F:  Interesting . 
+C:  And so it was  we had a couple papers like " Towards increasing the error rate in speech " and  and so on . 
+A:  Hmm . 
+F:  <mouth> Huh ! 
+E:  <laugh> 
+G:  <laugh> 
+C:  And we really did get feedback from a few people , some of whom were , you know , fairly senior , that  that , um , 
+C:  " Well , you know , you sh you  you c We 're c really concerned about you misleading people into thinking they should be increasing the error rate . " 
+I:  Hmm . 
+F:  Yeah .  <laugh> 
+C:  <breath> And , <laugh> uh , and we go  we thought " Oh , come on . " But . <inbreath> 
+D:  <mike noise> 
+D:  <laugh> 
+G:  <laugh> 
+A:  Did you read the paper ? <laugh> 
+E:  <laugh> 
+I:  But weren't you cheating in those experiments ? <laugh> <mike noise> 
+F:  Yeah .  
+C:  <breath-laugh> 
+E:  <laugh> 
+H:  <laugh> 
+A:  <laugh> 
+G:  <laugh> 
+B:  <laugh> 
+C:  <laugh> 
+F:  <laugh> 
+C:  That 's  we weren't . That 's why we increased the error rate . <laugh> 
+F:  <laugh> 
+D:  <laugh> 
+I:  <laugh> 
+G:  <laugh> 
+F:  <laugh> 
+F:  Interesting . 
+H:  Actually , I think of cheating as  a way to do some work , where you can't address all of the computational tasks . Like , if we wanna study , 
+H:  um , speaker habits , but we can't do speaker detection . But we wanna assume  Let 's say , we know this is Jane and we know this is Chuck , even though 
+C:  Mm - hmm . 
+H:  automatically to look at the habits , we would need to also first figure that out . But we can sort of 
+H:  cheat on that factor because it 's somebody else 's research . And then we just  
+H:  So it 's  Then we wanna make a proof of concept for  
+A:  <mouth> What  what this  w 
+A:  Right . What would this be like if  w it were perfect ? If this component were perfect ? 
+H:  If someone else  
+H:  Right . Eh  or  w But we really can't work on that problem . We don't have time , we 're not interested , or w whatever  
+D:  Yep . 
+A:  Hmm . 
+H:  And so you  you assume it 's given because it 's , um  
+A:  It 's too hard , usually .  
+H:  you wanna go forward with your research , and assume that you have that information . So , 
+F:  Mm - hmm .  
+C:  <inbreath> 
+H:  I guess if  I don't ever think of it as negative . More like , it 's something we 're not building . 
+A:  It 's not pejorative at all . 
+F:  Well . <laugh> The term itself is . You know ? 
+A:  <mouth> 
+A:  But , it 's not pejorative towards the data . It 's pejorative towards  
+F:  But  but it  And it 's pejorative with respect to a certain purpose . I understand . I  I wanted to raise the issue . 
+I:  <mike noise> 
+A:  It 's pejorative to o ourselves . Right ? 
+I:  <breath> S self  <outbreath> 
+F:  <inbreath> 
+A:  To say " I am cheating in this experiment " is not saying that the data is bad . It 's saying that my experiment is bad .  
+C:  Yeah . <inbreath> 
+D:  <laugh> 
+C:  But  
+F:  Yeah . 
+C:  Yeah . 
+F:  <inbreath> 
+C:  <inbreath> Anyway , it 's colloquial , an and  and , uh , it 's  
+F:  Anyway . 
+C:  it 's interesting to hear that  that someone coming from a different direction  it s it sounds the way it sounds to you . 
+C:  But  but , uh , I  I 'd never heard that before . 
+A:  Yep . 
+F:  OK . That 's interesting . OK . Well , I wanted to raise the issue , and um , 
+I:  <laugh> 
+C:  So , so i so , that 's interesting . 
+I:  <laugh> 
+C:  Mm - hmm .  
+F:  I  I , uh   I appreciate the discussion . 
+
+
+
+
+F:  <inbreath> I wanted to ask one other question which is a different  matter , which is with respect to , um , this 
+F:  thing that you 've been r working on for the recording monitoring script ? 
+A:  <breath-laugh> 
+F:  So . The idea  You had this script that you 're working on , to be sure that the microphone values are in  are kept in  ? 
+A:  Oh , right . 
+A:  I haven't gotten back to that recently . But  
+F:  OK . <inbreath> 
+F:  OK . 
+I:  Hmm . 
+F:  Cuz , y you know  
+A:  I assume you 're saying you want me to  get back to it . 
+F:  <mouth> Well , I was just wondering if  i i 
+A:  <laugh> 
+F:  Because I  I am finding that , 
+F:  um , in double checking , I 've run across , u um , 
+F:  one data set where the microphone was off early on , 
+E:  <mike noises> 
+F:  and then two other  speakers  their microphones went off later . <laugh> 
+C:  <mike noise> 
+A:  Hmm . 
+F:  And this is out of , like , seven speakers . So out of seven speakers , four microphones  
+E:  <mike noises> 
+F:  Y you know , basically , three  three microphones bak basically flaked , which makes it hard for the data to be  used for all possible purposes . 
+A:  <laugh> 
+B:  D 
+D:  <laugh> 
+B:  Do you think the battery ran out ? Or  ? 
+F:  That 's what I think . I think the two that flaked late , I think it was the battery . 
+F:  But , you know , if the script could , um , you know , alert the recording person to that  
+F:  I mean , I don't know if there 's a way to replace a battery , if it happens in the middle of a meeting . Maybe that 's hopeless anyway . But  
+A:  Well  <outbreath> 
+A:  Well , you can , but you 'll lose a lot of data . But , I mean , that 
+D:  Yeah . 
+A:  doesn't really help because often the recording person isn't in the room . 
+F:  <mouth> Oh , I see . 
+A:  So , what are you gonna do ? I mean it will  w the person  if you 're looking up at the board and I 
+A:  disable the screensaver , you will see that the mike is off , but that doesn't necessarily help . 
+F:  <mouth> OK . Then I guess that raises the question of , <inbreath> 
+
+
+A:  <breath> 
+A:  So  
+F:  uh , whether we should screen the data before they get 
+F:  transcribed . Because , although I think that the data are still useful in terms of providing content , <inbreath> 
+F:  and  and that , I know that having three out of seven microphones out of commission during some part of the meeting restricts the , 
+C:  <mike noise> 
+F:  uh , usefulness of the data  for other purposes . <inbreath> 
+H:  Yeah . 
+A:  Mm - hmm . 
+H:  I  I think that 's a really good idea . Because for all kinds of studies , we 
+F:  And maybe you don't wanna have it  
+H:  don't really enjoy meetings where some of the  where the signal 's going off at times . It just makes it hard to study any kind of parameters . So , 
+H:  if there 's a way to check the signal quality before transcribing it and you find any problem at all , 
+B:  <yawn> 
+H:  it 'd be much better to go to another meeting , I think . 
+F:  <inbreath> I actually think that Thilo 's  n in a  in a  k a  You know , when you do the pre - segmenter and you  and you run across troubles  He  he runs across s some of these that are  
+D:  Yeah . 
+D:  Yeah . Some of these  things are captured by  Yeah . Um , by looking at  at the minimum and maximum and whatever you find in the channels , and  
+F:  So , we have some part of that . 
+F:  <inbreath> I c 
+A:  <mouth> It 's just hard to tell between that and just someone not talking . 
+D:  But  
+F:  <clears throat> 
+D:  Yep . Yep . 
+D:  Yeah . Yeah . 
+A:  So . 
+F:  Well , there the  And the other aspect of it is , 
+F:  um , that , when the microphone is not well - adjusted , then y i i 
+I:  <outbreath> 
+F:  even if it 's not a lapel mike , you can get lapel mike type behavior . Cuz I 'm  I 'm expecting , for example , with this , that you 're gonna end up , 
+A:  Right . 
+H:  <laugh> 
+F:  <inbreath> 
+F:  you know , picking up other peoples ' signals . 
+H:  I 've already written some notes here , so I   
+A:  Mm - hmm . 
+H:  Um , right . Uh  
+F:  Yeah . I mean , it 's just  you know , the microphone is 
+A:  <mouth> Well , we should be getting new equipment in , so we don't have to use the earplug any more .  
+F:  intended for certain adjustments . 
+H:  OK . 
+H:  But it 's my ear . I 'm sure it 's something wrong with my head , but  
+A:  It 's your hair . <laugh> 
+C:  <laugh> 
+D:  Hmm . 
+H:  Um , actually , is there a way , though , to use whatever you 're using for background noise to check post hoc that a microphone was constantly on ? I mean  
+G:  <laugh> 
+E:  <laugh> 
+A:  <mouth> 
+A:  I mean , y d you  you can do sort of a check , 
+H:  Uh , like this o 
+A:  but it will be very hard to tell the difference between that and , um , someone not talking . 
+C:  Just so it doesn't  when the microphone 's dead , it doesn't put out zeros ? Or  ? Mm - hmm . 
+A:  No . 
+A:  <outbreath> 
+I:  What does it put out ? 
+E:  Really ? 
+C:  Johnson noise ? Yeah . 
+H:  But then how are y how are you detecting during a meeting ? 
+A:  Little bit of noise . 
+A:  I use a threshold . 
+A:  If it 's below a particular value , it  it flashes yellow . So as I  eh  but it 's not perfect . 
+H:  But is it better than nothing ? 
+A:  Yeah , probably . 
+H:  Cuz it would really be  
+A:  I mean , this is the reason why I haven't gotten back to it , is cuz my first pass at it 
+A:  didn't really work because all the mikes have different noise levels . And so I have to do something a little more clever . 
+H:  Right . 
+I:  Hmm . 
+E:  It 's just the noise from the connections and the  everything . 
+H:  But you could  
+A:  Yep . 
+H:  So , you could run that post hoc on a already recorded meeting , 
+A:  Yep . 
+H:  in the sense that , you know , not everyone  as you just said , you won't be there . And then if we find any problems , have the transcribers listen and  I really think it 's 
+A:  Yep . 
+H:  better not to transcribe a meeting that 's gonna have problems once you 've spent all this effort . 
+A:  Yep . 
+F:  <inbreath> The only argument for doing so would be with reference to the content . Content maps . 
+H:  Yeah . Yeah . 
+F:  <inbreath> Uh  but mayb maybe then it should be done in the old original way , w instead of channelizing and having the , uh , 
+I:  Mmm . 
+I:  <inbreath> Yeah . You could still  eh  <outbreath> 
+A:  <inbreath> Yeah . There 's  eh  the s the standard deviation of the signal 
+F:  uh , you know , elaborate coding of the 
+F:  backchannels . 
+A:  gives you a good clue . I mean , if that is too low , 
+H:  Mm - hmm . 
+E:  Hmm . 
+D:  Yeah . 
+A:  then you can be pretty sure that it 's , uh , empty . 
+I:  <inbreath> 
+D:  Yeah . Sometimes you  you capture that when you mix it together , and  Yeah . Yeah . 
+F:  <inbreath> 
+A:  Right . Exactly . 
+F:  And actually , an  an alternative to even doing that level of transcription would be to have a transcriber listen and  and m you know , maybe just  
+F:  Oh , I don't know if a transcr uh  
+F:  <inbreath> 
+F:  Well , someone who 's associated with the meeting could have , like , a summary of points handled in the meeting . You know , maybe if we could 
+F:  pay one person who knows that subject matter to do an outline of the meeting 's content . 
+A:  Uh - huh . 
+I:  <mouth> Well , it 's even  If y if you could still transcribe 
+A:  <mouth> 
+F:  Instead of losing the content altogether . 
+A:  Is there a  ? 
+I:  the words based on the  far - field microphone or something , <mike noises> 
+A:  Far - field . Yeah . 
+I:  you could , uh , still use it for , say , language modeling , <thumping noise> 
+F:  <mouth> I guess the troub trouble in my mind is that it  that it 's not a very neat corpus if you say 
+I:  you know . 
+H:  Yeah . 
+F:  " these data are available , but these are imperfect , because of the f you know , the batteries flaked . " <laugh> 
+I:  Right . 
+H:  Yeah . 
+A:  Well , we 'll just  We 'll  we 'll just have to note those . 
+H:  I 'd mu We 're  I 'd much rather have , 
+H:  you know , meetings that have all the channels , even if we had to skip a meeting or something , just for  all these other purposes . So . 
+I:  <inbreath> Well , if  Right . 
+I:  <outbreath> <mouth> 
+I:  I guess there is no  
+F:  And we have so many . 
+E:  You could put them at the back of the queue or something . 
+A:  Well , I  I  I think we can't throw away that data , cuz otherwise we 'll end up with very few meetings . But  
+H:  Yeah . Right . But may just  
+I:  there 's  there 's no shortage of meetings , so  
+E:  Yeah . 
+D:  Yep . 
+H:  Right . There  but there 's a shortage of trans transcription power . 
+A:  <mouth> 
+I:  we can afford  we can a 
+F:  We have such a backlog . I mean , to be able to get through the backlog of the  of the good meetings , it would be nice to not have 
+D:  <cough> 
+B:  <cough in background> 
+I:  <outbreath> Hmm . 
+H:  Yeah . 
+A:  <mouth> 
+
+
+A:  Do we have a  ? I 'm sorry for interrupting . Do we have an EDU meeting at four ? 
+F:  energies diverted . That 's fine . 
+I:  Hmm . 
+F:  Oh , good question . 
+H:  You know what ? They can their four o ' clock cancelled , and they 're starting at four twenty , and I 'll set up at four fifteen . 
+D:  I don't think so . 
+A:  OK . Great . 
+A:  Good . 
+C:  <mouth> 
+I:  Hmm . <mouth> Hey , I bet there 's tea .   
+C:  Yeah , but there 's  
+A:  <mouth> Cuz otherwise I was gonna say we have to cancel . 
+H:  Yeah . 
+C:  There 's tea , also , though . So , maybe we should  maybe we should do a , uh , 
+I:  Yeah . <prolonged vocal squeak> 
+F:  OK . 
+H:  Yeah . So you 'll have si 
+I:  <squeaky door in the background> 
+C:  <breath> 
+E:  <outbreath> 
+C:  simultaneous digits  digits read . In the interest of  of getting the snacks . 
+A:  A simultaneous digit . OK .  
+F:  Mm - hmm . 
+A:  <breath-laugh> 
+E:  <clears throat> 
+I:  Hey , I 've never done one of those .  <laugh> No . <laugh> 
+C:  Oh , you never have ? Oh , it 's a treat . 
+G:  <laugh> 
+A:  <breath-laugh> 
+E:  <laugh> 
+H:  You have to plug your ears or just prepare not to laugh . <laugh> 
+I:  Right . 
+C:  OK . 
+A:  Everyone ready ? S reading simultaneous digits ? Three ! Two ! One ! 
+F:  Yeah . 
+F:  Yep . Yep . 
+E:  <inbreath> 
+F:  <inbreath> 
+D:  <laugh> 
+H:  <mike noise> 
+C:  OK , another successful babble . 
+B:  <mike noise> 
+A:  And  
+F:  <mike noise> 
+
+
+C:  Transcript L s dash two hundred .  
+B:  Transcript L dash two zero two .  
+A:  L two O three .  
+D:  Transcript L two hundred and one .  
+E:  Transcript L dash two zero five .  
+I:  Sev - 
+F:  L one nine nine  
+H:  Transcript L two O six .  
+G:  Transcript L two O seven .  
+I:  L two zero four .  
+H:  seven two seven , one eight , six two two eight  
+F:  two two nine five , eight , seven one five  
+E:  two two six , five two , one four four eight  
+B:  five six , eight four , zero nine , nine nine , two six  
+D:  eight seven one , one three five , five eight one  
+A:  three two six eight , seven , two six seven  
+C:  seven two two nine , eight , one two six  
+I:  seven one three five , two , seven three eight  
+G:  seven zero five , six five , one two nine zero  
+F:  six nine six , nine one , nine five O one  
+H:  one two one , eight four four , two six three five  
+A:  six eight O three , one , six four six  
+E:  five five , three one , seven seven , zero six , five three  
+C:  four five four one , five six three two , two one one six  
+B:  five eight five , seven six , seven one zero five  
+D:  eight six two , four five zero , one six two  
+F:  three zero zero , one three seven , two three eight  
+I:  three five nine two , eight nine eight nine , two six one six  
+H:  five six six one , one five five nine , nine two seven one  
+G:  seven four zero seven , two , two nine six  
+A:  three five seven , five two O , six five four two  
+D:  two four , two three , eight one , four six , four one  
+B:  two seven seven four , three one five seven , one two zero seven  
+E:  two five five , one eight five , three seven three five  
+F:  three , four seven two , six five , five three zero , four  
+C:  three five six , seven six five , four one four  
+A:  three , five three six , one O , eight nine two , nine  
+H:  eight nine two , six five , nine eight three six  
+G:  two two five , eight nine six , five seven two  
+I:  six , O nine nine , O two , nine two four , two  
+D:  nine two six nine , one , four nine eight  
+E:  one , one six six , six eight , seven five five , zero  
+C:  four three two , three one zero , nine four seven five  
+F:  seven nine five four , three three six five , zero zero two six  
+A:  two four three seven , zero , zero nine two  
+B:  three , six eight two , six five , five two eight , five  
+H:  one four eight seven , six , seven O one  
+D:  six two , two nine , one two , nine two , six two  
+G:  three eight five , eight zero , zero six six two  
+I:  two two eight four , five , four three eight  
+A:  O five six , two nine zero , nine five three  
+F:  eight nine two seven , four nine two eight , seven O two six .  
+C:  eight one nine , one one , one three one zero  
+E:  four one , seven four , three two , one seven , six eight  
+H:  nine seven three , O four , five seven nine two  
+B:  one one seven nine , eight , three three three  
+D:  one , two five nine , zero two , one four three , five  
+I:  four , six seven seven , two six , one one six , seven  
+G:  four  eight one , three seven eight , five six four  
+A:  one five eight , nine one , O four three six  
+C:  three two seven , five zero , three six nine one  
+F:  nine eight five nine , five three one eight , nine three four one  
+H:  four , eight six nine , four six , four eight four , nine  
+B:  three four seven nine , six , five nine zero  
+E:  zero seven seven , five two eight , nine zero two  
+A:  five three three eight , one , one eight five .  
+D:  seven , nine four eight , seven five , zero eight three , six  
+I:  four zero one , four nine , zero two three nine  
+G:  zero zero six , five zero , seven zero four eight  
+H:  two five eight six , five , six eight zero .  
+C:  three three seven , five one one , five zero four two  
+F:  seven eight one , eight seven six , five four nine seven .  
+B:  six six six , three two nine , nine three eight three  
+E:  seven six , seven five , zero one , three three , five six  
+D:  nine six three five , seven three four two , eight six one eight .  
+I:  zero two four , four nine , one two two six  
+G:  seven four , five one , five three , two four , seven one  
+C:  eight nine zero eight , seven , zero seven six .  
+B:  nine zero one , three three six , zero nine one four .  
+I:  six four , zero five , nine eight , one seven , one four .  
+E:  three seven eight , five three , six nine seven six .  
+G:  seven four five , six four eight , one three nine nine .  
+
+

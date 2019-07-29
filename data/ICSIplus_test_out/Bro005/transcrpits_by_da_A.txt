@@ -1,0 +1,639 @@
+A:  My battery is low . 
+A:  Mike . Mike - one ? 
+A:  Yeah , 
+A:  um . 
+A:  Yeah . 
+A:  Yeah , I 'm sorry for the table , 
+A:  but as it grows in size , uh , it . 
+A:  Uh , yeah . 
+A:  Yeah . 
+A:  So 
+A:  Next time we will put colors or something . 
+A:  Uh . 
+A:  OK , s so there is kind of summary of what has been done  
+A:  It 's this . 
+A:  Summary of experiments since , well , since last week 
+A:  and also since the  we 've started to run  work on this . 
+A:  Um .  So since last week we 've started to fill the column with um <mouth> uh features w with nets trained on PLP with on - line normalization 
+A:  but with delta also , 
+A:  because the column was not completely  
+A:  well , it 's still not completely filled , 
+A:  but  we have more results to compare with network using without PLP 
+A:  and  finally , hhh ,  um  ehhh  PL - uh delta seems very important . 
+A:  Uh  I don't know . 
+A:  If you take um , let 's say , anyway Aurora - two - B , 
+A:  so , the next  t the second , uh , part of the table , 
+A:  uh  when we use the large training set using French , Spanish , and English , you have one hundred and six without delta 
+A:  and eighty - nine with the delta . 
+A:  Yeah , 
+A:  on the baseline , yeah . 
+A:  So  
+A:  Yeah . Yeah . 
+A:  So now we see that the gap between the different training set is much  uh uh much smaller 
+A:  um  
+A:  But , actually , um , for English training on TIMIT is still better than the other languages . 
+A:  And 
+
+A:  Mmm ,  Yeah . 
+A:  And f also for Italian , actually . 
+A:  If you take the second set of experiment for Italian , 
+A:  so , the mismatched condition , 
+A:  um  when we use the training on TIMIT 
+A:  so , it 's multi - English , 
+A:  we have a ninety - one number , 
+A:  and training with other languages is a little bit worse . 
+A:  So , 
+A:  yeah . 
+A:  And , yeah , and here the gap is still more important between using delta and not using delta . 
+A:  If y if I take the training s the large training set , it 's  we have one hundred and seventy - two , 
+A:  and one hundred and four when we use delta . 
+A:  Uh .  Even if the contexts used is quite the same , 
+A:  because without delta we use seventeenths  seventeen frames . 
+A:  Uh . 
+A:  Yeah , um , so the second point is that we have no single cross - language experiments , uh , that we did not have last week . 
+A:  Uh , so this is training the net on French only , 
+A:  or on English only , 
+A:  and testing on Italian . 
+A:  And training the net on French only 
+A:  and Spanish only 
+A:  and testing on , uh TI - digits . 
+A:  And , 
+A:  fff  um , 
+A:  yeah . 
+A:  What we see is that these nets are not as good , 
+A:  except for the multi - English , which is always one of the best . 
+A:  Yeah , 
+A:  then we started to work on a large dat database containing , uh , sentences from the French , from the Spanish , from the TIMIT , from SPINE , uh from  uh English digits , and from Italian digits . 
+A:  So this is the  another line  another set of lines in the table . 
+A:  Uh , @ @ with SPINE 
+A:  and  uh , actually we did this before knowing the result of all the data , 
+A:  uh , so we have to to redo the uh  the experiment training the net with , uh PLP , but with delta . 
+A:  But 
+A:  um this  this net performed quite well . 
+A:  Well , 
+A:  it 's  it 's better than the net using French , Spanish , and English only . 
+A:  Uh . 
+A:  So , 
+A:  uh , yeah . 
+A:  We have also started feature combination experiments . 
+A:  Uh many experiments using features and net outputs together . 
+A:  And this is  The results are on the other document . 
+A:  Uh , we can discuss this after , perhaps  well , just , @ @ . 
+A:  Yeah , so basically there are four  four kind of systems . 
+A:  The first one , yeah , is combining , um , two feature streams , uh using  
+A:  and each feature stream has its own MPL . 
+A:  So it 's the  kind of similar to the tandem that was proposed for the first . 
+A:  The multi - stream tandem for the first proposal . 
+A:  The second is using features and KLT transformed MLP outputs . 
+A:  And the third one is to u use a single KLT trans transform features as well as MLP outputs . 
+A:  Um , 
+A:  yeah . 
+A:  Mmm . 
+A:  You know you can  you can comment these results , 
+A:  Yeah , we ju just to be clear , the numbers here are uh recognition accuracy . 
+A:  So it 's not the  <laugh> Again we switch to another  
+A:  So it 's experiment only on the Italian mismatched for the moment for this . 
+A:  Um . 
+A:  Mm - hmm . 
+A:  Yeah , eh , actually , if w we look at the table , 
+A:  the huge table , 
+A:  um , we see that for TI - digits MSG perform as well as the PLP , 
+A:  but this is not the case for Italian what  where the error rate is c is almost uh twice the error rate of PLP . 
+A:  So , um <mouth> uh , well , I don't think this is a bug 
+A:  but this  this is something in  probably in the MSG um process that 
+A:  uh 
+A:  I don't know what exactly . 
+A:  Perhaps the fact that the  the  there 's no low - pass filter , 
+A:  well , 
+A:  or no pre - emp pre - emphasis filter 
+A:  and that there is some DC offset in the Italian , 
+A:  or , well , 
+A:  something simple like that . 
+A:  But  that we need to sort out if want to uh get improvement by combining PLP and MSG 
+A:  because for the moment MSG do doesn't bring much information . 
+A:  And as Carmen said , if we combine the two , we have the result , basically , of PLP . 
+A:  Yeah . 
+A:  Uh  yeah , 
+A:  so this is  basically this is in the table . 
+A:  Uh  so the number is fifty - two , 
+A:  uh  
+A:  Fift - So  No , it 's  it 's the  
+A:  Of  of  of uh  eighteen  
+A:  of eighteen . 
+A:  So it 's  it 's error rate , basically . 
+A:  It 's er error rate ratio . 
+A:  So  
+
+A:  Uh , so we have nine  nine  let 's say ninety percent . 
+A:  Yeah . 
+A:  Um  which is uh  what we have also if use PLP and MSG together , 
+A:  eighty - nine point seven . 
+A:  Uh . 
+A:  P - PLP and Mel cepstra give the same  same results . 
+A:  Well , we have these results . 
+A:  I don't know . 
+A:  It 's not  
+A:  Do you have this result with PLP alone ,  j fee feeding HTK ? 
+A:  That  That 's what you mean ? 
+A:  Just PLP at the input of HTK . 
+A:  Yeah . 
+A:  So , PLP  
+A:  Yeah . 
+A:  Um  
+A:  Yeah , that 's without the neural net 
+A:  and that 's the result basically that OGI has also with the MFCC with on - line normalization . 
+A:  This is the  w well , but this is without on - line normalization . 
+A:  Yeah . 
+A:  Eighty - two is the  it 's the Aurora baseline , 
+A:  so MFCC . 
+A:  Then we can use  
+A:  well , OGI , they use MFCC  th the baseline MFCC plus on - line normalization 
+A:  Yeah , sorry . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  So what happ what happens is that when we apply on - line normalization we jump to almost ninety percent . 
+A:  Uh , when we apply a neural network , is the same . 
+A:  We j jump to ninety percent . 
+A:  And  And um  
+A:  whatever the normalization , actually . 
+A:  If we use n neural network , even if the features are not correctly normalized , we jump to ninety percent . 
+A:  So  
+A:  Well , ninety  
+A:  No , I  I mean ninety 
+A:  It 's around eighty - nine , 
+A:  ninety , 
+A:  eighty - eight . 
+A:  Well , there are minor  minor differences . 
+A:  No . 
+A:  Uh For Italian , yeah . 
+A:  Um . 
+A:  Mm - hmm . 
+
+A:  But w 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Yeah 
+A:  No . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mmm . 
+A:  That 's  it 's a part  it 's  
+A:  Or , one million frames . 
+A:  It 's one million and a half . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Mmm . 
+A:  Yeah , it 's  
+A:  Yeah . 
+A:  Mmm . 
+A:  Actually , just to be some more  
+A:  Do 
+A:  This number , this eighty - seven point one number , has to be compared with the 
+A:  Which number ? 
+A:  Uh . 
+A:  Yeah , but I mean in this case for the eighty - seven point one we used MLP outputs for the PLP net 
+A:  and straight features with delta - delta . 
+A:  And straight features with delta - delta gives you what 's on the first sheet . 
+A:  It 's eight eighty - eight point six . 
+A:  Uh , yeah , but th this is the second configuration . 
+A:  So we use feature out uh , net outputs together with features . 
+A:  So yeah , 
+A:  this is not  perhaps not clear here 
+A:  but in this table , the first column is for MLP and the second for the features . 
+A:  So , just  
+A:  Yeah 
+A:  so , actually it  it  it decreased the  the accuracy . 
+A:  Because we have eighty - eight point six . 
+A:  And even the MLP alone  
+A:  What gives the MLP alone ? 
+A:  Multi - English PLP . 
+A:  Oh no , 
+A:  it gives eighty - three point six . 
+A:  So we have our eighty - three point six and now eighty - eighty point six , 
+A:  that gives eighty - seven point one . 
+A:  Eighty - three point six . 
+A:  Eighty  
+A:  Is th is that right ? 
+A:  Yeah ? 
+A:  Perhaps , yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Mmm . 
+A:  On TI - digits ? 
+A:  OK . 
+A:  No , not yet . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  So , it 's slightly better , 
+A:  yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Well , so perhaps let 's  let 's jump at the last experiment . 
+A:  It 's either less information from the neural network if we use only the silence output . 
+A:  It 's again better . 
+A:  So it 's eighty - nine point  point one . 
+A:  So . 
+A:  Mm - hmm . 
+
+A:  Uh ,  yeah . 
+A:  Mmm . 
+A:  Mmm . 
+A:  Yeah . 
+A:  Scale 
+A:  Yeah . 
+A:  But  
+A:  Is it  i th I mean the HTK models are diagonal covariances , 
+A:  so I d Is it  
+A:  Hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mmm . 
+A:  Mmm . 
+A:  Yeah . Yeah . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Yeah , and test across everything . 
+A:  Mmm . 
+A:  Yeah . 
+A:  So , the next point , 
+A:  yeah , 
+A:  we 've had some discussion with Steve and Shawn , 
+A:  um , about their um , uh , articulatory stuff , 
+A:  um . 
+A:  So we 'll perhaps start something next week . 
+A:  Um , discussion with Hynek , Sunil and Pratibha for trying to plug in their our  our networks with their  within their block diagram , 
+A:  uh , where to plug in the  the network , uh , after the  the feature , 
+A:  before as um a as a plugin or as a anoth another path , 
+A:  discussion about multi - band and TRAPS , 
+A:  um , 
+A:  actually Hynek would like to see , 
+A:  perhaps if you remember the block diagram there is , uh , temporal LDA followed b by a spectral LDA for each uh critical band . 
+A:  And he would like to replace these by a network 
+A:  which would , uh , make the system look like a TRAP . 
+A:  Well , basically , it would be a TRAP system . 
+A:  Basically , this is a TRAP system  
+A:  kind of TRAP system , I mean , 
+A:  but where the neural network are replaced by LDA . 
+A:  Hmm . <breath> Um , yeah , 
+A:  and about multi - band , 
+A:  uh , I started multi - band MLP trainings , 
+A:  um 
+A:  mmh  Actually , I w I w hhh  prefer to do exactly what I did when I was in Belgium . 
+A:  So I take exactly the same configurations , 
+A:  seven bands with nine frames of context , 
+A:  and we just train on TIMIT , 
+A:  and on the large database , 
+A:  so , with SPINE and everything . 
+A:  And , 
+A:  mmm , I 'm starting to train also , networks with larger contexts . 
+A:  So , this would  would be something between TRAPS and multi - band 
+A:  because we still have quite large bands , 
+A:  and  but with a lot of context also . 
+A:  So Um 
+A:  Yeah , 
+A:  we still have to work on Finnish , 
+A:  um , basically , to make a decision on which MLP can be the best across the different languages . 
+A:  For the moment it 's the TIMIT network , and perhaps the network trained on everything . 
+A:  So . Now we can test these two networks on  with  with delta and large networks . 
+A:  Well , test them also on Finnish 
+A:  and see which one is the  the  the best . 
+A:  Uh , well , the next part of the document is , well , basically , a kind of summary of what  everything that has been done . 
+A:  So . We have seventy - nine M L Ps trained on 
+A:  one , two , three , four , uh , three , four , five , six , seven 
+A:  ten  on ten different databases . 
+A:  Uh , 
+A:  the number of frames is bad also , 
+A:  so we have one million and a half for some , 
+A:  three million for other , 
+A:  and six million for the last one . 
+A:  Uh , 
+A:  yeah !  As we mentioned , TIMIT is the only that 's hand - labeled , 
+A:  and perhaps this is what makes the difference . 
+A:  Um . 
+A:  Yeah , the other are just Viterbi - aligned . 
+A:  So these seventy - nine MLP differ on different things . 
+A:  First , um with respect to the on - line normalization , 
+A:  there are  that use bad on - line normalization , 
+A:  and other good on - line normalization . 
+A:  Um . 
+A:  With respect to the features , 
+A:  with respect to the use of delta 
+A:  or no , 
+A:  uh with respect to the hidden layer size and to the targets . 
+A:  Uh , but of course we don't have all the combination of these different parameters 
+A:  Um . 
+A:  s What 's this ? 
+A:  We only have two hundred eighty six different tests 
+A:  And no not two thousand . 
+A:  Yeah . 
+A:  Um . 
+A:  Yeah , basically the observation is what we discussed already . 
+A:  The MSG problem , 
+A:  um , 
+A:  the fact that the MLP trained on target task decreased the error rate . 
+A:  but when the M - MLP is trained on the um  is not trained on the target task , it increased the error rate compared to using straight features . 
+A:  Except if the features are bad  
+A:  uh , actually except if the features are not correctly on - line normalized . 
+A:  In this case the tandem is still better 
+A:  even if it 's trained on  not on the target digits . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Uh , so the fourth point is , yeah , the TIMIT plus noise seems to be the training set that gives better  the best network . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  I don't know at all 
+A:  but I 've  perhaps  I have the feeling that it 's something that 's quite  quite simple 
+A:  or just like nnn , no high - pass filter 
+A:  or  Mmm . 
+A:  Yeah .  My  But I don't know . 
+A:  It 's  There is , yeah , an AGC - kind of AGC . 
+A:  Yeah . <inbreath> Yeah . Yeah . 
+A:  Mmm . 
+A:  Yeah . 
+A:  Um . 
+A:  Yeah , but  
+A:  Yeah . 
+A:  But this was the bad on - line normalization . Actually . 
+A:  Uh . Are your results are still with the bad  the bad  
+A:  With the O - OLN - two ? 
+A:  Ah yeah , you have  you have OLN - two , 
+A:  yeah . 
+A:  So it 's , is the good yeah . 
+A:  And  
+A:  Yeah . 
+A:  Mmm . 
+A:  But  
+A:  Yeah . 
+A:  Mmm . 
+A:  I see , 
+A:  yeah . 
+A:  And  
+A:  Mmm . 
+A:  Mmm . 
+A:  Mmm . 
+A:  Mmm . 
+A:  Mm - hmm . 
+A:  Um . 
+A:  Yeah . So ,  the  the reason  Yeah , the reason is that the  perhaps the target  the  the task dependency  the language dependency , <inbreath> and the noise dependency  
+A:  Well , the e e But this is still not clear 
+A:  because , 
+A:  um , 
+A:  I  I  I don't think we have enough result to talk about the  the language dependency . 
+A:  Well , the TIMIT network is still the best 
+A:  but there is also an the other difference , 
+A:  the fact that it 's  it 's hand - labeled . 
+A:  We still have uh  this  
+A:  One of these perhaps ? 
+A:  Mm - hmm . 
+
+A:  Uh , mmm , uh ,  I mean , that the  the fact that s Well , for  for TI - digits the TIMIT net is the best , 
+
+A:  which is the English net . 
+A:  But the other are slightly worse . 
+A:  But you have two  two effects , the effect of changing language 
+A:  and the effect of training on something that 's  Viterbi - aligned instead of hand  hand - labeled . 
+A:  So . Um . 
+A:  Yeah . 
+A:  Mmm . 
+A:  I don't  I don't know . 
+A:  Did - did you look at the Spanish alignments Carmen ? 
+A:  Mm - hmm . 
+A:  Yeah . But  Yeah . But , perhaps it 's not really the  the alignment that 's bad 
+A:  but the  just the ph phoneme string that 's used for the alignment 
+A:  Mmm . 
+A:  I mean  for  We  
+A:  It 's single pronunciation , 
+A:  uh  
+A:  French  French s uh , phoneme strings were corrected manually 
+A:  so we asked people to listen to the um  the sentence 
+A:  and we gave the phoneme string and they kind of correct them . 
+A:  But still , 
+
+A:  there  there might be errors just in the  in  in the ph string of phonemes . 
+A:  Mmm . 
+A:  Um . 
+A:  Yeah , so this is not really the Viterbi alignment , 
+
+A:  in fact , 
+A:  yeah . 
+A:  Um , the third  The third uh issue is the noise dependency perhaps 
+A:  but , well , this is not clear yet 
+A:  because all our nets are trained on the same noises 
+A:  and  
+A:  Yeah . 
+A:  So  
+A:  Yeah . 
+A:  But  
+A:  Yeah . 
+A:  Results are only coming for  for this net . 
+A:  Mmm . 
+A:  Yeah . 
+A:  Um . 
+A:  So . Uh , from these results we have some questions with answers . 
+A:  What should be the network input ? 
+A:  Um , PLP work as well as MFCC , I mean . 
+A:  Um . 
+A:  But it seems impor important to use the delta . 
+A:  Uh , with respect to the network size , 
+A:  there 's one experiment that 's still running 
+A:  and we should have the result today , 
+A:  comparing network with five hundred and  one thousand units . 
+A:  So , 
+A:  nnn , still no answer actually . 
+A:  Uh , the training set , 
+A:  well , some kind of answer . 
+A:  We can , we can tell which training set gives the best result , 
+A:  but <mouth> we don't know exactly why . 
+A:  Uh , so . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Mmm . 
+A:  Mm - hmm . 
+A:  Then uh some questions without answers . 
+A:  Uh , training set , 
+A:  um , 
+A:  uh , training targets  
+A:  It 's  
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Uh , training 
+A:  s Right . So  Yeah , the training targets actually , 
+A:  the two of the main issues perhaps are still the language dependency <inbreath> and the noise dependency . 
+A:  And perhaps to try to reduce the language dependency , we should focus on finding some other kind of training targets . 
+A:  And labeling s labeling seems important 
+A:  uh , because of TIMIT results . 
+A:  Uh . 
+A:  For moment you use  we use phonetic targets 
+A:  but we could also use articulatory targets , soft targets , 
+A:  and perhaps even , um use networks that doesn't do classification 
+A:  but just regression 
+A:  so uh , train to have neural networks that 
+A:  um , um , uh , 
+A:  does a regression 
+A:  and well , basically com com compute features and noit not , nnn , features without noise . I mean uh , transform the fea noisy features <inbreath> in other features that are not noisy . 
+A:  But continuous features . 
+A:  Not uh uh , hard targets . 
+A:  Uh  
+A:  Yeah . 
+A:  Yeah . 
+A:  f But , yeah . 
+A:  So , this is w w i wa wa this is one thing , this  this could be  could help  could help perhaps to reduce language dependency 
+A:  and for the noise part um we could combine this with other approaches , like , well , the Kleinschmidt approach . 
+A:  So the d the idea of putting all the noise that we can find inside a database . 
+A:  I think Kleinschmidt was using more than fifty different noises to train his network , 
+A:  and  So this is one <laugh> approach 
+A:  and the other is multi - band <mouth> <inbreath> uh , that I think is more robust to the noisy changes . 
+A:  So perhaps , I think something like multi - band trained on a lot of noises with uh , features - based targets could  could  could help . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  So , 
+A:  um , yeah . 
+A:  The future work is ,  well , try to connect to the  to make  to plug in the system to the OGI 
+A:  system . 
+A:  Um , there are still open questions there , 
+A:  where to put the MLP basically . 
+A:  Um . 
+A:  Mmm , 
+A:  Yeah , yeah . 
+A:  Mm - hmm . 
+A:  So all the  all the test sets you mean , 
+A:  yeah . 
+A:  And  
+A:  Yeah . 
+A:  Mmm . 
+A:  And perhaps doing this for  cha changing the variance of the streams and so on  getting different scaling  
+A:  Um . 
+A:  Yeah , so thi this sh would be more working on the MLP as an additional path instead of an insert to the  to their diagram . 
+A:  Cuz  
+A:  Yeah . 
+A:  Perhaps the insert idea is kind of strange 
+A:  because nnn , they  they make LDA 
+A:  and then we will again add a network does discriminate anal nnn , that discriminates , 
+A:  or  ? 
+A:  Mmm ? 
+A:  Mmm . 
+A:  And  and  and 
+A:  yeah . 
+A:  And because also perhaps we know that the  when we have very good features the MLP doesn't help . 
+A:  So . I don't know . 
+A:  Um . 
+A:  Yeah , the  the way we want to do  
+A:  The 
+A:  d What ? 
+A:  Yeah , the way we want to do it perhaps is to  just to get the VAD labels and the final features . 
+A:  So they will send us the  Well , provide us with the feature files , 
+A:  and with VAD uh , binary labels 
+A:  so that we can uh , get our MLP features 
+A:  and filter them with the VAD 
+A:  and then combine them with their f feature stream . 
+A:  So . 
+A:  Uh . You mean  
+A:  Oh , yeah ! 
+A:  Just re re retraining r retraining the HTK ? 
+
+A:  Oh yeah . 
+A:  Yeah , OK . 
+A:  Mmm . 
+A:  Yeah . 
+A:  Mmm . 
+A:  OK . 
+A:  Oh , yeah . 
+A:  OK . 
+A:  And um . 
+A:  Yeah , so fff , LogRASTA , 
+A:  I don't know if we want to  
+A:  We can try  networks with LogRASTA filtered features . 
+A:  Mmm . 
+A:  I 'm sorry ? 
+A:  Yeah . Well  
+A:  Yeah . 
+A:  But  
+A:  Mm - hmm . 
+
+A:  Yeah . 
+A:  So you  you think it 's perhaps better to have several M L 
+A:  Yeah 
+A:  but  
+A:  Yea 
+A:  So doing both is  is not  is not right , you mean , 
+A:  or  ? 
+A:  Yeah . 
+A:  But  Yeah . 
+A:  Mm - hmm . 
+
+A:  Yeah , so I don't know . 
+A:  But we have to address the problem of CPU and memory we  
+A:  Yeah , but  
+A:  Yeah . 
+A:  So , yeah , but we 've  
+A:  I don't know . 
+A:  We have to get some reference point to where we  
+A:  Well , what 's a reasonable number ? 
+A:  Perhaps be because if it 's  if it 's too large or  large 
+A:  or @ @  
+A:  Mmm . 
+A:  Mmm . 
+A:  And  Yeah . 
+A:  They 're  They 're starting to wor work on some kind of multi - band . 
+A:  So . Um  
+A:  This  that was Pratibha . 
+A:  Sunil , 
+A:  what was he doing , 
+A:  do you remember ? 
+A:  Yeah . 
+A:  He was doing something new 
+A:  or  ? 
+A:  I don't think so . 
+A:  Trying to tune 
+A:  wha networks ? 
+A:  I think they were also mainly , 
+A:  well , working a little bit of new things , like networks and multi - band , 
+A:  but mainly trying to tune their  their system as it is now 
+A:  to  just trying to get the best from this  this architecture . 
+
+A:  Mm - hmm . 
+A:  Mmm . 
+A:  Yeah . 
+A:  So it 's  
+A:  Mmm . 
+A:  Mmm . 
+A:  Yeah . Yeah , perhaps we could . 
+A:  Mmm . 
+A:  So we  we can for  we c we can forget combining multiple features and MLG perhaps , 
+A:  or focus more on the targets and on the training data 
+A:  and  ? 
+A:  Mmm . 
+A:  Mmm . 
+A:  Mmm . 
+A:  Mmm . 
+A:  I think so , yeah . 
+A:  Mmm . 
+A:  Mmm . 
+A:  Yeah , but I don't know if we really need now a lot of machines . 
+A:  Well . we could start computing another huge table 
+A:  but  
+A:  yeah , we  
+A:  Yeah , sure . 
+A:  But  
+A:  Yeah . 
+A:  Mmm . 
+A:  Ah yeah . I think so . 
+A:  Well , more is always better , 
+A:  but mmm , 
+A:  I don't think we have to train a lot of networks , now that we know  
+A:  We just select what works  fine 
+A:  and try to improve this 
+A:  and  
+A:  It 's OK , yeah . 
+A:  Well sometimes we have some problems . 
+A:  Yeah , restarting the script basically 
+A:  and  
+A:  My battery is low . 

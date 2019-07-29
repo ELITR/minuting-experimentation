@@ -1,0 +1,479 @@
+B:  Yeah . 
+B:  Oh , OK . 
+B:  Oh ! 
+B:  That 's nice . 
+B:  Oh . 
+B:  Hmm . 
+B:  Yeah , we met him in Amsterdam . 
+B:  Oh , OK . 
+B:  I haven't noticed him . 
+B:  Hmm . 
+B:  You need twelve seconds in the past to estimate , right ? 
+B:  Or l or you 're looking at six sec  seconds in future and six in  
+B:  No , it 's all  
+B:  Oh , OK . 
+B:  Mm - hmm . 
+B:  But do you really want to calculate the mean ? 
+B:  And you neglect all the silence regions  or you just use everything that 's twelve seconds , 
+B:  and  
+B:  Ye - yeah . 
+B:  OK . 
+B:  Mm - hmm . 
+B:  And they are , like , pretty short . 
+B:  Shor 
+B:  Yeah , 
+B:  OK . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  So you really need a lot of speech to estimate the mean of it . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Uh - huh . 
+B:  OK . 
+B:  Hmm . 
+B:  Huh . 
+B:  Yep . 
+B:  Um , so , 
+B:  the last two weeks was , like  
+B:  So I 've been working on that Wiener filtering . 
+B:  And , 
+B:  uh , 
+B:  found that , uh , s single  like , I just do a s normal Wiener filtering , like the standard method of Wiener filtering . 
+B:  And that doesn't actually give me any improvement over like  
+B:  I mean , uh , b it actually improves over the baseline 
+B:  but it 's not like  it doesn't meet something like fifty percent or something . 
+B:  So , I 've been playing with the v 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  So , um  
+B:  So that 's  The improvement is somewhere around , like , thirty percent over the baseline . 
+B:  No , 
+B:  just  just one stage Wiener filter 
+B:  which is a standard Wiener filter . 
+B:  Yeah , yeah , yeah , yeah . 
+B:  So I just plug in the Wiener filtering . 
+B:  I mean , in the s in our system , where  
+B:  So , I di i di 
+B:  No . 
+B:  It actually improves over the baseline of not having a Wiener filter in the whole system . 
+B:  Like I have an LDA f LDA plus on - line normalization , 
+B:  and then I plug in the Wiener filter in that , 
+B:  so it improves over not having the Wiener filter . 
+B:  So it improves 
+B:  but it  it doesn't take it like be beyond like thirty percent over the baseline . 
+B:  So  
+B:  No , 
+B:  it 's like , uh , 
+B:  well , these are not  
+B:  No , it 's the old VAD . 
+B:  So my baseline was , <outbreath> uh , <outbreath> nine  
+B:  This is like  w the baseline is ninety - five point six eight , and eighty - nine , and  
+B:  What was that ? 
+B:  Sorry ? 
+B:  Oh , 
+B:  OK , OK , OK . 
+B:  Errors , right , I don't have . 
+B:  It 's all accuracies . 
+B:  The t yeah , 
+B:  there are two baselines . 
+B:  OK . 
+B:  So the baseline  One baseline is MFCC baseline 
+B:  that  When I said thirty percent improvement it 's like MFCC baseline . 
+B:  It 's the  
+B:  it 's just the mel frequency and that 's it . 
+B:  Uh , so I I don't have that number here . 
+B:  OK , OK , OK , 
+B:  I have it here . 
+B:  Uh , it 's the VAD plus the baseline actually . 
+B:  I 'm talking about the  the MFCC plus I do a frame dropping on it . 
+B:  So that 's like  the word error rate is like four point three . 
+B:  Like  Ten point seven . 
+B:  It 's a medium misma 
+B:  OK , sorry . 
+B:  There 's a well ma well matched , medium mismatched , and a high matched . 
+B:  So I don't have the  like the  
+B:  So  
+B:  And forty forty . 
+B:  Forty percent is the high mismatch . 
+B:  And that becomes like four point three  
+B:  Yeah , 
+B:  it 's like ten point one . 
+B:  Still the same . 
+B:  And the high mismatch is like eighteen point five . 
+B:  Five . 
+B:  Oh , the one is  this one is just the baseline plus the , uh , Wiener filter plugged into it . 
+B:  Oh , 
+B:  OK . 
+B:  So  
+B:  Sorry . 
+B:  So , with the  with the on - line normalization , the performance was , um , ten  
+B:  OK , so it 's like four point three . 
+B:  Uh , 
+B:  and again , that 's the ba the ten point , uh , four and twenty point one . 
+B:  That was with on - line normalization and LDA . 
+B:  So the h well matched has like literally not changed by adding on - line or LDA on it . 
+B:  But the  
+B:  I mean , even the medium mismatch is pretty much the same . 
+B:  And the high mismatch was improved by twenty percent absolute . 
+B:  It 's the It - it 's Italian . 
+B:  I 'm talking about Italian , 
+B:  yeah . 
+B:  Mmm . 
+
+B:  You have it ? 
+B:  Yep . 
+B:  So  Thanks . 
+B:  So , 
+B:  uh , this is the single stage Wiener filter , 
+B:  with  The noise estimation was based on first ten frames . 
+B:  Actually I started with  using the VAD to estimate the noise 
+B:  and then I found that it works  
+B:  it doesn't work for Finnish and Spanish 
+B:  because the VAD endpoints are not good to estimate the noise 
+B:  because it cuts into the speech sometimes , 
+B:  so I end up overestimating the noise and getting a worse result . 
+B:  So it works only for Italian by u for  using a VAD to estimate noise . 
+B:  It works for Italian because the VAD was trained on Italian . 
+B:  So , uh  
+B:  so this was , uh  
+B:  And so this was giving  
+B:  um , 
+B:  this  this was like not improving a lot on this baseline of not having the Wiener filter on it . 
+B:  And , 
+B:  so , 
+B:  uh , I ran this stuff with one more stage of Wiener filtering on it 
+B:  but the second time , what I did was I  estimated the new Wiener filter based on the cleaned up speech , and did , uh , smoothing in the frequency to  to reduce the variance  
+B:  I mean , I have  I 've  I 've observed there are , like , a lot of bumps in the frequency when I do this Wiener filtering 
+B:  which is more like a musical noise or something . 
+B:  And so by adding another stage of Wiener filtering , the results on the SpeechDat - Car was like , 
+B:  um  
+B:  So , I still don't have the word error rate . 
+B:  I 'm sorry about it . 
+B:  But the overall improvement was like fifty - six point four six . 
+B:  This was again using ten frames of noise estimate and two stage of Wiener filtering . 
+B:  And the rest is like the LDA plu and the on - line normalization all remaining the same . 
+B:  Uh , 
+B:  so this was , like , compared to , uh , uh  Fifty - seven is what you got by using the French Telecom system , 
+B:  right ? 
+B:  Y i 
+B:  No , 
+B:  this is over the whole SpeechDat - Car . 
+B:  So  
+B:  point  
+B:  Yeah , 
+B:  so the new  the new Wiener filtering schema is like  some fifty - six point four six 
+B:  which is like one percent still less than what you got using the French Telecom system . 
+B:  It 's very similar . 
+B:  It 's  it 's different in a sense like 
+B:  I 'm actually cleaning up the cleaned up spectrum 
+B:  which they 're not doing . 
+B:  They 're d what they 're doing is , they have two stage  stages of estimating the Wiener filter , 
+B:  but  the final filter , what they do is they  they take it to their time domain by doing an inverse Fourier transform . 
+B:  And they filter the original signal using that fil filter , 
+B:  which is like final filter is acting on the input noisy speech rather than on the cleaned up . 
+B:  So this is more like I 'm doing Wiener filter twice , 
+B:  but the only thing is that the second time I 'm actually smoothing the filter and then cleaning up the cleaned up spectrum first level . 
+B:  And so that  that 's  that 's what the difference is . 
+B:  And actually I tried it on s the original clean  I mean , the original spectrum where , like , I  the second time I estimate the filter but actually clean up the noisy speech rather the c s first  output of the first stage 
+B:  and that doesn't  seems to be a  giving , I mean , that much improvement . 
+B:  I  I didn didn't run it for the whole case . 
+B:  And  
+B:  and what I t what I tried was , by using the same thing 
+B:  but  Uh , 
+B:  so we actually found that the VAD is very , like , crucial . 
+B:  I mean , just by changing the VAD itself gives you the  a lot of improvement 
+B:  by instead of using the current VAD , if you just take up the VAD output from the channel zero ,  when  instead of using channel zero and channel one , 
+B:  because that was the p that was the reason why I was not getting a lot of improvement for estimating  the noise . 
+B:  So I just used the channel zero VAD to estimate the noise so that it gives me some reliable mar markers for this noise estimation . 
+B:  Um , 
+B:  so , it 's like  
+B:  Yeah , 
+B:  the close - talking without  
+B:  So because the channel zero and channel one are like the same speech , but only w I mean , the same endpoints . 
+B:  But the only thing is that the speech is very noisy for channel one , 
+B:  so you can actually use the output of the channel zero for channel one for the VAD . 
+B:  I mean , that 's like a cheating method . 
+B:  Yeah , that 's  
+B:  Which is the channel zero . 
+B:  But actually their alignment actually is not seems to be improving in like on all cases . 
+B:  Yeah , 
+B:  which is  
+B:  It gives like negative  Well , in  in like some Italian and TI - digits , 
+B:  right ? 
+B:  Yeah . 
+B:  So by using the endpointed speech , actually it 's worse than the baseline in some instances , 
+B:  which could be due to the word pattern . 
+B:  Yeah , our neural net  
+B:  Yeah , yeah . 
+B:  Hmm . 
+B:  OK , 
+B:  so 
+B:  the Wiener filter , it 's  it 's like  it 's like you try to minimize  
+B:  I mean , so the basic principle of Wiener filter is like you try to minimize the , uh , d uh , difference between the noisy signal and the clean signal 
+B:  if you have two channels . 
+B:  Like let 's say you have a clean t signal and you have an additional channel where you know what is the noisy signal . 
+B:  And then you try to minimize the error between these two . 
+B:  So that 's the basic principle . 
+B:  And you get  
+B:  you can do that  
+B:  I mean , if  if you have only a c noisy signal , at a level which you , you w try to estimate the noise from the w assuming that the first few frames are noise 
+B:  or if you have a w voice activity detector , uh , you estimate the noise spectrum . 
+B:  And then you  
+B:  Yeah . 
+B:  in  yeah , after the speech starts . 
+B:  So  
+B:  but that 's not the case in , uh , many  many of our cases 
+B:  but it works reasonably well . 
+B:  And  and then you What you do is you , uh b 
+B:  fff . 
+B:  So again , 
+B:  I can write down some of these eq 
+B:  Oh , OK . 
+B:  Yeah . 
+B:  And then you do this  
+B:  uh , this is the transfer function of the Wiener filter , 
+B:  so " SF " is a clean speech spectrum , power spectrum 
+B:  And " N " is the noisy power spectrum . 
+B:  And so this is the transfer function . 
+B:  And , 
+B:  Yeah . 
+B:  And then you multiply your noisy power spectrum with this . 
+B:  You get an estimate of the clean power spectrum . 
+B:  So  
+B:  but the thing is that you have to estimate the SF from the noisy spectrum , what you have . 
+B:  So you estimate the NF from the initial noise portions 
+B:  and then you subtract that from the current noisy spectrum to get an estimate of the SF . 
+B:  So sometimes that becomes zero 
+B:  because you do you don't have a true estimate of the noise . 
+B:  So the f filter will have like sometimes zeros in it 
+B:  because some frequency values will be zeroed out because of that . 
+B:  And that creates a lot of discontinuities across the spectrum because @ @ the filter . 
+B:  So , 
+B:  uh , 
+B:  so  that 's what  that was just the first stage of Wiener filtering that I tried . 
+B:  It  
+B:  Yeah . 
+B:  Not seen . 
+B:  They are very s similar techniques . 
+B:  So it 's like I haven't seen anybody using s Wiener filter with spectral subtraction . 
+B:  Yeah . 
+B:  Uh , the reason was , like , we had this choice of using spectral subtraction , Wiener filtering , and there was one more thing which I which I 'm trying , is this sub space approach . 
+B:  So , 
+B:  Stephane is working on spectral subtraction . 
+B:  So I picked up  
+B:  Y Yeah , 
+B:  we just wanted to have a few noise production  compensation techniques 
+B:  and then pick some from that  
+B:  pick one . 
+B:  VA Yeah , VAD . 
+B:  w Yeah . 
+B:  Yeah . 
+B:  So  
+B:  so one of  one of the things that I tried , like I said , was to remove those zeros in the fri filter by doing some smoothing of the filter . 
+B:  Like , you estimate the edge of square 
+B:  and then you do a f smoothing across the frequency so that those zeros get , like , flattened out . 
+B:  And that doesn't seems to be improving by trying it on the first time . 
+B:  So what I did was like I p did this 
+B:  and then you  I plugged in the  one more  the same thing but with the smoothed filter the second time . 
+B:  And that seems to be working . 
+B:  So that 's where I got like fifty - six point five percent improvement on SpeechDat - Car with that . 
+B:  And  
+B:  So the other thing what I tried was I used still the ten frames of noise estimate 
+B:  but I used this channel zero VAD to drop the frames . 
+B:  So I 'm not  still not estimating . 
+B:  And that has taken the performance to like sixty - seven percent in SpeechDat - Car , 
+B:  which is  which  which like sort of shows that by using a proper VAD you can just take it to further , better levels . 
+B:  And  
+B:  So . 
+B:  Yeah , 
+B:  so far I 've seen sixty - seven  
+B:  I mean , no , 
+B:  I haven't seen s like sixty - seven percent . 
+B:  And , uh , 
+B:  using the channel zero VAD to estimate the noise also seems to be improving 
+B:  but I don't have the results for all the cases with that . 
+B:  So I used channel zero VAD to estimate noise as a lesser 2 x frame , 
+B:  which is like , <laugh> everywhere I use the channel zero VAD . 
+B:  And that seems to be the best combination , uh , rather than using a few frames to estimate and then drop a channel . 
+B:  Nnn , 
+B:  no . 
+B:  This is just to test whether we can really improve by using a better VAD . 
+B:  So , 
+B:  I mean  So this is like the noise compensation f is fixed 
+B:  but you make a better decision on the endpoints . 
+B:  That 's , like  seems to be  
+B:  so we c 
+B:  so I mean , which  which means , like , by using this technique what we improve just the VAD 
+B:  we can just take the performance by another ten percent or better . 
+B:  So , that  that was just the , uh , reason for doing that experiment . 
+B:  And , w um  
+B:  Yeah , but this  all these things , I have to still try it on the TI - digits , 
+B:  which is like I 'm just running . 
+B:  And there seems to be not improving a  a lot on the TI - digits , 
+B:  so I 'm like investigating that , why it 's not . 
+B:  And , 
+B:  um , 
+B:  um  
+B:  Well after that . 
+B:  So , 
+B:  uh  
+B:  so the other  the other thing is  like I 've been  I 'm doing all this stuff on the power spectrum . 
+B:  So  
+B:  Tried this stuff on the mel as well  
+B:  mel and the magnitude , and mel magnitude , and all those things . 
+B:  But it seems to be the power spectrum seems to be getting the best result . 
+B:  So , one of  one of reasons I thought like doing the averaging , after the filtering using the mel filter bank , that seems to be maybe helping rather than trying it on the mel filter ba filtered outputs . 
+B:  So just th 
+B:  Yeah , 
+B:  th that 's  that 's the only thing that I could think of why  why it 's giving improvement on the mel . 
+B:  And , yep . 
+B:  So that 's it . 
+B:  Subspace ,  I 'm  I 'm like  that 's still in  a little bit in the back burner 
+B:  because I 've been p putting a lot effort on this to make it work , on tuning things and other stuff . 
+B:  So 
+B:  I was like going parallely 
+B:  but not much of improvement . 
+B:  I 'm just  have some skeletons ready , 
+B:  need some more time for it . 
+B:  Mmm . 
+B:  Yep . 
+B:  Yep . 
+B:  Is that the log ? 
+B:  After that . 
+B:  No , 
+B:  after . 
+B:  But you will  
+B:  But you end up reducing some neighboring frequency bins  @ @ in the average , right ? 
+B:  When you add the negative to the positive value 
+B:  which is the true estimate . 
+B:  Yeah . 
+B:  Hmm . 
+B:  Yeah , yeah . 
+B:  Yeah . 
+B:  Uh - huh . 
+B:  That is true . 
+B:  We just  
+B:  Yeah . 
+B:  For frames , frequency bins . 
+B:  Mm - hmm . 
+B:  Yeah , the one you showed yesterday . 
+B:  Right ? 
+B:  Fff . 
+B:  No , I don't have , for each , 
+B:  I  I just  just have the final number here . 
+B:  Yeah , yeah , yeah . 
+B:  So  so , no , 
+B:  I actually didn't give you the number which is the final one , 
+B:  which is , after two stages of Wiener filtering . 
+B:  I mean , that was I just  well , like the overall improvement is like fifty - six point five . 
+B:  So , 
+B:  I mean , his number is still better than what I got in the two stages of Wiener filtering . 
+B:  Mm - hmm . 
+B:  Oh , OK . 
+B:  Yeah , right , 
+B:  OK . 
+B:  They use spectral subtraction , 
+B:  right . 
+B:  French Telecom . 
+B:  Oh , it 's  it 's Wiener filtering . 
+B:  Sorry . 
+B:  Yeah , filtering . 
+B:  Yeah , it 's not exactly Wiener filtering 
+B:  but some variant of Wiener filtering . 
+B:  Yeah . 
+B:  s 
+B:  They have like  
+B:  yeah , 
+B:  th the  just noise compensation technique is a variant of Wiener filtering , 
+B:  plus they do some  some smoothing techniques on the final filter . 
+B:  The  th they actually do the filtering in the time domain . 
+B:  So they would take this HF squared back , taking inverse Fourier transform . 
+B:  And they convolve the time domain signal with that . 
+B:  And they do some smoothing on that final filter , impulse response . 
+B:  I mean , I 'm  I 'm @ @ . 
+B:  But . 
+B:  It 's similar in the smoothing 
+B:  and  
+B:  Yeah . 
+B:  Yeah . 
+B:  The frequency domain . 
+B:  No , you get it with Wiener filtering also . 
+B:  Oh , no , 
+B:  you still end up with zeros in the s spectrum . 
+B:  Sometimes . 
+B:  Yeah . 
+B:  Yeah , I know . 
+B:  Mm - hmm . 
+B:  Yeah , 
+B:  yeah , 
+B:  the  
+B:  Yep . 
+B:  Yeah . 
+B:  You mean , the m the mean is computed o based on some frames in the future also ? 
+B:  Or  or no ? 
+B:  Mm - hmm . 
+B:  I 'm sorry , 
+B:  why  why is that delay coming ? 
+B:  Like , you estimate the mean ? 
+B:  Oh , yeah . 
+B:  It isn't  
+B:  OK , 
+B:  so it 's like it looks into the future also . 
+B:  OK . 
+B:  We can  
+B:  OK . 
+B:  We can do something in parallel also , in some like  some cases like , if you wanted to do voice activity detection . 
+B:  And we can do that in parallel with some other filtering you can do . 
+B:  So you can make a decision on that voice activity detection 
+B:  and then you decide whether you want to filter or not . 
+B:  But by then you already have the sufficient samples to do the filtering . 
+B:  So  
+B:  So , sometimes you can do it anyway . 
+B:  Yeah . 
+B:  You mean , the  the data , the super frame or something ? 
+B:  Yeah , but that has a variable latency 
+B:  because the last frame doesn't have any latency 
+B:  and first frame has a twenty framed latency . 
+B:  So you can't r rely on that latency all the time . 
+B:  Because  
+B:  I mean the transmission over  over the air interface is like a buffer . 
+B:  Twenty frame  
+B:  twenty four frames . 
+B:  So  
+B:  But the only thing is that the first frame in that twenty - four frame buffer has a twenty - four frame latency . 
+B:  And the last frame doesn't have any latency . 
+B:  Because it just goes as  
+B:  Yeah . 
+B:  I used ten  just ten frames . 
+B:  Yeah , because  
+B:  I mean , the reason was like in TI - digits I don't have a lot . 
+B:  I had twenty frames most of the time . 
+B:  Well , that 's  that 's using the channel zero . 
+B:  If I use a channel zero VAD to estimate the noise . 
+B:  Which  
+B:  Channel zero dropping . 
+B:  Hmm . 
+B:  t Oh , this  
+B:  f 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Yeah . 
+B:  So I 'm also using that n new noise estimate technique on this Wiener filtering what I 'm trying . 
+B:  So I  I have , like , some experiments running , I don't have the results . 
+B:  So . 
+B:  I don't estimate the f noise on the ten frames but use his estimate . 
+B:  There 's  
+B:  No . 
+B:  So , it doesn't seems to help by their use of channel zero or channel one . 
+B:  Uh , you mean their d the frame dropping , right ? 
+B:  Yeah , it doesn't  
+B:  Italian . 
+B:  TI - digits . 
+
+B:  Yeah . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  The energy also . 
+B:  Yeah . 

@@ -1,0 +1,424 @@
+D:  OK . 
+D:  No . 
+D:  That 's a different thing . 
+D:  Oh . 
+D:  Oh . 
+D:  Give someone a piece of paper and then they  Oh . 
+D:  Oh , that 's optional . 
+D:  You know . 
+D:  Are these the long term means ? 
+D:  Like , over the whole  
+D:  I mean , the means of  what ? 
+D:  All the frames in the conversation ? 
+D:  Or of things that  
+D:  Oh . 
+D:  Oh . 
+D:  Right . 
+D:  Yeah , maybe it 's not log distributed . 
+D:  But you could do like a C D F there instead ? 
+D:  I mean , we don't know that the distribution here is normally . 
+D:  So just some kind of a simple  
+D:  PDF 
+D:  Yeah . 
+D:  Something like that where it 's sort of data driven . 
+D:  Oh yeah . 
+D:  Oh yeah . 
+D:  What  
+D:  Log energy . 
+D:  Sorry . 
+D:  Frame energy . 
+D:  Yeah . 
+D:  Yeah . 
+D:  W <inbreath> I mean , what I meant is , even if you use linear ,  you know , raw  measures , like  raw energy or whatever , 
+D:  maybe we shouldn't make any assumptions about the distribution 's shape , 
+D:  and just use  you know , use the distribution to model the  <inbreath>  the mean , 
+D:  or what y you know , rather than the mean take some  
+D:  Yeah . 
+D:  Yeah . 
+D:  Oh . 
+D:  Right . So , we don't  know what they look like  on the ,  tsk   For the raw . 
+D:  Yeah . 
+D:  So . 
+D:  I mean , there might be something there . 
+D:  I don't know . 
+D:  Huh . 
+D:  Well it might be just good to know what it looks like . 
+D:  Cuz  
+D:  Yeah . 
+D:  Right . 
+D:  Especially locally . 
+D:  So . Locally . 
+D:  And the other thing is I 
+D:  Sorry . 
+D:  I  
+D:  Well , especially for normalizing . 
+D:  I mean , it 's really important to  pick a normalization that matches the distribution for that feature . 
+D:  And it may not be the same for all the types of overlaps or the windows may not be the same . 
+D:  e Actually , I was wondering , <exhale> right now you 're taking a  all of the  speech , from the whole meeting , and you 're trying to find points of overlap , 
+D:  but we don't really know which speaker is overlapping with which speaker , 
+D:  right ? 
+D:  So I mean another way would just be to take the speech from just , say , Morgan , And just Jane and then just their overlaps , 
+D:  like  but by hand , 
+D:  by cheating , 
+D:  and looking at you know , if you can detect something that way , 
+D:  because if we can't do it that way , there 's no good way that we 're going to be able to do it . 
+D:  That  You know , there might be something helpful and cleaner about looking at just  individuals and then that combination alone . 
+D:  Plus , I think it has more elegant  e 
+D:  The m the right model will be  easier to see that way . 
+D:  So if  I don't know , if you go through and you find Adam , cuz he has a lot of overlaps and some other speaker who also has e enough speech 
+D:  and just sort of look at those three cases of Adam and the other person and the overlaps , 
+D:  maybe  
+D:  and just look at the distributions , maybe there is a clear pattern 
+D:  but we just can't see it because there 's too many combinations of  of people that can overlap . 
+D:  So . 
+D:  Just seems sort of complex . 
+D:  Right . 
+D:  Cuz if energy doesn't matter there , like  
+D:  I don't think this is true , but what if 
+D:  Hmm ? 
+D:  Well , to study the simplest case to get rid of extra  
+D:  Right . 
+D:  Cuz what if it 's the case and I don't think this is true  
+D:  What if it 's the case that when two people overlap they equate their  you know , there 's a  conservation of energy and everybody  
+D:  both people talk more softly ? 
+D:  I don't think this happens at all . 
+D:  Or they get louder . 
+D:  Yeah or  
+D:  I mean . 
+D:  There are  there are different types , 
+D:  and within those types , 
+D:  like as Jose was saying , that  sounded like a backchannel overlap , 
+D:  meaning the kind that 's  a friendly encouragement , like " Mm - hmm . " , 
+D:  " Great ! " , 
+D:  " Yeah ! " 
+D:  And it doesn't take  you don't take the floor . 
+D:  Um , but , some of those , as you showed , I think can be discriminated by the duration of the overlap . 
+D:  So . 
+D:  It  Actually the s new student , Don , who um Adam has met , and he was at one of our meetings  
+D:  He 's  getting his feet wet and then he 'll be starting again  in mid - January . 
+D:  He 's interested in trying to distinguish the types of overlap . 
+D:  I don't know if he 's talked with you yet . 
+D:  But in sort of honing in on these different types 
+D:  and  So maybe  
+D:  So it might be something that we can  help by categorizing some of them and then , you know , look at that . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah , no . I didn't mean that  that  for you to do that , 
+D:  but I was thinking if  if Don and I are trying to get  categories 
+D:  and we label some data for you , and we say this is what we think is going  
+D:  So you don't have to worry about it . 
+D:  And here 's the three types of overlaps . 
+D:  And we 'll  we 'll do the labelling for you . 
+D:  Um . 
+D:  Yeah , that we would be working on anyway . 
+D:  Then maybe  you can try some different things for those three cases , and see if that helps , or  
+D:  Mm - hmm . 
+D:  Yeah , no , that was  That was a jok 
+D:  or a sort of , a case where  where you would never know that unless you actually go and look at two individuals . 
+D:  So . 
+D:  It might the case , though , that the significant energy , just as Jose was saying , comes in the non - backchannel cases . 
+D:  Because in back Most people when they 're talking don't change their own  energy when they get a backchannel , 
+D:  cuz they 're not really predicting the backchannel . 
+D:  And sometimes it 's a nod and sometimes it 's an " mm - hmm " . 
+D:  And the " mm - hmm " is really usually very low energy . 
+D:  So maybe those don't actually have much difference in energy . 
+D:  But  all the other cases might . 
+D:  and the backchannels are sort of easy to spot s in terms of their words or  
+D:  I mean , just listen to it . 
+D:  So . 
+D:  Well , it would be lost  no matter what you do . 
+D:  It just  
+D:  I mean , even if you take the log , you can  your model just has a more sensitive  measures . 
+D:  So . 
+D:  Yeah . 
+D:  Right . Right . 
+D:  Yeah . 
+D:  Oh . 
+D:  That 'd be great . 
+D:  Yeah , I remem 
+D:  Right . 
+D:  That would be great . 
+D:  That would be really great . 
+D:  We have nothing  
+D:  You know , basically , we got  his environment set up . 
+D:  He 's  he 's a double - E  you know . 
+D:  So . It 's mostly that ,  if we had to  label it ourselves , we  we would or we 'd have to , to get started , 
+D:  but if   It  it would be much better if you can do it . 
+D:  You 'd be much better  at doing it also 
+D:  because <inbreath> you know , I  I 'm not  I don't have a good feel for how they should be sorted out , 
+D:  and I really didn't wanna go into that if I didn't have to . 
+D:  So if  If you 're w willing to do that or  or  
+D:  Yeah . 
+D:  I think that 's a research  effort in and of itself , 
+D:  because you can read the literature , but I don't know how it 'll  turn out 
+D:  and , You know , it 's always an interesting question . 
+D:  That 'd be great . 
+D:  That 'd be really great . 
+D:  And we 'd still have some  funding for this project , 
+D:  like probably , if we had to hire some  like an undergrad , because uh Don is being covered half time on something else  
+D:  I mean , he  we 're not paying him  the full RA - ship for  all the time . 
+D:  So . <inbreath> um If we got it to where we wanted  we needed someone to do that  
+D:  I don't think there 's really enough data where  where  
+D:  Yeah . 
+D:  But  
+D:  Yeah , definitely . 
+D:  Yeah , that 's true . 
+D:  The window shouldn't be larger than the backchannel . 
+D:  Yeah . 
+D:  Well it 's a sliding window , 
+D:  right ? 
+D:  So if you take the  the measure in the center of the overlapped  piece , you know , there 'd better be some something . 
+D:  But if your window is really huge then yeah you 're right 
+D:  you won't even  
+D:  The portion of the   of the backchannel won't  won't effect anything . 
+D:  But you  
+D:  Yeah . 
+D:  So . 
+D:  You know , you shouldn't be more than 
+D:  like   You should definitely not be three times as big as your  as your  backchannel . 
+D:  Then you 're gonna w have a wash . 
+D:  And hopefully it 's more like on the order of  
+D:  Yea 
+D:  Yeah , it depends how different your normalization is , as you slide your window across . 
+D:  I mean . That 's something we don't know . 
+D:  Yeah I was talking about the n normalization window . 
+D:  Yeah . 
+D:  Yeah . 
+D:  That 's true . Yeah . 
+D:  Um . 
+D:  But that 'd be great if  if you 're marking those 
+D:  and  um . 
+D:  But it is definitely true that we need to have the time marks , 
+D:  and I was assuming that will be inherited because , if you have the words and they 're roughly aligned in time via forced alignment or whatever we end up using , then you know , this  student and I would be looking at the time marks 
+D:  and classifying all the frames inside those as whatever labels Jane gave 
+
+D:  I don't think you need to . 
+D:  Yeah . That should be linked to the words which are linked to time somehow , 
+D:  right ? 
+D:  Not now . 
+D:  Well , it 's something that w 
+D:  Well , we  we wouldn't be able to do any work without a forced alignment anyway , 
+D:  so somehow if  once he gets going we 're gonna hafta come up with one 
+D:  and 
+D:  Yeah . 
+D:  So whatever you would label would be attached to the words , I think . 
+D:  Cuz there 's  there 's a lot of work you can't do without that , 
+D:  I mean , how  how would you  
+D:  You 'd have to go in and measure every start and stop point next to a word 
+D:  is y if you 're interested in anything to do with words . 
+D:  So . 
+D:  Anyway  So that 'd be great . 
+D:  Do we hafta  turn  
+D:  Are we supposed to keep recording here ? 
+D:  Yeah , me too . 
+
+D:  So you should call it , like , " digits start time " . Or . 
+D:  " For official use only " 
+D:  That 's  <laugh> Well , he 's very professional . 
+D:  Actually , the only way I know is from working with the database and having to figure it out . 
+D:  Well yeah . 
+D:  Nor - um  
+D:  Probably Western , yeah . 
+D:  Actually even if you <laugh>  t 
+D:  This wasn't developed by  th these regions weren't  
+D:  Mm - hmm . 
+D:  I don't know . 
+D:  Yeah . Now  the usage  
+D:  Maybe we can give them a li  like a little map ? 
+D:  with the regions and they just  
+D:  No , I 'm serious . 
+D:  Because it takes less time , and it 's sort of cute 
+D:  there 's no figure . 
+D:  Well just a little  
+D:  You know , it doesn't have all the detail , 
+D:  but you sort of  
+D:  No , but you 're categorized . 
+D:  That 's the same  
+D:  I mean I  As I said , I don't think there 's a huge  benefit to this region thing . 
+D:  It  it gets  
+D:  The problem is that for some things it 's really clear and usually listening to  it you can tell right away if it 's a New York or Boston accent , 
+D:  but New York and Boston are two  
+D:  well , I guess they have the NYC , 
+D:  but New England has a bunch of very different dialects 
+D:  and  
+D:  and  so does um S So do other places . 
+D:  Right . 
+D:  And so these would be  satisfying like a speech  research  community if we released the database , 
+D:  but as to whether subjects know where they 're from , I 'm not sure because um I know that they had to fill this out for Switchboard . 
+D:  This is i almost exactly the same as Switchboard regions 
+D:  or very close . 
+D:  Yeah . 
+D:  Um And I don't know how they filled that out . 
+D:  But th if Midland  
+D:  Yeah , Midland is the one that 's difficult I guess . 
+D:  Also Northwest you 've got Oreg - Washington and Oregon now which uh y people don't know if it 's western or northern . 
+D:  It 's like Northwest 
+D:  I think originally it was North  Northwest 
+D:  But  
+D:  Yeah . 
+D:  I don't know . 
+D:  Well , you have a like techno - speak accent I think . 
+D:  Yeah , you know ? 
+D:  Well it 's  I mean I  you can sort of identify 
+D:  it f It 's  it 's  not  not that that 's  
+D:  but  but maybe that  maybe we could leave this 
+D:  and see what people  See what people choose 
+D:  and then um let them just fill in if they don't  
+D:  I mean I don't know what else we can do , cuz  <laugh> That 's North Midland . 
+D:  Yeah . 
+D:  Of course , that 's very different from , like , Michigan , or  
+D:  Well there are hardly any subjects from Idaho . 
+D:  There 's only a few people in Idaho . 
+D:  Sorry . 
+D:  No , that 's  
+D:  We could ask where they 're from . 
+D:  Yeah . 
+D:  But - We went back to that . 
+D:  We  we went  we went around this and then  a lot of people ended up saying that it  
+D:  You know . 
+D:  Right . Right . 
+D:  I mean it gives us good information on where they 're from , but that doesn't  tell us anything  
+D:  well , enough about their  
+D:  like  
+D:  Right . 
+D:  Oh , I don't know . 
+D:  So let 's make it up . 
+D:  S I mean , who cares . 
+D:  Right ? 
+D:  We can make up our own  
+D:  So we can say " Northwest " , " Rest of West " or something . 
+D:  You know . 
+D:  " West " 
+D:  and I mean . 
+D:  It doesn't even  
+D:  Yeah , exactly . 
+D:  That 's not really a region . 
+D:  So we could take out " North "  " Northern " . 
+D:  That 's  
+D:  Yeah , w It 's  In  It 's  it 's harder in America anywhere else , basically . 
+D:  And those people , if you ask them to self - identify their accent they know . 
+D:  They know very well . 
+D:  They know they don't speak the same as the 
+D:  day o 
+D:  Yeah , exactly . 
+D:  And they 're glad to tell you . 
+D:  Well . Depends who you ask , I suppose . 
+D:  But that 's why they have New York City but  
+D:  Or  
+D:  " Characterize your accent  if you can . " 
+D:  Yeah . 
+D:  Right , which probably means you have a very  
+D:  And that 's actually good . 
+D:  I was  I was thinking of something along that line 
+D:  because  if you don't know , then , you know , ruling out the fact that you 're totally  inept or something , 
+D:  if somebody doesn't know , it probably means their accent isn't very strong compared to the sort of midwest standard . 
+D:  W 
+D:  Each  each one has pros and cons 
+D:  I mean we  we  
+D:  What if we put in both ? 
+D:  And  Would people  
+D:  No , I mean what if we put in both ways of asking them ? 
+D:  So . One is  Region 
+D:  and the another one is " if you had to characterize yourself  your accent , what would you say ? " 
+D:  Well they might only answer only one of the questions 
+D:  but if 
+D:  You know . 
+D:  Actually  
+D:  Right . 
+D:  It just  And we  
+D:  we might learn from what they say , as to which one 's a better  way to ask it . 
+D:  But  I  Cuz I really don't know . 
+
+D:  Maybe we can make the list a little smaller . 
+D:  Cuz , I mean  
+D:  And keeping " Other " , 
+D:  and then  maybe this North Midland , we call it " North Midwest " . 
+D:  South  Midwest , or just  
+D:  South Midwest . 
+D:  Does that make sense ? 
+D:  That would help me  
+D:  Yeah . 
+D:  Cuz  
+D:  Midland  
+D:  I don't know where Midland is 
+D:  Y yeah , one w 
+D:  Oh . 
+D:  But , 
+D:  yeah . So . Kansas would be  South Midland . 
+D:  Right ? 
+D:  And  and wouldn't  
+D:  Yeah . 
+D:  So , th I 'm from Kansas , actually . 
+D:  Yeah . 
+D:  Colora 
+D:  Oh , right . 
+D:  And then , the  the  dropping North , 
+D:  so it would be Western . 
+D:  It 's just one big shebang , where , of course , you have huge variation in dialects , 
+D:  but   but so do you  
+D:  Yeah . 
+D:  Yeah . Yeah . 
+D:  Yeah , I don't know how it came from . 
+D:  So . That 's New England I think . 
+D:  Yeah . 
+D:  Well , you know , Pennsylvania has a pretty strong dialect and it 's totally different than  
+D:  OK ! 
+D:  Sure ! 
+D:  Let 's just  
+D:  And we 'll see what we get . 
+D:  Yeah , and  
+D:  You could say Liverpool . 
+D:  Actually , Liverpool doesn't l 
+D:  Yeah . 
+D:  It 's  <long loud breath> I 'm s I ha 
+D:  It 's really great . 
+D:  M 
+D:  So when you say " slow " , does that mean to  
+D:  Mm - hmm . 
+D:  It 's  So , it  it 's the redrawing of the w 
+D:  oh uh - huh , 
+D:  w as you move . 
+D:  Oh yeah . 
+D:  Yeah . 
+D:  So is there any hope for actually displaying the wave form ? 
+D:  OK . 
+D:  OK . 
+D:  Well , I 'm  I probably would be trying to use the   whatever 's there . 
+D:  And it 's useful to have the  
+D:  Yeah . 
+D:  I mean . I wonder  I 'm just wondering if we can display things other than the wave form . 
+D:  So . Suppose we have a feature  a feature stream . 
+D:  And it 's just , you know , a  a uni - dimensional feature , varying in time . 
+D:  And we want to plot that , instead of the whole wave form . 
+D:  That might be faster . 
+D:  Right ? 
+D:  So . 
+D:  OK . 
+D:  OK . Well , I 'll talk to you about it and we can see 
+D:  but it 's definitely  great to have the other one . 
+D:  That 's  
+D:  Right . 
+D:  OK . 
+D:  Oh . 
+D:  So . You mean they could  they could do it and it would be  fast enough if they do it ? 
+D:  Or  ? 
+D:  Mm - hmm . 
+D:  OK . 
+D:  OK . 
+D:  I actually have to leave . 
+D:  So . Um . I mean  I had to leave at three thirty , 
+D:  so I can  <inbreath> Well , I can wait  for the digits but I can't stay for the discussion 
+D:  I c  I have to make a call . 
+D:  So . 
+D:  Um . 
+D:  No , I can do digits if  if  But I don't wanna butt in , or something . 
+D:  But if there 's something on the rest of the  
+D:  I 'm  I 'll be around just have to make call before quarter of . 
+D:  So . 
+D:  So I  
+D:  Or we can talk about it . 
+D:  OK . <laugh> Alright . 
+D:  Oh , this is the new one . 
+D:  Alright . 
+D:  The  And the time is . 
+D:  OK . 

@@ -1,0 +1,266 @@
+A:  Yeah . 
+A:  OK . 
+A:  Hmm . 
+A:  That was fun . 
+A:  That was fun . 
+A:  Yeah . 
+A:  Excellent . 
+A:  Will we have time to , um , to prepare something that we  in the format we were planning for the IBM transcribers by then , 
+A:  or  ? 
+A:  OK . 
+A:  He 's  he 's  
+A:  He generated , um , a channel - wise presegmented version of a meeting , 
+A:  but it was Robustness rather than EDU so I guess depends on whether we 're willing to use Robustness ? 
+A:  OK . 
+A:  OK . 
+A:  Great . 
+A:  I 'll  I 'll  I 'll , um , get  make that available . 
+A:  Oh , well , wait . 
+A:  Um  
+A:  That 's right . 
+A:  Yeah that 's right . 
+A:  Yeah , we haven't done that . 
+A:  I  I could set someone on that tomorrow . 
+A:  I think they 're coming  
+A:  OK . 
+A:  What would be a good number of minutes ? 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm , mm - hmm . 
+A:  And have them fix it over the entire meeting too ? 
+A:  OK . 
+A:  Hmm , I gue hmm . 
+A:  If it 's got like for speakers then I guess  I mean if  
+A:  Individual channels . 
+A:  Yeah . 
+A:  I guess there is this issue of , you know , if  if the segmenter thought there was no speech on  on a particular stretch , on a particular channel , 
+A:  and there really was , then , if it didn't show up in a mixed signal to verify , then it might be overlooked , 
+A:  so , I mean , the question is " should  should a transcriber listen to the entire thing or can it g can it be based on the mixed signal ? " 
+A:  And I th eh so far as I 'm concerned it 's fine to base it on the mixed signal at this point , 
+A:  and  
+A:  And that cuts down the time . 
+A:  Yeah . 
+A:  Yeah , that 's good . 
+A:  So . Yeah . 
+A:  Good , good , good . 
+A:  What  what aspect ? 
+A:  Should be pretty good , 
+A:  yeah . 
+A:  But those would be  those would be  
+A:  Yeah , but presumably , most of those they should be able to hear from the mixed signal unless they 're embedded in the heavil heavy overlap section 
+A:  when  in which case they 'd be listening to the channels anyway . 
+A:  Yeah , 
+A:  I am too . 
+A:  And I think it 's an empirical question . 
+A:  Oh they can  
+A:  Yeah , that 's it . 
+A:  Yeah . 
+A:  And if  
+A:  Uh - huh . 
+A:  Yeah . 
+A:  w Well , the other problem is the breaths 
+A:  cuz you also see the breaths on the waveform . 
+A:  I 've  I 've looked at the int uh , s I 've tried to do that with a single channel , 
+A:  and  and you do see all sorts of other stuff besides just the voice . 
+A:  Well that  that I 'm not sure . 
+A:  What you  the digital  what the digital task that you had your interface ? 
+A:  Um , I know for a fact that one of those  sh she could really well  she could judge what th what the number was based on the  on the waveform . 
+A:  Yeah , she could tell which one was seven . 
+A:  Yeah . 
+A:  Well , they have a choice . 
+A:  They could choose any signal to look at . 
+A:  I 've tried lookin but usually they look at the mixed . 
+A:  But I 've  I 've tried looking at the single signal and  and in order to judge when it  when it was speech and when it wasn't , 
+A:  but the problem is then you have breaths which  which show up on the signal . 
+A:  Yes . 
+A:  Yes . 
+A:  Yes . 
+A:  Oh , 
+A:  they show up on the separate ribbons . 
+A:  So you have a separate ribbon for each channel , 
+A:  and  and i i it 'll be  because it 's being segmented as channel at a time with his  with Thilo 's new procedure , 
+A:  then you don't have the correspondence of the times across the bins  uh across the ribbons 
+A:  uh you could have  
+A:  Yes . 
+A:  Yeah . 
+A:  Oh , well not  not " look " . 
+A:  Not very quickly . 
+A:  You can but it takes time . 
+A:  That 's it . 
+A:  Oh , oh . 
+A:  Visually . 
+A:  You can  you can switch quickly between the audio , 
+A:  but you just can't get the visual display to show quickly . 
+A:  So you have to  
+A:  It takes , I don't know , three , four minutes to  
+A:  Well , I mean , it takes  it takes long enough  
+A:  It takes long enough cuz it has to reload the 
+A:  I  I don't know exactly what it 's doing frankly 
+A:  cuz  but it t it takes long enough that it 's just not a practical alternative . 
+A:  Now you could set up multiple windows , each one with a different signal showing , and then look between the windows . 
+A:  Maybe that 's the solution . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  You know , I am thinking if we have a meeting with only four speakers 
+A:  and , you know , you could fire up a Transcriber interface for , y you know , in different windows , multiple ones , one for each channel . 
+A:  And it 's sort of a  a hack but I mean it would be one way of seeing the visual form . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Well , I  I do think that this  this will be a doable procedure , 
+A:  and have them starting with mixed 
+A:  and , um , then when they get into overlaps , just have them systematically check all the channels to be sure that there isn't something hidden from  from audio view . 
+A:  Yeah . 
+A:  Yes . 
+A:  Yes . 
+A:  Click  
+A:  Um , 
+A:  I 'm not sure what  click what  click on the ribbon ? 
+A:  Yeah , you can get that  
+A:  oh , oh , 
+A:  get  you can get the , uh  you can get it to switch audio ? 
+A:  Uh , not last I tried , 
+A:  but , um , maybe he 's changed it again . 
+A:  I disagree . 
+A:  There 's a reason I disagree , and that is that , uh , you  it 's very good to have a dissociation between the visual and the audio . 
+A:  There 're times when I wanna hear the mixed signal , 
+A:  bu but I want to transcribe on the single channel . 
+A:  So right now  
+A:  Maybe , I just don't  I don't see that it 's a  
+A:  Well , I mean , that 's the i I  I think that might be a personal style thing . 
+A:  I find it really convenient the way  the way it 's set up right now . 
+A:  That 's fine . 
+A:  Yeah , it 's true . 
+A:  Yeah , it could be faster , 
+A:  but , you know , I mean , th in the ideal world  
+A:  Yeah . 
+A:  No I  I agree that 'd be nice . 
+A:  Yeah . 
+A:  OK . 
+A:  Oh , wow ! 
+A:  Oh , OK . 
+A:  Oh . 
+A:  Oh . 
+A:  You  did you have , uh , something in the report about , uh ,  about , uh , for f uh , forced alignment ? 
+A:  Have you  have you started on that ? 
+A:  Hmm . 
+A:  Well it 's a merging problem . 
+A:  If you had a  if you had a s if you had a script which would  
+A:  I 've thought about this , 
+A:  um , and I 've discussed  I 've discussed it with Thilo , 
+A:  um , the , I mean , I  I  in principle I could imagine writing a script which would approximate it to some degree , 
+A:  but there is this problem of slippage , 
+A:  yeah . 
+A:  Well they  they can be stretched . 
+A:  I wouldn't make that generalization 
+A:  cuz sometimes people will say , " And then I " and there 's a long pause 
+A:  and finish the sentence 
+A:  and  and sometimes it looks coherent and  and the  
+A:  I mean it 's  it 's not a simple problem . 
+A:  But it 's really  
+A:  And then it 's coupled with the problem that sometimes , you know , with  with a fricative you might get the beginning of the word cut off 
+A:  and so it 's coupled with the problem that Thilo 's isn't perfect either . 
+A:  I mean , we 've i th it 's like you have a merging problem plus  so merging plus this problem of , uh , not  
+A:  y i i if the speech - nonspeech were perfect to begin with , the detector , that would already be an improvement , 
+A:  but that 's impossible , you know , i that 's too much to ask . 
+A:  And so i and may you know , I mean , it 's  
+A:  I think that there always  th there would have to be some hand - tweaking , 
+A:  but it 's possible that a script could be written to merge those two types of things . 
+A:  I 've  I 've discussed it with Thilo and I mean  
+A:  in terms of not him doing it , 
+A:  but we  we discussed some of the parameters of that 
+A:  and how hard it would be to  in principle  to write something that would do that . 
+A:  Well , it 's just , you know , a matter of we had the revolution  we had the revolution of improved , uh , interface , um , one month too late , 
+A:  but it 's like , you know , it 's wonderful to have the revolution , 
+A:  so it 's just a matter of  of , you know , from now on we 'll be able to have things channelized to begin with . 
+A:  Yeah , 
+A:  that 's right . 
+A:  That 's right . 
+A:  Good point . 
+A:  Yeah . 
+A:  Well the problem is I  you know  I  I  it 's a  it 's a really good question , 
+A:  and I really find it a pain in the neck to delete things 
+A:  because you have to get the mouse up there on the t on the text line 
+A:  and i and otherwise you just use an arrow to get down  
+A:  I mean , i it depends on how lar 
+A:  th there 's so many extra things that would make it one of them harder than the other , or  or vice versa . 
+A:  It 's not a simple question . 
+A:  But , you know , I mean , in principle , like , you know , if one of them is easier then to bias it towards whichever one 's easier . 
+A:  I think it 's easier to add than delete , frankly , 
+A:  because you have to , uh , maneuver around on the  on both windows then . 
+A:  To delete . 
+A:  It 's possible . 
+A:  Well , like , I think there 's a complication which is that  that you can have speech and noise in s 
+A:  uh , you know , on the same channel , the same speaker , 
+A:  so now sometimes you get a ni microphone pop 
+A:  and , uh , I mean , there 're these fuzzy hybrid cases , 
+A:  and then the problem with the boundaries that have to be shifted around . 
+A:  It 's not a simple  not a simple problem . 
+A:  Well , and also , I mean , I still haven't  I still haven't given up on forced alignment . 
+A:  I think that when Brian comes , this 'll be uh an interesting aspect to ask him as well b 
+A:  when Brian Kingsbury comes . 
+A:  Yeah , good question . 
+A:  Well , Ryan could come . 
+A:  That 's what my hope has been , 
+A:  and that 's what  that 's what  you know , ever since the  the February meeting that I transcribed from last year , forced alignment has been on the  on the table as a way of cleaning them up later . 
+A:  And  and so I 'm hopeful that that 's possible . 
+A:  I know that there 's complication in the overlap sections and with the lapel mikes , 
+A:  but  
+A:  I agree . 
+A:  I agree . 
+A:  Absolutely . 
+A:  Excellent . 
+A:  Yeah . 
+A:  You said , " Speaking about energy " , or <laugh> something . 
+A:  That was very nice . 
+A:  That 's great . 
+A:  I did go through one of these meetings . 
+A:  I had , uh , one of the transcribers go through and tighten up the bins on one of the , uh , NSA meetings , 
+A:  and then I went through afterwards and double - checked it 
+A:  so that one is really very  very accurate . 
+A:  I men I mentioned the link . 
+A:  I sent  You know that one ? 
+A:  Um , I 'm trying to remember  
+A:  I don't remember the number off hand . 
+A:  It 's one of the NSA 's . 
+A:  I sent email before the conference , before last week . 
+A:  Bef - What I mean is Wednesday , Thursday . 
+A:  I 'm sure that that one 's accurate , 
+A:  I 've been through it <laugh> myself . 
+A:  I corrected it for a number of the words . 
+A:  I 'm sure that , um , they 're  they 're accurate now . 
+A:  Well I won I noticed when you turned your head , it would  it would tilt . 
+A:  Yeah . 
+A:  I think it 's com 
+A:  This is the first time I 've worn this , 
+A:  I find it very comfortable . 
+A:  Oh ! 
+A:  Ah . 
+A:  Well , wonder if it 's  if  if he was wearing it over his hair instead of under his hair . 
+A:  What did you say ? 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Mmm , yeah . 
+A:  R I think  
+A:  Mm - hmm . 
+A:  Maryland . 
+A:  Oh . 
+A:  Well , I like the idea that Adam had of  of , um , z maybe generating minutes based on some of these things that we have 
+A:  because it would be easy to  to  to do that 
+A:  just , you know , 
+A:  and  and 
+A:  it has to be , though , someone from this group because of the technical nature of the thing . 
+A:  I do take notes . 
+A:  It was an interesting session . 
+A:  One of those w 
+A:  Yeah , that 's it . 
+A:  So , I mean , this was a very provocative slide . 
+A:  She put this up , and it was like this is  this p people kept saying , " Can I see that slide again ? " 
+A:  and then they 'd make a comment , and one person said , well - known person said , um , you know , " Before you dismiss forty - five years including my work  " 
+A:  That was very offending , 
+A:  very offending . 
+A:  Yeah . 
+A:  Yeah , that 's good . 
+A:  Yeah . 

@@ -1,0 +1,79 @@
+A:  OK . 
+A:  Hello ? 
+A:  Hello ? 
+A:  Voicing thing . 
+A:  Oh , 
+A:  um . 
+A:  Right . 
+A:  I  just , um , continuing looking at , uh , ph uh , phonetic events , 
+A:  and , uh , this Tuesday gonna be , uh , meeting with John Ohala with Chuck to talk some more about these , uh , ph um , phonetic events . 
+A:  Um , came up with , uh , a plan of attack , 
+A:  uh , gonna execute , 
+A:  and 
+A:  um  
+A:  Yeah . 
+A:  It 's  that 's pretty much it . 
+A:  Oh , 
+A:  you  oh , you want  you want details . 
+A:  Hmm . 
+A:  OK . 
+A:  I was hoping I could wave my hands . 
+A:  Um . 
+A:  So , 
+A:  um . 
+A:  So , once wa 
+A:  I  I was thinking getting  getting us a set of acoustic events to  um , to be able to distinguish between , uh , phones and words and stuff . 
+A:  And <inbreath> um , 
+A:  once we  
+A:  we would figure out a set of these events that can be , you know , um , hand - labeled or  or derived , uh , from h the hand - labeled phone targets . 
+A:  Um , we could take these events and , um , <mouth noise> do some cheating experiments , 
+A:  um , where we feed , um , these events into  an SRI system , um , eh , and evaluate its performance on a Switchboard task . 
+A:  Uh , yeah . 
+A:  Yeah . 
+A:  Sure . 
+A:  Um , I  I can give you an example of  twenty - odd events . 
+A:  Um  
+A:  So , he In this paper , um , it 's talking about phoneme recognition using acoustic events . 
+A:  So , things like frication or , uh , nasality . 
+A:  Um , 
+A:  this is a paper by Hubener and Cardson  Benson  Bernds - Berndsen . 
+A:  Mm - hmm . 
+A:  Um . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Good . That 's great . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  So . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Um  
+A:  Using these  these events , um , you know , we can  we can perform these  these , uh , cheating experiments . 
+A:  See how  how  how good they are , um , in , um  in terms of phoneme recognition or word recognition . 
+A:  And , 
+A:  um  
+A:  and then from that point on , I would , uh , s design robust event detectors , um , in a similar , um , wa spirit that Saul has done w uh , with his graphical models , and this  this probabilistic AND - OR model that he uses . 
+A:  Um , 
+A:  eh , try to extend it to , um  to account for other  other phenomena like , um , CMR co - modulation release . 
+A:  And , 
+A:  um  
+A:  and maybe also investigate ways to  to modify the structure of these models , um , in a data - driven way , 
+A:  uh , similar to the way that , uh , Jeff  Jeff , uh , Bilmes did his work . 
+A:  Um , 
+A:  and while I 'm  I 'm doing these , um , event detectors , you know , I can ma mea measure my progress by comparing , um , the error rates in clean and noisy conditions to something like , uh , neural nets . 
+A:  Um , 
+A:  and  
+A:  So  
+A:  so , once we have these  these , uh , event detectors , um , we could put them together and  and feed the outputs of the event detectors into  into the SRI , um , HMM  HMM system , 
+A:  and , 
+A:  um  
+A:  and test it on  on Switchboard or , um , maybe even Aurora stuff . 
+A:  And , 
+A:  that 's pretty much the  the big picture of  of um , the plan . 
+A:  Mm - hmm . 
+A:  Hmm . 
+A:  Hmm . 
+A:  OK . 
+A:  OK . 

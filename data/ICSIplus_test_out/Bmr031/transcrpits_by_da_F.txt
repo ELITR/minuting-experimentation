@@ -1,0 +1,349 @@
+F:  And we ' 
+F:  OK . We 're on . 
+F:  Oh , we 'll wait for Chuck . 
+F:  Close the door behind him . 
+F:  Y you can keep talking , 
+F:  but you should be aware . 
+F:  Well , and then , uh  then Morgan said " why don't we start ? " 
+F:  and I said " O K " . 
+F:  Or we can close the door and make Chuck knock  when he comes . 
+F:  And Chuck gets stuck with the ear - plug mike . 
+F:  But he didn't shut the door . 
+F:  I got it 
+F:  since  
+F:  Well , because no one  no one ever rep responded  with any items . 
+F:  So I have  a couple of minor ones . 
+F:  Uh , 
+F:  our  normal transcription status , 
+F:  just so that we can make some  some plans . 
+F:  So wha what 's up with IBM , Chuck ? 
+F:  Do you know ? 
+F:  Is  is yours working there , Chuck ? 
+F:  Can you  ? 
+F:  You 're b you 're B ? 
+F:  There 's no on . 
+F:  Oh . It 's just  
+F:  I 'll  Let me raise the gain on that a little bit 
+F:  since it 's so far from your mouth . 
+F:  Sorry . 
+F:  OK . 
+F:  Pie ? 
+F:  Oh . 
+F:  OK . So also , um  
+F:  Now , that 's a strange  
+F:  Yep . 
+F:  Um . So  
+F:  How much  
+F:  How much do we need transcribed before it 's worth doing some trainings ? 
+F:  I mean , it seems like probably we have enough now . 
+F:  Right ? 
+F:  Because , like  like Macrophone wasn't that much data . 
+F:  Right ? 
+F:  And it helped . 
+F:  You only used that for digits ? 
+F:  Right . 
+F:  That 's right . 
+F:  Mm - hmm . 
+F:  Right . 
+F:  Mm - hmm . 
+F:  Cool . 
+F:  Um . 
+F:  Supervised . 
+F:  H how would you imagine doing a test set on this corpus ? 
+F:  A test set , training set division ? 
+F:  I mean , it it 's really weird . 
+F:  Right ? 
+F:  Because it 's  it would be hard to get speaker disjoint sets . 
+F:  Do y do we just give up on that ? 
+F:  Well , but then you have the supervised versus unsupervised question . 
+F:  Right . 
+F:  So . 
+F:  Yeah . 
+F:  Right . 
+F:  And then s s similarly with subject matter . 
+F:  That , you know , if you 're training your language model on this meeting only and testing on this meeting only , you 're gonna do a lot better than if you start crossing them . 
+F:  Are the same . 
+F:  Sure . 
+F:  Just from word choice ? 
+F:  Most certainly . So it 's just , uh , if we 're gonna do that we should  give some thought to how we wanna divide it up . 
+F:  Yeah . And similarly with digits . We now have a lot of digits 
+F:  but most of them aren't transcribed . 
+F:  So if we wanted to do a forced alignment on them , we could start collecting ourselves up a fairly large digit corpus . 
+F:  And so , same issue . 
+F:  You know we just need to get someone who 's interested in that to start looking at it . 
+F:  So who 's working on digits currently ? 
+F:  OK , maybe I 'll talk to him and see if he 's interested . 
+F:  Yeah , certainly . 
+F:  He wants to pass the prelims . 
+F:  Mm - hmm . 
+F:  Is , uh  ? Are the CMU folks gonna be there ? 
+F:  Right . 
+F:  Right . 
+F:  Yep . 
+F:  It  it  pretty good . 
+F:  Yeah . 
+F:  Um . Well , I got a email from one of the UW guys . 
+F:  They want to record the meetings at higher , uh , sampling rate than sixteen  kilohertz . 
+F:  Uh , 
+F:  I didn't ask why . 
+F:  But it seems to me  that really doesn't matter . 
+F:  If they have the disk space to do it , it seems that that  is not a big deal . 
+F:  I was just wondering if anyone had  an opinion about mismatched  rates . 
+F:  Yep . 
+F:  Excuse me ? 
+F:  No . 
+F:  No . No , no , it was like forty something . 
+F:  Forty - four , 
+F:  forty - two . 
+F:  Yeah . 
+F:  Something like that . 
+F:  And then we downsample . Yep . 
+F:  You get aliasing . 
+F:  Well , the  the only thought was if we 're gonna do a combined corpus , does it really matter if some 's sampled at one rate and some 's sampled at the other ? 
+F:  My feeling is no , it doesn't . 
+F:  Your audio , u these days audio tools tend to take care of all of that . 
+F:  But I just wanted to double check with other people before I told them " yeah , no problem " . 
+F:  That 's what I was saying . 
+F:  So  so  
+F:  I don't know . 
+F:  Why are they asking us ? 
+F:  Because , you know , we 're sort of doing the corpus , 
+F:  so they want to be as similar as possible . 
+F:  So . But I think the answer is , if  if we tell him " no , that 's not alright " , what he 'll probably say is " well , we 're gonna do it anyway " . 
+F:  But , uh , 
+F:  Uh . 
+F:  Yep . 
+F:  Oh , and they just don't want to downsample ? 
+F:  OK . 
+F:  Yep . That 's wh that 's what I thought . 
+F:  Mm - hmm . 
+F:  Yep . Yep . 
+F:  Yeah , but  
+F:  Um , I don't remember what their hardware set - up was 
+F:  but it was smaller than ours . 
+F:  Yeah . 
+F:  Well , with NIST I think 
+F:  they 're  they 're in a different situation cuz they 're doing video . 
+F:  And so compared to the video , the audio is just noise 
+F:  in terms of disk space , 
+F:  literally . 
+F:  Really ? 
+F:  They 're not recording all fifty of the  array . 
+F:  They 're  they 're cooking it down , 
+F:  aren't they ? 
+F:  Whew . 
+F:  That 's funny . 
+F:  I thought that they were cooking down that data  in some way before they were storing it . 
+F:  Yeah , distributing  
+F:  They 're not going to . 
+F:  You 'll have to just work on little subsets of it . 
+F:  There 's just no way  you could get it all . 
+F:  Yep . 
+F:  Sixteen . 
+F:  A lot . 
+F:  Two or three ? 
+F:  It 's a lot more than that . 
+F:  Right ? 
+F:  DVD is  eight gig ? 
+F:  I think that 's definitely the right way to do it . 
+F:  Someone sends us disk . 
+F:  We  we load it with data and send it back . 
+F:  It 's gonna be easier than any other method . 
+F:  Well , if not  if you want to burn the C Ds , you 're welcome to it . 
+F:  Well , yeah . 
+F:  Yeah , absolutely . If they have a way of doing it . 
+F:  I 'm thinking prior to that . 
+F:  We already do that . 
+F:  Shorten does that automatically . 
+F:  That 's why you  why  that 's why Shorten  that 's why Shorten reduces the size so much . 
+F:  Right . 
+F:  Yep . 
+F:  Well , if you talk less it does in fact use less me d m data . 
+F:  So , the channels  
+F:  Hmm . 
+F:  It 's actually one way to tell if a microphone is dead in a meeting is if the shortened file is too short . 
+F:  Then you can be pretty sure that the mike was off . 
+F:  And , the t unfortunately the tabletop ones  
+F:  the six tabletop which we record all the time no matter how many people are there , uh , don't compress nearly as well 
+F:  because they 're almost always have signal on them . 
+F:  Yep . 
+F:  Most of them . 
+F:  Yep . So they won't shorten nearly as well . 
+F:  And I assume they 're gonna do it lossless . 
+F:  Yeah . 
+F:  Yep . Absolutely . 
+F:  And then maybe one far - field . 
+F:  You know ? 
+F:  It 's things  or the mixed channel . 
+F:  Yeah , I think there are a lot of ways to do it , 
+F:  but  Let 's not worry about that now . 
+F:  How are we on disk space , Chuck ? 
+F:  Mm - hmm . 
+F:  Good . 
+F:  Yeah , we 're using those for the  for the expanded . 
+F:  Yeah . The problem with that for backed - up media is , uh , the sysadmins wanna keep them at eighteen meg  eighteen gig partitions 
+F:  because that takes about a day to get off back - up tape . 
+F:  So . 
+F:  For u the whole institute . 
+F:  Yeah . 
+F:  Actually , going to bigger disks we can do even , 
+F:  and just maintain the eighteen gig partitions . 
+F:  You just partition them into multiple . 
+F:  So that 's probably the next step , 
+F:  is to get the eighty or ninety gig drives to replace the thirty gig or an eighteen gig that we have now . 
+F:  Yeah . Yeah . 
+F:  A whole handful of microdrives . 
+F:  Is  is the areal density of the microdrive higher  than of a w normal drive ? 
+F:  It must be . 
+F:  Yep . 
+F:  Well , they have the two gig already . 
+F:  And I 'm  I 'm just thinking forty of them is probably still smaller  in area than , uh , one normal - sized drive . 
+F:  Yep . 
+F:  Yeah .  A laptop . 
+F:  Eighty gig laptop . 
+F:  I 'll  I 'll do that . 
+F:  It  uh , uh , unfortunately it takes me a week at each site . 
+F:  It does take a week at each site . 
+F:  So . 
+F:  Yeah , a absolutely . <laugh> If it 's a nice site . 
+F:  Yeah , right . 
+F:  Th - that only takes a day or so . 
+F:  Anyway . 
+F:  Yep . 
+F:  Definitely true . 
+F:  Any other items ? 
+F:  I  I saw the pie chart sticking out , 
+F:  so . 
+F:  D d do we care ? 
+F:  We need different color pens , definitely . 
+F:  Rustle , rustle . 
+F:  Oh ! Great . 
+F:  Oh . 
+F:  So I should probably send those to you , 
+F:  shouldn't I ? 
+F:  There are five . 
+F:  There are five . 
+F:  We have five where , uh , everyone has replied . 
+F:  It was falling off , uh . 
+F:  And there 's still , uh , two people for whom I have not been able to get in touch  
+F:  have never gotten a response from  from any of the emails about , uh  permission forms . 
+F:  So . 
+F:  Yep . 
+F:  That 's so  that 's why the NSA ones have still not been approved . Though . 
+F:  Yep . 
+F:  Possibly . It 's been , like , four months , 
+F:  so . 
+F:  Oh , that 's right . 
+F:  Uh . 
+F:  Yeah , we have new hardware . 
+F:  So , I want to set it up at some point , 
+F:  so I just wanted to know what meeting schedules were . 
+F:  Uh , we have several more wireless channels 
+F:  so that we can set up 
+F:  and get rid of these , uh  the wired stuff completely . 
+F:  And then also we got replacements for these mikes . 
+F:  Yeah . 
+F:  Yeah , they 're like those . 
+F:  Those are the only two choices right now , unfortunately . 
+F:  Question is , when are we not recording any meetings for a couple days 
+F:  so that I can do it 
+F:  and if it doesn't work , we won't impact people . 
+F:  So . 
+F:  So , what 's SmartKom ? 
+F:  End of next week . 
+F:  And is EDU still recording ? 
+F:  So if I did it , like , tomorrow that would be alright  it sounds like ? 
+F:  OK . 
+F:  So it sounds like no one n 
+F:  No one early next week . 
+F:  OK . 
+F:  And then I 'll also re - number 
+F:  so that , uh , the mikes are in order . 
+F:  Should help with the transcripts . 
+F:  They wer so right now the channel numbers are discontiguous . 
+F:  Right . 
+F:  OK , we 'll all say what we 're doing at the same time . 
+F:  Which " uh - huh " ? 
+F:  That 's a  
+F:  I mean , I 'll start if you want . 
+F:  I 've been , uh , most recently rewriting Transcriber in Java for no particular reason . 
+F:  Uh . 
+F:  Well , I mean , Trans - What happened was that Transcriber 's very slow to load . 
+F:  So when you have a big meeting it c uh , especially on a slower machine , it can take five minutes before you can start doing anything . 
+F:  And so I was thinking about why that was 
+F:  and the data structures I would use , 
+F:  and I found myself unable not to sit down and code it . 
+F:  So I did . 
+F:  And so I have a big chunk of Transcriber now written in Java 
+F:  and it comes up , you know , in a couple of seconds . 
+F:  Um . 
+F:  I  It 's not really  probably not worth doing . 
+F:  But we can talk about it . 
+F:  Mm - hmm . 
+F:  Annotating . 
+F:  Yep . 
+F:  Mm - hmm . 
+F:  Dialogue .  Yeah . 
+F:  Buttons . 
+F:  Mm - hmm . 
+F:  Yeah . I un I understand the problem . 
+F:  So . 
+F:  Mm - hmm . 
+F:  Right . 
+F:  Right . 
+F:  So what I don't have with it so far is it doesn't play wavefiles 
+F:  and it display wavefiles . 
+F:  I just haven't done that 
+F:  since that  that part wasn't  
+F:  Yep . 
+F:  Yep . 
+F:  And , uh  and then also a lot of the fancy user - interface stuff that 's in Transcriber I haven't done . 
+F:  But it works . 
+F:  Tcl - TK . 
+F:  So . 
+F:  Which is nice and flexible 
+F:  but very , very slow in comparison . 
+F:  Yep , SAX . 
+F:  Cuz it 's much faster than DOM and uses less memory . 
+F:  So . 
+F:  And then , uh , 
+F:  preparing for quals . 
+F:  Uh , hopefully second week of September if I can ever get Warren Sack to  answer my emails . 
+F:  I probably shouldn't say that on the tape . 
+F:  Yeah . Oh , well . 
+F:  I gotta remember to beep that out . 
+F:  No 
+F:  So anyway . So I 've been preparing for that . 
+F:  And , uh , 
+F:  actually , I wanted to say off - line with you about any literature  reviews I should do beforehand . 
+F:  " War and Peace . " 
+F:  That 's a good choice . 
+F:  Keep me busy . 
+F:  For " beep " . 
+F:  That 's a good idea . 
+F:  No , absolutely . I agree . 
+
+F:  Oh , yeah . All of us are banging . 
+F:  With fishing . B 
+F:  You should have seen the one that got away . 
+F:  Can I borrow a piece of paper ? 
+F:  Thank you . 
+
+F:  Yeah . It 's a P H 
+F:  Right . 
+F:  Is it wrong ? 
+F:  Just combine it see . 
+F:  Neat . 
+
+F:  Mean and variance . 
+F:  Yeah . 
+F:  She just got back . 
+F:  The Secret Service is out there throwing fish into the ocean  into the lake . 
+
+F:  " Hey , I caught one  this one  and it 's already cooked ! " 
+F:  I think we 're done . 
+F:  Should we do , uh , simultaneous digits so that we actually have time for tea ? 
+F:  Ready ? 
+F:  Got plenty of overlap . 
+F:  And  
+F:  And we ' 

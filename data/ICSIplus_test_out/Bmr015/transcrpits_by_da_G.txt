@@ -1,0 +1,109 @@
+G:  Mm - hmm . 
+G:  I do . 
+G:  I crashed when I started this morning . 
+G:  Really ? 
+G:  Yeah . 
+G:  Maybe , yeah . 
+G:  Or maybe it 's once you 've  done enough meetings  it won't crash on you anymore . 
+G:  It 's a matter of experience . 
+G:  Yeah . 
+G:  Did  
+G:  Did they send , uh , the messages to you about the meeting today ? 
+G:  Oh . 
+G:  Oh . 
+G:  OK , cuz I checked my mail . I didn't have anything . 
+G:  Oh , you 're talking about where they completely read the wrong string and didn't correct it ? 
+G:  Ah . 
+G:  Well how many are  how  how often does that happen ? 
+G:  Oh , so it 's not very much . 
+G:  Seems like we should just change the transcripts 
+G:  to match . 
+G:  Yeah , 
+G:  it 's  
+G:  Yeah . 
+G:  So you  um , how many digits have been transcribed now ? 
+G:  Four thousand lines ? 
+G:  Wow . 
+G:  Mm - hmm . 
+G:  Mmm . 
+G:  Mm - hmm . 
+G:  Yeah . 
+G:  u 
+G:  Tomorrow . 
+G:  It would be interesting  
+G:  It 'll be interesting to see the reviewer 's comments . 
+G:  It 's just from his message it sounded like that . 
+G:  Gary Strong 's  
+G:  there was a sentence at the end of one of his paragraphs 
+G:  I  
+G:  Mmm . 
+G:  He said the next phase 'll be very , competitive 
+G:  because we didn't want to weed out much in the first phase . 
+G:  I don't  I don't know . 
+G:  I  I 'm  
+G:  I don't remember . 
+G:  If we end up getting this , um , what will it mean to ICSI in terms of , w wh where will the money go to , 
+G:  what would we be doing with it ? 
+G:  I  I mean uh which part is ICSI though . 
+G:  I mean  
+G:  Dang ! 
+G:  It 's just for the research  
+G:  to continue the research on the Meeting Recorder stuff ? 
+G:  Yeah . 
+G:  Mm - hmm . 
+G:  Right , right . 
+G:  So assuming everybody 's completely busy now , it means we 're gonna hafta , hire more students , or , something ? 
+G:  Right . 
+G:  Right . 
+G:  I see . 
+G:  Cuz of digits . 
+G:  That sounds good . 
+G:  Is  is this the algorithm where you hypothesize a fundamental , and then get the energy for all the harmonics of that fundamental ? 
+G:  And then hypothesize a new fundamental and get the energy  
+G:  Do you hafta do some kind of , uh , low - pass filter before you do that ? 
+G:  Or  
+G:  But i 
+G:  But the harmonics are gonna be , 
+G:  uh , uh , 
+G:  I don't know what the right word is . 
+G:  Um , 
+G:  they 're gonna be dampened by the uh , vocal tract , 
+G:  right ? 
+G:  The response of the vocal tract . 
+G:  And so  just looking at the energy on those  at the harmonics , is that gonna  ? 
+G:  I m what you 'd like to do is get rid of the effect of the vocal tract . 
+G:  Right ? 
+G:  And just look at the  at  at the signal coming out of the glottis . 
+G:  Uh - huh . 
+G:  Yeah . 
+G:  Uh - uh . 
+G:  An - any application may have to . 
+G:  Mm - hmm . 
+G:  Well , there 's a there 's  
+G:  I  
+G:  Yeah , I  I think , um , one possible way that we could handle it is that , 
+G:  um , 
+G:  you know , as the transcribers are going through , and if they get a hunk of speech that they 're gonna transcribe , 
+G:  u th they 're gonna transcribe it because there 's words in there or whatnot . 
+G:  If there 's a breath in there , they could transcribe that . 
+G:  Right . 
+G:  But  
+G:  Right . But if there 's a big hunk of speech , let 's say on Morgan 's mike where he 's not talking at all , um , don't  don't worry about that . 
+G:  So what we 're saying is , there 's no guarantee that , um  
+G:  So for the chunks that are transcribed , everything 's transcribed . 
+G:  But outside of those boundaries , there could have been stuff that wasn't transcribed . 
+G:  So you just  somebody can't rely on that data and say " that 's perfectly clean data " . 
+G:  Uh  do you see what I 'm saying ? 
+G:  So I would say don't tell them to transcribe anything that 's outside of a grouping of words . 
+G:  Yeah , so  
+G:  One of the  
+G:  um , just to add to this  
+G:  one of the ways that we will be able to get rid of breath is by having models for them . 
+G:  I mean , that 's what a lot of people do nowadays . 
+G:  And so in order to build the model you need to have some amount of it marked , 
+G:  so that you know where the boundaries are . 
+G:  So  
+G:  I mean , I don't think we need to worry a lot about breaths that are happening outside of a , you know , conversation . 
+G:  We don't have to go and search for them to  to mark them at all , 
+G:  but , I mean , if they 're there while they 're transcribing some hunk of words , I 'd say put them in if possible . 
+G:  Mm - hmm . 

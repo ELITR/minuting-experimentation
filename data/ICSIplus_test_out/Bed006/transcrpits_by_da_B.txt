@@ -1,0 +1,160 @@
+B:  Yeah . 
+B:  What day is today ? 
+B:  Nineteenth ? 
+B:  Right , right . 
+B:  I made that joke already , Nancy , sadly . 
+B:  The " I don't know myself " joke . 
+B:  Uh before you came in . 
+B:  About me . 
+B:  Yeah . 
+B:  Wizardette . 
+B:  Right . 
+B:  Wait , what  what are the days ? 
+B:  April twenty - sixth to the  May fourth ? 
+B:  I 'll probably be here . 
+B:  Well I 'll be here working on something . 
+B:  Guaranteed , 
+B:  it 's just uh will I be here , you know , in 
+B:  uh  
+B:  I 'll be here too actually 
+B:  but  
+B:  But it 's not like we need to be with them twenty - four hours a day s for the seven days that they 're here . 
+B:  Yeah , yeah , I guess . 
+B:  Yep . 
+B:  e 
+B:  This is the uh s the schema of the XML here , 
+B:  not an example or something like that . 
+B:  Actions that can be categorized with  
+B:  or that are related to Source - Path - Goal . 
+B:  And then those actions can be in multiple categories at the same time if necessary . 
+B:  Uh one question , Robert . 
+B:  When you point at the screen is it your shadow that I 'm supposed to look at ? 
+B:  OK . 
+B:  Whereas I keep looking where your hand is , 
+B:  and it doesn't  
+B:  Yeah . 
+B:  Basically , what this is  is that there 's an interface between what we are doing and the action planner 
+B:  and right now the way the interface is " action go " and then they have the  what the person claimed was the source and the person claimed as the goal passed on . 
+B:  And the problem is , is that the current system does not distinguish between goes of type " going into " , goes of type " want to go to a place where I can take a picture of " , et cetera . 
+B:  Right . Currently . 
+B:  OK . 
+B:  I just  
+B:  Robert likes to be abstract 
+B:  and that 's what I just thought he was doing . 
+B:  Which  which we 're abbreviating as " RAD " . 
+B:  So the Source - Path - Goal schema in this case , 
+B:  I 've  if I understand how we described  we set this up , 
+B:  um 
+B:  cuz we 've been arguing about it all week , 
+B:  but uh we 'll hold the  the  
+B:  Well in this case it will hold the  <breath> I mean the  the features I guess . 
+B:  I 'm not  it 's hard for me to exactly s 
+B:  So basically that will store the  the object that is w 
+B:  the Source will store the object that we 're going from , 
+B:  the Goal will store the  the f 
+B:  we 'll fill those in fill those roles in , 
+B:  right ? 
+B:  The S Action - schemas basically have extra  
+B:  See we  so those are  schemas exist 
+B:  because in case we need extra information 
+B:  instead of just making it an attribute and which  which is just one thing we  we decided to make it 's own entity so that we could explode it out later on in case there is some structure that  that we need to exploit . 
+B:  That 's a block , 
+B:  yeah . 
+B:  Yeah , 
+B:  the  So  
+B:  Yeah . 
+B:  Right . 
+B:  Right , so the  the  the roles will be filled in with the schema 
+B:  and then what actual a action is chosen is  will be in the  in the action schema section . 
+B:  The  
+B:  wa wasn't there supposed to be a link in the 
+B:  I don't know if this answers your question , 
+B:  I was just staring at this while you were talking , 
+B:  sorry . 
+B:  Uh a link between the action schema , a field in the s in the schema for the image schemas that would link us to which action schema we were supposed to use 
+B:  so we could  
+B:  Yeah . 
+B:  St 
+B:  Basically references from the roles in the schema  the bottom schemas to the action schemas is wha uh I 'm assuming . 
+B:  Right . 
+B:  Yeah . 
+B:  Well it 's not  it 's not actually a very  actually , it doesn't actually  
+B:  Well the  the  the utterance was " is there a bakery around here ? " , 
+B:  not " I want to go to a bakery . " 
+B:  Sure it  
+B:  OK . 
+B:  Yeah . 
+B:  Oh the  OK 
+B:  uh maybe I 'd  
+B:  The uh  
+B:  These actions  
+B:  I don't know if I 'm gonna answer your question or not with this , 
+B:  but the categories inside of action schemas , 
+B:  so , SPG action is a category . 
+B:  Real 
+B:  although I think what we 're specifying here is this is a category where the actions " enter , view and approach " would fall into 
+B:  because they have a related Source - Path - Goal schema in our tourist domain . 
+B:  Cuz viewing in a tourist domain is going up to it and  or actually going from one place to another to take a picture , in this  in a  
+B:  derived 
+B:  I don't know if I u 
+B:  Right . 
+B:  Right . 
+B:  Inside of Enter there will be roles that can be filled basically . 
+B:  So if I want to go from outside to inside <inbreath> then you 'd have the roles that need to filled , where you 'd have a Source - Path - Goal set of roles . 
+B:  So you 'd the Source would be outside and Path is to the door or whatever , 
+B:  right ? 
+B:  So if you wanted to have a new type of action you 'd create a new type of category . 
+B:  Then this category would  we would put it  
+B:  or not necessarily  
+B:  We would put a new action in the m uh in the categories that  in which it has the 
+B:  um  
+B:  Well , every action has a set of related schemas 
+B:  like Source - Path - Goal or force , whatever , 
+B:  right ? 
+B:  So we would put " write a letter " in the categories uh that  in which it had  it w had uh schemas u 
+B:  Exactly . 
+B:  Schemas uh that of that type . 
+B:  And then later , you know , there  the  we have a communication event action where we 'd define it down there as  
+B:  Right . 
+B:  Well , this is one of things we were arguing about . 
+B:  No . 
+B:  The  the reason  One reason we 're doing it this way is in case there 's extra structure that 's in the Enter action that 's not captured by the schemas , 
+B:  right ? 
+B:  Right , but  
+B:  Well only one of  
+B:  I 'd  I 
+B:  I think I 'd  
+B:  I 'm not sure if I understand your question . 
+B:  Only one of those things are gonna be lit up when we pass this on . 
+B:  So only Enter will be  
+B:  if we  if our  if our module decided that Enter is the case , View and Approach will not be there . 
+B:  Well in that case , we can't  we can't w if  if  
+B:  well the thing is if that 's the case we  our  I don't think our system can handle that currently . 
+B:  The r uh the  in terms of why is  it 's laid out like this versus some other  
+B:  um that 's kind of a contentious point between the two of us 
+B:  but <laugh> this is one wa so this is a way to link uh the way these roles are filled out to the action . 
+B:  Because if we know that Enter is a t is an SPG action , 
+B:  right ? 
+B:  we know to look for an SPG schema and put the appropriate  fill in the appropriate roles later on . 
+B:  Right . 
+B:  This is a simple way to basically link uh roles to actions . 
+B:  That 's the  that was the intent of  of it , basically . 
+B:  So I  I do I 'm  I 'm not  
+B:  I b I mean ROLLS 
+B:  so 
+B:  Yeah , pastries is what I 'm talking about . 
+B:  You have class until two , 
+B:  right ? 
+B:  so if we don't want him  if we don't want him to run over here 
+B:  two thirty - ish or three is  
+B:  And between now and then yeah . 
+B:  We will . 
+B:  Don't worry . 
+B:  The other good thing about it is Jerry can be on here on Friday 
+B:  and he can weigh in as well . 
+B:  It 's an a attempt to refine it basically . 
+B:  RAD 's a great term . 
+B:  Why ? 
+B:  It just happened to be the acronym . 
+B:  Who doesn't like to be a 
+B:  Yeah . 

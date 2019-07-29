@@ -1,0 +1,664 @@
+D:  I think  I guess we can turn off our microphones now . 
+D:  OK . 
+D:  We 're on ? 
+D:  Yes , please . 
+D:  I mean , we 're testing noise robustness 
+D:  but let 's not get silly . 
+D:  OK , 
+D:  so , uh , you 've got some , uh , Xerox things to pass out ? 
+D:  That are  
+D:  Yeah . 
+D:  Uh , so for th the last column we use our imagination . 
+D:  OK . 
+D:  Ah . 
+D:  This one 's nice , though . 
+D:  This has nice big font . 
+D:  Yeah . 
+D:  When you get older you have these different perspectives . 
+D:  I mean , lowering the word hour rate is fine , but having big font ! 
+D:  That 's what 's  
+D:  Yeah . It 's mostly big font . 
+D:  OK . 
+D:  Uh  
+D:  Go ahead . 
+D:  Oh . OK . 
+D:  Mm - hmm . Mm - hmm . 
+
+
+D:  Mm - hmm . 
+D:  a And again all of these numbers are with a hundred percent being , uh , the baseline performance , 
+D:  but with a mel cepstra system going straight into the HTK ? 
+D:  Yes . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Um  Oh , I see . 
+D:  Down near the bottom of this sheet . 
+D:  Uh ,   yes . 
+D:  OK . 
+D:  Yes . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Ah , yes . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Baseline is eighty - two . 
+D:  Uh , this is Italian mismatched . 
+D:  OK . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  I 
+D:  Um , the uh , baseline system  
+D:  when you said the baseline system was uh , uh eighty - two percent , that was trained on what and tested on what ? 
+D:  That was , uh Italian mismatched d uh , uh , digits , uh , is the testing , 
+D:  and the training is Italian digits ? 
+D:  So the " mismatch " just refers to the noise and  and , uh microphone and so forth , 
+D:  right ? 
+D:  So , um did we have  
+D:  So would that then correspond to the first line here of where the training is  is the uh Italian digits ? 
+D:  The  
+D:  Yes . 
+D:  Yes . 
+D:  Training of the net , 
+D:  yeah . 
+D:  So , um  So what that says is that in a matched condition , <sniff> we end up with a fair amount worse putting in the uh PLP . 
+D:  Now w would  do we have a number , I suppose for the matched  
+D:  I  I don't mean matched , 
+D:  but uh use of Italian  training in Italian digits for PLP only ? 
+D:  Fifty - two percent . 
+D:  No , fifty - two percent of eighty - two ? 
+D:  Oh this is accuracy ! 
+
+D:  Oy !  OK . 
+D:  Ninety . 
+D:  Yeah . 
+D:  OK , so even just PLP , uh , it is not , in the matched condition  
+D:  Um I wonder if it 's a difference between PLP and mel cepstra , or whether it 's that the net half , for some reason , is not helping . 
+D:  Same result pretty much ? 
+D:  So , s 
+D:  Eighty - eight point six . 
+D:  Um , so adding MSG 
+D:  um  Well , but that 's  yeah , that 's without the neural net , 
+D:  right ? 
+D:  But she had said eighty - two . 
+D:  Right ? 
+D:  Oh , this  the eighty - two . 
+D:  Oh , I 'm sorry , 
+D:  I k I keep getting confused 
+D:  because this is accuracy . 
+D:  OK . Alright . 
+D:  Alright . So this is  I was thinking all this was worse . 
+D:  OK so this is all better 
+D:  because eighty - nine is bigger than eighty - two . 
+D:  OK . 
+D:  I 'm  I 'm all better now . 
+D:  OK , go ahead . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  So we go from eighty - si eighty - eight point six to  to ninety , or something . 
+D:  Eighty - nine . 
+D:  And then adding the MSG does nothing , basically . 
+D:  Yeah . OK . 
+D:  For this case , right ? 
+D:  Alright . 
+D:  So , um  So actually , the answer for experiments with one is that adding MSG , if you  uh does not help in that case . 
+D:  Um  
+D:  The other ones , we 'd have to look at it , 
+D:  but  
+D:  And the multi - English , does 
+D:  uh  
+D:  So if we think of this in error rates , we start off with , uh eighteen percent error rate , roughly . 
+D:  Um  and  we uh almost , uh cut that in half by um putting in the on - line normalization and the neural net . 
+D:  And the MSG doesn't however particularly affect things . 
+D:  And we cut off , I guess about twenty - five percent of the error . 
+D:  Uh  no , not quite that , 
+D:  is it . 
+D:  Uh , two point six out of eighteen . 
+D:  About , um  sixteen percent or something of the error , um , if we use multi - English instead of the matching condition . 
+D:  Not matching condition , 
+D:  but uh , the uh , Italian training . 
+D:  OK . 
+D:  Yes , good . 
+D:  OK ? 
+D:  So then you 're assuming multi - English is closer to the kind of thing that you could use 
+D:  since you 're not gonna have matching , uh , data for the  uh for the new  for the other languages and so forth . 
+D:  Um , one qu thing is that , 
+D:  uh  I think I asked you this before , 
+D:  but I wanna double check . 
+D:  When you say " ME " in these other tests , that 's the multi - English , 
+D:  but it is not all of the multi - English , 
+D:  right ? 
+D:  It is some piece of  part of it . 
+D:  And the multi - English is how much ? 
+D:  Oh , so you used almost all 
+D:  You used two thirds of it , 
+D:  you think . 
+D:  So , it it 's still  it hurts you  seems to hurt you a fair amount to add in this French and Spanish . 
+D:  I wonder why 
+D:  Yeah . Uh . 
+D:  Hmm . 
+D:  It 's still  
+D:  OK . 
+D:  Alright , go ahead . 
+D:  And then  then  
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yes , yeah , I mean it can't be compared with the other 
+D:  cuz this is , uh  with multi - English , uh , training . 
+D:  So you have to compare it with the one over that you 've got in a box , 
+D:  which is that , uh the eighty - four point six . 
+D:  Right ? 
+D:  So  
+D:  Yeah . 
+D:  Yeah . 
+D:  Not t not 
+D:  tr No . No . No . 
+D:  Not trained with multi - English . 
+D:  Eh .  Oh , I see . 
+D:  Ah . So you 're saying w so asking the question , " What  what has adding the MLP done to improve over the , 
+D:  uh  
+D:  Yes . 
+D:  Uh - huh . 
+D:  Mm - hmm . 
+D:  Eighty - s 
+D:  I thought it was eighty 
+D:  Oh , OK , 
+D:  eighty - three point six and eighty  eighty - eight point six . 
+D:  OK . 
+D:  Well , that 's  that 's one thing , 
+D:  but see the other thing is that , 
+D:  um , I mean it 's good to take the difficult case , 
+D:  but let 's  let 's consider what that means . 
+D:  What  what we 're saying is that one o one of the things that  
+D:  I mean my interpretation of your  your s original suggestion is something like this , as motivation . 
+D:  When we train on data that is in one sense or another , similar to the testing data , then we get a win by having discriminant training . 
+D:  When we train on something that 's quite different , we have a potential to have some problems . 
+D:  And , um , if we get something that helps us when it 's somewhat similar , and doesn't hurt us too much when it  when it 's quite different , that 's maybe not so bad . 
+D:  So the question is , if you took the same combination , and you tried it out on , uh  on say digits , 
+D:  you know , 
+D:  d Was that experiment done ? 
+D:  Yeah , OK . 
+D:  Uh , then does that , eh  you know maybe with similar noise conditions and so forth ,  does it  does it then look much better ? 
+D:  And so what is the range over these different kinds of uh  of tests ? 
+D:  So , an anyway . 
+D:  OK , go ahead . 
+D:  Mm - hmm . 
+D:  Slightly better . 
+D:  And  and you know again maybe if you use the , uh , delta  there , uh , you would bring it up to where it was , uh you know at least about the same for a difficult case . 
+D:  So . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Um , by the way , there is a another , uh , suggestion that would apply , uh , to the second configuration , 
+D:  um , which , uh , was made , uh , by , uh , Hari . 
+D:  And that was that , um , if you have  uh feed two streams into HTK , um , and you , uh , change the , uh variances  
+D:  if you scale the variances associated with , uh these streams um , you can effectively scale  the streams . 
+D:  Right ? 
+D:  So , um , you know , without changing the scripts for HTK , 
+D:  which is the rule here , uh , you can still change the variances 
+D:  which would effectively change the scale of these  these , uh , two streams that come in . 
+D:  And , um , so , um , if you do that , for instance it may be the case that , um , the MLP should not be considered as strongly , for instance . 
+D:  And , um , so this is just setting them to be , 
+D:  excuse me , 
+D:  of equal  equal weight . 
+D:  Maybe it shouldn't be equal weight . 
+D:  Right ? You know , I I 'm sorry to say that gives more experiments if we wanted to look at that , 
+D:  but  but , uh , um , you know on the other hand it 's just experiments at the level of the HTK recognition . 
+D:  It 's not even the HTK , 
+D:  uh , uh  
+D:  Well , I guess you have to do the HTK training also . 
+D:  Uh , do you ? 
+D:  Let me think . 
+D:  Maybe you don't . 
+D:  Uh . 
+D:  Yeah , you have to change the  
+D:  No , you can just do it in  as  once you 've done the training  
+D:  Yeah , the training is just coming up with the variances 
+D:  so I guess you could  you could just scale them all . 
+D:  Variances . 
+D:  That 's uh , exactly the point , I think , 
+D:  that if you change  um , change what they are  
+D:  It 's diagonal covariance matrices , 
+D:  but you say what those variances are . 
+D:  So , that  you know , it 's diagonal , but the diagonal means th that then you 're gonna  it 's gonna  it 's gonna internally multiply it  and  and uh , <sniff> uh , i it im uh implicitly exponentiated to get probabilities , and so it 's  it 's gonna  it 's  it 's going to affect the range of things if you change the  change the variances  of some of the features . 
+D:  So , i it 's precisely given that model you can very simply affect , uh , the s the strength that you apply the features . 
+D:  That was  that was , uh , Hari 's suggestion . 
+D:  So , um  
+D:  Yeah . 
+D:  So . 
+D:  So it could just be that h treating them equally , tea treating two streams equally is just  just not the right thing to do . 
+D:  Of course it 's potentially opening a can of worms 
+D:  because , you know , maybe it should be a different <laugh> number for  for each <laugh> kind of  test set , or something , 
+D:  but  
+D:  OK . 
+D:  So I guess the other thing is to take  you know  if one were to take , uh , you know , a couple of the most successful of these , 
+D:  and uh  
+D:  Yeah , try all these different tests . 
+D:  Alright . 
+D:  Uh . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+
+D:  Ugh ! I was impressed 
+D:  boy , 
+D:  two thousand . 
+D:  OK . 
+D:  Alright , now I 'm just slightly impressed , 
+D:  OK . 
+D:  Yeah . So it sounds like <inbreath> yeah , the net corrects some of the problems with some poor normalization . 
+D:  But if you can do good normalization it 's  it 's uh  OK . 
+D:  So So - Let me  bef before you go on to the possible issues . 
+D:  So , on the MSG uh problem 
+D:  um , I think that in  in the  um , in the short  time  solution 
+D:  um , that is , um , trying to figure out what we can proceed forward with to make the greatest progress , 
+D:  uh , much as I said with JRASTA , 
+D:  even though I really like JRASTA 
+D:  and I really like MSG , 
+D:  I think it 's kind of in category that it 's , it  it may be complicated . 
+D:  And uh it might be  if someone 's interested in it , uh , certainly encourage anybody to look into it in the longer term , 
+D:  once we get out of this particular rush  uh for results . 
+D:  But in the short term , unless you have some  some s strong idea of what 's wrong , 
+D:  Yeah , probably . 
+D:  There 's supposed to  well MSG is supposed to have a an on - line normalization though , 
+D:  right ? 
+D:  Yeah , but also there 's an on - line norm besides the AGC , there 's an on - line normalization that 's supposed to be 
+D:  uh , 
+D:  yeah , 
+D:  taking out means and variances and so forth . 
+D:  So . 
+D:  In fac in fact the on - line normalization that we 're using came from the MSG design , 
+D:  so it 's  
+D:  " On - line - two " is good . 
+D:  " Two " is good ? 
+D:  No , " two " is bad . 
+D:  OK . 
+D:  Yeah . 
+D:  So  Yeah , I  I agree . 
+D:  It 's probably something simple 
+D:  uh , i if  if uh someone , you know , uh , wants to play with it for a little bit . 
+D:  I mean , you 're gonna do what you 're gonna do 
+D:  but  but my  my guess would be that it 's something that is a simple thing that could take a while to find . 
+D:  Yeah . 
+D:  Uh .  And the other  the results uh , observations two and three , Um , is 
+D:  uh  
+D:  Yeah , that 's pretty much what we 've seen . 
+D:  That 's  that  what we were concerned about is that if it 's not on the target task  
+D:  If it 's on the target task then it  it  it helps to have the MLP transforming it . 
+D:  If it uh  if it 's not on the target task , then , depending on how different it is , uh you can get uh , a reduction in performance . 
+D:  And the question is now how to  how to get one and not the other ? 
+D:  Or how to  how to ameliorate the  the problems . 
+D:  Um , because it  it certainly does  is nice to have in there , when it  <laugh> when there is something like the training data . 
+D:  So that 's what you say th there . 
+D:  I see . 
+D:  Hey ! 
+D:  Um , just  you can just sit here . 
+D:  Uh , I d I don't think we want to mess with the microphones 
+D:  but it 's uh  
+D:  Just uh , have a seat . 
+D:  Um . 
+D:  s Summary of the first uh , uh forty - five minutes is that some stuff work and  works , and some stuff doesn't 
+D:  OK , 
+D:  Yeah , I guess we can do a little better than that 
+D:  but  <laugh> I think if you  if you start off with the other one , actually , that sort of has it in words 
+D:  and then th that has it the  associated results . 
+D:  OK . 
+D:  So you 're saying that um , um , although from what we see , 
+D:  yes there 's what you would expect in terms of a language dependency and a noise dependency . That is , uh , when the neural net is trained on one of those and tested on something different , we don't do as well as in the target thing . 
+D:  But you 're saying that uh , it is  Although that general thing is observable so far , there 's something you 're not completely convinced about . 
+D:  And  and what is that ? 
+D:  I mean , you say " not clear yet " . 
+D:  What  what do you mean ? 
+D:  Mm - hmm . 
+D:  Do you think the alignments are bad ? 
+D:  I mean , have you looked at the alignments at all ? 
+D:  What the Viterbi alignment 's doing ? 
+D:  Might be interesting to look at it . 
+D:  Because , I mean , that is just looking 
+D:  but um , um  It 's not clear to me you necessarily would do so badly from a Viterbi alignment . 
+D:  It depends how good the recognizer is 
+D:  that 's  that  the  the engine is that 's doing the alignment . 
+D:  Aha ! 
+D:  The pronunciation models and so forth 
+D:  Aha . 
+D:  I see . 
+D:  I thought some of the nets were trained with SPINE and so forth . 
+D:  So it  And that has other noise . 
+D:  OK , yeah , just don't  just need more  more results there with that @ @ . 
+D:  Hm - hmm . 
+D:  Uh . Right , I mean the multi - English so far is  is the best . 
+D:  " Multi - multi - English " just means " TIMIT " , 
+D:  right ? 
+D:  So uh That 's  
+D:  Yeah . 
+D:  So . And  and when you add other things in to  to broaden it , it gets worse  uh typically . 
+D:  Yeah . 
+D:  OK . 
+D:  Uh - huh . 
+D:  I like that . 
+D:  The training set is both questions , with answers and without answers . 
+D:  It 's sort of , yes  it 's mul it 's multi - uh - purpose . 
+D:  OK . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah , that  seems like a good thing to do , probably , 
+
+D:  not uh again a short - term sort of thing . 
+D:  I mean one of the things about that is that um it 's  
+D:  e u the ri I guess the major risk you have there of being  is being dependent on  very dependent on the kind of noise and  and so forth . 
+D:  Uh . But it 's another thing to try . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah , if you  i i It 's interesting thought 
+D:  maybe if you just trained up  
+D:  I mean w yeah , one  one fantasy would be you have something like articulatory targets 
+D:  and you have  um some reasonable database , 
+D:  um 
+D:  but then  which is um <breath> copied over many times with a range of different noises , 
+D:  And uh  <breath> If  Cuz what you 're trying to  do is come up with a  a core , reasonable feature set which is then gonna be used uh , by the  the uh HMM  system . 
+D:  So . 
+D:  Yeah , OK . 
+D:  Mm - hmm . 
+D:  And I guess , you know , the  the  the real open question , 
+D:  I mean , e u there 's lots of open questions , 
+D:  but one of the core quote  " open questions " for that is um , um , if we take the uh  you know , the best ones here , 
+D:  maybe not just the best one , 
+D:  but the best few or something  
+D:  You want the most promising group from these other experiments . 
+D:  Um , how well do they do over a range of these different tests , not just the Italian ? 
+D:  Um . 
+D:  And y 
+D:  y  Right ? 
+D:  And then um  then see ,  again , how  
+D:  We know that there 's a mis there 's a uh  a  a loss in performance when the neural net is trained on conditions that are different than  than , uh we 're gonna test on , 
+D:  but well , if you look over a range of these different tests um , how well do these different ways of combining the straight features with the MLP features , uh stand up over that range ? 
+D:  That 's  that  that seems like the  the  the real question . 
+D:  And if you know that  
+D:  So if you just take PLP with uh , the double - deltas . 
+D:  Assume that 's the p the feature . 
+D:  look at these different ways of combining it . 
+D:  And uh , take  let 's say , just take uh multi - English 
+D:  cause that works pretty well for the training . 
+D:  And just look  take that case and then look over all the different things . 
+D:  How does that  How does that compare between the  
+D:  All the different test sets , 
+D:  and for  and for the couple different ways that you have of  of  of combining them . 
+D:  Um .  How well do they stand up , over the  
+D:  That 's another possibility if you have time , 
+D:  yeah . 
+D:  Yeah . 
+
+D:  Yeah .  It 's a little strange 
+D:  but on the other hand they did it before . 
+D:  Um the 
+D:  Um , the other thing , though , is that 
+D:  um  
+D:  So . Uh , we  we wanna get their path running here , 
+D:  right ? 
+D:  If so , we can add this other stuff . 
+D:  as an additional path 
+D:  right ? 
+D:  Cuz they 're doing LDA  RASTA . 
+D:  They 're doing LDA RASTA , 
+D:  yeah ? 
+D:  I see . 
+D:  I see . 
+D:  I see . 
+D:  So we  So . First thing of course we 'd wanna do there is to make sure that when we get those labels of final features is that we get the same results as them . 
+D:  Without putting in a second path . 
+D:  Yeah just th w i i Just to make sure that we  have  we understand properly what things are , our very first thing to do is to  is to double check that we get the exact same results as them on HTK . 
+D:  Uh , I mean , I don't know that we need to r 
+D:  Um  Do we need to retrain 
+D:  I mean we can just take the re their training files also . 
+D:  But .  But , uh 
+D:  just for the testing , jus just make sure that we get the same results  so we can duplicate it before we add in another  
+D:  Cuz otherwise , you know , we won't know what things mean . 
+D:  Maybe . 
+D:  Oh ! You know , the other thing is when you say comb 
+D:  I 'm  I 'm sorry , I 'm interrupting .  that 
+D:  u Um , uh , when you 're talking about combining multiple features , 
+D:  um  Suppose we said , " OK , we 've got these different features and so forth , 
+D:  but PLP seems  pretty good . " 
+D:  If we take the approach that Mike did and have  
+D:  I mean , one of the situations we have is we have these different conditions . 
+D:  We have different languages , 
+D:  we have different  <inbreath> different noises , 
+D:  Um  If we have some drastically different conditions and we just train up different M L Ps  with them . 
+D:  And put  put them together . 
+D:  What  what  What Mike found , for the reverberation case at least , I mean  
+D:  I mean , who knows if it 'll work for these other ones . 
+D:  That you did have nice interpolative effects . 
+D:  That is , that yes , if you knew  what the reverberation condition was gonna be and you trained for that , then you got the best results . 
+D:  But if you had , say , a heavily - reverberation ca heavy - reverberation case and a no - reverberation case , uh , and then you fed the thing , uh something that was a modest amount of reverberation then you 'd get some result in between the two . 
+D:  So it was sort of  behaved reasonably . 
+D:  Is tha that a fair  
+D:  Yeah . 
+D:  It works better if  what ? 
+D:  I see . 
+D:  Well , see , i oc 
+D:  You were doing some something that was  
+D:  So maybe the analogy isn't quite right . 
+D:  You were doing something that was in way a little better behaved . 
+D:  You had reverb for a single variable 
+D:  which was re uh , uh , reverberation . 
+D:  Here the problem seems to be is that we don't have a hug a really huge net with a really huge amount of training data . 
+D:  But we have s f  for this kind of task , I would think ,  sort of a modest amount . 
+D:  I mean , a million frames actually isn't that much . 
+D:  We have a modest amount of  of uh training data from a couple different conditions , 
+D:  and then uh  in  yeah , that  and the real situation is that there 's enormous variability that we anticipate in the test set in terms of language , 
+D:  and noise type 
+D:  uh , and uh ,  uh , channel characteristic , 
+D:  sort of all over the map . 
+D:  A bunch of different dimensions . 
+D:  And so , I 'm just concerned that we don't really have  um , the data to train up  
+D:  I mean one of the things that we were seeing is that when we added in  we still don't have a good explanation for this , 
+D:  but we are seeing that we 're adding in uh , a fe few different databases 
+D:  and uh the performance is getting worse 
+D:  and uh , when we just take one of those databases that 's a pretty good one , it actually is  is  is  is  is better . 
+D:  And uh that says to me , yes , that , you know , there might be some problems with the pronunciation models that some of the databases we 're adding in or something like that . 
+D:  But one way or another  we don't have uh , seemingly , the ability  to represent , in the neural net of the size that we have , um , all of the variability  that we 're gonna be covering . 
+D:  So that I 'm  I 'm  I 'm hoping that 
+D:  um , this is another take on the efficiency argument you 're making , 
+D:  which is I 'm hoping that with moderate size neural nets , uh , that uh if we  if they look at more constrained conditions they  they 'll have enough parameters to really represent them . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Yeah . 
+D:  I  I just sort of have a feeling  
+D:  Yeah . 
+D:  I mean  <inbreath> i i e The um  I think it 's true that the OGI folk found that using LDA  RASTA , 
+D:  which is a kind of LogRASTA , 
+D:  it 's just that they have the  
+D:  I mean it 's done in the log domain , as I recall , 
+D:  and it 's  it uh  it 's just that they d it 's trained up , 
+D:  right ? 
+D:  That that um benefitted from on - line normalization . 
+D:  So they did  At least in their case , it did seem to be somewhat complimentary . 
+D:  So will it be in our case , where we 're using the neural net ? 
+D:  I mean they  they were not  not using the neural net . 
+D:  Uh I don't know . 
+D:  OK , so the other things you have here are uh , trying to improve results from a single  
+D:  Yeah . 
+D:  Make stuff better . 
+D:  OK . 
+D:  Uh . <laugh> Yeah . 
+D:  And CPU memory issues . 
+D:  Yeah . 
+D:  We 've been sort of ignoring that , 
+D:  haven't we ? 
+D:  But  
+D:  Yeah , but I li 
+D:  Well , I think  My impression  
+D:  You  you folks have been looking at this more than me . 
+D:  But my impression was that <inbreath> uh , there was a  a  a  a strict constraint on the delay , 
+D:  but beyond that it was kind of that uh using less memory was better , 
+D:  and <inbreath> using less CPU was better . 
+D:  Something like that , 
+D:  right ? 
+D:  Um , well I don't think we 're <outbreath> um <outbreath> completely off the wall . 
+D:  I mean I think that if we  if we have  
+D:  Uh , I mean the ultimate fall back that we could do  
+D:  If we find 
+D:  uh  
+D:  I mean we may find that we  we 're not really gonna worry about the M L 
+D:  You know , if the MLP ultimately , after all is said and done , doesn't really help then we won't have it in . 
+D:  If the MLP does , we find , help us enough in some conditions , uh , we might even have more than one MLP . 
+D:  We could simply say that is uh , done on the uh , server . 
+D:  And it 's 
+D:  uh  
+D:  We do the other manipulations that we 're doing before that . 
+D:  So , I  I  I think  I think that 's   that 's OK . 
+D:  So I think the key thing was um , this plug into OGI . 
+D:  Um , 
+D:  what  what are they  What are they gonna be working  
+D:  Do we know what they 're gonna be working on while we take their features , 
+D:  and  ? 
+D:  OK . 
+D:  So I guess the way it would work is that you 'd get  
+D:  There 'd be some point where you say , " OK , this is their version - one " or whatever , 
+D:  and we get these VAD labels and features and so forth for all these test sets from them , 
+D:  and then um , uh , that 's what we work with . 
+D:  We have a certain level we try to improve it with this other path 
+D:  and then um , uh , when it gets to be uh , January 
+D:  some point 
+D:  uh , we say , " OK we  we have shown that we can improve this , in this way . 
+D:  So now uh  um  what 's your newest version ? " 
+D:  And then maybe they 'll have something that 's better 
+D:  and then we  we 'd combine it . 
+D:  This is always hard . 
+D:  I mean I  I  I used to work  with uh folks who were trying to improve a good uh , HMM system with uh  with a neural net system 
+D:  and uh , it was  a common problem that you 'd  
+D:  Oh , and this  Actually , this is true not just for neural nets 
+D:  but just for  in general if people were  working with uh , rescoring uh , N - best lists or lattices that come  came from uh , a mainstream recognizer . 
+D:  Uh , You get something from the  the other site at one point and you work really hard on making it better with rescoring . 
+D:  But they 're working really hard , too . 
+D:  So by the time  you have uh , improved their score , they have also improved their score 
+D:  and now there isn't any difference , 
+D:  because the other  
+D:  So , um , I guess at some point we 'll have to 
+D:  uh   Uh , 
+D:  I  I don't know . 
+D:  I think we 're  we 're integrated a little more tightly than happens in a lot of those cases . 
+D:  I think at the moment they  they say that they have a better thing we can  we  e e 
+D:  What takes all the time here is that th we 're trying so many things , 
+D:  presumably uh , in a  in a day we could turn around 
+D:  uh , taking a new set of things from them and  and rescoring it , 
+D:  right ? 
+D:  So . 
+D:  Yeah . 
+D:  Well , OK . 
+D:  No , this is  I think this is good . 
+D:  I think that the most wide open thing is the issues about the uh , you know , different trainings . 
+D:  You know , da training targets and noises and so forth . 
+D:  That 's sort of wide open . 
+D:  Yeah , I think for right now um , I th I  I really liked MSG . 
+D:  And I think that , you know , one of the things I liked about it is has such different temporal properties . 
+D:  And um , I think that there is ultimately a really good uh , potential for , you know , bringing in things with different temporal properties . 
+D:  Um , but um , uh , 
+D:  we only have limited time 
+D:  and there 's a lot of other things we have to look at . 
+D:  And it seems like much more core questions are issues about the training set 
+D:  and the training targets , 
+D:  and fitting in uh what we 're doing with what they 're doing , 
+D:  and , you know , with limited time . 
+D:  Yeah . 
+D:  I think  we have to start cutting down . 
+D:  So uh  
+D:  I think so , 
+D:  yeah . 
+D:  And then , you know , once we  
+D:  Um , having gone through this  process and trying many different things , I would imagine that certain things uh , come up that you are curious about 
+D:  uh , that you 'd not getting to 
+D:  and so when the dust settles from the evaluation uh , I think that would time to go back and take whatever intrigued you most , 
+D:  you know , got you most interested 
+D:  uh and uh  and  and work with it , you know , for the next round . 
+D:  Uh , as you can tell from these numbers uh , nothing that any of us is gonna do is actually gonna completely solve the problem . 
+D:  So . 
+D:  So ,  there 'll still be plenty to do . 
+D:  Barry , you 've been pretty quiet . 
+D:  Well I figured that , 
+D:  but  <laugh> That  what  what  what were you involved in in this primarily ? 
+D:  Ah ! 
+D:  I see . 
+D:  Right . 
+D:  What 's  what 's that ? 
+D:  Mm - hmm . 
+D:  Uh - huh . 
+D:  Oh ! 
+D:  OK . 
+D:  Well , that sounds interesting . 
+D:  OK . 
+D:  Alright . 
+D:  Anything to  <outbreath> you wanted to  
+D:  No . 
+D:  OK . 
+D:  Silent partner in the  <laugh> in the meeting . 
+D:  Oh , we got a laugh out of him , 
+D:  that 's good . 
+D:  OK , everyone h must contribute to the  our  our sound  <laugh> sound files here . 
+D:  OK , so speaking of which , if we don't have anything else that we need  
+D:  You happy with where we are ? 
+D:  Know  know wher know where we 're going ? 
+D:  Uh  
+D:  Yeah , yeah . 
+D:  You  you happy ? 
+D:  You 're happy . 
+D:  OK everyone  should be happy . 
+D:  OK . 
+D:  You don't have to be happy . 
+D:  You 're almost done . 
+D:  Yeah , yeah . 
+D:  OK . 
+D:  Yeah . 
+D:  Well . Yeah , I think we want a different table , at least 
+D:  Right ? 
+D:  I mean there 's  there 's some different things that we 're trying to get at now . 
+D:  But  
+D:  So . Yeah , as far as you can tell , you 're actually OK on C - on CPU uh , for training and so on ? 
+D:  Yeah . 
+D:  OK . 
+D:  OK . 
+D:  And we 're OK on  And we 're OK on disk ? 
+D:  But they 're correctable , uh problems . 
+D:  Yes . 
+D:  Yeah , I 'm familiar with <inbreath> that one , 
+D:  OK . 
+D:  Alright , 
+D:  so uh ,  <inbreath> since uh , we didn't ha get a channel on for you ,  you don't have to read any digits 
+D:  but the rest of us will . 
+D:  Uh , is it on ? 
+D:  Well . We didn't 
+D:  uh  
+D:  I think I won't touch anything 
+D:  cuz I 'm afraid of making the driver crash 
+D:  which it seems to do ,  pretty easily . 
+D:  OK , thanks . 
+D:  OK , so we 'll uh  I 'll start off the 
+D:  uh um 
+D:  connect the  
+D:  Well , let 's hope it works . 
+D:  Maybe you should go first and see 
+D:  so that you 're  OK . 
+D:  Transcript uh 
+D:  two  
+D:  Oh , OK . 
+D:  Yeah . 
+D:  Why don't you go next then . 
+D:  OK . 
+D:  Guess we 're done . 
+D:  OK , uh so . 
+D:  Just finished digits . 
+D:  Yeah , so . Uh 
+D:  Well , it 's good . 
+D:  I think  I guess we can turn off our microphones now . 

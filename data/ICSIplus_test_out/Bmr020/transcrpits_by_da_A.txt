@@ -1,0 +1,240 @@
+A:  Total concentration . Are you guys ready ? 
+A:  OK , 
+A:  we 're recording . 
+A:  Curly brackets . 
+A:  Right . 
+A:  Do we use square brackets for anything ? 
+A:  It 's still not a good idea . 
+A:  Yeah , 
+A:  you wanna  you wanna keep them on so you get  good noise  
+A:  noise floors , 
+A:  through the whole meeting . 
+A:  Change what in the software ? 
+A:  I mean certainly we could do that , 
+A:  but I don't think that 's a good idea . 
+A:  We can do that in post - processing if  if the application needs it . 
+A:  As an argument . 
+A:  Uh , 
+A:  so the only agenda items were Jane  was Jane wanted to talk about some of the IBM transcription process . 
+A:  I sort of <breath> condensed the three things you said into that . 
+A:  And then just  I only have like , this afternoon and maybe tomorrow morning to get anything done before I go to Japan for ten days . 
+A:  So if there 's anything that n absolutely , desperately needs to be done , you should let me know now . 
+A:  Well yeah , you sent it in  late . 
+A:  Yeah . 
+A:  Oh , 
+A:  that was the other thing 
+A:  uh , 
+A:  uh , Dave Gelbart sent me email , I think he sent it to you too ,  that um , there 's a special topic , section in si in Eurospeech on new , corp corpors corpora . 
+A:  And it 's not due until like May fifteenth . 
+A:  No . 
+A:  It 's a different one . 
+A:  And uh , 
+A:  I s forwarded it to Jane as I thought being the most relevant person . 
+A:  Um  
+A:  So , I thought it was highly relevant  
+A:  have you  did you look at the URL ? 
+A:  Mm - hmm . 
+A:  I 'll help , 
+A:  but obviously I can't , really do , most of it , 
+A:  so . 
+A:  But any  any help you need I can certainly provide . 
+A:  Wow . 
+A:  That 's just cuz he talks really fast . 
+A:  I know 
+A:  But re well regardless . I think it 's  he 's  he 's in all of them , 
+A:  and he talks a lot . 
+A:  One participant . 
+A:  Did you identify him as a senior  member ? 
+A:  Yeah . 
+A:  The good , the bad , and the ugly . 
+A:  I 'm surprised . 
+A:  I have  I had better start changing all my slides ! 
+A:  Hmm . 
+A:  Well  
+
+A:  Yeah , I was gonna ask that too . 
+A:  But  
+A:  But I don't know if that 's really a fair way of comparing between , multi - party , conversations and two - party conversations . 
+A:  Yeah . 
+A:  I  I  I don't know . 
+A:  I mean that 's just something  
+A:  I mean  
+A:  I bet there 's a weak dependence . 
+A:  I 'm sure it 's  it 's not a real strong one . 
+A:  Right ? 
+A:  Because you 
+A:  Right . 
+A:  You have a lot of  a lot of two - party , subsets within the meeting . 
+A:  Well regardless  
+A:  it 's an interesting result regardless . 
+A:  Uh - huh . 
+A:  So , did  we all said " uh - huh " and nodded at the same time , 
+A:  so . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Nope . 
+A:  Right . 
+A:  Oh by the way , who 's on channel four ? 
+A:  You 're getting a lot of breath . 
+A:  Right . 
+A:  That 's great . 
+A:  Yeah , I guess that doesn't surprise me , 
+A:  because , with the close - talking mikes , the  the signal will be so much stronger . 
+A:  What  what sort of normalization do you do ? 
+A:  I mean in you recognizer , 
+A:  in the SRI recognizer . 
+A:  Over an entire utterance ? 
+A:  Or windowed ? 
+A:  Hmm . 
+A:  Right . 
+A:  I 'm not looking forward to it . 
+A:  At pause boundaries . 
+A:  On T - closures , only . 
+A:  It 's nice to actually measure it though . 
+A:  Made the font smaller and the narrows longer . 
+A:  Took out white space . 
+A:  Yeah . 
+A:  Uh - huh . 
+A:  There was  there was of course a Monty Python sketch with that . 
+A:  Where the barber who was afraid of scissors was playing a  a tape of clipping sounds , and saying " uh - huh " , 
+A:  " yeah " , 
+A:  " how about them sports teams ? " 
+A:  Yep . 
+A:  Printed it out , 
+A:  haven't read it yet . 
+A:  Pub real . 
+A:  Ask Dan Ellis . 
+A:  Right . 
+A:  Beta ? 
+A:  Don't  don't  don't say . 
+A:  I uh , put digits in my own home directory  home FTP directory , 
+A:  but I 'll probably move them there as well . 
+A:  We can put it in the same place . 
+A:  Just put in another directory . 
+A:  OK , I think we 're losing , Don and Andreas at three - thirty , 
+A:  right ? 
+A:  OK . 
+A:  Mm - hmm . 
+A:  It was just to talk about how to generate it . 
+A:  Um , just so that while I 'm gone , you can regenerate it if you decide to do it a different way . 
+A:  So uh , Chuck and Thilo should , now more or less know how to generate the file 
+A:  and , <breath> the other thing Chuck pointed out is that , um , <breath> since this one is hand - marked , <breath> there are discourse boundaries . 
+A:  Right ? 
+A:  So  so when one person is speaking , there 's breaks . 
+A:  Whereas Thilo 's won't have that . 
+A:  So what  what we 're probably gonna do is just write a script , that if two , chunks are very close to each other on the same channel we 'll just merge them . 
+A:  So , uh , and that will get around the problem of , the , <breath> you know " one word beep , one word beep , one word beep , one word beep " . 
+A:  Hmm . 
+A:  That 's on the other channel . 
+A:  That 's because of channel overlap . 
+A:  It 's  i 
+A:  I mean that 's not gonna be true of the foreground speaker . 
+A:  That 'll only be if it 's the background speaker . 
+A:  That 's what I just said , 
+A:  yeah . 
+A:  Well , that 's definitely a problem . 
+A:  Battery . 
+A:  Let me make a note on yours . 
+A:  Yeah the only , um , disadvantage of that is , then it 's hard to use an automatic method to do that . 
+A:  The advantage is that it 's probably faster to do that than it is to use the automated method and correct it . 
+A:  So . 
+A:  We 'll just have to see . 
+A:  Yeah . 
+A:  It 's not that different . 
+A:  Transcriber will do it . 
+A:  We pick the easy parts of the data basically , 
+A:  and transcriber marks it by hand . 
+A:  And because  
+A:  No . 
+A:  Oh , after . 
+A:  Oh , OK , 
+A:  I didn't  I didn't understand that . 
+A:  OK . 
+A:  OK , leave the mikes on , 
+A:  and just put them on the table . 
+A:  Let me mark you as no digits . 
+A:  I think we just  we just have to listen to it and see how good they are . 
+A:  Release to begin with . 
+A:  No , the undead meeting , 
+A:  yeah . 
+A:  Blech . 
+A:  Stress test . 
+A:  One and a half times real time . 
+A:  I mean it just depends on how  
+A:  Sorry , go ahead . 
+A:  Yeah I  I think , we won't know until we generate a bunch of beep files automatically , listen to them and see how bad they are . 
+A:  If  
+A:  That 's not hard to do . 
+A:  Just  it takes  you know , it just takes five minutes rather than , taking a second . 
+A:  So . I just hand  hard - coded it . 
+A:  No , but it 's easy enough to do . 
+A:  There are lots of ways to do it . 
+A:  I have one program that 'll do it . 
+A:  You can find other programs . 
+A:  Yep . 
+A:  Minus D , capital D . 
+A:  I didn't mean listen to everything , 
+A:  I meant , just see if they 're any good . 
+A:  We should  
+A:  Yeah . 
+A:  And we should just double - check with Brian on a few simple conventions on how they should mark things . 
+A:  Yeah , cuz @ @ uh what I had originally said to Brian was well they 'll have to mark , when they can't distinguish between the foreground and background , 
+A:  because I thought that was gonna be the most prevalent . 
+A:  But if we send them without editing , then we 're also gonna hafta have m uh , notations for words that are cut off , 
+A:  and other sorts of , uh , acoustic problems . 
+A:  But what  what we would like them to do is be conservative 
+A:  so that they should only write down the transcript if they 're sure . 
+A:  And otherwise they should mark it so that we can check . 
+A:  Mm - hmm . 
+A:  Right . 
+A:  That 's a good idea . 
+A:  Or at least sample it . 
+A:  Uh - huh 
+A:  What can you do ? 
+A:  Yep . Mmm . 
+A:  It 's a little bit confusing . 
+A:  I mean ,  what 're we gonna do ? 
+A:  Even a hand - transcription would  
+A:  a hand - transcriber would have trouble with that . 
+A:  So . 
+A:  Yeah cuz there will be no channel on which it is foreground . 
+A:  Uh  
+A:  Right , but , uh , in general I don't think we want them transcribing the background , 
+A:  cuz that would be too much work . 
+
+A:  Right ? 
+A:  For it  
+A:  because in the overlap sections , then they 'll 
+A:  But that 's gonna be all over the place . 
+A:  How w how will they tell the difference between that sort of background and the dormal  normal background of two people talking at once ? 
+A:  How would they know that ? 
+A:  Because otherwise it 's gonna be too much work for them to mark it . 
+A:  They 'll be marking it all over the place . 
+A:  Sure , 
+A:  but how are they gonna tell bet the difference between that and two people just talking at the same time ? 
+A:  But how do we d how do we do that for the I B M folks ? 
+A:  How can they tell that ? 
+A:  Yes , 
+A:  that 's my opinion as well . 
+A:  So we don't do anything for it  with it . 
+A:  And they 'll just mark it however they mark it , 
+A:  and we 'll correct it when it comes back . 
+A:  Yeah , 
+A:  the default . 
+A:  No , not default . 
+A:  Right . 
+A:  Yep . 
+A:  Worry about it when we get back . 
+A:  I think  
+A:  As I say , we 'll just have to listen to it and see how horrible it is . 
+A:  Sample it , rather . 
+A:  Mm - hmm , 
+A:  and  and they 're very  it 's very audible ? on the close - talking channels ? 
+A:  Oh well . 
+A:  I mean , it 's the same problem as the lapel mike . 
+A:  But  
+A:  Are we gonna do it altogether or separately ? 
+A:  Nnn , yeah , 
+A:  I think there probably will be . 
+A:  I do . 
+A:  Total concentration . Are you guys ready ? 

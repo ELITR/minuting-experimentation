@@ -1,0 +1,495 @@
+G:  So , um  
+G:  I 'm doing some 
+G:  square brackets , 
+G:  coffee sipping , 
+G:  square brackets . 
+G:  Mmm !  <mouth> Gar - darn ! 
+G:  Right . 
+G:  I hope they accept it . 
+G:  I mean , I  
+G:  both actu as  as a submission and  <laugh> you know , as a paper . 
+G:  Um  
+G:  but  
+G:  We actually exceeded the delayed deadline by o another day , 
+G:  so . 
+G:  Well yeah . 
+G:  Liz had sent them a note saying " could we please  have another "   I don't know , " three days " or something , 
+G:  and they said yes . 
+G:  But u 
+G:  I think several people  sent this , 
+G:  yeah . 
+G:  Yeah . 
+G:  Well  
+G:  there  there were some interesting results in this paper , though . 
+G:  For instance that Morgan  uh , accounted for fifty - six percent of the Robustness meetings in terms of number of words . 
+G:  Number of words . 
+G:  No . Well , according to the transcripts . 
+G:  I mean , we didn't mention Morgan by name 
+G:  we just  
+G:  We  we  we  something about  
+G:  No , 
+G:  we as identify him as the person dominating the conversation . 
+G:  Right 
+G:  Hmm . 
+G:  Um , 
+G:  well it was about  it had three sections 
+G:  uh  
+G:  three kinds of uh results , if you will . 
+G:  Uh , the one was that the  just the  the amount of overlap 
+G:  um , 
+G:  s in terms of  in terms of number of words 
+G:  and also we computed something called a " spurt " , 
+G:  which is essentially a stretch of speech with uh , no pauses exceeding five hundred milliseconds . 
+G:  Um , and we computed how many overlapped i uh spurts there were and how many overlapped words there were . <mouth> Um , for four different  corpora , 
+G:  the Meeting Recorder meetings , 
+G:  the Robustness meetings 
+G:  Switchboard 
+G:  and CallHome , 
+G:  and , found  and sort of compared the numbers . 
+G:  Um , 
+G:  and found that the , 
+G:  uh , 
+G:  you know , as you might expect the Meeting Recorder  meetings had the most overlap 
+G:  uh , but next were Switchboard and CallHome , 
+G:  which both had roughly the same , 
+G:  almost identical in fact , 
+G:  and the Robustness meetings were  had the least , 
+G:  so  
+G:  One sort of unexpected result there is that uh two - party telephone conversations have <breath> about the same amount of overlap , 
+G:  sort of in gen you know  order of magnitude - wise as , uh  as face - to - face meetings with multiple  
+G:  Yeah . 
+G:  Also , I  in the Levinson , the pragmatics book ,  in you know , uh , textbook , <breath> there 's  I found this great quote where he says <breath> you know  you know , how people  it talks about how uh  how  how people are so good at turn taking , 
+G:  and <breath> so  they 're so good that <breath> generally , u the overlapped speech does not  is less than five percent . 
+G:  So , 
+G:  this is way more than five percent . 
+G:  Well , in real conversations , 
+G:  everyday conversations . 
+G:  It 's s what these conversation analysts have been studying for years and years there . 
+G:  Well , he  he made a claim  
+G:  Well  
+G:  Well it 's time . 
+G:  So  <breath> but still  but still  u 
+G:  Yeah . 
+G:  So there are slight  
+G:  There are differences in how you measure it , 
+G:  but still it 's  <breath> You know , the difference between um  between that number and what we have in meetings , 
+G:  which is more like , <breath> you know , close to  in meetings like these , uh  you know , close to twenty percent . 
+G:  That  
+G:  Robustness meeting ? 
+G:  It was <breath> about half of the r 
+G:  So , <breath> in terms of number of words , it 's like seventeen or eigh eighteen percent for the Meeting Recorder meetings and <breath> about half that for , <breath> uh , the Robustness . 
+G:  Well , we didn't get to look at that , 
+G:  but this obvious thing to see if  if there 's a dependence on the number of uh  participants . 
+G:  Right . 
+G:  Right . 
+G:  Right . 
+G:  So  
+G:  Right . 
+G:  And  and  and then  and we also d computed this both with and without backchannels , 
+G:  so you might think that backchannels have a special status because they 're essentially just  
+G:  R right . 
+G:  But , even if you take out all the backchannels  
+G:  so basically you treat backchannels l as nonspeech , as pauses , 
+G:  you still have significant overlap . 
+G:  You know , it goes down from maybe  For Switchboard it goes down from  I don't know  f um   I don't know  f fourteen percent of the words to maybe <breath> uh I don't know , eleven percent or something  
+G:  it 's  it 's not a dramatic change , 
+G:  so it 's  
+G:  Anyway , 
+G:  so it 's uh  
+G:  That was  that was one set of  results , 
+G:  and then the second one was just basically the  <breath> the stuff we had in the  in the HLT paper on how overlaps effect the  recognition performance . 
+G:  And we rescored things um , a little bit more carefully . 
+G:  We also fixed the transcripts in  in numerous ways . 
+G:  Uh , but mostly we added one  one number , which was 
+G:  what if you  uh , basically score ignoring all  
+G:  So  so the  the conjecture from the HLT results was that <breath> most of the added recognition error is from insertions <breath> due to background speech . 
+G:  So , we scored <breath> all the recognition results , <breath> uh , in such a way that the 
+G:  uh  
+G:  uh , well Don 's been working hard . 
+G:  OK , 
+G:  so  <breath> so if you have the foreground speaker speaking here , and then there 's some background speech , may be overlapping it somehow , 
+G:  um , and this is the time bin that we used , 
+G:  then of course you 're gonna get insertion errors here and here . 
+G:  Right ? 
+G:  So we scored everything , 
+G:  and I must say the NIST scoring tools are pretty nice for this , 
+G:  where you just basically ignore everything outside of the , <breath> uh , region that was deemed to be foreground speech . 
+G:  And where that was we had to use the t forced alignment , uh , results from s for  
+G:  so  
+G:  That 's somewhat  that 's somewhat subject to error , 
+G:  but still we  we  <breath> Uh , Don did some ha hand - checking 
+G:  and  and we think that  based on that , we think that the results are you know , valid , 
+G:  although of course , some error is gonna be in there . 
+G:  But basically what we found is after we take out these regions  so we only score the regions that were certified as foreground speech ,  <breath> the recognition error went down to almost <breath> uh , the  level of the non - overlapped  speech . 
+G:  So that means that <breath> even if you do have background speech , if you can somehow separate out or find where it is , <breath> uh , the recognizer does a good job , 
+G:  even though there is this back 
+G:  Right . 
+G:  Right . 
+G:  Mm - hmm . 
+G:  Um , 
+G:  so  
+G:  Uh , well , we just  @ @  we do  u you know , vit 
+G:  Well , we do uh , VTL  <breath> vocal tract length normalization , 
+G:  w and we uh  you know , we  we uh , <mouth> make all the features have zero mean and unit variance . 
+G:  Over  over the entire c over the entire channel . 
+G:  Over the  
+G:  but you know . 
+G:  Um , now we didn't re - align the recognizer for this . 
+G:  We just took the old  
+G:  So this is actually a sub - optimal way of doing it , 
+G:  right ? 
+G:  So we took the old recognition output 
+G:  and we just scored it differently . 
+G:  So the recognizer didn't have the benefit of knowing where the foreground speech  a start 
+G:  Yes . 
+G:  Um , it  Yeah . 
+G:  It u not per  I mean , not completely , 
+G:  but yes , 
+G:  dramatically . 
+G:  So we have to 
+G:  um  
+G:  Well I should bring the  should bring the table with results . 
+G:  Maybe we can look at it  Monday . 
+G:  Yes . 
+G:  It 's  It 's  
+G:  Yes . 
+G:  Yeah . 
+G:  Mm - hmm . 
+G:  Right . 
+G:  u s Right . 
+G:  So  
+G:  so that was number  that was the second set of  uh , the second section . 
+G:  And then , <breath> the third thing was , we looked at , <breath> <mouth> uh , what we call " interrupts " , 
+G:  although that 's  that may be <breath> a misnomer , 
+G:  but basically <breath> we looked at cases where  
+G:  Uh , so we  we used the punctuation from the original transcripts 
+G:  and we inferred the beginnings and ends of sentences . 
+G:  So , 
+G:  you know  
+G:  Um  
+G:  Hmm ? 
+G:  No , 
+G:  we only used , you know , uh periods , uh , question marks and  exclamation . 
+G:  And we know that there 's th that 's not a very g 
+G:  I mean , we miss a lot of them , 
+G:  but  but it 's f i i 
+G:  No commas . 
+G:  No . 
+G:  And then <breath> we looked at locations where , 
+G:  uh , 
+G:  if you have overlapping speech and someone else starts a sentence , you know , where do these  where do other people start their <breath> turns  not turns really , but you know , sentences , 
+G:  um  
+G:  So we only looked at cases where there was a foreground speaker 
+G:  and then at the to at the  so the  the foreground speaker started into their sentence and then someone else started later . 
+G:  OK ? 
+G:  And so what  
+G:  Sorry ? 
+G:  Yes . 
+G:  Uh , so that such that there was overlap between the two sentences . 
+G:  So , the  the question was how can we  what can we say about the places where the second or  or actually , several second speakers , <breath> um  start their  " interrupts " , as we call them . 
+G:  w 
+G:  And we looked at this in terms of 
+G:  um  
+G:  So  so we had  <laugh> we had 
+G:  um u 
+G:  to  for  for the purposes of this analysis , we tagged the word sequences , and  and we time - aligned them . 
+G:  Um , 
+G:  and we considered it interrupt  if it occurred in the middle of a word , 
+G:  we basically  you know , considered that to be a interrupt as if it were at  at the beginning of the word . 
+G:  So that , <breath> if any part of the word was overlapped , it was considered an interrupted  word . 
+G:  And then we looked at the  the locatio the , <mouth> um , you know , the features that  the tags 
+G:  because we had tagged these word strings ,  <breath> um , that  that occurred right before these  these uh , interrupt locations . 
+G:  And the tags we looked at are <breath> the spurt tag , 
+G:  which basically says  
+G:  or actually  
+G:  Sorry . 
+G:  End of spurt . 
+G:  So  <breath> whether there was a pause essentially here , 
+G:  because spurts are a  defined as being you know , five hundred milliseconds or longer pauses , 
+G:  and then we had things like discourse markers , 
+G:  uh , backchannels , 
+G:  uh , disfluencies . 
+G:  um , 
+G:  uh , filled pauses  
+G:  So disfluen the D 's are for , <breath> um , <mouth> the interruption points of a disfluency , 
+G:  so , where you hesitate , or where you start the repair there . 
+G:  Uh , what else do we had . 
+G:  Uh , repeated  you know , repeated words is another of that kind of disfluencies and so forth . 
+G:  So we had both the beginnings and ends of these  
+G:  uh so , the end of a filled pause 
+G:  and the end of a discourse marker . 
+G:  And we just eyeballed  
+G:  I mean <breath> we didn't really hand - tag all of these things . 
+G:  We just  looked at the distribution of words , 
+G:  and so every <breath> " so yeah " , and " OK " , uh , and " uh - huh " were  were the  were deemed to be backchannels 
+G:  and <breath> " wow " and " so " and <breath> uh " right " , uh were um   Not " right " . " Right " is a backchannel . 
+G:  But so , we sort of  just based on the lexical  <breath> um , identity of the words , we  we tagged them as one of these things . 
+G:  And of course the d the interruption points we got from the original transcripts . 
+G:  So , 
+G:  and then we looked at the disti 
+G:  so we looked at the  distribution of these different kinds of tags , overall 
+G:  uh , and  and  and particularly at the interruption points . 
+G:  And uh , we found that there is a marked difference 
+G:  so 
+G:  that for instance after  
+G:  so at the end after a discourse marker or after backchannel or after filled pause , you 're much more likely to be interrupted <breath> than before . 
+G:  OK ? 
+G:  And also of course after spurt ends , 
+G:  which means basically in p inside pauses . 
+G:  So pauses are always an opportunity for  
+G:  So we have this little histogram which shows these distributions 
+G:  and , <breath> um , 
+G:  you know , it 's  it 's  it 's not  No big surprises , 
+G:  but it is  sort of interesting from  
+G:  Yeah . 
+G:  Well we 're ne 
+G:  Right . 
+G:  There 's no statement about cause and effect . 
+G:  This is just a statistical correlation , 
+G:  yeah . 
+G:  Right . 
+G:  Right . 
+G:  Right . 
+G:  Anyway .  So , 
+G:  uh , and that was basically it . 
+G:  And  and we  so we wrote this 
+G:  and then , <breath> we found we were at six pages , 
+G:  and then we started <breath while smiling> cutting furiously 
+G:  and <laugh> threw out half of the <breath> material again , 
+G:  and uh played with the LaTeX stuff 
+G:  and  
+G:  uh , 
+G:  and  until it fi 
+G:  No , no . 
+G:  W well , d you couldn't really make everything smaller 
+G:  but we s we put  
+G:  Oh , I  I  
+G:  you know the  the gap between the two columns is like ten millimeters , 
+G:  so I d shrunk it to eight millimeters 
+G:  and that helped some . And stuff like that . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Yeah . 
+G:  Well  
+G:  y We didn't talk about , uh , prosodic , uh , properties at all , 
+G:  although that 's  I  I take it that 's something that uh Don will  will look at 
+G:  now that we have the data and we have the alignment , 
+G:  so . 
+G:  This is purely based on you know the words 
+G:  and  
+G:  Yeah . 
+G:  Anyway , so . 
+G:  Oh yeah . 
+G:  Well  
+G:  There 's actually  uh there 's this a former student of here from Berkeley , 
+G:  Nigel  Nigel Ward . 
+G:  Do you know him ? 
+G:  He did a system uh , in  
+G:  he  he lives in Japan now , 
+G:  and he did this backchanneling , automatic backchanneling system . 
+G:  It 's a very  
+G:  So , exactly what you describe , 
+G:  but for Japanese . 
+G:  And it 's apparently  for Japa - in Japanese it 's really important that you backchannel . 
+G:  It 's really impolite if you don't , 
+G:  and  
+G:  So . 
+G:  Anyway . 
+G:  So the paper 's on - line 
+G:  and 
+G:  y I  I think I uh  I CC ' ed a message to Meeting Recorder with the URL 
+G:  so you can get it . 
+G:  Um , uh one more thing . 
+G:  So I  I 'm actually  <breath> about to send Brian Kingbury an email saying where he can find the  the s the m the material he wanted for the s for the speech recognition experiment , 
+G:  so  
+G:  but I haven't sent it out yet 
+G:  because actually my desktop locked up , 
+G:  like I can't type anything . 
+G:  Uh 
+G:  b so if there 's any suggestions you have for that I was just gonna send him the  
+G:  I made a directory . 
+G:  I called it 
+G:  um  
+G:  Well this isn't  
+G:  He does ? 
+G:  Yeah 
+G:  but  but  but he has to  
+G:  he prefe he said he would prefer FTP 
+G:  and also , um , the other person that wants it  There is one person at SRI who wants to look at the <breath> um , you know , the uh  the data we have so far , 
+G:  and so I figured that FTP is the best  approach . 
+G:  So what I did is I um  <mouth> <breath> @ @  I made a n new directory 
+G:  after Chuck said that would c that was gonna be a good thing . 
+G:  Uh , so it 's " FTP <breath>  pub 
+G:  real "  
+G:  Exactly . 
+G:  MTGC  
+G:  What is it again ? 
+G:  CR  
+G:  Or  
+G:  Yeah . 
+G:  Right ? 
+G:  The same  the same as the mailing list , 
+G:  and  
+G:  Yeah . 
+G:  Um , 
+G:  and then under there  
+G:  Um actually  Oh and this directory , <breath> is not readable . 
+G:  It 's only uh , accessible . 
+G:  So , <mouth> in other words , to access anything under there , you have to <breath> be told what the name is . 
+G:  So that 's sort of a g <breath> quick and dirty way of doing access control . 
+G:  So  
+G:  uh , and the directory for this I call it I " ASR zero point one " 
+G:  because it 's sort of meant for recognition . 
+G:  And then  then in there I have a file that lists all the other <breath> files , 
+G:  so that someone can get that file and then know the file names and therefore download them . 
+G:  If you don't know the file names you can't  
+G:  I mean you can  
+G:  Dash . 
+G:  Anyway . 
+G:  So all I  all I was gonna do there was stick the  the transcripts after we  the way that we munged them for scoring , 
+G:  because that 's what he cares about , 
+G:  and  
+G:  um , 
+G:  and also  and then the  the  waveforms that Don segmented . 
+G:  I mean , just basically tar them all up f I mean  w for each meeting I tar them all into one tar file and G - zip them and stick them there . 
+G:  And so . 
+G:  Oh , OK . 
+G:  OK . 
+G:  Yeah . 
+G:  March O - one . 
+G:  Oh ! 
+G:  Oh she wanted that also ? 
+G:  Right , 
+G:  but they don't have a recognizer even . 
+G:  But yeah , 
+G:  we can send  I can CC Mari on this so that she knows  
+G:  Right . 
+G:  Well , make ano make another directory . 
+G:  You don't n m 
+G:  Yeah . 
+G:  Yeah . 
+G:  They are ? 
+G:  OK . 
+G:  Oh . 
+G:  Beca - Well  
+G:  OK , because in one directory there 's two versions . 
+G:  OK . 
+G:  And so I  
+G:  but  
+G:  OK 
+G:  so  but for the other meetings it 's the downsampled version that you have . 
+G:  Oh , OK . 
+G:  Oh that 's th important to know , 
+G:  OK 
+G:  so 
+G:  we should probably  uh  give them the non - downsampled versions . 
+G:  OK . 
+G:  Alright , then I 'll hold off on that and I 'll wait for you 
+G:  um  
+G:  gen 
+G:  OK . 
+G:  Alright . 
+G:  OK . 
+G:  Yeah , definitely they should have the full bandwidth version , 
+G:  yeah . OK . 
+G:  Well , it takes  it takes up less disk space , for one thing . 
+G:  Yeah . 
+G:  Yeah . 
+G:  Right . 
+G:  Yeah , it was a small difference 
+G:  but yeah . 
+G:  Yeah . 
+G:  OK . 
+G:  OK , 
+G:  good . 
+G:  Good that  
+G:  Well , it 's a good thing that  
+G:  Yeah . 
+G:  Beep - ify ! 
+G:  So this training meeting , uh w un is that uh  some data where we have uh very um , <mouth> you know , accurate  time marks ? for  
+G:  OK , 
+G:  yeah . 
+G:  Because  
+G:  Mm - hmm . 
+G:  Oh ! 
+G:  I mean it  
+G:  Right , 
+G:  I mean w I mean what I would  I was interested in is having  <breath> a se having time marks for the beginnings and ends of speech 
+G:  by each speaker . 
+G:  Uh , because we could use that to fine tune our alignment process 
+G:  to make it more accurate . 
+G:  So  
+G:  uh , 
+G:  it  I don't care that you know , there 's actually abutting segments that we have to join together . 
+G:  That 's fine . 
+G:  But what we do care about is that <breath> the beginnings and ends um  are actually close to the speech <breath> inside of that 
+G:  uh  
+G:  OK , 
+G:  so what is the  sort of how tight are they ? 
+G:  Oh . 
+G:  No , no ! 
+G:  I don 
+G:  actually I  I  
+G:  I  it 's f 
+G:  That 's fine 
+G:  because we don't want to  
+G:  th that 's perfectly fine . 
+G:  In fact it 's good . 
+G:  You always want to have a little bit of pause or nonspeech around the speech , say for recognition purposes . 
+G:  Uh , 
+G:  but just  just u w you know get an id I just wanted to have an idea of the  <breath> of how much extra you allowed 
+G:  um  
+G:  so that I can interpret the numbers if I compared that with a forced alignment segmentation . 
+G:  So . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Right . 
+G:  But are we talking about , I don't know ,  a <breath>  tenth of a second ? 
+G:  a  ? 
+G:  You know ? 
+G:  How  how much  how much extra would you allow at most  
+G:  Mm - hmm . 
+G:  OK . 
+G:  Mm - hmm . 
+G:  OK . 
+G:  OK . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Right . 
+G:  OK . 
+G:  Mm - hmm . 
+G:  Well , yeah . 
+G:  That 's fine . 
+G:  OK . 
+G:  Mmm . 
+G:  Mm - hmm . 
+G:  Well we chose um , you know , half a second 
+G:  because <breath> if  if you go much larger , you have a  y you know , your  your statement about how much overlap there is becomes less , <breath> um , precise , 
+G:  because you include more of actual pause time into what you consider overlap speech . 
+G:  Um , 
+G:  so , 
+G:  it 's sort of a compromise , 
+G:  and  <breath> it 's also based  
+G:  I mean Liz suggested that value based on <breath> the distribution of pause times that you see in Switchboard and  and other corpora . 
+G:  Um  
+G:  So  
+G:  Mm - hmm . 
+G:  I see . 
+G:  Yeah . 
+G:  OK . 
+G:  Mm - hmm . 
+G:  OK , 
+G:  So  so at some point we will try to fine - tune our forced alignment 
+G:  maybe using those as references 
+G:  because you know , what you would do is you would play with different parameters . 
+G:  And to get an object You need an objective <breath> measure of how closely you can align the models to the actual speech . 
+G:  And that 's where your your data would be  very important to have . 
+G:  So , I will  
+G:  Um  
+G:  Mm - hmm . 
+G:  Right . 
+G:  Yeah . 
+G:  Yeah . 
+G:  Right . 
+G:  OK , and I 'm leaving . 
+G:  So , um  

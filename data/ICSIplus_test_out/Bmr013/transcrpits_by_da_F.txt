@@ -1,0 +1,177 @@
+F:  OK . 
+F:  Um , so I wanted to discuss digits briefly , but that won't take too long . 
+F:  OK . 
+F:  OK well , the , w uh as you can see from the numbers on the digits we 're almost done . 
+F:  The digits goes up to  about four thousand . 
+F:  Um , and so , uh , we probably will be done with the TI - digits in , um , another couple weeks . um , depending on how many we read each time . 
+F:  So there were a bunch that we skipped . 
+F:  You know , someone fills out the form and then they 're not at the meeting and so it 's blank . 
+F:  Um , but those are almost all filled in as well . 
+F:  And so , once we 're  it 's done it would be very nice to train up a recognizer and actually start working with this data . 
+F:  And so  
+F:  One particular test set of TI - digits . 
+F:  So , I  I extracted , Ther - there was a file sitting around which people have used here as a test set . 
+F:  It had been randomized and so on 
+F:  and that 's just what I used to generate the order . of these particular ones . 
+F:  Um  
+F:  Right . 
+F:  And inc increase it by one or two percent , yeah . 
+F:  Um , but , in order to do that we need to extract out the actual digits . 
+F:  Um , so that  the reason it 's not just a transcript is that there 're false starts , and misreads , and miscues and things like that . 
+F:  And so I have a set of scripts and X Waves where you just select the portion , hit R , 
+F:  um , it tells you what the next one should be , and you just look for that . 
+F:  You know , so it  it 'll put on the screen , " The next set is six nine , nine two two " . 
+F:  And you find that , and , hit the key and it records it in a file in a particular format . 
+F:  And so the  the question is , should we have the transcribers do that or should we just do it ? 
+F:  Well , some of us . 
+F:  I 've been do I 've done , eight meetings , something like that , just by hand . 
+F:  Just myself , rather . 
+F:  So it will not take long . 
+F:  Um  
+F:  There is  there is  
+F:  There 's one other small bit , which is just entering the information which at s which is at the top of this form , onto the computer , to go along with the  where the digits are recorded automatically . 
+F:  And so it 's just , you know , typing in name , times  time , date , and so on . 
+F:  Um , which again either they can do , but it is , you know , firing up an editor , or , again , I can do . 
+F:  Or someone else can do . 
+F:  No they don't have  this  you have to enter the data before , you do the second task , but they don't have to happen at the same time . 
+F:  So it 's  it 's just I have a file whi which has this information on it , and then when you start using my scripts , for extracting the times , it adds the times at the bottom of the file . 
+F:  And so , um , I mean , it 's easy to create the files and leave them blank , and so actually we could do it in either order . 
+F:  Um , it 's  it 's sort of nice to have the same person do it just as a double - check , to make sure you 're entering for the right person . 
+F:  But , either way . 
+F:  Per digit . 
+F:  Well the prosodics are so much different 
+F:  s it 's gonna be , strange . 
+F:  I mean the prosodics are not the same as TI - digits , for example . 
+F:  So I 'm  I 'm not sure how much of effect that will have . 
+F:  Um , just what we were talking about with grouping . 
+F:  That with these , the grouping , there 's no grouping at all , and so it 's just  the only sort of discontinuity you have is at the beginning and the end . 
+F:  Aurora I don't know . 
+F:  I don't know what they do in Aurora . 
+F:  But  Right . 
+F:  But in TI - digits , they 're reading things like zip codes and phone numbers and things like that , 
+F:  so it 's gonna be different . 
+F:  I don't remember . 
+F:  I mean , very good , 
+F:  right ? 
+F:  One and a half percent , two percent , something like that ? 
+F:  Oh really ? 
+F:  OK . 
+F:  Alright . 
+F:  Right . 
+F:  But that  I mean it 's really  it 's  it 's close - talking mikes , no noise , clean signal , just digits , I mean , every everything is good . 
+F:  Yes , exactly . 
+F:  And we 've only recently got it to anywhere near human . 
+F:  And it 's still like an order of magnitude worse than what humans do . 
+F:  So . 
+F:  Yeah . 
+F:  After coffee . 
+F:  OK , so , um , what I 'll do then is I 'll go ahead and enter , this data . 
+F:  And then , hand off to Jane , and the transcribers to do the actual extraction of the digits . 
+F:  Hmm . 
+F:  Yeah  that 's  I  I agree . 
+F:  That  it 's just  
+F:  It 's a  Well  Would , this corpus really be the right one to even try that on ? 
+F:  M I think we can get Ohala in to , give us some advice on that . 
+F:  Right . 
+F:  Even , I guess with vowels that would be pretty hard , 
+F:  wouldn't it ? 
+F:  To identify actually , you know , which one it is ? 
+F:  Yeah . 
+F:  Uvular . 
+F:  Right . 
+F:  Right . 
+F:  Yeah , so you have this feature here , and , overlap , yeah . 
+F:  And  Or " gonta " . 
+F:  Well I don't think Morgan 's suggesting that we do that , though . 
+F:  But  What I 'm imagining is a score - like notation , where each line is a particular feature . 
+F:  Right , 
+F:  so you would say , you know , it 's voiced through here , and so you have label here , and you have nas nasal here , 
+F:  and , they  they could be overlapping in all sorts of bizarre ways that don't correspond to the timing on phones . 
+F:  Right . 
+F:  And in  in fact the inter - annotator agreement was not that good , 
+F:  right ? 
+F:  On the harder ones ? 
+F:  The word . 
+F:  Well  
+F:  Well the other difference is that the  the features , are not synchronous , 
+F:  right . 
+F:  They overlap each other in weird ways . 
+F:  So it 's not a strictly one - dimensional signal . 
+F:  So I think that 's sorta qualitatively different . 
+F:  Well not with our current system but you could imagine designing a system , that the states were features , rather than phones . 
+F:  Yeah . 
+F:  That 's what I was saying , 
+F:  maybe meeting data isn't the right corpus . 
+F:  Alright , so based on the phone transcripts they would all be synchronous , but then you could imagine , nudging them here and there . 
+F:  Right . 
+F:  Right . 
+F:  They are . 
+F:  I wonder , how would you do a forced alignment ? 
+F:  To  to  I mean , you 'd wanna iterate , somehow . 
+F:  Yeah . 
+F:  It 's interesting thing to think about . 
+F:  I mean you 'd  you 'd want models for spreading . 
+F:  Yeah . 
+F:  Uh - huh . 
+F:  Oh . 
+F:  Of course . 
+F:  Wow that 's great . 
+F:  So I  I understand that 's what you were saying about your problem with , minimum . 
+F:  I get it . 
+F:  So new use ninetieth quartile , rather than , minimum . 
+F:  Well we did the hand  
+F:  the one by hand . 
+F:  Uh . 
+F:  No , cuz we need is really tight . 
+F:  Hopefully that 's not the same meeting that we did . 
+F:  Good . 
+F:  Yeah , so if we could get a couple meetings done with that level of precision I think that would be a good idea . 
+F:  Oh , shoot ! 
+F:  Yep . 
+F:  u 
+F:  Right . 
+F:  Right . 
+F:  An extra channel . 
+F:  Uh , they said it would take about a week . 
+F:  Mm - hmm . 
+F:  Um  
+F:  Well the only thing we 're gonna have extra , for now , 
+F:  Right , we don 
+F:  so the only thing we 'll have extra now is just the lapel . 
+F:  Not  not the , bodypack , 
+F:  just the lapel . 
+F:  Um , and then one of the  one of those . 
+F:  Since , what I decided to do , on Morgan 's suggestion , was just get two , new microphones , um , and try them out . 
+F:  And then , if we like them we 'll get more . 
+F:  Since they 're  they 're like two hundred bucks a piece , 
+F:  we won't , uh , at least try them out . 
+F:  Yep . Yep . 
+F:  And they 're gonna do the wiring for us . 
+F:  It 's , um , it 's by Crown , 
+F:  and it 's one of these sort of mount around the ear thingies , 
+F:  and , uh , when I s when I mentioned that we thought it was uncomfortable he said it was a common problem with the Sony . 
+F:  And this is how apparently a lot of people are getting around it . 
+F:  And I checked on the web , and every site I went to , raved about this particular mike . 
+F:  It 's apparently comfortable and stays on the head well , 
+F:  so we 'll see if it 's any good . 
+F:  But , uh , I think it 's promising . 
+
+F:  Yep . Yep , so it was  it was advertised for performers 
+F:  and  
+F:  Excuse me ? 
+F:  Excuse me ? 
+F:  That 's right . 
+F:  Well we 're using the Crown P Z 
+F:  These are Crown 
+F:  aren't they ? 
+F:  The P Z Ms are Crown , 
+F:  aren't they ? 
+F:  Yeah , I thought they were . 
+F:  And they work very well . 
+F:  And then it  we have to go to the planning session for that workshop . 
+F:  Cuz then it would be a meeting about the meeting about the meeting about meetings . 
+F:  Yeah . 
+F:  M to the fourth . 
+F:  Yep , go for it . 
+F:  Pause between the lines , remember ? 
+F:  OK . 

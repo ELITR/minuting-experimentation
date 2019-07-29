@@ -1,0 +1,225 @@
+E:  Mmm . 
+E:  Yeah , I think so too . 
+E:  Um . 
+E:  The  we got to the point where we can now speak into the SmartKom system , and it 'll go all the way through and then say something like " Roman numeral one , am Smarticus . " 
+E:  It actually says , " Roemisch einz , am Smarticus , " 
+E:  which means it 's just using a German sythesis module for English sentences . 
+E:  So uh , 
+E:  Um , the uh 
+E:  The uh sythesis is just a question of um , hopefully it 's just a question of exchanging a couple of files , once we have them . 
+E:  And , um , it 's not going to be a problem because we decided to stick to the so - called concept to speech approach . 
+E:  So I 'm  I 'm  I 'm going backwards now , 
+E:  so " synthesis " is where you sort of make this  uh , make these sounds , 
+E:  and " concept to speech " is feeding into this synthesis module giving it what needs to be said , and the whole syntactic structure 
+E:  so it can pronounce things better , presumably . Then , just with text to speech . 
+E:  And , uh , Johno learned how to write XML tags . 
+E:  Uh , and did write the tree adjoining grammar for some  some sentences . 
+E:  No , 
+E:  right ? 
+E:  Yeah , for a couple  
+E:  But I think that the point is that out of the twelve possible utterances that the German system can do , we 've already written the  the syntax trees for three or four . 
+E:  And because we 're sticking to that structure , the synthesis module doesn't need to be changed . So all that f fancy stuff , 
+E:  and the Texas speech version of it , which is actually the simpler version , is gonna be done in October which is much too late for us . 
+E:  So . 
+E:  This way we  we worked around that . 
+E:  The , uh  the system , um  I can show you the system . 
+E:  I actually want , at least , maybe , you should be able to start it on your own . If you wanna play around with it , in th in the future . 
+E:  Right now it 's brittle and you need to ch start it up and then make ts twenty changes on  on  on  on seventeen modules before they actually can stomach it , anything . 
+E:  And send in a  a  a couple of side queries on some dummy center set - up program so that it actually works 
+E:  because it 's designed for this seevit thing , where you have the gestural recognition running with this s Siemens virtual touch screen , which we don't have here . 
+E:  And so we 're doing it via mouse , 
+E:  but the whole system was designed to work with this thing 
+E:  and it was  It was a lot of engineering stuff . 
+E:  No science in there whatsoever , 
+E:  but it 's working now , 
+E:  and um , that 's the good news . 
+E:  So everything else actually did prove to be language independent except for the parsing and the generation . 
+E:  You have to switch it on . 
+E:  No . 
+E:  Right . 
+E:  It 's  
+E:  It 's got . 
+E:  What I  what I think is  is a good idea that I can  can show to anyone who 's interested , 
+E:  we can even make a  sort of an internal demo , 
+E:  and I  I show you what I do , 
+E:  I speak into it and you hear it talk , 
+E:  and I can sort of walk f through the information . 
+E:  So , this is like in half hour or forty - five minutes . 
+E:  Just fun . 
+E:  And so you  when somebody on the streets com comes up to you and asks you what is SmartKom so you can , sort of , give a sensible answer . 
+E:  Absolutely . 
+E:  OK . 
+E:  Well d we  we do wanna have all the bugs out b where you have to sort of pipe in extra XML messages from left and right before you 're  
+E:  Yeah . 
+E:  OK . 
+E:  Makes sense . 
+E:  Um . <outbreath> Well it was just amazing to  to see uh how  how instable the whole thing is , 
+E:  and if you just take the  
+E:  And I g I got the feeling that we are  the only ones right now who have a running system . 
+E:  I don't know what the guys in Kaiserslautern have running 
+E:  because 
+E:  e the version  that is , the full version that 's on the server d does not work . 
+E:  And you need to do a lot of stuff to make it work . 
+E:  And so it 's  
+E:  And even Tilman and Ralf sort of said " yeah there never was a really working version that uh did it without th all the shortcuts that they built in for the uh October @ @ version " . 
+E:  So we 're actually maybe ahead of the System Gruppe by now , 
+E:  the system  the integration group . 
+E:  And it was , uh  It was fun to some extent , 
+E:  but the uh the outcome that is sort of of scientific interest is that I think both Ralf and Tilman  
+E:  um , I know that they enjoyed it here , 
+E:  and they r they  they liked , uh , a lot of the stuff they saw here , 
+E:  what  what we have been thinking about , 
+E:  and they 're more than willing to  to um , cooperate , by all means . 
+E:  And um , part of my responsibility is uh to use our internal " group - ware " server at EML , 
+E:  make that open to all of us and them , 
+E:  so that whatever we discuss in terms of parsing and  and generating and constructions w we  we sort of uh put it in there 
+E:  and they put what they do in there 
+E:  and maybe we can even um , get some overlap , get some synergy out of that . 
+E:  And um , 
+E:  the , uh  
+E:  If I find someone at  in EML that is interested in that , um I  I may even think that we could look  take constructions and  and generate from them 
+E:  because the tree adjoining grammars that  that Tilman is using is as you said nothing but a mathematical formalism . 
+E:  And you can just do anything with it , whether it 's syntactic trees , H P S G - like stuff , or whether it 's construction . 
+E:  So if you ever get to the generation side of constructing things and there might be something of interest there , 
+E:  but in the moment we 're of course definitely focused on the understanding , um , pipeline . 
+E:  Absolutely . 
+E:  We had um decided  
+E:  Um . Well , no , we didn't decide . 
+E:  We wanted to look into maybe getting it , the visualization , a bit clearer , 
+E:  but I think if we do it , um , sort of a paper version of all the nodes and then the connections between them , that should suffice . 
+E:  Yeah . 
+E:  But  
+E:  But  
+E:  I  I also s would suggest not to d spend two weeks in  in  in changing the  the JavaBayes code . 
+E:  I  I will send you a pointer to a Java applet that does that , 
+E:  it 's sort of a fish - eye . 
+E:  You  you have a node , and you click on it , and it shows you all the connections , 
+E:  and then if you click on something else that moves away , that goes into the middle . 
+E:  And maybe there is an easy way of interfacing those two . 
+E:  If that doesn't work , it 's not a problem we  we need to solve right now . 
+E:  What I 'm  what my job is , I will , um , give you the input in terms of  of the internal structure . 
+E:  Maybe node by node , or something like this ? 
+E:  Or should I collect it all 
+E:  and  
+E:  OK . 
+E:  And um you 're gonna be around ? t again , always Tuesdays and Thursdays afternoon - ish ? As usual ? 
+E:  Or will that change ? 
+E:  Yeah . 
+E:  OK . 
+E:  Yeah , that 's  
+E:  Yeah . 
+E:  OK . 
+E:  No , that 's good . 
+E:  That means I have I h I can spend this week doing it . 
+E:  So . 
+E:  It 's  
+E:  Yeah . 
+E:  Fo - Hopefully as time passes we 'll get more and more data from Heidelberg and from people actually using it and stuff . 
+E:  So but this is the  <whistle>   long run . 
+E:  But to solve our problems ag uh a mediocre design will do I think in the beginning . 
+E:  The German . 
+E:  Oh yeah , of course , German . 
+E:  Yeah . 
+E:  OK . 
+E:  That 's important , yeah . 
+E:  Hmm . 
+E:  We probably will not get those to describe because they were trial runs . 
+E:  Um , but uh that 's th but we have data in English and German already . 
+E:  So .  
+E:  Transcribed . 
+E:  I will send you that . 
+E:  OK . 
+E:  Ho - how was your thingy . 
+E:  Um . The uh  Well  I wa I was on a uh  on a  on a different sidetrack . 
+E:  I mean , the  the Deep Map project which um is undergoing some renovation at  at the moment , 
+E:  but this is a  a three language project : German , English , Japanese . 
+E:  And um , we have a uh , uh  I have taken care that we have the  the Japanese generation and stuff . 
+E:  And so I looked into uh spatial description . 
+E:  So we can generate spatial descriptions , how to get from A to B . And  and information on objects , in German , English , and Japanese . 
+E:  And there is a huge uh project on spatial descriptions uh  differences in spatial descriptions . 
+E:  Well , if yo if you 're interested in that , 
+E:  so how  how , 
+E:  I mean it does sort of go d all the way down to the conceptual level to some extent . 
+E:  So . 
+E:  Um . 
+E:  It 's KLEIST . 
+E:  It 's the uh Bielefeld generation of uh spatial descriptions and whatever . 
+
+E:  But um , I  I think we should leave Japanese constructions maybe outside of the scope for  for now , 
+E:  but um definitely it 's interesting to look at  at cross the bordered there . 
+E:  Mm - hmm . 
+E:  Intrinsic , 
+E:  yeah . 
+E:  Mm - hmm . 
+E:  Um , as a matter of fact  
+E:  Um . Did you ever get to look at the  the rou paper that I sent you on the  on that problem in English and German ? 
+E:  Carroll , ninety - three . 
+E:  Um . I  There is a  a study on the differences between English and German on exactly that problem . 
+E:  So it 's  they actually say " the monkey in front of the car , 
+E:  where 's the monkey ? " 
+E:  And , um , they found statistically very significant differences in English and German , 
+E:  so I  I  I  
+E:  It might be , since there are only a finite number of ways of doing it , that  that German might be more like Hebrew in that respect . 
+E:  The solution they proposed was that it was due to syntactic factors . 
+E:  That syntactic facto factors do  do play a role there , wh whether you 're more likely , you know , to develop uh , choices that lead you towards using uh intrinsic versus extrinsic reference frames . 
+E:  I can also give you uh , a pointer to a paper of mine which is the  the ultimate taxonomy of reference frames . 
+E:  So . 
+E:  I 'm the only person in the world who actually knows how it works . 
+E:  Not really . 
+E:  It 's called a  
+E:  It 's  it 's spatial reference frames . 
+E:  You actually have only  
+E:  Um . If you wanna have a  
+E:  This is usually um  
+E:  I should  there should be an " L " , though . 
+E:  Well actually you have  only have two choices . 
+E:  You can either do a two - point or a three - point 
+E:  which is you You 're familiar with th with the " origo " ? 
+E:  where that 's the center  " Origo " is the center of the f frame of reference . 
+E:  And then you have the reference object and the object to be localized . 
+E:  OK ? 
+E:  In some cases the origo is the same as the reference object . 
+E:  " Origo " is a Terminus technikus . in that sense , 
+E:  that 's even used in the English literature . 
+E:  " Origo . " 
+E:  And um , so , 
+E:  this video tape is in front of me . 
+E:  I 'm the origo and I 'm also the reference object . 
+E:  Those are two - point . 
+E:  And three - point relations is if something has an intrinsic front side like this chair then your f shoe is behind the chair . 
+E:  And , reference object and  Um . No , from  from my point of view your shoe is left of the chair . 
+E:  Yeah . 
+E:  Yeah . 
+E:  So , 
+E:  And then  and then here you  
+E:  On this scale , you have it either be ego or allocentric . 
+E:  And that 's   that 's basically it . 
+E:  So . Egocentric two - point , egocentric three - point , or you can have allocentric . 
+E:  So , " as seen from the church , the town hall is right of that um , fire station " . 
+E:  aa - huh  It 's hardly ever used but it 's w 
+E:  OK . 
+E:  Yeah 
+E:  it 's  or  or just  
+E:  Yeah . 
+E:  It 's also all on my  my home page at EML . 
+E:  It 's called " An Anatomy of a Spatial Description " . 
+E:  But I 'll send that link . 
+E:  Yep . 
+E:  Yep . 
+E:  This is more proximal - distal . 
+E:  Well , Dan Montello sort of , 
+E:  he  he does the uh uh  th the cognitive map world , down in Santa Barbara . 
+E:  And he  he always talks about these  
+E:  He  he already  well  
+E:  i probably most likely without knowing this  this evidence uh is talking about these small scale spaces that you can manipulate versus large scale environmental spaces . 
+E:  The - th There  there 's a drive - in thesis uh sh <laugh> joint over in Saarbruecken . 
+E:  Document . 
+E:  Hmm . 
+E:  Uh . I  I think the one you  you gave here a couple of weeks ago would be of interest there , too . 
+E:  I  I tho 
+E:  It 's probably better if I come next week with the um version O point nine of the structure . 
+E:  And um , the  the sem semester will be over next week but then you have projects for one more week to come ? 
+E:  Same with you ? 
+E:  No . 
+E:  OK . 
+E:  Mmm . 

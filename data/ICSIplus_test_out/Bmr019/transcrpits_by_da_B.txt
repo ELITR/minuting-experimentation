@@ -1,0 +1,446 @@
+B:  And Andreas has the last word . 
+B:  OK . 
+B:  Oh , could you  close the door , maybe ? 
+B:  Yeah . 
+
+B:  I guess the only other thing , uh , for which I  
+B:  Um . 
+B:  OK , so there 's digits , alignments , 
+B:  and , um , 
+B:  I guess the other thing , <inbreath> which I came unprepared for , uh , <laugh> is , uh , to dis s s see if there 's anything anybody wants to discuss about the Saturday meeting . 
+B:  So . 
+B:  Any  I mean , maybe not . 
+B:  Uh . 
+B:  Yeah . 
+B:  Yeah . 
+B:  I mean  
+B:  Right . 
+B:  Yeah , I mean , it was  
+B:  Yeah . 
+B:  With  with  whatever it was , a month and a half or something ahead of time , the only time we could find in common  roughly in common , was on a Saturday . 
+B:  Ugh . 
+B:  Yeah . 
+B:  No . 
+B:  But , h I mean , he probably has to go do something . 
+B:  Right ? 
+B:  Yeah . 
+B:  R r right . 
+B:  So we have to  we  
+
+B:  So we have to equip him with a  with a  <laugh> with a head - mounted , uh , cell phone 
+B:  and  
+B:  Yeah . 
+B:  Well , it 's  Yeah , sort of the bre the breath noises and the mouth clicks and so forth like that , the lapel 's gonna be better on . 
+B:  The lapel is typically worse on the  on clothes rustling , 
+B:  but if no one 's rustling their clothes , 
+B:  it 's  it 's  
+B:  Yeah . 
+B:  Yeah . 
+B:  Right . So in the digits , in most  most cases , there weren't other people talking . 
+B:  So . 
+B:  There typically don't , no . 
+B:  They 're  they 're intended to be omni - directional . 
+B:  And th it 's  and because you don't know how people are gonna put them on , you know . 
+B:  Yeah . 
+B:  Um . Yeah , we actually talked about this in the , uh , front - end meeting this morning , too . 
+B:  Much the same thing , 
+B:  and  and it was  
+B:  uh , I mean , there the point of interest to the group was primarily that , um , <inbreath> the , uh  the system that we had that was based on H T K , that 's used by , you know ,  all the participants in Aurora , <inbreath> was so much worse <inbreath> than the  than the S R 
+B:  And the interesting thing is that even though , <inbreath> yes , it 's a digits task and that 's a relatively small number of words and there 's a bunch of digits that you train on , <inbreath> it 's just not as good as having a  a l very large amount of data and training up a  a  a nice good big <inbreath> HMM . 
+B:  Um , also you had the adaptation in the SRI system , which we didn't have in this . 
+B:  Um . So . Um . 
+B:  I s I think Stephane , uh , had seen them . 
+B:  So  
+B:  Yeah . 
+B:  But I think one thing is that , uh , I would presume  
+B:  Hav - Have you ever t <inbreath> Have you ever tried this exact same recognizer out on the actual TI - digits test set ? 
+B:  It might be interesting to do that . 
+B:  Cuz my  my  cuz my sense , 
+B:  um  
+B:  Mm - hmm . 
+B:  Yeah , bu although I 'd be  I think it 'd be interesting to just take this exact actual system 
+B:  so that these numbers were comparable 
+B:  and try it out on TI - digits . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Cuz our sense from the other  from the Aurora , uh , task is that  
+B:  I mean , cuz we were getting sub one percent <inbreath> numbers on TI - digits also with the tandem thing . 
+B:  So , <inbreath> one  so there were a number of things we noted from this . 
+B:  One is , yeah , the SRI system is a lot better than the HTK  
+B:  this , you know , very limited training HTK system . 
+B:  Uh , but the other is that , um , the digits <inbreath> recorded here in this room with these close mikes , i uh , are actually a lot harder than the  studio - recording TI - digits . 
+B:  I think , you know , one reason for that , uh , might be that there 's still  even though it 's close - talking , there still is some noise and some room acoustics . 
+B:  And another might be that , uh , I 'd  I would presume that in the studio , uh , uh , situation recording read speech that if somebody 
+B:  did something a little funny or n pronounced something a little funny or made a little  that they didn't include it , 
+B:  they made them do it again . 
+B:  Mmm . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  It 's wide - band , yeah . 
+B:  It 's  in  in fact , we looked it up 
+B:  and it was actually twenty kilohertz sampling . 
+B:  Yeah . 
+B:  Yeah . 
+B:  See w 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Well , the other thing would be to do it without the adaptation and compare to these numbers without the adaptation . 
+B:  That would  
+B:  Mm - hmm . 
+B:  Yeah . Most of TI - digits is connected digits , I think . 
+B:  The  I mean , we had a Bellcore corpus that we were using . 
+B:  It was  <inbreath> that 's  that was isolated digits . 
+B:  Um . 
+B:  Yeah . <inbreath> But the thing is , uh  I mean , w when you  it depends whether you 're ju were just using this as a  <inbreath> a starter task for  you know , to get things going for conversational or if we 're really interested i in connected digits . 
+B:  And I  I think the answer is both . 
+B:  And for  for connected digits over the telephone you don't actually want to put a whole lot of effort into adaptation 
+B:  because <inbreath> somebody  gets on the phone and says a number 
+B:  and then you just want it . 
+B:  You don't  don't , uh  
+B:  Right . 
+B:  Right . 
+B:  Yeah . So that 'd be anoth another interesting data point . 
+B:  I mean , I  I guess I 'm saying I don't know if we 'd want to do that as the  as  
+B:  Yeah . At any rate , I don't know if w 
+B:  Yeah . 
+B:  I don't know if we wanna use that as the  
+B:  Too many adju too many adjustments . Yeah . 
+B:  Anyway , what I was saying is that I  I think I probably wouldn't want to see that as sort of like the norm , that we compared all things to . 
+B:  To , uh , the  to have  have all this ad all this , uh , adaptation . 
+B:  But I think it 's an important data point , if you 're  if  
+B:  Yeah . 
+B:  Um . 
+B:  The other thing that  that , uh  of course , what Barry was looking at was  was just that , 
+B:  the near versus far . 
+B:  And , yeah , the adaptation would get <inbreath> th some of that . 
+B:  But , I think even  even if there was , uh , only a factor of two or something , like I was saying in the email , I think that 's  <inbreath> that 's a big factor . 
+B:  So  
+B:  N 
+B:  Yeah . 
+B:  It 's  great . 
+B:  So , where were we ? 
+B:  Uh  <laugh> Yeah . 
+B:  Uh , adaptation , non - adaptation , 
+B:  um , factor of two , 
+B:  um  
+B:  Oh , yeah . I know what I was go w 
+B:  Oh , no , no . 
+B:  It 's tha that  that we were saying , you know , well is  how much worse is far than near , you know . 
+B:  And I mean it depends on which one you 're looking at , 
+B:  but for the everybody , it 's <inbreath> little under a factor or two . 
+B:  Yeah . I  I know what I was thinking was that maybe , uh , i i we could actually t t try at least looking at , uh , some of the  the large vocabulary speech from a far microphone , 
+B:  at least from the good one . 
+B:  I mean , before I thought we 'd get , you know , a hundred and fifty percent error or something , 
+B:  but if  <inbreath> if , uh  if we 're getting thirty - five , forty percent or something , <inbreath> u um  
+B:  Mm - hmm . 
+B:  Right . I understand . 
+B:  But doing the same kind of limited thing  
+B:  Yeah , sure . 
+B:  Get all these insertions . 
+B:  But I 'm saying if you do the same kind of limited thing <inbreath> as people have done in Switchboard evaluations or as  a 
+B:  Yeah . 
+B:  Yeah . The same sort of numbers that we got those graphs from . 
+B:  Right ? 
+B:  Yeah , do it with one of  on 
+B:  But  but  but how did we get the  how did we determine the links , uh , that we 're testing on in the stuff we reported ? 
+B:  And tha 
+B:  And that 's what we were getting those numbers from . 
+B:  Right . 
+B:  Well , we could start with the good ones . 
+B:  But anyway  so I think that we should try it once with <inbreath> the same conditions that were used to create those , 
+B:  and in those same segments just use one of the P Z 
+B:  And then , you know , I mean , the thing is if we were getting , uh  what , thirty - five , forty percent , something like that on  on that particular set , 
+B:  uh , does it go to seventy or eighty ? 
+B:  Or , does it use up so much memory we can't decode it ? 
+B:  Uh  
+B:  Well  
+B:  This is kind of central . 
+B:  You know , it 's  so i but I would  I 'd pick that one . 
+B:  It 'll be less good for some people than for other , 
+B:  but I  I 'd like to see it on the same  exact same data set that  that we did the other thing on . 
+B:  Right ? 
+B:  That 's probably one of the reasons . 
+B:  But the other is , it 's very , uh  I mean , even though there 's  I 'm sure the f f the  the SRI , uh , front - end has some kind of pre - emphasis , it 's  it 's , uh  <inbreath> still , th it 's picking up lots of low - frequency energy . 
+B:  So , even discriminating against it , I 'm sure some of it 's getting through . 
+B:  Um . 
+B:  But , yeah , you 're right . 
+B:  Prob - a part of it is just the distance . 
+B:  Well , they 're bad . 
+B:  But , I mean , if you listen to it , it sounds OK . You know ? 
+B:  u Yeah . 
+B:  Well , they 're  twenty - five cents or so . 
+B:  Yeah . 
+B:  Yeah . 
+B:  But , I mean , the thing is people use those little mikes for everything 
+B:  because they 're really not bad . 
+B:  I mean , if you 're not <inbreath> doing something ridiculous like feeding it to a speech recognizer , they  they  <breath-laugh> they  you know , you can hear the sou hear the sounds just fine . 
+B:  You know , it 's  
+B:  They  I mean , i it 's more or less the same principles as these other mikes are built under , 
+B:  it 's just that  there 's less quality control . 
+B:  They just , you know , churn them out and don't check them . 
+B:  Um . So . 
+B:  So that was  Yeah . So that was i interesting result . 
+B:  So like I said , the front - end guys are very much interested in  in this is as  as well 
+B:  and 
+B:  Well , I think what we wanna do is we want to  eh , 
+B:  and we 've talked about this in other  contexts  
+B:  we want to <inbreath> have the ability to feed it different features . 
+B:  And then , um , <inbreath> from the point of view of the front - end research , it would be s uh , substituting for HTK . 
+B:  I think that 's the key thing . 
+B:  And then if we can feed it different features , then we can try all the different things that we 're trying there . 
+B:  And then , um , uh , also Dave is  is thinking about using the data in different ways , uh , to <inbreath> um , uh , explicitly work on reverberation 
+B:  starting with some techniques that some other people have  found somewhat useful , and  Yeah . 
+B:  Right . 
+B:  Right . 
+B:  H h 
+B:  He 's  he 's sort of back , 
+B:  but he drove for fourteen hours an and wasn't gonna make it in today . 
+B:  Yeah . 
+B:  Right . 
+B:  Yeah . 
+B:  Yeah . So I 've  I  
+B:  Yeah . 
+B:  Cool . 
+B:  OK . So the s the  the next thing we had on the agenda was something about alignments ? 
+B:  Hmm . 
+B:  Mm - hmm . 
+B:  G given  I  I mean , I wa I wa I was gonna ask you anyway , uh , how you assessed that things were better . 
+B:  OK . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  So  so if we e e even just had a  a  It sounds like w we  <inbreath> we almost do . 
+B:  Uh , if we  We have two . 
+B:  Yeah . 
+B:  Just ha uh , trying out  the alignment <outbreath> procedure that you have on that 
+B:  you could actually get something , um  uh , uh , get an objective measure . 
+B:  Uh  
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  H 
+B:  I tell you , I say  I say " uh - huh " a lot , 
+B:  while people are talking to each other . 
+B:  Mm - hmm . 
+B:  Yeah . I mean , y y you folks have probably  already told me , 
+B:  but were  were you intending to do a Eurospeech submission , 
+B:  or  ? 
+B:  Yeah . 
+B:  Do as I say , 
+B:  don't do as I do . 
+B:  Yeah . 
+B:  Yeah . I know that th the Telecom people use  use " spurt " for that . 
+B:  Yes . 
+B:  And that 's  I mean , I  I was using that for a while when I was doing the rate of speech stuff , 
+B:  because I  because I looked up in some books and I found  OK , I wanna find a spurt <inbreath> in which  
+B:  and  an because  cuz it 's another question about how  many pauses they put in between them . 
+B:  But how fast do they do  the words within the spurt ? 
+B:  Yeah . 
+B:  Here . 
+B:  Just very locally , yeah . 
+B:  But  but that just  
+B:  Yeah . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Yeah . That 's the good thing about these pape 
+B:  Yeah . 
+B:  Yeah . 
+B:  No , it 's  that 's the good thing about these pape paper deadlines and , uh , you know , class projects , and  <laugh> and things like that , 
+B:  because you  you really get g 
+B:  Yeah . 
+B:  Oh , now it 's out in the public , 
+B:  this  this  this secret information . 
+B:  Yeah . 
+B:  No . 
+B:  Yeah . 
+B:  Th - that 's  that 's true . 
+B:  That 's  
+B:  That 's true . 
+B:  By th by the way , this is totally unfair , you may  you may feel , 
+B:  but the  the , uh  the morning meeting folks actually have an  an extra month or so . 
+B:  There 's a special Aurora session 
+B:  and the Aurora pe people involved in Aurora have till Ma - uh , early May  or something to turn in their paper . 
+B:  I if it w 
+B:  Well  
+B:  i it has  
+
+B:  No , it wouldn't work . 
+B:  It 's  it 's not the Aurora  
+B:  I mean , it  it 's  it 's actually the Aurora task . 
+B:  It 
+B:  Yeah . 
+B:  This is not the Aurora task . 
+B:  So they just do a little grep for  
+B:  Maybe . 
+B:  I think it 's a littl little far - fetched . 
+B:  Nah , I mean , the thing is Aurora 's pretty closed community . 
+B:  I mean , you know , the people who were involved in the  <inbreath> the only people who are allowed to test on that are people who  who made it above a certain threshold in the first round , 
+B:  uh <mouth> w in ninety - nine 
+B:  and it 's  it 's sort of a  it 's  
+B:  not like a  
+B:  Oh , you don't like HTK ? 
+B:  No . I mean , this  it it 's the HTK  that is trained on a very limited amount of data . 
+B:  Yeah . 
+B:  Oh , yeah . I  I really think that that 's true . 
+B:  And they i i 
+B:  i 
+B:  But  
+B:  Well , u i 
+B:  But , one of the reasons I have Chuck 's messing around with  with the back - end that you 're not supposed to touch  
+B:  I mean , for the evaluations , yes , we 'll run a version that hasn't been touched . 
+B:  But , uh , one of the reasons I have him messing around with that , because I think it 's sort of an open question that we don't know the answer to . 
+B:  People always say very glibly <inbreath> that i if you s show improvement on a bad system , that doesn't mean anything , 
+B:  cuz it may not be  <inbreath> show  uh , because , you know , it doesn't tell you anything about the good system . 
+B:  And I  I 've always sort of felt that that depends . 
+B:  You know , that if some peopl If you 're actually are getting at something that has some  conceptual substance to it , it will port . 
+B:  And in fact , most methods that people now use were originally tried with something that was not their absolute  best system at some level . 
+B:  But of course , sometimes it doesn't , uh , port . 
+B:  So I think that 's  that 's an interesting question . 
+B:  If we 're getting  three percent error on , uh , u uh , English , uh , nati native speakers , <inbreath> um , using the Aurora system , and we do some improvements and bring it from three to two , <inbreath> do those same improvements bring , uh , th you know , the SRI system from one point three to  you know , to <inbreath> point eight ? 
+B:  Well . 
+B:  You know , so that 's  that 's something we can test . 
+B:  So . 
+B:  Anyway . 
+B:  I think we 've  <laugh> we 've covered that one up extremely well . 
+B:  OK . 
+B:  So , um  
+B:  Yeah . 
+B:  So tha so we 'll  you know , maybe you guys 'll have  have one . 
+B:  Uh , you  you and , uh  and Dan have  have a paper that  that 's going in . 
+B:  You know , that 's  that 's pretty solid , on the segmentation  stuff . 
+B:  Yeah . 
+B:  And the Aurora folks here will  will definitely get something in on Aurora , 
+B:  so . 
+B:  Uh - huh . 
+B:  Right . 
+B:  H i it got  it got better . 
+B:  Yeah , yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Um , <outbreath> let 's see . 
+B:  I think the only thing we had left was  unless somebody else  
+B:  Well , there 's a couple things . 
+B:  Uh , one is  anything that , um , <mouth> anybody has to say about Saturday ? 
+B:  Anything we should do in prep for Saturday ? 
+B:  Um  
+B:  I guess everybody knows about  
+B:  I mean , u um , Mari was asking  was trying to come up with something like an agenda 
+B:  and we 're sort of fitting around people 's times a bit . 
+B:  But , um , <inbreath> clearly when we actually get here we 'll  move things around this , as we need to , 
+B:  but  
+B:  so you can't absolutely count on it . 
+B:  But  but , uh  
+B:  Yeah . 
+B:  That was my thought . 
+B:  I think this is  
+
+B:  u 
+B:  No . I  I hadn't in intended to . 
+B:  We won we wanna  I mean , they 're  there 's gonna be , uh , Jeff , Katrin , Mari and two students . 
+B:  So there 's five  from there . 
+B:  And Brian 's coming , 
+B:  so that 's six . 
+B:  Uh  
+B:  Well  
+B:  Well  
+B:  I hadn't  really thought of it , 
+B:  but  
+B:  Maybe part of it . 
+B:  Maybe part of it . 
+B:  At the same time . 
+B:  Yeah . 
+B:  I don't know . 
+B:  Any 
+B:  OK . 
+B:  Well  
+B:  OK . Yeah . I guess I sent it around a little bit . 
+B:  But  
+B:  I hadn't heard back from Mari after I  I u u uh , brought up the point abou about Andreas 's schedule . 
+B:  So , <inbreath> um , maybe when I get back there 'll be  some  some mail from her . 
+B:  So , I 'll make a  
+B:  Th - that part 's definitely gonna confuse somebody who looks at these later . 
+B:  I mean , this is  we we 're recording secret NSA meetings ? 
+B:  I mean , it 's  
+B:  It 's network services and applications . 
+B:  Yeah . 
+B:  It 's always Morgan 's fault . 
+B:  OK . 
+B:  Th - the other thing I had actually was , 
+B:  I  I didn't realize this till today , 
+B:  but , uh , this is , uh , Jose 's last day . 
+B:  Yeah . 
+B:  I d so I  I jus 
+B:  Uh - huh . 
+B:  Yeah . 
+B:  Yeah . Maybe somebody else will come along and will be , uh , interested in working on it 
+B:  and could start off from where you are also , you know . 
+B:  They 'd make use of  of what you 've done . 
+B:  Yeah . 
+B:  Yeah , it 's a very short time . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Well . 
+B:  Thank you , Jose . 
+B:  Yeah . 
+B:  Yeah . 
+B:  OK . 
+B:  I guess , uh , unless somebody has something else , we 'll read  read our digits 
+B:  and we 'll get our  
+B:  get our last bit of , uh , Jose 's  Jose  Jose 's digit  
+B:  Uh , I 'm sorry ? 
+B:  So keep it away from that end of the table . 
+B:  Well ? 
+B:  Yeah . 
+B:  We 're gonna  we 're gonna do digits at the same  
+B:  Um . 
+B:  Well  
+B:  Tha - that 's  that looks great . 
+B:  Alright , so in the interest of getting to the  
+B:  She 's  she 's serious . 
+B:  She is serious . 
+B:  Um  
+B:  Actually  <inbreath> actually kind of careful 
+B:  cuz I have a strong allergy to nuts , 
+B:  so I have to sort of figure out one without th 
+B:  It 's hard to  hard to say . 
+B:  I don't know . 
+B:  Um  
+B:  Well  
+B:  Yeah . I may  I may hold off . 
+B:  But if I was  eh , but maybe I 'll get some later . 
+B:  Thanks . 
+B:  Well  well , why don't we  ? 
+B:  He  he 's worried about a ticket . 
+B:  Why don't we do a simultaneous one ? 
+B:  Simultaneous one ? 
+B:  OK . 
+B:  I have to what ? 
+B:  I did , 
+B:  and now I love it so much . 
+B:  W wait  wait a minute  wait a minute . 
+B:  W we want  we want  
+B:  we want it synchronized . 
+B:  OK . 
+B:  We 
+B:  Y <outbreath> Yeah , 
+B:  bu 
+B:  Yeah . 
+B:  OK . 
+B:  So , uh  
+B:  No , no . 
+B:  Synchronized digits . 
+B:  Yes . 
+B:  There 's so many possibilities . 
+B:  Uh . OK , why don't we go ? 
+B:  Uh , one two three  Go ! 
+B:  And Andreas has the last word . 

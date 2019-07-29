@@ -1,0 +1,49 @@
+E:  Mm - hmm . 
+E:  You know , if you 're in a desperate situation and you need a place to stay , you could stay with me for a while . 
+E:  I 've got a spare bedroom right now . 
+E:  Um , 
+E:  it 's  
+E:  Well , um , it  I don't think it directly relates . 
+E:  Um , well , so , I was helping a speech researcher named Pierre Divenyi 
+E:  and he 's int He wanted to um , look at um , how people respond to formant changes , I think . 
+E:  Um . 
+E:  So he  he created a lot of synthetic audio files of vowel - to - vowel transitions , 
+E:  and then he wanted a psycho - acoustic um , spectrum . 
+E:  And he wanted to look at um , how the energy is moving  over time in that spectrum 
+E:  and compare that to the  to the listener tests . 
+E:  And , um . 
+E:  So , I gave him a PLP spectrum . 
+E:  And  to um  he  he t wanted to track the peaks so he could look at how they 're moving . 
+E:  So I took the um , PLP LPC coefficients and um , I found the roots . 
+E:  This was something that Stephane suggested . 
+E:  I found the roots of the um , LPC polynomial to , um , track the peaks in the , um , PLP LPC spectra . 
+E:  Right . 
+E:  So , um , 
+E:  if  @ @  Every root that 's  
+E:  Since it 's a real signal , the LPC polynomial 's gonna have real coefficients . 
+E:  So I think that means that every root that is not a real root  is gonna be a c complex pair , 
+E:  um , of a complex value and its conjugate . 
+E:  Um . 
+E:  So for each  
+E:  And if you look at that on the unit circle , um , one of these  one of the members of the pair will be a positive frequency , one will be a negative frequency , I think . 
+E:  So I just  
+E:  So , um , 
+E:  f for the  I 'm using an eighth - order polynomial 
+E:  and I 'll get three or four of these pairs 
+E:  which give me s which gives me three or four peak positions . 
+E:  It 's  Right . 
+E:  Yeah . 
+E:  Mmm , 
+E:  But  there 's some of that , 
+E:  yes . 
+E:  It was created from a synthesizer , 
+E:  and um  
+E:  I  d d this  
+E:  In  in fact w we  we could get , um , formant frequencies out of the synthesizer , as well . 
+E:  And , um , 
+E:  w one thing that the , um , LPC approach will hopefully give me in addition , um , is that I  I might be able to find the b the bandwidths of these humps as well . 
+E:  Um , Stephane suggested looking at each complex pair as a  like a se second - order IIR filter . 
+E:  Um , 
+E:  but I don't think there 's a g a really good reason not to um , get the formant frequencies from the synthesizer instead . 
+E:  Except that you don't have the psycho - acoustic modeling in that . 
+E:  Mm - hmm . 

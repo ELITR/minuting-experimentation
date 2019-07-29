@@ -1,0 +1,141 @@
+A:  but  
+A:  I think I 'm zero . 
+A:  Did you fix something ? 
+A:  Is it written on her sheet , I believe . 
+A:  But , channel 
+A:  How about over th from the front of the room ? 
+A:  Do you mean if it 's trained only on  On data from just that task , 
+A:  that language ? 
+A:  Mmm . 
+A:  Mm - hmm . 
+A:  So what 's th 
+A:  In 
+A:  The three languages  is not digits , 
+A:  it 's the broad  data . 
+A:  OK . 
+A:  And so , remind me , 
+A:  the multilingual stuff is just the broad data . 
+A:  Right ? 
+A:  It 's not the digits . 
+A:  So it 's the combination of  two things there . 
+A:  It 's  removing the  task specific  training and  it 's adding other languages . 
+A:  OK . 
+A:  Already , 
+A:  right right right . 
+A:  So they were sort of building  here ? 
+A:  OK ? 
+A:  One point four ? 
+A:  So , it 's an additional thirty percent . 
+A:  Task data . 
+A:  It 's multilingual . 
+A:  So um  
+A:  Go ahead . 
+A:  Ah , while you 're gone I 'll ask s some of my questions . 
+A:  Um . 
+A:  The um  What was  Was this number  forty 
+A:  or  It was roughly the same as this one ,  he said ? 
+A:  When you had the two language versus the three language ? 
+A:  That 's where he removed English , 
+A:  right ? 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  I wonder  
+A:  were um all three of these nets  using the same output ? 
+A:  This multi - language  uh labelling ? 
+A:  OK , OK . 
+A:  So this would   From this you would say , " well , it doesn't really matter if we put Finnish  into  the training of the neural net ,  if there 's  gonna be ,  you know , Finnish in the test data . " 
+A:  Right ? 
+A:  Yeah . 
+A:  Hmm . 
+A:  Mm - hmm . 
+A:  Yeah , that would be interesting . 
+A:  Did you do different languages from digits ? 
+A:  Digits on another language ? 
+A:  So , so the upper part is training  TI - digits ? 
+A:  Ah . 
+A:  So where is the baseline  for the TI - digits  located in here ? 
+A:  Yeah . 
+A:  Ah ! 
+A:  Ah , OK , OK . 
+A:  OK , I see . 
+A:  OK , OK , gotcha . 
+A:  Multi - French , 
+A:  Multi - Spanish 
+A:  Can I ask something real quick ? 
+A:  In  in the upper part   in the English  stuff ,  it looks like the very best number is sixty point nine ? 
+A:  and that 's in the uh   the third  section in the upper part under PLP JRASTA , 
+A:  sort of the middle column ? 
+A:  I is that  a noisy condition ? 
+A:  So that 's matched training ? 
+A:  Is that what that is ? 
+A:  So  why do you get your best number in  
+A:  Wouldn't you get your best number in the clean case ? 
+A:  Ah , 
+A:  OK 
+A:  so these are not  
+A:  OK , 
+A:  alright , I see . 
+A:  OK . 
+A:  And then  so , in the  in the um   in the  non - mismatched clean case ,  your best one was under MFCC ? 
+A:  That sixty - one point four ? 
+A:  Oh ! So this upper third ? 
+A:  Uh that 's still noisy ? 
+A:  Ah , OK . 
+A:  Mm - hmm . 
+A:  I see . 
+A:  Where is that ? 
+A:  seventy - nine , fifty 
+A:  Oh I see , OK . 
+A:  I think they have one output . 
+A:  They s they say in here that the VAD is not used as an additional feature . 
+A:  Does  does anybody know how they 're using it ? 
+A:  But that  
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  So it 's  it 's  
+A:  I don't understand . 
+A:  You mean it 's throwing out frames ? 
+A:  Before  
+A:  Yeah . 
+A:  Yeah , 
+A:  that 's what I was just gonna ask . 
+A:  How can you just throw out frames ? 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  In the text they say that this  this is a tentative block diagram of a possible configuration we could think of . 
+A:  So that sort of sounds like they 're not doing that yet . 
+A:  Yeah . Yeah . 
+A:  I 'm just wondering what exactly did they do up in this table if it wasn't this . 
+A:  Mm - hmm . 
+A:  Plus it 's gonna introduce delays . 
+A:  Mmm . 
+A:  Ah . 
+A:  When they removed the silence frames , did they insert some kind of a marker so that the recognizer knows it 's   knows when it 's time to back trace or something ? 
+A:  Oh , right . 
+A:  Maybe they 're just inserting some nummy frames or something ? 
+A:  Hmm . 
+A:  Hmm . 
+A:  Yeah . 
+A:  Some constant vector . 
+A:  I mean 
+A:  i w Or something  
+A:  That 's right . 
+A:  But something that  
+A:  what I mean is something that is  very distinguishable from  speech . 
+A:  So that the  the silence model in HTK will always pick it up . 
+A:  Hmm . 
+A:  Yeah . 
+A:  Cuz you gotta do something . Otherwise , if it 's just a bunch of speech , stuck together  
+A:  Yeah . 
+A:  Yeah , right . 
+A:  Yeah , yeah . 
+A:  They have a  they have a thing for doing that 
+A:  and th they have for awhile , in H T 
+A:  And you can parallelize the training . 
+A:  And run it on several machines 
+A:  and it just basically keeps counts . 
+A:  And there 's something   a final  thing that you run 
+A:  and it accumulates all the counts together . 
+A:  I don't what their scripts are  set up to do for the Aurora stuff , 
+A:  but  

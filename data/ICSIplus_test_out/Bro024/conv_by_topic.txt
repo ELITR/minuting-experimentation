@@ -1,0 +1,2212 @@
+F:  And we 're on . <breath> 
+A:  <clears throat> 
+A:  <long inhale> 
+D:  OK . <breath> Might wanna <breath> 
+F:  <mike noise> 
+F:  <mike noise> 
+D:  close the door so that  Uh , Stephane will  
+F:  I 'll get it . 
+D:  Yeah  
+H:  <mike noise> 
+F:  Hey Dave ? 
+F:  Could you go ahead and turn on , uh , Stephane 's  
+C:  <mike sound> Mm - hmm . 
+D:  So that 's the virtual Stephane over there . 
+F:  OK . 
+E:  <mike noise> 
+F:  <mike noise> 
+B:  <breath> 
+G:  Do you use a PC for recording ? Or  
+F:  Uh , yeah , a Linux box . Yeah . It 's got , uh , like sixteen channels going into it . 
+G:  Uh - huh . 
+G:  Uh - huh . 
+G:  The quality is quite good ? Or  ?  
+F:  Mm - hmm . 
+F:  Yeah , so far , it 's been pretty good . 
+G:  Mm - hmm . 
+F:  <mike noise> 
+D:  Yeah . 
+B:  <mike noise> 
+D:  So , uh , yeah  the suggestion was to 
+G:  <long inhale> 
+D:  have these guys start to  <breath> 
+F:  OK . 
+A:  <breath> 
+
+
+F:  Why don't you go ahead , Dave ? <laugh> 
+A:  <breath> 
+C:  OK . <breath> Um , <breath> so , yeah , the  this past week I 've been main mainly occupied with , um , 
+F:  <mike noise> 
+C:  getting some results , u from the SRI system trained on this short Hub - five training set for the mean subtraction method . And , um , 
+C:  I ran some tests last night . But , um , 
+C:  c 
+C:  the results are suspicious . Um , it 's , um , <breath> cuz they 're  
+C:  the baseline results are worse 
+C:  than , um , Andreas  than results Andreas got previously . <breath> And <breath> it could have something to do with , um  
+F:  That 's on digits ? 
+C:  That 's on digits . It c it  it could h it could have something to do with , um , 
+F:  Hmm .  
+C:  downsampling . That 's  that 's worth looking into . 
+C:  Um , 
+C:  d and , um , 
+C:  ap ap apart from that , I guess the  the main thing I have t ta I have to talk is , um , 
+H:  <mike noise> 
+C:  where I 'm planning to go over the next week . Um . 
+
+
+C:  So I 've been working on integrating this mean subtraction approach into the SmartKom system . 
+C:  And there 's this question of , well , so , um , in my tests before with HTK I found it worked  it worked the best with about twelve seconds of data used to estimate the mean , but , 
+B:  <mike noise> 
+C:  we 'll often have less  in the SmartKom system .  Um . 
+C:  So I think we 'll use as much data as we have  at a particular time , and we 'll  <breath> 
+C:  we 'll concatenate utterances together , 
+C:  um , to get as much data as we possibly can from the user . But , <breath> um , <breath> there 's a question of how to set up the models . So um , 
+C:  we could train the models . If we think twelve seconds is ideal we could train the models using 
+C:  twelve seconds to calculate the mean , 
+C:  to mean subtract the training data . Or we could , um , 
+C:  use some other 
+C:  amount . <breath> So  like I did an experiment where I , um , 
+C:  was using six seconds in test , 
+C:  um , but , 
+C:  for  I tried twelve seconds 
+C:  in train . And I tried , um , 
+C:  um , the same in train  I 'm a I tried six seconds in train . And six seconds in train <breath> was about point three percent better . 
+H:  <mike noise> 
+C:  Um , and  <breath> um , it 's not 
+C:  clear to me yet whether that 's <breath> something significant . <breath> 
+C:  So I wanna do some tests and , um , <breath> actually make some plots 
+C:  of , um  for a particular amount of data and test what happens if you vary the amount of data in train . <breath> 
+F:  Mm - hmm . 
+D:  <breath> Uh , Guenter , I don't know if you t <breath> 
+D:  followed this stuff but this is , uh , <breath> 
+H:  <mike noise> 
+D:  a uh , uh , 
+A:  <clears throat> 
+D:  long - term  
+D:  long - term window F F Ts . 
+G:  Yeah , we  we spoke about it already , yeah . 
+D:  Yeah . Yeah , he  you talked about it . Oh , OK . So you know what he 's doing . Alright . 
+C:  y s so I was  I actually ran the experiments mostly and I  I was  I was hoping to 
+E:  <mike noise> 
+C:  have the plots with me today . I just didn't get to it . But , um  <breath> 
+E:  <mike noise> 
+C:  yeah , I wou I would be curious about people 's feedback on this cuz I 'm  <breath> 
+C:  @ @  
+C:  I p I think there are some 
+C:  I think it 's  it 's kind of like a  a bit of a tricky engineering problem . I 'm trying to figure out what 's the optimal way 
+C:  to set this up . So , um , <breath> I 'll try to make the plots and then put some postscript up on my  on my web page . 
+C:  And I 'll mention it in my status report if people wanna take a look . <breath> 
+E:  <whistle>  
+D:  You could clarify something for me . You 're saying point three percent , 
+E:  <mike noise> 
+E:  <breath> 
+D:  <breath> you take a point three percent hit , <breath> 
+E:  Hello .  
+D:  when 
+D:  the training and testing links are  don't match or something ? Is that what it is ? Or  ?  
+C:  w Well , it c 
+C:  I  I don't think it  it 's <breath> just for any mismatch <breath> you take a hit . <breath> i In some cases it might be 
+D:  Yeah . 
+C:  u better to have a mismatch . <breath> Like I think I saw something like  like if you only have two seconds in test , 
+D:  Yeah . 
+C:  or , um , maybe it was something like four seconds , you actually 
+C:  do a little better if you , um , <breath> train on six seconds than if you train on four seconds . <breath> Um , 
+D:  Right . 
+C:  but the case , uh  with the point three percent hit was <breath> 
+C:  using six seconds in test , um , comparing train on twelve seconds  versus train on six seconds . 
+D:  And which was worse ? 
+C:  The train on twelve seconds . 
+D:  <breath> OK . But point three percent , uh , w from what to what ? 
+D:  That 's point three percent  
+C:  On  The  the  the accuracies <breath> 
+C:  w went from  it was something vaguely like ninety - five point six 
+C:  accuracy , um , improved to ninety - five point nine wh when I  
+D:  So four point four to four point one . 
+C:  OK . 
+D:  So  yeah . So about a  about an eight percent , 
+D:  uh , seven or eight percent relative ? 
+C:  OK . 
+D:  Uh , 
+D:  Yeah . Well , I think in a p You know , if  if you were going for an evaluation system you 'd care . But if you were 
+D:  doing a live system that people were actually using nobody would notice . It 's  uh , I think the thing is to get something that 's practical , that  that you could really use . 
+C:  Huh . That 's  that 's interesting . <breath> Alright , the e 
+C:  uh , I see your point . I guess I was thinking of it as , um , <breath> an interesting 
+C:  research problem . 
+D:  Yeah . 
+C:  The  how to g I was thinking that for the ASRU paper we could have a section saying , <breath> " For SmartKom , 
+B:  <mike noise> 
+C:  we  we d in  we tried this approach in , uh , <breath> interactive system " , which I don't think has been done before . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+C:  And  and then there was two research questions from that . And one is the k does it still work if you just use the past history ? 
+B:  <mike noise> 
+D:  Mm - hmm . 
+C:  Alright , and the other was this question of , um 
+C:  what I was just talking about now . So I guess that 's why I thought it was interesting . <breath> 
+D:  I mean , a short - time FFT  short - time cepstrum calculation , 
+D:  uh , mean  u mean calculation work that people have in commercial systems , they do this all the time . They  the  they 
+D:  calculate it from previous utterances and then use it , you know . But  but , uh , 
+C:  Yeah , um . 
+B:  <mike noise> 
+D:  as you say , there hasn't been that much with this long  long - time , uh , 
+D:  spectra work . Uh , 
+C:  Oh , o Oh , OK . So that 's  that 's  that 's standard . Um  
+D:  Yeah . Pretty common . Yeah . <breath> 
+C:  OK . 
+D:  Um , <breath> but , u uh , yes . No , it is interesting . And the other thing is , I mean , 
+D:  there 's two sides to these really small , uh , gradations in performance . Um , 
+D:  I mean , on the one hand in a practical system if something is , uh , 
+D:  four point four percent error , four point one percent error , people won't really tell  be able to tell the difference . 
+D:  On the other hand , when you 're doing , uh , research , 
+D:  you may , eh  you might find that the way that you build up a change from a ninety - five percent 
+H:  <mike noise> 
+D:  accurate system to a ninety - eight percent accurate system is through ten or twelve little things that you do that each are point three percent . So  
+D:  so the  they  they  it 's  I don't mean to say that they 're  they 're irrelevant . 
+D:  Uh , they are relevant . But , um , <breath> i for a demo , 
+D:  you won't see it . 
+C:  Mm - hmm . 
+H:  <mike noise> 
+C:  Right . OK . 
+D:  Yeah .  
+B:  <breath> 
+
+
+C:  And , um , 
+A:  <clears throat> 
+C:  Let 's  l let 's see . Um , 
+C:  OK . And then there 's um , another thing I wanna start looking at , um , <breath> 
+C:  wi is , um , the choice of the analysis window length . So I 've just been using two seconds 
+D:  <mike sounds> 
+D:  <breath> 
+C:  just because that 's what Carlos did before . <breath> Uh , I wrote to him asking about he chose the two seconds . 
+C:  And it seemed like he chose it a bit informally . <breath> So , um , 
+D:  <mike sounds> 
+C:  with the  with the HTK set - up I should be able to do some experiments , on 
+C:  just varying that length , say between one and three seconds , in a few different reverberation conditions , um , 
+C:  say this room and also a few of the artificial impulse responses we have for reverberation , 
+D:  <mike sound> 
+C:  just , um , making some plots and seeing how they look . 
+C:  And , um , so , 
+C:  with the  the sampling rate I was using , one second or two seconds or four seconds is at a power of two 
+C:  um , number of samples and , um , I 'll  I 'll jus f for the ones in between I guess I 'll just zero - pad . 
+D:  Mm - hmm .  
+
+
+D:  <breath> I guess one thing that might also be an issue , uh , cuz part of what you 're doing is you 're getting a  
+D:  a spectrum over a bunch of different kinds of speech sounds . 
+D:  Um , and so it might matter 
+D:  how fast someone was talking for instance . 
+C:  Oh . 
+D:  You know , if you  if  if  
+D:  if there 's a lot of phones in one second maybe you 'll get a  a really good sampling of all these different things , and  <breath> and , uh , on the other hand if someone 's talking slowly maybe you 'd need more . So  
+D:  I don't know if you have some samples of 
+C:  Huh . 
+D:  faster or slower speech but it might make a difference . I don't know . 
+C:  Uh , yeah , I don't  I don't think the TI - digits 
+C:  data that I have , um , <breath> i is  would be appropriate for that . 
+D:  Yeah , probably not . Yeah . 
+C:  But what do you  What about if I w I fed it through some kind of , um , 
+C:  speech processing algorithm that changed the speech rate ? 
+D:  Yeah , but then you 'll have the degradation of  of , uh , whatever you do 
+D:  uh , added onto that . But maybe . Yeah , maybe if you 
+D:  get something that sounds  that  that 's  does a pretty job at that . 
+C:  Yeah . Well , uh , just if you think it 's worth looking into . I mean , 
+D:  You could imagine that . 
+C:  it  it is getting a little away from reverberation . 
+D:  Um , yeah . It 's just that you 're making a choice  
+D:  uh , I was thinking more from the system aspect , if you 're making a choice for SmartKom , that  that  that it might be 
+C:  Yeah . 
+D:  that it 's  it c the optimal number could be different , 
+C:  Right . 
+D:  depending on  
+D:  Could be . I don't know . 
+B:  <mike noise> 
+D:  <mike noise> 
+
+
+C:  And  and th the third thing , um , 
+C:  uh , is , um , Barry explained LDA filtering 
+C:  to me yesterday . 
+C:  And so , um , Mike Shire in his thesis um , <breath> did a  a series of experiments , um , 
+C:  training LDA filters 
+C:  in d on different conditions . And you were interested in having me repeat this for   
+D:  <mike noise> 
+C:  for this mean subtraction approach ? Is  is that right ? Or for these long analysis windows , I guess , is the right way to put it . 
+D:  I guess , the  the  the issue I was  the general issue I was bringing up was that 
+D:  if you 're  have a moving  
+D:  <breath> 
+D:  moving window , uh , a wa a  a set of weights 
+D:  times things 
+D:  that , uh , move along , shift along in time , 
+D:  that you have in fact a linear time invariant filter . 
+D:  And you just happened to have picked a particular one by setting all the weights to be equal . 
+D:  <breath> And so the issue is what are 
+D:  some other filters that you could use , 
+C:  Mm - hmm . 
+D:  uh , in that sense of " filter " ? And , um , 
+D:  as I was saying , I think the simplest thing to do is not to train anything , but just to do some sort of , uh , 
+D:  uh , hamming or Hanning , uh , kind of window , 
+C:  Right . Mm - hmm . 
+D:  kind of thing , just sort of to de - emphasize the jarring . So I think that would sort of be the first thing to do . 
+D:  But then , yeah , the LDA 
+D:  i uh , is interesting because it would sort of say 
+D:  well , suppose you actually trained this up to do the best you could by some criterion , 
+D:  what would the filter look like then ? 
+C:  Uh - huh . 
+D:  Uh , and , um , 
+D:  that 's sort of what we 're doing in this Aur - Aurora stuff . And , uh , 
+A:  <clears throat> 
+D:  it 's still not clear to me in the long run whether the best thing to do would be to do that or to have some stylized version of the filter that looks like these things you 've trained up , because 
+D:  you always have the problem that it 's trained up for one condition and it isn't quite right for another . So . 
+D:  uh  that 's  that 's why  
+D:  that 's why RASTA filter has actually ended up 
+D:  lasting a long time , people still using it quite a bit , because 
+D:  y you don't change it . So 
+G:  <laugh> 
+D:  doesn't get any worse . 
+D:  <laugh> 
+G:  <laugh> 
+D:  Uh , 
+C:  Huh . 
+D:  Anyway .  
+
+
+C:  o OK . So , um , 
+H:  <mike noise> 
+C:  a actually I was just thinking about 
+C:  what I was asking about earlier , wi which is about having <breath> less than say twelve seconds 
+C:  in the SmartKom system to do the mean subtraction . You said in <breath> systems where you use cepstral mean subtraction , 
+H:  <mike noise> 
+C:  they concatenate utterances and , <breath> do you know how they address this issue of , um , testing versus training ? Can  
+H:  <mike noise> 
+G:  <inbreath> I think what they do is they do it always on - line , I mean , that you just take what you have from the past , 
+D:  Go ahead .  
+G:  that you calculate the mean of this and subtract the mean . 
+C:  OK . <breath> Um  
+G:  And then you can  yeah , you  you can increase your window 
+F:  <mike noise> 
+G:  whi while you get  while you are getting more samples . 
+C:  OK , um , <breath> 
+C:  and , um , so  so in tha in that case , 
+C:  wh what do they do when they 're t um , performing the cepstral mean subtraction on the training data ? 
+C:  So  because you 'd have hours and hours of training data . So do they 
+C:  cut it off and start over ? 
+C:  At intervals ? Or  ?  <breath> 
+G:  So do you have  
+G:  uh , you  you mean you have files which are 
+G:  hours of hours long ? Or  ?  
+C:  Oh , well , no . I guess not . But  
+G:  <laugh> Yeah . I mean , usually you have in the training set you have similar conditions , I mean , 
+G:  file lengths are , I guess 
+G:  the same order or in the same size as for test data , or 
+G:  aren't they ? 
+C:  OK . But it 's  OK . So if someone 's interacting with the system , though , uh , Morgan  uh , Morgan said that you would <breath> tend to , um , <breath> chain utterances together 
+C:  um , r 
+D:  Well , I think what I was s I thought what I was saying was that , um , 
+C:  Oh . 
+D:  at any given point you are gonna start off with what you had from before . 
+D:  From  and so if you 're splitting things up into utterances  So , for instance , in a dialogue system ,  
+D:  where you 're gonna be asking , uh , you know , th for some information , 
+D:  there 's some initial th something . And , you know , the first time out you  
+D:  you might have some general average . But you  you d you don't have very much information yet . 
+D:  But at  after they 've given one utterance you 've got something . You can compute your mean cepstra from that , 
+C:  Mm - hmm . 
+D:  and then can use it for the next thing that they say , uh , 
+D:  so that , you know , the performance should be better that second time . 
+D:  Um , 
+D:  @ @  
+D:  and I think the heuristics of exactly how people handle that and how they handle their training 
+D:  I 'm sure vary from place to place . But I think the  
+D:  ideally , it seems to me anyway , that you  you would 
+D:  wanna do the same thing in training as you do in test . 
+D:  But that 's  that 's just , uh , a prejudice . And I think anybody 
+C:  Right . 
+D:  working on this with some particular task would experiment . 
+C:  I g I guess the question I had was , um , 
+C:  amount 
+C:  of 
+C:  data e u was the amount of data that you 'd give it to , um <breath> 
+C:  update this estimate . Because say you  if you have say five thousand utterances in your training set , <breath> um , 
+C:  and you  you keep the mean from the last utterance , by the time it gets to the five thousandth utterance  
+D:  <breath> No , but those are all different people with different  I mean , i in y 
+D:  So for instance , in  in the  in a telephone task , these are different phone calls . So you don't wanna 
+B:  <mike noise> <breath> 
+D:  @ @  
+D:  chain it together from a  from a different phone call . 
+C:  OK , so  so  so they would  
+D:  So it 's within speaker , within phone call , if it 's a dialogue system , it 's within 
+C:  g s 
+G:  Yeah . 
+G:  Hmm . 
+D:  whatever this characteristic you 're trying to get rid of is expected to be consistent over , right ? 
+B:  <scratch sound> <breath> 
+C:  r and it  right . OK , so you 'd  you  and so in training you would start over at  at every new phone call or at every <breath> new speaker . Yeah , OK . 
+D:  Yeah . 
+D:  Yeah . Now , <breath> you know , maybe you 'd use something from the others just because at the beginning of a call you don't know anything , and 
+D:  so you might have some kind of general thing that 's your best guess to start with . But  
+D:  So , s I  I  
+D:  <breath> you know , a lot of these things are proprietary so we 're doing a little bit of guesswork here . I mean , what do comp what do people do who really face these problems in the field ? Well , they have companies and they don't tell other people exactly what they do . But  
+G:  <breath-laugh> 
+C:  R right . 
+D:  but I mean , when you  the  the hints that you get from what they  when they talk about it are that they do  they all do something like this . 
+A:  <breath-laugh> 
+A:  <clears throat> 
+C:  Right , OK . I see . <breath> Bec - because I  so this SmartKom task first off , it 's this TV and movie information system . <breath> And  
+D:  Yeah , but you might have somebody who 's using it <breath> and then later you might have somebody else who 's using it . And so you 'd wanna set some  Yeah . 
+C:  Yeah . 
+C:  Yeah . <breath> 
+C:  Right . Right . I  I see . I was  I was about to say . So if  if you ask it " What  what movies are on TV tonight ? " , if I look at my wristwatch when I say that it 's about 
+B:  <breath> 
+D:  Yeah . 
+C:  two seconds . <breath> The way I currently have the mean subtraction , 
+D:  Yeah . 
+C:  um , set up , the  the analysis window is two seconds . So what you just said , about what do you start with , raises a question of <breath> what do I start with then ? I guess it  because  
+D:  Mm - hmm .  
+D:  <breath> Well , w OK , so in that situation , though , th maybe what 's a little different there , is I think you 're talking about  
+D:  there 's only one  
+D:  it  it  it also depends  we 're getting a little off track here .  r But  but  but  
+C:  Oh , right . 
+D:  Uh , there 's been some discussion about whether the work we 're doing in that project is gonna be for the kiosk or for the mobile or for both . And I think for this kind of discussion it matters . 
+D:  If it 's in the kiosk , then the physical situation is the same . 
+D:  It 's gonna  you know , the exact interaction of the microphone 's gonna differ depending on the person and so forth . But at least the basic acoustics are gonna be the same . 
+D:  So f if it 's really in one kiosk , 
+D:  then I think that you could just chain together and  and you know , as much  as much speech as possible to  
+D:  because what you 're really trying to get at is the  is the reverberation characteristic . 
+C:  Yeah . 
+D:  But in  in the case of the mobile , 
+D:  uh ,  presumably the acoustic 's changing all over the place . 
+C:  Right . 
+D:  And in that case you probably don't wanna have it 
+F:  <mike noise> 
+D:  be endless because you wanna have some sort of  it 's  it 's not a question of how long 
+F:  <mike noise> 
+F:  <mike noise> 
+H:  <mike noise> 
+D:  do you think it 's  you can get an approximation to a stationary something , given that it 's not really stationary . So . 
+C:  @ @ 
+C:  Right . 
+G:  Hmm . <breath> 
+C:  Right . 
+C:  And I  I g I guess I s just started thinking of another question , which is , <breath> 
+C:  for  for the very first frame , 
+C:  w what  what do I do if I 'm  if I take  if I use that frame to calculate the mean , 
+D:  Mm - hmm . 
+C:  then I 'm just gonna get n nothing . 
+D:  Right . 
+C:  Um , so I should probably have some kind of default <breath> mean for the first f couple of frames ? OK . 
+D:  <laugh> Yeah . 
+D:  Yeah . 
+D:  Yeah . Or subtract nothing . I mean , it 's  <laugh> 
+G:  <breath-laugh> 
+C:  Or subtract nothing . And  and that 's  that 's  I guess that 's something that 's p people have figured out how to deal with in cepstral mean subtraction as well ? <breath> 
+D:  Yeah , yeah . 
+D:  Yeah , people do something . They  they , uh , they have some , um , 
+D:  uh , 
+D:  in  in cepstral mean subtraction , 
+D:  for short - term window  analysis windows , as is usually done , 
+D:  you 're trying to get rid of some very general characteristic . And so , 
+D:  uh , if you have any other information about what a general kind of characteristic would be , then you  you can do it there . 
+F:  You can also  
+F:  you can also reflect the data . 
+F:  So you take , uh  
+F:  you know , I 'm not sure how many frames you need . But you take that many from the front and flip it around to  
+C:  Uh - huh . 
+D:  Yeah , that 's  
+F:  a as the negative value . So you can always  
+D:  Yeah . 
+D:  The other thing is that  and  and  
+D:  I  I remember B B N doing this , is that if you have a multi - pass system , 
+D:  um , if the first pass ta it takes most of the computation , 
+D:  the second and the third pass could be very , very quick , just looking at a relatively small n small , uh , space of hypotheses . 
+B:  <mike noise> 
+C:  Mmm . 
+B:  <mike noise> 
+C:  Uh - huh . 
+D:  Then you can do your first pass <breath> without any subtraction at all . 
+C:  Oh . 
+D:  And then your second pass , uh , 
+D:  uh , eliminates those  most of those hypotheses by , uh  by having an improved  
+D:  improved version o of the analysis . So . 
+C:  OK . 
+C:  OK . 
+C:  OK . So that was all I had , for now . 
+D:  Yeah . 
+D:  <breath> 
+
+
+F:  Do you wanna go , Barry ? 
+A:  Yeah , OK . Um , so for the past , <breath> uh , week an or two , 
+A:  I 've been just writing my , uh , formal thesis proposal . 
+A:  Um , so I 'm taking <breath> this qualifier exam that 's coming up in two weeks . <breath> And I  I finish writing a proposal and submit it to the committee . <breath> Um . <breath> 
+D:  <breath> 
+A:  <mouth noise>  
+A:  And uh , should I  should I explain , uh , more about 
+A:  what  what I 'm proposing to do , and s and stuff ? 
+D:  Yes , briefly .  
+F:  Yeah briefly . 
+A:  OK . 
+F:  <clears throat> 
+A:  Um , so briefly , <breath> I 'm proposing to do a n a new p approach to speech recognition using 
+A:  um , a combination of , uh , multi - band ideas and ideas , um , <breath> 
+A:  <mouth noise>  
+A:  about the uh , acoustic phonec phonetic approach to speech recognition . 
+A:  Um , so I will be using <breath> these graphical models that  
+A:  um , that implement 
+A:  the multi - band approach <breath> to recognize a set of intermediate categories 
+A:  that might involve , uh , things like phonetic features <breath> or other  
+A:  other f feature things that are more closely related to the acoustic signal itself . 
+A:  Um , and the hope in all of this is that by going multi - band and by going into these , <breath> um 
+A:  intermediate classifications , <breath> that we can get a system that 's more robust to  to unseen noises , 
+A:  and situations like that . <breath> Um , 
+A:  <mouth noise>  
+A:  and so , 
+A:  some of the research issues involved in this are , <breath> um , 
+A:  <mouth noise>  
+A:  one , what kind of intermediate categories do we need to classify ? 
+A:  Um , another one is <breath> um , what  
+A:  what other types of structures in these multi - band graphical models should we consider in order to 
+A:  um , combine evidence from <breath> the sub - bands ? 
+D:  <mike sound> 
+A:  And , uh , the third one is how do we  how do we merge all the , uh , information from the individual 
+A:  uh , multi - band classifiers to come up with word  word recognition or  or phone recognition things . 
+A:  Um , so basically that 's  that 's what I 've been doing . And , 
+F:  So you 've got two weeks , huh ? 
+A:  I got two weeks to brush up on d um , presentation stuff and , um , 
+A:  <mouth noise>  
+D:  Oh , I thought you were finishing your thesis in two weeks . 
+A:  But .  
+F:  <laugh> 
+A:  Oh , that too . 
+F:  <laugh> 
+D:  Yeah . <laugh> 
+H:  <laugh> 
+B:  <laugh> 
+G:  <laugh> 
+A:  Yeah . 
+A:  <laugh> 
+F:  Are you gonna do any dry runs for your 
+B:  <laugh> 
+F:  thing , or are you just gonna  
+A:  Yes . Yes . I , um  I 'm  I 'm gonna do some . Would you be interested ? 
+F:  Sure . 
+A:  To help out ? 
+F:  Sure .  
+A:  OK . Thanks . 
+A:  Yeah . 
+F:  Is that it ? Hhh .  
+A:  That 's it . <breath> 
+
+
+F:  OK . Uh . Hhh .  Let 's see . So we 've got forty minutes left , and it seems like there 's a lot of material . An - any suggestions about 
+F:  where we  where we should go next ? 
+D:  <breath> 
+B:  Mmm , @ @ . 
+F:  Uh . 
+F:  Do you wanna go , Sunil ? Maybe we 'll just start with you . 
+H:  <mike noise> 
+B:  Yeah . But I actually stuck 
+B:  most of this in our 
+B:  m last meeting with Guenter . 
+B:  Um , but I 'll just  
+B:  Um , so the last week , uh , I 
+B:  showed some results with only SpeechDat - Car which was like some fifty - six percent . 
+B:  And , uh , I didn't h I mean , I  I found that the results  I mean , I wasn't getting that 
+B:  r results on the TI - digit . So I was like looking into " why , what is wrong with the TI - digits ? " . Why  why I was not getting it . And I found that , the 
+B:  noise estimation is a reason for 
+B:  the TI - digits to perform worse than the baseline . 
+B:  <inbreath> So , uh , I actually , picked th 
+B:  I mean , the first thing I did was I just scaled the noise estimate by a factor which is less than one to see if that  
+B:  because I found there are a lot of zeros in the 
+B:  spectrogram for the TI - digits 
+D:  <breath> 
+B:  when I used this approach . So 
+B:  the first thing I did was I just scaled the noise estimate . And I found  
+B:  So the  the results that I 've shown here are the 
+B:  complete results using the new  
+B:  Well , the n the new technique is nothing but the noise estimate scaled by a factor of point five . 
+B:  So it 's just an ad - hoc  I mean , some intermediate result , because it 's not optimized for anything . 
+H:  <mike noise> 
+B:  So the results  The trend  the only trend I could see from those results was like the  
+B:  the p the current noise estimation or the , uh , noise composition scheme is working good for like 
+B:  the car noise type of thing . Because I 've  the only  only  
+B:  p very good result in the TI - digits is the 
+B:  noise  car noise condition for their test - A , which is like the best I could see that 
+H:  <mike noise> 
+B:  uh , for any non - stationary noise like " Babble " or " Subway " or any  " Street " , 
+B:  some " Restaurant " noise , it 's like  it 's not performing w very well . 
+B:  <mouth> So , 
+B:  <breath> the  <breath> So that  that 's the first thing I c uh , I could make out from this stuff . <breath> And  <breath> 
+
+
+G:  <breath> Yeah , I think what is important to see is that there is a 
+G:  big difference between the training modes . 
+G:  Uh - huh . If you have clean training , 
+B:  Yeah . 
+G:  you get also a fifty percent improvement . <breath> 
+B:  Yeah . 
+G:  But if you have muddy condition training you get only 
+B:  Yeah . 
+G:  twenty percent . 
+B:  Yeah . 
+E:  Mm - hmm . 
+G:  Mm - hmm . 
+B:  Uh , and in that twenty percent @ @ it 's very inconsistent across different noise conditions . So I have like 
+G:  Mmm . 
+B:  a forty - five <breath> percent for " Car noise " and then there 's a minus five percent for the " Babble " , 
+G:  Mmm . 
+B:  and there 's this thirty - three for the " Station " . 
+B:  And so <breath> it 's  it 's not  it 's not actually very consistent across . So . 
+B:  The only correlation between the SpeechDat - Car and this performance is the c stationarity of the noise that is there in these conditions and the SpeechDat - Car . 
+G:  Mm - hmm . 
+B:  And , uh  
+B:  so  
+B:  so the overall result is like in the last page , which is like forty - seven , which is still 
+B:  very imbalanced because there are like fifty - six percent on the SpeechDat - Car and thirty - five percent on the TI - digits . 
+B:  And  
+B:  uh , ps the fifty - six percent is like comparable to what the French Telecom gets , but the thirty - five percent is way off . 
+D:  I 'm sort of confused but  this  I 'm looking on the second page , 
+H:  <mike noise> 
+B:  Oh , yep . <breath> 
+D:  and it says 
+D:  " fifty percent "  
+D:  looking in the lower right - hand corner ,  " fifty percent relative performance " . 
+G:  For the clean training . 
+D:  <mouth noise> Is that  
+G:  u 
+G:  And if you  if you look  
+D:  <mouth noise> is that fifty percent improvement ? 
+B:  Yeah . 
+G:  Yeah . 
+B:  For  that 's for the clean training and the noisy testing for the TI - digits . 
+D:  So it 's improvement over the baseline mel cepstrum ? 
+B:  Yeah . Yeah . 
+D:  But the baseline mel cepstrum under those training doesn't do as well 
+D:  I  I 'm  I 'm trying to understand why it 's  it 's eighty percent  That 's an accuracy number , I guess , right ? 
+B:  Yeah , yeah , yeah . 
+D:  So that 's not as good as the one up above . 
+B:  No . 
+D:  But the fifty is better than the one up above , so I 'm confused . 
+B:  Yeah . 
+B:  Uh , actually the noise compensation whatever , uh , we are put in it works very well for the high mismatch condition . 
+B:  I mean , it 's consistent in the SpeechDat - Car @ @ and in the 
+B:  clean training also it gives it  But this fifty percent is  
+B:  is that the  the high mismatch performance  equivalent to the high mismatch performance in the speech . 
+F:  So n s So since the high mismatch performance is much worse to begin with , 
+B:  Yeah . 
+F:  it 's easier to get a better relative improvement . 
+B:  Yeah . I do . Yeah , yeah . So by putting this noise  
+E:  Yeah . 
+E:  Yeah , if we look at the figures on the right , we see that 
+D:  Oh . 
+B:  Yeah .  
+E:  the reference system is very bad . 
+B:  The reference drops like a very fast  
+D:  Oh , oh , oh , oh , oh , oh . I see . 
+E:  Like for clean  clean training condition . 
+B:  Yeah . 
+D:  I see . 
+E:  Nnn . 
+D:  This is  this is TI digits  we 're looking at ? This whole page is TI - digits or this is  ?  
+B:  Yeah . 
+B:  Yeah . 
+B:  Oh  
+B:  Oh . Yeah . It 's not written anywhere . Yeah , it 's TI - digits . The first r spreadsheet is TI - digits . 
+D:  <breath> 
+G:  Hmm .  
+
+
+D:  Mmm . How does clean training do for the , uh , " Car " 
+D:  stuff ?  
+B:  The " Car " ? Oh . Still  it still , uh  that  that 's still consistent . I mean , I get the best performance in the case of " Car " , which is the third column in the A condition . 
+D:  No . I mean , this is added noise . I mean , this is TI - digits . I 'm sorry . I meant  in  in the  in the , uh , multi - language , uh , 
+B:  <breath> Uh  
+D:  uh , Finnish and  
+G:  This is next  next page . Hmm . 
+A:  <mike sound> 
+B:  That 's the next  next spreadsheet , is  
+B:  So that is the performance for Italian , Finnish and Spanish . 
+E:  <sniff> 
+D:  " Training condition "   
+D:  <breath> Oh , right . So " clean " corresponds to " high mismatch " . 
+B:  Yeah .  
+D:  And " increase " , 
+D:  That 's increase e 
+G:  Improvement . 
+B:  Improvement . That 's  " Percentage increase " is the percentage improvement over the baseline . So that 's  
+G:  Yeah .  
+G:  It 's  it 's a  <long inhale> 
+D:  Which means decrease in word error rate ? 
+B:  Yeah . 
+B:  <laugh> 
+D:  OK , so " percentage increase " means decrease ? OK . 
+G:  <laugh> 
+B:  <laugh> 
+B:  Yeah , yeah .  
+D:  <laugh> 
+G:  <laugh> 
+A:  <laugh> 
+B:  <laugh> 
+G:  Yeah . The  the w there was a very long discussion about this on  on the  on the , uh , 
+B:  <laugh> 
+D:  <breath> 
+G:  Amsterdam meeting . 
+B:  <laugh> 
+D:  Yeah . 
+G:  How to  how to calculate it then . 
+B:  Yeah . There 's  there 's a  
+G:  I  I  I guess you are using finally this  the scheme which they  
+B:  Which is there in the spreadsheet . I 'm not changing anything in there . 
+G:  OK . 
+G:  Mmm . 
+B:  <laugh> 
+A:  <laugh> 
+D:  Alright . 
+B:  So . Uh , 
+D:  <laugh> 
+B:  yeah . So all the hi H M numbers are w 
+B:  very good , in the sense , they are better than what the French Telecom gets . So . 
+B:  <breath> But the  
+B:  the only number that 's still  I mean , which Stephane also got in his result was that 
+B:  medium mismatch of the Finnish , which is very  <breath> which is a very strange 
+B:  situation where we used the  we changed the proto for initializing the HMM  I mean , this  this is basically because it gets stuck in some local minimum in the training . 
+E:  <laugh> 
+D:  Uh - huh . <breath> 
+B:  That seventy - five point seven nine in the Finnish mismatch 
+B:  which is that  the eleven point nine six what we see . 
+G:  Mmm . 
+D:  <breath> 
+B:  Yeah . 
+D:  So we have to jiggle it somehow ? 
+B:  Yeah  so we start with that different proto and it becomes eighty - eight , which is like some fifty percent improvement . <laugh> 
+D:  <laugh-breath> 
+A:  <laugh> 
+D:  S Wait a minute . Start with a different what ? 
+B:  Different prototype ,  which is like a different initialization for the , uh , s transition probabilities . 
+B:  It 's just that right now , the initialization is to stay more in the current state , which is point four point six , right ? 
+E:  Yeah . 
+B:  Yeah . And if it changes to point five point five , which is equal @ @ for transition and self loop where it becomes eighty - eight percent . 
+F:  Well , but that involves mucking with the back - end , which is not allowed . 
+B:  Yeah . We can't do it . 
+F:  Yeah . 
+B:  Yeah . <laugh> 
+E:  Mmm . 
+B:  So . 
+D:  <laugh> 
+E:  <laugh> 
+B:  <laugh> 
+G:  I mean , it uh , like , i i 
+G:  i It is well known , this  this medium match condition of the Finnish data has 
+B:  Very s  
+E:  Yeah . 
+G:  some strange effects . I mean , that is  
+B:  It has a very few at  uh , actually , c uh , tran I mean , words also . It 's a very , very small set , actually . 
+G:  <breath> Yeah , that too . Yeah . Uh - huh . 
+G:  There is a l a  There is a lot of  Uh , there are a lot of utterances with music in  with music in the background . 
+B:  So there is  
+B:  Yeah . 
+B:  Yeah , yeah , yeah . <laugh> Yeah . <laugh> 
+E:  <laugh> 
+G:  Mmm . 
+D:  Uh - huh . 
+B:  <laugh> Yeah . It has some music also . I mean , very horrible music like like 4 x . <breath> 
+B:  I know . 
+D:  <inbreath> So maybe for that one you need a much smarter VAD ? <laugh> 
+B:  <laugh> 
+G:  <laugh> 
+E:  <laugh> 
+D:  Mmm , 
+D:  @ @ if it 's music .  
+B:  Uh  
+G:  <breath> 
+B:  So , 
+B:  that  that 's the  that 's about the results . <breath> And , uh , 
+A:  <breath> 
+
+
+B:  the summary is like  OK . So there are  the other thing what I tried was , which I explained in the last meeting , is using the 
+B:  channel zero for , uh , 
+B:  for both 
+B:  dropping and estimating the noise . 
+B:  <vocal squeak> And 
+B:  that 's like just to f n get a feel of how good it is . 
+D:  <mike sound> 
+B:  I guess the fifty - six percent improvement in the SpeechDat - Car becomes like sixty - seven percent . 
+B:  Like ten percent better . 
+B:  But that 's  that 's not a  that 's a cheating experiment . So . 
+B:  That 's just  So , 
+G:  <breath> 
+B:  m 
+B:  w 
+G:  But the  but the , uh , forty - seven point nine percent which you have now , that 's already a 
+G:  remarkable improvement in comparison to the 
+G:  first proposal . 
+B:  Yeah . So we had forty - four percent in the first proposal . Yeah . 
+G:  OK . Mm - hmm . 
+B:  We have f a big im So <breath> the major improvement that we got was in all the high mismatch cases , because all those numbers were in sixties and seventies because we never had any noise compensations . 
+G:  Mmm . 
+B:  So that 's where the biggest improvement came up . Not much in the well match and the medium match and TI - digits also right now . 
+B:  <breath> So this is still at three or four percent improvement over the first proposal . 
+G:  Mmm . 
+G:  Mmm . 
+D:  Yeah , so that 's good . 
+B:  Yeah . So . <breath> 
+D:  <breath> 
+D:  Then if we can improve the noise estimation , then it should get better . 
+G:  <inbreath> Yeah , I  I started thinking about also  I mean yeah , uh , <breath> I discovered the same problem when I started working on  
+G:  uh , 
+G:  on this Aurora task <breath> almost two years ago , that you have the problem with this mulit a at the beginning we had only this multi condition training of the TI - digits . 
+B:  Yeah . 
+G:  And , uh , I  I found the same problem . Just taking 
+G:  um , what we were used to u <breath> use , 
+G:  I mean , uh , some type of spectral subtraction ,  y <breath> 
+G:  you get even worse results than 
+G:  <breath> the basis and uh  
+B:  Yeah . Yeah , yeah . 
+G:  <breath> I  I tried to find an explanation for it , so  
+D:  <mike noise> 
+D:  Mmm . <mike noise> 
+B:  So . Yes . Stephane also has the same experience of using the spectral subtraction right ? 
+G:  Mmm . 
+E:  Mm - hmm . 
+B:  Yeah . 
+E:  Yeah . 
+B:  So here  here I mean , I found that it 's  if I changed the noise estimate I could get an improvement . 
+B:  So that 's  so it 's something which I can actually pursue , is the noise estimate . 
+G:  Mm - hmm . 
+B:  And  <breath> 
+G:  Yeah , I think what you do is in  when  when you have the  the  this multi - condition training mode , 
+G:  um 
+G:  then you have  then you can train models for the speech , for the words , as well as for the pauses 
+G:  where you really have 
+G:  all information about the noise available . 
+B:  Yeah . 
+G:  And 
+G:  it was surprising  
+G:  At the beginning it was not surprising to me that you get really the best results on doing it this way , I mean , in comparison to any type of training on clean data and 
+E:  <sniff> 
+G:  any type of processing . <breath> But it was  <breath> So , u u 
+G:  it  it seems to be the best what  wh wh what  what we can do in this moment is multi - condition training . <breath> 
+D:  <breath> 
+
+
+G:  And every when we now start 
+G:  introducing some  
+G:  some noise reduction technique we  we introduce also somehow artificial distortions . 
+B:  Yeah .  
+G:  And these artificial distortions  uh , I have the feeling that they are the reason why  
+G:  why we have the problems in this multi - condition training . 
+G:  That means the H M Ms we trained , they are  they are based on Gaussians , 
+B:  Yeah . 
+G:  and on modeling Gaussians . <breath> And if you  
+G:  Can I move a little bit with this ? Yeah . 
+G:  <breath> And if we introduce now this  this u spectral subtraction , or Wiener filtering stuff  <breath> So , 
+G:  usually what you have is maybe , um  
+G:  I 'm  I 'm 
+G:  showing now an envelope 
+H:  <mike noise> 
+G:  um 
+G:  maybe you 'll  f for this time . 
+G:  So usually you have  maybe in clean condition you have something 
+E:  <sniff> 
+G:  which looks like this . And if it is noisy it is somewhere here . 
+G:  <breath> And then you try to subtract it or Wiener filter or whatever . <breath> And what you get is you have always these problems , that you have this  
+G:  these  these  these zeros 
+B:  Yeah . 
+G:  in there . 
+G:  <breath> And you have to do something if you get these negative values . I mean , this is your noise estimate and you somehow subtract it 
+G:  or do whatever . <breath> Uh , and then you have  
+E:  <sniff> 
+G:  And then I think what you do is you introduce some  some artificial distribution 
+E:  <sniff> 
+G:  in this 
+G:  uh 
+G:  in  
+G:  in the models . I mean , i you  you train it also this way <breath> 
+D:  <breath> 
+G:  but , i somehow there is  u u there is no longer a  a Gaussian distribution . It is somehow a strange distribution which we introduce with these 
+G:  <breath> artificial distortions . 
+G:  And  and I was thinking that  that might be the reason why you get these problems in the  especially in the multi - condition 
+D:  <mike sound> 
+D:  Mm - hmm .  
+B:  Yeah , yeah . Th - That 's true . 
+G:  training mode . 
+B:  Yeah  the c the models are not complex enough to 
+G:  s 
+H:  <mike noise> 
+B:  absorb that additional variability that you 're introducing . 
+F:  Thanks Adam . 
+G:  Yeah . 
+G:  Yes . 
+B:  Well , that 's  
+B:  Yeah . So  
+E:  I also have the feeling that 
+E:  um , the reason ye why it doesn't work is  yeah , that the models are much  
+E:  are t um , not complex enough . <breath> Because I  
+E:  actually I als always had a good experience with spectral subtraction , <breath> 
+E:  just a straight spectral subtraction algorithm when I was using neural networks , 
+E:  big neural networks , which maybe are more 
+E:  able to model strange distributions and  
+G:  Mm - hmm . 
+E:  But  
+E:  Yeah . 
+D:  <inbreath> 
+E:  Then I tried the same  exactly the same spectral subtraction algorithm on these Aurora tasks  and 
+E:  it simply doesn't work . 
+E:  It 's even  
+G:  Hmm . 
+E:  it , uh , hurts even . So . <breath> 
+D:  <breath> We probably should at some point here try the tandem  the  the  the system - two 
+G:  Hmm . 
+D:  kind of stuff with this , with the spectral subtraction for that reason . Cuz <breath> again , it should do a transformation to a domain where it maybe  
+G:  Mm - hmm . 
+D:  looks more Gaussian . 
+E:  Mm - hmm .  
+G:  Hmm . 
+
+
+G:  <breath> Yeah , y I  I was  whe w w just yesterday when I was thinking about it <breath> 
+D:  <breath> 
+G:  um 
+G:  w what  what we could 
+B:  <scratch sound> 
+G:  try to do , or do about it  I mean , if you  if you get at 
+G:  this  in this situation that you get this  this negative values and you simply set it to zero or to a constant or whatever 
+B:  @ @ 
+B:  It 's  
+G:  <breath> 
+G:  if we  if we would use 
+G:  there a 
+G:  somehow , um  
+G:  a random generator 
+G:  which  which has a certain distribution , u not a certain   yeah , a special distribution 
+G:  we should see  we  we have to think about it . 
+G:  And that we , 
+G:  so , introduce again some natural 
+G:  behavior 
+D:  Mm - hmm .  
+G:  in this trajectory . 
+B:  Mm - hmm . Very different from speech . 
+B:  Still , I mean , it shouldn't confuse the  
+G:  Yeah , I mean , similar to what  what you see really u in  in the real 
+B:  OK . 
+G:  um 
+G:  noisy situation . 
+H:  <mike noise> 
+B:  Mm - hmm . 
+G:  Or i in the clean situation . But  but somehow a  a natural distribution . 
+D:  <breath> But isn't that s again sort of the idea of the additive thing , if it  as  as we had in the J 
+D:  stuff ? I mean , basically if  <breath> 
+D:  if you have random data , um , in  in the time domain , 
+D:  then when you look at the s spectrum it 's gonna be pretty flat . 
+G:  Mm - hmm . 
+D:  And  and , 
+D:  uh , 
+D:  so just add something everywhere 
+D:  rather than just in those places . It 's just a constant , right ? 
+E:  Mm - hmm . 
+G:  Yeah . 
+G:  I think  e yeah . It 's  it 's just especially in these segments , I mean , you introduce , um , very artificial 
+D:  Yeah . 
+G:  behavior . And  
+D:  Yeah . Well , see if you add something everywhere , it has almost no effect up  up  up on  on top . 
+E:  Mm - hmm . 
+D:  And it  and it  and it has significant effect down there . That was , sort of the idea . 
+G:  Mm - hmm . 
+B:  Hmm . 
+B:  Yeah the  that 's true . That  those  those regions are the cause for this 
+G:  I 
+G:  Mm - hmm . 
+B:  @ @  those negative values or whatever you get . Yeah . 
+G:  Mm - hmm . 
+B:  So . 
+G:  I mean , we  we could trit uh , we  we could think how 
+B:  Yeah . 
+G:  w what  what we could try . I mean , <breath> it  it was just an idea . I mean , we  
+B:  Yeah , yeah . 
+E:  Mm - hmm . 
+G:  to  
+D:  I think when it 's noisy people should just speak up . 
+F:  <mike noise> 
+G:  Mmm . 
+F:  <laugh> 
+G:  <laugh> 
+B:  <laugh> 
+D:  <laugh> 
+A:  <laugh> 
+F:  <mike noise> 
+D:  <breath> 
+B:  So   
+E:  If we look at the France Telecom proposal , they 
+E:  use some kind of noise addition . 
+E:  They have a random number generator , right ? 
+E:  And they add noise 
+D:  Oh , they do !  
+E:  on the trajectory of , uh , the log energy only , right ? 
+D:  Oh .  
+B:  Yep . 
+B:  C - z C - zero and log energy also , yeah .  
+E:  Yeah . 
+E:  Um ,  
+E:  But I don't know how much effect it  this have , but 
+B:  Now ? 
+E:  they do that . Yeah . 
+G:  Uh - huh . 
+B:  Oh . 
+D:  Hmm .  
+G:  So it  it  it  it  
+G:  it is l somehow similar to what  
+E:  I think because they have th 
+E:  log energy , yeah , and then just generate random number . They have some kind of mean and variance , 
+E:  and they add this number to  
+E:  to the log energy simply . 
+D:  <breath> To the l 
+E:  Um  
+B:  Yeah  the  the log energy , the  after the clean  cleaning up . 
+E:  Mm - hmm . 
+B:  So they add a random  random noise to it . 
+D:  To the  just the energy , or to the mel  uh , to the mel filter ? 
+B:  No . On - only to the log energy . 
+E:  Only  Yeah . 
+D:  Oh . 
+G:  Uh - huh . 
+D:  So it  Cuz I mean , I think this is most interesting for the mel filters . 
+G:  Uh - huh . 
+D:  Right ? Or  or F F Ts , one or the other . 
+G:  But  but they do not apply filtering of the log energy or what  
+B:  Like , uh  I mean  <breath> 
+G:  like  like a spectral subtraction or  
+B:  No  their filter is not M domain . 
+G:  Yeah . I kn 
+B:  S so they did filter their time signal and then 
+G:  And then they calculate from this , the log energy or  ?  
+B:  what @ @  
+B:  u 
+B:  Yeah  then after that it is s almost the same as the baseline prop system . 
+G:  Mm - hmm . 
+B:  And then the final log energy that they  that they get , that  to the  to that they add some random noise . 
+D:  <breath> Yeah , but again , that 's just log energy as opposed to 
+B:  Yeah . So it 's not the mel . You know , it 's not the mel filter bank output . 
+D:  <breath> filter bank energy . Yeah . 
+G:  Mmm . 
+G:  Mm - hmm . 
+B:  These are log energy computed from the time s domain signal , not from the mel filter banks . 
+E:  Mm - hmm .  
+B:  <breath> 
+B:  So  
+D:  Hmm .  
+E:  Maybe it 's just a way to decrease the importance of 
+B:  did  <breath> 
+E:  this particular parameter in the  in the world feature vector cu 
+E:  if you add noise to one of the parameters , you widen the distributions and  
+D:  Hmm . 
+B:  Becomes flat . 
+B:  The variance , yeah , reduces , so . 
+B:  Hmm , yeah .    
+E:  Eee - sss - uh .  
+D:  So it could reduce the dependence on the amplitude and so on . Yeah . 
+E:  Yeah . 
+B:  Yeah .  
+B:  Although  
+D:  Maybe . 
+F:  So is , uh  Is that about it ? 
+E:  Mm - hmm .  
+H:  <mike noise> 
+
+
+B:  Uh , so the  OK . So the other thing is the  
+F:  Or  ?  
+B:  I 'm just looking at a little bit on the delay 
+B:  issue where the delay of the system is like a hundred and eighty millisecond . So <breath> I just  
+B:  just tried another 
+B:  sk system  I mean , another filter which I 've like shown at the end . Which is very similar to the existing 
+B:  uh , filter . 
+B:  Only  Uh , only thing is that the phase is  is like a totally nonlinear phase because it 's a  
+D:  <mike sound> 
+B:  it 's not a symmetric filter anymore . <breath> 
+F:  This is for the LDA ? 
+B:  Yeah  so  so this  this is like  So this makes the delay 
+B:  like zero for LDA because it 's completely causal . 
+B:  <breath> So  
+F:  Oh . 
+B:  So I got actually just the results for the Italian for that and that 's like  
+B:  <breath> So the fifty - one point O nine has become forty - eight point O six , which is like three percent relative 
+B:  degradation . 
+B:  <breath> So I have like the fifty - one point O nine and  <breath> So . 
+E:  Mm - hmm .  
+B:  I don't know it f fares for the other conditions . So it 's just like  it 's like a three percent relative degradation , 
+H:  <mike noise> 
+G:  <inbreath> But  but is there  is there a problem with the one hundred eighty milliseconds ? Or  ?  
+B:  with the  
+D:  <inbreath> 
+D:  Th - Well , this is  <laugh> 
+B:  u Uh , may <laugh> 
+H:  <mike noise> 
+G:  Yeah , I mean , I talked to  to  uh , I ta 
+B:  <laugh> 
+G:  Uh , I talked , uh , about it with  with Hynek . I mean , there is  
+D:  This is  So  So , basically our  our position is 
+H:  <mike noise> 
+D:  <breath> that , um , 
+D:  we shouldn't be unduly constraining 
+D:  the latency 
+D:  at this point because we 're all still experimenting with trying to make the performance better in the presence of noise . 
+D:  Uh , there is a minority in that group who is a arguing  who are arguing for <breath> 
+D:  um , 
+D:  uh , having a further constraining of the latency . 
+D:  So we 're s just continuing to keep aware of what the trade - offs are and , you know , what  what do we gain 
+G:  Mmm . 
+D:  from having longer or shorter latencies ? But 
+D:  since we always seem to at least get something out of longer 
+D:  latencies not being so constrained , we 're tending to go with that if we 're not 
+D:  told we can't do it . <breath-laugh> 
+F:  What  where was the , um  
+G:  Mm - hmm . 
+F:  the smallest latency of all the systems last time ? 
+B:  The French Telecom . 
+D:  Well , France Telecom was  was  was very short latency and they had a very good result . 
+G:  It 's  
+F:  What  what was it ? 
+D:  It was thirty - five .  
+G:  It was in the order of thirty milliseconds or  
+D:  Yeah . 
+F:  Thirteen ? 
+D:  th th 
+G:  Thirty . 
+F:  Thirty . 
+B:  Thirty - four . 
+D:  Yeah . 
+G:  Yeah . 
+G:  @ @ 
+D:  Yeah , so it 's possible to get very short latency . But , again , we 're  the  the approaches that we 're using are ones that <breath> 
+F:  Yeah . 
+F:  I was just curious about where we are compared to , you know , the shortest that people have done . 
+D:  take advantage of  
+G:  <breath> But  but I think this thirty milliseconds  they  they did  it did not include the  the delta 
+B:  Yeah . 
+G:  calculation . And this is included now , 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+G:  you know ? 
+B:  Yeah . 
+B:  <inbreath> So if they include the delta , it will be an additional forty millisecond . 
+E:  Mm - hmm .  
+G:  Yeah .  
+D:  Yeah . 
+G:  I  I don't remember the  
+G:  i th They were not using the HTK delta ?  
+B:  No , they 're using a nine - point window , which is like a four on either side , which is like  
+G:  Nine - point . 
+G:  OK . 
+B:  f so  
+G:  Mmm . 
+B:  they didn't include that . 
+D:  Yeah . 
+G:  Mm - hmm . 
+G:  <breath> 
+B:  So   
+F:  OK . 
+E:  Where does the comprish compression in decoding delay comes from ? @ @ 
+C:  <mike sound> 
+B:  That 's the way the  
+B:  the  the frames are packed , like you have to wait for one more frame to pack . Because it 's  the CRC is computed for two frames always . 
+E:  Mm - hmm . 
+D:  Well , that  the they would need that 
+D:  forty milliseconds also . 
+B:  <breath> No . They actually changed the compression scheme altogether . 
+D:  Right ? 
+E:  Mm - hmm . 
+B:  So they have their own compression and decoding scheme and they  I don't know what they have . But they have coded zero delay for that . 
+D:  Oh . 
+B:  Because they ch I know they changed it , 
+B:  their compression . They have their own CRC , their  their own <breath> 
+B:  error correction mechanism . So they don't have to wait more than one more frame to know whether the current frame is in error . <breath> 
+D:  Oh . 
+D:  Oh , OK . 
+B:  So they changed the whole thing so that there 's no delay for that compression and  
+D:  <clears throat> 
+B:  part also . 
+D:  Hmm . 
+G:  Mm - hmm . 
+B:  Even you have reported actually zero delay for the  compression . I thought maybe you also have some different  
+G:  Mmm . Mmm .  
+G:  No , I think I  I used this scheme as it was before . 
+B:  OK . 
+B:  Ah . 
+B:  Mm - hmm . 
+
+
+F:  OK , we 've got twenty minutes so we should <breath> 
+F:  probably 
+F:  try to move along . 
+F:  Uh , did you wanna go next , Stephane ? 
+E:  I can go next . Yeah .  
+D:  <mike sound> 
+E:  Mmm . 
+D:  Oh . 
+E:  It 's  
+D:  Wait a minute . It 's  
+E:  Yeah , we have to take  
+D:  <laugh> 
+D:  Wait a minute . <laugh> I think <breath> I 'm confused . 
+E:  Well   
+E:  OK .  
+D:  Alright . 
+E:  So you have w 
+E:  w one sheet ? 
+E:  This one is  you don't need it , alright . 
+D:  Uh  
+E:  So you have to take the whole  
+E:  the five . There should be five sheets . @ @ 
+D:  <laugh> 
+D:  OK , I have four now because I left one with Dave because I thought I was 
+D:  dropping one off and passing the others on . So , no , we 're not . OK . <breath> 
+C:  <mike sound> 
+B:  Thanks . 
+E:  <clears throat> 
+H:  Please give me one .  
+D:  Ah , we need one more over here .  
+E:  <breath> OK , maybe there 's not enough for everybody . But  
+F:  I can share with Barry . 
+D:  Oh , OK . <mike sound> 
+A:  Yeah . 
+G:  OK . 
+E:  Can we look 
+C:  Yeah . 
+E:  at this ? 
+E:  So , 
+E:  yeah , there are two figures showing actually the , mmm , 
+E:  um , 
+E:  performance of the current VAD .  
+E:  So it 's a n neural network based on PLP parameters , <breath> 
+E:  uh , which estimate silence probabilities , and then 
+D:  <breath> 
+E:  I 
+E:  just put a median filtering on this 
+E:  to smooth the 
+E:  probabilities , right ? 
+E:  <breath> 
+E:  Um  I didn't use the  the scheme that 's currently in the proposal because <breath> I don't want to  
+E:  In the proposal  Well , in  in the system we want to add like speech frame 
+H:  <mike noise> 
+E:  before 
+E:  every word and a little bit of  
+E:  of , uh , s a couple of frames after also . 
+E:  Uh , but to estimate the performance of the VAD , we don't want to do that , <breath> because it would artificially increase the um  
+E:  the false alarm rate of speech detection . Right ? 
+E:  Um , 
+E:  so , 
+E:  there is u normally a figure for the Finnish 
+E:  and one for Italian . 
+E:  And maybe someone has two for the Italian because 
+E:  I 'm missing one figure here . 
+B:  No . 
+E:  Well  
+E:  Well , whatever . <breath> 
+E:  Uh  Yeah , so one surprising thing that we can notice first is that apparently the speech miss rate is 
+E:  uh , higher than the false alarm rate . 
+E:  So . 
+G:  So  so what is the lower curve and the upper curve ? 
+E:  It means  
+E:  Mm - hmm . 
+E:  Yeah , there are two curves .  
+G:  Yeah . 
+E:  One curve 's for the close - talking microphone , which is 
+E:  the lower curve .  And the other one is for the distant microphone <breath> 
+G:  <breath> Ah , OK . 
+E:  which has more noise so , 
+E:  it 's logical that <laugh> 
+E:  it performs worse . <breath> So as I was saying , the miss rate is quite important 
+E:  uh , which means that we tend to label speech as  
+E:  as a silence . 
+E:  And , 
+E:  uh , I didn't analyze further yet ,  but <breath> I think it 's  
+E:  it may be due to the fricative sounds which may be  
+E:  in noisy condition maybe label  labelled as silence . <breath> 
+E:  And it may also be due to 
+E:  the alignment because  
+E:  well , the reference alignment . Because right now I 
+E:  just use an alignment obtained from  
+E:  from a system trained on channel zero . 
+C:   
+E:  And 
+H:  <breath> 
+E:  I checked it a little bit but 
+H:  <breath> 
+E:  there might be alignment errors . 
+E:  Um , yeah , 
+E:  e 
+E:  like 
+E:  the fact that <breath> 
+E:  <clears throat> 
+E:  the  the models tend to align 
+E:  their first state on silence and their last state o on silence also . So 
+E:  the reference  reference alignment would label as speech some silence frame before speech and after speech . <breath> 
+E:  This is something that we already noticed before when  <breath> 
+E:  mmm , 
+E:  So this cus this could also explain , uh , the high miss rate maybe . 
+G:  And  and this  this curves are the average over the whole database , so . 
+E:  Uh  
+E:  Yeah . Right . 
+G:  Mmm . 
+E:  Um   
+E:  Yeah , and the different points of the curves are for five 
+H:  <breath> 
+G:  <breath> 
+E:  uh , thresholds 
+H:  <breath> 
+E:  on the probability  uh from point three to point seven . 
+E:  <breath> 
+B:  So that threshold  OK . 
+E:  Mm - hmm . Yeah . 
+B:  S OK  so d the detection threshold is very  
+E:  So the v 
+E:  The VAD ? Yeah . There first , a threshold on the probability  
+B:  Yeah , yeah . 
+E:  @ @  
+E:  That puts 
+E:  all the values to zero or one .  <breath> And then the median filtering . 
+B:  Mmm . 
+B:  Yeah , so the median filtering is fixed . 
+B:  You just change the threshold ? Yeah . 
+E:  Yeah . It 's fixed , yeah . Mm - hmm . 
+E:  So , going from channel zero to channel one , 
+E:  uh , almost double 
+E:  the 
+E:  error rate .  
+E:  Um , 
+H:  <breath> 
+E:  Yeah . 
+E:  Well , so it 's a reference 
+E:  performance that we can  
+E:  you know , if we want to  to work on the VAD ,  we can 
+H:  @ @ .  
+E:  work on this basis and  
+B:  Mm - hmm .  
+B:  OK . 
+A:  Is this  is this VAD a MLP ? 
+E:  Yeah . 
+A:  OK . How  how big is it ? 
+D:  <breath> 
+E:  It 's a very big one . I don't remember . m 
+B:  So three  three hundred and fifty inputs , uh , 
+H:  <breath> 
+B:  six thousand hidden nodes and two outputs . t t 
+A:  OK . 
+B:  Yeah . 
+H:  <breath> 
+E:  Mm - hmm . 
+D:  Middle - sized one . 
+B:  Yeah . <laugh> 
+F:  <laugh> 
+H:  <laugh> 
+E:  <laugh> 
+D:  <laugh> 
+A:  <laugh> 
+E:  Mm - hmm . 
+B:  <breath> @ @ . 
+E:  Yeah . 
+B:  <laugh> 
+E:  Uh , ppp .  I don't know , you have questions about that , or suggestions ? 
+H:  <breath> 
+B:  Mmm . 
+B:  S so  
+E:  It seems  the performance seems worse in Finnish , which  
+B:  Well , it 's not trained on Finnish . 
+E:  uh  
+H:  It 's worse . 
+E:  It 's not trained on Finnish , yeah . 
+D:  What 's it trained on ? 
+B:  I mean , the MLP 's not trained on Finnish . 
+D:  Right , what 's it trained on ? 
+B:  Oh  oh . Sorry . Uh , it 's Italian TI - digits . 
+D:  Yeah . 
+D:  Oh , it 's trained on Italian ? Yeah , OK . <laugh> 
+B:  Yeah . <laugh> That 's right . 
+E:  Mm - hmm .  
+H:  <laugh> 
+G:  <laugh> 
+E:  <laugh> And  
+D:  <laugh> OK . 
+E:  And also there are like funny noises on Finnish more than on Italian . I mean , like music and <breath> um  
+G:  Mm - hmm . 
+B:  Yeah . 
+B:  Yeah , the  Yeah , it 's true . 
+D:  <breath> 
+G:  <breath> 
+E:  So , yeah , we were looking at this . But for most of the noises , noises are  
+E:  um , 
+E:  I don't know if we want to talk about that . But , <breath> well , the  the " Car " noises are below like five hundred hertz . And we were looking at the " Music " utterances and 
+E:  in this case the noise is more about two thousand hertz . 
+H:  <breath> 
+B:  Yeah . <breath> 
+E:  Well , the music energy 's very low apparently . 
+E:  Uh , 
+E:  uh , from zero to two  two thousand hertz . <breath> 
+E:  So maybe just 
+E:  looking at this frequency range for  from five hundred to two thousand 
+E:  would 
+E:  improve somewhat the VAD and  
+B:  Mmm . <mike noise> 
+B:  <breath> Yeah . 
+E:  Mmm  
+B:  So there are like some  
+E:  Yeah , but  
+B:  some s some parameters you wanted to use or something ? Or  Yeah .  
+E:  Yes . 
+E:  Mm - hmm . 
+E:  Uh , the next , <breath> um  Oh , it 's there . 
+G:  <breath> So is the  is the  is the training  
+G:  is the training based on these labels files which you take as reference here ? 
+G:  Wh - when you train the neural net y y you  
+E:  Yeah . 
+E:  No . 
+E:  It 's not . 
+E:  It 's  it was trained on some alignment obtained 
+E:  <breath> 
+E:  um ,  
+E:  <swallow, click> 
+E:  uh  
+E:  For the Italian data , 
+E:  I think we trained 
+D:  <mike sounds> 
+E:  the neural network on  
+E:  with embedded training . So re - estimation of the alignment using the neural network , I guess . 
+H:  <breath> 
+E:  That 's right ? 
+B:  Yeah . We actually trained , uh , the  
+B:  on the Italian training part . We  we had another <breath> 
+E:  Yeah . 
+E:  <sniff> 
+B:  system with u 
+E:  So it was a f f a phonetic classification system for the Italian Aurora data . 
+B:  Yeah . 
+B:  It must be somewhere . 
+B:  Yeah . 
+B:  <breath> 
+E:  For the Aurora data that it was trained on , it was different . Like , for TI - digits you used 
+B:  What  
+E:  a  a previous system that you had , I guess . 
+B:  @ @  
+D:  <mike sound> 
+B:  No it  Yeah , yeah . That 's true . 
+H:  <mike noise> 
+E:  So the alignments from the different database that are used for training came from different 
+B:  Syste -  
+E:  system . 
+B:  Yeah . 
+E:  Then we put them tog together . 
+E:  Well , you put them together and 
+E:  trained the VAD on them . Mmm . 
+B:  Yeah . 
+B:  Yeah . <breath> 
+G:  Hmm . 
+E:  Uh , 
+E:  But did you use channel  
+E:  did you align channel one also ? Or   
+B:  I just took their entire Italian training part . So it was both channel zero plus channel one . 
+H:  <breath> 
+E:  Yeah . 
+E:  So di 
+E:  Yeah . So the alignments 
+E:  might be wrong then on channel one , right ? 
+B:  On one . Possible . 
+E:  So we might , yeah ,  
+B:  We can do a realignment . That 's true . 
+E:  at least want to retrain on 
+E:  these alignments , which should be better because they come from close - talking microphone . 
+G:  Yeah , the  that was my idea . I mean , 
+G:  if  if it ha if it is not the same labeling which is taking the spaces . 
+B:  Yeah . 
+E:  OK . 
+B:  Yeah , possible . <breath> 
+E:  Yeah . 
+D:  <mike sounds> 
+G:  Mmm . 
+B:  I mean , it  so the system  so the VAD was trained on maybe different set of labels for channel zero and channel one and  <breath> 
+E:  Yeah . 
+H:  <breath> 
+E:  Mm - hmm . 
+G:  Mm - hmm . 
+E:  Mm - hmm . 
+B:  was the alignments were w were different for  s certainly different because they were independently trained . We didn't copy the channel zero alignments to channel one . 
+D:  <breath> 
+E:  Mm - hmm .  
+G:  Mm - hmm . 
+B:  Yeah .  
+E:  Yeah . 
+B:  But for the new alignments what you generated , you just copied the channel zero to channel one , right ? 
+E:  Right . 
+E:  Yeah . 
+B:  Yeah . 
+E:  Um . <breath> And eh , hhh  
+E:  actually when we look at  at the VAD , <breath> for some utterances it 's almost perfect , I mean , it just 
+E:  dropped one frame , 
+E:  <noise> 
+E:  the first frame of speech or  <breath> So there are some utterances where it 's almost 
+E:  one hundred percent 
+G:  Hmm . 
+E:  VAD performance . 
+E:  Uh , but  Yeah . <laugh-breath> 
+E:  <inbreath> 
+E:  <clears throat> Mmm  
+B:  <breath> 
+E:  <mouth> 
+E:  Yep . 
+E:  So the next thing is 
+E:  um , 
+E:  I have the spreadsheet for three different system . 
+D:  <mike sound> 
+E:  But for this you only have to look right now on the SpeechDat - Car 
+E:  performance 
+E:  uh , because I didn't test  so  I didn't test the spectral subtraction on TI - digits yet . 
+E:  Uh , so you have three she sheets . One is 
+E:  the um proposal - one system . Actually , it 's not exe exactly proposal - one . It 's the system that 
+B:  <breath> 
+E:  Sunil just described . 
+E:  Um , but with 
+E:  uh , Wiener filtering from 
+E:  um , France Telecom included .  
+E:  <breath> 
+E:  Um , so this gives like fifty - seven point seven percent , uh , 
+E:  s uh , error rate reduction on the SpeechDat - Car data . 
+E:  Mmm , <breath> and then I have two sheets where it 's for a system where  
+B:  <breath> 
+E:  uh , so it 's again the same system . But 
+E:  in this case we have spectral subtraction 
+E:  with a maximum overestimation factor of two point five . 
+E:  Uh , there is smoothing of the gain trajectory with some kind of 
+D:  <mike sound> 
+E:  uh , low - pass filter , 
+E:  which has forty milliseconds latency . 
+D:  <mike noise> 
+E:  And then , after subtraction 
+E:  um , I add a constant to the energies <breath> and 
+E:  I have two cases d where  The first case is where the constant is twenty - five DB below the mean 
+E:  speech energy and the other is thirty DB below . 
+E:  Um , 
+E:  and for these s two system we have like fifty - five 
+E:  point , uh , five - percent improvement , 
+E:  and fifty - eight 
+E:  point one . 
+E:  So again , it 's around fifty - six , fifty - seven . <breath> Uh  
+D:  <breath> 
+D:  <mouth> Cuz I notice the TI - digits number is exactly the same for these last two ? 
+F:  <breath> 
+E:  Yeah , because I didn't  
+E:  For the France Telecom 
+E:  uh , spectral subtraction included in the  our system , 
+E:  the TI - digits number are the right one , but not 
+E:  for the other system because I didn't test it yet  
+E:  this system , including  with spectral subtraction on the TI - digits data . 
+E:  I just tested it on SpeechDat - Car . 
+D:  <breath> Ah ! So  so that means the only thing  
+G:  Mm - hmm . <breath> So  so  so these numbers are simply  Yeah . OK . 
+E:  This , we have to  Yeah . Yes . 
+D:  Yeah . So you  so you just should look at that fifty - eight perc point O nine percent and so on . <breath> OK . Good . 
+B:  But this number . 
+E:  Right . Right . 
+E:  Mm - hmm . 
+H:  <breath> 
+E:  Um , 
+B:  <breath> 
+D:  <mike sound> 
+E:  <sniff> Yeah . 
+B:  So this  
+H:  <breath> 
+G:  <breath> 
+B:  <breath> 
+G:  s 
+B:  So by  uh , by  by reducing the noise a  a decent threshold like minus thirty DB , 
+B:  it 's like  
+E:  Yeah . <breath> 
+B:  Uh , you are like r r reducing the floor of the 
+B:  noisy regions , right ? 
+D:  <mike sounds> 
+E:  Yeah . The floor is lower . 
+E:  Um , 
+B:  Uh - huh . <breath> 
+E:  mm - hmm . 
+D:  <breath> I 'm sorry . So when you say minus twenty - five or minus thirty DB , with respect to what ? 
+E:  To the average 
+E:  um , speech energy which is estimated on 
+D:  OK , so basically you 're creating a signal - to - noise ratio of twenty - five or thirty DB ? 
+E:  the world database . 
+E:  Yeah . 
+D:  <breath> 
+E:  But it 's not  it  it 's  
+G:  I  I  I think what you do is this . i When  when you have this , <breath> after you subtracted it , I mean , then you get something w w 
+D:  uh r 
+H:  <mike noise> 
+G:  with this , uh , 
+E:  <sniff> 
+G:  where you set the values to zero and then 
+G:  you simply add an additive constant again . 
+E:  Yeah . 
+G:  So you shift it somehow . This  this whole curve is shifted again . 
+D:  <breath> 
+E:  Right . 
+D:  But did you do that before the thresholding to zero ,  or  ?  
+E:  It 's  
+B:  <mike sounds> 
+E:  But , it 's after the thresholding . So , 
+G:  @ @  
+D:  Oh , so you 'd really want to do it before , right ? 
+E:  maybe  
+E:  maybe we might do it before , yeah . 
+D:  <breath> 
+D:  Yeah , because then the  then you would have less of that phenomenon . 
+E:  Yeah . 
+G:  E Hhh .  
+D:  I think . 
+E:  Uh  <inbreath> 
+E:  Yeah . 
+D:  c 
+E:  But still , when you do this and you take the log after that , it  it reduce the  the variance . But  <breath> Mmm , 
+D:  Yeah , it  it  
+D:  Right . 
+D:  Yeah , that will reduce the variance . That 'll help . But maybe if you does  do it before you get less of these funny - looking things he 's drawing . 
+G:  Mm - hmm . 
+E:  <breath> Um , 
+G:  But  but  
+B:  So before it 's like adding this , col 
+B:  to the  
+G:  <breath> 
+B:  to the  o exi original  
+E:  We would  
+D:  Right at the point where you 've done the subtraction .  
+B:  OK . 
+D:  Um , essentially 
+D:  you 're adding a constant into everything . 
+E:  Mm - hmm . 
+G:  <breath> But the way Stephane did it , it is exactly the way I have implemented in the phone , so . 
+G:  <laugh> 
+D:  Oh , yeah , better do it different , then . Yeah . <laugh> 
+G:  <laugh> 
+E:  <laugh> 
+B:  <laugh> 
+A:  <laugh> 
+E:  Um . 
+E:  <mouth> 
+E:  Yeah . 
+D:  Just you  you just ta you just set it for a particular signal - to - noise ratio that you want ? 
+G:  Yeah I  
+G:  I made s similar investigations like Stephane did here , just 
+B:  <mike sounds> 
+G:  uh , adding this constant and  and looking 
+D:  Yeah . 
+G:  how dependent is it on the value of the constant 
+D:  Yeah . 
+E:  Mm - hmm . 
+G:  and then , must choose them somehow <breath> to give on average the best results for 
+E:  <laugh> 
+E:  Yeah . 
+D:  Uh - huh . 
+G:  a certain range of the signal - to - noise ratios . 
+E:  Mm - hmm . 
+G:  So  
+G:  <long inhale> 
+E:  Oh , it 's clear . I should have gi given other results . Also it 's clear when you don't add noise , it 's 
+E:  much worse . Like , around five percent worse I guess . 
+D:  Uh - huh . 
+E:  And if you add too much noise it 
+E:  get worse also . And it seems that <breath> right now this  this is c a constant 
+E:  that does not depend on   
+E:  on anything that you can learn from the utterance . It 's just a constant noise addition . 
+E:  Um . 
+E:  And I  I think w w 
+D:  I  I 'm sorry . Then  then I 'm confused . I thought  
+E:  I think  
+D:  you 're saying it doesn't depend on the utterance but I thought you were adding an amount that was twenty - five DB down from the signal energy . 
+B:  <breath> 
+G:  <mike noise> 
+E:  Yeah , so the way I did that ,  i I just measured the average speech energy of the  all the Italian data .  
+H:  <mike noise> 
+G:  <mike noise> 
+D:  <breath> Oh ! 
+E:  And then  
+E:  I  I have  I used this as mean speech energy . 
+E:  Mm - hmm . 
+D:  Oh , it 's just a constant amount 
+E:  Yeah . <breath> And  
+D:  over all . 
+E:  wha what I observed is that for Italian and Spanish ,  when you go 
+B:  OK . 
+D:  <mouth> 
+B:  Oh . 
+D:  <breath> 
+E:  to thirty and twenty - five DB ,  
+G:  <mike noise> 
+E:  uh 
+E:  it  it 's good . It stays  In this range , it 's , uh , the p u 
+E:  well , the performance of the  this algorithm is 
+E:  quite good . <breath> But for Finnish , 
+E:  <breath> 
+E:  you have a degradation already when you go from thirty - five to thirty and then from thirty to 
+H:  <mike noise> 
+E:  twenty - five . 
+E:  And  
+E:  I have the feeling that maybe it 's because 
+E:  just Finnish has a mean energy that 's lower than  than the other databases . <breath> And due to this the thresholds should be  
+H:  <mike noise> <breath> 
+D:  Yeah . 
+E:  the  the a the noise addition should be lower 
+D:  <breath> But in  I mean , in the real thing you 're not gonna be able to measure what people are doing over half an hour or an hour , or anything , right ? So you have to come up with this number 
+E:  and  
+G:  <breath> 
+D:  from something else . 
+E:  Yeah . 
+E:  So   
+G:  <breath> Uh , but you are not doing it now language dependent ? Or  ?  
+E:  It 's not . It 's just something that 's fixed . Yeah . Mm - hmm . <breath> Um  
+G:  No . It 's overall . OK . 
+D:  <breath> But what he is doing language dependent is measuring what that number i reference is that he comes down twenty - five down from . 
+E:  Yeah , so I g 
+E:  No . 
+E:  It  No . Because I did it  I started working on Italian . I obtained this average energy <breath> and then I used this one . 
+D:  No ? 
+D:  Yeah .  
+B:  For all the languages . OK . 
+E:  Yeah . 
+D:  <breath> So it 's sort of arbitrary . I mean , so if y if  Yeah . <laugh> Yeah . 
+B:  Yeah . 
+E:  <breath> Yep . 
+E:  Um , yeah , so the next thing is to use this as  as maybe 
+E:  initialization and then use something on - line . But  <breath> And I expect improvement at least in Finnish because 
+D:  Uh - huh . 
+D:  Something more adaptive , yeah . 
+E:  eh  the way  
+D:  OK . 
+E:  Well , 
+E:  um , 
+E:  for Italian and Spanish it 's  th this value works good but not necessarily for Finnish . 
+E:  Mmm . 
+E:  But unfortunately there is , like , this forty millisecond latency and , 
+E:  um   
+E:  Yeah , so I would try to somewhat reduce this @ @ . <breath> <clears throat> 
+E:  I already know that 
+E:  if I completely remove this latency , so . 
+D:  <mike sound> 
+E:  <breath> 
+E:  um ,  it  
+E:  um 
+E:  there is a three percent hit on Italian . 
+G:  Mm - hmm .  
+G:  <breath> i <breath> 
+B:  d Does latency  Sorry . Go ahead . 
+G:  Yeah . <breath> Your  your smoothing was 
+G:  @ @  
+G:  uh , over this 
+G:  s so to say , the  
+G:  the factor of the Wiener . 
+G:  And then it 's , uh  
+G:  What was it ? This  
+E:  Mm - hmm . 
+G:  this smoothing , it was over the 
+G:  subtraction factor , so to say . 
+E:  It 's a smoothing over 
+G:  Was this done   
+E:  the  
+E:  the gain of the subtraction algorithm . 
+G:  Mm - hmm . 
+G:  And  and you are looking into the future , into the past . 
+E:  Right . 
+G:  And smoothing . Mm - hmm . 
+E:  So , to smooth this  thing . Yeah . 
+D:  <noise> 
+E:  Um  
+G:  <breath> And did  did you try simply to smooth 
+B:  <breath> 
+G:  um 
+D:  <mike noise> 
+G:  to smooth the  the  t to  to smooth stronger the  the envelope ? 
+E:  Um ,  no , I did not . 
+G:  Mmm . 
+E:  Mmm . 
+G:  Because I mean , it should have a similar effect if you  
+E:  Yeah . 
+G:  I mean , you  you have now several stages of smoothing , so to say . You start up . <breath> 
+G:  As far as I remember you  you smooth somehow the envelope , you smooth somehow the noise estimate , and  <breath> 
+E:  Mm - hmm . 
+E:  Mmm  
+G:  and later on you smooth also this 
+G:  subtraction factor . 
+E:  Uh , no , it 's  
+E:  it 's just the gain that 's smoothed actually but it 's smoothed  
+D:  <breath> 
+B:  Uh , actually I d I do all the smoothing . Yeah , yeah . 
+G:  Ah . <breath> Oh , it w it was you . Yeah . 
+E:  Uh  Yeah . Yeah . 
+G:  Yeah . 
+D:  <mike sound> 
+E:  No , in this case it 's just the gain . <breath> And  
+G:  Uh - huh . 
+E:  But the way it 's done is that 
+E:  um , for low gain , 
+E:  there is this non nonlinear smoothing actually . For low gains 
+E:  um , 
+E:  I use the smoothed sm uh , smoothed 
+E:  version <breath> but  for high gain 
+G:  Uh . 
+E:  @ @  
+E:  it 's  I don't smooth . 
+G:  Mm - hmm . 
+G:  <breath> I just , uh  it  Experience shows you , if  if you do the  
+G:  @ @  
+G:  The best is to do the smoo smoothing as early as possible . 
+E:  Uh - huh . 
+G:  So w when you start up . I mean , you start up with the  with the  
+G:  somehow with the noisy envelope . 
+E:  Mm - hmm . 
+G:  And , 
+G:  best is to smooth this somehow . 
+E:  Mm - hmm . 
+E:  <breath> Uh , yeah , I could try this . Um . 
+G:  And  
+B:  So , before estimating the SNR , @ @ smooth the envelope . 
+G:  Yeah . 
+G:  Yeah . 
+G:  Uh - huh . 
+E:  Mm - hmm . 
+E:  But  
+E:  Yeah . 
+E:  Then I  I would need to find a way to like smooth less also when there is high energy . 
+E:  Cuz I noticed that it  it helps a little bit to s like 
+E:  smooth more during 
+E:  low energy portions and less during speech , because if you smooth then y you kind of distort the speech . <breath> 
+G:  Yes , y 
+G:  Yeah . 
+G:  Yeah . 
+G:  Right . 
+E:  Um . 
+E:  Mm - hmm . 
+G:  <breath> Yeah , I think when <breath> w you  you could do it in this way that you say , if you  if I 'm  
+G:  you have somehow a noise estimate , 
+E:  <sniff> Mm - hmm . 
+G:  and , if you say I 'm  I 'm  with my envelope I 'm close to this noise estimate , 
+G:  then you have a bad signal - to - noise ratio and then you  you would like to have a stronger smoothing . 
+E:  Yeah . 
+E:  Mm - hmm . 
+G:  So you could  you could 
+E:  Yeah . 
+E:  Mm - hmm . 
+G:  base it on your estimation of the signal - to - noise ratio on your actual  
+E:  Mm - hmm . 
+E:  Mmm . 
+B:  Yeah , or some silence probability from the VAD if you have  
+E:  Um , yeah , but I don't trust <laugh> the current VAD . So . <laugh> 
+B:  <laugh> Yeah , uh , so not  not right now maybe . <laugh> 
+A:  <laugh> 
+E:  Well , maybe . <laugh> 
+A:  <laugh> 
+D:  <laugh> <breath> The VAD later will be much better . Yeah . So . <laugh> 
+G:  <breath> 
+E:  <laugh> Maybe .  
+B:  <laugh> 
+E:  <laugh> 
+F:  <laugh> 
+A:  <laugh> 
+H:  <mike noise> 
+D:  I see . 
+E:  <breath> 
+F:  So is  that it ? 
+E:  <breath> Uh , fff  I think that 's it . Yeah . Uh . 
+D:  <breath> 
+G:  <breath> s So to summarize the performance of these , 
+G:  SpeechDat - Car 
+G:  results is similar than  than yours so to say . 
+B:  Yeah , so the fifty - eight is like the be some fifty - six point  Yeah , that 's true . 
+E:  Yeah . 
+E:  <inbreath> 
+G:  Y you have  you have fifty - six point four and  and  <breath> and dependent on this additive constant , it is 
+H:  <pages turning> 
+E:  Yeah . 
+H:  @ @  
+B:  Slightly better .  
+E:  Mm - hmm . 
+G:  s better or  or worse . Yeah . 
+H:  @ @  
+B:  Yeah . 
+E:  Mm - hmm . 
+E:  And , <breath> yeah , i i i the condition where it 's better than your approach , 
+A:  <mike sound> 
+E:  it 's  
+F:  <clears throat> 
+E:  it  just because maybe it 's better on well matched and that the weight on well matched is  
+B:  Yeah . Yeah , you  you caught up . Yep , that 's true . 
+E:  is bigger , because  <breath> 
+E:  if you don't weigh differently the different condition , you can see that 
+D:  <breath> 
+E:  your  well , the win the two - stage Wiener filtering is 
+E:  maybe better or  
+B:  <breath> Yeah .  
+E:  It 's better for high mismatch , right ? 
+B:  Yeah , it 's better for high mismatch . 
+E:  Mm - hmm . 
+E:  But 
+B:  So over all it gets , yeah , worse for the well matched condition , so y 
+E:  a little bit worse for well matched . Uh - huh . <breath> 
+F:  So we need to combine these two . 
+B:  <breath> Uh , that 's  that 's the best thing , is like the French Telecom system is optimized for the well matched condition . They c Yeah . 
+E:  Mm - hmm . 
+D:  <mike sound> 
+B:  So they know that the weighting is good for the well matched , and so there 's  everywhere the well matched 's s s performance is very good for the French Telecom . 
+E:  Yeah . 
+G:  Mm - hmm . 
+E:  Mm - hmm . 
+B:  T we are  we may also have to do something similar @ @ . 
+E:  Mm - hmm . 
+D:  Well , our 
+B:  <laugh> 
+D:  tradition here has always been to focus on the mismatched . <laugh> <breath> Cuz it 's more interesting . 
+B:  Um the  <laugh> 
+G:  <laugh> 
+E:  <laugh> 
+G:  Mu - my  mine was it too , I mean . 
+B:  <laugh> 
+B:  <laugh> 
+D:  Yeah . <laugh> 
+G:  Before I started working on this Aurora . so .  <laugh> 
+B:  <laugh> 
+F:  <laugh> 
+D:  Yeah . <laugh> Yeah . 
+D:  Yeah . 
+D:  <breath> 
+D:  OK . 
+
+
+F:  Carmen ? Do you , uh  
+H:  <breath> Well , I only say that the  this is , a summary of the  of all the VTS experiments 
+B:  <breath> 
+D:  <mike noise> 
+H:  and say that the result in the last  
+G:  <breath> 
+H:  um , for Italian  the last experiment for Italian , <breath> are bad . 
+E:  <sniff> 
+H:  I make a mistake when I write . Up at D I copy <breath> one of the bad result . <laugh> 
+B:  So you  
+H:  And  
+H:  There . <breath> You know , this . 
+H:  Um , well . 
+H:  If we put everything , we improve a lot u 
+H:  the spectral use of the VTS <breath> 
+H:  but the final result <breath> are not still 
+H:  mmm , good <breath> like the 
+H:  Wiener filter for example . I don't know . Maybe it 's  
+H:  @ @  
+B:  That 's somewhere  
+H:  it 's possible to  
+H:  to have the same result . I don't know exactly . 
+H:  Mmm . <breath> Because I have , <breath> mmm ,  
+B:  You s you have a better r 
+H:  worse result in medium mismatch 
+B:  <breath> Yeah . You have some results that are good for the high mismatch . 
+H:  and high mismatch . 
+F:  <breath> 
+H:  And  Yeah . <breath> I someti 
+D:  <breath> 
+H:  are more or less similar but  but are worse . 
+D:  <breath> 
+H:  And 
+H:  still I don't have the result for TI - digits . 
+H:  The program is training . Maybe for this weekend I will have result TI - digits and I can complete that 
+H:  s like this . 
+H:  Well . 
+D:  Uh . 
+D:  Right . 
+A:  <breath> 
+H:  <breath> 
+H:  One thing that I  note are not here in this result <breath> but are speak  are spoken before with Sunil 
+D:  <breath> 
+H:  I  I improve my result using clean LDA filter . 
+B:  Mm - hmm . 
+D:  Mm - hmm . 
+H:  If I use , <breath> eh , the LDA filter that are training with the noisy speech , <breath> 
+H:  that hurts the res my results . 
+E:  <sniff> 
+D:  So what are these numbers here ? Are these with the clean or with the noisy ? 
+H:  This is with the clean . 
+D:  OK . 
+H:  With the noise I have worse result , that if I doesn't use 
+D:  Uh - huh . 
+H:  it . 
+H:  But m that may be because <breath> with this technique <breath> we are using really  
+H:  really clean speech . 
+H:  The speech  the  representation that go to the HTK is really clean speech because it 's from the dictionary , the code book 
+H:  and maybe from that . I don't know . 
+H:  Because I think that you  did some experiments using the two  
+E:  Mm - hmm . 
+E:  <inbreath> 
+D:  <breath> 
+E:  It 's  
+H:  the two LDA filter , clean and noi and noise , and it doesn't matter too much . 
+E:  Um , 
+E:  yeah , I did that but it doesn't matter on SpeechDat - Car , 
+E:  but , it matters , uh , a lot on TI - digits . 
+H:  It 's better to use clean . 
+B:  Using the clean filter . 
+E:  Yeah , d uh , it 's much better when you  we used the clean derived 
+H:  Mm - hmm . Maybe you can do d also this . 
+E:  LDA filter . 
+B:  Yeah . 
+H:  To use clean speech . 
+E:  Uh , but , yeah , Sunil in  in your result it 's  
+B:  Yeah , I 'll try . 
+B:  I  I 'll try the cle 
+B:  No , I  I  my result is with the noisy  
+E:  It 's with the noisy one . Yeah . 
+F:  <mike noise> 
+B:  noisy LDA . 
+D:  <breath> 
+B:  Yeah . <breath> 
+D:  Oh ! 
+B:  It 's with the noisy . Yeah . It 's  it 's not the clean LDA . 
+E:  So  <breath> 
+B:  <breath> 
+B:  <breath> 
+D:  Um  
+B:  It 's  In  in the front sheet , I have like  like the summary . Yeah . 
+D:  <breath> 
+D:  And  and your result  is with the   
+E:  It 's with the clean LDA . 
+B:  Oh . This is  Your results are all with the clean LDA result ? 
+H:  Yeah , with the clean LDA . 
+F:  <mike noise> 
+E:  Yeah . 
+B:  OK . 
+H:  Is that the reason ? 
+E:  And in your case it 's all  
+B:  @ @ .  
+B:  All noisy , yeah . 
+E:  all noisy , yeah . <breath> But  
+H:  And  
+B:  Uh  
+E:  Yeah . 
+B:  @ @  
+B:  Uh  
+E:  But I observe my case it 's in , uh , 
+B:  <breath> 
+E:  uh , at least on SpeechDat - Car it doesn't matter but TI - digits it 's 
+B:  On TI - digits this matters . <breath> 
+E:  like two or three percent absolute , 
+E:  uh ,  
+B:  Absolute . 
+E:  better . 
+B:  Uh  <breath> 
+E:  So if  
+D:  So you really might wanna 
+B:  Yeah , I  I  I will have to look at it . Yeah , that 's true . 
+D:  try the clean I think . Yeah . 
+D:  Yeah , that could be sizeable right there . 
+H:  And this is everything . 
+D:  <mike noise> 
+G:  Yeah . 
+G:  <breath> Maybe you  you are leaving in  in about two weeks Carmen . No ? 
+D:  OK .  
+D:  <breath> <noise> 
+H:  Yeah . <laugh> 
+D:  <breath> 
+G:  Yeah .  
+G:  So I mean , if  if  if I would put it  put on the head of a project mana manager  I  I  I I would say , uh , 
+G:  um  I mean there is not so much time left now . I mean , if  <breath> um , 
+D:  Be my guest . 
+H:  <inbreath>  
+G:  <breath> what  what I would do is I  I  I would pick 
+F:  <mike noise> 
+G:  @ @  
+G:  the best consolation , which you think , and <breath> 
+H:  And prepare at the s 
+G:  c create  create all the results for the whole database that you get to the final number as  as Sunil did it and 
+G:  <breath> 
+G:  um 
+G:  and maybe also to  
+G:  to write somehow a document where you describe your approach , and what you have done . 
+H:  <inbreath> 
+H:  Yeah , I was thinking to do that next week . 
+D:  Yeah .  
+G:  Yeah . 
+D:  Yeah , 
+A:  <mike noise> 
+H:  <laugh> 
+D:  I 'll  I 'll borrow the head back and  and agree . 
+G:  <laugh> 
+D:  <breath> <laugh> 
+F:  <laugh> 
+H:  <laugh> 
+A:  <laugh> 
+H:  Yeah , I wi I  I will do that next week . 
+G:  <breath> 
+D:  Yeah , that 's  that 's  
+A:  <mike noise> 
+D:  Right . 
+D:  <breath> In fact , actually I g I guess the , uh  
+D:  the Spanish government , uh , requires that anyway . They want some kind of report from everybody who 's in the program . So . 
+H:  Mm - hmm . 
+B:  <mike sounds> 
+D:  And of course I 'd  we 'd  we 'd like to see it too . So , <breath> yeah . 
+H:  OK . 
+B:  <breath> 
+
+
+F:  So , um , <breath> what 's  Do you think we , uh , should do the digits or skip it ? Or what are  what do you think ? 
+D:  <breath> Uh , we have them now ? 
+F:  Yeah , got them . 
+D:  Uh , why don why don't we do it ? 
+F:  OK . 
+D:  Just   just take a minute . 
+G:  <breath> 
+H:  I can send 
+H:  yet . 
+B:  <breath> 
+F:  <breath> 
+H:  <breath> 
+F:  Would you pass those down ? 
+D:  Oh ! Sorry . 
+F:  OK , um , so I guess I 'll go ahead . 
+D:  <breath> 
+F:  Um , 
+F:  OK , if you could just leave , um , 
+F:  your mike on top of your , uh , digit form I can fill in any information that 's missing . <breath> 
+H:  <mike noise> 
+B:   
+F:  That 's uh  
+F:  I didn't get a chance to fill them out ahead of time . 
+D:  Yeah . The seat numbers have fallen off here . 
+G:  <mike noise> 
+F:  <breath> Yeah , we 're gonna have to fix that . <breath> 
+A:  <breath> 
+D:  What  What are the seat numbers , I wonder ? 
+F:  Uh , let 's see , it starts with one here , and then goes around and ends with nine 
+A:  Seven . 
+F:  here . 
+F:  <tapping on table> 
+A:  So I  I 'm eight , 
+F:  So he 's eight , 
+F:  you 're seven , 
+A:  you 're seven . <breath> 
+D:  I just put " yes " . 
+D:  Would that be @ @ 
+A:  Yeah . <laugh> 
+F:  <laugh> 
+D:  <mike noise> 
+A:  <laugh> 
+
+
+F:  This is transcript L dash two eight three .  
+F:  Six six , two eight , three six , five one , five zero .  
+E:  <breath> 
+F:  Eight , four six eight , seven five , two three nine , zero .  
+E:  <breath> 
+F:  Six two , three nine , zero six , four three , three nine .  
+F:  Five five , one six , nine four , three five , zero six .  
+D:  <mike noise> @ @  
+D:  Seat ?   
+F:  Six seven one , three seven , nine four five one .  
+F:  Six five six nine , eight two eight four , nine four four six .  
+F:  Nine three one nine , eight , six five eight .  
+F:  Six six , five four , five eight , eight eight , nine five .  
+H:  Me ? 
+H:  Transcript L dash three O three .  
+H:  One three six O eight four , O one O .  
+E:  Dave ? 
+E:  Is it the channel , or the mike ? I don't remember . It 's the mike ? 
+H:  One O four , O one , two three eight O .  
+D:  Mike ?  
+E:  Mike five . 
+H:  Six seven three , seven four , seven four three O .  
+H:  O six one , five three six , three nine one one .  
+E:  It 's not four .  
+A:  <breath> 
+H:  Three two one , four seven , two four one seven .  
+H:  Eight , one eight zero , one eight , three eight seven , seven .  
+H:  Seven , three five eight , eight nine , four three eight , one .  
+H:  O eight three , seven three four , six one nine .  
+B:  Transcript L dash three zero four .  
+H:  This is date and time .  
+B:  One one , six four , eight zero , zero three , four nine .  
+E:  <sniff> 
+B:  Eight two one , nine seven , four two zero eight .  
+H:  No .  
+H:  @ @  
+B:  Six two nine one , two six four five , six seven six one .  
+H:  On the channel , channel .  
+B:  Four eight two , seven four nine , five five eight .  
+B:  Six one zero , one one , nine zero , nine two .  
+B:  Six seven , zero three , four four , nine five , one two .  
+B:  Zero three , eight zero , two seven , four six , nine six .  
+B:  Eight one nine , one six three , eight zero four .  
+G:  <breath> 
+G:  This is transcript L dash three O five .  
+G:  Two four , two one , eight seven , two zero , eight three .  
+G:  Three , one O eight , nine six , three five one , zero .  
+G:  Six zero eight zero , O one eight three , four seven eight eight .  
+G:  Nine , nine one seven , zero six , seven O two , six .  
+G:  Five none   
+G:  f five nine one six , zero , four zero zero .  
+F:  <breath> 
+A:  <breath> 
+G:  One six six , one O four , eight nine eight five .  
+G:  Two nine zero , five three six , three six three seven .  
+G:  One four , two five , two two , seven zero , three one .  
+E:  Transcript L dash three O two .  
+F:  <breath> 
+D:  <mike sound> 
+E:  Five seven , eight five , eight seven , six two , zero nine .  
+E:  Seven two five , one six three , zero four four four .  
+E:  Eight nine , three zero , six two , eight two , seven six .  
+E:  Eight seven two nine , seven , zero one five .  
+E:  Three eight , zero four , five zero , four three , four seven .  
+E:  Eight nine two six , six one one nine , five seven three six .  
+G:  @ @  
+E:  Six two three , one zero five , nine zero seven .  
+F:  <breath> 
+G:  What is this ? QUAL whispering 
+G:  OK . 
+E:  Seven one four four , four two two two , seven two one eight .  
+B:  t 
+F:  <breath> 
+C:  Transcript L dash three zero zero .  
+C:  five one , two four , eight nine , zero two , four three .  
+F:  <breath> 
+F:  <breath> 
+C:  Zero eight eight seven , six two two two , zero nine five six .  
+E:  <sniff> 
+C:  Two two nine three , nine two four four , four nine three zero .  
+F:  <breath> 
+C:  Two three seven four , zero four two two , six five seven one .  
+F:  <breath> 
+C:  Five , four six zero , eight five , five zero six , five .  
+F:  <breath> 
+C:  Eight nine , one six , eight six , four zero , seven eight .  
+C:  Zero one two , nine four seven , seven eight one .  
+F:  <breath> 
+C:  Nine four two two , three two six four , eight zero five three .  
+F:  <breath> 
+D:  Transcript L dash three zero one .  
+D:  Seven six nine , eight eight seven , nine nine two five .  
+D:  Two , one four nine , one nine , eight nine eight , nine .  
+D:  Nine four one , one three four , nine five four three .  
+D:  Eight three nine , five six zero , four nine one one .  
+D:  One seven six , seven three four , three zero four .  
+D:  Six , four six nine , three eight , eight one eight , five .  
+D:  One two nine three , eight , two one two .  
+A:  <mike noise> 
+A:  <breath> 
+D:  One seven five eight , two zero zero nine , zero two five five .  
+A:  Transcript L dash two eighty - two .  
+A:  Six seven three , zero zero , zero five nine six .  
+A:  Seven three three , zero five one , eight five zero .  
+D:  <breath> 
+A:  Zero four , five seven , five five , five eight , two eight .  
+A:  Two nine one five , one , five eight one .  
+F:  <breath> 
+A:  Four three zero , six six nine , two zero seven three .  
+F:  <breath> 
+A:  Eight six three , eight one seven , seven three eight six .  
+H:  <mike noise> 
+A:  One five eight one , nine six three nine , five nine six seven .  
+D:  <breath> 
+A:  Five six , four two , five three , four seven , six two .  
+
+

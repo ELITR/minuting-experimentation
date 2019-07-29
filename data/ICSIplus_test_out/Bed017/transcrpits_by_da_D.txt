@@ -1,0 +1,127 @@
+D:  and Jerry was like , <laugh> " this is just too much " . 
+D:  Um . 
+D:  Wow . 
+D:  What is it ? 
+D:  Um , 
+D:  there . 
+D:  Um , OK . 
+D:  The thing is I don't know how to get to the next page . Here . 
+D:  Actually I thought  
+D:  There . 
+D:  How weird . 
+D:  What ? ! 
+D:  Oh . 
+D:  OK . I 
+D:  wasn't even doing anything . <laugh> OK . 
+D:  That was r actually Robert 's idea . But anyhow . 
+D:  Um 
+D:  OK . 
+D:  Uh , 
+D:  yeah , sure . 
+D:  Um , so , I 've be just been looking at , um , 
+D:  Ack ! 
+D:  What are you doing ? 
+D:  Yeah . 
+D:  OK . 
+D:  Um , 
+D:  I 've been looking at the PRM stuff . 
+D:  Um , 
+D:  so , this is , sort of like the latest thing I have on it , 
+D:  and 
+D:  I sorta constructed a couple of classes . 
+D:  Like , a user class , a site class , and  and you know , a time , a route , and then  and a query class . 
+D:  And I tried to simplify it down a little bit , 
+D:  so that I can actually um , look at it more . 
+D:  It 's the same paper that I gave to Jerry last time . 
+D:  Um , 
+D:  so basically I took out a lot of stuff , a lot of the decision nodes , 
+D:  and then tried to  
+D:  The red lines on the , um , graph are the um , relations between the different um , classes . 
+D:  Like , a user has like , a query , 
+D:  and then , also has , you know um , reference slots to its preferences , 
+D:  um , the special needs and , you know , money , and the user interest . 
+D:  And so 
+D:  this is more or less similar to the flat Bayes - net that I have , you know , with the input nodes and all that . 
+D:  And  
+D:  So I tried to construct the dependency models , 
+D:  and 
+D:  a lot of these stuff I got from the flat Bayes - net , 
+D:  and what they depend on , 
+D:  and it turns out , you know , the CPT 's are really big , if I do that , 
+D:  so I tried to see how I can do , um  put in the computational nodes in between . 
+D:  And what that would look like in a PRM . 
+D:  And so I ended up making several classes  
+D:  Actually , you know , a class of  with different attributes that are the intermediate nodes , 
+D:  and one of them is like , time affordability money affordability , site availability , and the travel compatibility . 
+D:  And so some of these classes are  
+D:  s some of these attributes only depend on stuff from , say , the user , 
+D:  or s f just from , I don't know , like the site . 
+D:  S like , um , these here , 
+D:  it 's only like , user , 
+D:  but , if you look at travel compatibility for each of these factors , you need to look at a pair of , you know , what the um , preference of the user is 
+D:  versus , you know , what type of an event it is , 
+D:  or you know , which form of transportation the user has 
+D:  and whether , you know , the onsite parking matters to the user , in that case . 
+D:  And that makes the scenario a little different in a PRM , 
+D:  because , um , then you have one - user objects 
+D:  and potentially you can have many different sites in  in mind . 
+D:  And so 
+D:  for each of the site you 'll come up with this rating , of travel compatibility . 
+D:  And , they all depend on the same users , but different sites , 
+D:  and that makes a  
+D:  I 'm tr I w I wa have been trying to see whether the PRM would make it more efficient if we do inferencing like that . 
+D:  And so , 
+D:  I guess you end up having fewer number of nodes than in a flat Bayes - net , 
+D:  cuz otherwise you would  c 
+D:  well , it 's probably the same . 
+D:  But um , 
+D:  No , you would definitely have  
+D:  be able to re - use , like , <outbreath> um , all the user stuff , 
+D:  and not  not having to recompute a lot of the stuff , 
+D:  because it 's all from the user side . 
+D:  So if you changed sites , you  you can , you know , save some work on that . 
+D:  But , 
+D:  you know , in the case where , it depends on both the user and the site , then I 'm still having a hard time trying to see how um , using the PRM will help . 
+D:  Um , so anyhow , using those intermediate nodes then , this  this would be the class that represent the intermediate nodes . 
+D:  And that would  basically it 's just another class in the model , 
+D:  with , you know , references to the user and the site and the time . 
+D:  And then , after you group them together this  
+D:  no the dependencies would  of the queries would be reduced to this . 
+D:  And so , you know , it 's easier to specify the CPT and all . 
+D:  Um , so I think that 's about as far as I 've gone on the PRM stuff . 
+D:  Right . 
+D:  The output . 
+D:  OK . So it only makes two decisions , in this model . 
+D:  And one is basically how desirable a site is 
+D:  meaning , um , how good it matches the needs of a user . 
+D:  And the other is the mode of the visit , 
+D:  whether th It 's the EVA decision . 
+D:  Um , 
+D:  so , instead of um , <mouth> doing a lot of , you know , computation about , you know , which one site it wants of  the user wants to visit , I 'll come  well , try to come up with like , sort of a list of sites . 
+D:  And for each site , you know , where  h how  how well it fits , 
+D:  and basically a rating of how well it fits and what to do with it . 
+D:  So . 
+D:  Anything else I missed ? 
+D:  No , not yet , 
+D:  um  
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  I can't really see the whole thing . 
+D:  Well I think I basically leave them to similar things . 
+D:  Some of the things might  that might be different , maybe like  are that the hours for the site . 
+D:  And , eventually I meant that to mean whether they 're open at this hour or not . 
+D:  And status would be , you know , more or less like , whether they 're under construction , 
+D:  and  and  or stuff like that . 
+D:  Which is the structural uncertainty ? 
+D:  I remember them learning when , you know , you don't know the structure for sure , 
+D:  but I don't remember reading how you specify 
+D:  wh to start with . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  OK . 
+D:  Actually I had to take out a lot of the complicated stuff , 
+D:  cuz I  I made it really complicated in the beginning , 
+D:  and Jerry was like , <laugh> " this is just too much " . 

@@ -1,0 +1,157 @@
+A:  Hmm . 
+A:  Oh . R  
+A:  R  R - zero . 
+A:  What are  what are your f uh frame error rates for  for this ? 
+A:  O 
+A:  Fif - fifty - six percent accurate for v voice - unvoice 
+A:  Oh , OK . 
+A:  OK . 
+A:  Should be in nineties somewhere . 
+A:  Right . 
+A:  OK . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Oh yeah . 
+A:  TIMIT canonical ma mappings . 
+A:  Yeah , noisy TIMIT . 
+A:  Right . 
+A:  Hmm ! 
+A:  Mc - McDonald 's constant . 
+A:  Oh ! 
+A:  um  uh  Yeah . 
+A:  So . I  I guess some of the progress , I  I 've been getting a  getting my committee members for the quals . 
+A:  And um so far I have Morgan and Hynek , <inbreath> Mike Jordan , 
+A:  and I asked John Ohala and he agreed . 
+A:  Yeah . Yeah . 
+A:  So I 'm  I  I just need to ask um Malek . 
+A:  One more . 
+A:  Um . Tsk . 
+A:  Then uh I talked a little bit about <inbreath> um continuing with these dynamic ev um acoustic events , 
+A:  and um <inbreath> <mouth> we 're  we 're  we 're <inbreath> thinking about a way to test the completeness of a  a set of um dynamic uh events . 
+A:  Uh , completeness in the  in the sense that <inbreath> um if we  if we pick these X number of acoustic events , <inbreath> do they provide sufficient coverage <inbreath> for the phones that we 're trying to recognize <inbreath> or  or the f the words that we 're gonna try to recognize later on . 
+A:  And so Morgan and I were uh discussing <inbreath> um s uh s a form of a cheating experiment <inbreath> where we get  <mouth> um we have uh <inbreath> um a chosen set of features , or acoustic events , 
+A:  and we train up a hybrid <inbreath> um system to do phone recognition on TIMIT . 
+A:  So i i the idea is if we get good phone recognition results , <inbreath> using um these set of acoustic events , <inbreath> then <inbreath> um that  that says that these acoustic events are g sufficient to cover <inbreath> a set of phones , 
+A:  at least found in TIMIT . 
+A:  Um so i it would be a  <inbreath> a measure of " are we on the right track with  with the  the choices of our acoustic events " . 
+A:  Um , <mouth> So that 's going on . 
+A:  And <inbreath> also , just uh working on my <inbreath> uh final project for Jordan 's class , 
+A:  uh which is  
+A:  Yeah . 
+A:  OK , sure . 
+A:  Oh . 
+A:  Yeah th Um . 
+A:  So for my class project I 'm <inbreath> um <mouth> <inbreath> I 'm tinkering with uh support vector machines ? 
+A:  something that we learned in class , 
+A:  and uh um basically just another method for doing classification . 
+A:  And so I 'm gonna apply that to <inbreath> um compare it with the results by um King and Taylor who did <inbreath> um these 
+A:  um 
+A:  using recurrent neural nets , they recognized <inbreath> um <mouth> a set of phonological features 
+A:  um 
+A:  and made a mapping from the MFCC 's to these phonological features , 
+A:  so I 'm gonna <inbreath> do a similar thing with  <inbreath> with support vector machines 
+A:  and see if  
+A:  Um . So , support vector machines are  are good with dealing with a less amount of data 
+A:  and um so if you  if you give it less data it still does a reasonable job <inbreath> in learning the  the patterns . 
+A:  Um and <inbreath> um 
+A:  Yeah . 
+A:  Um . 
+A:  Right . 
+A:  So , <inbreath> the  the simple idea behind a support vector machine is <inbreath> um , <inbreath> you have  you have this feature space , 
+A:  right ? 
+A:  and then it finds the optimal separating plane , um between these two different um classes , 
+A:  and um <mouth> and so <inbreath> um , 
+A:  what it  i at the end of the day , what it actually does is <inbreath> it picks <inbreath> those examples of the features that are closest to the separating boundary , 
+A:  and remembers those 
+A:  and  <inbreath> and uses them to recreate the boundary for the test set . 
+A:  So , given these <inbreath> um these features , or  or these  these examples ,  um ,  critical examples , <inbreath> which they call support f support vectors , <inbreath> then um <inbreath> given a new example , <inbreath> if the new example falls <inbreath> um away from the boundary in one direction then it 's classified as being a part of this particular class 
+A:  and otherwise it 's the other class . 
+A:  Mm - hmm . 
+A:  Um . Hmm . 
+A:  Let 's see . 
+A:  Uh . 
+A:  Yeah , that 's a good question . 
+A:  I  
+A:  yeah . 
+A:  Right . 
+A:  I it can be a  a reduced um <mouth> parameterization of  of the  the model by just keeping <inbreath> certain selected examples . 
+A:  Yeah . 
+A:  So . 
+A:  Yeah , I don't know either . 
+A:  Actually you don't get a  you don't get a nice number between zero and one . 
+A:  You get  you get either a zero or a one . 
+A:  Um , uh 
+A:  there are  there are pap 
+A:  Well , basically , it 's  it 's um <mouth> you  you get a distance measure at the end of the day , 
+A:  and then that distance measure is  is um  <inbreath> is translated to a zero or one . 
+A:  Um . 
+A:  That 's for classification , 
+A:  right . 
+A:  Right . 
+A:  You have the distances to work with , 
+A:  yeah . 
+A:  Yeah . 
+A:  Yeah , they  <inbreath> they had a  had a way to translate the distances into  into probabilities with the  with the simple <inbreath> um <mouth> uh sigmoidal function . 
+A:  Um  <inbreath> Yeah , 
+A:  there 's some  there 's like one over one plus the exponential or something like that . 
+A:  Yeah . 
+A:  Right . 
+A:  Oh 
+A:  I 'm not do I 'm not planning on doing speech recognition with it . 
+A:  I 'm just doing <inbreath> detection of phonological features . 
+A:  So uh for example , <inbreath> this  this uh feature set called the uh sound patterns of English <inbreath> um is just a bunch of <inbreath> um <mouth> binary valued features . 
+A:  Let 's say , is this voicing , or is this not voicing , 
+A:  is this <inbreath> sonorants , not sonorants , 
+A:  and <inbreath> stuff like that . 
+A:  So . 
+A:  Oh ! 
+A:  Uh I haven't gone through the entire table ,  yet . 
+A:  Yeah , 
+A:  yesterday I brought Chuck <inbreath> the table 
+A:  and I was like , " wait , this  is  Is the mapping from N to  to this phonological feature called um " coronal " , 
+A:  is  is  should it be  shouldn't it be a one ? 
+A:  or should it  should it be you know coronal instead of not coronal as it was labelled in the paper ? " 
+A:  So I ha haven't hunted down all the  all the mistakes yet , 
+A:  but  
+A:  Right , yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah , 
+A:  I can  I can show you  I  
+A:  yeah , 
+A:  our  
+A:  Mm - hmm . 
+A:  Uh , is this the class project , 
+A:  or  ? 
+A:  OK . 
+A:  um 
+A:  Right ,  Right , right 
+A:  f so for every phone there is  there is a um  a vector of ones and zeros <inbreath> f uh corresponding to whether it exhibits a particular phonological feature or not . 
+A:  Um 
+A:  Oh . 
+A:  Right , 
+A:  um to come up with a mapping from um MFCC 's or s some feature set , <inbreath> um to <inbreath> uh w to whether there 's existence of a particular phonological feature . 
+A:  And um 
+A:  yeah , 
+A:  basically it 's to learn a mapping <inbreath> from  <inbreath> from the MFCC 's to <inbreath> uh phonological features . 
+A:  Is it  did that answer your question ? 
+A:  OK . 
+A:  C 
+A:  Mm - hmm . 
+A:  Oh . 
+A:  No , no . 
+A:  I 'm not  I 'm not planning to do any  any phoneme mapping yet . 
+A:  Just  <inbreath> it 's  it 's basically  it 's  it 's really simple , basically a detection <inbreath> of phonological features . 
+A:  Yeah , 
+A:  and um <mouth> <inbreath> cuz the uh  
+A:  So King and  and Taylor <inbreath> um did this with uh recurrent neural nets , 
+A:  and this i their  their idea was to first find <inbreath> a mapping from MFCC 's to <inbreath> uh phonological features 
+A:  and then later on , once you have these <inbreath> phonological features , <inbreath> then uh map that to phones . 
+A:  So I 'm  I 'm sort of reproducing phase one of their stuff . 
+A:  Right . 
+A:  Right . Right . Right . 
+A:  Uh . 
+A:  Mm - hmm . 
+A:  Uh . 
+A:  Yeah . 
+A:  Hmm . 

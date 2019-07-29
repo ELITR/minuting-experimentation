@@ -1,0 +1,492 @@
+G:  Let 's read some digits . 
+G:  Alright ! 
+G:  We 're not crashing . 
+G:  OK . 
+G:  OK . <sniff> Does anybody have an agenda ? 
+G:  I thought  somebody had . 
+G:  Yeah , that 's right . 
+G:  Yeah , we only want th useless things . 
+G:  Yeah . 
+G:  No , why don't we talk about practical things ? 
+G:  Sure . 
+G:  Great . 
+G:  OK , transcription , uh , microphone issues  
+G:  OK . 
+G:  Yes . 
+G:  Yeah , well . 
+G:  OK . 
+G:  Uh  
+G:  You have some  
+G:  Yeah . 
+G:  OK . 
+G:  Uh , bigram ? 
+G:  IRAM . 
+G:  Well , m maybe . 
+G:  Yeah , let 's  let 's see where we are at three - thirty . 
+G:  Um  
+G:  Well  
+G:  Yeah . Th - now you get to tell us what 's the interesting part . 
+G:  But  
+G:  OK . 
+G:  Um , and , um , <mouth> the other thing , uh , 
+G:  which I 'll just say very briefly that maybe relates to that a little bit , 
+G:  which is that , um , 
+G:  uh , one of the suggestions that came up in a brief meeting I had the other day when I was in Spain 
+G:  with , uh , Manolo Pardo and <inbreath> Javier , uh , Ferreiros , who was  here before , 
+G:  was , um , why not start with what they had before but add in the non - silence boundaries . 
+G:  So , in what Javier did before when they were doing , um  
+G:  h he was looking for , uh , speaker change  points . 
+G:  Um . 
+G:  As a simplification , he originally did this only using  silence as , uh , a  putative , uh , speaker change point . 
+G:  And , uh , he did not , say , look at points where you were changing broad sp uh , phonetic class , for instance . 
+G:  And for Broadcast News , that was fine . 
+G:  Here obviously it 's not . 
+G:  And , um , so one of the things that they were pushing in d in discussing with me is , um , 
+G:  w why are you spending so much time , uh , on the , uh , feature issue , 
+G:  uh , when perhaps if you sort of deal with what you were using before 
+G:  and then just broadened it a bit , instead of just ta using silence as putative change point also  ? 
+G:  So then you 've got  you already have the super - structure with Gaussians and H - you know , simple H M Ms and so forth . 
+G:  And you  you might  
+G:  So there was a  there was a little bit of a  a  a  a difference of opinion 
+G:  because I  I thought that it was  it 's interesting to look at what features are useful . 
+G:  But , uh , on the other hand I saw that the  they had a good point 
+G:  that , uh , if we had something that worked for many cases before , maybe starting from there a little bit  
+G:  Because ultimately we 're gonna end up <inbreath> with some s su kind of structure like that , 
+G:  where you have some kind of simple HMM 
+G:  and you 're testing the hypothesis that , <inbreath> uh , there is a change . 
+G:  So  
+G:  so anyway , I just  reporting that . 
+G:  But , uh , uh  
+G:  So . Yeah , why don't we do the speech - nonspeech discussion ? 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Hmm . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Um  
+G:  That 's great . 
+G:  Um , just qu one quickly , uh , still on the features . 
+G:  So <inbreath> you have these twenty - four features . 
+G:  Uh , a lot of them are spectral features . 
+G:  Is there a  a transformation , uh , like principal components transformation or something ? 
+G:  Just  
+G:  OK . 
+G:  OK . No , I was j  curious . 
+G:  Yeah , I don't think it 's a big deal for this application , 
+G:  but  but  Yeah , it 's a  
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Yeah . 
+G:  Excuse me . 
+G:  Yeah . 
+G:  The other thing , uh , to keep in mind , 
+G:  uh  I mean , 
+G:  we 've been very concerned to get all this rolling 
+G:  so that we would actually have data , 
+G:  but , um , I think our outside sponsor is actually gonna kick in 
+G:  and ultimately that path will be smoothed out . 
+G:  So I don't know if we have a long - term need to do lots and lots of transcribing . 
+G:  I think we had a very quick need to get something out 
+G:  and we 'd like to be able to do some later 
+G:  because just it 's inter it 's interesting . 
+G:  But as far a you know , uh , with  with any luck we 'll be able to wind down the larger project . 
+G:  Right . 
+G:  Yeah . 
+G:  Right . 
+G:  Uh - huh . 
+G:  Yeah . 
+G:  That 's great . 
+G:  That 's great . 
+G:  Yeah . 
+G:  I mean , basically it 's  it 's all the difference in the world . 
+G:  I mean , basically he 's  he 's on it now . 
+G:  So  so  so this is  so i it 'll happen . 
+G:  Yeah . I mean , basically it 's just saying that one of our  one of our best people is on it , 
+G:  you know , who just doesn't happen to be here anymore . 
+G:  Someone else pays him . 
+G:  So  
+G:  So . <laugh> Yeah . 
+G:  Yeah . 
+G:  S OK . That 's  that 's a good point . 
+G:  Mm - hmm . 
+G:  Hmm . 
+G:  Hmm . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Have , uh , folks from NIST been in contact with you ? 
+G:  OK . 
+G:  OK . Well , holidays may have interrupted things , 
+G:  cuz in  in  in  
+G:  They <breath> seem to want to  get absolutely clear on standards for  transcription standards and so forth with  with us . 
+G:  Right . Because they 're  they 're presumably going to start recording next month . 
+G:  So . 
+G:  Um . Yeah , I don't think I mailed anybody . 
+G:  I just think I told them to contact Jane  that , uh , if they had a  
+G:  if , uh  that  that , uh , as the point person on it . 
+G:  But  
+G:  So , yeah . Maybe I 'll , uh , ping them a little bit about it to <inbreath> get that straight . 
+G:  Yeah . So is it  cuz with any luck there 'll actually be a  a  there 'll be collections at Columbia , 
+G:  collections at  at UW  
+G:  I mean Dan  Dan is very interested in doing some other things , 
+G:  and collections at NIST . 
+G:  So  
+G:  Yeah . 
+G:  Oh , yeah . He was talking  he was talking  I mean , uh , we  he had  
+G:  Yeah , cross - correlation . 
+G:  I had mentioned this a couple times before , the c the commercial devices that do , uh , <inbreath> uh , voice , uh  you know , active miking , 
+G:  basically look at the amp at the energy at each of the mikes . 
+G:  And  and you basically compare the energy here to <inbreath> some function of all of the mikes . 
+G:  So , 
+G:  by doing that , you know , rather than setting any , uh , absolute threshold , you actually can do pretty good , uh , selection of who  who 's talking . 
+G:  Uh  
+G:  And those  those systems work very well , by the way , 
+G:  I mean , so people use them in <inbreath> panel discussions and so forth with sound reinforcement differing in  in sort of , 
+G:  uh  
+G:  and , uh , those  if  
+G:  Boy , the guy I knew who built them , built them like twenty  twenty years ago , 
+G:  so they 're  <laugh> it 's  the  the techniques work pretty well . 
+G:  So . 
+G:  Mm - hmm . 
+G:  Yeah . So I think , you know , basically you can look at some  p you have to play around a little bit , uh , to figure out what the right statistic is , 
+G:  but you compare each microphone to some statistic based on the  <inbreath> on the overall  
+G:  Uh , and we also have these  we have the advantage of having  distant mikes too . 
+G:  So that , you cou yo 
+G:  Um . I  I don't know . 
+G:  I just  it 'd be  
+G:  If I was actually working on it , I 'd sit there and  and play around with it , 
+G:  and  and get a feeling for it . 
+G:  I mean , the  the  the , 
+G:  uh  
+G:  But , 
+G:  uh , you certainly wanna use the close - talking , as a  at least . 
+G:  I don't know if the other would  would add some other helpful dimension or not . 
+G:  Well , uh , my suggestion now is  is on all of these things to , uh , contact Brian . 
+G:  Yeah . 
+G:  Yeah . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Well , just talk to him about it . 
+G:  I mean , you know , basically he 's  he just studies , he 's a colleague , 
+G:  a friend , 
+G:  and , 
+G:  uh , they  and  and , you know , the  the organization always did wanna help us . 
+G:  It was just a question of getting , you know , the right people connected in , who had the time . 
+G:  So , 
+G:  um , eh  
+G:  Yeah . 
+G:  No , I , eh , eh , p 
+G:  It  it oc I  h it 's  
+G:  Yeah , something happened . 
+G:  I don't know what . 
+G:  But he 's on it now . 
+G:  Right . 
+G:  So , uh , 
+G:  where are we ? 
+G:  Maybe , uh , uh , brief  
+G:  Well , let 's  why don't we talk about microphone issues ? 
+G:  That was  that was a  
+G:  Oh , I probably would . 
+G:  I mean , my knowledge is twenty years out of date 
+G:  but some of it 's still the same . 
+G:  So  
+G:  Uh , so maybe we c we can take a look at that . 
+G:  Mm - hmm . 
+G:  Well , let 's look at it together 
+G:  and  
+G:  Who  who are we buying these from ? 
+G:  That 'd be 
+G:  Yeah . 
+G:  OK . 
+G:  Yeah . We  we can try and look at that together . 
+G:  Well , I think that that 's  that 's a good back - off position . 
+G:  That 's what I was saying <laugh> earlier , 
+G:  th that , you know , we are gonna get some <inbreath> recordings that are imperfect 
+G:  and , hey , that 's life . 
+G:  But I  I think that it  it doesn't hurt , uh , the naturalness of the situation to try to have people  wear the microphones properly , if possible , 
+G:  because , <inbreath> um , the natural situation is really what we have with the microphones on the table . 
+G:  I mean , I think , <inbreath> you know , in the target applications that we 're talking about , people aren't gonna be wearing head - mounted mikes anyway . 
+G:  So this is just for u these head - mounted mikes are just for use with research . 
+G:  And , uh , it 's gonna make  
+G:  You know , if  if An - Andreas plays around with language modeling , he 's not gonna be m wanna be messed up by people breathing into the microphone . 
+G:  So it 's  it 's , uh , uh  
+G:  But it does happen . 
+G:  Right ? 
+G:  I mean , and any  
+G:  Yeah . 
+G:  Yeah . 
+G:  Yeah . 
+G:  I remember when I was  when I  I  I  I used , uh , um , <mouth> a prominent laboratory 's , uh , uh , speech recognizer 
+G:  about , <laugh> uh  This was , boy , this was a while ago , 
+G:  this was about twelve  twelve years ago or something . 
+G:  And , um , 
+G:  they were  they were perturbed with me 
+G:  because I was breathing in instead of breathing out . 
+G:  And they had models for  they  <laugh> they had Markov models for br breathing out 
+G:  but they didn't have them for breathing in . 
+G:  Uh  
+G:  I  
+G:  Yeah . 
+G:  I 
+G:  I mean , I think  
+G:  It  it 's going to be imperfect . 
+G:  You 're not gonna get it perfect . 
+G:  And you can do some , uh , you know , first - order thing about it , 
+G:  which is to have people move it , uh , uh , a away from being just directly in front of the middle 
+G:  but not too far away . 
+G:  And then , you know , I think there 's not much  
+G:  Because you can't al you know , interfere w 
+G:  you can't fine tune the meeting that much , I think . 
+G:  It 's sort of  
+G:  Mm - hmm . 
+G:  Uh . 
+G:  And then there 's mass . 
+G:  Anyway . 
+G:  About what ? 
+G:  Well , the other  
+G:  why don't we do that ? 
+G:  Mm - hmm . 
+G:  Uh is it ? 
+G:  Same thing . 
+G:  No  
+G:  Yeah . 
+G:  I mean , it 's  it 's  it 's always the same thing . 
+G:  Right ? 
+G:  I mean , you could  you could say well , let  
+
+G:  we now think that laughter should have three sub sub <inbreath> sub - units in the  the three states , uh  different states . 
+G:  And then you would have three  
+G:  I mean , you know , eh , eh , it 's u 
+G:  Yeah , yeah . 
+G:  Mm - hmm . 
+G:  OK . 
+G:  Say hi for me . 
+G:  Yeah . 
+G:  Yeah . I think  
+G:  I 'm sure it 's very individual . 
+G:  And  and  
+G:  one thing that c that we 're not doing , of course , is we 're not claiming to , uh , get  be getting a representation of mankind 
+G:  in these recordings . We have <laugh> this very , very tiny sample of  of  
+G:  Uh , yeah . 
+G:  And  <laugh> Yeah , r right . 
+G:  So , uh , who knows . 
+G:  Uh  
+G:  Yeah . Why don why don't we just  since we 're on this vein , why don't we just continue with , uh , what you were gonna say about the transcriptions 
+G:  and  ? 
+G:  Uh - huh . 
+G:  Yeah . 
+G:  OK . 
+G:  Yes . 
+G:  Yeah . 
+G:  Mm - hmm . 
+G:  Right . Well  <inbreath> Well , you know , it might be something we 'd wanna do with some , uh , s small subset  of the whole thing . 
+G:  We certainly wouldn't wanna do it with everything . 
+G:  Uh - huh . 
+G:  The other thing we could do , actually , uh , is , uh , use them for a more detailed analysis of the overlaps . 
+G:  Right ? 
+G:  Well , that 's one way to do it . 
+G:  But I 've been saying the other thing is just go through it for the overlaps . 
+G:  Right ? 
+G:  Given that y and  and do  so instead of doing phonetic , uh , uh , transcription for the whole thing , 
+G:  which <inbreath> we know from the  Steve 's experience with the Switchboard transcription is , you know , very , very time - consuming . 
+G:  And  <inbreath> and you know , it took them I don't know how many months to do  to get four hours . 
+G:  And so <inbreath> that hasn't been really our focus . 
+G:  Uh , we can consider it . 
+G:  But , I mean , the other thing is since we 've been spending so much time thinking about overlaps is  is maybe get a much more detailed analysis of the overlaps . 
+G:  But anyway , I 'm  I 'm open to c our consideration . 
+G:  I  I don't wanna say that by fiat . 
+G:  I 'm open to every consideration of <inbreath> what are some other kinds of detailed analysis that would be most useful . 
+G:  And , uh , uh , 
+G:  I  I  I think <inbreath> this year we  we actually , uh , can do it . 
+G:  It 's a  we have  we have  due to @ @  variations in funding we have  we seem to be doing , uh , very well on m money for this  this year , 
+G:  and <inbreath> next year we may have  have much less . 
+G:  So I don't wanna hire a  
+G:  Uh , I mean , calendar year two thousand one . 
+G:  Yeah . So it 's  uh , it 's  we don't wanna hire a bunch of people , a long - term staff , 
+G:  because <inbreath> the  the funding that we 've gotten is sort of a big chunk for this year . 
+G:  But <inbreath> having  temporary people doing some specific thing that we need is actually a perfect match to that kind of , uh , funding . 
+G:  So . 
+G:  Yeah . 
+G:  Yeah . Yeah . 
+G:  Yeah . 
+G:  I  
+G:  I remember when we were transcribing BeRP , uh , uh , <inbreath> uh , Ron Kay , uh , volunteered to  to do some of that . 
+G:  And , he was  the first  first stuff he did was transcribing Chuck . 
+G:  And he 's saying " You  you know , I always thought Chuck spoke really well . " 
+G:  Mm - hmm . 
+G:  Yeah . 
+G:  Yeah . 
+G:  It could be that they will uh  theirs will end up being a kind of fir first pass or something . 
+G:  Maybe an elaborate one , 
+G:  cuz again they probably are gonna do these alignments , 
+G:  which will also clear things up . 
+G:  Well , tha that 's  that 's debatable . 
+G:  Right ? 
+G:  I mean , so the  so the argument is that if your statistical system is good <inbreath> it will in fact , uh , clean things up . 
+G:  Right ? 
+G:  So it it 's got its own objective criterion . 
+G:  And , uh , so in principle you could start up with something that was kind of rough  
+G:  I mean , to give an example of , um , something we used to do , uh , at one point , uh , back  back when Chuck was here 
+G:  in early times , 
+G:  is we would take , 
+G:  um , <mouth> da take a word and , uh , have a canonical pronunciation 
+G:  and , uh , if there was five phones in a word , <clears throat> you 'd break up the word , <inbreath> uh , into five equal - length pieces 
+G:  which is completely gross . 
+G:  Right ? 
+G:  I mean , th the timing is off  all over the place in just about any word . 
+G:  But it 's O K . 
+G:  You start off with that and the statistical system 
+G:  then aligns things , 
+G:  and eventually you get something that doesn't really look too bad . 
+G:  So  so I think using a  a good  aligner , um , actually can  can help a lot . 
+G:  Um . <breath> But , uh , 
+G:  you know , they both help each other . 
+G:  If you have a  if you have a better starting point , then it helps the aligner . 
+G:  If you have a good alignment , it helps the , uh , th the human in  in taking less time to correct things . 
+G:  So  so  
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Yeah . 
+G:  Meaning really isn't my thing . 
+G:  Um  
+G:  We 're running a little short here . 
+G:  We , uh , uh , cou trying to  
+G:  eh , was  p Well , you know , the thing I 'm concerned about is we wanted to do these digits 
+G:  and  and I haven't heard , uh , from Jose yet . 
+G:  So  
+G:  Uh  
+G:  Uh  
+G:  I  I  I think it  you know , another  another bunch of digits . 
+G:  More data is good . 
+G:  So  so I 'd like to do that . 
+G:  But I think , do you , maybe , 
+G:  eh  ? 
+G:  Did you prepare some whole thing you wanted us just to see ? 
+G:  Or what was that ? 
+G:  Yeah . 
+G:  Uh , how long a  ? 
+G:  Yeah . 
+G:  Yes . 
+G:  Right . 
+G:  OK . 
+G:  But the bottom line is it 's still not , uh , separating out very well . 
+G:  Right ? 
+G:  OK . 
+G:  So that 's  
+G:  that 's  that 's enough then . 
+G:  OK . 
+G:  No , I mean , that there 's no point in going through all of that if that 's the bottom line , really . 
+G:  So , I  I think we have to start  
+G:  Uh , I mean , there there 's two suggestions , really , 
+G:  which is , uh  what we said before is that , 
+G:  um , 
+G:  it looks like , 
+G:  at least that you haven't found an obvious way to normalize 
+G:  so that the energy is anything like a reliable , uh , indicator of the overlap . 
+G:  Um , I  I 'm  I 'm still  a little f think that 's a little funny . These things l @ @ seems like there should be , 
+G:  but  <inbreath> but you don't want to keep , uh  keep knocking at it if it 's  if you 're not getting any  any result with that . 
+G:  But , I mean , the other things that we talked about is , uh , <inbreath> pitch - related things and harmonicity - related things , 
+G:  so  which we thought also should be some kind of a reasonable indicator . 
+G:  Um  
+G:  But , uh , 
+G:  a completely different tack on it wou is the one that was suggested , uh , by your colleagues in Spain , 
+G:  which is to say , don't worry so much about the , uh , features . 
+G:  That is to say , use , you know , as  as you 're doing with the speech , uh , nonspeech , use some very general features . 
+G:  And , uh , then , uh , look at it more from the aspect of modeling . 
+G:  You know , have a  have a couple Markov models 
+G:  and  
+G:  and , uh , try to indi try to determine , you know , w when is th when are you in an overlap , when are you not in an overlap . 
+G:  And let the , uh , uh , statistical system  determine what 's the right way to look at the data . 
+G:  I  I , um , 
+G:  I think it would be interesting to find individual features and put them together . 
+G:  I think that you 'd end up with a better system overall . 
+G:  But given the limitation in time <inbreath> and given the fact that Javier 's system already exists  doing this sort of thing , 
+G:  uh , but , uh , 
+G:  its main limitation is that , again , it 's only looking at silences which would  
+G:  maybe that 's a better place to go . 
+G:  So . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Yeah . 
+G:  Maybe . 
+G:  Yeah . 
+G:  I see . 
+G:  Ha - h have you ever looked at the , uh , uh  Javier 's , uh , speech segmenter ? 
+G:  Oh . Maybe m you could , you kn uh show Thilo that . 
+G:  Cuz again the idea is there  the limitation there again was that he was  he was only using it to look at silence as a  as a  as a  as a p putative split point between speakers . 
+G:  But if you included , uh , broadened classes then  in principle maybe you can  cover the overlap cases . 
+G:  Uh  
+G:  N n 
+G:  Well , it 's  sort of has a simple one . 
+G:  Right ? 
+G:  It 's  
+G:  it 's just  it 's just a  isn't it just a Gaussian 
+G:  for each  ? 
+G:  Yeah . 
+G:  Oh , it doesn't have  it doesn't have any temporal , uh  ? 
+G:  I thought it  
+G:  Yeah . 
+G:  I gues I guess I don't remember either . 
+G:  Uh . It 's been a while . 
+G:  Uh . 
+G:  Oh , OK . So he 's just  he just computes a Gaussian over potential  
+G:  Oh , I see . I see . 
+G:  And  and  
+G:  O - k OK . So let me go back to what you had , though . 
+G:  Um . 
+G:  The other thing one could do is  Couldn't  
+G:  I mean , it 's  So you have two categories 
+G:  and you have Markov models for each . 
+G:  Couldn't you have a third category ? 
+G:  So you have , uh  you have , <inbreath> uh , nonspeech , single - person speech , and multiple - person speech ? 
+G:  Right ? 
+G:  And then you have a Markov model for each ? 
+G:  I see . 
+G:  I see . 
+G:  Yeah , I mean , I  
+G:  This is all pretty gross . 
+G:  I mean , the  th the reason why , uh , I was suggesting originally that we look at features is because I thought , well , we 're doing something we haven't done before , 
+G:  we should at least look at the space and understand  
+G:  It seems like if two people  two or more people talk at once , it should get louder , 
+G:  uh , and , uh , uh , there should be some discontinuity in pitch contours , 
+G:  and , uh , there should overall be a , um , smaller proportion of the total energy that is explained by any particular harmonic  sequence in the spectrum . 
+G:  So those are all things that should be there . 
+G:  So far , um , uh , Jose has  has been  
+G:  By the way , I was told I should be calling you Pepe , 
+G:  but  
+G:  by your friends , 
+G:  but 
+G:  Anyway , 
+G:  um , 
+G:  uh , the  has  has , uh , been exploring , uh , e largely the energy issue 
+G:  and , 
+G:  um , 
+G:  as with a lot of things , it is not  uh , like this , it 's not as simple as it sounds . 
+G:  And then there 's , you know  Is it energy ? Is it log energy ? Is it LPC residual energy ? Is it  is it  <inbreath> is it , uh , delta of those things ? 
+G:  Uh , what is it no 
+G:  Obviously , just a simple number  <inbreath> absolute number isn't gonna work . 
+G:  So <inbreath> it should be with  compared to what ? 
+G:  Should there be a long window for the <inbreath> normalizing factor and a short window for what you 're looking at ? 
+G:  Or , you know , how b short should they be ? 
+G:  So , 
+G:  th he 's been playing around with a lot of these different things 
+G:  and  and so far at least has not come up with <inbreath> any combination that really gave you an indicator . 
+G:  So 
+G:  I  I still have a hunch that there 's  it 's in there some place , 
+G:  but it may be  given that you have a limited time here , it  it just may not be the best thing to  <inbreath> to  to focus on for the remaining of it . 
+G:  So pitch - related and harmonic - related , I 'm  I 'm  somewhat more hopeful for it . 
+G:  But it seems like if we just wanna get something to work , 
+G:  that , uh , their suggestion of  of  
+G:  Th - they were suggesting going to Markov models , 
+G:  uh , but in addition there 's an expansion of what Javier did . 
+G:  And one of those things , looking at the statistical component , 
+G:  even if the features that you give it are maybe not ideal for it , it 's just sort of this general filter bank 
+G:  or  <inbreath> or cepstrum or something , um  
+G:  Eee <vocal gesture, intonation of "you know" but not segmentals> it 's in there somewhere probably . 
+G:  Uh - huh . 
+G:  Yeah . 
+G:  Let 's read some digits . 

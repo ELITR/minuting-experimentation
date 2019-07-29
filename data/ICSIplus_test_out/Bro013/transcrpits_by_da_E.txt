@@ -1,0 +1,292 @@
+E:  so . 
+E:  Uh , well , first there are perhaps these uh Meeting Recorder digits that we tested . 
+E:  So . 
+E:  Um . 
+E:  Of data ? 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  Right . 
+E:  I guess it 's  it 's uh allophone models , 
+E:  so , well  
+E:  Yeah . I think so , 
+E:  because it 's their very d huge , their huge system . 
+E:  And . 
+E:  But . 
+E:  So . There is one difference  
+E:  Well , the SRI system  the result for the SRI system that are represented here are with adaptation . 
+E:  So there is  
+E:  It 's their complete system and  including on - line uh unsupervised adaptation . 
+E:  And if you don't use adaptation , the error rate is around fifty percent worse , I think , if I remember . 
+E:  Yeah . 
+E:  Nnn . 
+E:  It 's  
+E:  Yeah . 
+E:  It 's quite significant . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  We can do something like that . 
+E:  Yeah . 
+E:  But  
+E:  But I guess the main point is the data because 
+E:  uh <breath> I am not sure . 
+E:  Our back - end is  is fairly simple 
+E:  but until now , well , the attempts to improve it or  have fail 
+E:  Ah , well , I mean uh what Chuck tried to  to  to do 
+E:  Yeah . 
+E:  So it 's  
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  Mmm . 
+E:  So , yeah , we could retrain some of these tandem on  on huge  
+E:  Ah , yeah . 
+E:  Just  
+E:  f for the HMM models . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  Yeah . 
+E:  But <breath> what would be interesting to see also is what  what  
+E:  perhaps it 's not related , the amount of data but the um recording conditions . 
+E:  I don't know . 
+E:  Because <breath> it 's probably not a problem of noise , because our features are supposed to be robust to noise . 
+E:  It 's not a problem of channel , because there is um <mouth> <breath> normalization with respect to the channel . 
+E:  So  
+E:  The  the fact that  the result with the tandem and Aurora system are <breath> uh so much worse . 
+E:  Yeah . 
+E:  It  
+E:  Yeah but  
+E:  Yeah . 
+E:  Yeah but we train only on digits and it 's  it 's a digit task , 
+E:  so . 
+E:  Well . 
+E:  It  
+E:  Mm - hmm . 
+E:  Alright . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Right . 
+E:  Mmm . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  Yeah . 
+E:  Well , actually we see that the clean train for the Aurora proposals are  are better than the multi - train , 
+E:  yeah . 
+E:  Mm - hmm . 
+E:  Well , o I guess what I meant is that 
+E:  well , let 's say if we  if we add enough data to train on the um on the Meeting Recorder digits , I guess we could have better results than this . 
+E:  And . 
+E:  What I meant is that perhaps we can learn something uh from this , 
+E:  what 's  what 's wrong uh what  what is different between TI - digits and these digits 
+E:  and  
+E:  It 's point eight percent , 
+E:  so . 
+E:  Four - Fourier . 
+E:  Yeah . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  th that 's  th that 's my point 
+E:  I  I  I don't I  
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah , I guess . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Well . 
+E:  Yeah . 
+E:  And acoustically , it 's q it 's  
+E:  I listened . 
+E:  It 's quite different . 
+E:  TI - digit is  it 's very , very clean and it 's like studio recording 
+E:  whereas these Meeting Recorder digits sometimes you have breath noise 
+E:  and 
+E:  Mmm . 
+E:  It 's <door noise> not controlled at all , I mean . 
+E:  Mm - hmm . 
+E:  But 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Mmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Um . 
+E:  But  
+E:  Yeah . 
+E:  I  <breath> I guess e the only thing with these  the Meeting Recorder and , well ,  
+E:  So , I think , yeah  I think we basically gave up . 
+E:  But  
+E:  Yeah . 
+E:  Yeah . 
+E:  Yeah . 
+E:  So . 
+E:  Yeah , for sure we will do something for the special session . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  Well . So . 
+E:  Perhaps the point is that we 've been working on <breath> is , 
+E:  yeah , we have put the um the good VAD in the system 
+E:  and <breath> it really makes a huge difference . 
+E:  Um . 
+E:  So , 
+E:  yeah . 
+E:  I think , yeah , this is perhaps one of the reason why our system was not  <breath> not the best , 
+E:  because with the new VAD , it 's very  the results are similar to the France Telecom results and perhaps even better sometimes . 
+E:  Um . So there is this point . 
+E:  Uh . The problem is that it 's very big and <breath> <mouth> we still have to think how to  where to put it 
+E:  and  <breath> um , 
+E:  because it  it  
+E:  well , this VAD 
+E:  uh either some delay 
+E:  and we  if we put it on the server side , it doesn't work , 
+E:  because on the server side features you already have LDA applied <breath> from the f from the terminal side 
+E:  and <breath> so you accumulate the delay 
+E:  so the VAD should be before the LDA 
+E:  which means perhaps on the terminal side 
+E:  and then smaller <breath> and 
+E:  So . 
+E:  It 's um from OGI . 
+E:  So it 's the network trained  it 's the network with the huge amounts on hidden  of hidden units , 
+E:  and um nine input frames compared to the VAD that was in the proposal which has a very small amount of hidden units and fewer inputs . 
+E:  Yeah . 
+E:  Yeah . 
+E:  So . 
+E:  Yeah . 
+E:  But the abso assumption is that we will be able to make a VAD that 's small and that works fine . 
+E:  And . So we can  
+E:  Yeah but  
+E:  nnn . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  They just want , apparently  they don't want to fix the VAD because they think there is some interaction between feature extraction and  and VAD or frame dropping 
+E:  But they still <mouth> want to  just to give some um <breath> requirement for this VAD 
+E:  because it 's  it will not be part of  they don't want it to be part of the standard . 
+E:  So . So it must be at least uh somewhat fixed but not completely . 
+E:  So there just will be some requirements that are still not  uh not yet uh ready I think . 
+E:  Nnn . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Uh . So there is this thing . 
+E:  There is 
+E:  um  
+E:  Yeah . 
+E:  Uh I designed a new  a new filter 
+E:  because when I designed other filters with shorter delay from the LDA filters , <breath> there was one filter with fif sixty millisecond delay and the other with ten milliseconds 
+E:  and <breath> uh Hynek suggested that both could have sixty - five sixty - s 
+E:  I think it 's sixty - five . 
+E:  Yeah . 
+E:  Both should have sixty - five because  
+E:  Yeah . 
+E:  And . So I did that 
+E:  and uh it 's running . 
+E:  So , <laugh> let 's see what will happen . 
+E:  Uh but the filter is of course closer to the reference filter . 
+E:  Mmm . 
+E:  Um . Yeah . 
+E:  I think  
+E:  Yeah 
+E:  Yeah . 
+E:  Sure . 
+E:  Yeah , and then we 've started to work with this of um voiced - unvoiced stuff . 
+E:  And next week I think we will <breath> perhaps try to have um a new system with uh uh MSG stream also 
+E:  see what  what happens . 
+E:  So , something that 's similar to the proposal too , but with MSG stream . 
+E:  Mmm . 
+E:  Yeah . 
+E:  So , basically we wa want to look at something like the ex the ex excitation signal and  
+E:  which are the variance of it and  
+E:  Mmm . 
+E:  Yeah . 
+E:  I think the lower one is noise . 
+E:  Yeah . 
+E:  So this should the  the  the t voiced portions . 
+E:  The p the peaks should be voiced portion . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  Well , this would be  this would be perhaps an additional parameter , 
+E:  simply isn't  
+E:  Yeah . 
+E:  Uh . 
+E:  Mmm . 
+E:  Mmm . 
+E:  Mmm . 
+E:  Oh , yeah . 
+E:  But  
+E:  Yeah , but it 's not  
+E:  it 's , 
+E:  yeah , it 's  it 's another problem . 
+E:  Yeah 
+E:  Um . 
+E:  Yeah , there is th this fact actually . 
+E:  If you look at this um spectrum , 
+E:  What 's this again ? 
+E:  Is it <breath> the mel - filters ? 
+E:  Yeah . 
+E:  OK . 
+E:  So the envelope here is the output of the mel - filters 
+E:  and what we clearly see is that in some cases , 
+E:  and it clearly appears here , 
+E:  and the  the harmonics are resolved by the f 
+E:  Well , there are still appear after mel - filtering , 
+E:  and it happens <breath> for high pitched voice because the width of the lower frequency mel - filters <breath> is sometimes even smaller than the pitch . 
+E:  It 's around one hundred , one hundred and fifty hertz <breath> Nnn . 
+E:  And so what happens is that this uh , add additional variability to this envelope 
+E:  and <mouth> <breath> um 
+E:  so we were thinking to modify the mel - spectrum to have something that  that 's smoother on low frequencies . 
+E:  i 
+E:  Yeah . 
+E:  This is a separate thing . 
+E:  And . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  There are only zeros here . 
+E:  Well . 
+E:  Eee . 
+E:  Yeah . 
+E:  But  
+E:  Perhaps in the sheets there should be another sign for the  
+E:  if we want to  the  the guy to say " O " 
+E:  or 
+E:  It 's  
+E:  Yeah . 
+E:  OK . 
+E:  But it 's perhaps more difficult for the people to prepare the database then , if  
+E:  because here you only have zeros 
+E:  and  and people pronounce " O " or zero  
+E:  Yeah but if the sh the sheet was prepared with a different sign for the " O " . 
+E:  OK . 
+E:  Yeah . 
+E:  OK . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  Yep . 
+E:  Yeah , it was orthographic , 
+E:  so . 

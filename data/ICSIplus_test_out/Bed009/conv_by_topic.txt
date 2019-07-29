@@ -1,0 +1,1437 @@
+C:  Hmm . Testing channel two . 
+E:  <laugh> 
+E:  Two , two .  
+C:  Two . 
+E:  Two . Oh .  
+D:  Hello ? 
+C:  <clears throat> 
+C:  <whistles>  
+C:  <whistles>  
+B:  Hmm ? 
+B:  Yeah 
+B:  Thank You . 
+B:  OK 
+F:  OK . 
+B:  Well , so 
+B:  Ralf and Tilman are here . 
+F:  Great . 
+F:  Great . 
+B:  Made it safely . 
+F:  So the  what w we 
+F:  h have been doing i they would like us all to read these digits . 
+F:  But we don't all read them but a couple people read them . 
+A:  OK . 
+F:  Uh , wanna give them all with German accents today or  ?  
+B:  Sure . 
+A:  <laugh> 
+D:  <laugh> 
+F:  OK . 
+B:  OK and the way you do it is you just read the numbers 
+B:  not as 
+B:  uh each single , so just like I do it . 
+A:  Mm - hmm . 
+B:  OK . 
+B:  First you read the transcript number . 
+
+
+B:  My transcript number is L ninety - five .  
+B:  three two three , O nine , seven seven three five  
+B:  two two one , four O eight , two one one five  
+B:  one six zero zero , eight , seven O nine  
+B:  six four four O , four , five six two  
+B:  eight five O , five nine three , five two six one  
+B:  three five eight , one O five , six two four  
+B:  four six eight four , eight five five one , four two two nine  
+B:  O five seven , five six , O seven three two .  
+D:  OK , uh  What 's  
+B:  Turn . 
+D:  Uh , my transcript number is , um , L n ninety - one  
+D:  one four one six , two , eight six one  
+D:  three w one five seven , O three nine five , eight , w uh , O , six six  
+D:  two two , four two , O three , one six , one four  
+D:  three four one , six one seven , one three four O  
+D:  six five <clears throat> two , one O five , nine eight two one  
+D:  four O , u eight four , nine two , u one two , s six five  
+D:  eight six , six six , one three , one one , one O  
+D:  two O , six six , six five , four one , five nine .  
+A:  OK , my transcript number is L ninety - two .  
+A:  eight five O , three four two , one three seven six .  
+A:  O six three two , four nine seven O , six O , six eight .  
+A:  six three six , five six four , nine three O six .  
+A:  six four one , eight seven , six O O six .  
+A:  eight O seven three , one seven seven zero , seven five five six .  
+A:  four four , five six , six O , four five , one O .  
+A:  eight four five , eight four one , one O three seven .  
+A:  one O seven two , six seven seven four , one seven O O .  
+
+
+F:  OK . Let 's be done with this . 
+A:  OK . <breath-laugh> 
+F:  OK . this is Ami , who  And this is Tilman and Ralf . 
+A:  Hi .  Uh - huh . 
+D:  Hi . 
+F:  Hi . 
+A:  Nice to meet you .   
+F:  OK . So we 're gonna try to finish by five so people who want to can go hear Nancy Chang 's talk , 
+F:  uh downstairs . 
+A:  Hmm . 
+F:  And you guys are g giving talks on tomorrow and Wednesday lunch times , right ? That 's great . 
+A:  Yes . 
+D:  Mmm . 
+F:  OK so , do y do you know what we 're gonna do ? 
+B:  I thought 
+B:  two things uh we 'll introduce ourselves and what we do . 
+B:  And um we already talked with Andreas , 
+B:  Thilo and 
+B:  David and 
+B:  some lines of code were already written today 
+B:  and almost tested 
+B:  and 
+B:  just gonna 
+B:  say we have um again the recognizer 
+B:  to parser 
+B:  thing where we 're working on and that should be no problem 
+B:  and then 
+B:  that can be sort of developed uh 
+B:  as needed when we get  enter the tourism domain . 
+
+
+B:  em we have talked this morning with the  with Tilman about the generator . 
+B:  and um 
+A:  S 
+B:  There one of our 
+B:  diligent workers has to sort of volunteer to 
+B:  look over Tilman 's shoulder while he is changing the grammars to English 
+A:  Mm - hmm . 
+B:  because 
+B:  w we have  we face 
+B:  two ways . Either we do a syllable concatenating 
+B:  um 
+B:  grammar for the English generation which is sort of starting from scratch and 
+B:  doing it the easy way , 
+B:  or we simply adopt the ah um 
+B:  more in - depth 
+B:  um style that is implemented in the German system 
+B:  and um 
+B:  are then able not only to produce 
+B:  strings but also the syntactic parse 
+B:  uh not parse not 
+B:  the syntactic tree that is underneath in the syntactic structure 
+B:  which is the way we decided we were gonna go because A , it 's easier in the beginning 
+A:  Mm - hmm . 
+B:  and um it does require some  some knowledge of  of those grammars and  and  and 
+B:  some ling linguistic background . 
+B:  But um it shouldn't be a problem for anyone . 
+F:  OK So 
+F:  That sounds good . Johno , are you gonna have some time t to do that uh w with these guys ? 
+E:  Sure . 
+F:  cuz 
+F:  y you 're 
+F:  the grammar maven . 
+E:  <laugh> OK . 
+A:  <laugh> 
+F:  I mean it makes sense , doesn't it ? 
+E:  Yeah . 
+F:  Yeah 
+F:  Good . 
+F:  OK . So , I think that 's probably the  
+F:  the right way to do that . 
+F:  And 
+F:  an Yeah , so I  I actually wanna f 
+F:  to find out about it too , but 
+F:  I may not have time to 
+B:  the  the ultimate goal is that before 
+F:  get in . 
+B:  they leave we  we can run through the entire system 
+B:  input through output on at least one or two sample 
+B:  things . 
+B:  And um 
+B:  and by virtue of doing that 
+B:  then in this case Johno will have acquired the knowledge of how to extend it . 
+B:  Ad infinitum . 
+B:  When needed , if needed , when wanted 
+B:  and so forth . 
+F:  OK that sounds great . 
+B:  And um 
+B:  also um 
+B:  Ralf has hooked up with David and you 're gonna 
+B:  continue either all through tonight or tomorrow on whatever 
+D:  Mmm . 
+A:  <laugh> 
+D:  <laugh> 
+B:  to get the er parser interface working . 
+B:  They are thinning out and thickening out lattices and doing this kind of stuff to see what works best . 
+D:  Mmm , yep . 
+F:  Great . 
+
+
+F:  <inbreath> So , you guys enjoy your weekend ? 
+A:  Yes , very much so . 
+D:  Yeah , very much <laugh> 
+F:  OK , before  before you got put to work ?  
+A:  <laugh> 
+D:  Yeah <laugh> 
+F:  Great . 
+F:  OK , so that 's  
+F:  Sort of one branch is to get us caught up on what 's going on . 
+F:  Also of course it would be really nice to know what the plans are , in addition to what 's sort of already in code . 
+A:  Yes . 
+F:  and 
+F:  we can d I dunno w w was there 
+F:  uh a time when we were set up to do that ? 
+F:  It probably will work better if we do it later in the week , after  we actually understand 
+A:  Yes . 
+D:  Hmm . 
+A:  Yeah . 
+F:  uh better what 's going on . 
+F:  So when do you guys leave ? 
+A:  Um we 're here through Sunday , so   
+D:  Oh 
+F:  Oh , OK , so  
+A:  All through Friday would be fine . 
+F:  OK , So  
+F:  so anyt we 'll find a time later in the week to uh get together and talk about  your understanding of what SmartKom plans are . 
+A:  Mm - hmm . 
+F:  and how we can change them . 
+D:  <laugh> 
+A:  Yes . Sure . 
+F:  Uh , 
+B:  Should we already set a date for that ? 
+B:  Might be beneficial while we 're all here . 
+F:  OK ? 
+F:  <taps tongue to palate 4 times, evenly spaced>  
+F:  <mouth> um 
+F:  What  what does not work for me is Thursday afternoon . I can do earlier in the day on Thursday , 
+F:  or  um  most of the time on Friday , not all . 
+B:  Thursday morning sounds fine ? 
+F:  Wha - but , Johno , 
+A:  Mm - hmm . 
+F:  what are your constraints ? 
+E:  um 
+E:  Thursday afternoon doesn't work for me , but  
+B:  Neither does Thursday morning , no ?  
+A:  <breath-laugh> 
+F:  <inbreath> 
+E:  Uh 
+E:  Thursday morning should be fine . 
+F:  <inbreath> 
+F:  Eleven ? 
+A:  OK . 
+E:  <laugh> 
+F:  Eleven on Thursday ? 
+E:  <laugh> 
+F:  @ @ 
+E:  I was just thinking I w I will  have  leavened by 
+F:  Right . 
+E:  eleven . 
+F:  Right . This is then out of deference to our 
+A:  Mm - hmm . 
+F:  non - morning people . 
+E:  <laugh> 
+A:  OK .  
+D:  <laugh> 
+A:  So at eleven ? 
+D:  Hmm . 
+A:  Thursday around eleven ? 
+A:  OK .  
+F:  Yeah . 
+F:  <inbreath> 
+F:  And actually we can invite um 
+F:  Andreas as well . 
+B:  Uh he will be in Washington , though . 
+F:  Oh that 's true . He 's off  off on his trip already . 
+B:  but um 
+B:  David is here and 
+F:  Thilo . 
+B:  he 's actually 
+B:  knows everything about the SmartKom recognizer . 
+F:  OK well yeah maybe we 'll see if David could make it . That would be good . 
+
+
+
+
+B:  OK so 
+B:  facing to  to what we 've sort of been doing here 
+B:  um 
+B:  well for one thing we 're also using this room to collect data . 
+A:  Yeah obviously . <laugh> 
+B:  um 
+D:  <laugh> 
+B:  um 
+B:  Not this type of data , no not meeting data but sort of  sort ah our version of a wizard experiment such 
+A:  Oh , OK . 
+B:  not like the ones in Munich but pretty close to it . 
+A:  Mm - hmm . 
+B:  The major difference to the Munich ones is that 
+B:  we do it via the telephone 
+A:  OK . 
+B:  even though all the recording is done here 
+B:  and so it 's a  sort of a computer call system 
+A:  Mm - hmm . 
+B:  that gives you tourist information tells you how to get places . 
+B:  And it breaks halfway through the experiment and a human operator comes on . 
+B:  and 
+B:  part of that is sort of trying to find out whether people change their linguistic verbal behavior when first thinking they speak to a machine and then to a human . 
+A:  Yeah . 
+
+
+B:  and 
+B:  we 're setting it up so that we can  we hope to implant certain intentions in people . 
+B:  For example 
+B:  um 
+B:  we have first looked at a simple sentence that 
+B:  " How do I get to the Powder - Tower ? " 
+B:  OK so you have the  castle of Heidelberg 
+A:  OK . 
+B:  and there is a tower and it 's called Powder - Tower . 
+A:  Oh , OK . Yeah . 
+B:  and um 
+B:  so 
+B:  What will you parse out of that sentence ? 
+B:  Probably something that we specified in M - three - L , that is 
+D:  Mmm . 
+B:  @ @  
+B:  " action go to whatever domain , object whatever Powder - Tower " . 
+B:  And maybe some model will tell us , some GPS module , in the mobile scenario where the person is at the moment . 
+B:  And um we 've sort of gone through that once before in the Deep Mail project and we noticed that 
+B:  first of all what are  I should 've 
+B:  brought some slides , but 
+B:  what our  So here 's the tower . 
+B:  Think of this as a two - dimensional representation of the tower . 
+B:  And our system led people 
+B:  here , to a point where they were facing a wall 
+B:  in front of the tower . There is no entrance there , but it just happens to be the closest 
+B:  point of the road network to the geometric center 
+B:  Because that 's how the algorithm works . 
+B:  So we took out that part of the road network as a hack and then it found actually the way to the entrance . 
+A:  <laugh> 
+B:  which was now the closest point of the road network to 
+A:  Yeah .  
+B:  OK , geometric center . 
+B:  But what we actually observed in Heidelberg is that most people when they want to go there they actually don't want to enter , because it 's not really interesting . 
+B:  They wanna go 
+B:  to a completely different point where they can look at it and take a picture . 
+A:  Oh , OK . Yeah . 
+D:  Hmm . 
+B:  And so what uh uh a s you s 
+B:  let 's say a simple parse from a s from an utterance 
+B:  won't really give us is what the person actually wants . 
+B:  Does he wanna go there to see it ? Does he wanna go there now ? Later ? 
+B:  How does the person wanna go there ? Is that 
+B:  person more likely to want to walk there ? 
+B:  Walk a scenic route ? 
+B:  and so forth . There are all kinds of decisions that we have identified 
+B:  in terms of getting to places and in terms of finding information about things . 
+B:  And we are constructing  and then we 've identified more or less the 
+B:  extra - linguistic parameters that may f 
+B:  play a role . Information related to the user and information related to the situation . 
+B:  And we also want to look closely on the linguistic information that 
+B:  what we can get from the utterance . That 's part of why we implant 
+B:  these intentions in the data collection to see whether people actually 
+B:  phrase things differently whether 
+B:  they want to enter in order to buy something or whether they just wanna go there to look at it . 
+B:  And um 
+B:  so the idea is to construct uh um 
+B:  suitable interfaces and a belief - net for 
+B:  a module that actually tries to guess what 
+B:  the underlying intention  was . 
+B:  And then 
+B:  enrich or augment the M - three - L structures with what it thought 
+B:  what more it sort of 
+B:  got out of that utterance . 
+B:  So if it can make a good suggestion , " Hey ! " 
+B:  you know , " that person doesn't wanna enter . That person just wants to take a picture , " 
+B:  cuz he just bought film , or " that person wants to enter because he discussed the admission fee before " . 
+B:  Or " that person wants to enter because he wants to buy something and that you usually do inside of buildings " and so forth . 
+B:  These ah these types of uh 
+B:  these bits of additional information are going to be 
+B:  embedded into the M - three - L structure 
+B:  in an  sort of subfield that we have reserved . 
+B:  And if the action planner does something with it , great . If not 
+B:  you know , then that 's also something 
+B:  um that we can't really  
+B:  at least we  want to offer the 
+B:  extra information . We don't really  
+A:  Mm - hmm . 
+D:  Hmm . 
+B:  um 
+B:  we 're not too worried . I mean  
+B:  t s Ultimately if you have  if you can offer that information , somebody 's gonna s 
+B:  do something with it sooner or later . That 's sort of part of our belief . 
+E:  What was he saying ?  
+B:  Um , for example , 
+B:  right now I know the GIS from email 
+B:  is not able to calculate these viewpoints . 
+B:  So that 's a functionality that doesn't exist yet 
+A:  Mm - hmm . 
+B:  to do that dynamically , but if we can offer it 
+B:  that distinction , maybe somebody will go ahead and implement it . 
+B:  Surely nobody 's gonna go ahead and implement it if it 's never gonna be used , so . 
+B:  What have I forgotten about ? Oh yeah , how we do it , yeah that 's the 
+F:  <inbreath> 
+F:  Well th uh 
+
+
+F:  No no . It 's a good time to pause . I s I 
+F:  see  questions on peoples ' faces , so why don't  let 's  let 's  
+A:  <laugh> Oh - 
+F:  Let 's hear  
+A:  Well the obvious one would be if  if you envision this as a module within SmartKom , where exactly would that 
+A:  Sit ? 
+B:  um  so far I 've thought of it as sort of adding it onto the modeler knowledge module . So this is one that already adds 
+A:  That 's the d 
+D:  Hmm . 
+A:  OK , yeah . 
+A:  Makes perfect sense . 
+A:  Yes . 
+D:  Hmm , ah . 
+B:  additional information to the 
+B:  but it could sit anywhere in the attention - recognition 
+B:  I mean basically this is what attention - recognition literally sort of 
+B:  can  
+A:  Well it 's supposed to do . 
+D:  Mmm . <laugh> 
+A:  Yeah 
+F:  That 's what it should do . Right , yeah . 
+A:  Yeah . Yeah . 
+D:  Huh . 
+B:  Yeah . 
+A:  Well f from my understanding of what the people at Phillips 
+A:  were originally trying to do 
+A:  doesn't seem to quite fit into SmartKom currently 
+A:  so what they 're really doing 
+A:  right now is only selecting among 
+A:  the alternatives , the hypotheses that they 're given 
+A:  enriched by the domain knowledge and 
+B:  Yeah . 
+A:  the um discourse modeler and so on . 
+B:  Yeah . 
+A:  So if  if this is additional information that 
+A:  could be merged in by them . 
+A:  And then it would be available to action planning and  and others . 
+B:  Yeah . 
+B:  the  
+F:  <mouth> 
+F:  let 's  let 's 
+F:  That w OK that was one question . Is there other  other things that 
+F:  cuz  we wanna 
+F:  not 
+F:  Pa - pass over any  you know , questions or concerns that you have . 
+A:  Well there 're  there 're 
+D:  Mmm . <mike noise> 
+A:  two levels of  of giving an answer and I guess on both levels I don't have any 
+A:  um 
+D:  Mmm . 
+A:  further questions . 
+A:  uh the  the two levels will be 
+D:  Mmm . 
+A:  as far as I 'm concerned as  
+A:  uh standing here for the generation module and the other is  is 
+A:  my understanding of what SmartKom uh is supposed to be 
+F:  Right . 
+F:  <inbreath> 
+A:  and I  I think that fits in perfectly 
+F:  So  well , let me  
+D:  Hmm . 
+
+
+F:  Let me s  expand on that a little bit from the point of view of the generation . 
+A:  Yeah . 
+F:  So the idea is that we 've actually got this all laid out an and we could show it to you ig um 
+F:  Robert didn't bring it today but there 's a  
+F:  a 
+F:  belief - net 
+F:  which is  
+F:  There 's a first cut at a belief - net that  that doesn't  it  isn't fully uh instantiated , and in particular some of the  the combination rules and ways of getting the  the conditional probabilities aren't there . 
+F:  But we believe that we have laid out the fundamental decisions in this little space and the things that influence them . 
+A:  Mm - hmm . 
+F:  So one of the decisions is what we call this AVE thing . 
+F:  Do you want to 
+F:  um access , view or enter 
+F:  a thing . 
+D:  Hmm . 
+F:  So that 's a a discrete decision . There are only three possibilities and the uh  what one would like is for this uh , knowledge modeling module to 
+A:  Mm - hmm . 
+F:  add 
+F:  which of those it is and give it to the planner . 
+A:  Mm - hmm . 
+F:  But , 
+F:  uh th the current design suggests that 
+F:  if 
+F:  it seems to be an important 
+F:  decision 
+F:  and if the belief - net is equivocal 
+F:  so that it doesn't say that one of these is much more probable than the other , then an option is to go back and ask 
+A:  Mm - hmm . 
+F:  for the information you want . 
+F:  Alright ? Now there are two ways one can go  a imagine doing that . 
+F:  For the debugging we 'll probably just have a  a drop - down menu and the  while you 're debugging you will just  OK . 
+F:  But for a full system , then one might very well formulate a query , 
+F:  give it to the dialogue planner and say this , you know 
+A:  Mm - hmm . 
+F:  ar are you know you  are you planning to enter ? 
+F:  Or whatever it  
+F:  whatever that might be . 
+F:  So that 's  under that model  then , 
+F:  There would be a  uh  um a loop in which this thing would formulate a query , presumably give it to you . 
+A:  Yes . 
+F:  That would get expressed and then hopefully 
+F:  you know , you 'd get an answer  back . 
+A:  Yep . 
+F:  And that would of course  the answer would have to be parsed . 
+D:  Mmm . 
+F:  right and  
+A:  <laugh> 
+D:  Yep . 
+F:  OK so ,  th  that 
+A:  Yes . 
+F:  uh , We probably won't do this early on , 
+F:  because the current focus is more on the decision making and stuff like that . 
+A:  Yep . 
+F:  But 
+F:  While we 're on the subject I just wanted to give you a sort of head 's up 
+A:  Mm - hmm . 
+F:  that 
+F:  it could be that 
+F:  some months from now we said " OK we 're now ready to 
+F:  try to close that loop " 
+A:  Mm - hmm . 
+D:  Hmm . 
+F:  in terms of querying about some of these decisions . 
+A:  Yep . 
+
+
+
+
+A:  So  
+A:  my suggestion then is that you um 
+A:  look into the currently ongoing discussion about how the 
+A:  action plans are supposed to look like . 
+A:  And they 're currently um 
+A:  Agreeing or  or in the process of agreeing on an 
+A:  X M L - ification of 
+A:  um something like a 
+A:  state - transition network 
+A:  of how dialogues would proceed . 
+A:  and  
+A:  The  these um transition networks 
+A:  uh will be what the action planner 
+A:  interprets in a sense . 
+F:  Hmm . D did you know this Robert ? 
+B:  uh Michael is doing that , right ? 
+A:  Well uh Marcus Lerkult is actually implementing that 
+A:  stuff and Marcus and Michael together are 
+A:  um 
+A:  leading the discussion there , yeah . 
+B:  OK . 
+F:  So we ha we have to get in on that . 
+B:  Mm - hmm . 
+A:  Yep . 
+F:  because um 
+D:  Mmm . 
+A:  Definitely . 
+F:  partly those are like X - schemas . 
+F:  the transition diagrams . 
+B:  Hmm . 
+F:  And it may be that  that 
+F:  um we should early on make sure that they 
+F:  have the flexibility that we need . 
+B:  Hmm . <inbreath> 
+B:  But they uh 
+B:  Have I understood this right ? They  they govern more or less 
+B:  the  the dialogue behavior or the action  
+A:  Mm - hmm . 
+B:  It 's not really what you do with the content of the dialogue but it 's 
+B:  So , I mean there is this  this  this nice interf i 
+D:  uh , No , it 's  it 's also a quantrant uh uh  
+B:  Is it  
+F:  So there 's ac so there  th the word " action " , OK , is  is what 's ambiguous here . 
+D:  I think . 
+D:  Hmm . 
+A:  Yes . 
+F:  So , um 
+F:  one thing 
+F:  is there 's an actual planner that tells the person in the tourist domain now , 
+F:  per tells the person how to go , " First go here , first go there 
+A:  OK . 
+D:  Mm - hmm . 
+F:  uh , you know , take a bus " , whatever it is . 
+F:  So that 's that form 
+F:  of planning , and action , and a route planner and 
+F:  GIS , all sort of stuff . 
+F:  uh 
+F:  But I think that 
+F:  isn't what you mean . 
+A:  No . No , in SmartKom terminology that 's um 
+A:  called a function that 's modeled 
+A:  by a function modeler . 
+A:  And it 's th that 's completely um 
+A:  encapsulated from th the dialogue system . 
+A:  That 's simply a functionality that you give 
+A:  data as in a query and then you get 
+A:  back from that 
+A:  mmm , a functioning model 
+A:  um which might be a planner or a VCR or whatever . 
+A:  um some result and that 's then  then used . 
+F:  <inbreath> 
+F:  Well , OK , so that 's what I thought . 
+F:  So action he action here means dia uh speech ac uh you know 
+A:  Yeah , yeah . 
+B:  Mmm . 
+A:  Yeah , in that  in that sense yes , dialogue act , yeah . 
+F:  dialogue act . Yeah . 
+
+
+F:  Um , I think tha I think it 's not going to  
+F:  I think that 's not going to be 
+F:  good enough . I 
+F:  I don what uh  what I meant by that . 
+F:  So I think the idea of having a , you know , transition diagram for the grammar of conversations is a good idea . 
+A:  Mm - hmm . 
+F:  OK ? And I think that we do hav definitely have to get in on it and find out  OK .  
+F:  But I think that 
+F:  um 
+F:  when  so , when you get to the tourist domain 
+A:  Mm - hmm . 
+F:  it 's not just an information retrieval system . 
+F:  Right ? So this i this is where 
+A:  Clearly . Yes . 
+F:  I think this  people are gonna have to think this through a bit more carefully . 
+A:  Mm - hmm . 
+F:  So , if it 's only like in  in the  in the film and T V thing , 
+F:  OK , you can do this . And you just get information and give it to people . 
+F:  But what happens when you actually get them moving and so forth and so on 
+A:  Yep . 
+F:  Uh , y y your  
+F:  I d I think the notion of this as a self contained 
+F:  uh module 
+F:  you know th the functional module that  that 
+F:  interacts with  with where the tourism g stuff is going  
+A:  Yep . 
+F:  probably is too restrictive . 
+F:  Now I dunno how much people 
+F:  have thought ahead 
+F:  to the tourist domain in this 
+A:  Probably not enough , I mean 
+A:  an  another uh more basic point there is 
+A:  that the current um tasks and therefore th the concepts in this ac 
+A:  what 's called the action plan and what 's really the dialogue manager . 
+F:  Yeah 
+A:  um 
+A:  is based on slots that have to be filled and the um 
+F:  <mike noise> 
+F:  Mm - hmm . 
+A:  kind of values in these slots would be fixed things like the 
+A:  a time or a movie title or something like 
+F:  Right . 
+A:  this whereas in the a 
+A:  um tourist domain it might be an entire route . 
+F:  Indeed . 
+A:  Set - based , or even 
+F:  <mike noise> 
+A:  very complex structured information in these slots and 
+F:  Right . 
+A:  I 'm not sure if  if complex slots of that type are really 
+F:  <mike noise> 
+A:  um being taken into consideration . 
+F:  OK . Could you  could you put a message into the right place to see if we can at least ask that question ? 
+A:  So that 's  that 's really something we 
+B:  Yep . 
+A:  Mm - hmm . 
+B:  rea 
+A:  I mean nothing 's being 
+B:  yep 
+A:  completely settled there so this is really an ongoing discussion and that 's  
+B:  Mm - hmm yeah 
+B:  and um it might actually OK ah also  
+B:  because um again in in Deep Map we have faced and implemented those problems once already maybe we can even shuffle some know how from there to 
+A:  Mm - hmm . 
+A:  Yes . 
+B:  to Markus and Michael . 
+D:  Mmm . 
+A:  Yep . 
+B:  And um 
+B:  mmm 
+B:  You don't know  OK th 
+B:  I 'll  I 'll talk to Michael 
+
+
+B:  it 's what I do anyway . Who  How far is the uh 
+B:  the  the M - three - L specification 
+B:  for  for the la natural language input gone on the  the uh I haven't seen anything 
+B:  for the uh tourist path domain . 
+D:  Yeah , it 's  it 's not defined yet . 
+B:  And um you are probably also involved in that , right ? 
+D:  Um  
+D:  Yeah . 
+B:  uh together with the usual gang , um Petra and Jan 
+D:  Mmm . <laugh> 
+D:  Yeah , there 's a meeting 
+D:  next 
+D:  next week I think 
+B:  OK because 
+B:  That 's  
+B:  Those are the  I think the  the true key issues is how does the whatever comes out of the language input pipeline look like and then what the action planner does with it  
+B:  and how that is uh specified . 
+B:  I didn't think of the internal working of the uh 
+B:  the action planner and the language  uh the function model as sort of relevant . 
+B:  Because what  what they take is sort of this  this fixed representation of a  of an intention . 
+B:  And that can be as detailed or as crude as you want it to be . 
+A:  Mm - hmm . 
+B:  But um the internal workings of 
+B:  of the  whether you know there 're dialogue  
+B:  action planners that work with belief - nets that are action planners that work with you know state automata . 
+B:  So that shouldn't really matter too much . 
+F:  <inbreath> 
+B:  I mean it does matter because it does have to keep track of you  we are on part six of r a route that consists of eight steps and so forth 
+F:  <inbreath> 
+F:  <inbreath> 
+F:  Yeah , th there  there  I think there are a lot of reasons why it matters . 
+A:  Right . 
+A:  <clears throat> 
+F:  OK , so that 
+F:  uh , for example , the i it 's the action planner 
+F:  is going to take some spec and s 
+F:  make some suggestions about what the user should do . 
+F:  What the user says 
+F:  after that 
+F:  is going to be very much caught up with what 
+A:  Yes . 
+F:  the action planner told it . If the  
+F:  If the parser and the 
+F:  language end 
+F:  doesn't know what the person 's been told 
+F:  OK th it 's you 're making your life much more difficult than it has to be . 
+B:  Yeah . 
+F:  Right ? So if someone says the best t 
+F:  to uh go there is by taxi , 
+F:  let 's say . Now the planner comes out and says you wanna get there fast , take a taxi . 
+F:  OK . And 
+F:  the language end doesn't know that . 
+F:  OK , there 's all sorts of dialogues that won't make any sense which would be 
+A:  hmm 
+F:  just fine . 
+F:  uh 
+B:  Yeah . 
+A:  That would b but that  I think that  that uh point has been realized and 
+A:  it 's  it 's not really um 
+A:  been defined yet but there 's gonna be some kind of feedback and input from 
+A:  uh the action planner 
+A:  into all the analysis modules , 
+A:  telling them what to expect and what the current state of the discourse is . 
+D:  Mmm . 
+A:  Beyond what 's currently being implemented which is just word lists . 
+F:  <inbreath> 
+F:  @ @ <subvocalized vocal fragment> 
+F:  Yeah , but this is not the st this is not just the state of the discourse . 
+B:  Mm - hmm . 
+A:  Of  of special interest . 
+F:  This is actually the state of the plan . 
+F:  That 's why 
+B:  Mm - hmm . 
+A:  Yes , Yes , Mm - hmm yeah . 
+F:  OK so it  
+F:  z and s 
+F:  uh , It 's great if people are already 
+F:  taking that into account . 
+F:  But 
+F:  One would have t have to see  see the details . 
+A:  The specifics aren't really there yet . Yes . 
+F:  Yeah . 
+A:  So , there 's work to do there . <laugh> 
+F:  So anyway , Robert , that 's why I was thinking that 
+B:  Mm - hmm . 
+F:  um 
+F:  I think you 're gonna need  
+F:  We talked about this several times that  that  the  
+F:  the input end is gonna need a fair amount of feedback 
+A:  hmm 
+F:  from the planning end . 
+F:  In  in one of these things which are  are much more continuous than the  just the dialogue over movies and stuff . 
+A:  Yeah . 
+D:  Mmm . 
+A:  And even on  on a more basic level the  the action planner 
+A:  actually needs to be able to have 
+A:  um 
+A:  an expressive power that can deal with these structures . 
+F:  Hmm ? 
+A:  And not just um say 
+A:  um  um the dialogue um will consist of ten possible states 
+A:  and th these states really are fixed in  in a certain sense . 
+F:  <inbreath> 
+
+
+F:  Would there be any chance 
+A:  You have to  
+F:  of getting the terminology changed so that the dialogue planner was called a " dialogue planner " ? 
+F:  Because there 's this other thing 
+A:  That 'd be nice . 
+F:  The o There 's this other thing in  in the tourist domain which is gonna be 
+F:  a route planner or  It 's really gonna be an action planner . 
+F:  And  
+F:  i it  
+A:  It oughta be called a  a dialogue manager . 
+A:  cuz that 's what everybody else calls it . Yeah . 
+F:  I would think , yeah . 
+D:  <laugh> Mmm . 
+F:  Huh ?  
+F:  So , s 
+F:  So what would happen if we sent a note saying 
+F:  " Gee we 've talked about this and couldn't we change this 
+F:  uh th the whole word ? " I have no idea how complicated these things are . 
+B:  Probably close to impossible . 
+A:  Depends on who you talk to how . We 'll see . 
+D:  <laugh> 
+A:  I 'll go check , cause I completely agree . 
+D:  Mmm . 
+A:  Yeah , and I think this is just 
+A:  for historical reasons within 
+A:  uh , the preparation phase of the project and not because somebody actually believes it ought to be action planner . 
+A:  So if there is resistance 
+A:  against changing it , that 's just because " Oh , We don't want to change things . " 
+A:  That  that not deep reason 
+F:  OK , anyway . 
+F:  <inbreath> 
+F:  I if  if that c in persists then we 're gonna need another term . 
+F:  for the 
+F:  thing that actually 
+F:  does the planning of the uh 
+F:  routes and whatever we are doing for the tourist . 
+B:  That 's external services . 
+F:  Yeah , but that 's not g eh tha 
+F:  That ha has all the wrong connotations . 
+F:  it 's  it sounds like it 's you know 
+F:  stand alone . It doesn't interact , it doesn't 
+F:  That 's why I 'm saying . I think you can't  it 's fine for looking up when T you know when the show 's on TV . You go to th 
+F:  but I  I  I  I 
+F:  think it 's really  really wrong headed for 
+F:  something that you  that 
+F:  has a lot of state , it 's gonna interact co in a complicated way with the uh understanding parts . 
+
+
+B:  Yeah . 
+B:  Yeah I think just the  the spatial planner and the route planner 
+B:  I showed you once the interac action between them among them in the deep map system so  
+F:  Right . 
+B:  a printout of the communication between those two fills up 
+B:  I don't know how many pages and that 's just part of how do I get to one place . It 's really insane . and uh 
+A:  Hmm 
+B:  but um so this is um definitely a good point to get uh 
+B:  Michael into the discussion . 
+B:  Or to enter his discussion , actually . 
+B:  That 's the way around . 
+A:  Yeah , Marcus . 
+B:  Markus 
+B:  Is he new in the  in the ? 
+A:  Wh - where 's ? 
+A:  Yeah , he 's  he started um 
+D:  Yeah . 
+A:  I think January . 
+A:  And he 's 
+A:  gonna be responsible for the implementation of this action planner . 
+A:  Dialogue manager . 
+B:  Is he gonna continue with the old  uh  thing ? 
+A:  No , no he 's 
+A:  completely gonna rewrite everything . 
+B:  OK . 
+A:  In Java . 
+A:  OK so that 's interesting . 
+B:  Yes I was just  that 's my next question whether we 're  we 're gonna stick to Prolog or not . 
+A:  hmm 
+D:  <laugh> 
+A:  No . No , that 's gonna be phased out . 
+F:  Yeah . 
+B:  OK 
+
+
+B:  But I do think the  the function modeling concept has a certain  
+B:  makes sense in a  in a certain light because 
+A:  Yeah . 
+B:  the action planner should not be  or the dialogue manager in that case should not um w have to worry about whether it 's interfacing with um something that does route planning in this way or that way huh , it j 
+A:  Mm - hmm . 
+F:  I I totally agree . Sure . 
+F:  Yeah I  I agree . There is  there 's a logic to dialogue which  which is  is separable . 
+F:  I 
+F:  Yeah . 
+B:  and it  
+B:  cant  
+B:  sort of formulate its 
+B:  what it wants in a  in a rather a abstract uh way , you know f 
+F:  Mm - hmm . 
+B:  " Find me a good route for this . " 
+B:  It doesn't really have to worry ab how route planner A or how route planner B actually wants it . 
+B:  So this is  
+F:  <long inbreath> 
+B:  seemed like a good idea . 
+F:  <long outbreath> 
+B:  In the beginning . 
+F:  It 's tricky . 
+F:  It 's tricky because one could well imagine  I think it will turn out to be the case that 
+F:  uh , this thing we 're talking about , th the extended n 
+F:  uh 
+F:  knowledge modeler 
+F:  will fill in some parameters about what the person wants . One could well imagine 
+F:  that the next thing that 's trying to fill out the detailed 
+F:  uh , route planning , let 's say , will also have questions that it would like to ask the user . 
+F:  You could well imagine you get to a point where it 's got a  a choice to make and it just doesn't know something . 
+F:  And so y you would like it t also be able to 
+A:  Mm - hmm . 
+F:  uh formulate 
+F:  a query . 
+F:  And to run that back through 
+F:  uh . the dialogue manager and to the output module and back around . 
+B:  hmm 
+F:  And a I a a good design would  would 
+B:  a lot of , yeah 
+F:  allow that to happen . 
+D:  Mmm . 
+F:  If  if you know if  if you can't make it happen then you  you do your best . 
+A:  Yeah  
+A:  but that doesn't necessarily contradict um 
+A:  an architecture where there really is a pers a def well - defined interface . 
+F:  I totally agree . But  but what it nee but th what the point is the in that case the dialogue manager is sort of event driven . 
+A:  and  and 
+F:  So the dialogue manager may think it 's in a dialogue state 
+F:  of one sort , and this  
+A:  Mm - hmm . 
+F:  one of these planning modules comes along and says " hey , right now we need 
+F:  to ask a question " . 
+F:  So that forces the dialogue manager to change state . 
+A:  Yes 
+F:  OK . 
+F:  It could be y 
+A:  Sure , ye yeah I  I think that 's  that 's the um 
+F:  Yeah , yeah it  it  
+A:  concept that people have , yep . 
+F:  OK . 
+
+
+A:  And  and the  the underlying idea of course is 
+A:  that there is something like 
+A:  kernel modules with kernel functionality that you can plug uh 
+A:  certain applications like tourist information or 
+A:  um the home scenario with uh controlling a VCR and so on . 
+A:  And then extend it to 
+A:  an arbitrary number of applications eventually . 
+A:  So  wouldn't 
+A:  That 's an additional reason to have this 
+A:  well - defined interface and keep these things like uh tourist information external . 
+F:  <mouth> 
+F:  Oh , yeah , yeah . 
+A:  And then call it external services . 
+B:  Hmm . 
+A:  But of course the  the more complex  yep . 
+B:  Yeah , there is another philosophical issue that I think you know you can  
+B:  evade but , at at least it makes sense to me that sooner or later uh  
+B:  a service is gonna come and describe itself to you . 
+B:  and that 's sort of what Srini is working on in  in  in the DAML 
+A:  <laugh> 
+A:  Yeah . 
+B:  uh project where 
+B:  um you  you find a GIS about  
+B:  that gives you information on Berkeley , and it 's  it 's gonna 
+B:  be there and tell you what it can do and how it wants to do things . 
+B:  and so you can actually interface to such a system without 
+B:  ever having met it before and 
+A:  Hmm . 
+B:  the function modeler and a self - description of the 
+B:  um external service haggle it out and 
+B:  you can use the same language core , understanding core 
+B:  to interface with planner - A , planner - B , planner - C and so forth . 
+A:  Hmm . 
+D:  Mmm . 
+B:  Which is , you know , uh  uh  utopian  
+B:  completely utopian at the moment , but 
+B:  slowly , you know , getting into the realm of the uh 
+B:  contingent . 
+A:  Hmm . 
+
+
+B:  But we are facing of course much more 
+B:  um 
+B:  realistic problems . 
+B:  And language input for example , is of course 
+B:  uh crucial you know also when you do the sort of deep understanding analysis that we envision . 
+B:  um 
+B:  Then of course , the uh 
+B:  um , you know 
+B:  what is it  poverty of the stimulus , yet the m 
+B:  uh the less we get of that the better . 
+B:  and um so we  we 're thinking , for example 
+B:  how much syntactic analysis actually happens already in the parser . 
+D:  Hmm . 
+B:  and whether one could interface to that 
+B:  potentially 
+D:  Yeah , are there currently is uh no syntactic analysis 
+D:  but in the next release there will be some . 
+B:  Hmm . <inbreath> 
+F:  <mouth> How 's it  
+D:  unless and it 's um 
+D:  uh you can access this 
+F:  <inbreath> 
+F:  S so uh y we  we looked at the e current pattern matching thing . 
+D:  Hmm . 
+F:  And as you say it 's just a surface pattern matcher . 
+F:  Uh , So what are  what are the plans roughly ? 
+D:  um 
+D:  it 's to  to integrate and syntactic analysis . 
+D:  and um 
+D:  add some more features like segmentation . 
+D:  So then an utter more than one utterance is  
+D:  There um there 's often 
+D:  uh pause between it 
+D:  and a segmentation occurs . 
+F:  <mouth> 
+F:  So , the um  
+D:  um 
+F:  So the idea is to uh  have a pa y y a particular  Do you have a particular parser in mind ? Is it 
+D:  yeah 
+F:  uh  partic d I mean have you thought through  ? 
+F:  Is it an HPSG parser ? Is it a whatever ? 
+D:  No  no it 's  uh I think it 's 
+D:  it 's totally complicated for 
+D:  it 's just one  one person and so 
+F:  OK . 
+D:  I have to keep the  
+F:  Oh , you have to do it . You have to do it , yeah . 
+D:  Yeah , ah and so <laugh> 
+D:  things must be simpler 
+F:  <inbreath> 
+F:  I see , so 
+F:  <inbreath> <inbreath> 
+D:  but uh , Miel syntactic analysis with um finite state transducers . 
+F:  But the people at D F - 
+F:  Yeah . 
+F:  People at DFKI have written a fair number of parsers . 
+F:  Other  you know , people over the years . 
+F:  uh have written various parsers at DFKI . None of them 
+F:  are suitable ? 
+F:  I  I  I d I 'm asking . I don't know . 
+D:  Yeah , uh the problem is 
+D:  th that it has to be very fast because um if you want to for more than one path anywhere 
+F:  OK . 
+D:  what 's in the latches from the 
+F:  Mm - hmm . 
+D:  speech recognizer so it 's 
+D:  speed is crucial . uh 
+D:  And they are not fast enough . 
+F:  Mm - hmm . 
+D:  And they also have to be very robust . 
+D:  cuz of um speech recognition errors and 
+F:  <mouth> 
+F:  OK . 
+
+
+F:  So , um  So there was a chunk parser 
+D:  @ @ 
+F:  in Verbmobil , 
+F:  that was one of the 
+F:  uh 
+F:  branchers . You know they  d th I c There were these various 
+F:  uh , competing 
+F:  uh syntax modules . 
+F:  And I know one of them was a chunk parser and I don't remember 
+F:   who did that . 
+D:  I think it 's 
+B:  A Alan ? 
+D:  that 
+D:  might , at Tuebingen I thought . 
+F:  Yeah I d I don't remember . 
+D:  was  Do you know something about that ? 
+A:  Tubingen was at least involved in putting the chunks together I  
+D:  In Tub - at  
+A:  can't quite recall 
+A:  whether they actually produced the chunks in the first place . 
+D:  oh 
+F:  Uh . I see . Yeah , that 's right . 
+A:  Or wh 
+F:  There w That 's right . They w They had  There were  This was done with a two phase thing , where  
+D:  Oh from  from Stuttgart , yeah , also 
+F:  the chunk parser itself was pretty stupid and then there was a 
+F:  kind of trying to fit them together that 
+A:  Right . 
+F:  h used more context . Right ? 
+A:  Yeah 
+A:  Well you s 
+A:  and  and especially you 
+A:  did some  some 
+A:  um , l 
+A:  um 
+A:  was a learning - based approach which 
+A:  learned from a big corpus of  of trees . 
+F:  <mouth> 
+F:  Right . Right . 
+D:  Mm - hmm . 
+A:  And yes the  it  the chunk parser was a finite - state machine that 
+A:  um Mark Light originally w 
+A:  worked on in  while he was in 
+A:  Tuebingen and then somebody else in Tuebingen 
+A:  picked that up . So it was done in Tuebingen , yeah . 
+F:  <mouth> 
+A:  Definitely . 
+F:  But is that the kind of thing y It sounds like 
+F:  the kind of thing that you were thinking of . 
+D:  yeah . yeah that 's 
+A:  Yeah I guess it 's similar . 
+D:  In this direction , yes 
+F:  What ? 
+D:  Yeah , it 's in  in this direction . 
+F:  Hmm . 
+B:  The  
+B:  From Michael Strube , I 've heard very good stuff about the chunk parser that is done by FORWISS , 
+B:  uh , 
+B:  which is in 
+B:  embassy doing the parsing . 
+A:  Mm - hmm . 
+B:  So this is sort of  came as a surprise to me that 
+B:  you know , embassy s  
+B:  is featuring a nice parser 
+B:  but it 's  what I hear . 
+B:  One could also look at that and see 
+D:  Mm - hmm , yeah , it would be very interesting , Mm - hmm . 
+B:  whether there is some synergy 
+D:  Mmm , yeah . 
+B:  possible . 
+B:  And they 're doing 
+B:  chunk parsing and it 's uh  
+B:  I  I can give you the names of the people who do it there . 
+B:  But um . 
+B:  Then there is of course more ways of parsing things . 
+F:  <mouth> <inbreath> 
+F:  Of course . But  But 
+F:  uh given th the 
+F:  constraints , that you want it to be small and fast and so forth , 
+F:  my guess is you 're 
+F:  probably into some kind of chunk parsing . 
+F:  And 
+F:  uh 
+F:  I 'm not a big believer in this um 
+F:  statistical 
+F:  you know , cleaning up 
+F:  uh 
+F:  <mouth> 
+F:  It  
+F:  That seems to me kind of a last resort if uh 
+F:  you can't 
+F:  do it any other way . 
+F:  uh 
+F:  but I dunno . It may  i i may be that 's what you guys finally decide do . 
+D:  Hmm . 
+F:  Uh . 
+F:  <inbreath> 
+F:  And have you looked  uh just  again for context  
+D:  Mm - hmm . 
+F:  There is this  this one that they did at SRI some years ago  Fastus ? 
+F:  a  
+D:  um yeah , I 've  I 've looked at it but  
+D:  but it 's no  not much uh information available . 
+F:  ah ! 
+D:  I found , but it 's also 
+D:  finite - state transducers , I thought . 
+F:  It is . Yeah . I mean  it 's  it was pretty ambitious . 
+D:  and 
+F:  And of course it was English oriented , um 
+D:  Yeah , and  and 
+F:  w 
+D:  Purely finite - state transducers are not so good for German since there 's um 
+F:  Right . 
+F:  <inbreath> Yeah , I guess that 's the point is  is all the morphology and stuff . 
+D:  The word order is  is uh not fixed 
+F:  And English is all th all word order . 
+F:  And it makes a lot more sense . And  
+D:  Yeah . 
+F:  e Yeah , OK . Good point . So in  in  
+F:  in German you 've got 
+F:  uh most of this done with 
+D:  Mm - hmm . Also it 's uh  it 's um  
+D:  Yes , uh the 
+D:  um choice between uh this processing and that processing and my template matcher . 
+F:  Right . 
+F:  Right . 
+
+
+F:  So what about 
+D:  @ @ 
+F:  Um 
+F:  Did y like Morfix ? 
+F:  a a e y you 've got stemmers ? Or is that something 
+F:  that  
+D:  Um , yeah but it 's all in the  in the lexicon . 
+F:  But did you have that ? 
+D:  So it 's  
+D:  Yeah th the information is available . 
+F:  OK . I see . So , but  
+F:  So y you just 
+D:  So  
+F:  connect to the lexicon 
+D:  Yeah 
+F:  and uh at least for German you have all  all of the  uh 
+F:  the stemming information . 
+D:  Yeah , we can , oh yeah . 
+D:  We have knowledge bases from  from Verbmobil 
+D:  system we can use and so .  
+F:  Yep . 
+F:  <taps tongue to palate 4 times at regular intervals>  
+F:  Right . 
+F:  But it  it  it doesn't look like i you 're using it . 
+F:  I didn't n see it being used in the current 
+F:  template uh parser . 
+F:  I  I didn't see any 
+F:  Uh  of course we l actually only looked at the English . 
+D:  It  
+F:  Did we look at the German ?  
+D:  um 
+F:  I don't remember . So w wha 
+D:  Yeah , but  but it 's used for  for stem forms . 
+F:  <mouth> i 
+A:  n Well I think  I think there 's some misunderstanding here it 's  
+D:  @ @ 
+D:  Oh , OK . 
+A:  Morphix is not used on - line . 
+A:  s so the lexicon might be derived 
+D:  What ? 
+A:  by Morphix but 
+F:  Right . 
+A:  What  what 's happening on - line is 
+A:  just um 
+A:  um a  
+A:  a retrieval from the lexicon which would 
+A:  give all the stemming information so it would be a full foreign lexicon . 
+F:  Right . 
+D:  Hmm . 
+F:  <inbreath> 
+F:  And that 's what you have . 
+D:  Yeah 
+A:  Yep . 
+F:  OK . 
+F:  What  uh I didn't reme 
+B:  We threw out all the forms . 
+F:  Huh ? 
+B:  We threw out all the forms because , you know , English , well   
+F:  <inbreath> 
+F:  Oh OK , so it  yeah , s s I thought I 'd  
+D:  Mm - hmm . 
+F:  So in German then you actually do case matching and things like in the  in the pattern matcher or not ? 
+D:  um Not yet but it 's planned to do that . 
+F:  OK . 
+F:  Cuz I r I didn't reme I didn't think I saw it . 
+F:  Have we looked at the German ?  
+D:  Yeah 
+F:  Oh , I haven yeah that 's  getting it from the lexicon is just fine . 
+F:  Yeah , yeah , yeah .  No problem with that .  
+A:  Sure , right . 
+D:  Oh yes . 
+F:  um 
+
+
+F:  Yeah and here 's the case where the English and the German might really be 
+F:  significantly different . 
+F:  In terms of 
+F:  if you 're trying to build some fast parser 
+F:  and so forth and  
+F:  You really might wanna do it in a significantly different way . 
+F:  <taps tongue to palate 4 times, evenly spaced>  
+F:  I don't know .  
+F:  So you 've  you guys have looked at this ? 
+F:  also ? in terms of 
+F:  You know , w if you 're doing this for English as well as German 
+F:  Um 
+F:  Do you think now that it would be this  doing it similarly ? 
+D:  um 
+D:  Yeah , it 's um 
+D:  I think it 's um yes , 
+D:  it 's  it 's um possible to  
+D:  to do list processing . 
+D:  and 
+D:  Maybe this is um 
+D:  more adequate for English and in German um 
+F:  Set .  
+D:  set processing is used . 
+D:  Maybe yeah . 
+D:  Some extensions uh have to be made . 
+D:  For  for a English version 
+F:  Mmm . 
+F:  OK .  
+F:  Interesting .  
+F:  Not easy . 
+B:  Well there 's m I 'm sure there 's gonna be more discussion on that after your talk . 
+D:  Mm - hmm , yeah . 
+F:  Right . 
+B:  We 're just gonna foreshadow what we saw that 
+F:  Right .  
+B:  and um 
+
+
+F:  Now actually , 
+F:  um 
+F:  Are you guys free at five ? 
+F:  Or  Do you have to go somewhere at five o ' clock tonight ? 
+F:  W in ten minutes ? 
+D:  Ah  mmm . 
+D:  No . 
+A:  uh  uh  I think we 're expect  
+D:  Oder there was an  talk ? uh 
+A:  Yeah , there  there 's the um 
+A:  practice talk . 
+F:  Great . So you 're going to that . 
+A:  @ @ 
+A:  Yeah , that  that 's what we were planning to do . Yeah . 
+F:  That 's good , because that will 
+D:  Mmm , yeah . 
+F:  uh tell you 
+F:  a fair amount about 
+F:  The 
+F:  form of semantic construction grammar that we 're using . so  
+A:  Mm - hmm . 
+D:  Ah . 
+F:  So I th I think that probably as good an introduction 
+F:  as you 'll get . 
+F:  Uh to 
+F:  the form of  of 
+F:  uh  conceptual grammar that  that w we 
+F:  have in mind for this . 
+D:  Mmm , ah . 
+F:  It won't 
+F:  talk particularly 
+F:  about how that relates to what 
+F:  uh Robert was saying at the beginning . But let me give you a very short version of this . 
+F:  So we talked about the fact that 
+F:  There 're going to be 
+F:  a certain number of decisions 
+F:  That you want the knowledge modeler to make , 
+F:  that will be then fed to the function module , 
+F:  that does 
+F:  uh , route planning . 
+F:  It 's called the " route planner " or something . 
+A:  Mm - hmm . 
+F:  So there are these decisions . And then 
+F:  one half of this we talked about at little bit is 
+F:  how if you had the right information , if you knew something about what was said and about th the something about 
+F:  was the agent 
+F:  a tourist or a native or a business person or uh young or old , whatever . 
+F:  That information , and also about the 
+F:  Uh , what we 're calling " the entity " , 
+F:  Is it a castle , is it a bank ? Is it a s town square , is it a statue ? 
+F:  Whatever . 
+F:  So all that kind of information could be combined 
+F:  into decision networks and give you decisions . 
+F:  But the other half of the problem is 
+F:  How would you get that kind of information from the parsed input ? 
+F:  So , um 
+F:  So what you might try to do is just build more templates , saying uh we 're trying to build a templ you know build a template that w uh somehow would capture the fact that 
+D:  Mmm . 
+F:  he wants to take a picture . 
+F:  OK ? And  and we could  you could do this . 
+F:  And it 's a small enough domain that probably you , you know  
+D:  Mmm . 
+D:  <laugh> 
+F:  OK . You could do this . But 
+F:  uh from our point of view this is also a research project 
+F:  and there are a couple of people not here 
+F:  for various reasons who are doing doctoral dissertations on this , 
+A:  Mm - hmm . 
+F:  and 
+F:  the idea that we 're really after 
+F:  is a very deep semantics based on cognitive linguistics and the notion that there are a relatively small number 
+F:  of primitive conceptual schemas that characterize a lot of activity . 
+F:  So a typical one in this formulation is a container . 
+F:  So this is a static thing . 
+F:  And the notion is that 
+F:  all sorts of physical situations 
+F:  are characterized in terms of containers . Going in and out 
+F:  the portals and con OK . 
+D:  Mmm . 
+F:  But also , importantly for Lakoff and these guys is all sorts of metaphorical 
+F:  things are also characterized this way . You get in trouble and you know et cetera and so  s 
+D:  Mmm . 
+F:  So , what we 're really trying to do 
+F:  is to map from the discourse 
+F:  to the conceptual semantics level . 
+F:  And from there 
+F:  to the appropriate decisions . 
+F:  So another one of these primitive , 
+A:  Mm - hmm . 
+F:  what are called " image schemas " , 
+F:  is uh goal seeking . 
+F:  So this a notion of a source , 
+A:  Mm - hmm . 
+F:  path , goal , 
+F:  trajector , possibly obstacles . 
+F:  And the idea is this is another conceptual primitive . 
+F:  And that all sorts of things , particularly in the tourist domain , can be represented in terms of uh source , path and goal . So the idea would be could we build an analyser that would take an utterance 
+A:  Mm - hmm . 
+F:  and say " Aha ! 
+F:  th this utterance is talking about an attempt to reach a goal . 
+F:  The goal is this , the pers the , uh traveller is that , uh the sor w where we are at now is is this , they 've mentioned possible obstacles , et cetera . " 
+F:  So th the  and this is an  again attempt to get 
+F:  very wide coverage . So if you can do this , 
+F:  then the notion would be that across a very large range of domains , you could use this deep conceptual basis as the interface . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+F:  And then , 
+F:  uh 
+F:  The processing of that , both on the input end , 
+F:  recognizing that certain words in a language talk about containers or goals , et cetera , 
+F:  and on the output end , given this kind of information , you can then 
+F:  uh make decisions about what actions to take . 
+F:  Provides , they claim , 
+F:  a very powerful , general 
+F:  notion of deep semantics . 
+F:  So that 's what we 're really doing . 
+A:  Mm - hmm . 
+F:  And Nancy is going to  Her talk 
+F:  is going to be not about using this in applications , but about modeling how children might learn 
+A:  Mm - hmm . 
+F:  this kind of uh deep semantic grammar . 
+A:  Yep , yep . 
+A:  And how do you envision 
+A:  um the  the um 
+A:  this deep semantic to be 
+A:  worked with . Would it be highly ambiguous 
+A:  if and then there would be another module that takes that 
+A:  um highly underspecified 
+A:  deep semantic construction and map it onto the current context to find out what the person 
+A:  really was talking about 
+A:  in that context . or  
+F:  Well that 's  that 's  that 's where the belief - net comes in . So th the idea is , 
+A:  or a  
+F:  let 's take this business about going to the Powder - Tower . 
+A:  Mm - hmm . 
+F:  So part of what you 'll get out of this will be the fact tha w if it works right , OK , that this is an agent that wants to go to this place and that 's their goal and there will be additional situational information . 
+A:  Mm - hmm . 
+A:  Oh , OK . 
+F:  Uh , OK , part of it comes from the ontology . The tower is this kind of object . Part of it comes from the user model . 
+A:  th 
+A:  Mm - hmm . 
+A:  Yeah , OK . 
+A:  Mm - hmm . 
+F:  And the idea of the belief - net is it combines 
+F:  the 
+F:  information from the dialogue which comes across in this general way , 
+A:  Mm - hmm . 
+F:  you know this is a  this is a goal seeking behavior , 
+A:  Yeah 
+F:  along with specific information from the ontology about the kinds of objects involved and about the situation 
+A:  OK , Yeah , yep yep yep yep  
+F:  about " Is it raining ? " I don't know . Whatever it is . And so that 's the belief - net that we 've laid out . 
+A:  Mm - hmm . 
+F:  And so th the coupling to the situation comes in this model from , at th at th at the belief - net , combining evidence from the dialogue with the ontology with the situation . 
+A:  Yeah . 
+D:  Hmm . 
+F:  But Nancy isn't gonna talk about that , just about the 
+A:  Yeah , oh yeah , I see , yeah yeah , really . 
+F:  um 
+B:  First steps . 
+
+
+F:  Right . The  the construction grammar . 
+B:  And she 's gonna start 
+B:  in a minute . 
+F:  In a minute . 
+D:  Ah , OK . 
+F:  OK . 
+G:  Is it i in , then , your place , in five  
+G:  five - A ? 
+A:  Alright . 
+
+

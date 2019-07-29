@@ -1,0 +1,467 @@
+A:  And  
+A:  And we 're going . 
+A:  So the only status ite 
+A:  well , first of all we h haven't decided whether we 're <inbreath> Meeting Recorder data issues , or recognition this week . 
+A:  I think we were recognition . 
+A:  You only sent me one thing , which was demo status . 
+A:  And asking which one we were on this week . 
+A:  So should we simply assert that this week we are recognition , and next week data issues , 
+A:  and  ? 
+A:  And , uh  
+A:  So , I think what we should probably do is any quick , small stuff we can do every week . 
+A:  So  like Morgan asked about the demo status . 
+A:  We can go ahead and talk about that a little bit . 
+A:  And then do  then alternate in more depth . 
+A:  OK . 
+A:  Actually , I  may not be here either . 
+A:  So 
+A:  I gotta double check the dates . 
+A:  But , <inbreath> anyway . 
+A:  So , uh , demo status . 
+A:  First of all , I did a little thing for Liz with the Transcriber tool , that , um  first of all , it uses the forced alignments , 
+A:  so that the words appear , uh , in their own segments , rather than in long  in long chunks . 
+A:  She said that that  she thought that was a much better idea for the other stuff she 's working on . 
+A:  Um  
+A:  And that works fine 
+A:  except it 's even slower to load . 
+A:  It 's already pretty slow to load . 
+A:  Yeah . Yep . 
+A:  And the Transcriber tool is just not very good n at  <outbreath> at that . 
+A:  Correct . 
+A:  Yeah , it 's just writing conversion tools from the format that the aligner  
+A:  Actually th he did a SRT file for it . 
+A:  And then just back into Transcriber  Transcriber format . 
+A:  Yeah . So my  my decision was , for the first pass for this demo that Liz was talking about  I decided that I would do , um , only enough to get it working , as opposed to any coding . 
+A:  And so the other thing I sh she wanted to display the stylized F zeroes , I think they 're called ? 
+A:  Is that right ? 
+A:  And , uh  
+A:  So what I did is I just took the file with those in it , converted it so that it looks like an audio file . 
+A:  And , so you s it shows that instead of the wavefile . 
+A:  And so that  that 's working , 
+A:  and I think it actually looks pretty good . 
+A:  Um , I 'd like someone who 's more familiar with it to look at it 
+A:  because when I was looking at it , <inbreath> we seemed to have lots of stuff going on when no one 's saying anything . 
+A:  Ah . 
+A:  No . I   the audio file you can specify any sampling rate . 
+A:  And so I s I specified  instead of , you know , sixteen thousand or eight thousand , I specified a hundred . 
+A:  Um , 
+A:  and , the only problem with that is that there 's a bug in Transcriber , 
+A:  that if the sample rate is too low , when it tries to compute the shape file , it fails . 
+A:  Um , and crashes . 
+A:  Um  
+A:  But the solution to that is just , set the option so it doesn't compute the shape file , <inbreath> and it will work 
+A:  and the only problem with that is you can't , uh , zoom out on it . 
+A:  You can zoom in , but not out . 
+A:  The shape file is  
+A:  If you think about a wavefile , sixteen thousand samples per second is way too many to display on the screen . 
+A:  So what Transcriber does , is it computes a  another thing to display based on the waveform . 
+A:  And it displays it at  
+A:  And it allows you to show m many different resolutions . 
+A:  So there 's a little user interface component that lets you sh select the resolution . 
+A:  And if you don't compute the wavefile , you can't zoom out . 
+A:  You can't get a larger view of it . 
+A:  But you can zoom in . 
+A:  Um  
+A:  And that 's alright , 
+A:  because at  at a hundred samples that 's already pretty far  out . 
+A:  And , uh  so I think it looks pretty good , 
+A:  but I 'll let Liz look at it and see what she thinks . 
+A:  OK . 
+A:  We should  If you were having problems with the words , we should figure out why . 
+A:  OK . 
+A:  You c you clip that part over your ear . 
+A:  Anyway .  We 'll all watch Liz play with the mike . 
+A:  Um  
+A:  Uh , no . It doesn't have to , 
+A:  but that  that 's  I find that 's the only way to wear it . 
+A:  Is that the bud 's in the ear and that the link is over it . 
+A:  But , so , anyway , I think that looks pretty good . 
+A:  The only  the only other thing we might wanna do with that is be able to display more than one waveform . 
+A:  And that actually shouldn't be too slow , 
+A:  uh , because it 's much lower resolution than a full waveform . 
+A:  The problem with it is just it does require coding . 
+A:  And so it would be much better to get , uh , Dave Gelbart to do that than me , 
+A:  because he 's familiar with the code , 
+A:  and is more likely to be able to get it to work quickly . 
+A:  Oh , OK . 
+A:  Mm - hmm . 
+A:  I understand what you mean . 
+A:  Right . 
+A:  Ps 
+A:  But for the demo maybe it doesn't matter . 
+A:  I 'm not sure whether you wanna do the demo live anyway , 
+A:  or just screen shots of what we have . 
+A:  The problem with doing it live is it takes so long to load , that , um  
+A:  Um , w I was talking to Dave Gelbart about that 
+A:  and apparently it 's not actually the parsing of the XML raw  
+A:  that going from the XML to an internal  t tree structure is pretty fast . 
+A:  But then it walks the tree to assemble its dat internal data structures 
+A:  and that 's slow . 
+A:  Uh , no . 
+A:  But what it does is it actually assembles all the user interface components then . 
+A:  And then displays all the user interface components . 
+A:  Yes . 
+A:  A new transcript . 
+A:  Or audio file . 
+A:  Well , actually the audio files are pretty fast , too . 
+A:  Right . The only problem with that is if anything goes wrong  or if you wanna switch from one thing to another . 
+A:  That 's true . We could just subset it . 
+A:  That 's a good idea . 
+A:  That 's actually probably the right thing to do . 
+A:  You know , just take f ten minutes instead of an hour and a half . 
+A:  Yeah . 
+A:  Yeah . So that  that 's actually  the  definitely the way to do it . 
+A:  That 's a good idea . 
+A:  Yeah , if there are any problems . 
+A:  Yeah , I mean , even five minutes is probably enough . 
+A:  That 's what I did . 
+A:  Yeah . 
+A:  Yeah . I mean , just ask  Just come by my office . 
+A:  I can show you as well . 
+A:  Right . 
+A:  And for the information retrieval , uh , Don has been working on that . 
+A:  So . 
+A:  It looks like it 
+A:  Great . 
+A:  Yeah . So I think for the L stuff Liz was talking about , we have something that 'll work now . 
+A:  And Liz can look at it and see if she wants anything else . 
+A:  Maybe we can work on doing  displaying multiple  or displaying one and playing back the other . 
+A:  Um , I think I 'd h I 'd have to ask Dave . 
+A:  I did it once before 
+A:  and it was just so slow to scroll , that I gave up . 
+A:  But , the advantage is that these things are much lower sampling rate . 
+A:  And so then it might be alright . 
+A:  Tcl . 
+A:  I mean , we could check . 
+A:  I don't think they do . 
+A:  Um , there was actually a  Java back - end that apparently is actually a little faster . 
+A:  It generates byte code . 
+A:  But , uh  
+A:  Yeah . 
+A:  Well , e everything is faster than Tcl - TK . 
+A:  It 's a string substitution language , basically . 
+A:  I should probably beep that out in case John Osterhaut ever listens . 
+A:  But  
+A:  Well , it is wonderful . 
+A:  It is , for prototyping and user interface . 
+A:  It 's just really  the language is awful . 
+A:  Beep , 
+A:  y right . 
+A:  But let me tell you how I really feel . 
+A:  Yep . 
+A:  Oh , that 's right . 
+A:  Then the other issue related to that is data release . 
+A:  If we wanna show this in public , it should be releas 
+A:  So , I , uh , haven't gotten any other replies from the original email asking for approval . 
+A:  So I sent out another set this morning . 
+A:  And , uh , we 'll see if we get any responses . 
+A:  Very good . 
+A:  Did you notice I put in the filter ? 
+A:  Go ahead . 
+A:  There 's a link there that now says if you want to search by  filter by a regular expression , you can . 
+A:  I put that in just for you . 
+A:  It 's actually an arbitrary  arbitrary regular expression . 
+A:  But if you search your name , you 'll get all of the things you said and any time anyone said your name . 
+A:  So . 
+A:  Correct . 
+A:  It 's hard to find . 
+A:  Hmm . 
+A:  Yep . 
+A:  You really do have to sort of r 
+A:  Yeah . That 's right . 
+A:  And it demonstrates why it doesn't work , 
+A:  because you really wanna go acro more than one meeting . 
+A:  And you need a better user interface for displaying the results . 
+A:  So . 
+A:  Yeah . 
+A:  Yeah , really . 
+A:  That 's right . Th - we do have that bi nice marker  is that , n n 
+A:  because we all know we 're being recorded , whenever anyone says anything like that , we then have a conversation about bleeping it out . 
+A:  So . 
+A:  Yep . 
+A:  Um . Oh . And also we actually have a few people who have still not filled out speaker forms . 
+A:  Specifically in the NSA ones , 
+A:  and I noticed that when I tried to , uh  uh , generate the transcripts for NSA . That there are a few with no speaker forms . 
+A:  And so , uh , I have a  I sent out yet another this morning , which I think makes six total emails that I 've sent to these people , 
+A:  and so I think we need to escalate to some other method of trying to contact them . 
+A:  Nope . 
+A:  Well , if I could find phone numbers , that would certainly work . 
+A:  But . 
+A:  Yeah , that 's a good idea . 
+A:  I 'll ask her if she can con track some of them down . 
+A:  Mm - hmm . 
+A:  Yeah , I didn't actually see who they all were . 
+A:  Um , a couple of them were , like , people at IBM who were here for one of the IBM meetings 
+A:  and one  a guy from SRI who was at one of the SRI meetings . 
+A:  And so , uh , those might be harder to track down . 
+A:  Yep . 
+A:  I mean , they  they were people who didn't have accounts at ICSI , 
+A:  so they 're  they 're harder to find . 
+A:  Am I sure about what ? 
+A:  There were other people also . 
+A:  There were other c other people also who didn't ha fill out the speaker forms , in addition to the N S 
+A:  Yeah . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Right . 
+A:  Yeah . None of the e emails bounced , so I know they 're going somewhere . 
+A:  That 's all I have . 
+A:  You wanna talk about recognition ? 
+A:  J T Liz , you wanna talk about recognition ? 
+A:  Thilo , you wanna talk about recognition ? 
+A:  Backchannel . 
+A:  It combines them if it 's  if the pause is longer than  
+A:  Right . So the  the trade - off is you get longer utterances , but you miss fewer utterances . 
+A:  Well , take a look  
+A:  Yeah . It 's , uh , funny looking at some of the transcripts . 
+A:  I was filtering by  person , 
+A:  and in one of the  one of the early meetings , one pers particular person , almost the only thing they said the entire meeting was " yeah " , " uh - huh " . 
+A:  It was just a whole list of them . 
+A:  It was very funny . 
+A:  Uh , do we know about disk ? 
+A:  Uh , Abbott disk ? 
+A:  OK . 
+A:  Yep . 
+A:  Couldn't format them . 
+A:  No . 
+A:  The only reason I 'm asking is , you 're gonna need space to split them up . 
+A:  And so I wanted to make sure we had some available for you . 
+A:  OK . So we 're OK  we 're still OK for another couple days , then ? 
+A:  So we 're OK for  for a couple weeks , then . 
+A:  Y yeah . He just didn't say when . 
+A:  So  
+A:  Ah . 
+A:  Yeah . I 'm sure he 'd appreciate that . 
+A:  Well , m my feeling about that 
+A:  is p is p 
+A:  Well , OK . That 's the point . 
+A:  So it 's Jane  that we have to coordinate that through . 
+A:  Uh , what I was gonna say is , as soon as possible , and I 'm willing to not work for an hour to get it done . 
+A:  Uh , but  
+A:  Because when Abbott 's  
+A:  Yeah , right . 
+A:  Because when Abbott is down you can't work . 
+A:  But , uh , I think the per the people it disrupts the most are the transcribers . 
+A:  OK . 
+A:  So early next week . 
+A:  And just as long as we have a little warning . 
+A:  Uh , just not during that time when it 's down . 
+A:  But that  it should be down for an hour . 
+A:  Right . 
+A:  Well , no , we can store them here . 
+A:  We can store them here . 
+A:  You  we just run the risk  that if you have a crash we lose the data . 
+A:  So . 
+A:  Yep . 
+A:  Yep . 
+A:  Anything else ? 
+A:  Excuse me ? 
+A:  Yep . 
+A:  We have a kernel on Popcorn , too . 
+A:  Mmm . 
+A:  Input reader and an output stream . 
+A:  Yeah . 
+A:  Yeah . That 's the point . 
+A:  Yeah . So , if  if you  
+A:  Right . Quicknet is a very nice stream - based library , 
+A:  so without too much effort , once he has the classes written we can incorporate it into all the standard tools . 
+A:  So . 
+A:  And at some point , I 'd like to get back to , uh , porting Quicknet to the multiprocessor Linux box . 
+A:  You know , I  I have forward passes working , but I haven't done training yet . 
+A:  Mm - hmm . 
+A:  Yeah . That 's right . 
+A:  Well , that 's the nice thing about it , is that  i since it 's coarse parallelism you don't have to do anything special . 
+A:  So . I mean that would be a fine use for b for that machine . 
+A:  Five more processors . 
+A:  Yep . 
+A:  Oh , yeah . That 's really hard . 
+A:  It 's not determined . 
+A:  I think the first pass is  throw out words which are overlapped . 
+A:  That would be a good first pass . 
+A:  Just ignore everything that has any overlap . 
+A:  Right . 
+A:  Yep . 
+A:  Yeah , eighty percent . 
+A:  Yeah . 
+A:  Well , but for a  
+A:  But , for s for scoring , you can do it or not do it as you choose . 
+A:  So . 
+A:  N well , but you can use the  
+A:  when you 're doing the scoring  Since you 're  you 're gonna be scoring against transcript , you can use  
+A:  Well , you 're doing that anyway . 
+A:  So ch chea try to cheat in the same way that you 're doing with the close - talking . 
+A:  Yeah , right . 
+A:  Yeah . 
+A:  Just do  or a free ri 
+A:  Yeah . 
+A:  Yeah . They 're all gender - dependent . 
+A:  So we would have to at least do that . 
+A:  And pick whichever 's better . 
+A:  S does the clustering  ? Do you give it sort of a target number of clusters ? Or is it  ?  adapted in some way ? 
+A:  Mm - hmm . 
+A:  That 's what I 'm just thinking one of the big differences with Broadcast News and these meetings is we have m many fewer participants . 
+A:  Speaker ID . 
+A:  Yeah . 
+A:  Well , there 're different ways of thinking about it . 
+A:  I mean that  that would be true if w you had a meeting situation with multiple mikes . 
+A:  But if you only had your PDA sitting in front of you  
+A:  And you have more than one mike . 
+A:  Oh , so just from clustering . You might be able to cluster it better because of that . 
+A:  From mike . 
+A:  Yeah . 
+A:  And transfer functions . 
+A:  Well , I think there 're lots of  lots of ways of doing it . 
+A:  Yeah . That 's an interesting  
+A:  It 's a big difference . 
+A:  Yeah . 
+A:  Well , humans are really good at that  
+A:  transfer function through the head , and things like that . 
+A:  So you know , even if you only have one ear , you can still get  get good transfers . 
+A:  So 
+A:  Yeah . 
+A:  Yeah . 
+A:  Something . 
+A:  Yeah . 
+A:  Yeah . So it 'd be cool to see if it helped . 
+A:  That would be  ft quick , 
+A:  since I think he did it in Matlab . 
+A:  Yep . 
+A:  Can't you export C from Matlab , 
+A:  or is that Mathematica ? 
+A:  Well , so just take the inverse and you 're fine . 
+A:  So that 's a speech detector . 
+A:  That 's great . 
+A:  Yeah . Just subtract that  
+A:  subtract that from the original signal and you 're set . 
+A:  Noise estimate . 
+A:  Signal to noise . 
+A:  That 's great . 
+A:  I guess that 's why Herve always talks about using the priors as one of the mixtures in  in his all - ways combos . 
+A:  But still  
+A:  So if you run  er , your recognizer with all probabilities equal , what do you get out ? 
+A:  Probably garbage . 
+A:  I bet the pruning  
+A:  The pruning probably prunes everything out . 
+A:  Yeah . That 's right . 
+A:  Different . 
+A:  But they are channelized ones , though ? 
+A:  Right . Cuz you haven't done any training . 
+A:  Right . Cuz we 're not doing it for training . 
+A:  Right . So it 's really  it would be really easy to re - do it . 
+A:  Yeah . It 'd be interesting just to see i how much it changes . 
+A:  I bet it wouldn't change a lot . 
+A:  We can take  we can have a pool . 
+A:  That 's just what I was thinking . 
+A:  Yep . I  we know about it . 
+A:  Tran 
+A:  Transcriber will export STM . 
+A:  In case you care . 
+A:  OK . 
+A:  Right . 
+A:  Right . But  but  If the segments change , that won't work . 
+A:  Well , I mean , what happens if you break one segment into two ? 
+A:  Suddenly the don they don't match at all and you can't line them up anymore . 
+A:  Right . 
+A:  Does STM do it per word , or por per utterance ? 
+A:  Th - what I thought . 
+A:  Alright . 
+A:  And then it does also some  
+A:  Within the segment . 
+A:  Yep . 
+A:  I see . 
+A:  One percent . 
+A:  All  al 
+A:  All we mean by that is that we 're giving the recognizer more information than it would have if you were running it raw , 
+A:  over a meeting that no person has ever listened to or transcribed . 
+A:  It is . Yep . 
+A:  It 's us it 's using information you wouldn't normally have . 
+A:  So . 
+A:  Hmm . 
+A:  We 're not de - legitimizing the data . 
+A:  We 're de - legitimizing the experiment . 
+A:  We 're not saying that the data is cheating data . 
+A:  We 're saying th we are cheating by using this data . 
+A:  Because normally you wouldn't have that data available . 
+A:  Shoot . 
+A:  Just the clip . 
+A:  It 's p it  it really is part of the jargon . 
+A:  Well  
+A:  That 's what I was saying . 
+A:  Uh , and it 's used for a lot of different types of data . 
+A:  So , segment whether you have segmentation or not , is it male or female or not  <breath> Um , do you know the signal - to - noise ? 
+A:  Like , that 's another one I see all the time , where <breath> you assume it 's known . 
+A:  And you say it 's cheating because  you don't actually compute it . 
+A:  N Right . 
+A:  Same cheating . 
+A:  Mm - hmm . 
+A:  It 's not even really negative . 
+A:  Fine - tune little bits . 
+A:  Hmm . 
+A:  Did you read the paper ? 
+A:  What  what this  w 
+A:  Right . What would this be like if  w it were perfect ? 
+A:  If this component were perfect ? 
+A:  Hmm . 
+A:  It 's too hard , usually . 
+A:  It 's not pejorative at all . 
+A:  But , it 's not pejorative towards the data . 
+A:  It 's pejorative towards  
+A:  It 's pejorative to o ourselves . 
+A:  Right ? 
+A:  To say " I am cheating in this experiment " is not saying that the data is bad . 
+A:  It 's saying that my experiment is bad . 
+A:  Yep . 
+A:  Oh , right . I haven't gotten back to that recently . 
+A:  But 
+A:  I assume you 're saying you want me to  get back to it . 
+A:  Hmm . 
+A:  Well  
+A:  Well , you can , but you 'll lose a lot of data . 
+A:  But , I mean , that doesn't really help 
+A:  because often the recording person isn't in the room . 
+A:  So , what are you gonna do ? 
+A:  I mean it will  w the person  if you 're looking up at the board and I disable the screensaver , you will see that the mike is off , 
+A:  but that doesn't necessarily help . 
+A:  So 
+A:  Mm - hmm . 
+A:  It 's just hard to tell between that and just someone not talking . 
+A:  So . 
+A:  Right . 
+A:  Mm - hmm . 
+A:  Well , we should be getting new equipment in , so we don't have to use the earplug any more . 
+A:  It 's your hair . 
+A:  I mean , y d you  you can do sort of a check , 
+A:  but it will be very hard to tell the difference between that and , um , someone not talking . 
+A:  No . 
+A:  Little bit of noise . 
+A:  I use a threshold . 
+A:  If it 's below a particular value , it  it flashes yellow . 
+A:  So as I  eh  but it 's not perfect . 
+A:  Yeah , probably . 
+A:  I mean , this is the reason why I haven't gotten back to it , is cuz my first pass at it didn't really work 
+A:  because all the mikes have different noise levels . 
+A:  And so I have to do something a little more clever . 
+A:  Yep . Yep . 
+A:  Yep . 
+A:  Yep . 
+A:  Yeah . There 's  eh  the s the standard deviation of the signal gives you a good clue . 
+A:  I mean , if that is too low , then you can be pretty sure that it 's , uh , empty . 
+A:  Right . Exactly . 
+A:  Uh - huh . 
+A:  Is there a  ? 
+A:  Far - field . 
+A:  Yeah . 
+A:  Well , we 'll just  We 'll  we 'll just have to note those . 
+A:  Well , I  I  I think we can't throw away that data , 
+A:  cuz otherwise we 'll end up with very few meetings . 
+A:  But 
+A:  Do we have a  ? 
+A:  I 'm sorry for interrupting . 
+A:  Do we have an EDU meeting at four ? 
+A:  OK . Great . 
+A:  Good . 
+A:  Cuz otherwise I was gonna say we have to cancel . 
+A:  A simultaneous digit . OK . 
+A:  Everyone ready ? 
+A:  S reading simultaneous digits ? Three ! Two ! One ! 
+A:  And  

@@ -1,0 +1,57 @@
+C:  Hmm . 
+C:  OK . 
+C:  So Michael Kleinschmidt , who 's a PHD student from Germany , <breath> showed up this week . 
+C:  He 'll be here for about six months . 
+C:  And he 's done some work using <breath> an auditory model  of , um , <breath> human hearing , 
+C:  and  using that f uh , to generate speech recognition features . 
+C:  And  he did <breath> work back in Germany <breath> with , um , a toy recognition system <breath> using , um , isolated <breath> digit recognition <breath> as the task . 
+C:  It was actually just a single - layer neural network <breath> that classified words  
+C:  classified digits , <breath> in fact . 
+C:  Um , and  he tried that on  I think on some Aurora data and got results that he thought  seemed respectable . 
+C:  And 
+C:  he w he 's coming here to u u use it on a <breath> uh , a real speech recognition system . 
+C:  So I 'll be working with him on that . 
+C:  And , um , 
+C:  maybe I should say a little more about these features , 
+C:  although I don't understand them that well . 
+C:  The  I think it 's a two - stage idea . 
+C:  And , um , <breath> the first stage of these features correspond to what 's called the peripheral <breath> auditory system . 
+C:  And <breath> I guess that is like <breath> a filter bank with a compressive nonlinearity . 
+C:  And <breath> I 'm - I 'm not sure what we have @ @ in there that isn't already modeled in something like , <breath> um ,  PLP . 
+C:  I should learn more about that . 
+C:  And then <breath> the second stage  is , um , <breath> the most different thing , I think , from what we usually do . 
+C:  It 's , um  <breath> <breath> it computes features which are , <breath> um , <breath> based on  sort of like based on diffe different w um , wavelet basis functions <breath> used to analyze <breath> the input . 
+
+C:  So th he uses analysis functions called <breath> Gabor functions , 
+C:  um , <breath> which have a certain <breath> extent , um , <breath> in time and in frequency . 
+C:  And <breath> the idea is these are used to sample , <breath> um , the signal in a represented as a time - frequency representation . 
+C:  So you 're  sampling some piece of this time - frequency plane . 
+C:  And , um , <clears throat> that , <breath> um , is  is interesting , 
+C:  cuz , <breath> @ @ for  for one thing , you could use it , <breath> um , in a  a multi - scale way . 
+C:  You could have these  
+C:  instead of having everything  like we use a twenty - five millisecond or so analysis window , <breath> typically , 
+C:  um , and that 's our time scale for features , 
+C:  but you could  <breath> using this , um , basis function idea , you could have some basis functions 
+C:  which have a lot longer time scale 
+C:  and , um , some which have a lot shorter , 
+C:  and <breath> so it would be like  a set of multi - scale features . 
+C:  So he 's interested in , um  
+C:  Th - this is  because it 's , um  there are these different parameters for the shape of these <breath> basis functions , <breath> um  <breath> there are a lot of different possible basis functions . 
+C:  And so he  <breath> he actually does <breath> an optimization procedure to choose an  <breath> an optimal set of basis functions out of all the possible ones . 
+C:  The method he uses is kind of funny  
+C:  is ,  <breath> um , <mouth> he starts with  he has a set of M of them . 
+C:  Um , 
+C:  he  and then  he uses that to classify  
+C:  I mean , he t he tries , um , <mouth> using  just M minus one of them . 
+C:  So there are M possible subsets of this <breath> length - M vector . 
+C:  He tries classifying , using each of the M <breath> possible sub - vectors . 
+C:  Whichever sub - vector , <breath> um , works the  the best , I guess , he says  <breath> the  the fe feature that didn't use was the most useless feature , 
+C:  so we 'll throw it out 
+C:  and we 're gonna randomly select another feature  from the set of possible basis functions . 
+C:  I it 's multi - scale because you use several of these in parallel , 
+C:  is that right ? 
+C:  Of  
+C:  OK . 
+C:  Hmm . 
+
+C:  Hmm . 

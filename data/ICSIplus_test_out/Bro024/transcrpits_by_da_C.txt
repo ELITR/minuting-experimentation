@@ -1,0 +1,190 @@
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  OK . 
+C:  Um , 
+C:  so , yeah , the  this past week I 've been main mainly occupied with , um , getting some results , u from the SRI system trained on this short Hub - five training set for the mean subtraction method . 
+C:  And , um , 
+C:  I ran some tests last night . 
+C:  But , um , 
+C:  c 
+C:  the results are suspicious . 
+C:  Um , it 's , um , <breath> cuz they 're  the baseline results are worse than , um , Andreas  than results Andreas got previously . 
+C:  And <breath> it could have something to do with , um  
+C:  That 's on digits . 
+C:  It c it  it could h it could have something to do with , um , downsampling . 
+C:  That 's  that 's worth looking into . 
+C:  Um , 
+C:  d and , um , 
+C:  ap ap apart from that , I guess the  the main thing I have t ta I have to talk is , um , where I 'm planning to go over the next week . 
+C:  Um . 
+C:  So I 've been working on integrating this mean subtraction approach into the SmartKom system . 
+C:  And there 's this question of , well , so , um , in my tests before with HTK I found it worked  it worked the best with about twelve seconds of data used to estimate the mean , 
+C:  but , we 'll often have less  in the SmartKom system . 
+C:  Um . 
+C:  So I think we 'll use as much data as we have  at a particular time , 
+C:  and we 'll  <breath> we 'll concatenate utterances together , um , to get as much data as we possibly can from the user . 
+C:  But , <breath> um , <breath> there 's a question of how to set up the models . So um , we could train the models . 
+C:  If we think twelve seconds is ideal we could train the models using twelve seconds to calculate the mean , to mean subtract the training data . 
+C:  Or we could , um , use some other amount . 
+C:  So  like I did an experiment where I , um , was using six seconds in test , 
+C:  um , but , for  I tried twelve seconds in train . 
+C:  And I tried , um , um , the same in train  
+C:  I 'm a I tried six seconds in train . 
+C:  And six seconds in train <breath> was about point three percent better . 
+C:  Um , and  <breath> um , it 's not clear to me yet whether that 's <breath> something significant . 
+C:  So I wanna do some tests and , um , <breath> actually make some plots of , um  for a particular amount of data and test what happens if you vary the amount of data in train . 
+C:  y s so I was  I actually ran the experiments mostly 
+C:  and I  I was  I was hoping to have the plots with me today . 
+C:  I just didn't get to it . 
+C:  But , um  
+C:  yeah , I wou I would be curious about people 's feedback on this 
+C:  cuz I 'm  <breath> @ @  I p I think there are some I think it 's  it 's kind of like a  a bit of a tricky engineering problem . 
+C:  I 'm trying to figure out what 's the optimal way to set this up . 
+C:  So , um , <breath> I 'll try to make the plots and then put some postscript up on my  on my web page . 
+C:  And I 'll mention it in my status report if people wanna take a look . 
+C:  w Well , it c 
+C:  I  I don't think it  it 's <breath> just for any mismatch <breath> you take a hit . 
+C:  i In some cases it might be u better to have a mismatch . 
+C:  Like I think I saw something like  like if you only have two seconds in test , or , um , maybe it was something like four seconds , you actually do a little better if you , um , <breath> train on six seconds than if you train on four seconds . 
+C:  Um , 
+C:  but the case , uh  with the point three percent hit was <breath> using six seconds in test , um , comparing train on twelve seconds  versus train on six seconds . 
+C:  The train on twelve seconds . 
+C:  On  The  the  the accuracies <breath> w went from  it was something vaguely like ninety - five point six accuracy , um , improved to ninety - five point nine wh when I  
+C:  OK . 
+C:  OK . 
+C:  Huh . 
+C:  That 's  that 's interesting . 
+C:  Alright , the e uh , I see your point . 
+C:  I guess I was thinking of it as , um , <breath> an interesting research problem . 
+C:  The  how to g I was thinking that for the ASRU paper we could have a section saying , <breath> " For SmartKom , we  we d in  we tried this approach in , uh , <breath> interactive system " , which I don't think has been done before . 
+C:  And  and then there was two research questions from that . 
+C:  And one is the k does it still work if you just use the past history ? 
+C:  Alright , 
+C:  and the other was this question of , um what I was just talking about now . 
+C:  So I guess that 's why I thought it was interesting . 
+C:  Yeah , 
+C:  um . 
+C:  Oh , o Oh , OK . 
+C:  So that 's  that 's  that 's standard . 
+C:  Um  
+C:  OK . 
+C:  Mm - hmm . 
+C:  Right . 
+C:  OK . 
+C:  And , um , 
+C:  Let 's  l let 's see . 
+C:  Um , 
+C:  OK . 
+C:  And then there 's um , another thing I wanna start looking at , um , <breath> wi is , um , the choice of the analysis window length . 
+C:  So I 've just been using two seconds 
+C:  just because that 's what Carlos did before . 
+C:  Uh , I wrote to him asking about he chose the two seconds . 
+C:  And it seemed like he chose it a bit informally . 
+C:  So , um , 
+C:  with the  with the HTK set - up I should be able to do some experiments , on just varying that length , 
+C:  say between one and three seconds , in a few different reverberation conditions , 
+C:  um , say this room and also a few of the artificial impulse responses we have for reverberation , 
+C:  just , um , making some plots and seeing how they look . 
+C:  And , um , 
+C:  so , 
+C:  with the  the sampling rate I was using , one second or two seconds or four seconds is at a power of two um , number of samples 
+C:  and , um , I 'll  I 'll jus f for the ones in between I guess I 'll just zero - pad . 
+C:  Oh . 
+C:  Huh . 
+C:  Uh , yeah , 
+C:  I don't  I don't think the TI - digits data that I have , um , <breath> i is  would be appropriate for that . 
+C:  But what do you  What about if I w I fed it through some kind of , um , speech processing algorithm that changed the speech rate ? 
+C:  Yeah . 
+C:  Well , uh , just if you think it 's worth looking into . 
+C:  I mean , it  it is getting a little away from reverberation . 
+C:  Yeah . 
+C:  Right . 
+C:  And  and th the third thing , um , uh , is , um , Barry explained LDA filtering to me yesterday . 
+C:  And so , um , Mike Shire in his thesis um , <breath> did a  a series of experiments , um , training LDA filters in d on different conditions . 
+C:  And you were interested in having me repeat this for  
+C:  for this mean subtraction approach ? 
+C:  Is  is that right ? 
+C:  Or for these long analysis windows , I guess , is the right way to put it . 
+C:  Mm - hmm . 
+C:  Right . 
+C:  Mm - hmm . 
+C:  Uh - huh . 
+C:  Huh . 
+C:  o OK . 
+C:  So , um , 
+C:  a actually I was just thinking about what I was asking about earlier , wi which is about having <breath> less than say twelve seconds in the SmartKom system to do the mean subtraction . 
+C:  You said in <breath> systems where you use cepstral mean subtraction , they concatenate utterances 
+C:  and , <breath> do you know how they address this issue of , um , testing versus training ? 
+C:  Can  
+C:  OK . 
+C:  Um  
+C:  OK , 
+C:  um , 
+C:  and , um , so  so in tha in that case , wh what do they do when they 're t um , performing the cepstral mean subtraction on the training data ? 
+C:  So  because you 'd have hours and hours of training data . 
+C:  So do they cut it off and start over ? 
+C:  At intervals ? 
+C:  Or  ? 
+C:  Oh , well , no . 
+C:  I guess not . 
+C:  But  
+C:  OK . 
+C:  But it 's  
+C:  OK . 
+C:  So if someone 's interacting with the system , though , uh , Morgan  uh , Morgan said that you would <breath> tend to , um , <breath> chain utterances together 
+C:  um , r 
+C:  Oh . 
+C:  Mm - hmm . 
+C:  Right . 
+C:  I g I guess the question I had was , um , amount of data e u was the amount of data that you 'd give it to , um <breath> update this estimate . 
+C:  Because say you  if you have say five thousand utterances in your training set , <breath> um , and you  you keep the mean from the last utterance , 
+C:  by the time it gets to the five thousandth utterance  
+C:  OK , 
+C:  so  so  so they would  
+C:  g s 
+C:  r and it  
+C:  right . 
+C:  OK , 
+C:  so you 'd  you  and so in training you would start over at  at every new phone call or at every <breath> new speaker . 
+C:  Yeah , 
+C:  OK . 
+C:  R right . 
+C:  Right , 
+C:  OK . 
+C:  I see . 
+C:  Bec - because I  so this SmartKom task first off , it 's this TV and movie information system . 
+C:  And  
+C:  Yeah . 
+C:  Yeah . 
+C:  Right . 
+C:  Right . 
+C:  I  I see . 
+C:  I was  I was about to say . So if  if you ask it " What  what movies are on TV tonight ? " , 
+C:  if I look at my wristwatch when I say that it 's about two seconds . 
+C:  The way I currently have the mean subtraction , um , set up , the  the analysis window is two seconds . 
+C:  So what you just said , about what do you start with , raises a question of <breath> what do I start with then ? 
+C:  I guess it  because  
+C:  Oh , 
+C:  right . 
+C:  Yeah . 
+C:  Right . 
+
+C:  Right . 
+C:  Right . 
+C:  And I  I g I guess I s just started thinking of another question , 
+C:  which is , <breath> for  for the very first frame , w what  what do I do 
+C:  if I 'm  if I take  if I use that frame to calculate the mean , then I 'm just gonna get n nothing . 
+C:  Um , 
+C:  so I should probably have some kind of default <breath> mean for the first f couple of frames ? 
+C:  OK . 
+C:  Or subtract nothing . 
+C:  And  and that 's  that 's  I guess that 's something that 's p people have figured out how to deal with in cepstral mean subtraction as well ? 
+C:  Uh - huh . 
+C:  Mmm . 
+C:  Uh - huh . 
+C:  Oh . 
+C:  OK . 
+C:  OK . 
+C:  OK . 
+C:  So that was all I had , for now . 
+C:  Yeah . 

@@ -1,0 +1,218 @@
+D:  Mmm . 
+D:  R - nineteen ? 
+D:  Hmm . 
+D:  So it  it 's  it 's not systematically queued . 
+D:  I mean all the jobs are running . 
+D:  If you launch twenty jobs , they are all running . 
+D:  Alright . 
+D:  Uh - huh . 
+D:  Right . 
+D:  Mm - hmm . 
+D:  Mmm . 
+D:  Mm - hmm . 
+D:  Right . 
+D:  Mm - hmm . 
+D:  It was system one . 
+D:  So 
+D:  we  
+D:  The main thing that we did is just to take the spectral subtraction from the France Telecom , 
+D:  which provide us some speech samples that are uh , with noise removed . 
+D:  Yeah . 
+D:  But I guess it 's the s exactly the same thing 
+D:  because on the heads uh , handset they just applied this Wiener filter and then compute cepstral features , 
+D:  right ? 
+D:  or  ? 
+D:  Right . 
+D:  Mm - hmm . 
+D:  Yeah , well I think we should uh , have a table with all the result 
+D:  because I don't know I uh , I don't exactly know what are your results ? 
+D:  But , 
+D:  Mmm . 
+D:  Yeah , but so we did this , 
+D:  and another difference I guess is that we just applied uh , proposal - one system after this 
+D:  without  well , with our modification to reduce the delay of the  the LDA filters , 
+D:  and 
+D:  Well there are slight modifications , 
+D:  but it was the full proposal - one . 
+D:  In your case , if you tried just putting LDA , then maybe on - line normalization  ? 
+D:  Mm - hmm . 
+D:  So we just tried directly to  to just , keep the system as it was 
+D:  and , 
+D:  um , 
+D:  when we plug the spectral subtraction it improves uh , signif significantly . 
+D:  Um , 
+D:  but , what seems clear also is that we have to retune the time constants of the on - line normalization . 
+D:  Because if we keep the value that was submitted uh , it doesn't help at all . 
+D:  You can remove on - line normalization , or put it , it doesn't change anything . 
+D:  Uh , uh , as long as you have the spectral subtraction . 
+D:  But , you can still find some kind of optimum somewhere , 
+D:  and we don't know where exactly 
+D:  but , 
+D:  uh . 
+D:  Right . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Well , 
+D:  with  with  with changes , 
+D:  because we change it the system to have  
+D:  Yeah . 
+D:  LDA filters . 
+D:  There are other things that we finally were shown to improve also 
+D:  like , the sixty - four hertz cut - off . 
+D:  w Uh , it doesn't seem to hurt on TI - digits , finally . 
+D:  Maybe because of other changes . 
+D:  Um , 
+D:  well there are some <outbreath> minor changes , 
+D:  yeah . 
+D:  And , right now if we look at the results , it 's , um , always better than  it seems always better than France Telecom for mismatch and high - mismatch . 
+D:  And it 's still slightly worse for well - matched . 
+D:  Um , 
+D:  but this is not significant . 
+D:  But , the problem is that it 's not significant , 
+D:  but if you put this in the , mmm , uh , spreadsheet , it 's still worse . 
+D:  Even with very minor  
+D:  uh , 
+D:  even if it 's only slightly worse for well - matched . 
+D:  And significantly better for HM . 
+D:  Uh , 
+D:  but , well . 
+D:  I don't think it 's importa important 
+D:  because when they will change their metric , 
+D:  uh , 
+D:  uh , mainly because of uh , when you p you plug the um , frame dropping in the baseline system , it will improve a lot HM , and MM , 
+D:  so , 
+D:  um , I guess what will happen  
+D:  I don't know what will happen . 
+D:  But , the different contribution , I think , for the different test set will be more even . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah , 
+D:  so um , 
+D:  yeah . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Well , so it means that if the database is large enough , it 's matched . 
+D:  Because it 
+D:  in each set you have a range of conditions  
+D:  Well  
+D:  Mm - hmm . 
+D:  Mmm . 
+D:  You 
+D:  Yeah . 
+D:  We are playing  we are also playing , trying to put other spectral subtraction mmm , in the code . 
+D:  Um , 
+D:  it would be a very simple spectral subtraction , on the um , mel energies 
+D:  which I already tested but without the um frame dropping actually , 
+D:  and I think it 's important to have frame dropping if you use spectral subtraction . 
+D:  Um , 
+D:  I d 
+D:  I don't know . 
+D:  Well , it 's both  both uh , cases can i 
+D:  Yeah . 
+D:  So - some of the proposal , uh , we 're doing this on the bin  on the FFT bins , 
+D:  others on the um , mel energies . 
+D:  You can do both , 
+D:  but I cannot tell you what 's  which one might be better 
+D:  or  
+D:  I  
+D:  I don't know . 
+D:  Yeah , 
+D:  but 
+D:  Well , it gives something different , 
+D:  but I don't know what are the , pros and cons of both . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Yeah , it might be . 
+D:  Yeah . 
+D:  So maybe in my implementation I should also try to inspire me from this kind of thing 
+D:  and  Yeah . 
+D:  Yeah , 
+D:  mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Yeah . 
+D:  What was your point about  about colored noise there ? 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Yeah , right . 
+D:  Yeah . 
+D:  Uh - huh . 
+D:  Yeah . 
+D:  Uh , yeah . 
+D:  So there is this . 
+D:  And 
+D:  maybe we  
+D:  well we find some people so that <inbreath> uh , agree to maybe work with us , 
+D:  and they have implementation of VTS techniques 
+D:  so it 's um , Vector Taylor Series that are used to mmm , <outbreath> uh f to model the transformation between clean cepstra and noisy cepstra . 
+D:  So . Well , 
+D:  if you take the standard model of channel plus noise , uh , it 's  it 's a nonlinear eh uh , transformation in the cepstral domain . 
+D:  And 
+D:  uh , there is a way to approximate this using uh , first - order or second - order Taylor Series 
+D:  and 
+D:  it can be used for <mouth> uh , getting rid of the noise and the channel effect . 
+D:  Uh w working in the cepstral domain ? 
+D:  So there is one guy in Grenada , 
+D:  and another in  uh , Lucent that I met at ICASSP . 
+D:  uh , 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Well , it 's again a different thing <outbreath> <laugh> that could be tried . 
+D:  Um , 
+D:  Mmm , yeah . 
+D:  Mm - hmm . 
+D:  Uh , yeah . 
+D:  But , yeah . 
+D:  But for sure there 's required to  that requires to re - check everything else , and re - optimize the other things 
+D:  and , 
+D:  for sure the on - line normalization may be the LDA filter . 
+D:  Um , 
+D:  I  
+D:  Uh - huh . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah , but there is so much variability in the power spectrum . 
+D:  Mm - hmm . 
+D:  Mmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Wait  I  I 'm sorry ? 
+D:  Yeah ? 
+D:  Yeah . 
+D:  Hmm . 
+D:  Well  
+D:  Mm - hmm . 
+D:  But anyway the question is even more , is within speech , can we get some features ? 
+D:  Are we drop dropping information that can might be useful within speech , 
+D:  I mean . To  maybe to distinguish between voice sound and unvoiced sounds ? 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Mmm . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Hmm . 
+D:  Mm - hmm . 
+D:  But 
+D:  Yeah . 
+D:  I  
+D:  Mm - hmm . 
+D:  Actually you have peaks that are not at the formant 's positions , 
+D:  but they are lower in energy 
+D:  and  Well they are much lower . 
+D:  Mm - hmm . 
+D:  Mmm . 

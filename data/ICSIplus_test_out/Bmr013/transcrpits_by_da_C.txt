@@ -1,0 +1,264 @@
+C:  OK . 
+C:  So , uh  
+C:  Oh good . 
+C:  Right . 
+C:  OK , agenda items , 
+C:  Uh , we have digits , 
+C:  What else we got ? 
+C:  New version of presegmentation . 
+C:  Update on transcripts . 
+C:  Filtering for what ? 
+C:  Uh - huh . 
+C:  Got it . 
+C:  Anything else more pressing than those things ? 
+C:  So  So , why don't we just do those . 
+C:  You said yours was brief , so  
+C:  So , I 'm impressed by what we could do , Is take the standard training set for TI - digits , train up with whatever , you know , great features we think we have , uh for instance , and then test on uh this test set . 
+C:  And presumably uh it should do reasonably well on that , 
+C:  and then , presumably , we should go to the distant mike , and it should do poorly . 
+C:  And then we should get really smart over the next year or two , and it  that should get better . 
+C:  Yeah , <laugh> Yeah . 
+C:  Right . 
+C:  So is this  
+C:  Uh , what  what do you think ? 
+C:  So you think it 's fine to have the transcribers do it ? 
+C:  Yeah , OK . 
+C:  Yeah . 
+C:  Mmm . 
+C:  Yeah . 
+C:  Yeah just by way of uh , uh , a uh , order of magnitude , uh , um , we 've been working with this Aurora , uh data set . 
+C:  And , uh , the best score , on the , nicest part of the data , that is , where you 've got training and test set that are basically the same kinds of noise and so forth , uh , is about , 
+C:  uh  
+C:  I think the best score was something like five percent , uh , error , per digit . 
+C:  So , that  
+C:  You 're right . 
+C:  So if you were doing  ten digit , uh , recognition , <laugh> you would really be in trouble . 
+C:  So  So the  The point there , and this is uh car noise uh , uh things , but  but real  real situation , 
+C:  well , " real " , 
+C:  Um , the  uh there 's one microphone that 's close , that they have as  as this sort of thing , close versus distant . 
+C:  Uh but in a car , 
+C:  instead of  instead of having a projector noise it 's  it 's car noise . 
+C:  Uh but it wasn't artificially added to get some  some artificial signal - to - noise ratio . 
+C:  It was just people driving around in a car . 
+C:  So , that 's  that 's an indication , 
+C:  uh that was with , many sites competing , and this was the very best score and so forth , 
+C:  so . More typical numbers like 
+C:  You 're right . 
+C:  I think that we could have done better on the models , 
+C:  but the thing is that we got  this  this is the kind of typical number , for all of the , uh , uh , things in this task , all of the , um , languages . 
+C:  And so I  I think we 'd probably  the models would be better in some than in others . 
+C:  Um , so , uh . Anyway , just an indication once you get into this kind of realm even if you 're looking at connected digits it can be pretty hard . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Uh , I 'm not sure how  
+C:  no , no I mean it 's connected  it 's connected , uh , digits , 
+C:  yeah . 
+C:  But . 
+C:  Yeah , I mean we were in the . 
+C:  Uh , I th no I think we got under a percent , 
+C:  but it was  but it 's  but I mean . The very best system that I saw in the literature was a point two five percent or something that somebody had at  at Bell Labs , or . Uh , but . But , uh , sort of pulling out all the stops . 
+C:  But I think a lot of systems sort of get half a percent , or three - quarters a percent , 
+C:  and we 're  we 're in there somewhere . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  When  When they 're wide awake , yeah . 
+C:  Um , 
+C:  after coffee , you 're right . 
+C:  Not after lunch . 
+C:  Yeah . 
+C:  Yeah . 
+C:  One question I have that  that I mean , we wouldn't know the answer to now but might , do some guessing , but I was talking before about doing some model modeling of arti uh , uh , marking of articulatory , features , with overlap and so on . 
+C:  And , and , um , 
+C:  On some subset . 
+C:  One thought might be to do this uh , on  on the digits , or some piece of the digits . 
+C:  Uh , it 'd be easier , uh , and so forth . 
+C:  The only thing is I 'm a little concerned that maybe the kind of phenomena , in w i i 
+C:  The reason for doing it is because the  the argument is that certainly with conversational speech , the stuff that we 've looked at here before , um , just doing the simple mapping , from , um , the phone , to the corresponding features that you could look up in a book , uh , isn't right . 
+C:  It isn't actually right . 
+C:  In fact there 's these overlapping processes where some voicing some up and then some , you know , some nasality is  comes in here , and so forth . 
+C:  And you do this gross thing saying " Well I guess it 's this phone starting there " . 
+C:  So , uh , that 's the reasoning . 
+C:  But , It could be that when we 're reading digits , because it 's  it 's for such a limited set , that maybe  maybe that phenomenon doesn't occur as much . 
+C:  I don't know . 
+C:  Di - an anybody  ?  Do you have any  ?  Anybody have any opinion about that , 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Right . 
+C:  Yeah . 
+C:  See , I don't know . 
+C:  So , may maybe the thing will be do  to take some very small subset , I mean not have a big , program , but take a small set , uh , subset of the conversational speech and a small subset of the digits , 
+C:  and  look and  and just get a feeling for it . 
+C:  Um , just take a look . Really . 
+C:  Cuz I don't think anybody is , I at least , I don't know , of anybody , uh , 
+C:  well , I don't know , <laugh> the answers . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Yeah , but I  I  I  I was , like he said , <laugh> I was gonna bring John in and ask John what he thought . 
+C:  Right . 
+C:  But I mean you want  you want it be restrictive but you also want it to  to  to have coverage . 
+C:  You know i you should . It should be such that if you , if you , uh , if you had o um , all of the features , determined that you  that you were uh ch have chosen , that that would tell you , uh , in the steady - state case , uh , the phone . 
+C:  So , um . 
+C:  Mm - hmm . 
+C:  Place , place . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  OK we got our jargon then , OK . 
+C:  Uh . 
+C:  Right . 
+C:  Well you might be right that mi might be the way at getting at , what I was talking about , 
+C:  but the particular reason why I was interested in doing that was because I remember , when that happened , and , John Ohala was over here and he was looking at the spectrograms of the more difficult ones . 
+C:  Uh , he didn't know what to say , about , what is the sequence of phones there . 
+C:  They came up with some compromise . 
+C:  Because that really wasn't what it look like . 
+C:  It didn't look like a sequence of phones 
+C:  it look like this blending thing happening here and here and here . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Right . 
+C:  Yeah . 
+C:  Right . 
+C:  Mm - hmm . 
+C:  Do you mean , 
+C:  Yeah , I mean , I I I 'm jus at the moment of course we 're just talking about what , to provide as a tool for people to do research who have different ideas about how to do it . 
+C:  So for instance , you might have someone who just has a wor has words with states , and has uh  uh , comes from articulatory gestures to that . 
+C:  And someone else , might actually want some phonetic uh intermediate thing . 
+C:  So I think it would be  be best to have all of it if we could . 
+C:  But  um , 
+C:  Yeah . 
+C:  Yeah . 
+C:  I mean this is the kind of reason why  
+C:  I remember when at one of the Switchboard , workshops , that uh when we talked about doing the transcription project , Dave Talkin said , " can't be done " . 
+C:  He was  he was , what  what he meant was that this isn't , you know , a sequence of phones , 
+C:  and when you actually look at Switchboard that 's , not what you see , and , you know . And . It , 
+C:  yeah I mean it was 
+C:  Yeah . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Right . 
+C:  Right . 
+C:  Yeah . 
+C:  Yeah , no I  I don't disagree with that . 
+C:  Yeah u I don't disagree with it 
+C:  the on the only thing is that , What you actually will end  en end up with is something , 
+C:  i it 's all compromised , 
+C:  right , 
+C:  so , the string that you end up with isn't , actually , what happened . 
+C:  But it 's  it 's the best compromise that a group of people scratching their heads could come up with to describe what happened . 
+C:  But . And it 's more accurate than the  than the dictionary or , if you 've got a pronunciation uh lexicon that has three or four , 
+C:  this might be have been the fifth one that you tr that you pruned or whatever , 
+C:  so sure . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Right . 
+C:  Yeah , so I mean , what , what  where this is , I mean , I I want would like to have something that 's useful to people other than those who are doing the specific kind of research I have in mind , 
+C:  so it should be something broader . 
+C:  But , The  but uh where I 'm coming from is , uh , we 're coming off of stuff that Larry Saul did with  with , um , uh , John Dalan and Muzim Rahim in which , uh , they , uh , have , um , a m a multi - band system that is , uh , trained through a combination of gradient learning an and EM , to  um , estimate , uh , <glottal sound> the , uh , value for m for  for a particular feature . 
+C:  OK . 
+C:  And this is part of a larger , image that John Dalan has about how the human brain does it in which he 's sort of imagining that , individual frequency channels are coming up with their own estimate , of  of these , these kinds of  something like this . 
+C:  Might not be , you know , exact features that , Jakobson thought of or something . 
+C:  But I mean you know some , something like that . 
+C:  Some kind of low - level features , which are not , fully , you know , phone classification . 
+C:  And the  the  th this particular image , of how thi how it 's done , is that , then given all of these estimates at that level , there 's a level above it , then which is  is making , some kind of sound unit classification such as , you know , phone 
+C:  and  and , you know . You could argue what , what a sound unit should be , and  and so forth . 
+C:  But that  that 's sort of what I was imagining doing , 
+C:  um , and  but it 's still open within that whether you would have an intermediate level in which it was actually phones , or not . 
+C:  You wouldn't necessarily have to . 
+C:  Um , but , Again , I wouldn't wanna , wouldn't want what we  we produced to be so , know , local in perspective that it  it was matched , what we were thinking of doing one week , 
+C:  And  and , and , you know , what you 're saying is absolutely right . 
+C:  That , that if we , can we should put in , uh , another level of , of description there if we 're gonna get into some of this low - level stuff . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  It 's so it 's a little different . 
+C:  So I mean i we 'll see wha how much we can , uh , get the people to do , and how much money we 'll have and all this sort of thing , 
+C:  but , 
+C:  Might be do both . 
+C:  Well I think what  I mean I 'm  I 'm a l little behind in what they 're doing , now , and , uh , the stuff they 're doing on Switchboard now . 
+C:  But I think that , Steve and the gang are doing , something with an automatic system first and then doing some adjustment . 
+C:  As I re as I recall . 
+C:  So I mean that 's probably the right way to go anyway , is to  is to start off with an automatic system with a pretty rich pronunciation dictionary that , that , um , you know , tries , to label it all . 
+C:  And then , people go through and fix it . 
+C:  Well , regular dictionary , I mean , this is a pretty rich dictionary . 
+C:  It 's got , got a fair number of pronunciations in it 
+C:  Yeah . 
+C:  Actually maybe they 're using phone recognizers . 
+C:  Is that what they 're doing ? 
+C:  Oh , OK . 
+C:  Yeah . 
+C:  Yeah , so I think that i i we also don't have , I mean , 
+C:  we 've got a good start on it , 
+C:  but we don't have a really good , meeting , recorder or recognizer or transcriber or anything yet , 
+C:  so . 
+C:  So , I mean another way to look at this is to , is to , uh , do some stuff on Switchboard which has all this other , stuff to it . 
+C:  And then , um , As we get , further down the road and we can do more things ahead of time , we can , do some of the same things to the meeting data . 
+C:  Yeah 
+C:  Yeah . 
+C:  Yeah . 
+C:  Anyway , this is , not an urgent thing at all , 
+C:  just it came up . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  We should move on . 
+C:  Uh , new version of , uh , presegmentation ? 
+C:  Right . 
+C:  Yeah , we don't have that much variety in meetings yet , 
+C:  uh , I mean we have this meeting and the feature meeting and we have a couple others that we have uh , couple examples of . But  but , uh , 
+C:  Poten - potentially . 
+C:  Oh , OK . 
+C:  Of  of  of the meetings that you 're working with , how many of them are different , tha 
+C:  are there any of them that are different than , these two meetings ? 
+C:  Yeah , speakers . 
+C:  Sorry . 
+C:  So . 
+C:  Yeah . 
+C:  So I didn't know in the group you had if you had  
+C:  so you have the networks meeting ? 
+C:  Do you have any of Jerry 's meetings in your , pack , er , 
+C:  No ? 
+C:  Yeah . 
+C:  Cuz I think he really needs variety , 
+C:  and  and having as much variety for speaker certainly would be a big part of that I think . 
+C:  Yeah . 
+C:  And . 
+C:  Right . 
+C:  Ye - But you 're  y 
+C:  So that should be faster than the ten times kind of thing , 
+C:  yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Well , that 's probably . 
+C:  They 're running out of data unless we s make the decision that we should go over and start , uh , transcribing the other set . 
+C:  There  the first  the first half . 
+C:  Alright . 
+C:  So this , blends nicely into the update on transcripts . 
+C:  OK . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Good 
+C:  s I think that 's probably our agenda , or starting up there . 
+C:  Yeah ? K . 
+C:  K . 
+C:  They go where old microphones go . 
+C:  Yeah . 
+C:  Yeah . 
+C:  For the recor for the record Adam is not a paid employee or a consultant of Crown . 
+C:  I said " For the record Adam is  is not a paid consultant or employee of Crown " . 
+C:  Yeah . 
+C:  Right . 
+C:  Yeah . 
+C:  You bet . You bet . 
+C:  So if we go to a workshop about all this  this it 's gonna be a meeting about meetings about meetings . 
+C:  OK . 
+C:  So . 
+C:  Oh , yeah , what  Which 'll be the meeting about the meeting about the meeting . 
+C:  Yeah ? 
+C:  Just start saying " M four " . 
+C:  Yeah , OK . 
+C:  Should we do the digits ? 
+C:  OK . 
+C:  OK . 

@@ -1,0 +1,218 @@
+A:  OK . 
+A:  OK , 
+A:  we 're going . 
+A:  Just for a visit ? 
+A:  Huh . 
+A:  Cool . 
+A:  Really nice guy . 
+A:  Wh - Back when I was a grad student he was here for a , uh , uh  a year or  n six months . 
+A:  Something like that . 
+A:  Yeah . 
+A:  So , um , <mouth>  I guess we got lots to catch up on . 
+A:  And we haven't met for a couple of weeks . 
+A:  We didn't meet last week , Morgan . 
+A:  Um , I went around and talked to everybody , 
+A:  and it seemed like they  they had some new results 
+A:  but rather than them coming up and telling me I figured we should just wait a week and they can tell both  you know , all of us . 
+A:  So , um , 
+A:  why don't we  why don't we start with you , Dave , 
+A:  and then , um , we can go on . 
+A:  So . 
+A:  Twelve seconds  
+A:  Twelve  twelve seconds back from the current  frame , 
+A:  is that what you mean ? 
+A:  OK , 
+A:  OK . 
+A:  Mm - hmm . 
+A:  Hmm ! 
+A:  Yeah , it seems like for your  I mean , in normal situations you would never get twelve seconds of speech , 
+A:  right ? 
+A:  I 'm not  e u 
+A:  Is this twelve seconds of  uh , regardless of speech or silence ? 
+A:  Or twelve seconds of speech ? 
+A:  OK . 
+A:  Oh , 
+A:  so you  you cache the utterances ? 
+A:  That 's how you get your , 
+A:  uh  
+A:  Ah . 
+A:  OK . 
+A:  OK . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  What would be really cool is if you could have  
+A:  uh , this probably  users would never like this  
+A:  but if you had  could have a system where , <clears throat> before they began to use it they had to introduce themselves , verbally . 
+A:  You know . 
+A:  " Hi , 
+A:  my name is so - and - so , 
+A:  I 'm from blah - blah - blah . " 
+A:  And you could use that initial speech to do all these adaptations 
+A:  and  
+A:  Mm - hmm . 
+A:  So is that , uh  that it ? 
+A:  OK , 
+A:  uh , do you wanna go , Sunil ? 
+A:  Improves over the base line MFCC system ? 
+A:  Yeah . 
+A:  Oh , OK . 
+A:  Is this with the v new VAD ? 
+A:  Can I ask just a  a high level question ? 
+A:  Can you just say like one or two sentences about Wiener filtering and why  why are people doing that ? 
+A:  What 's  what 's the deal with that ? 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Do you assume the noise is the same ? 
+A:  Uh - huh . 
+A:  I see . 
+A:  Mm - hmm . 
+A:  I see . 
+A:  OK . 
+A:  Mm - hmm . 
+A:  So is this , um , basically s uh , similar to just regular spectral subtraction ? 
+A:  Uh - huh . 
+A:  Do people use the Wiener filtering in combination with the spectral subtraction typically , 
+A:  or is i are they sort of competing techniques ? 
+A:  Yeah . 
+A:  O oh , OK . 
+A:  I see , 
+A:  I see . 
+A:  Mm - hmm . 
+A:  Mmm . 
+A:  Mm - hmm . 
+A:  So why did you choose , uh , Wiener filtering over some other  one of these other techniques ? 
+A:  Oh , OK . 
+A:  So you 're sort of trying @ @ them all . 
+A:  Ah , 
+A:  I see . 
+A:  Oh , OK . 
+A:  Mm - hmm . 
+A:  Ah , 
+A:  OK . 
+A:  That makes sense . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Cool , 
+A:  thanks . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  So that 's sort of like , you know , best - case performance ? 
+A:  Tha - that it ? 
+A:  Cool . 
+A:  Do you wanna go , Stephane ? 
+A:  " Subtracting more " , meaning  ? 
+A:  Oh , OK . 
+A:  I see . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Speech - shaped ? 
+A:  So when y when you talk about there being something less than zero after subtracting the noise , is that at a particular frequency bin ? 
+A:  OK . 
+A:  And so when you say you 're adding something that has the overall shape of speech , is that in a  in a particular frequency bin ? 
+A:  Or you 're adding something across all the frequencies when you get these negatives ? 
+A:  Ah ! 
+A:  OK . 
+A:  I gotcha . 
+A:  Right . 
+A:  Mm - hmm . 
+A:  So what does that mean ? 
+A:  I 'm trying to understand what it means when you do the spectral subtraction and you get a negative . 
+A:  It means that at that particular frequency range you subtracted more energy than there was actually  
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  So in  in an ideal word i world  if the noise were always the same , then , when you subtracted it the worst that i you would get would be a zero . 
+A:  I mean , the lowest you would get would be a zero , 
+A:  cuz i if there was no other energy there you 're just subtracting exactly the noise . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Sort of the opposite of that would be if  if you find out you 're going to get a negative number , you don't do the subtraction for that bin . 
+A:  That would be almost the opposite , 
+A:  right ? 
+A:  Instead of leaving it negative , you don't do it . 
+A:  If your  if your subtraction 's going to result in a negative number , you  you don't do subtraction in that . 
+A:  Yeah . 
+A:  Yeah , I 'm just saying that 's like the opposite . 
+A:  Yeah . 
+A:  Oh . 
+A:  Oh . 
+A:  What is it the , um , France Telecom system uses 
+A:  for  Do they use spectral subtraction , or Wiener filtering , 
+A:  or  ? 
+A:  Oh . 
+A:  I see . 
+A:  Mmm . 
+A:  Hmm . 
+A:  Oh , I see . 
+A:  Hmm . 
+A:  Does the smoothing in the time domain help  
+A:  Well , do you get this musical noise stuff with Wiener filtering 
+A:  or is that only with , uh , spectral subtraction ? 
+A:  Does the smoothing in the time domain help with that ? 
+A:  Or some other smoothing ? 
+A:  Hmm . 
+A:  Hmm . 
+A:  Mm - hmm . 
+A:  Hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  That 's the musical noise ? 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Could you train a neural net to do spectral subtraction ? 
+A:  Yeah , 
+A:  I was thinking if you had a clean version of the signal and  and a noisy version , and your targets were the M F - uh , you know , whatever , frequency bins  
+A:  People do that ? 
+A:  Hmm . 
+A:  Hmm . 
+A:  Mm - hmm . 
+A:  How did it compare on  I mean , for  for good cases where it  it  uh , stuff that it was trained on ? 
+A:  Did it do pretty well ? 
+A:  Mmm . 
+A:  Mmm . 
+A:  Mm - hmm . 
+A:  You could say it 's sort of built in . 
+A:  Hmm . 
+A:  Mm - hmm . 
+A:  And that 's what causes the latency ? 
+A:  OK . 
+A:  Oh ! 
+A:  Sorry . 
+A:  A quick question just about the latency thing . 
+A:  If  if there 's another part of the system that causes a latency of a hundred milliseconds , is this an additive thing ? 
+A:  Or c or is yours hidden in that ? 
+A:  Uh  
+A:  It 's additive . 
+A:  OK . 
+A:  Uh - huh . 
+A:  Mm - hmm . 
+A:  I mean , couldn't , 
+A:  uh  
+A:  I  
+A:  Couldn't you just also  I mean , i if you know that the l the largest latency in the system is two hundred milliseconds , don't you  couldn't you just buffer up that number of frames 
+A:  and then everything uses that buffer ? 
+A:  And that way it 's not additive ? 
+A:  Yeah . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Yeah , I wasn't thinking of that one in particular 
+A:  but more of , you know , if  if there is some part of your system that has to buffer twenty frames , uh , can't the other parts of the system draw out of that buffer and therefore not add to the latency ? 
+A:  Oh ! 
+A:  Hmm . 
+A:  So you have one minimum for each frequency ? 
+A:  Mmm . 
+A:  Mmm . 
+A:  It 'll keep going till  I guess when they run out of disk space , 
+A:  but  
+A:  I think we 're OK . 
+A:  OK , 
+A:  shall we , uh , do digits ? 
+A:  Want to go ahead , Morgan ? 
+A:  OK . 

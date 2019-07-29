@@ -1,0 +1,442 @@
+C:  Ni 
+C:  Other way . 
+C:  We m We may wind up with ver We  we may need versions of all this garbage . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Mmm . 
+C:  Well , we have one more coming . 
+C:  OK . 
+C:  Well , we can start doing it . 
+C:  Um , yeah . 
+C:  No . There was  there was  Let 's see . 
+C:  Oh  
+C:  She got an emai she was notified . 
+C:  Whether she knows <laugh> is another question . 
+C:  Um . 
+C:  So are the people going to be identified by name ? 
+C:  Right . 
+C:  OK . 
+C:  So , then in terms of people worrying about , uh , excising things from the transcript , it 's unlikely . 
+C:  Since it  it does isn't attributed . 
+C:  Oh , I see , 
+C:  but the a but the  but the  
+C:  Yeah . 
+C:  Sure . 
+C:  Right . 
+C:  Right . 
+C:  OK . 
+C:  Mm - hmm . 
+C:  No , I  I wasn't complaining , 
+C:  I just wanted to understand . 
+C:  OK . 
+C:  Right . 
+C:  OK . 
+C:  Right . 
+C:  Right . 
+C:  Right . 
+C:  Um , OK . So why don't you tell us briefly 
+C:  your  give  give your e normal schpiel . 
+C:  OK . 
+C:  No . 
+C:  Yep . 
+C:  By the way , Adam , we will be using the , uh , screen as well . 
+C:  So , you know . 
+C:  Wow ! 
+C:  Organization . 
+C:  So you guys who got email about this  oh f uh , Friday or something about what we 're up to . 
+C:  Oh , this was about  um , inferring intentions from features in context , and the words , 
+C:  like " s go to see " , or " visit " , or some 
+C:  You didn't get it ? 
+C:  I guess these g have got better filters . 
+C:  Cuz I sent it to everybody . 
+C:  You just blew it off . 
+C:  OK . 
+C:  No , OK come in , sit down . 
+C:  If you grab yourself a microphone . 
+C:  Well , you can sign afterwards . 
+C:  Afterwards . 
+C:  And it  it  it  it it also has to be switched on , Nance . 
+C:  It 's on ? 
+C:  OK , good . 
+C:  What ? 
+C:  OK . 
+C:  Not important . 
+C:  So , what is important is that we understand what the proposed task is . 
+C:  And , the  the i uh , Robert and I talked about this some on Friday . 
+C:  And we think it 's well - formed . 
+C:  So we think it 's a well - formed , uh , starter task for this , uh , deeper understanding in the tourist domain . 
+C:  Well , it 's the  it 's  it 's always all of it . 
+C:  So , in general it 's always going to be , the answer is , everywhere . 
+C:  Uh , so the notion is that , uh , this isn't real deep . 
+C:  But it 's deep enough that you can distinguish between these th three quite different kinds of , uh , going to see some tourist thing . 
+C:  And , so that 's  that 's the quote " deep " that we 're trying to get at . 
+C:  And , Robert 's point is that the current front - end doesn't give you any way to  
+C:  Not only doesn't it do it , but it also doesn't give you enough information to do it . 
+C:  It isn't like , if you just took what the front - end gives you , and used some clever inference algorithm on it , you would be able to figure out which of these is going on . 
+C:  So , uh , 
+C:  and this is  Bu - I in general it 's gonna be true of any kind of deep understanding , 
+C:  there 's gonna be contextual things , 
+C:  there 're gonna be linguistic things , 
+C:  there 're gonna be discourse things , 
+C:  and they gotta be combined . 
+C:  And , my idea on how to combine them is with a belief - net , 
+C:  although it may turn out that t some totally different thing is gonna work better . 
+C:  Um , the idea would be that <mouth> you , uh , take your  
+C:  You 're editing your slide ? 
+C:  Oh . 
+C:  Oh . I 'm sorry . 
+C:  OK . So . This is minutes  taking minutes as we go , 
+C:  in his  in his own way . 
+C:  Um , but the p the  
+C:  Anyway . So the thing is , <inbreath> i uh , d naively speaking , you 've  you 've got a  for this little task , a belief - net , 
+C:  which is going to have as output , the conditional pr probability of one of three things , 
+C:  that the person wants to  uh , to View it , to Enter it , or to Tango with it . 
+C:  Um . 
+C:  So that  the  the output of the belief - net is pretty well formed . 
+C:  And , then the inputs are going to be these kinds of things . 
+C:  And , then the question is  
+C:  there are two questions  
+C:  is , uh , one , where do you get this i  information from , 
+C:  and two , what 's the structure of the belief - net ? 
+C:  So what are the conditional probabilities of this , that , and the other , given these things ? 
+C:  And you probably need intermediate nodes . 
+C:  I  we don't know what they are yet . 
+C:  So it may well be that , uh , for example , that , uh , knowing whether  
+C:  Oh , another thing you want is some information abou I think , about the time of day . 
+C:  Now , they may wanna call that part of context . 
+C:  But the time of day matters a lot . 
+C:  And , if things are obviously closed , then , you  
+C:  Pe - people don't wanna enter them . 
+C:  And , if it 's not obvious , you may want to actually uh , point out to people that it 's closed  you know , what they 're g going to is closed and they don't have the option of entering it . 
+C:  So another thing that can come up , and will come up as soon as you get serious about this is , that another option of course is to have a  more of a dialogue . 
+C:  So if someone says something you could ask them . 
+C:  OK . 
+C:  And  Now , one thing you could do is always ask them , 
+C:  but that 's boring . 
+C:  And it also w it also be a pain for the person using it . 
+C:  So one thing you could do is build a little system that , said , " whenever you got a question like that I 've got one of three answers . 
+C:  Ask them which one you want . " 
+C:  OK . 
+C:  But that 's , um , not what we 're gonna do . 
+C:  Oh yeah . 
+C:  You want the  you want the ability to a You want the ability to ask , 
+C:  but what you don't wanna do is onl build a system that always asks every time , 
+C:  and i 
+C:  That 's not getting at the scientific problem , 
+C:  and it 's  
+C:  In general you 're  you know , it 's gonna be much more complex than that . 
+C:  a This is purposely a really simple case . 
+C:  So , uh  
+C:  Yeah . 
+C:  Yeah . S so  so the way that might come up , if you wanna  Suppose you wanted to do that , you might say , " Um , as an intermediate step in your belief - net , is there a Source - Path - Goal schema involved ? " 
+C:  OK ? 
+C:  And if so , uh , is there a focus on the goal ? 
+C:  Or is there a focus on the path ? 
+C:  or something . 
+C:  And that could be , uh , one of the conditiona 
+C:  you know , th the  In some piece of the belief - net , that could be the  the appropriate thing to enter . 
+C:  No . 
+C:  No . See , the M - three - L is not gonna give th 
+C:  What he was saying is , the M - three - L does not have any of that . 
+C:  All it has is some really crude stuff saying , " A person wants to go to a place . " 
+C:  Right . 
+C:  M - three well , M - three - L itself refers to Multimedia Mark - up Language . 
+C:  So we have th w we we we have to have a better w way of referring to  
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  The  
+C:  Well , OK . 
+C:  Yeah . 
+C:  Is - i but they c they call it intention lattice , 
+C:  but tha 
+C:  Anyway . 
+C:  Right . 
+C:  So , th they 're gonna give us some cr uh  or  We can assume that y you get this crude information . 
+C:  About intention , 
+C:  and that 's all they 're going to provide . 
+C:  And they don't give you the kind of object , 
+C:  they don't give you any discourse history , 
+C:  if you want to keep that you have to keep it somewhere else . 
+C:  Right . 
+C:  Well , they  they kee they keep it by their lights . 
+C:  It may  it may or may not be what  what we want . 
+C:  Yeah . 
+C:  If i if  Yeah , if it got as simple as that , yeah . 
+C:  But it wouldn't . 
+C:  Yeah . 
+C:  Yeah . 
+C:  But  
+C:  i Go  go back to the  the uh , th 
+C:  Yeah , that slide . 
+C:  Yeah , well I think we ought to d a As we have all along , d We  we 've been distu distinguishing between situational context , 
+C:  which is what you have as context , 
+C:  and discourse context , 
+C:  which you have as DH , 
+C:  I don't know what the H means . 
+C:  OK . 
+C:  Whatever . 
+C:  So we can work out terminology later . 
+C:  So , they 're  they 're quite distinct . 
+C:  I mean , you need them both , 
+C:  but they 're quite distinct . 
+C:  And , so what we were talking about doing , a a as a first shot , is not doing any of the linguistics . 
+C:  Except to find out what seems to be  useful . 
+C:  So , the  the  the reason the belief - net is in blue , is the notion would be  
+C:  Uh , this may be a bad dis bad idea , 
+C:  but the idea is to take as a first goal , see if we could actually build a belief - net that would make this three way distinction uh , in a plausible way , 
+C:  given 
+C:  these  We have all these transcripts 
+C:  and we 're able to , by hand , extract the features to put in the belief - net . 
+C:  Saying , " Aha ! 
+C:  here 're the things which , if you get them out of  out of the language and discourse , and put them into the belief - net , it would tell you which of these three uh , intentions is most likely . " 
+C:  And if  to actually do that , build it , um  you know , run it  y y run it on the data where you hand - transcribe the parameters . 
+C:  And see how that goes . 
+C:  If that goes well , then we can start worrying about how we would extract them . 
+C:  So  where would you get this information ? 
+C:  And , expand it to  to other things like this . 
+C:  But if we can't do that , then we 're in trouble . 
+C:  I mean th th i i if you can't do this task , 
+C:  um  
+C:  Uh , uh , yeah , or something . 
+C:  Well it  i I if it  if it 's the belief - nets , we we 'll switch to you know , logic or some terrible thing , 
+C:  but I don't think that 's gonna be the case . 
+C:  I think that , uh , if we can get the information , a belief - net is a perfectly good way of doing the inferential combination of it . 
+C:  The real issue is , do what are the factors involved in determining this ? 
+C:  And I don't know . 
+C:  Hold on a s Hold on a second . 
+C:  So , I know . 
+C:  Uh , uh , is it clear what 's going on here ? 
+C:  Take them into account . 
+C:  But  but you don't worry about  h 
+C:  how to extract them . 
+C:  So , f let 's find out which ones we need first , 
+C:  and  
+C:  No . 
+C:  Let 's go back to th Let 's go back to the  the  the slide of data . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  From that task , yeah . 
+C:  So , uh , I think you all know this , but we are going to actually use this little room 
+C:  and start recording subjects probably within a month or something . 
+C:  So , this is not any  lo any of you guys ' worry , 
+C:  except that we may want to push that effort to get information we need . 
+C:  So our job <mouth> is to figure out how to solve these problems . 
+C:  If it turns out that we need data of a certain sort , then the sort of data collection branch can be , uh , asked to do that . 
+C:  And one of the reasons why we 're recording the meeting for these guys is cuz we want their help when we d we start doing uh , recording of subjects . 
+C:  So , yeah  y you 're absolutely right , though . 
+C:  No , you  you will not have , 
+C:  and there it is , 
+C:  and , uh  
+C:  But you know , y y 
+C:  the , um  
+C:  Oh yeah , but  to some extent this is a different discussion . 
+C:  OK ? 
+C:  So . Uh , we  we have to have this discussion of th the experiment , and the data collection , and all that sorta stuff 
+C:  and we do have , um , a student who is a candidate for wizard . 
+C:  Uh , she 's gonna get in touch with me . 
+C:  It 's a student of Eve 's . 
+C:  FEY , 
+C:  Fey ? 
+C:  Spelled FEY . 
+C:  Do you  do you  
+C:  You know her ? 
+C:  OK . 
+C:  Sh - Is sh 
+C:  She 's graduated . 
+C:  Yeah . 
+C:  OK . 
+C:  So , anyway , she 's looking for some more part time work w while she 's waiting actually for graduate school . 
+C:  And she 'll be in touch . 
+C:  So we may have someone , uh , to do this , 
+C:  and she 's got you know , some background in  in all this stuff . 
+C:  And is a linguist st 
+C:  and , so 
+C:  So . <mouth> That 's  So , Nancy , we 'll have an At some point we 'll have another discussion on exactly wha t t you know , how that 's gonna go . 
+C:  And um , Jane , but also , uh , Liz have offered to help us do this , uh , data collection and design and stuff . 
+C:  So , when we get to that we 'll have some people doing it that know what they 're doing . 
+C:  So , we that 's part of what we 'll have to figure out . 
+C:  But , uh , 
+C:  the  The problem that I was tr gonna try to focus on today was , let 's suppose by magic you could collect dialogues in which , one way or the other , you were able to , uh , figure out both the intention , 
+C:  and set the context , 
+C:  and know what language was used . 
+C:  So let 's suppose that we can get that kind of data . 
+C:  Um . 
+C:  The issue is , can we find a way to , basically , featurize it 
+C:  so that we get some discrete number of features so that , uh , when we know the values to all those features , or as many as possible , we can w come up with the best estimate of which of the , in this case three little intentions , are most likely . 
+C:  Th - the terminology we 're using is to  
+C:  Go back . 
+C:  To v 
+C:  to View it . 
+C:  OK ? 
+C:  To Enter it . 
+C:  Now those  It seems to me those are cl you c you have no trouble with those being distinct . 
+C:  " Take a picture of it " 
+C:  you  you might well want to be a really rather different place than entering it . 
+C:  And , for an object that 's at all big , uh , sort of getting to the nearest part of it uh , could be quite different than either of those . 
+C:  Just sort of  
+C:  Well . 
+C:  Well , anyway . 
+C:  So  
+C:  Right . 
+C:  Right . 
+C:  Is there a construction , or the kind of object , 
+C:  or w uh , anything else that 's in the si It 's either in the  in the s the discourse itself or in the context . 
+C:  So if it turns out that , whatever it is , you want to know whether the person 's uh , a tourist or not , OK ? that becomes a feature . 
+C:  Now , how you determine that is another issue . 
+C:  But fo for the current problem , it would just be , " OK , if you can be sure that it 's a tourist , versus a businessman , versus a native , " or something , uh , that would give you a lot of discriminatory power 
+C:  and then just have a little section in your belief - net that said , " pppt ! " 
+C:  Though sin f in the short run , you 'd set them , 
+C:  and see ho how it worked , 
+C:  and then in the longer run , you would figure out how you could derive them . From previous discourse or w any anything else you knew . 
+C:  OK . So , first of all is , 
+C:  uh , do e either of you guys , you got a favorite belief - net that you 've , you know , played with ? 
+C:  JavaBayes or something ? 
+C:  OK . 
+C:  Well , anyway . f Get one . 
+C:  OK ? So  y so one of th one of the things we wanna do is actually , uh , pick a package , 
+C:  doesn't matter which one , 
+C:  uh , presumably one that 's got good interactive abilities , 
+C:  cuz a lot of what we 're gonna be d 
+C:  You know , we don't need the one that 'll solve massive , uh , belief - nets quickly . 
+C:  d w 
+C:  These are not gonna get big in  in the foreseeable future . 
+C:  But we do want one in which it 's easy to interact with and , uh , modify . 
+C:  Because i that 's  A lot of what it 's gonna be , is , um , playing with this . 
+C:  And probably one in which it 's easy to have , um , what amounts to transcript files . 
+C:  So that if  if we have all these cases  
+C:  OK ? 
+C:  So we make up cases that have these features , 
+C:  OK , and then you 'd like to be able to say , " OK , here 's a bunch of cases "  
+C:  There 're even ones tha that you can do learning 
+C:  OK ? So you have all their cases and  and their results 
+C:  and you have a  algorithms to go through and run around trying to set the  the probabilities for you . 
+C:  Um , 
+C:  probably that 's not worth it . 
+C:  I mean , my guess is we aren't gonna have enough data that 's good enough to make the  these data fitting ones worth it , 
+C:  but I don't know . 
+C:  So I would say you guy the first task for you two guys is to um , pick a package . 
+C:  OK , and you wanna it s You know , the standard things 
+C:  you want it stable , you want it  
+C:  yeah , @ @ . 
+C:  And , as soon as we have one , we can start trying to , uh , make a first cut at what 's going on . 
+C:  But it  what I like about it is it 's very concrete . 
+C:  OK ? We  we have a  we know what the outcomes are gonna be , 
+C:  and we have some  some data that 's loose , 
+C:  we can use our own intuition , 
+C:  and see how hard it is , 
+C:  and , importantly , what intermediate nodes we think we need . 
+C:  So it  if it turns out that just , thinking about the problem , you come up with things you really need to  You know , this is the kind of thing that is , you know , an intermediate little piece in your belief - net . That 'd be really interesting . 
+C:  No , th It turns out that there is a , uh  The new end of Java libraries . 
+C:  OK , and it turns out one called 
+C:  Which is one that fair  people around here use a fair amount . 
+C:  I have no idea whether that 's  
+
+C:  The obvious advantage of that is that you can then , relatively easily , get all the other Java packages for GUIs or whatever else you might want to do . 
+C:  So that i that 's I think why a lot of people doing research use that . 
+C:  But it may not be  
+C:  I have no idea whether that 's the best choice 
+C:  an and there 're plenty of people around , students in the department who , you know , live and breathe Bayes - nets . 
+C:  So , uh , 
+C:  Right . 
+C:  It 's OK . 
+C:  So , yeah , Kevin would be a good person to start with . 
+C:  Nancy knows him well . 
+C:  I don't know I don't know whether you guys have met Kevin yet or not , 
+C:  but , uh  
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Yeah . 
+C:  So , yeah , we 're sort of <mike noise> committed to XML as the kind of , uh , interchange . 
+C:  But that 's , you know , not a big deal . 
+C:  So , in terms of  of  interchanging in and out of any module we build , It 'll be XML . 
+C:  And if you 're going off to queries to the ontology , for example , you 'll have to deal with its interface . 
+C:  But that 's  that 's fine 
+C:  an and um , 
+C:  all of these things have been built with much bigger projects than this in mind . 
+C:  So they  they have worked very hard . 
+C:  It 's kind of blackboards and multi - wave blackboards 
+C:  and ways of interchanging and registering your 
+C:  a And so forth . 
+C:  So , 
+C:  that I don't think is even worth us worrying about just yet . 
+C:  I mean if we can get the core of the thing to work , in a way that we 're comfortable with , then we ca we can get in and out of it with , uh , XML , um , little descriptors . 
+C:  I believe . 
+C:  I don't  I don't see  
+C:  Uh , you could have an X  yeah , you could make and XML format for that . Sure . 
+C:  That  that  
+C:  um , 
+C:  you know , feature value XML format is probably as good a way as any . 
+C:  So it 's als Yeah , I guess it 's also worth , um , while you 're poking around , poke around for XML packages that um , do things you 'd like . 
+C:  Sure . 
+C:  And the question is , d you c you  you 'll have to l We 'll have to l 
+C:  That should be  ay We should be able to look at that  
+C:  Yeah . 
+C:  It 'd be nice , but  but I  I  I do I don't wanna count on it . 
+C:  I mean , you can't  you can't run your project based on the speculation that  that the data will come , 
+C:  and you don't have to actually design the nets . 
+C:  Could happen . 
+C:  Yeah . So in terms of  of the , um  the  what the SmartKom gives us for M - three - L packages , it could be that they 're fine , or it could be eeh . 
+C:  You don't  You know , you don't really like it . 
+C:  So we 're not  we 're not abs we 're not required to use their packages . 
+C:  We are required at the end to give them stuff in their format , 
+C:  but hey . 
+C:  Um , 
+C:  it 's , uh  
+C:  It doesn't control what you do in you know , internally . 
+C:  Huh ? 
+C:  Yeah bu w I 'd like that this  y yeah , this week , to ha to n to <inbreath> have y guys , uh , you know , pick <mouth> the  y you know , belief - net package 
+C:  and tell us what it is , and give us a pointer so we can play with it or something . 
+C:  And , then as soon as we have it , I think we should start trying to populate it for this problem . 
+C:  Make a first cut at , you know , what 's going on , 
+C:  and probably the ea easiest way to do that is some on - line way . 
+C:  I mean , you can f figure out whether you wanna make it a web site 
+C:  or  You know , how 
+C:  OK , I wasn't . 
+C:  Yeah . 
+C:  Right . 
+C:  Well , y Well , or both of them speak . 
+C:  We don't care . 
+C:  Well , I 'd like to also , though , uh , ha have a first cut at what the belief - net looks like . 
+C:  Even if it 's really crude . 
+C:  OK ? 
+C:  So , you know , here a here are  
+C:  Right . Yeah . 
+C:  And , as I said , what I 'd like to do is , 
+C:  I mean , what would be really great is you bring it in  If  if  if we could , uh , in the meeting , say , you know , " Here 's the package , 
+C:  here 's the current one we have , " 
+C:  uh , you know , " What other ideas do you have ? " 
+C:  and then we can think about this idea of making up the data file . 
+C:  Of , 
+C:  uh , you know , get a  t a p tentative format for it , 
+C:  let 's say XML , that says , l you know , " These are the various scenarios we 've experienced . " 
+C:  We can just add to that 
+C:  and there 'll be this  this file of them 
+C:  and when you think you 've got a better belief - net , You just run it against this , um  this data file . 
+C:  Oh , yeah , unt until we know more . 
+C:  Yeah . 
+C:  Yeah . So the answer , Johno , is that these are , at the moment , separate . 
+C:  Uh , what one hopes is that when we understand how the analyzer works , we can both worry about converting it to English and worry about how it could ex extract the parameters we need for the belief - net . 
+C:  Oh , yeah . I don't know . 
+C:  n None of this is i n Neither of these projects has got a real tight time - line , 
+C:  in the sense that over the next month there 's a  there 's a deliverable . 
+C:  OK . 
+C:  S so uh , it 's opportu in that sense it 's opportunistic . 
+C:  If  if  you know , if we don't get any information for these guys f for several weeks then we aren't gonna sit around , you know , wasting time , trying to do the problem or guess what they  
+C:  You know , just pppt ! 
+C:  go on and do other things . 
+C:  Yep . 
+C:  Probably not then , 
+C:  cuz y you probably can't drop the mail there anyway . 
+C:  Yeah . 
+C:  Clear ? 
+C:  Of course they use the sample data . 
+C:  OK . We can end the meeting 
+C:  and call Adam , 
+C:  and then we wanna s look at some filthy pictures of Heidelberg . 
+C:  We can do that as well . 
+C:  Uh , is that OK ? 
+C:  Alright . 
+C:  Oh . 
+C:  Ni 

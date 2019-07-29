@@ -1,0 +1,241 @@
+A:  Uh , well , we started late . 
+A:  OK , we 're on . 
+A:  So , I think this is gonna be a pretty short meeting because I have four agenda items , 
+A:  three of them were requested by Jane who is not gonna be at the meeting today . 
+
+A:  So . <laugh> The uh first was transcription status . 
+A:  Does anyone besides Jane know what the transcription status is ? 
+A:  Ugh ! 
+A:  C can I have a pen ? 
+A:  Yep . 
+A:  No , no . 
+A:  We haven't done that process . 
+A:  So . They ' r they 're doing the full transcription process . 
+A:  Right . 
+A:  Yep , sounds familiar . 
+A:  Make sure it 's right . 
+A:  Can you mail that out to the list ? 
+A:  Oh , OK , OK . 
+A:  Yeah , I haven't done that . 
+A:  So . I have lots of stuff to add that 's just in my own directory . 
+A:  I 'll try to get to that . 
+A:  OK . 
+A:  So Jane also wanted to talk about participant approval , but I don't really think there 's much to talk about . 
+A:  I 'm just gonna do it . 
+A:  And uh , if anyone objects too much then they can do it instead . 
+A:  I 'm gonna send out to the participants , uh , with links to web pages which contain the transcripts and allow them to  suggest edits . 
+A:  And then bleep them out . 
+A:  For the ones that we have . 
+A:  Um  
+A:  Nope , they 'll have access to the audio also . 
+A:  I mean that 's my intention . 
+A:  Because the transcripts might not be right . 
+A:  So you want people to be able to listen to them . 
+A:  Oh , that 's a good point . 
+A:  That 's a good point . 
+A:  Yeah , it 's  it 's probably going to have to be the uncompressed versions because , uh , uh , it takes too long to do random access decompression . 
+A:  Well , that was the other point . 
+A:  Yep , that 's another agenda item . 
+A:  So , uh  
+A:  But that is a good point so we 'll get to that , too . 
+A:  Um , DARPA demo status , not much to say . 
+A:  The back - end stuff is working out fine . 
+A:  It 's more or less ready to go . 
+A:  I 've added some stuff that uh indes indexes by the meeting type MR , EDU , et cetera 
+A:  and also by the user ID . 
+A:  So that the front - end can then do filtering based on that as well . 
+A:  Uh  The back - end is uh , going more slowly as I s I think I said before just cuz I 'm not much of a Tcl - TK programmer . 
+A:  And uh Dave Gelbart says he 's a little too busy . 
+A:  So I think Don and I are gonna work on that and  and you and I can just talk about it off - line more . 
+A:  But uh  the back - end was pretty smooth . 
+A:  So I think , we 'll have something . 
+A:  It may not be as  As pretty as we might like , but we 'll have something . 
+A:  Yeah . 
+A:  Yeah , he  he actually  he volunteered but then he s then he retracted it . 
+A:  So . 
+A:  Oh well . 
+A:  Um  
+A:  Oh , cool . 
+A:  For a demo ? 
+A:  Yeah , sounds good . 
+A:  So it might just be slides . 
+A:  Well Transcriber is Tcl - TK , very generic with Snack , 
+A:  so basically anything you can get Snack to run on , it will work . 
+A:  Well I thought it was packaged with Transcriber ? 
+A:  Oh . 
+A:  Ah . 
+A:  Patch . 
+A:  Ugh ! 
+A:  We have  
+A:  Yeah b it 's just hasn't made it into the release yet . 
+A:  It 'd be easy enough to add that . 
+A:  Again it 's  it 's  It 's more Tcl - T 
+A:  So someone who 's familiar with Tcl - TK has to do it , 
+A:  but uh , it wouldn't be hard to do . 
+A:  Yep . 
+A:  But it  it seems to me that I c 
+A:  It doesn't seem like having that real time is that necessary . 
+A:  So yo It seems to me you could do images . 
+A:  Yeah , jus Yeah . 
+A:  It just seems to me jus 
+A:  Sure , but I don't think  I  You can do all that just statically in 
+A:  Just record the audio clip and show an image and I think that 's  
+A:  And the last i item on the agenda is disk issues yet again . 
+A:  So , we 're doing OK on backed up . 
+A:  We 're  We 're only about thirty percent on the second disk . 
+A:  So , uh , we have a little bit of time before that becomes critical , 
+A:  but we are like ninety five percent , ninety eight percent on the scratch disks for the expanded meetings . 
+A:  And , my original intention was like we would just delete them as we needed more space , 
+A:  but unfortunately we 're in the position where we have to deal with all the meeting data  all at once , in a lot of different ways . 
+A:  Yeah , there 're a lot of transcribers , 
+A:  so all of those need to be expanded , 
+A:  and then people are doing chunking and I want to do uh , uh , uh , the permission forms , 
+A:  so I want those to be live , so there 's a lot of data that has to be around . 
+A:  Um  And Jane was gonna talk to , uh , Dave Johnson about it . 
+A:  One of the things I was thinking is we  we just got these hundred  
+A:  alright , excuse me  
+A:  ten , uh SPARC - Blade SUN - Blades . 
+A:  They came in but they 're not set up yet . 
+A:  And so it seems to me we could hang scratch disk on those  because they 'll be in the machine room , 
+A:  they 'll be on the fast connection to the rest of the machines . 
+A:  And if we just need un - backed - up space , we could just hang disks off them . 
+A:  Because there 's no more room in the disk racks on Abbott . 
+A:  Well , but the SUN - Blades have spare drive bays . 
+A:  Just put them in . 
+A:  Sure . 
+A:  Yeah . 
+A:  Cuz the SUN  uh , these SUN - Blades take commodity hard drives . 
+A:  So you can just go out and buy a PC hard drive and stick it in . 
+A:  Well , I mean there are lots of long term solutions . 
+A:  What I 'm looking for is where do we s expand the next meeting ? 
+A:  Oh , I didn't know he had left already . 
+A:  Oh , oh well . 
+A:  You  we need about a gig per meeting . 
+A:  Alright ! 
+A:  What 's your computer 's name ? 
+A:  So it  And you have an X drives installed ? 
+A:  OK . 
+A:  And you 're o you 're offering ? 
+A:  OK . 
+A:  Which one was that , X  G ? 
+A:  X  G ? 
+A:  OK . 
+A:  But that won't be getting any bigger , 
+A:  will it ? 
+A:  Not  not for long . 
+A:  Yeah , it 's probably  Probably only about four gig is on X  on your X drive , 
+A:  but we 'll definitely take it up if you  
+A:  Great . 
+A:  OK , so that will get us through the next couple days . 
+A:  Yep . 
+A:  At least . 
+A:  The " more disk space " button ? 
+A:  Yep . 
+A:  Half a gig . 
+A:  For all of them . 
+A:  I would like to . 
+A:  Yep . 
+A:  And put it where ? 
+A:  Yep . 
+A:  Wa - a I know what they want . 
+A:  The sysadmins would prefer to have one external drive per machine . 
+A:  So they don't want to stack up external drives . 
+A:  Um   And then they want everything else in the machine room . 
+A:  So the question is where are you gonna hang them ? 
+A:  Right . 
+A:  Yep . 
+A:  Yep . 
+A:  But I  I know that  generally their first priority has been for backed up disk . 
+A:  And so I think what he 's been concentrating on is uh the back  the  back up system , rather than on new disk . 
+A:  So . 
+A:  Which  
+A:  Yeah really . 
+A:  Popcorn . 
+A:  Yeah , it 's just  It 's not on the net , so it 's a little  awkward 
+A:  It 's not  
+A:  It 's behind lots of fire walls that don't allow any services through except S S 
+A:  Yep . 
+A:  And also on the list is to get it into the normal ICSI net , 
+A:  but Who knows when that will happen ? 
+A:  No , the  the problem with that apparently is that they don't currently have a wire running to that back room  that goes anywhere near one of the ICSI routers . 
+A:  So , they actually have to run a wire somewhere . 
+A:  But Dave has to do all of them . 
+A:  Oh my ! 
+A:  And that 's all I have . 
+A:  This is the fifteenth ? 
+A:  So just a week from tomorrow ? 
+A:  OK . 
+A:  I 'm interested . 
+A:  Jane , I think . 
+A:  No . 
+A:  If we talked about it in this meeting . 
+A:  The  Nod off ? 
+A:  Yeah , I would as  I would guess . 
+A:  Or just alternate the focus . 
+A:  Yeah , so on even weeks have  basic  on data . 
+A:  I am . 
+A:  Oh sor 
+A:  Well , except that we keep going for our full time . 
+A:  Yeah . 
+A:  Ugh . 
+A:  I don't . 
+A:  Let 's read digits and go . 
+A:  Bridge . 
+A:  OK ? 
+A:  No , no that would be for next week . 
+A:  Mmm . 
+A:  Wow . 
+A:  Just with ROVER ? 
+A:  Mm - hmm . 
+A:  Yeah , it 's pretty  impressive . 
+A:  We clearly gotta add a few more features , though . 
+A:  No , uh front - end features . 
+A:  You know we did PLP and Mel Cepstra . 
+A:  Let 's , you know , try RASTA and MSG , and  
+A:  Cool . 
+A:  Right . 
+A:  I don't know . 
+A:  I could also put in  uh focus condition zero from Hub - four from Broadcast News , which is mostly prepared speech . 
+A:  It 's not exactly read speech but it 's pretty darn close . 
+A:  Yeah . 
+A:  That 's right . 
+A:  Yeah . 
+A:  Hmm . 
+A:  Yep . 
+A:  Try it . 
+A:  You run it ? 
+A:  Keep  keep both versions ? 
+A:  See which one 's better ? 
+A:  I could make arguments either way . 
+A:  You know , it 's  
+A:  Sort of given up guessing . 
+A:  Although , I mean we 've done it with  When we were combining with the Cambridge recurrent neural net , embedded training made it worse . 
+A:  Which I 've never figured out . 
+A:  I think it 's a bug . 
+A:  Yep . 
+A:  Yeah . 
+A:  No 
+A:  they were  they were comparable . 
+A:  They were very close . 
+A:  That 's what I said . 
+A:  Yep . 
+A:  Right . 
+A:  Ah yeah . 
+A:  That 's another big difference . 
+A:  I 'm not sure what this 'll mean . 
+A:  Hello ? 
+A:  Excuse me ? 
+A:  Alright . 
+A:  Wrong number . 
+A:  Mm - hmm . 
+A:  But not by a lot . 
+A:  Vast majority is from the input unit . 
+A:  Right , because you used the context windows 
+A:  and so the input to hidden is much , much larger . 
+A:  It 'll be faster . 
+A:  We 're just waiting for you to leave . 
+A:  Anything else ? 
+A:  OK . 
+A:  If  
+A:  yeah that 's right . 
+A:  Uh , well , we started late . 

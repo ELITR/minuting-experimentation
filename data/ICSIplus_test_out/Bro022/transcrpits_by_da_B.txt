@@ -1,0 +1,350 @@
+B:  O K . 
+B:  I think for two years we were two months , uh , away from being done . 
+B:  Uh , the , uh , TORRENT chip . 
+B:  Yeah . 
+B:  We were two  
+B:  we were  
+B:  Uh , uh , we went through it  Jim and I went through old emails at one point 
+B:  and  and for two years there was this thing saying , yeah , we 're  we 're two months away from being done . 
+B:  It was very  very believable schedules , too . 
+B:  I mean , we went through and  with the schedules  and we  
+B:  Yeah . 
+B:  Oh , yeah . 
+B:  It was very true . 
+B:  Yeah . 
+B:  So we  probably should wait for him to come before we do his . 
+B:  Yeah . 
+B:  Yeah . 
+B:  All in favor 
+B:  Uh , I don't do anything . 
+B:  I  
+B:  No , I mean , I  I 'm involved in discussions with  with people about what they 're doing , 
+B:  but I think they 're  since they 're here , they can talk about it themselves . 
+B:  I had another thought just now , 
+B:  which is , uh , remember we were talking before about  we were talking in our meeting about , uh , this stuff that  some of the other stuff that Avendano did , 
+B:  where they were , um , getting rid of low - energy  sections ? 
+B:  Um , 
+B:  uh , 
+B:  if you  
+B:  if you did a high - pass filtering , as Hirsch did in  late eighties to reduce some of the effects of reverberation , uh , uh , Avendano and Hermansky were arguing that , uh , perhaps one of the reasons for that working was ma may not have even been the filtering so much but the fact that when you filter a  an all - positive power spectrum you get some negative values , 
+B:  and you gotta figure out what to do with them if you 're gonna continue treating this as a power spectrum . 
+B:  So , what  what Hirsch did was , uh , set them to zero  
+B:  set the negative values to zero . 
+B:  So if you imagine a  a waveform that 's all positive , 
+B:  which is the time trajectory of energy , 
+B:  um , and , uh , shifting it downwards , and then getting rid of the negative parts , that 's essentially throwing away the low - energy things . 
+B:  And it 's the low - energy parts of the speech where the reverberation is most audible . 
+B:  You know , you have the reverberation from higher - energy things showing up in  
+B:  So in this case you have some artificially imposed  reverberation - like thing . 
+B:  I mean , you 're getting rid of some of the other effects of reverberation , 
+B:  but because you have these non - causal windows , you 're getting these funny things coming in , 
+B:  uh , at n 
+B:  And , 
+B:  um , 
+B:  what if you did  ? 
+B:  I mean , there 's nothing to say that the  the processing for this re - synthesis has to be restricted to trying to get it back to the original , according to some equation . 
+B:  I mean , you also could , uh , just try to make it nicer . 
+B:  And one of the things you could do is , you could do some sort of VAD - like thing 
+B:  and you actually could take very low - energy sections and set them to some  some , uh , very low or  or near zero  value . 
+B:  I mean , 
+B:  uh , I 'm just saying if in fact it turns out that  that these echoes that you 're hearing are , uh  
+B:  or pre - echoes , 
+B:  whichever they are  
+B:  are  are , uh , part of what 's causing the problem , you actually could get rid of them . 
+B:  Be pretty simple . 
+B:  I mean , you do it in a pretty conservative way 
+B:  so that if you made a mistake you were more likely to  keep in an echo than to throw out speech . 
+B:  So , it 's this room . 
+B:  It 's  it 's this room . 
+B:  So  
+B:  so it 's  these are just microphone  
+B:  this micro close microphone and a distant microphone , he 's doing these different tests on . 
+B:  Uh , we should do a measurement in here . 
+B:  I g think we never have . 
+B:  I think it 's  I would guess , uh , point seven , point eight seconds f uh , R T 
+B:  something like that ? 
+B:  But it 's  you know , it 's this room . 
+B:  So . 
+B:  Uh . 
+B:  But the other thing is , he 's putting in  w 
+B:  I was using the word " reverberation " in two ways . 
+B:  He 's also putting in , uh , a  
+B:  he 's taking out some reverberation , 
+B:  but he 's putting in something , 
+B:  because he has  averages over multiple windows stretching out to twelve seconds , 
+B:  which are then being subtracted from the speech . 
+B:  And since , you know , what you subtract , sometimes you 'll be  you 'll be subtracting from some larger number 
+B:  and sometimes you won't . 
+B:  And  
+B:  So you can end up with some components in it that are affected by things that are seconds away . 
+B:  Uh , and if it 's a low  energy compo portion , you might actually hear some  funny things . 
+B:  I don't think just multiplying the signal by two would have any effect . 
+B:  Yeah . 
+B:  I mean , I think if you really have louder signals , what you mean is that you have  better signal - to - noise ratio . 
+B:  So if what you 're doing is improving the signal - to - noise ratio , then it would be better . 
+B:  But just it being bigger if  with the same signal - to - noise ratio  
+B:  No . 
+B:  Well , yeah . 
+B:  But it 's trained and tested on the same thing . 
+B:  So if the  if the  if you change <breath> in both training and test , the absolute level by a factor of two , it will n have no effect . 
+B:  Oh , I see . 
+B:  OK . 
+B:  Well , I don't understand then . 
+B:  Yeah . 
+B:  Uh , no . 
+B:  I mean , <inbreath> uh , there 's  there 's nothing inherent about removing  if you 're really removing , 
+B:  uh , r uh , then I don't  see how that would make it louder . 
+B:  So it might be just some  
+B:  Yeah . 
+B:  It might just be some artifact of the processing that  that , uh , if you 're  
+B:  Uh , yeah . 
+B:  I don't know . 
+B:  Well , you know , there is this . 
+B:  Wait a minute . 
+B:  It  it  i maybe  
+B:  i 
+B:  If , um  
+B:  Subtracting the  the mean log spectrum is  is  is like dividing by the spectrum . 
+B:  So , depending what you divide by , if your  if s your estimate is off and sometimes you 're  you 're  you 're getting a small number , you could make it bigger . 
+B:  So , it 's  it 's just a  a question of  
+B:  there 's  It  it could be that there 's some normalization that 's missing , 
+B:  or something 
+B:  to make it  
+B:  Uh , y you 'd think it shouldn't be larger , 
+B:  but maybe in practice it is . 
+B:  That 's something to think about . 
+B:  I don't know . 
+B:  I 'm sorry , 
+B:  was his point eight percent , er , a  a result on testing on Macrophone or  or training ? 
+B:  Oh . 
+B:  So that was done already . 
+B:  So we were  
+B:  Uh , and it 's point eight ? 
+B:  OK . 
+B:  OK . 
+B:  Oh , that 's a lot better . 
+B:  So , what  w ? 
+B:  Hmm . 
+B:  Yeah . 
+B:  But this  
+B:  uh , uh , uh , no . 
+B:  Because , uh , there 's a sample and hold in the A - toD. 
+B:  And these period these typically do have a DC offset . 
+B:  And  and they can be surprisingly large . 
+B:  It depends on the electronics . 
+B:  Yeah . The microphone isn't gonna pass any DC . 
+B:  But  but , 
+B:  typi 
+B:  you know , unless  
+B:  Actually , there are  instrumentation mikes that  that do pass  go down to DC . 
+B:  But  but , 
+B:  uh , 
+B:  no , it 's the electronics . 
+B:  And they  and  
+B:  then there 's amplification afterwards . 
+B:  And you can get , 
+B:  I think it was  
+B:  I think it was in the  Wall Street Journal data that  that  
+B:  I can't remember , one of the DARPA things . 
+B:  There was this big DC - DC offset 
+B:  we didn't  we didn't know about for a while , while we were  messing with it . 
+B:  And we were getting these terrible results . 
+B:  And then we were talking to somebody and they said , " Oh , yeah . Didn't you know ? 
+B:  Everybody knows that . 
+B:  There 's all this DC offset in th " 
+B:  So , yes . 
+B:  You can have DC offset in the data . 
+B:  Yeah . 
+B:  See , we have a different interpretation of this . 
+B:  He says it doesn't work . 
+B:  I said , I think it works magnificently , 
+B:  but just not for the task we intended . 
+B:  Uh , it gets rid of the speech . 
+B:  Uh , it leaves  you know , it leaves the junk . 
+B:  I mean , I  I think it 's  it 's tremendous . 
+B:  You see , all he has to do is go back and reverse what he did before , 
+B:  and he 's really got something . 
+B:  Ex - exactly . 
+B:  Yeah , you got it . 
+B:  So , it 's  it 's a general rule . 
+B:  Just listen very carefully to what I say 
+B:  and do the opposite . 
+B:  Including what I just said . 
+B:  Well , it sounds like they also have  
+B:  he  he 's saying they have all these , uh , uh , different kinds of adaptation . 
+B:  You know , they have channel adaptation . 
+B:  They have speaker adaptation . 
+B:  Yeah . Yeah . 
+B:  I think it 's probably more than that . 
+B:  I mean , so they  they have  I  I thin think they use these , uh , uh , genone things . 
+B:  So there 's  there 's these kind of , uh , uh , pooled models 
+B:  and  and they can go out to all sorts of dependencies . 
+B:  So . 
+B:  They have tied states 
+B:  and I think  
+B:  I  I  I don't real I 'm talk I 'm just guessing here . 
+B:  But I think  I think they  they don't just have triphones . 
+B:  I think they have a range of  of , uh , dependencies . 
+B:  So is that  ? Uh , are  are these results comparable ? 
+B:  So you  you were getting with the , uh , Aurora baseline something like two point four percent  on clean TI - digits , when , uh , training the SRI system with clean TR digits   TI - digits . 
+B:  Right ? 
+B:  And  
+B:  Yeah . 
+B:  And , so , is your two point seven comparable , 
+B:  where you 're , uh , uh , using , uh , the submitted system ? 
+B:  OK . 
+B:  So it 's  about the same , 
+B:  maybe a little worse . 
+B:  I 'm sorry . 
+B:  You  you were HTK . 
+B:  Right ? 
+B:  OK . 
+B:  That 's right . 
+B:  So  
+B:  OK , 
+B:  so  the comparable number then , uh  for what you were talking about then , since it was HTK , would be the  um , two point f 
+B:  Oh , right , right , right , right . 
+B:  Right . Right , right , right . 
+B:  OK . 
+B:  Alright . 
+B:  So  
+B:  He 's doing some  different things . 
+B:  Yes . 
+B:  OK , 
+B:  good . 
+B:  So they are helping . 
+B:  That 's good to hear . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  You 'd have to train the SRI system with  with all the different languages . 
+B:  It 'd be a  lot of work . 
+B:  That 's the only thing . 
+B:  That 's true , 
+B:  but I think that also when we 've had these meetings week after week , oftentimes people have not done the full arrange of things 
+B:  because  on  on whatever it is they 're trying , because it 's a lot of work , even just with the HTK . 
+B:  So , it 's  it 's a good idea , 
+B:  but it seems like  it makes sense to do some pruning 
+B:  first with a  a test or two that makes sense for you , 
+B:  and then  take the likely candidates and go further . 
+B:  I i Just to clarify something for me . 
+B:  I 
+B:  They were supp Supposedly , in the next evaluation , they 're going to be supplying us with boundaries . 
+B:  So does any of this matter ? 
+B:  I mean , other than our interest in it . 
+B:  Uh  
+B:  Do we  ? I mean , is there some reason that we think that 's the case ? 
+B:  Yeah . 
+B:  Oh , yeah . 
+B:  But maybe we 'll get some insight on that when  when , uh , the gang gets back from Crete . 
+B:  Because  there 's lots of interesting problems , of course . 
+B:  And then the thing is if  if they really are going to have some means of giving us  fairly tight , uh , boundaries , then that won't be so much the issue . 
+B:  Um 
+B:  But <mouth> I don't know . 
+B:  Mm - hmm . 
+B:  Right . 
+B:  Right . 
+B:  Yeah . 
+B:  So if you could get at some of that , uh  
+B:  although that 'd be hard . 
+B:  But  but  
+B:  Yeah . 
+B:  Right . 
+B:  OK . 
+B:  Mm - hmm . 
+B:  Mmm . 
+B:  Cuz I would have thought that having some kind of spectral  information , 
+B:  uh  
+B:  uh , 
+B:  you know , in the old days people would use energy 
+B:  and zero crossings , for instance  uh , would give you some  better performance . 
+B:  Right ? 
+B:  Cuz you might have low - energy fricatives or  or , uh  stop consonants , or something like that . 
+B:  Uh . 
+B:  Oh , that if you d if you use purely energy and don't look at anything spectral , then you don't have a good way of distinguishing between low - energy speech components and  nonspeech . 
+B:  And , um , 
+B:  just as a gross generalization , most nonsp many nonspeech noises have a low - pass kind of characteristic , 
+B:  some sort of slope . 
+B:  And  and most , um , low - energy speech components that are unvoiced have a  a high - pass kind of characteristic  
+B:  an upward slope . 
+B:  So having some kind of a  
+B:  uh , you know , at the beginning of a  of a  of an S sound for instance , just starting in , it might be pretty low - energy , 
+B:  but it will tend to have this high - frequency component . 
+B:  Whereas , <clears throat> a  a lot of rumble , and background noises , and so forth will be predominantly low - frequency . 
+B:  Uh , you know , by itself it 's not enough to tell you , 
+B:  but it plus energy is sort of  
+B:  it plus energy plus timing information is sort of  
+B:  I mean , if you look up in Rabiner and Schafer from like twenty - five years ago or something , that 's sort of  what they were using then . 
+B:  So it 's  it 's not a  
+B:  Mm - hmm . 
+B:  Well , I guess  
+B:  I mean , 
+B:  one could imagine combining them in different ways . 
+B:  But  but , 
+B:  I guess what you 're saying is that the  the MLP - based one has the spectral information . 
+B:  So . 
+B:  Well , you can imagine  
+B:  Is  ? 
+B:  Right . 
+B:  Right . 
+B:  And that might not be optimal , 
+B:  but  
+B:  but  I mean , I guess in principle what you 'd want to do is have a  <inbreath> uh , a probability estimated by each one 
+B:  and  and put them together . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Hmm . 
+B:  OK . 
+B:  This is cubic root of power spectra ? 
+B:  So , if you have this band - pass filter , you probably get n you get negative values . 
+B:  Right ? 
+B:  OK . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Uh , 
+B:  last week you were also talking about building up the subspace  stuff ? 
+B:  OK . 
+B:  Hmm ? 
+B:  The other thing  is  
+B:  So  so , in  i i 
+B:  and  
+B:  Not  
+B:  and C - zero would be a different  
+B:  So you could do a different normalization for C - zero than for other things anyway . 
+B:  I mean , the other thing I was gonna suggest is that you could have  two kinds of normalization with  with , uh , different time constants . 
+B:  So , 
+B:  uh , 
+B:  you could do some normalization <inbreath> s uh , before the VTS , 
+B:  and then do some other normalization after . 
+B:  I don't know . 
+B:  But  but C - zero certainly acts differently than the others do , 
+B:  so that 's  
+B:  Uh - huh . 
+B:  Uh - huh . 
+B:  Yeah . 
+B:  Yeah . Well , you 're  I think you 're the first one here to work with VTS , 
+B:  so , 
+B:  uh , maybe we could call someone else up who has , 
+B:  ask them their opinion . 
+B:  Uh , 
+B:  I don't  I don't have a good feeling for it . 
+B:  Um . 
+B:  You  you wouldn't even need to switch to cepstra . 
+B:  Right ? 
+B:  I mean , you can just sort of normalize the  
+B:  Yeah . 
+B:  Yeah . 
+B:  And then you have  one number which is very dependent on the level cuz it is the level , 
+B:  and the other which isn't . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Sure . 
+B:  I mean , one of the things we 've talked about  maybe it might be star time to start thinking about pretty soon , is as we look at the pros and cons of these different methods , how do they fit in with one another ? 
+B:  Because  we 've talked about potentially doing some combination of a couple of them . 
+B:  Maybe  maybe pretty soon we 'll have some sense of what their  characteristics are , 
+B:  so we can see what should be combined . 
+B:  OK . 
+B:  Why don't we read some digits ? 
+B:  Sure . 
+B:  O K . 

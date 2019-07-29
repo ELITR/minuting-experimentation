@@ -1,0 +1,483 @@
+A:  Thanks . 
+A:  Uh Chuck , is the mike type wireless  
+A:  wireless headset ? 
+A:  OK . 
+A:  Uh - huh . 
+A:  OK . 
+A:  Uh - huh . 
+A:  Yeah , yeah . 
+A:  The mike number is  
+A:  Oh yeah . 
+A:  One . 
+A:  Oh , OK . 
+A:  OK . 
+A:  OK . 
+A:  OK . 
+A:  Hello ? 
+A:  Yeah . 
+A:  Yep , yep . 
+A:  OK . 
+A:  Uh , I need a little orientation about this environment and uh scr s how to run some jobs here 
+A:  because I never d did anything so far with this X emissions 
+A:  So , 
+A:  I think maybe I 'll ask you after the meeting . 
+A:  Yeah , yeah , yeah . 
+A:  Yep . 
+A:  OK , 
+A:  sure 
+A:  OK . 
+A:  Um . 
+A:  Yeah . 
+A:  So , 
+A:  uh , shall I start from  
+A:  Well I don't know how may I  how  
+A:  OK . 
+A:  Uh , I think I 'll start from the post uh Aurora submission maybe . 
+A:  Uh , yeah , 
+A:  after the submission the  what I 've been working on mainly was to take  take other s submissions 
+A:  and then 
+A:  over their system , what they submitted , 
+A:  because we didn't have any speech enhancement system in  in ours . 
+A:  So  
+A:  So I tried 
+A:  uh , 
+A:  And u First I tried just LDA . 
+A:  And then I found that 
+A:  uh , 
+A:  I mean , if  if I combine it with LDA , it gives @ @ improvement over theirs . 
+A:  Uh  
+A:  Yeah . 
+A:  Yeah . 
+A:  So , 
+A:  just  just the LDA filters . 
+A:  I just plug in  I just take the cepstral coefficients coming from their system and then plug in LDA on top of that . 
+A:  But the LDA filter that I used was different from what we submitted in the proposal . 
+A:  What I did was <inbreath> I took the LDA filter 's design using clean speech , 
+A:  uh , mainly because the speech is already cleaned up after the enhancement 
+A:  so , instead of using this , uh , narrow  narrow band LDA filter that we submitted uh , I got new filters . 
+A:  So 
+A:  that seems to be giving  uh , improving over their uh , system . 
+A:  Slightly . 
+A:  But , not very significantly . 
+A:  And uh , that was 
+A:  uh , showing any improvement over  final  by plugging in an LDA . 
+A:  And uh , 
+A:  so then after  after that I  I added uh , on - line normalization also on top of that . 
+A:  And that  there  there also I n I found that I have to make some changes to their time constant that I used 
+A:  because th it has a  a mean and variance update time constant 
+A:  and  which is not suitable for the enhanced speech , and whatever we try it on with proposal - one . 
+A:  But um , 
+A:  I didn't  I didn't play with that time constant a lot , 
+A:  I just t g 
+A:  I just found that I have to reduce the value  
+A:  I mean , I have to increase the time constant , or reduce the value of the update value . 
+A:  That 's all I found 
+A:  So I have to . 
+A:  Uh , 
+A:  Yeah . 
+A:  And uh , 
+A:  uh , the other  other thing what I tried was , I just um , uh , took the baseline and then ran it with the endpoint inf uh th information , 
+A:  just the Aurora baseline , 
+A:  to see that how much the baseline itself improves 
+A:  by just supplying the information of the  I mean the w speech and nonspeech . 
+A:  And uh , 
+A:  I found that the baseline itself improves by twenty - two percent by just giving the wuh . 
+A:  Yeah . 
+A:  No . 
+A:  No . 
+A:  No , things didn't get better with the same time constant that we used . 
+A:  With the different time constant I found that  
+A:  I mean , I didn't get an improvement over not using on - line normalization , 
+A:  because I  I found that I would have change the value of the update factor . 
+A:  But I didn't play it with play  play quite a bit to make it better than . 
+A:  So , it 's still not  
+A:  I mean , the on - line normalization didn't give me any improvement . 
+A:  And uh , 
+A:  so , 
+A:  oh yeah 
+A:  So I just stopped there with the uh , speech enhancement . 
+A:  The  the other thing what I tried was the  adding the uh , endpoint information to the baseline 
+A:  and that itself gives like twenty - two percent 
+A:  because the  the second  the new phase is going to be with the endpointed speech . 
+A:  And just to get a feel of how much the baseline itself is going to change by adding this endpoint information , I just , uh , use  
+A:  Yeah 
+A:  that 's , that 's what the feeling is like . 
+A:  They 're going to give the endpoint information . 
+A:  Yeah . 
+A:  So , 
+A:  Uh  
+A:  No . 
+A:  No . 
+A:  That i I  
+A:  Yeah . 
+A:  Yeah , yeah , 
+A:  exactly . 
+A:  I guess that is  that is where the consensus is . 
+A:  Like y you will  you will  You 'll be given the information about the beginning and the end of speech 
+A:  but the whole speech is available to you . 
+A:  So . 
+A:  Yeah . 
+A:  Yeah . 
+A:  So  
+A:  So that  that  The baseline itself  
+A:  I mean , it improves by twenty - two percent . 
+A:  I found that in s one of the SpeechDat - Car cases , that like , the Spanish one improves by just fifty percent by just putting the endpoint . 
+A:  w 
+A:  I mean you don't need any further speech enhancement with fifty . 
+A:  So , uh , 
+A:  Yeah , by fifty percent . 
+A:  Yeah , 
+A:  so  
+A:  so that is when uh , the  the qualification criteria was reduced from fifty percent to something like twenty - five percent for well - matched . 
+A:  And I think they have  they have actually changed their qualification c criteria now . 
+A:  And uh , 
+A:  Yeah , 
+A:  I guess after that , I just went home f I just had a vacation fo for four weeks . 
+A:  Uh . 
+A:  Ye 
+A:  Yeah , 
+A:  and I  I came back and I started working on uh , some other speech enhancement algorithm . 
+A:  I mean , so  I  from the submission what I found that people have tried spectral subtraction and Wiener filtering . These are the main uh , approaches where people have tried , 
+A:  so just to  just to fill the space with some f few more speech enhancement algorithms to see whether it improves a lot , I  I 've been working on this uh , signal subspace approach for speech enhancement 
+A:  where you take the noisy signal and then decomposing the signal s and the noise subspace 
+A:  and then try to estimate the clean speech from the signal plus noise subspace . 
+A:  And  
+A:  So , I 've been actually running some s 
+A:  So far I 've been trying it only on Matlab . 
+A:  I have to  to  to test whether it works first or not 
+A:  and then I 'll p port it to C 
+A:  and I 'll update it with the repository once I find it it giving any some positive result . 
+A:  So , yeah . 
+A:  Yeah . 
+A:  Yep . 
+A:  Yeah . 
+A:  Uh , no 
+A:  there is a slight different . 
+A:  Uh 
+A:  I mean , which are extracted at the handset 
+A:  because they had another back - end blind equalization  
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah , yeah , yeah , yeah . 
+A:  The speech . 
+A:  Yeah , 
+A:  the cepstral f The difference is like  There may be a slight difference in the way  
+A:  because they use exactly the baseline system for converting the cepstrum once you have the speech . 
+A:  I mean , if we are using our own code for th I mean that  that could be the only difference . 
+A:  I mean , there is no other difference . 
+A:  Yeah . 
+A:  OK . 
+A:  OK . 
+A:  Uh - huh . 
+A:  Only LDA . 
+A:  Yeah . 
+A:  Af - I  after that I added on - line normalization , 
+A:  yeah . 
+A:  Yeah , yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah , I assume . 
+A:  Yeah . 
+A:  without any change . 
+A:  OK . 
+A:  with 
+A:  Oh yeah , 
+A:  I mean the  the new LDA filters . 
+A:  I mean  
+A:  OK . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  OK . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Because the  your improvement on HM and MM will also go down significantly in the spreadsheet 
+A:  so . 
+A:  But the  the well - matched may still  
+A:  I mean the well - matched may be the one which is least affected by adding the endpoint information . 
+A:  Yeah . 
+A:  So the  
+A:  the MM  
+A:  MM and HM are going to be v hugely affected by it . 
+A:  Yeah . 
+A:  Yeah . 
+A:  But they d the  everything I mean is like , 
+A:  but there 
+A:  that 's how they reduce  why they reduce the qualification to twenty - five percent or some  something on . 
+A:  Uh , no , 
+A:  I guess they are going ahead with the same weighting . 
+A:  Yeah . 
+A:  So there 's nothing on  
+A:  Yeah . 
+A:  Usual . 
+A:  Uh - huh . 
+A:  Mmm . 
+A:  Mmm . 
+A:  Hmm . 
+A:  Right . 
+A:  Yeah , but actually the well  well the well - matched 
+A:  um , 
+A:  uh , 
+A:  I mean the  the well - matched condition is not like , uh , the one in TI - digits 
+A:  where uh , you have all the training , uh , conditions exactly like replicated in the testing condition also . 
+A:  It 's like , this is not calibrated by SNR or something . 
+A:  The well - matched has also some  some mismatch in that which is other than the  
+A:  has  has also some slight mismatches , 
+A:  unlike the TI - digits where it 's like prefectly matched 
+A:  because it 's artificially added noise . 
+A:  But this is natural recording . 
+A:  The  the well - matched is like  
+A:  the  the well - matched is defined like it 's seventy percent of the whole database is used for training and thirty percent for testing . 
+A:  It 's  it 's  
+A:  OK , 
+A:  it 's  
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah because the m the main  major reason for the m 
+A:  the main mismatch is coming from the amount of noise and the silence frames and all those present in the database actually . 
+A:  No 
+A:  yeah , yeah . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Yeah , yeah , yeah . 
+A:  I guess if you want to reconstruct the speech , it may be a good idea to do it on FFT bins . 
+A:  But for speech recognition , it may not . 
+A:  I mean it may not be very different if you do it on mel warped or whether you do it on FFT . 
+A:  So you 're going to do a linear weighting anyway after that . 
+A:  Well  
+A:  Yeah ? 
+A:  So , it may not be really a big different . 
+A:  It 
+A:  I Uh - huh . 
+A:  So 
+A:  The other thing is like when you 're putting in a speech enhancement technique , 
+A:  uh , 
+A:  is it like one stage speech enhancement ? 
+A:  Because everybody seems to have a mod two stages of speech enhancement in all the proposals , 
+A:  which is really giving them some improvement . 
+A:  I mean they just do the same thing again once more . 
+A:  And  So , there 's something that is good about doing it  
+A:  I mean , to cleaning it up once more . 
+A:  Yeah , 
+A:  so we can  
+A:  Yeah . 
+A:  That 's what 
+A:  That 's wh 
+A:  Yeah . 
+A:  So , 
+A:  Yeah . 
+A:  So I 've been thinking about combining the Wiener filtering with signal subspace , 
+A:  I mean just to see all  some  some such permutation combination to see whether it really helps or not . 
+A:  The signal subspace ? 
+A:  The  
+A:  The signal subspace approach has actually an in - built Wiener filtering in it . 
+A:  Yeah . 
+A:  It is like a KL transform followed by a Wiener filter . 
+A:  Is the signal is  is a signal substrate . 
+A:  So , the  the different  
+A:  the c the  the advantage of combining two things is mainly coming from the signal subspace approach doesn't work very well if the SNR is very bad . 
+A:  It 's  
+A:  it works very poorly with the poor SNR conditions , and in colored noise . 
+A:  Wiener filtering . 
+A:  It 's a  it 's a cascade of two s 
+A:  Mm - hmm . 
+A:  OK . 
+A:  Yeah . 
+A:  So . 
+A:  So that  that 's one reason maybe we could combine 
+A:  s some  something to improve SNR a little bit , first stage , 
+A:  and then do a something in the second stage 
+A:  which could take it further . 
+A:  Oh , the colored noise 
+A:  uh  
+A:  the colored noise  the  the v the signal subspace approach has  I mean , it  it actually depends on inverting the matrices . 
+A:  So it  it  ac 
+A:  the covariance matrix of the noise . 
+A:  So if  if it is not positive definite , 
+A:  I mean it has a  it 's  
+A:  It doesn't behave very well if it is not positive definite 
+A:  ak 
+A:  It works very well with white noise because we know for sure that it has a positive definite . 
+A:  So the way they get around is like they do an inverse filtering , 
+A:  first of the colo colored noise 
+A:  and then make the noise white , 
+A:  and then finally when you reconstruct the speech back , you do this filtering again . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Huh ? 
+A:  Uh - huh . 
+A:  So . 
+A:  This VTS has been proposed by CMU ? 
+A:  Is it  is it the CMU ? 
+A:  Yeah , yeah , OK . 
+A:  From C . 
+A:  The other thing is to , uh  Most of the speech enhancement techniques have reported results on small vocabulary tasks . 
+A:  But we  we going to address this Wall Street Journal in our next stage , 
+A:  which is also going to be a noisy task 
+A:  so s very few people have reported something on using some continuous speech at all . 
+A:  So , there are some  
+A:  I mean , I was looking at some literature on speech enhancement applied to large vocabulary tasks 
+A:  and 
+A:  spectral subtraction doesn't seems to be the thing to do for large vocabulary tasks . 
+A:  And it 's  
+A:  Always people have shown improvement with Wiener filtering and maybe subspace approach over spectral subtraction everywhere . 
+A:  But if we  if we have to use simple spectral subtraction , we may have to do some optimization  to make it work @ @ . 
+A:  Yeah , yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  I m I guess Guenter Hirsch is in charge of that . 
+A:  Guenter Hirsch and TI . 
+A:  Maybe Roger  
+A:  r Roger , maybe in charge of . 
+A:  Yeah . 
+A:  Yeah , I don't know . 
+A:  There are  they have  there is no  
+A:  I don't know if they are converging on HTK or are using some Mississippi State , 
+A:  yeah . 
+A:  I 'm not sure about that . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  It had additive n 
+A:  Yeah . 
+A:  OK . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Uh - huh . 
+A:  Yeah . 
+A:  OK . 
+A:  Oh . You just take the Switchboard trained  ? 
+A:  Yeah , 
+A:  yeah . 
+A:  OK . 
+A:  Yeah . 
+A:  That 's cool . 
+A:  OK . 
+A:  Yeah . 
+A:  Yeah . 
+A:  With what  what other new p new parameter ? 
+A:  Yeah . 
+A:  Uh - huh . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  I 'm so sorry . 
+A:  I didn't get it . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mmm . 
+A:  OK . 
+A:  OK . 
+A:  Uh - huh . 
+A:  Yeah . 
+A:  Uh - huh . 
+A:  OK . 
+A:  Yeah . 
+A:  Make it longer . 
+A:  OK . 
+A:  Unvoiced . 
+A:  Well . 
+A:  As using just the cepstrum , 
+A:  or  ? 
+A:  OK . 
+A:  Uh , is it with TI - digits , or with  ? 
+A:  OK . 
+A:  OK . 
+A:  Uh - huh . 
+A:  Voiced , unvoiced is like  
+A:  Oh . 
+A:  Or anything . 
+A:  Oh , OK . 
+A:  Mm - hmm . 
+A:  Yeah , d 
+A:  Yeah . 
+A:  What  one  one um p one thing is like what  before we started using this VAD in this Aurora , the  th what we did was like , I  I guess most of you know about this , adding this additional speech - silence bit to the cepstrum and training the HMM on that . 
+A:  That is just a binary feature 
+A:  and that seems to be <inbreath> improving a lot on the SpeechDat - Car where there is a lot of noise 
+A:  but not much on the TI - digits . 
+A:  So , a adding an additional feature to distin to discriminate between speech and nonspeech was helping . 
+A:  That 's it . 
+A:  Yeah , we actually added an additional binary feature to the cepstrum , 
+A:  just the baseline . 
+A:  Yeah , 
+A:  yeah . 
+A:  Well , in  in the case of TI - digits it didn't actually give us anything , 
+A:  because there wasn't any f anything to discriminate between speech , 
+A:  and it was very short . 
+A:  But Italian was like very  it was a huge improvement on Italian . 
+A:  OK . 
+A:  Mm - hmm . 
+A:  Yeah , yeah . 
+A:  Yeah . 
+A:  Yeah , yeah . 
+A:  Mmm . 
+A:  There was a paper in ICASSP  this ICASSP  over the uh extracting some higher - order uh , information from the cepstral coefficients 
+A:  and I forgot the name . 
+A:  Some is some harmonics 
+A:  I don't know , 
+A:  I can  I can pull that paper out from ICASSP . 
+A:  It  
+A:  Huh ? 
+A:  Uh , I don't know . 
+A:  I don't remember . 
+A:  It wa it was taking the , um  
+A:  It was about finding the higher - order moments of  
+A:  Yeah . 
+A:  And I 'm not sure about whether it is the higher - order moments , or  
+A:  maybe higher - order cumulants 
+A:  and  
+A:  Yeah . 
+A:  It was  it was  
+A:  Yeah . 
+A:  I mean , he was showing up uh some  something on noisy speech , 
+A:  some improvement on the noisy speech . 
+A:  Some small vocabulary tasks . 
+A:  So it was on PLP derived cepstral coefficients . 
+A:  Mmm . 
+A:  trying to f 
+A:  to 
+A:  Moments , 
+A:  yeah . 
+A:  Yeah . 
+A:  Yep . 
+A:  Yeah . 
+A:  Uh , no 
+A:  not yet . 
+A:  Uh , yesterday I called up a lady who ha who will have a vacant room from May thirtieth 
+A:  and she said she 's interviewing two more people . 
+A:  So . 
+A:  And she would get back to me on Monday . 
+A:  So that 's  that 's only thing I have 
+A:  and Diane has a few more houses . 
+A:  She 's going to take some pictures and send me after I go back . 
+A:  So it 's  that 's  
+A:  No . 
+A:  I 'm going back to OGI today . 
+A:  Uh , i I mean , I  I p I plan to be here on thirty - first . 
+A:  Yeah , 
+A:  well if there 's a house available or place to  
+A:  Yeah , I hope . 
+A:  Yeah . 
+A:  So , in that case , I 'm going to be here on thirty - first definitely . 
+A:  Oh . OK . 
+A:  Thanks . 
+A:  That sure is nice of you . 
+A:  So , it may be he needs more than me . 
+A:  Yeah . Yeah . <laugh> Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  well there is aligned spectral pairs , is like the  the  
+A:  Is that the aligned s 
+A:  Oh , no . 
+A:  So you just  
+A:  instead of the log you took the root square , I mean cubic root or something . 
+A:  What di w I didn't get that . 
+A:  Polynomial . 
+A:  Yeah . 
+A:  Is that the line spectral  
+A:  Oh , it 's like line sp 
+A:  Yeah , yeah , yeah , yeah . 
+A:  Mmm . 
+A:  Hmm . 
+A:  Yeah . 
+A:  Thanks . 

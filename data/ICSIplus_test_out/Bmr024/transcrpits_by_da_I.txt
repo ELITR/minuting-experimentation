@@ -1,0 +1,393 @@
+I:  OK . 
+I:  You mean there 're more than ten ? 
+I:  Well , I can stay till about , uh , three forty . 
+I:  Yeah . 
+I:  Mm - hmm . 
+I:  Well , yeah . 
+I:  So this is just partly to inform everybody , um , and  and of course to get , um , input . 
+I:  Um , so , <mike noise> uh , we had a discussion  Don and Liz and I had discussion last week about how to proceed with , uh , you know , with Don 's work , 
+I:  and  <inbreath> and  and , uh , one of the obvious things that occur to us was that we 're  since we now have Thilo 's segmenter and it works , you know , amazingly well , <inbreath> um , we should actually basically re - evaluate the recognition , um , results using  you know , without cheating on the segmentations . 
+I:  And , that should be fairly  
+I:  Oh , OK . 
+I:  So , there 's actually  
+I:  Why do you ask ? 
+I:  No , actually , um , NIST has , um m a fairly sophisticated scoring program <inbreath> that you can give a , um  <mouth> a time , 
+I:  uh  You know , you basically just give two  time - marked sequences of words , and it computes the um  the ,  uh   you know , the  the  th 
+I:  it does all the work for you . 
+I:  So , it  we just  and we use that actually in Hub - five to do the scoring . 
+I:  Um . So what we 've been using so far was sort of a  simplified version of the scoring . 
+I:  And we can  we can handle the  the  the type of problem we have here . 
+I:  So , we ha 
+I:  Yeah . 
+I:  Right . 
+I:  Right . 
+I:  So do 
+I:  Right . 
+I:  It does time - constrained word - alignment . 
+I:  So . 
+I:  So that should be possible . 
+I:  I mean that shouldn't be a problem . 
+I:  Uh , so that was the one thing , 
+I:  and the other was that , 
+I:  um  
+I:  What was the other problem ? 
+I:  Oh ! 
+I:  That Thilo wanted to use  the recognizer alignments to train up his , um , speech detector . 
+I:  Um , so that we could use , uh  you know there wouldn't be so much hand <inbreath> labelling needed to , uh  to generate training data for  for the speech detector . 
+I:  And I think you 're in the process of doing that . 
+I:  So , you can   you can  
+I:  Mm - hmm . 
+I:  Right . 
+I:  That won't be perfect  the alignments aren't perfect , 
+I:  but , um , it 's probably still better to have all this extra data , than  
+I:  Yeah . 
+I:  Yeah . 
+I:  Porzel . 
+I:  Porzel . 
+I:  Right . 
+I:  Actually  actually , w w the  the  We do this  
+I:  I dunno who came up with it , but I think it 's a really clever idea . 
+I:  We simulate a computer breakdown halfway through the session , and so then after that , the person 's told that they 're now talking to a , uh  to a human . 
+I:  So , we  we collect  we collect both human - computer and human - human data , essentially , in the same session . 
+I:  That 's an idea . 
+I:  Yeah . 
+I:  O 
+I:  Just  just reboot it . 
+I:  Yeah . 
+I:  Wow . 
+I:  No , the  the question is do we save one or two far - field channels or all of them ? 
+I:  Hmm . 
+I:  Mm - hmm . 
+I:  It 's to be traini to b training data and development data for the SmartKom  system . 
+I:  Yeah . 
+I:  Right . 
+I:  Right . 
+I:  Yeah . 
+I:  We weren't supposed to collect any data . 
+I:  This was all  
+I:  Yeah . 
+I:  Mm - hmm . 
+I:  OK . 
+I:  Right . 
+I:  Mm - hmm . 
+I:  Well , it  it makes sense to handle it with the same infrastructure , since we don't want to duplicate things unnecessarily . 
+I:  But as far as distributing it , we shouldn't label it as part of this meeting corpus . 
+I:  We should let it be its own corp 
+I:  It might also be potentially confusing . 
+I:  Right . 
+I:  Yeah , I th 
+I:  Yes . 
+I:  That 's a  that 's another argument to keep it separate , 
+I:  because it 's gonna follow the SmartKom transcription conventions and not the ICSI meeting transcription conventions . 
+I:  Exactly . 
+I:  Yeah . 
+I:  Yeah . 
+I:  Yeah . 
+I:  Exactly 
+I:  Do you wanna be a subject ? 
+I:  We  
+I:  Yeah . 
+I:  That was one of our concerns . 
+I:  You can  
+I:  I shouldn't be saying this , but , you can just  you know , since the back - ups are every night , you can recycle the backed - up diskspace . 
+I:  I didn't say that . 
+I:  I didn't say that . 
+I:  Right . 
+I:  Mm - hmm . 
+I:  Well , I think   I think there 's an argument for having  you know , you could use our old file server for  for disks that have data that  is very rarely accessed , 
+I:  and then have a fast new file server for data that is , um , heavily accessed . 
+I:  Yeah . 
+I:  Yeah . 
+I:  It 's the back it 's the back - up capaci 
+I:  Yeah . 
+I:  I mean , I think  I think we 've raised this before and someone said this is not a reliable way to do it , 
+I:  but the  
+I:  What about putting the stuff on , like , C - CD - ROM or DVD or something ? 
+I:  OK . 
+I:  Oh , OK . 
+I:  But they wear out just from sitting on the shelf ? 
+I:  Or from being  read and read ? 
+I:  Oh , OK . 
+I:  Uh - huh . 
+I:  But if that  
+I:  then you would think you 'd  hear much more clamoring about data loss 
+I:  and  
+I:  But , you know , we have  
+I:  Right . 
+I:  Mmm . 
+I:  So how about  ? 
+I:  So  so how about putting them on that plus , like on a  on  on DAT or some other medium that isn't risky ? 
+I:  OK . 
+I:  Mm - hmm . 
+I:  Right . 
+I:  Well , if  if  if you  if they last  
+I:  Say , they actually last , like , five years , huh , in  in the typical case , 
+I:  and  and occasionally you might need to recreate one , 
+I:  and then you get your tape out , but otherwise you don't . 
+I:  Can't you just  
+I:  you just put them on  ? 
+I:  Yeah . 
+I:  Right . 
+I:  Right . 
+I:  Mmm . 
+I:  It 's like  like dynamic ra DRAM . 
+I:  One  one thing I don't understand is , if you have the data  if  if you if the meeting data is put on disk exactly once , then it 's backed - up once and the back - up system should never have to bother with it , uh , more than once . 
+I:  Mm - hmm . 
+I:  Mm - hmm . 
+I:  But  but this back - up system is smart enough to figure out that something hasn't changed and doesn't need to be  backed - up again . 
+I:  OK . 
+I:  So  so then , if  So  so then , let 's  
+I:  Right . 
+I:  OK . 
+I:  Right . 
+I:  So , what if we buy , uh  uh , what  what do they call these , um  high density  ? 
+I:  No , no . 
+I:  Because this is  maybe something that we can do without involving Dave , and  and , putting more burden on him . 
+I:  How about we buy , uh  uh  uh , one of these high density tape drives ? 
+I:  And we put the data actually on non - backed - up disks . 
+I:  And we do our own back - up once and for all  all , and then  and we don't have to bother this @ @ up ? 
+I:  I dunno what the these tapes  
+I:  uh , 
+I:  at some point these  
+I:  I dunno . 
+I:  What kind of tape drive is it ? 
+I:  Is it  is  ? 
+I:  Right . 
+I:  But it might interfere with their back - up schedule , 
+I:  eh . 
+I:  Right . 
+I:  Mmm . 
+I:  On an XH  uh , X  X whatever partition . 
+I:  Yeah . 
+I:  Right . 
+I:  Right . 
+I:  Mm - hmm . 
+I:  Right . 
+I:  OK . 
+I:  Yeah , but then you 're effectively using the resources of the back - up system . 
+I:  Or is that a different tape robot ? 
+I:  No , no . 
+I:  See  
+I:  Yeah , just give a dedi 
+I:  Well , I 'm saying is @ @ i if you go to Dave , and  and  and ask him " can I use your tape robot ? " , 
+I:  he will say , " well  that 's gonna screw up our back - up operation . " 
+I:  Oh , OK . 
+I:  Alright . 
+I:  Alright . 
+I:  Good . 
+I:  Well , it  if he  you have to put the data on a  on a non - backed - up disk to begin with . 
+I:  So that  so that  otherwise you don't  you  
+I:  Right . 
+I:  Right . 
+I:  Right . 
+I:  OK . 
+I:  OK . 
+I:  SRI recognition ? 
+I:  Oh . 
+I:  Um . well , 
+I:  we have lots of them . 
+I:  Uh , I dunno . 
+I:  Chuck , do you have any  any updates ? 
+I:  Oh . 
+I:  Well , you have to sa you have to  tell people that you 're  you 're doing  you 're trying the tandem features . 
+I:  A and I 'm still tinkering with the PLP features . 
+I:  Right . 
+I:  That was  that was before I tried it on the females . 
+I:  See , women are nothi are , trouble . 
+I:  Right ? 
+I:  As we all know . 
+I:  So . 
+I:  So   so , when  So I  I had  I ha 
+I:  So , we had reached the point where  
+I:  we had reached the point where ,  um , on the male portion of the  development set , the , um  or one of the development sets , I should say  <inbreath> the , um  the male error rate with , uh , ICSI PLP features was pretty much identical with , uh , SRI features . 
+I:  which are  MFCC . 
+I:  So , um , then I thought , " Oh , great . 
+I:  I 'll j I 'll  just let 's make sure everything works on the females . " 
+I:  And the error rate  you know , there was a three percent difference . 
+I:  So , 
+I:  uh  
+I:  No , actually there 's more training data . 
+I:  No , no . 
+I:  This is Hub - five . 
+I:  Yeah . 
+I:  Um , and the test data is CallHome and Switchboard . 
+I:  So , uh  so then  um  
+I:  Oh , and plus the  the vocal tract  length normalization didn't  actually made things worse . 
+I:  So something 's really seriously wrong . 
+I:  So  
+I:  Um  
+I:  So  So  
+I:  That 's true . 
+I:  Yeah . 
+I:  Well , um  
+I:  So  
+I:  I just  
+I:  d so the one thing that I then tried was to put in the low - pass filter , which we have in the  
+I:  So , most  most Hub - five systems actually band - limit the  uh , at about , uh , thirty - seven hundred , um , hertz . 
+I:  Although , you know , normally , I mean , the channel goes to four  four thousand . 
+I:  Right ? 
+I:  So , um  
+I:  And that actually helped , uh  uh , a little bit . 
+I:  Um  and it didn't hurt on the males either . 
+I:  So , um  
+I:  And I 'm now , uh , trying the  
+I:  Oh , and suddenly , also the v the vocal tract length normalization only in the test se on the test data . 
+I:  So , you can do vocal tract length normalization on the test data only or on both the training and the test . 
+I:  And you expect it to help a little bit if you do it only on the test , and s more if you do it on both training and test . 
+I:  And so the  It now helps , if you do it only on the test , 
+I:  and I 'm currently retraining another set of models where it 's both in the training and the test , 
+I:  and then we 'll  we 'll have , hopefully , even better results . 
+I:  So  
+I:  But there 's  
+I:  It looks like there will still be some difference , 
+I:  maybe between one and two percent , um , for the females . 
+I:  And so , um , you know , I 'm open to suggestions . 
+I:  And it is true that the , uh  that the  <inbreath> you know , we are using the  
+I:  But  
+I:  it can't be just the VTL , 
+I:  because if you don't do VTL in both systems , uh , you know , the  the females are considerably worse in the  with the PLP features . 
+I:  So there must be some  something else going on . 
+I:  Um ,  that  ye  overall , yes , 
+I:  but on this particular development test set , they 're actually a little worse . 
+I:  But that 's beside the point . 
+I:  We 're looking at the discrepancy between the SRI system and the SRI system when trained with ICSI features . 
+I:  Mm - hmm . 
+I:  It 's Baum - Welch training . 
+I:  Um  
+I:  Well , actually , we  we just basically do a s a fixed number of iterations . 
+I:  Uh , in this case four . 
+I:  Um , which  Eh , we used to do only three , 
+I:  and then we found out we can squeeze  
+I:  And it was basically , we 're s we 're keeping it on the safe side . 
+I:  But you 're d 
+I:  Right . 
+I:  It might be that one more iteration <inbreath> would  would help , but it 's sort of 
+I:  you know . 
+I:  No , but with Baum - Welch , there shouldn't be an over - fitting issue , really . 
+I:  Um . 
+I:  Yeah . 
+I:  Well , yeah . 
+I:  We can  
+I:  Well , that 's  that 's the easy one to check , 
+I:  because we save all the intermediate models 
+I:  and we can  
+I:  Um  I uh   I 'm actually re - optimizing them . 
+I:  Although that hasn't shown to make  a big difference . 
+I:  Pruning  ? 
+I:  Pruning in the  ? 
+I:  I you mean  did you see this in the SRI system ? 
+I:  Um . Well , the likelihoods are  
+I:  You can't directly compare them , because , for every set of models you compute a new normalization . 
+I:  And so these log probabilities , they aren't directly comparable 
+I:  because you have a different normalization constants for each model you train . 
+I:  So  
+I:  W yeah . 
+I:  I mean  
+I:  Uh  
+I:  We prune very conservatively . 
+I:  I mean , as we saw with the meeting data , um  we could probably tighten the pruning without really  
+I:  So we we basically we have a very open beam . 
+I:  Right . 
+I:  Course . 
+I:  Mm - hmm . 
+I:  Right . 
+I:  Actually , there is  the difference in that . 
+I:  So , for the PLP features we use the triangular filter shapes . 
+I:  And for the  in the SRI front - end we use the trapezoidal one . 
+I:  Well , now it 's the same . 
+I:  It 's thirty  thirty to seven hundred and sixty hertz . 
+I:  No , no . 
+I:  But  
+I:  Well  
+I:  But  
+I:  Since currently the Feacalc program doesn't allow me to change  the filter shape independently of the scale . 
+I:  And , I did the experiment on the SRI front - end where I tried the  y where the standard used to be to use trapezoidal filters . 
+I:  You can actually continuously vary it between the two . 
+I:  And so I wen I swi I tried the trap eh , triangular ones . 
+I:  And it did slightly worse , but it 's really a small difference . 
+I:  So  
+I:  Yeah , exactly . 
+I:  So , it 's not  
+I:  I don't think the filter shape by itself will make a huge  difference . 
+I:  Mm - hmm . 
+I:  Mm - hmm . 
+I:  Mm - hmm . 
+I:  OK . 
+I:  So  one thing I haven't done yet is to actually do all of this with a much larger  with our full training set . 
+I:  So right now , we 're using a  
+I:  I don't know , 
+I:  forty ? 
+I:  I i it 's  it 's  eh  it 's a f training set that 's about , um , you know , by a factor of four smaller than what we use when we train the full system . 
+I:  So , some of these smoothing issues are over - fitting for that matter . 
+I:  And the Baum - Welch should be much less of a factor , if you go full  whole hog . 
+I:  And so , w so , just um  so the strategy is to first sort of treat things  with fast turn - around on a smaller training set and then , <inbreath> when you 've sort of , narrowed it down , you try it on a larger training set . 
+I:  And so , we haven't done that yet . 
+I:  Th - th the boot models are trained from scratch . 
+I:  So we compute , 
+I:  um  
+I:  So , we start with a , um , alil alignment that we computed with the b sort of the best system we have . 
+I:  And  and then we train from scratch . 
+I:  So we com we do a , you know , w um  <mouth> We collect the  uh , the observations from those alignments under each of the feature sets that  that we  train . 
+I:  And then , from there we do , 
+I:  um  
+I:  There 's a lot of , 
+I:  actually  <inbreath> The way it works , you first train a phonetically - tied mixture model . 
+I:  Um . 
+I:  You do a total of  
+I:  First you do a context - independent PTM model . 
+I:  Then you switch to a context  
+I:  You do two iterations of that . 
+I:  Then you do two iterations of  of  of context - dependent phonetically - tied mixtures . 
+I:  And then from that you  you do the  you  you go to a state - clustered model , 
+I:  and you do four iterations of that . 
+I:  So there 's a lot of iterations overall between your original boot models and the final models . 
+I:  I don't think that  
+I:  Hmm . 
+I:  We have never seen big differences . 
+I:  Once I thought " oh , I can  Now I have these much better models . 
+I:  I 'll re - generate my initial alignments . 
+I:  Then I 'll get much better models at the end . " 
+I:  Made no difference whatsoever . 
+I:  It 's  I think it 's  eh , i 
+I:  the boot models are recur 
+I:  Mm - hmm . 
+I:  Mm - hmm . 
+I:  But there are no boot models , in fact . 
+I:  You  you 're not booting from initial models . 
+I:  You 're booting from initial alignments . 
+I:  That 's correct . 
+I:  Yeah , but  
+I:  But  but  but , what I 'm  what I 'm saying is  
+I:  So , we e w f w For a long time we had used boot alignments that had been trained with a  <mouth> with the same front - end but with acoustic models that were , like , fifteen percent worse than what we use now . 
+I:  And with a dict different dictionary  with a considerably different dictionary , which was much less detailed and much less well - suited . 
+I:  And so , <inbreath> then we switched to new boot alignments , 
+I:  which  which now had the benefit of all these improvements that we 've made over two years in the system . 
+I:  And , the result in the end was no different . 
+I:  So , what I 'm saying is , the exact nature of these boot alignments is probably not  a big factor in the quality of the final models . 
+I:  Yeah . 
+I:  Mm - hmm . 
+I:  Yeah . 
+I:  Right . 
+I:  Right . 
+I:  Yeah . 
+I:  Anyway , I  I  I should really reserve , uh , any conclusions until we 've done it on the large training set , um , and until we 've seen the results with the  with the VTL in training . 
+I:  So . 
+I:  Yeah . 
+I:  Right . 
+I:  And , uh , with this , I have to leave . 
+I:  With this said . 
+I:  Oh . 
+I:  Oh ! 
+I:  Cool . 
+I:  Mm - hmm . 
+I:  A few more processors ? 
+I:  How many are you shooting for ? 
+I:  Oh , OK . 
+I:  Yeah . 
+I:  Can you mix  t uh , processors of different speed ? 
+I:  OK . 
+I:  Oh , OK . 
+I:  Maybe we can stick them in another system . 
+I:  I dunno . 
+I:  I see . 
+I:  OK . 

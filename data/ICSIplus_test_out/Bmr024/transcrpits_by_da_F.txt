@@ -1,0 +1,423 @@
+F:  And  
+F:  So we 're on . 
+F:  And ,  somewhere is my agenda . 
+F:  I think the most important thing is Morgan wanted to talk about , uh , the ARPA  demo . 
+F:  OK . 
+F:  So , uh  
+F:  uh , IBM transcription status , 
+
+F:  Uh , we wanna talk about if w if we wanna add the data to the mar Meeting Recorder corpus . 
+F:  So why don't we have that on the agenda and we 'll  we 'll get to it and talk about it ? 
+F:  Uh , reorganization status . 
+F:  Yep . 
+F:  Uh - huh . 
+F:  Absinthe , which is the multiprocessor UNIX  Linux . 
+F:  I think it was  Andreas wanted to talk about segmentation and recognition , 
+F:  and update on SRI recognition experiments . 
+F:  And then if ti if there 's time I wanted to talk about digits , 
+F:  but it looked like we were pretty full , so I can wait till next week . 
+F:  At least , 
+F:  yeah , 
+F:  he 'll t he 'll probably be interested . 
+F:  But . 
+F:  Yeah . 
+F:  I mean , I think , Chuck was the one who added out the agenda item . 
+F:  I don't really have anything to say other than that we still haven't done it . 
+F:  So . 
+F:  Right . 
+F:  Although Dave basically said that if we wanna do it , just tell him and he 'll do a d level zero then . 
+F:  So . 
+F:  Yep . 
+F:  So , I think we do need to talk a little bit about  
+F:  Well , we don't need to do it during this meeting . 
+F:  We have a little more to discuss . 
+F:  But , uh , we 're  we 're basically ready to do it . 
+F:  And , uh , I have some web pages on ts  more of the background . 
+F:  So , naming conventions and things like that , that I 've been trying to keep actually up to date . 
+F:  So . 
+F:  And I 've been sharing them with U - d UW folks also . 
+F:  Sharing them with the UW folks . 
+F:  OK . 
+F:  So , we , uh  we did another version of the beeps , where we separated each beeps with a spoken digit . 
+F:  Chuck came up here and recorded some di himself speaking some digits , 
+F:  and so it just goes " beep one beep " and then the phrase , 
+F:  and then " beep two beep " and then the phrase . 
+F:  And that seems pretty good . 
+F:  Um , I think they 'll have a b easier time keeping track of where they are in the file . 
+F:  And we did it with the automatic segmentation , 
+F:  and I don't think  We ne we didn't look at it in detail . 
+F:  We just sent it to IBM . 
+F:  We  we sorta spot - checked it . 
+F:  Oh , really ? 
+F:  OK . 
+F:  I sorta spot - checked here and there and it sounded pretty good . 
+F:  So . I think it 'll work . 
+F:  And , uh , we 'll just hafta see what we get back from them . 
+F:  Uh  
+F:  Right . 
+F:  Yep . 
+F:  Well , I think it 's also they are much less likely to d have errors . 
+F:  I mean , so the problem wi last time is that there were errors in the transcripts where they put beeps where there weren't any , or  and they put in extraneous beeps . 
+F:  And with the numbers there , it 's much less likely . 
+F:  Ha . 
+F:  That 's interesting . 
+F:  I didn't hear that . 
+F:  Well , maybe we better listen to it again , 
+F:  make sure , 
+F:  but , I mean , certainly the software shouldn't do that , 
+F:  so . 
+F:  Hiccups . 
+F:  Yeah . 
+F:  The only  the only part that might be confusing is when Chuck is reading digits . 
+F:  " Seven four eight beep seven beep <laugh> eight three two " . 
+F:  Yes . 
+F:  Because , uh , we don't  we didn't  In order to cut them out we 'd have to listen to it . 
+F:  And we wanted to avoid doing that , 
+F:  so we  they are transcribing the digits . 
+F:  Although we could tell them   <inbreath> we could tell them , if you hear someone reading a digits string just say " bracket digit bracket " 
+F:  and don't bother actually computing the di writing down the digits . 
+F:  Yep . 
+F:  And then I wanted to talk about  but as I said I  we may not have time  what we should do about digits . 
+F:  We have a whole pile of digits that haven't been transcribed . 
+F:  OK . 
+F:  Do we have anything else to say about transcription ? 
+F:  About IBM stuff ? 
+F:  OK . 
+F:  Alright . 
+F:  So , we have a whole bunch of digits , 
+F:  if we wanna move on to digits . 
+F:  Hmm . 
+F:  It 'll keep your accuracy up . 
+F:  Yep . 
+F:  And correcting . 
+F:  Correcting . 
+F:  We 'll  we 'll expect that they 'll have to move some time bins and do some corrections . 
+F:  Oh , right . 
+F:  I see what you mean . 
+F:  A backchannel , or  
+F:  Mm - hmm . 
+F:  Uh , so , we have a whole bunch of digits that we 've read and we have the forms and so on , 
+F:  um , but only a small number of that ha 
+F:  well , not a small number  
+F:  only a subset of that has been transcribed . 
+F:  And so we need to decide what we wanna do . 
+F:  And , uh , Liz and Andreas  actually they 're not here , but , they did say at one point that they thought they could do a pretty good job of just doing a forced alignment . 
+F:  And , again , I don't think we 'll be able to do with that alone , because , um , sometimes people correct themselves and things like that . 
+F:  But  
+F:  so , I was just wondering what people thought about how automated can we make the process of finding where the people read the digits , doing a forced alignment , and doing the timing . 
+F:  Well , we  we know what they read , because we have the forms . 
+F:  Right . 
+F:  But , the point is that we wanna get a set of clean digits . 
+F:  I mean , so one option i 
+F:  But that 's pretty uncommon . 
+F:  Um , if we could really get one percent on  
+F:  Well , I guess  yeah , I guess if we segmented it , we could get one percent on digits . 
+F:  But , 
+F:  Well , there  there 're a couple different of doing it . 
+F:  We could use the tools I 've already developed and transcribe it . 
+F:  Hire some people , or use the transcribers to do it . 
+F:  We could let IBM transcribe it . 
+F:  You know , they 're doing it anyway , 
+F:  and unless we tell them different , they 're gonna transcribe it . 
+F:  Um , or we could try some automated methods . 
+F:  And my  my tendency right now is , well , if IBM comes back with this meeting and the transcript is good , just let them do it . 
+F:  It 's pretty distinct . 
+F:  The beeps are  pre - recorded . 
+F:  Yes . 
+F:  I mean , it 'll be  it will be in the midst of a digit string . 
+F:  So  
+F:  I mean it  
+F:  sure , there  there might be a place where it 's " beep seven  beep eight  beep  eight  beep " . 
+F:  But , you know , they  they 're  they 're gonna macros for inserting the beep marks . 
+F:  And so , I  I don't think it 'll be a problem . 
+F:  We 'll have to see , 
+F:  but I don't think it 's gonna be a problem . 
+F:  Right . 
+F:  That was it . 
+F:  Just , what do we do with digits ? 
+F:  We have so many of them , <inbreath> and it 'd be nice to  actually do something with them . 
+F:  Anything else ? 
+F:  Your mike is a little low there . 
+F:  Oops . 
+F:  I could  
+F:  Hand ones . 
+F:  Right . 
+F:  So , Rob Porzel  
+F:  eh , Porzel ? 
+F:  and the , uh  Porzel  and the , uh , SmartKom group are collecting some dialogues . 
+F:  Basically they have one person sitting in here , looking at a picture , and a wizard sitting in another room somewhere . 
+F:  And , uh , they 're doing a travel task . 
+F:  And , uh , it involves starting  I believe starting with a  
+F:  It 's  it 's always the wizard , 
+F:  but it starts where the wizard is pretending to be a computer and it goes through a , uh , <breath> speech generation system . 
+F:  Synthesis system . 
+F:  Um , and then , it goes to a real wizard and they 're evaluating that . 
+F:  And they wanted to use this equipment , and so the w question came up , is  
+F:  well , here 's some more data . 
+F:  Should this be part of the corpus or not ? 
+F:  And my attitude was yes , because there might be people who are using this corpus for  acoustics , as opposed to just for language . 
+F:  Um , or also for dialogue of various sorts . 
+F:  Um , so it 's not a meeting . 
+F:  Right ? 
+F:  Because it 's two people and they 're not face to face . 
+F:  At the beginning . 
+F:  But of course they don't know that it 's the same person both times . 
+F:  Yep . 
+F:  " I have to go now . 
+F:  You can talk to the computer . " 
+F:  " No ! " 
+F:  Abort  
+F:  abort , retry , fail ? 
+F:  Well , this was  this was the question . 
+F:  So  so they were saying they were not going to , 
+F:  and I said , " well that 's silly , if  if we 're gonna try to do it for a corpus , there might be people who are interested in acoustics . " 
+F:  I  I see no reason not to do all of them . 
+F:  That  that if we have someone who is doing acoustic studies , uh , it 's nice to have the same for every recording . 
+F:  Right . 
+F:  So  so  so for their usage , they don't need anything . 
+F:  Right ? 
+F:  And then  
+F:  Right . 
+F:  So it 's  It  it  I guess it  the  begs the question of what is the meeting corpus . 
+F:  So if , at UW they start recording two - person hallway conversations is that part of the meeting corpus ? 
+F:  Well , this has two or more people conversing with each other . 
+F:  They 're just not face to face . 
+F:  I mean , that was my intention . 
+F:  That was my intention . 
+F:  So  so  s <inbreath> so part of the reason that I wanted to bring this up is , <breath> do we wanna handle it as a special case or do we wanna fold it in , 
+F:  we give everyone who 's involved as their own user ID , give it session I Ds , <inbreath> let all the tools that handle Meeting Recorder handle it , or do we wanna special case it ? 
+F:  And if we were gonna special case it , who 's gonna do that ? 
+F:  I don't see why not . 
+F:  It 's just a different topic . 
+F:  Mm - hmm . 
+F:  OK . 
+F:  So w so what does that mean for how we are gonna organize things ? 
+F:  Yeah , but those are folded in , 
+F:  and it 's just  you just mark the transcripts differently . 
+F:  So  so one option is you fold it in , 
+F:  and just simply in the file you mark somewhere that this is this type of interaction , rather than another type of interaction . 
+F:  Well , but  but , <mouth> I put it under the same directory tree . 
+F:  You know , it 's in " user doctor speech data MR " . 
+F:  Other . 
+F:  OK . 
+F:  My preference is to have a single procedure so that I don't have to think too much about things . 
+F:  And , just have a marking . 
+F:  If we do it any other way that means that we need a separate procedure , and someone has to do that . 
+F:  Right . 
+F:  So , w we will hafta worry about format . 
+F:  Oh , OK . 
+F:  OK . 
+F:  Well , I didn't realize that . 
+F:  That 's  that 's a  
+F:  Yep . 
+F:  They  they even have a reading list . 
+F:  It 's pretty funny . 
+F:  So  
+F:  Disk might eventually be an issue so we might  we  we might need to , uh , <breath> get some more disk pretty soon . 
+F:  We 're about  we 're about half  halfway through our disk right now . 
+F:  We 're probably a little more than that because we 're using up some space that we shouldn't be on . 
+F:  So , once everything gets converted over to the disks we 're supposed to be using we 'll be probably , uh , seventy - five percent . 
+F:  Yep . 
+F:  Were those backed - up or non - backed - up ? 
+F:  Right . 
+F:  So that 's different . 
+F:  I 'm much more concerned about the backed - up . 
+F:  The non - backed - up , 
+F:  yeah , 
+F:  i is cheap . 
+F:  I mean , if we need to we can buy a disk , hang it off a s uh , workstation . 
+F:  If it 's not backed - up the sysadmins don't care too much . 
+F:  Yeah . 
+F:  But that 's  that 's   that 's risky . 
+F:  Mmm . 
+F:  Mmm . 
+F:  Yeah , that 's right . 
+F:  Beep that out . 
+F:  Yeah . 
+F:  It 's really the back - up issue rather than the file server issue . 
+F:  Yeah . 
+F:  My understanding is , the issue isn't really the file server . 
+F:  We could always put more disks on . 
+F:  It 's the back - up system . 
+F:  So  
+F:  which is near saturation , apparently . 
+F:  So . 
+F:  Well , we 're alright for now 
+F:  because the network 's so slow . 
+F:  Yeah . 
+F:  That was me . 
+F:  I was the one who said it was not reliable . 
+F:  The - they  they wear out . 
+F:  Yeah . 
+F:  The  the  th 
+F:  Yep . 
+F:  Absolutely . 
+F:  No . 
+F:  Read and write don't hurt them too much unless you scratch them . 
+F:  But the r the write once , and the read - writes , don't last . 
+F:  So you don't wa you don't wanna put ir un reproduceable data  on them . 
+F:  Year or two . 
+F:  Yep . 
+F:  I  I don't know many people who do it on CD . 
+F:  I mean , they 're  the most  fo 
+F:  They 're on CD , but they 're not  tha that 's not the only source . 
+F:  They have them on disk . 
+F:  And they burn new ones every once in a while . 
+F:  But if you go  <inbreath> if you go k 
+F:  Well , 
+F:  th th OK . 
+F:  The  the pressed ones last for 
+F:  well , not forever , 
+F:  they 've been finding even those degrade . 
+F:  But , uh , the burned ones  
+F:  I mean , when I say two or three years what I 'm saying is that I have had disks which are gone in a year . 
+F:  On the average , it 'll probably be three or four years . 
+F:  But , uh  I  I  you don't want to per p have your only copy on a media that fails . 
+F:  And they do . 
+F:  Um , if you have them professionally pressed , y you know , they 're good for decades . 
+F:  I think th 
+F:  um , 
+F:  we can already put them on tape . 
+F:  And the tape is hi is very reliable . 
+F:  So the  the only issue is then  if we need access to them . 
+F:  So that 's fine f if we don't need access to them . 
+F:  Oh . 
+F:  So you 're just saying put them on C Ds for normal access . 
+F:  Yeah . 
+F:  I mean , you can do that 
+F:  but that 's pretty annoying , 
+F:  because the C Ds are so slow . 
+F:  Well , I mean , the C Ds are  are an op 
+F:  The  the CD is an alternative to tape . 
+F:  ICSI already has a perfectly good tape system and it 's more reliable . 
+F:  So for archiving , we 'll just use tape . 
+F:  Well , regardless  
+F:  Well , first of all there was , um , a problem with the archive in that I was every once in a while doing a chmod on all the directories an or recursive chmod and chown , 
+F:  because <inbreath> they weren't getting set correctly every once in a while , 
+F:  and I was just , <inbreath> doing a minus R star , <inbreath> not realizing that that caused  it to be re - backed - up . 
+F:  But normally you 're correct . 
+F:  But even without that , the back - up system is becoming saturated . 
+F:  Sure , but we still have enough changed that the nightly back - ups are starting to take too long . 
+F:  It has nothing to do with the meeting . 
+F:  It 's just the general ICSI back - up system is becoming saturated . 
+F:  Well , why don't you have this  have a  this conversation with Dave Johnson tha rather than with me ? 
+F:  Actually , you know , we could do that just with the tape  with the current tape . 
+F:  I dunno but it 's an automatic robot so it 's very convenient . 
+F:  You just run a program to restore them . 
+F:  Yeah . 
+F:  Well  
+F:  but  
+F:  no , 
+F:  but Andreas 's point is a good one . 
+F:  And we don't have to do anything ourselves to do that . 
+F:  They 're already right now on tape . 
+F:  Right . 
+F:  So your  your point is , and I think it 's a good one , that we could just get more disk and put it there . 
+F:  Yeah . 
+F:  That 's not a bad idea . 
+F:  So once it 's on tape  
+F:  I think that 's a good idea . 
+F:  Uh 
+F:  Well , I 'll talk to Dave , and  and see what th how  <noise> what the best way of doing that is . 
+F:  There 's a little utility that will manually burn a tape for you , 
+F:  and that 's probably the right way to do it . 
+F:  Yep . 
+F:  Well  we 're g we 're gonna automate that . 
+F:  My intention is to  do a script that 'll do everything . 
+F:  No . 
+F:  It 's all tape robot , 
+F:  so you just sit down at your computer and you type a command . 
+F:  Yeah . 
+F:  But y but you would be anyway . 
+F:  Right ? 
+F:  Because  
+F:  But there 's no reason to do that . 
+F:  It  we already have it there and it  it 's  
+F:  No , we won't . 
+F:  He 'll say " if  if that means  that it 's not gonna be backed - up standardly , great . " 
+F:  Yeah . 
+F:  It 's  it 's definitely no problem . 
+F:  Um , it 's  it 's just  it 's just a utility which queues up . 
+F:  It just queues it up and  and when it 's available , it will copy it . 
+F:  And then you can tell it to then remove it from the disk or you can , you know , do it a a few days later or whatever you wanna do , 
+F:  after you confirm that it 's really backed - up . 
+F:  NW  ? 
+F:  NW archive . 
+F:  That 's what it is . 
+F:  Right . 
+F:  Right . 
+F:  Right . 
+F:  And then it never  
+F:  Right . 
+F:  Which I 'm sure would make ever the sysadmins very happy . 
+F:  So , I think that 's a good idea . 
+F:  That 's what we should do . 
+F:  So , that means we 'll probably wanna convert all  all those files  filesystems to non - backed - up media . 
+F:  Yep . 
+F:  That wasn't me . 
+F:  That 's good . 
+F:  Oh you are ? 
+F:  Cool . 
+
+F:  That was a quick response . 
+F:  No . 
+F:  It 's , uh , Swi 
+F:  Hub - five . 
+F:  Yeah . 
+F:  Mm - hmm . 
+F:  It 's much worse . 
+F:  Yeah . 
+F:  That 's what I thought , too . 
+F:  What 's  Are the freq ? 
+F:  Hmm . 
+F:  Well , you can try each one on a cross - validation set , 
+F:  can't you ? 
+F:  Do you  ? 
+F:  What  ? 
+F:  And what 's the top frequency of each ? 
+F:  Yeah . 
+F:  Exp - one 's triangular , one 's trapezoidal . 
+F:  So  
+F:  Uh - huh . 
+F:  Hmm . 
+F:  OK . 
+F:  So it 's not just losing some <breath> frequency range . 
+F:  Yeah . 
+F:  Uh . Just what we were talking about before , which is that I ported a Blass library to Absinthe , 
+F:  and then got  got it working with fast - forward , 
+F:  and got <mouth> <inbreath> a speedup roughly proportional to the number of processors times the clock cycle . 
+F:  So , that 's pretty good . 
+F:  Um , I 'm in the process of doing it for Quicknet , 
+F:  but there 's something going wrong 
+F:  and it 's about half the speed that I was estimating it should be , 
+F:  and I 'm not sure why . 
+F:  But I 'll keep working on it . 
+F:  But the  what it means is that it 's likely that for net training and forward passes , we 'll  Absinthe will be a good machine . 
+F:  Especially if we get a few more processors and upgrade the processors . 
+F:  There 're five now . 
+F:  It can hold eight . 
+F:  And it 's also five - fifty megahertz and you can get a gigahertz . 
+F:  So . 
+F:  I don't think so . 
+F:  I think we 'd have to do all  
+F:  Yep . 
+F:  We 'd have to get a  almost certainly have to get a , uh , Netfinity server . 
+F:  They 're pretty  pretty specialized . 
+F:  July what ? 
+F:  Early July ? 
+F:  Late July ? 
+F:  Over a cappuccino tomorrow ? 
+F:  Mm - hmm . 
+F:  A unison digits ? 
+F:  Which is gonna be a little hard for a couple people because we have different digits forms . 
+F:  We have a  I found a couple of old ones . 
+F:  Have you done digits before ? 
+F:  OK . 
+F:  So , uh , the idea is just to read each line  with a short pause between lines , 
+F:  not between  
+F:  And , uh , since we 're in a hurry , we were just gonna read everyone all at once . 
+F:  So , if you sorta plug your ears and read  
+F:  So first read the transcript number , and then start reading the  digits . 
+F:  OK ? 
+F:  One , two , three . 
+F:  And  

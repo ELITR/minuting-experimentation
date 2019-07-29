@@ -1,0 +1,513 @@
+E:  Yep . That 's really fast . 
+E:  We 're recording . 
+E:  I pre - crashed it . 
+E:  I think it 's actually  
+E:  it depends on if the temp files are there or not , 
+E:  that  at least that 's my current working hypothesis , 
+E:  that I think what happens is it tries to clear the temp files and if they 're too big , it crashes . 
+E:  Oh , that 's right . 
+E:  Uh , no , it doesn't  it doesn't clear those necessarily , 
+E:  so . 
+E:  It 's  i they 're called temp files , 
+E:  but they 're not actually in the temp directory they 're in the scratch , 
+E:  so . 
+E:  They 're not backed up , but they 're not erased either on power failure . 
+E:  Oh well . 
+E:  Yeah . 
+E:  Yep , 
+E:  and then everyone can listen to it later . 
+E:  Yes . Absolutely . 
+E:  It 's what it sounds like . 
+E:  I  Since I 've been gone all week , I didn't send out a reminder for an agenda , 
+E:  so . 
+E:  Do we have anything to talk about or should we just read digits and go ? 
+E:  Yeah , really . 
+E:  It 's all a blur . 
+E:  Yep . 
+E:  Next weekend , week from  
+E:  A week from Saturday . 
+E:  That 's good . 
+E:  Well , y 
+E:  Eurospeech is due on Friday 
+E:  and then I 'm going down to San  uh , San Jose Friday night , 
+E:  so , if  you know , if we start nice and late Saturday that 's a good thing . 
+E:  Seattle . 
+E:  They 're flying from somewhere to somewhere , 
+E:  But , uh , yeah maybe an agenda , or at least some things to talk about would be a good idea . 
+E:  Oh yeah . 
+E:  Absolutely . 
+E:  So have you heard back from Brian about that , 
+E:  Chuck ? 
+E:  Great . 
+E:  OK . 
+E:  So , uh , oh , though Thi - Thilo isn't here , 
+E:  um , but , uh , 
+E:  I  I have the program to insert the beeps . 
+E:  What I don't have is something to parse the output of the channelized transcripts to find out where to put the beeps , 
+E:  but that should be really easy to do . 
+E:  So do we have a meeting that that 's been done with , 
+E:  that we 've tightened it up to the point where we can actually give it to IBM and have them try it out ? 
+E:  Mm - hmm . 
+E:  Well we had  we had talked about doing maybe EDU as a good choice , though . 
+E:  Well , <inbreath> whatever we have . 
+E:  Right . 
+E:  Yeah , maybe it doesn't matter . 
+E:  OK , and has it been corrected ? 
+E:  Hand - checked ? 
+E:  Cuz that was one of the <inbreath> processes we were talking about as well . 
+E:  And time how long it takes . 
+E:  Um , 
+E:  I don't know , 
+E:  it seems to me w we probably should go ahead and do a whole meeting 
+E:  because we 'll have to transcribe the whole meeting anyway sometime . 
+E:  Like I  I mean I guess if we have to do it again anyway , 
+E:  but , uh 
+E:  I think it 's gonna be one or two times real time at  
+E:  Wow , excuse me , two or more times real time , 
+E:  right ? 
+E:  Cuz they have to at least listen to it . 
+E:  Well the other stuff is I B 
+E:  I 'm just thinking that from a data  keeping - track - of - the - data point of view , it may be best to send them whole meetings at a time and not try to send them bits and pieces . 
+E:  Right . 
+E:  Right . 
+E:  Right . 
+E:  That was the question . Though . 
+E:  Well , I don't think  
+E:  I mean , h they  they typically work for what , four hours , something like that ? 
+E:  I think the they should be able to get through a whole meeting in one sitting . 
+E:  I would think , 
+E:  unless it 's a lot harder than we think it is , 
+E:  which it could be , certainly . 
+E:  Or seven or eight . 
+E:  Well  
+E:  That 's what it seems to me too , in that if they need to , just like in the other cases , they can listen to the individual , if they need to . 
+E:  But they don't have to for most of it . 
+E:  So , they have the normal channeltrans interface where they have each individual speaker has their own line , 
+E:  but you 're listening to the mixed signal and you 're tightening the boundaries , 
+E:  correcting the boundaries . 
+E:  You shouldn't have to tighten them too much because Thilo 's program does that . 
+E:  Right , so  so you 'll have to I  
+E:  Uh - huh . 
+E:  Uh - huh ! 
+E:  Sorry . 
+E:  I 'll work on that . 
+E:  Well , so  so that 's something that the transcribers will have to  have to do . 
+E:  Well , but then they have to do  
+E:  but then they  for this meeting they would have to do seven times real time , and it would probably be more than that . 
+E:  Right ? 
+E:  Because they 'd have to at least listen to each channel all the way through . 
+E:  Oh , you 're talking about visually . 
+E:  I just don't think  
+E:  Yeah , and I  I think that they 're going much more on acoustics than they are on visuals . 
+E:  So . 
+E:  Yeah , that 's actually true . 
+E:  Yeah , you 're right . 
+E:  You 're absolutely right . 
+E:  Yeah , I found the same thing that when I was scanning through the wave form <inbreath> I could see when someone started to read digits just by the shapes . 
+E:  Um , maybe . 
+E:  But  
+E:  Oh . 
+E:  Right . 
+E:  N the t 
+E:  Right . 
+E:  Yes . 
+E:  Right . 
+E:  Right . 
+E:  Right . 
+E:  Well , they wouldn't look at it  at this point . 
+E:  They would just listen . 
+E:  Well , the problem is that the  the interface doesn't really allow you to switch visuals . 
+E:  The problem is that  that  the Tcl - TK interface with the visuals , it 's very slow to load waveforms . 
+E:  And so when I tried  that  that was the first thing I tried when I first started it , 
+E:  right ? 
+E:  Well it  it does some sort of shape pre - computation so that it can then scroll it quickly , 
+E:  yeah . 
+E:  But then you can't change the resolution or scroll quickly . 
+E:  So . 
+E:  I mean , we  we could do different interfaces , 
+E:  right ? 
+E:  I mean , so  so we could use like X Waves instead of Transcriber , 
+E:  and it loads faster , certainly . 
+E:  Well that 's what I tried originally . 
+E:  So I  I actually before , uh , Dave Gelbart did this , I did an interface which showed each waveform and ea a ribbon for each waveform , 
+E:  but the problem with it is even with just three waveforms it was just painfully slow to scroll . 
+E:  So you just scroll a screen and it would , you know go " kur - chunk ! " 
+E:  And so it just was not doable with the current interface . 
+E:  I think that if we decide that we need  that they need to see the visuals , we need to change the interface so that they can do that . 
+E:  An 
+E:  But isn't  
+E:  The chopped up waveforms . 
+E:  Isn't that  
+E:  And wouldn't that be the same  as the mixed signal ? 
+E:  Yeah . 
+E:  Yeah . 
+E:  Yeah , hopefully , I mean  
+E:  The mixed signal , the overlaps are pretty audible because it is volume equalized . 
+E:  So I think they should be able to hear . 
+E:  The only problem is  is , you know , counting how many and if they 're really correct or not . 
+E:  So , I don't know . 
+E:  Right but  but once  once you know that they happen , you can at least listen to the close talking , 
+E:  so . 
+E:  Right . 
+E:  Right , 
+E:  so  so 
+E:  did Dave  Did Dave do that change where you can actually just click rather than having to go up to the menu to listen to the individual channels ? 
+E:  I had suggested it before . 
+E:  I just don't know whether he did it or not . 
+E:  Yeah . 
+E:  Yeah . 
+E:  We should get him to do that 
+E:  because , uh , I think that would be much , much faster than going to the menu . 
+E:  Then maybe just buttons down at the bottom next to it . 
+E:  Just something so that it 's not in the menu option so that you can do it much faster . 
+E:  Well it just seems to me that if you wanna quickly  " well was that Jane , no , was that Chuck , no , was that Morgan " , right now , you have to go up to the menu , 
+E:  and each time , go up to the menu , select it , listen to that channel then click below , 
+E:  and then go back to the menu , select the next one , and then click below . 
+E:  So you can definitely streamline that with the i with the interface . 
+E:  What ? 
+E:  OK . 
+E:  I would like to try to do something on digits 
+E:  but I just don't know if we have time . 
+E:  I mean , it 's due next Friday 
+E:  so we have to do the experiments and write the paper . 
+E:  So , I 'm gonna try , 
+E:  but , uh , 
+E:  we 'll just have to see . 
+E:  So actually I wanna get together with both Andreas and , uh , uh , Stephane with their respective systems . 
+E:  Right , 
+E:  and I haven't had s chance to sit down and listen . 
+E:  I was going to do that this afternoon . 
+E:  Well , Morgan and I were  were having a debate  about that . 
+E:  Whereas I think it it 's probably something pathologic 
+E:  and actually Stephane 's results , I think confirm that . 
+E:  He s he did the Aurora system 
+E:  also got very lousy average error , like fifteen or  or , uh , fifteen to twenty percent average ? 
+E:  But then he ran it just on the lapel , and got about five or six percent word error ? 
+E:  So that  that means to me that somewhere in the other recordings there are some pathological cases . 
+E:  But , you know , we  th that may not be true . 
+E:  It may be just some of the segments they 're just doing a lousy job on . 
+E:  So I 'll  I 'll listen to it and find out since you 'd actually split it up by segment . 
+E:  So I can actually listen to it . 
+E:  Oh , I thought he had sent that around to everyone , 
+E:  did you just sent that to me ? 
+E:  Oh . 
+E:  It was bimodal . 
+E:  Oh , was it trimodal , OK . 
+E:  Yeah . 
+E:  Just  just something really wrong with  
+E:  A bug is what I mean , 
+E:  so that it 's like  
+E:  Which probably means like there was a  th the recording interface crashed , 
+E:  or there was a short  you know , someone was jiggling with a cord 
+E:  or , uh , I extracted it incorrectly , 
+E:  it was labeled  
+E:  it was transcribed incorrectly , 
+E:  something really bad happened , 
+E:  and I just haven't listened to it yet to find out what it was . 
+E:  There 's a lot . 
+E:  Yeah . 
+E:  A normal . 
+E:  Yeah . 
+E:  Yeah , cuz some of our non - natives are pretty non - native . 
+E:  So . 
+E:  c High correlation . 
+E:  Well if we 'd just  
+E:  Um - hmm . 
+E:  Well . are you talking about the fact that the recording software doesn't do time - synchronous ? 
+E:  Is that what you 're referring to ? 
+E:  That seems to me you can do that over the entire file and get a very accurate  
+E:  I didn't think so either . 
+E:  Right , which should be pretty straight forward . 
+E:  Yeah . 
+E:  Yeah . That 's what I was gonna say . 
+E:  C 
+E:  Oh , MNCM . 
+
+E:  Hmm ! 
+E:  So a meeting with me in it . 
+E:  Ugh ! 
+E:  I forgot the digital camera again . 
+E:  Every meeting ! 
+E:  Mm - hmm . 
+E:  Two words . 
+E:  Thilo 's will . But . 
+E:  Well maybe  Maybe that will get enough of the cases to be useful . 
+E:  You know s cuz it seemed like most of the cases are in fact the single word sorts , 
+E:  or at least a single phrase 
+E:  in most of the bins . 
+E:  Right . 
+E:  Hmm ! 
+E:  Yes . 
+E:  Oh . 
+E:  Tools . 
+E:  Right . 
+E:  And we 'll just have to see how hard that is . 
+E:  So  so whether the corrections take too much time . 
+E:  I was just thinking about the fact that if Thilo 's missed these short segments , that might be quite time - consuming for them to insert them . 
+E:  Spurious . 
+E:  It might be easier to delete something that 's wrong than to insert something that 's missing . 
+E:  What do you think , Jane ? 
+E:  Yeah . 
+E:  Cuz then  then you just delete it , and you don't have to pick a time . 
+E:  Yeah , I guess the semantics aren't clear when you delete a segment , 
+E:  right ? 
+E:  Because you would say  You would have to determine what the surroundings were . 
+E:  If it 's really a noise . 
+E:  To add or to delete ? 
+E:  OK . 
+E:  That  Maybe that 's an interface issue that might be addressable . 
+E:  But I think it 's the semantics that are  that are questionable to me , 
+E:  that you delete something  
+E:  So let 's say someone is talking to here , and then you have a little segment here . 
+E:  Well , is that part of the speech ? 
+E:  Is it part of the nonspeech ? 
+E:  I mean , w what do you embed it in ? 
+E:  Oh , I see . 
+E:  So then they could just like put  
+E:  Oh that 's what you meant by just put an " X " there . 
+E:  Uh , that 's an interesting idea . 
+E:  So  so all they  So that all they would have to do is put like an " X " there . 
+E:  So blank for  blank for silence , " S " 
+E:  " S " for speech , " X " 
+E:  " X " for something else . 
+E:  Well , I think we 'll have to , eventually . 
+E:  And my hope was that we would be able to use the forced alignment to get it . 
+E:  But if we can't  
+E:  But if we can't , then maybe we just have to  
+E:  Well , I 'm thinking  
+E:  are you talking about for a paper , or are talking about for the corpus . 
+E:  I mean cuz for the corpus it would be nice if everything were  
+E:  We wouldn't have to re - do them , 
+E:  we would just have to edit them . 
+E:  When  
+E:  Oh , Brian . 
+E:  You s I thought you said Ryan . 
+E:  And it 's like , " Who 's Ryan ? " 
+E:  OK . 
+E:  Yep . 
+E:  On the table , 
+E:  right ? 
+E:  That 's what he was saying . 
+E:  I don't think so . 
+E:  I don't think that would work , 
+E:  right ? 
+E:  Because you 'd  
+E:  A lot of it 's dominated by channel properties . 
+E:  Cool . 
+E:  I thought it was higher than that , that 's pr 
+E:  Right . 
+E:  Yeah , I 'm doing that for AVIOS . 
+E:  Uh , " bleep " . 
+E:  Yeah , really . 
+E:  Especially the batteried meter popping up , 
+E:  that was hilarious . 
+E:  Right when you were talking about that . 
+E:  It 's full . 
+E:  Yeah . 
+E:  But that was funny . 
+E:  He  he  he was onto the bullet points about talking about the  you know  the little hand - held , and trying to get lower power and so on , 
+E:  and Microsoft pops up a little window saying " Your batteries are now fully charged . " 
+E:  I 'm thinking about scripting that for my talk , you know , put  put a little script in there to say " Your batteries are low " right when I 'm saying that . 
+E:  Are too close , 
+E:  yeah . 
+E:  Yeah , for Eurospeech we want some results 
+E:  if we can get them . 
+E:  Detail , 
+E:  yeah . 
+E:  Overall . 
+E:  Those are all  
+E:  Yeah . 
+E:  Yeah , that 's what I was gonna say . 
+E:  The problem with those , they 're all German . 
+E:  So . 
+E:  OK , Andreas is leaving  leaving the building . 
+E:  Mm - hmm . 
+E:  See ya . 
+E:  Um , oh , before you l go  
+E:  I guess it 's alright for you to talk a little without the mike  
+E:  I noticed you adjusting the mike a lot , 
+E:  did it not fit you well ? 
+E:  Oh . 
+E:  Maybe it wasn't just tightened enough , or  
+E:  OK . 
+E:  Anyway . 
+E:  Cuz , I 'm just thinking , you know , we were  we 're  we 've been talking about changing the mikes , uh , for a while , 
+E:  and if these aren't  
+E:  acoustically they seem really good , 
+E:  but if they 're not comfortable , we have the same problems we have with these stupid things . 
+E:  I find it very comfortable too , but , uh , it looked like Andreas was having problems , 
+E:  and I think Morgan was saying it  
+E:  Oh , 
+E:  oh you did wear it this morning ? 
+E:  OK , it 's off , so you can put it on . 
+E:  Right . 
+E:  It 's more balanced . 
+E:  Well wh what it 's supposed to do is the backstrap is supposed to be under your crown , 
+E:  and so that should be  should be  
+E:  if it 's right against your head there , which is what it 's supposed to be , that balances it 
+E:  so it doesn't slide up . 
+E:  Yep , right  right below  
+E:  if you feel the back of your head , you feel a little lump , 
+E:  um , and so it 's supposed to be right under that . 
+E:  Yes , exactly . 
+E:  That  that  that tilts , 
+E:  right ? 
+E:  In lots and lots of different ways . 
+E:  About heads ? 
+E:  I think probably it was  
+E:  Yeah . 
+E:  It probably just wasn't tight enough to the back of his head . 
+E:  I mean , so the directions do talk about bending it to your size , which is not really what we want . 
+E:  wh 
+E:  We did that  
+E:  We  at Boeing I used  I was doing augmented reality so they had head - mounts on , 
+E:  and we  we had a little jury - rigged one with a welder 's helmet , 
+E:  and we had just a bag with a bunch of marbles in it <laugh> as a counter - balance . 
+E:  Yeah ! 
+E:  Anyway . 
+E:  Yep . 
+E:  And arrays , 
+E:  yep . 
+E:  And cameras . 
+E:  Fifty - nine elements . 
+E:  Oh , that 's right . 
+E:  Yep . 
+E:  Right . 
+E:  Yeah , it is a good idea . 
+E:  Yeah , h uh , J Jonathan Fiscus did say that , uh , they have lots of software for doing calibration for skew and offset between channels 
+E:  and that they 've found that 's just not a big deal . 
+E:  So . 
+E:  Scenario - based . 
+E:  Y right . 
+E:  Their  their legal issues won't allow them to do otherwise . 
+E:  But it sounded like they were  pretty well thought out 
+E:  and they 're  they 're gonna be real meetings , 
+E:  it 's just that they 're with str with people who would not be meeting otherwise . 
+E:  So . 
+E:  No . 
+E:  It 's just informal . 
+E:  Yeah , I also sat and chatted with several of the NIST folks . 
+E:  They seemed like a good group . 
+E:  Right . 
+E:  The - their Broadcast News was their acoustic models 
+E:  and then all the other tasks were much simpler . 
+E:  So they were command and control and that sort of thing . 
+E:  Yep . 
+E:  Yeah , read Wall Street Journal . 
+E:  It works . 
+E:  Yeah . 
+E:  Yeah , that was one of the ones that I liked . 
+E:  That  It not only works , in some cases it was better , 
+E:  which I thought was pretty interesting , 
+E:  but that 's cuz they didn't control for parameters . 
+E:  So . 
+E:  You know , the Broadcast News nets were  not nets , 
+E:  acoustic models  were a lot more complex . 
+E:  n Not in that paper . 
+E:  Yeah , well , one of the big problems with that is  is often the simpler task isn't fully  doesn't have all the phones in it , 
+E:  and that  that makes it very hard . 
+E:  But I 've done the same thing . 
+E:  I 've been using Broadcast News nets for digits , 
+E:  like for the spr speech proxy thing that I did ? 
+E:  That 's what I did . 
+E:  So . It works . 
+E:  Yep . 
+E:  You mean they have some . 
+E:  Present . 
+E:  Yep . 
+E:  Do a trip report . 
+E:  Right . 
+E:  A lot of different ones . 
+E:  Mitre , BBN , IBM . 
+E:  Uh , 
+E:  Wasn't  Who  who  who did the order one ? 
+E:  Ugh !  I 'm just so bad at that . 
+E:  Yeah , we do have word transcripts . 
+E:  So . 
+E:  Someone who actually does take notes , 
+E:  um , <laugh> I 'm very bad at note - taking . 
+E:  I always write down the wrong things . 
+E:  A judge . 
+E:  Yep . 
+E:  And as I said , I like the Microsoft talk on  scaling issues in , uh , word sense disambiguation , 
+E:  that was interesting . 
+E:  The  
+E:  It  it  it was the only one  It was the only one that had any sort of real disagreement about . 
+E:  So . 
+E:  Yep . 
+E:  Well , it sort of was . 
+E:  But it was  it was a very simple case of " to " versus " too " versus " two " and " there " , " their " , " they 're "  
+E:  Yeah . 
+E:  Them being beep ,  they went off to a billion . 
+E:  Yeah . 
+E:  Well , I think the reason they can do that , is that they assumed that text that they get off the web , like from Wall Street Journal , is correct , and edit it . 
+E:  So that 's what they used as training data . 
+E:  It 's just saying if it 's in this corpus it 's correct . 
+E:  Are irrelevant . 
+E:  But  
+E:  No , but there was still a spread . 
+E:  They weren't all up 
+E:  They weren't converging . 
+E:  They were all still spread . 
+E:  But they  
+E:  Right , right . 
+E:  Sure . 
+E:  But they hadn't even come close to that point . 
+E:  All the tasks were still improving when they hit a billion . 
+E:  But they didn't get closer . 
+E:  They just switched position . 
+E:  Yep . 
+E:  Yeah . 
+E:  It was Liz . 
+E:  Yeah . 
+E:  Right . 
+E:  But , I think one of their p They  they had a couple points . 
+E:  w  Uh , I think one of them was that " Well , maybe simpler algorithms and more data are  is better " . 
+E:  Less memory , 
+E:  faster operation , 
+E:  simpler . 
+E:  Right ? 
+E:  Because their simplest , most brain - dead algorithm did pretty darn well 
+E:  when you got  gave it a lot more data . 
+E:  And then also they were saying , " Well , m You have access to a lot more data . 
+E:  Why are you sticking with a million words ? " 
+E:  I mean , their point was that this million - word corpus that everyone uses is apparently ten or fifteen years old . 
+E:  And everyone is still using it , 
+E:  so . 
+E:  But we could talk about this stuff , 
+E:  I think this would be fun to do . 
+
+E:  Right . 
+E:  Machine - learning . 
+E:  Right . 
+E:  Or you only have a million words  for your  some new task . 
+E:  Yep . 
+E:  Right . 
+E:  Mm - hmm . 
+E:  Cost . 
+E:  Yeah . 
+E:  That 's a big one . 
+E:  Yep . 
+E:  Yeah , so that 's one of the slides they put up . 
+E:  Forty - five years of research . 
+E:  Yep . 
+E:  I think the matters is the thing that  that was misleading . 
+E:  Is that  all  all of them are based on all the others , 
+E:  right ? 
+E:  Just , you  you can't say  
+E:  Yeah . 
+E:  I mean , so .  
+E:  And I 'm saying the same thing happened with speech recognition , 
+E:  right ? 
+E:  For a long time people were hand - c coding linguistic rules 
+E:  and then they discovered machine - learning worked better . 
+E:  And now they 're throwing more and more data and worrying  perhaps worrying less and less about , uh , the exact details of the algorithms . 
+E:  Except when they have a Eurospeech paper . 
+E:  Anyway . 
+E:  Shall we read some digits ? 
+E:  Are we gonna do one at a time ? Or should we read them all agai at once again . 
+E:  OK . 
+E:  So remember to read the transcript number so that , uh , everyone knows that  what it is . 
+E:  And ready ? 
+E:  Three , two , one . 
+E:  Yep . That 's really fast . 

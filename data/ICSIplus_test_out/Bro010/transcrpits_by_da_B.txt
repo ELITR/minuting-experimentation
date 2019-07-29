@@ -1,0 +1,313 @@
+B:  Mm - hmm . 
+B:  I don't know . 
+B:  Do you have news from the conference talk ? 
+B:  Uh , 
+B:  that was programmed for yesterday  I guess . 
+B:  Well 
+B:  Alright . 
+B:  To  to decide what to do , 
+B:  yeah . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Uh , well , we 've  a little bit worked on trying to see , uh , what were the bugs and the problem with the latencies . 
+B:  So , 
+B:  We took  first we took the LDA filters 
+B:  and , <swallow> uh , we designed new filters , 
+B:  using uh recursive filters actually . 
+B:  I 'm sorry ? 
+B:  Uh , us . 
+B:  Yeah . 
+B:  So we took the filters  the FIR filters <swallow> and we  designed , uh , IIR filters that have the same frequency response . 
+B:  Well , similar , but that have shorter delays . 
+B:  So they had two filters , 
+B:  one for the low frequency bands 
+B:  and another for the high frequency bands . 
+B:  And so we redesigned two filters . 
+B:  And the low frequency band has sixty - four milliseconds of delay , 
+B:  and the high frequency band filter has something like eleven milliseconds compared to the two hundred milliseconds of the IIR filters . 
+B:  But it 's not yet test . 
+B:  So we have the filters 
+B:  but we still have to implement a routine that does recursive filtering 
+B:  and  
+B:  No . 
+B:  No . 
+B:  Yeah , yeah . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Uh , 
+B:  I  
+B:  yeah , 
+B:  I don't know if th that 's what they were trying to  
+B:  They were trying to do something different like taking , uh  well , using filter that takes only a past 
+B:  and 
+B:  this is just a little bit different . 
+B:  But I will I will send him an email and tell him exactly what we are doing , 
+B:  so . 
+B:  Um , 
+B:  Mm - hmm . 
+B:  Alright . 
+B:  Um , 
+B:  Yeah . 
+B:  Well , there is w one , um , remark about these filters , that they don't have a linear phase . 
+B:  So , 
+B:  Well , I don't know , 
+B:  perhaps it  perhaps it doesn't hurt 
+B:  because the phase is almost linear 
+B:  but . 
+B:  Um , 
+B:  and so , yeah , for the delay I gave you here , it 's  it 's , uh , computed on the five hertz modulation frequency , 
+B:  which is the  mmm , well , the most important for speech 
+B:  so . 
+B:  Uh , 
+B:  this is the first thing . 
+B:  Yeah . 
+B:  Three hundred and thirty . 
+B:  Yeah , 
+B:  but there are other points actually , 
+B:  uh , 
+B:  which will perhaps add some more delay . 
+B:  Is that some other  other stuff in the process were perhaps not very  um perf well , not very correct , 
+B:  like the downsampling which w was simply dropping frames . 
+B:  Um , 
+B:  so we will try also to add a nice downsampling 
+B:  having a filter that  that  
+B:  well , a low - pass filter at  at twenty - five hertz . 
+B:  Uh , because wh when  when we look at the LDA filters , well , they are basically low - pass 
+B:  but they leave a lot of what 's above twenty - five hertz . 
+B:  Um , 
+B:  and so , yeah , 
+B:  this will be another filter which would add ten milliseconds again . 
+B:  Um , 
+B:  yeah , 
+B:  and then there 's a third thing , 
+B:  is that , um , basically the way on - line normalization was done uh , is just using this recursion on  on the um , um , on the feature stream , 
+B:  and  but this is a filter , 
+B:  so it has also a delay . 
+B:  Uh , 
+B:  and when we look at this filter actually it has a delay of eighty - five milliseconds . 
+B:  So if we  
+B:  Yeah . 
+B:  If we want to be very correct , 
+B:  so if we want to  the estimation of the mean t t to  to be  well , the right estimation of the mean , we have to t to take eighty - five milliseconds in the future . 
+B:  Mmm . 
+B:  Yeah . 
+B:  Um , 
+B:  But , well , when we add up everything it 's  it will be alright . 
+B:  We would be at six 
+B:  so , sixty - five , plus ten , plus  for the downsampling , 
+B:  plus eighty - five for the on - line normalization . 
+B:  So it 's 
+B:  plus  plus eighty for the neural net and PCA . 
+B:  So it would be around two hundred and forty  
+B:  so , well , 
+B:  plus  plus the frames , 
+B:  but it 's OK . 
+B:  Hmm . 
+B:  Yeah . 
+B:  So , yeah . 
+B:  Yeah , 
+B:  and basically the best proposal had something like thirty or forty milliseconds of latency . 
+B:  So . 
+B:  Well . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Uh , yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Well , it 's that by the for the moment we have , uh , something that 's discriminant and nonlinear . 
+B:  And the other is linear but it 's not discriminant at all . 
+B:  Well , it 's it 's a linear transformation , that  
+B:  Uh  
+B:  Mmm . 
+B:  Well  
+B:  uh  
+B:  yeah . 
+B:  Actually what we want to do , perhaps it 's to replace  to  to have something that 's discriminant but linear , also . 
+B:  And to see if it  if it improves ov over  over the non - discriminant linear transformation . 
+B:  And if the neural net is better than this 
+B:  or , well . 
+B:  So . 
+B:  Ye 
+B:  Mmm . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  So it would be on the 
+B:  um  
+B:  on  on the mel frequency bands , 
+B:  so . Yeah , 
+B:  be before everything . 
+B:  Yeah , 
+B:  um  
+B:  Um . 
+B:  Mmm , yeah . 
+B:  I guess it 's power domain , yeah . 
+B:  I don't remember exactly . 
+B:  But  
+B:  yeah , 
+B:  so it 's before everything else , 
+B:  and  
+B:  Yeah . 
+B:  Mmm . 
+B:  Yeah . 
+B:  A little bit more 
+B:  and  
+B:  Yeah . 
+B:  Yeah . 
+B:  And generated this  this , 
+B:  um , 
+B:  so you have the estimation of the power spectra of the noise , 
+B:  and you multiply this by a factor which is depend dependent on the SNR . 
+B:  So . Well . 
+B:  When the speech lev when the signal level is more important , compared to this noise level , the coefficient is small , and around one . 
+B:  But when the power le the s signal level is uh small compared to the noise level , the coefficient is more important . 
+B:  And this reduce actually the music musical noise , 
+B:  uh 
+B:  which is more important during silence portions , 
+B:  when the s the energy 's small . 
+B:  So there are tricks like this 
+B:  but , mmm . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah , 
+B:  sure . 
+B:  But  
+B:  Mmm . 
+B:  Yeah , but it  
+B:  Actually , it 's a mmm  If - if you want to have a good estimation on non - stationary noise you have to look in the  in the future . 
+B:  I mean , if you take your window and build your histogram in this window , um , what you can expect is to have an estimation of th of the noise in  in the middle of the window , 
+B:  not at the end . 
+B:  So  
+B:  the  but  but people  
+B:  The 
+B:  They just look in the past . 
+B:  I guess it works because the noise are , uh pret uh , almost stationary 
+B:  but , 
+B:  um  
+B:  Well , if y if you have a good estimation of the noise , 
+B:  yeah , 
+B:  because 
+B:  well 
+B:  it it has to work . 
+B:  i 
+B:  Yeah , 
+B:  that 's hard to do . 
+B:  Yeah . 
+B:  But  
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Mmm . 
+B:  Yeah , 
+B:  that 's  
+B:  So in this case , yeah , sure , you cannot  
+B:  But I think y um , Hirsch does experiment with windows of like between five hundred milliseconds and one second . 
+B:  And 
+B:  well , five hundred wa was not so bad . 
+B:  I mean 
+B:  and he worked on non - stationary noises , 
+B:  like noise modulated with well , wi with amplitude modulations 
+B:  and 
+B:  things like that , 
+B:  and  
+B:  But  
+B:  Um , 
+B:  yeah . 
+B:  Well , 
+B:  I think  
+B:  Yeah . 
+B:  Well , in  in the paper he showed that actually the estimation of the noise is  is delayed . 
+B:  Well , it 's  there is  
+B:  you  you have to center the window , 
+B:  yeah . 
+B:  Mmm . 
+B:  Mmm . 
+B:  Yeah . 
+B:  Hmm . 
+B:  Yeah . 
+B:  What  
+B:  What do you mean ? 
+B:  But if the  if the noise is stationary perhaps you don't even need some kind of noise estimation algorithm . 
+B:  We just take th th th the beginning of the utterance 
+B:  and 
+B:  I I know p I don't know if people tried this for Aurora . 
+B:  Well , everybody seems to use some kind of adaptive , well , scheme 
+B:  but , 
+B:  is it very useful 
+B:  and is the c 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Yeah , so . 
+B:  Yeah , 
+B:  they have some kind of threshold on  on the previous estimate , 
+B:  and  
+B:  So . 
+B:  Yeah . 
+B:  I think . Yeah , I think Ericsson used this kind of threshold . Yeah , 
+B:  so , they h they have an estimate of the noise level 
+B:  and they put a threshold like six or ten DB above , 
+B:  and 
+B:  what 's under this threshold is used to update the estimate . 
+B:  Is  is that right 
+B:  or  ? 
+B:  So it 's  it 's  
+B:  Yeah . 
+B:  It 's like saying what 's under the threshold is silence , 
+B:  and  
+B:  I d I  
+B:  Y you know , perhaps ? 
+B:  What could be the other low level detectors , I mean , for   Other kind of features , 
+B:  or  ? 
+B:  in addition to detecting sonorants 
+B:  or  ? 
+B:  Th - that 's what you want to  to  to go for also 
+B:  or  ? 
+B:  Other low level detectors ? 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  And the de - reverberation algorithm , 
+B:  do you have  can you give some more details on this 
+B:  or  ? Does it use one microphone ? 
+B:  Several microphones ? 
+B:  Does it  ? 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Uh , 
+B:  I g I guess  I guess when people are working with single microphones , they are more trying to do  
+B:  well , not  not very  
+B:  Well , there is the Avendano work , 
+B:  but also trying to mmm , uh  trying to f t find the de - convolution filter 
+B:  but in the 
+B:  um  
+B:  not in the time domain 
+B:  but in the uh the stream of features uh I guess . 
+B:  Well , @ @  there  there 's someone working on this on i in Mons 
+B:  So perhaps , 
+B:  yeah , 
+B:  we should try t to  
+B:  He 's working on this , 
+B:  on trying to  
+B:  on re reverberation , 
+B:  um  
+B:  Mm - hmm . 
+B:  So , yeah . 
+B:  Well , he did echo cancellation 
+B:  and he did some fancier things 
+B:  like , uh , <mouth> <inbreath> uh , training different network on different reverberation conditions 
+B:  and then trying to find the best one , 
+B:  but . Well . 
+B:  Yeah . 
+B:  If there is  ? 
+B:  Ah , yeah . 
+B:  Mm - hmm . 

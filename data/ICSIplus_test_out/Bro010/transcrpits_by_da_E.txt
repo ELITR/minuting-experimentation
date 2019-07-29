@@ -1,0 +1,104 @@
+E:  Oh , no  ? 
+E:  Oh . Conference call . 
+E:  Oh . KLT . 
+E:  Pretty stationary , 
+E:  yeah . 
+E:  Hmm . 
+E:  Oh , 
+E:  um , 
+E:  two , three , 
+E:  it can be shorter than that . 
+E:  Um . 
+E:  Well , I 've  I 've talked to some of you already . 
+E:  Um , but I 'm , uh , looking into extending the work done by Larry Saul and John Allen and uh Mazin Rahim . 
+E:  Um , they  they have a system that 's , uh , a multi - band , um , system 
+E:  but their multi - band is  is a little different than the way that we 've been doing multi - band in the past , 
+E:  where um  Where we 've been @ @  uh taking  um  <mouth> sub - band features and i training up these neural nets and  on  on phonetic targets , 
+E:  and then combining them some somehow down the line , 
+E:  um , 
+E:  they 're  they 're taking sub - band features and , um , training up a detector that detects for , um , these phonetic features 
+E:  for example , um , he presents um , uh , a detector to detect sonorance . 
+E:  And so what  what it basically is  is , um  it 's  there 's  
+E:  at the lowest level , there  it 's  it 's an OR ga I mean , it 's an AND gate . 
+E:  So , uh , on each sub - band you have several independent tests , 
+E:  to test whether um , there 's the existence of sonorance in a sub - band . 
+E:  And then , um , it c it 's combined by a soft AND gate . 
+E:  And at the  at the higher level , 
+E:  for every  if , 
+E:  um  
+E:  The higher level there 's a soft OR gate . 
+E:  Uh , so if  if this detector detects um , the presence of  of sonorance in any of the sub - bands , then the detect uh , the OR gate at the top says , " OK , well this frame has evidence of sonorance . " 
+E:  And these are all  
+E:  Oh , OK . 
+E:  Well , the low level detectors are logistic regressions . 
+E:  Um , 
+E:  and 
+E:  the , uh  
+E:  the one o 
+E:  Yeah . 
+E:  Right . 
+E:  Yeah , 
+E:  so he uses , um , an EM algorithm to  to um train up these um parameters for the logistic regression . 
+E:  The  
+E:  Mm - hmm . 
+E:  Um  
+E:  Uh 
+E:  Right , 
+E:  so the  
+E:  OK , 
+E:  so at each for each sub - band  there are basically , uh , several measures of SNR and  and correlation . 
+E:  Um , 
+E:  um and he said there 's like twenty of these per  per sub - band . 
+E:  Um , 
+E:  and for  for every s every sub - band , e you  you just pick ahead of time , um , " I 'm going to have like five  i independent logistic tests . " 
+E:  And you initialize these parameters , um , in some  some way 
+E:  and use EM to come up with your training targets for a  for the  the low - level detectors . 
+E:  And then , once you get that done , you  you  you train the whole  whole thing on maximum likelihood . 
+E:  Um , 
+E:  and h he shows that using this  this method to detect sonorance is it 's very robust compared to , um  <mouth> to typical , uh , full - band Gaussian mixtures um estimations of  of sonorance . 
+E:  And , uh 
+E:  so  
+E:  so that 's just  that 's just one detector . 
+E:  So you can imagine building many of these detectors on different features . 
+E:  You get enough of these detectors together , um , then you have enough information to do , um , higher level discrimination , 
+E:  for example , discriminating between phones 
+E:  and then you keep working your way up until you  you build a full recognizer . 
+E:  So , um , that 's  that 's the direction which I 'm  I 'm thinking about going in my quals . 
+E:  Ouch . 
+E:  Yeah . 
+E:  Forced alignment on the sub - band labels ? 
+E:  Yeah . 
+E:  Um , it helps for one or t one iteration 
+E:  but um , anything after that it doesn't help . 
+E:  Um  
+E:  What t 
+E:  Oh , build other  other detectors on different  phonetic features ? 
+E:  Um , 
+E:  uh Let 's see , 
+E:  um , 
+E:  Yeah , 
+E:  I d I don't know . 
+E:  e Um , 
+E:  um , 
+E:  I mean , w easiest thing would be to go  go do some voicing stuff 
+E:  but that 's very similar to sonorance . 
+E:  Um , 
+E:  Yeah . 
+E:  Oh ! OK . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah , 
+E:  nasality . 
+E:  Oh , OK . 
+E:  Placing stuff , 
+E:  yeah . 
+E:  Mm - hmm . 
+E:  Like a understanding application . 
+E:  Yeah . 
+E:  S so , um , Ohala 's going to help do these , uh  transcriptions of the meeting data ? 
+E:  Hmm . 
+E:  Hmm . 
+E:  OK . 
+E:  Cool . 
+E:  Oh . 
+E:  Oh , no  ? 

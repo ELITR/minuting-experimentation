@@ -1,0 +1,575 @@
+B:  so that 
+B:  OK . 
+B:  OK , so uh i um 
+B:  I don't know whether Ami 's coming or not 
+B:  um 
+B:  but I think we oughta just get started . 
+B:  Don't know . 
+B:  Anyway 
+B:  Oh , 
+B:  so there you go . 
+B:  Anyway , so my idea f for today 
+B:  and we can uh decide that that isn't the right thing to do 
+B:  was to at  spend at least part of the time trying to eh build the influence links , 
+B:  you know which sets of things are uh relevant to which decisions 
+B:  and actually I had uh specific s suggestion to start first with the path ones . 
+B:  The database ones being in some sense less interesting to us 
+B:  although probably have to be done 
+B:  and so to do that 
+B:  so there 's  and the idea was we were gonna do two things 
+B:  Ah . 
+B:  Oh right , well . 
+B:  Yeah . 
+B:  We were gonna do two things 
+B:  one of which is just lay out the influence structure of what we think influences what 
+B:  and then as a uh separate but related task 
+B:  uh particularly Bhaskara and I were going to try to decide what kinds of belief nodes are needed in order to um do what we  what we need to do . 
+B:  Once 
+B:  so but du we should sort of have all of the uh basic design of what influences what done before we decide exactly how to compute it . 
+B:  So I didn't  did you get a chance to look at all  yet ? 
+B:  Great . 
+B:  OK so let 's start with the uh belief - nets , the general influence stuff 
+B:  and then we 'll  then we 'll also at some point break and talk about the techy stuff . 
+B:  Oh are you gonna go there or not ? 
+B:  Yeah , so one i 
+B:  Right , 
+B:  true . 
+B:  Does have to be there . 
+B:  And I 'm sure we 'll find more as we go that 
+B:  Well  
+B:  so there is this question about 
+B:  Yeah . 
+B:  When we 're  yeah when we 're done . 
+B:  So  so 
+B:  the  the reason it might not be true or false is that we did have this idea of when 
+B:  so it 's , you know uh current @ @ and so forth and so on or not at all , 
+B:  right ? 
+B:  And so that a decision would be do we want that 
+B:  so you could  two different things you could do , 
+B:  you could have all those values for Go - there 
+B:  or you could have Go - there be binary and given that you 're going there when . 
+B:  Yeah 
+B:  and so forth . 
+B:  So I 'll let 
+B:  we 'll see . 
+B:  OK , that 's  let 's start that way . 
+B:  Right . 
+B:  No uh 
+B:  You 've s have you seen this before at all Keith , these belief - net things ? 
+B:  Yeah . 
+B:  Or cheapness . 
+B:  Thrift , that 's good . 
+B:  Great . 
+B:  Yeah . So Keith w what 's behind this is actually a program that will once you fill all this in actually s solve your belief - nets for you and stuff . 
+B:  So this is not just a display , 
+B:  this is actually a GUI to a simulator that will if we tell it all the right things we 'll wind up with a functioning belief - net at the other end . 
+B:  Doesn't matter . 
+B:  Let 's  
+B:  go ahead . 
+B:  Well yeah . So here 's  here 's what 's permissible 
+B:  is that you can arrange so that the um the value of that is gonna have to be updated 
+B:  and n it 's not a belief update , 
+B:  right ? 
+B:  It 's  you took some actions , you spent money and stuff , 
+B:  so the update of that is gonna have to be essentially external to the belief - net . 
+B:  Right ? 
+B:  And then what you 're going to need is uh for the things that it influences . 
+B:  Well let 's  first of all let 's see if it does influence anything . 
+B:  And if it does influence anything then you 're gonna need something that converts from the  the number here to something that 's relevant to the decision there . 
+B:  So it could be ra they create different ranges that are relevant for different decisions or whatever  
+B:  but for the moment this is just a node that is conditioned externally and might influence various things . 
+B:  Well that 's fine . 
+B:  Well anyway , go ahead . 
+B:  Yeah , that 's a good question . 
+B:  And uh does it have a lazy mode ? 
+B:  I don't remember . 
+B:  Oh right . 
+B:  Yeah . 
+B:  S probably does . 
+B:  Yeah 
+B:  someone has to track that down , 
+B:  but I  but uh 
+B:  And  and  and I think  actually uh 
+B:  one of the we w items for the uh user home base uh should be uh essentially non - local . 
+B:  I they 're only there for the day and they don't have a place that they 're staying . 
+B:  Yeah . 
+B:  So 
+B:  it 's clear where w w w where we are right now . 
+B:  So my suggestion is we just pick uh 
+B:  one , you know one uh particular one of the uh 
+B:  well let 's do the first  first one let 's do the one that we sort of already think we did 
+B:  so w that was the  of the endpoint ? 
+B:  No , that 's  that 's a 
+B:  although that 
+B:  Well , that 's 
+B:  No , he has he hasn't filled them in yet , is what 's true . 
+B:  OK . 
+B:  No no no , 
+B:  these are ju that 's just a point , 
+B:  this is ju 
+B:  Yeah , would be a f for a given segment . 
+B:  You know , you  y you go  first go the town square 
+B:  That 's subtle , but true . 
+B:  Anyway 
+B:  so let 's just leave it three  with three for now 
+B:  and let 's see if we can get it linked up just to get ourselves started . 
+B:  You 'll see it  you 'll see something comes up immediately , that the reason I wanna do this . 
+B:  Right . 
+B:  Right . 
+B:  We did , but the three things w that  that it contributed to this 
+B:  in fact , the other two aren't up there . 
+B:  so one was the ontology 
+B:  Yeah . 
+B:  And the  and the third thing we talked about was something from the discourse . 
+B:  OK , so this is w 
+B:  Right , so what w I  what we seem to need here , 
+B:  this is why it starts getting into the technical stuff 
+B:  the way we had been designing this , there were three intermediate nodes 
+B:  uh which were the endpoint decision as seen from the uh user model as seen from the ontology and as seen from the discourse . 
+B:  So each of those 
+B:  the way we had it designed , 
+B:  now we can change the design , 
+B:  but the design we had was 
+B:  there was a decision with the same three outcomes uh based on the th those three separate considerations 
+B:  so if we wanted to do that would have to put in uh three intermediate nodes 
+B:  and then what you and I have to talk about is , OK if we 're doing that and they get combined somehow uh how do they get combined ? 
+B:  But the  they 're  they 're undoubtedly gonna be more things to worry about . 
+B:  Yeah . 
+B:  Oh , it was called mode , 
+B:  so this  this is m mode here means the same as endpoint . 
+B:  OK , why don't we ch can we change that ? 
+B:  Alright . 
+B:  You know , but that was actually , 
+B:  yeah unfortunately that was a um kind of an intermediate versio 
+B:  that 's I don't think what we would currently do . 
+B:  That 's a 
+B:  Yeah . 
+B:  But that 's - that seems to , 
+B:  yeah . 
+B:  So  so my advice to do is  is get this down to what we think is actually likely to  to be a  a strong influence . 
+B:  But yeah , that was what he had in mind . 
+B:  So let 's think about this  this question of how do we wanna handle  
+B:  so there 're two separate things . 
+B:  One is  
+B:  uh at least two . 
+B:  One is how do we want to handle the notion of the ontology 
+B:  now what we talked about , and this is another technical thing Bhaskara , is uh can we arrange so that 
+B:  I think we can 
+B:  so that the belief - net itself has properties 
+B:  and the properties are filled in uh from on ontology items . 
+B:  So the  let 's take the case of the uh this endpoint thing , 
+B:  the notion was that if you had a few key properties like is this a tourist site , you know some kind of landmark 
+B:  is it a place of business 
+B:  uh is it something you physically could enter 
+B:  OK , 
+B:  et cetera . 
+B:  So that there 'd be certain properties that would fit into the decision node 
+B:  and then again as part of the ou outer controlling conditioning of this thing those would be set , 
+B:  so that some somehow someone would find this word , look it up in the ontology , pull out these properties , put it into the belief - net , and then the decision would flow . 
+B:  Now 
+B:  Right . 
+B:  Right . 
+B:  Yeah . 
+B:  Yep . 
+B:  I uh that 's  I think that 's completely right 
+B:  and um I think that 's good , 
+B:  right ? 
+B:  So what  what that says is that we might be able to uh take and 
+B:  in particular 
+B:  so  so the ones we talked about were uh exhibiting and selling 
+B:  no , accessibility meant 
+B:  OK . 
+B:  Alright . 
+B:  So let me suggest this . 
+B:  Uh w could you move those up about halfway . 
+B:  Uh The ones that you th And selling I guess . 
+B:  Right . 
+B:  So here  here 's what it looks like to me . 
+B:  is that you want an intermediate structure which i uh is essentially the or of uh for this purpose of  of uh selling , f fixing , or servicing . 
+B:  So that it uh 
+B:  that is , for certain purposes , it becomes important 
+B:  but for this kind of purpose uh one of these places is quite like the other . 
+B:  Does that seem right ? 
+B:  So we di 
+B:  if we 
+B:  Yes . 
+B:  So if  well it may be more than endpoint decisions , 
+B:  so the idea would be that you might wanna merge those three 
+B:  Yeah . 
+B:  Eh ser s uh selling , fixing , and servicing . 
+B:  Uh Uh well it  it  i here 's where it gets a little tricky . 
+B:  Uh from the belief - net point of view it is 
+B:  from another point of view of course it 's interest it 's  it 's important to know what it 's selling or servicing and so forth . 
+B:  So for this decision it 's just uh true or false 
+B:  and in th this is a case where the or seems just what you want . 
+B:  That  that if any of those things is true then it 's the kind of place that you uh 
+B:  are more likely to enter . 
+B:  You could , yeah . 
+B:  Yeah , so let 's do that . 
+B:  No no , no eh to  to an inter no , an intermediate node . 
+B:  That 's the p part of the idea , is 
+B:  I d 
+B:  Well , o open up object type and let 's see what its values are . 
+B:  Oh , well OK first of all it 's not objects , 
+B:  we called them entities , 
+B:  right ? 
+B:  Let 's say I put commercial . 
+B:  Well couldn't I do  let 's do commercial 
+B:  uh landmark 
+B:  and 
+B:  Well 
+B:  accessible I think is different 
+B:  cuz that 's tempor that  that varies temporally , 
+B:  whereas this is a 
+B:  I would call that a service , 
+B:  but  but I don't know . 
+B:  Say w w well it 's co I would s a a 
+B:  again for this purpose I think it 's commercial . 
+B:  Someplace you want to go in to do some kind of business . 
+B:  Well you could , 
+B:  that 's a  that 's a choice . 
+B:  So uh 
+B:  Yeah , the problem with it is that it sort of putting in a feature just for one decision , 
+B:  now w we may wind up having to do that 
+B:  this i anyway , this i 
+B:  at a mental level that 's what we we 're gonna have to sort out . 
+B:  So , you know what does this look like , 
+B:  what are  what are uh intermediate things that are worth computing , 
+B:  what are the features we need in order to make all these decisions 
+B:  and what 's the best way to organize this so that um it 's clean and  and consistent and all that sort of stuff . 
+B:  OK . 
+B:  Anyway so let me suggest you do something else . 
+B:  Uh which is to get rid  get rid of that l long link between who  the user and the endpoint . 
+B:  No no , I don't want the link there at all . 
+B:  Because what we 're gonna want is an intermediate thing 
+B:  which is uh the endpoint decisi the endpoint decision based o on the user models , 
+B:  so what we  we  what we talked about is three separate endpoint decisions , 
+B:  so let 's make a new node 
+B:  Well this was 
+B:  uh let 's p put it this  let 's do endpoint underbar - U . 
+B:  i endpoint , e end poi 
+B:  this is sa 
+B:  it 's the endpoint 
+B:  let 's say underbar - U , 
+B:  so that 's the endpoint decision uh as seen through the 
+B:  Right . 
+B:  So let 's  let 's actually 
+B:  yeah so lin you can link that up to the 
+B:  uh yeah , so that , I guess that 's endpoint uh 
+B:  underscore - E for entity , 
+B:  and we may change all this , 
+B:  but . 
+B:  Right . 
+B:  And 
+B:  Oh I d eh I don't know . 
+B:  Actually , I guess the easiest thing would move  mo move the endpoint , 
+B:  well , go ahead . 
+B:  Just do whatever . 
+B:  Well . 
+B:  Good . 
+B:  Right . 
+B:  Yeah . 
+B:  And uh maybe th maybe it 's just one who is the user , 
+B:  I don't know , 
+B:  maybe  maybe there 's more . 
+B:  Never mind . 
+B:  Uh anyway , this is crude . 
+B:  Now but the  now so  so  but then the question is 
+B:  uh 
+B:  so  and  and we assume that some of these properties would come indirectly through an ontology , 
+B:  but then we had this third idea of input from the discourse . 
+B:  Sure , 
+B:  OK . 
+B:  Well , maybe , 
+B:  I again , I d 
+B:  well , OK , put em in 
+B:  but what we 're gonna wanna do is actually uh 
+B:  somebody else has built this user model . 
+B:  OK . 
+B:  So uh you cou and so here let me give you two ways to handle that . 
+B:  Alright ? 
+B:  One is um you could ignore it . 
+B:  But the other thing you could do is have an  
+B:  and this will give you the flavor of the  of what 
+B:  you could have a node that 's  that was a measure of the match between the object 's feature , you know , the match between the object the entity , I 'm sorry and the user . 
+B:  So you could have a k a " fit " node 
+B:  and again that would have to be computed by someone else 
+B:  but uh 
+B:  so that uh 
+B:  Yeah , that 's all . 
+B:  Yeah . 
+B:  I mean , we could . 
+B:  OK . 
+B:  Right . 
+B:  Well that 's what we don't wanna do , 
+B:  see that  se 
+B:  cuz then we get into huge combinatorics and stuff like that 
+B:  an 
+B:  Well , but 
+B:  Well , that  that 's  we can't do that , 
+B:  so we we 're gonna have to 
+B:  but this is a good discussion , 
+B:  we 're gonna have to somehow figure out uh some way to encapsulate that 
+B:  uh so if there 's some general notion of for example the uh relation to the time to do this to the amount of time the guy has or something like that is  is the uh compatibility with his current state , 
+B:  so that 's what you 'd have to do , 
+B:  you 'd have to get it down to something which uh was itself relatively compact , 
+B:  so it could be compatibility with his current state 
+B:  which would include his money and his time and  and his energy 
+B:  It does . 
+B:  So it yeah , there are two advantages . 
+B:  That 's tha there 's one technical one 
+B:  and the other is it  it gets used 
+B:  Right . 
+B:  But it  there 's two advantages , 
+B:  one is the technical one that you don't wind up with such big exponential uh CBT 's , 
+B:  the other is it can be  it presumably can be used for multiple decisions . 
+B:  So that if you have this idea of the compatibility with the requirements of an action to the state of the user one could well imagine that that was u 
+B:  not only is it sim is it cleaner to compute it separately but it could be that it 's used in multiple places . 
+B:  Anyway th so in general this is the design , this is really design problem . 
+B:  OK , you 've got a signal , a d set of decisions 
+B:  um how do we do this ? 
+B:  Or fat user fatigue even . 
+
+B:  Whatever . 
+B:  What 's th what we 're talking about is compatibility . 
+B:  Uh or something , I don't know , 
+B:  but . 
+B:  Oh but the thing is that we uh uh we had some things that uh 
+B:  that don't 
+B:  the 
+B:  right 
+B:  Uh maybe not . 
+B:  I mean the  that 's the  the issue is um 
+B:  would Even if it was true in some abstract general sense it might not be true in terms of the information we actually had and can make use of . 
+B:  And anyway we 're gonna have to find some way to cl uh get this sufficiently simple to make it feasible . 
+B:  W w 
+B:  but that eh viewing it without ent yeah view w with our definition of view it 's free 
+B:  cuz you 
+B:  Yeah . 
+B:  No we have to enter the park . 
+B:  Eh almost by definition um paying involves entering , 
+B:  ge going through some 
+B:  Right . 
+B:  Uh 
+B:  So let me suggest we switch to another one , 
+B:  I mean clearly there 's more work to be done on this 
+B:  but I think it 's gonna be more instructive to  to think about uh other decisions that we need to make in path land . 
+B:  And what they 're gonna look like . 
+B:  Why , I think it 's worth saving this one 
+B:  but I think I 'd  I 'd like to keep this one 
+B:  cuz I wanna see if  if we 're gonna reuse any of this stuff . 
+B:  Well you tell me , 
+B:  so in terms of the uh planner what 's  what 's a good one to do ? 
+B:  Uh 
+B:  Well the fir see the first thing is , getting back to thing we left out of the other is the actual discourse . 
+B:  So Keith this is gonna get into your world 
+B:  because uh we 're gonna want to know you know , which constructions indicate various of these properties 
+B:  s 
+B:  and so 
+B:  I  I don't yet know how to do this , 
+B:  I guess we 're gonna wind up pulling out uh discourse properties like we have object properties 
+B:  and we don't know what they are yet . 
+B:  So that  that the Go - there decision will have a node from uh discourse , 
+B:  and I guess why don't we just stick a discourse thing up there to be as a placeholder for 
+B:  Of  of course . 
+B:  Yeah . 
+B:  Well the ontology we sort of said we would pull these various kinds of properties from the ontology like exhibiting , selling , and so forth . 
+B:  So in some sense it 's  it 's there . 
+B:  But the discourse we don't have it represented at all yet . 
+B:  But if we do it 'll have the three values . 
+B:  It 'll have the EVA values 
+B:  if  if we have it . 
+B:  For Go - there , probably is true and false , let 's say . 
+B:  That 's what we talked about . 
+B:  Right . 
+B:  Mm - hmm . 
+B:  Yeah , but that doesn't change the fact that you 're  you want these two values . 
+B:  And they 'll be a y uh , a user Go - there 
+B:  and maybe that 's all , 
+B:  I don't know . 
+B:  OK , good . 
+B:  Yep . 
+B:  Right . 
+B:  Right , so that 's  that 's where it starts getting to be uh uh essentially more interesting , 
+B:  so what uh Bhaskara says which is completely right is if you know that they 're only going to view it then it doesn't matter whether it 's closed or not 
+B:  in terms of uh uh you know , whether  whether you wanna go there . 
+B:  Absolutely there are other situational things that do matter . 
+B:  Well i i it can have di various values . 
+B:  Yeah , but we eh you  you 're right it might not be enough . 
+B:  Yeah . 
+B:  Ah . 
+B:  I see 
+B:  that could be . 
+B:  Could be . 
+B:  Yeah . 
+B:  N 
+B:  Yeah . 
+B:  Yeah . So  so now the other thing that Bhaskara eh pointed out is what this says is that uh there sh should be a link , 
+B:  and this is where things are gonna get very messy 
+B:  from the endpoint uh decision 
+B:  maybe the t they 're final re and , I guess the very bottom endpoint decision uh to the Go - there node . 
+B:  And I  don't worry about layout , 
+B:  I mean then we 'll go  we 'll go nuts 
+B:  but 
+B:  Could be , 
+B:  yeah . 
+B:  Yeah . 
+B:  Well the Go - there , actually the Endpoint node could feed  feed into the Go - there S 
+B:  That 's right , 
+B:  so the Endpoint node , 
+B:  make that up t t to the Go - there then 
+B:  and again we 'll have to do layout at some point , 
+B:  but something like that . 
+B:  Now it 's gonna be important not to have loops by the way . 
+B:  Uh really important in  in the belief worl net world not to have loops 
+B:  uh 
+B:  No it 's much worse than that . 
+B:  It  if i loo it  it  it  it  it 's not def i it 's not well defined if you 're there are loops , 
+B:  you just you have to 
+B:  there are all sorts of ways of breaking it up so that there isn't 
+B:  uh 
+B:  OK . 
+B:  Yeah , no it 's not a loop yet , I 'm just saying we  we , in no , in 
+B:  Right . 
+B:  OK , so anyway , so that 's another decision . 
+B:  Uh what 's  what 's another decision you like ? 
+B:  Well , the idea is that you go there , you go comes from something about the user from something about the situation and the uh the discourse is  is a mystery . 
+B:  Sure , if you want . 
+B:  Right . 
+B:  Sure . 
+B:  Mm - hmm . 
+B:  And then also the discourse endpoint , 
+B:  I  I guess endpoint sub - D is  if you wanna make it consistent . 
+B:  I think so . 
+B:  S 
+B:  Maybe not , 
+B:  a 
+B:  Right . 
+B:  Uh y you  yeah you  i you  if you needed to do that . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Ah . 
+B:  Good point , I don't  I don't know how we 're going to  t uh 
+B:  Right . 
+B:  Uh I gu yes my curr you know , don't yeah yeah yeah that 's enough . 
+B:  Uh My current idea on that would be that each of these decision nodes has questions associated with it . 
+B:  And the question wouldn't itself be one of these conditional things 
+B:  you know , given that you know there 's a strike do you still wanna go ? 
+B:  But uh if you told him a bunch of stuff , then you would ask him do you wanna go ? 
+B:  But I think trying to formulate the conditional question , that sounds too much . 
+B:  To me . 
+B:  Alright , but let me  let  let 's stay with this a minute 
+B:  because I want to do a little bit of organization . 
+B:  Before we get more into details . 
+B:  The organization is going to be that uh 
+B:  the flavor of what 's going on is going to be that uh 
+B:  as we s e sort of going to this detail indeed Keith is going to  to worry about the various constructions that people might use 
+B:  and Johno has committed himself to being the parser wizard , 
+B:  so what 's going to happen is that eventually 
+B:  like by the time he graduates , 
+B:  OK 
+B:  uh they 'll be some sort of system which is able to take the discourse in context and have outputs that can feed the rest of belief - net . 
+B:  I j wa I  I assume everybody knows that , 
+B:  I just wanna you know , get closure that that 'll be the game then , 
+B:  so the semantics that you 'll get out of the discourse will be of values that go into the various discourse - based decision nodes . 
+B:  And now some of those will get fancier like mode of transportation and stuff 
+B:  so it isn't by any means uh necessarily a simple thing that you want out . 
+B:  So uh if there is an and there is mode of transportation 
+B:  Yeah . 
+B:  Yeah , well that , well , we 'll have to decide uh how much of th where that goes . 
+B:  an and it 's not clear yet . 
+B:  I mean it could be those are two separate things , 
+B:  it could be that the discourse gadget itself integrates em as  
+B:  which would be my guess 
+B:  that you 'd have to do see in order to do reference and stuff like that um you 've gotta have both the current discourse and the context to say I wanna go back there , 
+B:  wow , what does that mean 
+B:  and uh 
+B:  Alright . 
+B:  So 
+B:  I don't know . 
+B:  It could be . 
+B:  This is  this is getting into the thing I wanna talk about next , 
+B:  which is s if that 's true uh how do we wanna combine those ? 
+B:  O or when it 's true ? 
+B:  Yeah . 
+B:  No . 
+B:  Well i i it see i if it 's fou if it 's four things and each of them has four values it turns out to be a big CPT , 
+B:  it 's not s completely impossi 
+B:  I mean it 's  it 's not beyond what the system could solve 
+B:  but it 's probably beyond what we could actually uh write down . or learn . 
+B:  Uh but , you know it 's four to the fourth . 
+B:  It 's pretty big . 
+B:  Uh . 
+B:  Yeah . 
+B:  Yeah , I mean 
+B:  it 's and I don't think it 's gonna g e I don't think it 'll get worse than that by the way , 
+B:  so le that 's a  that 's a good 
+B:  Uh for go there , 
+B:  but not f but not for  
+B:  the other one 's three values for endpoint already . 
+B:  EV - it 's the EVA . 
+B:  No . 
+B:  Since ta they will still have three . 
+B:  Each  so you 're uh uh from each point of view you 're making the same decision . 
+B:  So from the point of view of the ob of the entity 
+B:  Yeah . 
+B:  Right . 
+B:  Those are not necessarily binary . 
+B:  S so we 're  we 're gonna have to use some t care in the knowledge engineering to not have this explode . 
+B:  And in fact I think it doesn't in the sense that 
+B:  um 
+B:  Read it , 
+B:  you know actually with the underlying semantics and stuff I think it isn't like you have two hundred and fifty - six different uh ways of  of thinking about whether this user wants to go to some place . 
+B:  Alright . 
+B:  So we  we just have to figure out what the regularities are and and code them . 
+B:  But um What I was gonna suggest next is maybe we wanna work on this a little longer 
+B:  but I do want to also talk about the thing that we started into now of 
+B:  uh 
+B:  well it 's all fine to say all these arrows come into the si same place 
+B:  what rule of combination is used there . 
+B:  So th yes they  so these things all affect it , 
+B:  how do they affect it ? 
+B:  And belief - nets have their own beliefs about uh what are good ways to do that . 
+B:  So is it  it 's  it 's clearer n clear enough what the issue is , 
+B:  right ? 
+B:  So do we wanna switch that now or we wanna do some more of this ? 
+B:  Well , here  he here 's one of the things that  that I th you sh 
+B:  you  no , 
+B:  I don't know how easy it is to do this in the interface 
+B:  but you  it would be great if you could actually just display at a given time uh all the things that you pick up , 
+B:  you click on " endpoint " , 
+B:  OK 
+B:  and everything else fades 
+B:  and you just see the links that are relevant to that . 
+B:  And I 
+B:  does anybody remember the GUI on this ? 
+B:  Yeah the  well the b 
+B:  anyway so uh it clear that even with this if we put in all the arrows nobody is gonna be able to read the diagram . 
+B:  Alright , 
+B:  so e we have to figure out some eh eh uh basically display hack or something to do this 
+B:  because 
+B:  anyway I  I  let me consi suggest that 's a s not a first - order consideration , 
+B:  we have two first - order considerations 
+B:  which is what are the uh influences A , 
+B:  A , 
+B:  and B how do they get combined mathematically , 
+B:  how do we display them is an issue , 
+B:  but 
+B:  um 
+B:  Right . 
+B:  Yeah , and Um I  that seems like a perfectly feasible thing to get into , 
+B:  but um we have to know what we want first . 
+B:  OK , so why don't you tell us a little bit about decision nodes and what  what the choices might be for these ? 
+B:  Put it in your , 
+B:  yeah . 
+B:  Yep . 
+B:  Alright , so 
+B:  um 
+B:  Is that uh 
+B:  I  yeah , I just wanna make sure everybody is with us before he goes on . 
+B:  It 's  it 's cl e is  is it clear what he wants to compute ? 
+B:  What ? 
+B:  Y right . 
+B:  Yep . 
+B:  S so this assumes symmetry and equal weights and all this sort of things , which may or may not be a good assumption , 
+B:  so that 

@@ -1,0 +1,67 @@
+B:  Digits . 
+B:  Yeah . 
+B:  And the filter  
+B:  But it 's  
+B:  It 's the new . 
+B:  The new . 
+B:  The new . 
+B:  Mm - hmm . 
+B:  But 
+B:  Mm - hmm . 
+B:  Yeah , in Grenada 
+B:  one of my friend . 
+B:  Uh , Jose Carlos Segura . 
+B:  Yeah , yeah , yeah . 
+B:  Originally the idea was from CMU . 
+B:  I don't have good result , with the  inc including the new parameters , 
+B:  I don't have good result . 
+B:  Are  similar or a little bit worse . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  I tried to include another new parameter to the traditional parameter , 
+B:  the coe the cepstrum coefficient , 
+B:  that , like , the auto - correlation , the R - zero and R - one over R - zero 
+B:  and another estimation of the var the variance of the difference for  of the spec si uh , spectrum of the signal 
+B:  and  and the spectrum of time after filt mel filter bank . 
+B:  Nuh . Well . 
+B:  Anyway . 
+B:  The  First you have the sp the spectrum of the signal , 
+B:  and you have the  on the other side you have the output of the mel filter bank . 
+B:  You can extend the coefficient of the mel filter bank and obtain an approximation of the spectrum of the signal . 
+B:  I do the difference  
+B:  I found a difference at the variance of this different 
+B:  because , suppose we  we think that if the variance is high , maybe you have n uh , noise . 
+B:  And if the variance is small , maybe you have uh , speech . 
+B:  To  to 
+B:  To  
+B:  The idea is to found another feature for discriminate between voice sound and unvoice sound . 
+B:  And we try to use this new feature  feature . 
+B:  And I did experiment  
+B:  I need to change  to obtain this new feature I need to change the size  the window size  size . 
+B:  of the a of the  analysis window size , 
+B:  to have more information . 
+B:  Uh , sixty - two point five milliseconds I think . 
+B:  And 
+B:  I do  I did two type of experiment to include this feature directly with the  with the other feature 
+B:  and to train a neural network to select it voice - unvoice - silence  silence 
+B:  and to  to concat this new feature . 
+B:  But the result are 
+B:  n with the neural network I have more or less the same result . 
+B:  Result . 
+B:  Yeah . 
+B:  Yeah . 
+B:  It 's neve e e 
+B:  sometime it 's worse , 
+B:  sometime it 's a little bit better , 
+B:  but not significantly . 
+B:  And  
+B:  No , I work with eh , Italian and Spanish basically . 
+B:  And if I don't y use the neural network , and use directly the feature the results are worse . 
+B:  But Doesn't help . 
+B:  To know  
+B:  Maybe . 
+B:  Yeah , 
+B:  I can  I will try to do that . 
+B:  You did some experiment . 
+B:  Mm - hmm . 
+B:  Digits . 

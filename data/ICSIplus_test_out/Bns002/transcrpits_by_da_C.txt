@@ -1,0 +1,527 @@
+C:  and then we will have a  we can have a discussion . 
+C:  OK . 
+C:  We can start ? 
+C:  OK . 
+C:  So , welcome to our next meeting . 
+C:  Uh , today we will have a talk from Miguel Sanchez  concerning his  uh  work related to ad - hoc networks . 
+C:  We have here a guest , a former  ICSI member of the NSA group , Jordi Domingo Pasqual . 
+C:  He is , uh , assistant professor at UPC . 
+C:  And maybe Jordi , you have a few words  concerning your work  
+C:  one or two sentence 
+C:  and  because we will have tomorrow a talk from him in more detail concerning what 's going on . 
+C:  Yeah , only a short introduction , 
+C:  ve very short introduction , please . 
+C:  Uh , sorry , one interruption . 
+C:  This is not related to hearing , 
+C:  it 's only for  fixing it . 
+C:  It 's not a earphone . 
+C:  No . 
+C:  So . 
+C:  Yeah , yeah . 
+C:  Like this one . 
+C:  Yeah . 
+C:  It 's only a microphone . 
+C:  Yeah ? 
+C:  OK . 
+C:  Yeah . 
+C:  OK . 
+C:  OK . 
+C:  Thank you . 
+C:  And after the talk of  uh , Miguel , I  will  give  you  all  a few slides concerning the project proposal . 
+C:  I will um  say something about in which direction it will go 
+C:  and 
+C:  uh 
+C:  Maybe it was my fault that I assumed that the pointer of  Miguel  concerning UMTS services was  deployed to everybody , 
+C:  but it was only sent to me , 
+C:  so in the meantime everybody got , I believe , this pointer from me , 
+C:  and 
+C:  maybe we  It 's a homework , in principle , for the next meeting , to get <laugh>  a little bit familiar with these things . 
+C:  And  um 
+C:  so I believe we will not have  today a very hard technical discussion , 
+C:  maybe more a few topic and items we will focus in the next days , until the next meeting . 
+C:  And when we are ready with our meeting . 
+C:  Everything is done . 
+C:  Then , uh , we have to read these number 
+C:  and we go around here , every member . 
+C:  So . 
+C:  Miguel , please . 
+C:  Hmm ? 
+C:  But you can also , I believe , uh to have an ad - hoc network , where one node is then connecting to the outer world . 
+C:  For instance , what I have in mind , you have a car , where you plug in different devices and they talk to each other , for instance , 
+C:  but one device decided to go to the G S M network or GPS network , or whatever kind of things . 
+C:  So there 's a certain kind of task uh , for one node within the ad - hoc network to provide connectivity to the outer world , 
+C:  right ? 
+C:  OK . 
+C:  Yeah . 
+C:  Right . 
+
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Let me go back to your uh uh example . 
+C:  Have in mind some routers are burnt  here , at ICSI or whatever kind of thing , 
+C:  what will happen then even in a fixed network ? 
+C:  So , if some sensors are getting out of uh  service and whatever kind of thing , so the topology has changed , even if no node is moving . 
+C:  Yeah . 
+C:  And how to provide the connectivity and the intercommunication things wi within this network . 
+C:  Uh . 
+C:  Yes , 
+C:  this one . 
+C:  Mm - hmm . 
+C:  Um 
+C:  Miguel , can you give some examples for such kind of protocols ? 
+C:  One is really  really  
+C:  OK . 
+C:  Yeah , yeah . 
+C:  OK . 
+C:  And the media is  is  is still occupied during that period , 
+C:  or  ? 
+C:  OK . 
+C:  Yeah . 
+C:  I didn't get it . 
+C:  Um , what happened when I sent an RTS packet ? 
+C:  Is then the media still occupied for me ? 
+C:  Or , is anybody allowed also to send RTS packets ? 
+C:  Because if I go to an intermediate node , maybe you are communicating to me 
+C:  and I am the intermediate node to the final destination Michael . 
+C:  And Michael send also some RTS packet in the time and  and  uh uh uh Jordi too and whatever . 
+C:  Then you will never come to a really  
+C:  then you 're always exchanging RTS and non - acknowledgement packets for the RTS . 
+C:  So that 's uh  that 's uh , my  my problem . 
+C:  Then , fine . 
+C:  OK . 
+C:  So it 's only related to the direct neighbor within the scope of the  transmissions ? 
+C:  OK . 
+C:  OK . 
+C:  I assume so . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Fine . 
+C:  OK , 
+C:  but that means , in principle , that on the MAC layer you have always a RTS CTS  packet between neighboring nodes , 
+C:  and you send afterwards the data . 
+C:  But the data will be maybe delayed in the  intermediate node because you have always be assured to be uh s uh uh RTS and CTS packets are changed before  <inbreath> before you can forewarning the data , 
+C:  right ? 
+C:  Yeah . 
+C:  OK . 
+C:  Now the p 
+C:  Maybe it 's better to  to uh ,  draw it on the  
+C:  Oops . 
+C:  So , maybe my idea first . 
+C:  So this is what , node one ? 
+C:  This is node two 
+C:  and this is the source , 
+C:  and this is node three that is the final destination . 
+C:  Yeah ? 
+C:  Yeah , yeah . 
+C:  OK . 
+C:  But - but anyway , I would like to do that in the ad - hoc network . 
+C:  This is maybe the sco this is within the scope  of this , uh  special network . 
+C:  That means here that is uh within the transmission power . 
+C:  So if I send  an RTS , and get back ,  um , a CTS , then he is allowed to send data , right ? 
+C:  So . In the meantime , when he gets this one , he also had to send RTS <writing noises> and then CTS 
+C:  because this is the next next scope of the transmission area , 
+C:  and then he can send the data , right ? 
+C:  That 's the case ? 
+C:  Yeah ? 
+C:  And that 's what I mean . 
+C:  In the meantime , he c still can get some data here , where he try to get certain connectivity on the MAC layer . 
+C:  Yeah ? 
+C:  OK , 
+C:  and then he try to forward this data . 
+C:  After that . 
+C:  So he is definitely first to stop . 
+C:  He has to collect all the data ? 
+C:  Could it not be a little bit strange 
+C:  because if that is starting a file transfer with millions of bytes , he have to collect all the bytes before he forwarding to  to whatever . 
+C:  Huh ? 
+C:  One data p 
+C:  He have to do it for all data packets ? 
+C:  OK . 
+C:  OK . 
+C:  So but , in principle ,  when he receives the data packet then he  The same applies for the next data packet . 
+C:  but anyway in the meantime he has to forward the packet to the final destination . 
+C:  Right ? 
+C:  So it 's acting , in  in prin 
+C:  OK . 
+C:  Yeah . 
+C:  Naja to  to  
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Yeah , @ @ . 
+C:  OK . 
+C:  And delayed . 
+C:  Yeah . 
+C:  Yeah , but this is typical for MAC layer protocols , you know . 
+C:  That 's  
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  It 's always true that only  one node gets a media access , for one frame . 
+C:  That 's the point . 
+C:  We always said " from data " 
+C:  but it 's really one frame . 
+C:  Yeah , 
+C:  OK . 
+C:  Uh - huh . 
+C:  Maybe  maybe you are right . 
+C:  Yeah , 
+C:  but , Miguel , this is a good point from  from Dietmar , 
+C:  but maybe here is a wall . 
+C:  And this guy is behind the wall , so  his transmission rate is something like that . 
+C:  Mm - hmm . 
+C:  OK . 
+C:  Yeah , but um Miguel ,  if uh in the previous slide you mentioned that you uh are working also on adaptive power control . 
+C:  Is it not possible then , if I send something and I could not find any neighbor because one of the cluster below , 
+C:  is it not possible to extend the power until the maximum 
+C:  and if uh I do not have any connectivity with the maximum of power , OK , then I 'm lost anyway . 
+C:  Yeah , yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  OK , 
+C:  mm - hmm . 
+C:  And how do you  
+C:  sorry Miguel  
+C:  how do you check if  if the nodes are moving randomly ? 
+C:  Yeah , OK , 
+C:  maybe that 's applied for RTS CTS , 
+C:  but for the real frame ? 
+C:  The frame could also be uh whatever ,  I don't know but  a few hundred bytes , you know , that takes a little bit time . 
+C:  Mm - hmm . 
+C:  No , s 
+C:  no sorry 
+C:  m Yeah , that 's right . 
+C:  But first of all it took place RTS CTS , 
+C:  and there could be , you mentioned , if it 's still occu if the medium is still occupied by another one , it will be delayed anyway to a randomly time . 
+C:  Oh , 
+C:  so ! 
+C:  OK , 
+C:  y OK . 
+C:  OK . 
+C:  I see . 
+C:  Yeah . 
+C:  OK . 
+C:  Oh yeah , something like that . 
+C:  It 's OK . 
+C:  Yeah , what I think  Maybe some , uh  cases why I go this way with my node , and suddenly , I s go out of the scope of the transmission area , 
+C:  because it 's really a random movement . 
+C:  Then I still hear  
+C:  this is during the data transmission . 
+C:  Yeah ? 
+C:  then  
+C:  Oh , yeah . 
+C:  Yep . 
+C:  Right . 
+C:  Nee . 
+C:  That 's really right , 
+C:  but what I would like to say is that besides the RTS CTS behavior , you need certain kind of additional MAC layer functionality to deal with these packet . 
+C:  For example , with transmission or  or whatever , 
+C:  for whatever control , or whatever kind of things , you know . 
+C:  Right . 
+C:  Yeah . 
+C:  Hmm . 
+C:  Hmm . 
+C:  OK , this is a question not directly related to these things , 
+C:  but maybe  that 's why maybe only a short answer . 
+C:  Uh , do you assume that  power control will be issue also in the  next years ? 
+C:  In other words , um  is  the  um  success of having more power within the devices in maybe three year , four years , five years , for batteries , and  and  and  @ @ and sofort so on 
+C:  uh will it be succeeded that you have so much power available that this  difficult mechanism who is in the wireless network will be uh out of scope ? 
+C:  Because if I have a device which uh can I use maybe for twenty - four hours , 
+C:  I do not have , in principle , really the constraint  to uh deal with  with uh power savings . 
+C:  OK . 
+C:  Yeah . 
+C:  That 's what I  
+C:  Yeah , that was the reason I 'm talking about this is uh  
+C:  Yeah , but anyway , that was the reason for my question . 
+C:  If I save with a lot of difficult mechanism , within the air interface and between the base station or access point and the mobile node , one percent of the power  whereas ninety - nine percent is consumed by packet processing 
+C:  and  and  and  and  uh uh C P U or whatever , 
+C:  uh  is it worth to have it ? 
+C:  If I really , with a normal device  uh with a battery lifetime of maybe twenty - four hours , thirty - six hours or whatever kind of thing  And I think it will be increased . 
+C:  As the more mobile nodes are in the world the better the battery will be . 
+C:  So that 's  was the reason for my question . 
+C:  Yeah , yeah , yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah , I g got it . 
+C:  Yeah . 
+C:  Yeah . 
+C:  OK . 
+C:  Yeah , yeah , yeah , yeah . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mmm . 
+C:  What do you mean by multicast protocols ? 
+C:  Routing ? 
+C:  OK . Yeah . 
+C:  OK . 
+C:  Yeah . 
+C:  And maybe we will have to explain a little bit for those who are not familiar with source routing . 
+C:  You can have the destinations you would like to  or the in  the I P addresses of the intermediate nodes you still know 
+C:  even if it 's not the direct neighbor , 
+C:  but one of uh where you really want that the packet went through ,  put it in the I P header . 
+C:  So , and , 
+C:  this one is going then to this guy and so on and so on , 
+C:  until finally it 's reached destination . 
+C:  And , that 's what I mean , you cannot put it  thousand intermediate nodes in for example , 
+C:  but to put a thousand I P addresses in the header , so that the packet is for uh forwarded accordingly to  
+C:  Yeah , yeah , yeah , yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  It 's uh  
+C:  You 'll know to remove h  it 's h from the header , in principle , and  and so on , until it uh reaches the final destination . 
+C:  This one , for instance . 
+C:  that may that the different parts could be one to number four . 
+C:  Maybe two - B or three - B 
+C:  Yeah , but nevertheless this guy is a  is an gateway in the router for  for this packet , you know . 
+C:  And they remove itself from the header . 
+C:  Yeah . 
+C:  It must be not the whole path , you know . 
+C:  Um , Miguel , are you familiar with these kind of proposals ? 
+C:  That depends on the service level you want to be . 
+C:  Definitely not a guarantee level . 
+C:  But maybe something like a control load level or something like that , seems to be for me  possible . 
+C:  Right ? 
+C:  Yeah . 
+C:  Hmm . 
+C:  Yeah , we can discuss later , off - line . 
+C:  OK . 
+C:  Yeah , but the  
+C:  Yeah , but it 's  really happened also in the riot case , you know . 
+C:  If I get the wrong route with the RCMP redirects , it 's , in principle , then the same . 
+C:  Yeah , yeah . 
+C:  Yeah , in principle , the base station . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  and Miguel , should  I should ask you one question . 
+C:  And uh uh in version one and two you  you have different technologies . 
+C:  You know , frequency hopping , uh two modes and  and  and also infrared . 
+C:  Does it still apply for  for the uh  eleven - B ? 
+C:  OK , DSS . 
+C:  OK . 
+C:  OK . 
+C:  OK . 
+C:  Megahertz , 
+C:  yeah . 
+C:  Mm - hmm . 
+C:  Uh , gigahertz . 
+C:  Yeah . 
+C:  In the RSM band . 
+C:  Yeah . 
+C:  And one additional question from myself , 
+C:  but maybe also short , 
+C:  because time it running fast . 
+C:  Uh , I have heard that uh wireless LAN and Bluetooth will have some problems 
+C:  uh that they influence each other . 
+C:  Do you have additional information about this topic ? 
+C:  Yeah , that 's right . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah , but nevertheless , you have the range of ten meters , or of one hundred meters . 
+C:  OK . 
+C:  Yeah . 
+C:  Well that 's a good news , OK ? 
+C:  But anyway , <laugh> um based on your uh uh  initial scenario I believe because Bluetooth is on one chip , 
+C:  like you have now your UCB buss or whatever connectivity , you will have your Bluetooth connectivity . 
+C:  And that means your mouse , and  and  and  
+C:  Yeah , and  and  and whatever kind of  of eh things connected to your laptop and also your microphone and whatever you will  will have , is Bluetooth - based . 
+C:  Yeah , or will be Bluetooth - based . 
+C:  Yeah , and this is  this is eh within maybe an uh wireless LAN . 
+C:  So , despite the fact that they are considered for different scenarios they are still 
+C:  within one  one area . 
+C:  Yeah . 
+C:  OK we 'll when I  I will have some problems in the future with my l  wireless LAN and Bluetooth connectivity , 
+C:  I will come to you , 
+C:  you will solve it OK ? 
+C:  OK , please go on . 
+C:  OK . 
+C:  But maybe for cars . 
+C:  Yeah , if your car is the infrastructure , for instance . 
+C:  Yeah . 
+C:  OK . 
+C:  Mm - hmm . 
+C:  OK . 
+C:  many thanks Miguel . 
+C:  Are there any questions ? 
+C:  Maybe we have also the time to discuss with Miguel off - line the things if there is some  uh question concerning uh his talk or maybe other questions . 
+C:  Maybe one last question from my side 
+C:  because I bring it up ,  uh concerning the proposal , some kind of active routing mechanism . 
+C:  It 's going in a quite different direction as  as  as  as the traditional things discussed in the ITF 
+C:  and I currently do not have any idea whether active routing is really a topic uh , within the I T 
+C:  Do you have certain kind of experience or do you know certain activities uh , in that area ? 
+C:  OK . 
+C:  I know , yeah . 
+C:  Mm - hmm . 
+C:  Oh , OK . 
+C:  One more time , many thanks Miguel . 
+C:  So . 
+C:  So I will deploy a little bit information here from the uh project proposal . 
+C:  So I have only 
+C:  four . 
+C:  Jordi is  only a short period of time here , 
+C:  so he will get the  colored one . 
+C:  and take a look to  
+C:  uh 
+C:  Yeah . 
+C:  Kill the computer . 
+C:  Uh , So I started uh , for  for advertising the project proposal here to provide a few slides 
+C:  I think , first of all , Wilbert , is not here , 
+C:  second um , the  um link here  was uh enabling UMTS services and application , 
+C:  uh , I assume <rustling papers> was not read  yesterday night . 
+C:  So  I suggest we go roughly to the slides here 
+C:  and um 
+C:  The  the problem is that , in principle , we have different scopes . 
+C:  And motivation of the project proposal from my point of view is that we will have the um Wireless access networks for the next generation will be more flexible . 
+C:  There 's a @ @ for uh current  uh uh uh for  for fast  changes within this network . 
+C:  And that means , if you go to slide number three , <page turn> that  we  have  um  the possibility to  to um  having normal features in the mobile access network , 
+C:  and  
+C:  and  um 
+C:  and  um  also based on that it belongs normally to one single provider domain , that it is possible to  to uh use novel things 
+C:  and  and  and new protocols and new technologies within this network . 
+C:  On the other hand , in the internet backbone , uh  we  it is i impossible 
+C:  and we see it on several examples 
+C:  like this , MPLS , 
+C:  there 's quality of service support , and multicast 
+C:  and all this kind of thing , 
+C:  that , based on the success of the internet backbone , it 's become uh  very unflexible , to p uh fo for the provision of these things . 
+C:  So , if  we are going to offer building blocks , and provide novel solutions for the next generation of wireless access networks , taking into account ,  without modifying  the end - to - end scope , then I think it 's really beneficial work , 
+C:  also for the use of interactive multimedia application , 
+C:  so  as it is described in the uh  project proposal . 
+C:  Um  the point is that um  to start  with um  a bigger cluster of co uh  of potential partners to do this really really really big work , 
+C:  seems not to be feasible in the next time . 
+C:  because if you have settled everything , and discussed everything and  and  and  and uh  without any money in the background , and a lot of money in the background , 
+C:  that is not uh feasible from my point of view . 
+C:  Nevertheless , I discussed , with a lot of partners , these things . 
+C:  And today ,  uh Michael and me , we were on the UCB to discuss with a guy who is a professor who is probably interested in the application stuff . 
+C:  They are going in that direction . 
+C:  They have a small project funded by NSA  
+C:  NSF , 
+C:  um , f for this " intelligent classroom " , is a little bit exaggerated , I believe , 
+C:  but going in that direction . 
+C:  So there are a lot of interest , 
+C:  but without really  hard money in the background , it is very hard to come to the initial steps . 
+C:  And uh Juan Peire , one of the uh members of this NSA group has  uh  identified a certain kind of s start money , I would like to say . 
+C:  So maybe if you start with a small cluster of um the constraints of this funding , 
+C:  and that means uh six universities and  and institutions 
+C:  uh , three in USA and three in Europe . 
+C:  and of course , they are uh including the NSA group 
+C:  and maybe that seems to be very reasonably , for me . 
+C:  But then we have to align the project proposal in that sense . 
+C:  Because then we cannot do  do anything as it is described in the  in the bigger scope . 
+C:  So the point is  um  to reduce the overall picture , which I described in a few words , to the fact that we have really some work packages where we can focus on it , 
+C:  still fitting into the big picture . 
+C:  Yeah ? 
+C:  And so that will be the task of the next weeks . 
+C:  And  uh 
+C:  I  hope that everybody is doing his homework concerning @ @ for instance 
+C:  uh alternative to the intelligent classroom maybe that we  h can start here only with the N S A group 
+C:  within this big picture 
+C:  um  with some work 
+C:  that we put the pieces together . 
+C:  Because I believe many are very flexible here 
+C:  accounting also the  future - coming uh  joining people of the NSA group , to do some work here . 
+C:  And if  we are starting with a very very very small cluster with a common activity have maybe some starting funding for bigger uh  radius of the  of the  the  the uh  project proposal , with the mind that maybe at the final stage it will becoming a European proposal with this uh the  the whole funding . 
+C:  That 's uh  my point , and my picture I have in mind . 
+C:  And I will go definitely back to  Germany the tenth of December . 
+C:  That is fixed now . 
+C:  And I hope we can use these remaining weeks  to have really progress in  uh for the proposal in that sense what I mentioned before . 
+C:  Because then I will make  the advertising that is still worth to stay here , 
+C:  And I hope then Siemens will say OK for me to stay longer here . 
+C:  And then I will come back maybe in the  mid of end of January . 
+C:  So that 's uh it 's a comment to the proposal . 
+C:  So I think everybody should  consider carefully ,  based on this statement I made uh next steps 
+C:  and of course everybody has little bit other work to do 
+C:  but it should be  should be always an ongoing process until I will leave  until the tenth of December . 
+C:  OK . 
+C:  Um 
+C:  yeah 
+C:  I will distribute all the things electronically 
+C:  to all the  
+C:  OK , take a look to slide of number two , 
+C:  Yeah ! 
+C:  You see uh uh University of Mannheim , 
+C:  University 
+C:  also these are the official ones , 
+C:  You see that in the ICSI US  on the U S A side , I believe that the home companies and universities are still contributing . 
+C:  Yeah ? 
+C:  but these are then the official ones , 
+C:  and I would like to have them  
+C:  They say they are very interested in it . 
+C:  Yeah ? 
+C:  Uh a few words , the University of Mannheim is at location where Joerg Widmer is uh working on it , 
+C:  and I got the statement 
+C:  uh they are very interested in that . 
+C:  They did a lot in the area of um intelligent classroom 
+C:  but nevertheless they did a lot in networking stuff . 
+C:  And University of Uppsala , Sweden , 
+C:  that 's the reason I invited uh Christian Tschudin , the professor who did ten years work in  in active routing . 
+C:  And uh   OK the Universidad Nacional de Educat 
+C:  Yeah . 
+C:  Spanish . 
+C:  Maybe we have a better expert <laugh> to pronounce it . 
+C:  " UNED " . 
+C:  I always said " UNED " . 
+C:  in Spain , 
+C:  uh this is this university of Juan Peire . 
+C:  And  he is also the one who had recognized uh 
+C:  one 
+C:  pair 
+C:  pair 
+C:  Not Parez , Peire . 
+C:  PEIRE . 
+C:  No , no , no . 
+C:  Not  not Paez . 
+C:  Not . 
+C:  Peire , P  E  I R E . 
+C:  P  E  I R E . 
+C:  You never heard from him ? 
+C:  You can  I  you can mail him later on the informa 
+C:  Then , of course , the whole N S A group 
+C:  and  also of the coordinator of all the things , 
+C:  then Georgia Tech , I have good relationship to uh the long lasting uh cooperation with Georgia Tech 
+C:  and they did a lot in this area , also related to networking stuff as well as to the intelligent classroom stuff  and the UCB . 
+C:  We still focusing on maybe we can have uh more professors involved 
+C:  which are  working also on the networking stuff as well as on the application stuff , 
+C:  so that  the UCB is clustered as one uh partner 
+C:  but nevertheless with different departments . 
+C:  Yeah . 
+C:  So ,  
+C:  But take a look to the slides , I will uh deploy it um uh electronically . 
+C:  Sorry ? 
+C:  I will send it electronically . 
+C:  After the meeting . 
+C:  I will . 
+C:  Future . 
+C:  And ,  maybe you take a look to the  uh last two slides , 
+C:  um Um , 
+C:  maybe the GPRS picture is still uh available . 
+C:  So you have , in principle , here now the mapping of  the different areas , um within GPS , 
+C:  and , in principle , the same applies for UMTS . 
+C:  There is no so much different . 
+C:  Um . You always have the SGSN and UMTS , 
+C:  they are called three - GSGSN . 
+C:  And you have the protocol stack 
+C:  um in  on the slide number five , to see what uh is going on . 
+C:  And you see the difference . 
+C:  The amazing thing is that you have IP over IP . 
+C:  As you take a look to the  the uh GGSN , you have two - IP layer functionality and  and all those things . 
+C:  And you have the  GPS tunnel p uh protocol G T P between the G and the S and the GTSN . 
+C:  And  and so on . 
+C:  So uh I believe they are very very difficult protocols stuck between the uh  between the um um involved nodes , 
+C:  and  making it necessary , in principle , to deal with our four building blocks in um  <mouth> yeah , I believe , in a difficult way , 
+C:  if , uh , we have in mind quality of service routing , and  and  uh qualit uh mobility aspects and  and all this kinds of things for  I P layer functionality . 
+C:  So that 's , in principle , uh an overview , of the protocol stack 
+C:  and the involved nodes , 
+C:  and I will provide more and more information 
+C:  but um eh I have to also figure out everything from the scratch . 
+C:  I am not a total expert for  for the future  wireless networks . 
+C:  OK . 
+C:  Then I would like to thanks everybody 
+C:  and  if there 's no additional question , comment , or  or  other remarks ,  I would like to start with reading uh these numbers . 
+C:  OK , please the next one . 
+C:  OK , thank you 
+C:  Now , please let  don't switch off power , 
+C:  I have to call Adam , 
+C:  so 
+C:  So I suggest , @ @ now we will have  in a few minutes we will have the coffee break , tea , cake , whatever , @ @ will  will be offered , 
+C:  and then we will have a  we can have a discussion . 

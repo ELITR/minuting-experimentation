@@ -1,0 +1,289 @@
+E:  um 
+E:  Oh . 
+E:  Mmm . I 'm working with VTS . 
+E:  Um , I do several experiment with the Spanish database first , 
+E:  only with VTS and nothing more . 
+E:  Not VAD , 
+E:  no LDA , 
+E:  nothing more . 
+E:  Eh , Vectorial Taylor Series . 
+E:  To remove the noise too . 
+E:  What ? 
+E:  Yeah . 
+E:  If  Well  
+E:  VTS . 
+E:  I 'm sor 
+E:  Well , um , the question is that  
+E:  Well . 
+E:  Remove some noise but not too much . 
+E:  And when we put the  m m the , em , VAD , the result is better . 
+E:  And we put everything , the result is better , 
+E:  but it 's not better than the result that we have without VTS . 
+E:  No , no . 
+E:  Is not . 
+E:  Pfft . I don't know 
+E:  because  
+E:  Hhh , 
+E:  Uh , I do the experiment using only the f onl eh , to use on only one fair estimation of the noise . 
+E:  And also I did some experiment , <mouth> uh , doing , um , a lying estimation of the noise . 
+E:  And , well , it 's a little bit better but not  
+E:  n 
+E:  Mmm . 
+E:  No , I do that two  t did two time . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  Another thing is the , em  the codebook , 
+E:  the initial codebook . 
+E:  That maybe , 
+E:  well , it 's too clean 
+E:  and  
+E:  Cuz it 's a  
+E:  I don't know . 
+E:  The methods  
+E:  If you want , you c I can say something about the method . 
+E:  Yeah . In the  
+E:  Because it 's <mouth> a little bit different of the other method . 
+E:  Well , we have  
+E:  If this  if this is the noise signal , <writing on board> uh , in the log domain , we have something like this . 
+E:  Now , we have something like this . 
+E:  And the idea of these methods is to  <mouth> n given a , um  
+E:  How do you say ? 
+E:  I will read because it 's better for my English . 
+E:  I i given 
+E:  is the estimate of the PDF of the noise signal 
+E:  when we have a , um , a statistic of the clean speech and an statistic of the noisy speech . 
+E:  And the clean speech  the statistic of the clean speech is  from a  codebook . 
+E:  Mmm ? This is the idea . 
+E:  Well , like , this relation is not linear . 
+E:  The methods propose to develop this in a vectorial Taylor series  approximation . 
+E:  No , this in the  it 's  this is the log domain . 
+E:  I  I must to say that . 
+E:  Is the T  is egual   is equal to , uh , log of  
+E:  Uh , this  this is this 
+E:  and this is this . 
+E:  Mm - hmm . 
+E:  Uh , this is the noisy speech . 
+E:  Yeah . It 's the power spectrum . 
+E:  This is the noisy  
+E:  Yeah , it 's  
+E:  of the value  
+E:  Yeah . 
+E:  w o 
+E:  Yeah . It 's the same . 
+E:  Yeah . 
+E:  Yeah , maybe  
+E:  But , n 
+E:  Well , y we can expre we can put this expression  
+E:  The  
+E:  Yeah . 
+E:  And the noise signal . 
+E:  Well , mmm  
+E:  Well , if we apply the log , we have E is n 
+E:  uh , log  <writing on board> E is equal , oh , to log of X plus N . 
+E:  And , well , 
+E:  uh , we can say that E <writing on board> <inbreath> is equal to log of , <writitng on board> <writing on board> um , exponential of X plus exponential of N . 
+E:  Well , this is  this is in the ti the time domain . 
+E:  Well , we have that , 
+E:  um  
+E:  We have first that , for example , X is equal , 
+E:  uh  
+E:  Well . 
+E:  This is the frequency domain 
+E:  and we can put <breath> u that n the log domain  
+E:  log of X omega , 
+E:  but , well , in the time domain we have an exponential . 
+E:  No ? 
+E:  No ? 
+E:  Oh , maybe it 's I am  
+E:  I 'm problem . 
+E:  Yeah . 
+E:  But this i 
+E:  Well , I don't  
+E:  Well , uh , 
+E:  maybe  
+E:  I  I can do this incorrectly . 
+E:  Well , the expression that appear in the  in the paper , <pages turning> is , uh  
+E:  is X  
+E:  Now , this is the  
+E:  and then  
+E:  Not exactly . 
+E:  No , no , no . 
+E:  It 's not the first space . 
+E:  Well , we have  pfft , uh , em  
+E:  Well , we can put that X is equal  I is equal to log of , uh , 
+E:  mmm  
+E:  Well , we can put , uh , this ? 
+E:  The top ? 
+E:  Yeah , yeah , yeah , yeah , yeah . 
+E:  But we can  
+E:  uh , we  we know that , for example , the log of <breath> E plus B is equal to log of E plus log to B . 
+E:  And we can say here , it i 
+E:  And we can , uh , put this inside . 
+E:  And then we can , 
+E:  uh , 
+E:  you know  
+E:  Yeah . 
+E:  No , no , no , no , no , no , no . 
+E:  This not . 
+E:  No . 
+E:  No . 
+E:  It 's not . But this is the same  
+E:  oh . 
+E:  No . 
+E:  I say if I apply log , I have , uh , log of E is equal to log of , uh  in this side , is equal to log of X 
+E:  plus N . 
+E:  No ? 
+E:  Right . 
+E:  This is right . 
+E:  And then if I apply exponential , to have here E  
+E:  Yeah . 
+E:  We have this , 
+E:  no ? 
+E:  Mm - hmm . 
+E:  S uh , i th we can put here the set transformation . 
+E:  No ? 
+E:  Yeah . 
+E:  In this case , well , we can put here a <writing> Y . 
+E:  Now we can put this . 
+E:  No ? 
+E:  And here we can multiply by X . 
+E:  Oh , yes . 
+E:  Yeah , yeah . 
+E:  That 's true . 
+E:  That 's true . 
+E:  But this  this is correct ? 
+E:  And now I can do it , 
+E:  uh  
+E:  pfff ! 
+E:  I can put log <writing on board> of EX <breath> plus log  
+E:  And this is  
+E:  Now it 's correct . 
+E:  Well . The idea  
+E:  Well , 
+E:  we have fixed this equa 
+E:  Yeah . 
+E:  This is another linear relation that this  to develop this in <breath> vector s Taylor series . 
+E:  Mm - hmm . 
+E:  And for that , well , the goal is to obtain , um  <breath> <inbreath> est estimate a PDF for the noisy speech 
+E:  when we have a  <breath> a statistic for clean speech and for the noisy speech . 
+E:  Mmm ? 
+E:  And when w 
+E:  the way to obtain the PDF for the noisy speech is  
+E:  well , we know this statistic 
+E:  and we know the noisy st 
+E:  well , we can apply first order of the vector st Taylor series of the  of the  of  well , the order that we want , increase the complexity of the problem . 
+E:  And then when we have a expression , uh , for the <breath> mean and variance of the noisy speech , we apply a technique of minimum mean - square estimation 
+E:  to obtain the expected value of the clean speech given the  this <mouth> statistic for the noisy speech  
+E:  the statistic for clean speech and the statistic of the noisy speech . 
+E:  This only that . 
+E:  But the idea is that  
+E:  u 
+E:  Yeah . 
+E:  We have our codebook with different density <breath> Gaussian . 
+E:  We can expre we can put that the <breath> PDF  for the clean test , probability of the clean speech is equal to  
+
+E:  I don't know exactly . 
+E:  I  I need to s 
+E:  I don't know exactly . 
+E:  Yeah . 
+E:  I  the clean speech  the codebook for clean speech , I am using TIMIT . 
+E:  And I have now , uh , sixty - four <writing on board> Gaus - Gaussian . 
+E:  Of the noise  
+E:  I estimate the noises wi 
+E:  Well , for the noises I only use one Gaussian . 
+E:  Uh , yes . 
+E:  The first experiment that I do it is solely to calculate the , mmm  well , this value  
+E:  uh , the compensation of the dictionary o one time 
+E:  using the  the noise at the f beginning of the sentence . 
+E:  This is the first experiment . 
+E:  And I fix this for all the  all the sentences . 
+E:  Uh , because  
+E:  well , the VTS methods  
+E:  In fact the first thing that I do is to  to obtain , uh , an expression for E  
+E:  probability e expression of  of E . 
+E:  That mean that the VTS  mmm , with the VTS we obtain , 
+E:  uh  
+E:  well , we  we obtain the means for each Gaussian  and the variance . 
+E:  This is one . 
+E:  Eh , this is the composition of the dictionary . 
+E:  This one thing . 
+E:  And the other thing that this  with these methods is to , uh , obtain  to calculate this value . 
+E:  Because we can write  
+E:  uh , we can write that <breath> the estimation of the clean speech is equal at an expected value of the clean speech conditional to , uh , the noise signal  <breath> the probability f of the  the statistic of the clean speech and the statistic of the noise . 
+E:  This is the methods that say that we 're going obtain this . 
+E:  And we can put that this is equal to the estimated value of E minus a function that conditional to E to the T  to the noise signal . 
+E:  Well , this is  this function is the <breath> the term  after develop this , the term that we  we take . 
+E:  Give PX and , uh , P the noise . 
+E:  And I can <breath> put that this is equal to  the  noise signal minus  
+E:  Well , I put before  this name , 
+E:  uh  
+E:  And I can calculate this . 
+E:  Uh , this is the Gaussian . 
+E:  v 
+E:  Uh , this is the  
+E:  like this , 
+E:  but conditional . 
+E:  No , it 's condition 
+E:  it 's not exactly this . 
+E:  It 's modify . 
+E:  Uh , if we have clean speech  we have the dictionary for the clean speech , we have a probability f of  our  our weight for each Gaussian . 
+E:  No . 
+E:  And now , this weight is different now 
+E:  because it 's conditional . 
+E:  And this I need to  to calcu 
+E:  I know this 
+E:  and I know this 
+E:  because this is from the dictionary that you have . 
+E:  I need to calculate this . 
+E:  And for calculate this , <breath> I have an  I  I can develop an expression that is 
+E:  that . 
+E:  I can calculate  I can  I calculated this value , <breath> uh , with the statistic of the noisy speech that I calculated before with the VTS approximation . 
+E:  And  well , normalizing . 
+E:  And I know everything . 
+E:  Uh , with the , 
+E:  nnn  
+E:  when I develop this in s Taylor  Taylor series , I can't , um , <breath> calculate the mean and the variance <breath> of the  for each of the Gaussian of the dictionary for the noisy speech . 
+E:  Now . 
+E:  And this is fixed . 
+E:  If I never do an estimat a newer estimation of the noise , this mean as  mean and the variance are fixed . 
+E:  And for each s uh , frame of the speech the only thing that I need to do is to calculate this 
+E:  in order to calculate the estimation of the clean speech given our noisy speech . 
+E:  Yeah . 
+E:  Never cha 
+E:  This is one of the approximations that I am doing . 
+E:  Per utterance . Yes . 
+E:  Per utterance . Yes . 
+E:  And th 
+E:  Yeah . 
+E:  It 's not  
+E:  Yeah . 
+E:  Yeah . 
+E:  It 's fixed , the dictionary . 
+E:  And the other estimation is when I do the uh on - line estimation , I change the means and variance of th for the noisy speech 
+E:  each time that I detect noise . 
+E:  I do it uh again this 
+E:  develop . 
+E:  Estimate the new mean and the variance of the noisy speech . 
+E:  And with th with this new s new mean and variance I estimate again this . 
+E:  Um , 
+E:  no , no , no . It 's not completely  
+E:  No , it 's  I am doing something like an adaptation of the noise . 
+E:  I estimate mean and variance for each one of the Gaussian of the codebook . 
+E:  Oh , 
+E:  um . Well , only one  
+E:  I am only  using only one . 
+E:  I don't know i 
+E:  Uh , it 's in  after the mel filter bank . 
+E:  Twenty - three . 
+E:  Uh , the original paper say that only one Gaussian for the noise . 
+E:  Yeah , maybe isn't the right thing . 
+E:  Yeah , yeah , yeah . 
+E:  Maybe . 
+E:  Yeah . 
+E:  Yeah . It 's quite complicated . 
+E:  Oh , it 's  it 's the  for me it 's the first time that I am working with VTS . 
+E:  Uh  
+E:  It 's another type of approximation because i because it 's a statistic  statistic approximation to remove the noise . 
+E:  I don't know . 
+E:  um 

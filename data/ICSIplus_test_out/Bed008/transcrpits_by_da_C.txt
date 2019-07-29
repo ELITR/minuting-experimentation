@@ -1,0 +1,107 @@
+C:  I would be surprised if it supports anything more than what we have right here . 
+C:  Nancy 's still stick ? 
+C:  Is your mike on ? 
+C:  Yes . 
+C:  What 's the difference between mode and endpoint ? 
+C:  Uh 
+C:  Would it be an endpoint if you were crossing over it ? 
+C:  Well I eh 
+C:  Right . 
+C:  If the  if the person talking is angry or slurs their speech they might be tired or , you know 
+C:  And , you know , possibly uh 
+C:  some , 
+C:  yeah . 
+C:  Basic 
+C:  you 're basically just merging those for just the sake of endpoint decision ? 
+C:  Yeah . 
+C:  What would a hotel fall under ? 
+C:  Well I mean in terms of entity type ? 
+C:  OK . 
+C:  Just as a suggestion maybe you could " save as " to keep your old one nice and clean 
+C:  and so you can mess with this one . 
+C:  OK , well , not a big deal then . 
+C:  Well the  
+C:  Isn't there a " save as " inside of java base ? 
+C:  OK . 
+C:  As related from the user model . 
+C:  I think you have to be in move mode before 
+C:  The user thrift , 
+C:  the user budget . 
+C:  Well is  
+C:  It seems like everything in a user model a affects  
+C:  Yeah . 
+C:  Cuz if the , I mean , and if the user is tired , the user state , 
+C:  right , 
+C:  it would affect stuff , 
+C:  but I can't see why e anything w everything in the model wouldn't be 
+C:  Yeah . 
+C:  Yeah , just seems like it 'd push the problem back a level . 
+C:  Yeah , but 
+C:  Sh - sh 
+C:  yeah ,  
+C:  S so we 'd basically be doing subgrouping ? 
+C:  Subgrouping , basically 
+C:  into mo 
+C:  so basically make it more tree like going backwards ? 
+C:  I guess the  the question uh is 
+C:  It 's hard for me to imagine how everything wouldn't just contribute to user state again . 
+C:  Or user compatibility . 
+C:  Sure , but other  I thought though the node we 're creating right now is user compatibility to the current action , 
+C:  right ? 
+C:  Seems like everything in the user model would contribute to whether or not the user was compatible with something . 
+C:  Well , with the way we 're defining it I think yeah . 
+C:  So you can save this one as and open up the old one , 
+C:  right 
+C:  and  
+C:  and then everything would be clean . 
+C:  You could do it again . 
+C:  Mm - hmm . 
+C:  It does matter though if there 's like a strike or riot or something . 
+C:  Wh - ah . 
+C:  Two fifty - six , 
+C:  is that what that 
+C:  Yeah . 
+C:  Right . 
+C:  Uh d I would almost say the other way to do that would be to open u or make you know N - many belief - nets 
+C:  and then open them every time you wanted to look at a different one 
+C:  vers 
+C:  cuz uh 
+C:  Yeah , but 
+C:  Yeah . 
+C:  I don't , yeah I just don't think this has been designed to support something like that . 
+C:  You can technically wear that as you 're talking . 
+C:  X - one matters more i than X - two or 
+C:  So I jus just to make sure I understand this , so in this case um we would still compute the average ? 
+C:  OK , so  
+C:  so it 'd be so in this case the probability that Y equals A would be uh  W one times  
+C:  or A or  
+C:  let 's see , 
+C:  one full quarter times point one 
+C:  OK . 
+C:  OK . 
+C:  So H passes a vector on to the next node ? 
+C:  It could ? 
+C:  A vector of the weights as the se 
+C:  oh . 
+C:  Oh it 's basically to tell the bottom node which one of the situations that it 's in 
+C:  or which one of the weighting systems 
+C:  W I was just , if you wanted to pay attention to more than one you could pass a w a weighting s system though too , 
+C:  couldn't you ? 
+C:  OK . 
+C:  Oh The situations that H has , are they built into the net 
+C:  or 
+C:  OK , so they  they could either be hand coded or learned or 
+C:  OK . 
+C:  Based on training data , 
+C:  OK . 
+C:  So you specify one of these things for every one of those possi possible situations . 
+C:  Oh yeah . 
+C:  Well , basically you would say , based on  in this dialogue that we have which one of the things that they said eh whether it was the entity relations or whatever was the thing that determined what mode it was , 
+C:  right ? 
+C:  That 's on the added variable , 
+C:  isn't it ? 
+C:  Ah . 
+C:  Well in terms of java base I think it 's basically what you see is what you get in 
+C:  I don't 
+C:  yeah , 
+C:  I would be surprised if it supports anything more than what we have right here . 

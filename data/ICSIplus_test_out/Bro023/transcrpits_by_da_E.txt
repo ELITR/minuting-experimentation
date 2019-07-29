@@ -1,0 +1,85 @@
+E:  I guess that 's it . 
+E:  Th - that 's his spectral subtraction group ? 
+E:  Is that right ? 
+E:  Oh , OK . 
+E:  So I guess I should probably talk to him a bit too ? 
+E:  Oh , OK . 
+E:  So , um , since we 're looking at putting this , um  mean log m magnitude spectral subtraction , um , into the SmartKom system , I I did a test seeing if , um , it would work using past only  and plus the present to calculate the mean . 
+E:  So , I did a test , um , <mouth> where I used twelve seconds from the past and the present frame to , um , calculate the mean . 
+E:  And  
+E:  Uh  
+E:  Twelve seconds , um , counting back from the end of the current frame , 
+E:  yeah . 
+E:  So it was , um , twen I think it was twenty - one frames 
+E:  and that worked out to about twelve seconds . 
+E:  And compared to , um , do using a twelve second centered window , I think there was a drop in performance 
+E:  but it was just a slight drop . 
+E:  Is  is that right ? 
+E:  Uh - huh . 
+E:  So that was encouraging . 
+E:  And , um , 
+E:  that  that  um , that 's encouraging for  for the idea of using it in an interactive system like 
+E:  And , um , another issue I 'm  I 'm thinking about is in the SmartKom system . 
+E:  So say twe twelve seconds in the earlier test seemed like a good length of time , 
+E:  but what happens if you have less than twelve seconds ? 
+E:  And , um  
+E:  So I w bef before , um  Back in May , I did some experiments using , say , two seconds , or four seconds , or six seconds . 
+E:  In those I trained the models using mean subtraction with the means calculated over two seconds , or four seconds , or six seconds . 
+E:  And , um , 
+E:  here , I was curious , what if I trained the models using twelve seconds 
+E:  but I f I gave it a situation where the test set I was  subtracted using two seconds , or four seconds , or six seconds . 
+E:  And , um  
+E:  So I did that for about three different conditions . 
+E:  And , um  
+E:  I mean , I th I think it was , um , four se 
+E:  I think  I think it was , um , something like four seconds and , um , six seconds , and eight seconds . 
+E:  Something like that . 
+E:  And it seems like it  it  it hurts compared to if you actually train the models  using th that same length of time 
+E:  but it  it doesn't hurt that much . 
+E:  Um , 
+E:  u usually less than point five percent , 
+E:  although I think I did see one where it was a point eight percent or so rise in word error rate . 
+E:  But this is , um , w where , um , even if I train on the , uh , model , and mean subtracted it with the same length of time as in the test , it  the word error rate is around , um , ten percent or nine percent . 
+E:  So it doesn't seem like that big a d a difference . 
+E:  That  that 's true . 
+E:  Um , 
+E:  Wa 
+E:  Um , t twelve s 
+E:  N n uh  For the test it 's just twelve seconds in the past . 
+E:  Of  of speech . 
+E:  Yeah . 
+E:  Right . 
+E:  And that 's actually what we 're planning to do in 
+E:  But  
+E:  s so I g So I guess the que the question I was trying to get at with those experiments is , " does it matter what models you use ? 
+E:  Does it matter how much time y you use to calculate the mean when you were , um , tra doing the training data ? " 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Hmm . 
+E:  Um , 
+E:  you  do you mean in my tests so far ? 
+E:  Most of the silence has been cut out . 
+E:  Just  There 's just inter - word silences . 
+E:  Pretty short . 
+E:  Yeah . 
+E:  Well , if I only use six seconds , it still works pretty well . 
+E:  I saw in my test before . 
+E:  I was trying twelve seconds cuz that was the best  in my test before 
+E:  and that increasing past twelve seconds didn't seem to help . 
+E:  th um , yeah , 
+E:  I guess it 's something I need to play with more to decide how to set that up for the SmartKom system . 
+E:  Like , may maybe if I trained on six seconds it would work better when I only had two seconds or four seconds , and  
+E:  OK . 
+E:  M 
+E:  Mm - hmm . 
+E:  S so , um , 
+E:  the  the idea of the second pass would be waiting till you have more recorded speech ? 
+E:  Or  ? 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mmm . 
+E:  Mm - hmm . 
+E:  OK . 
+E:  Mm - hmm . 
+E:  OK . 
+E:  I guess that 's it . 

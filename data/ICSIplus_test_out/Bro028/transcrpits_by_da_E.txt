@@ -1,0 +1,61 @@
+E:  Oops . 
+E:  Are you  you were going to say why  what made you  wh what led you to do that . 
+E:  Hmm . 
+E:  St - Stephane . 
+E:  Getting close . 
+E:  Hmm . 
+E:  Out of curiosity , what  what kind of recognizer  is the one from Mississippi State ? 
+E:  Is it  ? 
+E:  Um , is it like a  Gaussian mixture model ? 
+E:  OK . 
+E:  Hmm . 
+E:  Mm - hmm . 
+E:  Hmm . 
+E:  Hmm . 
+E:  It 's like a greedy  
+E:  Hmm . 
+E:  Hmm . 
+E:  Hmm . 
+E:  As  as we were talking about this I was thinking , <breath> um , <breath> whether there 's a relationship between  <breath> um , <outbreath> <inbreath> between Michael 's approach to , uh , some  some sort of optimal brain damage or optimal brain surgeon on the neural nets . 
+E:  So , like , if we have , 
+E:  um  
+E:  we have our  we have our RASTA features and  
+E:  and presumably the neural nets are  are learning some sort of a nonlinear mapping , <breath> uh , from the  the  the features <breath> to  to this  this probability posterior space . 
+E:  Right ? 
+E:  And , um  <breath> <mouth> and each of the hidden units is learning some sort of  some sort of  some sort of pattern . 
+E:  Right ? 
+E:  And it could be , like  <breath> like these , um  these auditory patterns that Michael  is looking at . 
+E:  And then when you 're looking at the  <breath> the , uh ,  um , <breath> the best features , <breath> you know , you can take out  you can do the  do this , uh , brain surgery by taking out , <breath> um , hidden units that don't really help at all . 
+E:  And this is k sorta like  
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Right . 
+E:  Well , that sort of segues into  what  what I 'm doing . 
+E:  Um , <breath> so , uh , the big picture is k um , <mouth> come up with a set of , <breath> uh , intermediate categories , 
+E:  then build intermediate category classifiers , then do recognition , 
+E:  and , um , improve speech recognition in that way . 
+E:  Um , so right now I 'm in  in the phase where <breath> I 'm looking at  at , um , deciding on a initial set of intermediate categories . 
+E:  And <breath> I 'm looking <breath> for data data - driven  methods that can help me find , <breath> um , a set of intermediate categories <breath> of speech that , uh , will help me to discriminate  later down the line . 
+E:  And one of the ideas , <breath> um , that was to take a  take a neural net  
+E:  train  train an ordinary neural net <breath> to  <breath> uh , to learn the posterior probabilities of phones . 
+E:  And so , 
+E:  um , at the end of the day you have this neural net 
+E:  and it has hidden  <breath> hidden units . 
+E:  And each of these hidden units is  <breath> um , is learning some sort of pattern . 
+E:  And so , um , what  what are these patterns ? 
+E:  I don't know . 
+E:  Um , and I 'm gonna to try to  <breath> to look at those patterns <breath> to  to see , <breath> um , <mouth> from those patterns  
+E:  uh , presumably those are important patterns for discriminating between phone classes . 
+E:  And maybe  <breath> maybe some , uh , intermediate categories can come from <breath> just looking at the patterns of  <breath> um , that the neural net learns . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Um . 
+E:  Yeah , so  so that 's the  that 's the first part  uh , one  one of the ideas to get at some  <breath> some patterns of intermediate categories . 
+E:  Um , <mouth> the other one  was , <breath> um , to , <breath> uh , come up with a  a  a model   um , a graphical model , <breath> that treats  the intermediate categories <breath> as hidden  hidden variables , latent variables , that we don't know anything about , 
+E:  but that through , <breath> um , s statistical training and the EM algorithm , <breath> um , at the end of the day , <breath> we have , um  we have learned something about these  these latent , um  latent variables 
+E:  which happen to correspond to <breath> intermediate categories . 
+E:  Um . <mouth> <mike noise> Yeah , and so those are the  the two directions that I 'm  I 'm looking into right now . 
+E:  And , uh , <breath> um  <breath> <mouth> Yeah . 
+E:  I guess that 's  that 's it . 
+E:  Oh , tea time ? 
+E:  Oops . 

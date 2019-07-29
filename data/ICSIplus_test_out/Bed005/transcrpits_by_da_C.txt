@@ -1,0 +1,456 @@
+C:  Um  is this , uh  
+C:  Um , fifty was our  sort of our first  
+C:  Yeah . 
+C:  Yeah . Also , Fey will not be here during spring break . 
+C:  So . 
+C:  Yeah . 
+C:  Also , um , F <breath> both Fey and I will , um , <breath> do something of which I may , eh  kindly ask you to  to do the same thing , 
+C:  which is we gonna check out our social infrastructures for possible subjects . 
+C:  Meaning , <breath> um , kid children 's gymnastic classes , 
+C:  pre - school parents and so forth . 
+C:  They also sometimes have flexible schedules . 
+C:  So , if you happen to be sort of in a non - student social setting , 
+C:  and you know people who may be interested in being subjects  
+C:  We also considered using the Berkeley High School and their teachers , maybe , 
+C:  and get them interested in stuff . 
+C:  And , um . 
+C:  So that 's as far as our brainstorming was concerned . 
+C:  So . 
+C:  But I  I will just make a first draft of the , uh , note , 
+C:  the " write - up " note , 
+C:  send it to you and Fey 
+C:  and then  
+C:  And , um , 
+C:  Are we  Have we concurred that , uh , these  these forms are sufficient for us , and necessary ? 
+C:  Mmm . 
+C:  Nuh . N . 
+C:  N . 
+C:  You happy with that ? 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yep . Makes sense . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Yeah . 
+C:  OK . 
+C:  So much for the data , 
+C:  except that with Munich everything is fine now . 
+C:  They 're gonna <breath> transcribe . 
+C:  They 're also gonna translate the , uh , German data from the TV and cinema stuff for Andreas . 
+C:  So . 
+C:  They 're  they all seem to be happy now , <breath> with that . 
+C:  So . 
+C:  w c sh should we move on to the technical sides ? 
+C:  Well I guess the good  good news of last week was the parser . 
+C:  So , um 
+C:  Bhaskara and I started working on the  <breath> the parser . 
+C:  Then Bhaskara went to class and once he came back , um , <breath> it was finished . 
+C:  So . 
+C:  It , uh  I didn't measure it , 
+C:  but it was about an hour and ten minutes . 
+C:  And , um  and now it 's  We have a complete English parser that does everything the German parser does . 
+C:  The  uh , that 's not a lot . 
+C:  And um . 
+C:  Well , if you , eh  
+C:  Well , w w We d The first we did is we  we tried to  to do  change the  the " laufen " into " run " , <breath> or " running " , <breath> or " runs " . 
+C:  And we noticed that whatever we tried to do , it no effect . 
+C:  And we were puzzled . 
+C:  And , uh , the reason was that the parser i c completely ignores the verb . 
+C:  So this sentence  sentence is  parses the p the same output , 
+C:  um , even if you leave out , um , all  all of this . 
+C:  So it 's basically feature film and TV . 
+C:  That 's what you need . 
+C:  If  if you 'd add  add Today and Evening , it 'll add Time or not . 
+C:  So it  i it does look at that . 
+C:  But all the rest is p simply frosting on the cake , 
+C:  and it 's optional for that parser . 
+C:  And  
+C:  Yeah . We ar we can sh er  I can show you the templates . 
+C:  I  I also have it running here , 
+C:  so if I <breath> do this now , um , <breath> you can see that it parsed the wonderful English sentence , " Which films are on the cinema today  evening ? " 
+C:  But , um . 
+C:  Uh do don't worry about it . 
+C:  It could be " this evening , which  which films are on the cinema " , 
+C:  or " running in the cinema , 
+C:  which  " 
+C:  uh , " today evening " , uh i " Is anything happening in the cinema this evening ? " 
+C:  Ge - elaborate , or , more or less , <breath> uh  
+C:  No . 
+C:  It is not  
+C:  Yeah . We were  I was afraid that , um  
+C:  Um . 
+C:  Um , I mean , these sentences are just silly . 
+C:  I mean , uh , d these were not the ones we  we actually did it . 
+C:  Um . 
+C:  What 's an idiomatic of phrasing this ? 
+C:  Which films are  showing ? 
+C:  playing ? 
+C:  Um . I have no net here . 
+C:  OK . So . Wonderful parse , 
+C:  same thing . 
+C:  Um . 
+C:  Except that we d w we don't have this , uh , time information here now , 
+C:  which is , 
+C:  um  
+C:  Oh . This  are the reserve . 
+C:  Anyways . <breath> So . 
+C:  Um . These are the  sort of the ten different sentence types that the uh  <breath> the parser was able to do . 
+C:  And it still is , now in English . 
+C:  And , um  
+C:  Sorry . 
+C:  And , um 
+C:  you have already to make it a little bit more elaborate , right ? 
+C:  OK . 
+C:  So , if you want to look at the templates , <breath> <clears throat> they 're conveniently located in a file , " template " . 
+C:  Um , 
+C:  and this is what I had to do . 
+C:  I had to change , @ @  " Spielfilm " to " film " , 
+C:  uh , " Film " to " movie " , 
+C:  cinem " Kino " to " cinema "  
+C:  to " today "  heu " heute " to " today " , 
+C:  evening  " Abend " to " evening " 
+C:  And , um . 
+C:  Yep . 
+C:  And that 's  that 's the next step , 
+C:  but we 'll get to that in a second . 
+C:  And so this means , um , 
+C:  " this " and " see " are not optional . 
+C:  " Want I like " is all maybe in there , 
+C:  but may also not be in there . 
+C:  Yeah . 
+C:  Should we try it ? 
+C:  OK . 
+C:  " Action watch " , 
+C:  whatever . 
+C:  Nothing was specialfi specified . 
+C:  except that it has some references to audio - visual media here . 
+C:  Where it gets that from  
+C:  It 's correct , 
+C:  but I don't know where it gets it from . 
+C:  Oh , " see " . 
+C:  Yeah . 
+C:  Yeah . Yep . OK . 
+C:  And " see this "  is exactly the same thing . 
+C:  Yep . 
+C:  Uh , I 'll tell you why . 
+C:  Because it gives a  you a score . 
+C:  And the value of the score is , v I assume , I guess , the more of these optional things that are actually in there , the higher the r score <breath> it is . 
+C:  So we  we shouldn't belittle it too much . 
+C:  It 's doing something , 
+C:  some things , 
+C:  and it 's very flexible . 
+C:  I 've just tried to 
+C:  be nice . 
+C:  OK . <breath> Um , let 's hope that the generation will not be more difficult , 
+C:  even though the generator is a little bit more complex . 
+C:  Uh but we 'll  
+C:  Mmm , 
+C:  that means we may need two hours and twenty minutes rather than an hour ten minutes , 
+C:  I hope . 
+C:  And the next thing I would like to be able to do , and it seems like this would not be too difficult either , is <breath> to say , " OK let 's now pretend we actually wanted to not only change the  <breath> the mapping of  of , uh , words to the M - three - L but we also wanted to change  add a new sentence type 
+C:  and and make up some  some new M - three - L  s " 
+C:  See th 
+C:  Mm - hmm . <breath> Yep . 
+C:  And , um , 
+C:  that 's  shouldn't be too tough . 
+C:  Yeah . I think what it does , it i i it does something sort of fancy . 
+C:  It loads 
+C:  um  
+C:  It has these style sheets and also the , um , schemata . 
+C:  So what it probably does , is it takes the , 
+C:  uh , <mouth> um  
+C:  Is this where it is ? 
+C:  This is already the XML stuff ? 
+C:  This is where it takes its own , um , syntax , 
+C:  and converts it somehow . 
+C:  Um . 
+C:  Where is the uh  
+C:  Um , where it actually produces the  the XML out of the , uh , parsed  stuff . 
+C:  No , this is not it . 
+C:  Uh . I can't find it now . 
+C:  You mean , where the  where the act how the action " Goodbye " maps into something  
+C:  Nope . 
+C:  Yeah . 
+C:  This is sort of what happens . 
+C:  This is what you would need to  to change  to get the , uh , XML changed . 
+C:  So when it encounts encounters " Day " , <breath> it will , uh , 
+C:  activate those h classes in the  in the XML stuff 
+C:  But , um  
+C:  I saw those actions  uh , the " Goodbye " stuff somewhere . 
+C:  Hmm , hmm , hmm , hmm , hmm . 
+C:  Yeah . Let 's do that . 
+C:  Oh . 
+C:  Yep . 
+C:  Yep . 
+C:  Well , we 'll find that out . 
+C:  So whatever  n this does  
+C:  I mean this is , basically , looks l to me like a function call , right ? 
+C:  And , um  
+C:  So , whenever it  it encounters " Goodbye " , 
+C:  which we can make it do in a second , here 
+C:  I 
+C:  Mm - hmm . 
+C:  Yep . 
+C:  W we Mm - hmm 
+C:  e 
+C:  e mmm 
+C:  Um , well i 
+C:  There is a feature called " Discourse - Status " , 
+C:  And so whenever I just say , " Write " , it will  it will put this in here . 
+C:  h 
+C:  Yep . 
+C:  So , this  
+C:  Um  well , we  we 'll see , when we say , 
+C:  let 's test something , 
+C:  " Goodbye " , causes it to c to create basically an " Action Goodbye - End - Action " . 
+C:  Which is a means of telling the system to shut down . 
+C:  Now , if we know that " Write " produces a " Feature Discourse - Status Confirm Discourse - Status " . 
+C:  So if I now say " Write , Goodbye , " it should do that . 
+C:  It sho it creates this , 
+C:  " Confirm Goodbye " . 
+C:  Oh . 
+C:  It d it  n That 's because  
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Well , sometimes it m Sometimes , i 
+C:  When it  
+C:  it  
+C:  For example  
+C:  Oh , this is German . 
+C:  Sorry . 
+C:  e 
+C:  So , now , this , it cannot do anymore . 
+C:  Nothing comes out of here . 
+C:  So , it doesn't speak German anymore , 
+C:  but it does speak English . 
+C:  And there is , here , a reference  
+C:  So , this tells us that whatever is  has the ID " zero " is referenced here  by @ @  the restriction seed 
+C:  and this is exa " I want  " 
+C:  What was the sentence ? 
+C:  " need two seats here . " Nuh . 
+C:  " And where is it playing ? " There should also be a reference to something , maybe . 
+C:  Our d This is re um 
+C:  Mmm . 
+C:  Here , we change  and so , we  Here we add something to the Discourse - Status , that the user wants to change something that was sort of done before 
+C:  And , uh  
+C:  and that , whatever is being changed has something to do with the cinema . 
+C:  Hmm ? 
+C:  Sort of get a complete understanding of the whole thing . 
+C:  OK . 
+C:  Point number two . 
+C:  I got the , uh , M - three - L for the routes today . 
+C:  Uh , so I got some more . 
+C:  This is sort of the 
+C:  uh , <breath> um , 
+C:  Hmm . 
+C:  Interesting . 
+C:  It 's just going up , 
+C:  it 's not going back down . 
+C:  So , this is  um , what I got today is <breath> the  the new <breath> um <breath> M - three - L for um , <breath> <mouth> the Maps , 
+C:  uh , and with some examples  
+C:  So , this is the XML and this is sort of what it will look like later on , 
+C:  even though it  you can't see it on  on this resolution . 
+C:  And this is what it  sort of is the  the structure of Map requests , 
+C:  um 
+C:  also not very interesting , 
+C:  and here is the more interesting stuff for us , is the routes , 
+C:  route elements , 
+C:  and , again , as we thought it 's really simple . 
+C:  This is sort of the , uh , <breath> <mouth> um , <breath> parameters . 
+C:  We have @ @  simple " from objects " and " to objects " and so forth , 
+C:  points of interest along the way  
+C:  And , um , 
+C:  I asked them whether or not we could , um  
+C:  First of all , I was little bit  
+C:  It seemed to me that this m way of doing it is sort of a stack a step backwards from the way we 've done it before . 
+C:  t 
+C:  It seems to me that some notions were missing . 
+C:  So these are  these are  
+C:  Yep . 
+C:  Who are doing this . 
+C:  No . 
+C:  No , this is very straightforward . 
+C:  Yeah . 
+C:  Exactly . 
+C:  And , um  
+C:  And , uh  
+C:  However , the , uh  e So that you understand , it is really simple . 
+C:  Uh  You  you have a route , 
+C:  and you cut it up in different pieces . 
+C:  And every  every element of that e r r f of that  Every segment we call a " route element " . 
+C:  And so , from A to B we cut up in three different steps , 
+C:  and every step has a " from object " where you start , a " to object " 
+C:  where y where  you sort of end , and some points of interest along the way . 
+C:  What w I was sort of missing here , and uh , maybe it was just me being too stupid , is , <breath> I didn't sort of get the  the notion of the global goal of the whole route . 
+C:  Really , s was not straightforward visibly for me . 
+C:  And some other stuff . 
+C:  And I <breath> suggested that they should n be  k uh , kind enough to do s two things for us , 
+C:  is one , um , <breath> <mouth> Also allocating , uh , some tags for our Action Schema Enter - Vista - Approach , 
+C:  and  
+C:  And also , um , since you had suggested that  that , um , we figure out if we ever , for a demo reason , wanted to shortcut directly to the g GIS and the Planner , 
+C:  of how we can do it . 
+C:  Now , what 's the state of the art of getting to entrances , 
+C:  um , what 's the syntax for that , 
+C:  how get getting to <breath> vista points and calculating those on the spot . 
+C:  And the Approach mode , anyhow , is the default . 
+C:  That 's all they do it these days . 
+C:  Wherever you 'll find a route planner it n does nothing but get to the closest point where the street network is <breath> at minimal distance to the geometric center . 
+
+C:  So . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . <breath> Especially if we want  
+C:  Sort of , what I  my feeling was eh we  we sort of reserved something that has a r eh an OK label . 
+C:  That 's  th that was my th first sort of step . 
+C:  I w 
+C:  No matter how we want to call it , <breath> this is sort of our playground . 
+C:  And if we get something in there that is a structure elaborate and  and  and  and  and complex enough to  to  to maybe enable a whole simulation , one of these days , that would be  u the  the perfect goal . 
+C:  Mm - hmm . 
+C:  Yep . 
+C:  Yep . 
+C:  Yep . 
+C:  Hmm ? 
+C:  Hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Nuh . 
+C:  Now , we hav the  the whole  Unfortunately , the whole database is , uh , <breath> in German . 
+C:  We have just commissioned someone to translate some bits of it , 
+C:  IE the e the shortest k the  the more general descriptions of all the objects and , um , persons and events . 
+C:  So , it 's a relational database with persons , events , <breath> and , um , objects . 
+C:  And it 's  it 's quite , um , <breath> there . 
+C:  But did y I  uh  I think there will be great 
+C:  because the reference problem really is not trivial , even if you have such a g well - defined world . 
+C:  Ah - he you are not , uh , throwing uh , uh , carrying owls to Athens . 
+C:  Well  <breath> How do I get to the Powder - Tower ? 
+C:  We sort of t think that our bit in this problem is interesting , 
+C:  but , just to get from Powder - Tower to an object I ID in a database is also not really trivial . 
+C:  Or the 
+C:  O or  or tower , or this tower , or that building , or  
+C:  hmm ? 
+C:  u u u u 
+C:  That 's what strikes me , that we sort of  
+C:  the de g uh , small  
+C:  Something , uh , maybe we should address one of these days , is to  <breath> That most of the work people actually always do is look at some statements , 
+C:  and  and analyze those . 
+C:  Whether it 's abstracts or newspapers and stuff like this . 
+C:  But the whole  i is it  is it really relevant that we are dealing mostly with , sort of , questions ? 
+C:  Uh , you know  
+C:  And this is  It seems to me that we should maybe at least spend a session or  or brainstorm a little bit about whether that l this is special case in that sense . 
+C:  Um , 
+C:  I don't know . 
+C:  You know  Did we ever find m metaphorical use in  in questions in  in that sense , really ? 
+C:  And how soon , 
+C:  I don't know . 
+C:  " Who got kicked out of France ? " 
+C:  Nuh . 
+C:  Nuh . 
+C:  Mm - hmm . 
+C:  Help you create a mental model , blah - blah - blah . 
+C:  Yeah . 
+C:  Or , as a matter of fact , we need  <breath> and if we if we ' r eh  take a ten year perspective , we need to do that , 
+C:  because 
+C:  w 
+C:  e w a Assuming we have this , um , we we ta in that case we actually do have these wonderful stories , and historical anecdotes , 
+C:  and knights jumping out of windows , 
+C:  and - and - and    tons of stuff . 
+C:  So , th the database is huge , 
+C:  and if we want to answer a question on that , we actually have to go one step before that , and understand that . 
+C:  In order to e do sensible information extraction . 
+C:  And so , 
+C:  um , this has been a  a  a Deep Map research issue that was  is  is part of the unresolved , and to - do 's , and something for the future , is <breath> how can we sort of run our our text , our content , through a machine <breath> that will enable us , later , to retrieve or answer e questions more sensibly ? 
+C:  OK . 
+C:  So , e enough of that , 
+C:  but I , uh , um , 
+C:  mmm , 
+C:  the e sort of , Johno and I will take up that responsibility , 
+C:  and , um , get a first draft of that . 
+C:  Now , we have um just , I think two more short things . 
+C:  Um , y you guys sort of started fighting , uh , on the Bayes - net " Noisy - OR " front ? 
+C:  Um , the Wu paper , 
+C:  I think maybe  
+C:  Y 
+C:  E - EVA 
+
+C:  Yeah . 
+C:  Hmm ? 
+C:  S so , this is a fanciful way of saying " default " ? 
+C:  OK . 
+C:  Mm - hmm . 
+C:  Mmm . 
+C:  I mean , in some  it seems very plausible in some sense , where we will be likely to not be  observe some of the stuff . 
+C:  Cuz we don't have the a access to the information . 
+C:  Yeah . 
+C:  So . 
+C:  I if it 's a  a  a discar Discourse Initial Phrase , we will have nothing in the discourse history . 
+C:  So , if  if we ever want to wonder what was mention 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Wha - still sort of leaves one question . 
+C:  It  I mean you  you can always uh  see easily that  that I 'm not grasping everything correctly , 
+C:  but <breath> what seemed attractive to me in im uh in the last discussion we had , was <breath> that we find out a means of  of getting these point four , point five , point one , of C - four , 
+C:  not because , you know , A is a Landmark or not , but we  we  we label this whatever object type , 
+C:  and if it 's a garden , it 's point three , point four , point two . 
+C:  If it 's a castle , it 's point eight , point one , point one . 
+C:  If it 's , <breath> uh , a town hall , it 's point two , point three , point five . 
+C:  And so forth . 
+C:  And we don't want to write this down  necessarily every time for something 
+C:  but , uh  
+C:  let 's see . 
+C:  Well , in the beginning , we 'll write up a flat file . 
+C:  We know we have twenty object types 
+C:  and we 'll write it down in a flat file . 
+C:  But it 's , uh  <clears throat> Well , it strikes me as a What For 
+C:  If we get the mechanism , that will be sort of the wonderful part . 
+C:  And then , <breath> how to make it work is  is the second part , 
+C:  in the sense that  I mean , m the guy who was doing the ontology  eh , eh , s ap apologized that i it will take him another through  two to three days 
+C:  because they 're having really trouble getting the upper level straight , 
+C:  and 
+C:  right now . 
+C:  The reason is , <breath> given the craw bet uh , the  the  the projects that all carry their own taxonomy and , on all history , <breath> they 're really trying to build one top level ontology ft that covers all the EML projects , 
+C:  and that 's , uh , uh , sort of a tough cookie , 
+C:  a little bit tougher than they <breath> figured . 
+C:  I could have told them s so . 
+C:  Uh . 
+C:  But , nevertheless , it 's going to be there by n by , uh , next Monday 
+C:  and I will show you what 's  what some examples <breath> from that for towers , and stuff . 
+C:  And , um , 
+C:  what I don't think is ever going to be in the ontology , is sort of , you know , the likelihood of , eh , people entering r town halls , and looking at town halls , and approaching town halls , 
+C:  especially since we are b dealing with a case - based , 
+C:  not an instance - based ontology . 
+C:  So , there will be nothing on  on that town hall , or on the Berkeley town hall , or on the <breath> Heidelberg town hall , 
+C:  it 'll just be information on town halls . 
+C:  But what  
+C:  Well , that 's  
+C:  Hhh . 
+C:  That 's  that 's al different question . 
+C:  I mean , th the  first , they had to make a design question , <breath> " do we take ontologies that have instances ? 
+C:  or just one that does not , that just has the types ? " 
+C:  And , so , since the d decision was on types , on a d simply type - based , <breath> we now have to hook it up to instances . 
+C:  I mean this is 
+C:  one  
+C:  Yeah , but the ontology is really not a SmartKom thing , 
+C:  in  in and of itself . 
+C:  That 's more something that <breath> I kicked loose in  in EML . 
+C:  So it 's a completely EML thing . 
+C:  Yes , u a w a lot of people are aware of that . 
+C:  Um  
+C:  No , but  th the r eh  I th I still think that there is enough information in there . 
+C:  For example , whether  
+C:  OK . So , th it will know about the twenty object types there are in the world . 
+C:  Let 's assume there are only twenty object types in this world . 
+C:  And it will know if any of those have institutional meanings . 
+C:  So , in a sense , " I " used as Institutions for some s in some sense or the other . 
+C:  Which makes them  enterable . Right ? 
+C:  In a sense . 
+C:  You know . 
+C:  Yep . 
+C:  Yep . 
+C:  Mm - hmm . 
+C:  OK . And I I 'll  I 'll think s through this , uh , <breath> eh  getting EVA vectors dynamically out of ontologies one more time 
+C:  because I s I  I  I 'm not quite sure whether we all think of the same thing or not , here . 
+C:  Yeah , uh - huh . 
+C:  OK . 
+C:  Und . 
+C:  Um  is this , uh  

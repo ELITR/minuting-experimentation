@@ -1,0 +1,68 @@
+B:  and , um , I think by tomorrow I 'll have it for th for the rest . 
+B:  It 's e F . 
+B:  u <outbreath> I  I  I think , um , for the far - mike HTK system I was using , it did help somewhat . 
+B:  I could re - check that . 
+B:  But it was such a bad baseline that I don't know what that means . 
+B:  Cuz the baseline word error rate was around forty percent on digits . 
+B:  Right . 
+B:  What wo 
+B:  Uh , I I think also for the log spectral mean subtraction , uh , we wanna know which speaker 's talking when , 
+B:  cuz we wanna chain together the audio from one particular speaker to calculate the mean 
+B:  and subtract it , 
+B:  and we don't  
+
+B:  Well , we also have to mean subtract the test data . 
+B:  OK . 
+B:  And there 's , um , 
+B:  S so the way this means subtraction expects to work , is it expects to have , um , this continuous stream of audio data from a particular speaker to operate on . 
+B:  And it goes along it with this sliding window , calculating the mean using the data in the window , 
+B:  and then subtracting that . 
+B:  I mean , uh  
+B:  That 's  that 's how I 've been doing it , 
+B:  just by concatenating files together . 
+B:  Um , and if these files  and the 
+B:  since they 're individual utterance files , um , s long silence periods are removed , 
+B:  which is a good thing . 
+B:  Because this method might estimate the mean badly , if it had to face long silence periods . 
+B:  But that does mean that I need as much  I need twice as much disk space as the original set 
+B:  cuz I need  while I 'm running it  cuz I need to create this intermediate set , um , of these big files , 
+B:  and then  create the  finally , the mean subtracted , um , little files . 
+B:  And then I can get rid of the big files . 
+B:  But st while I 'm doing the processing , I 'll nee I need twice as much disk space . 
+B:  Right , 
+B:  an and  
+B:  So  so , Andreas , um , 
+B:  in U doctor speech data SRI Hub - five , there 's this , uh , Hub - five training set . 
+B:  Now , is that the long training set there ? 
+B:  OK . 
+B:  OK . I th I think you already did , actually . 
+B:  OK . And so , say the Macrophone files that are included in this short training , are just a subset of the Macrophone files . 
+B:  Right ? 
+B:  OK . 
+B:  So  so , um  when you  You did some TI - digits t t experiments training on Macrophone . 
+B:  Um . 
+B:  But that 's not necessarily any less data  than the SRI Hub - five 
+B:  set . It 's not a  it 's not a subset of the short SRI Hu - Hub - five set . 
+B:  Right ? 
+B:  Uh , whe when you trained on Macrophone , um , to do those digits experiments , did you use the entire Macrophone corpus ? 
+B:  Oh . OK . 
+B:  OK - OK . 
+B:  So  Um  
+B:  I  I  I got confused , 
+B:  cuz I thought  I thought you were using <inbreath> the whole Macrophone set . 
+B:  Um . OK . 
+B:  Well , if  if  if I just need to use that subset , I  I can get it processed . 
+B:  I actually  got  I think I got f into it before , 
+B:  and then I thought I was doing the wrong thing 
+B:  and I stopped . 
+B:  And it shouldn it shouldn't take that long to do . 
+B:  Oh , OK . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Right . 
+B:  Mm - hmm . 
+B:  The segmentations ? 
+B:  Oh . 
+B:  Um  
+B:  I  I have i I have it for  for Macrophone , um , already , I think , 
+B:  and , um , I think by tomorrow I 'll have it for th for the rest . 

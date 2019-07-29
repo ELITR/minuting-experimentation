@@ -1,0 +1,240 @@
+D:  Yep . 
+D:  Yep . 
+D:  Something like that . 
+D:  That 's the , uh , point . 
+D:  Yes . 
+D:  We 'll show you . 
+D:  No . 
+D:  Are pl playing at the cinema ? 
+D:  Yeah . 
+D:  I changed that file , actually , where it 's on my account . 
+D:  You want to get it ? 
+D:  Or  is  di was it easy to get it ? 
+D:  Oh , OK . 
+D:  Yeah , I mean I changed those sentences to make it , uh , more , uh , idiomatic . 
+D:  And , of course , you can have i many variations in those sentences , they will still parse fine . 
+D:  So , in a sense it 's pretty broad . 
+D:  One thing I was wondering , was , those functions there , are those things that modify the M - three - L basically ? 
+D:  OK . 
+D:  Hmm . 
+D:  AV medium . 
+D:  Yeah . 
+D:  " See " . 
+D:  I mean it 's sort of  
+D:  One thing I was wondering was , <breath> those percentage signs , right ? 
+D:  So , I mean , why do we even have them ? 
+D:  Because  if you didn't have them  
+D:  Oh . 
+D:  OK . 
+D:  So that 's the main purpose . Alright . 
+D:  Right . 
+D:  So , that 's  
+D:  Fine , yeah . 
+D:  Yeah , so where are those  
+D:  those functions " Action " , " Goodbye " , and so on , right ? 
+D:  Are they actually , um , <breath> Are they going to be called ? 
+D:  Um , are they present in the code for the parser ? 
+D:  What are you looking for ? 
+D:  Oh , OK . 
+D:  Yeah . 
+D:  Oh . 
+D:  No , that 's not it . 
+D:  Mmm . 
+D:  M - three - L dot DTD ? 
+D:  That 's just a  specification for the XML format . 
+D:  I think each of those functions act on the current XML structure , and change it in some way , for example , by adding a  a l a field to it , or something . 
+D:  Right . 
+D:  Oh , you mean that 's not going to actually modify the tree , 
+D:  but it 's going to change the event . 
+D:  Oh . Oh . 
+D:  When there 's a feature . 
+D:  Mm - hmm . 
+D:  Right there . 
+D:  But there is some kind of function call , 
+D:  because how does it know to put Goodbye in Content , but , uh , Confirm in Features ? 
+D:  So 
+D:  So , it 's not just that it 's adding that field . 
+D:  It 's 
+D:  OK . 
+D:  Well , they 're defined somewhere , presumably . 
+D:  Mm - hmm . 
+
+D:  Ooo ! 
+D:  Hmm . 
+D:  Yeah , I thought I should , um , talk a little bit about that , 
+D:  because that might be a good , uh , sort of architecture to have , in general for , uh , problems with , <breath> you know , multiple inputs to a node . 
+D:  OK . 
+D:  So  
+D:  should I  Is there a white board here that I can use ? 
+D:  Uh  
+D:  Or shall I just use this ? 
+D:  Yeah . 
+D:  Hey ! 
+D:  Yeah . 
+D:  So , um  <breath> Recall that , uh , we want to have this kind of structure in our Bayes - nets . 
+D:  Namely , that , um  <breath> <mouth> You have these nodes that have several bands , right ? 
+D:  So  
+D:  Does I mean , they sort of  
+D:  the typical example is that , um , these are all a bunch of cues for something , 
+D:  and this is a certain effect that we 'd like to conclude . 
+D:  So , uh  
+D:  Like , let 's just look at the case when , um , this is actually the  the final action , right ? 
+D:  So this is like , uh , <breath> you know , touch , 
+D:  or  
+D:  Sorry . 
+D:  Uh 
+D:  Yeah , 
+D:  E - <while laughing> EVA , right ? 
+D:  Enter , V View , Approach , right ? 
+D:  So , this is  
+D:  Yeah . 
+D:  Enter , 
+D:  View , 
+D:  Approach . 
+D:  Right . 
+D:  So , I mean , we 'd like to  take all these various cues , right ? 
+D:  So this one might be , say , uh  
+D:  Well , let me pick a random one 
+D:  and say , uh  
+D:  I don't know , 
+D:  it could be , like  <breath> This isn't the way it really is , 
+D:  but let me say  that , suppose someone mentioned , uh , admission fees 
+D:  Ah , it takes too long . 
+D:  Try  let me just say " Landmark " . 
+D:  If the thing is a landmark , you know , <breath> um  then there 's another thing that says if  <breath> um  
+D:  if it 's closed or not , at the moment . 
+D:  Alright , so you have nodes . 
+D:  Right ? 
+D:  And the , uh , problem that we were having was that , you know , given N - nodes , there 's " two to the N " 
+D:  Given N - nodes , and furthermore , the fact that there 's three things here , we need to specify " three times " , uh , " two to the N " probabilities . 
+D:  Right ? 
+D:  That 's assuming these are all binary , which f they may not be . 
+D:  For example , they could be " time of day " , 
+D:  in which case we could , uh , say , you know , " Morning , afternoon , evening , night " . 
+D:  So , this could be more 
+D:  So , it 's a lot , anyway . 
+D:  And , that 's a lot of probabilities to put here , which is kind of a pain . 
+D:  So  Noisy - ORs are a way to , uh , <breath> sort of deal with this . 
+D:  Um 
+D:  Where should I put this ? 
+D:  So , the idea is that , um , <breath> Let 's call these , uh , C - one , C - two , C - three , and C - four , and E , for Cause and Effect , I guess . 
+D:  The idea is to have these intermediate nodes . 
+D:  Right . 
+D:  Well , actually , the idea , first of all , is that each of these things has a  quote - unquote distinguished state , 
+D:  which means that this is <mouth> the state in which we don't really know anything about it . 
+D:  So  
+D:  right ? 
+D:  So , for example , if we don't really know <breath> if the thing is a landmark or not , Or , i if that just doesn't seem relevant , then that would be th sort of the Disting - the Distinguish state . 
+D:  It 's a really , you know , <breath> if there is something for the person talking about the admission fee , 
+D:  you know , if they didn't talk about it , that would be the Distinguish state . 
+D:  So  
+D:  Yeah , yeah . 
+D:  That 's just what they  the word they used in that paper . 
+D:  So , the idea is that , um , <breath> you have these intermediate nodes , right ? 
+D:  E - one , E - two , E - three and E - four ? 
+D:  Yeah . 
+D:  So  The idea is that , each of these EI  is  <mouth> represents what this would be  if all the other ones were in the distinguish state . Right ? 
+D:  So , for example , suppose that the person  I mean , suppose the thing that they talked about is a landmark . 
+D:  But none of the other  <breath> sort of cues really apply . 
+D:  Then , <cough> this would be  
+D:  W The <breath> this would just represent the probability distribution of this , 
+D:  assuming that this cue is turned on and the other ones just didn't apply ? 
+D:  So , you know , if it is a landmark , and no none of the other things really ap applicable , then  this would represent the probability distribution . 
+D:  So maybe in this case  <breath> Maybe we just t k Maybe we decide that , if the thing 's a landmark and we don't know anything else , then we 're gonna conclude that , um  <breath> They want to view it with probability , you know , point four . 
+D:  They want to enter it with probability , uh  with probability point five 
+D:  and they want to approach it probability point one , say  
+D:  Right ? 
+D:  So we come up with these l little tables for each of those 
+D:  OK . 
+D:  And the final thing is that , um  <breath> <mouth> this is a deterministic function of these , 
+D:  so we don't need to specify any probabilities . 
+D:  We just have to , um , say what function this is , right ? 
+D:  So we can let this be , um  <breath> G of E - one comma E - two . E - three , E - four . Right ? 
+D:  and our example G would be , um , <breath> a majority vote ? 
+D:  Right ? 
+D:  Mm - hmm . 
+D:  There 's  I mean  
+D:  yeah . 
+D:  it 's Heckerman and Breese . 
+D:  Yeah . 
+D:  Uh , you can  Yeah , you should take a look at it , I guess . 
+D:  Yeah , it 's a good question . 
+D:  Um  <breath> <mike noise> The  so what we want , is basically JavaBayes to support deterministic , uh , functions . 
+D:  And , um  <breath> In a sense it sup we can make it supported by , um , <breath> manually , uh , entering , you know , probabilities that are one and zeros , right ? 
+D:  Mmm . 
+D:  I don't think you can do this , 
+D:  because  <breath> G is a function from  that <breath> to that . 
+D:  Right ? 
+D:  So there 's no numbers . 
+D:  There 's just  quadruplets of  well , N - duplets of , uh , E Vs . 
+D:  Oops ,  sorry . 
+D:  Is  
+D:  Oh , right . 
+D:  W would not be ab able to observe 
+D:  What ? 
+D:  Oh  
+D:  Oh . A are you saying that we 'll not be able to observe certain nodes ? 
+D:  That 's fine . 
+D:  That is sort of orthogonal thing . 
+D:  Yeah . 
+D:  So , specifically in this case you have to  f have this many numbers , 
+D:  whereas in this case you just have to have three for this , three for this , three for this . Right ? 
+D:  So you have to have just three N ? 
+D:  So , this is much smaller than that . 
+D:  Yeah . 
+D:  Right . 
+D:  I don't know . 
+D:  Yeah . This isn't a Noisy - OR anymore . 
+D:  it 's a Noisy - arg - max or a Noisy - whatever . 
+D:  Well , the " OR " . 
+D:  Right . I guess you 're right . 
+D:  Yeah . 
+D:  Yep . 
+D:  So 
+D:  It 'll be students  
+D:  Where else would it be stored ? 
+D:  That 's the question . 
+D:  Mm - hmm . 
+D:  OK . 
+D:  So , is the idea to put it in the ontology ? 
+D:  OK . 
+D:  OK . 
+D:  Mm - hmm . 
+D:  Right . 
+D:  Right . 
+D:  Yeah . 
+D:  Yeah . 
+D:  So  
+D:  Yeah . 
+D:  So , we are  but we  we 're not doing the ontology , 
+D:  so we have to get to whoever is doing the  u ultimately , 
+D:  we have to get them to  
+D:  Yeah , it 's  
+D:  Right , we can just assume  
+D:  Yeah . 
+D:  Right . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Um  
+D:  That requires understanding the classes in JavaBayes , I guess . @ @ . 
+
+D:  Mmm . 
+D:  Ah ! 
+D:  Yeah . 
+D:  I don't see why the , uh , combining f functions have to be directly hacked into 
+D:  I mean , they 're used to create tables 
+D:  so we can just make our own little functions that create tables in XML . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  I don't think  I mean , the fact that it blown u blows up is a huge issue in the sense that  
+D:  I mean , OK . 
+D:  So say it blows up , right ? 
+D:  So there 's , like , the you know , ten , f ten , fifteen , uh , things . 
+D:  It 's gonna be like , two to the  that , 
+D:  which isn't so bad . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  p Sure . 
+D:  OK . 
+D:  Yep . 

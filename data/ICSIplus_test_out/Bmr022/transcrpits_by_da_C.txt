@@ -1,0 +1,330 @@
+C:  Alright . 
+C:  You 're a May birthday , 
+C:  right ? 
+C:  Barbara told me . 
+C:  Barbara Peskin . 
+C:  And this is the mixed signal ? 
+C:  Well , the other thing  You can  
+C:  The other thing you can do 
+C:  This is on the mixed signal , 
+C:  or are these the individual  
+C:  the ones with the beeps that they 're getting , that they made mistakes on is the mixed one ? 
+C:  Or they 're indivi 
+C:  If it 's individual , um  y c we can  probably run a forced alignment , 
+C:  where you c include the beeps as words and pretty much figure out where the errors are . 
+C:  I don't think we could do it on the mixed signal , 
+C:  cuz it  
+C:  But on the individual channels that would probably work , if they have enough words in the transcript . 
+C:  So , I mean , that 's pretty quick to run . 
+C:  It  it 's , um  
+C:  I mean , we could try it . 
+C:  Cuz if a beep is treated as a unique word , 
+C:  " beep "  
+C:  Put in  put " beep " in as a word . 
+C:  Yeah . Yeah . Well  the beep model  Actually , you could train a beep model . 
+C:  That  that 's a good idea . 
+C:  Um  
+C:  Yeah . 
+C:  Yeah . So , um  
+C:  Um , that might actually  
+C:  I mean , that might actually work , 
+C:  because you 'll  I guess the trick is figuring out , you know , where it doesn't align ? 
+C:  But if it 's a problem of extra beeps , rather than missing beeps , then  um  that 's easier 
+C:  and it might work . 
+C:  Oh . 
+C:  Oh , yeah . 
+C:  Yeah . 
+C:  You could have , um , each speaker in the meeting say " beep " and record it 
+C:  and that will be their pro 
+C:  Sorry . 
+C:  Hmm . 
+C:  But yo I guess you 'd still get the mistake that you mentioned , 
+C:  because the person  
+C:  I mean , if that 's some of the errors , those would probably stay the same , regardless . 
+C:  Yeah , you have like a sanity  sanity check on them . 
+C:  That 's a good idea . 
+C:  Alternating . 
+C:  Yeah , that 's a good , like , error checking approach , I think . 
+C:  There must be . 
+C:  Because otherwise , you 're going a whole  
+C:  That was at least forty - five minutes , 
+C:  right ? 
+C:  That 's the shortest meeting we have . 
+C:  Most of them are double that , or 
+C:  so 
+C:  So if there are in the  in the hundreds and thou or thousands of these  
+C:  It must be in the high hundreds of them , at least . 
+C:  So that 's getting a little cumbersome for them to type , like , five hundred ? 
+C:  But yeah , if they recycle through  
+C:  Yeah . 
+C:  Right . 
+C:  That 's what I  
+C:  Yeah , so it 'd be a lot of overhead to type . 
+C:  Oh , I  
+C:  Yeah . 
+C:  Yeah . 
+C:  Actually , if it is  
+C:  u 
+C:  I mean , it 's not a bad idea to try the alignment . 
+C:  Um , if there 's only like three of them , then if you align , the first point at which things get messed up is sort of the location of the first problem . 
+C:  And then , the second p 
+C:  I mean , you could do it that way , 
+C:  or you could  
+C:  It 's  it 's  
+C:  it would be able to handle any errors . 
+C:  So if they make , on the average , that many , and it costs them more time to do something different than what they 're doing , which I don't know ,  but if it does , then we could try doing that as a post - process , 
+C:  and , um , have a student or a transcriber run this alignment , 
+C:  or we can do it 
+C:  and  
+C:  then you can iteratively figure out  where the problems are . 
+C:  It would take a little work , 
+C:  but not any real human  not a lot of human work . 
+C:  Well , the for the forced alignment will run fa 
+C:  otherwise it 'll take forever . 
+C:  I mean , to really run recognition ? 
+C:  Or  ? 
+C:  Right . 
+C:  Yeah , then we just map it to a reject model . 
+C:  In  and in fact , that 's what we do now . 
+C:  Cuz there 's cases , even after Jane listens , where , you know , we have  
+C:  an expert can't even tell what they 're talking about . 
+C:  Um , so that 's OK . 
+C:  Just map that to reject 
+C:  and  
+C:  The forced alignment might not work then , 
+C:  although we can try it . 
+C:  Um  
+C:  Right . 
+C:  Right . But it 'll  it 'll grab the next beep , in other words . 
+C:  It 'll be  
+C:  You 'll get back another offset . 
+C:  Um  I mean , I was thinking of  
+C:  then I  and then I realized " Well , the recognizer will just go along and line up all the beeps , 
+C:  and then there 'll be all the extra beeps at the end 
+C:  if there were more beeps then you wanted . " 
+C:  So you need the word  you need the word to c sort of control the relative location . 
+C:  It will tell you  
+C:  Oh . 
+C:  I think you do care about it . 
+C:  Unless you wanna know if they 're  
+C:  Right . 
+C:  Otherwise you just count up the total number of beeps . 
+C:  Yeah . 
+C:  Right . 
+C:  I mean the only thing I 'm worried about with that approach is that if we need to figure out the beep alignment problem before the transcribers do the corrections here ,  then we 're in trouble . 
+C:  In other words , if the transcripts aren't sort of good enough that the aligner constraints are good enough to sort of show you where the errors are , then it wouldn't work . 
+C:  But it might work . 
+C:  It might work to do this if their transcripts are pretty close on the words that usually get recognized correctly , 
+C:  which are the , you know , function words , 
+C:  the common words . 
+C:  Right , you can also  
+C:  In fact that 's what we do  
+C:  Right . The individual segments between the beeps  
+C:  Um , if beeps were like the segments that we get from um , the transcription tool already , that that 's what we have done , 
+C:  and it works very well . 
+C:  You can see these segments align and these don't . 
+C:  Um , then you just have to go back in and figure out where the endpoints of those segments are , 
+C:  cuz some of them will be wrong . 
+C:  Because the bi the beeps were missing , by definition . 
+C:  So it might actually work . 
+C:  Um , you ca you get , um  
+C:  Definitely when they don't align at all , it  it  it fails . 
+C:  I mean , that  that 's how we found a lot of problems before , with , um , words being on the wrong place or something . 
+C:  So a failed alignment is a very good indicator that  that  the words don't match up . 
+C:  Um  
+C:  Yeah , is , uh  it  Right . 
+C:  It can't match up the  
+C:  That 's why you actually need the text . 
+C:  In order to force you to try to match something that gives you a model to match against . 
+C:  So  
+C:  It 's just an idea , if  if it turns out that  
+C:  I mean , I also like this idea of high and low beeps , or  
+C:  But it  if  Suppose we get one or two errors , still , per  you know , per transcript , then we z we might wanna try some approach like that . 
+C:  Where it is . 
+C:  Right . 
+C:  If  so , if that doesn't add time for them , that 'd be great . 
+C:  You know , like  
+C:  We have to ask them . 
+C:  I guess also even for the transcribers , it 's quicker to load a smaller file  
+C:  into the  You know , t for the checking problem . 
+C:  Into twenty minutes chunks or something , 
+C:  or  
+C:  I haven't looked at these , 
+C:  um  
+C:  cuz I was gone last week , 
+C:  but  but Don had told me that there 's a difference in some of the conventions ? 
+C:  So  but those are all easy things , 
+C:  right ? 
+C:  Yeah . OK . 
+C:  OK . 
+C:  So we can just map  
+C:  map them to  
+C:  Great . 
+C:  Hmm . 
+C:  Um , I wouldn't  well , it  they didn't say " hate " 
+C:  but they  they c they come on time to their meetings in order to not be left the last person who has to sit by those mikes . 
+C:  There were a few people  you , and like , three or four people who really like them . 
+C:  And e and th all the others really don't . 
+C:  What about just a different headband thing ? 
+C:  Or even if we could attach two headband  
+C:  Like , I don't mind those , 
+C:  but it  they bounce around . 
+C:  I mean , can we keep the microphones , and just somehow attach a more comfortable  thing over your head ? 
+C:  That 's my problem with this one . 
+C:  The  the ear thing comes out to here . 
+C:  It doesn't even fit over my ear . 
+C:  And for some of the others , it 's  their ears were shaped in a way that didn't hold the  
+C:  What about these  
+C:  Another one just bit the dust . 
+C:  I think there 's a problem with this one . 
+C:  I have a quick question about microphones , 
+C:  um  
+C:  I got  this crazy idea that , um , i in the future , people will just walk around with the microphones that they use for their cell phones ? 
+C:  You know , these little boom ones , 
+C:  like , and really go to meetings with close talking mikes . 
+C:  If they 're their own personal microphone . 
+C:  And so I 'm wondering if we can get a couple of tho 
+C:  I don't know how good quality they are , 
+C:  but it would be really interesting to see if they 're good enough . 
+C:  The k kind that guys that like to look like they 're really cool at airports wear . 
+C:  You can't miss it . 
+C:  You cannot miss it . 
+C:  They 're the guys going around  
+C:  they 're probably talking to nobody , 
+C:  but 
+C:  Yes . 
+C:  They wear the heads 
+C:  E Well , there you go . 
+C:  Yes . 
+C:  That 's  that  it looks sort of like that . 
+C:  OK , so whatever people sort of wear to use l 
+C:  Yeah , something like tha with their cell phones , 
+C:  it 'd be really great , I think , if we can argue t that  
+C:  people like that . 
+C:  Are they ? 
+C:  Oh , OK . 
+C:  So it 's  they 're not compatible ? 
+C:  Well , 
+C:  um , just as an example for , you know , the future , of the fact that maybe people will wear those microphones , 
+C:  or some people might , 
+C:  to meetings , 
+C:  you know . 
+C:  Not a  I 'm not saying there 's not a far - field microphone , uh , application , 
+C:  but  
+C:  If we have a choi I 've always wondered how well they would work . 
+C:  Oh , right . So they could use the  
+C:  Anyway , it 's just an idea . 
+C:  Um  
+C:  Mmm . 
+C:  Mm - hmm . 
+C:  Can you just do , like , SUX or something to modify  
+C:  I mean , if you just have one user that  
+C:  Mm - hmm . 
+C:  But it doesn't have to be root . 
+C:  It could be some other user that we all can SUX to . 
+C:  I mean  
+C:  Oh . So tha that 's what I meant , 
+C:  it  just some user like " meeting - root " or something . 
+C:  I don't know . 
+C:  Yeah . 
+C:  Yeah , you can  
+C:  I mean  
+C:  Is CVS , like  
+C:  Yeah , just keep the lock on . 
+C:  I mean , just check it out  check it out 
+C:  and don't let anyone check it out  
+C:  Oh , 
+C:  it  Oh , it doesn't . 
+C:  Oh , OK . 
+C:  Oh . 
+C:  So why not use RCS at that point ? Just at that stage ? 
+C:  It 's not remote . 
+C:  But at that point  we only want , probably , Jane to be in control anyway , 
+C:  and she  
+C:  I mean , it 's just an i 
+C:  But not to modify them , 
+C:  right ? 
+C:  Just to read them . 
+C:  I don't know , 
+C:  uh  I mean  
+C:  Then they should send that through  
+C:  Well  It 's sort of not really a question about permissions , 
+C:  but more of procedure . 
+C:  Either those all go through Jane , or through someone , 
+C:  or they all don't . 
+C:  But it 's sort of  
+C:  And if they all do , then there isn't a problem , 
+C:  right ? 
+C:  Cuz once they give us the data , it 's ours , 
+C:  and if they wanna make changes  
+C:  I mean , ours to sort of transcribe and annotate . 
+C:  And if they wanna make changes , they can  do that . 
+C:  So then if they do have acc 
+C:  OK , so what if they have  What if they have accounts here , and they use RCS , 
+C:  at that point , where you can l really lock a file . 
+C:  I mean , I 'm worried . If you can't lock a file , this  this to me sounds very scary . 
+C:  Um  
+C:  And if they have accounts here and they 're modifying it  
+C:  If they 're ac if they 're so closely linked that they 're actually modifying transcripts and " key " files , then they could do it by , you know , secure - shelling into ICSI , under RCS , at that point . 
+C:  Mm - hmm . 
+C:  So , maybe there is a way in CVS to effectively  lock something if you don't want people to make any changes ? 
+C:  Uh - huh . 
+C:  Oh . 
+C:  So  
+C:  So then you could use CVS 
+C:  and , you know , just f have remote access , 
+C:  but then it 's up to whoever is , sort of , responsible for that level of transcription to decide how and when to put these locks , 
+C:  or  
+C:  Yeah . 
+C:  Right . 
+C:  So if that 's at an 
+C:  I guess it depends on Jane 's  
+C:  Uh , you know , 
+C:  if that 's  if that model works for the transcripts , then that 's fine . 
+C:  But if that pr @ @ um , allows someone to come in and modify while you 're modifying , and they turn out to be changes that , you know , would have been better to wait until your version came out , then that 's really up to you , 
+C:  not up to the software , 
+C:  Yeah , that 's what I would be worried about too . 
+C:  Right . 
+C:  I mean , I like that idea 
+C:  because even a casual user can always send email to whoever 's in charge , 
+C:  and say , you know , " we 'd like these changes " 
+C:  and , you know , hopefully we 'll give them a response . 
+C:  And if they really do it a lot , and they say " we 're a casual user but we want a chance to change the transcripts " then we can face that if it happens , 
+C:  but 
+C:  I don't really see the people at UW that I know of right now making huge amoun investing huge amounts of time in changing transcripts . 
+C:  But I could be wrong . 
+C:  Yeah . 
+C:  Right . 
+C:  Right . And there 's some happy medium 
+C:  and we don't know what that is yet until we get feedback from people , 
+C:  but what if it 's OK to just handle it with sort of a person in charge of the philosophy behind the changes , 
+C:  and some people with permissions , maybe by request , to make changes , 
+C:  That we don't just give people permissions if they 're not gonna make changes . 
+C:  Because I 've overwritten a  a file by mistake , 
+C:  not wanting to have done that 
+C:  cuz I didn't think I had permission , when I did . 
+C:  Um , and then just seeing if that is enough to  to handle the transcript changes . 
+C:  I 'm just worried about letting everybody go in and make changes , 
+C:  cuz it 's real easy when you 're trying to , I don't know , run alignments and there 's a word you wanna fix , to go in and do that and then mess up other things , 
+C:  if you don't know , you know , the overall philosophy behind the  the conventions . 
+C:  Mm - hmm . 
+C:  Right . 
+C:  Exactly . 
+C:  Or just , yeah , start by make it a really tight control 
+C:  and then as people really need the control you can ascertain whether or not to  
+C:  Right . 
+C:  Right . 
+C:  I think we 're already gonna  I mean there 's already some chance that different annotations , different places , you know  
+C:  But you can control that by knowing you 're making two corpora 
+C:  or knowing that you 're adding um , annotations on one version and you don't have the latest corrections maybe at that point . 
+C:  And then you finish the project and you realize that there were corrections made on your originals 
+C:  and then you have to merge them . 
+C:  And the b the thing that makes it ea OK to do that , is knowing where the synch time boundaries are . 
+C:  Cuz you can automatically pretty much merge things if you 've only got twenty words or so in an utterance . 
+C:  It 's when you get the whole meeting 
+C:  and the synch times ch have changed , 
+C:  or you can't correspond to a previous version with synch times , that you get in trouble . 
+C:  So . 
+C:  Was there anything else on your list ? 
+C:  Now , wait , are  are we doing them simultaneously or one at a time ? 
+C:  Alright . 

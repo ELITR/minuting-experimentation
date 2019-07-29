@@ -1,0 +1,321 @@
+G:  So if you choose sigmoid it 's o it 's OK ? 
+G:  Test . 
+G:  Test . 
+G:  Yeah , perhaps , yeah . 
+G:  Oh yeah . Yeah . 
+G:  Um . <mouth> Well , preparation of the French test data actually . 
+G:  So , <inbreath> it means that um , 
+G:  well , it is , uh , a digit French database of microphone speech , 
+G:  downsampled to eight kilohertz 
+G:  and I 've added noise to one part , with the  actually the Aurora - two noises . 
+G:  And , @ @ so this is a training part . 
+G:  And then  the remaining part , I use for testing and  with other kind of noises . 
+G:  So we can  
+G:  So this is almost ready . 
+G:  I 'm preparing the  the HTK baseline for this task . 
+G:  And , yeah . 
+G:  Yeah . 
+G:  The plan with  these data ? 
+G:  Yeah . 
+G:  Uh , yeah . 
+G:  Well . The cube ? 
+G:  I should tell him about the cube ? 
+G:  Yeah . 
+G:  Uh we  actually we want to , mmm , Uh , <laugh> uh , analyze three dimensions , 
+G:  the feature dimension , the  training data dimension , and the test data dimension . 
+G:  Um . 
+G:  Well , what we want to do is first we have number for each  uh task . 
+G:  So we have the um , TI - digit task , the Italian task , the French task  and the Finnish task . 
+G:  So we have numbers with  uh  systems  I mean  I mean neural networks trained on the task data . 
+G:  And then to have systems with neural networks trained on , <mouth> uh , data from the same language , if possible , with , well , using a more generic database , which is phonetically  phonetically balanced , 
+G:  and . Um . 
+G:  Yeah . So . 
+G:  Ye - uh   Yeah , but , uh these corpus , w w there is a CallHome and a CallFriend also , 
+G:  The CallFriend is for language ind identification . 
+G:  Well , anyway , these corpus are all telephone speech . 
+G:  So , um . <inbreath> This could be a   a problem for  Why ? 
+G:  Because uh , uh , the  the SpeechDat databases are not telephone speech . 
+G:  They are downsampled to eight kilohertz 
+G:  but  but they are not <inbreath> uh with telephone bandwidth . 
+G:  Yeah , but the  the idea is to compute the feature before  the  before sending them to the  
+G:  Well ,  you don't  do not send speech , you send features , computed on th the   the device , 
+G:  or  Well . 
+G:  So you  
+G:  Yeah . 
+G:  Yeah . 
+G:  Yeah , it 's  
+G:  Yea - Yeah , there are also two other databases . 
+G:  One they call the multi - language database , and another one is a twenty - two language , something like that . 
+G:  But it 's also telephone speech . 
+G:  Uh . 
+G:  Well , nnn . 
+G:  So  
+G:  Yeah . 
+G:  Mmm . 
+G:  Yeah , but  Mm - hmm . <inbreath> Um . 
+G:  Yeah . 
+G:  Well , actually , for the moment if we w do not want to use these phone databases , we  we already have uh  English , Spanish and French uh , with microphone speech . 
+
+G:  So . 
+G:  Well . 
+G:  Yeah , 
+G:  for the multilingual part we were thinking of using these three databases . 
+G:  Well , this  
+G:  Uh , actually , these three databases are um generic databases . 
+G:  So w f for  for uh Italian , which is close to Spanish , French and , i i uh , TI - digits we have both uh , digits  training data and also  more general training data . 
+G:  So . Mmm . 
+G:  Yeah . 
+G:  Yeah , perhaps  yeah , there is also TIMIT . 
+G:  We could use TIMIT . 
+G:  Yeah . 
+G:  Yeah , and perhaps , um   We were thinking that perhaps the cross - language issue is not , uh , so big of a issue . 
+G:  Well , w w we  perhaps we should not focus too much on that cross - language stuff . 
+G:  I mean , uh , training  training a net on a language and testing a for another language . 
+G:  Mmm . Perhaps the most important is to have neural networks trained on the target languages . But , uh , with a general database  general databases . 
+G:  u So that th Well , the  the guy who has to develop an application with one language can use the net trained o on that language , or a generic net , 
+G:  but not trained on a  
+G:  Mmm . 
+G:  Yeah . 
+G:  You think so . 
+G:  Mmm . 
+G:  Mmm . 
+G:  Hmm . 
+G:  Well , I  chh  
+G:  Yeah , but the  the application is  
+G:  there is a target language for the application . 
+G:  So , if a  
+G:  Well . 
+G:  Yeah ? 
+G:  Yeah , 
+G:  if  
+G:  Yeah . 
+G:  If it 's th in the phone , 
+G:  but  
+G:  well , it  that  that could be th at the server 's side , 
+G:  and , well . Mmm , yeah . 
+G:  Yeah . 
+G:  So we  we really have to do test with a real cross - language . 
+G:  I mean , tr for instance training on English and testing on Italian , 
+G:  or  Or we can train  or else , uh , can we train a net on , uh , a range of languages and  which can include the test  the test @ @ the target language , 
+G:  or  
+G:  Yeah . 
+G:  Mmm . 
+G:  Mmm ? 
+G:  Yeah , perhaps . 
+G:  Yeah . 
+G:  Yeah . 
+G:  The  
+G:  Yeah . 
+G:  Hmm . 
+G:  Hmm . 
+G:  Yep . 
+G:  But , actually , the issue of phoneti phon uh phone phoneme mappings will arise when we will do severa use several languages 
+G:  because you  Well , some phonemes are not , uh , in every languages , 
+G:  and  So we plan to develop a subset of the phonemes , uh , that includes , uh , all the phonemes of our training languages , 
+G:  and use a network with kind of one hundred outputs or something like that . 
+G:  Uh , yeah , 
+G:  superset , 
+G:  yeah . 
+G:  Yeah . 
+G:  PLP . 
+G:  PLP . 
+G:  MSG . 
+G:  Uh , JRASTA . 
+G:  And JRASTA - LDA . 
+G:  Um , 
+G:  multi - band . 
+G:  So there would be multi - band before , um  before our network , I mean . 
+G:  And  
+G:  Yeah . 
+G:  So , something like , uh , s TCT within bands 
+G:  and  Well . 
+G:  And then multi - band after networks . Meaning 
+G:  that we would have , uh , neural networks , uh , discriminant neural networks for each band . 
+G:  Uh , yeah . 
+G:  And using the  the outputs of these networks or the linear outputs or something like that . 
+G:  Uh , 
+G:  yeah . 
+G:  But , uh , 
+G:  well , 
+G:  not for the  the ANN . 
+G:  I mean  
+G:  So , yeah , 
+G:  we could  we could add  MFCC also . 
+G:  Yeah . 
+G:  Yeah . 
+G:  And the  Finnish . 
+G:  So English , uh , Finnish and Italian are Aurora . 
+G:  And Spanish and French is something that we can use in addition to Aurora . 
+G:  Uh , well . 
+G:  It 's , uh , French French . 
+G:  Yeah , yeah , yeah . 
+G:  They have an accent . 
+G:  Yeah , 
+G:  we cou we could use  
+G:  Yeah . 
+G:  The French data . 
+G:  Yeah . 
+G:  Yeah , 
+G:  the  No , the French is f yeah , from , uh , Paris , 
+G:  OK . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Uh , yeah . 
+G:  The s 
+G:  yeah , 
+G:  the Spanish , perhaps , 
+G:  we will have . 
+G:  Yeah . 
+G:  But the  the Aurora Spanish , I mean . 
+G:  Uh , not yet , 
+G:  but , uh , yeah , uh , e 
+G:  pre they are preparing it , 
+G:  and , well , 
+G:  according to Hynek it will be  we will have this at the end of November , 
+G:  or  Um . 
+G:  Yeah  
+G:  No . 
+G:  Eight  y 
+G:  Uh , probably one net . 
+G:  Well . 
+G:  Uh . 
+G:  So . 
+G:  So , in the broader training corpus we can  we can use , uh , the three , or , a combination of  of two  two languages . 
+G:  Yeah . 
+G:  Yeah . 
+G:  It 's not too much , 
+G:  no . 
+G:  But  Yeah . 
+G:  But there is the testing also , which implies training , uh , the HTK models 
+G:  and , well , 
+G:  it 's  
+G:  yeah . 
+G:  But it 's  it 's  it 's not so long . 
+G:  It @ @  
+G:  Yeah . 
+G:  It 's around six hours , I think . 
+G:  For training and testing , 
+G:  yeah . 
+G:  More . 
+G:  One day ? 
+G:  Yeah , 
+G:  I I think it 's - it 's - it 's not so long 
+G:  because , well , the TI - digits test data is about , uh how many hours ? 
+G:  Uh , th uh , thirty hours of speech , I think , 
+G:  something like that . 
+G:  And it 
+G:  p Well . 
+G:  It 's six hours . 
+G:  I would say two days . 
+G:  Yeah . 
+G:  Mmm . 
+G:  Yeah . 
+G:  Yeah , 
+G:  it , 
+G:  uh  
+G:  Well , 
+G:  to  
+G:  It 's Nutmeg and Mustard , I think , 
+
+G:  I don't know what kind . 
+G:  Yeah , 
+G:  I think , yeah . 
+G:  I think so . 
+G:  Mmm . 
+G:  Mmm . 
+G:  Mustard . 
+G:  Yeah . 
+G:  Yeah , yeah . 
+G:  Yeah , OK . 
+G:  Yeah , OK . 
+G:  Um . 
+G:  Well , we were thinking about using this systematically for all the experiments . 
+G:  Um . 
+G:  So , 
+G:  but  
+G:  Uh . 
+G:  So that this could be another dimension , 
+G:  but we think perhaps we can use the  the best , uh , um , uh , normalization scheme as OGI is using , 
+G:  so , with parameters that they use there , 
+
+G:  u <squeak> u 
+G:  Yeah , yeah , yeah . 
+G:  Mm - hmm . 
+G:  Oh , I think basically , this is  this is , 
+G:  uh , yeah . 
+G:  Um , 
+G:  yeah , 
+G:  I was thinking perhaps if , um , additionally to all these experiments , which is not really research , 
+G:  well I mean it 's , uh , running programs 
+G:  and , um , <mouth> trying to have a closer look at the  perhaps the , um , <mouth> speech , uh , noise detection or , uh , voiced - sound - unvoiced - sound detection 
+G:  and  Which could be important in  i for noise  noise  
+G:  Yeah . 
+G:  Yeah . 
+G:  Yeah , 
+G:  so defining the superset , 
+G:  and , uh , joining the data 
+G:  and  Mmm . 
+G:  Yeah . 
+G:  Yeah , it would consist in , uh , 
+G:  well , 
+G:  um , creating the  the superset , 
+G:  and , uh , modifying the lab labels for matching the superset . 
+G:  Uh . 
+G:  Well , creating the mappings , actually . 
+G:  Yeah . 
+G:  Yeah , yeah , 
+G:  with the @ @ three languages , 
+G:  From each language to the superset , 
+G:  yeah . 
+G:  I don't think so . 
+G:  Well , they  they  they 're going actually the  the other way , defining uh , phoneme clusters , apparently . 
+G:  Well . 
+G:  I think they 've not done it , uh , doing , uh , multiple language yet , 
+G:  but what they did is to training , uh , English nets with all the phonemes , 
+G:  and then training it in English nets with , uh , kind of seventeen , I think it was  seventeen , uh , broad classes . 
+G:  Yeah . 
+G:  Yeah , I think so . 
+G:  Uh , 
+G:  and , yeah . 
+G:  And the result was that apparently , when testing on cross - language it was better . 
+G:  I think so . 
+G:  But Hynek didn't add  didn't have all the results when he showed me that , 
+G:  so , well . 
+G:  But  
+G:  I think that there 's something wrong 
+G:  or  Well , because  
+G:  Well , for the moment we are testing on digits , 
+G:  and e i perhaps u using broad phoneme classes , 
+G:  it 's  it 's OK for um , uh classifying the digits , 
+G:  but as soon as you will have more words , 
+G:  well , words can differ with only a single phoneme , and  which could be the same , uh , class . 
+G:  Well . 
+G:  So . 
+G:  So , I 'm 
+G:  Yeah , but you will ask the net to put one for th th the phoneme class 
+G:  and  So . 
+G:  Well . 
+G:  Yeah , 
+G:  yeah . 
+G:  Mmm . 
+G:  Yeah , 
+G:  this is another p 
+G:  yeah , 
+G:  another point . 
+G:  I don't think so . 
+G:  Well , 
+G:  they were talking about , perhaps , 
+G:  but they d 
+G:  I d 
+G:  w 
+G:  Yeah . 
+G:  Yeah . 
+G:  But perhaps you have the choice of the  final nonl 
+G:  uh , 
+G:  nonlinearity , 
+G:  yeah . 
+G:  Is it always softmax 
+G:  or  ? 
+G:  Yeah . 
+G:  So if you choose sigmoid it 's o it 's OK ? 

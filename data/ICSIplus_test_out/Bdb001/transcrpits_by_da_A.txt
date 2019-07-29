@@ -1,0 +1,264 @@
+A:  For th for the  <noise> for the benefit of science we 'll read the digits . 
+A:  Oh , I remember seeing an example of this . 
+A:  Yeah . 
+A:  Mmm . 
+A:  So you 're essentially defining a lattice . 
+A:  Yeah . 
+A:  How - how 
+A:  Oh , that 's  
+A:  That 's actually very nicely handled here 
+A:  because you could  you could  all you 'd have to change is the , <breath> um , time - stamps in the time - line without  without , uh , changing the I Ds . 
+A:  Except the time - line is gonna be huge . 
+A:  If you say  
+A:  suppose you have a phone - level alignment . 
+A:  You 'd have  you 'd have  
+A:  Why 
+A:  Mmm . 
+A:  But  but why not use it for phone - level ? 
+A:  It 's just a matter of  it 's just a matter of it being bigger . 
+A:  But if you have  
+A:  you know , barring memory limitations , or uh  I w I mean this is still the m 
+A:  Oh , no . 
+A:  You would use it only  for  purposes where you actually want the phone - level information , I 'd imagine . 
+A:  You  
+A:  Mm - hmm . 
+A:  Or you just compre 
+A:  I mean , I like text formats . 
+A:  Um , 
+A:  b you can always , uh , G - zip them , 
+A:  and , um , you know , c decompress them on the fly if y if space is really a concern . 
+A:  Right , 
+A:  OK . 
+A:  I would say  
+A:  OK , so frame - level is probably not a good idea . 
+A:  But for phone - level stuff it 's perfectly  
+A:  Like phones , or syllables , or anything like that . 
+A:  But  but  but most of the frames are actually not speech . 
+A:  So , 
+A:  you know , people don't  
+A:  v Look at it , words times the average  The average number of phones in an English word is , I don't know ,  five maybe ? 
+A:  So , look at it , t number of words times five . 
+A:  That 's not  that not  
+A:  Exactly . 
+A:  Yeah . 
+A:  I mean , I 've  I 've used them . 
+A:  I don't know what their structure is . 
+A:  I 've forgot what the str 
+A:  Hmm . 
+A:  Yeah , 
+A:  th we have  
+A:  Actually , we  we use a generalization of the  the Sphere format . 
+A:  Um , 
+A:  but  
+A:  Yeah , so there is something like that 
+A:  but it 's , um , probably not as sophist 
+A:  They ha it has its own  
+A:  I mean , Entropic has their own feature format that 's called , like , S - SD or some so SF or something like that . 
+A:  Hmm ? 
+A:  Right . 
+A:  Mmm . 
+A:  Do they already have tools ? 
+A:  As long as uh each tag is on one line . 
+A:  Hmm . 
+A:  If we want to  
+A:  Do they already have something that 's  that would be useful for us in place ? 
+A:  We should  we should find out . 
+A:  It 's a hassle 
+A:  if  
+A:  I  I think if it 's conceptually close , and they already have or will have tools that everybody else will be using , I mean , <breath> it would be crazy to do something s you know , separate that  
+A:  It seems to me you want to keep the frame - level stuff separate . 
+A:  And then  
+A:  Now  now how would you  how would you represent , um , multiple speakers in this framework ? 
+A:  Were  You would just represent them as  
+A:  You would have like a speaker tag or something ? 
+A:  Mm - hmm . 
+A:  OK . 
+A:  Mm - hmm . 
+A:  Is i ? 
+A:  Well , channel or speaker or whatever . 
+A:  It doesn't  
+A:  Right . 
+A:  But  but  so how in the NIST format do we express <breath> a hierarchical relationship between , um , say , an utterance and the words within it ? 
+A:  So how do you  tell  that  these are the words that belong to that utterance ? 
+A:  Mm - hmm . 
+A:  OK . 
+A:  So  
+A:  So here 's the thing . 
+A:  Um  
+A:  Hhh . 
+A:  Well , the thing  
+A:  the thing is that some something may be a part of one thing for one purpose and another thing of another purpose . 
+A:  So f 
+A:  s 
+A:  Um , 
+A:  well , 
+A:  s let 's  let 's ta so let 's  
+A:  so  
+A:  y So for instance @ @  sup 
+A:  Suppose you have a word sequence 
+A:  and you have two different segmentations of that same word sequence . 
+A:  f Say , one segmentation is in terms of , um , you know , uh , sentences . 
+A:  And another segmentation is in terms of , um , <mouth> I don't know ,  prosodic phrases . 
+A:  And let 's say that they don't  nest . 
+A:  So , you know , a prosodic phrase may cross two sentences or something . 
+A:  I don't know if that 's true or not 
+A:  but <breath> let 's as 
+A:  Right . 
+A:  Yeah . 
+A:  So , you want to be s you want to say this  this word is part of that sentence and this prosodic phrase . 
+A:  But the phrase is not part of the sentence 
+A:  and neither is the sentence part of the phrase . 
+A:  So , you would have to have <breath> two different pointers from the word up  one level up , 
+A:  one to the sent 
+A:  Right . 
+A:  Right . 
+A:  Mm - hmm . 
+A:  The  the o the other issue that you had was , how do you actually efficiently extract , um  find and extract information in a structure of this type ? 
+A:  So you gave some examples like  
+A:  No , that 's not clear . 
+A:  I mean , yeah , you c sure you can do it , 
+A:  but can you do it sort of l l you know , it  
+A:  y y you gotta  you gotta do this  you  you 're gonna want to do this very quickly 
+A:  or else you 'll spend all your time sort of searching through very <breath> complex data structures  
+A:  Yeah . 
+A:  You want sort of a grep that 's  that works at the structural  on the structural representation . 
+A:  Yeah , but it 's  it 's not clear that that 's  
+A:  That 's relative to the structure of the XML document , 
+A:  not to the structure of what you 're representing in the document . 
+A:  Right . 
+A:  Right . 
+A:  Be 
+A:  Because here you 're specifying a lattice . 
+A:  So the underlying  that 's the underlying data structure . 
+A:  And you want to be able to search in that lattice . 
+A:  That 's different from searching through the text . 
+A:  Um  
+A:  Hhh . 
+A:  Hmm . 
+A:  But  
+A:  Hmm . 
+A:  But this is  
+A:  I  I 'm still , um , <breath-laugh> not convinced that you can do much at all on the text  on the flat file that  that  you know , the text representation . 
+A:  e 
+A:  Because the text representation is gonna be , uh , not reflecting the structure of  of your words and annotations . 
+A:  It 's just  it 's  
+A:  No . 
+A:  You  you have to  
+A:  what you have to do is you have to basically  
+A:  Y yeah . You can use Perl to read it in and construct a internal representation that is essentially a lattice . 
+A:  But , the  
+A:  and then  
+A:  Right . 
+A:  But that 's what you 'll have to do . 
+A:  Bec - be 
+A:  Oh , maybe  
+A:  um  
+A:  Well  
+A:  Ma 
+A:  well , maybe you should actually look at it yourself too to get a sense of what it is you 'll  you 'll be dealing with , 
+A:  because , um , you know , Adam might have one opinion but you might have another , 
+A:  so 
+A:  I think the more eyes look at this the better . 
+A:  Mmm . 
+A:  Is there an  is there an IP - API ? 
+A:  OK . 
+A:  There used to be a problem that they get too large , 
+A:  and so  basically the  uh the filesystem wouldn't  
+A:  Maybe you could extend the API to , uh , support , uh , like splitting up , you know , conceptually one file into smaller files on disk 
+A:  so that you can essentially , you know , have arbitrarily long f 
+A:  Yeah . 
+A:  OK . 
+A:  What does the P stand for anyway ? 
+A:  No , P - files were around way before Quicknet . 
+A:  P - files were  were around when  w with , um , <mouth> RAP . 
+A:  Right ? 
+A:  You worked with P - files . 
+A:  I worked with P - files . 
+A:  No . 
+A:  Yeah . 
+
+A:  j I think there 's  
+A:  Mmm . 
+A:  Mm - hmm . 
+A:  Um , 
+A:  it would be nice  
+A:  um , 
+A:  eh , gr this is sort of r regarding  uh , uh it 's related but not directly germane to the topic of discussion , 
+A:  but , when it comes to annotations , um , you often find yourself in the situation where you have  different annotations  of the same , say , word sequence . 
+A:  OK ? 
+A:  And sometimes the word sequences even differ slightly because they were edited s at one place but not the other . 
+A:  So , once this data gets out there , some people might start annotating this for , I don't know , dialogue acts or , um , you know , topics or what the heck . 
+A:  You know , 
+A:  there 's a zillion things that people might annotate this for . 
+A:  And the only thing that is really sort of common among all the versi the various versions of this data is the word sequence , 
+A:  or approximately . 
+A:  Or the times . 
+A:  But , see , if you 'd annotate dialogue acts , you don't necessarily want to  or topics  you don't really want to be dealing with time - marks . 
+A:  You 'd  it 's much more efficient for them to just see the word sequence , right ? 
+A:  I mean , most people aren't as sophisticated as  as we are here with , you know , uh , time alignments and stuff . 
+A:  So  
+A:  So the  the  the point is  
+A:  Right . 
+A:  So , 
+A:  um , 
+A:  the p my point is that  you 're gonna end up with , uh , word sequences that are differently annotated . 
+A:  And  you want some tool , uh , that is able to sort of merge these different annotations back into a single , uh , version . 
+A:  OK ? 
+A:  Um , and we had this problem very massively , uh , at SRI when we worked , uh , a while back on , <mouth> uh  well , on dialogue acts as well as , uh , you know , 
+A:  um , what was it ? 
+A:  uh , 
+A:  utterance types . 
+A:  There 's , uh , automatic , uh , punctuation and stuff like that . 
+A:  Because we had one set of  annotations that were based on , uh , one version of the transcripts with a particular segmentation , 
+A:  and then we had another version that was based on , uh , a different s slightly edited version of the transcripts with a different segmentation . 
+A:  So , <breath> we had these two different versions which were  you know , you could tell they were from the same source but they weren't identical . 
+A:  So it was extremely hard <breath> to reliably merge these two back together to correlate the information from the different annotations . 
+A:  No . 
+A:  No . 
+A:  But once you have a file format , I can imagine writing  not personally , but someone writing a tool that is essentially an alignment tool , um , that mediates between various versions , 
+A:  and  uh , sort of like th uh , you know , you have this thing in UNIX where you have , uh , diff . 
+A:  There 's the , uh , diff that actually tries to reconcile different  two diffs f  based on the same original . 
+A:  Something like that , 
+A:  um , but operating on these lattices that are really what 's behind this  uh , this annotation format . 
+A:  So  
+A:  So somewhere in the API you would like to have like a merge or some  some function that merges two  two versions . 
+A:  Right . 
+A:  Is  
+A:  Exactly . 
+A:  Right . 
+A:  So  so just to let you know what we  where we kluged it by , uh , doing  uh , by doing  Hhh . 
+A:  Both were based on words , 
+A:  so , bo we have two versions of the same words intersp you know , sprinkled with  with different tags for annotations . 
+A:  And we did diff . 
+A:  Exactly ! 
+A:  And that 's how  
+A:  Yeah . 
+A:  But , you know , it had lots of errors 
+A:  and things would end up in the wrong order , and so forth . 
+A:  Uh , 
+A:  so , 
+A:  um , if you had a more  
+A:  Uh , 
+A:  it  it was a kluge 
+A:  because it was basically reducing everything to  uh , to  uh , uh , to textual alignment . 
+A:  Um , 
+A:  so  
+A:  And you 're gonna get that 
+A:  because if the data gets out , people will do all kinds of things to it . 
+A:  And , uh , s you know , several years from now you might want to look into , um , the prosody of referring expressions . 
+A:  And someone at the university of who knows where has annotated the referring expressions . 
+A:  So you want to get that annotation and bring it back in line with your data . 
+A:  OK ? 
+A:  Yeah . 
+A:  Right . 
+A:  Time  time  times are ephemeral . 
+A:  Um  
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Or she . 
+A:  Mmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Ah , well . 
+A:  For th for the  <noise> for the benefit of science we 'll read the digits . 

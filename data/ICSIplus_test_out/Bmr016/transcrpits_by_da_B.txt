@@ -1,0 +1,142 @@
+B:  I can't think of any of the  other ones . 
+B:  What about putting a hyphen between the numbers in the group ? 
+B:  Hey Liz , What  what do the groupings represent ? 
+B:  You said there 's like ten different groupings ? 
+B:  Mm - hmm . 
+B:  Are the patterns  like are they based on anything or 
+B:  Oh . 
+B:  Mmm . 
+B:  Mm - hmm . 
+B:  Mmm , oh , OK . 
+B:  Like Adam ? 
+B:  Parallel . 
+B:  It 's the P - make of digit reading . 
+B:  I couldn't understand a single thing you guys were saying . 
+B:  Performance art . 
+B:  It 's gonna require some coordination . 
+B:  It 's great for the Germans . 
+B:  So if  
+B:  So if there was a segment of speech this long 
+B:  and oh and someone said " oh , " the whole thing was passed to the recognizer ? 
+B:  That 's why there 's so many insertion errors ? 
+B:  Early on , yeah . 
+B:  So  
+B:  So  
+B:  So the idea is that you would take this big hunk where somebody 's only speaking a small amount in it , 
+B:  and then try to figure out where they 're speaking  based on the other peopl 
+B:  I thought we were just gonna move the boundaries in . 
+B:  Right . 
+B:  So why do you want to do echo cancellation ? 
+B:  Uh - huh . 
+B:  So it would be  
+B:  OK . 
+B:  So do sort of what he 's already  what he 's trying to do . 
+B:  OK , I s I see . 
+B:  Yeah . 
+B:  I see . 
+B:  Mm - hmm . 
+B:  I think this also ties into one of the things that Jane is gonna talk about too . 
+B:  So the SRI front - end won't take a uh  an  an  a large audio file name and then a  a list of segments to chop out  from that large audio file ? 
+B:  They actually have to be chopped out already ? 
+B:  Uh - huh . 
+B:  I don't  I don't think that 's really right . 
+B:  Yeah , you  you can give Waves a start and an end time . 
+B:  And middle . 
+B:  No , I  I 'm not suggesting you load a long wave file , 
+B:  I 'm just saying you give it a start and an end time . 
+B:  And it 'll just go and pull out that section . 
+B:  I 'm  I 'm sorry to interrupt 
+B:  you could  could I just back up a little bit 
+B:  and  
+B:  So you 're doing these  So  the whole process is that the transcribers get the conversation 
+B:  and they do their pass over it . 
+B:  And then when they 're finished with it , it comes to you , 
+B:  and you begin these sanit these quality checks . 
+B:  OK . 
+B:  OK . 
+B:  I don't remember . 
+B:  Hmm . 
+B:  So that was part of the spell - check ,  or was that  that was after the spell - check ? 
+B:  Uh - huh . 
+B:  So then it  just an ending curly brace there , 
+B:  or is there something else in there . 
+B:  Oh , oh , oh . 
+B:  So on the m 
+B:  on the middle t So , in the first case that gloss applies to the word to the left . 
+B:  But in the middle two  Th - it 's not applying to anything , right ? 
+B:  OK . 
+B:  OK . 
+B:  Right , I just meant the middle two ones , 
+B:  yeah . 
+B:  Except for now ! 
+B:  We 're gonna never recognize this meeting . 
+B:  That 's " eh " versus " ah " ? 
+B:  They were the Canadians , right ? 
+B:  Morgan can make a song out of it . 
+B:  Where 's that ? 
+B:  Wait a minute , 
+B:  w s 
+B:  Was that somewhere where they were gonna say " new speaker " or something ? 
+B:  There 's no tilde in front of it , 
+B:  so . 
+B:  It 's just comment about what they said . 
+B:  So they didn't mean " tickle " as in Elmo , 
+B:  they meant " tickle " as in  
+B:  Add what , Liz ? 
+B:  What are you saying ? 
+B:  So how w there 'd be a problem for doing the language modeling then with our transcripts the way they are . 
+B:  Hmm . 
+B:  Mm - hmm . 
+B:  So there will be a " NUMS " tag on those lines ? 
+B:  Yeah . 
+B:  Right . 
+B:  Right . That would argue for changing the other ones to be " digits " or something . 
+B:  Mm - hmm . 
+B:  I suppose what you could do is just make sure that you get rid of everything that has " curly brace NUMS curly brace " . 
+B:  I mean that would be the  
+B:  Right . 
+B:  Yeah , and it makes it  I guess the thing about  
+B:  Yeah . 
+B:  Right . 
+B:  So Liz , what does the recognizer do , 
+B:  uh , 
+B:  what does the SRI recognizer output for things like that ? 
+B:  " seven point five " . 
+B:  Does it output the word  
+B:  Right , 
+B:  the word " seven " ? 
+B:  The number " seven " ? 
+B:  The word " seven " , OK . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Two or more . 
+B:  Two or more different functions . 
+B:  Right . 
+B:  Yeah , so that has implications for your script . 
+B:  So right now the  what you 're doing is you 're taking the  uh , the o original version 
+B:  and you 're sort of channelizing yourself , right ? 
+B:  Mm - hmm . 
+B:  Right . 
+B:  Right . 
+B:  So I  I th I think probably the way it 'll go is that , you know , when we make this first general version and then start working on the script , that script @ @ that will be ma you know primarily come from what you 've done , um , we 'll need to work on a channelized version of those originals . 
+B:  And so it should be pretty much identical to what you have 
+B:  t except for the one that they 've already tightened the boundaries on . 
+B:  Um , 
+B:  So 
+B:  uh , and then probably what will happen is as the transcribers finish tightening more and more , you know , that original version will get updated 
+B:  and then we 'll rerun the script and produce better uh versions . 
+B:  But the  I guess the ef the effect for you guys , because you 're pulling out the little wave forms into separate ones , that would mean these boundaries are constantly changing 
+B:  you 'd have to constantly re rerun that , 
+B:  so , maybe  
+B:  OK . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Uh - huh . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  I can't think of any of the  other ones . 

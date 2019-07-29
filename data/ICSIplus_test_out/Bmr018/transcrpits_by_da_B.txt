@@ -1,0 +1,149 @@
+B:  Maybe they should have said " focus " or something . 
+B:  When the power went out the other day and I restarted it , it crashed the first time . 
+B:  After the power out 
+B:  Well this wasn't  Actually , this wasn't a before your meeting , this was , um , Tuesday afternoon when , um , uh , Robert just wanted to do a little recording , 
+B:  and the power had gone out earlier in the day . 
+B:  Talk about a good noise shield . 
+B:  You know ? 
+B:  You wanted to pe keep people from listening in , you could like have that playing outside the room . 
+B:  Nobody could listen in . 
+B:  And then we 'll  we 'll go back later and review the individual channels , 
+B:  right ? 
+B:  If you wanna know what  
+B:  Practically , huh . 
+B:  With all the overlaps . 
+B:  I wouldn't mind hearing how the conference was . 
+B:  Yes , 
+B:  um , 
+B:  he 's  I  I 'm sorry , I should have forwarded that along . 
+B:  Uh , <clears throat> oh I  I think I mentioned at the last meeting , 
+B:  he said that , um , he talked to them 
+B:  and it was fine  with the beeps 
+B:  they would be  That 's easy for them to do . 
+B:  Well for this experiment I think we can use pre pretty much anything . 
+B:  This experiment of just  
+B:  Well we 've talked about that as being the next ones we wanted to transcribe . 
+B:  But for the purpose of sending him a sample one to  f 
+B:  I  I don't think it matte 
+B:  Right , so we need to run Thilo 's thing on it , 
+B:  and then we go in and adjust the boundaries . 
+B:  Right . 
+B:  OK . 
+B:  And we probably don't have to do necessarily a whole meeting for that if we just wanna send them a sample to try . 
+B:  I don't know , 
+B:  maybe we can figure out how long it 'll take @ @ to  to do . 
+B:  I guess , the only thing I 'm not sure about is , um , 
+B:  how quickly can the transcribers scan over and fix the boundaries , 
+B:  and  
+B:  I mean , is it pretty easy ? 
+B:  As of what point ? 
+B:  I mean . 
+B:  The  I guess the question on my mind is do we wait for the transcribers to adjust the marks for the whole meeting before we give anything to IBM , 
+B:  or do we go ahead and send them a sample ? 
+B:  Let their  
+B:  Well I  I  I mean , I don't know . 
+B:  Yeah . 
+B:  Uh . That  I agree . 
+B:  I agree . 
+B:  We 're just doing the individual channels , 
+B:  right ? 
+B:  So it 's gonna be , depending on the number of people in the meeting , 
+B:  um , 
+B:  I don't see how that will work , though . 
+B:  Yeah . 
+B:  Yeah . 
+B:  I  
+B:  That 's  that 's what I 'm  I 'm concerned about the part . 
+B:  Can't we  uh couldn't we just have , um , 
+B:  I don't know , maybe this just doesn't fit with the software , 
+B:  but I guess if I didn't know anything about Transcriber and I was gonna make something to let them adjust boundaries , I would just show them one channel at a time , with the marks , and let them adju 
+B:  But i but it 's very quick , 
+B:  right ? 
+B:  I mean , you scan  I mean , if you have a display of the waveform . 
+B:  Uh - huh . 
+B:  The problem is if  if anything 's cut off , you can't expand it from the chopped up  
+B:  Did you run the  Andreas  the r SRI recognizer on the digits ? 
+B:  I it wasn't  
+B:  Zero percent error ? 
+B:  This is error you 're talking about ? 
+B:  OK . 
+B:  And it didn't matter whether it was the lapel or whether it was the  
+B:  Yeah . 
+B:  Yeah , so I was curious about that . 
+B:  I didn't think that his message said it wasn't straight - forward . 
+B:  I thought he 's just saying you have to look over a longer time window when you do it . 
+B:  Right . 
+B:  So you just have to look over longer time when you 're trying to align the things , 
+B:  you can't  you can't just look  
+B:  Well , Andreas , how well did it work on the non - lapel stuff ? 
+B:  Mmm . 
+B:  Because  really the  the  at least in terms of how we were gonna use this in our system was to get an ideal  an idea , uh , for each channel about the start and end boundaries . 
+B:  We don't really care about like intermediate word boundaries , 
+B:  so  
+B:  Yeah . 
+B:  Yeah . 
+B:  Right , exactly . 
+B:  So that 's why I was wondering if it  
+B:  I mean , maybe if it doesn't work for lapel stuff , we can just not use that 
+B:  and  
+B:  We c you know what ? 
+B:  Maybe the best way to find that would be to look through these . 
+B:  Cuz you can see the seat numbers , 
+B:  and then you can see what type of mike they were using . 
+B:  And so we just look for , you know , somebody sitting next to Adam at one of the meetings  
+B:  What  what is  why do you need the , um , the forced alignment for the HLT  I mean for the Eurospeech paper ? 
+B:  So it was to get  it was to get more data and better  to  to squeeze the boundaries in . 
+B:  Ah , OK . 
+B:  Yeah . 
+B:  Thilo 's won't put down two separate marks in that case  
+B:  Yeah , we were never just gonna go with these as the final alignments . 
+B:  We were always gonna run them past somebody . 
+B:  Could you  could you at the same time adapt the reject model to the speech from all the other channels ? 
+B:  Oh , not just the speech from that  of the other people from that channel , 
+B:  but the speech from the a actual other channels . 
+B:  If you  
+B:  Actually if  if you have a larger head , that mike 's gotta go farther away which means the  the balance is gonna make it wanna tip down . 
+B:  Can I see that ? 
+B:  I  yeah , I don't want it on , 
+B:  I just  I just want to , um , say what I think is a problem with this . 
+B:  If you are wearing this over your ears and you 've got it all the way out here , 
+B:  then the balance is gonna want to pull it this way . 
+B:  Where as if somebody with a smaller head has it back here , 
+B:  right ? 
+B:  Yeah . 
+B:  Then it  then it falls back this way so it 's  
+B:  So this is supposed to be under that little protuberance . 
+B:  Yeah . 
+B:  So it 's really supposed to go more like this than like this . 
+B:  But then isn't that going to  
+B:  Well , I guess you can control that . 
+B:  It would be an advantage . 
+B:  The other thing that would do it would be to hang a five pound weight off the back . 
+B:  Hang a five pound weight off the back . 
+B:  Counter - balance . 
+B:  Did  did they give a talk on this or was this informal ? 
+B:  What was the , um  the paper by , um , Lori Lamel that you mentioned ? 
+B:  What was their rough  what was their conclusion ? 
+B:  Did they ever try going  going the other direction from simpler task to more complicated tasks , 
+B:  or  ? 
+B:  Mm - hmm . 
+B:  Do you remember who the groups were that we 're doing ? 
+B:  Was  were there folks from BBN presenting ? 
+B:  Was SRA one of the groups talking about summarization , no ? 
+B:  This was my concern about the recognizer in Aurora . 
+B:  That the differences we 're seeing in the front - end is b 
+B:  are irrelevant 
+B:  once you get a real recognizer at the back - end . 
+B:  You know ? 
+B:  But doesn't their conclusion just sort of  you could have guessed that before they even started ? 
+B:  Because if you assume that these learning things get better and better and better , 
+B:  then as you approach  there 's a point where you can't get any better , 
+B:  right ? 
+B:  You get everything right . 
+B:  So they 're all approaching . 
+B:  But what I 'm saying is that th they have to , as they all get better , they have to get closer together . 
+B:  But they 're all going the same way , 
+B:  right ? 
+B:  So you have to get closer . 
+B:  Oh they didn't ? 
+B:  Maybe they should have said " focus " or something . 

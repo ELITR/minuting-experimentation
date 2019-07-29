@@ -1,0 +1,596 @@
+E:  OK 
+E:  Let 's see . 
+E:  Test ? 
+E:  Test ? 
+E:  Yeah . 
+E:  OK . 
+E:  I was saying Hynek 'll be here next week , 
+E:  uh , Wednesday through Friday  
+E:  uh , through Saturday , 
+E:  and , um , 
+E:  I won't be here Thursday and Friday . 
+E:  But my suggestion is that , uh , at least for this meeting , people should go ahead , 
+E:  uh , cuz Hynek will be here , 
+E:  and , 
+E:  you know , we don't have any Czech accent yet , 
+E:  uh , <laugh> as far as I know , 
+E:  so  
+E:  There we go . 
+E:  Um . 
+E:  So other than reading digits , what 's our agenda ? 
+E:  OK . 
+E:  Um . 
+E:  Do you think that would be the case for next week also ? 
+E:  Or is  is , uh  ? 
+E:  What 's your projection on  ? 
+E:  Cuz the one thing  the one thing that seems to me we really should try , if you hadn't tried it before , because it hadn't occurred to me  
+E:  it was sort of an obvious thing  
+E:  is , um , adjusting the , uh , sca the scaling and , uh , insertion penalty sorta stuff . 
+E:  Right . 
+E:  Yeah . 
+E:  But you were looking at mel cepstrum . 
+E:  Right . 
+E:  Right . 
+E:  So , I mean , i it it 's not the direction that you were working with that we were saying what 's the  uh , what 's the best you can do with  with mel cepstrum . 
+E:  But , they raised a very valid point , 
+E:  which , I guess  
+E:  So , to first order  I mean , you have other things you were gonna do , 
+E:  but to first order , I would say that the conclusion is that if you , um , do , uh , some monkeying around with , uh , the exact HTK training and @ @  with , uh , you know , how many states and so forth , that it  it doesn't particularly improve the performance . 
+E:  In other words , that even though it sounds pretty dumb , just applying the same number of states to everything , more or less , no matter what language , isn't so bad . 
+E:  Right ? 
+E:  And I guess you hadn't gotten to all the experiments you wanted to do with number of Gaussians , 
+E:  but , um , 
+E:  let 's just  
+E:  If we had to  if we had to draw a conclusion on the information we have so far , we 'd say something like that . 
+E:  Right ? 
+E:  Uh , so the next question to ask , which is I think the one that  that  that Andreas was dre addressing himself to in the lunch meeting , is , um , we 're not supposed to adjust the back - end , 
+E:  but anybody using the system would . 
+E:  So , 
+E:  if you were just adjusting the back - end , how much better would you do , uh , in noise ? 
+E:  Uh , because the language scaling and insertion penalties and so forth are probably set to be about right for mel cepstrum . 
+E:  But , um , they 're probably not at all set right for these things , 
+E:  particularly these things that look over , uh , larger time windows , in one way or another with  with LDA and KLT and neural nets and <inbreath> all these things . 
+E:  In the fa past we 've always found that we had to increase the insertion penalty to  to correspond to such things . 
+E:  So , 
+E:  I think that 's , uh , @ @  that 's kind of a first - order thing that  that we should try . 
+E:  So by " our front - end " I mean take , you know , the Aurora - two s take some version that Stephane has that is , you know , our current best version of something . 
+E:  Um . 
+E:  I mean , y don't wanna do this over a hundred different things that they 've tried 
+E:  but , you know , for some version that you say is a good one . 
+E:  You know ? 
+E:  Um . 
+E:  How  how much , uh , does it improve if you actually adjust that ? 
+E:  But it is interesting . 
+E:  You say you  you have for the noisy  
+E:  How about for the  for the mismatched or  or  or  or the  or the medium mismatched conditions ? 
+E:  Have you  ? 
+E:  When you adjusted those numbers for mel cepstrum , did it  ? 
+E:  Yeah . 
+E:  Yeah . 
+E:  OK . 
+E:  OK . 
+E:  So  
+E:  Yeah . 
+E:  And , um  
+E:  Yeah . 
+E:  Also , eh , eh , sometimes if you run behind on some of these things , maybe we can get someone else to do it 
+E:  and you can supervise or something . 
+E:  But  
+E:  but I think it would be  it 'd be good to know that . 
+E:  OK . 
+E:  Uh . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  Yeah . 
+E:  Cuz , I mean , the  the other  
+E:  That , in fact , might have been part of what , uh , the difference was  
+E:  at least part of it that  that we were seeing . 
+E:  Remember we were seeing the SRI system was so much better than the tandem system . 
+E:  Part of it might just be that the SRI system , they  they  they always adjust these things to be sort of optimized , 
+E:  and  
+E:  Yes . 
+E:  I think you can . 
+E:  Well , um  
+E:  uh , 
+E:  part of what 's going on , um , is the , uh , the range of values . 
+E:  So , if you have something that has a much smaller range or a much larger range , and taking the appropriate root . 
+E:  You know ? 
+E:  If something is kind of like the equivalent of a bunch of probabilities multiplied together , you can take a root of some sort . 
+E:  If it 's like seven probabilities together , you can take the seventh root of it or something , 
+E:  or if it 's in the log domain , divide it by seven . 
+E:  But  
+E:  but , 
+E:  um , 
+E:  that has a similar effect 
+E:  because it changes the scale of the numbers  of the differences between different candidates from the acoustic model 
+E:  as opposed to what 's coming from the language model . 
+E:  Yeah . 
+E:  I mean , it 's more directly like the  the language scaling or the , uh  the model scaling or acoustic scaling , 
+E:  but you know that those things have kind of a similar effect to the insertion penalty 
+E:  anyway . They 're a slightly different way of  of handling it . 
+E:  So , um  
+E:  I think so . 
+E:  Yeah . 
+E:  Yeah . 
+E:  So that 's why I think 
+E:  that 's another reason other than curiosity as to why i it would in fact be kinda neat to find out if we 're way off . 
+E:  I mean , the other thing is , are aren't we seeing  ? Y y 
+E:  I 'm sure you 've already looked at this 
+E:  bu in these noisy cases , are  ? We are seeing lots of insertions . 
+E:  Right ? 
+E:  The insertion number is quite high ? 
+E:  I know the VAD takes pre care of part of that , 
+E:  but  
+E:  Yeah . 
+E:  Wha - what 's a typical number ? 
+E:  Do we  ? 
+E:  Oh , you  oh , you don't know . 
+E:  OK . 
+E:  I 'm sure it 's more balanced , 
+E:  but it  it  it wouldn't surprise me if there 's still  
+E:  I mean , in  in the  the  the old systems we used to do , I  I  uh , I remember numbers kind of like insertions being half the number of deletions , as being  and both numbers being  tend to be on the small side comparing to  to , uh , substitutions . 
+E:  Right . 
+E:  Right . 
+E:  Yeah . 
+E:  And it may be less of a critical thing . 
+E:  I mean , the fact that some get by may be less of a critical thing if you , uh , get things in the right range . 
+E:  So , I mean , the insertions is  is a symptom . 
+E:  It 's a symptom that there 's something , uh , wrong with the range . 
+E:  But there 's  uh , your  your  your substitutions tend to go up as well . 
+E:  So , uh , I  I  I think that , 
+E:  uh , the most obvious thing is just the insertions , @ @ . 
+E:  But  
+E:  Uh  
+E:  um . 
+E:  If you 're operating in the wrong range  I mean , that 's why just in general , if you <inbreath> change what these  these penalties and scaling factors are , you reach some point that 's a  that 's a minimum . 
+E:  So . 
+E:  Um . 
+E:  Um . 
+E:  We do have to do well over a range of different conditions , 
+E:  some of which are noisier than others . 
+E:  Um . 
+E:  But , um , I think we may get a better handle on that if we  if we see  
+E:  Um , I mean we ca 
+E:  it 's if we actually could pick a  a  a more stable value for the range of these features , it , um , uh , could  
+E:  Uh  
+E:  Even though it 's  it 's  it 's true that in a real situation you can in fact adjust the  these  these scaling factors in the back - end , and it 's ar artificial here that we 're not adjusting those , you certainly don't wanna be adjusting those all the time . 
+E:  And if you have a nice front - end that 's in roughly the right range  
+E:  I remember after we got our stuff more or less together in the previous systems we built , that we tended to set those scaling factors at kind of a standard level , 
+E:  and we would rarely adjust them again , 
+E:  even though you could get a  
+E:  for an evaluation you can get an extra point or something if you tweaked it a little bit . 
+E:  But , 
+E:  once we knew what rou roughly the right operating range was , it was pretty stable , 
+E:  and  Uh , we might just not even be in the right operating range . 
+E:  No . You don't wanna change it for different conditions . 
+E:  No . 
+E:  No . 
+E:  I  I  I  What  what I 'm saying  
+E:  Yeah . 
+E:  Well . It depends how much we wanna do gamesmanship and how much we wanna do  
+E:  I mean , i if he 
+E:  it  to me , actually , even if you wanna be  play on the gamesmanship side , it can be kinda tricky . 
+E:  So , I mean , what you would do is set the  set the scaling factors , uh , so that you got the best number for this point four five times the  <laugh> you know , and so on . 
+E:  But they might change that  
+E:  those weightings . 
+E:  Um . 
+E:  So  
+E:  Uh  
+E:  I just sorta think we need to explore the space . 
+E:  Just take a look at it a little bit . 
+E:  And we  we  we may just find that  that we 're way off . 
+E:  Maybe we 're not . 
+E:  You know ? 
+E:  As for these other things , it may turn out that , uh , <inbreath> it 's kind of reasonable . 
+E:  But then  
+E:  I mean , Andreas gave a very reasonable response , 
+E:  and he 's probably not gonna be the only one who 's gonna say this in the future  
+E:  of , you know , 
+E:  people  people within this tight - knit community who are doing this evaluation <inbreath> are accepting , uh , more or less , that these are the rules . 
+E:  But , people outside of it who look in at the broader picture are certainly gonna say " Well , wait a minute . You 're doing all this standing on your head , uh , on the front - end , 
+E:  when all you could do is just adjust this in the back - end with one s one knob . " 
+E:  And 
+E:  so we have to at least , I think , determine that that 's not true , 
+E:  which would be OK , 
+E:  or determine that it is true , 
+E:  in which case we want to adjust that 
+E:  and then continue with  with what we 're doing . 
+E:  And as you say  as you point out  finding ways to then compensate for that in the front - end <clears throat> also then becomes a priority for this particular test , 
+E:  and saying you don't have to do that . 
+E:  So . 
+E:  OK . 
+E:  So , uh  
+E:  What 's new with you ? 
+E:  Uh , what 's old with you that 's developed ? 
+E:  You  
+E:  OK . 
+E:  What 's old with you that has developed over the last week or two ? 
+E:  What was that ? 
+E:  I mean , what what 's  what 's going on now ? 
+E:  What are you  doing ? 
+E:  Yeah . 
+E:  Uh - huh . 
+E:  Uh - huh . 
+E:  So , that 's  
+E:  Yeah . That 's what you were describing , I guess , a week or two ago . 
+E:  So . 
+E:  Mm - hmm . 
+E:  So you 're training neural networks now ? 
+E:  So , what  wha <laugh> wh wha what what 's going on ? 
+E:  Uh - huh . 
+E:  So . B So  
+E:  Yeah . 
+E:  I if I can summarize , basically what 's going on is that you 're going over a lot of material that you have generated in furious fashion , 
+E:  f generating many results and doing many experiments 
+E:  and trying to pull it together into some coherent form to be able to see wha see what happens . 
+E:  Yes ? 
+E:  Yeah . 
+E:  OK . 
+E:  So , my suggestion , though , is that you  you not necessarily finish that . 
+E:  But that you put it all together so that it 's  you 've got  you 've got a clearer structure to it . 
+E:  You know what things are , 
+E:  you have things documented , 
+E:  you 've looked things up that you needed to look up . 
+E:  So that , you know  so that such a thing can be written . 
+E:  And , um  
+E:  When  when  when do you leave again ? 
+E:  First of July ? 
+E:  OK . 
+E:  And that you figure on actually finishing it in  in June . 
+E:  Because , you know , you 're gonna have another bunch of results to fit in there anyway . 
+E:  And right now it 's kind of important that we actually go forward with experiments . 
+E:  So  so , I  I think it 's good to pause , and to gather everything together and make sure it 's in good shape , 
+E:  so that other people can get access to it 
+E:  and so that it can go into a report in June . 
+E:  But I think <inbreath> to  to really work on  on fine - tuning the report n at this point is  is probably bad timing , I  I  think . 
+E:  But you ma you may really wanna add other things later anyway 
+E:  because you  
+E:  There 's more to go ? 
+E:  That 's  
+E:  that 's , uh  
+E:  that 's permitted ? 
+E:  Yeah . I guess the thing is  
+E:  Yeah . 
+E:  I guess that 's a matter of interpretation . 
+E:  The rules as I understand it , is that in principle the Italian and the Spanish and the English  
+E:  no , 
+E:  Italian and the Finnish and the English ?  were development data 
+E:  on which you could adjust things . 
+E:  And the  and the German and Danish were the evaluation data . 
+E:  And then when they finally actually evaluated things they used everything . 
+E:  So  
+E:  Uh , 
+E:  and it is true that the performance , uh , on the German was  
+E:  I mean , even though the improvement wasn't so good , the pre the raw performance was really pretty good . 
+E:  So  
+E:  And , uh , 
+E:  it  it doesn't appear that there 's strong evidence that even though things were somewhat tuned on those three or four languages , that  that going to a different language really hurt you . 
+E:  And the noises were not exactly the same . 
+E:  Right ? 
+E:  Because it was taken from a different , 
+E:  uh  
+E:  I mean they were different drives . 
+E:  I mean , it was  it was actual different cars and so on . 
+E:  So . 
+E:  Um , it 's somewhat tuned . 
+E:  It 's tuned more than , you know , a  a  a  a  
+E:  You 'd really like to have something that needed no particular noise at all , 
+E:  maybe just some white noise or something like that a at most . 
+E:  But that 's not really what this contest is . 
+E:  So . 
+E:  Um , I guess it 's OK . 
+E:  That 's something I 'd like to understand before we actually use something from it , 
+E:  because it would  
+E:  Well , it 's true , 
+E:  except that , uh , that 's what we used in Aurora one , 
+E:  and then they designed the things for Aurora - two knowing that we were doing that . 
+E:  Um . 
+E:  No . 
+E:  But , I think  I think that it  it  
+E:  it probably would be the case that if , say , we trained on Italian , uh , data and then , uh , we tested on Danish data and it did terribly , uh , that  that it would look bad . 
+E:  And I think someone would notice 
+E:  and would say " Well , look . This is not generalizing . " 
+E:  I would hope tha I would hope they would . 
+E:  Um . 
+E:  But , uh , 
+E:  it 's true . 
+E:  You know , maybe there 's parameters that other people have used  
+E:  you know , th that they have tuned in some way for other things . 
+E:  So it 's  it 's , uh  
+E:  We should  we should  
+E:  Maybe  that 's maybe a topic  
+E:  Especially if you talk with him when I 'm not here , 
+E:  that 's a topic you should discuss with Hynek 
+E:  to , you know , double check it 's OK . 
+E:  Social security number 
+E:  What kind of information do you mean ? 
+E:  Hmm . 
+E:  Uh . 
+E:  Right . 
+E:  I mean , again , i if you had the whole system you were optimizing , that would be easy to see . 
+E:  But if you 're <inbreath> supposedly just using a fixed back - end and you 're just coming up with a feature vector , w w I 'm not sure  
+E:  I mean , having the two nets  Suppose you detected that it was male , it was female  you come up with different  
+E:  Maybe . 
+E:  Hmm . 
+E:  Yeah , it 's an interesting thought . 
+E:  Maybe having something along the  
+E:  I mean , you can't really do vocal tract normalization . 
+E:  But something that had some of that effect 
+E:  being applied to the data in some way . 
+E:  Um . 
+E:  Yeah . But just listen to yourself . 
+E:  I mean , that uh really doesn't sound like a real - time thing with less than two hundred milliseconds , uh , latency that  and where you 're not adjusting the statistical engine at all . 
+E:  You know , that just  
+E:  I mean  
+E:  Yeah . 
+E:  No . 
+E:  Well not just expensive . 
+E:  I  I  I don't see how you could possibly do it . 
+E:  You can't look at the whole utterance and do anything . You know , you can only  
+E:  Right ? 
+E:  Each frame comes in and it 's gotta go out the other end . 
+E:  So , uh  
+E:  Yeah . 
+E:  Yeah . 
+E:  I mean , you can do , 
+E:  um  
+E:  Fairly quickly you can do male female  f male female stuff . 
+E:  But as far as , 
+E:  I mean  Like I thought BBN did a thing with , uh , uh , vocal tract normalization a ways back . 
+E:  Maybe other people did too . 
+E:  With  with , uh , uh , l trying to identify third formant  average third formant  <inbreath> using that as an indicator of  
+E:  So . 
+E:  You know , third formant  
+E:  I if you imagine that to first order what happens with , uh , changing vocal tract is that , uh , the formants get moved out by some proportion  
+E:  So , if you had a first formant that was one hundred hertz before , if the fifty  if the vocal tract is fifty percent shorter , then it would be out at seven fifty hertz , 
+E:  and so on . 
+E:  So , that 's a move of two hundred fifty hertz . 
+E:  Whereas the third formant which might have started off at twenty - five hundred hertz , you know , might be out to thirty - seven fifty , 
+E:  you know so it 's at  
+E:  So , 
+E:  although , you frequently get less distinct higher formants , it 's still  third formant 's kind of a reasonable compromise , 
+E:  and  
+E:  So , I think , eh , if I recall correctly , they did something like that . 
+E:  And  and  
+E:  But  Um , that doesn't work for just having one frame or something . 
+E:  You know ? That 's more like looking at third formant over  over a turn or something like that , 
+E:  and  
+E:  Um . 
+E:  So . 
+E:  But on the other hand , male female is a  is a  is a much simpler categorization than figuring out a  a factor to , uh , squish or expand the  the spectrum . 
+E:  So , um . 
+E:  Y you could imagine that  
+E:  I mean , just like we 're saying voiced - unvoiced is good to know  
+E:  uh , male female is good to know also . 
+E:  Um . 
+E:  But , you 'd have to figure out a way to  to  to , uh , incorporate it on the fly . 
+E:  Uh , I mean , I guess , as you say , one thing you could do is simply , uh , have the  the male and female output vectors  you know , tr nets trained only on males and n trained only on females 
+E:  or  
+E:  or , uh , 
+E:  you know . 
+E:  But  
+E:  Um . 
+E:  I don't know if that would really help , 
+E:  because you already have males and females 
+E:  and it 's mm - hmm putting into one net . 
+E:  So 
+E:  is it  ? 
+E:  Do you know ? 
+E:  Hmm . 
+E:  OK . 
+E:  Y you 're  you were saying before  ? 
+E:  Shouldn't be . 
+E:  They should be less so . 
+E:  R right ? 
+E:  Wh - ? 
+E:  But let me ask you this . 
+E:  What  what 's the , um  ? 
+E:  Do you kno recall if the insertions were  were higher with MSG ? 
+E:  Yeah . But you should always look at insertions , deletions , and substitutions . 
+E:  So  
+E:  so , uh  
+E:  MSG is very , very dif 
+E:  Eh , PLP is very much like mel cepstrum . 
+E:  MSG is very different from both of them . 
+E:  So , if it 's very different , then this is the sort of thing  
+E:  I mean I 'm really glad Andreas brought this point up . 
+E:  I  sort of had forgotten to discuss it . 
+E:  Um . 
+E:  You always have to look at how this  uh , these adjustments , uh , affect things . 
+E:  And even though we 're not allowed to do that , again we maybe could reflect that back to our use of the features . 
+E:  So if it  if in fact , uh  
+E:  The problem might be that the range of the MSG features is quite different than the range of the PLP or mel cepstrum . 
+E:  And you might wanna change that . 
+E:  Yeah . 
+E:  Yeah . 
+E:  That means they 're between zero and one . 
+E:  But i it  it  it  it doesn't necessarily  
+E:  You know , they could be , 
+E:  um  
+E:  Do - doesn't tell you what the variance of the things is . 
+E:  Right ? 
+E:  Cuz if you 're taking the log of these things , it could be , 
+E:  uh  
+E:  Knowing what the sum of the probabilities are , doesn't tell you what the sum of the logs are . 
+E:  So . 
+E:  Yeah . 
+E:  Yeah . 
+E:  Or what  you know , what you 're uh  the thing you 're actually looking at . 
+E:  So your  your  
+E:  the values that are  are actually being fed into HTK . 
+E:  What do they look like ? 
+E:  Right . 
+E:  So they 're  kinda like log probabilities is what I was saying . 
+E:  Uh , almost . 
+E:  But then you actually do a KLT on them . 
+E:  Um . 
+E:  They aren't normalized after that , 
+E:  are they ? 
+E:  No . 
+E:  OK . 
+E:  So , um . 
+E:  Right . 
+E:  So the question is  Yeah . Whatever they are at that point , um , are they something for which taking a square root or cube root or fourth root or something like that is  is gonna be a good or a bad thing ? 
+E:  So . 
+E:  Uh , and that 's something that 
+E:  nothing  nothing else after that is gonna  
+E:  Uh , things are gonna scale it  
+E:  Uh , you know , subtract things from it , 
+E:  scale it from it , 
+E:  but nothing will have that same effect . 
+E:  Um . 
+E:  So . 
+E:  Um . 
+E:  Anyway , eh  
+E:  Well , the  
+E:  Right . 
+E:  Yeah . 
+E:  No . Again you don't really  look at that . 
+E:  It 's something  that , 
+E:  and then it 's going through this transformation that 's probably pretty close to  
+E:  It 's , eh , whatever the KLT is doing . 
+E:  But it 's probably pretty close to what a  a  a discrete cosine transformation is doing . 
+E:  But still it 's  it 's not gonna probably radically change the scale of things . 
+E:  I would think . 
+E:  And , uh  
+E:  Yeah . 
+E:  It may be entirely off 
+E:  and  and it may be  at the very least it may be quite different for MSG than it is for mel cepstrum or PLP . 
+E:  So that would be  
+E:  So the first thing I 'd look at without adjusting anything would just be to go back to the experiment and look at the , uh , substitutions , insertions , and deletions . 
+E:  And if the  if 
+E:  the , uh  
+E:  i if there 's a fairly large effect of the difference , say , uh , uh , the r ratio between insertions and deletions for the two cases then that would be , uh , an indicator that it might  might be in that direction . 
+E:  Anything else ? 
+E:  Yeah . 
+E:  Well . 
+E:  Yeah . 
+E:  But , you know , some problems are harder than others , 
+E:  and  
+E:  And , uh , sometimes , you know , there 's enough evidence for something to work 
+E:  and then it 's harder , 
+E:  it breaks . 
+E:  You know , 
+E:  so it 's  
+E:  But it  but , um , i it  it could be that when you say it works maybe we could be doing much better , 
+E:  even in TI - digits . 
+E:  Right ? 
+E:  So . 
+E:  Hmm ? 
+E:  Yeah . 
+E:  Yeah . 
+E:  Right . 
+E:  O 
+E:  Mm - hmm . 
+E:  OK . 
+E:  Well , this 'll be , I think , something for discussion with Hynek next week . 
+E:  Yeah . 
+E:  OK . 
+E:  Right . 
+E:  So . 
+E:  How are , uh , uh  how are things going with what you 're doing ? 
+E:  Yeah . 
+E:  Uh , he 'll be around for three days . 
+E:  Uh , we 'll have a lot of time . 
+E:  So , uh  
+E:  Um . 
+E:  I 'll , uh  
+E:  You know , he 's  
+E:  he 'll  
+E:  he 'll be talking with everybody in this room 
+E:  So . 
+E:  Not Thursday and Friday . 
+E:  Yeah . 
+E:  Cuz I will be at faculty retreat . 
+E:  So . 
+E:  I 'll try to <inbreath> connect with him and people as  as I can on  on Wednesday . 
+E:  But  
+E:  Um . 
+E:  Oh , how 'd taxes go ? 
+E:  Taxes go OK ? 
+E:  Yeah . Oh , good . Yeah . 
+E:  Yeah . 
+E:  That 's just  that 's  that 's one of the big advantages of not making much money is <inbreath> the taxes are easier . 
+E:  Yeah . 
+E:  I think you are . 
+E:  Aren't you ? 
+E:  Yeah . 
+E:  Yeah . 
+E:  Huh . 
+E:  Canada w Canada wants a cut ? 
+E:  Have to do  So you  you have to do two returns ? 
+E:  Oh , oh . 
+E:  Yeah . 
+E:  For tw 
+E:  That 's right , 
+E:  ju 
+E:  Two thousand . 
+E:  Yeah . 
+E:  Probably not this next year , I guess . 
+E:  Yeah . 
+E:  Yeah . 
+E:  OK . 
+E:  Alright . 
+E:  Uh . 
+E:  Barry , 
+E:  do you wanna  say something about your stuff here ? 
+E:  Oh , well . 
+E:  No 
+E:  Um , why don't you say something about what it is ? 
+E:  Well , we 're all gathered here together . 
+E:  I thought we 'd , you know  
+E:  Whose paper is it ? 
+E:  Yeah . 
+E:  Huh . 
+E:  From , uh , University of Hamburg and Bielefeld . 
+E:  OK . 
+E:  So , stuff that 's not based on data . 
+E:  Yeah . 
+E:  Oh , OK . 
+E:  Yeah . 
+E:  Yeah , 
+E:  OK . 
+E:  I mean , when we did the SPAM work  I mean , there we had  we had this notion of an , uh , auditory  @ @  auditory event . 
+E:  And , uh , 
+E:  um , 
+E:  called them " avents " , 
+E:  uh , uh , uh , with an A at the front . 
+E:  Uh . 
+E:  And the  the  the idea was something that occurred that is important to a bunch of neurons somewhere . 
+E:  So . 
+E:  Um . A sudden change or a relatively rapid change in some spectral characteristic will  will do sort of this . 
+E:  I mean , there 's certainly a bunch of  a bunch of places where you know that neurons are gonna fire because something novel has happened . 
+E:  That was  that was the main thing that we were focusing on there . 
+E:  But there 's certainly other things beyond what we talked about there that aren't just sort of rapid changes , 
+E:  but  
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  By the way , 
+E:  um , 
+E:  there 's , uh , a couple people who are gonna be here  
+E:  I forget if I already told you this , 
+E:  but , a couple people who are gonna be here for six months . 
+E:  Uh  
+E:  uh , there 's a Professor Kollmeier , uh , from Germany 
+E:  who 's , uh , uh , quite big in the , uh , hearing - aid signal - processing area 
+E:  and , um , Michael Kleinschmidt , who 's worked with him , 
+E:  who also looks at <inbreath> auditory properties inspired by various , uh , brain function things . 
+E:  So , 
+E:  um , 
+E:  um , I think they 'll be interesting to talk to , in this sort of issue 
+E:  as these detectors are  are , uh , developing . 
+E:  So , he looks at interesting  interesting things in  in the  <inbreath> different ways of looking at spectra in order to  to get various speech properties out . 
+E:  So . 
+E:  OK . 
+E:  Well , 
+E:  short meeting , 
+E:  but that 's OK . 
+E:  And , uh , 
+E:  we might as well do our digits . 
+E:  And like I say , I  I encourage you to go ahead and meet , uh , next week with , uh , uh , Hynek . 
+E:  Alright , 
+E:  I 'll  I 'll start . 
+E:  It 's , uh , one thirty - five . 
+E:  seventeen 
+E:  OK 

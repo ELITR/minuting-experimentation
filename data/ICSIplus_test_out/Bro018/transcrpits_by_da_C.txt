@@ -1,0 +1,577 @@
+C:  OK . 
+C:  OK . 
+C:  So uh , he 's not here , 
+C:  so you get to  
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Uh , I  I 'm  I 'm slightly confused . 
+C:  What  what feeds the uh  the three - output net ? 
+C:  No no , what feeds it ? 
+C:  What features does it see ? 
+C:  Uh - huh . 
+C:  Uh - huh . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Right . 
+C:  You wouldn't do like R - one over R - zero or something like that ? 
+C:  I mean usually for voiced - unvoiced you 'd do  yeah , you 'd do something  you 'd do energy 
+C:  but then you have something like spectral slope , which is you get like R - one ov over R - zero or something like that . 
+C:  R correlations . 
+C:  Ye - Well that 's the variance , 
+C:  but if you just say " what is  " 
+C:  I mean , to first order , um 
+C:  yeah one of the differences between voiced , unvoiced and silence is energy . 
+C:  Another one is  but the other one is the spectral shape . 
+C:  Yeah , 
+C:  and so R - one over R - zero is what you typically use for that . 
+C:  No , 
+C:  I 'm saying that 's what people us typically use . 
+C:  See , because it  because this is  this is just like a single number to tell you um " does the spectrum look like that or does it look like that " . 
+C:  Right ? 
+C:  So if it 's  if it 's um  if it 's low energy uh but the  but the spectrum looks like that or like that , it 's probably silence . 
+C:  Uh but if it 's low energy and the spectrum looks like that , it 's probably unvoiced . 
+C:  So if you just  if you just had to pick two features to determine voiced - unvoiced , you 'd pick something about the spectrum like uh R - one over R - zero , um and R - zero 
+C:  or i i you know you 'd have some other energy measure 
+C:  and 
+C:  like in the old days people did like uh zero crossing counts . 
+C:  Right . S 
+C:  S 
+C:  Yeah . 
+C:  Um , 
+C:  Yeah . 
+C:  But um 
+C:  Right , but it seemed to me that what you were what you were getting at before was that there is something about the difference between the original signal or the original FFT and with the filter which is what  
+C:  and the variance was one take uh on it . 
+C:  Right . 
+C:  But it  it could be something else . 
+C:  Suppose you didn't have anything like that . 
+C:  Then in that case , if you have two nets , 
+C:  Alright , and this one has three outputs , and this one has f 
+C:  whatever , 
+C:  fifty - six , or something , 
+C:  if you were to sum up the probabilities for the voiced and for the unvoiced and for the silence here , we 've found in the past you 'll do better at voiced - unvoiced - silence than you do with this one . 
+C:  So just having the three output thing doesn't  doesn't really buy you anything . 
+C:  The issue is what you feed it . 
+C:  So uh 
+C:  w W well that 's another way . 
+C:  That wasn't what I was saying 
+C:  but yeah that 's certainly another thing to do . 
+C:  No I was just trying to say if you b if you bring this into the picture over this , what more does it buy you ? 
+C:  And what I was saying is that the only thing I think that it buys you is um based on whether you feed it something different . 
+C:  And something different in some fundamental way . 
+C:  And so the kind of thing that  that she was talking about before , was looking at something uh ab um  something uh about the difference between the  the uh um log FFT uh log power uh and the log magnitude uh F F - spectrum uh and the um uh filter bank . 
+C:  And so the filter bank is chosen in fact to sort of integrate out the effects of pitch 
+C:  and she 's saying 
+C:  you know trying  
+C:  So the particular measure that she chose was the variance of this m of this difference , 
+C:  but that might not be the right number . 
+C:  Right ? 
+C:  I mean maybe there 's something about the variance that 's  that 's not enough 
+C:  or maybe there 's something else that  that one could use , 
+C:  but I think that , for me , the thing that  that struck me was that uh you wanna get something back here , 
+C:  so here 's  here 's an idea . 
+C:  uh What about it you skip all the  all the really clever things , and just fed the log magnitude spectrum into this ? 
+C:  This is f 
+C:  You have the log magnitude spectrum , and you were looking at that and the difference between the filter bank and  and c c computing the variance . 
+C:  That 's a clever thing to do . 
+C:  What if you stopped being clever ? 
+C:  And you just took this thing in here because it 's a neural net and neural nets are wonderful 
+C:  and figure out what they can  what they most need from things , and I mean that 's what they 're good at . 
+C:  So I mean you 're  you 're  you 're trying to be clever and say what 's the statistic that should  we should get about this difference 
+C:  but uh in fact , you know maybe just feeding this in or  or feeding both of them in 
+C:  you know , another way , saying let it figure out what 's the  what is the interaction , 
+C:  especially if you do this over multiple frames ? 
+C:  Then you have this over time , and  and both kinds of measures 
+C:  and uh you might get uh something better . 
+C:  Um . 
+C:  That 's another thing you could do 
+C:  yeah . 
+C:  Yeah . 
+C:  Um . 
+C:  I mean , it seems to me , if you have exactly the right thing then it 's better to do it without the net 
+C:  because otherwise you 're asking the net to learn this  
+C:  you know , say if you wanted to learn how to do multiplication . 
+C:  I mean you could feed it a bunch of s you could feed two numbers that you wanted to multiply into a net 
+C:  and have a bunch of nonlinearities in the middle 
+C:  and train it to get the product of the output and it would work . 
+C:  But , it 's kind of crazy , 
+C:  cuz we know how to multiply 
+C:  and you  you 'd be you know much lower error usually <laugh> if you just multiplied it out . 
+C:  But suppose you don't really know what the right thing is . 
+C:  And that 's what these sort of dumb machine learning methods are good at . 
+C:  So . 
+C:  Um . 
+C:  Anyway . 
+C:  It 's just a thought . 
+C:  Yeah , 
+C:  it 's probably worth it . 
+C:  Is that  maybe that 's accuracy ? 
+C:  Yeah , voiced - unvoiced hopefully would be a lot better . 
+C:  I think at the frame level for fifty - six that was the kind of number we were getting for  for uh um reduced band width uh stuff . 
+C:  That 's all ? 
+C:  That 's pretty bad . 
+C:  Aha ! 
+C:  Aha ! 
+C:  Yeah . 
+C:  Yeah . 
+C:  OK . 
+C:  But even i in  
+C:  Oh yeah , in training . 
+C:  Still , 
+C:  Uh . 
+C:  Well actually , so this is a test that you should do then . 
+C:  Um , if you 're getting fifty - six percent over here , 
+C:  uh that 's in noise also , 
+C:  right ? 
+C:  Oh OK . 
+C:  If you 're getting fifty - six here , try adding together the probabilities of all of the voiced phones here and all of the unvoiced phones 
+C:  and see what you get then . 
+C:  I bet you get better than sixty - three . 
+C:  OK , but that 's a  That is a  a good check point , 
+C:  you should do that anyway , 
+C:  OK ? 
+C:  Given this  this uh regular old net that 's just for choosing for other purposes , uh add up the probabilities of the different subclasses and see  see how well you do . 
+C:  Uh and that  you know anything that you do over here should be at least as good as that . 
+C:  OK . 
+C:  Oh . So , this is trained on TIMIT . 
+C:  OK . 
+C:  But noisy TIMIT ? 
+C:  I see . 
+C:  Yeah . 
+C:  Well there 's gonna be  it looks like there 's gonna be a noisy uh  some large vocabulary noisy stuff too . 
+C:  Somebody 's preparing . 
+C:  Yeah . 
+C:  I forget what it 'll be , 
+C:  resource management , 
+C:  Wall Street Journal , 
+C:  something . 
+C:  Some  some read task actually , that they 're  preparing . 
+C:  Yeah . 
+C:  Yeah , so the uh  
+C:  Uh , the issue is whether people make a decision now based on what they 've already seen , or they make it later . 
+C:  And one of the arguments for making it later is let 's make sure that whatever techniques that we 're using work for something more than  than connected digits . 
+C:  So . 
+C:  Mmm , I think late  uh I think in the summer sometime . 
+C:  So . 
+C:  OK , thanks . 
+C:  Uh - huh . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Oh , at the front it says uh " log energy is equal to the rounded version of sixteen over the log of two " 
+C:  Uh . 
+C:  uh times the  
+C:  Well , this is natural log , 
+C:  and maybe it has something to do with the fact that this is  
+C:  I  I have no idea . 
+C:  Yeah , that 's what I was thinking , 
+C:  but  but um , then there 's the sixty - four , 
+C:  Uh , <laugh> I don't know . 
+C:  Yeah , it 's pretty funny looking . 
+C:  I don't know . 
+C:  Yeah , I  
+C:  um Right . 
+C:  Sixteen over  two . 
+C:  Um . 
+C:  If we ignore the sixteen , the natural log of t one over the natural log of two times the natu 
+C:  I don't know . 
+C:  Well , maybe somebody 'll think of something , 
+C:  but this is uh  
+C:  It may just be that they  they want to have  for very small energies , 
+C:  they want to have some kind of a  
+C:  Well , it says , since you 're taking a natural log , it says that when  when you get down to essentially zero energy , this is gonna be the natural log of one , which is zero . 
+C:  So it 'll go down to uh to <mike noise on "p"> the natural log being  
+C:  So the lowest value for this would be zero . 
+C:  So y you 're restricted to being positive . 
+C:  And this sort of smooths it for very small energies . 
+C:  Uh , why they chose sixty - four and something else , that was probably just experimental . 
+C:  And the  the  the constant in front of it , I have no idea . 
+C:  um 
+C:  uh  I mean  it  <outbreath> they  they probably have some fi particular s fixed point arithmetic that they 're using , 
+C:  and then it just  
+C:  Yeah . 
+C:  Yeah , 
+C:  I mean that  they 're s probably working with fixed point or integer or something . 
+C:  I think you 're supposed to on this stuff anyway , 
+C:  and  and so maybe that puts it in the right realm somewhere . 
+C:  Yeah . 
+C:  I think , given at the level you 're doing things in floating point on the computer , I don't think it matters , would be my guess , 
+C:  but . 
+C:  Yeah . 
+C:  OK , and wh when did Stephane take off ? 
+C:  He took off  
+C:  Oh , he was gone these first few days , 
+C:  and then he 's here for a couple days before he goes to Salt Lake City . 
+C:  OK . 
+C:  Yeah . 
+C:  Yeah . 
+C:  So he 's  he 's going to ICASSP which is good . 
+C:  I  I don't know if there are many people who are going to ICASSP 
+C:  so  so I thought , make sure somebody go . 
+C:  Um , people are less consistent about going to ICASSP 
+C:  and I think it 's still  it 's still a reasonable forum for students to  to present things . 
+C:  Uh , it 's  I think for engineering students of any kind , I think it 's  it 's if you haven't been there much , it 's good to go to , 
+C:  uh to get a feel for things , a range of things , 
+C:  not just speech . 
+C:  Uh . 
+C:  But I think for  for sort of dyed - in - the - wool speech people , um I think that ICSLP and Eurospeech are much more targeted . 
+C:  Uh . 
+C:  And then there 's these other meetings , like HLT and  and uh ASRU  
+C:  so there 's  there 's actually plenty of meetings that are really relevant to  to uh computational uh speech processing of one sort or another . 
+C:  Um . So . 
+C:  I mean , I mostly just ignored it because I was too busy and <laugh> didn't get to it . 
+C:  So uh 
+C:  Wanna talk a little bit about what we were talking about this morning ? 
+C:  Just briefly , or  Or anything else ? 
+C:  Actually , let me  
+C:  Hold that thought . 
+C:  Let me back up while we 're still on it . 
+C:  The  the other thing I was suggesting , though , is that given that you 're talking about binary features , uh , maybe the first thing to do is just to count 
+C:  and uh count co - occurrences and get probabilities for a discrete HMM 
+C:  cuz that 'd be pretty simple 
+C:  because it 's just  Say , if you had ten  ten events , uh that you were counting , uh each frame would only have a thousand possible values for these ten bits , 
+C:  and uh so you could make a table that would  say , if you had thirty - nine phone categories , that would be a thousand by thirty - nine , 
+C:  and just count the co - occurrences and divide them by the  the uh  uh uh occ uh count the co - occurrences between the event and the phone and divide them by the number of occurrences of the phone , 
+C:  and that would give you the likelihood of the  of the event given the phone . 
+C:  And um then just use that in a very simple HMM 
+C:  and uh you could uh do phone recognition then and uh wouldn't have any of the issues of the uh training of the net or  
+C:  I mean , it 'd be on the simple side , 
+C:  but 
+C:  uh um 
+C:  you know , if  uh uh the example I was giving was that if  if you had um onset of voicing and  and end of voicing as being two kinds of events , then if you had those a all marked correctly , and you counted co - occurrences , you should get it completely right . 
+C:  So . 
+C:  um  But you 'd get all the other distinctions , you know , randomly wrong . 
+C:  I mean there 'd be nothing to tell you that . 
+C:  So um <inbreath> uh 
+C:  If you just do this by counting , then you should be able to find out in a pretty straightforward way whether you have a sufficient uh set of events to  to do the kind of level of  <breath> of uh classification of phones that you 'd like . 
+C:  So that was  that was the idea . 
+C:  And then the other thing that we were discussing was  was um <breath> OK , how do you get the  your training data . 
+C:  Cuz uh the <laugh> Switchboard transcription project uh uh you know was half a dozen people , or so working off and on over a couple years , 
+C:  and 
+C:  uh similar  <outbreath> similar amount of data <outbreath> to what you 're talking about with TIMIT training . 
+C:  So , it seems to me that the only reasonable starting point is uh to automatically translate the uh current TIMIT markings into the markings you want . 
+C:  And uh <inbreath> it won't have the kind of characteristic that you 'd like , of catching funny kind of things that maybe aren't there from these automatic markings , 
+C:  but  but 
+C:  uh it 's uh  
+C:  Yeah . 
+C:  Yeah and a short  short amount of time , 
+C:  just to  again , just to see if that information is sufficient to uh determine the phones . 
+C:  So . 
+C:  Right . 
+C:  You can get a little feeling for it that way , 
+C:  yeah that is probably right . 
+C:  I mean uh my  my guess would be that this is  since TIMIT 's read speech that this would be less of a big deal , 
+C:  if you went and looked at spontaneous speech it 'd be more  more of one . 
+C:  And the other thing would be , say , if you had these ten events , you 'd wanna see , well what if you took two events or four events or ten events or t 
+C:  and you know , and  
+C:  and hopefully there should be some point at which <breath> having more information doesn't tell you really all that much more about what the phones are . 
+C:  Uh , you could , 
+C:  but the thing is , what he 's talking about here is a uh  a translation to a per - frame feature vector , 
+C:  so there 's no sequence in that , 
+C:  I think . 
+C:  I think it 's just a  
+C:  Yeah , but we 're just talking about something simple here , yeah , to see if  
+C:  Yeah . 
+C:  Just  
+C:  You know . The idea is with a  with a very simple statistical structure , could you  could you uh at least verify that you 've chosen features that <mouth> are sufficient . 
+C:  OK , and you were saying something  starting to say something else about your  your class project , or  ? 
+C:  Yeah . 
+C:  I guess it  
+C:  yeah , 
+C:  they 're sort of succinct , 
+C:  and  and they <inbreath> uh 
+C:  That 's another way of doing it . 
+C:  Right ? So  so it  I mean I  I guess it 's  
+C:  You know , it  it goes back to nearest - neighbor <outbreath> sort of thing , 
+C:  right ? 
+C:  Um , i i if  is it eh w 
+C:  When is nearest - neighbor good ? 
+C:  Well , nearest - neighbor good  is good if you have lots and lots of examples . 
+C:  Um but of course if you have lots and lots of examples , then it can take a while to  to use nearest - neighbor . 
+C:  There 's lots of look ups . 
+C:  So a long time ago people talked about things where you would have uh a condensed nearest - neighbor , 
+C:  where you would  you would  you would pick out uh some representative examples which would uh be sufficient to represent  to  to correctly classify everything that came in . 
+C:  I  I think s I think support vector stuff sort of goes back to  <inbreath> to that kind of thing . 
+C:  Um . 
+C:  Yeah . 
+C:  And th the 
+C:  You know , um neural net approach uh or Gaussian mixtures for that matter are sort of  fairly brute force kinds of things , where you sort of  <inbreath> you predefine that there is this big bunch of parameters 
+C:  and then you  you place them as you best can to define the boundaries , 
+C:  and in fact , as you know , <inbreath> these things do take a lot of parameters 
+C:  and  and uh <inbreath> if you have uh only a modest amount of data , you have trouble <inbreath> uh learning them . 
+C:  Um , so I  I guess the idea to this is that it  it is reputed to uh be somewhat better in that regard . 
+C:  But I don't know if people have done sort of careful comparisons of this on large tasks or anything . 
+C:  Maybe  maybe they have . 
+C:  I don't know . 
+C:  Yeah . 
+C:  But that 's looking at it for  for classification  for binary classification , 
+C:  right ? 
+C:  But you have the distances to work with . 
+C:  Cuz actually Mississippi State people did use support vector machines for uh uh speech recognition and they were using it to estimate probabilities . 
+C:  Yeah , 
+C:  and d did they use sigmoid or a softmax type thing ? 
+C:  And didn't they like exponentiate or something 
+C:  and then <inbreath> divide by the sum of them , 
+C:  or  ? 
+C:  Oh it  i 
+C:  Oh , so it is a sigmoidal . 
+C:  OK . 
+C:  Alright . 
+C:  I mean , they 're OK , 
+C:  I  I don't  I don't think they were earth  earth shattering , 
+C:  but I think that <inbreath> uh this was a couple years ago , 
+C:  I remember them doing it at some meeting , 
+C:  and  and um I don't think people were very critical because it was interesting just to  to try this 
+C:  and you know , it was the first time they tried it , 
+C:  so  <inbreath> so the  you know , the numbers were not incredibly good 
+C:  but there 's you know , it was th reasonable . 
+C:  I  I don't remember anymore . 
+C:  I don't even remember what the task was , 
+C:  it  was Broadcast News , or <inbreath> something . 
+C:  I don't know . 
+C:  Uh - huh . 
+C:  But a as I was saying , people do get probabilities from these things , 
+C:  and  and uh we were just trying to remember how they do , 
+C:  but people have used it for speech recognition , and they have gotten probabilities . 
+C:  So they have some conversion from these distances to probabilities . 
+C:  There 's  you have  you have the paper , 
+C:  right ? 
+C:  The Mississippi State paper ? 
+C:  Yeah , if you 're interested y you could look , 
+C:  yeah . 
+C:  I expect you could do that . 
+C:  That 's probably not what he 's going to do on his class project . 
+C:  Yeah . 
+C:  So um have you had a chance to do this um thing we talked about yet with the uh  
+C:  um 
+C:  Uh . No actually I was going a different  
+C:  That 's a good question , too , 
+C:  but I was gonna ask about the  <inbreath> the um <mouth> changes to the data in comparing PLP and mel cepstrum for the SRI system . 
+C:  Right . 
+C:  So we talked on the phone about this , that  that there was still a difference of a  of a few percent 
+C:  and <inbreath> you told me that there was a difference in how the normalization was done . 
+C:  And I was asking if you were going to do  <inbreath> redo it uh for PLP with the normalization done as it had been done for the mel cepstrum . 
+C:  OK . 
+C:  Yeah , 
+C:  I agree , 
+C:  but I thought that the normalization difference was one of the possibilities , 
+C:  right ? 
+C:  OK . 
+C:  OK . 
+C:  Mm - hmm . 
+C:  I see . 
+C:  OK . 
+C:  Yeah . 
+C:  Yeah , that makes sense , to check all that . 
+C:  Although really , uh uh , a couple three percent uh difference in word error rate uh  could easily come from some difference in normalization , I would think . 
+C:  But 
+C:  Yeah , he 's probably off at  at uh his meeting now , 
+C:  yeah . 
+C:  Yeah . 
+C:  But 
+C:  yeah 
+C:  the  I sh think they should be <inbreath> roughly equivalent , 
+C:  um 
+C:  I mean again the Cambridge folk found the PLP actually to be a little better . 
+C:  Uh So it 's  <inbreath> um 
+C:  I mean the other thing I wonder about was whether there was something just in the  the bootstrapping of their system which was based on  
+C:  but maybe not , since they  
+C:  Right . 
+C:  Right . 
+C:  Right . 
+C:  Uh - huh . 
+C:  Yeah . 
+C:  So anyway , there 's stuff there to sort out . 
+C:  So , 
+C:  OK . 
+C:  Let 's go back to what you thought I was asking you . 
+C:  Ha ! 
+C:  Oh ! 
+C:  You had the sa same answer anyway . 
+C:  Uh - huh . 
+C:  Uh - huh . 
+C:  Um  
+C:  Yeah , I don't think it 's in there , 
+C:  I think it 's in the uh uh uh the filters . 
+C:  So , the F F T is on everything , 
+C:  but the filters 
+C:  um , 
+C:  for instance , ignore the  the lowest bins and the highest bins . 
+C:  And what it does is it  it copies 
+C:  um 
+C:  The filter bank which is created by integrating over F F T bins . 
+C:  um 
+C:  Right . 
+C:  Yeah , 
+C:  it 's bark scale , 
+C:  and it 's  it  it um  it actually copies the uh um  the second filters over to the first . 
+C:  So the first filters are always  
+C:  and you can s you can specify a different number of <inbreath> uh features  different number of filters , 
+C:  I think , 
+C:  as I recall . 
+C:  So you can specify a different number of filters , and whatever <inbreath> um uh you specify , the last ones are gonna be ignored . 
+C:  So that  that 's a way that you sort of change what the  what the bandwidth is . 
+C:  Y you can't do it without I think changing the number of filters , 
+C:  but  
+C:  Yeah , so the idea is that the very lowest frequencies and  and typically the veriest  highest frequencies are kind of junk . 
+C:  And so um 
+C:  you just  for continuity you just approximate them by  <inbreath> by the second to highest and second to lowest . 
+C:  It 's just a simple thing we put in . 
+C:  And  and so if you h 
+C:  Yeah ,  I think that 's a fixed thing . 
+C:  But see  see my point ? 
+C:  If you had  <inbreath> If you had ten filters , <inbreath> then you would be throwing away a lot at the two ends . 
+C:  And if you had  if you had fifty filters , you 'd be throwing away hardly anything . 
+C:  Um , I don't remember there being an independent way of saying " we 're just gonna make them from here to here " . 
+C:  But I  I  I don't know , 
+C:  it 's actually been awhile since I 've looked at it . 
+C:  Yeah , see I don't know Feacalc at all . 
+C:  But it calls RASTA with some options , 
+C:  and um 
+C:  But I  I think in  
+C:  I don't know . 
+C:  I guess for some particular database you might find that you could tune that and tweak that to get that a little better , 
+C:  but I think that <inbreath> in general it 's not that critical . 
+C:  I mean there 's  
+C:  You can  You can throw away stuff below a hundred hertz or so 
+C:  and it 's just not going to affect phonetic classification at all . 
+C:  Well , it 's not precisely . 
+C:  Yeah . 
+C:  I mean , 
+C:  um , <inbreath> um 
+C:  what you can do is um you can definitely change the  the filter bank from being uh a uh trapezoidal integration to a  a  a triangular one , 
+C:  which is what the typical mel  mel cepstral uh filter bank does . 
+C:  And some people have claimed that they got some better performance doing that , 
+C:  so you certainly could do that easily . 
+C:  But the fundamental difference , 
+C:  I mean , there 's other small differences  
+C:  Yeah , 
+C:  but , you know , as opposed to the log in the other case . 
+C:  I mean <inbreath> the fundamental d d difference that we 've seen any kind of difference from before , which is actually an advantage for the P L P i uh , I think , is that the  the smoothing at the end is auto - regressive instead of being cepstral  uh ,  from cepstral truncation . 
+C:  So um it 's a little more noise robust . 
+C:  Um , and that 's  that 's why when people started getting databases that had a little more noise in it , like  like uh um Broadcast News and so on , 
+C:  that 's why c Cambridge switched to PLP I think . 
+C:  So um 
+C:  That 's a difference that I don't <inbreath> think we put any way to get around , 
+C:  since it was an advantage . 
+C:  um <inbreath> uh 
+C:  but we did  eh we did hear this comment from people at some point , that <inbreath> um it uh they got some better results with the triangular filters rather than the trapezoidal . 
+C:  So that is an option in RASTA . 
+C:  Uh and you can certainly play with that . 
+C:  But I think you 're probably doing the right thing to look for bugs first . 
+C:  I don't know . 
+C:  Could be . 
+C:  Oh - huh ! 
+C:  Oh ! 
+C:  He  he  <inbreath> He used the identical pruning thresholds even though the s the range of p of the likeli 
+C:  Oh well that 's  <inbreath> That 's a pretty good  point right there . 
+C:  Yeah . 
+C:  I would think that you might wanna do something like uh you know , look at a few points to see where you are starting to get significant search errors . 
+C:  Yeah . 
+C:  Yeah . 
+C:  But I mean you could  uh if  if  if that looks promising you could , you know , r uh run <inbreath> the overall test set with a  with a few different uh pruning thresholds for both , 
+C:  and presumably he 's running at some pruning threshold that 's  that 's uh , you know  gets very few search errors 
+C:  but is  is relatively fast 
+C:  and  
+C:  But you may be in the wrong range for the P L P features for some reason . 
+C:  Yeah . 
+C:  Yeah , maybe just be different kind of distributions 
+C:  and  and 
+C:  yeah 
+C:  so that 's another possible thing . 
+C:  They  they should  really shouldn't  
+C:  There 's no particular reason why they would be exactly  behave exactly the same . 
+C:  So . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  I guess this was a little bit off topic , I guess , 
+C:  because I was  I was thinking in terms of th this as being a  a  a  a core <inbreath> item that once we  once we had it going we would use for a number of the front - end things also . 
+C:  So . 
+C:  um 
+C:  Wanna  
+C:  What 's  what 's on  
+C:  Yeah . 
+C:  That 's ac actually a little side point is I think that 's the first results that we have uh uh uh of any sort on the far field uh  on  on the far field data uh for  recorded in  in meetings . 
+C:  Did he ? 
+C:  On the near field , on the ne 
+C:  Oh did he ? 
+C:  Oh ! 
+C:  I didn't recall that . 
+C:  What kind of numbers was he getting with that ? 
+C:  Five . 
+C:  So why were you getting forty - one here ? 
+C:  Is this  
+C:  No , 
+C:  but wait a minute . 
+C:  I  I  I th  I think he  
+C:  What am I saying here ? 
+C:  Yeah , 
+C:  so that was the SRI system . 
+C:  Maybe you 're right . 
+C:  Yeah . 
+C:  Cuz it was getting like one percent  <inbreath> So it 's still this kind of ratio . 
+C:  It was  it was getting one percent or something on the near field . 
+C:  Wasn't it ? 
+C:  Yeah . 
+C:  Yeah . I think it was getting around one percent for the near  for the n for the close mike . 
+C:  So it was like one to five  
+C:  So it 's still this kind of ratio . 
+C:  It 's just  
+C:  yeah , 
+C:  it 's a lot more training data . 
+C:  So 
+C:  So probably it should be something we should try then is to  is to see if  is <inbreath> at some point just to take  i to transform the data 
+C:  and then  <inbreath> and then uh use th use it for the SRI system . 
+C:  So you 're  so you have a system which for one reason or another is relatively poor , 
+C:  and  and uh you have something like forty - one percent error 
+C:  uh and then you transform it to eight by doing  doing this  this work . 
+C:  Um . 
+C:  So here 's this other system , which is a lot better , 
+C:  but there 's still this kind of ratio . 
+C:  It 's something like five percent error <inbreath> with the  the distant mike , 
+C:  and one percent with the close mike . 
+C:  So the question is <inbreath> how close to that one can you get <inbreath> if you transform the data using that system . 
+C:  Yeah . 
+C:  Yeah , 
+C:  well , it 's  it 's not exactly the right thing 
+C:  but <laugh> uh <inbreath> but you 've already seen that cuz there is added noise here . 
+C:  Yeah . 
+C:  So um  
+C:  Yeah , 
+C:  I mean , as helpful  
+C:  I mean , 
+C:  so that 's the question . 
+C:  Yeah , w we 're often asked this when we work with a system that  that isn't  isn't sort of industry  industry standard great , 
+C:  uh and we see some reduction in error using some clever method , 
+C:  then , you know , will it work on a  <inbreath> on a  on a good system . 
+C:  So uh 
+C:  you know , this other one 's  it was a pretty good system . 
+C:  I think , you know , one  one percent word error rate on digits is  uh digit strings is not <inbreath> uh you know stellar , 
+C:  but  but given that this is real <inbreath> digits , as opposed to uh sort of laboratory  
+C:  Well . 
+C:  And it wasn't trained on this task . 
+C:  Actually one percent is sort of  you know , sort of in a reasonable range . 
+C:  People would say " yeah , I could  I can imagine getting that " . 
+C:  And uh so the  the four or five percent or something is  is  is quite poor . 
+C:  Uh , you know , if you 're doing a uh  <inbreath> a sixteen digit uh credit card number you 'll basically get it wrong almost all the time . 
+C:  So . So . Uh , <inbreath> um 
+C:  a significant reduction in the error for that would be great . 
+C:  And  and then , uh 
+C:  Yeah . 
+C:  So . 
+C:  Yeah . 
+C:  Cool . 
+C:  Yeah . 
+C:  Alright , um , I actually have to run . 
+C:  So I don't think I can do the digits , 
+C:  but um , <inbreath> I guess I 'll leave my microphone on ? 
+C:  Yeah . 
+C:  Thank you . 
+
+C:  I can be out of here quickly .   <laugh> <inbreath> That 's 
+C:  I just have to run for another appointment . OK , 
+
+C:  I t Yeah . I left it on . 
+C:  OK . 

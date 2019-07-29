@@ -1,0 +1,206 @@
+A:  Ah . OK . 
+A:  OK . 
+A:  That 's true . 
+A:  Hub - five . 
+A:  Well , that 's only male . 
+A:  We could only jus just do the male only 
+A:  right ? 
+A:  Or will we run into trouble when we g ? 
+A:  Yeah . 
+A:  That 's what I was thinking . 
+A:  Yeah . 
+A:  S 
+A:  So  We - Yo - So , one thing I was wondering is , did you already do that middle one or should we re - do that one , too ? 
+A:  You didn't do that . OK . 
+A:  Yeah . That 's what I was gonna say next . 
+A:  We hafta  cut the , uh  
+A:  W s so is  Morgan , is the plan to just pick one of the far - field mikes ? 
+A:  Uh  
+A:  Do you know  when he 'll have the  the comparison ? 
+A:  Oh , OK . 
+A:  So  cuz I don't think the new data will be ready , uh , for a couple days may probably . 
+A:  So , 
+A:  the training . 
+A:  Yeah . 
+A:  I think it 's that one . 
+A:  Right ? F . 
+A:  F . 
+A:  Yeah , that 's it . 
+A:  That 's F . 
+A:  It 's the second nearest the machine room . 
+A:  OK . So , uh , I just want to make sure I understand what we need to run . 
+A:  Um  
+A:  Let 's see . 
+A:  So , it 's  
+A:  OK , so if we 're talking about  
+A:  Let 's  let 's assume that we 're gonna use the new segmentations . 
+A:  We need to , um , <mouth> run recognition o just looking at the no overlap column . 
+A:  Basically , we have to d r do recognitions for all three of those cases . 
+A:  Right ? 
+A:  Um , because  we 're gonna be using the  just the male , uh , model  
+A:  short training set for the male . 
+A:  So we need to have results for all three of those , 
+A:  even though we have  
+A:  OK . 
+A:  Mm - hmm . 
+A:  Right . 
+A:  Yeah . 
+A:  And if we 're re - doing the baseline anyways , it  it  it would be OK . 
+A:  Right ? I mean  To  to just limit ourselves to a smaller  
+A:  How long would it take to run recognition , if we did that ? 
+A:  I mean , is  is it like a day or is it  a few hours or  
+A:  roughly ? 
+A:  For  
+A:  yeah , let 's say we just did the Meeting Recorder meetings for our test set . 
+A:  Oh , really . 
+A:  I didn't realize each test took that long . 
+
+A:  Four hours per meeting . 
+A:  Wow . 
+A:  S six hour test set . 
+A:  Six meetings . OK . 
+A:  OK . So  Alright . So if we got a list of the , uh , segmentations for these five Meeting Recorder meetings , we could start , uh , the first two experiments going right away , using the short male models . 
+A:  So , you could get those going while Dave is , um , creating waveforms for the r retraining the short male models . 
+A:  Right . OK . OK . 
+A:  And then  
+A:  OK . So , do we w also want to run that bottom experiment without retraining the short male models on his thing ? 
+A:  Did you want that ? 
+A:  Or  ? 
+A:  OK . So , we 'll save that . 
+A:  Well , i it  
+A:  Well , on a more basic level , also , it means that that third experiment , there are actually two differences between the other experiments , 
+A:  not one . 
+A:  So , it 's hard to know  
+A:  Right . 
+A:  Mm - hmm . 
+A:  Right . 
+A:  Mm - hmm . 
+A:  On the far - field ? 
+A:  Mm - hmm . 
+A:  So when you said you were gonna start that top one , were you gonna use the new segmentations ? 
+A:  OK . 
+A:  Right . OK . 
+A:  Can we  ? 
+A:  So , does that mean you turn off speaker normalization when you run it ? Or you just let it do what it would do , an ? 
+
+
+A:  Mm - hmm . 
+A:  You 'll have email . 
+A:  Right ? 
+A:  So  ? 
+A:  Segmentation ? 
+A:  S So , um . 
+A:  I don't want you to have to be burdened with doing a lot of stuff . 
+A:  What  what can I do to  ? 
+A:  Y y you said it would be easy for you to do that  top one there , 
+A:  and  I guess Don can do the segmentations of the , uh , channel F ? 
+A:  I mean , I can certainly help with , uh , retraining  the short male models , 
+A:  uh , once we have the new data . 
+A:  The top one is done . I c 
+A:  I can re - do the  next one . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Yeah . Sure . 
+A:  Yeah , the  the bottom one would b just be a matter of pointing it at a new set of files and kicking it off , 
+A:  so that would be re 
+A:  I mean , th not the bottom one , 
+A:  but the middle one 
+A:  would be really easy once you 've got the top one going . 
+A:  I could do that . 
+A:  OK . So I guess I just need to get Don to , uh  
+A:  Mm - hmm . 
+A:  To keep it the same but j just change them all to channel F ? 
+A:  Right . Right . 
+A:  Yeah . 
+A:  Yeah . 
+A:  OK . 
+A:  OK . 
+A:  OK . 
+A:  And so that 's something that Don would do  
+A:  right ?  
+A:  when he creates these . 
+A:  OK . OK . 
+A:  So will you talk to him about that , 
+A:  or do you want me to talk to him ? 
+A:  OK . 
+A:  And then the bottom  one in terms of the test will be  ? 
+A:  Uh  
+A:  That will just be a copy of the one above it , except for  different models from training . 
+A:  Ah . OK . 
+A:  So , we need to run  ? 
+A:  OK . 
+A:  Well , once we have the new , uh  
+A:  Well , once I do that , uh , second experiment , we 'll have the , um , files , 
+A:  and I can give you those to  to process . 
+A:  So , do you create this continuous stream from the individual utterance files ? 
+A:  Yeah . 
+A:  OK . I 'm gonna  I 'll check with , um , Markham , 
+A:  and see what happened with the  the disks . 
+A:  He went to put those on a couple of weeks ago 
+A:  and something  
+A:  Oh , OK . I 'll ask David , then . 
+A:  You haven't seen new disks pop up , 
+A:  have you ? 
+A:  OK . 
+A:  Yeah . 
+A:  Well , he went to put them on  
+A:  Yeah . 
+A:  He went to put them on and then something happened . 
+A:  And he sent around a note saying " Oh , uh , it didn't work , and we 'll have to schedule another time . " 
+A:  And then , 
+A:  didn't see  
+A:  nothing happened . 
+A:  So  
+A:  I 'll check with David about that . 
+A:  OK . 
+A:  So , basically , Dave , so y for you to get your processing going , you need the list of the , uh , wave 
+A:  Well , I guess it 'll dep 
+A:  you 'll  you 'll  we 'll need to get the segmentations . 
+A:  Figure out whether we 're using the new or the old  from Don . 
+A:  And then , 
+A:  uh , 
+A:  from that you need the  from the segmentations you 'll have the list of wavefiles that the short , uh , set is trained on . 
+A:  And then <breath> you 'll need disk space . 
+A:  And once you 've got  those things , then you can start your processing . 
+A:  Right ? 
+A:  OK . 
+A:  Do you have this , uh  ? 
+A:  Oh , there 's  there 's one other issue , 
+A:  uh , and that is that Dave throws out speakers that have less than twelve seconds of training data . 
+A:  And he said there were a few in the Macrophone set like that . 
+A:  So , do we need to wait to find out who he 's gonna throw out , 
+A:  so that we create a new set of short models that don't include those speakers ? 
+A:  So i in  <breath> Th - the problem is that if we proceed like we just described , um , <breath> when he goes to m um , <sniff> create the new s training  data with his processing , he throws out some speakers . 
+A:  So the t two training sets won't be identical . 
+A:  Yeah . Have just a little bit . 
+A:  OK . 
+A:  Yeah . 
+A:  So you think it 's OK , then ? 
+A:  It 's read . 
+A:  We sh M 
+A:  Right . 
+A:  A actually you should be able to figure out , Dave , 
+A:  right , 
+A:  once you know the segmentations , uh , who you 're going to  which speakers will get left out , even before you run your processing . 
+A:  Right ? 
+A:  Yeah . The segmentations from Don ? 
+A:  Once we  ? 
+A:  Ah . Right , right , right , right , right . 
+A:  Right . But I 'm just wondering how long it will take to get that information . 
+A:  OK . 
+A:  Sorry , Robert did what ? 
+A:  Robert took what ? 
+A:  Uh - huh . 
+A:  Oh . 
+A:  Is he gone now ? 
+A:  Oh . Oh , oh . Oh , OK . 
+
+
+A:  Are you  are you interfacing to that thing with the C - plus - plus 
+A:  Or are you  is there another interface that you use ? 
+A:  Yeah . 
+A:  Oh . 
+A:  And it saves it in a  
+A:  I see . 
+A:  Oh , that 's neat . 
+A:  Ah . OK . 

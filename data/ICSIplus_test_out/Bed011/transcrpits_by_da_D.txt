@@ -1,0 +1,395 @@
+D:  OK , great . 
+D:  OK , so Eva , co uh  could you read your numbers ? 
+D:  Yeah . 
+D:  Yeah , let 's get started . 
+D:  Um  Hopefully Nancy will come , 
+D:  if not , she won't . 
+D:  Yeah . 
+D:  I think so . 
+D:  Right , right . 
+D:  So  Yeah . 
+D:  So let me pop up a level . 
+D:  And uh s s make sure that we 're all oriented the same . 
+D:  So What we 're gonna do today is two related things . 
+D:  Uh one of them is to work on the semantics of the belief - net which is going to be the main inference engine for thi the system uh making decisions . 
+D:  And decisions are going to turn out to be parameter choices for calls on other modules . 
+D:  so f the natural language understanding thing is uh , we think gonna only have to choose parameters , but You know , a fairly large set of parameters . 
+D:  So to do that , we need to do two things . 
+D:  One of which is figure out what all the choices are , which we 've done a fair amount . 
+D:  Then we need to figure out what influences its choices 
+D:  and finally we have to do some technical work on the actual belief relations and presumably estimates of the probabilities and stuff . 
+D:  But we aren't gonna do the probability stuff today . 
+D:  Technical stuff we 'll do  uh  another day . 
+D:  Probably next week . 
+D:  But we are gonna worry about all the decisions and the things that pert that contribute to them . 
+D:  And we 're also , sort of uh in the same process , going to work with Fey on what there should be in the dialogues . 
+D:  So One of the s steps that 's coming up real soon is to actually get subjects uh  in here , and have them actually record like this . 
+D:  Uh record dialogues more or less . 
+D:  And  depending on what Fey sort of provokes them to say , we 'll get information on different things . 
+D:  So  
+D:  Fo - v yeah people with the  phrase them 
+D:  and so  Uh for , you know , Keith and people worrying about what constructions people use , uh  we have some i we have some ways to affect that by the way the dialogues go . 
+D:  So what Robert kindly did , is to lay out a table of the kinds of uh  things that  that might come up , 
+D:  and , the kinds of decisions . 
+D:  So the uh  uh  on the left are decision nodes , and discreet values . 
+D:  So if  if we 're right , you can get by with um just this middle column worth of decisions , 
+D:  and it 's not all that many , and it 's perfectly feasible technically to build belief - nets that will do that . 
+D:  And he has a handout . 
+D:  Yeah . 
+D:  S I don't see a release 
+D:  Got it . 
+D:  OK , fine . 
+D:  OK . 
+D:  Alright , fair enough . 
+D:  And she does know everything . 
+D:  Well , there are these  uh  uh  
+D:  oh , I see , we have to  
+D:  Yeah , it 's tricky . 
+D:  We 'll  let 's  let  we 'll do that off - line , OK . 
+D:  OK . 
+D:  Right . 
+D:  Right . 
+D:  Yeah . 
+D:  Yeah , so  let 's s uh s see I th I think that from one point of view , Uh , um , all these places are the same , 
+D:  so that d d That , um  in terms of the linguistics and stuff , there may be a few different kinds of places , 
+D:  so I th i it seems to me that We ought to decide you know , what things are k are actually going to matter to us . 
+D:  And um , so the zoo , and the university and the castle , et cetera . Um are all big - ish things that um  you know  have different parts to them , and one of them might be fine . 
+D:  And  
+D:  Yeah , yeah . 
+D:  Right , no no , 
+D:  but  but s th point is to  to y to  build a system that 's got everything in it that might happen you do one thing . 
+D:  T to build a system that um  had the most data on a relatively confined set of things , you do something else . 
+D:  And the speech people , for example , are gonna do better if they  if  things come up uh  repeatedly . 
+D:  Now , of course , if everybody says exactly the same thing then it 's not interesting . 
+D:  So , all I 'm saying is i th there 's  there 's a kind of question of what we 're trying t to accomplish . 
+D:  and  I think my temptation for the data gathering would be to uh , 
+D:  you know  And each person is only gonna do it once , 
+D:  so you don't have to worry about them being bored , 
+D:  so if  if it 's one service , one luxury item , you know , one big - ish place , and so forth and so on , um  then my guess is that  that the data is going to be easier to handle . 
+D:  Now of course you have this I guess possible danger that somehow there 're certain constructions that people use uh when talking about a museum that they wouldn't talk about with a university and stuff , 
+D:  um  but I guess I 'm  I uh m my temptation is to go for simpler . 
+D:  You know , less variation . 
+D:  But I don't know what other people think about this in terms of  
+D:  uh  
+D:  Oh , 
+D:  well , uh  th I think there are two places where it comes up . 
+D:  One is uh  in the  th these people who are gonna take this and  and try to do speech with it . 
+D:  uh  Lots of pronunciations of th of the same thing are going to give you better data than l you know , a few pronunciations of lots more things . 
+D:  That 's one . 
+D:  Bigger  
+D:  Y yeah thi well this is a question for  
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah . 
+D:  So this is a question for you , 
+D:  and , you know , if we  if we do , and we probably will , actually try to uh build a prototype , uh 
+D:  probably we could get by with the prototype only handling a few of them anyway . 
+D:  So , Um  
+D:  Well  
+D:  yeah . 
+D:  Well I think th th 
+D:  yeah . 
+D:  Yeah . 
+D:  Well , I think it 's easy enough to set that up if that 's your expectation . 
+D:  So , the uh system could say , " Well , uh we 'd like to  to set up your program for two days in Heidelberg , 
+D:  you know , let 's first think about all the things you might like to do . 
+D:  So there  th i i in  I mean  in  I th I  I 'm sure that if that 's what you did then they would start telling you about that , and then you could get into um various things about ordering , if you wanted . 
+D:  I 'm sorry . 
+D:  No , we have to help  we have to decide . 
+D:  Fey will p carry out whatever we decide . 
+D:  But we have to decide you know , what is the appropriate scenario . 
+D:  That 's what we 're gonna talk about t yeah . 
+D:  Well , so Keith , what do you think ? 
+D:  Yeah . 
+D:  First one wasn't very good . 
+D:  OK . 
+D:  But well th but you did say something important , which is that um you can probably keep yourself fairly well occupied uh  with the simple cases for quite a while . 
+D:  Although , obviously th so  so that sa s does suggest that  
+D:  Uh , now , I have looked at all the data , and it 's pre it 's actually at least to an amateur , quite redundant . 
+D:  That  that it was  it was very stylized , and quite a lot of people said more or less the same thing . 
+D:  Yeah . 
+D:  So , we  we  we wanna do more than that . 
+D:  OK . 
+D:  Right . 
+D:  So  
+D:  Well , OK , so let 's  let 's take  let 's I  
+D:  I think your suggestion is good , which is we 'll do a b uh  a batch . 
+D:  OK . 
+D:  And , uh , 
+D:  Fey , How long is it gonna be till you have ten subjects ? 
+D:  Couple days ? 
+D:  Or thr f a A week ? 
+D:  Or  I don't  I don't have a feel for th 
+D:  Well , it 's  it 's up to you , 
+D:  I mean I j I  uh e We don't have any huge time pressure . 
+D:  It 's just  when you have t 
+D:  Yeah . 
+D:  Oh , OK . 
+D:  So let 's do this . 
+D:  Let 's plan next Monday , OK , to have a review of what we have so far . 
+D:  and  
+D:  Huh ? 
+D:  No , we won't have the transcriptions , 
+D:  but what we should be able to do 
+D:  and I don't know if , Fey , if you will have time to do this , 
+D:  but it would be great if you could , um , not transcribe it all , but pick out uh , some stuff . 
+D:  I mean we could lis uh  just sit here and listen to it all . 
+D:  Are you gonna have the audio on the web site ? 
+D:  OK . 
+D:  Oh , we could get  
+D:  I mean , you can buy another disk for two hundred dollars , 
+D:  right ? 
+D:  I mean it 's  it 's not like  
+D:  OK . 
+D:  So , we 'll take care of David Johnson . 
+D:  OK . 
+D:  OK . 
+D:  Alright . 
+D:  So we 'll buy a disk . 
+D:  But anyway , so , um , If you  if you can think of a way  to uh , point us to th to interesting things , sort of as you 're doing this or  or something 
+D:  uh , make your  make notes or something that  that this is , you know , something worth looking at . 
+D:  And other than that , yeah I guess we 'll just have to uh , listen  
+D:  although I guess it 's only ten minutes each , 
+D:  right ? 
+D:  Roughly . 
+D:  Right . 
+D:  No , we don't care about that at all . 
+D:  I b My guess is it 's gonna be ten . 
+D:  People  
+D:  I understand , 
+D:  but people  people  you know uh  
+D:  Yeah . 
+D:  Yeah . 
+D:  Could be . 
+D:  OK . 
+D:  I was thinking people would , you know , hesitate and  Whatever . 
+D:  Whatever it is we 'll  we 'll deal with it . 
+D:  OK , so that 'll be  that 'll be  um  on  on the web page . 
+D:  That 's great . 
+D:  Um But anyway  yeah , so I think  it 's a good idea to start with the sort of relatively straight forward res just response system . 
+D:  And then if we want to uh  get them to start doing  uh  multiple step planning with a whole bunch of things and then organize them 
+D:  an um 
+D:  tell them which things are near each other 
+D:  and  
+D:  you know , any of that stuff . 
+D:  uh  You know , " Which things would you like to do Tuesday morning ? " 
+D:  So yeah I  th that seems  pretty straight forward . 
+D:  OK . 
+D:  I 'm sorry , Fey , what ? 
+D:  That 's what I was suggesting for the first round , yeah . 
+D:  They could , but i but i uh tha eh they c 
+D:  yeah , but  uh  but  
+D:  You could , 
+D:  but i but I  I  I think in the short run ,  
+D:  Right . 
+D:  Yeah . 
+D:  OK . 
+D:  Yeah . 
+D:  Yeah , in fact if y if y if you use the right verb for each in common , 
+D:  like at you know , " attend a theater , symphony or opera " is  is a group , 
+D:  and " tour the university , castle or zoo " , 
+D:  all of these d do have this kind of " tour " um  aspect about the way you would go to them . 
+D:  And uh , the movie theater is probably also uh  e is a " attend " et cetera . 
+D:  So it may turn out to be not so many different kinds of things , 
+D:  and then , what one would expect is that  that the sentence types would  uh their responses would tend to be grouped according to the kind of activity , you would expect . 
+D:  Oh , absolutely . 
+D:  Yeah . 
+D:  We don't have enough . 
+D:  Well , um , these are all f people off campus s from campus so far , 
+D:  right ? 
+D:  So we  yeah we don't know how many we can get next door at the  uh shelter for example . 
+D:  Uh for ten bucks , probably quite a few . 
+D:  Yeah . 
+D:  So , alright , so let 's go  let 's go back then , to the  the chart with all the decisions and stuff , and see how we 're doing . 
+D:  Do  do people think that , you know this is  is gonna  um cover what we need , or should we be thinking about more ? 
+D:  Yep . 
+D:  Yep . 
+D:  Right . 
+D:  Yeah . 
+D:  Yeah , probably between stops back at the hotel . 
+D:  I mean if you  if  if you wanted precise about it , uh you know , 
+D:  uh  and I think that 's the way tourists do organize their lives . 
+D:  You know , " OK , we 'll go back to the hotel and then we 'll go off 
+D:  and  " 
+D:  Yes . 
+D:  It  
+D:  Right . 
+D:  For this . 
+D:  I  w we will  we will not ask you more . 
+D:  Yeah . 
+D:  Right . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah . 
+D:  No . 
+D:  Yeah , or  or both . 
+D:  Mmm . 
+D:  Sure . 
+D:  Right . 
+D:  Mm - hmm 
+D:  No , I I 
+D:  well , I dunno . 
+D:  Let  Let  well , we 'll put it somewhere , 
+D:  but  but  um  
+D:  I would say that if " Dine out " is a special c uh  
+D:  if you 're doing it for that purpose then it 's entertainment . 
+D:  And  we 'll also as y as you 'll s further along we 'll get into business about " Well , you 're  you know  this is going over a meal time , 
+D:  do you wanna stop for a meal or pick up food or something ? " 
+D:  And that 's different . 
+D:  That 's  that 's sort of part of th that 's not a destination reason , that 's sort of " en passant , " right . 
+D:  Right , yeah . 
+D:  Right . 
+D:  OK . 
+D:  Obviously taxis are very different than buses , 
+D:  but on the other hand the system doesn't have any public transport  This  the planner system doesn't have any public transport in it yet . 
+D:  Mm - Well , 
+D:  you can't get to the Philosophers ' Way very well , 
+D:  but , 
+D:  I mean there are hikes that you can't get to , 
+D:  but  
+D:  but I think other things you can , if I remember right . 
+D:  Oh ! 
+D:  Put it in . 
+D:  OK , we can leave it out , I guess . 
+D:  OK . 
+D:  Skateboards 
+D:  right , 
+D:  anyway . 
+D:  Scooters , 
+D:  right ? 
+D:  Alright . 
+D:  Ye 
+D:  Mm - hmm . 
+D:  w well 
+D:  Yeah . 
+D:  And  
+D:  And par yeah , and part of the system design is that if it looks to be important and you can't figure it out , then you ask . 
+D:  But hopefully you don't ask you know , a all these things all the time . 
+D:  Or  eh so , y but there 's th but definitely a back - off position to asking . 
+D:  Mm - hmm . 
+D:  Well , no . 
+D:  I think there are  there 're different things where you have a ch choice , 
+D:  for example , uh this t interacts with " do am I do oh are you willing to take a taxi ? " 
+D:  Or uh , you know , if  if you 're going to the opera are you gonna l look for the best seats or the peanut gallery 
+D:  or , you know , 
+D:  whatever ? 
+D:  S so I think there are a variety of things in which um  
+D:  Tour - tourists really do have different styles eating . 
+D:  Another one , 
+D:  you know . 
+D:  Yeah . 
+D:  Right . 
+D:  No , I think he was going for the second one ar actually . 
+D:  Anyway , we 'll sort th yeah , we 'll sort that out . 
+D:  Right . 
+D:  Absolutely . 
+D:  Yeah , now ob 
+D:  OK , 
+D:  I 'm sorry , 
+D:  go ahead , 
+D:  what were you gonna say ? 
+D:  Yeah , right 
+D:  well y i w if we  w 
+D:  right . 
+D:  So " object " becomes " entity " , 
+D:  right ? 
+D:  Yeah , but we don't have to do it now . 
+D:  And we think that 's it , interestingly enough , that um , you know , th 
+D:  or  or  or something very close to it is going to be uh  going to be enough . 
+D:  And  
+D:  Alright , so um  So I think the order of things is that um , Robert will clean this up a little bit , although it looks pretty good . 
+D:  And  
+D:  Huh ? 
+D:  Right . 
+D:  Yeah , so  
+D:  right , 
+D:  so  So , um In parallel , uh  three things are going to happen . 
+D:  Uh Robert and Eva and Bhaskara are gonna actually  build a belief - net that  that , um , has CPT 's and , you know , tries to infer this from various kinds of information . 
+D:  And Fey is going to start collecting data , 
+D:  and we 're gonna start thinking a about  uh  what constructions we want to elicit . 
+D:  And then w go it may iterate on uh , further data collection to elicit  
+D:  Well , yes . 
+D:  Both . 
+D:  Uh , and  Though for us , constructions are primarily semantic , 
+D:  right ? 
+D:  And  And so  uh  
+D:  Well that too , 
+D:  but um  You know if th if we in  if we you know , make sure that we get them talking about temporal order . 
+D:  OK , that would be great 
+D:  and if th if they use prepositional phrases or subordinate clauses or whatever , 
+D:  um  
+D:  W You know , whatever form they use is fine . 
+D:  But I  I think that probably we 're gonna try to look at it as you know , s what semantic constructions d do we  do we want them to uh do direc 
+D:  you know , um , " Caused motion " , 
+D:  I don't know , 
+D:  something like that . 
+D:  Uh But , Eh - uh this is actually a conversation you and I have to have about your thesis fantasies , and how all this fits into that . 
+D:  But uh  
+D:  No , no . 
+D:  mm - hmm . 
+D:  Right . 
+D:  Right , but we 're not expecting Keith to actually build a parser . 
+D:  OK . 
+D:  We are expecting Johno to build a parser , 
+D:  but that 's a  
+D:  No . 
+D:  No . 
+D:  Uh  He 's g he 's hoping to do this for his masters ' thesis s by a year from now . 
+D:  Eh - absolutely . 
+D:  Uh  limited . 
+D:  I mean , you know , the idea is  is , 
+D:  Well , the hope is that the parser itself is , uh , pretty robust . 
+D:  But it 's not popular  it 's only p only  
+D:  Right . 
+D:  It 's only popula 
+D:  Right . 
+D:  Mm - hmm . 
+D:  Right . 
+D:  Absolutely . 
+D:  OK , so this is  I think we 're gonna mainly work on with George . 
+D:  OK , and hi 
+D:  let me f th  say what I think is  is  
+D:  so the idea is  uh  first of all I misspoke when I said we thought you should do the constructions . 
+D:  Cause apparently for a linguist that means to do completely and perfectly . 
+D:  So what I  yeah , OK ,  So what  what I meant was " Do a first cut at " . 
+D:  OK , Because uh  we do wanna get them r u perfectly  but I think we 're gonna have to do a first cut at a lot of them to see how they interact . 
+D:  Yeah . 
+D:  Right . 
+D:  So the idea is going to be to do  
+D:  sort of like Nancy did in some of the er these papers where you do enough of them so you can go from top to bottom  
+D:  so you can do f you know , f f uh  have a complete story ov of s of some piece of dialogue . 
+D:  And that 's gonna be much more useful than having all of the clausal constructions and nothing else , or  or  or something like that . 
+D:  So that the  the trick is going to be t to take this and pick a  some sort of lattice of constructions , 
+D:  so some lexical and some phrasal , and  and , you know , 
+D:  whatever you need in order to uh , be able to then , uh , by hand , you know , explain , some fraction of the utterances . 
+D:  And so , exactly which ones will partly depend on your research interests and a bunch of other things . 
+D:  Correct . 
+D:  Oh yeah  yeah . 
+D:  V a half a page is  is what we 'd like . 
+D:  And if  if there 's something that really requires a lot more than that then it does 
+D:  and we have to do it , 
+D:  but  
+D:  Yeah . 
+D:  Right . 
+D:  Ye - Right , but it 's not covering eighty percent of the intellectual interest . 
+D:  No , no , no . 
+D:  Well the  th the thing is there 's a lot that needs to be done to get this right . 
+D:  OK , I th 
+D:  We done ? 
+D:  Good . 
+D:  Good . 
+D:  " Action planning " meaning " Discourse Modeling " ? 
+D:  Right . 
+D:  Right . 
+D:  Uh - huh , 
+D:  I 'll be gone . 
+D:  Sure , OK . 
+D:  S 
+D:  Probably should go . 
+D:  That was  that 's one you should probably go to . 
+D:  Uh , probably we can uh  pay for it . 
+D:  Um a student rate shouldn't be very high . 
+D:  So , if we all decide it 's a good idea for you to go then you 'll  we 'll pay for it . 
+D:  I mean I  I don't have a feeling one way or the other at the moment , 
+D:  but it probably is . 
+D:  OK , great . 

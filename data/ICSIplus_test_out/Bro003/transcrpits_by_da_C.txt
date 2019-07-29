@@ -1,0 +1,350 @@
+C:  and then at the end just chop off the final nonlinearity . 
+C:  OK , <clears throat> this is Barry Chen and I am reading transcript 
+C:  OK . 
+C:  Oh .  OK . 
+C:  OK . 
+C:  OK . 
+C:  Oh , yeah , that 's right . 
+C:  Um , I live in , um , the corner of campus . 
+C:  The , um , southeast corner . 
+C:  Yeah . Sure . 
+C:  Six , OK . 
+C:  Oakland . 
+C:  OK . 
+C:  s 
+C:  So just  
+C:  So , s six AM , in front . 
+C:  OK . 
+C:  Wake you up . 
+C:  OK . Wednesday . 
+C:  Tell him about the cube . 
+C:  Yeah . 
+C:  Telephone . 
+C:  Oh . 
+C:  That 's  
+C:  Test on an unseen . 
+C:  Oh , my turn . 
+C:  Oh , OK . 
+C:  Um , Let 's see , I  I spent the last week , uh , looking over Stephane 's shoulder . And  <laugh> and understanding some of the data . 
+C:  I re - installed , um , um , HTK , the free version , 
+C:  so , um , everybody 's now using three point O , 
+C:  which is the same version that , uh , OGI is using . 
+C:  Yeah . 
+C:  So , 
+C:  without  without any licensing big deals , or anything like that . 
+C:  And , um , so we 've been talking about this  this , uh , cube thing , 
+C:  and it 's beginning more and more looking like the , uh , the Borge cube thing . 
+C:  It 's really gargantuan . 
+C:  Um , 
+C:  but I I 'm  Am I  
+C:  Exactly . 
+C:  Um , yeah , so I I 've been looking at , uh , uh , TIMIT stuff . 
+C:  Um , the  the stuff that we 've been working on with TIMIT , trying to get a , um  a labels file so we can , uh , train up a  train up a net on TIMIT and test , um , the difference between this net trained on TIMIT and a net trained on digits alone . 
+C:  Um , and seeing if  if it hurts or helps . 
+C:  Anyway . 
+C:  Yeah , yeah . 
+C:  Um . 
+C:  Mm - hmm . 
+C:  Well , the inputs are one dimension of the cube , 
+C:  which , um , we 've talked about it being , uh , PLP , um , M F C Cs , um , J - JRASTA , JRASTA - LDA  
+C:  Yeah , 
+C:  right . 
+C:  Um , I  I haven't  I haven't decided on  on the initial thing . 
+C:  Probably  probably something like PLP . 
+C:  Yeah . 
+C:  Right . 
+C:  Right . 
+C:  Right . 
+C:  Yeah . 
+C:  Maybe  
+C:  OK . 
+C:  Uh - huh . 
+C:  Yeah , yeah , 
+C:  b May 
+C:  Mm - hmm . 
+C:  Oh , I 'm just  I 'm just , uh , transforming them from the , um , the standard TIMIT transcriptions into  into a nice long huge P - file to do training . 
+C:  Um , the  the digits  
+C:  Oh yeah , 
+C:  those were  those were automatically derived by  by Dan using , um , embedded  embedded training and alignment . 
+C:  Uh , Ellis . 
+C:  Right ? 
+C:  Yeah . So . 
+C:  Uh - huh . 
+C:  That 's right . 
+C:  Uh , between languages ? 
+C:  Oh , 
+C:  um , right . 
+C:  Well , there 's a mapping from the sixty - one phonemes in TIMIT to  to fifty - six , the ICSI fifty - six . 
+C:  And then the digits phonemes , um , there 's about twenty twenty - two or twenty - four of them ? 
+C:  Is that right ? 
+C:  Out of that fifty - six . 
+C:  Yeah . 
+C:  So , 
+C:  it 's  it 's definitely broader , 
+C:  yeah . 
+C:  Oh , 
+C:  you mean why map the sixty - one to the fifty - six ? 
+C:  I don't know . 
+C:  I have  
+C:  Yeah , 
+C:  w I th I think that 's a good idea 
+C:  to  to talk about the whole cube 
+C:  and maybe we could sections in the cube for people to work on . 
+C:  Um , 
+C:  OK . 
+C:  Uh , do you wanna do it ? 
+C:  OK . 
+C:  OK . 
+C:  Yeah , 
+C:  I have the wireless . 
+C:  OK . 
+C:  Can y can you walk around too ? 
+C:  No . 
+C:  OK , 
+C:  well , 
+C:  um , 
+C:  s 
+C:  basically , the  the cube will have three dimensions . 
+C:  The first dimension is the  the features that we 're going to use . 
+C:  And the second dimension , um , is the training corpus . 
+C:  And that 's the training on the discriminant neural net . 
+C:  Um 
+C:  and 
+C:  the last dimension happens to be  
+C:  Right , right . 
+C:  This is  this is for  for ANN only . 
+C:  And , yeah , the training for the HTK models is always , uh , fixed for whatever language you 're testing on . 
+C:  And then , there 's the testing corpus . 
+C:  So , then I think it 's probably instructive to go and  and  and show you the features that we were talking about . 
+C:  Um , 
+C:  so , let 's see . 
+C:  Help me out with  
+C:  With what ? 
+C:  PLP ? 
+C:  OK . 
+C:  MSG . 
+C:  JRASTA . 
+C:  JRASTA - LDA . 
+C:  Multi - band . 
+C:  Yeah , 
+C:  just the multi - band features , right ? 
+C:  Yeah . 
+C:  Oh , um  
+C:  We could add  
+C:  I think  I think Dan did some of that . 
+C:  Um , in his previous Aurora experiments . 
+C:  And with the net it 's  it 's wonderful . 
+C:  Without the net it 's just baseline . 
+C:  Yeah . 
+C:  Yeah . 
+C:  OK . 
+C:  Um , for the training corpus  corpus , um , we have , um , the  the d  digits <tapping sounds, writing on whiteboard> from the various languages . 
+C:  Um , English 
+C:  Spanish 
+C:  um , French 
+C:  What else do we have ? 
+C:  Finnish . 
+C:  Oh . Italian . 
+C:  One L or two L 's ? 
+C:  OK . 
+C:  And , 
+C:  um , 
+C:  oh yeah , 
+C:  and  
+C:  French French . 
+C:  And then we have , uh , um , broader  broader corpus , um , like TIMIT . 
+C:  TIMIT so far , 
+C:  right ? 
+C:  Spanish  
+C:  Oh , Spanish stories ? 
+C:  Um , TI - digits  
+C:  uh all these Aurora f d data p data is from  is derived from TI - digits . 
+C:  Um , basically , they  they corrupted it with , uh , different kinds of noises at different SNR levels . 
+C:  Yeah . 
+C:  OK . 
+C:  No . 
+C:  Sp - Not Spanish stories ? 
+C:  Spanish something . 
+C:  OK . 
+C:  They  they corrupted it , um , themselves , 
+C:  but they also included the  the noise files for us , 
+C:  right ? 
+C:  Or  
+C:  so we can go ahead and corrupt other things . 
+C:  From Spain . 
+C:  OK . 
+C:  Oh , 
+C:  from Paris , 
+C:  OK . 
+C:  And TIMIT 's from  lots of different places . 
+C:  Yeah . 
+C:  Yeah . 
+C:  OK . 
+C:  And , um , 
+C:  with within the training corporas um , we 're , uh , thinking about , um , training with noise . 
+C:  So , 
+C:  incorporating the same kinds of noises that , um , Aurora is in incorporating in their , um  in their training corpus . 
+C:  Um , I don't think we we 're given the , uh  the unseen noise conditions , though , 
+C:  right ? 
+C:  Like  
+C:  Mm - hmm . 
+C:  OK . 
+C:  Right . 
+C:  So , I guess we can't train on  on the  the unseen noise conditions . 
+C:  Right . 
+C:  If  Not if it 's unseen . 
+C:  Yeah . 
+C:  Um , the testing corporas are , um , just , um , the same ones as Aurora testing . 
+C:  And , that includes , um , the English Spa - um , Italian . Finnish . 
+C:  Uh , we ' r we 're gonna get German , 
+C:  right ? 
+C:  Ge -  At the final test will have German . 
+C:  Right . 
+C:  Spanish . 
+C:  Oh yeah , 
+C:  we can  we can test on s Spanish . 
+C:  Oh yeah . 
+C:  Mm - hmm . 
+C:  Yeah . One hundred each , about . 
+C:  Well , th 
+C:  uh , 
+C:  when  when I put these testings on there , I 'm assumi 
+C:  There - there 's three  three tests . 
+C:  Um , 
+C:  type - A , type - B , and type - C . 
+C:  And they 're all  they 're all gonna be test tested , um , with one training of the HTK system . 
+C:  Um , there 's a script that tests all three different types of noise conditions . 
+C:  Test - A is like a matched noise . 
+C:  Test - B is a  is a slightly mismatched . 
+C:  And test - C is a , um , mismatched channel . 
+C:  Um , 
+C:  no , no , 
+C:  we 're  we 're gonna be , um , training on the noise files that we do have . 
+C:  Mm - hmm . 
+C:  That 's a good question . 
+C:  Oh ! 
+C:  Och ! 
+C:  Now , this is turning into a four - dimensional cube ? 
+C:  Just  
+C:  Oh , yeah . 
+C:  OK . 
+C:  No . 
+C:  That would be  
+C:  No . 
+C:  Mm - hmm . 
+C:  Oh . 
+C:  Mm - hmm . 
+C:  I don't know . 
+C:  I don't know . 
+C:  Oh , 
+C:  I don't know how w how we would P - make this , though . 
+C:  Um . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  The neural net ? 
+C:  Um . 
+C:  Yeah . 
+C:  On a SPERT board . 
+C:  Y you did a  you did it on a SPERT board . 
+C:  Yeah . 
+C:  It 's  it 's still a little faster on the 
+C:  Yeah , 
+C:  yeah . 
+C:  Ad - Adam  Adam did some testing . 
+C:  Or either Adam or  or Dan did some testing 
+C:  and they found that the SPERT board 's still  still faster . 
+C:  And the benefits is that , you know , you run out of SPERT and then you can do other things on your  your computer , 
+C:  and you don't  
+C:  Yeah . 
+C:  OK . 
+C:  Mmm . 
+C:  Mm - hmm . 
+C:  Um , for the  for nets trained on digits ,  um , we have been using , uh , four hundred order hidden units . 
+C:  And , um , for the broader class nets we 're  we 're going to increase that 
+C:  because the , um , the digits nets only correspond to about twenty phonemes . 
+C:  So . 
+C:  Um , the broader  broader training corpus nets 
+C:  like TIMIT . 
+C:  Um , w we 're gonna  
+C:  Right . 
+C:  Right . 
+C:  Yeah . 
+C:  More classes . 
+C:  Right , right . 
+C:  More classes . 
+C:  That 's what I mean . 
+C:  Mm - hmm . 
+C:  And . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Um , 
+C:  I  I was thinking two things . 
+C:  Uh , the first thing was , um  
+C:  we  we actually had thought of this as sort of like , um  not  not in stages ,  but more along the  the time axis . 
+C:  Just kind of like one stream at a time , 
+C:  je - je - je - je - je  check out the results 
+C:  and  and go that way . 
+C:  Uh - huh . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Right , 
+C:  right . 
+C:  Mm - hmm . 
+C:  OK . 
+C:  Mm - hmm . 
+C:  OK . 
+C:  Yeah , 
+C:  and the  the second thing was about scratch space . 
+C:  And I think you sent an email about , um , e scratch space for  for people to work on . 
+C:  And I know that , uh , Stephane 's working from an NT machine , 
+C:  so his  his home directory exists somewhere else . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mmm . 
+C:  OK . 
+C:  Like a s like a slide ? 
+C:  OK . 
+C:  There 's , 
+C:  um  
+C:  Carmen was talking about this SAMPA thing , 
+C:  and it 's , um , <mouth> it 's an effort by linguists to come up with , um , a machine readable IPA , um , sort of thing , 
+C:  right ? 
+C:  And , um , they  they have a web site that Stephane was showing us that has , um  has all the English phonemes and their SAMPA correspondent , um , phoneme , 
+C:  and then , um , they have Spanish , 
+C:  they have German , 
+C:  they have all  all sorts of languages , um , mapping  mapping to the SAMPA phonemes , 
+C:  which  
+C:  No , it 's  it 's saying  
+C:  y can't print on ASCII . 
+C:  So  so , maybe we could look at articulatory type stuff , 
+C:  right ? 
+C:  Mm - hmm . 
+C:  Superclass . 
+C:  Allows for  ? 
+C:  Oh , 
+C:  um , 
+C:  we have gotten soft targets to  to work . 
+C:  Yeah . 
+C:  Mmm . 
+C:  Mmm , 
+C:  I see . 
+C:  To sum up to one . 
+C:  Right . 
+C:  Nonlinearity ? 
+C:  Um , 
+C:  it 's sig 
+C:  No , 
+C:  it 's actually sigmoid - X 
+C:  for the  
+C:  You , 
+C:  um  
+C:  I think  I think apparently , the , uh  
+C:  What 's that ? 
+C:  Linear outputs ? 
+C:  Um . 
+C:  Right , right . 
+C:  Right , 
+C:  but during the training , we would train on sigmoid - X 
+C:  and then at the end just chop off the final nonlinearity . 

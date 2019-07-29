@@ -1,0 +1,337 @@
+B:  Alright . 
+B:  Who does ? 
+B:  I see . 
+B:  They don't work for me very well . 
+B:  I much prefer these . 
+B:  OK . 
+B:  L Liz  Liz said something that leaves me believing that nobody likes them . 
+B:  They are ver 
+B:  Right . 
+B:  You know , pretty  
+B:  Hmm . 
+B:  Ah , come on . 
+B:  Hmm . 
+B:  Get a special phone for that . 
+B:  Yeah . 
+B:  No , we could add one . 
+B:  Yeah . 
+B:  Can I  can I just mention something ? 
+B:  Um , uh , I think the file regards reorganization . Also , um , another issue there is disk space probably , 
+B:  right ? 
+B:  Um , so 
+B:  I know that the files that you 've been cutting up for us f for the recognition experiments , 
+B:  uh , one way  one really brain  uh , brain - dead way of  of  of not causing any trouble , but saving disk space is to , uh , use the s the Sphere , the NIST , uh , W - encode program . to  to encode , you know , to compress them . 
+B:  Uh , yeah , but it does it s it happens so that the program that reads the waveforms does the unshortening transparently . 
+B:  Y uh , I guess , 
+B:  but it 
+B:  um , 
+B:  Well , it 's  It 's actually built into the Sphere library that NIST delivers , 
+B:  so  
+B:  Right . 
+B:  And actually , s the sound tools don't understand that . For the  
+B:  At least Feacalc doesn't . 
+B:  So . 
+B:  But since  since these files are made to be used with the SRI recognizer , 
+B:  uh and the SRI front - end uses the Sphere library which in turn does this transparently um , uh , that will be a quick and  quick and easy way to just , uh , get you know , uh , be able to use more  
+B:  But that 's gonna be only temporary . 
+B:  I mean , you should do that too , probably , 
+B:  but  but as you do that you can also just run the  
+B:  well , actually , the  th what you do is you run  
+B:  Oh , now I have another use for the  
+B:  The way I recently used it , 
+B:  and there might be better ways  
+B:  So the program 's called W - encode . 
+B:  And I think the type , y you say um I think dash T 
+B:  and then there are different  different encoding methods , 
+B:  but if you wanna use the shorten one , you say d " minus T shorten " , 
+B:  and then the old uh wavefile and the new wavefile , 
+B:  and then  
+B:  Oops ! 
+B:  And then I check , you know , if this works , 
+B:  so , you can use the  the shell " AND " operator or something . 
+B:  Then I just move the new wavefile to the , you know , to the old wavefile , 
+B:  and then you have replaced the old one with one that behaves identically as long as your programs that use it know how to decode it on the fly . 
+B:  And that  that just saved my butt 
+B:  because I actually was running  On a different experiment , 
+B:  I had segmented  I was processing the whole Switchboard - two corpus , 
+B:  which is two hundred eighty hours of speech , 
+B:  and I was noticing , as I was almost finishing the processing , that I was running out of disk space . 
+B:  And  and so 
+B:  I uh had this flash of inspiration of just 
+B:  uh the same  the same disk had the segmented waveforms on them , 
+B:  so I  while this other thing was still going on , I was run I was running this  this thing . 
+B:  And low and behold I gained three g three gig of space 
+B:  and um , you know  
+B:  No , no .  Actually it was fast enough . 
+B:  This is very fast . This  this really runs quickly . 
+B:  And that 's  
+B:  That was very suspenseful . 
+B:  That was  that was the most excitement I had all weekend . 
+B:  Uh , uh boy , 
+B:  it uh  came out just fine . 
+B:  So . 
+B:  Right , the  the only reason we do this is because the  the SRI front - end doesn't have a way to  to um <mouth> go into a l a longer file with indices . 
+B:  Um , so I  I suppose someone could try to put a hack like that into the  
+B:  So . 
+B:  But there 's also some  
+B:  I guess  
+B:  That 's true . 
+B:  Exactly . Right right right right right . 
+B:  I don't think so . 
+B:  No , no . I mean , if you  
+B:  Th - the  the  the  
+B:  If you can operate on the full  
+B:  If you don't have to segment it , then there would be less of a reason to do the compression , 
+B:  because you don't have that wasted  that extra copy . 
+B:  So . 
+B:  Right . 
+B:  Right . 
+B:  I mean , the segmentation also saves you space in the sense that you cut out all the nonspeech regions . 
+B:  And if you have , you know , twenty channels and only five speakers , then it 's  
+B:  Yeah . 
+B:  So . 
+B:  Yeah . 
+B:  No . 
+B:  Uh , I don't know about the naming , 
+B:  I mean , Th - so these names that we 've been using so far are with 
+B:  uh uh uh 
+B:  I wouldn't just wanna change them you know , without some advance notice . 
+B:  I mean , th that 's all these segment names that we we 've been using . 
+B:  I would rather not mess with them until we have some closure on some of the things we are currently dealing with , 
+B:  so  
+B:  Right . 
+B:  Right . 
+B:  Mm - hmm . 
+B:  Oh great . 
+B:  Actually someone  I just got an email this week from someone as 
+B:  To Anant ? 
+B:  Oh , I 'm sorry , 
+B:  I  I just  
+B:  So , who did you talk to ? 
+B:  Anant ? 
+B:  Anant Venkataraman ? 
+B:  OK . 
+B:  Yeah , OK . Great . 
+B:  Yeah , OK . 
+B:  Great . Great . Thanks . Thanks . 
+B:  Yeah . 
+B:  Cool . 
+B:  Uh 
+B:  Oh , well , yeah I  I  I actually wasn't sure whether this is the right meeting for it , 
+B:  because it has uh very little to do with  with meeting recordings , 
+B:  but @ @  you know , I did uh run <mouth> um some recognition experiments with ICSI front - end . 
+B:  Um Uh , 
+B:  and  and you know , this is the j joint work with Chuck , 
+B:  and uh , um . 
+B:  So , first , uh , you know , we had  we figured out sometime last week how to um  
+B:  and  and Chuck wrote this really nice little script  Perl script that takes a uh waveform , runs the feature calculation and then dumps it out into the  into um a f c so - called uh cepstra file , 
+B:  which is what the SRI system uses to read features . 
+B:  It 's essentially uh uh NIST headered uh waveform . 
+B:  You know , it looks like a waveform except instead of samples you have feature vectors following the header . 
+B:  And um that 's all done um by the script , 
+B:  and it works great . 
+B:  And uh I first trained up two systems , 
+B:  because it 's gender - dep you know , the SRI system is gender - dependent 
+B:  so to be comparable , I trained uh um on a sh on a so - called short training set 
+B:  um a male system and a female system , 
+B:  and uh 
+B:  also for debugging purposes , and for the heck of it , I trained um  trained uh on the same training set uh a standard system with the SRI front - end from scratch , 
+B:  um , and compared the two  
+B:  Well , we used , uh , twelve PLP uh , uh  
+B:  Just PLP 
+B:  and actually that  uh , one of the questions I had was what the RASTA would possibly buy us . 
+B:  But um , we 'll talk about that later . 
+B:  So , the uh  so the baseline system  w the SRI system was  uh used  uh also uh uh used t twelve uh mel  uh mel cepstra um <mouth> based on a twenty - four filter bank um analysis . 
+B:  Um 
+B:  I do not know what  
+B:  So the f the bandwidth of the um SRI front - end is from hundreds hertz to th th thirty - se 
+B:  thirty - seven fifty or something like that . 
+B:  And I do not know what the um ICSI um front - end would do . 
+B:  I mean , what the bandwidth is . 
+B:  Um , 
+B:  but the results are such that 
+B:  uh , let 's see  
+B:  Oh yeah . 
+B:  So the SRI system also does um vocal tract length normalization 
+B:  and we couldn't figure out how to do that yet with the ICSI features . 
+B:  So that 's one difference . 
+B:  And the other difference is that in the , uh  <mouth> in the SRI system , the uh th the first  the C - zero , the energy uh feature is normalized slightly differently from the rest . 
+B:  And what they do is they d they subtract the maximum  
+B:  For each waveform segment they subtract the maximum of  of th over that waveform segment from from the values of  for that waveform . 
+B:  Which is a kind of automatic gain control , that is localized  
+B:  They subtract  
+B:  Right , <laugh> right , right . 
+B:  Um , and then , after  But after they done this waveform based normalization , they then do a conversation length normalization just like all the other features . 
+B:  So it 's their kind of two stage normalization . 
+B:  Um now , I understand that the common practice here has been to just do c standard uh mean subtraction , um on the waveform . 
+B:  Um . 
+B:  Right . But in what we 've done so far , because we didn't have any special provision for C - zero , we just treat it as  as any of the other features , 
+B:  we 've done standard mean subtraction over the whole conversation side . 
+B:  So um since both SRI and ICSI use this sort of local normalization for C - zero that 's presumably , you know , someone has done some experiments to  and found out that that works better . 
+B:  Um , so that 's another difference , 
+B:  and that might account for some of the discrepancies in the results . 
+B:  Um , but you know . So the the results are 
+B:  um 
+B:  Where should I start ? 
+B:  Uh the  
+B:  So there 's a two  
+B:  Oh . I tried it with and without . 
+B:  Uh . 
+B:  So without and with adaptation . 
+B:  For the adaptation ? 
+B:  Well , y we always do three EM iterations to 
+B:  and it 's  it 's this  it 's this quick and dirty  
+B:  the phone loop adaptation which doesn't actually require prior recognition paths 
+B:  and  and so this is not the best you can do with adaptation , 
+B:  but it gives you sort of a first idea of what you could gain with it . 
+B:  And then , you know , so we have the the SRI front - end 
+B:  and the ICSI front - end 
+B:  and other than that the system configuration was identical . 
+B:  So it was the same  
+B:  They came up with um you know , same number of uh Gaussians per state cluster 
+B:  Um , same  The clustering used the same information loss threshold , 
+B:  which actually led to roughly the same number of Gaussians overall . 
+B:  So that the system configuration is  is comparable . 
+B:  Um , and the  <mouth> Uh , 
+B:  so without adaptation , 
+B:  you had forty - nine p 
+B:  This is error rate 
+B:  in percent . 
+B:  And with adaptation it 's forty - seven point one 
+B:  and this  this was fifty - two point six . 
+B:  and fifty - one point three 
+B:  and then , when I combined them  
+B:  I can actually combine them with something like ROVER . 
+B:  It 's actually more sophisticated than ROVER 
+B:  but it 's  
+B:  Um , here I got forty - eight point five 
+B:  and here I got forty - six point five . 
+B:  Um . 
+B:  At the utterance level , right . 
+B:  Good question . 
+B:  That 's fine . 
+B:  Um , so , one percent I would attribute to the lack of VTL , 
+B:  about one percent . 
+B:  OK . 
+B:  And then maybe another up  
+B:  I don't know how much the C - zero normalization business really matters 
+B:  I can't it see , I mean can't see it  the 
+B:  I could . Yeah . 
+B:  I could certainly do that . Yeah . 
+B:  Um . 
+B:  We could also do the vocal tract length normalization with the ICSI features . 
+B:  That 's something we wanted to do  
+B:  yeah . 
+B:  We could  I was actually thinking we could use the warping factors that we compute for the MFCC 's and just try them with the ICSI uh front - end . 
+B:  Because we already have the capability to apply the warping to the um  to the PLP c 
+B:  uh Dan added the  
+B:  So . 
+B:  No , but they should be close , since this  
+B:  I mean the  
+B:  Anyway . But I can certainly try the SRI front - end without uh VTL . 
+B:  That sh that 's  that 's certainly quick to do . 
+B:  Um and so  
+B:  Yeah , and  and then there 's all these 
+B:  um  
+B:  You know , the number of um  
+B:  You know , this front - end u had a fair amount of experimentation going into it . 
+B:  You know , how many filter banks do you use , 
+B:  what  what bandwidth do you use , and stuff like that . 
+B:  And uh we could play the same kind of games with the ICSI front - end . 
+B:  Uh , actually , the analysis bandwidth played a very crucial role . 
+B:  We used to use a narrow bandwidth 
+B:  and uh 
+B:  uh that hurt us . 
+B:  So this is , um  And this is  We 've now used roughly what everybody else is using . 
+B:  So 
+B:  um , there 's some room for improvements , I figure , in this  in the ICSI front - end . 
+B:  Um . So . 
+B:  But the good news is that even with this  with the ICSI system being that much worse , you still get a win out of combining the two . 
+B:  So that gives some hope for the future . 
+B:  Um . 
+B:  Unfortunately however this seems to be reduced with adaptation , 
+B:  so . Um . 
+B:  Also interestingly the  Um , the difference actually widens . 
+B:  I would actually expect it or  or hope that the adaptation reduces the difference 
+B:  because it might um , for instance , um remove some of the 
+B:  um  
+B:  You know , som If you  if you have some  some difference in the front - end processing that uh is suboptimal , but can be possibly remedied by you know moving the um moving the models around . 
+B:  But  but apparently that doesn't  doesn't really  
+B:  actually the difference becomes larger , 
+B:  so . 
+B:  Um . Anyway . So right now what I 'm doing is um  
+B:  Uh well , there 's several things going on . 
+B:  One is that Chuck is working on uh getting the tandem features um into a form that we can train the tandem  the system on the tandem features . 
+B:  So that would actually be the more interesting experiment . 
+B:  Um , the other thing is I 'm training uh retraining the models on the large training set that we usually use to build our evaluation models 
+B:  and then we can  
+B:  And I actually want to do the system combination um with our eval system um , on some subset of the data at least , 
+B:  probably only for the males , 
+B:  because I don't have time to train both males and females , 
+B:  but um . Uh and um  
+B:  It does get pretty big . Yeah . 
+B:  Oh , you tried that on Broadcast News ? 
+B:  Concatenating 
+B:  different feature sets ? 
+B:  Yeah . 
+B:  Did you try uh  
+B:  I see . 
+B:  I see . 
+B:  OK . 
+B:  Alright . 
+B:  Oh . 
+B:  Yeah , and it does become sort of unwieldy to have these very large feature vectors . 
+B:  And that would blow up the 
+B:  uh  
+B:  Right . 
+B:  Right . 
+B:  Um so the  
+B:  Yeah , and then we could start experimenting a little bit to try to get the ICSI front - end to perform better . 
+B:  Um . And  and as a preliminary just sort of diagnostic experiment we can  I can certainly run a SRI system without VTL 
+B:  just uh to get  
+B:  Wh 
+B:  Yeah . 
+B:  And that  that 's quick to do . 
+B:  So . 
+B:  yeah 
+B:  so but things are moving ahead , 
+B:  so 
+B:  Digits . Sure . 
+B:  Poetic reading of digits . 
+B:  s meeting . 
+B:  I actually have one more thing that  
+B:  I don't know if it 's  i if  if it 's allowed to  to bring up after the dis 
+B:  Anyway . 
+B:  But it might be important . For um  
+B:  So Liz remarked that she had recorded a meeting where it was later found that several of the s microphones were turned off , 
+B:  um 
+B:  and this must become a problem especially with non - speech - meetings . 
+B:  So um 
+B:  is there a way that the software could warn you if it gets zeros from some of the channels , 
+B:  or  ? 
+B:  Because it  you know it 's really annoying if you go through all that trouble 
+B:  and then basically the meetings aren't useable 
+B:  because uh even  
+B:  I don't know what they do . 
+B:  Maybe the batteries went dead , 
+B:  or th they just didn't  they played with the thing and it didn't leave it in the " on " position or whatever . 
+B:  Well , no , if  if you um  
+B:  I mean obviously you always  
+B:  I mean , there 's never gonna be a signal from all the channels , 
+B:  right ? 
+B:  because  
+B:  or rarely . 
+B:  Um . But uh . 
+B:  Right . 
+B:  Exactly . 
+B:  That 's a good question . 
+B:  I don't know . 
+B:  But is there some  We can collectively think of some  of some mechanism that might reduce the risk of  of just  
+B:  Right . 
+B:  Right . 
+B:  So maybe it 's just to admonish people to actually look at the screen at the beginning of the meeting to make sure they get a signal . 
+B:  Yeah , something . 
+B:  Oh yeah . That 's a good one . 
+B:  Yeah . OK . 
+B:  Yeah . 
+B:  Alright . 

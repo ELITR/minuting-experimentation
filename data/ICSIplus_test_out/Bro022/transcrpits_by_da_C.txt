@@ -1,0 +1,333 @@
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  I don't see why  why your signal is louder after processing , 
+C:  because yo 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Well , well  
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Well , the system is  use  the absolute energy , so it 's a little bit dependent on  on the  signal level . 
+C:  But , not so much , I guess . 
+C:  Mmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Eh 
+C:  I had a question about the system  the SRI system . 
+C:  So , <clears throat> you trained it on TI - digits ? 
+C:  But except this , it 's exactly the same system as the one that was tested before and that was trained on  Macrophone . 
+C:  Right ? 
+C:  So on TI - digits it gives you one point two percent error rate 
+C:  and on Macrophone it 's still O point eight . 
+C:  Uh , but is it  exactly the same system ? 
+C:  Hmm . 
+C:  Mm - hmm . 
+C:  So you use VTL - uh , vocal tract length normalization and , um , like MLLR transformations also , 
+C:  and  
+C:  all that stuff . 
+C:  It was  training on Macrophone and testing  yeah , on  on meeting digits . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  I  I 've just been text  testing the new  Aurora front - end with  well , Aurora system actually  
+C:  so front - end and HTK , um , acoustic models on the meeting digits 
+C:  and it 's a little bit better than the previous system . 
+C:  We have  I have two point seven percent error rate . 
+C:  And before with the system that was proposed , it 's what ? It was three point nine . 
+C:  So . 
+C:  We are getting better . 
+C:  And  
+C:  Yeah . 
+C:  Two point seven . 
+C:  On the meeting we have two point seven . 
+C:  Uh . Yeah , yeah . 
+C:  So , yeah , 
+C:  we have  the new LDA filters , 
+C:  and  
+C:  I think , maybe  I didn't look , but one thing that makes a difference is this DC offset compensation . 
+C:  Uh , eh  Do y did you have a look at  at the meet uh , meeting digits , if they have a DC component , 
+C:  or  ? 
+C:  Oh . 
+C:  Um . Yeah . 
+C:  Maybe , concerning these d still , these meeting digits . 
+C:  I 'm more interested in trying to figure out what 's still the difference between the SRI system and the Aurora system . 
+C:  And  
+C:  Um . 
+C:  Yeah . So , I think I will maybe train , like , gender - dependent models , 
+C:  because  this is also one big difference between  the two systems . 
+C:  Um , 
+C:  the other differences were  the fact that maybe the acoustic models of the SRI are more  SRI system are more complex . 
+C:  But , uh , Chuck , you did some experiments with this 
+C:  and 
+C:  it was hard t to  to have some exper some improvement with this . 
+C:  Um . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Right . 
+C:  Yeah . 
+C:  The vocal tr 
+C:  Yeah . 
+C:  Yeah . This is another difference . 
+C:  Their normalization works like on  on the utterance levels . 
+C:  But we have to do it  
+C:  We have a system that does it on - line . 
+C:  So , it might be  
+C:  it might be better with  
+C:  it might be worse if the  channel is constant , 
+C:  or  
+C:  Nnn . 
+C:  SRI  it 's  it 's tr 
+C:  Yeah . 
+C:  I guess it 's triphones . 
+C:  Huh . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  And  
+C:  Yeah . 
+C:  Well . 
+C:  Um . 
+C:  Well , the first thing I  that I want to do is just maybe these gender things . 
+C:  Uh . 
+C:  And maybe see with  Andreas if  
+C:  Well , I  I don't know  how much it helps , what 's the model . 
+C:  That 's right . 
+C:  So it 's the clean  TI - digits training set . 
+C:  Right . 
+C:  Mm - hmm . 
+C:  I guess you used the clean training set . 
+C:  Mm - hmm . 
+C:  Well . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Yeah . 
+C:  I think so . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Ye 
+C:  Yeah . 
+C:  The complete SRI system is one point two . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  It was four point something . 
+C:  Right ? 
+C:  The HTK system with , uh , b 
+C:  MFCC features  
+C:  Oh . 
+C:  So  
+C:  Yeah . 
+C:  The only difference is the features , right now , 
+C:  between this and  
+C:  Mm - hmm . 
+C:  They are helping . 
+C:  Yeah . 
+C:  Um . 
+C:  Yeah . 
+C:  And another thing I  I maybe would like to do is to  just test the SRI system that 's trained on Macrophone  
+C:  test it on , uh , the noisy TI - digits , 
+C:  cuz I 'm still wondering  where this  improvement comes from . 
+C:  When you train on Macrophone , it seems better on meeting digits . 
+C:  But I wonder if it 's just because maybe  Macrophone is acoustically closer to the meeting digits than  than TI - digit is , 
+C:  which is  
+C:  TI - digits are very  clean recorded digits 
+C:  and  
+C:  Uh , 
+C:  f s 
+C:  That 's  
+C:  Yeah . That 's what  I wanted , just , uh  
+C:  Yeah . 
+C:  So , just using the SRI system , test it on  and test it on  Aurora TI - digits . 
+C:  Right . 
+C:  Um . 
+C:  Yeah . There is this problem of multilinguality yet . 
+C:  So we don't  
+C:  i i 
+C:  We would have to train on  
+C:  Yeah . 
+C:  Yeah . 
+C:  It 's  
+C:  Mmm . 
+C:  Mm - hmm . 
+C:  That 's right . 
+C:  Yeah . 
+C:  Yeah . 
+C:  I see . 
+C:  Oh , so , OK . 
+C:  Right . 
+C:  I see what you mean . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  But , just testing on TI - digits would already give us some information  about what 's going on . 
+C:  And  
+C:  mm - hmm . 
+C:  Uh , yeah . 
+C:  OK . 
+C:  Uh , the next thing is this  this VAD problem that , 
+C:  um , 
+C:  um  
+C:  So , I 'm just talking about the  the curves that I  I sent  <breath> I sent you  
+C:  so , whi that shows that <mouth> when the SNR decrease , <clears throat> uh , the current  VAD approach doesn't drop much frames  for some particular noises , 
+C:  uh , which might be then noises that are closer to speech , uh , acoustically . 
+C:  Mm - hmm . 
+C:  Uh  
+C:  Well . 
+C:  First of all , the boundaries might be , uh  like we would have t two hundred milliseconds or  before and after speech . 
+C:  Uh . 
+C:  So removing more than that might still make  a difference  in the results . 
+C:  And  
+C:  No . 
+C:  Because we don't  didn't looked  that much at that . 
+C:  But , <clears throat> still , I think it 's an interesting problem . 
+C:  And  
+C:  Um . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Yeah , 
+C:  yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  And actually there 's  
+C:  Yeah . 
+C:  There 's an  uh , I think it 's still for  even for the evaluation , 
+C:  uh , it might still be interesting to <breath-laugh> work on this 
+C:  because  the boundaries apparently that they would provide is just , <clears throat> um , starting of speech and end of speech  uh , at the utterance level . 
+C:  And  
+C:  Um . 
+C:  So  
+C:  Yeah . 
+C:  But when you have like , uh , five or six frames , both  
+C:  it  it  with  
+C:  Yeah . 
+C:  So  
+C:  Yeah . 
+C:  It might be useful for , like , noise estimation , and a lot of other  things that we want to work on . 
+C:  But  
+C:  Mmm . 
+C:  Yeah . 
+C:  So I did  I just  started to test  putting together two VAD which was  was not much work actually . 
+C:  Um , 
+C:  I im re - implemented a VAD that 's very close to the , <mouth> um , energy - based VAD <breath> that , uh , the other Aurora guys use . 
+C:  Um . 
+C:  So , which is just putting a threshold on  the noise energy , 
+C:  and , detect detecting the first  group of four frames  that have a energy that 's above this threshold , 
+C:  and , 
+C:  uh , 
+C:  from this point , uh , tagging the frames there as speech . 
+C:  So it removes <mouth> the first silent portion  portion of each utterance . 
+C:  And it really removes it , 
+C:  um , 
+C:  still o on the noises where  our MLP VAD doesn't  work a lot . 
+C:  Uh , 
+C:  and  
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  So , your point is  will be to u use whatever  
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  So , yeah . 
+C:  It  it might be that what I did is  
+C:  so , removes like <clears throat> low , um , <mouth> uh  low - energy , uh , speech frames . 
+C:  Because  the way I do it is I just  I just combine the two decisions  
+C:  so , the one from the MLP and the one from the energy - based  with the  with the and  operator . 
+C:  So , 
+C:  I only  keep the frames where the two agree  that it 's speech . 
+C:  So if the energy - based dropped  dropped low - energy speech , mmm , they  they are  they are lost . 
+C:  Mmm . 
+C:  But s still , the way it 's done right now it  it helps on  on the noises where  it seems to help on the noises where <clears throat> our VAD was not very  good . 
+C:  Yeah . 
+C:  But  
+C:  Yeah . 
+C:  But the way it 's combined wi is maybe done  
+C:  Well , yeah . 
+C:  The way I use a an a " AND " operator is  
+C:  So , it  I , uh  
+C:  The frames that are dropped by the energy - based system are  are , uh , dropped , even if the , um , MLP decides to keep them . 
+C:  But , yeah . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Mmm . M Yeah . 
+C:  Uh - huh . 
+C:  Mm - hmm . 
+C:  Well , actually if I don't  maybe don't want to work too much of  on it right now . 
+C:  I just wanted to  to see if it 's  <breath-laugh> what I observed was the re was caused by this  this VAD problem . 
+C:  And it seems to be the case . 
+C:  Um . 
+C:  Uh , the second thing is the  this spectral subtraction . 
+C:  Um . 
+C:  Um , 
+C:  which I 've just started yesterday to launch a bunch of , uh , <noise> twenty - five experiments , 
+C:  uh , with different , uh , values for the parameters that are used . 
+C:  So , 
+C:  it 's the Makhoul - type spectral subtraction which use  an over - estimation factor . 
+C:  So , we substr I subtract more , <inbreath> <clears throat> um , <click> <mouth> noise than the noise spectra that  is estimated  on the noise portion of the s uh , the utterances . 
+C:  So I tried several , uh , over - estimation factors . 
+C:  And after subtraction , I also add  a constant noise , 
+C:  and I also try different , uh , <mouth> noise , uh , values 
+C:  and we 'll see what happen . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  But st still when we look at the , 
+C:  um  
+C:  Well , it depends on the parameters that you use , 
+C:  but for moderate over - estimation factors and moderate noise level that you add , you st have a lot of musical noise . 
+C:  Um . 
+C:  On the other hand , when you  subtract more and when you add more noise , you get rid of this musical noise 
+C:  but  maybe you distort a lot of speech . 
+C:  So . 
+C:  Well . 
+C:  Mmm . 
+C:  Well , it  until now , it doesn't seem to help . 
+C:  But 
+C:  We 'll see . 
+C:  So the next thing , maybe I  what I will  try to  to do is just  to try to smooth mmm , <mouth> the , um  to smooth the d the result of the subtraction , 
+C:  to get rid of the musical noise , 
+C:  using some kind of filter , 
+C:  or  
+C:  Yeah . 
+C:  Right . 
+C:  Mmm . 
+C:  Yeah . 
+C:  So , to get something that 's  would be closer to  what you tried to do with Wiener filtering . 
+C:  And  
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  It  
+C:  Maybe you can  
+C:  I think it 's  
+C:  That 's it for me . 
+C:  Mm - hmm . 
+C:  So this is on SpeechDat - Car Italian ? 
+C:  So , in some cases s there are also  
+C:  o 
+C:  Uh - huh . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Actually , the VTS that you tested before was in the log domain 
+C:  and so  the codebook is e e kind of dependent on the  level of the speech signal . 
+C:  And  
+C:  So I expect it  If  if you have something that 's independent of this , I expect it to  it  to , uh , be a better model of speech . 
+C:  And . 
+C:  Well . 
+C:  No . 
+C:  We could normali norm I mean , remove the median . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  But here also we would have to be careful about removing the mean  of speech 
+C:  and 
+C:  not of noise . 
+C:  Because it 's like  first doing general normalization 
+C:  and then noise removal , 
+C:  which is  
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 

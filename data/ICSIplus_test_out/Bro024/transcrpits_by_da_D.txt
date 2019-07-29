@@ -1,0 +1,425 @@
+D:  Mike ? 
+D:  OK . 
+D:  Might wanna <breath> close the door so that  Uh , Stephane will  
+D:  Yeah 
+D:  So that 's the virtual Stephane over there . 
+D:  Yeah . 
+D:  So , uh , 
+D:  yeah  
+D:  the suggestion was to have these guys start to  
+D:  Uh , Guenter , I don't know if you t <breath> followed this stuff but this is , uh , <breath> a uh , uh , long - term  long - term window F F 
+D:  Yeah . 
+D:  Yeah , he  you talked about it . 
+D:  Oh , OK . 
+D:  So you know what he 's doing . 
+D:  Alright . 
+D:  You could clarify something for me . 
+D:  You 're saying point three percent , 
+D:  you take a point three percent hit , <breath> when the training and testing links are  don't match or something ? 
+D:  Is that what it is ? 
+D:  Or  ? 
+D:  Yeah . 
+D:  Yeah . 
+D:  Right . 
+D:  And which was worse ? 
+D:  OK . 
+D:  But point three percent , uh , w from what to what ? 
+D:  That 's point three percent  
+D:  So four point four to four point one . 
+D:  So  yeah . 
+D:  So about a  about an eight percent , uh , seven or eight percent relative ? 
+D:  Uh , 
+D:  Yeah . 
+D:  Well , I think in a p You know , if  if you were going for an evaluation system you 'd care . 
+D:  But if you were doing a live system that people were actually using nobody would notice . 
+D:  It 's  uh , I think the thing is to get something that 's practical , that  that you could really use . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  I mean , a short - time FFT  short - time cepstrum calculation , uh , mean  u mean calculation work that people have in commercial systems , they do this all the time . 
+D:  They  the  they calculate it from previous utterances and then use it , you know . 
+D:  But  but , uh , 
+D:  as you say , there hasn't been that much with this long  long - time , uh , spectra work . 
+D:  Uh , 
+D:  Yeah . 
+D:  Pretty common . 
+D:  Yeah . 
+D:  Um , 
+D:  but , u uh , 
+D:  yes . 
+D:  No , it is interesting . 
+D:  And the other thing is , I mean , there 's two sides to these really small , uh , gradations in performance . 
+D:  Um , I mean , on the one hand in a practical system if something is , uh , four point four percent error , four point one percent error , people won't really tell  be able to tell the difference . 
+D:  On the other hand , when you 're doing , uh , research , you may , eh  you might find that the way that you build up a change from a ninety - five percent accurate system to a ninety - eight percent accurate system is through ten or twelve little things that you do that each are point three percent . 
+D:  So  so the  they  they  it 's  I don't mean to say that they 're  they 're irrelevant . 
+D:  Uh , they are relevant . 
+D:  But , um , <breath> i for a demo , you won't see it . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  I guess one thing that might also be an issue , uh , cuz part of what you 're doing is you 're getting a  a spectrum over a bunch of different kinds of speech sounds . 
+D:  Um , 
+D:  and so it might matter how fast someone was talking for instance . 
+D:  You know , if you  if  if  if there 's a lot of phones in one second maybe you 'll get a  a really good sampling of all these different things , 
+D:  and  <breath> and , uh , on the other hand if someone 's talking slowly maybe you 'd need more . 
+D:  So  
+D:  I don't know if you have some samples of faster or slower speech 
+D:  but it might make a difference . 
+D:  I don't know . 
+D:  Yeah , probably not . 
+D:  Yeah . 
+D:  Yeah , but then you 'll have the degradation of  of , uh , whatever you do uh , added onto that . 
+D:  But maybe . 
+D:  Yeah , 
+D:  maybe if you get something that sounds  that  that 's  does a pretty job at that . 
+D:  You could imagine that . 
+D:  Um , yeah . 
+D:  It 's just that you 're making a choice  
+D:  uh , I was thinking more from the system aspect , if you 're making a choice for SmartKom , that  that  that it might be that it 's  it c the optimal number could be different , depending on  
+D:  Could be . 
+D:  I don't know . 
+D:  I guess , the  the  the issue I was  the general issue I was bringing up was that if you 're  have a moving  <breath> moving window , uh , a wa a  a set of weights times things that , uh , move along , shift along in time , that you have in fact a linear time invariant filter . 
+D:  And you just happened to have picked a particular one by setting all the weights to be equal . 
+D:  And so the issue is what are some other filters that you could use , uh , in that sense of " filter " ? 
+D:  And , um , 
+D:  as I was saying , I think the simplest thing to do is not to train anything , but just to do some sort of , uh , uh , hamming or Hanning , uh , kind of window , kind of thing , 
+D:  just sort of to de - emphasize the jarring . 
+D:  So I think that would sort of be the first thing to do . 
+D:  But then , yeah , the LDA i uh , is interesting because it would sort of say well , suppose you actually trained this up to do the best you could by some criterion , 
+D:  what would the filter look like then ? 
+D:  Uh , 
+D:  and , um , 
+D:  that 's sort of what we 're doing in this Aur - Aurora stuff . 
+D:  And , uh , 
+D:  it 's still not clear to me in the long run whether the best thing to do would be to do that or to have some stylized version of the filter that looks like these things you 've trained up , because you always have the problem that it 's trained up for one condition and it isn't quite right for another . 
+D:  So . 
+D:  uh  that 's  that 's why  that 's why RASTA filter has actually ended up lasting a long time , 
+D:  people still using it quite a bit , because y you don't change it . 
+D:  So 
+D:  doesn't get any worse . 
+D:  Uh , 
+D:  Anyway . 
+D:  Go ahead . 
+D:  Well , I think what I was s I thought what I was saying was that , um , at any given point you are gonna start off with what you had from before . 
+D:  From  
+D:  and so if you 're splitting things up into utterances  
+D:  So , for instance , in a dialogue system ,  where you 're gonna be asking , uh , you know , th for some information , there 's some initial th something . 
+D:  And , you know , the first time out you  you might have some general average . 
+D:  But you  you d you don't have very much information yet . 
+D:  But at  after they 've given one utterance you 've got something . 
+D:  You can compute your mean cepstra from that , 
+D:  and then can use it for the next thing that they say , 
+D:  uh , 
+D:  so that , you know , the performance should be better that second time . 
+D:  Um , 
+
+D:  and I think the heuristics of exactly how people handle that and how they handle their training I 'm sure vary from place to place . 
+D:  But I think the  ideally , it seems to me anyway , that you  you would wanna do the same thing in training as you do in test . 
+D:  But that 's  that 's just , uh , a prejudice . 
+D:  And I think anybody working on this with some particular task would experiment . 
+D:  No , but those are all different people with different  I mean , i in y 
+D:  So for instance , in  in the  in a telephone task , these are different phone calls . 
+D:  So you don't wanna @ @  chain it together from a  from a different phone call . 
+D:  So it 's within speaker , 
+D:  within phone call , 
+D:  if it 's a dialogue system , it 's within whatever this characteristic you 're trying to get rid of is expected to be consistent over , 
+D:  right ? 
+D:  Yeah . 
+D:  Yeah . 
+D:  Now , <breath> you know , maybe you 'd use something from the others 
+D:  just because at the beginning of a call you don't know anything , 
+D:  and so you might have some kind of general thing that 's your best guess to start with . 
+D:  But  
+D:  So , s I  I  
+D:  you know , a lot of these things are proprietary 
+D:  so we 're doing a little bit of guesswork here . 
+D:  I mean , what do comp what do people do who really face these problems in the field ? 
+D:  Well , they have companies 
+D:  and they don't tell other people exactly what they do . 
+D:  But  but I mean , when you  the  the hints that you get from what they  when they talk about it are that they do  they all do something like this . 
+D:  Yeah , but you might have somebody who 's using it 
+D:  and then later you might have somebody else who 's using it . 
+D:  And so you 'd wanna set some  
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Well , 
+D:  w OK , 
+D:  so in that situation , though , th maybe what 's a little different there , is I think you 're talking about  there 's only one  
+D:  it  it  it also depends  
+D:  we 're getting a little off track here . 
+D:  r But  but  but  
+D:  Uh , there 's been some discussion about whether the work we 're doing in that project is gonna be for the kiosk or for the mobile or for both . 
+D:  And I think for this kind of discussion it matters . 
+D:  If it 's in the kiosk , then the physical situation is the same . 
+D:  It 's gonna  you know , the exact interaction of the microphone 's gonna differ depending on the person and so forth . 
+D:  But at least the basic acoustics are gonna be the same . 
+D:  So f if it 's really in one kiosk , then I think that you could just chain together and  and you know , as much  as much speech as possible to  
+D:  because what you 're really trying to get at is the  is the reverberation characteristic . 
+D:  But in  in the case of the mobile , uh ,  presumably the acoustic 's changing all over the place . 
+D:  And in that case you probably don't wanna have it be endless because you wanna have some sort of  it 's  it 's not a question of how long do you think it 's  you can get an approximation to a stationary something , given that it 's not really stationary . 
+D:  So . 
+D:  Mm - hmm . 
+D:  Right . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Or subtract nothing . 
+D:  I mean , it 's  
+D:  Yeah , yeah . 
+D:  Yeah , people do something . 
+D:  They  they , uh , they have some , um , 
+D:  uh , 
+D:  in  in cepstral mean subtraction , for short - term window  analysis windows , as is usually done , you 're trying to get rid of some very general characteristic . 
+D:  And so , uh , if you have any other information about what a general kind of characteristic would be , then you  you can do it there . 
+D:  Yeah , 
+D:  that 's  
+D:  Yeah . 
+D:  The other thing is that  and  and  I  I remember B B N doing this , is that if you have a multi - pass system , um , if the first pass ta it takes most of the computation , the second and the third pass could be very , very quick , 
+D:  just looking at a relatively small n small , uh , space of hypotheses . 
+D:  Then you can do your first pass <breath> without any subtraction at all . 
+D:  And then your second pass , uh , uh , eliminates those  most of those hypotheses by , uh  by having an improved  improved version o of the analysis . 
+D:  So . 
+D:  Yeah . 
+D:  Yes , briefly . 
+D:  Oh , I thought you were finishing your thesis in two weeks . 
+D:  Yeah . 
+D:  I 'm sort of confused 
+D:  but  
+D:  this  
+D:  I 'm looking on the second page , 
+D:  and it says " fifty percent "  
+D:  looking in the lower right - hand corner , 
+D:  " fifty percent relative performance " . 
+D:  Is that  
+D:  is that fifty percent improvement ? 
+D:  So it 's improvement over the baseline mel cepstrum ? 
+D:  But the baseline mel cepstrum under those training doesn't do as well 
+D:  I  I 'm  I 'm trying to understand why it 's  it 's eighty percent  
+D:  That 's an accuracy number , I guess , 
+D:  right ? 
+D:  So that 's not as good as the one up above . 
+D:  But the fifty is better than the one up above , 
+D:  so I 'm confused . 
+D:  Oh . 
+D:  Oh , oh , oh , oh , oh , oh . 
+D:  I see . 
+D:  I see . 
+D:  This is  this is TI digits  we 're looking at ? 
+D:  This whole page is TI - digits 
+D:  or this is  ? 
+D:  Mmm . 
+D:  How does clean training do for the , uh , " Car " 
+D:  stuff ? 
+D:  No . 
+D:  I mean , this is added noise . 
+D:  I mean , this is TI - digits . 
+D:  I 'm sorry . 
+D:  I meant  in  in the  in the , uh , multi - language , uh , uh , Finnish and  
+D:  " Training condition "  
+D:  Oh , right . 
+D:  So " clean " corresponds to " high mismatch " . 
+D:  And " increase " , 
+D:  That 's increase e 
+D:  Which means decrease in word error rate ? 
+D:  OK , 
+D:  so " percentage increase " means decrease ? 
+D:  OK . 
+D:  Yeah . 
+D:  Alright . 
+D:  Uh - huh . 
+D:  So we have to jiggle it somehow ? 
+D:  S Wait a minute . 
+D:  Start with a different what ? 
+D:  Uh - huh . 
+D:  So maybe for that one you need a much smarter VAD ? 
+D:  Mmm , 
+D:  if it 's music . 
+D:  Yeah , so that 's good . 
+D:  Then if we can improve the noise estimation , then it should get better . 
+D:  Mmm . 
+D:  Mm - hmm . 
+D:  We probably should at some point here try the tandem  the  the  the system - two kind of stuff with this , with the spectral subtraction for that reason . 
+D:  Cuz <breath> again , it should do a transformation to a domain where it maybe  looks more Gaussian . 
+D:  Mm - hmm . 
+D:  But isn't that s again sort of the idea of the additive thing , 
+D:  if it  as  as we had in the J stuff ? 
+D:  I mean , basically if  <breath> if you have random data , um , in  in the time domain , then when you look at the s spectrum it 's gonna be pretty flat . 
+D:  And  and , 
+D:  uh , 
+D:  so just add something everywhere rather than just in those places . 
+D:  It 's just a constant , right ? 
+D:  Yeah . 
+D:  Yeah . 
+D:  Well , see if you add something everywhere , it has almost no effect up  up  up on  on top . 
+D:  And it  and it  and it has significant effect down there . 
+D:  That was , sort of the idea . 
+D:  I think when it 's noisy people should just speak up . 
+D:  Oh , they do ! 
+D:  Oh . 
+D:  Hmm . 
+D:  To the l 
+D:  To the  just the energy , or to the mel  uh , to the mel filter ? 
+D:  Oh . 
+D:  So it  Cuz I mean , I think this is most interesting for the mel filters . 
+D:  Right ? 
+D:  Or  or F F 
+D:  one or the other . 
+D:  Yeah , but again , that 's just log energy as opposed to <breath> filter bank energy . 
+D:  Yeah . 
+D:  Hmm . 
+D:  Hmm . 
+D:  So it could reduce the dependence on the amplitude and so on . 
+D:  Yeah . 
+D:  Maybe . 
+D:  Th - Well , this is  
+D:  This is  
+D:  So  So , basically our  our position is <breath> that , um , we shouldn't be unduly constraining the latency at this point 
+D:  because we 're all still experimenting with trying to make the performance better in the presence of noise . 
+D:  Uh , there is a minority in that group who is a arguing  who are arguing for <breath> um , uh , having a further constraining of the latency . 
+D:  So we 're s just continuing to keep aware of what the trade - offs are and , you know , what  what do we gain from having longer or shorter latencies ? 
+D:  But since we always seem to at least get something out of longer latencies not being so constrained , we 're tending to go with that if we 're not told we can't do it . 
+D:  Well , France Telecom was  was  was very short latency 
+D:  and they had a very good result . 
+D:  It was thirty - five . 
+D:  Yeah . 
+D:  th th 
+D:  Yeah . 
+D:  Yeah , so it 's possible to get very short latency . 
+D:  But , again , we 're  the  the approaches that we 're using are ones that <breath> take advantage of  
+D:  Yeah . 
+D:  Yeah . 
+D:  Well , that  the they would need that forty milliseconds also . 
+D:  Right ? 
+D:  Oh . 
+D:  Oh . 
+D:  Oh , OK . 
+D:  Hmm . 
+D:  Oh . 
+D:  Wait a minute . 
+D:  It 's  
+D:  Wait a minute . 
+D:  I think <breath> I 'm confused . 
+D:  Alright . 
+D:  Uh  
+D:  OK , 
+D:  I have four now 
+D:  because I left one with Dave because I thought I was dropping one off and passing the others on . 
+D:  So , no , 
+D:  we 're not . 
+D:  OK . 
+D:  Ah , we need one more over here . 
+D:  Oh , OK . 
+D:  Middle - sized one . 
+D:  What 's it trained on ? 
+D:  Right , 
+D:  what 's it trained on ? 
+D:  Yeah . 
+D:  Oh , it 's trained on Italian ? 
+D:  Yeah , 
+D:  OK . 
+D:  OK . 
+D:  Cuz I notice the TI - digits number is exactly the same for these last two ? 
+D:  Ah ! 
+D:  So  so that means the only thing  
+D:  Yeah . 
+D:  So you  so you just should look at that fifty - eight perc point O nine percent and so on . 
+D:  OK . 
+D:  Good . 
+D:  I 'm sorry . 
+D:  So when you say minus twenty - five or minus thirty DB , with respect to what ? 
+D:  OK , 
+D:  so basically you 're creating a signal - to - noise ratio of twenty - five or thirty DB ? 
+D:  uh r 
+D:  But did you do that before the thresholding to zero , 
+D:  or  ? 
+D:  Oh , 
+D:  so you 'd really want to do it before , 
+D:  right ? 
+D:  Yeah , 
+D:  because then the  then you would have less of that phenomenon . 
+D:  I think . 
+D:  c 
+D:  Yeah , 
+D:  it  it  
+D:  Right . 
+D:  Yeah , that will reduce the variance . 
+D:  That 'll help . 
+D:  But maybe if you does  do it before you get less of these funny - looking things he 's drawing . 
+D:  Right at the point where you 've done the subtraction . 
+D:  Um , essentially you 're adding a constant into everything . 
+D:  Oh , yeah , 
+D:  better do it different , then . 
+D:  Yeah . 
+D:  Just you  you just ta you just set it for a particular signal - to - noise ratio that you want ? 
+D:  Yeah . 
+D:  Yeah . 
+D:  Uh - huh . 
+D:  Uh - huh . 
+D:  I  I 'm sorry . 
+D:  Then  then I 'm confused . 
+D:  I thought  
+D:  you 're saying it doesn't depend on the utterance 
+D:  but I thought you were adding an amount that was twenty - five DB down from the signal energy . 
+D:  Oh ! 
+D:  Oh , it 's just a constant amount over all . 
+D:  Yeah . 
+D:  But in  I mean , in the real thing you 're not gonna be able to measure what people are doing over half an hour or an hour , or anything , right ? 
+D:  So you have to come up with this number from something else . 
+D:  But what he is doing language dependent is measuring what that number i reference is that he comes down twenty - five down from . 
+D:  No ? 
+D:  Yeah . 
+D:  So it 's sort of arbitrary . 
+D:  I mean , so if y if  
+D:  Yeah . 
+D:  Yeah . 
+D:  Uh - huh . 
+D:  Something more adaptive , 
+D:  yeah . 
+D:  OK . 
+D:  The VAD later will be much better . 
+D:  Yeah . 
+D:  So . 
+D:  I see . 
+D:  Well , our tradition here has always been to focus on the mismatched . 
+D:  Cuz it 's more interesting . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah . 
+D:  OK . 
+D:  Uh . 
+D:  Right . 
+D:  Mm - hmm . 
+D:  So what are these numbers here ? 
+D:  Are these with the clean or with the noisy ? 
+D:  OK . 
+D:  Uh - huh . 
+D:  Oh ! 
+D:  Um  
+D:  And  and your result  is with the  
+D:  So you really might wanna try the clean I think . 
+D:  Yeah . 
+D:  Yeah , that could be sizeable right there . 
+D:  OK . 
+D:  Be my guest . 
+D:  Yeah . 
+D:  Yeah , 
+D:  I 'll  I 'll borrow the head back and  and agree . 
+D:  Yeah , 
+D:  that 's  that 's  
+D:  Right . 
+D:  In fact , actually I g I guess the , uh  the Spanish government , uh , requires that anyway . 
+D:  They want some kind of report from everybody who 's in the program . 
+D:  So . 
+D:  And of course I 'd  we 'd  we 'd like to see it too . 
+D:  So , 
+D:  yeah . 
+D:  Uh , we have them now ? 
+D:  Uh , why don why don't we do it ? 
+D:  Just   just take a minute . 
+D:  Oh ! 
+D:  Sorry . 
+D:  Seat ? 
+D:  Mike ? 

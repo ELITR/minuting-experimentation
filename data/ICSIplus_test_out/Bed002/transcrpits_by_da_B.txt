@@ -1,0 +1,507 @@
+B:  Mmm . 
+B:  So , which is my bar ? 
+B:  Mah ! 
+B:  Number one . 
+B:  For our stuff . 
+B:  Yeah . 
+B:  I sent an email . 
+B:  Well , we can make up aliases for each of us . 
+B:  Right . 
+B:  Mm - hmm . 
+B:  I 'm sure it 's pretty usual for meetings that people come late , 
+B:  so you will have to leave what you set . 
+B:  Input ? 
+B:  Yeah . 
+B:  There we go . 
+B:  Yep . 
+B:  I got it . 
+B:  Wel - we I  uh  I  I  
+B:  It 's really simple though . 
+B:  So this is the idea . 
+B:  Um . 
+B:  We could pursue , um , if we thought it 's  it 's worth it but , uh , I think we  we will agree on that , um , to come up with a  with a sort of very , very first crude prototype , 
+B:  and do some implementation work , and do some  some research , and some modeling . 
+B:  So the idea is if you want to go somewhere , 
+B:  um , and 
+B:  focus on that object down  
+B:  Oh , I can actually walk with this . 
+B:  This is nice . 
+B:  down here . 
+B:  That 's the Powder - Tower . 
+B:  Now , um , <mouth> we found in our , uh , data and from experiments , that there 's three things you can do . 
+B:  Um , you can walk this way , and come really , really close to it . 
+B:  And touch it . 
+B:  But you cannot enter or do anything else . 
+B:  Unless you 're interested in rock climbing , it won't do you no good standing there . 
+B:  It 's just a dark alley . 
+B:  But you can touch it . 
+B:  If you want to actually go up or into the tower , you have to go this way , 
+B:  and then through some buildings and up some stairs and so forth . 
+B:  If you actually want to see the tower , and that 's what actually most people want to do , is just have a good look of it , take a picture for the family ,  you have to go this way , and go up here . 
+B:  And there you have a vre really view  It exploded , the  during the Thirty 
+B:  years - war . Really uh , interesting sight . 
+B:  And um , these uh  these lines are , um , paths , 
+B:  or so That 's ab er , i 
+B:  the street network of our geographic information system . 
+B:  And you can tell that we deliberately cut out this part . 
+B:  Because otherwise we couldn't get our GIS system to take  to lead people this way . 
+B:  It would always use the closest point to the object , 
+B:  and then the tourists would be faced , you know , in front of a wall , 
+B:  but it would do them absolutely no good . 
+B:  So , <clears throat> what we found interesting is , first of all , intentions differ . 
+B:  Maybe you want to enter a building . 
+B:  Maybe you want to see it , 
+B:  take a picture of it . 
+B:  Or maybe you actually want to come as close as possible to the building . 
+B:  For whatever reason that may be . 
+B:  Um , r red limestone . 
+B:  Yeah , maybe you would want to touch it . 
+B:  Um . 
+B:  Okay , I  This , um  These intentions , we  w w we could , if we want to , call it the  the Vista mode , 
+B:  where we just want to  eh  s get the overview or look at it , 
+B:  the Enter mode , 
+B:  and the , well , Tango mode . 
+B:  I always come up with  with silly names . 
+B:  So this " Tango " means , literally translated , " to touch " . 
+B:  So  But sometimes the  the Tango mode is really relevant in the  in the sense that , um , if you want to , uh  
+B:  If you don't have the intention of entering your building , but you know that something is really close to it , and you just want to approach it , or get to that building . 
+B:  Consider , for example , the Post Office in Chicago , a building so large that it has its own zip code . 
+B:  So the entrance could be miles away from the closest point . 
+B:  So sometimes it m m m makes sense maybe to d to distinguish there . 
+B:  So , um , I 've looked , uh , through twenty some  
+B:  Uh , I didn't look through all the data . 
+B:  um , and there  there 's uh , a lot more different ways in people  uh , the ways people phrase how to g get  if they want to get to a certain place . 
+B:  And sometimes here it 's b it 's a little bit more obvious  
+B:  Um . <breath-laugh> Maybe I should go back a couple of steps 
+B:  and go through the  
+B:  You need to sign some stuff and read some digits . 
+B:  O or later . 
+B:  They are uncomfortable . 
+B:  Mm - hmm . 
+B:  Yep . 
+B:  OK , but that was our idea . 
+B:  Is  
+B:  I  I think  
+B:  OK . That was the idea . 
+B:  Um , people , when they w when they want to go to a building , sometimes they just want to look at it . 
+B:  Sometimes they want to enter it . 
+B:  And sometimes they want to get really close to it . 
+B:  That 's something we found . 
+B:  It 's just a truism . 
+B:  And the places where you will lead them for these intentions are sometimes ex in incredibly different . 
+B:  I  I gave an example where the point where you end up if you want to look at it is completely different from where  if you want to enter it . 
+B:  So , this is sort of how people may , uh  may phrase those requests to a  a  a mock - up system at least that 's the way they did it . 
+B:  And we get tons of  of these " how do I get to " , " I want to go to " , 
+B:  but also , " give me directions to " , and " I would like to see " . 
+B:  And um , what we can sort of do , if we look closer a closer at the  the data  
+B:  That was the wrong one . 
+B:  um , we can look at some factors that may make a difference . 
+B:  First of all , 
+B:  very important , 
+B:  and um , that  I 've completely forgot that when we talked . 
+B:  This is of course a crucial factor , " what type of object is it ? " 
+B:  So , some buildings you just don't want to take pictures of . 
+B:  Or very rarely . 
+B:  But you usually want to enter them . 
+B:  Some objects are more picturesque , 
+B:  and you  more f more highly photographed . 
+B:  Then of course the  the actual phrases may give us some idea of what the person wants . 
+B:  Um . Sometimes I found in the  Uh , looking at the data , in a superficial way , I found some s sort of modifiers that  that m may also give us a hint , 
+B:  um , " I 'm trying to get to " 
+B:  Nuh ? 
+B:  " I need to get to " . 
+B:  Sort of hints to the fact that you 're not really sightseeing and  and just f there for pleasure and so forth and so on . 
+B:  And this leads us straight to the context which also should be considered . 
+B:  That whatever it is you 're doing at the moment may also inter influence the interpretation of  of a phrase . 
+B:  So , this is , uh , really 
+B:  uh , uh , uh  
+B:  My suggestion is really simple . 
+B:  We start with , um  
+B:  Now , Let me , uh , say one more thing . 
+B:  What we do know , is that the parser we use in the SmartKom system will never differentiate between any of these . 
+B:  So , basically all of these things will result in the same XML M - three - L structure . 
+B:  Sort of action " go " , 
+B:  and then an object . 
+B:  Yeah ? 
+B:  and a source . 
+B:  So it 's  it 's  it 's way too crude to d capture those differences in intentions . 
+B:  So , I thought , " Mmm ! 
+B:  Maybe for a deep understanding task , that 's a nice sort of playground or first little thing . " 
+B:  Where we can start it and n sort of look  
+B:  " OK , we need , we gonna get those M - three - L structures . 
+B:  The crude , undifferentiated parse . 
+B:  Interpreted input . 
+B:  We may need additional part of speech , or maybe just some information on the verb , and modifiers , auxiliaries . 
+B:  We 'll see . 
+B:  And I will try to  to sort of come up with a list of factors that we need to get out of there , 
+B:  and maybe we want to get a g switch for the context . 
+B:  So this is not something which we can actually monitor , <mouth> now , 
+B:  but just is something we can set . 
+B:  And then you can all imagine sort of a  a constrained satisfaction program , depending on  on what , um , comes out . 
+B:  We want to have an  a structure resulting 
+B:  if we feed it through a belief - net or  or something along those lines . We 'd get an inferred intention , we  we produce a structure that differentiates between the Vista , the Enter , and the , um , Tango mode . 
+B:  Which I think we maybe want to ignore . 
+B:  But . That 's my idea . 
+B:  It 's up for discussion . 
+B:  We can change all of it , 
+B:  any bit of it . 
+B:  Throw it all away . 
+B:  Yeah . As i a sort of , as I get ideas , 
+B:  uh w uh . 
+B:  So , discourse  I  I  I thought about that . 
+B:  Of course that needs to sort of go in there . 
+B:  Yep . 
+B:  Mm - hmm . 
+B:  People won't want to enter it . 
+B:  s b 
+B:  But maybe that 's a false state of the system , that it 's too close to call . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  I have one more point to  to Bhaskara 's question . 
+B:  Um , I think also the  the  the deep understanding part of it is  is going to be in there to the extent that we um , want it in terms of our modeling . 
+B:  We can start , you know , basic from human beings , 
+B:  model that , 
+B:  its motions , 
+B:  going , walking , seeing , 
+B:  we can mem model all of that 
+B:  and then compose whatever inferences o we make out of these really conceptual primitives . 
+B:  That will be extremely deep in the  in  in  in my understanding . 
+B:  The parser output ? 
+B:  " Analyzed speech " I think it 's what they call it , 
+B:  really , oder  
+B:  o th No , actually , intention lattices is what we 're gonna get . 
+B:  In - in a intention lattice k Hypothesis . 
+B:  They call it intention hypotheses . 
+B:  Well , they keep it . 
+B:  We have to request it . 
+B:  Nuh ? 
+B:  But it 's not in there . 
+B:  Hmm . 
+B:  Yeah , or i 
+B:  Well  Uh , th the there is a p a point there if I understand you . Correct ? 
+B:  Um , 
+B:  because um , sometimes people just say things  
+B:  This you find very often . 
+B:  " Where is the city hall ? " 
+B:  And this do they don't wanna sh see it on a map , 
+B:  or they don't wanna know it 's five hundred yards away from you , or that it 's to the  your north . 
+B:  They wanna go there . 
+B:  That 's what they say , is , " Where is it ? " . 
+B:  Where is that damn thing ? 
+B:  Well , that 's a  a question mark . 
+B:  sh 
+B:  A lot of parsers , um , 
+B:  just , uh  
+B:  That 's way beyond their scope , is  of interpreting that . 
+B:  You know ? 
+B:  But um , 
+B:  still outcome w the outcome will be some form of structure , 
+B:  with the town hall and maybe saying it 's a WH focus on the town hall . 
+B:  But to interpret it , 
+B:  you know ? 
+B:  somebody else has to do that job later . 
+B:  Um , it will probably tell you how far away it is , 
+B:  at least that 's  That 's even what Deep Map does . 
+B:  It tells you how far away it is , 
+B:  and  and shows it to you on a map . 
+B:  Because i we can not differentiate , at the moment , between , you know , the intention of wanting to go there or the intention of just know wanting to know where  where it is . 
+B:  Mm - hmm . 
+
+B:  It 's a granularity factor , 
+B:  because where people ask you , " Where is New York ? " , you will tell them it 's on the East Coast . 
+B:  Y y eh  you won't tell them how to get there , ft you know , take that bus to the airport and blah - blah - blah . 
+B:  But if it 's the post office , you will tell them how to get there . 
+B:  So th They have done some interesting experiments on that in Hamburg as well . 
+B:  So . 
+B:  So I w this is  " onto " is  is knowledge about buildings , 
+B:  their opening times , 
+B:  and then t coupled with time of day , um , this should  
+B:  You know . 
+B:  Mm - hmm . 
+B:  Nuh . 
+B:  History . 
+B:  Discourse history . 
+B:  Yeah . 
+B:  Yep . 
+B:  We need a different , uh , engine . 
+B:  Machine , I mean . 
+B:  Hmm . 
+B:  But , only w 
+B:  Muh . 
+B:  No . 
+B:  But  
+B:  Um  
+B:  Not from that data . 
+B:  But , um , since we are designing a  a  a  an , compared to this , even bigger data collection effort ,  um , we will definitely take care to put it in there , 
+B:  in some shape , way , form over the other , 
+B:  to see whether we can , then , get sort of empirically validated data . 
+B:  Um , from this , we can sometimes , you know  
+B:  an and that 's  that  but that  isn't that what we need for a belief - net anyhow ? 
+B:  is sort of  
+B:  s sometimes when people want to just see it , they phrase it more like this ? 
+B:  But it doesn't exclude anybody from phrasing it totally differently , even if they still  
+B:  you know ? 
+B:  But then other factors may come into play that change the outcome of their belief - net . 
+B:  So , um , this is exactly what  
+B:  Because y you can never be sure . 
+B:  And I 'm sure even i the most , sort of , deliberate data collection experiment will never give you data that say , " Well , if it 's phrased like that , the intention is this . " 
+B:  You know , because then , uh , you  
+B:  We 
+B:  Yeah ! 
+B:  That 's what we 're doing . 
+B:  But  but we will still get the phrasing all over the place . 
+B:  I 'm sure that , you know  
+B:  Mm - hmm . 
+B:  No , no . 
+B:  No . 
+B:  Uh , 
+B:  N no , no not  
+B:  i it was mobile 
+B:  but not  not with a w a real wizard system . 
+B:  So there were never answers . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  But  It was never th th the goal of that data collection to  to serve for sat for such a purpose . 
+B:  So that 's why for example the tasks were not differentiated by intentionality , 
+B:  there was n there was no label , 
+B:  you know , intention A , intention B , intention C . 
+B:  Or task A , B , C . 
+B:  Um 
+B:  I 'm sure we can produce some if we need it , 
+B:  um , that  that will help us along those lines . 
+B:  But , you know , you gotta leave something for other people to model . 
+B:  So , to  Finding out what , you know , situational con what the contextual factors of the situation really are , you know is an interesting s interesting thing . 
+B:  u u Sort of I 'm , at the moment , curious and I 'm  I 'm  s w want to approach it from the end where we can s sort of start with this toy system that we can play around with , 
+B:  so that we get a clearer notion of what input we need for that , 
+B:  what suffices and what doesn't . 
+B:  And then we can start worrying about where to get this input , 
+B:  what  what do we need , you know  
+B:  Ultimately once we are all experts in changing that parser , for example , maybe , there 's just a couple three things we need to do 
+B:  and then we get more whatever , part of speech and more construction - type - like stuff out of it . 
+B:  It 's a m pragmatic approach , uh , at the moment . 
+B:  OK . 
+B:  Imagine you 're the  the subject . 
+B:  You 're gonna be in here , 
+B:  and somebody  
+B:  And  and you see , uh , either th the three - D model , or uh , a QuickTime animation of standing u in a square in Heidelberg . 
+B:  So you actually see that . 
+B:  Um . The uh , 
+B:  um , first thing is you have to read a text about Heidelberg . 
+B:  So , just off a textbook , uh , tourist guide , to familiarize , uh , yourself with that sort of odd - sounding German street names , like Fischergasse and so forth . 
+B:  So that 's part one . 
+B:  Part two is , you 're told that this huge new , wonderful computer system exists , that can y tell you everything you want to know , 
+B:  and it understands you completely . 
+B:  And so you 're gonna pick up that phone , 
+B:  dial a number , 
+B:  and you get a certain amount of tasks that you have to solve . 
+B:  First you have to know  find out how to get to that place , 
+B:  maybe with the intention of buying stamps in there . 
+B:  Maybe  So , the next task is to get to a certain place and take a picture for your grandchild . 
+B:  The third one is to get information on the history of an object . 
+B:  The fourth one  
+B:  And then the g system breaks down . 
+B:  It crashes , 
+B:  And  
+B:  After the third task . 
+B:  And then  
+B:  Or after the fourth . 
+B:  Some find  @ @  Forget that for now . 
+B:  And then , a human operator comes on , and  and exp apologizes that the system has crashed , 
+B:  but , you know , urges you to continue , you know ? 
+B:  now with a human operator . 
+B:  And so , you have basically the same tasks again , 
+B:  just with different objects , 
+B:  and you go through it again , 
+B:  and that was it . 
+B:  Oh , and one  one little bit  
+B:  w And uh , the computer you are  you are being told the computer system knows exactly where you are , via GPS . 
+B:  When the human operator comes on , um , that person does not know . 
+B:  So the GPS is crashed as well . 
+B:  So the person first has to ask you " Where are you ? " . 
+B:  And so you have to do some  s tell the person sort of where you are , depending on what you see there . 
+B:  Um , this is a  a  a  a  a bit that I d I don't think we  
+B:  Did we discuss that bit ? 
+B:  Uh , I just sort of squeezed that in now . 
+B:  But it 's something , uh , that would provide some very interesting data for some people I know . 
+B:  So . 
+B:  Yeah . 
+B:  a Additionally , y you have a  a  a sort of a map type display . 
+B:  Uh , two - D . 
+B:  n 
+B:  Two - D . 
+B:  Yeah . 
+B:  b y 
+B:  You don't  
+B:  That 's  
+B:  I don't know . 
+B:  I but y I don't think you really move , 
+B:  sort of . 
+B:  Yeah ? 
+B:  I mean that would be an  an  an enormous technical effort , 
+B:  unless we would  
+B:  We can show it walks to , you know . 
+B:  We can have movies of walking , 
+B:  you walking through  through Heidelberg , and u ultimately arriving there . 
+B:  Maybe we wanna do that . 
+B:  Yeah . 
+B:  The map was sort of intended to  
+B:  You want to go to that place . 
+B:  You know , and it 's sort of there . 
+B:  And you see the label of the name  
+B:  So we get those names , pronunciation stuff , and so forth , 
+B:  and we can change that . 
+B:  Well , we 'll see what people do . 
+B:  Yeah , and  and we will record both sides . 
+B:  I mean , we will record the Wi - the Wizard  
+B:  I mean , in both cases it 's gonna be a human , in the computer , and in the operator case . 
+B:  And we will re there will be some dialogue , you know ? 
+B:  So , you first have to do this , and that , 
+B:  and  and  
+B:  see wh what they say . 
+B:  We can ins instruct the , uh , wizard in how expressive and talkative he should be . 
+B:  But um , 
+B:  maybe the  maybe what you 're suggesting  
+B:  Is what you 're suggesting that it might be too poor , the data , if we sort of limit it to this ping pong one t uh , task results in a question and then there 's an answer and that 's the end of the task ? 
+B:  You wanna m have it more  more steps , sort of ? 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  n No one is , at the moment . 
+B:  To come as close as possible to it . 
+B:  S 
+B:  To " Waltz " it ? 
+B:  An - Nuh . 
+B:  And it  and it may serve as a platform for a person , maybe me , or whoever , who is interested in doing some linguistic analysis . 
+B:  I mean , w we have the For - FrameNet group here , 
+B:  and we can see what they have found out about those concepts already , 
+B:  that are contained in the data , 
+B:  um , you know , to come up with a nice little set of features 
+B:  and um , maybe even means of s uh , extracting them . 
+B:  And  and that altogether could also be  uh , become a nice paper that 's going to be published somewhere , if we sit down and write it . 
+B:  And um  
+B:  When you said JavaBayes belief - net you were talking about ones that run on coffee ? 
+B:  or that are in the program language Java ? 
+B:  Mmm . 
+B:  OK . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  But i 
+B:  But since we all probably are pretty sure that , um , the  
+B:  For example , this th th the dialogue history is  is um , producing XML documents . 
+B:  M - three - L of course is XML . 
+B:  And the ontology that um , uh the student is  is constructing for me back in  in EML is in OIL and that 's also in XML . 
+B:  And so that 's where a lot of knowledge about bakeries , about hotels , about castles and stuff is gonna come from . 
+B:  Um , so , if it has that IO capability and if it 's a Java package , it will definitely be able  We can couple . 
+B:  Who isn't , 
+B:  nuh ? 
+B:  Hmm . 
+B:  Yeah . Yeah , I like , for example , the  what you said about the getting input from  from just files about where you h where you have the data , have specified the features and so forth . 
+B:  That 's , of course , easy also to do with , you know , XML . 
+B:  So r 
+B:  Yeah . 
+B:  The  the lib M - three - L library does that . 
+B:  It 's also  
+B:  No , 
+B:  u u y um 
+B:  the  
+B:  What I  What sort of came to my mind i is  was the notion of an idea that if  if there are l nets that can actually lear try to set their own , um , probability factors based on  on  on  on input  
+B:  which is in file format , 
+B:  if we , um , get really w wild on this , we may actually want to use some  some corpora that other people made 
+B:  and , for example , if  if they are in  in MATE , then we get X M L documents with discourse annotations , t 
+B:  you know , t from the discourse act down to the phonetic level . 
+B:  Um , Michael has a project where  you know , recognizing discourse acts 
+B:  and he does it all in MATE , 
+B:  and so they 're actually annotating data and data and data . 
+B:  So if we w if we think it 's worth it one of these days , not  not with this first prototype but maybe with a second , and we have the possibility of  of taking input that 's generated elsewhere and learn from that , that 'd be nice . 
+B:  No , no , uh , just for  
+B:  Nuh . 
+B:  Just a back door that  I  I think we should devote m 
+
+B:  Two days ? 
+B:  Two , three days ? 
+B:  No . 
+B:  Uh  I  I  I  um , OK , I  t 
+B:  Yeah . 
+B:  I was actually more joking . With the two or three days . 
+B:  So this was  was a usual jo 
+B:  Um , it will take as long as y y yo you guys need for that . 
+B:  But um , maybe it might be interesting if  if the two of you can agree on who 's gonna be the speaker next Monday , to tell us something about the net you picked , 
+B:  and what it does , and how it does that . 
+B:  Yeah , or you can split it up . 
+B:  So , y 
+B:  So that will be sort of the assignment for next week , is to  to  for slides and whatever net you picked 
+B:  and what it can do and  and how far you 've gotten . 
+B:  Pppt ! 
+B:  OK . 
+B:  So this is  Whi - while you were doing this , I received two lovely emails . 
+B:  The  the full NT and the full Linux version are there . 
+B:  I 've downloaded them both , 
+B:  and I started to unpack the Linux one  
+B:  Uh , the NT one worked fine . 
+B:  and I started unta pack the Linux one , 
+B:  it told me that I can't really unpack it 
+B:  because it contains a future date . 
+B:  So this is the time difference between Germany . 
+B:  I had to wait until one o ' clock this afternoon before I was able to unpack it . 
+B:  Now , um  Then it will be my job to get this whole thing running both on Swede and on this machine . 
+B:  And so that we have it . 
+B:  And then um  Hopefully that  hoping that my urgent message will now come through to Ralph and Tilman that it will send some more documentation along , 
+B:  we  I control p 
+B:  Maybe that 's what I will do next Monday 
+B:  is show the state and show the system and show that . 
+B:  Yeah , but uh  but the uh  This point is really  I think very , very valid that ultimately we hope that  that both will merge into a harmonious and , um , wonderful , um , state 
+B:  where we can not only do the bare necessities , IE , changing the table so it does exactly in English what it does in German , but also that we can sort of have the system where we can say , " OK , this is what it usually does , 
+B:  and now we add this little thing to it " , 
+B:  you know ? 
+B:  whatever , 
+B:  Johno 's and Bhaskara 's great belief - net , 
+B:  and we plug it in , 
+B:  and then for these certain tasks , 
+B:  and we know that navigational tasks are gonna be a core domain of the new system , 
+B:  it all  all of a sudden it does much better . 
+B:  Nuh ? 
+B:  Because it can produce better answers , 
+B:  tell the person , as I s showed you on this map , 
+B:  n you know , produce either you know , a red line that goes to the Vista point 
+B:  or a red line that goes to the Tango point 
+B:  or red line that goes to the door , 
+B:  which would be great . 
+B:  So not only can you show that you know something sensible but ultimately , if you produce a system like this , it takes the person where it wants to go . 
+B:  Rather than taking him always to the geometric center of a building , 
+B:  which is what they do now . 
+B:  And we even had to take out a bit . 
+B:  Nancy , you missed that part . 
+B:  We had to take out a bit of the road work . 
+B:  So that it doesn't take you to the wall <laugh> every time . 
+B:  So . Um  
+B:  So this was actually an actual problem that we encountered , 
+B:  which nobody have  has  
+B:  because car navigation systems don't really care . 
+B:  You know , they get you to the beginning of the street , 
+B:  some now do the house number . 
+B:  But even that is problematic . 
+B:  If you go d If you wanna drive to the SAP in Waldorf , 
+B:  I 'm sure the same is true of Microsoft , 
+B:  it takes you to the  the address , 
+B:  whatever , street number blah - blah - blah , 
+B:  you are miles away from the entrance . 
+B:  Because the s postal address is maybe a mailbox somewhere . 
+B:  Nuh ? 
+B:  but the entrance where you actually wanna go is somewhere completely different . 
+B:  So unless you 're a mail person you really don't wanna go there . 
+B:  Probably neither  e not even that . 
+B:  Do you wanna see a picture ? 
+B:  Have to reboot for that though . 
+B:  There  there 's more than I showed , 
+B:  but um , um , I think this is sort of um , in part my job to look at that 
+B:  and  and to see whether there are features in there that can be extracted , 
+B:  and to come up with some features that are not you know , empirically based on  on a real experiment or on  on  on reality 
+B:  but sort of on your intuition of you know , " Aha ! 
+B:  This is maybe a sign for that , 
+B:  and this is maybe a sign for this . " 
+B:  Talk features . 
+B:  Yep . 
+B:  Well they had  they used the ammunition  They stored the ammunition in that tower . 
+B:  And that 's why , when it was hit by uh , a cannon ball , it exploded . 
+B:  Ahh . 
+B:  Mmm . 

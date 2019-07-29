@@ -1,0 +1,346 @@
+D:  Uh , that 's a proposed date , I guess . 
+D:  This is three . 
+D:  Yep . 
+D:  Yep . 
+D:  Hmm . 
+D:  k 
+D:  Yep . 
+D:  S sixty - four . 
+D:  S sixty - four . 
+D:  Yeah , 
+D:  if you 're using the baseline . 
+D:  No , 
+D:  the edge . 
+D:  Yeah . 
+
+D:  So the , uh , center would be somewhere around like hundred 
+D:  and  hundred and  hundred  hundred and  maybe  it 's like  fi hundred hertz . 
+D:  At twenty hertz . 
+D:  Twenty hertz frequency  
+D:  Oh , it 's  it 's zero at twenty hertz , right ? 
+D:  The filter ? 
+D:  Sixt - s sixty - four . 
+D:  So anything less than sixty - four is zero . 
+D:  Yeah . 
+D:  Yeah , 
+D:  yeah . 
+D:  So it 's  it 's a weight on the ball spectrum . 
+D:  Triangular weighting . 
+D:  Uh , throwing away the first ? 
+D:  Um , 
+D:  yeah , we  we 've tried including the full  full bank . 
+D:  Right ? 
+D:  From zero to four K . 
+D:  And that 's always worse than using sixty - four hertz . 
+D:  Yeah , 
+D:  I mean , make it a hundred or so ? 
+D:  I t I think I 've tried a hundred and it was more or less the same , or slightly worse . 
+D:  On the same , uh , SpeechDat - Car , 
+D:  Aurora . 
+D:  Yeah . 
+D:  So I tried a hundred to four K . 
+D:  Yeah . 
+D:  So it was  
+D:  No , no , no . 
+D:  I think I just tried it on SpeechDat - Car . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Mmm , yeah . 
+D:  Hmm . 
+D:  Oh , 
+D:  OK . 
+D:  OK , 
+D:  great . 
+D:  Eight . 
+D:  Oh , eh , great . 
+D:  That sample was released only yesterday or the day before , right ? 
+D:  Oh , there is another short sample set  
+D:  o o sample . 
+D:  OK . 
+D:  Oh , OK . 
+D:  F Yeah , OK . 
+D:  Hmm . 
+D:  Mmm . 
+D:  Cuz they have it  
+D:  Cuz they have , uh , already frozen those in i insertion penalties and all those stuff is what  I feel . 
+D:  Because they have this document explaining the recognizer . 
+D:  And they have these tables with , uh , various language model weights , insertion penalties . 
+D:  u 
+D:  Uh , it 's th it 's there on that web . 
+D:  And , uh , on that , I mean , they have run some experiments using various insertion penalties and all those  
+D:  Yeah , I think they pi p 
+D:  yeah , they picked the values from  
+D:  Uh , p the one that they have reported is a NIST evaluation , Wall Street Journal . 
+D:  You know . 
+D:  No . 
+D:  So they 're , like  
+D:  um  
+D:  So they are actually trying to , uh , fix that  those values using the clean , uh , training part of the Wall Street Journal . 
+D:  Which is  
+D:  I mean , the Aurora . 
+D:  Aurora has a clean subset . 
+D:  I mean , they want to train it 
+D:  and then this  they 're going to run some evaluations . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Oh . 
+D:  So this is now  it 's  it 's compiled under Solaris ? 
+D:  Yeah , OK . 
+D:  Because he  there was some mail r saying that it 's  may not be stable for Linux and all those . 
+D:  SUSI 
+D:  yeah . 
+D:  Yeah , yeah . 
+D:  Yeah , OK . 
+D:  OK , 
+D:  that 's fine . 
+D:  Yeah . 
+D:  That 's good . 
+D:  Hmm . 
+
+D:  Yeah , it was actually  
+D:  No . 
+D:  Not  
+D:  I mean , it was just the noisy features I guess . 
+D:  Yeah , yeah , yeah , 
+D:  not compensated . 
+D:  Two outputs . 
+D:  Plus there is a delta at the input . 
+D:  It 's like forty plus  forty  plus  
+D:  So it 's two hundred actually . 
+D:  Oh , OK . 
+D:  If you are using  
+D:  t If you are using three frames  
+D:  If you are phrasing f  using three frames , it is thirty here for delta . 
+D:  So five frames , that 's twenty . 
+D:  OK , 
+D:  so it 's who un  two hundred and ten . 
+D:  At th <mike noise> At the input . 
+D:  I mean , that 's at the input to the net . 
+D:  And there i 
+D:  Yeah . 
+D:  So it 's like s five , six cepstrum plus delta 
+D:  at nine  nine frames of  
+D:  Fi - There 's an LDA filter . 
+D:  It 's  
+D:  Yep . 
+D:  Yeah , the LDA  LDA  we don't know , is , like  is it very crucial for the features , right ? 
+D:  Yeah . 
+D:  S s h 
+D:  Yeah , 
+D:  l 
+D:  On the  in the  
+D:  Mm - hmm . 
+D:  Just  
+D:  Yeah , just the static , no delta . 
+D:  Point s 
+D:  Yeah , 
+D:  so this is  this is like the first proposal . 
+D:  The proposal - one . 
+D:  It was forty - four , actually . 
+D:  Yeah , it 's almost that . 
+D:  It 's almost an average 
+D:  somewhere around  
+D:  Yeah . 
+D:  o o 
+D:  Or the best we can get . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah . 
+D:  So , was the training set same as the p the February proposal ? 
+D:  OK . 
+
+D:  What are the S N Rs in the training set , TIMIT ? 
+D:  Mm - hmm . 
+D:  So is it  is it though the performance , big relation in the high ma high mismatch has something to do with the , uh , cleaning up that you  that is done on the TIMIT after adding noise ? 
+D:  So  
+D:  it 's  i All the noises are from the TI - digits , 
+D:  right ? 
+D:  So you  i 
+D:  Well , it it 's like the high mismatch of the SpeechDat - Car 
+D:  after cleaning up , maybe having more noise than the  the training set of TIMIT after clean  s after you do the noise clean - up . 
+D:  I mean , earlier you never had any compensation , 
+D:  you just trained it straight away . 
+D:  So it had like all these different conditions of S N Rs , actually in their training set of neural net . 
+D:  But after cleaning up you have now a different set of S N Rs , right ? 
+D:  For the training of the neural net . 
+D:  And  
+D:  is it something to do with the mismatch that  that 's created after the cleaning up , like the high mismatch  
+D:  Mm - hmm . 
+D:  Of  that  
+D:  I mean , the SNR after the noise compensation of the SpeechDat - Car . 
+
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah , so now the after - noise compensation the neural net is seeing a different set of S N Rs than that was originally there in the training set . Of TIMIT . 
+D:  Because in the TIMIT it was zero to some clean . 
+D:  So the net saw all the SNR @ @ conditions . 
+D:  Now after cleaning up it 's a different set of SNR . 
+D:  And that SNR may not be , like , com covering the whole set of S N Rs that you 're getting in the SpeechDat - Car . 
+D:  Yeah , yeah , yeah , 
+D:  yeah , it is . 
+D:  But , I 'm saying , there could be some  some issues of  
+D:  On the test set , yeah . 
+
+D:  Hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Well , I  
+D:  I don't know . 
+D:  I  I just  that could be seen from the TI - digits , uh , testing condition 
+D:  because , um , the noises are from the TI - digits , right ? 
+D:  Noise  
+D:  So cleaning up the TI - digits 
+D:  and if the performance goes down in the TI - digits mismatch  high mismatch like this  
+D:  on a clean training , or zero DB testing . 
+D:  Yeah . 
+D:  Then it 's something to do . 
+D:  Mmm . 
+D:  " Babble . " 
+D:  " Street " or " Airport " or something . 
+D:  Or " Train station " . 
+D:  Yeah . 
+D:  Well , it will  overall it will be still better 
+D:  even if it is fifteen percent worse , 
+D:  because the fifteen percent worse is given like f w twenty - five  point two five eight . 
+D:  Is it like  
+D:  Yeah , so it 's four . 
+D:  Is i 
+D:  So either it 'll get cancelled out , or you 'll get , like , almost the same . 
+D:  Slightly bad . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Uh , this LDA is different from the LDA that you are talking about . 
+D:  The LDA that you  saying is , like , you take a block of features , like nine frames or something ,  and then do an LDA on it , 
+D:  and then reduce the dimensionality to something like twenty - four or something like that . 
+D:  And then feed it to HMM . 
+D:  Yeah , so this is like a two d two dimensional tile . 
+D:  So this is a two dimensional tile . 
+D:  And the LDA that we are f applying is only in time , 
+D:  not in frequency  
+D:  high cost frequency . 
+D:  So it 's like  more like a filtering in time , 
+D:  rather than doing a r 
+D:  Uh , it  
+D:  m 
+D:  So , yeah , 
+D:  I 've been exploring a parallel VAD without neural network 
+D:  with , like , less latency using SNR and energy , um , after the cleaning up . 
+D:  So what I 'd been trying was , um , 
+D:  uh  
+D:  After the b after the noise compensation , n I was trying t to f find a f feature based on the ratio of the energies , that is , cl after clean and before clean . 
+D:  So that if  if they are , like , pretty c close to one , which means it 's speech . 
+D:  And if it is n if it is close to zero , which is  So it 's like a scale @ @ probability value . 
+D:  So I was trying , uh , with full band and multiple bands , 
+D:  m ps uh  separating them to different frequency bands 
+D:  and deriving separate decisions on each bands , and trying to combine them . 
+D:  Uh , 
+D:  the advantage being like it doesn't have the latency of the neural net if it  if it can 
+D:  g And  it gave me like , uh , one point  One  more than one percent relative improvement . 
+D:  So , from fifty - three point six it went to fifty f four point eight . 
+D:  So it 's , like , only slightly more than a percent improvement , 
+D:  just like  
+D:  Which means that it 's  it 's doing a slightly better job than the previous VAD , 
+D:  uh , at a l lower delay . 
+D:  Um , 
+D:  so , um  
+D:  so  u 
+D:  It still has the median filter . 
+D:  So  
+D:  Yeah , 
+D:  so d with the delay , that 's gone is the input , which is the sixty millisecond . 
+D:  The forty plus  twenty . 
+D:  At the input of the neural net you have this , uh , f nine frames of context plus the delta . 
+D:  Yeah . 
+D:  So that delay , plus the LDA . 
+D:  Uh , so the delay is only the forty millisecond of the noise cleaning , plus the hundred millisecond smoothing at the output . 
+D:  Um . 
+D:  So . Yeah . 
+D:  So the  the  di the biggest  
+D:  The problem f for me was to find a consistent threshold that works  well across the different databases , 
+D:  because I t I try to make it work on tr SpeechDat - Car 
+D:  and it fails on TI - digits , 
+D:  or if I try to make it work on that it 's just the Italian or something , it doesn't work on the Finnish . 
+D:  So , 
+D:  um . 
+D:  So there are  there was , like , some problem in balancing the deletions and insertions when I try different thresholds . 
+D:  So  
+D:  The  
+D:  I 'm still trying to make it better by using some other features from the  after the p clean up  
+D:  maybe , some , uh , correlation  auto - correlation or some s additional features of  to mainly the improvement of the VAD . I 've been trying . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Yeah , 
+D:  so  Yeah , 
+D:  so that 's the  
+D:  Yeah . 
+D:  So we 've been thinking about putting it into the neural net also . 
+D:  Because they did  that itself  
+D:  There 's a threshold 
+D:  and  Yeah . 
+D:  Yeah . 
+D:  So that  that 's , uh  
+D:  Yeah . 
+D:  Yeah . 
+D:  Oh , I just  I just h put the second stream in place and , uh ran one experiment , 
+D:  but just like  just to know that everything is fine . 
+D:  So it was like , uh , forty - five cepstrum plus twenty - three mel  log mel . 
+D:  And  and , just , like , it gave me the baseline performance of the Aurora , 
+D:  which is like zero improvement . 
+D:  So I just tried it on Italian just to know that everything is  
+D:  But I  I didn't export anything out of it 
+D:  because it was , like , a weird feature set . 
+D:  So . 
+D:  Yeah , yeah , yeah , yeah . 
+D:  The uh , other thing I was wondering was , um , if the neural net , um , has any  because of the different noise con unseen noise conditions for the neural net , 
+D:  where , like , you train it on those four noise conditions , while you are feeding it with , like , a additional  some four plus some  f few more conditions which it hasn't seen , actually , 
+D:  from the  f f while testing . 
+D:  Um  
+D:  instead of just h having c uh , those cleaned up t cepstrum , sh should we feed some additional information , like  The  the  
+D:  We have the VAD flag . 
+D:  I mean , should we f feed the VAD flag , also , at the input so that it  it has some additional discriminating information at the input ? 
+D:  We have the VAD information also available at the back - end . 
+D:  So if it is something the neural net is not able to discriminate the classes  
+D:  I mean  
+D:  Because most of it is sil 
+D:  I mean , we have dropped some silence f We have dropped so silence frames ? 
+D:  No , we haven't dropped silence frames still . 
+D:  Yeah . 
+D:  So  
+D:  the b b biggest classification would be the speech and silence . 
+D:  So , by having an additional , uh , feature which says " this is speech and this is nonspeech " , I mean , it certainly helps in some unseen noise conditions for the neural net . 
+D:  Well , I mean , we have  we are transferring the VAD to the back - end  
+D:  feature to the back - end . 
+D:  Because we are dropping it at the back - end after everything  all the features are computed . 
+D:  So  
+D:  so the neural  
+D:  so that is coming from a separate neural net or some VAD . 
+D:  Which is  which is certainly giving a 
+D:  to  
+D:  Yeah . So it it 's an  additional discriminating information . 
+D:  So that  
+D:  Mm - hmm . 
+D:  Through  t to the soft max . 
+D:  Speech . 
+D:  It may not be  it  
+D:  Yeah , 
+D:  it  it may be too  it 's too high in a sense , like , everything is more like a , um , flat probability . 
+D:  So , like , it 's not really doing any distinction between speech and nonspeech  
+D:  or , I mean , different  among classes . 
+D:  Mm - hmm . 
+D:  Um , 
+D:  well . We  w we don't have it , actually , 
+D:  because it 's  it has a high rate energy  
+D:  the VAD has a  
+D:  Somewhere around sixty , must be . 
+D:  Right ? 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Thirty - first , August . 
+D:  p s It 's like  Yeah , it 's tentatively all full . 
+D:  Yeah . 
+D:  Uh , that 's a proposed date , I guess . 

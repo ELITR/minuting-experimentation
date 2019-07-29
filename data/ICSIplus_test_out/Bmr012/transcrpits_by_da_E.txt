@@ -1,0 +1,294 @@
+E:  And stop . 
+E:  As close to your mouth as you can get it . 
+E:  OK , so for  for  For people wearing the wireless mikes , like  like this one , I find the easiest way to wear it is sorta this  this sorta like that . 
+E:  It 's actually a lot more comfortable then if you try to put it over your temples , 
+E:  so  
+E:  And then also , for  for all of them , if your boom is adjustable , the boom should be towards the corner of your mouth , 
+E:  and about a uh a thumb to a thumb and a half distance away from your mouth , 
+E:  so about like I 'm wearing it now . 
+E:  so so Jane , you could actually do even a little closer to your mouth , 
+E:  but  
+E:  Yep . 
+E:  Channel five , s speak again . 
+E:  Yeah , that 's alright . 
+E:  I mean , we could  we could up the gain slightly if you wanted to . 
+E:  but  
+E:  Uh , channel B is probably Liz . 
+E:  Thank you . 
+E:  Yeah , it 's alright . 
+E:  So , the gain isn't real good . 
+E:  OK , 
+E:  so we are recording . 
+E:  Um everyone should have at least two forms possibly three in front of you depending on who you are . 
+E:  Um we  we 're doing a new speaker form and you only have to spea fill out the speaker form once 
+E:  but everyone does need to do it . 
+E:  And so that 's the name , sex , email , et cetera . 
+E:  We  we had a lot of discussion about the variety of English and so on 
+E:  so if you don't know what to put just leave it blank . 
+E:  Um I  I designed the form and I don't know what to put for my own region , 
+E:  so 
+E:  California . 
+E:  Sure . 
+E:  Oh . 
+E:  Birth year ? 
+E:  Well I guess it depends on how long the corpus is gonna be collected for . 
+E:  Either way 
+E:  yeah I think  I think age is alright 
+E:  and then um there will be attached to this a point or two these forms uh so that you 'll be able to extract the date off that 
+E:  so , anyway . 
+E:  And so then you also have a digits form which needs to be filled out every time , the speaker form only once , the digit form every time 
+E:  even if you don't read the digits you have to fill out the digits form so that we know that you were at the meeting . 
+E:  OK ? 
+E:  And then also if you haven't filled one out already you do have to fill out a consent form . 
+E:  And that should just be one person whose name I don't know . 
+E:  OK ? 
+E:  Uh sure . 
+E:  Thank you . 
+E:  OK so should we do agenda items ? 
+E:  Uh well I have  I wanna talk about new microphones and wireless stuff . 
+E:  And I 'm sure Liz and Andreas wanna talk about recognition results . 
+E:  Anything else ? 
+E:  Why don't you go first then . 
+E:  Or so . 
+E:  Hmm . 
+E:  I  
+E:  was that  did that  did that recording have the glitch in the middle ? 
+E:  I don't remember when it is . 
+E:  Oh no . 
+E:  Oh so that was just a parsing mismatch . 
+E:  Alright . 
+E:  The  the glitch 
+E:  yeah . 
+E:  Th - the 
+E:  yeah . 
+E:  There  there  there 's an acoustic glitch that occurs where um the channels get slightly asynchronized 
+E:  so the  that  that problem has gone away in the original driver believe it or not when the SSH key gen ran the driver paused for a fraction of a second 
+E:  and so the channels get a little asynchronous 
+E:  and so if you listen to it in the middle there 's a little part where it starts doing  doing click sounds . 
+E:  But 
+E:  yeah 
+E:  it  
+E:  right once in the middle . 
+E:  Um But that shouldn't affect anything 
+E:  yeah yeah 
+E:  " bah " 
+E:  Well the acoustic one shouldn't do anything . 
+E:  But I  I do remember  
+E:  I do remember seeing once the transcriber produce an incorrect XML file where one of the synch numbers was incorrect . 
+E:  Where  where they weren't monotonic . 
+E:  Oh OK 
+E:  so that 's 
+E:  yeah sounds like a bug . 
+E:  The other one I saw was that it 
+E:  yeah . 
+E:  The other one I saw was non non - monotonic synch times 
+E:  and that definitely indicra indicates a bug . 
+E:  So that 's very encouraging . 
+E:  I and as I said I would like to look at the lattices 
+E:  because it sounded like even the ones it got wrong it sort of got it right ? 
+E:  Sounds likes ? 
+E:  Yeah , 
+E:  and who cares ? 
+E:  And  and there were lots of  of course the " uh uh " - s , " in on " - s " of uh " - s . 
+E:  Right . 
+E:  Ri - ri right . 
+E:  Did you say there 's no language for PZM ? 
+E:  Do you mean  so every time someone says PZM it 's an error ? 
+E:  Maybe we shouldn't say PZM in these meetings . 
+E:  Yeah , that 's right , Jimlet . 
+E:  Yeah , that 's right . 
+E:  Right . 
+E:  Excellent . 
+E:  Well especially for the very first run , I mean you  
+E:  the first run I ran of Switchboard I got a hundred twenty percent word error 
+E:  but 
+E:  Not Switchboard , 
+E:  uh Broadcast News . 
+E:  Yeah , so that 's great . 
+E:  Yeah . 
+E:  Right , it was not a big deal . 
+E:  Although combining em worked well . 
+E:  And it said a hundred percent male ? 
+E:  Oh it did ? 
+E:  It got all two genders ? 
+E:  Right . 
+E:  Sheep . 
+E:  A sheep . 
+E:  Baah . 
+E:  Or just dictionary . 
+E:  And I have to try it on the far field mike 
+E:  yeah . 
+E:  Well we 've done that for one meeting . 
+E:  Uh oh oh 
+E:  f not for words 
+E:  I 'm sorry just for overlaps is we did it for not  not for words . 
+E:  Right . 
+E:  So we might want to take twenty minutes and do a closer word level transcription . 
+E:  Maybe actually mark the word boundaries . 
+E:  Right , right . 
+E:  That we 're starting so well ? 
+E:  Don't worry about it 
+E:  w d that 's that 's the close talking mikes . 
+E:  Try it on the P Z Ms and  and 
+E:  Yeah , abso 
+E:  well no but 
+E:  Yeah , it 's really good . 
+E:  It 's human subjects issues , 
+E:  I told you about that . 
+E:  That  that 's not the issue , 
+E:  it 's just the audio data itself , 
+E:  until people have a chance to edit it . 
+E:  It 's us . 
+E:  Alright 
+E:  we need to work at a system for doing that approval so that we can send people the transcripts 
+E:  and get back any bleeps that they want 
+E:  I don't think we even know which one 
+E:  I assume you 're using syncat to do it ? 
+E:  Or sound resample ? 
+E:  Resample . 
+E:  Yeah and Dan 's archaic acronyms . 
+E:  Not all of them . 
+E:  And a few of the consonants . 
+E:  I suspect that 's sort of premature optimization , 
+E:  but 
+E:  Sure . 
+E:  Mm - hmm . 
+E:  It 's about a fifty minute drive , 
+E:  right ? 
+E:  It just seems to me that , you know small changes to the language model and the vocabulary will so swamp that that it may be premature to worry about that . 
+E:  I mean so one is a half a percent better than the other 
+E:  I don't think that gives you any information . 
+E:  Yep . 
+E:  Yeah . 
+E:  Yep . 
+E:  There 's one level that 's already happening right here . 
+E:  Right . 
+E:  And it gets downsampled to sixteen . 
+E:  So  
+E:  And I have no idea what filter it 's using , 
+E:  so 
+E:  Telephone . 
+E:  So sixteen seems to be pretty typical for with this sort of thing . 
+E:  That isn't music . 
+E:  Why is that ? 
+E:  All the way around I 'd think . 
+E:  Yeah . 
+E:  We 're gonna have plenty of low frequency on the P Z Ms with the fans . 
+E:  Dot EDU ? 
+E:  Yeah , we could do it with the cross pads . 
+E:  Yeah , and use that . 
+E:  Not a bad idea . 
+E:  I don't know . 
+E:  I don't know . 
+E:  I 'll send mail to Dan and ask . 
+E:  I  I think that it 's the maximum we can do without a lot of effort 
+E:  because it 's one board with two digital channels . 
+E:  E eight each . 
+E:  So it  it takes two fibers in to the one board . 
+E:  And so w I think if we wanna do that  more than that we 'd have to have two boards , 
+E:  and then you have the synchronization issue . 
+E:  Right . 
+E:  Eight . 
+E:  It 's eight . 
+E:  I have no idea . 
+E:  But each  each fiber channel has eight  eight channels 
+E:  and there are two ch two fibers that go in to the card . 
+E:  So 
+E:  Yeah . 
+E:  I mean then we 'd also have to get another ADD and another mixer and all that sort of stuff . 
+E:  So I  I 'll send a mail to Dan and ask him . 
+E:  OK on the uh 
+E:  are we done with that ? 
+E:  So the oth topic is uh getting more mikes and different mikes , 
+E:  so I got a quote 
+E:  um 
+E:  We can fit  we have room for one more wireless 
+E:  and the wireless , 
+E:  this unit here is three fifty  three hundred fifty dollars , 
+E:  it  I didn't realize but we also have to get a tuner  the receiver  the other end , 
+E:  that 's uh four thirty 
+E:  um and then also 
+E:  Yep . 
+E:  And we just need one more so  so 
+E:  Yeah . 
+E:  So that 's you know something like seven hundred eighty bucks for one more of these . 
+E:  Um and then also um It turns out that the connector that this thing uses is proprietary of Sony 
+E:  believe it or not 
+E:  and Sony only sells this headset . 
+E:  So if we wanna use a different set  headset the solution that the guy suggested and they  apparently lots of people have done is Sony will sell you the jack with just wires coming out the end 
+E:  and then you can buy a headset that has pigtail and solder it yourself . 
+E:  And that 's the other solution 
+E:  and so the jacks are forty bucks apiece 
+E:  and the  he recommended um a crown CM three eleven AE headset for two hundred bucks apiece . 
+E:  Becau - the reason is the only  only thing you can get that will plug into this is this mike or just the connector . 
+E:  Oh I 'm sure they would , they would just charge us , 
+E:  so . 
+E:  So  so my question is should we go ahead and get na nine identical head - mounted crown mikes ? 
+E:  OK . 
+E:  So why don't we get one of these with the crown with a different headset ? 
+E:  And  and see if that works . 
+E:  Yeah . 
+E:  Right , 
+E:  it 's just they 're not comfortable to wear . 
+E:  Um , and he said they don't have any of these in stock but they have them in LA 
+E:  and so it will take about a week to get here . 
+E:  Um so OK to just go order ? 
+E:  OK 
+E:  and who is the contact if I wanna do an invoice 
+E:  cuz I think that 's how we did it before . 
+E:  OK . 
+E:  And then nine channels is the maximum we can do , 
+E:  so . 
+E:  Without getting more stuff . 
+E:  Right . 
+E:  Probably . 
+E:  I 'm just not sure how we would handle that in the 
+E:  Yeah , somehow . 
+E:  It 's not a bad idea . 
+E:  A hand - held , 
+E:  yeah . 
+E:  Well we could just hand around the lapel . 
+E:  Rather than get a  
+E:  do you want a handset ? 
+E:  Well I mean is the  is the hand - held really any better ? 
+E:  OK . 
+E:  Is awful ? 
+E:  OK . 
+E:  So I wonder if they have one that will hook up . 
+E:  I wonder if they have one that will hook up to this or whether again we 'll have to wire it ourselves . 
+E:  What ? 
+E:  It 's gonna be much easier to get one of these and just plug in a mike , 
+E:  isn't it ? 
+E:  OK . 
+E:  And do you think you would be able to use the same receiver ? 
+E:  OK I 'll  I 'll ask . 
+E:  Yeah . 
+E:  OK 
+E:  so I guess people who have to leave can leave 
+E:  and do we have anything else to discuss or should we just do digits ? 
+E:  OK . 
+E:  uh Yep , 
+E:  that 's good . 
+E:  Yep , 
+E:  that 'd be very interesting . 
+E:  I 'd love to hear what they have to say . 
+E:  Yeah , I 'd like to hear what they s say . 
+E:  Give us a status . 
+E:  That would be weird . 
+E:  Oh , where you 're gonna meet ? 
+E:  I assume we 're not gonna try to record it ? 
+E:  Alright . 
+E:  Unless there 's anything else ? 
+E:  Uh should y we make him wear Andreas ' mike or would that just be too confusing ? 
+E:  Uh yeah I just don't know how we would do that , 
+E:  so . 
+E:  I mean other than free  free form . 
+E:  And just clip it to your collar . 
+E:  Great . 
+E:  And are you staying at Berkeley 
+E:  or is  are you just here a semester ? 
+E:  Ah second and last , 
+E:  OK . 
+E:  Good . 
+E:  Digits ? 
+E:  And stop . 

@@ -1,0 +1,226 @@
+E:  huh ? 
+E:  Is it on ? 
+E:  One of the things that Adam said that I thought would be a good idea would be , um , if we g used different beeps . 
+E:  So for example if we alternated between two beeps , a high and a low . 
+E:  th 
+E:  Uh , well in  in some email that , uh , we had . 
+E:  Yeah . Um  Because then  
+E:  Yeah . 
+E:  Sort of a text template , 
+E:  but I don't know how we can do that . 
+E:  Well , l I I thought it was a lot more than that . 
+E:  They were three off , basically . 
+E:  Yeah . 
+E:  Well the only  the only question about that that I have is , um , I think Brian has to put all this stuff onto a tape . 
+E:  So I don't know whether  
+E:  Can he send them  I guess he could send them multiple tapes 
+E:  Uh  
+E:  Mm - hmm . 
+E:  Well , the only other issue is we 'd have to worry about reassembling them in the proper order . 
+E:  Uh  
+E:  Individual channels . 
+E:  Yeah , we  In fact , that 's  Yeah , maybe we  
+E:  We have the original wavefile with all the beeps . 
+E:  It would be very good . 
+E:  Yeah , very low . 
+E:  It could t it could  There could be some missing ones . 
+E:  But  
+E:  Increasingly high  higher frequencies . 
+E:  And then when we get them back , if we see two L - beeps in a row  
+E:  And it would  it seems like it would help them , 
+E:  you know , if they just finished a long passage and they heard one beep and then they hear it again , they know it 's the same beep . 
+E:  Versus if they heard a slightly different one . 
+E:  Yeah . 
+E:  Maybe I should write to Brian and tell him what the problem was 
+E:  and what our proposed solutions are . 
+E:  See what he thinks would work best with them . 
+E:  And there are some  
+E:  And there are some cases where there 's , um , very little speech before you hear a beep . 
+E:  So you hear a little bit of speech , beep , 
+E:  a little bit of speech , beep . 
+E:  Maybe three of those in a row , 
+E:  and was that three beeps , 
+E:  was that two beeps ? 
+E:  Um  See , they have th Brian said the setup that they have is , um  
+E:  uh  i um  
+E:  They 've got headphones 
+E:  and then I guess they have a computer , 
+E:  and they have a foot pedal 
+E:  which lets them quickly scan back and forth through the tape . 
+E:  I i t i s 
+E:  makes the tape go real fast forward or fast backward . 
+E:  And so they can hear something , then step on the pedal and quickly rewind and go back and hear it again . 
+E:  And so they 're  
+E:  I think they 're probably going over and over f sections . 
+E:  And then they get confused about whether they 've already <mike noise> put that beep , 
+E:  or if they heard , you know , three beeps in a row , was that three or two , 
+E:  and  
+E:  Oh , that 's an interesting idea . 
+E:  No , no , no . But wait , maybe  maybe what we have instead of a beep is a , uh , synthesized number . 
+E:  And they put the number in when they hear it . 
+E:  So , inst replacing the beep with " twenty - three " , 
+E:  " twenty - four " , 
+E:  " twenty - five "  
+E:  And then they have to transcribe what that number is each time . 
+E:  Yeah , just a " two three , two four " , that would be  
+E:  There 'd be some kind of mark in front of it . 
+E:  Well it would have t yeah , it would have to be um , you know either obviously a s sounding synthesized , uh , little  
+E:  Yeah . 
+E:  Or a beep and the number . 
+E:  Uh , right . 
+E:  In fact , we could put it at the beginning of each utterance . 
+E:  We could say " beep one " . 
+E:  And then they 'll hear the speech . 
+E:  Or a number beep  
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah , and u I think it would  I  Actually , I thi I like that . 
+E:  I think it would  
+E:  Yeah . 
+E:  But see that would  that would definitely keep  
+E:  Yeah . 
+E:  Keep things from getting out of sequence . 
+E:  If they heard it over again they would know . It would be obvious from their transcript whether they did that one or not . 
+E:  Yeah . 
+E:  And we have plenty of digits data , 
+E:  so . 
+E:  We 
+E:  Yeah . I 'll  I 'll  I 'll write him an  
+E:  Yeah . 
+E:  I 'll talk to Brian , and see what he  
+E:  Yeah . 
+E:  I was thinking there was on the order of fifteen hundred segments , 
+E:  but maybe I 'm  
+E:  Oh , of a  of a segment that they 're hearing ? 
+E:  I don't know . 
+E:  I don't know . 
+E:  Yeah . 
+E:  Yeah , if we  if we did mod ten , then  
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  You know actually , what  all that we would  
+E:  You know , Liz , all we would re 
+E:  I mean if  in terms of the alignment , actually , all we would need is  we wouldn't even need words . 
+E:  We would need a general speech model and a beep model . 
+E:  Cuz all we 're really concerned about is missing beeps or too many beeps . 
+E:  So if we had a  
+E:  Mm - hmm . 
+E:  Well  l I guess what I 'm thinking of is that w that a lot of times there will be  they 'll put in question marks , that represent some unknown amount of speech , 
+E:  so we 're gonna have to have some kind of  
+E:  Right , 
+E:  h 
+E:  Yeah . 
+E:  Right . Well , what I was thinking is , map all the speech to the reject model . 
+E:  And then you have a beep model . 
+E:  The beep model is  is gonna match , like , really well . 
+E:  No , I 'm not sug I 'm not suggesting that we don't have anything between the beeps . 
+E:  But I  what I 'm saying is , what 's between the beeps we don't really care about . 
+E:  So do you get a score for each alignment ? 
+E:  Is that what you get ? 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  I 'm just wondering when  wha what it means to fail . 
+E:  Is it the  the likelihood scores below some threshold  
+E:  Just  
+E:  Just accumulate it till you get twenty minutes worth ? 
+E:  There 's one file . 
+E:  Yeah , I 'll  
+E:  I 'll talk to him . 
+E:  Really ? 
+E:  Oh , yeah , you do . 
+E:  There 's another kind which s goes in your ear 
+E:  and it hangs down . 
+E:  There 's a little b   bulb 
+E:  that hangs  has the mike on it . 
+E:  How standard are these ? 
+E:  It is an interesting idea . 
+E:  If we could build an adaptor that went from  
+E:  cuz I think mine looks like this too . 
+E:  If we had this style plug that went to that , then we 'd just have adaptors 
+E:  and people would plug them in . 
+E:  You could use  they could use their own . 
+E:  I don't understand . 
+E:  So  so there 's a mike that plugs in  
+E:  You 're saying there 's a mike that plugs in to the IRAM board ? 
+E:  or  
+E:  Oh , I see . 
+E:  Well , I I was  
+E:  I was reading through some of the CVS documentation 
+E:  and you can just substitute CVS for your R S H command . 
+E:  Hmm . 
+E:  Hmm . 
+E:  Well they 're gonna have to have accounts  
+E:  If they use SSH they have to have an account anyways . 
+E:  That 's what we do with doctor - speech though , 
+E:  right ? 
+E:  But there is a user doctor - speech . 
+E:  Right ? 
+E:  I mean , I  I SUX to doctor - speech w when I need to make a  a directory on , uh , one of the  
+E:  Well , with CVS , though , you don't actually have to do it that way . 
+E:  What I 'm saying is that it can be the case that people can do it themselves and it can be reviewed . 
+E:  Right ? 
+E:  I mean , it 's not like it 's one or the other . 
+E:  We can do both . 
+E:  Right . 
+E:  No , it does not  the CVS doesn't work that way . 
+E:  There 's no  there 's no lock when you check something out , 
+E:  not like RCS . 
+E:  In other words , everybody can check out anything . 
+E:  The C stands for " concurrent " . 
+E:  But typically a person has to , uh , mediate you know , which changes actually get  go through . 
+E:  CVS is pretty good . 
+E:  Yeah , so the w 
+E:  In 
+E:  The  Maybe the model  
+E:  It 's a little bit different in CVS . 
+E:  When you check something out , you actually create your own directory with copies of everything in it , 
+E:  and that 's what you work on . 
+E:  So , until you 're ready to check it in , nobody sees anything you 've done . 
+E:  And then when you check it in , it puts , sort of , you know  every change that you 've done is  goes into the central  
+E:  Well yeah , there would  there would have to be somebody to enforce the consistency . 
+E:  Yeah . 
+E:  Well , I think  
+E:  yeah , I think there are probably ways that you can say that , you know , only certain users are allowed to change things . 
+E:  Uh , so we can probably restrict it to be  
+E:  You know , f casual users who are just browsing can just r get it read - only , 
+E:  can't check in to the archive . 
+E:  Whereas we could say " other people " , you know , " these people are allowed to actually submit changes " . 
+E:  I mean , I  I think one thing that 's probably everybody would agree on is that there will never be a point where you know , we can say that for sure there 's no problems with any of the transcripts . 
+E:  I mean there 's , 
+E:  uh  f You know , something 's going to get overlooked at some point , 
+E:  or somebody 's gonna wanna make a change somehow . 
+E:  So we need to have some mechanism for , um , handling changes in the future . 
+E:  Yeah . Exactly . 
+E:  Mm - hmm . 
+E:  Right . 
+E:  Yeah . 
+E:  Good point . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Yeah , that 's a good point . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Yeah I mean a lot of the open source pro projects face this same problem . 
+E:  You know , p anybody can check out the code , 
+E:  but not everybody can check it in . 
+E:  Yeah . 
+E:  Then  There is also the possibility  Remember , in CVS , when we talk about making changes , there 's sort of two types that can be made . 
+E:  To your local , or to the global . 
+E:  And so people can make changes to their local 
+E:  and if they screw those up , that 's , you know , in their  that 's only on them . 
+E:  It 's w it 's the checking in part that r we really care about , 
+E:  and that we can control with , you know , who can check things in and stuff . 
+E:  So we can  I think we can do this . 
+E:  Mm - hmm . 
+E:  Yeah . They can still check it out  
+E:  Yeah , cuz they can still check out full copies and make whatever changes they want to their local copies . 
+E:  And it won't affect the  the g the global , official , ones at all . 
+E:  Yes . 
+E:  Definitely . 
+E:  Yep . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Lee , you liked that l 
+E:  huh ? 

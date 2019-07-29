@@ -1,0 +1,205 @@
+C:  Uh . 
+C:  What channel am I on ? 
+C:  Oh , channel two . 
+C:  Unison . 
+C:  Greek chorus . 
+C:  Are you implying that it 's currently disorganized ? 
+C:  Well . 
+C:  We 're improving . 
+C:  Yeah . 
+C:  Yeah . Actually it looks like it 's getting better . 
+C:  So . But  but it 's not  
+C:  With age . Yeah . 
+C:  But , uh , that 's not d directly related to me . 
+C:  Doesn't mean we can't talk about it . 
+C:  Um , it seems  It looks l I haven't  The  It 's  The experiment is still not complete , 
+C:  but , 
+C:  um , it looks like the vocal tract length normalization is working beautifully , actually , 
+C:  w using the warp factors that we computed for the SRI system and just applying them to the <breath> ICSI front - end . 
+C:  Yeah . 
+C:  Just had to take the reciprocal of the number because they have different meanings in the two systems . 
+C:  Yeah . 
+C:  But one issue actually that just came up in discussion with Liz and  and Don was , um , as far as meeting recognition is concerned , um , we would really like to , uh , move , uh , to , uh , doing the recognition on automatic segmentations . 
+C:  Because in all our previous experiments , we had the  uh , you know , we were essentially cheating by having the , um , you know , the h the hand - segmentations as the basis of the recognition . 
+C:  And so now with Thilo 's segmenter working so well , I think we should  consider doing a  
+C:  uh , doing  
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Right . 
+C:  Well  
+C:  We should  we should consider doing some extra things , like , um , you know , retraining or adapting the  <breath> the models for background noise to the  to this environment , for instance . 
+C:  So . 
+C:  Right . 
+C:  Where 'd you get the digits from ? 
+C:  And do you splice them into the  waveform ? 
+C:  Or  ? 
+C:  Right . 
+C:  Mm - hmm . 
+C:  Oh , that was an unfor unforeseen side effect of  
+C:  And they don't have to approve , you know , th an edited version , they can just give their approval to whatever version 
+C:  Bu 
+C:  Yeah . But th I mean , the editing will continue . Presumably if  if s errors are found , they will be fixed , 
+C:  but they won't change the  the content of the meetings . 
+C:  So . 
+C:  Tha 
+C:  That 's  
+C:  How about having them approve the audio and not the transcripts ? 
+C:  Well , that 's O K . 
+C:  We just have to give them a chance to listen to it , and if they don't , that 's their problem . 
+C:  No , I 'm serious . 
+C:  Really ? 
+C:  Mmm . 
+C:  Spurts wouldn't be . 
+C:  Right ? 
+C:  No 
+C:  Have you tried using just time , as opposed to number of words ? 
+C:  Yeah . 
+C:  Well , no , I mean t time  time position relative to the beginning of the spurt . 
+C:  Yeah . 
+C:  I mean that wouldn't be cheating because you can detect pause  pretty well within the time . 
+C:  Mm - hmm . 
+C:  W wh wh wh 
+C:  Better in what sense ? 
+C:  Oh , yeah . I tried that . 
+C:  It didn't , um , help dramatically . 
+C:  The  
+C:  There were a little  
+C:  the relative number of  
+C:  I think there were a higher number of deletions , actually . 
+C:  So , you , uh  So , actually it  it preferred to have a positive  er , negative insertion penalty , 
+C:  which means <breath> that , um  
+C:  But , you know , it didn't change <inbreath> th the  
+C:  by adjusting that  the , um  
+C:  Yeah . The error changed by probably one percent or so . 
+C:  But , you know , given that that word error rate is so high , that 's not a  
+C:  That 's not the problem . 
+C:  No . 
+C:  But , uh , we s just , um , 
+C:  uh  
+C:  you know , Chuck and I talked and the  @ @  next thing to do is probably to tune the  um , the size of the Gaussian system , um , @ @  to  to this  to this feature vector , which we haven't done at all . 
+C:  We just used the same <breath> configuration as we used for the  <breath> for the standard system . 
+C:  And , <breath> for instance , uh , Dan  @ @  Dan just sent me a message saying that CMU used , um , <mouth> something like ten Gaussians per cluster  
+C:  You know , each  each mixture has ten  Gaussians 
+C:  and  and we 're using sixty - four , 
+C:  so that 's <breath> obviously a big difference 
+C:  and it might be way off 
+C:  and give very poorly trained , uh , you know , Gaussians that way , 
+C:  uh , an and poorly trained mixture weights . 
+C:  So  so , we have  
+C:  The turn - around time on the training when we train only the  a male system with , uh , you know , our small training set , is <breath> less than twenty - four hours , 
+C:  so we can run lots of  <breath> uh , basically just brute force , 
+C:  try a whole bunch of different um , settings . 
+C:  And , uh , with the new machines it 'll be even better . 
+C:  So . 
+C:  Yeah . 
+C:  But the PLP features work  um , uh , you know , continue to improve the , 
+C:  um  
+C:  As I said before , the  uh using Dan 's , uh , uh , vocal tract normalization option works very well . 
+C:  So , um , @ @  I ran one experiment where we 're just <breath> did the vocal tract le normalization only in the test data , 
+C:  so I didn't bother to retrain  the models at all , 
+C:  and it improved by one percent , 
+C:  which is about what we get with  <breath> uh , with , you know , just @ @  actually doing both training and test normalization , um , with , um , <mouth> the , uh  <mouth> uh , with the standard system . 
+C:  So , in a few hours we 'll have the numbers for the  for retraining everything with vocal tract length normalization 
+C:  and  So , that might even improve it further . 
+C:  So , it looks like the P L - fea P features  do very well now with  after having figured out all these little tricks to  to get it to work . 
+C:  So . 
+C:  Exactly . Yeah . 
+C:  Right . a 
+C:  Right . And  and what that suggests also is of course that the current Switchboard  MLP isn't trained on very good features . 
+C:  Uh , because it was trained on whatever , you know , was used , uh , last time you did Hub - five stuff , 
+C:  which didn't have any of the  
+C:  Uh . 
+C:  Well , but if you add them all up you have , uh , almost five percent difference now . 
+C:  Yeah . And now we have another percent with the V T 
+C:  Um , actually , and it 's , 
+
+C:  um , 
+C:  What 's actually qu interesting is that with  
+C:  um , well , you m prob maybe another half percent if you do the VTL in training , 
+C:  and then interestingly , if you optimize you get more of a win out of rescoring the , um , <mouth> uh , the N best lists , 
+C:  uh , and optimizing the weights , 
+C:  um , uh than  
+C:  Yeah . 
+C:  So  
+C:  Right . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Hmm . 
+C:  Hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Hmm . 
+C:  Well , he made it a parameter . 
+C:  It 's called , uh , <outbreath> H - HPF . 
+C:  u And  but HPF , you know , when you put a number after it , uses that as the hertz value of the cut - off . 
+C:  So . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  OK . 
+C:  Well , but , um  Well , uh , again , after completing the  current experiments , we 'll  <breath> we can add up all the uh differences 
+C:  and  <breath> and  an 
+C:  Y 
+C:  Right . 
+C:  Mm - hmm . 
+C:  Well , that 's what I meant , in fact . Yeah . 
+C:  So  so , the thing is  is do we expect  ? 
+C:  eh At this point I 'm as I mean , you know  e I 'm wondering is it  Can we expect , uh , a tandem system to do better than a properly trained  you know , a Gaussian system trained directly on the features with , you know , the right ch choice of  parameters ? 
+C:  Right . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Right . 
+C:  Mm - hmm . 
+C:  But there the main point is that , um , you know , it took us a while but we have the procedure for coupling the two systems <inbreath> debugged now 
+C:  and  I mean , there 's still conceivably some bug somewhere in the way we 're feeding the tandem features  
+C:  uh , either generating them or feeding them to this  to the <breath> SRI system , 
+C:  but 
+C:  it 's  
+C:  Yeah . 
+C:  And I 'm wondering how we can  how we can debug that . 
+C:  I mean how  
+C:  Um . 
+C:  I 'm actually f quite sure that the  feeding the  features into the system and training it up , 
+C:  that  that  I think that 's  this  that 's essentially the same as we use with the ce with the P L P fe features . 
+C:  And that 's obviously working great . 
+C:  So . I um . 
+C:  There  we could  
+C:  the  another degree of freedom is how do you generate the K L T transform ? 
+C:  Right ? 
+C:  We to 
+C:  Yeah . 
+C:  Right . 
+C:  Right . 
+C:  No . The  the SRI system does it . 
+C:  Yeah . 
+C:  So , there 's  there is  there is room for bugs that we might not have discovered , 
+C:  but  
+C:  Right . 
+C:  They 're optimized for phone discrimination , 
+C:  not for  
+C:  Mm - Mmm . 
+C:  Do y 
+C:  But  
+C:  And there 's a mismatch in the phone sets . 
+C:  So , you 're using a l a long a larger phone set than what  
+C:  Mm - hmm . 
+C:  Oh , we already talked about that . 
+C:  El 
+C:  Yeah . 
+C:  No , but we  we  when  when we  when I first started corresponding with Dan about how to go about this , I think that was one of the things that we definitely went there . 
+C:  Yeah . 
+C:  Uh - huh . And i does it help ? 
+C:  Oh , OK . 
+C:  Oh . OK . 
+C:  And do you do a KLT transform on the con on the combined feature vector ? 
+C:  Do you  d you do a KLT transform on the combined feature vector ? 
+C:  OK . 
+C:  Because you end up with this huge feature vector , so that might be a problem , a unless you do some form of dimensionality reduction . 
+C:  Mm - hmm . 
+C:  Mmm . 
+C:  OK . Actually , I have to run . 
+C:  Uh . 

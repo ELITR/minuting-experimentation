@@ -1,0 +1,325 @@
+C:  Yeah . 
+C:  This is a meeting for me . 
+C:  So is  This is  A situation are  is all the things which can be happening right now ? 
+C:  Or , what is the situation type ? 
+C:  Oh , I see 
+C:  y Why are you specifying it in XML ? 
+C:  OK . 
+C:  Well , yeah . I just don't know if this is th l what the  Does  This is what Java Bayes takes ? as a Bayes - net spec ? 
+C:  So this is the situational context , everything in it . 
+C:  Is that what Situation is short for , 
+C:  shi situational context ? 
+C:  OK . 
+C:  And then we can r  uh possibly run one of them uh transformations ? 
+C:  That put it into the format that the Bayes n or Java Bayes or whatever wants ? 
+C:  Well it  
+C:  When you  when you say  the input to the  v Java Bayes ,  it takes a certain format , 
+C:  right ? 
+C:  Which I don't think is this . 
+C:  Although I don't know . 
+C:  So you could just  Couldn't you just run a  
+C:  Yeah . 
+C:  To convert it into the Java Bayes for format ? 
+C:  OK . 
+C:  So this is just a specification of all the possible inputs ? 
+C:  OK . 
+C:  And then we would just look at the , eh , Struct that we wanna look at 
+C:  in terms of if  if we 're only asking about one of the  
+C:  So like , if I 'm just interested in the going - there node , I would just pull that information out of the Struct that gets return that would  that Java Bayes would output ? 
+C:  OK . 
+C:  Yeah , wait I agree , 
+C:  that 's  yeah , use  oh , uh  Yeah , OK . 
+C:  Look at that Struct in the output , 
+C:  right ? 
+C:  Well i well , it 's an XML Structure that 's being res returned , 
+C:  right ? 
+C:  Yeah , I just uh  I just was  abbreviated it to Struct in my head , and started going with that . 
+C:  Not a C Struct . That 's not what I was trying to k 
+C:  though yeah . 
+C:  Well , w wouldn't we just take the structure that 's outputted and then run another transformation on it , that would just dump the one that we wanted out ? 
+C:  Well , actually , you don't even need to do that with XML . 
+C:  D Can't you just look at one specific  
+C:  Sure . 
+C:  He wants to know where it is . 
+C:  Well now , y I mean , you could  
+C:  Uh , out of curiosity , is there a reason why we wouldn't combine these three nodes ? into one smaller subnet ? 
+C:  that would just basically be  the question for  
+C:  We have " where is X ? " is the question , 
+C:  right ? 
+C:  That would just be Info - on or Location ? 
+C:  Based upon  
+C:  Well , I mean  But the  there 's  So you just have three decisions for the final node , that would link thes these three nodes in the net together . 
+C:  Wha 
+C:  Or i or i it 'll be tight . 
+C:  You won't  it 'll be hard to decide . 
+C:  But I mean , I guess  I guess the thing is , uh , this is another , smaller , case of reasoning in the case of an uncertainty , 
+C:  which makes me think Bayes - net should be the way to solve these things . 
+C:  So if you had  If for every construction , 
+C:  right ? 
+C:  you could say , " Well , there  Here 's the Where - Is construction . " 
+C:  And for the Where - Is construction , we know we need to l look at this node , that merges these three things together 
+C:  as for th to decide the response . 
+C:  And since we have a finite number of constructions that we can deal with , we could have a finite number of nodes . 
+C:  Say , if we had to y deal with arbitrary language , it wouldn't make any sense to do that , 
+C:  because there 'd be no way to generate the nodes for every possible sentence . 
+C:  But since we can only deal with a finite amount of stuff  
+C:  Yeah , so basically take these three things and then put them into another belief - net . 
+C:  Well , I mean , d For the Where - Is question . 
+C:  So we 'd have a node for the Where - Is question . 
+C:  You can come in if you want . 
+C:  As long as y you 're not wearing your h your h headphones . 
+C:  Well , I do I  See , I don't know if this is a  good idea or not . 
+C:  I 'm just throwing it out . 
+C:  But uh , it seems like we could have  I mea or uh we could put all of the all of the r information that could also be relevant  into the Where - Is node answer 
+C:  node 
+C:  thing 
+C:  stuff . 
+C:  And uh  
+C:  We u 
+C:  Yeah , I know , but the Bayes - net would be able to  The weights on the  on the nodes in the Bayes - net would be able to do all that , 
+C:  wouldn't it ? 
+C:  Here 's a k 
+C:  Oh ! 
+C:  Oh , I 'll wait until you 're  plugged in . 
+C:  Oh , don't sit there . 
+C:  Sit here . 
+C:  You know how you don't like that one . 
+C:  It 's OK . 
+C:  That 's the weird one . 
+C:  That 's the one that 's painful . That hurts . It hurts so bad . 
+C:  I 'm h I 'm happy that they 're recording that . 
+C:  That headphone . The headphone  that you have to put on backwards , with the little  little thing  and the little  little foam block on it ? 
+C:  It 's a painful , painful microphone . 
+C:  The crown ? 
+C:  I don't see a manufacturer on it . 
+C:  Oh , wait , 
+C:  here it is . 
+C:  h This thingy . 
+C:  Yeah , it 's " The Crown " . 
+C:  The crown of pain ! 
+C:  Are you  are your mike o Is your mike on ? 
+C:  OK . 
+C:  So you 've been working with these guys ? 
+C:  You know what 's going on ? 
+C:  Excellent ! 
+C:  Did you just sti Did you just stick the m the  the  the microphone actually in the tea ? 
+C:  Oh , yeah . 
+C:  Sorry . 
+C:  In terms of , these would be wha how we would answer the question Where - Is , 
+C:  right ? 
+C:  We u 
+C:  This is  i That 's what you s it seemed like , explained it to me earlier 
+C:  w We  we 're  we wanna know how to answer the question " Where is X ? " 
+C:  Well , yeah , but in the s uh , let 's just deal with the s the simple case of we 're not worrying about timing or anything . 
+C:  We just want to know how we should answer " Where is X ? " 
+C:  Oh , I see why we can't do that . 
+C:  Well , it 
+C:  That it  Doesn't this assume , though , that they 're evenly weighted ? 
+C:  Like  
+C:  I guess they are evenly weighted . 
+C:  Yeah , the Go - there , the Info - on , and the Location ? 
+C:  Like  
+C:  Or I jus 
+C:  Le 
+C:  So the But I guess the k the question  that I was as er wondering or maybe Robert was proposing to me is  
+C:  How do we d make the decision on  as to  which one to listen to ? 
+C:  Bayes - net . 
+C:  OK so , then , the question i So then my question is t to you then , would be  
+C:  So is the only r reason we can make all these smaller Bayes - nets , because we know we can only deal with a finite set of constructions ? 
+C:  Cuz oth If we 're just taking arbitrary language in , we couldn't have a node for every possible question , 
+C:  you know ? 
+C:  Well , I  like , in the case of  Yeah . 
+C:  In the ca Any piece of language , we wouldn't be able to answer it with this system , b if we just h 
+C:  Cuz we wouldn't have the correct node . 
+C:  Basically , w what you 're s proposing is a n Where - Is node , 
+C:  right ? 
+C:  And  and if we  And if someone  says , you know , uh , something in Mandarin to the system , we 'd - wouldn't know which node to look at to answer that question , 
+C:  right ? 
+C:  So , but  but if we have a finite  
+C:  What ? 
+C:  Yeah , but But how does the expert  but how does the expert system know  how who which one to declare the winner , if it doesn't know the question it is , and how that question should be answered ? 
+C:  Yeah I know . But how do we weight what we get out ? 
+C:  As , which one i Which ones are important ? 
+C:  So my i So , if we were to it with a Bayes - net , we 'd have to have a node  for every question that we knew how to deal with , 
+C:  that would take all of the inputs and weight them appropriately for that question . 
+C:  Does that make sense ? 
+C:  Yay , 
+C:  nay ? 
+C:  We  
+C:  Well , no . I  I guess my question is , Is the reason that we can make a node f 
+C:  or  OK . So , lemme see if I 'm confused . 
+C:  Are we going to make a node for every question ? 
+C:  Does that make sense ?  
+C:  Or not . 
+C:  Every construction . 
+C:  Wel 
+C:  W OK . 
+C:  So , someone asked a question . 
+C:  How do we decide how to answer it ? 
+C:  Yeah . 
+C:  I just don't think a " winner - take - all " type of thing is the  
+C:  Wel 
+C:  I don't know about that , 
+C:  cuz that would suggest that  I mean  
+C:  Do they have to be mutual 
+C:  Yeah . Do they have to be mutually exclusive ? 
+C:  Cuz I , uh  The way you describe what they meant , they weren't mutu uh , they didn't seem mutually exclusive to me . 
+C:  Wel 
+C:  Well , yeah , just out of the other three , though , that you had in the  
+C:  those three nodes . 
+C:  The - d They didn't seem like they were mutually exclusive . 
+C:  So th s so , yeah , but some  So , some things would drop out , and some things would still be important . 
+C:  But I guess what 's confusing me is , if we have a Bayes - net to deal w another Bayes - net to deal with this stuff , 
+C:  you know , 
+C:  uh , 
+C:  is the only reason  OK , so , I guess , if we have a Ba - another Bayes - net to deal with this stuff , the only r reason  we can design it is cuz we know what each question is asking ? 
+C:  And then , so , the only reason  way we would know what question he 's asking is based upon  
+C:  Oh , so if  Let 's say I had a construction parser , and I plug this in , I would know what each construction  the communicative intent of the construction was 
+C:  and so then I would know how to weight the nodes appropriately , in response . 
+C:  So no matter what they said , if I could map it onto a Where - Is construction , I could say , " ah ! 
+C:  well the the intent , here , was Where - Is " , 
+C:  and I could look at those . 
+C:  We  Yeah , but , the Bayes - net that would merge  
+C:  I just realized that I had my hand in between my mouth and my micr er , my and my microphone . 
+C:  So then , the Bayes - net that would merge there , that would make the decision between Go - there , Info - on , and Location , would have a node to tell you which one of those three you wanted , 
+C:  and based upon that node , then you would look at the other stuff . 
+C:  I mean , it i 
+C:  Does that make sense ? 
+C:  Yeah , i 
+C:  Yeah , I didn't intend to say that every possible  
+C:  OK . 
+C:  There was a confusion there , 
+C:  k I didn't intend to say every possible thing should go into the Bayes - net , 
+C:  because some of the things aren't relevant in the Bayes - net for a specific question . 
+C:  Like the Endpoint is not necessarily relevant in the Bayes - net for Where - Is until after you 've decided whether you wanna go there or not . 
+C:  Show us the way , Bhaskara . 
+C:  So basically , you 'd have a decision tree  query ,  Go - there . 
+C:  If k if that 's false , query this one . If that 's true , query that one . 
+C:  And just basically do a binary search through the  ? 
+C:  Well , in the case of Go - there , it would be . 
+C:  In the case  
+C:  Cuz if you needed an If y If Go - there was true , you 'd wanna know what endpoint was . 
+C:  And if it was false , you 'd wanna d look at either Lo - Income Info - on or History . 
+C:  Also , I 'm somewhat boggled by that Hugin software . 
+C:  I can't figure out how to get the probabilities into it . 
+C:  Like , I 'd look at  
+C:  It 's somewha It 's boggling me . 
+C:  Ju 
+C:  Oh yeah , yeah . I d I just think I haven't figured out what  the terms in Hugin mean , versus what Java Bayes terms are . 
+C:  What d what do they need to do left ? 
+C:  And what 's Nancy doing ? 
+C:  She 's on the email list , 
+C:  right ? 
+C:  Well , I  
+C:  Uh , what do the , uh , structures do ? 
+C:  So the  the  the  For instance , this Location node 's got two inputs , 
+C:  that one you  
+C:  Oh , I see . 
+C:  OK , that was 
+C:  OK . That makes a lot more sense to me now . 
+C:  Cuz I thought it was like , that one in Stuart 's book about , you know , the  
+C:  U Yeah . 
+C:  Or the earthquake and the alarm . 
+C:  Yeah , there 's a dog one , too , 
+C:  but that 's in Java Bayes , 
+C:  isn't it ? 
+C:  But there 's something about bowel problems or something with the dog . 
+C:  Cuz of Memorial Day ? 
+C:  When 's Jerry leaving for  Italia ? 
+C:  Ugh . 
+C:  As in , four days ? 
+C:  Or , three days ? 
+C:  But it 's not a conference or anything . 
+C:  He 's just visiting . 
+C:  Oh , I think we should disappoint him . 
+C:  That wouldn't be disappointing . 
+C:  I think w we should do absolutely no work for the two weeks that he 's gone . 
+C:  Oh , yeah , that sounds good , too . 
+C:  Yeah , I 'm wanna be this  gone this weekend , too . 
+C:  Killing machines ! 
+C:  Killing , reasoning . What 's the difference ? 
+C:  When you say , " the whole group " , you mean  the four of us , and Keith ? 
+C:  Ami might be here , 
+C:  and it 's possible that Nancy 'll be here ? 
+C:  So , 
+C:  yeah . 
+C:  You 're just gonna have to explain it to me , then , on Tuesday , 
+C:  how it 's all gonna work out . 
+C:  You know . 
+C:  That you will have in about nine months or so . 
+C:  Yeah . 
+C:  The first bad version 'll be done in nine months . 
+C:  There you go . 
+C:  Does th th does the H go b before the A or after the A ? 
+C:  Yeah . 
+C:  OK , good . 
+C:  Cuz you kn When you said people have the same problem , I thought  
+C:  Cuz my H goes after the uh e e e the v 
+C:  OK . 
+C:  I always have to check , every time y I send you an email ,  a past email of yours ,  to make sure I 'm spelling your name correctly . 
+C:  I worry about you . 
+C:  You 're a geek . 
+C:  It 's O K . 
+C:  I 
+C:  How do you pronou 
+C:  How do you pronounce your name ? 
+C:  Eva ? 
+C:  What if I were  What if I were to call you Eva ? 
+C:  No , not just Eva , Eva . 
+C:  Like if I u take the V and s pronounce it like it was a German V ? 
+C:  Yeah . 
+C:  It sounds like an F . 
+C:  There 's also an F in German , 
+C:  which is why I  
+C:  Yeah . 
+C:  As long as that 's O K . 
+C:  I mean , I might slip out and say it accidentally . 
+C:  That 's all I 'm saying . 
+C:  Wait , 
+C:  maybe it 's OK , so that  that  that we can  that we have one node per construction . 
+C:  Cuz even in people , like , they don't know what you 're talking about if you 're using some sort of strange construction . 
+C:  Well , yeah , but I mean , the  uh , I mean , that 's what the construction parser would do . 
+C:  Uh , I mean , if you said something completely arbitrary , it would f find the closest construction , 
+C:  right ? 
+C:  But if you said something that was completel er  
+C:  h theoretically the construction parser would do that  
+C:  But if you said something for which there was no construction whatsoever , n people wouldn't have any idea what you were talking about . 
+C:  Like " Bus dog fried egg . " I mean . 
+C:  You know . 
+C:  Or , something in Mandarin , yeah . 
+C:  Or Cantonese , as the case may be . 
+C:  What do you think about that , Bhaskara ? 
+C:  In this system , or in r 
+C:  Oh , when p How many constructions do people have ? 
+C:  I have not  the slightest idea . 
+C:  Every noun is a construction . 
+C:  The  
+C:  Yeah . 
+C:  Any  any form - meaning pair , to my understanding , is a construction . 
+C:  And form u starts at the level of noun  Or actually , maybe even sounds . 
+C:  Yeah . 
+C:  And goes upwards 
+C:  until you get the ditransitive construction . 
+C:  And then , of course , the c I guess , maybe there can be the  
+C:  Can there be combinations of the dit 
+C:  Yeah . 
+C:  The " giving a speech " construction , 
+C:  It 's probab Yeah , I would s definitely say it 's finite . 
+C:  And at least in compilers , that 's all that really matters , 
+C:  as long as your analysis is finite . 
+C:  Nah , I can't think of a way it would be infinite . 
+C:  Yeah .  If the  if your  if your brain was totally non - deterministic , then perhaps there 's a way to get , uh , infin an infinite number of constructions that you 'd have to worry about . 
+C:  Right . Cuz if we have a fixed number of neurons  ? 
+C:  So the best - case scenario would be the number of constructions  
+C:  or , the worst - case scenario is the number of constructions equals the number of neurons . 
+C:  Right . 
+C:  But still finite . 
+C:  No , wait . 
+C:  Not necessarily , is it ? 
+C:  We can end the  meeting . 
+C:  I just  
+C:  Can't you use different var different levels of activation ? 
+C:  across , uh  lots of different neurons , to specify different values ? 
+C:  There 's a bandwidth issue , 
+C:  right ? 
+C:  Yeah . 

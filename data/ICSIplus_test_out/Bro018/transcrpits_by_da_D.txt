@@ -1,0 +1,156 @@
+D:  Yeah . 
+D:  So . 
+D:  Yeah , I will try to explain the thing that I did this  this week  during this week . 
+D:  Well eh you know that I work  I begin to work with a new feature to detect voice - unvoice . 
+D:  What I trying two MLP to  to the  with this new feature and the fifteen feature uh from the eh bus base system 
+D:  No , satly the mes the Mel Cepstrum , 
+D:  the new base system  the new base system . 
+D:  Yeah , we  
+D:  yeah the Aurora system with the new filter , VAD or something like that . 
+D:  And I 'm trying two MLP , one one that only have t three output , 
+D:  voice , unvoice , and silence , 
+D:  and other one that have fifty - six output . 
+D:  The probabilities of the allophone . 
+D:  And I tried to do some experiment of recognition with that 
+D:  and only have result with  with the MLP with the three output . 
+D:  And I put together the fifteen features and the three MLP output . 
+D:  And , well , the result are li a little bit better , but more or less similar . 
+D:  Voice , unvoice , and si 
+D:  The feature  the input ? 
+D:  The inputs are the fifteen  the fifteen uh bases feature . 
+D:  the  with the new code . 
+D:  And the other three features are R , the variance of the difference between the two spectrum , 
+D:  the variance of the auto - correlation function , except the  the first point , because half the height value is R - zero 
+D:  and also R - zero , 
+D:  the first coefficient of the auto - correlation function . 
+D:  That is like the energy with these three feature , 
+D:  also these three feature . 
+D:  Yeah . 
+D:  Uh yeah . 
+D:  No , 
+D:  R c No . 
+D:  Auto - correlation ? 
+D:  Yes , yes , the variance of the auto - correlation function that uses that 
+D:  Yeah , 
+D:  I I 'll  
+D:  The spectral shape , 
+D:  yeah . 
+D:  No , 
+D:  I don't use that  
+D:  I can't use  
+D:  Mmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Mm - hmm , 
+D:  OK . 
+D:  Yeah , yeah . 
+D:  Well , I can also th use this . 
+D:  Bec - because the result are a little bit better 
+D:  but we have in a point that everything is more or less the similar  more or less similar . 
+D:  It 's not quite better . 
+D:  Yeah , 
+D:  I used this too . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Yeah , 
+D:  I have  
+D:  yeah . 
+D:  No  
+D:  Yeah . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Maybe . 
+D:  Ah  I 'm sorry . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Oh , not too much . 
+D:  Mmm , one day or less . 
+D:  Eh fifty - f six 
+D:  uh no , the frame error rate ? 
+D:  Fifty - six I think . 
+D:  Percent . 
+D:  The accuracy . 
+D:  Mm - hmm . 
+D:  No for , 
+D:  yes f 
+D:  I don't remember for voice - unvoice , 
+D:  maybe for the other one . 
+D:  for voiced . 
+D:  I don't reme 
+D:  Better . 
+D:  Maybe for voice - unvoice . 
+D:  This is for the other one . 
+D:  I should  I can't show that . 
+D:  But I think that fifty - five was for the  when the output are the fifty - six phone . 
+D:  That I look in the  with the other  nnn the other MLP that we have are more or less the same number . 
+D:  Silence will be better but more or less the same . 
+D:  I think that  I  I  I think that for the other one , for the three output , is sixty sixty - two , sixty three more or less . 
+D:  It 's  
+D:  Yeah . 
+D:  Yeah , because it 's noise also . 
+D:  And we have 
+D:  I know . 
+D:  Yeah , yeah , yeah . 
+D:  will be  
+D:  Yeah . 
+D:  Well I don't know , 
+D:  but  I th I  I think that we  I have the result more or less . Maybe . 
+D:  I don't know . 
+D:  I don't  I 'm not sure but I remember @ @ that I can't show that . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  I will do that . 
+D:  But  
+D:  Uh ,  no . 
+D:  TIMIT . 
+D:  Yeah . 
+D:  Yeah this for TIMIT . 
+D:  Noisy TIMIT . 
+D:  We have noisy TIMIT with the noise of the  the TI - digits . 
+D:  And now we have another noisy TIMIT also with the noise of uh Italian database . 
+D:  This is the work that I did during this date 
+D:  and also mmm I  H Hynek last week say that if I have time I can to begin to  to study 
+D:  well seriously the France Telecom proposal 
+D:  to look at the code 
+D:  and something like that 
+D:  to know exactly what they are doing 
+D:  because maybe that we can have some ideas 
+D:  but not only to read the proposal . 
+D:  Look insi look i carefully what they are doing with the program @ @ and 
+D:  I begin to  to work also in that . 
+D:  But the first thing that I don't understand is that they are using R - the uh log energy that this quite  
+D:  I don't know why they have some constant in the expression of the lower energy . 
+D:  I don't know what that means . 
+D:  Yeah . 
+D:  This  
+D:  Yeah . 
+D:  Then maybe I can understand . 
+D:  Because maybe they 're  the threshold that they are using on the basis of this value  
+D:  I don't know exactly , 
+D:  because well th I thought maybe they have a meaning . 
+D:  But I don't know what is the meaning of take exactly this value . 
+D:  Yeah , the e The effect I don't  @ @ I can understand the effect of this , 
+D:  no ? 
+D:  because it 's to  to do something like that . 
+D:  No ? 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Well . I  I will look to try if I move this parameter in their code what happens , 
+D:  maybe everything is  Maybe they tres hole are on basis of this . 
+D:  I don't know . 
+D:  Mm - hmm . 
+D:  I  this more or less anything 
+D:  I think that Stephane will arrive today or tomorrow . 
+D:  Mm - hmm . 
+D:  He 's  I think that he is in Las Vegas or something like that . 
+D:  Yeah . 
+D:  Yeah . 

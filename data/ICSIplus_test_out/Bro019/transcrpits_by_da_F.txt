@@ -1,0 +1,238 @@
+F:  OK . 
+F:  now we 're on . 
+F:  Yes . 
+F:  Yes . 
+F:  For you it is . 
+F:  Uh , your mike number 's written on the back of that unit there . 
+F:  And then the channel number 's usually one less than that . 
+F:  It - it 's one less than what 's written on the back of your  
+F:  yeah . 
+F:  So you should be zero , actually . 
+F:  For your uh , channel number . 
+F:  So what we usually do is um , we typically will have our meetings 
+F:  and then at the end of the meetings we 'll read the digits . 
+F:  Everybody goes around and reads the digits on the  the bottom of their forms . 
+F:  Yeah . 
+F:  We 're  This is session R - nineteen . 
+F:  Sunil 's here for the summer ? 
+F:  I could say a few words about um , some of the uh , compute stuff that 's happening around here , 
+F:  so that people in the group know . 
+F:  OK . 
+F:  We um  
+F:  So we just put in an order for about twelve new machines , uh , to use as sort of a compute farm . 
+F:  And um , 
+F:  uh , we ordered uh , SUN - Blade - one - hundreds , 
+F:  and um , 
+F:  I 'm not sure exactly how long it 'll take for those to come in , 
+F:  but , uh , in addition , we 're running  
+F:  So the plan for using these is , uh , we 're running P - make and Customs here 
+F:  and Andreas has sort of gotten that all uh , fixed up and up to speed . 
+F:  And he 's got a number of little utilities that make it very easy to um , <mouth> run things using P - make and Customs . 
+F:  You don't actually have to write P - make scripts and things like that . 
+F:  The simplest thing  
+F:  And I can send an email around 
+F:  or , maybe I should do an FAQ on the web site about it or something . 
+F:  Um , 
+F:  there 's a c 
+F:  Yeah , yeah . 
+F:  Uh , there 's a command , uh , that you can use called " run command " . 
+F:  " Run dash command " , 
+F:  " run hyphen command " . 
+F:  And , if you say that and then some job that you want to execute , uh , it will find the fastest currently available machine , and export your job to that machine , 
+F:  and uh  and run it there 
+F:  and it 'll duplicate your environment . 
+F:  So 
+F:  you can try this as a simple test with uh , the L S command . 
+F:  So you can say " run dash command L S " , 
+F:  and , um , it 'll actually export that <laugh> LS command to some machine in the institute , and um , do an LS on your current directory . 
+F:  So , substitute LS for whatever command you want to run , 
+F:  and um  And that 's a simple way to get started using  using this . 
+F:  And , so , soon , when we get all the new machines up , <mouth> um , e then we 'll have lots more compute to use . 
+F:  Now th one of the nice things is that uh , each machine that 's part of the P - make and Customs network has attributes associated with it . 
+F:  Uh , attributes like how much memory the machine has , 
+F:  what its speed is , 
+F:  what its operating system , 
+F:  and when you use something like " run command " , you can specify those attributes for your program . 
+F:  For example if you only want your thing to run under Linux , you can give it the Linux attribute , 
+F:  and then it will find the fastest available Linux machine and run it on that . 
+F:  So . 
+F:  You can control where your jobs go , to a certain extent , 
+F:  all the way down to an individual machine . 
+F:  Each machine has an attribute which is the name of itself . 
+F:  So you can give that as an attribute and it 'll only run on that . 
+F:  If there 's already a job running , on some machine that you 're trying to select , your job will get queued up , 
+F:  and then when that resource , that machine becomes available , your job will get exported there . 
+F:  So , 
+F:  there 's a lot of nice features to it 
+F:  and it kinda helps to balance the load of the machines 
+F:  and uh , 
+F:  right now Andreas and I have been the main ones using it 
+F:  and we 're  Uh . 
+F:  The SRI recognizer has all this P - make customs stuff built into it . 
+F:  So . 
+F:  Yeah . 
+F:  Exactly . 
+F:  Yeah , you know , I  I sort of got started  using the recognizer just recently 
+F:  and uh , 
+F:  uh I fired off a training job , 
+F:  and then I fired off a recognition job 
+F:  and I get this email about midnight from Andreas saying , " uh , are you running two <laugh> trainings simultaneously 
+F:  s my m my jobs are not getting run . " 
+F:  So I had to back off a little bit . 
+F:  But , 
+F:  soon as we get some more machines then uh  then we 'll have more compute available . 
+F:  So , 
+F:  um , 
+F:  that 's just a quick update about what we 've got . 
+F:  So . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  You could write a script uh , which called run command on each sub - job 
+F:  right ? 
+F:  But you probably wanna be careful with that 
+F:  because um , you don't wanna saturate the network . 
+F:  Uh , 
+F:  so , um , 
+F:  you know , you should  you should probably not run more than , say ten jobs yourself at any one time , 
+F:  uh , just because then it would keep other people  
+F:  Well it 's not that so much as that , you know , e with  if everybody ran fifty jobs at once then it would just bring everything to a halt 
+F:  and , you know , people 's jobs would get delayed , 
+F:  so it 's sort of a sharing thing . 
+F:  Um , 
+F:  so you should try to limit it to somet sometim some number around ten jobs at a time . 
+F:  Um . 
+F:  So if you had a script for example that had a thousand things it needed to run , um , you 'd somehow need to put some logic in there if you were gonna use " run command " , uh , to only have ten of those going at a time . 
+F:  And uh , then , when one of those finished you 'd fire off another one . 
+F:  Um , 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Yeah . 
+F:  Yeah . 
+F:  Yep . 
+F:  Yeah , exactly . 
+F:  Yeah , you have to be a little bit careful . 
+F:  Um , 
+F:  but uh , you can also  
+F:  If you have that level of parallelization um , and you don't wanna have to worry about writing the logic in  in a Perl script to take care of that , you can use um , P - make 
+F:  and  and you basically write a Make file that uh , you know your final job depends on these one thousand things , 
+F:  and when you run P - make , uh , on your Make file , you can give it the dash capital J and  and then a number , 
+F:  and that number represents how many uh , machines to use at once . 
+F:  And then it 'll make sure that it never goes above that . 
+F:  So , 
+F:  I can get some documentation . 
+F:  It depends . 
+F:  If you  " Run command " , that I mentioned before , is  doesn't know about other things that you might be running . 
+F:  So , it would be possible to run a hundred run jobs at once , 
+F:  and they wouldn't know about each other . 
+F:  But if you use P - make , then , it knows about all the jobs that it has to run 
+F:  and it can control , uh , how many it runs simultaneously . 
+F:  It uses " export " underlyingly . 
+F:  But , if you  
+F:  i It 's meant to be run one job at a time ? 
+F:  So you could fire off a thousand of those , 
+F:  and it doesn't know  any one of those doesn't know about the other ones that are running . 
+F:  Well , if you have , 
+F:  um  
+F:  Like , for example , uh if you didn't wanna write a P - make script 
+F:  and you just had a , uh  an HTK training job that you know is gonna take uh , six hours to run , 
+F:  and somebody 's using , uh , the machine you typically use , 
+F:  you can say " run command " and your HTK thing 
+F:  and it 'll find another machine , 
+F:  the fastest currently available machine 
+F:  and  and run your job there . 
+F:  Yes . 
+F:  Yeah , 
+F:  there are um  
+F:  Right . 
+F:  So some of the machines at the institute , um , have this attribute called " no evict " . 
+F:  And if you specify that , in  in one of your attribute lines , then it 'll go to a machine which your job won't be evicted from . 
+F:  But , the machines that don't have that attribute , if a job gets fired up on that , which could be somebody 's desktop machine , and  and they were at lunch , 
+F:  they come back from lunch and they start typing on the console , then your machine will get evicted  your job  will get evicted from their machine and be restarted on another machine . Automatically . 
+F:  So  which can cause you to lose time , 
+F:  right ? 
+F:  If you had a two hour job , and it got halfway through 
+F:  and then somebody came back to their machine and it got evicted . 
+F:  So . If you don't want your job to run on a machine where it could be evicted , then you give it the minus  the attribute , you know , " no evict " , 
+F:  and it 'll pick a machine that it can't be evicted from . 
+F:  So . 
+F:  Mm - hmm . 
+F:  Yeah , 
+F:  I  I 'm not sure how that works . 
+F:  Uh , it seems like Andreas did something for that . 
+F:  Um . 
+F:  But  
+F:  Yeah . 
+F:  I don't know whether it monitors the keyboard or actually looks at the console TTY , 
+F:  so maybe if you echoed something to the you know , dev  dev console or something . 
+F:  Hmm ? 
+F:  Yeah , yeah . 
+F:  Yeah . 
+F:  Yeah , 
+F:  so , um , 
+F:  yeah . 
+F:  I  I can  I 'm not sure about that one . 
+F:  But uh . 
+F:  OK . 
+F:  Um . 
+F:  Yeah . 
+F:  Yeah , and  and also uh , Stephane 's a  a really good resource for that if you can't find me . 
+F:  Especially with regard to the Aurora stuff . 
+F:  He  he knows that stuff better than I do . 
+F:  Are y are you saying LDA ? 
+F:  LDA . 
+F:  OK . 
+F:  Mm - hmm . 
+F:  So people won't even have to worry about , uh , doing speech - nonspeech then . 
+F:  Mmm . 
+F:  I see . 
+F:  Yeah , 
+F:  I see . 
+F:  Yeah . 
+F:  Mm - hmm . 
+F:  So , are people supposed to assume that there is uh  
+F:  Are  are people not supposed to use any speech outside of those endpoints ? 
+F:  Or can you then use speech outside of it for estimating background noise and things ? 
+F:  OK . 
+F:  Wow . 
+F:  So the baseline itself improves by fifty percent . 
+F:  Wow . 
+F:  Yeah . 
+F:  Perfect to match . 
+F:  It 's  it 's not guaranteed though . 
+F:  Is it  is spectral subtraction typically done on the  after the mel , uh , scaling 
+F:  or is it done on the FFT bins ? 
+F:  Does it matter , 
+F:  or  ? 
+F:  Oh . 
+F:  Hmm . 
+F:  Hmm . 
+F:  Mmm . 
+F:  I see . 
+F:  Hmm . 
+F:  I don't  
+F:  not that I know of . 
+F:  That 's right 
+F:  Wi - with what targets ? 
+F:  Phones . 
+F:  Mmm . 
+F:  Oh . 
+F:  So you 're not down here permanently yet ? 
+F:  Ah ! 
+F:  Oh , OK . 
+F:  So you just  You typically just get a few roots ? 
+F:  You know , 
+F:  two or three , 
+F:  something like that ? 
+F:  Mm - hmm . 
+F:  How did  
+F:  If this is synthetic speech can't you just get the formants directly ? 
+F:  I mean h how is the speech created ? 
+F:  Wasn't a formant synthesizer was it ? 
+F:  Oh , 
+F:  I see . 
+F:  That 's sort of the point . 
+F:  Yeah . 
+F:  I guess we should do digits quickly . 
+F:  You wanna go ahead ? 
+F:  OK . 

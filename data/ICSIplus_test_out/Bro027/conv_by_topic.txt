@@ -1,0 +1,1917 @@
+B:  <mike noise> 
+C:  <mike noise> Eight , eight ? <mike noise> Three . <mike noise> 
+A:  OK , we 're going . 
+D:  This is three . 
+D:  Yep . Yep . 
+B:  <noise> 
+B:  Test . 
+B:  <two breaths into the mike to test it> Hmm . Let 's see . 
+B:  Move it bit . Test ? 
+A:  <breath> 
+B:  Test ? OK , I guess it 's alright . 
+
+
+B:  So , let 's see . 
+B:  Yeah , Barry 's not here and Dave 's not here . Um , I can say about  
+B:  just q just quickly to get through it , that Dave and I submitted this ASRU . 
+A:  This is for ASRU . 
+B:  Yeah . So . 
+B:  Um . 
+C:  <mike noise> 
+B:  Yeah , it 's  
+B:  it 's interesting . I mean , basically we 're dealing with rever reverberation , 
+B:  and , um , when we deal with pure reverberation , the technique he 's using works really , really well . 
+B:  Uh , and when they had the reverberation here , uh , we 'll measure the signal - to - noise ratio and it 's , uh , about nine DB . 
+B:  <laugh> So , um , 
+D:  Hmm . 
+B:  a fair amount of  
+A:  You mean , from the actual , uh , recordings ? 
+D:  k <breath> 
+B:  Yeah . 
+A:  It 's nine DB ? 
+B:  Yeah . Um  
+
+
+B:  And actually it brought up a question which may be relevant to the Aurora stuff too . 
+B:  Um , I know that when you figured out the filters that we 're using for the Mel scale , 
+B:  there was some experimentation that went on at  at , uh  at OGI . 
+B:  Um , 
+B:  but one of the differences that we found between the two systems that we were using ,  the  the Aurora HTK system baseline system  
+B:  and the system that we were  the  the uh , other system we were using , the uh , the SRI system , 
+B:  was that the SRI system had maybe a , um , hundred hertz high - pass . 
+D:  Yep . 
+B:  And the , uh , Aurora HTK , it was like twenty . 
+D:  S sixty - four . 
+D:  S sixty - four . 
+B:  Uh . 
+B:  Sixty - four ? Uh . 
+D:  Yeah , if you 're using the baseline . 
+B:  Is that the ba band center ? 
+D:  No , the edge . 
+B:  The edge is really , uh , sixty - four ? For some reason , uh , 
+D:  Yeah .  @ @ 
+D:  So the , uh , center would be somewhere around 
+B:  Dave thought it was twenty , but . 
+D:  like hundred and  
+D:  hundred and  hundred  hundred and  maybe  it 's like  fi hundred hertz . 
+B:  But do you know , for instance , h how far down it would be at twenty hertz ? 
+B:  What the  how much rejection would there be at twenty hertz , let 's say ? 
+D:  At twenty hertz . 
+B:  Yeah , any idea what the curve looks like ? 
+D:  Twenty hertz frequency  
+D:  Oh , it 's  it 's zero at twenty hertz , right ? The filter ? 
+C:  Yea - actually , the left edge of the first filter is at sixty - four . So  
+D:  Sixt - s sixty - four . So anything less than sixty - four is zero . 
+C:  <clears throat> 
+C:  Mmm . 
+B:  It 's actually set to zero ? 
+B:  What kind of filter is that ? 
+D:  Yeah . 
+C:  Yeah . 
+B:  Is this  oh , from the  from  
+C:  It  
+C:  This is the filter bank 
+C:  in the frequency domain that starts at sixty - four . Yeah . 
+B:  Oh , so you , uh  so you really set it to zero , the FFT ? 
+D:  Yeah , yeah . So it 's  it 's a weight on the ball spectrum . 
+D:  Triangular weighting . 
+B:  Right . OK . 
+B:  Um  
+B:  OK . So that 's  that 's a little different than Dave thought , I think . But  but , um , 
+B:  still , it 's possible that we 're getting in some more noise . 
+B:  So I wonder , is it  @ @ Was there  their experimentation 
+B:  with , uh , say , throwing away that filter or something ? And , uh  
+D:  Uh , throwing away the first ? 
+B:  Yeah . 
+D:  Um , yeah , we  we 've tried including the full  full bank . 
+D:  Right ? From zero to four K . 
+C:  Mm - hmm . 
+D:  And that 's always worse than using sixty - four hertz . 
+C:  <clears throat> 
+B:  Right , but the question is , whether sixty - four hertz is  is , uh , too , 
+B:  uh , low . 
+D:  Yeah , I mean , make it a hundred or so ? 
+B:  Yeah . 
+D:  I t I think I 've tried a hundred and it was 
+D:  more or less the same , or slightly worse . 
+B:  On what test set ? 
+D:  On the same , uh , SpeechDat - Car , Aurora . 
+B:  Um , it was on the SpeechDat - Car . 
+D:  Yeah . 
+D:  So I tried a hundred to four K . Yeah . 
+B:  Um , 
+D:  So it was  
+B:  and on  and on the , um , um , 
+B:  <mouth> TI - digits also ? 
+D:  <inbreath> No , no , no . I think I just tried it on SpeechDat - Car . 
+B:  Mmm . That 'd be something to look at sometime because what , 
+B:  um , 
+D:  Mm - hmm . 
+B:  eh , he was looking at was performance in this room . 
+B:  Would that be more like  
+B:  Well , you 'd think that 'd be more like SpeechDat - Car , I guess , in terms of the noise . 
+B:  The SpeechDat - Car is more , uh , sort of 
+B:  roughly stationary , a lot of it . And  
+D:  Yeah . 
+B:  and TI - digits maybe is not so much as  Yeah . 
+C:  Mm - hmm . 
+D:  Yeah . 
+B:  Mm - hmm . 
+B:  OK . Well , maybe it 's not a big deal . 
+B:  But , um  
+B:  Anyway , that was just something we wondered about . 
+B:  But , um , uh , certainly a lot of the noise , 
+B:  uh , is , uh , below a hundred hertz . Uh , the 
+D:  Yeah . 
+B:  signal - to - noise ratio , you know , looks a fair amount better if you  if you high - pass filter it from this room . 
+B:  But , um  but it 's still pretty noisy . Even  even for a hundred hertz up , it 's  it 's still fairly noisy . The signal - to - noise ratio is  is  
+C:  Mm - hmm . 
+B:  is actually still pretty bad . 
+B:  <mouth> So , um , I mean , the main  the  the  
+A:  Hmm . 
+A:  So that 's on th that 's on the f the far field ones though , right ? Yeah . 
+B:  Yeah , that 's on the far field . Yeah , the near field 's pretty good . 
+B:  <mike noise> 
+A:  So wha what is , uh  what 's causing that ? 
+B:  Well , we got a  a video projector in here , 
+B:  uh , and , uh  which we keep on during every  every session we record , which , you know , I  I  
+A:  Yeah . 
+B:  w we were aware of but  but we thought it wasn't a bad thing . I mean , that 's a 
+A:  Uh - huh . 
+A:  Yeah . 
+B:  nice noise source . Uh , and there 's also the , uh  uh , air conditioning . 
+A:  Hmm . 
+B:  Which , uh , you know , 
+B:  is a pretty low frequency kind of thing . But  but , uh  
+A:  Mm - hmm . 
+B:  So , those are  those are major components , I think , 
+A:  I see . 
+B:  uh , for the stationary kind of stuff . 
+A:  Mmm . 
+B:  Um , 
+B:  but , um , it , uh  I guess , I  maybe I said this last week too but it  it  it really became apparent to us that we need to  to take account of noise . 
+B:  And , uh , so I think when  when he gets done with his prelim study I think <laugh> one of the next things we 'd want to do is to 
+B:  take this , uh  uh , noise , uh , processing stuff and  and , 
+B:  uh  uh , synthesize some speech from it . And then  
+A:  When are his prelims ? 
+B:  Um , I think in about , um , 
+B:  a little less than two weeks . 
+A:  Oh . 
+A:  Wow . 
+B:  Yeah . 
+B:  Yeah . So . <laugh> 
+B:  Uh , it might even be sooner . Uh , let 's see , this is the sixteenth , seventeenth ? 
+B:  Yeah , I don't know if he 's before  It might even be in a week . 
+A:  So , I Huh . I  I guessed that they were gonna do it some time during the semester but they 'll do it any time , huh ? 
+B:  A week , week and a half . 
+B:  They seem to be  Well , the semester actually is starting up . 
+A:  Is it already ? 
+B:  Yeah , the semester 's late  late August they start here . 
+A:  Yikes . 
+B:  So they do it right at the beginning of the semester . 
+A:  Yeah . 
+B:  Yeah . 
+
+
+B:  So , uh  Yep . I mean , that  that was sort of one  I mean , 
+B:  the overall results seemed to be first place in  in  in the case of either , 
+B:  um , artificial reverberation 
+B:  or a modest sized training set . 
+B:  Uh , either way , 
+B:  uh , i uh , it helped a lot . 
+B:  And  But if you had a  a really big training set , 
+B:  a recognizer , uh , system that was capable of taking advantage of a really large training set  
+B:  I thought that  One thing with the HTK is that is has the  as we 're using  the configuration we 're using 
+B:  is w s is  being bound by the terms of Aurora , we have 
+B:  all those parameters just set as they are . So even if we had a hundred times as much data , we wouldn't 
+B:  go out to , you know , 
+B:  ten or t or a hundred times as many Gaussians or anything . So , 
+B:  um , it 's kind of hard to take advantage of  of  of big chunks of data . 
+C:  Mm - hmm . 
+D:  Mmm , yeah . 
+B:  Uh , whereas the other one does sort of expand as you have more training data . It does it automatically , actually . 
+B:  And so , um , 
+B:  uh , 
+B:  that one really benefited from the larger set . And it was also a diverse set with different noises and so forth . Uh , 
+B:  so , um , 
+B:  <mouth> that , uh  that seemed to be  So , if you have that  
+B:  that better recognizer that can  that 
+B:  can build up more parameters , 
+B:  and if you , um , have the natural room , which in this case has a p a pretty bad signal - to - noise ratio , 
+B:  then in that case , um , the right thing to do is just do  u use speaker adaptation . 
+B:  And  and not bother with  with 
+B:  this acoustic , uh , processing . But I think that that would 
+B:  not be true if we did some explicit noise - processing as well as , uh , 
+C:  Mm - hmm . 
+B:  the convolutional kind of things we were doing . 
+B:  So . 
+B:  That 's sort of what we found . 
+D:  Hmm . 
+C:  <laugh-breath> 
+
+
+
+
+A:  I , um  
+A:  <mouth> uh , started working on the 
+A:  uh  
+A:  Mississippi State 
+A:  recognizer . 
+D:  Oh , OK . <nose whistle with inhale> 
+A:  So , I got in touch with Joe and  
+A:  and , uh , from your email and things like that . And , 
+A:  uh , they added me to the list  
+A:  uh , the mailing list . And he gave me all of the 
+D:  OK , great . 
+A:  pointers and everything that I needed . And so I downloaded the , um  
+A:  There were two things , 
+A:  uh , that they had to download . 
+A:  One was the , uh , I guess the software . 
+A:  And another wad  was a , um , 
+A:  sort of like a sample  a sample run . 
+A:  So I downloaded the software and compiled all of that . And it 
+B:  <mike noise> 
+D:  <mouth> Eight . 
+A:  compiled fine . No problems . 
+D:  Oh , eh , great . 
+A:  And , um , I grabbed the sample stuff but I haven't , uh , 
+D:  That sample was released only yesterday or the day before , right ? 
+A:  compiled it .  
+A:  No  Well , I haven't grabbed that one yet . So there 's two . 
+D:  Oh , there is another short sample set  o o sample . OK . 
+A:  There was another short one , yeah . And so I haven't grabbed the latest one that he just , uh , put out yet . 
+D:  Oh , OK . F Yeah , OK . 
+A:  So . 
+A:  Um , but , the software seemed to compile fine and everything , so . 
+A:  And , um , <mouth> 
+A:  So . 
+
+
+B:  Is there any word yet about the issues about , um , adjustments for different feature sets or anything ? 
+A:  No , I  I d 
+A:  You asked me to write to him and I think I forgot to ask him about that . 
+B:  Yeah . 
+A:  Or if I did ask him , he didn't reply . I  I don't remember yet . 
+A:  Uh , I 'll  I 'll d I 'll double check that and ask him again . 
+B:  Yeah . 
+D:  Hmm . Mmm . 
+B:  Yeah , it 's like that  that could r turn out to be an important issue for us . Yeah . 
+A:  Yeah . Yeah . 
+D:  Cuz they have it  
+A:  Maybe I 'll send it to the list . 
+A:  Yeah . 
+D:  Cuz they have , uh , already frozen those in i insertion penalties and all those stuff is what  I feel . Because they have this document 
+A:  Uh - huh . 
+D:  explaining the recognizer . 
+C:  <clears throat> 
+D:  And they have these tables with , 
+D:  uh , various language model weights , insertion penalties . 
+D:  u 
+A:  OK , I haven't seen that one yet . 
+D:  Uh , it 's th it 's there on that web . And , uh , on that , I mean , they have run some experiments using various 
+A:  So . 
+A:  OK . 
+D:  insertion penalties and all those  
+C:  <clears throat> 
+A:  And so they 've picked  
+D:  Yeah , I think they pi p yeah , they picked the values from  
+A:  the values . Oh , OK . OK . 
+B:  For r w what test set ? 
+D:  Uh , p the one that they have reported is a NIST evaluation , Wall Street Journal . 
+B:  But that has nothing to do with what we 're testing on , right ? 
+D:  You know . No . So they 're , like  um  
+C:  Mm - hmm . 
+D:  So they are actually trying to , uh , 
+D:  fix that  those values using the clean , 
+D:  uh , training part of the Wall Street Journal . Which is  I mean , the Aurora . 
+D:  Aurora has a clean subset . I mean , they want to train it and then this  they 're going to run some evaluations . 
+B:  Right . 
+B:  So they 're set they 're setting it based on that ? 
+D:  Yeah . 
+B:  OK . So now , we may come back to the situation where 
+B:  we may be looking for a modification of the features to account for the fact 
+B:  that we can't modify these parameters . But , um , 
+A:  Yeah . 
+D:  Yeah . 
+B:  uh  but it 's still worth , I think , just  since  you know , just chatting with Joe about the issue . 
+A:  Yeah , OK . Do you think that 's something I should just send to him or do you think I should send it to this  there 's an  a m a mailing list . 
+B:  Um  
+B:  <inbreath> 
+B:  Well , it 's not a secret . I mean , we 're , you know , certainly willing to talk about it with everybody , but I think  I think that , um  
+B:  um , it 's probably best to start talking with him just to  
+A:  OK . 
+B:  Uh @ @  you know , it 's a dialogue between two of you about what  you know , what does he think about this and what  what  you know  what could be done about it . Um , 
+A:  Yeah . 
+A:  OK . 
+B:  if you get ten people in  involved in it there 'll be a lot of perspectives based on , you know , how  
+A:  Yeah . 
+B:  you know . Uh  But , I mean , I think it all should come up eventually , but if  if  
+A:  Right . 
+A:  OK . 
+B:  if there is any , uh , uh , way to move in  a way that would  that would , you know , be more open to different kinds of 
+B:  features . But if  if , uh  if there isn't , and it 's just kind of shut down and  and then also there 's probably not 
+B:  worthwhile bringing it into a larger forum where  where political issues will come in . 
+A:  Yeah . 
+A:  OK . 
+D:  Oh . @ @ So this is now  it 's  it 's compiled under Solaris ? 
+A:  Yeah . 
+D:  Yeah , OK . Because he  there was some mail r saying that it 's  may not be stable for Linux and all those . 
+A:  Yep . 
+A:  Yeah . 
+A:  Yeah , i that was a particular version . 
+D:  SUSI yeah . 
+A:  Yeah , SUSI or whatever it was but we don't have that . So . 
+D:  Yeah , yeah . 
+D:  Yeah , OK . 
+D:  OK , that 's fine . Yeah . 
+A:  Should be OK . Yeah , it compiled fine actually . No  no errors . Nothing . So . 
+D:  That 's good . 
+
+
+B:  Uh , this is slightly off topic but , uh , 
+B:  I noticed , just glancing at the , uh , Hopkins 
+B:  workshop , uh , web site that , uh , 
+B:  um  
+B:  one of the thing I don't know  Well , we 'll see how much they accomplish , but one of the things that they were trying to do in the 
+B:  graphical models thing was to put together a  a , uh , tool kit 
+B:  for doing , uh r um , arbitrary 
+B:  graphical models for , uh , speech recognition . 
+A:  Hmm . 
+B:  So  And Jeff , uh  the two Jeffs were 
+A:  Who 's the second Jeff ? 
+B:  Uh  Oh , uh , do you know Geoff Zweig ? 
+A:  No . 
+B:  Oh . Uh , he  he , uh  he was here for a couple years and he , uh  got his PHD . He  
+A:  Oh , OK . 
+B:  And he 's , uh , been at IBM for the last couple years . 
+A:  Oh , OK . 
+B:  So . Uh , so he did  he did his PHD on dynamic Bayes - nets , uh , 
+A:  Wow . That would be neat . 
+B:  for  for speech recognition . He had some continuity built into the model , 
+B:  presumably to handle some , um , 
+B:  inertia in the  in the production system , and , 
+B:  um  
+A:  Hmm . 
+B:  So . 
+D:  Hmm . 
+
+
+
+
+C:  Um , I 've been playing with , first , the , um , VAD . 
+C:  Um , <clears throat> so it 's exactly the same approach , but 
+C:  the features that the VAD neural network use are , uh , MFCC after noise compensation . 
+C:  Oh , I think I have the results . 
+B:  What was it using before ? 
+D:  @ @ 
+C:  Before it was just 
+C:  P L Ps . So . 
+D:  Yeah , it was actually  No . Not  I mean , it was just the noisy features I guess . Yeah , yeah , yeah , not compensated . 
+C:  Yeah , noisy  noisy features . 
+C:  Um  
+C:  This is what we get after  
+B:  <pages turning in background> 
+C:  This  So , actually , we , yeah , here the features are noise compensated and there is also the LDA filter . 
+C:  Um , and then it 's a pretty small neural network which use , 
+B:  <mike noise> 
+C:  um , <clears throat> nine frames of  
+C:  of six features from C - zero to C - fives , plus the first derivatives . 
+C:  And it has one hundred hidden units . 
+A:  Is that nine frames u s uh , centered around the current frame ? Or    
+C:  Yeah . Mm - hmm . 
+B:  S so , I 'm  I 'm sorry , there 's  there 's  there 's how many  how many inputs ? 
+C:  <sniff> 
+C:  So it 's twelve times nine . 
+B:  Twelve times nine inputs , and a hundred , uh , hidden . 
+C:  Hidden and 
+D:  Two outputs . 
+C:  two outputs . 
+B:  Two outputs . 
+B:  OK . So I guess about eleven thousand 
+D:  <mike noise> 
+B:  parameters , 
+C:  Mm - hmm . 
+B:  which  actually shouldn't be a problem , even in  in small phones . Yeah .  
+A:  So , I 'm  I 'm  s so what is different between this and  
+C:  It should be OK . 
+A:  and what you  
+C:  So the previous syst  It 's based on the system that has a fifty - three point sixty - six percent improvement . 
+C:  It 's the same system . The only 
+C:  thing that changed is the n 
+C:  a p eh  a es the estimation of the silence probabilities . 
+A:  Ah . OK . 
+C:  Which now is based on , uh , cleaned features . 
+B:  And , it 's a l it 's a lot better . 
+A:  Wow . 
+C:  Yeah . Um  
+B:  That 's great . 
+
+
+C:  So it 's  it 's not bad , but the problem is still that the latency is too large . 
+B:  What 's the latency ? 
+C:  Because  
+C:  um  
+C:  the  the latency of the VAD is two hundred and twenty milliseconds . 
+C:  And , uh , the VAD is used 
+C:  uh , i for on - line normalization , 
+C:  and it 's used before the delta computation . 
+C:  So if you add 
+C:  these components it goes t to a hundred and seventy , right ? 
+B:  I  I 'm confused . You started off with two - twenty and you ended up with one - seventy ? 
+C:  With two an two hundred and seventy . 
+B:  Two - seventy . 
+C:  If  Yeah , if you add the c delta comp delta computation which is done afterwards . 
+B:  Oh . 
+C:  Um  
+B:  So it 's two - twenty . I the is this  are these twenty - millisecond 
+B:  frames ? Is that why ? Is it after downsampling ? or  
+C:  <clears throat> The two - twenty is one hundred milliseconds for the um  No , it 's forty milliseconds for t for the , uh , 
+C:  uh , 
+C:  cleaning of the speech . 
+C:  Um  then there is , um , the neural network which use 
+C:  nine frames . So it adds forty milliseconds . 
+B:  a 
+B:  OK . 
+C:  Um , after that , um , you have the um , filtering of the silence probabilities . 
+C:  Which is a million filter it , 
+C:  and it creates a one hundred milliseconds delay . 
+C:  So , um  
+B:  <inbreath> @ @   
+D:  Plus there is a delta at the input . 
+C:  Yeah , and there is the delta at the input which is , 
+B:  One hundred 
+C:  um  
+B:  milliseconds for smoothing . 
+C:  So it 's  
+B:  Uh , median . 
+C:  @ @  
+D:  It 's like forty plus  forty  plus  
+C:  Mmm . Forty  
+B:  And then forty  
+C:  This forty plus twenty , plus one hundred . 
+B:  forty p 
+B:  @ @  
+C:  Uh  
+D:  So it 's two hundred actually . 
+C:  Yeah , there are twenty that comes from  
+C:  There is ten that comes from the LDA filters also . Right ? 
+D:  Oh , OK . 
+C:  Uh , so it 's 
+C:  two hundred and ten , yeah . 
+D:  If you are using  
+B:  Uh  
+C:  Plus the frame , so it 's two - twenty . 
+D:  t If you are using three frames  If you are phrasing f  using three frames , it is thirty here for delta . 
+C:  Yeah , I think it 's  it 's five frames , but . 
+D:  So five frames , that 's twenty . 
+D:  OK , so it 's who un  two hundred and ten . 
+B:  Uh , p Wait a minute . It 's forty  <laugh> forty for the  for the cleaning of the speech , forty for the I N  ANN , a hundred for the smoothing . 
+C:  So . Forty cleaning . 
+C:  Yeah . 
+B:  Well , but at ten  , 
+C:  Twenty for the delta . 
+D:  At th <mike noise> At the input . I mean , that 's at the input to the net . 
+B:  Twenty for delta . 
+C:  Yeah . 
+B:  Delta at input to net ? 
+D:  And there i 
+C:  Yeah . 
+D:  Yeah . 
+D:  So it 's like s five , six cepstrum plus delta at nine  nine frames of  
+B:  And then ten milliseconds for  
+D:  Fi - There 's an LDA filter . 
+B:  ten milliseconds for LDA filter , 
+B:  and t and ten  another ten milliseconds you said for the frame ? 
+C:  For the frame I guess . I computed two - twenty  Yeah , well , it 's  
+C:  I guess it 's for the fr  the  
+B:  OK . And then there 's delta besides that ? 
+C:  <inbreath> 
+C:  So this is the features that are used by our network and 
+C:  then 
+C:  afterwards , 
+C:  you have to compute the delta on the , uh , main feature stream , which is 
+B:  OK . 
+C:  um , delta and double - deltas , which is fifty milliseconds . 
+B:  Yeah . No , I mean , the  after the noise part , the forty  the  the other hundred and eighty  
+B:  Well , I mean , 
+B:  hhh ,  
+B:  Wait a minute . Some of this is , uh  is , uh  is in parallel , isn't it ? I mean , the LDA  
+C:  <inbreath> <clears throat> 
+B:  Oh , you have the LDA as part of the V D - uh , VAD ? Or  
+C:  <sniff> The VAD use , uh , LDA filtered features also . 
+B:  Oh , it does ? 
+C:  Mm - hmm . 
+B:  Ah . 
+B:  So in that case there isn't too much in parallel . 
+B:  Uh  
+C:  No . There is , 
+C:  um , 
+C:  just downsampling , upsampling , 
+C:  and the LDA . 
+B:  Um , so the delta at the end is how much ? 
+D:  It 's  
+C:  It 's fifty . 
+B:  Fifty . 
+C:  <sniff> 
+B:  Alright . So  
+C:  But well , we could probably put the delta , um , <mouth> 
+C:  before on - line normalization . It should not that make a big difference , because  
+A:  What if you used a smaller window for the delta ? 
+A:  Could that help a little bit ? 
+A:  I mean , I guess there 's a lot of things you could do to  
+C:  Yeah . 
+B:  Yeah . 
+C:  Yeah , but , nnn  
+B:  So - Yeah . So if you  if you put the delta before the , uh , ana on - line  If  Yeah  uh  then  then it could go in parallel . And then y then you don't have that additive   
+C:  Mm - hmm . Cuz i 
+D:  Yep . 
+C:  Yeah , cuz the time constant of the on - line normalization is 
+C:  pretty long compared to the 
+B:  OK . 
+C:  delta window , so . 
+C:  It should not make  
+B:  OK . 
+B:  And you ought to be able to shove tw , uh  sh uh  pull off twenty milliseconds from somewhere else to get it under two hundred , right ? I mean  
+C:  Mm - hmm . 
+A:  Is two hundred the d 
+B:  The hundred milla 
+B:  mill a hundred milliseconds for smoothing is sort of an arbitrary amount . It could be eighty and  and probably do @ @  
+C:  Yeah , yeah . 
+A:  i a hun uh  Wh - what 's the baseline you need to be under ? 
+C:  <sniff> 
+B:  Well , we don't know . They 're still arguing about it . <laugh> I mean , if it 's two  if  if it 's , uh  
+A:  Two hundred ? 
+C:  @ @ 
+A:  Oh . 
+B:  if it 's two - fifty , 
+B:  then we could keep the delta where it is if we shaved off twenty . If it 's two hundred , 
+B:  if we shaved off twenty , we could  we could , uh , meet it by moving the delta back . 
+A:  So , how do you know that what you have is too much if they 're still deciding ? 
+B:  Uh , we don't , but it 's just  I mean , the main thing is that since that we got burned last time , 
+B:  and  you know , by not worrying about it very much , we 're just staying conscious of it . 
+A:  Uh - huh . 
+B:  <laugh> 
+A:  Oh , OK , I see . 
+C:  <breath-laugh> 
+B:  And so , th I mean , if  if  if a week before we have to be done someone says , " Well , you have to have fifty milliseconds less than you have now " , it would be pretty frantic around here . So  <laugh> 
+A:  Ah , OK . 
+B:  Uh  
+A:  But still , that 's  that 's a pretty big , uh , win . And it doesn't seem like you 're  in terms of your 
+A:  delay , you 're , uh , that  
+B:  He added a bit on , I guess , because before we were  we were  had  were able to have the noise , 
+C:  Hmm . 
+B:  uh , stuff , uh , and the LVA be in parallel . And now he 's  he 's requiring it to be done first . 
+C:  Well , but I think the main thing , maybe , is the cleaning of the speech , which takes forty milliseconds or so . 
+C:  And  
+B:  Right . Well , so you say  let 's say ten milliseconds  seconds for the LDA . 
+C:  and  but  the LDA is , well , pretty short right now . Yeah . 
+B:  Well , ten . 
+B:  And then forty for the other . 
+D:  Yeah , the LDA  LDA  we don't know , is , like  is it very crucial for the features , right ? 
+C:  No . I just  
+D:  Yeah . 
+C:  This is the first try . I mean , I  maybe the LDA 's not very useful then . 
+B:  Right , so you could start pulling back , but  
+D:  S s h 
+D:  Yeah , l 
+B:  But I think you have  I mean , you have twenty for delta computation which y now you 're sort of doing twice , right ? But yo w were you doing that before ? 
+C:  Mmm .  
+C:  <long inbreath> 
+D:  On the  in the  Mm - hmm . 
+C:  Well , in the proposal , um , the input of the VAD network were 
+D:  Just  
+C:  just three frames , I think . 
+D:  Yeah , just the static , no delta . 
+C:  Uh , static features . 
+B:  Right . 
+B:  So , what you have now is fort uh , forty for the  the noise , twenty for the delta , and ten for the LDA . That 's seventy milliseconds 
+C:  @ @ <breath-related noise> 
+B:  of stuff which was formerly in parallel , right ? 
+B:  So I think , 
+C:  Mm - hmm . 
+B:  you know , that 's  that 's the difference as far as the timing , right ? 
+C:  Yeah . 
+B:  Um , and you could experiment with cutting various pieces of these back a bit , but  
+B:  I mean , we 're s we 're not  
+B:  we 're not in terrible shape . 
+A:  Yeah , that 's what it seems like to me . It 's pretty good . 
+C:  Mm - hmm . 
+B:  Yeah . It 's  it 's not like it 's adding up to four hundred milliseconds or something . 
+A:  <clears throat> Where  where is this  
+A:  where is this fifty - seven point O two in  in comparison to the last evaluation ? 
+B:  Well , it 's  I think it 's better than anything , uh , anybody got . 
+C:  Yeah . 
+A:  Oh , is that right ? 
+C:  The best was fifty - four 
+B:  Yeah . 
+C:  point five . 
+D:  Point s  
+A:  Oh . 
+B:  Yeah . Uh - 
+C:  And our system was 
+B:  <mike noise> 
+C:  forty - nine , but with the neural network . 
+A:  Wow . So this is almost ten percent . 
+B:  With the f with the neural net . Yeah , and r and  
+D:  <mouth> Yeah , so this is  this is like the first proposal . The proposal - one . It was forty - four , actually . 
+C:  It would 
+B:  <mike noise> 
+B:  Yeah . Yeah . And we still don't have the neural net in . So  so it 's  You know . So it 's  
+C:  <sniff> 
+A:  Wow . 
+B:  We 're  we 're doing better . I mean , we 're getting 
+A:  This is  this is really good . 
+B:  better recognition . I mean , I 'm sure other people working on this are not sitting still either , but  
+C:  <breath-laugh> 
+B:  but  
+A:  Yeah . 
+B:  but , uh  
+B:  Uh , I mean , the important thing is that we 
+B:  learn how to do this better , and , 
+C:  <sniff> 
+B:  you know . So . 
+A:  <sniff> 
+B:  Um , 
+D:  <mike noise> 
+B:  <breath> 
+
+
+B:  Yeah . So , our , 
+B:  um  
+B:  Yeah , you can see the kind of  kind of numbers that we 're having , say , on SpeechDat - Car which is a hard task , cuz 
+D:  <mike noise> 
+B:  it 's really , um  I think it 's just sort of  
+B:  sort of reasonable numbers , 
+B:  starting to be . 
+C:  Mm - hmm . 
+B:  I mean , it 's still terri 
+C:  Yeah , even for a well - matched case it 's 
+C:  sixty percent error rate reduction , which is  
+B:  Yeah . 
+B:  Yeah . <pages turning> Probably half . <mike noise> 
+B:  Good ! 
+B:  <pages turning> 
+C:  Um , 
+C:  <breath-laugh> 
+C:  Yeah . 
+C:  <sniff> 
+C:  So actually , this is in between 
+C:  <2 sniffs> 
+C:  what we had with the previous VAD and 
+C:  what Sunil did with an IDL VAD . 
+C:  Which gave sixty - two percent improvement , right ? 
+D:  Yeah , it 's almost that . It 's almost an average somewhere around  Yeah . 
+C:  So  
+C:  Yeah . 
+A:  What was that ? Say that last part again ? 
+C:  So , if you use , like , an IDL VAD , 
+D:  o o  
+C:  uh , for dropping the frames , 
+D:  Or the best we can get . 
+C:  the best that we can get  i That means that we estimate the silence probability on the clean version of the utterances . 
+C:  Then you can go up to sixty - two percent error rate reduction , globally . 
+A:  Mmm . 
+C:  Mmm  
+C:  Yeah . 
+A:  So that would be even  That wouldn't change this number down here to sixty - two ? 
+C:  Yeah . 
+B:  Yeah . So you  you were get 
+C:  If you add a g good v very good VAD , 
+C:  that works as well as a VAD working on clean speech , 
+A:  Yeah . 
+D:  <mike noise> 
+A:  Yeah . 
+C:  then you wou you would go  
+A:  So that 's sort of the best you could hope for . 
+C:  Mm - hmm . 
+B:  Probably . Yeah . 
+A:  I see . 
+B:  <breath> 
+C:  <2 sniffs> 
+B:  So fi si fifty - three is what you were getting with the old VAD . 
+C:  Yeah . 
+B:  And , uh  
+B:  and sixty - two with the  the , you know , quote , unquote , cheating VAD . And fifty - seven is what you got with the real VAD . 
+C:  Mm - hmm . 
+B:  <breath> That 's great . 
+B:  <swallow and swallow-breath> 
+
+
+C:  Uh , yeah , the next thing is , I started to play  
+C:  Well , I don't want to worry too much about the delay , no . Maybe it 's better to wait 
+B:  OK . 
+C:  for the decision 
+B:  Yeah . 
+C:  from the committee . 
+C:  Uh , but I started to play with the , um , <vocal squeak> 
+C:  <mouth> uh , tandem neural network . 
+C:  Mmm  
+C:  <sniff> 
+C:  I just did the configuration that 's very similar to 
+C:  what we did for the February proposal . 
+C:  And  
+C:  Um . So . There is a f a first feature stream that use uh straight 
+C:  MFCC features . 
+B:  Mm - hmm . 
+C:  Well , these features actually . 
+C:  And the other stream is the output of a neural network , using as input , also , these , 
+C:  um , 
+C:  cleaned 
+C:  MFCC . 
+C:  Um  
+C:  I don't have the comp Mmm ? 
+A:  Those are th those are th what is going into the tandem net ? 
+B:  <mike noise> 
+A:  Those two ? 
+C:  So there is just this feature stream ,  the fifteen MFCC plus delta and double - delta .  
+B:  No . 
+A:  Yeah ? 
+C:  Um , so it 's  makes forty - five features  that are used as input to the HTK .  
+B:  <mike noise> 
+C:  And then , there is  there are more inputs that comes from the tandem MLP . 
+A:  Oh , oh . OK . I see . 
+B:  Yeah , h he likes to use them both , cuz then it has one part that 's discriminative , one part that 's not . 
+C:  Yeah . Um  
+A:  Uh - huh . 
+A:  Right . OK . 
+
+
+C:  So , um , 
+C:  uh , yeah . Right now it seems 
+C:  that  i I just tested on SpeechDat - Car while the experiment are running on your  on TI - digits . 
+C:  Well , it improves on the well - matched and the mismatched conditions , but it 
+C:  get worse on the highly mismatched . 
+C:  Um , 
+A:  Compared to these numbers ? 
+C:  Compared to these numbers , yeah . 
+C:  Um , like , on the well - match and medium mismatch , the gain is around five percent relative , 
+B:  <inbreath> y  
+C:  but it goes down 
+C:  a lot more , like 
+C:  fifteen percent on the HM case . 
+B:  You 're just using the full ninety features ? 
+C:  @ @ 
+C:  The  
+B:  Y you have ninety features ? 
+C:  i 
+C:  I have , um  
+C:  From the networks , it 's twenty - eight . So  
+B:  And from the other side it 's forty - five . So it 's  you have seventy - three features , 
+C:  So , d i It 's forty - five . Yeah . 
+B:  and you 're just feeding them like that . 
+C:  Yeah . 
+C:  Mm - hmm . 
+B:  There isn't any KLT or anything ? 
+C:  There 's a KLT after the neural network , as  as before . 
+A:  That 's how you get down to twenty - eight ? 
+C:  Yeah . 
+C:  <inbreath> 
+A:  Why twenty - eight ? 
+C:   
+C:  I don't know . Uh . It 's  
+A:  Oh . 
+B:  <laugh> 
+C:  i i i It 's because it 's what we did for the first proposal . We tested , 
+A:  Ah . 
+C:  uh , trying to go down and Yeah .  <laugh> 
+B:  It 's a multiple of seven . 
+D:  Yeah . <laugh> Yeah . Yeah . <laugh> 
+A:  <laugh> 
+B:  <laugh> 
+C:  So   
+C:  Um .  <sniff> 
+C:  I wanted to do something very similar to the proposal as a first  
+A:  I see . 
+B:  Yeah . 
+A:  Yeah . That makes sense . 
+C:  first try . 
+C:  But we have to  for sure , we have to go down , because the limit is now sixty features . So , 
+B:  Yeah . 
+C:  uh , we have to find a way to decrease 
+C:  the number of features . 
+C:  Um  
+A:  So , it seems funny that  
+A:  I don't know , maybe I don't u quite understand everything ,  but that adding features  
+A:  I guess  I guess if you 're keeping the back - end fixed . 
+B:  <mike noise> 
+A:  Maybe that 's it . Because it seems like just adding information shouldn't give worse results . But I guess if you 're 
+A:  keeping the number of Gaussians fixed in the recognizer , then  
+B:  Well , yeah . But , I mean , just in general , adding information  
+C:  <sniff> Mmm . 
+B:  Suppose the information you added , well , was a really terrible feature and all it brought in was noise . 
+A:  Yeah . 
+B:  Right ? So  so , um  
+B:  Or  or suppose it wasn't 
+B:  completely terrible , but it was completely equivalent to another one feature that you had , 
+B:  except it was noisier . 
+A:  Uh - huh . 
+B:  Right ? In that case you wouldn't necessarily expect it to be better at all . 
+A:  Oh , yeah , I wasn't necessarily saying it should be better . 
+A:  I 'm just surprised that you 're getting fifteen percent relative worse 
+B:  Uh - huh . 
+C:  But it 's worse . 
+A:  on the wel On the highly mismatch . Yeah . 
+B:  On the highly mismatched condition . 
+C:  Yeah , I  
+B:  So , " highly mismatched condition " means that in fact your training is a bad estimate of your test . 
+C:  Uh - huh . 
+B:  So having  having , uh , a g a l a greater number of features , if they aren't maybe the right features that you use , certainly can e can easily , 
+B:  uh , make things worse . 
+B:  I mean , you 're right . If you have  if you have , uh , lots and lots of data , 
+B:  and you have  and your  your  your training is representative of your test , 
+B:  then getting more sources of information should just help . But  but it 's  
+B:  It doesn't necessarily work that way . 
+A:  Huh . 
+C:  Mm - hmm . 
+D:  <mike noise> 
+
+
+B:  So I wonder , um , 
+B:  Well , what 's your  what 's your thought about what to do next with it ? 
+C:  Um , I don't know . I 'm surprised , because 
+C:  I expected the neural net to help more 
+C:  when there is more mismatch , as 
+C:  it was the case for the  
+D:  <nose whistle with inhale> So , was the training set same as the p the February proposal ? 
+B:  Mm - hmm . 
+D:  @ @ 
+C:  Yeah , it 's the same training set , so it 's TIMIT with 
+D:  OK . 
+C:  the TI - digits ' , uh , noises , 
+B:  Mm - hmm . 
+C:  uh , added . 
+C:  Um  
+B:  Well , we might  uh , we might have to experiment with , uh 
+B:  better training sets . Again . But , I  The other thing is , I mean , before you found that was the best configuration , but you might have to retest those things now that we have different  
+C:  Mm - hmm . 
+B:  The rest of it is different , right ? So , um , 
+D:  <mike noise> 
+B:  uh ,  
+B:  For instance , what 's the effect of just putting 
+B:  the neural net on without the o other  other path ? 
+C:  Mm - hmm . 
+B:  I mean , you know what the straight features do . That gives you this . 
+C:  Yeah . 
+C:  Mm - hmm . 
+B:  You know what it does in combination . 
+B:  You don't necessarily know what  
+A:  What if you did the  <clears throat> Would it make sense to do the KLT 
+A:  on the full set of combined features ? 
+A:  Instead of just on the  
+C:  Yeah . I g I guess . Um . The reason I did it this ways is that 
+C:  in February , it  we  we tested different things like that , 
+A:  <sniff> 
+C:  so , having two KLT , having just a KLT for a network , 
+C:  or having a global KLT . 
+A:  Oh , I see . 
+C:  And  
+A:  So you tried the global KLT before and it didn't really  
+C:  Well  
+C:  Yeah . And , uh , th Yeah . The differences between these configurations were not huge , but  
+A:  I see . 
+C:  it was 
+C:  marginally better with 
+C:  this configuration . 
+A:  Uh - huh . Uh - huh . 
+B:  But , yeah , that 's obviously another thing to try , 
+C:  Um . 
+B:  since things are  things are different . And I guess if the  
+C:  Mm - hmm . Mm - hmm . 
+B:  These are all  so all of these seventy - three features are going into , 
+B:  um , 
+B:  the , uh  the HMM . 
+C:  Yeah . 
+B:  And is  are  i i are  are any deltas being computed of tha of them ? 
+C:  Of the straight features , yeah . 
+C:  So . 
+B:  n Not of the  
+A:  <sniffs> 
+C:  But n th the , um , 
+C:  tandem features are 
+C:  u 
+B:  Are not .  
+C:  used as they are . So , 
+C:  yeah , maybe we can add some context from these features also as  
+B:  Could . i 
+C:  Dan did in  in his last work . 
+B:  Yeah , but the other thing I was thinking was , um  
+B:  Uh , now I lost track of what I was thinking . But . <laugh> 
+A:  What is the  
+A:  You said there was a limit of sixty features or something ? 
+C:  Mm - hmm . 
+A:  What 's the relation between that limit and the , um , forty - eight  
+B:  <inbreath> Oh , I know what I was gonna say . 
+A:  uh , forty eight hundred 
+A:  bits per second ? 
+C:  Um , not  no relation . The f the forty - eight 
+B:  No relation . 
+A:  So I  I  I don't understand , because i 
+A:  I mean , if you 're only using h 
+C:  hundred bits is for transmission of some features . 
+C:  And generally , i it  s allows you to transmit like , fifteen , 
+C:  uh , cepstrum . 
+B:  <inbreath> The issue was that , um , this is supposed to be a standard that 's then gonna be fed to somebody 's recognizer somewhere 
+B:  which might be , you know , it  it might be a concern how many parameters are use  u used and so forth . And so , 
+B:  uh , they felt they wanted to set a limit . 
+B:  So they chose sixty . 
+B:  Some people wanted to use hundreds of parameters and  and that bothered some other people . u And so 
+A:  Uh - huh . 
+B:  they just chose that . I  I  I think it 's kind of r arbitrary too . But  
+B:  but that 's  that 's kind of what was chosen . I  I remembered what I was going to say . What I was going to say is that , um , 
+B:  maybe  <laugh> maybe with the noise removal , uh , these things are now more correlated . 
+B:  So you have two sets of things that are kind of uncorrelated , uh , 
+B:  within themselves , 
+B:  but they 're pretty correlated with one another . 
+C:  Mm - hmm . 
+B:  And , um , <mouth> 
+B:  they 're being fed into these , uh , variants , only Gaussians and so forth , and  and , uh , 
+C:  Mm - hmm . 
+B:  so maybe it would be 
+B:  a better idea now than it was before to , uh , have , uh , one KLT over everything , 
+C:  Mm - hmm . 
+B:  to de - correlate it . 
+C:  Yeah , I see . 
+B:  Maybe . You know . 
+D:  What are the S N Rs in the training set , TIMIT ? 
+C:  It 's , uh , ranging from 
+C:  zero to clean ?  
+C:  Yeah . From zero to clean . 
+D:  Mm - hmm . 
+C:  <breath-laugh> 
+B:  Yeah . 
+B:  So we found this  this , uh  this Macrophone data , 
+B:  and so forth , that we were using for these other experiments , to be pretty good . So that 's  i after you explore these other alternatives , that might be another way to start looking , is  is just improving the training set . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+B:  I mean , we were getting , 
+B:  uh , lots 
+B:  better 
+B:  recognition 
+B:  using that , than  
+C:  <2 sniffs> 
+B:  Of course , you do have the problem that , 
+B:  um , 
+B:  u i  
+B:  we are not able to increase the number of Gaussians , uh , or anything to , uh , 
+B:  uh , 
+B:  to match anything . So we 're only improving the training of our feature set , but that 's still probably something . 
+A:  So you 're saying , add the Macrophone data to the training of the neural net ? The tandem net ? 
+C:  <sniff> 
+B:  Yeah , that 's the only place that we can train . We can't train the other stuff with anything other than the standard amount , so . 
+A:  Yeah . 
+A:  Right . 
+B:  Um , 
+B:  um  
+A:  What  what was it trained on again ? The one that you used ? 
+C:  It 's TIMIT with noise . 
+A:  Uh - huh . 
+C:  So , yeah , it 's rather a small  
+B:  Yeah . 
+C:  Um , 
+B:  How big is the net , by the way ? 
+C:  Uh , it 's , uh , five hundred hidden units . And  
+B:  And again , you did experiments back then where you made it bigger and it  and that was  that was sort of the 
+B:  threshold point . Much less than that , it was worse , and 
+C:  Yeah . 
+C:  Yeah . 
+B:  much more than that , it wasn't much better . 
+C:  <inbreath> 
+B:  Hmm . 
+C:  Yeah . @ @ ? 
+B:  I mean , one of the things about  I mean , the Macrophone data , 
+B:  um , I think , you know , it was recorded over many different telephones . 
+C:  Mm - hmm . 
+B:  And , um , so , there 's lots of different kinds of acoustic conditions . 
+B:  I mean , it 's not artificially added noise or anything . 
+B:  So it 's not the same . I don't think there 's anybody recording over a car 
+B:  from a car , but  I think it 's  it 's varied enough that if  if doing this adjustments , uh , and playing around with it 
+B:  doesn't , uh , make it better , the most  uh , it seems like the most obvious thing to do is to improve the training set . 
+B:  Um  I mean , what we were  
+B:  uh  the condition  It  it gave us an enormous amount of improvement in what we were doing with Meeting Recorder digits , even though 
+B:  there , again , these m Macrophone 
+B:  digits were very , very different from , uh , 
+B:  what we were going on here . I mean , we weren't talking over a telephone here . 
+B:  But it was just  I think just having a  a nice variation in 
+B:  acoustic conditions was just a good thing . 
+C:  Mm - hmm . 
+C:  Yep . 
+D:  Mmm . 
+
+
+D:  So is it  is it though the performance , 
+D:  big relation in the high ma high mismatch has something to do with the , 
+D:  uh , cleaning up 
+D:  that you  that is done on the TIMIT after adding noise ? So  
+D:  it 's  i All the noises are from the TI - digits , right ? 
+C:  Yeah . 
+D:  So you  i 
+C:  Um  
+D:  Well , it it 's like the high mismatch of the SpeechDat - Car 
+C:  They  k uh  
+D:  after cleaning up , maybe having more noise than the  
+D:  the training set of TIMIT after clean  s after you do the noise clean - up . 
+C:  <sniff> Mmm . 
+D:  I mean , earlier you never had any compensation , you just trained it straight away . 
+C:  Mm - hmm . 
+D:  So it had like all these different conditions of S N Rs , 
+C:  Mm - hmm . 
+D:  actually in their training set of neural net . 
+C:  Mm - hmm . 
+D:  But after cleaning up you have now a different set of S N Rs , right ? 
+C:  Yeah . 
+D:  For the training of the neural net . 
+C:  Mm - hmm . 
+D:  And  
+D:  is it something to do with the mismatch that  that 's created after the cleaning up , like the high mismatch  
+C:  <sniff> 
+C:  You mean the  the most noisy 
+C:  occurrences on SpeechDat - Car might be 
+D:  Mm - hmm . 
+C:  a lot more noisy than  
+D:  Of  that  I mean , the SNR after the noise compensation of the SpeechDat - Car . 
+B:  Oh , so  Right . So the training  the  the neural net is being trained with noise compensated 
+C:  Maybe . 
+D:  @ @ 
+D:  Yeah . 
+C:  Yeah , yeah . 
+B:  stuff . Which makes sense , 
+D:  Yeah . 
+C:  <sniff> 
+B:  but , uh , you 're saying  Yeah , the noisier 
+B:  ones are still going to be , 
+D:  Yeah . 
+B:  even after our noise compensation , are still gonna be pretty noisy . <breath-laugh> 
+C:  <2 sniffs> 
+C:  Mm - hmm . 
+C:  <clears throat> 
+D:  Yeah , so now the after - noise compensation the neural net is seeing a different set of S N Rs than that was originally there in the training set . 
+D:  Of TIMIT . Because in the TIMIT it was zero to some clean . 
+B:  Right . 
+D:  So the net saw all the SNR @ @ 
+B:  Yes . 
+B:  Right . 
+D:  conditions . Now after cleaning up it 's a different set of SNR . 
+B:  Right . 
+D:  And that SNR may not be , like , com covering the whole set of S N Rs that you 're getting in the SpeechDat - Car . 
+B:  Right , but the SpeechDat - Car data that you 're seeing is also reduced in noise by the noise compensation . 
+D:  Yeah , yeah , yeah , yeah , it is . But , I 'm saying , there could be some  
+C:  Yeah . 
+B:  So . 
+C:  Mm - hmm . 
+D:  some issues of  
+B:  Yeah . 
+C:  Well , if the initial range of SNR is different , we  the problem was already there before . And  
+B:  Yeah . 
+C:  Because  
+C:  Mmm  
+B:  Yeah , I mean , it depends on whether you believe that the noise compensation is equally reducing the noise on the test set and the training set . <laugh> Uh  
+C:  Hmm . 
+D:  On the test set , yeah . @ @ 
+C:  <clears throat> 
+B:  Right ? I mean , you 're saying there 's a mismatch in noise 
+D:  Hmm . 
+D:  Mm - hmm . 
+B:  that wasn't there before , but if they were both the same before , then if they were both reduic reduced equally , 
+D:  Mm - hmm . 
+B:  then , 
+B:  there would not be a mismatch . 
+B:  So , I mean , this may be  
+B:  Heaven forbid , this 
+B:  noise compensation process may be imperfect , 
+C:  <laugh> 
+A:  <laugh> 
+B:  but . <laugh> Uh , so maybe it 's treating some things differently . 
+D:  Well , I  
+C:  Yeah , uh  
+D:  I don't know . I  I just  that could be seen from the TI - digits , uh , testing condition because , um , the noises are from the TI - digits , right ? Noise  
+C:  Yeah . So  <clears throat> 
+D:  <swallow> So cleaning up the TI - digits and if the performance 
+D:  goes down in the TI - digits mismatch  high mismatch like this  
+C:  Clean training , yeah . 
+D:  on a clean training , or zero DB testing . 
+C:  Yeah , we 'll  so we 'll see . Uh . Maybe . 
+D:  Yeah . Then it 's something to do . 
+C:  Mm - hmm . <breath> Yeah . 
+
+
+C:  Yeah , actually <clears throat> to s eh , what I observed in the HM 
+C:  case is that 
+C:  the number of deletion 
+C:  dramatically increases . It  
+C:  it doubles . 
+B:  Number of deletions .  
+C:  When I added the num the neural network it doubles the number of deletions . 
+C:  Yeah , so I don't you know <laugh> 
+C:  how to interpret that , but , mmm  
+B:  Yeah . Me either . 
+B:  <laugh> 
+C:  t 
+A:  And  and did  an other numbers stay the same ? Insertion substitutions stay the same ? 
+C:  They p stayed the same , they  maybe they are a little bit 
+A:  Roughly ? 
+C:  uh , lower . 
+A:  Uh - huh . 
+C:  They are a little bit better . Yeah . But  
+B:  <breath> 
+C:  Mm - hmm . 
+B:  Did they increase the number of deletions even for the 
+B:  cases that got better ? Say , for the  I mean , it  So it 's only the highly mismatched ? 
+C:  No , it doesn't . No . 
+B:  And it  Remind me again , the " highly mismatched " means that the  
+C:  Clean training and  
+B:  Uh , sorry ? 
+C:  It 's clean training  Well , close microphone training and 
+B:  Close mike training  
+C:  distant microphone , um , high speed , I think . Well  
+C:  The most noisy cases are the distant microphone for testing . 
+B:  Right . 
+B:  So  
+B:  Well , maybe the noise subtraction is 
+B:  subtracting off speech . <laugh> Wh - <laugh> 
+C:  Separating . <breath-laugh> 
+C:  Yeah . 
+C:  But  Yeah . 
+C:  I mean , but without the neural network it 's  well , it 's better . It 's just when we add the neural networks . The feature are the same except that  
+B:  Yeah , right . Uh , that 's right , that 's right . Um  
+A:  Well that  that says that , you know , the , um  
+A:  the models in  in , uh , 
+A:  the recognizer are really paying attention to the neural net features . 
+C:  Yeah . <clears throat> Mm - hmm . 
+A:  Uh . 
+B:  But , yeah , actually  
+B:  <mike noise> 
+B:  the TIMIT noises  are sort of a range of noises and they 're not so much the stationary 
+C:  <sniff> 
+B:  driving kind of noises , right ? It 's  it 's pretty different . Isn't it ? 
+C:  Uh , there is a car noise . So there are f just four noises . Um , 
+C:  <noise> 
+C:  <mouth> 
+C:  uh , " Car " , I think , 
+D:  " Babble . " 
+C:  " Babble " , " Subway " , right ? and  
+D:  " Street " or " Airport " or something . 
+C:  and  " Street " isn't  " Train station " , yeah . 
+D:  Or " Train station " . 
+D:  Yeah . 
+C:  So  it 's mostly  Well , " Car " is stationary , 
+B:  Mm - hmm . 
+C:  " Babble " , 
+C:  it 's a stationary background plus some voices , 
+B:  Mm - hmm . 
+C:  some speech 
+C:  over it . And 
+C:  the other two are rather stationary also . 
+B:  Well , I  I think that 
+B:  if you run it  
+B:  Actually , you  maybe you remember this . When you  in  in the old experiments when you ran 
+B:  with the neural net only , and didn't have this side path , 
+B:  um , uh , with the  the pure features as well , 
+C:  Mm - hmm . 
+B:  did it 
+B:  make things better to have the neural net ? Was it about the same ? 
+B:  Uh , w i 
+C:  It was  
+D:  <mike noise> 
+C:  b a little bit worse . 
+B:  Than  ?  
+C:  Than just the features , yeah . 
+B:  So , 
+B:  until you put the second path in with the pure features , the neural net wasn't helping at all . 
+C:  Mm - hmm . 
+B:  Well , that 's interesting . 
+C:  It was helping , 
+C:  uh , if the features are b 
+C:  were bad , I mean . 
+B:  Yeah . 
+C:  Just plain P L Ps or M F C Cs . 
+B:  Yeah . 
+C:  But 
+C:  as soon as we added LDA on - line normalization , and 
+C:  <clears throat> all these things , then  
+B:  They were doing similar enough things . 
+B:  Well , I still think it would be k sort of interesting to see 
+B:  what 
+B:  would happen if you just had the neural net without the side thing . And  and the thing I  I have in mind is , 
+C:  Yeah , mm - hmm . 
+B:  uh , maybe you 'll see that the results are not just a little bit worse . Maybe that 
+B:  they 're a lot worse . 
+B:  You know ? And , um  
+B:  But if on the ha other hand , 
+B:  uh , it 's , say , somewhere in between what you 're seeing now and  and  and , uh , what you 'd have with just the pure features , 
+B:  then maybe there is some problem of a  
+B:  of a , uh , combination 
+B:  of these things , or correlation between them somehow . 
+C:  Mm - hmm . 
+B:  If it really is that the net is hurting you at the moment , then 
+B:  I think the issue is to 
+B:  focus on  on , uh , improving the  the net . 
+C:  Yeah , mm - hmm . 
+B:  Um . 
+B:  So what 's the overall effe I mean , you haven't done all the experiments but you said 
+B:  it was i 
+B:  somewhat better , say , five percent better , for the first two conditions , and fifteen percent worse for the other one ? 
+B:  But it 's  but of course that one 's weighted lower , so I wonder what the net effect is . 
+C:  Y yeah , oh . Yeah . 
+C:  I d I  
+C:  I think it 's  it was one or two percent . 
+C:  That 's not that bad , but it was l like two percent 
+C:  relative worse on SpeechDat - Car . 
+C:  I have to  to check that . Well , I have  I will . 
+B:  <breath> 
+D:  Well , it will  overall it will be still better even if it is fifteen percent worse , 
+C:  <squeak> 
+B:  <mike noise> 
+C:  <clears throat> 
+D:  because the fifteen percent 
+D:  worse is given like f w twenty - five  
+B:  <mike noise> 
+B:  <mike noise> Right . <mike noise> 
+D:  point two five eight . 
+C:  Mm - hmm . 
+C:  Hmm . 
+B:  Right . So the  so the worst it could be , if the others were exactly the same , is four , 
+D:  Is it like  
+D:  Yeah , so it 's four . 
+B:  and  and , uh , in fact since the others are somewhat better  
+D:  Is i 
+D:  So either it 'll get cancelled out , or you 'll get , like , almost the same . 
+C:  Yeah , it was  it was slightly worse . Um , 
+B:  Uh . 
+D:  Slightly bad . 
+D:  Yeah .  
+B:  Yeah , it should be pretty close to cancelled out . 
+D:  Yeah . 
+C:  <sniff> Mm - hmm . 
+
+
+A:  You know , I 've been wondering about something . In the , um  a lot of the , um  
+A:  the Hub - five systems , um , recently have been using LDA . 
+A:  and  and they , um  
+B:  <mike noise> 
+A:  They run LDA on the features right before they train the models . 
+C:  <clears throat> 
+A:  So there 's the  the LDA is  is right there before the H M Ms . 
+D:  Yeah . 
+A:  So , you guys are using LDA but it seems like it 's pretty far back in the process . 
+D:  Uh , this LDA is different from the LDA that you are talking about . The LDA that you  
+D:  saying is , like , you take a block of features , like nine frames or something ,  
+A:  Yeah . 
+A:  Uh - huh . 
+D:  and then do an LDA on it , and then reduce the dimensionality to something like twenty - four or something like that . 
+A:  Yeah , you c you c you can . I mean , it 's  you know , you 're just basically i 
+D:  And then feed it to HMM . 
+D:  Yeah , so this is like a two d 
+A:  You 're shifting the feature space .  Yeah . 
+D:  two dimensional tile . 
+D:  So this is a two dimensional tile . 
+D:  And the LDA that we are f applying is only in time , not in frequency  
+D:  high cost frequency . So it 's like  more like a filtering in time , rather than 
+A:  Ah . OK . 
+D:  doing a r 
+A:  So what i what about , um  i u 
+A:  what i w I mean , I don't know if this is a good idea or not , but what if you put  ran the other kind of LDA , 
+D:  Uh , it  
+A:  uh , on your features right before they go into 
+B:  <mike noise> 
+A:  the HMM ? 
+B:  <inbreath> <mouth>  
+D:  <inbreath> <mouth>  m 
+C:  Mm - hmm . No , actually , I think  i Well . What do we do with the ANN is  
+C:  is something like that except that it 's not linear . But 
+A:  Yeah . 
+C:  it 's  it 's like a nonlinear discriminant analysis . But . 
+A:  Right , it 's the  It 's  Right . The  So  Yeah , so it 's sort of like  The tandem stuff is kind of like i 
+C:  Yeah . It 's  
+A:  nonlinear LDA . <laugh> I g  Yeah . 
+C:  Yeah . 
+B:  Yeah . 
+C:  Uh . 
+A:  But I mean , w but the other features that you have , um , 
+C:  Mm - hmm . 
+A:  th the non - tandem ones , 
+C:  Yeah , I know . That  that  Yeah . Well , in the proposal , they were 
+B:  <inbreath>  
+C:  transformed u using PCA , but  
+A:  Uh - huh . 
+B:  <inbreath>  
+C:  Yeah , it might be that LDA 
+B:  The a the argument i is kind of i in  and it 's not like we really know ,  but the argument anyway is that , um , 
+C:  could be better . 
+B:  uh , we always have the prob I mean , discriminative things are good . LDA , neural nets , they 're good . 
+A:  Yeah . 
+B:  Uh , they 're good because you  you  you learn to distinguish between these categories that you want to be good at distinguishing between . 
+C:  <clears throat> 
+B:  And PCA doesn't do that . It  PAC - PCA  
+B:  low - order PCA throws away pieces that are 
+B:  uh , maybe not  not gonna be helpful just because they 're small , basically . 
+A:  Right . <clears throat> <swallows> 
+B:  But , uh , the problem is , training sets aren't perfect and testing sets are different . 
+B:  So you f you  you face the potential problem with discriminative stuff , be it LDA or neural nets , that you are training 
+B:  to discriminate between categories in one space but what you 're really gonna be g getting is  is something else . 
+A:  Uh - huh . 
+B:  And so , uh , Stephane 's idea was , 
+B:  uh , let 's feed , uh , both this discriminatively trained thing 
+B:  and something that 's not . 
+B:  So you have a good set of features that everybody 's worked really hard to make , 
+A:  Yeah . 
+B:  and then , uh , you  you discriminately train it , but you also 
+B:  take the path that  that doesn't have that , and putting those in together . 
+A:  Uh - huh . 
+B:  And that  that seem So it 's kind of like a combination of the  
+B:  uh , what , uh , Dan has been calling , you know , a feature  uh , you know , a feature combination versus posterior combination or something . It 's  
+B:  it 's , you know , you have the posterior combination but then you get the features from that and use them as a feature combination with these  these other things . 
+B:  And that seemed , at least in the last one , as he was just saying , he  
+B:  he  when he only did discriminative stuff , 
+B:  i it actually was  was  it didn't help at all in this particular case . There was enough of a difference , I guess , between the 
+A:  Yeah . 
+B:  testing and training . 
+B:  But by having them both there  The fact is some of the time , 
+B:  the discriminative stuff is gonna help you . 
+A:  Mm - hmm . 
+B:  And some of the time it 's going to hurt you , and by combining two information sources if , you know  if  if  
+A:  Right . 
+A:  So you wouldn't necessarily then want to do LDA on 
+A:  the non - tandem features because 
+A:  now you 're doing something to them that  
+B:  That i i 
+B:  I think that 's counter to that idea . Now , again , it 's  we 're just trying these different things . We don't really know what 's gonna work best . But 
+A:  Yeah , right . 
+B:  if that 's the hypothesis , at least it would be counter to that hypothesis to do that . 
+A:  Right . 
+B:  Um , and in principle you would think that the neural net would do 
+B:  better 
+B:  at the discriminant part than LDA . 
+A:  Right . 
+A:  Yeah . Well  y 
+B:  Though , maybe not . 
+A:  Yeah . Exactly . I mean , we , uh  we were getting ready to do the tandem , uh , stuff for the Hub - five system , 
+A:  and , um , Andreas and I talked about it , and 
+A:  the idea w the thought was , " Well , 
+A:  uh , yeah , that i you know  th the neural net should be better , but we should at least have 
+A:  uh , a number , you know , to show that we did try the LDA 
+A:  in place of the neural net , so that we can 
+B:  Right . 
+A:  you know , show a clear path . You know , that you have it without it , then you have the LDA , then you have the neural net , and you can see , 
+A:  theoretically . So . 
+A:  I was just wondering  I  I  
+B:  Well , I think that 's a good idea . 
+A:  Yeah . 
+B:  Did  did you do that or  tha that 's a  
+A:  Um . No . That 's what  that 's what we 're gonna do next as soon as I finish this other thing . So .  
+B:  Yeah . <laugh> Yeah . No , well , that 's a good idea . 
+B:  I  I  
+B:  i Yeah .  
+A:  We just want to show . I mean , it  everybody believes it , but you know , we just  
+B:  Oh , no it 's a g 
+B:  No , no , but it might not  not even be true . I mean , it 's  it 's  it 's  it 's  it 's a great idea . I mean , 
+A:  Yeah . 
+B:  one of the things that always disturbed me , uh , in the  the resurgence of neural nets that happened in the eighties was that , um , 
+B:  a lot of people  Because neural nets were pretty easy to  to use  
+A:  Yeah . 
+B:  a lot of people were just using them for all sorts of things without , 
+B:  uh , looking at all into the linear , uh  uh , versions of them . And , 
+A:  Mm - hmm . 
+A:  Yeah . 
+B:  uh , people were doing recurrent nets but not looking at IIR filters , and  You know , I mean , uh , so I think , yeah , it 's definitely a good idea to try it . 
+D:  <mike noise> 
+A:  Yeah , and everybody 's putting that on their <outbreath> systems now , and so , I that 's what made me wonder about 
+B:  Well , they 've been putting them in their systems off and on for ten years , but  but  but , uh , 
+A:  this , but . 
+A:  Yeah , what I mean is it 's  it 's like in the Hub - five evaluations , you know , and you read the system descriptions and 
+B:  And now they all have that . 
+A:  everybody 's got , <laugh> you know , LDA on their features . And so . Uh . 
+B:  I see . 
+B:  Yeah . 
+C:  It 's the transformation they 're estimating on  
+C:  Well , they are trained on the same 
+C:  data 
+C:  as the final HMM are . 
+A:  Yeah , so it 's different . Yeah , exactly . Cuz they don't have these , you know , mismatches that  that you guys have . So that 's why I was wondering if maybe it 's not even a good idea . I don't know . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+A:  I  I don't know enough about it , but  Um . 
+C:  Mm - hmm . 
+B:  I mean , part of why  I  I think part of why you were getting into the KLT  Y you were 
+B:  describing to me at one point that you wanted to 
+B:  see if , 
+B:  uh , you know , getting good orthogonal features was  and combining the  the different 
+B:  temporal 
+B:  ranges  was the key thing that was happening or whether it was this discriminant thing , right ? So you were just trying  
+B:  I think you r I mean , this is  it doesn't have the 
+B:  LDA aspect but th as far as the 
+B:  orthogonalizing transformation , you were trying that at one point , right ? 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+B:  I think you were . 
+C:  Yeah . 
+B:  Does something . It doesn't work as well . 
+C:  <laugh-breath> 
+B:  Yeah . 
+B:  Yeah . 
+
+
+
+
+D:  So , yeah , I 've been exploring a parallel VAD without neural network with , like , 
+B:  <mike noise> 
+D:  less latency using SNR and energy , 
+D:  um , after the cleaning up . 
+D:  So what I 'd been trying was , um , 
+D:  uh  
+D:  After the b after the noise compensation , 
+D:  n I was trying t to f find a f feature based on the ratio of the energies , that is , cl after clean and before clean . 
+D:  So that if  if they are , like , pretty c close to one , which means it 's speech . And if it is n if it is close to zero , which is  
+D:  So it 's like a scale @ @ probability value . 
+D:  So I was trying , uh , with full band and multiple bands , 
+D:  m ps uh  separating them to different frequency bands and deriving separate decisions on each bands , and trying to combine them . 
+D:  Uh , 
+D:  the advantage being like it doesn't have the latency of the neural net if it  if it can g And  it gave me like , uh , one point  
+B:  Mm - hmm . 
+D:  One  more than one percent relative improvement . So , from fifty - three point six it went to fifty f four point eight . So it 's , like , 
+D:  only slightly more than a percent improvement , just like  
+B:  Mm - hmm . 
+D:  Which means that it 's  it 's doing a slightly better job than the previous VAD , 
+B:  Mm - hmm . 
+D:  uh , at a l lower delay . 
+B:  Mm - hmm . 
+D:  Um , so , um  so  u 
+B:  But  i d I 'm sorry , does it still have the median  filter stuff ? 
+D:  It still has the median filter . So  
+B:  So it still has most of the delay , it just doesn't  
+D:  Yeah , so d with the delay , that 's gone is the input , which is the sixty millisecond . 
+D:  The forty plus  twenty . 
+D:  At the input of the neural net you have this , uh , f nine frames of context plus the delta . 
+B:  Well , w i 
+C:  Mm - hmm . 
+B:  Oh , plus the delta , right . OK . 
+D:  Yeah . So that delay , plus the LDA . 
+B:  Mm - hmm . <breath> 
+D:  Uh , so the delay is only the forty millisecond of the noise cleaning , plus the hundred millisecond smoothing at the output . 
+B:  <mike noise> Mm - hmm . Mm - hmm . 
+D:  Um . 
+D:  So . Yeah . So the  the  di the biggest  
+D:  The problem f for me was to find a consistent threshold that works  well across the different databases , because I t 
+D:  I try to make it work on tr SpeechDat - Car and it fails on TI - digits , or if I try to make it work on that it 's just the Italian or something , it doesn't work on the Finnish . 
+B:  Mm - hmm . 
+B:  Mm - hmm . <mike noise> 
+D:  So , um . 
+D:  So there are  there was , like , some problem in balancing the deletions and insertions when I try different thresholds . So  
+B:  Mm - hmm . <mike noise> 
+D:  The  
+D:  I 'm still trying to make it 
+D:  better by using some other features from the  
+D:  after the p clean up  maybe , some , 
+D:  uh , correlation  auto - correlation or some s additional features of  to mainly 
+D:  the improvement of the VAD . 
+D:  I 've been trying . 
+
+
+B:  Now this  this  this , uh , 
+B:  " before and after clean " , it sounds like you think that 's a good feature . 
+B:  That  that , it  you th think that the , uh  the  
+B:  i it appears to be a good feature , right ? 
+D:  Mm - hmm . Yeah . 
+B:  What about using it in the neural net ? 
+C:  Yeah , eventually we could  could just 
+D:  Yeah , so  Yeah , so that 's the  Yeah . So we 've been thinking about putting it into the neural net also . <laugh> 
+B:  <laugh> Yeah . <laugh> 
+C:  <laugh-breath> 
+D:  Because they did  that itself  
+C:  Then you don't have to worry about the thresholds and  <laugh> 
+D:  There 's a threshold and  Yeah . Yeah . So that  that 's , uh  
+B:  <laugh> Yeah . <laugh> 
+C:  but just  
+B:  Yeah . So if we  if we can live with the latency or cut the latencies elsewhere , then  then that would be a , 
+D:  Yeah . Yeah . 
+B:  uh , 
+B:  good thing . Um , anybody  has anybody  you guys or  or Naren , uh , somebody , tried the , uh , 
+B:  um , 
+B:  second th second stream thing ? 
+D:  Oh , I just  I just h put the second stream in place and , uh 
+B:  Uh . 
+C:  <clears throat> 
+D:  ran one experiment , but just like  just to know that everything is fine . 
+B:  Uh - huh . 
+D:  So it was like , uh , forty - five cepstrum plus twenty - three mel  log mel .  
+B:  Yeah . 
+D:  And  and , just , like , it gave me the baseline performance of the Aurora , which is like 
+D:  zero improvement . <laugh> 
+B:  Yeah . 
+B:  Yeah . 
+D:  So I just tried it on Italian just to know that everything is   But I  I didn't export anything out of it because it was , like , a weird feature set . 
+B:  Yeah . 
+D:  So .  
+B:  Yeah . Well , what I think , you know , would be more what you 'd want to do is  is  is , uh , put it into another neural net . 
+D:  Yeah , yeah , yeah , yeah . 
+C:  Mm - hmm . 
+B:  Right ? And then   
+B:  <mouth> But , yeah , we 're  we 're not quite there yet . So we have to <laugh> figure out the neural nets , I guess . 
+C:  Yeah . 
+
+
+D:  The uh , other thing I was wondering was , um , 
+D:  if the neural net , um , has any  because of the different noise con unseen noise conditions for the 
+D:  neural net , where , like , you train it on those four noise conditions , 
+C:  Mm - hmm . 
+D:  while you are feeding it with , like , 
+D:  a additional  some four plus some  f few more conditions which it hasn't seen , actually , 
+D:  from the  f f while testing . Um  
+C:  Yeah , yeah . Right . 
+D:  instead of just h having c 
+D:  uh , those cleaned up t cepstrum , sh should we feed some additional information , like  
+D:  The  the  We have the VAD flag . I mean , should we f feed the VAD flag , also , at the input so that it  it has some additional discriminating information at the input ? 
+C:  Hmm - hmm ! Um  
+B:  <inbreath> Wh - uh , the  the VAD what ? 
+D:  We have the VAD information also available at the back - end . 
+C:  <clears throat> 
+B:  Uh - huh . 
+D:  So if it is something the neural net is not able to discriminate the classes  
+C:  <sniff> 
+C:  <sniff> 
+B:  Yeah . 
+D:  I mean  
+D:  Because most of it is sil 
+D:  I mean , we have dropped some silence f 
+D:  We have dropped so silence frames ?  No , we haven't dropped silence frames still . 
+B:  Mm - hmm . 
+C:  Uh , still not . Yeah .  
+D:  Yeah . So  the b b biggest classification would be the speech and silence . 
+C:  Th - 
+D:  So , by having an additional , uh , feature which says " this is speech and this is nonspeech " , I mean , it certainly helps in some unseen noise conditions for the neural net . 
+C:  <sniff> 
+C:  <2 sniffs> 
+A:  What  
+A:  Do y do you have that feature available for the test data ? 
+D:  Well , I mean , we have  we are transferring the VAD to the back - end  feature to the back - end . Because we are dropping it at the back - end after everything  all the features are computed . So  
+A:  Oh , oh , I see . I see . 
+C:  <clears throat> 
+D:  so the neural  so that is coming from a separate neural net or some VAD . 
+A:  OK . OK . 
+D:  Which is  which is certainly 
+D:  giving a 
+A:  So you 're saying , feed that , also , into  
+D:  @ @ to  Yeah . So it it 's an  additional discriminating information . 
+A:  the neural net . Yeah . Yeah . 
+A:  Right . 
+D:  So that  
+B:  You could feed it into the neural net . The other thing  you could do 
+B:  is just , um , p 
+B:  modify the , uh , output probabilities of the  of the , uh , 
+B:  uh , 
+B:  um , neural net , tandem neural net ,  based on the fact that you have a silence probability . 
+D:  Mm - hmm . 
+B:  Right ?  
+C:  Mm - hmm . 
+B:  <inbreath> 
+B:  So you have an independent estimator of what the silence probability is , 
+B:  and you could multiply the two things , and renormalize . 
+B:  Uh , I mean , you 'd have to do the 
+C:  Yeah . 
+B:  nonlinearity part and deal with that . Uh , I mean , go backwards from what the nonlinearity would , you know  would be . But  but , uh  
+D:  Through  t to the soft max . 
+C:  Yeah , so  maybe , yeah , when  
+A:  But in principle wouldn't it be better to feed it in ? And let the net do that ? 
+B:  Well , u Not sure . 
+B:  I mean , let 's put it this way . I mean , y you  you have this complicated system with thousands and thousand parameters 
+A:  Hmm . 
+A:  Yeah . 
+B:  and you can tell it , uh , " Learn this thing . " 
+B:  Or you can say , " It 's silence ! Go away ! " <laugh> 
+B:  I mean , <laugh> I mean , i Doesn't  ? I think  I think the second one sounds a lot more direct . <breath-laugh> Uh . 
+A:  What  
+A:  what if you  Right . 
+A:  So , what if you then , uh  since you know this , what if you only 
+A:  use the neural net on the speech portions ? 
+B:  Well , uh , 
+C:  That 's what  
+A:  Well , I guess that 's the same . Uh , that 's similar . 
+B:  Yeah , I mean , y you 'd have to actually run it continuously , but it 's  @ @  
+A:  But I mean  I mean , train the net only on  
+B:  Well , no , you want to train on  on the nonspeech also , because that 's part of what you 're learning in it , 
+B:  to  to  to generate , that it 's  it has to distinguish between . 
+D:  Speech . 
+A:  But I mean , if you 're gonna  if you 're going to multiply the output of the net by this other decision , 
+A:  uh , 
+A:  would  then you don't care about whether the net makes that distinction , right ? 
+B:  <inbreath> 
+B:  Well , yeah . But this other thing isn't perfect . 
+A:  Ah . 
+B:  So that you bring in some information from the net itself . 
+A:  Right , OK . That 's a good point . 
+
+
+B:  Yeah . Now the only thing that  that bothers me about all this is that I  I  I  
+B:  The  the fact  
+B:  i i It 's sort of bothersome that you 're getting more deletions . 
+C:  Yeah . 
+B:  <laugh> 
+C:  But  
+C:  So I might maybe look at , 
+C:  is it due to the fact that 
+C:  um , the probability of the silence at the output of the network , is , 
+C:  uh , 
+B:  Is too high .  
+C:  too  too high or  
+C:  If it 's the case , then multiplying it again by  
+B:  Yeah . So maybe  So  
+D:  It may not be  it  
+C:  i by something ? Mm - hmm . 
+B:  Yeah . 
+D:  Yeah , it  it may be too  it 's too high in a sense , like , everything is more like a , um , 
+D:  flat probability . 
+B:  Yeah . 
+C:  Oh - eee - hhh .  
+D:  So , like , it 's not really doing any distinction between speech and nonspeech  or , I mean , different  among classes . 
+C:  Uh , yeah . 
+B:  Yeah . 
+C:  Mm - hmm . 
+A:  Be interesting to look at the  Yeah , for the  
+A:  I wonder if you could do this .  
+A:  But if you look at the , um , highly mism high mismat the output of the net on the high mismatch case and just look at , you know , the distribution 
+A:  versus the  the other ones , do you  do you see more peaks or something ? 
+C:  Yeah .  
+C:  Yeah , like the entropy of the  the output , or  
+A:  Yeah . 
+B:  Yeah , for instance . 
+C:  <inbreath> It  it seems that the VAD network doesn't  Well , 
+B:  But I  bu 
+C:  it doesn't drop , 
+C:  uh , too many frames because the dele the number of deletion is reasonable . 
+C:  But it 's just when we add the tandem , 
+C:  the final MLP , and then  
+B:  Yeah . Now the only problem is you don't want to ta I guess wait for the output of the VAD 
+C:  u 
+B:  before you can put something into the other system , cuz that 'll shoot up the latency a lot , right ? Am I missing something here ? 
+C:  But  
+D:  Mm - hmm . 
+C:  Yeah . 
+C:  Right . 
+B:  Yeah . So that 's maybe a problem with what I was just saying . But  
+B:  but  I I guess  
+A:  But if you were gonna put it in as a feature it means you already have it by the time you get to the tandem net , right ? 
+D:  Um , well . We  w we don't have it , actually , because it 's  it has a high rate energy  the VAD has a   
+B:  No . 
+A:  Ah . 
+B:  Yeah . 
+A:  OK . 
+B:  It 's kind of done in  I mean , some of the things are , 
+B:  not in parallel ,  but 
+B:  certainly , 
+B:  it would be in parallel with the  with a tandem net . 
+A:  Right . 
+B:  In time . 
+B:  So maybe , if that doesn't work , um  
+B:  But it would be interesting to see if that was the problem , anyway . 
+B:  And  and  and then I guess another alternative would be to take the feature that you 're feeding into the VAD , 
+C:  Mm - hmm . 
+B:  and feeding it into the other one as well . 
+C:  Mm - hmm . 
+B:  And then maybe it would just learn  learn it better . 
+B:  Um  
+B:  But that 's  Yeah , that 's an interesting thing to try to see , if what 's going on 
+B:  is that in the highly mismatched condition , 
+B:  it 's , um , causing deletions by having this silence probability up  up too high , 
+C:  Mm - hmm . 
+B:  at some point where the VAD is saying it 's actually speech . 
+C:  Yeah . So , m 
+B:  Which is probably true . 
+C:  <breath-laugh> 
+B:  Cuz  Well , the V A - if the VAD said  since the VAD is  is  is right a lot , <laugh> uh  
+C:  <2 sniffs> 
+C:  <inbreath> Yeah . 
+B:  Hmm . Anyway . 
+B:  Might be . 
+C:  Mm - hmm . 
+B:  Yeah . Well , we just started working with it . But these are  these are some good ideas I think . 
+C:  <sniff> 
+C:  Mm - hmm . 
+C:  <mouth> 
+
+
+C:  Yeah , and the other thing  Well , there are other issues maybe for the tandem , like , 
+C:  uh , well , do we want to , w uh n 
+C:  Do we want to work on the targets ? Or , 
+C:  like , instead of using phonemes , using more context dependent 
+C:  units ? 
+C:  <breath> 
+C:  Well , I 'm  
+A:  For the tandem net you mean ? Hmm . 
+C:  Yeah . I 'm thinking , also , a w about 
+C:  Dan 's work 
+C:  where he  
+C:  he trained <outbreath> a network , not on phoneme targets but on the HMM state targets . 
+C:  And  
+C:  it was giving s slightly better 
+C:  results . 
+B:  Problem is , if you are 
+B:  going to run this on different 
+B:  m 
+C:  Yeah . 
+B:  test sets , including large vocabulary , 
+B:  <sniff> 
+C:  Yeah . 
+B:  um , 
+C:  Uh  
+C:  <sniff> 
+C:  Mmm . I was just thinking maybe about , 
+B:  I think  
+C:  like , generalized diphones , and  
+C:  come up with a  
+C:  a reasonable , 
+C:  not too large , set of context dependent units , and  
+C:  and  
+C:  <mouth> Yeah . 
+C:  And then anyway we would have to reduce this with the KLT . So . But  <laugh> I don't know .  
+B:  <laugh> Yeah . <laugh> 
+D:  <laugh> 
+B:  Yeah .  Well , maybe . 
+C:  Mm - hmm . 
+B:  But I d I d it  it  i 
+B:  it 's all worth looking at , but it sounds to me like , uh , looking at the relationship between this and the  speech noise stuff is  is  
+C:  Mm - hmm . 
+B:  is probably a key thing . 
+B:  That and the correlation between stuff . 
+A:  So if , uh  
+A:  if the , uh , high mismatch case had been more like the , 
+A:  uh , 
+A:  the other two cases  in terms of giving you just a better performance ,  
+C:  Mm - hmm . 
+A:  how would this number have changed ? 
+C:  Oh , it would be  
+C:  Yeah . 
+C:  Around five percent better , I guess . If  
+A:  y Like sixty ? 
+C:  if  i 
+B:  Well , we don't know what 's it 's gonna be the TI - digits yet . He hasn't got the results back yet . 
+C:  Yeah . 
+C:  If you extrapolate the SpeechDat - Car well - matched and medium - mismatch , 
+A:  Uh - huh . 
+A:  Yeah . 
+C:  it 's around , yeah , maybe five . 
+A:  So this would be 
+A:  sixty - two ? 
+B:  Sixty - two .  
+C:  Sixty - two , yeah .  
+B:  Yeah . 
+D:  Somewhere around sixty , must be . 
+A:  Which is  
+D:  <breath> Right ? Yeah . 
+C:  Well , it 's around five percent , because it 's  s Right ? If everything is five percent . 
+D:  <inbreath> Yeah . Yeah . 
+C:  Mm - hmm . 
+A:  All the other ones were five percent , the  
+C:  I d I d I just have the SpeechDat - Car right now , so  
+B:  Yeah . 
+A:  Yeah . 
+C:  It 's running  it shou we should have the results today during the afternoon , but  
+A:  Hmm . 
+C:  Well .  
+C:  <2 sniffs> 
+C:  <sniff> 
+B:  Hmm . 
+B:  <breath> 
+
+
+A:  OK . 
+B:  It 's a wrap . 
+
+
+B:  Well  
+B:  Um  
+B:  So I won't be here 
+B:  for  
+A:  When  
+A:  </k/ during breath> 
+A:  When do you leave ? 
+B:  Uh , I 'm leaving next Wednesday . 
+B:  May or may not be in in the morning . I leave in the afternoon . 
+B:  </s/ during breath> 
+B:  Um , so I  
+A:  But you 're  are you  you 're not gonna be around this afternoon ? 
+B:  Yeah . 
+B:  <inbreath> Oh , well . I 'm talking about next week . I 'm leaving  leaving next Wednesday . 
+A:  Oh . 
+A:  Uh - huh . 
+B:  This afternoon  uh  Oh , right , for the Meeting meeting ? Yeah , that 's just cuz of something on campus . 
+A:  Ah , OK , OK . 
+B:  Yeah . 
+B:  But , um , 
+B:  yeah , so next week I won't , 
+B:  and the week after I won't , cuz I 'll be in Finland . 
+B:  And the week after that I won't . 
+B:  By that time you 'll be   
+B:  Uh , you 'll both be gone  from here . 
+B:  So there 'll be no  definitely no meeting on  on September sixth . <laugh> 
+B:  Uh , and  
+A:  What 's September sixth ? 
+B:  Uh , that 's during Eurospeech . 
+A:  Oh , oh , right . OK . 
+B:  So , uh , Sunil will be in Oregon . Uh , Stephane and I will be in Denmark . 
+B:  Uh  
+B:  Right ? 
+B:  So it 'll be a few weeks , really , before we have a meeting of the same 
+B:  cast of characters . 
+B:  Um , but , uh  
+B:  I guess , 
+B:  just  
+B:  I mean , you guys should probably meet . And maybe Barry  Barry will be around . And  
+B:  and then uh , 
+B:  uh , we 'll start up again with 
+B:  Dave and  Dave and Barry and Stephane 
+B:  and us on the , uh , 
+B:  twentieth . 
+B:  <noise> 
+B:  No . 
+B:  Thirteenth ? 
+B:  <sniff> 
+B:  About a month ? 
+B:  <breath> 
+A:  So , uh , you 're gonna be gone for the next 
+A:  three weeks or something ? 
+B:  I 'm gone for two and a half weeks starting  starting next Wed - late next Wednesday . 
+A:  So that 's  you won't be at the next three of these meetings . 
+A:  Is that right ? 
+B:  Uh , I won't  
+B:  it 's probably four because of  
+B:  is it three ? Let 's see , 
+B:  twenty - third , thirtieth , 
+B:  sixth . That 's right , next three . 
+B:  And the  the third one 
+B:  won't  probably won't be a meeting , cuz  cuz , uh , Su - Sunil , Stephane , and I will all not be here . 
+A:  Oh , right . Right . 
+B:  Um  
+B:  Mmm .  So it 's just , uh , the next two 
+B:  where there will be  there , you know , may as well be meetings , but I just won't be at them . 
+A:  OK . 
+B:  <mouth> And then starting up on the thirteenth , <keyboard clicking in background> 
+B:  uh , we 'll have meetings again but we 'll have to do without Sunil here somehow . <breath-laugh> So . 
+A:  <breath>  
+A:  When do you go back ? 
+D:  Thirty - first , August .  
+B:  Yeah . 
+B:  Yeah . 
+B:  So . 
+B:  Cool . 
+A:  When is the evaluation ? November , or something ? 
+B:  Yeah , it was supposed to be November fifteenth . Has anybody heard anything different ? 
+C:  I don't know . The meeting in  is the five and six of December . 
+D:  p s It 's like  Yeah , it 's tentatively all full . Yeah . 
+C:  So  
+C:  Mm - hmm . 
+D:  Uh , that 's a proposed date , I guess . 
+C:  Yeah , um  
+C:  so the evaluation should be on 
+C:  a week before or  
+C:  <breath> 
+A:  Yeah . 
+B:  Yep . 
+B:  But , no , this is good progress . 
+B:  So . 
+B:  Uh  
+B:  <mouth> OK . 
+C:  <mike noise> 
+B:  Guess we 're done . 
+A:  Should we do digits ? 
+B:  Digits ? Yep . 
+B:  <mike noise> 
+
+
+A:  Transcript L dash three five two .  
+A:  Five seven six four , five six seven zero , four six nine three .  
+A:  Six eight five zero , nine one three nine , four six four eight .  
+A:  Three four four two , seven , one eight two .  
+A:  One eight seven four , nine nine eight four , five eight nine seven .  
+A:  One eight three nine , zero one four five , three six two nine .  
+A:  Five four three , six two , six six seven three .  
+A:  Seven one five one , six zero seven two , five nine four two .  
+A:  Nine eight eight , eight one , nine eight one eight .  
+C:  Transcript L dash three five three .  
+C:  Seven nine one , one two six , five four two .  
+C:  Eight seven three , nine eight four , nine six four six .  
+C:  Three five , seven four , two two , five nine , six one .  
+C:  Five nine , nine seven , nine eight , five one , eight two .  
+C:  Seven five four five , six six five three , zero one one two .  
+C:  Nine nine zero seven , three , nine two six .  
+C:  Zero one nine , three nine eight , zero three five zero .  
+C:  Two eight six , two zero two , one eight one .  
+D:  Transcript L dash three five four .  
+D:  Two nine six , eight six three , seven six zero five .  
+D:  Seven one five six , one three seven zero , four two five six .  
+D:  Nine five three seven , zero , two one eight .  
+D:  One eight six three , nine eight seven one , one zero two nine .  
+D:  Three five three three , four nine three nine , zero three one five .  
+D:  Four zero eight six , four eight , nine five zero , three .  
+D:  Eight zero two eight , nine , seven nine one .  
+D:  Eight nine , nine one , three five , one eight , zero four .  
+D:  </k/ during breath> 
+B:  Transcr - transcript L dash three five zero .  
+B:  Eight four four , two three two , two six one seven .  
+B:  One two , eight three , one nine , nine one , one three .  
+B:  Four five , two four , five nine , six two , three three .  
+B:  Three , eight four six , five five , two zero two , five .  
+B:  Four , six nine three , one three , three six four , six .  
+B:  Two , eight four six , four one , four four six , four .  
+B:  Two nine nine four , three two eight seven , eight seven four two .  
+B:  Four two eight , two zero , seven four eight zero .  
+
+

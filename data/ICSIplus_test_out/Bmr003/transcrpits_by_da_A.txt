@@ -1,0 +1,707 @@
+A:  Thank you all . 
+A:  OK , this is one channel . 
+A:  Can you uh , say your name and talk into your mike one at a time ? 
+A:  OK . 
+A:  Uh , I don't think it 's on there , Jane . 
+A:  Uh , I still don't see you Jane . 
+A:  Yeah , I s 
+A:  No . 
+A:  Uh , well , the mike isn't close enough to your mouth , 
+A:  so . 
+A:  S uh , try speaking loudly , 
+A:  so , 
+A:  OK , 
+A:  good . 
+A:  Thank you . 
+A:  Well , we don't wanna renumber them , 
+A:  cuz we 've already have like , forms filled out with the numbers on them . 
+A:  So , let 's keep the same numbers on them . 
+A:  OK , Dan , are you on ? 
+A:  Good . 
+A:  And I 'm getting lots of responses on different ones , 
+A:  so I assume  the various and assorted P Z Ms are on . 
+A:  Stuff . 
+A:  Yeah , this is not something you need to attend . 
+A:  So . 
+A:  Besides , I don't want anyone who has a weird accent . 
+A:  Right , Dan ? 
+A:  Well , then put it on your head . 
+A:  What are you doing ? 
+A:  Well , I m I would prefer that people wore it on their head 
+A:  but they were complaining about it . 
+A:  Because it 's not  it doesn't go over the ears . 
+A:  It 's very badly designed so it 's  
+A:  Yeah but , there 's nowhere to put the pad so it 's comfortable . 
+A:  And it feels so good that way . 
+A:  So I  I again would like to do some digits . 
+A:  Um . 
+A:  Sure . 
+A:  So let me  
+A:  Well , you know , I 'm just that sort of  digit - y g sorta guy . 
+A:  OK . 
+A:  So this is Adam . 
+A:  I doubt it . 
+A:  I think we 're session four by the way . 
+A:  Or m it might be five . 
+A:  I didn't bring my previous thing . 
+A:  Yeah , d leave the channel blank . 
+A:  Right . 
+A:  Uh , transcript number . 
+A:  Thanks . 
+A:  Should I turn off the VU meter Dan ? 
+A:  Do you think that makes any difference ? 
+A:  Why ? 
+A:  Are you gonna do something other than hit " quit " ? 
+A:  Oh . 
+A:  Should have done it before . 
+A:  The VU meter which tells you what the levels on the various mikes are 
+A:  and there was one hypothesis that perhaps that  <breath> the act of recording the VU meter was one of the things that contributed to the errors . 
+A:  That was me , 
+A:  I thought that was  
+A:  Well , the only reason that could be is if the driver has a bug . 
+A:  Right ? 
+A:  Because the machine just isn't very heavily loaded . 
+A:  No chance of that . 
+A:  Just because it 's beta . 
+A:  Look OK ? 
+A:  Yeah , we usually do that . 
+A:  Yeah . 
+A:  I mean , that 's what we 've done before . 
+A:  Which means we need to move this thing , and sorta decide how we 're actually going to do things . 
+A:  So . 
+A:  Right . 
+A:  Mmm . 
+A:  That 'll work . 
+A:  That 'll work . 
+A:  That 's right . 
+A:  OK , 
+A:  so , 
+A:  topic of this meeting is I wanna talk a little bit about transcription . 
+A:  Um , I 've looked a little bit into commercial transcription services 
+A:  and Jane has been working on doing transcription . 
+A:  Uh , and so we wan wanna decide what we 're gonna do with that 
+A:  and then get an update on the electronics , 
+A:  and then , uh , maybe also talk a little bit about some infrastructure and tools , and so on . 
+A:  Um , you know , eventually we 're probably gonna wanna distribute this thing 
+A:  and we should decide how we 're gonna  how we 're gonna handle some of these factors . 
+A:  So . 
+A:  Hmm ? 
+A:  Right . 
+A:  Right . 
+A:  I mean , so we 're  we 're collecting a corpus 
+A:  and I think it 's gonna be generally useful . 
+A:  I mean , it seems like it 's not a corpus which is  uh , has been done before . 
+A:  And so I think people will be interested in having  having it , 
+A:  and so we will  
+A:  Excuse me ? 
+A:  Well , or something . 
+A:  Yeah , audio D V 
+A:  C Ds , 
+A:  you know . 
+A:  And  and so how we do we distribute the transcripts , 
+A:  how do we distribute the audio files , 
+A:  how do we  how do we just do all that infrastructure ? 
+A:  Right , 
+A:  but  but so should we do it in the same format as LDC 
+A:  and what does that mean to what we 've done already ? 
+A:  Right . 
+A:  So , uh , 
+A:  as it is , it 's sort of a  ad - hoc combination of stuff Dan set and stuff I set up , 
+A:  which we may wanna make a little more formal . 
+A:  So . 
+A:  Right . 
+A:  That 's right . 
+A:  Yeah . 
+A:  I was actually thinking I wouldn't mind spending the summer up there . 
+A:  That would be kind of fun . 
+A:  Yeah . 
+A:  Visit my friends and spend some time  
+A:  Well , and then also I have a bunch of stuff for doing this digits . 
+A:  So I have a bunch of scripts with X Waves , and some Perl scripts , and other things that make it really easy to extract out <breath> and align where the digits are . 
+A:  And if U d UW 's going to do the same thing I think it 's worth while for them to do these digits tasks as well . 
+A:  And what I 've done is pretty ad - hoc , 
+A:  um , so we might wanna change it over to something a little more standard . 
+A:  You know , STM files , or XML , or something . 
+A:  What 's that ? 
+A:  Well they  they certainly wanna collect more data . 
+A:  And so they 're applying , I think I B 
+A:  Is that right ? 
+A:  Something like that . 
+A:  Um , for some more money to do more data . 
+A:  So we were planning to do like thirty or forty hours worth of meetings . 
+A:  They wanna do an additional hundred or so hours . 
+A:  So , they want a very large data set . 
+A:  Um , but of course we 're not gonna do that if we don't get money . 
+A:  So . 
+A:  And I would like that just to get a disjoint speaker set and a disjoint room . 
+A:  I mean , one of the things Morgan and I were talking about is we 're gonna get to know this room really well , 
+A:  the  the acoustics of this room . 
+A:  Including the fan . 
+A:  Oh , it 's enormous . 
+A:  All the others have been on . 
+A:  y Absolut 
+A:  Yeah . 
+A:  There 's definitely  
+A:  Yep . 
+A:  High pitch hum . 
+A:  Wow . 
+A:  Yeah , 
+A:  just get a variety . 
+A:  They 're very good . 
+A:  Carbon monoxide poisoning ? 
+A:  So 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah , I  I wish  
+A:  I wish we had someone here working on adaptation 
+A:  because it would nice to be able to take that stuff and adapt it to a meeting setting . 
+A:  You know  
+A:  No , 
+A:  software , 
+A:  to adapt the speech recognition . 
+A:  Mm - hmm . 
+A:  That 's true . 
+A:  Well that 's not good , right ? 
+A:  Just these . 
+A:  Well we can look into it . 
+A:  So we can get that just with , uh , media costs , 
+A:  is that right ? 
+A:  Oh . 
+A:  Great . 
+A:  So that would be  yeah , that would be something to look into . 
+A:  So . 
+A:  Well , it 's silly to do unless we 're gonna have someone to work on it , 
+A:  so maybe we need to think about it a little bit . 
+A:  Yeah . 
+A:  OK , why don't you go ahead and do that then Eric ? 
+A:  Right . 
+A:  Actually , that 's another thing I was thinking about is that maybe Jane should talk to Liz , to see if there are any transcription issues related to discourse that she needs to get marked . 
+A:  A meeting meeting meeting . 
+A:  Well this is the meeting about the meeting meeting meeting . 
+A:  So . 
+A:  Um . 
+A:  Mm - hmm . 
+A:  Well , I was even thinking that maybe we need to at least ping the U - dub  to see  
+A:  you know , say " this is what we 're thinking about for our transcription " , if nothing else . 
+A:  So , well w shall we move on and talk a little bit about transcription then ? 
+A:  OK , 
+A:  so  <breath> since that 's what we 're talking about . 
+A:  What we 're using right now is a tool , um , from this French group , called " Transcriber " 
+A:  that seems to work very well . 
+A:  Um , 
+A:  so it has a , uh , nice useful Tcl - TK user interface 
+A:  and , uh , 
+A:  Right . 
+A:  Yes , 
+A:  yeah . 
+A:  Right , right . 
+A:  So we 're  we 're at this point only looking for word level . 
+A:  So all  all  so what you have to do is just identify a segment of speech in time , and then write down what was said within it , 
+A:  and identify the speaker . 
+A:  And so the things we  that we know  that I know I want are <breath> the text , the start and end , and the speaker . 
+A:  But other people are interested in for example stress marking . 
+A:  And so Jane is doing primary stress , <breath> um , stress marks as well . 
+A:  Um , and then things like repairs , and false starts , and , <breath> filled pauses , and all that other sort of stuff , <breath> we have to decide how much of that we wanna do . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Well , 
+A:  that 's part of the thing we 're talking about . 
+A:  So what we wanted to do was have Jane do basically one meeting 's worth , 
+A:  you know , forty minutes to an hour , 
+A:  and  
+A:  Yeah . 
+A:  Ten times about , 
+A:  is  and so one of the things was to get an estimate of how long it would take , 
+A:  and then also what tools we would use . 
+A:  And so the next decision which has to be made actually pretty soon is how are we gonna do it ? 
+A:  So . 
+A:  R right , 
+A:  so  so one  one option is to get linguistics grad students and undergrads to do it . 
+A:  And apparently that 's happened in the past . 
+A:  And I think that 's probably the right way to do it . 
+A:  Um , it will require a post pass , 
+A:  I mean people will have to look at it more than once to make sure that it 's been done correctly , 
+A:  but I just can't imagine that we 're gonna get anything that much better from a commercial one . 
+A:  And the commercial ones I 'm sure will be much more expensive . 
+A:  Yeah right . 
+A:  We will just get Joy and Jane to do everything . 
+A:  But , you know , that 's what we 're talking about is getting some slaves who  who need money 
+A:  and , uh , 
+A:  duh , again o 
+A:  I meant Joy . 
+A:  And so again , I have to say " are we recording " 
+A:  and then say , uh , Morgan has  has consistently resisted telling me how much money we have . 
+A:  So . 
+A:  Well , if it 's zero then we can't do any transcription . 
+A:  I mean , cuz we 're  we  
+A:  I mean , I  I can't imagine us doing it ourselves . 
+A:  Right ? 
+A:  N right . 
+A:  Right . 
+A:  Mm - hmm . 
+A:  Right . 
+A:  Right . 
+A:  So at any rate , Jane was looking into the possibility of getting students , 
+A:  at  is that right ? 
+A:  Talking to people about that ? 
+A:  OK . 
+A:  Yeah , right . 
+A:  So , uh  
+A:  She 's already done quite a bit . 
+A:  Yeah . 
+A:  No . 
+A:  We 've  we 've thought about doing that 
+A:  but the recognition quality is gonna be horrendous . 
+A:  Most of those are done by a person . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Yeah , we  
+A:  I mean , we 've talked about it 
+A:  but  
+A:  We don't care about the timing of the words , just of the utterances . 
+A:  Yeah , 
+A:  so  so what  what she 's done so far , is sort of  more or less breath g not breath groups ,  sort of phrases , continuous phrases . 
+A:  And so , um , that 's nice because you  you separate when you do an extract , you get a little silence on either end . 
+A:  So that seems to work really well . 
+A:  Um . 
+A:  Hmm . 
+A:  We could program that pretty easily , 
+A:  couldn't we Dan ? 
+A:  Yeah , mis Mister TCL ? 
+A:  But , um  
+A:  But , if we tried to do automatic speaker ID . 
+A:  I mean , cuz primarily the markings are at speaker change . 
+A:  But that would be  
+A:  Yeah , I guess the question is how much time will it really save us versus the time to write all the tools to do it . 
+A:  But  
+A:  We 're gonna need  we 're gonna need ten to a hundred hours to train the tools , and validate the tools the do the d to  to do all this anyway . 
+A:  I knew you were gonna do that . 
+A:  Just saw it coming . 
+A:  Mm - hmm . 
+A:  She 's  she 's done about half a meeting . 
+A:  Right ? 
+A:  About half ? 
+A:  Yeah , one person would have to assign the boundaries and the  and the other person would have to  
+A:  I mean that 's easy enough . 
+A:  I could do that . 
+A:  No , no . 
+A:  I mean , that  that 's easy enough . 
+A:  I could generate the segmentation and  and you could do the words , and time yourself on it . 
+A:  So . 
+A:  Yep . 
+A:  So it  that might be worth doing . 
+A:  That would at least tell us whether it 's worth spending a week or two trying to get a tool , that will compute the segmentations . 
+A:  Right . 
+A:  Yep . 
+A:  That  
+A:  That 'll s 
+A:  it might save ninety percent of the work though . 
+A:  So . 
+A:  Yeah . 
+A:  I 've already become pretty familiar with the format , 
+A:  so 
+A:  it would be easy . 
+A:  If you 'd tell me where it is , huh ? 
+A:  Mm - hmm . 
+A:  It 's pretty cute . 
+A:  But at any rate . 
+A:  So , um , 
+A:  Right . 
+A:  So  so I think the guess at ten X seems to be pretty standard . 
+A:  Everyone  more or less everyone you talk to says about ten times for hard technical transcription . 
+A:  Using  using stone age tools . 
+A:  I mean , I looked at Cyber Transcriber 
+A:  which is a service that you send an audio file , 
+A:  they do a first - pass speech recognition . 
+A:  And then they  they do a clean up . 
+A:  But it 's gonna be horrible . 
+A:  They 're never gonna be able to do a meeting like this . 
+A:  Well , for Cyber Transcriber they don't quote a price . 
+A:  They want you to call and  and talk . 
+A:  So for other services , um , they were about thirty dollars an hour . 
+A:  Thirty  
+A:  So , yeah . 
+A:  For thirty dollars an hour for  of their work . 
+A:  So  so if it 's ten times it 's three hundred dollars an hour . 
+A:  No . 
+A:  Mm - hmm . 
+A:  Yeah , 
+A:  so  so my  my search was pretty cursory . 
+A:  It was just a net search . 
+A:  And , uh , so it was only people who have web pages and are doing stuff through that . 
+A:  Right . 
+A:  Trivial . 
+A:  They had two speakers over the telephone . 
+A:  Um , mostly because they were doing much lower level time . 
+A:  So they were doing phone and syllable transcription , as well as , uh , word transcription . 
+A:  And so we 're  w we decided early on that we were not gonna do that . 
+A:  Yep . 
+A:  Right . 
+A:  And so  so what I 'm saying is that if we hire an external service I think we can expect three hundred dollars an hour . 
+A:  I think that 's the ball park . 
+A:  There were several different companies that  <breath> and the  the range was very tight for technical documents . 
+A:  Twenty - eight to thirty - two dollars an hour . 
+A:  They won't . 
+A:  We 'll have to mix them . 
+A:  Yes , it is . 
+A:  Sev - several of them say that they 'll do meetings , and conferences , and s and so on . 
+A:  None of them specifically said that they would do speaker ID , or speaker change mark . 
+A:  They all just said transcription . 
+A:  Well , the  the way it worked is it  it was scaled . 
+A:  So what they had is , <breath> if it 's an easy task it costs twenty - four dollars an hour 
+A:  and it will take maybe five or six times real time . 
+A:  And what they said is for the hardest tasks , bad acoustics , meeting settings , it 's thirty - two dollars an hour 
+A:  and it takes about ten times real time . 
+A:  So I think that we can count on that being about what they would do . 
+A:  It would probably be a little more 
+A:  because we 're gonna want them to do speaker marking . 
+A:  So . 
+A:  Yep , 
+A:  we have to have a short meeting . 
+A:  Stop talking ! 
+A:  And clearly . 
+A:  Content words only . 
+A:  So . 
+A:  But at any rate , so we  we have a ballpark on how much it would cost if we send it out . 
+A:  Thirty or forty . 
+A:  Three hundred dollars an hour . 
+A:  Right . 
+A:  Right , 
+A:  these are linguistics grad students . 
+A:  Six . 
+A:  Mm - hmm . 
+A:  I mean , that 's why I said originally , that I couldn't imagine sending it out 's gonna be cheaper . 
+A:  And also we would have control of  I mean , we could give them feedback . 
+A:  Whereas if we do a service it 's gonna be limited amount . 
+A:  I mean , we can't tell them , you know , " for this meeting we really wanna mark stress 
+A:  and for this meeting we want  " 
+A:  And  and they 're not gonna provide  they 're not gonna provide stress , 
+A:  they 're not gonna re provide repairs , 
+A:  they 're not gonna <breath> provide  
+A:  they  they may or may not provide speaker ID . 
+A:  So that we would have to do our own tools to do that . 
+A:  So  
+A:  I just  
+A:  I hope it 's Jane . 
+A:  Is that alright ? 
+A:  Um , I would imagine there would be some monetary involved 
+A:  but we 'd have to talk to Morgan about it . 
+A:  Well , I would like you to do it 
+A:  because you have a lot more experience than I do , 
+A:  but if  if that 's not feasible , I will do it with you as an advisor . 
+A:  Yeah , six dollars an hour . 
+A:  OK . 
+A:  More . 
+A:  Um , any more on transcript we wanna talk about ? 
+A:  Um , the user interface only allows two . 
+A:  And so if  if you 're using their interface to specify overlapping speakers you can only do two . 
+A:  But my script can handle any . 
+A:  And their save format can handle any . 
+A:  And so , um , using this  the convention that Jane and I have discussed , you can have as many overlapping speakers as you want . 
+A:  Yeah , 
+A:  French . 
+A:  Yeah . 
+A:  And they 're  they 've been quite responsive . 
+A:  I 've been exchanging emails on various issues . 
+A:  Yes , 
+A:  and they said that 's on  in  in the works for the next version . 
+A:  Multichannels was also  
+A:  Well , they said they wanted to do it but that the code is really very organized around single channels . 
+A:  So I think that 's n unlikely to ha happen . 
+A:  For this exact task ? 
+A:  I think they 're linguists . 
+A:  It 's also  All the source is available . 
+A:  So . 
+A:  If you  if you speak TCLTK . 
+A:  And they have  they 've actually asked if we are willing to do any development 
+A:  and I said , well , maybe . 
+A:  So if we want  if we did  if we did something like programmed in a delay , which actually I think is a great idea , um , I 'm sure they would want that incorporated back in . 
+A:  Way . 
+A:  Yeah , we talked about things like foot pedals and other analog  
+A:  So <breath> I mean , tho those are things we could do 
+A:  but 
+A:  I  I just don't know how much it 's worth doing . 
+A:  I mean we 're just gonna have  
+A:  Hmm . 
+A:  Point , 
+A:  whatever . 
+A:  Non - canonical . 
+A:  Comments . 
+A:  Well , I think what  w what Eric was talking about was channels other than the direct speech , 
+A:  right ? 
+A:  Yep . 
+A:  Yeah , there 's an overlapping mark . 
+A:  Well there there 's a lot of overlapping at the beginning and end . 
+A:  Huge amounts . 
+A:  Um , when  when no one i when we 're not actually in the meeting , <breath> and we 're all sort of separated , and  and doing things . 
+A:  But even during the meeting there 's a lot of overlap 
+A:  but it  it 's marked pretty clearly . 
+A:  Um , some of the backchannel stuff Jane had some comments  
+A:  and  but I think a lot of them were because you were at the meeting . 
+A:  And so I think that  that often  <breath> often you can't tell . 
+A:  I mean , Jane had  had comments like uh , to  who  who the person was speaking to . 
+A:  Yeah . 
+A:  Yeah , but someone who , uh , <breath> was just the transcriber wouldn't have known that . 
+A:  Or when Dan said , " I wa I wasn't talking to you " . 
+A:  You have to turn off your mike . 
+A:  Mm - hmm . 
+A:  But  
+A:  but when you w when you listen to it  
+A:  Well what  what it  what happens is if you 're a transcriber listening to it it sounds like Dan is just being a total  <laugh> totally impolite . 
+A:  Um  
+A:  But  but if you knew that  that I wasn't actually in the room , and that Dan wasn't talking to me , it  it became OK . 
+A:  So . 
+A:  Yes . 
+A:  Right . 
+A:  Stereo . 
+A:  Yeah . 
+A:  Oh . 
+A:  I should rewrite the mix tool to put half the people in one channel and half in the other . 
+A:  I have a  auto - gain - mixer tool that mixes all the head mounted microphones into one signal 
+A:  and that seems to work really well for the uh  transcribers . 
+A:  I  I did notice that there were some segments that had pauses on the beginning and end . 
+A:  We should probably mark areas that have no speakers as no speaker . 
+A:  Then , so question mark colon is fine for that . 
+A:  Just say silence . 
+A:  No one 's talking . 
+A:  Yep . 
+A:  Well , I wanna leave the marked  
+A:  I don't want them to be part of another utterance . 
+A:  So you just  you need to have the boundary at the start and the end . 
+A:  It can read and write as many as you want , 
+A:  it 's just that it 
+A:  Right , i it 's  
+A:  I didn't explain it well . 
+A:  If we use the  the little  the conventions that Jane has established , I have a script that will convert from that convention to their saved convention . 
+A:  Right . 
+A:  Yes . 
+A:  Right . 
+A:  It 's just user interface . 
+A:  So i it 's  
+A:  the  the  the whole saved form the saved format and the internal format , all that stuff , handles multiple speakers . 
+A:  It 's just there 's no user interface for specifying multiple  any more than two . 
+A:  Yep . 
+A:  Yep . 
+A:  Yep . 
+A:  Yep . 
+A:  Oh . 
+A:  So 
+A:  Especially for meetings . 
+A:  I mean , if i if you were just recording someone 's day , it would be impossible . You know , 
+A:  if you were trying to do a remembrance agent . 
+A:  But I think for meetings it 's probably alright . 
+A:  But , a lot of these issues , I think that for  uh , from my point of view , where I just wanna do speech recognition and information retrieval , it doesn't really matter . 
+A:  But other people have other interests . 
+A:  So . 
+A:  Right . 
+A:  Well , so anyway , are we interested then in writing tools to try to generate any of this stuff automatically ? 
+A:  Is that something you want to do , Dan ? 
+A:  No . 
+A:  But I think for a first try that 's about right . 
+A:  If we  hire an infinite number of Dan 's  
+A:  Are we gonna run out of disk space by the way ? 
+A:  OK , 
+A:  good . 
+A:  No . 
+A:  Dan 's sort of already started . 
+A:  Can we sell banner ads ? 
+A:  What a good idea , 
+A:  that 's how we could pay for the transcription . 
+A:  Hey , what about me ? 
+A:  We can do it all . 
+A:  And we have  we have quite a disparate number of web and other sorts of documents on this project sort of spread around . 
+A:  I have several 
+A:  and Dan has a few , 
+A:  and  
+A:  Yep . 
+A:  Try  try to s consolidate . 
+A:  I mean , who wants to do that though ? 
+A:  No one wants to do that . 
+A:  So . 
+A:  Yeah , I own the project 
+A:  but I don't wanna do it . 
+A:  It 's mine ! 
+A:  All mine ! 
+A:  " Wah - hah - hah - hah - hah - hah . " 
+A:  Yeah , I  I 'm talking about putting together all the data in a form that  that is legible , and pleasant to read , and up to date , and et cetera , et cetera , et cetera . 
+A:  Absolutely . 
+A:  It 's  it 's absolutely against the law to use a tool . 
+A:  I haven't found any tools that I like . 
+A:  It 's just as easy to use  to edit the raw HTML as anything else . 
+A:  It 's obviously not true . 
+A:  Now , I guess if I were  if I were doing more powerful  excuse me  more complex web sites I might want to . 
+A:  But 
+A:  most of the web sites I do aren't that complex . 
+A:  But . 
+A:  I think both . 
+A:  Mostly in house . 
+A:  OK , 
+A:  well , 
+A:  send me links 
+A:  and I wi 
+A:  send me pointers , rather , 
+A:  and I 'll put it together . 
+A:  Yep . 
+A:  OK , 
+A:  um , let 's move on to electronics . 
+A:  Yeah , does everyone know about the lip on the table ? 
+A:  It 's great . 
+A:  Clink ! 
+A:  Clink ! 
+A:  And  and crinkle them and  
+A:  Yes . 
+A:  He is . 
+A:  Absolutely . 
+A:  Get your paper off my PDA ! 
+A:  Yeah . 
+A:  Right . 
+A:  Well , we wanna do that definitely . 
+A:  So . 
+A:  Sleeve . 
+A:  Oh . 
+A:  OK , not just sleeve them all ? 
+A:  And leave them loose ? 
+A:  Whoo ! 
+A:  Speed 
+A:  A " sleeping policeman " ! 
+A:  Cool . 
+A:  Oh . 
+A:  That 's really cruel . 
+A:  OK , 
+A:  so that  
+A:  So why do we have sixteen channels instead of like some fewer number ? 
+A:  Well , OK , 
+A:  let me rephrase that . 
+A:  Why two each ? 
+A:  OK . 
+A:  OK . 
+A:  Alright . 
+A:  Right . 
+A:  OK . 
+A:  But then none of these . 
+A:  Right . 
+A:  N none of these and no P Z Ms then . 
+A:  Oh , I didn't understand  
+A:  Oh , I see , 
+A:  I see . 
+A:  So  so you 'd imagine some sort of  in some sort of patch panel on top to figure out what the mapping was between each d of these two and each of those one or what ? 
+A:  Mm - hmm . 
+A:  Oh , then it comes on . 
+A:  I see , I see . 
+A:  OK , 
+A:  good . 
+A:  Mm - hmm . 
+A:  Right . 
+A:  You g 
+A:  And did it work ? 
+A:  Did it sound good ? 
+A:  Wow . 
+A:  So what 's the schedule on these things ? 
+A:  Mm - hmm . 
+A:  So I think the other thing I 'd like to do is , do something about the set up 
+A:  so that it 's a little more presentable and organized . 
+A:  And I 'm  I 'm just not sure what that is . 
+A:  I mean , some sort of cabinet . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah , I understand . 
+A:  So . 
+A:  I need a desk at home too , alright ? 
+A:  Is that gonna be a better solution than just going out and buy one ? 
+A:  Mm - hmm . 
+A:  And it 's total crap . 
+A:  Right , 
+A:  Kleenex and telephones . 
+A:  Um , 
+A:  so yeah , I g I guess it 's just a question , is that something you wanna spend your time on ? 
+A:  OK , great . 
+A:  Hmm ? 
+A:  Mm - hmm . 
+A:  Lax . 
+A:  I 'm telling you , I 'm just gonna cart one of them away if they stay there much longer . 
+A:  So , um , 
+A:  j uh , 
+A:  then the other question is do we wanna try to do a user interface that 's available out here ? 
+A:  A user interface . 
+A:  I mean , do we wanna try to get a monitor ? 
+A:  Or just something . 
+A:  And how do we want to do that ? 
+A:  J just so we see something . 
+A:  I have an IRAM machine I 've borrowed and we can use it . 
+A:  Wait , isn't that an ethernet connection or is that a phone ? 
+A:  Well  
+A:  We jus 
+A:  Right . 
+A:  Um , 
+A:  right , so it 's just a question of getting a laptop and a wireless modem . 
+A:  To  Mac . 
+A:  Airport . 
+A:  The question is , is there an Apple driver ? 
+A:  Right . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Right . 
+A:  I 've  I 've borrowed the IRAM VAIO Sony thingy , 
+A:  and I don't think they 're ever gonna want it back . 
+A:  So . 
+A:  Sure . 
+A:  But that does mean  so we can use that as well . 
+A:  I had  
+A:  I had actually earlier asked if I could borrow one of the cards to do wireless stuff 
+A:  and they said , " sure , 
+A:  whenever you want " . 
+A:  So I think it won't be a problem . 
+A:  Yep . 
+A:  PC card . 
+A:  Right , I mean , and if  and if his doesn't work , as I said , we can use the PC . 
+A:  Good . 
+A:  So  
+A:  So Jim is gonna be doing wiring and you 're gonna give some thought to cabinets ? 
+A:  Great . 
+A:  They 're flashing ! 
+A:  When people talk , it  they go on and off . 
+A:  Cheap . 
+A:  A PC and a peanuts . 
+A:  Yeah . 
+A:  Good . 
+A:  Well , actually shorten  
+A:  There 's a speech compression program that works great on things like this , 
+A:  cuz if the dynamic range is low it encodes it with fewer bits . 
+A:  And so most of the time no one 's talking 
+A:  so it shortens it dramatically . 
+A:  But <breath> if you talk quieter , the dynamic range is lower and it will compress better . 
+A:  So . 
+A:  Probably . 
+A:  Shorter words . 
+A:  How about if you just go " uh " ? 
+A:  How do you spell that ? 
+A:  OK , 
+A:  can you do one more round of digits ? 
+A:  Are we done talking ? 
+A:  Do we have more to talk about ? 
+A:  Are you done ? 
+A:  I 'm done . 
+A:  I 'll  I 'll remember to bring M and M 's next time . 
+A:  It 's harder at the end than at the beginning . 
+A:  I should have mentioned that s uh , to pause between lines but  
+A:  It 's  it 's only a hard time for the transcriber not for the speech recognizer . 
+A:  Me . 
+A:  Ugh ! 
+A:  I didn't know that . 
+A:  I should have randomized it . 
+A:  Because  
+A:  Right . 
+A:  If we have it , uh  
+A:  we don't have to transcribe . 
+A:  We don't have to tran 
+A:  Yeah , please . 
+A:  Bet we could do it . 
+A:  Actually , this  I got this directly from another training set , from Aurora . 
+A:  So . 
+A:  We can compare directly . 
+A:  What ? 
+A:  Great . 
+A:  OK , 
+A:  the mike 's off . 
+A:  Thank you all . 

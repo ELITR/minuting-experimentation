@@ -1,0 +1,173 @@
+A:  OK . 
+A:  Eh , we should be going . 
+A:  Couldn't you t couldn't you , um , test the human performance on just the original  audio ? 
+A:  Oh , oh . OK , 
+A:  I see . 
+A:  OK . So , y uh , your performance was one percent , 
+A:  and then when you re - synthesize with LPC - twelve it went to five . 
+A:  OK . 
+A:  But  
+A:  But from this it 's pretty safe to say that the system is with either <breath> two to seven percent away from  the performance of a human . 
+A:  Right ? 
+A:  So it 's somewhere in that range . 
+A:  Two  two to six percent . 
+A:  In the LPC synthesis ? 
+A:  I think  
+A:  So I 've , um , downloaded , uh , a couple of things from Mississippi State . 
+A:  Um , one is their <breath> software  
+A:  their , uh , LVCSR system . 
+A:  Downloaded the latest version of that . 
+A:  Got it compiled and everything . 
+A:  Um , downloaded the scripts . 
+A:  They wrote some scripts that sort of make it easy to run <breath> the system on the Wall Street Journal , uh , data . 
+A:  Um , so I haven't run the scripts yet . 
+A:  Uh , I 'm waiting  there was one problem with part of it 
+A:  and I wrote a note to Joe asking him about it . 
+A:  So I 'm waiting to hear from him . 
+A:  But , um , I did print something out just to give you an idea about where the system is . 
+A:  Uh , <breath> they  on their web site they , uh , did this little table of where their system performs relative to other systems that have done this  this task . 
+A:  And , um , the Mississippi State system <breath> using a bigram grammar , uh , is at about eight point two percent . 
+A:  Other comparable systems from , uh  <breath> were getting from , uh , like six point nine , six point eight percent . 
+A:  So they 're  
+A:  This is on clean  on clean stuff . Yeah . 
+A:  They  they 've started a table <breath> where they 're showing their results on various different noise conditions 
+A:  but they  they don't have a whole lot of it filled in 
+A:  and  <breath> and I didn't notice until after I 'd printed it out that , um , <mouth> they don't say here  what these different testing conditions are . 
+A:  You actually have to click on it on the web site to see them . 
+A:  So I  I don't know what those  numbers really mean . 
+A:  Well , see , I was a little confused 
+A:  because on this table , I 'm  the they 're showing word error rate . 
+A:  But on this one , 
+A:  I  I don't know if these are word error rates 
+A:  because they 're really big . 
+A:  So , <breath> under condition one here it 's ten percent . 
+A:  Then under three it goes to sixty - four point six percent . 
+A:  Yeah . 
+A:  So m I guess maybe they 're error rates 
+A:  but they 're , uh  they 're really high . 
+A:  So  
+A:  Correct ? 
+A:  Accuracy ? 
+A:  Oh , oh , on digits . 
+A:  Yeah . 
+A:  OK . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Oh , is it ? 
+A:  OK . 
+A:  So , yeah , that 's probably what it is then . 
+A:  Yeah . So they have a lot of different conditions that they 're gonna be filling out . 
+A:  Yeah . 
+A:  Yeah . It 's  it 's gonna be hard . 
+A:  Um , 
+A:  they 're  I I 'm still waiting for them to  release the , um , <mouth> multi - CPU version of their scripts , 
+A:  cuz right now their script only handles processing on a single CPU , 
+A:  which will take a really long time to run . 
+A:  So . 
+A:  But their s 
+A:  Uh  I beli 
+A:  Yes , for the training  also . 
+A:  And , um , they 're supposed to be coming out with it any time , 
+A:  the multi - CPU one . 
+A:  So , as soon as they get that , then I 'll  I 'll grab those too 
+A:  and so w 
+A:  Yeah . 
+A:  Yeah . I 'll go ahead and try to run it though with just the single CPU one , 
+A:  and  I  they  they , <breath> um , released like a smaller data set that you can use that only takes like sixteen hours to train and stuff . 
+A:  So I can  I can run it on that just to make sure that the  <breath> the thing works and everything . 
+A:  It wasn't on the conference call this morning ? 
+A:  Hmm . 
+A:  Did they say anything on the conference call  about , um , how the  Wall Street Journal part of the test was going to be  run ? 
+A:  Because I  I thought I remembered hearing that some sites <breath> were saying that they didn't have the compute to be able to run the Wall Street Journal stuff at their place , 
+A:  so there was some talk about having Mississippi State run  the systems for them . 
+A:  And I  
+A:  Did  did that come up at all ? 
+A:  Oh , OK . 
+A:  Hmm - mm . 
+A:  The only , um , mail I get is from Mississippi State  
+A:  so  
+A:  about their system . 
+A:  I  I don't get any  mail about  
+A:  Yeah . 
+A:  Yeah . It does . 
+A:  Yeah . I 'm  I 'm wondering about that 
+A:  because there 's this whole issue about , you know , simple tuning parameters , like word insertion penalties . 
+A:  And  whether or not those are going to be tuned or not , 
+A:  and   So . 
+A:  I mean , it makes a big difference . 
+A:  If you change your front - end , you know , the scale is completely  can be completely different , 
+A:  so . 
+A:  It seems reasonable that that at least should be tweaked to match the front - end . 
+A:  But  
+A:  I did , 
+A:  but Joe  said , you know , " what you 're saying makes sense 
+A:  and  I don't know " . 
+A:  So he doesn't know what the answer is . 
+A:  I mean , that 's th We had this back and forth a little bit about , <breath> you know , are sites gonna  are you gonna run this data for different sites ? 
+A:  And , well , if  if Mississippi State runs it , then maybe they 'll do a little optimization on that  parameter , 
+A:  and , uh  
+A:  But then he wasn't asked to run it for anybody . 
+A:  So i it 's  it 's just not clear yet what 's gonna happen . 
+A:  Uh , he 's been putting this stuff out on their web site and  for people to grab 
+A:  but I haven't heard too much about what 's happening . 
+A:  I wonder if it  it might be possible to , uh , simulate the back - end with some other system . 
+A:  So we  we get our f front - end features , 
+A:  and then , 
+A:  uh , 
+A:  as part of the process of figuring out the scaling of these features ,  you know , if we 're gonna take it to a root or to a power or something ,  <breath> we have some back - end that we attach onto our features that sort of simulates what would be happening . 
+A:  Um , 
+A:  and just adjust it until that  our l version of the back - end , uh , decides that  that  
+A:  Yeah . Oh , yeah . 
+A:  That 's true . 
+A:  And then we just use that to determine some scaling factor that we use . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Uh , w what do you mean when you say " what kind " ? 
+A:  Yeah . 
+A:  Gaussian mixture model . 
+A:  It 's the same system that they use  when they participate in the Hub - five evals . 
+A:  It 's a , <breath> um  sort of  came out of , uh  uh , looking a lot like HTK . 
+A:  I mean , they started off with  um , when they were building their system they were always comparing to HTK to make sure they were getting similar results . 
+A:  And so , <breath> it 's a Gaussian mixture system , 
+A:  uh  
+A:  I don't know . 
+A:  Yeah . And then  divide the mixtures in half . 
+A:  I don't know if they do that . 
+A:  I 'm not really sure . 
+A:  Yeah , th I have  I  I  I don't have it up here 
+A:  but I have a   the whole system description , that describes exactly what their  system is 
+A:  and I  I 'm not sure . 
+A:  But , um  
+A:  It 's some kind of a mixture of Gaussians and , <breath> uh , clustering 
+A:  and , uh  
+A:  They 're  they 're trying to put in sort of all of the standard features that people use nowadays . 
+A:  Hmm . 
+A:  Hmm . 
+A:  So is this a histogram across different frequency bins ? 
+A:  Or  ? 
+A:  So , one histogram per frequency bin . 
+A:  And that 's  
+A:  So th 
+A:  Oh . 
+A:  Huh . 
+A:  And  and that  that , um ,  histogram represents  the  different energy levels that have been seen at that  frequency ? 
+A:  Uh - huh . 
+A:  So they , uh  
+A:  Is the idea that you  you run a test utterance through some histogram generation thing 
+A:  and then you compare the histograms and that tells you <breath> what to do to the utterance to make it more like  ? 
+A:  I see . 
+A:  Hmm . 
+A:  Yeah . 
+A:  Hmm . 
+A:  Mm - hmm . 
+A:  Hmm . 
+A:  H 
+A:  What does he do to choose those ? 
+A:  Hmm ! 
+A:  So it 's a  
+A:  it 's a little bit like a genetic algorithm or something in a way . 
+A:  Greedy . 
+A:  Hmm . 
+A:  That 's ri 
+A:  OK . 

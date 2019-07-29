@@ -1,0 +1,342 @@
+D:  Mm - hmm . 
+D:  Uh - huh . 
+D:  Yeah , like , uh , not next week 
+D:  but maybe the week after . 
+D:  Uh - huh . 
+D:  Um , 
+D:  Yeah . Well , <breath> maybe we can start with this . 
+D:  Mmm . 
+D:  Yeah . 
+D:  Um . 
+D:  Yeah . So there was this conference call this morning , 
+D:  um , 
+D:  and the only topic on the agenda was just to discuss 
+D:  a and to come at  uh , to get a decision about this latency problem . 
+D:  Uh , yeah . It 's the conference call between the Aurora , <breath> uh , group . 
+D:  Uh , yeah . There were like two hours of  discussions , 
+D:  and then suddenly , <breath> uh , people were tired , I guess , 
+D:  and they decided on <mike noise> a number , 
+D:  two hundred and twenty , 
+D:  um , 
+D:  included e including everything . 
+D:  Uh , it means that it 's like eighty milliseconds  less than before . 
+D:  Um . 
+D:  So , currently d uh , we have system that has two hundred and thirty . 
+D:  So , that 's fine . 
+D:  Yeah . 
+D:  So that 's the system that 's described on the second point of  this <breath> document . 
+D:  Yeah . But that 's  
+D:  Yeah . 
+D:  That 's not a problem , I  I guess . 
+D:  Um . 
+D:  Yeah . 
+D:  Yeah . At this point , 
+D:  yeah . 
+D:  Yeah , uh - huh . 
+D:  Uh - huh . 
+D:  Um . 
+D:  Yeah , sure . 
+D:  Well , it was mainly a discussion <laugh-breath> between Hari and <breath> David , 
+D:  who was like  
+D:  Uh , 
+D:  mmm  
+D:  Uh , yeah . So , the second thing is the system that we have currently . 
+D:  Oh , yes . We have , like , a system that gives sixty - two percent improvement , 
+D:  but <mouth> if you want to stick to the  <breath> this latency  
+D:  Well , it has a latency of two thirty , 
+D:  but <breath> if you want also to stick to the number <breath> of features that  limit it to sixty , <breath> then we go a little bit down 
+D:  but it 's still sixty - one percent . 
+D:  Uh , and if we drop the tandem network , then we have fifty - seven percent . 
+D:  Yeah . 
+D:  Uh , no , I don't think so . 
+D:  No . 
+D:  It 's still  in terms of computation , if we use , like , their way of computing the  the maps  the  the MIPs , <breath> I think it fits , 
+D:  but it 's , uh , m mainly a problem of memory . 
+D:  Um , 
+D:  and I don't know how much  this can be discussed or not , 
+D:  because it 's  it could be in ROM , 
+D:  so it 's maybe not that expensive . 
+D:  But  
+D:  I d I d uh , I  I don't kn remember exactly , 
+D:  but  <mouth> Uh . 
+D:  Yeah , I c I  I have to check that . 
+D:  Uh - huh . 
+D:  Mm - hmm . 
+D:  Yeah . Yeah . 
+D:  Mmm . 
+D:  Yeah , there were small tricks to make this tandem network work . 
+D:  Uh , <breath> mmm , 
+D:  and one of the trick was to , <breath> um , use <mouth> some kind of hierarchical structure 
+D:  where  the silence probability is not computed by  the final tandem network but by the VAD network . 
+D:  Um , 
+D:  so apparently it looks better when , <breath> uh , we use the silence probability from the VAD network 
+D:  and we re - scale the other probabilities by one minus the silence probability . 
+D:  Um . 
+D:  So it 's some kind of hierarchical thing , <breath> uh , that Sunil also tried , um , <breath> <mouth> on SPINE 
+D:  and apparently it helps a little bit also . 
+D:  Mmm . 
+D:  And . 
+D:  Yeah , the reason w why  why we did that with the silence probability was that , <breath> um  
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  So there is the tandem network that e e e estimates the phone probabilities 
+D:  and the silence probabilities also . 
+D:  And <mouth> things get better when , instead of using the silence probability computed by the tandem network , we use the silence probability , uh , given by the VAD network , 
+D:  um , 
+D:  Which is smaller , 
+D:  but maybe , 
+D:  um  
+D:  So we have a network for the VAD which has one hundred hidden units , 
+D:  and the tandem network has five hundred . 
+D:  Um . 
+D:  So it 's smaller 
+D:  but th the silence probability  from this network seems , uh , better . 
+D:  Mmm . 
+D:  Uh . 
+D:  Well , it looks strange , 
+D:  but  
+D:  but it 
+D:  Maybe it 's  has something to do to <breath> the fact that <breath> we don't have infinite training data 
+D:  and  
+D:  Well ! 
+D:  And 
+D:  so  Well , things are not optimal 
+D:  and  
+D:  Mmm  
+D:  Yeah . Uh , there was a p  problem that we observed , um , <breath> <mouth> that there was  there were , like , many insertions in the  in the system . 
+D:  Mmm . 
+D:  Actually plugging in the tandem network was increasing , I  I  I think , the number of insertions . 
+D:  And , <breath> um  
+D:  So it looked strange 
+D:  and then just using the  the other silence probability helps . 
+D:  Mmm . 
+D:  Um  
+D:  Yeah . The next thing we will do is train this tandem on more data . 
+D:  Um  
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Yeah . 
+D:  And  and the features are different also . 
+D:  I mean , the VAD doesn't use the same features there are . 
+D:  Um  
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mmm . 
+D:  Uh . Well , there are other things that <laugh> we should do 
+D:  but , <breath> um , <mouth> it requires time 
+D:  and  <breath> We have ideas , 
+D:  like  so , these things are like hav having a better VAD . 
+D:  Uh , we have some ideas about that . 
+D:  It would  <breath> probably implies working a little bit on features that are more <breath> suited to a voice activity detection . 
+D:  Working on the second stream . 
+D:  Of course we have ideas on this also , 
+D:  but  <mouth> w we need to try different things 
+D:  and  
+D:  Uh , but their noise estimation , 
+D:  um  <mouth> uh  
+D:  Yeah . <breath> Mmm . 
+D:  Uh , yeah . 
+D:  But , um , we  we did a first try with this , 
+D:  and it  it <breath> clearly hurts . 
+D:  Uh . <breath> It was c it was just combined , um , by the acoustic model . 
+D:  So there was , no neural network for the moment . 
+D:  Mm - hmm . 
+D:  Yeah . Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mmm . 
+D:  Yeah . 
+D:  Um  
+D:  Yeah , and the other thing , that noise estimation 
+D:  and th um , maybe try to train  uh , the training data for the t 
+D:  tandem network , right now , is like  i is using the noises from the Aurora task 
+D:  and <breath> <mouth> I think that people might , <breath> um , try to argue about that 
+D:  because <breath> then in some cases we have the same noises in  for training the network  than the noises that are used for testing , 
+D:  and  
+D:  So we have t n uh , to try to get rid of these  <breath> this problem . 
+D:  Mm - hmm . <mouth> Yeah . 
+D:  Uh - huh . 
+D:  Yeah . 
+D:  Uh - huh . 
+D:  Um . 
+D:  Yeah . The last thing is that I think we are getting close to human performance . 
+D:  Well , that 's something I would like to investigate further , 
+D:  but , 
+D:  um , 
+D:  I did , like , um  I did , uh , listen to the m most noisy utterances of the SpeechDat - Car Italian 
+D:  and tried to transcribe them . 
+D:  And , um  
+D:  Yeah . So that 's  that 's  
+D:  that 's the  the flaw of the experiment . 
+D:  This is just  i j  <laugh> <breath> it 's just one subject , 
+D:  but  
+D:  but still , uh , <breath-laugh> what happens is  is that , <mouth> uh , the digit error rate on this is around one percent , 
+D:  while our system is currently at seven percent . 
+D:  Um , but what happens also is that if I listen to the , um  <noise> a re - synthesized version of the speech 
+D:  and  I re - synthesized this using a white noise that 's filtered by a LPC , uh , filter  
+D:  Um , 
+D:  well , you can argue , that , uh  that this is not speech , 
+D:  so the ear is not trained to recognize this . 
+D:  But s actually it sound like  whispering , 
+D:  so we are  
+D:  eh  
+D:  Uh - huh . 
+D:  Uh - huh . 
+D:  Um  
+D:  Uh - huh . 
+D:  Uh , yeah . But  
+D:  Uh - huh . 
+D:  Ye 
+D:  Yeah . Well , the point is that eh l ey  the point is that , um , <mouth> what I  what I listened to when I re - synthesized the LP - the LPC - twelve  spectrum <breath> is in a way what the system , uh , is hearing , 
+D:  cuz @ @  all the  all the , um , excitation  all the  
+D:  well , the excitation is  is not taken into account . 
+D:  That 's what we do with our system . 
+D:  And 
+D:  in this case  
+D:  Well , it 's not LPC , sure , 
+D:  but  
+D:  LPC  ? 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mmm . 
+D:  But that 's  that 's what we do with our systems . 
+D:  And  
+D:  Yeah , but is it that  is it that different , I mean ? 
+D:  I 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  This is the one percent number . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Uh - huh . 
+D:  Yeah . 
+D:  Uh - huh . 
+D:  Yeah . 
+D:  Uh - huh . 
+D:  Mm - hmm . 
+D:  Uh - huh . 
+D:  Mmm . 
+D:  To f seven times , yeah . 
+D:  Um . 
+D:  But   but  
+D:  But the signal itself is like a mix of  um , of a  a periodic sound and ,  @ @  uh , unvoiced sound , and the noise 
+D:  which is mostly , <breath> uh , noise . 
+D:  I mean not  periodic . 
+D:  So ,  what  what do you mean exactly by putting back the pitch in ? 
+D:  Because  
+D:  I 
+D:  Uh - huh . 
+D:  Mm - hmm . 
+D:  Um . 
+D:  Yeah , but it 's neither  purely voiced or purely unvoiced . 
+D:  Esp - especially because there is noise . 
+D:  So  
+D:  Oh . 
+D:  Uh - huh . 
+D:  Yeah . 
+D:  Uh - huh , yeah . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  That 's what I was thinking by doing this es experiment , 
+D:  like  
+D:  Mmm . <breath> Evi 
+D:  Yeah , but  
+D:  Yeah . <breath> Mm - hmm . Yeah , right . 
+D:  Mm - hmm . 
+D:  Uh , yeah . 
+D:  Um . 
+D:  Yeah , that 's it . 
+D:  Mm - hmm . 
+D:  Um . 
+D:  Uh - huh . 
+D:  Yeah . At these noise levels . 
+D:  Yeah . Mm - hmm . 
+D:  Well , yeah . These numbers , I mean . 
+D:  Mmm . 
+D:  Uh . Yeah , it 's around fifteen to twenty percent . 
+D:  And the baseline , eh  
+D:  Uh , error rate . 
+D:  Twenty percent error rate , 
+D:  and  
+D:  and  
+D:  On digits . 
+D:  And this is so  so  still the baseline . 
+D:  Right ? 
+D:  The baseline is sixty percent also on digits , 
+D:  on the m more  mismatched conditions . 
+D:  So . 
+D:  Uh , we don't know yet , I  I think . 
+D:  Uh - huh . 
+D:  Um . 
+D:  No . 
+D:  No . 
+D:  Mmm . 
+D:  Uh , no . 
+D:  Well , this  first , this was not the point at all of this  the meeting today 
+D:  and , 
+D:  uh , frankly , I don't know 
+D:  because I d  didn't read also the  most recent mails about <breath> the large - vocabulary task . 
+D:  But , <breath> uh , did you  do you still , uh , get the mails ? 
+D:  You 're not on the mailing list or what ? 
+D:  Uh - huh . 
+D:  Oh , yeah . So we should have a look at this . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  You didn't get any answer from  Joe ? 
+D:  Uh - huh . 
+D:  Uh - huh . 
+D:  Mm - hmm . 
+D:  Nnn , the dist 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  But , these values are not directly used as probabilities anyway . 
+D:  So there are  there is  
+D:  Uh - huh . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Yeah . So now he has a version of the software . 
+D:  Yeah . 
+D:  Um  
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Um , it was a poster . 
+D:  Or  
+D:  Yeah . 
+D:  Yeah . 
+D:  Um  <breath> It was something  similar to n <breath> on - line normalization finally  
+D:  I mean , in <breath> the idea of  of normalizing  
+D:  Yeah . 
+D:  Right . 
+D:  N 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  I think they have , yeah , different histograms . 
+D:  I uh  
+D:  Something like one per  frequency band , 
+D:  or  
+D:  But I did  
+D:  Yeah , I guess . 
+D:  But I should read the paper . 
+D:  I just went  through the poster quickly , 
+D:  and I didn't  
+D:  Uh , I dunno . 
+D:  I don't have feedback from him , 
+D:  but 
+D:  I guess he 's gonna , maybe  
+D:  Yeah . 
+D:  Uh - huh . 
+D:  Yeah . 
+D:  Mm - hmm . <breath> Mm - hmm . 
+D:  Hmm . 
+D:  Yeah . Well , if we had infinite processing power and  data ,  I guess , using the waveform could  
+D:  So , that 's  
+D:  Mm - hmm . 
+D:  Mm - hmm . 

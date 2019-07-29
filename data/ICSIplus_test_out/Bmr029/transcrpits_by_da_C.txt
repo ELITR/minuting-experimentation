@@ -1,0 +1,291 @@
+C:  That 's all folks . 
+C:  OK . So the one  <breath> <clears throat> one thing I knew I wanted to talk about was about , uh , sort of last minute stuff to to , uh , try to get some recognition results . 
+C:  Yeah . 
+C:  So , uh , on  on  on meeting data . 
+C:  And so , I 'm  I 'm not sure exactly what you 're doing already , 
+C:  and  and there 's some stuff I 've talked to Dave  
+C:  OK . So  Um  
+C:  Right . So  so , we have some stuff with no overlap , uh , for which there would be near  near - field results . 
+C:  We wanted to get the far - field results for that . 
+C:  And then this  this real , uh , long shot thing would be , that we 'd apply Dave 's processing to , uh , potentially training and test data 
+C:  and do the  look at the same thing . 
+C:  And in talking this morning with , uh , Chuck and with Dave <inbreath> one thought was to use  
+C:  We couldn't remember how different the numbers were , 
+C:  but if you just  worked with males only and used the short training there 're  there 're  
+C:  uh , I think Chuck 's recollection was that when he was doing the feature stuff , it took maybe a day and a half 
+C:  to do the training . 
+C:  Yeah . 
+C:  Um , how much worse is the short training set than the large one , in terms of the ultimate performance ? 
+C:  Yep . 
+C:  So , it 's  that should be fine for this , I would think . 
+C:  So we  an and you have the short  you have short training results for the close  case ? 
+C:  So , how do you know it 's  ? 
+C:  Oh , it 's three percent on  on , uh , on Hub - five . 
+C:  I see . 
+C:  Yeah . But we have the models so we could get that number , 
+C:  and  
+C:  So the question is , what  ? w 
+C:  It has to be enough so that  
+C:  I mean , it 's the non - overlap only . 
+C:  Um   And  
+C:  it has to be enough to be sort of comparable to what you folks were seeing and what you reported already . 
+C:  I mean  
+C:  No . He has to create that . 
+C:  But  but  s but  so  
+C:  Um  
+C:  We have  a whole parallel set of things over here which are all with digits . 
+C:  And  and  and Dave has been working with that and there 's all of those issues . 
+C:  But  <clears throat> I know that if I  go in with something that 's not just digits it would be  good . 
+C:  And , um , so  
+C:  We already have these results that you  
+C:  I mean , on  uh , a l a lot tha tha a particular test set , that you  that we reported at HLT . 
+C:  Um , it 'd be nice to have something more than that . 
+C:  And w we had talked about was having distant  
+C:  Um , and then , 
+C:  uh , if we could on top of that  
+C:  I mean , so this is gonna be a lot worse . 
+C:  Right ? 
+C:  Whatever comparison we  w w one would presume . 
+C:  But we don't know how much worse , 
+C:  w w uh , which is certainly one interesting thing . 
+C:  And then , um , 
+C:  Dave  
+C:  I think we figured that it 'd probably take a day or two to compute the  the , 
+C:  uh  uh  
+C:  Well  How many hours of training  ? 
+C:  Yeah . 
+C:  Yeah , but we also have to do this other processing , so having a smaller training set , 
+C:  if it 's only a few percent difference , it might be  be worth doing it . 
+C:  But - m How big is the small  training  set ? 
+C:  Do you remember ? 
+C:  It 's around there . 
+C:  And ha and  and male is roughly half of that , 
+C:  or  ? 
+C:  Or  or  or was that only male ? 
+C:  OK . 
+C:  Yeah . 
+C:  So  
+C:  Yeah . So that 's certainly part of the issue , is that right now he 's  he hasn't written his stuff for efficiency . 
+C:  Yeah . It 's  it 's in Matlab 
+C:  and so on , 
+C:  and  <inbreath> And , uh , it 's not an impossible amount of time . 
+C:  We  we were guestimating it was like one and a half times faster than real time , or something ? 
+C:  So , if there 's thirty hours of data , you can calculate that he can do , uh , the enhancement in a day 
+C:  and something . 
+C:  So  
+C:  But <clears throat> if we were dealing with two hundred hours or something , I think it 'd be  prohibitive . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . So , I mean , it 's a bit of a push , 
+C:  but it seems like , 
+C:  OK , we 've got some models , 
+C:  we 've got some training data , we have software that works , he 's got a method that helps with , you know , other ta another task . 
+C:  Um  
+C:  It , you know , appears to be , you know , debugged . 
+C:  Um  
+C:  Yes . 
+C:  Oh . Well , that 's not bad . 
+C:  You mean the training . 
+C:  Yeah . 
+C:  For the test . 
+C:  Yeah , fo 
+C:  Right . 
+C:  Yeah . 
+C:  I mean , it  it 'd be really great if it was all automatic , but I think that , you know , given the pressure of time , if  i i 
+C:  I mean , since you 're gonna find out in a short amount of time , that 's great . 
+C:  But i if  if it doesn't work out , I think we would rather charge ahead with the older segmentations 
+C:  and  Um , 
+C:  and we were gonna use one of the P Z 
+C:  I don I don't know what  
+C:  Probably whatever one you 've been using for  for  for the digits . 
+C:  Is it this one ? 
+C:  I  I 'd  which  ? 
+C:  That 's F ? 
+C:  How do you know ? 
+C:  Oh . 
+C:  Bien sur 
+C:  OK . <laugh> Alright , so  
+C:  Bet they 'll have fun with that one . 
+C:  OK , so . 
+C:  Uh  
+C:  Mm - hmm . 
+C:  Right . 
+C:  Well  Maybe . 
+C:  But , I  I mean , how long does it take for the test ? 
+C:  Right . 
+C:  Bu - But what  what was your result for  uh , that we had at the HLT ? 
+C:  Was that a combination of me ? 
+C:  So you were doing like  
+C:  Yeah . But if you  So , if you do half a dozen meetings , that 's  that 's about a day . 
+C:  We also have more machines now . 
+C:  well 
+C:  Yeah . 
+C:  Yeah . 
+C:  I mean , if we had about six  A six hour test set 's not bad . 
+C:  Right ? 
+C:  You know ? 
+C:  Right ? 
+C:  I mean , a lot of the evaluations have been  
+C:  Four that you worked with ? 
+C:  That would be OK , too . 
+C:  I mean , I 'm  i 
+C:  So , if they have a set that they worked with , 
+C:  and you  you got  
+C:  Did you do similarly in performance between them and the other meetings , 
+C:  or was it  ? 
+C:  Yeah . 
+C:  And overlap or not . 
+C:  Yeah . 
+C:  So maybe just with the  the  the Meeting Recorder set of the  De - th that you did before . 
+C:  Yeah . So we want to do the same  same thing . 
+C:  Yeah . <inbreath> Once we know which segmentations we 're using . 
+C:  Yeah . 
+C:  Um , I  I agree that that would be an interesting thing to do , 
+C:  but I sort of regard it as secondary . 
+C:  So if there 's sort of machines sitting around and people sitting around and they 're waiting for <breath> other things to finish , then sure . 
+C:  But  
+C:  Uh , Chuck had been asking about that earlier as kind of a control to know , um  
+C:  Cuz , I mean , you could imagine a fantasy in which you said that Dave 's processing <breath> made the , uh , far microphone like the near microphone . 
+C:  In which case you shouldn't have to actually retrain . 
+C:  But it 's  it 's not really true . 
+C:  It 's  it 's sort of fantasy . 
+C:  It does  it does muck up the data in  in some funny ways . 
+C:  And so , 
+C:  I 'm  I 'm kind of questioning that . 
+C:  But  But  
+C:  Right . 
+C:  It involves retraining and it involves a  
+C:  Uh , that 's right . 
+C:  I mean the other thing which  which it might come in  to is if there was some problem in the retraining . 
+C:  I mean , maybe you 'd just have some mechanical thing we do wrong . 
+C:  Uh , that , uh  since Dave 's experience was that it didn't help as much if you didn't retrain , but it does help some , that we would hopefully see that . 
+C:  So , that  that 's  that 's true . 
+C:  I i 
+C:  Right . <breath> So  
+C:  Yeah . 
+C:  Yeah . 
+C:  I mean , do you ha do you have to rely on his segmentations at all to do the top one ? 
+C:  Oh . OK . 
+C:  Got it . 
+C:  We  we talked about this before . 
+C:  I think what we were saying was that , um , the very fact that in both cases we 're ignoring the overlap section means that , um , uh , we 're to some extent finessing that . 
+C:  So , um , 
+C:  I think , for the purposes of just determining whether a far - field microphone  uh , what the effect of the far - field microphone is , we should do the same to both . 
+C:  I mean  
+C:  We want to i incorporate  <laugh> certain data that would not be available during final tests ,  uh , under a  a full fair test of it , much as we are in the  all the numbers that we have so far . 
+C:  Yeah . 
+C:  We  we simply wanna determine what 's the difference in performance due to being distant versus close . 
+C:  I mean to a lesser extent you had that same magic the other way , too , 
+C:  because you have leakage into other microphones . 
+C:  Right ? 
+C:  But , it 's just you 're using the fact that <breath> this is where this person is . 
+C:  Right ? 
+C:  So . 
+C:  It 's just easier to do . 
+C:  Yeah . 
+C:  So , how do you determine what you use to group together to be a  a  ? 
+C:  The only other alternative would be to turn off speaker adaptation in both . 
+C:  Mm - hmm . 
+C:  OK . 
+C:  Yeah . An - and e so that will tell us  what the difference it between the mikes , 
+C:  and then , uh , in order to  
+C:  The  the other difference that we 'd have to take care of is that , 
+C:  uh  yeah , we  we don't have a mike that , uh , is particular to a person . 
+C:  And so we 'll have to do some clustering , 
+C:  and that 'll be another  <inbreath> another , uh , issue , too . 
+C:  But , it  it  I could be wrong , 
+C:  but it seems to me that  that the speaker  
+C:  the  the level of degradation that you get from having the distant mike in a normal acoustic is much greater than what you get from , say , not applying speaker adaptation or applying speaker adaptation . 
+C:  I think that the  
+C:  I mean , we 'll see . 
+C:  But  but , I think that the kind of gains that we 've seen from speaker adaptation <inbreath> on Hub - five sort of things are like a few percent . 
+C:  Right ? 
+C:  And  
+C:  Yeah . 
+C:  It doesn't make that much difference , I think . 
+C:  I would doubt that it would be a huge amount of difference for that . 
+C:  So , I mean , I  I think that that difference would definitely be marginal . 
+C:  I think the main thing is to do something  
+C:  to do some cepstral mean subtraction on some level . 
+C:  And , uh , so what 's different about this processing is just that we 're doing it at a much longer time  scale . 
+C:  Right ? 
+C:  But  Um  
+C:  That 's right . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Right . 
+C:  Um . Yeah , I guess . 
+C:  But , um , 
+C:  I also think that a again once we got into it , that , um , using some kind of clustering would probably work reasonably well there , too . 
+C:  Certainly for the  the two microphone case , 
+C:  which we 're not gonna mess with because it 's another whole deal with the low - quality microphones , 
+C:  um , 
+C:  we ought to be able to at least tell that it appears that things are coming from a particular direction . 
+C:  So we ought to be able to use that information , um , as well . 
+C:  But , I think we might be able to do not too bad a job of separating out sp uh , segments that appear to come from a single speaker 
+C:  both in terms of s acoustic similarity and in terms of direction . 
+C:  So , I mean  But that 's another research thing to do 
+C:  and <breath> probably won't get done the next week . 
+C:  Well , I mean , I 'm  I 'm leaving for <outbreath> for the , uh , the New Orleans meeting , uh , next Saturday , 
+C:  and  and , um , 
+C:  it 'd be kinda nice to have some results at least a day or two before that , so that I could figure out what I wanted to say about it . 
+C:  Yeah . 
+C:  Uh , not to mention that  that , uh , Mari 's putting together this report next week , too , you know . 
+C:  So  Uh , 
+C:  what we were hoping was that over the weekend we could do , uh , the , um , calculation on the training set 
+C:  and , uh  
+C:  uh , maybe , you know , we could  by the end of the weekend , we could have the top one , 
+C:  and  and then <breath> early next week , do these . 
+C:  If we had enough machines , maybe do them in parallel . 
+C:  So that by the middle of the week we had s had some kind of result . 
+C:  I mean , it 's  it 's one of these  Hail Mary kinds of things . 
+C:  I mean , it  
+C:  it , uh  might  might not  work out . 
+C:  But , uh , f figured I may as well ask for it . 
+C:  Right . 
+C:  You have models of short males ? 
+C:  I think  Markham 's out on  vacation . 
+C:  I think , che check with Dave . 
+C:  Yeah . 
+C:  I thought they were like mushrooms . 
+C:  They 're popping up . 
+C:  Yeah . 
+C:  Cuz we still all have tha the  that other one going , 
+C:  which is the , uh  the Macrophone training . 
+C:  That was in the Hub - five small training set ? 
+C:  Yes . 
+C:  OK . 
+C:  I wonder about that , though . 
+C:  I mean , because all we 're doing  The only reason we 're using the short training set is  is for speed . 
+C:  And there  we 're not really making any claims about using a smaller training set . 
+C:  So as long as we 're not using any testing data from  
+C:  Yeah . 
+C:  Oh , you mean for  for his normalizations . 
+C:  Oh , oh , oh . I 'm sorry . 
+C:  Right . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Say this again ? 
+C:  Sorry I missed it . 
+C:  He throws out some speakers that are  that are very small . 
+C:  Yeah . I think there was only a few 
+C:  we thought to be the case . 
+C:  Righ - ? 
+C:  Right . 
+C:  No . The training set he could go through right now , and see how  how long the  
+C:  At that one ? <breath> Maybe . 
+C:  Uh  
+C:  Been looking at synthesizers ? 
+C:  You were looking at Festival . 
+C:  Yeah . 
+C:  Right . 
+C:  This was a business about , uh , um , coming up with something that  that was purely prosodic . 
+C:  And so , uh , we 're just gonna use a pitch detector , 
+C:  drive a synthesizer , 
+C:  and since it doesn't have a hook in it for , uh , modifying energy , we 'll have a little box at the output that 'll modify the energy . 
+C:  So  
+C:  So . Rrrrr - rrrrm 
+C:  Something like that . 
+C:  OK ? 
+C:  Digits ? 
+C:  That 's all folks . 

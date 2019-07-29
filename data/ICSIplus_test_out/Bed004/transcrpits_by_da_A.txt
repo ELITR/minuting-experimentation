@@ -1,0 +1,145 @@
+A:  OK . 
+A:  Hey , you 're not supposed to be drinking in here dude . 
+A:  Do we have to read them that slowly ? 
+A:  OK . 
+A:  Sounded like a robot . 
+A:  Um , this is t 
+A:  When you read the numbers it kind of reminded me of beat poetry . 
+A:  Three three six zero zero . 
+A:  Four two zero zero 
+A:  one seven . 
+A:  That 's what I think of when I think of beat poetry . 
+A:  You ever seen " So I married an axe murderer " ? 
+A:  There 's a part wh there 's parts when he 's doing beat poetry . 
+A:  And he talks like that . 
+A:  That 's why I thi 
+A:  That uh probably is why I think of it that way . 
+A:  Mike Meyers is the guy . 
+A:  It - it 's his uh  it 's his cute romantic comedy . 
+A:  That 's  that 's  
+A:  That 's his cute romantic comedy , yeah . 
+A:  The other thing that 's real funny , I 'll spoil it for you . 
+A:  is when he 's  he works in a coffee shop , 
+A:  in San Francisco , 
+A:  and uh he 's sitting there on this couch and they bring him this massive cup of espresso , 
+A:  and he 's like " excuse me I ordered the large espresso ? " 
+A:  Wait  
+A:  do are y 
+A:  So you 're trying to decide who 's the best taster of tiramisu ? 
+A:  Ah . 
+A:  Hmm . 
+A:  Seems like  
+A:  Seems like you could put a s magic special ingredient in , so that everyone know which one was yours . 
+A:  Then , if you were to bribe them , you could uh  
+A:  Well , I 'm going back to visit my parents this weekend , 
+A:  so , I 'll be out of town . 
+A:  No , the South Bay , 
+A:  yeah . 
+A:  We are . 
+A:  Is Nancy s uh gonna show up ? 
+A:  Mmm . 
+A:  Wonder if these things ever emit a very , like , piercing screech right in your ear ? 
+A:  Is she mispronouncing " Anlage " ? 
+A:  Is it " Anlaga " or " Anlunga " 
+A:  OK . 
+A:  Yes . 
+A:  I wasn't  wasn't sure whether wizard was the correct term for  uh " not a man " . 
+A:  Are you sure ? 
+A:  Yeah , that 's so @ @ . 
+A:  So , what I did for this  this is  uh , a pedagogical belief - net 
+A:  because I was  I  I took  I tried to conceptually do what you were talking about with the nodes that you could expand out  
+A:  so what I did was I took  
+A:  I made these dummy nodes called Trajector - In and Trajector - Out that would isolate the things related to the trajector . 
+A:  And then there were the things with the source and the path and the goal . 
+A:  And I separated them out . 
+A:  And then I um did similar things for our  our net to  uh with the context and the discourse and whatnot , 
+A:  um , so we could sort of isolate them or whatever in terms of the  the top layer . 
+A:  And then the bottom layer is just the Mode . 
+A:  So . 
+A:  Yeah , there 's just one more node and it says " Mode " which is the decision between the  
+A:  So basically all I did was I took the last  belief - net 
+A:  and I grouped things according to what  how I thought they would fit in to uh image schemas that would be related . 
+A:  And the two that I came up with were Trajector - landmark and then Source - path - goal as initial ones . 
+A:  And then I said well , uh the trajector would be the person in this case probably . 
+A:  Um , you know , we have  we have the concept of what their intention was , whether they were trying to tour or do business or whatever , 
+A:  or they were hurried . 
+A:  That 's kind of related to that . 
+A:  And then um in terms of the source , the things  uh the only things that we had on there I believe were whether  
+A:  Oh actually , I kind of ,  I might have added these cuz I don't think we talked too much about the source in the old one 
+A:  but uh whether the  where I 'm currently at is a landmark might have a bearing on whether  
+A:  or the " landmark - iness " of where I 'm currently at . 
+A:  And " usefulness " is basi basically means is that an institutional facility like a town hall or something like that that 's not  something that you 'd visit for tourist 's  tourism 's sake or whatever . 
+A:  " Travel constraints " would be something like you know , maybe they said they can  they only wanna take a bus or something like that , 
+A:  right ? 
+A:  And then those are somewhat related to the path , 
+A:  so that would determine whether we 'd  could take  we would be telling them to go to the bus stop or versus walking there directly . 
+A:  Um , " Goal " . 
+A:  Similar things as the source except they also added whether the entity was closed 
+A:  and whether they have somehow marked that is was the final destination . 
+A:  Um , and then if you go up , 
+A:  Robert , 
+A:  Yeah , so  um , in terms of Context , what we had currently said was whether they were a businessman or a tourist of some other person . 
+A:  Um , Discourse was related to whether they had asked about open hours 
+A:  or whether they asked about where the entrance was or the admission fee , or something along those lines . 
+A:  Uh , Prosody I don't really  I 'm not really sure what prosody means , in this context , 
+A:  so I just made up you know whether  whether what they say is  or h how they say it is  is that . 
+A:  Um , the Parse would be what verb they chose , 
+A:  and then maybe how they modified it , in the sense of whether they said " I need to get there quickly " or whatever . 
+A:  And um , in terms of World Knowledge , this would just basically be like opening and closing times of things , the time of day it is , and whatnot . 
+A:  Tourbook ? 
+A:  That would be , I don't know , the " landmark - iness " of things , 
+A:  whether it 's in the tourbook or not . 
+A:  Well , this is not a working Bayes - net . 
+A:  Well I  OK , I just  
+A:  Say what you were gonna say . 
+A:  OK . 
+A:  Uh  I  I 'd  No , I was gonna wait until  
+A:  So we 'd have to get rid of this and connect these things directly to the Mode . 
+A:  Cuz I don't understand how it would work otherwise . 
+A:  Well I  oh yeah , I unders I understand that , 
+A:  I just  uh it 's hard for me to imagine how he could get around that . 
+A:  OK . 
+A:  Mmm . 
+A:  So it 's possible that we could do something like a summary node of some sort that  
+A:  OK . 
+A:  So in that case , the sum we 'd have  we  
+A:  I mean , these wouldn't be the summary nodes . 
+A:  We 'd have the summary nodes like 
+A:  where the things were  I guess maybe if thi if things were related to business or some other  
+A:  Yeah . 
+A:  Mmm . 
+A:  Mmm . 
+A:  OK . 
+A:  So what I kind of need to do is to take this one and the old one and merge them together ? 
+A:  So that  
+A:  Mmm . 
+A:  Yeah . 
+A:  We could actually , y yeah draw it in a different way , in the sense that it would make it more abstract . 
+A:  Right . 
+A:  This is uh  
+A:  so what we 'd be generating would be a reference to a semantic uh like parameters for the  for the X - schema ? 
+A:  OK . 
+A:  Right . 
+A:  Mm - hmm . 
+A:  Right . 
+A:  So the immediate problem is just deciding w which  
+A:  Yeah . 
+A:  Right and then , once we 've made the decision , how do we put that into the content ? 
+A:  OK . 
+A:  OK . 
+A:  There 's just too many factors right now . 
+A:  Right . 
+A:  So what we really wanna do i 
+A:  cuz this is really just the three layer net , we wanna b make it  expand it out into more layers basically ? 
+A:  Right . 
+A:  So instead of in instead it should really be  just be " intention " as a node instead of " intention business " or " intention tour " . 
+A:  Right . 
+A:  Right . 
+A:  I think what was going through my mind when I did it was someone could both have a business intention and a touring intention 
+A:  and 
+A:  the probabilities of both of them happening at the same time  
+A:  Mmm . 
+A:  OK . 
+A:  Well , see I don't think those would be mutually  
+A:  it seems like something could both be  
+A:  OK . 

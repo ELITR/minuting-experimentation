@@ -1,0 +1,1533 @@
+C:  <mike noise> 
+B:  <sniff> 
+C:  <breath> 
+E:  OK . 
+D:  <breath> 
+B:  <breath> 
+D:  <breath> <mouth> 
+B:  <breath> 
+
+
+B:  OK , so  
+D:  <breath> 
+B:  We  we had a meeting with , uh  with Hynek , 
+C:  <breath> 
+B:  um , in  in which , uh , 
+B:  uh , 
+B:  Sunil and Stephane , 
+B:  uh 
+C:  <mike noise> 
+B:  <mouth> summarized where they were and  
+B:  and , uh , 
+B:  talked about where we were gonna go . 
+B:  So that  that happened sort of mid - week . 
+E:  D did  did you guys get your code 
+B:  Uh . 
+C:  <breath> 
+D:  Oh , yeah . 
+E:  pushed together ? 
+D:  Yeah . 
+D:  It 's  it 's  it 's  it was updated yesterday , right ? 
+E:  Cool . 
+A:  Yeah . 
+D:  Yeah . 
+E:  Oh , right , I saw  I saw the note . 
+A:  You probably received the mail . Yeah . 
+E:  Mm - hmm .  
+D:  <breath> 
+B:  What was the update ? 
+A:  What was the update ? 
+B:  Yeah . 
+A:  So there is th then  the  all the new features that go in . 
+A:  The , um , 
+A:  noise suppression , 
+C:  <breath> 
+A:  the re - synthesis of speech after suppression . 
+B:  So , uh  
+E:  What 's new ? 
+E:  <laugh> 
+C:  <laugh> 
+B:  <breath> Well , I mean , I think 
+A:  <laugh> 
+B:  maybe the thing 
+B:  to me might be  I me I 'm sure you 've just been working on  
+B:  on , uh , 
+B:  details of that since the meeting , right ? 
+B:  And so  
+A:  Mmm , since the meeting ,  
+B:  That was  that was Tuesday . 
+A:  well , I  I 've been  I 've been train 
+A:  training a new VAD and a new  feature net .  
+B:  OK . 
+A:  So they should be ready . 
+A:  Um . 
+B:  <inbreath> 
+B:  But I guess maybe the thing  
+B:  since you weren't  
+B:  yo you guys weren't at that  that meeting , 
+B:  might be just  just to , 
+B:  um , 
+B:  sort of recap , 
+B:  uh , the  
+B:  the conclusions of the meeting . 
+A:  Mm - hmm .  
+E:  Oh , great . 
+E:  You 're talking about the meeting with Hynek ? 
+B:  So . 
+B:  Yeah . Cuz that was sort of , uh  we  we 'd sort of been working up to that , 
+B:  that  that , uh , he would come here this week and  
+E:  Uh - huh . 
+B:  and we would sort of  
+B:  Since he 's going out of town 
+B:  like now , and I 'm going out town in a couple weeks , 
+B:  uh , 
+B:  and time is marching , sort of , 
+B:  given all the mu many wonderful things we could be working on , what  what will we actually focus on ? 
+E:  Mm - hmm . 
+B:  And , uh  
+B:  and what do we freeze ? And , you know , what do we  ? 
+B:  So , 
+B:  um . 
+B:  I mean , this  
+B:  software that these guys created was certainly a  a key part . 
+B:  So then there 's something central and there aren't at least 
+B:  a bunch of different versions going off in  in ways that  
+B:  differ  trivially . 
+B:   Uh , um , and , um , 
+E:  Yeah . 
+E:  That 's  that 's nice . 
+B:  <breath> 
+B:  and then within that , I guess the idea was to freeze a certain set of options for now , 
+B:  to run it , uh , a particular way , 
+B:  and decide on what things 
+B:  are gonna be experimented with , as opposed to just experimenting with everything . 
+B:  So keep a certain set of things constant . 
+B:  So , um . 
+B:  Uh , 
+B:  maybe describe roughly what  
+B:  what we are keeping constant for now , or  ? 
+
+
+E:  Is the , um  
+A:  These are the  Yeah . 
+E:  the CVS mechanism working  well ? 
+E:  Are  are people , 
+E:  uh , up at OGI grabbing code 
+E:  uh , via that ? 
+D:  <breath> Uh , I don't think  I don't think  
+E:  Or  ? 
+A:  I don't know if they use it , but . <laugh> 
+E:  Uh - huh . 
+D:  Yeah , I I don't think anybody up there is like  
+D:  working on it right now . 
+B:  <inbreath> 
+E:  Mmm . 
+B:  I think it more likely that what it means is that when Sunil is up there 
+B:  <laugh> 
+D:  Yeah . 
+B:  he will grab it . 
+D:  Yeah . 
+C:  <laugh> 
+E:  Yeah . 
+D:  So right now nobody 's working on Aurora there . 
+E:  I see . 
+B:  They 're  Yeah . They 're working on a different task . 
+E:  I see . 
+D:  Yeah . 
+E:  OK . 
+B:  But what 'll happen is  is he 'll go back up there 
+B:  and , uh , Pratibha will come back from  
+B:  from , uh , the east coast . 
+E:  Mm - hmm . 
+B:  Uh . 
+B:  And , uh  
+B:  and  and I guess actually , uh , after Eurospeech for a little bit , uh , he 'll go up there too . So , actually 
+B:  everybody 
+B:  <laugh> who 's working on it  will be up there for at least a little while . 
+B:  So they 'll remotely access it <laugh> from there . Yeah . 
+E:  So has  
+D:  <laugh> 
+E:  Has anybody tried 
+E:  remotely accessing the CVS using , uh , 
+E:  uh , SSH ? 
+C:  <breath> 
+A:  Um , 
+A:  I don't know if Hari did that or  You d 
+D:  @ @  
+D:  I  can actually do it today . I mean , I can just log into  
+E:  Have you tried it yet ?  
+D:  No , I didn't . 
+E:  OK . 
+B:  <laugh> 
+D:  So I I 'll try it today . 
+B:  Good idea . 
+B:  Yeah . 
+A:  Actually I  I tried wh while  
+D:  Yeah . 
+B:  <laugh> 
+D:  <breath-laugh> 
+A:  when I installed the  
+A:  repository , I tried from Belgium . 
+A:  I 
+E:  Yeah ? 
+A:  logged in there and I tried  
+E:  It worked good ? 
+A:  to import  
+A:  Yeah , it works . 
+E:  Oh , good ! 
+E:  Great ! 
+D:  Oh . 
+A:  But it 's  
+A:  So , right now it 's the mechanism with SSH . 
+A:  I don't  s I didn't set up  
+A:  You can also set up a CVS server  
+A:  on a new port . 
+A:  It 's like 
+E:  Yeah . 
+D:  <mike noise, fumbling> 
+E:  Right . 
+A:  well  uh , a main server , or d You can do a CVS server . 
+E:  Then that 's using the CVS password mechanism and all that , right ? 
+A:  <breath> 
+A:  But . 
+A:  Yeah , right . 
+A:  But I didn't do that because I was not sure about  
+A:  security problems . I  I would have to  
+E:  So w 
+E:  when you came in from Belgian   
+E:  Belgium , using SSH , 
+E:  uh , 
+E:  was it asking you for your own  
+E:  password into ICSI ? 
+E:  So if yo you can only do that if you have an account at ICSI ? 
+A:  Right . 
+A:  Yeah . 
+E:  OK . 
+A:  Yeah . 
+E:  Cuz there is an  a way to set up anonymous CVS right ? So that  
+A:  Yeah , you ha in this way you ca you have to set up a CVS server but then , 
+A:  yeah , you can access it . 
+E:  Oh , OK . So the anonymous mechanism  
+A:  you  you can set up priorities . You can access them and mostly if you  if y the set the server is set up like this . 
+E:  OK . 
+C:  <breath> 
+E:  Because a lot of the open source stuff works with anonymous CVS and I 'm just wondering  
+A:  Mm - hmm . 
+E:  Uh , 
+E:  I mean , for our transcripts we may want to do that . 
+C:  <breath> 
+B:  Yeah . 
+E:  Uh . 
+B:  Yeah , for this stuff I don't think we 're  
+B:  quite up to that . 
+E:  Mm - hmm . 
+B:  I mean , we 're still so much in development . We want to have just the insiders . 
+E:  Yeah , yeah , yeah . 
+E:  Oh , I wasn't suggesting for this . I 'm  
+E:  thinking of the Meeting Recorder  stuff but . 
+B:  Yeah . 
+E:  Yeah . OK . Cool . 
+B:  Yeah .  
+B:  <breath> 
+
+
+B:  And , uh , so the initial thing which came from , uh , the meeting that we had down south 
+E:  <sniff> 
+B:  was , uh , 
+B:  that , um , 
+B:  we 'll initially just put in a mel spectrum 
+B:  as the second one . 
+B:  It 's , you know ,  
+B:  cheap , easy . 
+B:  Uh . 
+B:  There 's a question about exactly how we do it . We probably will go to something better later , 
+E:  Mm - hmm . 
+B:  but 
+B:  the initial thing is that cepstra and spectra behave differently , so . 
+B:  Um ,  
+B:  I think Tony Robinson used to do  
+B:  I was saying this before . I think he used to do 
+B:  mel , uh , spectra and mel cepstra . 
+B:  He used them as alternate features . 
+E:  Hmm . 
+B:  Put them together . 
+B:  Uh . 
+E:  So this second stream , 
+E:  will it add latency to the system or  ? 
+C:  <breath> 
+B:  No , it 's in parallel . 
+C:  Para -  
+E:  S 
+B:  We 're not talking about computation time here . We 're ta I think we 're pretty far out . So it 's just 
+E:  Yeah . 
+B:  in terms of what data it 's depending on . It 's depending on the same data as the other . So it 's in parallel . 
+E:  Same data . OK . 
+B:  Uh - huh . 
+C:  So with this , uh , new stream would you train up a VAD on both  both features , somehow ? 
+D:  No , I guess the VAD has its own set of features . 
+C:  OK . 
+D:  I mean , which could be this  one of these streams , or it can be something derived from  these streams . 
+C:  and that 's  
+C:  OK . 
+B:  Yeah . 
+A:  And there is also the idea of using TRAPS , maybe , for the VAD , 
+A:  which , um  
+D:  Yeah , that 's also  
+A:  <clears throat> Well , Pratibha apparently showed , 
+A:  when , she was at IBM , that 
+A:  it 's a good idea . 
+A:  So . 
+B:  So , uh , 
+C:  <breath> 
+B:  uh  
+B:  So what 's next ? 
+B:  Maybe s s remind us . 
+E:  So the meeting with Hynek that you guys just had was to 
+C:  <mike noise> 
+E:  decide exactly what you were gonna freeze in this system ? Is that  ? 
+E:  Or was there  ? 
+E:  Were you talking about what t new stuff , or  ? 
+B:  <inbreath> 
+B:  What to freeze and then what to do after we froze . 
+E:  Mmm . 
+B:  Yeah . 
+C:  <mike noise> 
+B:  And like I was saying , I think the  you know , the basic 
+B:  directions are , uh , uh  
+B:  I mean , there 's lots of little things , such as improve the noise estimator but the bigger things are adding on the neural net and , 
+B:  uh , the second stream . 
+C:  <breath> 
+B:  And then , uh , 
+B:  improving the VAD . 
+B:  Uh . 
+D:  So , I 'll , um  
+B:  So . 
+D:  I 'll actually  after the meeting I 'll add the second stream 
+D:  to the VAD and maybe I 'll start with the feature net in that case . 
+D:  It 's like , you 're looking at the VAD , right ? 
+A:  Uh , yeah . 
+D:  I 'll  
+A:  I I 've a new feature net ready also . 
+D:  For the VAD ? 
+A:  No , uh . 
+A:  Well p two network , one VAD and one  feature net . Mm - hmm . 
+D:  Oh , you already have it ? 
+C:  <breath> 
+D:  OK , so just figure how to take the features 
+D:  from the final  
+A:  Yeah . 
+D:  OK . 
+A:  Um . 
+A:  But , yeah , I think there are plenty of issues to work on for the feature net @ @ . 
+
+
+A:  Yeah . 
+A:  Well . 
+A:  So we 've been working like six weeks on  
+A:  on the noise compensation and 
+A:  we end up with 
+A:  something that seems reasonable . 
+C:  <breath> 
+B:  <mike noise> 
+A:  Um . 
+E:  Are you gonna use  which of the two techniques ? 
+A:  So finally it 's  it 's , um , Wiener filtering 
+A:  on FFT bins . 
+A:  And it uses , uh , two steps , 
+A:  smoothing of the transfer function , 
+A:  the first step , 
+A:  that 's along time , 
+A:  which use recursion . 
+A:  And 
+A:  <clears throat> 
+C:  <yawn> 
+A:  after this step 
+A:  there is a further smoothing along frequency , 
+A:  which use a sliding window of twenty FFT bins . 
+A:  Mmm . 
+A:  And , uh  
+E:  So this is on the  
+E:  uh , 
+E:  before any mel scaling has been done ? This is  
+A:  Yeah , yeah . 
+B:  <inbreath> 
+A:  It was  
+B:  This  this smoothing is done on the estimate , 
+A:  Yeah . 
+B:  um , of what you 're going to subtract ? 
+B:  Or on the thing that has already had something subtracted ? 
+A:  Uh , 
+A:  <clears throat> 
+A:  it 's on the transfer function . 
+A:  So  
+B:  Oh , it 's on the transfer function for the Wiener filter . 
+A:  Yeah . 
+B:  Yeah , OK . 
+A:  Yeah , so basically we tried 
+A:  <clears throat> different configuration within this idea . 
+A:  We tried u u applying this on mel bands , having spectral subtraction instead of wiener filtering . Um . 
+A:  Well , finally we end up with  this configuration that works , uh , quite well . So we are going to fix this for the moment and work on the other aspects of <clears throat> the whole system . So  
+E:  Mm - hmm . 
+B:  <mike noise> 
+B:  <inbreath> 
+B:  Actually , let me int eh , 
+B:  Dave isn't here to talk about it , but let me just interject . 
+
+
+B:  This module , 
+B:  in principle , 
+B:  i I mean , you would know whether it 's <laugh> true in fact , 
+B:  is somewhat independent from the rest of it . I mean , because you  you re - synthesize speech , right ? 
+A:  Mm - hmm . 
+B:  So , 
+B:  um . 
+B:  Uh , well you don't  I guess you don't re - synthesize speech , but you could  
+A:  We  we do not fo 
+B:  Uh , but you could . 
+A:  Well  well , we do , but we don't  don't re - synthesize . In  in the program we don't re - synthesize and then re - analyze once again . We just 
+A:  use the clean FFT bins . 
+B:  But you have a re - synthesized thing that you  that 's an  an option here . 
+A:  This is an option that  then you can  Yeah . 
+B:  <breath> 
+B:  Yeah , I gu I guess my point is that , um , 
+B:  i in some of the work he 's doing in reverberation , one of the things that we 're finding 
+B:  is that , uh , it 's  it 's  for the  
+B:  for an artificial situation , 
+B:  we can just deal with the reverberation and his techniques work really well . 
+B:  But for the real situation 
+B:  uh , problem is , is that you don't just have reverberation , you have reverberation in noise . And if you don't include that in the model , it doesn't work very well . 
+A:  <clears throat> 
+B:  So in fact it might be a very nice thing to do , to just take the noise 
+B:  removal part of it and put that in front of what he 's looking at . 
+A:  Mm - hmm . 
+B:  And , uh , generate new files or whatever , 
+B:  and  and , uh , 
+B:  uh  and then do the reverberation part . 
+B:  So it 's  
+C:  <mike noise> 
+D:  Mmm . 
+B:  Anyway . 
+E:  So Dave hasn't  tried that yet ? 
+B:  <inbreath> 
+B:  No , no . He 's  I mean , e a 
+C:  <mike noise> <breath> 
+E:  I guess he 's busy with  <laugh> 
+B:  <laugh> Yeah , prelims , right . Yeah . 
+C:  Pre - prelim hell . 
+E:  Yeah . 
+B:  So . <laugh> 
+E:  Yeah . 
+E:  <laugh> 
+B:  Uh , 
+B:  but  but , you know , that 'll  uh , it 's clear that we , uh  
+B:  we are not  with the real case that we 're looking at , 
+C:  <breath> 
+C:  <breath> 
+B:  we can't just look at reverberation in isolation because the interaction between that and noise is  is considerable . 
+B:  And that 's 
+B:  I mean , in the past we 've looked at , uh , 
+C:  <mike noise> 
+B:  and this is hard enough , 
+B:  the interaction between channel effects 
+B:  and  and , uh  and additive noise , uh , so convolutional effects and  and additive effects . 
+B:  And that 's hard enough . I mean , I don't think we really  I mean , we 're trying to deal with that . 
+B:  In a sense that 's what we 're trying to deal with in this Aurora task . 
+B:  And we have , uh , the , uh , uh , LDA stuff that in principle is doing something about convolutional effects . 
+B:  And we have the 
+B:  noise suppression that 's doing something about noise . 
+B:  Uh , even that 's hard enough . And  and the on - line normalization as well , in that s category . 
+C:  <breath> <clunking noise> 
+B:  <breath> 
+B:  i i 
+B:  There 's all these interactions between these two and that 's part of why these guys had to work 
+A:  <clears throat> 
+B:  so hard on  on juggling everything around . 
+B:  But now when you throw in the reverberation , it 's even worse , 
+B:  because not only do you have these effects , but you also have some long time effects . 
+B:  And , um , so 
+B:  Dave has something which , 
+B:  uh , is doing some nice things under some conditions with  with long time effects but when it 's  when there 's noise there too , 
+B:  it 's  it 's  it 's pretty hard . So we have to start  
+B:  Since any  almost any real situation is gonna have  uh , where you have the microphone distant , 
+C:  <mike noise> 
+B:  is going to have both things , 
+B:  we  we actually have to think about both at the same time . 
+E:  Hmm . 
+
+
+B:  So , um  
+B:  So there 's this noise suppression thing , which is sort of worked out and then , 
+B:  uh , maybe you should just continue telling what  what else is in the  
+A:  Yeah , well , <clears throat> the , um , 
+B:  the form we have . 
+A:  the other parts of the system are the  
+A:  the blocks that were already present before and that 
+A:  we did not modify a lot . 
+B:  So that 's  again , that  that 's the Wiener filtering , followed 
+B:  by , uh  
+B:  uh , that 's done at the FFT level . 
+B:  Then  
+A:  Yeah , th then the mel filter bank , 
+B:  Mm - hmm . 
+A:  then the log operation , 
+B:  Mm - hmm .  
+A:  Mmm . 
+B:  <inbreath> The  the  the filtering is done 
+B:  in the frequency domain ? 
+A:  Yeah . 
+B:  Yeah , OK . 
+B:  And then the mel and then the log , 
+B:  and then the 
+A:  Then the LDA filter , 
+B:  LDA filter . 
+A:  mmm , 
+B:  And then 
+B:  uh 
+A:  then the downsampling , 
+B:  downsample , 
+A:  DCT , 
+B:  DCT , 
+A:  then , um , on - line normalization , 
+B:  on - line norm , 
+A:  followed by  upsampling . 
+A:  Then finally , we compute delta and 
+A:  we put 
+A:  the neural network also . 
+B:  Right , and then in parallel with  an  a neural net . And then following neural net , some  probably some orthogonalization . Uh  
+A:  Yeah . 
+C:  <breath> 
+B:  Um . 
+A:  And finally frame dropping , 
+A:  which 
+A:  um , 
+A:  <clears throat> 
+A:  would 
+A:  be a neural network also , used for estimated silence probabilities . And 
+A:  the input of this neural network would be 
+A:  somewhere between log  mel bands or 
+B:  Mm - hmm . 
+A:  one of the earlier stages of the processing . 
+B:  So that 's sort of  most of this stuff is  yeah , is operating parallel with this other stuff . 
+A:  Mm - hmm . 
+B:  Yeah .  
+B:  So the things that we , um , 
+B:  uh , 
+
+
+B:  I guess we sort of  uh , 
+B:  There 's  there 's some , uh , neat ideas for <clears throat> V A Ds  
+B:  So , I mean , in  
+B:  I think there 's sort of like  
+B:  There 's a bunch of tuning things to improve stuff . There 's questions about  
+B:  various places where there 's an exponent , if it 's the right exponent , or  
+B:  ways that we 're estimating noise , that we can improve estimating noise . And there 's gonna be a host of those . But structurally it seemed like the things  
+B:  the main things that  that we brought up that , uh , are  are gonna need to get worked on seriously are , 
+B:  uh , uh , a  <clears throat> a significantly better VAD , 
+B:  uh , 
+B:  putting the neural net on , 
+B:  um , which , you know , we haven't been doing anything with , 
+B:  the , uh , neural net at the end there , 
+B:  and , uh , 
+B:  the , uh , 
+B:  <breath> opening up the second front . 
+B:  <laugh> 
+C:  <noise> 
+B:  Uh .  
+E:  The other half of the channel ? 
+B:  <breath> 
+E:  That what you mean ? 
+B:  Yeah , yeah , I mean , cuz we  we have  we have , uh , 
+B:  uh , half the  the , uh , 
+B:  data rate that they allow . 
+
+
+E:  So if you took the system the way it is now , the way it 's fro you 're gonna freeze it , 
+A:  Mm - hmm . 
+E:  and it ran it on the last evaluation , where it would it be ? 
+A:  It , uh , 
+E:  In terms of ranking ? 
+D:  Second . 
+A:  Ri - right now it 's second . 
+A:  Um . 
+E:  Mm - hmm . 
+B:  <inbreath> 
+B:  Although you  you know , you haven't tested it actually on the German and Danish , have you ? 
+A:  No , we didn't . No , um . 
+B:  Yeah . 
+E:  So on the ones that you did test it on it would have been second ? 
+B:  Yeah . 
+B:  Would it  I mean  
+B:  But  
+B:  When you 're saying second , you 're comparing to the numbers that the , uh  that the best system before got on , uh  also without German and Danish ? 
+A:  Yeah , yeah . 
+C:  <breath> 
+B:  Yeah , 
+B:  OK . 
+D:  And th the ranking actually didn't change after the German and Danish . 
+D:  So , yeah . 
+B:  Well ranking 
+B:  didn't before , but I 'm just asking 
+A:  Yeah .  
+B:  where this is to 
+A:  <clears throat> 
+D:  Yeah . 
+B:  where theirs was without the German and Danish , right ? 
+D:  Yeah . 
+A:  Mmm . 
+D:  Yeah , yeah . 
+B:  So . 
+E:  Where  where  
+E:  where were we actually on the last test ? 
+B:  Oh , we were also esp 
+B:  essentially second , although there were  
+B:  there were  
+B:  I mean , we had a couple systems and they had a couple systems . And so , I guess by that  
+B:  we were third , but I mean , 
+B:  there were two systems that were pretty close , 
+E:  Uh - huh . 
+E:  I see . 
+B:  that came from the same place . 
+E:  OK . 
+B:  Uh , 
+B:  so institutionally we were  <laugh> we were second , 
+C:  <inbreath> 
+B:  with , uh , the third  third system . 
+E:  We 're  so this second that you 're saying now is 
+E:  system - wide second ? 
+B:  See  
+B:  Uh , no I think it 's also institutional , isn't it ? Right ? I mean , I think both of their systems probably  
+E:  Still institutionally second ? 
+A:  Uh , we are between their two systems . So  
+B:  Oh , are we ? 
+A:  I  
+D:  Yeah . 
+A:  It is a triumph . 
+D:  Their  their first system is fifty - four point something . And , uh , we are fifty - three point something . 
+B:  Is it ? 
+D:  And their second system is also fifty - three point something . 
+A:  But everything is  within the range of one  
+D:  Yeah , one percent . 
+A:  one percent . 
+E:  Oh , wow ! 
+B:  Yeah , so  so basically they 're all  they 're all pretty close . And  
+E:  That 's very close . 
+A:  So .  
+D:  Yeah . 
+E:  Yeah . 
+B:  and , <clears throat> um , you know , in some sense we 're all doing fairly similar things . 
+B:  Uh , I mean , one could argue about the LDA and so forth but I  I think , 
+B:  you know , in a lot of ways we 're doing very similar things . But what  what  
+E:  So how did they fill up this  
+E:  all these  these bits ? I mean , if we 're u u 
+B:  Um , why are we using half ? 
+E:  Yeah . 
+B:  Well , so you could  you c 
+E:  Or how are they using more than half , I guess maybe is what I   
+
+
+B:  Yeah , so I  I think  
+E:  <clears throat> 
+B:  uh , you guys are closer to it than me , so correct me if I 'm wrong , 
+B:  but I  I think that what 's going on is 
+B:  that in  in both cases , 
+A:  <clears throat> 
+B:  some kind of normalization is done 
+B:  to deal with convola convolutional effects . 
+B:  Uh , they have some cepstral  modification , right ? 
+A:  Mm - hmm . 
+B:  In our case we have a couple things . We have the on - line normalization and then we have the LDA RASTA . 
+B:  And  
+B:  they seem to comple complement each other enough and be different enough that they both seem to help  help us . 
+B:  But in any event , they 're both doing the same sort of thing . But there 's one difference . 
+E:  <sniff> 
+B:  The LDA RASTA , 
+B:  uh , throws away high modulation frequencies . 
+C:  <breath> 
+B:  And they 're not doing that . 
+E:  So th So  
+B:  So that if you throw away high modulation frequencies , then you can downsample . 
+C:  Get down .  
+E:  I see . 
+E:  I see . 
+B:  So  
+E:  So what if you didn't  
+E:  So do you explicitly downsample then ? 
+E:  Do we explicitly downsample ? 
+B:  Yeah . 
+A:  Yeah . 
+E:  And what if we didn't do that ? 
+E:  Would we get worse performance ? 
+B:  I think it doesn't affect it , does it ? 
+A:  Um  
+A:  Yeah , not better , not worse . 
+E:  I see . OK . 
+B:  Yeah . 
+B:  So I think the thing is , since 
+B:  we 're not evidently throwing away useful information , let 's try to put in some useful information . <laugh> 
+E:  Yeah . 
+E:  Yeah . 
+B:  And , uh , so I  you know , we  
+B:  we 've found in a lot of 
+B:  ways for quite a while that having a second stream 
+B:  uh , helps a lot . 
+B:  So that 's  that 's put in , and 
+B:  you know , it may even end up with mel spectrum even though I 'm saying I think we could do much better , just because it 's simple . 
+E:  Mm - hmm . 
+B:  Um . 
+B:  And you know , in the long run having something everybody will look at and say , " oh , yeah , I understand " , is  is very helpful . 
+
+
+E:  So you would  you 're  
+E:  You 're thinking to put the , uh , 
+E:  mel spectrum in before any of the noise removal stuff ? or after ? 
+B:  Well , that 's a question . 
+B:  I mean , we were talking about that . It looks like 
+B:  it 'd be straightforward to  
+B:  to , uh , remove the noise , 
+B:  um , and , uh , 
+C:  <breath> 
+E:  Cuz that happens before the mel conversion , right ? 
+B:  Yeah . 
+B:  So , I mean , to do it after the mel conversion  
+B:  uh , after the noise removal , after the mel conversion . 
+B:  There 's even a question in my mind anyhow of whether th you should take the log or not . 
+D:  <breath> 
+B:  Uh . 
+B:  I sort of think you should , but 
+B:  I don't know . 
+A:  What about norm normalizing also ? 
+B:  Right . 
+B:  <outbreath> 
+B:  Uh . 
+B:  Well , 
+B:  but normalizing spectra instead of cepstra ? 
+A:  Yeah . 
+B:  Yeah , probably . 
+B:  Some kind would be good . 
+B:  You know ? I would think . 
+D:  Well , it  it  it  
+C:  <breath> 
+D:  it  so it actually makes it dependent on the overall energy of the  
+D:  uh , 
+C:  <breath> 
+D:  the frame . 
+B:  If you do or don't normalize ? 
+D:  If yo if you don't normalize and  if  if you don't normalize . 
+B:  Right . 
+B:  Yes , so I mean , one would think 
+B:  that you would want to normalize . 
+B:  But I  I  w w 
+B:  My thought is , 
+B:  uh , particularly if you take the log , 
+B:  try it . 
+B:  And then 
+B:  if  if normalization helps , then y you have something to compare against , and say , " OK , this much effect "  
+E:  <breath> 
+B:  I mean , you don't want to change six things and then see what happens . You want to change them one at a time . So adding this other stream in , 
+D:  Mm - hmm . <breath> 
+B:  that 's simple in some way . 
+B:  And then  saying , oh  uh  
+C:  <breath> 
+B:  particularly because we 've found in the past there 's all these  these  these different results you get with slight 
+B:  modifications of how you do normalization . Normalization 's a very tricky , sensitive thing and  you learn a lot . 
+B:  So , 
+B:  I would think you would wanna  
+B:  have some baseline that says , " OK , we don't normalize , this is what we get " , when we do this normalization , when we do that normalization . 
+B:  But  
+B:  but the other question is  
+B:  So I think ultimately we 'll wind up doing some normalization . I agree . 
+
+
+C:  Would  would that fit on the handset , or  ? 
+C:  Oh ! 
+C:  <laugh> 
+A:  I have no idea . 
+A:  <laugh> 
+C:  OK . 
+D:  Well , it has t I mean 
+D:  the  th 
+A:  It would have to fit but  
+D:  Yeah , if it has to fit the delays and all this stuff . 
+A:  Yeah . 
+B:  Well , there 's the delays and the storage , yeah . 
+C:  OK . 
+D:  Yeah . 
+B:  But I don't think the storage is so big for that . 
+C:  Right . 
+B:  I think th the biggest we 've run into for storage is the neural net . 
+D:  Yeah . 
+B:  Right ? Yeah . 
+B:  Um . 
+B:  And so 
+B:  I guess the issue there is , are we  are we using neural - net - based TRAPS , 
+B:  and  and how big are they ? 
+C:  Oh , right . 
+B:  So that 'll  that 'll be , you know , an issue . 
+C:  Yeah . Cuz sh 
+B:  Maybe they can be little ones . 
+C:  Right . 
+C:  Cuz she also does the , uh  the correlation - based , 
+B:  Mini - TRAPS . 
+C:  uh , 
+C:  TRAPS , 
+C:  with without the neural net , just 
+B:  Right . 
+C:  looking at the 
+C:  correlation between  
+B:  And maybe for VAD they would be OK . Yeah . 
+C:  Yeah . 
+B:  Yeah . 
+D:  Yeah . 
+B:  That 's true . 
+B:  <inbreath> Or a simple neural net , right ? I mean , the thing is , if you 're doing correlation , you 're just doing a simple  
+C:  <breath> 
+B:  uh , uh  
+B:  uh , 
+B:  dot product , you know , with some weights which you happened to learn from this  learn from the data . And so , 
+C:  Mm - hmm . 
+B:  uh , putting a nonlinearity on it is , 
+B:   you know , not that big a deal . 
+C:  Mm - hmm . 
+B:  It certainly doesn't take much space . 
+C:  Right . 
+B:  So , uh , the question is , how complex a function do you need ? Do you need to have 
+B:  an added layer or something ? 
+B:  In which case , 
+B:  uh , 
+B:  potentially , 
+B:  you know , it could be big . So . 
+C:  Mm - hmm . 
+
+
+E:  What about the , um  
+C:  Feature net . 
+E:  uh , the new part of the evaluation , 
+E:  the , uh , Wall Street Journal part ? 
+A:  <sneeze> 
+B:  Right . 
+B:  <clears throat> 
+B:  Right . 
+B:  Um . 
+B:  Have you ever  ? 
+B:  Very good question . 
+B:  Have you ever worked with the Mississippi State h uh , software ? 
+A:  Sorry .  
+E:  No . 
+E:  Not yet . 
+B:  Oh . 
+B:  Well you  you may be called upon to help , 
+B:  uh , uh , on account of , uh , 
+B:  all the work in this stuff here has been , uh , with small vocabulary . 
+E:  OK . 
+E:  Mm - hmm . 
+B:  Have you thought about  how long  would be 
+B:  uh , most useful for you to go up to OGI ? 
+A:  I don't know , uh . We can  
+A:  <clears throat> 
+A:  For September , we can set up 
+A:  a work schedule and we can maybe work independently . 
+A:  And then at some point it maybe be better to 
+A:  work together again . 
+B:  <inbreath> 
+B:  Oh , so you 're  you 're imagining more that you would come back here first for a while and then  and then go up there ? I mean , it 's to you . I ju you guys are 
+A:  I  
+A:  Maybe , yeah . 
+B:  Well , y anyway , you don't have to decide this second but thi think about it  about what  what you would think would be the  
+A:  But , uh  
+A:  Huh . 
+A:  Mm - hmm . 
+B:  the best way to work it . I 'll support it either way , so . 
+A:  Mm - hmm 
+A:  Right . 
+B:  OK . 
+
+
+E:  So what  how is the , uh , interaction supposed to happen ? 
+E:  Uh , I remember the last time we talked about this , 
+C:  <breath> <mike noise> 
+E:  it was sort of up in the air whether they were going to be taking , uh , 
+C:  <breath> 
+E:  people 's features and then running them or they were gonna give the system out or   
+D:  Yeah . 
+D:  Yeah . 
+E:  Oh , so they 're gonna just deliver a system basically . 
+D:  Yeah , yeah . 
+B:  Do we already have it ? 
+D:  Yeah , th I  I guess it 's almost ready . 
+C:  <breath> 
+E:  Uh - huh . 
+D:  So  
+D:  That 's what  
+D:  So they have released their , uh , document , 
+D:  describing the system . 
+C:  <breath> 
+B:  <inbreath> 
+E:  I see . 
+B:  Maybe you could , uh , 
+B:  point it  at Chuck , because , I mean  
+D:  Sure . 
+E:  So we 'll have to grab this over CVS or something ? 
+D:  It - no , it 's just downloadable from their  from their web site . 
+E:  Is that how they do it ? 
+E:  OK . 
+E:  OK . 
+B:  Cuz one of the things that might be helpful , if you 've  if you 've got time in all of this is , is if  
+B:  if these guys are really focusing on 
+B:  improving , uh , all the digit stuff , uh , maybe  
+E:  Mm - hmm . 
+B:  and you got the front - end from them , maybe you could do the runs for the  
+E:  Sure . 
+B:  and  and , you know , iron out hassles that  that you have to , 
+C:  <breath> 
+B:  uh , 
+B:  tweak Joe about or whatever , because you 're more experienced with running the large vocabulary stuff . 
+E:  OK . 
+B:  <inbreath> S 
+D:  So I 'll point you to the web site and the mails corresponding . 
+C:  <breath> 
+D:  So I 
+E:  And it  but it 's not ready yet , the system ? 
+D:  <inbreath> Uh , 
+D:  I  I think they are still , uh , tuning something on that . 
+D:  So they 're like , 
+D:  d they 're varying different parameters like the insertion penalty and other stuff , and then seeing what 's the performance . 
+E:  Are those going to be 
+E:  parameters that are frozen , nobody can change ? Or  ? 
+D:  <breath> 
+D:  Uh , w I guess there is , uh , time during which people are gonna make suggestions . 
+E:  Oh , but everybody 's gonna have to use the same values . 
+D:  After that . 
+D:  <breath> 
+E:  Oh ! 
+E:  Interesting . OK . 
+D:  Yeah , I guess . So these sugges these  
+D:  this , uh , period during which people are gonna make suggestions is to know whether it is actually biased towards any set of features or  
+B:  <inbreath> 
+B:  Yeah , so I th th certainly the thing that I would 
+B:  want to 
+B:  know about is whether 
+B:  we get really hurt , 
+B:  uh , on in insertion penalty , language model , scaling , sorts of things . 
+E:  Using our features . Yeah . 
+B:  Yeah , yeah . 
+B:  Uh , in which case , um , H Hari or 
+B:  Hynek will need to , 
+B:  you know , push the case  
+B:  more about  
+E:  Mm - hmm . 
+B:  about this . 
+B:  <inbreath> 
+B:  Um . 
+E:  And we may be able to revisit this idea about , you know , somehow modifying our features to 
+B:  Yes . In this case , that 's right . 
+E:  work with  
+E:  Yeah . 
+B:  That 's right . 
+B:  Um , some of that may be , 
+B:  uh , a last minute rush thing because if the  if our features are changing  
+E:  Yeah . 
+B:  Uh . <laugh> 
+B:  Uh . 
+B:  But , um . 
+B:  Yeah , the other thing is that even though 
+B:  it 's months away , 
+B:  uh , 
+B:  it 's starting to seem to me now like November fifteenth is right around the corner . 
+B:  And , um , if they haven't decided things like this , 
+B:  like what the parameters are gonna be for this , 
+B:  uh , when " deciding " is not just somebody deciding . I mean , in fact there should be some 
+B:  understanding behind the , uh , <breath-laugh> 
+B:  deciding , which means some experiments and  and so forth . It  it  it seems pretty tight to me . 
+E:  So wha what 's the significance of November fifteenth ? 
+B:  That 's when the evaluation is . 
+E:  OK . 
+B:  Yeah . 
+B:  So , yeah , so after  But , you know , they may even decide in the end to push it off . 
+B:  It wouldn't , you know , entirely surprise me . But , uh , 
+B:  due to other reasons , like some people are going away , I 'm  I 'm hoping it 's not pushed off for <laugh> a l a long while . That would be , uh  put us in an awkward position . But  
+C:  <breath> 
+E:  <breath-laugh> 
+C:  <laugh> 
+B:  Anyway . 
+E:  OK . 
+B:  Great . 
+B:  Yeah , I think that 'll be helpful . There 's  there 's not anybody OGI currently who 's  
+B:  who 's , uh , working with this and  and 
+E:  Is  is this part of the evaluation just a small part , or ho how important is this to the overall  ? 
+B:  I  I think it 's  it 's , um  it depends how badly <laugh> you do . 
+B:  I mean , I think that it  it is  
+E:  <laugh> 
+B:  Uh . 
+D:  b 
+E:  This is one of those things that will be debated afterwards ? 
+D:  <laugh> 
+E:  <laugh> 
+B:  Yeah . Well , I mean , it 's  it 's  
+B:  Conceptually , it  
+B:  my impression , 
+A:  <clears throat> 
+C:  <breath-laugh> 
+B:  again , you guys correct me if I 'm wrong , but  
+B:  my impression is that , um , 
+B:  they want it as a double check . 
+B:  That you haven't come across  you haven't 
+B:  invented features 
+B:  which are actually gonna do badly 
+B:  for a  a significantly different task , 
+B:  particularly one with larger vocabulary . 
+E:  Mmm . 
+B:  And , um , but 
+B:  it 's not the main emphasis . I mean , the truth is , most of the applications they 're looking at are pretty small vocabulary . 
+E:  Mmm . 
+B:  So it 's  it 's a double check . So they 'll probably assign it some sort of low weight . 
+E:  Seems to me that if it 's a double check , they should give you a one or a zero . 
+E:  Y you passed the threshold or you didn't pass the threshold , and they shouldn't even 
+B:  Yeah . <outbreath> 
+E:  care about what the score is . 
+B:  But , I mean , we 'll  we 'll  we 'll see what they come up with . Uh , but 
+E:  Yeah . 
+B:  in  in the current thing , for instance , where you have this well - matched , moderately - matched , and  and mis highly - mismatched , 
+B:  uh , the emphasis is somewhat on the  on the well - matched , 
+B:  but it 's only a  a marginal , right ? It 's like forty , 
+C:  <mike noise> 
+B:  thirty - five , twenty - five , or something like that . So you still  
+D:  Yeah . 
+C:  <mike noise> 
+B:  if you were way , way off on the highly - mismatched , it would have a big effect . 
+E:  Mm - hmm . 
+B:  And , um , it 
+B:  wouldn't surprise me if they did something like that with this . So again , if you 're  
+B:  if you get  
+E:  Oh . 
+B:  If it doesn't help you much , 
+B:  uh , for noisy versions of this  of large vocabulary data , 
+B:  then , uh , you know , it may not hurt you that much . But if it  if you don't  
+B:  if it doesn't help you much at all , 
+C:  <breath> 
+B:  um , or to put it another way , if it helps some people a lot more than it helps other people , 
+B:  uh , if their strategies do , then  
+E:  Mm - hmm . 
+E:  So is this , uh  ? 
+E:  Uh , Guenter was putting a bunch of Wall Street Journal data on our disks . 
+B:  That 's it . 
+E:  So that 's the data that we 'll be running on ? 
+B:  Yeah . 
+E:  I see . OK . 
+B:  Yeah . 
+C:  <breath> 
+B:  So  
+B:  we have the data , just not the recognizer . 
+B:  <laugh> 
+C:  <breath> 
+B:  OK . 
+
+
+E:  So this test may take quite a while to run , then . 
+E:  May - judging by the amount of data that he was putting 
+B:  Uh , 
+E:  on . 
+B:  well there 's training and test , right ? 
+E:  I  I guess , I 'm not sure . I just  
+B:  No , I mean , if it 's like the other things , there 's  there 's 
+B:  data for training the H M Ms and  and data for testing it . So 
+C:  <breath> 
+B:  I wouldn't  
+B:  So it  it 's  
+E:  OK . 
+E:  So there 's  
+B:  So , training the recognizer , but , um 
+B:  Um . 
+B:  But I think it 's trained on clean and  
+B:  Is it trained on clean and  and test on  ? 
+D:  The Wall Street ? 
+B:  Yeah . 
+A:  Apparently , no . It 's training on 
+D:  Mm - hmm .  
+A:  a range between ten and twenty DB , I think , and testing between five and fifteen . 
+C:  <breath> 
+D:  Yeah . 
+A:  That 's 
+B:  OK . 
+A:  what I got  on  
+D:  It 's , uh  
+D:  It 's like a medium  medium - mismatch condition , sort of . 
+C:  <breath> 
+A:  Yeah , and  
+B:  I see . 
+D:  <mike noise> 
+A:  So the noise is  
+A:  There is a range of different noises also  um  
+A:  which are selected randomly and added randomly , 
+B:  <breath> 
+A:  uh , to the files . 
+A:  And there are noises that are different from the noises used  
+A:  on TI - digits . 
+B:  Yeah . 
+B:  Yeah . I mean , I wouldn't imagine that the amount of testing data 
+B:  was 
+B:  that huge . 
+B:  They probably put training  uh , almost certain they put training data there too . 
+B:  Maybe not . 
+B:  So . 
+B:  That 's that . 
+E:  <inbreath> 
+
+
+B:  Anybody have anything else ? 
+E:  Uh , one  one last question on that . When did they estimate that they would have that system available for download ? 
+C:  <breath> 
+D:  <mouth> 
+D:  Um , 
+D:  I guess  I guess one  some preliminary version is already there . 
+E:  Oh , so there 's w something you can download to just 
+D:  Yeah , it 's already there . Yeah . 
+E:  learn ? OK , good . 
+D:  But they 're 
+D:  actually parallel - y doing some modifications also , I think . 
+E:  OK . 
+D:  So I guess the f final system will be frozen by middle of , 
+D:  like , one more week maybe . 
+B:  Oh , well that 's pretty soon . 
+D:  Yeah , that 's just one more . 
+C:  Is this their , um , SVM recognizer ? 
+D:  No , it 's just a straightforward HMM . 
+C:  Oh , OK . 
+B:  You know , their  their  
+B:  They have a lot of options  
+B:  in their recognizer and  and the SVM is one of the things they 've done with it , but it 's not their more standard thing . 
+C:  Uh - huh . 
+B:  For the most part it 's  it 's Gaussian mixtures . 
+C:  Oh , OK . 
+C:  Oh , OK . 
+B:  Yeah . 
+D:  It 's just a HMM , Gaussian mixture model . 
+C:  Gaussian mixture HMM . OK . 
+B:  Yeah . 
+B:  Yeah , the SVM thing was an HMM also . It was just a  it  it  it was like a hybrid , like  what ? Yeah . 
+D:  Yeah , this is a g yeah , this i yeah . 
+C:  Mm - hmm . 
+E:  <inbreath> 
+E:  So , just so that I understand , they 're providing scripts and everything so that 
+E:  basically , uh , 
+E:  you  you push a button and it does training , and then it does test , and everything ? 
+E:  Is that  the idea ? 
+D:  I  I  I think  yeah , I  I guess something like that . 
+E:  Mm - hmm . 
+D:  It 's like <breath>  
+D:  as painless as possible , is what  
+C:  <breath> 
+E:  I see . Hmm . 
+D:  Do they provide all the scripts , everything , and then  
+E:  Somehow yo there 's hooks to put your 
+D:  Just , ju 
+E:  features in and  
+D:  Yeah , I th I think . 
+E:  Hmm . 
+B:  Hmm . 
+C:  <breath> 
+B:  <inbreath> Yeah , um . 
+B:  In fact , I mean , if you look into it a little bit , it might be reasonable  You know Joe , right ? 
+E:  Mm - hmm . 
+B:  Yeah . Just to sort of ask him about the issue of , um , 
+B:  different features having different kinds of , uh , scaling characteristics and so on . So that , 
+B:  you know , w w possibly having entirely different optimal values for  for the usual twiddle factors and what 's  what 's the plan about that ? 
+E:  OK . 
+C:  <breath> 
+
+
+D:  So sh shall we , like , add Chuck also to the mailing lists ? 
+C:  <breath> 
+D:  It may be better , I mean , in that case if he 's going to   
+B:  Yeah . Is that OK ? 
+D:  Because there 's a mailing list for this . 
+E:  Yeah , that 'd be great . 
+D:  Yeah , I guess maybe Hari or Hynek , 
+D:  one of them , has to  send a mail to Joe . 
+D:  Or maybe if you  
+E:  I  I could send him an email . 
+D:  Well , yeah , to add or maybe wh 
+E:  I  I know him really well . I  I was just talking with him on email the other day actually . <laugh> 
+D:  Yeah , so that 's just fine . So  
+C:  <laugh> 
+D:  So  
+B:  Uh , yeah , and just , um , se maybe see . Do you have Hari 's , uh  ? 
+E:  About other things , but . <laugh> 
+C:  <breath> 
+E:  I have Hari 's  
+B:  Yeah , so maybe just CC Hari and say that you 've just been asked to handle the large vocabulary part here , 
+E:  OK . 
+B:  and , uh , you know , end . 
+E:  Would it be better if I asked Hari to ask Joe ? 
+B:  Uh . 
+C:  <breath> 
+B:  Why don't you just ask Joe but CC Hari , and then in the note say , " Hari , hopefully this is OK with you " . 
+E:  OK . 
+E:  OK . 
+B:  And then if Joe feels like he needs a confirmation , Hari can answer it . 
+D:  Yeah . 
+B:  That way you can get started asking  Joe quickly while he 's  while he 's maybe still , 
+B:  you know , putting in nails and screws and doing that stuff  <breath> 
+C:  <breath> 
+C:  <breath-laugh> 
+D:  <breath> 
+D:  <mouth> 
+B:  Yeah . 
+D:  And there is an , uh , archive of all the mails that has been 
+D:  <mouth> 
+D:  gon that has gone , uh , between these people  among these people . 
+C:  <breath> 
+D:  So just you can see all this  
+E:  OK . 
+D:  mails in the ISIP web site  Mississippi web site . 
+E:  OK . 
+E:  Is that a password controlled  ? OK . 
+D:  Yeah , it 's password protected . 
+D:  So , like  like , it 's , like  
+C:  <breath> 
+B:  <inbreath> 
+
+
+B:  Uh . 
+B:  Got anything to tell us ? 
+C:  <mouth> 
+C:  Um . 
+C:  Well , I 've been 
+C:  reading some literature about 
+C:  clustering 
+C:  of data . Just , um , 
+C:  I guess , let me put it in context .  
+C:  OK , so we 're talking about 
+C:  discovering intermediate categories 
+C:  to , um  
+B:  <inbreath> 
+C:  to classify . 
+C:  Um , and , 
+C:  um , I was thinking about ways to  to generalize this because w you 're  it 's sort of like a  
+C:  it 's not a completely automatic way of clustering , 
+C:  because yo beforehand you have these  these TRAPS and you 're saying that  
+C:  that these frames correspond to this particular phoneme . 
+C:  Um , and that 's  that 's constraining your  your clustering to  
+C:  to the set of phonemes that you already have . 
+C:  Um , whereas maybe we want to just take  take a look at , um , arbitrary windows in time , 
+E:  Mm - hmm . 
+C:  um , of varying length , um , and cluster those . And I 'm thinking if we  
+E:  Mm - hmm . 
+C:  if we do that , then we would probably , um , at some point in the clustering algorithm 
+C:  find that we 've clustered things like , OK , thi this is a transition , um , this is a relatively stable  stable point . 
+C:  Um , and I 'm hoping to find other things of  of similarity and maybe use these things as the intermediate , um  intermediate categories that , uh , um , I 'll later classify . 
+
+
+C:  And , uh , I was looking at some of the work that , 
+C:  uh , Sangita was doing on these TRAPS things . So 
+B:  <mike noise> 
+C:  she has , um  she has 
+C:  temporal patterns for , 
+C:  um , a certain set of phonemes , 
+C:  from  from TIMIT , right ? 
+C:  the most common phonemes . And each one of them has  has a  a nice pattern over time , a one  one second window . 
+B:  <mike noise> 
+C:  And it has  has these patterns . 
+C:  Um , so she has , um 
+C:  a TRAP for each one of the phonemes , 
+C:  um , times fifteen , for each of the fifteen critical bands . 
+C:  And , um , <mouth> she does this agglomerative hierarchical clustering 
+C:  which  which basically , um , is a clustering algorithm that , uh , starts with many , many , many different points  many different clusters  uh , corresponding to the number of data , uh , patterns that you have in the data . 
+C:  And then you have this distance mej metric which , uh , measures how  how closely related they are . And you start , um <mouth> 
+C:  by merging the patterns that are most closely related . 
+E:  And you create a tree . 
+C:  And y yeah , yeah , a dendrogram tree . 
+E:  Mm - hmm .  
+C:  Um . 
+E:  And then you can pick , uh , values anywhere along that tree to 
+C:  <breath> 
+C:  <mike noise> 
+E:  fix your set of clusters . 
+C:  Right , usually it 's when , um  
+C:  when the sol similarity measures , 
+C:  um , don't go down as much . 
+E:  Mm - hmm .  
+C:  And so , uh  so you stop at that point . 
+C:  And what she found was , sh um , was there were five broad , 
+C:  um  broad categories , 
+B:  Mm - hmm .  
+C:  uh , corresponding to , uh , things like , uh , fricatives and , uh , vocalic , um , and , uh , stops . 
+C:  And , uh , one for silence and  and another one for schwa  schwa sounds . 
+
+
+B:  Are you looking at these in narrow bands ? 
+E:  Mm - hmm . 
+C:  <mouth> <inbreath> 
+C:  Um , 
+C:  right . 
+C:  F um , I 'm  
+B:  Cuz that 's what you 're gonna be using , right ? 
+C:  Yeah , yeah . I  I haven't exactly figured out , um , the exact details for that but , uh , 
+C:  the  the representation of the data that I was thinking of , was using , um , critical band , um , energies , <mouth> um , over different lengths of time . So  
+C:  Yeah . 
+B:  <inbreath> 
+B:  Yeah , I mean , it seems somehow that needs th uh , there 's a couple things that I wonder about with this . I mean , so one is  
+C:  OK . 
+B:  is ,  again , looking at the same representation , I mean , if you 're going for this sort of thing where you have  
+C:  <breath> 
+B:  uh , little detectors that are looking at narrow bands , 
+B:  then 
+B:  what you 're going to be looking for should be some category that you can find with the narrow bands . 
+C:  Mm - hmm . 
+B:  That  that seems to be kind of fundamental to it . 
+C:  Right . 
+B:  Um , and then the other thing , 
+B:  uh , is  
+B:  that I wonder about with it , 
+B:  and  and don't take this in the wrong way , like I  I know what I 'm doing or anything , 
+B:  but , I mean . <laugh> 
+B:  Um , just wondering really . 
+C:  Mm - hmm . 
+B:  Um , 
+B:  the sort of standard 
+B:  answer about this sort of thing is that if you 're trying to find  
+B:  the right system in some sense , whether you 're trying by categories or  or parameters  
+B:  um , and your goal is discrimination , 
+B:  then having choices based on discrimination as opposed to , um , unsupervised nearness of things , 
+C:  <breath> Hmm . 
+B:  um , is actually better . 
+B:  Um , and I don't know if that  I mean , since you 're dealing with issues of robustness , 
+B:  you know , maybe  maybe this isn't right , but 
+B:  it 'd be something I 'd be concerned about . Because , for instance , 
+B:  you can imagine , 
+B:  uh , 
+B:  uh , i i if you remember from  from , uh  from your  your quals , John Ohala saying that , uh , " buh "  and " puh "  differed , uh , not really cuz of voicing but because of aspiration . 
+C:  Mm - hmm . 
+B:  I mean , in as far as wha what 's really there in the acoustics . 
+B:  So , um , if you looked  
+C:  <breath> 
+B:  if you were doing some coarse clustering , you probably would put those two sounds together . 
+B:  And yet , I would gue I would guess that many of your recognition errors were coming from , uh , um , pfft ,  
+B:  screwing up on this distinction . 
+C:  <breath> Mm - hmm . 
+B:  So , in fact , it 's a little hard because recognizers , to first order , sort of work . 
+B:  And the reasons we 're doing the things we 're doing is because they don't work as well as we 'd like . 
+B:  And since they sort of work , 
+B:  uh , it means that they are already doing  if you go and take 
+B:  any recognizer that 's already out there and you say , " how well is it distinguishing between  schwas and stops ? " 
+C:  Mm - hmm . 
+B:  Boy , I bet they 're all doing 
+B:  nearly perfectly on this , right ? So these  these big categories that differ in huge obvious ways , we already know how to do . 
+C:  Mm - hmm . 
+B:  So , what are we bringing to the party ? I mean , in fact what we wanna do is have something that , particularly in the presence of noise , 
+B:  uh , is better at distinguishing between , uh , categories that are actually close to one another , 
+B:  and hence , would probably be clustered together . 
+C:  Mmm . 
+B:  So that 's th that 's the hard thing . I mean , I understand that there 's this other 
+B:  constraint that you 're considering , is that you wanna have categories that , uh  that would be straightforward for , say , a human being to mark if you had manual annotation . 
+B:  And it 's something that you really think you can pick up . But 
+B:  I think it 's also essential that you wanna look at what are the <breath> confusions 
+C:  Mm - hmm . 
+B:  that you 're making and how can you come up with , uh , categories that , uh , can clarify these confusions . 
+C:  <breath> Hmm . 
+B:  So , I mean , the standard sort of way of doing that is take a look at the algorithms you 're looking at , but then throw in some discriminative aspect to it . 
+B:  Y y this is more like , you know , how does LDA differ from PCA ? 
+B:  I mean , they 're the same sort of thing . They 're both orthogonalizing . But , 
+C:  Right . 
+B:  you know  and  and , um , 
+B:  this is a little harder because you 're not just trying to find parameters . You 're actually trying to find the  the  the  the categories themselves . 
+B:  Uh , so a little more like brain surgery , I think  on yourself . <laugh> Uh . <laugh> So , uh  Um , anyway . 
+C:  <laugh> 
+E:  <laugh> 
+D:  <laugh> 
+C:  Yeah .  
+B:  That 's my  thought . 
+C:  OK . 
+B:  You 've been thinking about this problem for a long time actually . I mean , well  
+E:  Yeah . 
+B:  W actually , you stopped thinking about it for a long time , but you used to think about it <laugh> a lot . And you 've been thinking about it more now , these categories . Mm - hmm . 
+C:  <laugh> <mike noise> 
+D:  Yeah . 
+E:  Yeah . I guess  
+E:  I don't  I don't  um , it 's not clear to me how to reconcile , you know , what you 're saying , which I think is right , with  
+E:  the way I 've been looking at it . That it 's  it 's  it 's all not very clear to me . But 
+E:  it seems to me that the desire  the desirable feature to have is something that , um , 
+E:  is bottom - up . You know , however we do that . And 
+B:  Mm - hmm . 
+E:  and so 
+E:  I guess what I don't understand is how to do that 
+E:  and still be discriminative , because to be discriminative you have to have categories 
+B:  Right . 
+E:  and the only categories that we know of to use are sort of these human  human sig significant  categories that are significant to humans , like phonemes , things like that . But that 's sort of what you want to avoid . And so 
+B:  <inbreath> 
+B:  Well , here 's a  here 's a , uh , uh 
+E:  that feels  I don't know how to get out of this . 
+B:  Here 's a generic and possibly useless thought , which is , <laugh> 
+E:  <laugh> 
+C:  <breath-laugh> 
+B:  um , what do you really  I mean , in a sense the only s s systems that make sense , 
+C:  <clunking noise> 
+B:  uh , 
+B:  are ones that  that have something from top - down in th in them . 
+B:  Right ? Because if e even the smallest organism that 's trying to learn to do anything , if it doesn't have any kind of reward 
+B:  for doing  or penal penalty for doing anything , then it 's just going to behave randomly . 
+E:  Mm - hmm . 
+B:  So whether you 're talking about something being learned through evolution or being learned through experience , it 's gotta have something come down to it that gives its reward or , you know , at least some reinforcement learning , right ? 
+D:  <mike noise> 
+E:  Right . 
+E:  So the question is , how far down ? 
+B:  <inbreath> And 
+E:  We could stop at words , but we don't , right ? We go all the way down to phonemes . 
+B:  Right , but I me I  I think that maybe in some ways part of the difficulty is  is trying to deal with the  with these phonemes . 
+E:  Mm - hmm . 
+B:  You know , and  and  and i it 's almost like you want categories if  if our  if our , uh , um , 
+C:  <mike noise> 
+B:  <mouth> metric of  of goodness , uh , i if our  correction  if our metric of badness <laugh> is word error rate 
+C:  <mike noise> 
+B:  then , um , maybe we should be looking at words . 
+E:  Mm - hmm . 
+B:  I mean , for  for  for very nice , uh , reasons we 've looked for a while at syllables , and they have a lot of good properties , but 
+B:  i i i if you go all the way to words , I mean , that 's really  I mean , d w 
+B:  In many applications you wanna go further . You wanna go to concepts or something , or have  have  have concepts , actions , this sort of thing . But , words aren't bad , yeah . And  and <laugh> 
+E:  Yeah . 
+E:  But words would be a nice  
+E:  Yeah , so the common  right , the common wisdom is you can't do words because there 's too many of them , right ? So you have to have some smaller set that you can 
+E:  use , uh , 
+E:  and  and so everybody goes to phonemes . But the problem is that we  we build models of words in terms of phonemes and these models are  
+E:  are really cartoon - ish , right ? So when you look at conversational speech , for example , you don't see the phonemes that you  that you have in your word models . 
+B:  Yeah . 
+B:  <breath> But  but  but we 're not trying for models of words here . See , so her here 's maybe where  If the issue is that we 're trying to come up with , um , some sort of intermediate categories which will then be useful 
+E:  Mm - hmm . 
+B:  for later stuff , uh , 
+E:  Mm - hmm . 
+B:  then  maybe it doesn't matter 
+B:  that we can't have enough  
+B:  I mean , 
+B:  what you wanna do is  is build up these categories that are  that are best for word recognition . 
+E:  Right . 
+E:  Right . 
+B:  And  and somehow if that 's built into the loop of what the categories  I mean , we do this every day 
+E:  Ah . 
+B:  in this very gross way of  of running o a thousand experiments because we have fast computers and picking the thing that has the best word error rate . 
+E:  Right . 
+E:  Yeah . 
+B:  In some way  I mean , we derive that all the time . In some ways it 's really not  a bad  bad thing to do because it tells you in fact how your adjustments at the very low level affect the  
+E:  Mm - hmm . 
+B:  the final goal . 
+E:  Mm - hmm . 
+B:  Um , so maybe there 's a way to even put that in in a much more automatic way , where you take , you know , something about the error at the level of the word or some other  it could be syllable  but in some large unit , 
+E:  Right . 
+E:  Uh - huh . 
+B:  uh , and 
+B:  uh  yeah , you may not have word models , you have phone models , whatever , but you sort of  don't worry about that , 
+E:  Mm - hmm . 
+B:  and just somehow feed it back through . You know , so that 's , uh , wh what I called a useless comments because I 'm not really telling you how to do it . But I mean , it 's a  <laugh> it 's  it 's , you know  it 
+E:  <laugh> 
+C:  <laugh> 
+E:  No , but I think the important part in there is that , you know , if you want to be discriminative , you have to have 
+E:  uh , you know , categories . 
+B:  Right . 
+E:  And I think this  the important categories are the words , 
+C:  <breath> 
+B:  Yeah . 
+E:  and  not the phones . 
+B:  Yeah . 
+E:  Maybe . And so  
+E:  Right . If you can put the words in to the loop somehow for determining goodness of your sets of clusters  
+E:  Uh  
+B:  <breath> 
+B:  Now , that being said , I think that  that if you have something that is , um  i 
+D:  <mike noise> 
+B:  Once you start dealing with spontaneous speech , all the things you 're saying are  are really true . 
+E:  Mm - hmm . 
+B:  If you  have read speech that 's been manually annotated , like TIMIT , 
+E:  Yeah . 
+B:  then , you know , i i you the phones are gonna be right , actually , <outbreath> for the most part . So  so , uh , it doesn't really hurt them to  
+E:  Yeah , yeah . 
+B:  to do that , to put in discrimination at that level . 
+B:  Um , if you go to spontaneous speech then it 's  it 's trickier and  and  and , uh , the phones are  
+B:  uh , you know , it 's gonna be based on bad pronunciation models that you have of  and , um  
+E:  <laugh> 
+E:  Mmm . 
+B:  And it won't allow for the overlapping phenomenon that  
+E:  So it 's almost like there 's this mechanism that we have that , you know , when  when we 're hearing read speech and all the phonemes are there 
+E:  you know , we  we deal with that , but  but when we go to conversational , and then all of a sudden 
+E:  not all the phonemes are there , it doesn't really matter that much to us as humans because we have some kind of mechanism that allows for 
+B:  <breath> 
+E:  these word models , whatever those models are , to be  munged , you know , and  and it doesn't really hurt , and 
+E:  I 'm not sure how  <laugh> how to build that in . 
+C:  <breath-laugh> 
+E:  Uh . 
+B:  <mouth> 
+
+
+B:  Yeah , I mean , I guess the other thing i is  is to think of a little bit  I mean , we when y when you start looking at these kind of results I think it usually is  is pretty intuitive , but start looking at 
+B:  um , what are the kinds of confusions that you do make , uh , you know , between words if you want or  or  or , uh , even phones in  in  in  in read speech , say , 
+B:  uh , when there is noise . 
+B:  You know , so is it more across place or more across manner ? Or is it cor you know , is it  ? I mean , I know one thing that happens is that you  you  you , uh , 
+C:  Mm - hmm . 
+B:  you lose the , um , uh , low energy phones . 
+B:  <breath> I mean , if there 's added noise then low energy phones <sniff> sometimes don't get heard . 
+B:  And if that  if that is  if it  uh , if that turns it into another word or  or different  you know , or another pair of words or something , then it 's more likely to happen . But , um , 
+C:  Mm - hmm . 
+B:  I don't know , I w I would  I would guess that you 'd  
+B:  W I don't know . Anyway , that 's  
+E:  I think part of the difficulty is that a l a lot of the robustness that we have is probably 
+E:  coming from a much higher level . You know , we understand the context of the situation when we 're having a conversation . And so if there 's noise in there , you know , our brain fills in and imagines what  what should be there . 
+B:  Mm - hmm . 
+B:  <inbreath> 
+C:  Yeah . We 're  we 're doing some sort of prediction of what  
+B:  Well that  
+B:  <inbreath> 
+E:  Yeah , exactly . 
+B:  Oh , sure , that 's really big . Uh , but I mean , even if you do 
+C:  Yeah . 
+B:  um , uh , diagnostic rhyme test kind of things , you know , where there really isn't an any information like that , uh , people are still better in noise 
+A:  <clears throat> 
+B:  than they  than they are in  in , uh  uh , than the machines are . 
+E:  Hmm . 
+B:  So , I mean , that 's  i 
+B:  Right . We can't  we can't get it at all without any language models . Language models are there and important but  but , uh  
+B:  Uh . 
+B:  If we 're not working on that then <laugh> we should work on something else and improve it , but  especially if it looks like the potential is there . So  
+D:  <mike noise> 
+B:  <mouth> 
+
+
+B:  <inbreath> Should we do some digits ? 
+E:  Yeah . 
+B:  <breath> Since we 're here ? 
+E:  Go ahead , Morgan . 
+B:  OK . 
+E:  OK . 
+B:  <breath> That 's all folks . <outbreath> 
+B:  <mike noise> 
+E:  <mike noise> <breath> 
+
+
+B:  OK , transcript L dash three three eight .  
+D:  <breath> 
+C:  <breath> 
+B:  Eight five six five five six four eight one five one three four two seven two seven one nine nine eight two five two four eight eight five eight zero three zero two seven five eight zero zero one zero five nine nine two nine four five eight five one nine six nine two four nine seven two four nine three three nine zero seven three four three three zero .  
+E:  <mike noise> 
+C:  <breath> 
+B:  Two zero four one seven five one seven .  
+C:  <breath> 
+C:  <mike noise> 
+A:  Transcript L dash three three nine . Eight eight nine two six four zero seven zero zero .  
+A:  One seven five nine eight four eight nine .  
+A:  Two eight four eight five one five five one .  
+A:  Six seven one zero nine five zero six five .  
+A:  Two eight eight eight nine five .  
+A:  Two one eight two .  
+A:  Seven nine three zero seven eight seven O seven nine .  
+A:  Three six two six one four nine eight one three .  
+A:  Eight nine nine seven four four six seven zero four zero five .  
+E:  Transcript L dash three three three six three seven zero three six nine zero six zero zero two eight three two seven .  
+D:  <breath> 
+E:  Seven seven six zero seven one seven four seven three eight one one four one zero six six .  
+E:  Nine five seven four three one nine nine zero four four zero six eight zero zero five eight .  
+E:  Zero eight one five four three seven two four five two seven four eight one three four eight .  
+C:  <breath> Transcript L dash three three six . Seven six zero one four nine five three eight one seven nine six four nine three nine nine eight nine zero zero zero two two three eight one one nine five four three six zero five nine zero four seven seven five six nine eight six seven three O three eight nine five three nine two eight six one four six four six four eight .  
+D:  <mike noise> 
+C:  Six three eight four zero six zero seven two zero one nine .  
+D:  Transcript L dash three three four . One three seven four zero nine one eight zero four four seven nine four six six five six four seven one two four eight zero four seven five one four .  
+C:  <mike noise> <breath> 
+D:  Eight two two one seven three five seven zero five nine one zero six three six three five nine four three nine six zero three nine two eight three eight .  
+D:  Zero six nine two zero nine one six nine zero two three eight four five eight eight three three zero .  
+
+

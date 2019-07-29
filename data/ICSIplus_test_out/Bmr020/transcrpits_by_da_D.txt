@@ -1,0 +1,229 @@
+D:  Really ? 
+D:  There 's gonna be some zeros from this morning 's meeting because I noticed that 
+D:  Barry , I think maybe you turned your mike off before the digits were  
+D:  Oh , 
+D:  was it during digits ? 
+D:  Oh , so it doesn't matter . 
+D:  Yeah . 
+D:  Yeah . 
+D:  And then she said " Did I say three ? 
+D:  I meant four . " 
+D:  Yeah , I just wonder if you have to normalize by the numbers of speakers or something . 
+D:  Cuz not everybody talks . 
+D:  Yeah . 
+D:  Three words from the end . 
+D:  I wonder  
+D:  I wonder about the cause and effect there . 
+D:  In other words uh  if you weren't going to pause you  you will because you 're g being interrupted . 
+D:  Uh  
+D:  Yeah , 
+D:  right . 
+D:  No , no , no . 
+D:  Right , 
+D:  I  I see . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Wasn't there  wasn't there some result , Andreas  
+D:  I  I thought maybe Liz presented this at some conference a while ago about <breath> uh , backchannels 
+D:  uh , 
+D:  and that they tend to happen when uh  the pitch drops . 
+D:  You know you get a falling pitch . 
+D:  And so that 's when people tend to backchannel . 
+D:  Uh - i i do you rem 
+D:  Right . Right . 
+D:  But  
+D:  Mm - hmm . 
+D:  Oh you do . 
+D:  So am I recalling correctly ? 
+D:  About  
+D:  Uh - huh . 
+D:  Hmm . 
+D:  It made me think about a cool little device that could be built 
+D:  to 
+D:  uh  
+D:  to handle those people that call you on the phone and just like to talk and talk and talk . 
+D:  And you just have this little detector that listens for these <breath> drops in pitch and gives them the backchannel . 
+D:  And so then you <breath> hook that to the phone and go off 
+D:  and do the <breath>  do whatever you r wanna do , 
+D:  while that thing keeps them busy . 
+D:  Uh - huh . 
+D:  Sure . 
+D:  Yeah . 
+D:  Oh ! 
+D:  Huh . 
+D:  It wouldn't matter ? 
+D:  Yeah . 
+D:  Random intervals . 
+D:  Is it the same directory that you had suggested ? 
+D:  So we could point Mari to this also for her <breath> March O - one request ? 
+D:  Or  
+D:  You n Remember she was  
+D:  Well she was saying that it would be nice if we had  they had a  
+D:  Or was she talking  
+D:  Yeah . 
+D:  She was saying it would be nice if they had eh  the same set , 
+D:  so that when they did experiments they could compare . 
+D:  Yeah . 
+D:  Yeah . 
+D:  So , for the thing that  
+D:  We need to give Brian the beeps file , 
+D:  so I was gonna probably put it  
+D:  Yeah , it 
+D:  I 'll make another directory . 
+D:  Yeah . 
+D:  Exactly . 
+D:  Yeah . 
+D:  Yeah , in fact after our meeting uh , this morning Thilo came in and said that <breath> um , there could be  other differences between <breath> the uh  already transcribed meeting with the beeps in it and one that has  just r been run through his process . 
+D:  So tomorrow , <breath> when we go to make the um  uh , chunked file <breath> for IBM , we 're going to actually compare the two . 
+D:  So he 's gonna run his process on that same meeting , 
+D:  and then we 're gonna do the beep - ify on both , and listen to them and see if we notice any real differences . 
+D:  Yeah , 
+D:  w and we know that . 
+D:  Wel - uh we just wanna if  if there 're any major differences between <breath> doing it on the hand 
+D:  But the  but there 's  yeah , but there is this one issue with them in that there 're  <breath> there are time boundaries in there that occur in the middle of speech . 
+D:  So  
+D:  Like when we went t to 
+D:  um  
+D:  When I was listening to the original file that Adam had , it 's like you  you hear a word then you hear a beep <breath> and then you hear the continuation of what is the same sentence . 
+D:  Well , 
+D:  and  and so the  th 
+D:  So there are these chunks that look like uh  <breath> that have uh  
+D:  Right . 
+D:  So you 'll  you 'll have a chunk of , you know , channel <breath> A which starts at zero and ends at ten , 
+D:  and then the same channel starting at eleven , 
+D:  ending at fifteen , 
+D:  and then again , starting at sixteen , 
+D:  ending at twenty . 
+D:  Right , 
+D:  so that 's three chunks where <breath> actually we w can just make one chunk out of that 
+D:  which is A , zero , twenty . 
+D:  Yeah . 
+D:  So I just wanted to make sure that it was clear . 
+D:  So <breath> if you were to use these , you have to be careful not to pull out these individual  
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  OK . 
+D:  Yeah , 
+D:  I think Jane tightened these up by hand . 
+D:  Jane ? 
+D:  In terms of the  this new procedure you 're suggesting , <breath> um , u what is the  
+D:  So I 'm a little confused , 
+D:  because how do we know where to put beeps ? 
+D:  Is it  i d y is it  
+D:  But after we 've done Thilo 's thing . 
+D:  Mm - hmm . 
+D:  They just <breath> do that on  the main channels . 
+D:  OK . 
+D:  So , now Jane , my question is <breath> when they 're all done adjusting the w time boundaries for the dominant speaker ,  have they then also erased the time boundaries for the other ones ? 
+D:  So how will we know who  
+D:  Mm - hmm . 
+D:  OK . 
+D:  So she does the adjustments on those guys ? 
+D:  Mm - hmm . 
+D:  So if you don't have to adjust the bins , why not just do what it  for all the channels ? 
+D:  Why not just throw all the channels to IBM ? 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Right . 
+D:  Without having her check anything . 
+D:  Yeah , I mean we have to fix it when it comes back anyhow . 
+D:  So in fact this might suggest an alternative sort of a  a c a hybrid between these two things . 
+D:  So the  the one suggestion is you know we  <breath> we run Thilo 's thing 
+D:  and then we have somebody go and adjust all the time boundaries 
+D:  and we send it to IBM . 
+D:  The other one is <breath> we just run his thing and send it to IBM . 
+D:  There 's a  a another possibility if we find that there are some problems , 
+D:  and that is <breath> if we go ahead and we <breath> just run his , and we generate the beeps file , then we have somebody listen beeps file . 
+D:  And they listen to each section and say " yes , no " whether that section is 
+D:  i i intelligible or not . 
+D:  And it just  You know , there 's a little interface which will  for all the " yes " - es it  then that will be the final <breath> beep file . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  I mean it wouldn't be that much fun for a transcriber to sit there , hear it , beep , yes or no . 
+D:  But it would be quick . 
+D:  But there 's no adjusting . 
+D:  And that 's what 's slow . 
+D:  There 's no adjusting of time boundaries . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Right . 
+D:  They  they  
+D:  Yeah . 
+D:  That 's true . 
+D:  We can just catch it at the  catch everything at this side . 
+D:  Well maybe that 's the best way to go , 
+D:  just  
+D:  Yeah . 
+D:  We won't be able to s include it with this first thing , 
+D:  because there 's a part of the process of the beep file which requires knowing the normalization coefficients . 
+D:  And  <breath> So a 
+D:  OK 
+D:  Right , 
+D:  except I don't think that  the c the instructions for doing that was in that directory , 
+D:  right ? 
+D:  I  I didn't see where you had gener 
+D:  n Doing th 
+D:  No , getting the coefficients , 
+D:  for each channel . 
+D:  OK . 
+D:  So we just run that one  
+D:  We just run that 
+D:  J - sound - stat ? OK . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Send it to them . 
+D:  OK . 
+D:  OK . 
+D:  When they  when there 's either no speech in there , 
+D:  or <breath> something they don't understand , 
+D:  things like that . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  And they may just guess at what those cut - off words are , 
+D:  but w I mean we 're gonna adjust  everything when we come back  
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Well good . 
+D:  That  that really simplifies thing then . 
+D:  And we can just , you know , get the meeting , 
+D:  process it , 
+D:  put the beeps file , 
+D:  send it off to IBM . 
+D:  You know ? 
+D:  With very little  work on our side . 
+D:  Do what ? 
+D:  Well , sample it . 
+D:  Sample it . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Right . 
+D:  Yeah . 
+D:  Yeah that would be very good . 
+D:  And then we can you know  
+D:  That 'll oughta be a good way to get the pipeline going . 
+D:  Well I don't think Jane 's saying they 're gonna transcribe it , 
+D:  but they 'll just mark it as being  there 's some background stuff there , 
+D:  right ? 
+D:  But wait a minute , 
+D:  why would they treat them differently ? 
+D:  Well we may just have to do it when it gets back here . 
+D:  Yeah . 
+D:  Yeah . 
+D:  I think we should just  
+D:  it  it 's gonna be too much work if we hafta <breath> worry about that I think . 
+D:  Yeah , I think if we just  m send it all to them . 
+D:  you know . 
+D:  Let  
+D:  Yeah , worry about it when we get back in . 
+D:  Yeah . 
+D:  Yeah , e 
+D:  Yeah . 
+D:  Do you guys plug your ears when you do it ? 
+D:  I do . 
+D:  You don't ? 
+D:  How can you do that ? 
+D:  I  I  
+D:  Gah ! 
+D:  You hate to have your ears plugged ? 
+D:  Really ? 

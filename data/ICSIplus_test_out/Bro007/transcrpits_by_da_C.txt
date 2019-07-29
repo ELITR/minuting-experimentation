@@ -1,0 +1,239 @@
+C:  Mm - hmm . 
+C:  So combo is um a system where we have these features that go through a network 
+C:  and then this same string of features but low - pass filtered with the low - pass filter used in the MSG features . 
+C:  And so these low - pass filtered goes through M eh  another MLP 
+C:  and then the linear output of these two MLP 's are combined just by adding the values and then there is this KLT . 
+C:  Um the output is used as uh features as well . 
+C:  Yeah . 
+C:  Yeah 
+C:  so 
+C:  yeah I could perhaps draw this on the blackboard 
+C:  Yeah . 
+
+C:  So we have these features from OGI that goes through the three paths . 
+C:  The first is a KLT using several frames of the features . 
+C:  The second path is uh MLP also using nine frames  several frames of features 
+C:  The third path is this low - pass filter . 
+C:  Uh , MLP 
+C:  Adding the outputs just like in the second propose the  the proposal from  for the first evaluation . 
+C:  And then the KLT and then the two together again . 
+C:  Um . So this is  
+C:  yeah 
+C:  Yeah 
+C:  that 's the reason , yeah . 
+C:  For the f the f first yellow line you mean ? 
+C:  Yeah 
+C:  so it 's uh basically s the same except that we don't have this uh low - pass filtering so we have only two streams . 
+C:  Well . 
+C:  There 's  there 's no low  low - pass processing used as additional feature stream . 
+C:  Um 
+C:  Yeah . 
+C:  Uh actually the way things seems to 
+C:  um well it 's uh forty percent for TI - digit , sixty for all the SpeechDat - Cars , 
+C:  well all these languages . 
+C:  Ehm the well match is forty , medium thirty five and high mismatch twenty - five . 
+C:  Yeah . 
+C:  Uh , no . 
+C:  But yeah . 
+C:  Generally what you observe with TI - digits is that the result are very close whatever the  the system . 
+C:  Yeah . 
+C:  Uh not yet . 
+C:  No . 
+C:  Mmm yeah , yeah . 
+C:  Mmm . 
+C:  Yeah . 
+C:  So yeah to  
+C:  actually OGI two is the  the baseline with the OGI features 
+C:  but this is not exactly the result that they have because they 've  they 're still made some changes in the features 
+C:  and  well but uh actually our results are better than their results . 
+C:  Um I don't know by how much because they did not send us the new results 
+C:  Uh 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah 
+C:  there is something funny happening here because  
+C:  yeah . 
+C:  But there are thirty - six and then sometimes we are  we are  we are around forty - two and 
+C:  but 
+C:  Yeah . 
+C:  So there are some results here 
+C:  uh so the third and the fifth line of the table 
+C:  Filt , yeah 
+C:  Um yeah so it seems f for the  the well match and mismatched condition 
+C:  it 's uh it brings something . 
+C:  Uh but uh actually apparently there are  there 's no room left for any silence detector at the server side because of the delay . 
+C:  Uh well 
+C:  No . 
+C:  Uh 
+C:  Yeah . 
+C:  Except I don't know because they  I think they are still working well . 
+C:  Uh t two days ago they were still working on this trying to reduce the delay of the silence detector 
+C:  so but 
+C:  yeah 
+C:  if we had time perhaps we could try to find uh some kind of compromise between the delay that 's on the handset and on the server side . 
+C:  Perhaps try to reduce the delay on the handset 
+C:  and  
+C:  but well hmm For the moment they have this large delay on the  the feature computation and so we don't 
+C:  I th 
+C:  Yeah . 
+C:  Yep . 
+C:  Actually the  yeah the second line is uh pretty much like the first line in yellow 
+C:  except that we don't have this KLT on the first  on the left part of the diagram . 
+C:  We just have the features as they are . 
+C:  Um 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  It 's included , yeah . 
+C:  Mm - hmm ? 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah , it 's  it 's significantly worse well but  Mm - hmm . 
+C:  Exc - except for the HM 
+C:  but 
+C:  Uh 
+C:  Um it 's  it depends  well  the well matched is generally larger than the other sets 
+C:  and I think it 's around two thousand or three thousand words perhaps , at least . 
+C:  Hmm ? 
+C:  The words , yeah . 
+C:  S sentences . 
+C:  Some sets have five hundred sentences , 
+C:  so . 
+C:  Mmm . 
+C:  Yeah . 
+C:  It  it d 
+C:  Seven digits . 
+C:  Mm - hmm ? 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  We could  we could run  run some kind of significance tests 
+C:  or 
+C:  Yeah . 
+C:  Yep . 
+C:  Yeah sure  sure . 
+C:  Yeah sure . 
+C:  Yeah . 
+C:  Uh 
+C:  Oh yeah 
+C:  I see . 
+C:  Yeah . 
+C:  No they 're  I think there is this silence in addition to the um KLT outputs 
+C:  it is because we  we  we just keep uh we don't keep all the dimensions after the KLT 
+C:  and  yeah . 
+C:  So we try to add the silence also in addition to the  these twenty - eight dimensions . 
+C:  Uh it 's o it 's OGI two , 
+C:  it 's  so the  th it 's the features from the first line 
+C:  and  yeah . 
+C:  So it 's uh basically this but without the KLT on the  from the left path . 
+C:  Uh the second line you don't have this combo stuff so you just 
+C:  uh 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Mmm . 
+C:  Uh <whispering inaudibly> I guess , yeah . 
+C:  I guess , yeah . 
+C:  Mmm . 
+C:  It 's not clear here . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Mmm . 
+C:  Yeah . 
+C:  We can  
+C:  yeah . 
+C:  Sure . 
+C:  But we have to decide  
+C:  I mean we have to fix the system on this d on this data , to choose the best 
+C:  and these 
+C:  But we could 
+C:  it d 
+C:  I think we fixed on Tuesday , yeah . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Uh yeah well . 
+C:  Well basically it 's this with perhaps some kind of printing and some  some other @ @ . 
+C:  Yeah but 
+C:  Mm - hmm . 
+C:  I think you  we could  we could start soon , yeah . 
+C:  Write up something . 
+C:  Um yeah . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Mmm . 
+C:  Uh not really . 
+C:  Um There is the format of the table which is <laugh> quite impressive . 
+C:  Um it should be the the problem with the error  channel error 
+C:  or 
+C:  well , you  
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Yeah , so it 's not divided between languages you mean or  
+C:  it just 
+C:  Oh yeah . 
+C:  Yeah . 
+C:  For TI - digits . 
+C:  Yeah , actually yeah . 
+C:  For the TI - digits they want to train on clean and on noisy 
+C:  and  yeah . 
+C:  Uh yeah . 
+C:  But uh we actually  
+C:  do we have the features ? 
+C:  Yeah . 
+C:  For the clean TI - digits but we did not test it yet . 
+C:  Uh the clean training stuff . 
+C:  Mmm . 
+C:  Mm - hmm . 
+C:  Hmm - hmm . 
+C:  Yeah . 
+C:  Yeah , well . 
+C:  Except if  if it 's the thirty - one at midnight 
+C:  or I don't know  
+C:  we can <laugh> still do some work on Wednesday morning . 
+C:  Yeah , well . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  It 's d 
+C:  no . 
+C:  No , we are wondering about the  the  the hour that we have to 
+C:  eh I don't know if it 's three PM  it 's 
+C:  Yeah , it 's  it 's midnight but 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Sure . 
+C:  I 'm not sure these are great ideas . 
+C:  Yeah . 
+C:  But 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  I think it 's OK 
+C:  um . We 
+C:  so basically we will  I think we 'll try to  to focus on these three architectures 
+C:  and  and perhaps I was thinking also a fourth one with just  just a single KLT 
+C:  because we did not really test that  
+C:  removing all these KLT 's and putting one single KLT at the end . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 

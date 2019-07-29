@@ -1,0 +1,166 @@
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Cuz there is another Andreas around , 
+C:  so , to avoid some confusion . 
+C:  Yeah . 
+C:  OK . So uh , uh , well , thanks for having me here , first of all . 
+C:  Um , so maybe just a  a little background on  on my visit . 
+C:  So , uh , I 'm not really involved in any project , that 's uh  that 's relevant to you uh , a at the moment , 
+C:  uh , the  the reason is really for me uh , to have an opportunity to talk to some other researchers in the field . 
+C:  And  and so I 'll just n sort of give you a real quick introduction to what I 'm working on , 
+C:  and um , I just hope that you have some comments 
+C:  or , maybe you 're interested in it to find out more , 
+C:  and  and so I 'll be uh , happy to talk to you 
+C:  and  and uh , I 'd also like to find out some more 
+C:  and  and maybe I 'll just walk around the office 
+C:  and 
+C:  and then  and ask some  some questions , uh , in a couple days . 
+C:  So I 'll be here for uh , tomorrow and then uh , the remainder of uh , next week . 
+C:  OK , so , um , what I started looking at , uh , to begin with is just uh , content management systems uh , i i in general . 
+C:  So 
+C:  um , uh what 's uh  Sort of the state of the art there is to um  uh you have a bunch of  of uh documents or learning units or learning objects , 
+C:  um , and you store meta - data uh , associate to them . 
+C:  So there 's some international standards 
+C:  like the I - triple - E , uh  There 's an I - triple - E , LON standard , 
+C:  and um , these fields are pretty straightforward , you have uh author information , you have uh , size information , format information and so on . 
+C:  Uh , but they 're two uh fields that are um , more interesting . 
+C:  One is uh you store keywords associated with the uh  with the document , 
+C:  and one is uh , you have sort of a , um , 
+C:  well , what is the document about ? So it 's some sort of taxonomic uh , ordering of  of the  of the units . 
+C:  Now , if you sort of put on your semantic glasses , uh you say , well that 's not all that easy , 
+C:  because there 's an implicit um , uh , assumption behind that 
+C:  is that uh , all the users of this system share the same interpretation of the keyword and the same interpretation of uh , whichever taxonomy is used , 
+C:  and uh , 
+C:  I think that 's a  that 's a very  that 's a key point of these systems 
+C:  and they sort of always brush over this real quickly without really elaborating much of that 
+C:  and uh  As a matter of fact , the only thing that m apparently really works out so far are library ordering codes , 
+C:  which are very , very coarse grain , 
+C:  so you have some like , science , biology , and then  
+C:  But that 's really all that we have at the moment . 
+C:  So I think there 's a huge , um , uh need for improvement there . 
+C:  Now , what this uh  a standard like this would give us is we could um , sort of uh with a search engine just query uh , different repositories all over the world . 
+C:  But we can't really  
+C:  Um , so what I 'm  what I try to do is um , to have um , 
+C:  uh  So . So the scenario is the following , you you 're working on some sort of project and you encounter a certain problem . 
+C:  Now , what  what we have at our university quite a bit is that uh , students um , try to u program a certain assignment , for example , 
+C:  they always run into the same problems , 
+C:  uh , and they always come running to us , 
+C:  and they 'll say why 's it not  it 's not working , 
+C:  and we always give out the same answer , 
+C:  so we thought , well , it 'd be nice to have a system that could sort of take care of this , 
+C:  and so , what I want to build is basically a  a smart F A Q system . 
+C:  Now , what you uh need to do here is you need to provide some context information 
+C:  which is more elaborate than " I 'm looking for this and this and this keyword . " 
+C:  So . 
+C:  And I think that I don't need to tell you this . 
+C:  I 'm  I 'm sure you have the same  when  when somebody utters a sentence in a certain , uh , context 
+C:  it , and  and the same sentence in another context makes a huge difference . 
+C:  So , I want to be able to model information like , um , so in the  in the context of  in the context of developing distributed systems , of a at a computer science school , 
+C:  um , what kind of software is the person using , 
+C:  which homework assignment is he or she working on at the moment , 
+C:  um , maybe what 's the background of that student 's 
+C:  um , which um , which error message was encountered . 
+C:  So this sort of information I think should be transmitted , uh , when a certain document is retrieved . 
+C:  Now , 
+C:  um , 
+C:  basically giving this um  Uh 
+C:  so we somehow need to have a formalized um , way of writing this down basically , 
+C:  and that 's where the shared interpretation of  of certain terms and keywords comes in again . 
+C:  And , using this and some  some uh , knowledge about the domain I think you can do some  some simple inferences . 
+C:  Like you know that when somebody 's working about  uh , working on  on servlets for example , 
+C:  he 's using Java , cuz servlets are used  are written in Java . 
+C:  So some  some inferences like that , 
+C:  now , um , u using this you can infer more information , 
+C:  and you could then match this to the meta - data of um  off the documents you 're  you 're searching against . 
+C:  So , uh what I wanna do is basically have some sort of um  given these inputs , 
+C:  and then I can compute how many documents match , 
+C:  and use this as a metric in the search . 
+C:  Now , what I plan to do is I want to uh sort of do a uh  uh  try to improve the quality of the search results , 
+C:  and I want to do this by having a depth uh , um , um  steepest descent approach . 
+C:  So if I knew which operating system the person was working on , would this improve my search result ? 
+C:  And  and having uh , uh a symbolic formalized model of this I could simply compute that , 
+C:  and find out which um  which questions are worth um , asking . 
+C:  And that 's what I then propagate back to the user , 
+C:  and  and sort of try to optimize the search in this way . 
+C:  Now , the big problem that I 'm facing right now is um , it 's fairly easy to hack up a system uh quickly , that  that works in the small domain , 
+C:  but the problem is obviously the scalability . 
+C:  And uh uh , so Robert was mentioning uh , earlier today is that uh , Microsoft for example with their printer set up program has a Bayesian network , 
+C:  which does exactly this , 
+C:  but there you face a problem that these are very hard to extend . 
+C:  And so , uh what I 'm  What I try to do is basically try to model this uh , in a way that you could really combine uh , knowledge from very different sources , 
+C:  and  and um , sort of looking into some of the ideas that the semantic web community uh , came up with . 
+C:  Trying to  to have uh , an approach how to integrate s uh certain uh  representation of certain concepts and also some computational rules , 
+C:  um , what you can do with those . 
+C:  Um . 
+C:  What I 'm also looking into is a probabilistic approach into this 
+C:  because document retrievals is a very fuzzy procedure , 
+C:  so it 's probably not that easy to simply have a symbolic uh , computational model . 
+C:  That  that probably isn't expressive enough . 
+C:  So . So that 's another thing , 
+C:  um , which I think you 're also uh , uh looking into right now . 
+C:  And then um , uh sort of as an add - on to this whole idea , um , uh that would be 
+C:  now , depending on what the search engine or the content repository  depending on which  um , uh , which uh , rules and which ontologies it  it uses , or basically its view of the world , uh you can get very different results . 
+C:  So it might ma make a lot of sense to actually query a lot of different search engines . 
+C:  And there you could have an idea where you actually have sort of a  a peer to peer approach , 
+C:  where we 're all sort of carrying around our individual bookshelves , 
+C:  and um , if you have a question about a homework , it 's  probably makes sense to ask somebody who 's in your class with you , sort of the guru in the certain area , 
+C:  rather than going to some Yahoo - like uh , search engine . 
+C:  So these are some of the  just in a nutshell , some of the ideas . 
+C:  And I think a lot of the  even though it 's a  it 's a very different domain , but I think a lot of the , um , issues are  are fairly similar . 
+C:  So . 
+C:  OK . 
+C:  Uh I know , yeah I know abou about it . 
+C:  Mm - hmm . Mm - hmm . 
+C:  Yeah , so . So I 'm  I 'm not  I 'm not building an expert  
+C:  Uh , I want to build a smart librarian , basically 
+C:  that can point you to the right reference . 
+C:  I don't wanna compute the answer , 
+C:  so it 's a little bit easier for me . 
+C:  Mm - hmm . 
+C:  I  I assume that  that the there will be learning systems that  that tag their  their content . 
+C:  And um , um , 
+C:  m @ @ and basically what I  what I envision is that you  rather than just supplying a bunch of keywords you could basically  for  for an FAQ for example you could state sort of like a logic condition , when this document applies . 
+C:  So " this document explains how to set up your uh , mail account on Linux " or something like this . 
+C:  So . So something  something very specific that you can then  
+C:  But the  I think that the key point with these uh , learning systems is that uh , a learning system is only as good as uh the amount of content it  it carries . 
+C:  You can have the best learning system with the best search interface , 
+C:  if there 's no content inside of it , it 's not very useful . 
+C:  So I think ultimately because um , uh developing these  these rules and these inference uh  inferences I think is very costly , 
+C:  so um , uh I think you must be able to reuse some  some existing um , domain  domain information , or  or  or ontologies that  that uh other people wrote 
+C:  and then try to integrate them , 
+C:  and then also search the entire web basically , rather than just the small uh , content management system . 
+C:  So I think that 's  that 's crucial for  for the success of  or @ @  
+C:  Mm - hmm . 
+C:  No . 
+C:  No . 
+C:  Um , yeah . 
+C:  Uh , not  not too much , 
+C:  but uh , 
+C:  I have a rough overview . 
+C:  Mmm . Mmm . 
+C:  Yeah . Yeah . 
+C:  Yeah . I 'm sure I could learn a lot about um , yeah , just how to  how to come up with these structures , 
+C:  cuz it 's  it 's very easy to whip up something quickly , 
+C:  but it maybe then makes sense to  to me , but not to anybody else , 
+C:  and  and if we want to share and integrate things , they must  well , they must be well designed really . 
+C:  Mmm . 
+C:  Except  except Prashant ? 
+C:  Um , 
+C:  Uh I don't know , I mean the uh  
+C:  Uh I  I think it 's  it 's really the lack of students uh , at IU at the moment . 
+C:  Yeah , yeah . I think it 's ju it 's more the lack of  of students , really , 
+C:  and w we have all these sponsors that are always sort of eager to get some teams . 
+C:  But  
+C:  Well I mean if  if I were a student , I 'd love to come here , rather than work for some German <outbreath> <mike noise> company , or  
+C:  Well , I didn't say anybody to  anything to offend  
+C:  well , except for the sponsors maybe , 
+C:  but  
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Well I 'll go to the uh , Semantic Web Workshop , uh , in two weeks . 
+C:  Mm - hmm . 
+C:  Mm - hmm . Mm - hmm . 
+C:  So , uh , who is that again ? 
+C:  OK , great . 
+C:  Mm - hmm . 

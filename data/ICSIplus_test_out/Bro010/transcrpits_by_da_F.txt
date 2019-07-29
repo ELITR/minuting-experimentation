@@ -1,0 +1,35 @@
+F:  and , um , feed that through the i um , all pole filter and get enhanced speech with reverberation reduced . 
+F:  Ri 
+F:  Yeah , 
+F:  OK , 
+F:  so , um , 
+F:  we 're interested in , um , methods for far mike speech recognition , 
+F:  um ,  mainly , uh , methods that deal with the reverberation  in the far mike signal . 
+F:  So , um , 
+F:  one approach would be , um , say MSG and PLP , like was used in Aurora one 
+F:  and , um , there are other approaches which actually attempt to  remove the reverberation , instead of being robust to it like MSG . 
+F:  And so we 're interested in , um , comparing the performance of  um , a robust approach like MSG with these , um , speech enhancement or de - reverber de - reverberation approaches . 
+F:  And , um , <mouth> it looks like we 're gonna use the Meeting Recorder digits data for that . 
+F:  o 
+F:  o 
+F:  OK , 
+F:  well , um , 
+F:  there was something that was done by , um , a guy named Carlos , I forget his last name ,  who worked with Hynek , who , um , 
+F:  OK . 
+F:  Who , um , 
+F:  um , it was like RASTA in the sense that of it was , um , de - convolution by filtering 
+F:  um , except he used a longer time window , 
+F:  like a second maybe . 
+F:  And the reason for that is RASTA 's time window is too short to , um include the whole , um , reverberation  
+F:  um , I don't know what you call it 
+F:  the reverberation response . 
+F:  I if you see wh if you see what I mean . 
+F:  The reverberation filter from my mouth to that mike is like  it 's t got it 's too long in the  in the time domain for the um  for the RASTA filtering to take care of it . 
+F:  And , um , 
+F:  then there are a couple of other speech enhancement approaches which haven't been tried for speech recognition yet 
+F:  but have just been tried for enhancement , 
+F:  which , um , have the assumption that um , you can do LPC um analysis of th of the signal you get at the far microphone 
+F:  and the , um , all pole filter that you get out of that should be good . 
+F:  It 's just the , um , excitation signal  that is going to be distorted by the reverberation 
+F:  and so you can try and reconstruct a better excitation signal 
+F:  and , um , feed that through the i um , all pole filter and get enhanced speech with reverberation reduced . 

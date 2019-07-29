@@ -1,0 +1,287 @@
+A:  And 
+A:  We 're  we 're live by the way , so we 've got a good intro here 
+A:  Yep . 
+A:  We can edit that out if you want . 
+A:  OK . 
+A:  So . This time the form discussion should be very short , 
+A:  right ? 
+A:  OK . 
+A:  Good point . 
+A:  Hi Jane ! 
+A:  We just started . 
+A:  Could you take that mike there ? 
+A:  Thanks . 
+A:  No , I just took over the entire s uh entire channel 
+A:  um  sampled ten minutes randomly . 
+A:  Yep . 
+A:  Yeah , this was quite quick and dirty , and it was just for  listening . 
+A:  And for listening it seems to work really well . 
+A:  So . 
+A:  But , it 's not  Not a good measure . 
+A:  Yes , absolutely . 
+A:  Except that  it 's hard to judge this because the  they 're not normalized . 
+A:  It 's just number of frames . 
+A:  But yeah , even so . 
+A:  Interesting 
+A:  And  I was just going to say that  that  right now we 're just exploring . 
+A:  What you would imagine eventually , is that you 'll feed all of these features into some  discriminative system . 
+A:  And so even if  if one of the features does a good job at one type of overlap , another feature might do a good job at another type of overlap . 
+A:  No prayer . 
+A:  That was a great overlap by the way . 
+A:  Well , but  But I think that 's what I was saying about different types of overlap . 
+A:  Right . 
+A:  Mind if I turned that light off ? 
+A:  The flickering is annoying me . 
+A:  Tone 
+A:  Sure , but tone might be very 
+A:  Yeah , you 're " mm - hmm " tone is going to be very different . 
+A:  You could imagine doing specialized ones for different types of backchannels , if you could  if you had a good model for it . 
+A:  Your " mm - hmm " detector . 
+A:  Right . 
+A:  Hmm . 
+A:  It would be interesting , though , to talk , maybe not at the meeting , but at some other time about what are the classes . 
+A:  Yeah , it would be interesting . 
+A:  Yep . 
+A:  Mm - hmm . 
+A:  Well , I mean we 're also talking about a couple of different things . 
+A:  I mean , one is your analysis window and then the other is any sort of normalization that you 're doing . 
+A:  And the  And they could be quite different . 
+A:  Yep . 
+A:  Well we 're not any time soon going to get a forced alignment . 
+A:  So . 
+A:  Um If it 's not hand - marked then we 're not going to get the times . 
+A:  I mean w I guess we could do a very bad one with Broadcast News . 
+A:  That might be good enough . 
+A:  Yeah . 
+A:  It 'd be worth a try . 
+A:  It would be interesting to see what we get . 
+A:  Yep . 
+A:  Yep , if IBM doesn't  
+A:  Yeah <laugh 1 syll> Right . 
+A:  Forms Next iteration of forms . 
+A:  Oops . 
+A:  Nope . 
+A:  One 's a digit form , 
+A:  one 's a speaker form . 
+A:  So one is a one time only  speaker form and the other is the digits . 
+A:  So don't fill these out . 
+A:  This is just the suggestion for uh what the new forms would look like . 
+A:  So , they incorporate the changes  that we talked about . 
+A:  On which one ? 
+A:  Oh you mean on the digit form ? 
+A:  Uh , because the user fills out the first three fields and I fill out the rest . 
+A:  So it was intentional . 
+A:  It 's an interesting observation , 
+A:  but it was intentional . 
+A:  Because the date is when you actually read the digits and the time and , 
+A:  excuse me , 
+A:  the time is when you actually read the digits , but I 'm filling out the date beforehand . 
+A:  If you look at the form in front of you ? that you 're going to fill out when you read the digits ? you 'll see I 've already filled in the date but not the time . 
+A:  Yeah , I 've noticed that in the forms . 
+A:  The  the reason I put the time in , is so that the person who 's extracting the digits , meaning me , will know where to look in the meeting , to try to find the digits . 
+A:  I know . 
+A:  And I haven't said anything . 
+A:  Yep . 
+A:  No , it 's about fifty fifty . 
+A:  Actually it 's about one third each . 
+A:  About one third of them are blank , 
+A:  about one third of them are when the digits are read , 
+A:  and about one third of them are when the  meeting starts . 
+A:  So . 
+A:  I could put instructions ? 
+A:  Nah . 
+A:  But if I 'm not at the meeting , I can't do that . 
+A:  Yep , but that is the reason Name , Email and Time are where they are . 
+A:  And then the others are later on . 
+A:  Mm - hmm . 
+A:  What ? 
+A:  What  which form are you talking about ? 
+A:  Oh you 're talking about the digit form . 
+A:  The digit form doesn't  The digit  
+A:  No , that 's alright . 
+A:  The digit form doesn't have a " for official use only " line . 
+A:  It just has a line ,  which is what you 're supposed to read . 
+A:  So on the digits form , everything above the line is a fill - in form 
+A:  and everything below the line is digits that the user reads . 
+A:  No , either way is fine 
+A:  I just  You just started talking about something , and I didn't know which form you were referring to . 
+A:  Right . 
+A:  Yep . 
+A:  Just as uh  as I have for all the others . 
+A:  That 's because the one , the digit form that has native language is the old form 
+A:  not the new form . 
+A:  Yeah this was the problem with these categories , 
+A:  I  I picked those categories from TIMIT . 
+A:  I don't know what those are . 
+A:  With TIMIT , 
+A:  yeah ? 
+A:  So , I was gonna ask 
+A:  wh w I mean . 
+A:  So  so what accent are we speaking ? 
+A:  Western ? 
+A:  Yeah , I mean you could call it whatever you want . 
+A:  For the foreign language we couldn't classify every single one . 
+A:  So I just left it blank and you can put whatever you want . 
+A:  Sure . 
+A:  So I 'm not sure what to do about the Region field for English variety . 
+A:  You know , when I wrote  I was writing those down , I was thinking , " You know , these are great  if you 're a linguist " . 
+A:  But I don't know how to  I don't know how to  I don't know how to categorize them . 
+A:  Yeah 
+A:  So I guess my only question was if  if you were a South Midland speaking region , person ? Would you know it ? 
+A:  Is that what you would call yourself ? 
+A:  Yeah . 
+A:  Well , We  I think we don't want to get that level of detail at this form . 
+A:  I think that 's alright if we want to follow up . 
+A:  But . 
+A:  Yeah , so I picked these regions cuz we had talked about TIMIT , 
+A:  and those are right from TIMIT . 
+A:  So . 
+A:  Yeah , I certainly don't . 
+A:  I mean , I was saying I don't even know what I speak . 
+A:  Am I speaking  Am I speaking Western ? 
+A:  Northwest ? 
+A:  Yeah , so this is a real problem . 
+A:  I don't know what to do about it . 
+A:  I c 
+A:  I think at the first level , for example , we speak the same . 
+A:  our  our dialects Or  whatever you  region are the same . 
+A:  But I don't know what it is . 
+A:  So . 
+A:  a techno - speak accent ? 
+A:  A  a geek region ? 
+A:  No problem . 
+A:  There are hardly any subjects from " beep " 
+A:  Yeah really . 
+A:  Well well we sort of  
+A:  Well , I like the idea of asking " what variety of English do you speak " as opposed to where you 're from 
+A:  Because th if we start asking where we 're from , again you have to start saying , " well , is that the language you speak or is that just where you 're from ? " 
+A:  And  
+A:  I mean . So  so I would say Germany 
+A:  You know am I speaking with German accent 
+A:  I don't think so . 
+A:  Oh , OK yeah . 
+A:  Yep . 
+A:  Yeah , I guess I could try to put  squeeze in a little map . 
+A:  I mean there 's not a lot of r of room 
+A:  I think of those , Northern is the only one that I don't even know what they 're meaning . 
+A:  Ye 
+A:  I don't think the Northwest people speak any differently than I do . 
+A:  That  that 's 
+A:  exactly what we 're arguing about . 
+A:  We don't know . 
+A:  I mean some of them are very obvious . 
+A:  If you  if you talk to someone speaking with Southern drawl , you know . 
+A:  Or Boston , yeah . 
+A:  But is Boston New England ? 
+A:  W <laugh> I guess that 's the problem with these categories . 
+A:  OK , so . I propose ,  take out Northern add , don't know . 
+A:  So you want to change the instructions also not just say region ? 
+A:  I don't know 
+A:  if I  if I read this form , I think they 're going to ask  it  they 're going to answer the same way if you say , " What 's variety of English do you speak ? 
+A:  Region . " 
+A:  as if you say " what variety of region  region  do you speak ? 
+A:  Please characterize your accent ? " 
+A:  They 're going to answer the same way . 
+A:  Oh , I see . 
+A:  Well what we talked about with that is  is so that they would understand the granularity . 
+A:  I mean that 's what I had before , and you told me to list the regions to list them . 
+A:  So . 
+A:  I mean I had it wide open last week and  and you said TIMIT . 
+A:  That 's what the " Other " is for . 
+A:  Won't they answer the same thing ? 
+A:  Right . 
+A:  I mean that 's why I put the " Other " in . 
+A:  Yep . 
+A:  So I mean , I  I mean the way I had it last time  was Region was blank , 
+A:  it just said Region colon . 
+A:  And  and I think that that 's the best way to do it , 
+A:  because  because of the problems we 're talking about 
+A:  but what we said last week , was no , put in a list , 
+A:  so I put in a list . 
+A:  So should we go back to  
+A:  Well , certainly dropping " Northern " I think is right , because none of us know what that is . 
+A:  Is " Midwest " one word ? 
+A:  And uh  
+A:  But that 's true of New England too . 
+A:  So . I mean only one  
+A:  Well , I shouldn't say that . 
+A:  I have no clue . 
+A:  I was going to say the only one that doesn't have a huge variety is New York City . 
+A:  But I have no idea whether it does or not . 
+A:  I think that  that was what happened with TIMIT , was that it was an analyst . 
+A:  New England 
+A:  Oh , no . 
+A:  " Other " , 
+A:  it goes under " Other " , 
+A:  definitely under " Other " . 
+A:  OK . So . 
+A:  Another suggestion . 
+A:  Rather than have circle fill in forms , say " Region , open paren , E G Southern comma Western comma close paren colon . " 
+A:  Actually , maybe we do one non - English one as well . 
+A:  Southern , Cockney ? 
+A:  Is that a  real accent ? 
+A:  How do you spell it ? 
+A:  N E 
+A:  OK , we 'll do it that way . 
+A:  Actually , I like that a lot . 
+A:  Because that get 's at both of the things we were trying to do , 
+A:  the granularity , and the person can just self - assess and we don't have to argue about what these regions are . 
+A:  Yep . 
+A:  Mm - hmm . 
+A:  Yep , just which one . 
+A:  I think that 's fine . 
+A:  Yep . 
+A:  Um , did you guys get my email on the multitrans ? 
+A:  That  
+A:  OK . 
+A:  Yeah . So . So . I  I have a version also which actually displays all the channels . 
+A:  But it 's hideously slow . 
+A:  The  what  the ones I applied , that you can actually do are Dan 's , because it doesn't slow it down . 
+A:  Just uses a lot of memory . 
+A:  No , the  the one that 's installed is fine . 
+A:  It 's not slow at all . 
+A:  I wrote another version . Which , instead of having the one pane with the one view , It has multiple panes  with the views . 
+A:  But the problem with it is the drawing of those waveforms is so slow that every time you do anything it just crawls . 
+A:  It 's really bad . 
+A:  Mm - hmm . 
+A:  As you play , as you move , as you scroll . 
+A:  Just about anything , and it  it was so slow it was not usable . 
+A:  So that 's why I didn't install it and didn't pursue it . 
+A:  So . I think that the one Dan has is usable enough . 
+A:  It doesn't display the others . 
+A:  It displays just the mixed signal . 
+A:  But you can listen to any of them . 
+A:  No , he suggested that , but he didn't   It 's not installed . 
+A:  No . No . 
+A:  Um , not if we 're going to use Tcl - TK At least not if we 're going to use Snack . 
+A:  I mean you would have to do something ourselves . 
+A:  Why don't we  we see how Dan 's works and if it  If we really need the display  
+A:  I mean . 
+A:  We  we could do that but that would mean changing the code . 
+A:  I mean this isn't a program we wrote . 
+A:  This is a program that we got from someone else , and we 've done patches on . 
+A:  So . 
+A:  Yeah . 
+A:  Not easily . 
+A:  I mean y yes we could do that . 
+A:  You could  you can write widgets in C . 
+A:  And try to do it that way but I just don't think  it  
+A:  Let 's try it with Dan 's and if that isn't enough , we can do it otherwise . 
+A:  I think it is , cuz when I was playing with it , the mixed signal has it all in there . 
+A:  And so it 's really  It 's not too bad to find places in the  in the stream where things are happening . 
+A:  So I  I don't think it 'll be bad . 
+A:  And if  if  
+A:  Depends on how much work they did . 
+A:  I think if  if  if one of us sat down and coded it , so that it could be displayed fast enough I 'm sure they would be quite willing to incorporate it . 
+A:  But it 's not a trivial task . 
+A:  Yeah . 
+A:  anyway , shall we do digits ? 
+A:  OK . 
+A:  OK . 
+A:  Well , you want to go first ? Or . 
+A:  Do you wanna go do digits or do you wanna just skip digits ? 
+A:  Then  Alright . You go ahead . 
+A:  Why don't you read the digits ? 
+A:  Yeah , don't  Don't read the old one . 
+A:  OK 
+A:  And 

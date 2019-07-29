@@ -1,0 +1,317 @@
+B:  You want to go ahead , Morgan ? 
+B:  OK . We 're on . 
+B:  Yeah , he suggested a smaller capacitor , 
+B:  right ? 
+B:  For the P D 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  What 's the  cut - off frequency it used ? 
+B:  Is it like twenty ? 
+B:  Yeah . 
+B:  Did somebody notice it during your talk ? 
+B:  Huh . 
+B:  Didn't say anything ? 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Hmm . 
+B:  Mm - hmm . Mm - hmm . 
+B:  Hmm . 
+B:  So like one instant in time . 
+B:  You could just  you could just throw up , you know , uh <breath> the uh  some MFCC feature vectors . 
+B:  You know , one from one , one from the other , and then , you know , you can look and see how different the numbers are . 
+B:  I 'm just kidding . 
+B:  I don't mean a graph . 
+B:  I mean the actual numbers . 
+B:  Yeah . 
+B:  " See how different these <breath> sequences of numbers are ? " 
+B:  Yeah . 
+B:  It 's not the square . 
+B:  Yeah . 
+B:  Yeah I looked at um  <breath> looked at the results when Stephane did that 
+B:  and it 's  it 's really wo really happens . 
+B:  I mean th the only difference is you change the self - loop transition probability by a tenth of a percent 
+B:  and it causes ten percent difference in the word error rate . 
+B:  Yeah . 
+B:  From point  
+B:  I  I 'm sorry 
+B:  f for point  from  You change at point one 
+B:  and n not tenth of a percent , one tenth , 
+B:  alright ? 
+B:  Um so from point five  
+B:  so from point six to point five and you get ten percent better . 
+B:  And it 's  <breath> I think it 's what you basically hypothesized in the last meeting <breath> about uh it just being very  
+B:  and I think you mentioned this in your email too  
+B:  it 's just very um  
+B:  you know get stuck in some local minimum 
+B:  and this thing throws you out of it I guess . 
+B:  I think you 're not allowed to  
+B:  Yeah . 
+B:  That 's supposed to be point six , for the self - loop . 
+B:  Yeah . 
+B:  But changing it to point five I think is  
+B:  which gives you much better results , 
+B:  but that 's <breath> not allowed . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Right . We only tested it on the  the medium mismatch , 
+B:  right ? 
+B:  You said on the other cases you didn't notice  
+B:  I did notice uh something  
+B:  Somebody , I think it was Morgan , suggested at the last meeting that I actually count to see <breath> how many parameters and how many frames . 
+B:  And there are uh almost one point eight million frames of training data 
+B:  and less than forty thousand parameters in the baseline system . 
+B:  So it 's very , very few parameters compared to how much training data . 
+B:  Yeah . 
+B:  Yeah . 
+B:  I did one quick experiment just to make sure I had everything worked out 
+B:  and I just  <breath> uh f for most of the um  
+B:  For  for all of the digit models , they end up at three mixtures per state . 
+B:  And so I just did a quick experiment , where I changed it so it went to four 
+B:  and um <breath> it it  it didn't have a r any significant effect at the uh medium mismatch and high mismatch cases 
+B:  and it had  <breath> it was just barely significant for the well - matched 
+B:  better . 
+B:  Uh so I 'm r gonna run that again but <breath> um with many more uh mixtures per state . 
+B:  Mm - hmm . 
+B:  And I think also <breath> just seeing what we saw <breath> uh in terms of the expected duration of the silence model ? 
+B:  when we did this tweaking of the self - loop ? 
+B:  The silence model expected duration was really different . 
+B:  And so in the case where <breath> um <breath> it had a better score , the silence model expected duration was much longer . 
+B:  So it was like  <breath> it was a better match . 
+B:  I think <breath> you know if we make a better silence model I think that will help a lot too 
+B:  um for a lot of these cases 
+B:  so 
+B:  but one one thing I  I wanted to check out before I increased the um <breath> number of mixtures per state was <breath> uh <breath> in their <breath> default training script they do an initial set of three re - estimations 
+B:  and then they built the silence model 
+B:  and then they do seven iterations then the add mixtures 
+B:  and they do another seven then they add mixtures 
+B:  then they do a final set of seven and they quit . 
+B:  Seven seems like a lot to me 
+B:  and it also makes the experiments go take a really long time 
+B:  I mean to do one turn - around of the well matched case takes like a day . 
+B:  And so <breath> you know in trying to run these experiments I notice , you know , it 's difficult to find machines , you know , compute the run on . 
+B:  And so one of the things I did was I compiled HTK for the Linux <breath> machines 
+B:  cuz we have this one from IBM that 's got like five processors in it ? 
+B:  and so now I 'm  you can run stuff on that and that really helps a lot because now we 've got <breath> you know , extra machines that we can use for compute . 
+B:  And if  I 'm do running an experiment right now where I 'm changing the number of iterations ? <breath> from seven to three ? 
+B:  just to see how it affects the baseline system . 
+B:  And so if we can get away with just doing three , we can do <breath> many more experiments more quickly . 
+B:  And if it 's not a  a huge difference from running with seven iterations , <breath> um , you know , we should be able to get a lot more experiments done . 
+B:  And so . I 'll let you know what  what happens with that . 
+B:  But if we can <breath> you know , run all of these back - ends f with many fewer iterations and <breath> on Linux boxes we should be able to get a lot more experimenting done . 
+B:  So . 
+B:  So I wanted to experiment with cutting down the number of iterations before I <breath> increased the number of Gaussians . 
+B:  So it  it weights the improvement on the well - matched case really heavily compared to the improvement on the other cases ? 
+B:  Yeah . 
+B:  Yeah , and it 's hard to improve on the  on the best case , 
+B:  cuz it 's already so good , 
+B:  right ? 
+B:  Well . 
+B:  I mean , it 's not  it 's not that different , 
+B:  right ? 
+B:  I mean , just subtract the accuracy . 
+B:  I mean  
+B:  Oh . Oh , I see . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  I see . I see . 
+B:  Yeah . 
+B:  That makes sense . 
+B:  Hey Morgan ? 
+B:  Do you remember that Signif program that we used to use for testing signi ? 
+B:  Is that still valid ? 
+B:  I  I 've been using that . 
+B:  OK . 
+B:  Oh , it was . 
+B:  Oh , I shoul 
+B:  OK . 
+B:  I should find that new one . 
+B:  I just use my old one from <breath> ninety - two or whatever 
+B:  OK . 
+B:  Ninety - three point six four , 
+B:  right ? 
+B:  is the baseline . 
+B:  Yeah . 
+B:  Oh . Oh . 
+B:  I 'm sorry . 
+B:  Ah ! OK . Ah , ah . 
+B:  Sorry . 
+B:  I 'm  
+B:  I 'm really confused about something . 
+B:  If we saw that making a small change like , you know , a tenth , to the self - loop had a huge effect , <breath> can we really make any conclusions about differences in this stuff ? 
+B:  I mean , especially when they 're this small . 
+B:  I mean . 
+B:  Wow ! 
+B:  Already a week ! 
+B:  Man ! 
+B:  You 're right . 
+B:  That 's amazing . 
+B:  Mm - hmm . 
+B:  Where is Eurospeech this year ? 
+B:  Oh . 
+B:  Well I could at least  
+B:  Well , I 'm going to be out next week 
+B:  but I could  try to look into like this uh CVS over the web . 
+B:  That seems to be a very popular <breath> way of  people distributing changes and  over , you know , multiple sites and things 
+B:  so maybe <breath> if I can figure out how do that easily and then pass the information on to everybody so that it 's <breath> you know , as easy to do as possible 
+B:  and  and people don't  it won't interfere with  their regular work , 
+B:  then maybe that would be good . 
+B:  And I think we could use it for other things around here too . 
+B:  So . 
+B:  Oh great . 
+B:  OK . 
+B:  I used it a long time ago 
+B:  but it 's been a while 
+B:  so maybe I can ask you some questions . 
+B:  OK . 
+B:  Maybe we could just  like , talk into a cup . 
+B:  Some good reverb . 
+B:  But not of reverberation . 
+B:  I noticed that in the pictures . 
+B:  I thought " hey , you know th " I  
+B:  My initial thought was " this is not too bad ! " 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  The main thing that struck me in looking at those two spectrograms was the difference in the high frequencies . 
+B:  It looked like <breath> for the one that was farther away , you know , it really  everything was attenuated 
+B:  and  
+B:  I mean that was the main visual thing that I noticed . 
+B:  This is  this is , 
+B:  oh , a plot of C - zero , 
+B:  the energy . 
+B:  C - zero is the close talking ?  
+B:  uh the close channel ? 
+B:  and s channel one is the  
+B:  Yeah . 
+B:  This is still being a plot of C - zero ? 
+B:  OK . 
+B:  Can I ask um what does variance normalization do ? 
+B:  w What is the effect of that ? 
+B:  I mean 
+B:  y Yeah . 
+B:  No , I understand that , 
+B:  but I mean  
+B:  No . 
+B:  No , I understand what it is , 
+B:  but I mean , what does it  what 's  what is 
+B:  uh  
+B:  We 
+B:  Yeah . Yeah . 
+B:  Why  why do it ? 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Oh , OK . 
+B:  Oh , OK . 
+B:  Uh - huh . 
+B:  I see . OK . 
+B:  So would  the major effect is  that you 're gonna get is by normalizing the means , 
+B:  but it may help  
+B:  First - order effects . 
+B:  And it may help to do the variance . 
+B:  OK . 
+B:  OK . 
+B:  Mm - hmm . 
+B:  Mm - hmm . Mm - hmm . 
+
+
+B:  OK . 
+B:  Gotcha . OK . 
+B:  Sorry to interrupt . 
+B:  But after you do this , after you do the variance normalization  
+B:  I mean . 
+B:  I don't know , it seems like this would be a lot easier than this signal to work with . 
+B:  Yeah . 
+B:  But for the purposes of finding the speech  
+B:  You 're more interested in the difference between the speech and the nonspeech , 
+B:  right ? 
+B:  Where 's th 
+B:  Where  at what stage is the voice activity detector applied ? 
+B:  Is it applied here or a after the variance normalization ? 
+B:  or  
+B:  Oh . 
+B:  Yeah . 
+B:  Is it applied all the way back here ? 
+B:  Maybe that 's why it doesn't work for channel one . 
+B:  Mm - hmm . 
+B:  Speech is more what ? 
+B:  There also could be  I mean . I can maybe see a reason f for both working on it too 
+B:  if <breath> um you know , if  if  if you work on something else and  and you 're waiting for them to give you <breath> spectral subtraction  
+B:  I mean it 's hard to know whether <breath> the effects that you get from the other experiments you do will <breath> carry over once you then bring in their spectral subtraction module . 
+B:  So it 's  it 's almost like everything 's held up waiting for this <breath> one thing . 
+B:  I don't know if that 's true or not , 
+B:  but I could see how  
+B:  Maybe that 's what you were thinking . 
+B:  Improves the baseline ? 
+B:  Isn't there some other 
+B:  uh d 
+B:  Uh , I was just gonna say isn't there  <breath> aren't  aren't there lots of ideas for doing voice activity , or speech - nonspeech rather ,  um by looking at <breath> um , you know , uh <mouth> I guess harmonics 
+B:  or looking across time  
+B:  Yeah . 
+B:  Well even with e 
+B:  uh w ah 
+B:  you know , uh even with the voiced - non  voiced - unvoiced 
+B:  um  
+B:  I thought that you or  somebody was talking about  
+B:  OK . 
+B:  So go ahead . 
+B:  Didn't the head dude send around that message ? 
+B:  Yeah , I think you sent us all a copy of the message , 
+B:  where he was saying that  
+B:  I I 'm not sure , exactly , what the gist of what he was saying , 
+B:  but something having to do with the voice <breath> activity detector 
+B:  and that it will  <breath> that people shouldn't put their own in or something . 
+B:  It was gonna be a  
+B:  Oh , I 'm sorry . 
+B:  I  I missed that . 
+B:  But the problem is that their models are all word level models . 
+B:  So there 's no phone models  that you get alignments for . 
+B:  You  So you could find out where the word boundaries are 
+B:  but that 's about it . 
+B:  It also  
+B:  Yeah , the  though I think uh there was one problem with that in that , you know , we used canonical mapping 
+B:  so <breath> our truth may not have really been  true to the acoustics . 
+B:  So . 
+B:  Wow ! 
+B:  Can I just mention one other interesting thing ? 
+B:  Um . One of the ideas that we  had come up with last week for things to try to <breath> improve the system  
+B:  Um . 
+B:  Actually I  I s we didn't  I guess I wrote this in after the meeting 
+B:  b but <breath> the thought I had was um looking at the language model that 's used in the HTK recognizer , 
+B:  which is basically just a big <breath> loop , 
+B:  right ? 
+B:  So you  it goes " digit " 
+B:  and then that can be  either go to silence or go to another digit , 
+B:  which  
+B:  That model would allow for the production of <breath> infinitely long sequences of digits , 
+B:  right ? 
+B:  So . I thought " well I 'm gonna just look at the  what actual digit strings do occur in the training data . " 
+B:  And the interesting thing was it turns out that there are no sequences of two - long or three - long digit strings  in any of the Aurora training data . 
+B:  So it 's either one , four , five , six , 
+B:  uh up to eleven , 
+B:  and then it skips 
+B:  and then there 's some at sixteen . 
+B:  Um . I don't know . 
+B:  I didn't look at the test data yet . 
+B:  So . 
+B:  Yeah . 
+B:  But I just thought that was a little odd , 
+B:  that there were no two or three long  
+B:  Sorry . 
+B:  So I  I  just for the heck of it , I made a little grammar which um , you know , had it 's separate path  for each length digit string you could get . 
+B:  So there was a one - long path 
+B:  and there was a four - long and a five - long 
+B:  and I tried that and it got way worse . 
+B:  There were lots of deletions . 
+B:  So it was  <breath> you know , I  I didn't have any weights of these paths 
+B:  or  I didn't have anything like that . 
+B:  And I played with tweaking the <breath> word transition penalties a bunch , 
+B:  but I couldn't go anywhere . 
+B:  But um . 
+B:  I thought " well if I only allow  " 
+B:  Yeah , I guess I should have looked at  to see how often there was a mistake where a two - long or a three - long path was actually put out as a hypothesis . 
+B:  Um . But . 
+B:  So to do that right you 'd probably want to have  <breath> allow for them all 
+B:  but then have weightings and things . 
+B:  So . I just thought that was a interesting <breath> thing about the data . 
+B:  Yeah . 
+B:  You want to go ahead , Morgan ? 

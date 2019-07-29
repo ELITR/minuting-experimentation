@@ -1,0 +1,259 @@
+B:  OK . 
+B:  Let 's see , I should be 
+B:  Two . 
+B:  La 
+B:  Is this channel one ? 
+B:  Gee , OK . 
+B:  Yes . 
+B:  OK . 
+B:  Yeah . 
+B:  Mm - hmm . What do you do , 
+B:  you do it higher ? 
+B:  Mm - hmm . 
+B:  OK . 
+B:  You wanna close this , 
+B:  or 
+B:  We 're recording , 
+B:  right ? 
+B:  Yeah . 
+B:  So uh 
+B:  Uh oh that 's a good idea . 
+B:  I shouldn't run the meeting . 
+B:  Yeah , 
+B:  good idea . 
+B:  S sorry I haven't seen the email , 
+B:  what was the score ? 
+B:  Hmm . 
+B:  So  
+B:  so  
+B:  so un unsurprisingly Adam is the golden voice , 
+B:  you see this here ? 
+B:  Hmm . 
+B:  Cool . 
+B:  Well , we don't even know what that means , 
+B:  so I 
+B:  Yeah . 
+B:  Yeah so we 're in better shape than we were say when we did  had the ninety - three workshop 
+B:  and we were all getting like seventy percent error on Switchboard . 
+B:  you know 
+B:  Yeah . 
+B:  Yeah . 
+B:  Oh one thing I guess I didn't get 
+B:  so you know the language model was straight from  from bigram from Switchboard 
+B:  the acoustic models were also from Switchboard or  or 
+B:  So they didn't have anything from this acoustic data in yet ? 
+B:  OK . 
+B:  Yeah . 
+B:  Right . 
+B:  Yeah , 
+B:  but for Broadcast News when we  we played around between the two there wasn't a huge loss . 
+B:  Uh - huh . 
+B:  Good point . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Yeah 
+B:  I  I  I would bet on that too 
+B:  cuz he certainly in that  when as a  as a burp user he was  he was a pretty uh strong one . 
+B:  Yeah . 
+B:  Sheep . 
+B:  Yeah . 
+B:  Sheep is good . 
+B:  Yeah . 
+B:  Have to add PZM and so on 
+B:  but 
+B:  Yeah . 
+B:  I r 
+B:  Oh 
+B:  Yeah , 
+B:  which  I would  which  well n n n n 
+B:  I mean there 's still just the w the percentages 
+B:  and , I mean they 're not  a 
+B:  as we 've talked about before there 's probably overlaps 
+B:  there 's probably overlaps in  in uh in fair number in Switchboard as well 
+B:  so 
+B:  but  but there 's other phenomena , 
+B:  it 's a meeting , 
+B:  it 's a different thing and there 's lots of stuff to learn with the close talking mikes 
+B:  but uh 
+B:  yeah certainly I 'd like to see as soon as we could , 
+B:  I mean maybe get some of the glitches out of the way 
+B:  but soon as we could how well it does with say with the P Z Ms or maybe even one of the 
+B:  and uh see if it 's , you know 
+B:  is it a hundred twenty percent 
+B:  or maybe it 's not 
+B:  maybe if with some adaptation you get this down to fifty percent or forty - five percent or something 
+B:  and  and then if for the PZM it 's seventy or something like that 
+B:  that 's actually something we could sort of work with a little bit 
+B:  so 
+B:  Yeah . 
+B:  Yeah and  
+B:  well certainly if the recognition as opposed to training , 
+B:  yeah . 
+B:  Seems reasonable . 
+B:  Yeah so we just have to go through this process of having people approve the transcriptions , 
+B:  say it 's OK . 
+B:  Well we , 
+B:  I mean once we get all this streamlined it may be sh it  
+B:  hopefully it will be fairly quick 
+B:  but we get the transcriptions , people approve them and so on 
+B:  it 's just that we 're 
+B:  It 's gonna be a rare thing that there 's a bleep for the most part . 
+B:  So you just train  just different filters 
+B:  and so you 're just wondering whether the filter is 
+B:  Right . 
+B:  Are you  are you using uh uh mel cepstrum or PLP over there ? 
+B:  So probably doesn't matter . 
+B:  But  but it wouldn't hurt to try , 
+B:  yeah . 
+B:  Sure . 
+B:  No the reason I say this 
+B:  PLP uses uh auto - regressive filtering and uh modeling and so it can be sensitive to the kind of filtering that you 're doing 
+B:  but uh uh mel cepstrum uh might not  b you wouldn't expect to be so much 
+B:  but 
+B:  This is being recorded at forty - eight kilohertz . Which is more that anybody needs 
+B:  so 
+B:  Yeah . 
+B:  It 's a digital audio orientation for the board 
+B:  it 's in the monitor so it 's 
+B:  Yeah . 
+B:  For telephone stuff . 
+B:  So it 's  it 's  it 's just that they were operating from Switchboard which was a completely telephone database 
+B:  and so that was a standard for that sixteen s 
+B:  Sixteen is more common for  for uh broadband stuff that isn't  
+B:  that isn't music and isn't telephone , 
+B:  yeah . 
+B:  I don't know . 
+B:  No actually I would think that you would  you would get better  you 'd get better high frequencies in the local mike . 
+B:  Uh but who knows ? 
+B:  I mean we do <laugh> we  we  we  we  we wanna find all this stuff out , 
+B:  we don't know . 
+B:  Uh yeah . 
+B:  Yeah . 
+B:  Weren't we gonna do something with a pad at one point ? 
+B:  Yeah . 
+B:  Well what I was just suggesting is  is we have these  this cross pad just for this purpose 
+B:  and just use that 
+B:  and if we sink it in  
+B:  The other thing is eh 
+B:  I don't know if you know this or if it 's a question for the mail to Dan 
+B:  but is this thing of two eight channel boards a maximum for this setup or could we go to a third board ? 
+B:  Oh it is one board . 
+B:  But that 's a question because that would  
+B:  if it was possible cuz it is i 
+B:  you know already we have a  a  a group of people in this room that cannot all be miked 
+B:  and it 's not just cuz we haven't been to the store , 
+B:  right 
+B:  it 's  
+B:  It might be a hard limitation , 
+B:  I mean one thing is it  the whole thing as I said is  is all structured in terms of forty - eight kilohertz sampling 
+B:  so that pushes requirements up a bit 
+B:  but 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah at least w we got the good ones . 
+B:  Yeah . 
+B:  OK . 
+B:  There isn't this some sort of thing that plugs in , 
+B:  you actually have to go and do the soldering yourself ? 
+B:  No I understand . 
+B:  The reason I ask is these sort of handmade uh wiring jobs fall apart in use 
+B:  so the other thing is to see if we can uh get them to do a custom job and put it together for this . 
+B:  Well 
+B:  no they 'll just charge us more , 
+B:  so it 's  this 
+B:  Not before having one come here and have some people try it out . 
+B:  Because there 's no point in doing that if it 's not gonna be any better . 
+B:  Yeah . 
+B:  And see if it 's preferable and if it is then we 'll get more . 
+B:  Yeah . 
+B:  Right . 
+B:  Yeah well it 's  
+B:  We 're in this for the long term , 
+B:  yeah . 
+B:  Just order it . 
+B:  Uh we 'll do this off - line , yeah . 
+B:  Uh y right 
+B:  cuz  
+B:  so one is for the daisy chain so that 's fifteen instead of sixteen 
+B:  and there 's six on the table 
+B:  so that 's nine . 
+B:  Yeah . 
+B:  That 's a good idea . 
+B:  That 's not a dumb question , 
+B:  it 's a good idea , 
+B:  yeah . 
+B:  No that  no  no 
+B:  that 's a very  
+B:  if we can't get another board and even if we can I have a feeling they 'll be some work . 
+B:  Let 's figure that we have eight which are set up 
+B:  and then there 's a ninth which is passed around to  
+B:  that 's a good idea 
+B:  Right . 
+B:  Kind of rules out overlap 
+B:  but  <laugh> but uh 
+B:  Yeah . 
+B:  Uh no  
+B:  no that 's  
+B:  No . 
+B:  Yes . 
+B:  No it  
+B:  no it depends on the hand - held 
+B:  but hand  many hand - helds are built wi with sort of uh anti - shock sort of things so that it  it is less uh susceptible to hand noises . 
+B:  If you hold the lapel mike i you just get all k sorts of junk . 
+B:  so 
+B:  Yeah . 
+B:  They have  
+B:  What ? 
+B:  No that 's uh  
+B:  you need a transmitter . 
+B:  Oh I see . 
+B:  Get a  get a different radio , 
+B:  yeah . 
+B:  Yeah . 
+B:  But you need a ra but it has to correspond to the receiver . 
+B:  No no  
+B:  so right , 
+B:  so this is a good point , 
+B:  so yeah you have these  these mikes with a little antenna on the end 
+B:  right ? 
+B:  I don't know . 
+B:  You 'll have to check with them , 
+B:  yeah . 
+B:  But that 's  that 's a great idea 
+B:  and then just sort of have that as the  and then you can have groups of twenty people or whatever 
+B:  and  and uh 
+B:  Right . 
+B:  Off you go , 
+B:  yeah . 
+B:  Pretty close , 
+B:  that 's good . 
+B:  Super idea . 
+B:  Now you have eight transcribers and there 's ten of us 
+B:  so how do we do this , is the only thing . 
+B:  Oh . 
+B:  So maybe we could  they could have a meeting more or less without us that  to do this and we should record it 
+B:  and then maybe one or two of them could come to one of these meetings and  and could you know could tell us about it . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Super . 
+B:  OK . 
+B:  OK . 
+B:  OK 
+B:  but the nine o ' cl nine o ' clock will be i be in here . 
+B:  Yeah , OK . 
+B:  Yeah , I think just adds  
+B:  Um good . 
+B:  So maybe do digits and recess ? 
+B:  Uh OK . 
+B:  Yeah . 
+B:  No I don't think it 's confusing . 
+B:  Well , it doesn't confuse me . 
+B:  OK . 
+B:  That 's fine . 
+B:  Yeah . 
+B:  He 's in the  he 's in the cour two two five D course . 
+B:  So , 
+B:  yeah . 
+B:  OK , 
+B:  let 's do digits . 
+B:  OK . 

@@ -1,0 +1,1013 @@
+F:  OK . I am . 
+F:  I 'm  What ? 
+F:  Really ? 
+F:  Oh , that 's horrible ! 
+F:  Disincentive ! 
+F:  Hello ? 
+F:  Hello ? 
+F:  Which am I ? 
+F:  Channel fi OK . 
+F:  OK . 
+F:  Are you doing something ? 
+F:  OK , then I guess I 'm doing something . 
+F:  So , um , 
+F:  So basically the result of m much thinking since the last time we met , um , but not as much writing , um , is a sheet that I have a lot of , like , thoughts and justification of comments on 
+F:  but I 'll just pass out as is right now . 
+F:  So , um , 
+F:  here . 
+F:  If you could pass this around ? 
+F:  And there 's two things . 
+F:  And so one on one side is  on one side is a sort of the revised sort of updated semantic specification . 
+F:  And the other side is , um , sort of a revised construction formalism . 
+F:  It 's just one sheet . 
+F:  It 's just a  Nothing else . 
+F:  Um , 
+F:  Enough to go around ? 
+F:  OK . 
+F:  And in some ways it 's  it 's  it 's very similar to  
+F:  There are very few changes in some ways from what we 've , um , uh , b done before 
+F:  but I don't think everyone here has seen all of this . 
+F:  So , uh , I 'm not sure where to begin . 
+F:  Um , as usual the disclaimers are there are  all these things are  
+F:  it 's only slightly more stable than it was before . 
+F:  And , um , after a little bit more discussion and especially like Keith and I  I have more linguistic things to settle in the next few days , um , it 'll probably change again some more . 
+F:  Um , maybe I will  
+F:  let 's start b let 's start on number two actually on the notation , 
+F:  um , because that 's , 
+F:  I 'm thinking , possibly a little more familiar to , um  to people . 
+F:  OK , so the top block is just sort of a  sort of abstract nota 
+F:  it 's sort of like , um , listings of the kinds of things that we can have . 
+F:  And certain things that have , um , changed , have changed back to this . 
+F:  There  there 's been a little bit of , um , going back and forth . 
+F:  But basically obviously all constructions have some kind of name . 
+F:  I forgot to include that you could have a type included in this line . 
+F:  So something like , um  
+F:  Well , there 's an example  
+F:  the textual example at the end has clausal construction . 
+F:  So , 
+F:  um , just to show it doesn't have to be beautiful 
+F:  It could be , you know , simple old text as well . 
+F:  Um , there are a couple of  
+F:  Uh , these three have various ways of doing certain things . 
+F:  So I 'll just try to go through them . 
+F:  So they could all have a type at the beginning . 
+F:  Um , and then they say the key word construction 
+F:  and they have some name . 
+F:  Yeah , right . 
+F:  OK , and then it has a block that is constituents . 
+F:  And as usual I guess all the constructions her all the examples here have only , um , tsk  one type of constituent , 
+F:  that is a constructional constituent . 
+F:  I think that 's actually gonna turn out to m be certainly the most common kind . 
+F:  But in general instead of the word " construct " , th here you might have " meaning " or " form " as well . 
+F:  OK ? 
+F:  So if there 's some element that doesn't  that isn't yet constructional in the sense that it maps form and meaning . 
+F:  OK , 
+F:  um , the main change with the constructs which  each of which has , um , the key word " construct " and then some name , and then some type specification , is that it 's  
+F:  it 's pro it 's often  sometimes the case in the first case here that you know what kind of construction it is . 
+F:  So for example whatever I have here is gonna be a form of the word " throw " , 
+F:  or it 's gonna be a form of the word , you know , I don't know , " happy " , or something like that . 
+F:  Or , you know , some it 'll be a specific word 
+F:  or maybe you 'll have the type . 
+F:  You 'll say " I need a p uh spatial relation phrase here " 
+F:  or " I need a directional specifier here " . 
+F:  So - uh you could have a j a actual type here . 
+F:  Um , or you could just say in the second case that you only know the meaning type . 
+F:  So a very common example of this is that , you know , in directed motion , the first person to do something should be an agent of some kind , 
+F:  often a human . 
+F:  Right ? 
+F:  So if I  you know , the um , uh , run down the street then I  
+F:  I  I run down the street , 
+F:  it 's typed , uh , " I " , 
+F:  meaning category is what 's there . 
+F:  The  the new kind is this one that is sort of a pair 
+F:  and , um , 
+F:  sort of skipping fonts and whatever . 
+F:  The idea is that sometimes there are , um , general constructions that you know , that you 're going to need . 
+F:  It 's  it 's the equivalent of a noun phrase or a prepositional phrase , or something like that there . 
+F:  And usually it has formal um , considerations that will go along with it . 
+F:  And then uh , you might know something much more specific depending on what construction you 're talking about , 
+F:  about what meaning  what specific meaning you want . 
+F:  So the example again at the bottom , which is directed motion , 
+F:  you might need a nominal expression to take the place of , you know , um , " the big th " , you you know , " the big  the tall dark man " , you know , " walked into the room " . 
+F:  But because of the nature of this particular construction you know not just that it 's nominal of some kind 
+F:  but in particular , that it 's some kind of animate nominal , 
+F:  and which will apply just as well to like , you know , a per you know , a simple proper noun 
+F:  or to some complicated expression . 
+F:  Um , 
+F:  so I don't know if the syntax will hold but something that gives you a way to do both constructional and meaning types . 
+F:  So . 
+F:  OK , then I don't think the ,  um  
+F:  at least  
+F:  Yeah .  None of these examples have anything different for formal constraints ? 
+F:  But you can refer to any of the , um , sort of available elements and scope , 
+F:  right ? which here are the constructs ,  to say something about the relation . 
+F:  And I think i if you not if you compare like the top block and the textual block , um , we dropped like the little F subscript . 
+F:  The F subscripts refer to the " form " piece of the construct . 
+F:  And I think that , um , in general it 'll be unambiguous . 
+F:  Like if you were giving a formal constraint then you 're referring to the formal pole of that . 
+F:  So  so by saying  if I just said " Name one " then that means name one formal 
+F:  and we 're talking about formal struc  Which  which makes sense . 
+F:  Uh , there are certain times when we 'll have an exception to that , 
+F:  in which case you could just indicate " here I mean the meaningful for some reason " . 
+F:  Right ? 
+F:  Or  Actually it 's more often that , only to handle this one special case of , you know , " George and Jerry walk into the room in that order " . 
+F:  So we have a few funny things where something in the meaning might refer to something in the form . 
+F:  But  but s we 're not gonna really worry about that for right now 
+F:  and there are way We can be more specific if we have to later on . 
+F:  OK , and so in terms of the  the relations , 
+F:  you know , as usual they 're before and ends . 
+F:  I should have put an example in of something that isn't an interval relation 
+F:  but in form you might also have a value binding . 
+F:  You know , you could say that , um , you know , " name - one dot " , t you know , " number equals " , you know , a plural or something like that . 
+F:  There are certain things that are attribute - value , similar to the bindings below 
+F:  but I mean they 're just  us usually they 're going to be value  value fillers , right ? 
+F:  OK , and then again semantic constraints here are just  are just bindings . 
+F:  There was talk of changing the name of that . 
+F:  And Johno and I  I  you  you and I can like fight about that if you like ? 
+F:  but about changing it to " semantic  n effects " , 
+F:  which I thought was a little bit too order - biased 
+F:  and " semantic bindings " , 
+F:  which I thought might be too restrictive in case we don't have only bindings . 
+F:  And so it was an issue whether constraints  um , there were some linguists who reacted against " constraints " , saying , " oh , if it 's not used for matching , then it shouldn't be called a constraint " . 
+F:  But I think we want to be uncommitted about whether it 's used for matching or not . Right ? 
+F:  Cuz there are  I think we thought of some situations where it would be useful to use whatever the c bindings are , for 
+F:  actual , you know , sort of like modified constraining purposes . 
+F:  Yeah , yeah . 
+F:  It 's used shouldn't matter , right ? 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Yeah , uh , there was one time when  when Hans explained why " constraints " was a misleading word for him . 
+F:  And I think the reason that he gave was similar to the reason why Johno thought it was a misleading term , 
+F:  which was just an interesting coincidence . 
+F:  Um , but , uh  
+F:  And so I was like , " OK , well both of you don't like it ? 
+F:  Fine , we can change it " . 
+F:  But I  I  I 'm starting to like it again . 
+F:  So that that 's why   That 's why I 'll stick with it . 
+F:  So  
+F:  What ? 
+F:  Con - uh , a consequent ? 
+F:  Yeah , but it 's not an " if - then " . 
+F:  Mm - hmm . 
+F:  Yeah , that 's true . 
+F:  Oh , oops ! 
+F:  No . That was just a mistake of cut and paste from when I was going with it . 
+F:  So , I 'm sorry . 
+F:  I didn't mean  that one 's an in unintentional . 
+F:  Sometimes I 'm intentionally inconsistent 
+F:  cuz I 'm not sure yet . 
+F:  Here , I actually  it was just a mistake . 
+F:  Yeah . 
+F:  Well , unless I go with " meaning " 
+F:  but i I mean , I kind of like " meaning " better than " semantic " 
+F:  but I think there 's  vestiges of other people 's biases . 
+F:  Like  
+F:  Minor point . 
+F:  OK , um , 
+F:  so I think the middle block doesn't really give you any more information , ex than the top block . 
+F:  And the bottom block similarly only just illus you know , all it does is illustrate that you can drop the subscripts and  and that you can drop the , um  uh , that you can give dual types . 
+F:  Oh , one thing I should mention is about " designates " . 
+F:  I think I 'm actually inconsistent across these as well . 
+F:  So , um , strike out the M subscript on the middle block . 
+F:  So basically now , um , this is actually  this little change actually goes along with a big linguistic change , 
+F:  which is that " designates " isn't only something for the semantics to worry about now . 
+F:  So we want s " designates " to actually know one of the constituents which acts like a head in some respects 
+F:  but is sort of , um , really important for say composition later on . 
+F:  So for instance , if some other construction says , you know , " are you of type  is this part of type whatever " , um , the " designates " tells you which sort of part is the meaning part . 
+F:  OK , so if you have like " the big red ball " , you know , you wanna know if there 's an object or a noun . 
+F:  Well , ball is going to be the designated sort of element of that kind of phrase . 
+F:  Um , 
+F:  there is a slight complication here which is that when we talk about form it 's useful sometimes to talk about , um  to talk about there also being a designated object 
+F:  and we think that that 'll be the same one , right ? 
+F:  So the ball is the head of the phrase , 
+F:  " the r the  " , um , " big red ball " , 
+F:  and the entity denoted by the word " ball " is sort of the semantic head in some ways of  of this sort of , um , in interesting larger element . 
+F:  Mm - hmm . 
+F:  Right , right . 
+F:  And , uh , you might be able to say things like if the head has to go last in a head - final language , you can refer to the head as a p the , you know  the formal head as opposed to the rest of the form having to be at the end of that decision . 
+F:  So that 's a useful thing 
+F:  so that you can get some internal structural constraints in . 
+F:  Um , there was a list of things that isn't included 
+F:  but you  you can  you can ask a question . 
+F:  That might @ @ it . 
+F:  Mm - hmm . 
+F:  Right . 
+F:  Well , except for their construction meaning , 
+F:  so it 's not clear that , 
+F:  uh  
+F:  Well , right now it 's a c uh contr construction type and meaning type . 
+F:  So I don't know what a form type is . 
+F:  Yeah . 
+F:  Right . 
+F:  A well , and a previous , um , you know , version of the notation certainly allowed you to single out the meaning bit by it . 
+F:  So you could say " construct of type whatever designates something " . 
+F:  But that was mostly for reference purposes , 
+F:  just to refer to the meaning pole . 
+F:  I don't think that it was often used to give an extra meaning const type constraint on the meaning , 
+F:  which is really what we want most of the time I think . 
+F:  Um , 
+F:  I  I don't know if we 'll ever have a case where we actually h 
+F:  if there is a form category constraint , you could imagine having a triple there that says , you know  that 's kind of weird . 
+F:  Mm - hmm . 
+F:  Right , right . 
+F:  Which is fine , yeah . 
+F:  Mm - hmm . 
+F:  Yeah . 
+F:  Right , n s 
+F:  you may be  you may not be like everyone else in  in Berkeley , 
+F:  but that 's OK . 
+F:  Uh , we don't mind either , 
+F:  so  
+F:  Right . 
+F:  Mm - hmm . 
+F:  Well , there 's an alternative to this 
+F:  which is , um  The question was did we want directed motion , 
+F:  which is an argument structure construction  
+F:  did we want it to worry about , um , anything more than the fact that it , you know , has semantic  
+F:  You know , it 's sort of frame - based construction . 
+F:  So one option that , you know , Keith had mentioned also was like , well if you have more abstract constructions such as subject , predicate , basically things like grammatical relations , 
+F:  those could intersect with these 
+F:  in such a way that subject , predicate , or subject , predicate , subject , verb , ob you know , verb object would require that those things that f fill a subject and object are NOM expressions . 
+F:  And that would be a little bit cleaner in some way . 
+F:  But you know , for now , I mean , 
+F:  uh , you know . 
+F:  M moving it to another place , right . 
+F:  But there does  basically , the point is there has to be that constraint somewhere , right ? 
+F:  So , 
+F:  yeah . 
+F:  Robert 's not happy now ? 
+F:  Oh , OK . 
+F:  Yes . 
+F:  Mm - hmm . 
+F:  Right . 
+F:  Yep . 
+F:  Yeah , 
+F:  um , the un sort of the un - addressed questions in this , um , definitely would for instance be semantic constraints we talked about . 
+F:  Here are just bindings 
+F:  but , 
+F:  right ? 
+F:  we might want to introduce mental spaces  
+F:  You know , there 's all these things that we don't  
+F:  Right ? 
+F:  So there 's going to be some extra  you know , definitely other notation we 'll need for that which we skip for now . 
+F:  Uh 
+F:  Yeah . 
+F:  OK . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  What ? 
+F:  You 're missing like the premier American holiday ? 
+F:  What 's the point of spending a year here ? 
+F:  So , anyway . 
+F:  Oh , yeah , I forgot . 
+F:  Oops .  Sorry . 
+F:  OK . 
+F:  Not in California . 
+F:  Yeah , that 's true . 
+F:  I like  I  I like spending fourth of July in other countries , <laugh> whenever I can . 
+F:  Um  
+F:  Construal , 
+F:  OK , so  
+F:  Oh , so there was one question that came out . 
+F:  I hate this thing . 
+F:  Sorry . 
+F:  Um , which is , 
+F:  so something like " past " which i you know , we think is a very simple  uh , we 've often just stuck it in as a feature , 
+F:  you know , " oh ,  this event takes place before speech time " ,  OK , is what this means . 
+F:  Um , it 's often thought of as  it is also considered a mental space , 
+F:  you know , by , you know , lots of people around here . 
+F:  So there 's this issue of well sometimes there are really exotic explicit space builders that say " in France , blah - blah - blah " , 
+F:  and you have to build up  you ha you would imagine that would require you , you know , to be very specific about the machinery , 
+F:  whereas past is a very conventionalized one 
+F:  and we sort of know what it means 
+F:  but it  we doesn't  don't necessarily want to , you know , unload all the notation every time we see that it 's past tense . 
+F:  So , you know , we could think of our  uh , just like X - schema " walk " refers to this complicated structure , past refers to , you know , a certain configuration of this thing with respect to it . 
+F:  So  so we 're kind of like having our cake and eating it  
+F:  you know , having it both ways , right ? 
+F:  So , i i 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Yeah , OK . 
+F:  Wha - sorry ? 
+F:  Space ? 
+F:  Oh , oh , oh , oh , instead of just time ? 
+F:  Yeah , yeah , yeah . 
+F:  Same thing . 
+F:  So there are very conventionalized like deictic ones , right ? 
+F:  And then I think for other spaces that you introduce , you could just attach y 
+F:  whatever  
+F:  You could build up an appropriately  uh , appropriate structure according to the l the sentence . 
+F:  Yeah . 
+F:  Right . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Yeah . 
+F:  So time and space . 
+F:  Um , we 'll  we 'll get that on the other side a little , like very minimally . 
+F:  There 's a sort of there 's a slot for setting time and setting place . 
+F:  And 
+F:  you know , you could imagine for both of those are absolute things you could say about the time and place , 
+F:  and then there are many in more interestingly , linguistically anyway ,  there are relative things that , you know , you relate the event in time and space to where you are now . 
+F:  If there 's something a lot more complicated like , or so  hypothetical or whatever , then you have to do your job , 
+F:  like or somebody 's job anyway . 
+F:  I 'm gonna point to  at random . 
+F:  Mm - hmm . 
+F:  They 're real , right . 
+F:  I see  right . 
+F:  Hmm . 
+F:  Mm - hmm . 
+F:  Right . 
+F:  Mm - hmm . 
+F:  It seems like , um , the grammatical things such as the auxiliaries that you know introduce these conditionals , whatever , give you sort of the  the most basi 
+F:  th those we  I think we can figure out what the possibilities are , right ? 
+F:  There are sort of a relatively limited number . 
+F:  And then how they interact with some extra thing like " in France " or " if such - and - such " , that 's like there are certain ways that they c they can  
+F:  You know , one is a more specific version of the general pattern that the grammat grammar gives you . 
+F:  I think . 
+F:  But , you know , whatever , 
+F:  we  we 're  
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  That 's OK . 
+F:  We usually don't know the point of the sentence at all . 
+F:  But we know what it 's trying to say . 
+F:  We  we know that it 's  what predication it 's setting up . 
+F:  That 's all . 
+F:  Purely linguistic cues , right ? 
+F:  So . 
+F:  Mmm . 
+F:  OK , so , um , one other thing I just want to point out is there 's a lot of confusion about the terms like " profile , designate , focus " , et cetera , et cetera . 
+F:  Um , for now I 'm gonna say like " profile " 's often used  
+F:  like two uses that come to mind immediately . 
+F:  One is in the traditional like semantic highlight of one element with respect to everything else . 
+F:  So " hypotenuse " , you profiled this guy against the background of the  right t right triangle . 
+F:  OK . 
+F:  And the second use , um , is in FrameNet. It 's 
+F:  slightly different . 
+F:  Oh , I was asking Hans about this . 
+F:  They use it to really mean , um , this  in a frame th this is  the profiles on the  these are the ones that are required . 
+F:  So they have to be there or expressed in some way . 
+F:  Which  which  I 'm not saying one and two are mutually exclusive 
+F:  but they 're  they 're different meanings . 
+F:  So the closest thing  
+F:  so I was thinking about how it relates to this notation . 
+F:  For us , um  
+F:  OK , so how is it  
+F:  so " designate "  FrameNet ? 
+F:  FrameNet ? 
+F:  Yeah , yeah . 
+F:  I  I mean , I  I was a little bit surprised about it too . 
+F:  I knew that  
+F:  I thought that that would be something like  
+F:  there 's another term that I 've heard for that thing 
+F:  but they  I mean  uh , well , at least Hans says they use it that way . 
+F:  And  
+F:  and may maybe he 's wrong . 
+F:  Anyway , so 
+F:  I think the  the " designate " that we have in terms of meaning is really the " highlight this thing with respect to everything else " . OK ? 
+F:  So this is what  what it means . 
+F:  But the second one seems to be useful 
+F:  but we might not need a notation for it ? 
+F:  We don't have a notation for it 
+F:  but we might want one . 
+F:  So for example we 've talked about if you 're talking about the lexical item " walk " , 
+F:  you know it 's an action . 
+F:  Well , it also has this idea  it carries along with it the idea of an actor 
+F:  or somebody 's gonna do the walking . 
+F:  Or if you talk about an adjective " red " , it carries along the idea of the thing that has the property of having color red . 
+F:  So we used to use the notation " with " for this 
+F:  and I think that 's closest to their second one . 
+F:  So I d don't yet know , I have no commitment , as to whether we need it . 
+F:  It might be  
+F:  it 's the kind of thing that w a parser might want to think about whether we require  
+F:  you know , these things are like it 's semantically part of it  
+F:  Right . 
+F:  Right , right . Yeah , um , definitely . 
+F:  So , um , 
+F:  " in " was a good example . 
+F:  If you walk " in " , like well , in what ? 
+F:  You know , like you have to have the   So  so it 's only semantically is it  
+F:  it is still required , say , by simulation time though 
+F:  to have something . 
+F:  So it 's that  I meant the idea of like that  the semantic value is filled in by sim simulation . 
+F:  I don't know if that 's something we need to spa to  to like say ever as part of the requirement ?  
+F:  or the construction ? 
+F:  or not . 
+F:  We 'll  we 'll again defer . 
+F:  Have it construed , 
+F:  is that the idea ? 
+F:  Just point at Robert . 
+F:  Whenever I 'm confused just point to him . 
+F:  You tell me . 
+F:  OK . 
+F:  OK , well we 'll get , uh uh , I  we have thoughts about those as well . 
+F:  Um , 
+F:  the I w I would just 
+F:  s some of this is just like my  you know , by fiat . 
+F:  I 'm going to say , this is how we use these terms . 
+F:  I don't - you know , there 's lots of different ways in the world that people use it . 
+F:  I think that , um , the other terms that are related are like focus and stress . 
+F:  So , s 
+F:  I think that the way I  we would like to think , uh , I think is focus is something that comes up in , I mean , lots of  
+F:  basically this is the information structure . 
+F:  OK , it 's like  uh , it 's not  it might be that there 's a syntactic , uh , device that you use to indicate focus 
+F:  or that there are things like , you know , 
+F:  I think Keith was telling me ,  things toward the end of the sentence , post - verbal , tend to be the focused  focused element , 
+F:  the new information . 
+F:  You know , if I  " I walked into the room " , you  tend to think that , whatever , " into the room " is sort of like the more focused kind of thing . 
+F:  And when you , uh , uh , you have stress on something that might be , you know , a cue that the stressed element , or for instance , the negated element is kind of related to information structure . 
+F:  So that 's like the new  the sort of like import or whatever of  of this thing . 
+F:  Uh , so  so I think that 's kind of nice to keep " focus " being an information structure term . 
+F:  " Stress "  
+F:  I th and then there are different kinds of focus that you can bring to it . 
+F:  So , um , like " stress " , th stress is kind of a pun on  you might have like  whatever , like , um , accent kind of stress . 
+F:  And that 's just a  
+F:  uh , w we 'll want to distinguish stress as a form device . 
+F:  You know , like , oh , high volume or whatever . 
+F:  Um , 
+F:  t uh , and distinguish that from it 's effect 
+F:  which is , " Oh , the kind of focus we have is we 're emphasizing this value often as opposed to other values " , right ? 
+F:  So focus carries along a scope . 
+F:  Like if you 're gonna focus on this thing and you wanna know  it sort of evokes all the other possibilities that it wasn't . 
+F:  Um , so my classic  my now - classic example of saying , " Oh , he did go to the meeting ? " , 
+F:  that was my way of saying  as opposed to , you know , " Oh , he didn't g " or " There was a meeting ? " 
+F:  I think that was the example that was caught on by the linguists immediately . 
+F:  And so , um , the  like if you said he  
+F:  you know , there 's all these different things that if you put stress on a different part of it then you 're , c focusing , whatever , on , uh  
+F:  " he walked to the meeting " as opposed to " he ran " , 
+F:  or " he did walk to the meeting " as opposed to " he didn't walk " . You know , 
+F:  so we need to have a notation for that 
+F:  which , um , 
+F:  I think that 's still in progress . 
+F:  So , sort of I 'm still working it out . 
+F:  But it did  one  one implication it does f have for the other side , which we 'll get to in a minute is that I couldn't think of a good way to say " here are the possible things that you could focus on " , 
+F:  cuz it seems like any entity in any sentence , you know , or any meaning component of anyth you know  all the possible meanings you could have , any of them could be the subject of focus . 
+F:  But I think one  the one thing you can schematize is the kind of focus , right ? 
+F:  So for instance , you could say it 's the  the tense on this as opposed to , um , the  the action . OK . 
+F:  Or it 's  uh , it 's an identity thing or a contrast with other things , 
+F:  or stress this value as opposed to other things . 
+F:  So , um , 
+F:  it 's  it is kind of like a profile  profile - background thing 
+F:  but I  I can't think of like the limited set of possible meanings that you would  that you would focu 
+F:  light  highlight 
+F:  as opposed to other ones . 
+F:  So it has some certain complications for the , uh , uh  later on . 
+F:  Li - I mean , uh , the best thing I can come up with is that information has a list of focused elements . 
+F:  For instance , you  Oh , one other type that I forgot to mention is like query elements 
+F:  and that 's probably relevant for the like " where is " , you know , " the castle " kind of thing ? 
+F:  Because you might want to say that , um , location or cert certain WH words bring  you know , sort of automatically focus in a , you know , " I don't know the identity of this thing " kind of way on certain elements . 
+F:  So . 
+F:  OK . Anyway . So that 's onl there are  there are many more things that are uncl that are sort of like a little bit unstable about the notation 
+F:  but it 's most  I think it 's  this is , you know , the current  current form . 
+F:  Other things we didn't <breath> totally deal with , um , 
+F:  well , we 've had a lot of other stuff that Keith and I have them working on in terms of like how you deal with like an adjective . 
+F:  You know , a  a nominal expression . 
+F:  And , um , 
+F:  I mean , we should have put an example of this 
+F:  and we could do that later . 
+F:  But I think the not inherently like the general principles still work though , 
+F:  that , um , we can have constructions that have sort of constituent structure in that there is like , you know , for instance , one  
+F:  Uh , you know , they  they have constituents , right ? 
+F:  So you can like nest things when you need to , 
+F:  but they can also overlap in a sort of flatter way . 
+F:  So if you don't have like a lot of grammar experience , then like this  this might , you know , be a little o opaque . 
+F:  But , you know , we have the  properties of dependency grammars and some properties of constituents  constituent - based grammar . 
+F:  So that 's  I think that 's sort of the main thing we wanted to aim for 
+F:  and so far it 's worked out OK . 
+F:  So . 
+F:  OK . 
+F:  Yes . 
+F:  As a word ? 
+F:  As a  
+F:  What 's that ? 
+F:  Sorry . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Or the constituent that it falls in . 
+F:  You mean t forget about stress , the form cue ? 
+F:  OK . 
+F:  Yeah . 
+F:  Mm - hmm . 
+F:  OK , 
+F:  I believe you , yeah . 
+F:  Mm - hmm . 
+F:  Ways that you can get it come from th 
+F:  right . 
+F:  Mm - hmm . 
+F:  Right . 
+F:  That 's fine , yeah . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  OK . Well , uh , yeah , I wouldn't have assumed that it 's an easy problem in  in absence of all the oth 
+F:  you need all the other information I guess . 
+F:  Yeah . 
+F:  Mm - hmm , mm - hmm . 
+F:  Yeah . Exactly . So the sort of effect of it is something we want to be able to capture . 
+F:  W uh , 
+F:  I 'm not sure about that . 
+F:  Or it might limit  it cert certainly constrains the possibilities of focus . 
+F:  I think that 's  that 's , th that 's certainly true . 
+F:  And depending on the construction it may or may not f specify the focus , right ? 
+F:  Yeah . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Hmm . 
+F:  Mm - hmm . 
+F:  Right . 
+F:  Is on . 
+F:  " John is on the bus " . 
+F:  Yeah . Yeah . 
+F:  Right . 
+F:  Yeah , I would say that argument structure in terms of like the main like sort of , 
+F:  I don't know  
+F:  the fact that you can get it without any stress and you have some  whatever is predicated anyway should be the same set of constructions . 
+F:  So that 's why I was talking about overlapping constructions . 
+F:  So , then you have a separate thing that picks out , you know , stress on something relative to everything else . 
+F:  And it would  
+F:  yeah , 
+F:  and it w and that would have to  uh it might be ambiguous as , uh , whether it picks up that element , or the phrase , or something like that . 
+F:  But it 's still is limited possibility . 
+F:  So that should , you know , interact with  it should overlap with whatever other construction is there . 
+F:  Mm - hmm . 
+F:  Well , so that 's why I was saying how  
+F:  since I couldn't think of an easy like limited way of doing it , um , all I can say is that information structure has a focused slot 
+F:  and I think that should be able to refer to  
+F:  Yeah , 
+F:  and , infer  and I don't have  I don't have a great way or great examples 
+F:  but I think that  something like that is probably gonna be , uh , more  more what we have to do . 
+F:  But , um , 
+F:  OK , that was one comment . 
+F:  And you had another one ? 
+F:  How about what ? 
+F:  Yeah , so that was the other thing . 
+F:  And so I didn't realize it before . 
+F:  It 's like , " oh ! " It was an epiphany that it  you know , topic and focus are a contrast set . 
+F:  So topic is  
+F:  Topic - focused seems to me like , um , background profile , OK , 
+F:  or a landmark trajector , or some something like that . 
+F:  There 's  there 's definitely , um , that kind of thing going on . 
+F:  Now I don't know whether  
+F:  I n I don't have as many great examples of like topic - indicating constructions 
+F:  on like focus , right ? 
+F:  Um , topic  it seems kind of  you know , I think that might be an ongoing kind of thing . 
+F:  Topic marker ? 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Right . 
+F:  So again , information structure has a topic slot . 
+F:  And , you know , I stuck it in thinking that we might use it . 
+F:  Um , I think I stuck it in . 
+F:  Um , and 
+F:  one thing that I didn't do consistently , um , is  when we get there , is like indicate what kind of thing fits into every role . 
+F:  I think I have an idea of what it should be 
+F:  but th 
+F:  you know , so far we 've been getting away with like either a type constraint or , um , you know , whatever . 
+F:  I forg it 'll be a frame . 
+F:  You know , it 'll be  it 'll be another predication or it 'll be , um , I don't know , some value from  from some something , some variable and scope or something like that , 
+F:  or a slot chain based on a variable and scope . 
+F:  OK , so well that 's  
+F:  should we flip over to the other side officially then ? 
+F:  I keep , uh , like , pointing forward to it . 
+F:  Yeah . 
+F:  Now we 'll go back to s 
+F:  OK , so this doesn't include something which mi mi may have some effect on  on it , 
+F:  which is , um , the discourse situation context record , 
+F:  right ? So I didn't  I  I meant just like draw a line 
+F:  and like , you know , you also have , uh , some tracking of what was going on . 
+F:  And sort of  this is a big scale comment before I , you know , look into the details of this . 
+F:  But for instance you could imagine instead of having  
+F:  I  I changed the name of  um it used to be " entities " . 
+F:  So you see it 's " scenario " , " referent " and " discourse segment " . 
+F:  And " scenario " is essentially what kind of  what 's the basic predication , 
+F:  what event happened . 
+F:  And actually it 's just a list of various slots from which you would draw  draw in order to paint your picture , a bunch of frames , bi and bindings , right ? 
+F:  Um , and obviously there are other ones that are not included here , 
+F:  general cultural frames and general like , uh , other action f 
+F:  you know , specific X - schema frames . 
+F:  OK , whatever . 
+F:  The middle thing used to be " entities " 
+F:  because you could imagine it should be like really a list 
+F:  where here was various information . 
+F:  And this is intended to be grammatically specifiable information about a referent  uh , you know , about some entity that you were going to talk about . 
+F:  So " Harry walked into the room " , 
+F:  " Harry " and " room " , 
+F:  you know , the room  
+F:  th but they would be represented in this list somehow . 
+F:  And it could also have for instance , it has this category slot . 
+F:  Um , it should be either category or in or instance . 
+F:  Basically , it could be a pointer to ontology . 
+F:  So that everything you know about this could be  could be drawn in . 
+F:  But the important things for grammatical purposes are for  things like number , gender , 
+F:  um  ki the ones I included here are slightly arbitrary 
+F:  but you could imagine that , um , you need to figure out wheth 
+F:  if it 's a group whether , um , some event is happening , 
+F:  linear time , linear spaces , 
+F:  like , you know , are  are they doing something serially 
+F:  or is it like , 
+F:  um , uh I 'm  I 'm not sure . 
+F:  Because this partly came from , uh , Talmy 's schema 
+F:  and I 'm not sure we 'll need all of these actually . 
+F:  But  
+F:  Um , and then the " status " I used was like , again , in some languages , you know , like for instance in child language you might distinguish between different status . 
+F:  So , th the  the big com and  and finally " discourse segment " is about <click> sort of speech - act - y information structure - y , 
+F:  like utterance - specific kinds of things . 
+F:  So the comment I was going to make about , um , changing entity  the entity 's block to reference is that <outbreath> you can imagine your discourse 
+F:  like situation context , 
+F:  you have a set of entities that you 're sort of referring to . 
+F:  And you might  that might be sort of a general , I don't know , database of all the things in this discourse that you could refer to . 
+F:  And I changed to " reference " 
+F:  cuz I would say , for a particular utterance you have particular referring expressions in it . 
+F:  And those are the ones that you get information about that you stick in here . 
+F:  For instance , I know it 's going to be plural . 
+F:  I know it 's gonna be feminine or something like that . 
+F:  And  and these could actually just point to , you know , the  the ID in my other list of enti active entities , right ? 
+F:  So , um , 
+F:  uh , th there 's  there 's all this stuff about discourse status . We 've talked about . 
+F:  I almost listed " discourse status " as a slot where you could say it 's active . 
+F:  You know , there 's this , um , hierarchy  uh there 's a schematization of , you know , things can be active or they can be , um , accessible , inaccessible . 
+F:  It was the one that , you know , Keith , um , emailed to us once , to some of us , 
+F:  not all of us . 
+F:  And 
+F:  the thing is that that  I noticed that that , um , list was sort of discourse dependent . 
+F:  It was like in this particular set , s you know , instance , it has been referred to recently or it hasn't been , 
+F:  or this is something that 's like in my world knowledge but not active . 
+F:  So . 
+F:  Yeah , they 're contex and for instance , I used to have a location thing there 
+F:  but actually that 's a property of the situation . 
+F:  And it 's again , time , you know  at cert certain points things are located , you know , near or far from you 
+F:  and  
+F:  Yeah . 
+F:  Yeah , yeah . 
+F:  So some of these are , uh  
+F:  Right . 
+F:  So I  so for now I thought , well maybe I 'll just have in this list the things that are relevant to this particular utterance , right ? 
+F:  Everything else here is utterance - specific . 
+F:  Um , and I left the slot , " predications " , open 
+F:  because you can have , um , things like " the guy I know from school " . 
+F:  Or , you know , like your referring expression might be constrained by certain like unbounded na amounts of prep you know , predications that you might make . 
+F:  And it 's unclear whether  
+F:  I mean , you could just have in your scenario , " here are some extra few things that are true " , right ? 
+F:  And then you could just sort of not have this slot here . Right ? 
+F:  You 're  but  but it 's used for identification purposes . 
+F:  So it 's  it 's a little bit different from just saying " all these things are true from my utterance " . 
+F:  Um . 
+F:  Yeah , it 's a little bit  it 's a little bit different . 
+F:  Right ? So  
+F:  Or maybe that 's like a restrictive , non - restrictive  
+F:  you know , it 's like it gets into that kind of thing for  
+F:  um , but maybe I 'm mixing , you know  this is kind of like the final result after parsing the sentence . 
+F:  So you might imagine that the information you pass to , you know  in identifying a particular referent would be , " oh , some  " you know , " it 's a guy 
+F:  and it 's someone I know from school " . 
+F:  So maybe that would , you know , be some intermediate structure that you would pass into the disc to the , whatever , construal engine or whatever , discourse context , to find  you know , either create this reference , 
+F:  in which case it 'd be created here , 
+F:  and  
+F:  you know , so  so you could imagine that this might not  
+F:  So , uh , I 'm uncommitted to a couple of these things . 
+F:  Um . 
+F:  Um , it could be in  
+F:  semantically , yeah . Yeah . 
+F:  So it uh , uh , a table . 
+F:  You know , a thing that c doesn't have a gender . 
+F:  So . Uh , it could be that  I mean , 
+F:  maybe you 'd  maybe not all these  
+F:  I mean , I wou I would say that I tried to keep slots here that were potentially relevant to most  most things . 
+F:  Yeah . 
+F:  OK , that is semantic as opposed to  
+F:  Yeah . Yeah . That 's right . 
+F:  Um . 
+F:  S so again  
+F:  Open to various things . 
+F:  Right . 
+F:  OK , so . Let 's see . 
+F:  So maybe having made that big sca sort of like large scale comment , should I just go through each of these slots  uh , each of these blocks , um , a little bit ? 
+F:  Um , mostly the top one is sort of image schematic . 
+F:  And just a note , 
+F:  which was that , um  
+F:  s so when we actually ha 
+F:  so for instance , um , 
+F:  some of them seem more inherently static , OK , 
+F:  like a container or sort of support - ish . 
+F:  And others are a little bit seemingly inherently dynamic 
+F:  like " source , path , goal " is often thought of that way 
+F:  or " force " , or something like that . 
+F:  But in actual fact , I think that they 're intended to be sort of neutral with respect to that . 
+F:  And different X - schemas use them in a way that 's either static or dynamic . 
+F:  So " path " , you could just be talking about the path between this and this . 
+F:  And you know , " container " that you can go in and out . 
+F:  All of these things . 
+F:  And so , um , 
+F:  I think this came up when , uh , Ben and I were working with the Spaniards , um , the other day  
+F:  the " Spaniettes " , as we <laugh> called them  
+F:  um , to decide like how you want to split up , like , s image schematic contributions versus , like , X - schematic contributions . 
+F:  How do you link them up . 
+F:  And I think again , um , it 's gonna be something in the X - schema that tells you " is this static or is this dynamic " . 
+F:  So we definitely need  that sort of aspectual type gives you some of that . 
+F:  Um , that , you know , is it , uh , a state or is it a change of state , or is it a , um , action of some kind ? 
+F:  Uh . 
+F:  Yeah . 
+F:  Oh , oh ! You mean , in the slot ? 
+F:  Um , no , it 's like X - sc it 's  it 's like I was thinking of type constraints 
+F:  but X - schema , well it obviously has to be an X - schema . 
+F:  " Agent " , I mean , the  the performer of the X - schema , 
+F:  that s depends on the X - schema . 
+F:  You know , and I  in general it would probably be , you know  
+F:  Yeah , basically . 
+F:  Um , " aspectual type " probably isn't obvious 
+F:  but I should have  So , I just neglected to stick something in . " Perspective " , " actor " , " undergoer " , " observer " , um , 
+F:  I think we 've often used " agent " , " patient " , obser 
+F:  Yeah , exactly . <laugh> Exactly . 
+F:  Um , and so one nice thing that , uh , we had talked about is this example  of like , if you have a passive construction then one thing it does is ch you know  definitely , it is one way to  for you to , you know , specifically take the perspective of the undergoing kind of object . 
+F:  And so then we talked about , you know , whether well , does that specify topic as well ? 
+F:  Well , maybe there are other things . 
+F:  You know , now that it 's  subject is more like a topic . 
+F:  And now that , you know  
+F:  Anyway . So . 
+F:  Sorry . I 'm gonna trail off on that one 
+F:  cuz it 's not that f important right now . 
+F:  Um , 
+F:  To know how  
+F:  Yeah . Yeah . Exactly . 
+F:  Um , 
+F:  some of these other ones , 
+F:  let 's see . 
+F:  So , 
+F:  uh , one thing I 'm uncertain about is how polarity interacts . 
+F:  So polarity , uh , is using for like action did not take place for instance . 
+F:  So by default it 'll be like " true " , I guess , 
+F:  you know , if you 're specifying events that did happen . 
+F:  You could imagine that you skip out this  you know , leave off this polarity , 
+F:  you know , not  don't have it here . 
+F:  And then have it part of the speech - act in some way . 
+F:  There 's some negation . 
+F:  But the reason why I left it in is cuz you might have a change of state , let 's say , where some state holds and then some state doesn't hold , 
+F:  and you 're just talking , you know  
+F:  if you 're trying to have the nuts and bolts of simulation you need to know that , you know , whatever , the holder doesn't and  
+F:  OK , it 's  so it 's  it 's  it 's fine where it is . 
+F:  So , 
+F:  OK . 
+F:  May come from a few places . 
+F:  Right . 
+F:  Right . 
+F:  Yeah . 
+F:  Mm - hmm . 
+F:  It 's a grab bag of  
+F:  So that 's exactly what it is . 
+F:  And for a particular instance which I will , you know , make an example of something , is that you might have an instance of container and path , let 's say , as part of your , you know , " into " you know , definition . 
+F:  So you would eventually have instances filled in with various  various values for all the different slots . 
+F:  And they 're bound up in , you know , their bindings and  and  and values . 
+F:  Except for " cause " , that I forgot . 
+F:  But anyway , there 's som some kind of causal structure for composite events . 
+F:  Uh , I mean , so it gets a little funny . 
+F:  These are all  so far these structures , especially from " path " and on down , these are sort of relatively familiar , um , image schematic kind of slots . 
+F:  Now with " cause " , uh , the fillers will actually be themselves frames . Right ? 
+F:  So you 'll say , " event one causes event B  
+F:  uh , event two " , 
+F:  and  
+F:  Yeah . So that 's , uh these are all implicitly one  within , uh within one world . 
+F:  Um , 
+F:  even though saying that place takes place , whatever . 
+F:  Uh , if y if I said " time " is , you know , " past " , that would say " set that this world " , you know , " somewhere , before the world that corresponds to our current speech time " . 
+F:  So . But that  that  that 's sort of OK . 
+F:  The  the  within the event it 's st it 's still one world . 
+F:  Um . 
+F:  Yeah , so " cause " and  
+F:  Other frames that could come in  I mean , unfortunately you could bring in say for instance , um , uh , " desire " or something like that , 
+F:  like " want " . 
+F:  And actually there is right now under " discourse segments " , um , " attitude " ? 
+F:  " Volition " ? 
+F:  could fill that . 
+F:  So there are a couple things where I like , " oh , I 'm not sure if I wanted to have it there 
+F:  or  " Basically there was a whole list of  of possible speaker attitudes that like say Talmy listed . 
+F:  And , like , well , I don't  you know , it was like " hope , wish . desire " , 
+F:  blah - blah - blah . 
+F:  And it 's like , well , I feel like if I wanted to have an extra meaning  
+F:  I don't know if those are grammatically marked in the first place . 
+F:  So  They 're more lexically marked , right ? 
+F:  At least in English . 
+F:  So if I wanted to I would stick in an extra frame in my meaning , saying , 
+F:  e so th it 'd be a hierarchical frame them , right ? 
+F:  You know , like " Naomi wants  wants su a certain situation 
+F:  and that situation itself is a state of affairs " . 
+F:  u 
+F:  Can be just another frame that 's part of your  
+F:  Yeah . 
+F:  Situation .  Right , right . 
+F:  Mm - hmm . 
+F:  Mmm . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Right . 
+F:  Exactly . 
+F:  Yeah . 
+F:  Right . 
+F:  Right , right . 
+F:  S so I would prefer not to worry about that for right now 
+F:  and to think that there are , um , 
+F:  discourse level constructions in a sense , topic  topic - focus constructions that would say , " oh , when you focus something " then  
+F:  just done the same way  just actually in the same way as the lower level . 
+F:  If you stressed , you know , " John went to the  " , you know , " the bar " whatever , you 're focusing that 
+F:  and a in a possible inference is " in contrast to other things " . 
+F:  So similarly for a whole sentence , you know , " in France such - and - such happens " . 
+F:  So the whole thing is sort of like again implicitly as opposed to other things that are possible . 
+F:  I mean  
+F:  Yeah . 
+F:  Uh - huh . 
+F:  Uh - huh . 
+F:  So for a particular segment it 's really just a reference to some other entity again in the situation , right ? 
+F:  So for a particular segment the speaker might be you or might be me . 
+F:  Um , hearer is a little bit harder . 
+F:  It could be like multiple people . 
+F:  I guess that  that  that  that 's not very clear from here  
+F:  I mean , that 's not allowed here . 
+F:  Mm - hmm . 
+F:  Ye - yeah . 
+F:  So th 
+F:  Right , so the constructions might  of course will refer , using pronouns or whatever . 
+F:  In which case they have to check to see , uh , who the , uh , speaker in here wa in order to resolve those . 
+F:  But when you actually say that " he walked into  " , whatever , um , the " he " will refer to a particular  
+F:  You  you will already have figured who " he " or " you " , mmm , or " I " , maybe is a bett better example , who " I " refers to . 
+F:  Um , and then you 'd just be able to refer to Harry , you know , in wherever that person  whatever role that person was playing in the event . 
+F:  Yeah , yeah . 
+F:  S so , that 's  I think that 's just  
+F:  n 
+F:  for instance , Speaker is known from the situation , right ? 
+F:  You 're  when you hear something you 're told who the speaker is  
+F:  I mean , you know who the speaker is . 
+F:  In fact , that 's kind of constraining how  
+F:  in some ways you know this before you get to the  you fill in all the rest of it . 
+F:  I think . 
+F:  I mean , how else would you um  
+F:  Yeah . 
+F:  Right . 
+F:  Mm - hmm . 
+F:  Right , right . 
+F:  So  
+F:  S so  OK , so I would say ref under referent should be something that corresponds to " I " . 
+F:  And maybe each referent should probably have a list of way whatever , the way it was referred to . 
+F:  So that 's " I " 
+F:  but , uh , uh , should we say it  it refers to , what ? 
+F:  Uh , if it were " Harry " it would refer to like some ontology thing . 
+F:  If it were  if it 's " I " it would refer to the current speaker , 
+F:  OK , which is given to be like , you know , whoever it is . 
+F:  " I " within the current world . 
+F:  Yeah , yeah , yeah , yeah . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  So this entire thing is inside a world , 
+F:  not just like the top part . 
+F:  That 's  
+F:  Yeah . 
+F:  Yeah . 
+F:  Right . 
+F:  Right . 
+F:  So I thought of having like  for each referent , having the list of  of the things t with which it is identified . 
+F:  You know , which  which , uh you know , you  you  you  
+F:  for instance , um  
+F:  So , I guess , 
+F:  it sort of depends on if it is a referring exp if it 's identifiable already or it 's a new thing . 
+F:  If it 's a new thing you 'd have to like create a structure or whatever . 
+F:  If it 's an old thing it could be referring to , um , usually w something in a situation , right ? 
+F:  Or something in ontology . 
+F:  So , 
+F:  there 's a you know , whatever , it c it could point at one of these . 
+F:  For what ? 
+F:  If it works . 
+F:  Mm - hmm . Mmm . 
+F:  Yeah . 
+F:  OK , we 're crossing our fingers . 
+F:  OK . 
+F:  Mm - hmm . 
+F:  Yep . 
+F:  Use the same   Yep . 
+F:  Mm - hmm . 
+F:  And  
+F:  And  
+F:  Yeah . 
+F:  So  so by default  
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Right . 
+F:  Oh , right . Yeah , that makes sense . 
+F:  Oh , no ! 
+F:  Really ? 
+F:  You 're kidding . 
+F:  No , that 's horrible . 
+F:  OK . 
+F:  That 's horrible .  OK . 
+F:  Uh - huh . 
+F:  Uh - huh . 
+F:  Yeah . 
+F:  OK , so it 's kind of like the unspecified mental spaces just are occurring in context . 
+F:  And then when you embed them sometimes you have to pop up to the h you know , depending on the construction or the whatever , um , you  you  you 're scope is  m might extend out to the  the base one . 
+F:  It would be nice to actually use the same , um , mechanism 
+F:  since there are so many cases where you actually need 
+F:  it 'll be one or the other . 
+F:  It 's like , oh , actually , it 's the same  same operation . 
+F:  So . 
+F:  Yeah , yeah . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Mm - hmm , 
+F:  right . 
+F:  Robert . 
+F:  Ties it all into it . 
+F:  Yeah . 
+F:  Yep . 
+F:  Oh , yeah . 
+F:  Yeah , that 's why I said " point to Robert " , <laugh> when I did it . 
+F:  Mmm . 
+F:  It 's like I don't totally think  
+F:  I mostly think , uh  
+F:  Actually one of the child language researchers who works with T Tomasello studied a bunch of these constructions 
+F:  and it was like it 's not using any kind of interesting embedded ways 
+F:  just to mark , you know , uncertainty or something like that . 
+F:  So . 
+F:  Hedges ? 
+F:  Hhh ,  I  there used to be a slot for speaker , um , 
+F:  it was something like factivity . 
+F:  I couldn't really remember what it meant 
+F:  so I took it out . 
+F:  But it 's something  
+F:  we  we were talking about sarcasm too , right ? 
+F:  Oh , oh . 
+F:  Oh , yeah , yeah , right . 
+F:  Yeah . 
+F:  Yeah . 
+F:  What 's the word ? 
+F:  Oh , oh , oh , as a hedge . 
+F:  What ? 
+F:  I 'd love to know . 
+F:  So , and  and I think , uh , someone had raised like sarcasm as a complication at some point . 
+F:  And 
+F:  we just won't deal with sarcastic people . 
+F:  Certainly not as some  
+F:  Well , they 're intonational markers I think for the most part . 
+F:  I don't know too much about the like grammatical  
+F:  Yeah . 
+F:  Mm - hmm . 
+F:  Oh , yeah , do we have any ? 
+F:  Mm - hmm . 
+F:  M mockery . 
+F:  Mmm . 
+F:  Maybe . 
+F:  Yeah , in model theory cuz the semantics is always like " speaker believes not - P " , 
+F:  you know ? 
+F:  Like " the speaker says P and believes not - P " . 
+F:  But  
+F:  Right , right , but , 
+F:  If we knew anybody like that . 
+F:  For the same , yeah , data . Yeah , mm - hmm . 
+F:  Yeah . 
+F:  Or me . 
+F:  Or me . 
+F:  Anyways  
+F:  Yeah . 
+F:  Sure , yeah . 
+F:  Yes . 
+F:  Oops . 
+F:  Um , 
+F:  not really  
+F:  just on the constructions , right ? 
+F:  Um , 
+F:  yeah . 
+F:  I didn't want to think too much about that for  for now . 
+F:  So , uh , maybe it was subconsciously intentional . 
+F:  Uh - huh . 
+F:  Yep . 
+F:  Yeah . 
+F:  Refer to  them . 
+F:  Yeah , and  and there are certainly cases like that . 
+F:  Even with just semantic schemas we have some examples . 
+F:  So , 
+F:  and we 've been talking a little bit about that anyway . 
+F:  Inherits . 
+F:  Uh , those are over rated . 
+F:  Uh , all the things you want to query , you just have to like ask for separately . 
+F:  Bayes ? 
+F:  OK . 
+F:  Grout out the things that  that you need . 
+F:  Mm - hmm . 
+F:  Best explanation . 
+F:  When are you leaving ? 
+F:  Thursday , 
+F:  Friday ? 
+F:  OK . 
+F:  Can we do  can we do one - thirty ? 
+F:  Oh , you already told me no . 
+F:  One , 
+F:  OK , it 's fine . 
+F:  I can do one . 
+F:  It 's fine . 
+F:  It 's fine . 
+F:  Yeah , it 's fine . 
+F:  Fine . 
+F:  Yeah  
+F:  no , no , no , uh , I don't care . 
+F:  It 's fine . 
+F:  OK . 
+F:  OK , four . 
+F:  OK ? 
+F:  OK . I am . 

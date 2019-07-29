@@ -1,0 +1,289 @@
+D:  Yeah . 
+D:  That 's funny . 
+D:  Yeah , I looked at some of that stuff . 
+D:  Which one ? 
+D:  Hmm . 
+D:  Is this like a number that represents how much money they have left to spend ? 
+D:  OK , h well I mean how is it different from user finance ? 
+D:  Alright . 
+D:  Yeah . 
+D:  Well , I mean you 've written in  you 've written in what uh seems to be required 
+D:  like what else is  is do you want ? 
+D:  The other thing is that um every time that 's updated beliefs will have to be propagated 
+D:  but then the question is do you  do we wanna propagate beliefs every single time it 's updated or only when we need to ? 
+D:  Uh 
+D:  Well , I mean , in Srini 's thing there was this thing  there was this um option like proper inferences which suggests that uh doesn't happen , automatically . 
+D:  Well 
+D:  Is 
+D:  hmm 
+D:  So it 's true or false ? 
+D:  So 
+D:  I thought mode , 
+D:  yeah . 
+D:  Mode of transportation ? 
+D:  OK . 
+D:  Also true or false . 
+D:  Yeah , OK . 
+D:  Yeah . 
+D:  Well some of those are subsumed by approach . 
+D:  Oh yes . 
+D:  Like they 're either true or false 
+D:  and they uh 
+D:  oh I see . 
+D:  Therefore 
+D:  uh I was thinking less likely to view 
+D:  Right . 
+D:  What ex um and so either those is true f or false ? 
+D:  So 
+D:  OK . 
+D:  Yeah . 
+D:  OK . 
+D:  So you just wanna have them all pointing to a summary thing ? 
+D:  T 
+D:  Um what does the underscore - T at the end of each of those things signify ? 
+D:  Uh - huh . 
+D:  OK . 
+D:  OK . 
+D:  That also points to entity type I guess . 
+D:  Oh you mean level of interest ? 
+D:  Oh I see , 
+D:  right . 
+D:  So why is it 
+D:  oh it , so it 's like a vector of five hundred one 's or zero 's ? 
+D:  Like for each thing are we  are you interested in it or not ? 
+D:  I see . 
+D:  Budget . 
+D:  Well 
+D:  Right . 
+D:  Right . 
+D:  No but , it 's more than that , 
+D:  like the  the more sort of you break it up 
+D:  like because if you have everything pointing to one node it 's like exponential 
+D:  whereas if you like keep breaking it up more and more it 's not exponential anymore . 
+D:  Yeah . 
+D:  Right . 
+D:  Right . 
+D:  Yeah . 
+D:  Situation Go - there , 
+D:  I mean , because it 's  whether it 's open or not . 
+D:  That definitely interes 
+D:  But that now that kind of 
+D:  um what 's the word 
+D:  um the  that interacts with the uh EVA thing 
+D:  if they just wanna view it then it 's fine to go there when it 's closed 
+D:  whereas if they want to um 
+D:  so 
+D:  The time of day , 
+D:  right 
+D:  I  well , right . 
+D:  Right . 
+D:  So 
+D:  yeah , that 's what I said 
+D:  just having one situational node may not be enough 
+D:  because this  that node by itself wouldn't distinguish 
+D:  Yeah , I mean , see I 'm  I 'm thinking that any node that begins with " Go - there " is either gonna be true or false . 
+D:  Like situation traffic and so on . 
+D:  I guess the final 
+D:  Yeah . 
+D:  Mmm . 
+D:  Maybe we could um have intermediate node that just the Endpoint and the Go - there S node sort of fed into ? 
+D:  Right . 
+D:  Because that 's what we , I mean that 's why this situation comes up . 
+D:  Yeah , right . 
+D:  Yes . 
+D:  It  things don't converge , yeah . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Well , but the good thing is we  we could have loopy belief propagation which <laugh> we all love . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Mmm yeah . 
+D:  Yeah , I mean you need actually three to the five 
+D:  because uh well I mean if  if it has four inputs and then it itself has three values 
+D:  so 
+D:  I mean it can get big fast . 
+D:  No it still has three , 
+D:  EVA . 
+D:  This  and also , I mean , the other places where , 
+D:  like for example consider endpoint view , it has inputs coming from user budget , user thrift 
+D:  so even 
+D:  Right . 
+D:  HTML ? 
+D:  OK . 
+D:  Yeah . 
+D:  Yeah , I  I mean , it might soon , if this is gonna be used in a serious way like java base then it might soon be necessary to uh start modifying it for our purposes . 
+D:  So 
+D:  Ah , sorry . 
+D:  I guess that 's 
+D:  Yeah , it 's right , I guess I can do that . 
+D:  I guess this board works fine . 
+D:  So um recall the basic problem which is that um you have a belief - net and you have like a lot of different nodes all contributing to one node . 
+D:  Right ? 
+D:  So as we discussed specifying this kind of thing is a big pain 
+D:  and it 's so will take a long time to write down 
+D:  because for example if these S have three possibilities each and this has three possibilities then you know you have two hundred and forty - three possibilities 
+D:  which is already a lot of numbers to write down . 
+D:  So what um helps us in our situation is that these all have values in the same set , 
+D:  right ? 
+D:  These are all like saying EV or A , 
+D:  right ? 
+D:  So it 's not just a generalized situation like 
+D:  I mean basically we wanna just take a combination of  
+D:  we wanna view each of these as experts 
+D:  ea who are each of them is making a decision based on some factors 
+D:  and we wanna sort of combine their decisions 
+D:  and create you know , um sorta weighted combination . 
+D:  The what decision ? 
+D:  Yeah . 
+D:  Yeah . 
+D:  So the problem is to specify the uh so the conditional property of this given all those , 
+D:  right ? 
+D:  That 's the way belief - nets are defined , 
+D:  like each node given its parents , 
+D:  right ? 
+D:  So um that 's what we want , 
+D:  we want for example P of um 
+D:  let 's call this guy Y 
+D:  and let 's call these X - one , X - two XN , 
+D:  right . 
+D:  So we want probability that Y equals , you know , for example um E 
+D:  given that these guys are 
+D:  I 'll just refer to this as like X um hat or something , 
+D:  uh the co like all of them ? 
+D:  Given that for example the data says you know , A , V , A , E , or something 
+D:  right ? 
+D:  So we would like to do this kind of combination . 
+D:  Right . 
+D:  So , right . 
+D:  So Basically um <clears throat> what we don't wanna do is to for every single combination of E and V and A and every single letter E , s give a number 
+D:  because that 's obviously not desirable . 
+D:  What we wanna do is find some principled way of um saying what each of these is 
+D:  and we want it to be a valid probability distribution , 
+D:  so we want it to um add up to one , 
+D:  right ? 
+D:  So those are the two things that we uh need . 
+D:  So what uh I guess , what Jerry suggested earlier was basically that we , you know view these guys as voting 
+D:  and we just take the uh we essentially take um averages , 
+D:  right ? 
+D:  So for example here two people have voted for A , 
+D:  one has voted for V , 
+D:  and one has voted for E , 
+D:  so we could say that the probabilities are , you know , probability of being E is one over four , because one person voted for E out of four 
+D:  and similarly , probability of 
+D:  so this is probability of E 
+D:  s and then probability of A given all that is um two out of four 
+D:  and probability of V is one out of four . 
+D:  Right ? 
+D:  So that 's step  that 's the uh yeah that 's the  that 's the basic uh thing . 
+D:  Now 
+D:  Is that all OK ? 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah . 
+D:  So step two is um 
+D:  right . 
+D:  So we 've assumed equal weights 
+D:  whereas it might turn out that you know , some w be that for example , what the um the actual the uh verbal content of what the person said , like what uh what might be uh somehow more uh important than the uh 
+D:  Right . 
+D:  Sure , so we don't wanna like give them all equal weight 
+D:  so currently we 've been giving them all weight one fourth 
+D:  so we could replace this by uh W - one , W - two , W - three , and W - four 
+D:  right ? 
+D:  And in order for this to be a valid probability distribution for each um X - hat , we just need that the W 's sum to one . 
+D:  So they can be for example , you know 
+D:  you  you could have point one , point three , point two , and point four , say . 
+D:  And that 'd be one . 
+D:  So that um also seems to work fine . 
+D:  And uh 
+D:  You 'd compute the weighted average , 
+D:  so the probability of E would be uh 
+D:  Not one quarter , 
+D:  so these numbers have been replaced with point one , point three , point two , and point four . 
+D:  So you can view these as gone . 
+D:  Probability of 
+D:  Yeah . 
+D:  Yeah . 
+D:  OK . 
+D:  So , 
+D:  alright . 
+D:  So this is uh step two . 
+D:  So the next possibility is that um we 've given just a single weight to each expert , 
+D:  right , 
+D:  whereas it might be the case that um in certain situations one of the experts is more uh reliable and in certain situations the other expert is more reliable . 
+D:  So the way this is handled is by what 's called a mixture of experts , 
+D:  so what you can have is 
+D:  you augment these diagrams like this 
+D:  so 
+D:  you have a new thing called " H " , 
+D:  OK ? 
+D:  This is a hidden variable . 
+D:  And what this is is it gets its input from X - one , X - two , X - three , and X - four , 
+D:  and what it does is it decides which of the experts is to be trusted in this particular situation . 
+D:  Right ? 
+D:  And then these guys all come here . 
+D:  OK . 
+D:  So this is sightly uh more complicated . 
+D:  So what 's going on is that um this H node looks at these four values of those guys 
+D:  and it decides in given these values which of these isn't likely to be more reliable or most reliable . 
+D:  So H produces some you know , it produces a number , 
+D:  either one , two , three , or four , in our situation , 
+D:  right ? 
+D:  Now this guy he looks at the value of H 
+D:  say it 's two , 
+D:  and then he just selects the uh thing . 
+D:  That 's all there is to say , I guess about it . 
+D:  Right , so you can have a mixture that 
+D:  Right . 
+D:  Yeah . 
+D:  Yeah . 
+D:  It could . 
+D:  Yeah , it could 
+D:  Sorry ? 
+D:  Right , so I mean the way you desc 
+D:  Yeah , well could be things like if X - two and X - three say yes then i ignore X - one also . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yes . 
+D:  Yeah . 
+D:  Um Well , I mean to learn them we need data , 
+D:  where are we gonna get data ? 
+D:  Well I mean we need data with people intentions , 
+D:  right ? 
+D:  Which is slightly tricky . 
+D:  Right . 
+D:  Mm - hmm . 
+D:  But what 's the data about 
+D:  like , are we able to get these nodes from the data ? 
+D:  Yeah . 
+D:  Yeah , but that 's my question , 
+D:  like how do we  I mean , how do we have data about something like um um endpoint sub - E , 
+D:  or endpoint sub uh  you know s S ? 
+D:  Mmm . 
+D:  Mmm . 
+D:  So this is what we wanna learn . 
+D:  Yep . 
+D:  Right . 
+D:  Hmm . 
+D:  Yeah . 
+D:  I don't think , 
+D:  well you have a  
+D:  can you bring up the function thing ? 
+D:  Um w where is the thing that allows you to sort of 
+D:  Oh function properties , 
+D:  is that it ? 
+D:  Hmm , I guess not . 
+D:  Yeah , that 's 
+D:  Right . 
+D:  OK . 
+D:  And um it so e either it 'll allow us to do everything 
+D:  which I think is unlikely , 
+D:  I think more likely it 'll allow us to do very few of these things 
+D:  and in that case we 'll have to um just write up little things that allow you to um create such CPU 's on your own in the java base format . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah , I was assuming that 's what we 'd always do 
+D:  because 
+D:  yeah I was assuming that 's what we 'd always do , 
+D:  it 's 
+D:  Right . 
+D:  Yeah . 

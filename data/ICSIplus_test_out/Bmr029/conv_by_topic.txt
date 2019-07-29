@@ -1,0 +1,1346 @@
+
+
+A:  OK . <breath> 
+C:  OK . So the one  <breath> 
+C:  <clears throat> one thing I knew I wanted to talk about was about , uh , 
+C:  sort of last minute stuff to to , uh , try to get some recognition results . 
+F:  Recognition results  for  
+C:  Yeah . <inbreath> 
+F:  <mike noise> 
+C:  So , uh , on  on  on meeting data . 
+C:  And so , I 'm  I 'm not sure exactly what you 're doing already , and  and there 's some stuff I 've talked to Dave  
+F:  Well , we I just started recognition on the 
+F:  on Thilo 's <breath> segments , 
+F:  which was  but using the far far 
+A:  <inbreath> 
+F:  the close - talking microphone . 
+C:  OK . So  
+C:  Um  
+F:  And you wanted  I know you wanted the far - field  data . 
+C:  Right . So  so , we have some stuff with no overlap , uh , for which there would be 
+C:  near  near - field results . 
+F:  Uh - huh . 
+C:  We wanted to get the far - field results for that . 
+
+
+C:  And then this  this real , uh , long shot thing would be , that we 'd apply Dave 's processing 
+C:  to , uh , potentially training and test data 
+F:  Mm - hmm .  
+C:  and do the  look at the same thing . And 
+C:  in talking this morning with , uh , Chuck and with Dave <inbreath> 
+C:  one thought was to use  We couldn't remember how 
+C:  different the numbers were , but if you just  worked with males only and used the short training 
+C:  there 're  there 're  uh , I think Chuck 's recollection was that when he was doing the feature stuff , it took maybe a day and a half 
+C:  to do the training . Yeah . 
+F:  To retrain ? 
+F:  Uh  
+C:  <breath> 
+F:  Yeah . 
+F:  Um . 
+F:  That 's about right . 
+C:  <mouth> 
+F:  Actually , it should probably be  
+F:  It depends on who else is using machines , but we have more machines now . So . 
+A:  That 's true .  
+F:  It 's more like a day , probably . 
+C:  Um , how much worse is the short training set than the large one , in terms of the ultimate performance ? 
+F:  Mmm , it 's like  
+F:  Something like three  three percent  
+F:  three or four percent absolute . 
+C:  Yep . 
+C:  So , it 's  that should be fine for this , I would think . 
+C:  So we  an and you have the short  you have short training results for 
+C:  the close  case ? 
+F:  Um , not for meetings . 
+F:  Because we didn't train  
+F:  we didn't re ever recognize with the  
+F:  with the 
+F:  small models  on meeting data . 
+F:  But I  I have the models , so I could 
+C:  So , how do you know it 's  ? Oh , it 's three percent on  on , uh , on Hub - five . 
+F:  run reco 
+F:  On  
+A:  Hub - five . 
+C:  I see . 
+C:  Yeah . But we have the models so we could get that number , and  
+C:  So the question is , what  ? 
+F:  <breath> I mean , the  the  mmm <mouth> 
+C:  w <outbreath> 
+F:  The recognition also takes  non - negligible amount of time . So  
+F:  we might wanna restrict it to , maybe , a few meetings , 
+F:  if you want to do a full comparison . 
+C:  It has to be enough so that  
+F:  Uh . 
+C:  I mean , it 's the non - overlap only . 
+C:  Um   
+C:  And  
+C:  it has to be enough to be sort of comparable to what 
+C:  you folks were seeing and what you reported already . 
+F:  Hmm . 
+C:  I mean  
+F:  Well , do we have the  do we have the processed data ? That  that 's also  
+C:  No . He has to create that . 
+C:  But  but  s but  so  
+F:  Right . 
+C:  Um  
+C:  We have  a whole parallel set of things over here 
+F:  Mmm . 
+C:  which are all with digits . 
+F:  I see . 
+C:  And  and  and Dave has been working with that and there 's all of those issues . 
+C:  But  
+C:  <clears throat> I know that if I  go in with something that 's not just digits it would be  good . 
+C:  And , um , so  
+C:  We already have these results that you  I mean , on  
+C:  uh , a l a lot tha tha 
+C:  a particular test set , that you  that we reported at HLT . 
+F:  Hmm . 
+F:  Right . 
+C:  Um , it 'd be nice to have something more than that . And w we had talked about was having distant  
+C:  Um , and then , 
+C:  uh , if we could on top of that  I mean , so this is gonna be a lot worse . Right ? 
+C:  Whatever comparison we  w w one would presume . But we don't know how much worse , 
+F:  Mm - hmm . 
+F:  Right . 
+C:  w w uh , which is certainly one interesting thing . 
+C:  And then , um , 
+C:  Dave  I think we figured that it 'd probably take a day or two to compute the  
+C:  the , uh  
+C:  uh  
+F:  <mike noise> 
+C:  Well  
+C:  How many hours of training  ? 
+F:  <inbreath> 
+F:  Actually , I did retrain  
+F:  I recently retrained , 
+F:  um , <breath> 
+F:  for another reason , on the full training set . 
+F:  And that took only  
+F:  I think it took only two days . <breath> 
+C:  Yeah . 
+F:  So , it 's actually conceivable 
+F:  to do  use the full training set . 
+C:  Yeah , but we also have to do this other processing , so having a smaller training set , if it 's only a few percent difference , it might be  
+F:  Oh , I see . 
+C:  be worth doing it . 
+C:  <inbreath> But - m 
+C:  How big is the small  training  set ? 
+C:  Do you remember ? 
+F:  Hmm .  
+F:  <mouth smack>  
+F:  Uh .  Whew .  
+F:  Hhh .  
+F:  <inbreath> 
+F:  I don't know , something  
+F:  something like  
+F:  something between  
+F:  thirty and fifty hours , maybe . I f I forget the 
+C:  It 's around there . 
+F:  exac Right . 
+C:  <inbreath> 
+C:  And ha and  and male is roughly half of that , or  ? 
+A:  Well , that 's only male . 
+C:  Or  or  or was that only male ? 
+F:  <outbreath> 
+F:  Uh . Actually , I don't know .  I 'd  <laugh> 
+F:  I  I can look it up . 
+F:  It 's  it 's  it 's just , uh , I don't know the  remember the  the number . 
+A:  We could only jus just do the male only right ? Or 
+C:  OK . 
+F:  Well , the males  account for most of this meeting data anyhow . So  
+A:  will we run into trouble when we g ? 
+A:  Yeah . 
+F:  Yeah . I would say we  you do only males . 
+C:  Yeah . 
+C:  So  
+C:  <cough> 
+C:  Yeah . So that 's certainly part of the issue , is that right now he 's  he hasn't written his stuff for efficiency . 
+C:  Yeah . It 's  it 's in Matlab and so on , and  
+F:  Mm - hmm . 
+C:  <inbreath> 
+C:  And , uh , it 's not an impossible amount of time . We  we were 
+C:  guestimating it was like one and a half times faster than real time , or something ? 
+C:  So , if there 's thirty hours of data , you can calculate 
+F:  u 
+C:  that he can do , uh , the enhancement in 
+C:  a day 
+C:  and something . So  
+F:  Hmm . 
+C:  But 
+C:  <clears throat> 
+C:  if we were dealing with two hundred hours or something , I think it 'd be  prohibitive . 
+F:  No . It 's definitely  
+F:  It 's less than a hundred hours , for sure . It 's  
+C:  Yeah . 
+F:  It 's probably actually , uh  
+F:  It 's  uh , I think it 's around thirty hours 
+F:  just for  
+A:  That 's what I was thinking . Yeah . 
+C:  Yeah . 
+F:  for one gender . Yeah . 
+C:  <inbreath> 
+C:  Yeah . So , I mean , it 's a bit of a push , but it seems like , 
+C:  OK , we 've got some models , we 've got some training data , we have software that works , he 's got 
+C:  a method that helps with , you know , other ta another task . 
+C:  Um  
+C:  It , you know , appears to be , you know , debugged . 
+A:  S 
+F:  Mm - hmm . 
+C:  Um  
+A:  So  We - Yo - So , one thing I was wondering is , 
+A:  did you already do that middle one or should 
+A:  we re - do that one , too ? 
+F:  No . I didn't do that , because we haven't even 
+A:  You didn't do that . OK . 
+F:  cut the waveforms for that . So  
+A:  Yeah . That 's what I was gonna say next . We hafta  cut the , uh  
+F:  Right . So . 
+A:  W s so is  Morgan , is the plan to just pick one of the far - field mikes ? Uh  
+E:  <mouth> Yeah . 
+F:  <inbreath> 
+
+
+F:  And there 's a bit of a question whether you want to use  
+C:  Yes . 
+F:  um , what segmentations you want to use . 
+F:  Uh  
+F:  Uh , David just  
+F:  Um , I 'm sorry . 
+F:  Don just , uh , created 
+F:  a new 
+F:  version of the first meetings that we had previously recognized , but with different segmentation . And so  
+F:  <breath> 
+F:  <mouth> 
+F:  Um  
+F:  It would be nice  
+F:  I mean , if the results are comparable to what we had before  
+F:  to use those segmentations , because 
+F:  th then we could claim that everything 's automatic . 
+A:  <inbreath> 
+F:  <mouth> 
+A:  Do you know  when he 'll have the  the comparison ? 
+F:  Right . 
+F:  Well , I 'm  as I said , I just started  the recognizer , 
+F:  um  
+F:  It will  
+F:  <long inbreath> 
+F:  uh , <outbreath> it will probably be <outbreath> a couple hours before  
+F:  before I have some results . So  <breath> 
+C:  Oh . Well , that 's not bad . 
+A:  Oh , OK . So  cuz I don't think the new data 
+A:  will be ready , uh , 
+A:  for a couple days may probably . 
+C:  You mean the training . 
+A:  So , the training . 
+F:  But the segmentations matter for the 
+C:  Yeah . 
+F:  filtering . Right ? Because  
+C:  For the test . 
+F:  For the test set . Yeah . So , 
+C:  Yeah , fo 
+A:  Yeah . 
+F:  need to be  <breath> 
+F:  But , first  first , 
+F:  of course , you would wanna process the  training data , because we wanna get that started . Yeah . 
+C:  Right . 
+F:  <inbreath> 
+C:  Yeah . 
+C:  I mean , it  it 'd be really great if it was all automatic , but I think that , you know , given the pressure of time , if  
+C:  i i 
+C:  I mean , since you 're gonna find out in a short amount of time , that 's great . 
+F:  Mm - hmm . 
+C:  But i if  if it doesn't work out , I think we would rather charge ahead with the older 
+F:  Mm - hmm . 
+C:  segmentations and  
+F:  Right . 
+C:  Um , and we were gonna use one of the P Z Ms . 
+C:  I don I don't know what  
+C:  Probably whatever one you 've been using for  for  for the digits . Is it this one ? 
+A:  I think it 's that one . Right ? 
+B:  It 's e F . 
+A:  F . 
+A:  Yeah , that 's it . 
+C:  I  I 'd  which  ? That 's F ? How do you know ? 
+A:  That 's F . 
+B:  <breath-laugh> 
+A:  It 's the second nearest the machine room . 
+F:  <mouth> 
+C:  Oh . 
+C:  <laugh> 
+A:  <laugh> 
+E:  <laugh> 
+D:  <breath-laugh> 
+A:  <laugh> 
+E:  <laugh> 
+C:  Bien sur <laugh> OK . <laugh> 
+D:  <laugh> 
+C:  Alright , so  
+D:  <breath-laugh> 
+C:  Bet they 'll have fun with that one . 
+C:  OK , so . <laugh> 
+A:  <laugh> 
+E:  <laugh> 
+
+
+C:  Uh  <breath> 
+A:  OK . So , uh , I just want to make sure I understand what we need to run . 
+A:  Um  
+A:  Let 's see . So , it 's  OK , so if we 're talking about  Let 's  let 's assume that we 're gonna use the new segmentations . 
+A:  We need to , 
+A:  um , <mouth> 
+A:  run recognition o just looking at the no overlap column . 
+A:  Basically , we have to d r do recognitions for all three of those cases . Right ? 
+C:  Mm - hmm .  
+C:  Right . 
+A:  Um , because  we 're gonna be using the  just the male , 
+A:  uh , model  short training set for the male . So we need to have results for all three of those , even though we have  
+F:  Mm - hmm . 
+F:  Ma - maybe you should limit ourselves to the Meeting Recorder 
+F:  meetings ? 
+A:  OK . 
+F:  Um , 
+F:  if you were gonna cut down on the test set , I would suggest that . 
+C:  Well  
+C:  Maybe . But , I  I mean , how long does it take 
+F:  <breath-laugh> 
+F:  Actually , the longer  the Robustness meetings take longer , because there 's this one speaker who talks a lot . 
+C:  for the test ? 
+A:  <laugh-snort> 
+E:  <laugh-sputter> 
+F:  And so 
+C:  <laugh> 
+D:  <breath-laugh> 
+F:  <breath> 
+F:  the  
+F:  <breath> 
+F:  Um . No . It 's because for all the  
+F:  for the adaptation and normalization steps , you cannot  
+E:  <laugh> 
+F:  you have to d you have to , uh , um , <mouth> 
+F:  you cannot chop it up into small pieces . 
+F:  So , you 're sort of limited by how long the longest speaker , 
+F:  uh , 
+F:  is s speaking . 
+C:  <breath-laugh> 
+F:  So how much data there is from the  the speaker who talks the most . 
+F:  <mouth> 
+F:  So , <breath> 
+F:  um , you parallelize across different speakers , 
+F:  but <breath> 
+A:  Mm - hmm . 
+F:  you know , if you have a bunch of speakers who speak very little and then one wh 
+C:  Right . 
+F:  who  who speaks a lot , then <breath> 
+F:  effectively , everybody waits for the longest one to process . So . 
+A:  Right . 
+A:  Yeah . 
+C:  <inbreath> Bu - 
+C:  But what  what was your result for  uh , that we had at the HLT ? Was that a combination of me ? 
+F:  That was both types of meetings , but most  but there were only two Robustness meetings , and four or five , 
+A:  And if we 're re - doing the baseline anyways , it  it  it would be OK . Right ? I mean  
+F:  uh , Meeting Recorders . 
+F:  Right . 
+A:  To  to just limit ourselves to a smaller  
+A:  How long would it take to run recognition , if we did that ? 
+F:  Oh .  
+F:  Uh , I  I  
+F:  I don't have  I don't have a good  gue 
+A:  I mean , is  is it like a day or is it  a few hours or  roughly ? 
+F:  For everything ? For all the meetings ? 
+A:  For  yeah , let 's say we just did the Meeting Recorder meetings for our test set . 
+F:  Uh .  
+F:  Um .  
+F:  It 's probably more than a day , but probably less than two . 
+A:  Oh , really . I didn't realize each test took that long . 
+F:  Well , i No . I mean for all the meetings . 
+F:  Because it 's  <breath> 
+F:  Again , it 's , um  
+F:  <mouth> 
+F:  <breath> So each meeting  each meetings takes , 
+C:  So you were doing like  
+F:  uh , something like  
+F:  Again , we  we  I ran  when we ran these , 
+F:  we were sort of short on machines , and , um , 
+A:  Mmm . 
+F:  I don't know , I  I would estimate maybe four hours per meeting . 
+F:  Something like that . 
+A:  Four hours per meeting . 
+F:  Right . 
+C:  <inbreath> 
+A:  Wow . <breath> 
+C:  Yeah . But if you  
+C:  So , if you do half a dozen meetings , that 's  that 's about a day . We also have more machines now . 
+F:  Right . 
+C:  well <breath> 
+F:  Right . So that 's why I 'm saying I 'm not sure how they would scale with more machines . 
+C:  Yeah . 
+C:  Yeah . 
+C:  I mean , if we had about six  A six hour test set 's not bad . Right ? 
+F:  Right . 
+F:  <breath> 
+F:  <mike noise> 
+A:  S six hour test set . 
+A:  Six meetings . OK . 
+C:  You know ? 
+C:  Right ? I mean , a lot of the evaluations have been  
+E:  Yeah . We did . 
+F:  We have MR  
+F:  two , th We have two , three , four , fi I think there are four Meeting Recorder meetings that we worked with . 
+C:  Four that you worked with ? 
+E:  I think it 's  
+E:  Is it the same set as  the alignments ? I think it 's five Meeting Recorder meetings . 
+F:  Yeah . 
+F:  Five ? 
+F:  OK . 
+C:  That would be OK , too . I mean , I 'm  
+C:  i So , if they have a set that they worked with , and you  you got  
+F:  <inbreath> 
+F:  <outbreath> 
+F:  @ @  
+C:  Did you 
+C:  do similarly in performance between them and the other meetings , or was it  ? 
+F:  <inbreath> 
+F:  Uh , with the Robust - compared to Robustness ? 
+F:  Yeah . 
+F:  The big variation is by  whether it 's a native speaker 
+C:  Yeah . 
+F:  or not . 
+F:  And whether 
+F:  <inbreath> 
+F:  it 's , um  
+F:  Uh , I think that 's the o actually  and  and of course what , 
+F:  um , 
+F:  you know , whether it 's lapel or , 
+F:  uh , headset microphone . 
+C:  And overlap or not . Yeah . 
+F:  Yeah . 
+C:  <inbreath> So maybe just with the  the  the Meeting Recorder set of the  
+F:  And we can exclude  we don't need to recognize the  non - natives , because we know that  
+C:  De - th that you did before . 
+F:  I mean , in fact , we excluded them previously 
+C:  Yeah . So we want to do the same  same thing . 
+F:  from  
+F:  Right . 
+A:  <inbreath> 
+
+
+A:  OK . So  Alright . So if we got a list 
+A:  of the , 
+A:  uh , segmentations for these five Meeting Recorder meetings , we could start , 
+A:  uh , the first two 
+A:  experiments going right away , using the short male models . 
+F:  Mm - hmm . 
+A:  So , you could get those going while 
+A:  Dave is , um , creating waveforms for the r retraining the short male models . 
+C:  Yeah . 
+C:  <inbreath> Once we know which segmentations we 're using . Yeah . 
+A:  Right . OK . OK . And then  
+A:  OK . So , do we w also want to run 
+A:  that bottom experiment without 
+A:  retraining the short male models on his thing ? Did you want that ? 
+A:  Or  ? 
+C:  Um , 
+C:  I  I agree that that would be an interesting thing to do , but I sort of regard it as secondary . 
+A:  OK . So , we 'll save that . 
+C:  So if there 's sort of machines sitting around and people sitting around and they 're waiting for 
+C:  <breath> 
+C:  other things to finish , then sure . But  
+C:  Uh , Chuck had been asking about that earlier as kind of a control to know , um  
+C:  Cuz , I mean , you could imagine a fantasy in which you said that Dave 's processing 
+C:  <breath> 
+C:  made the , uh , far microphone like the near microphone . In which case 
+F:  Mm - hmm . 
+C:  you shouldn't have to actually retrain . 
+C:  But it 's  it 's not really true . It 's  it 's sort of fantasy . It does  it does muck up the data in  in some funny ways . And so , 
+F:  Mm - hmm . 
+C:  <inbreath> 
+C:  <cough> I 'm  I 'm kind of questioning that . But  
+A:  Well , i it  
+C:  But  
+A:  Well , on a more basic level , also , it means that 
+A:  that third experiment , there are actually two differences between the other experiments , not one . 
+C:  Right . 
+A:  So , it 's hard to know  
+C:  It involves retraining and it involves a  
+A:  Right . 
+C:  Uh , that 's right . 
+B:  <sneeze> 
+F:  <background noise> 
+C:  <background noise> 
+D:  <background sneeze> 
+C:  I mean the other thing which  which it might come in  
+C:  to is if there was some problem 
+C:  in the retraining . 
+C:  I mean , maybe you 'd just have some mechanical thing we do wrong . 
+A:  Mm - hmm . 
+C:  Uh , that , uh  since Dave 's experience was that 
+A:  Right . 
+C:  it didn't help as much if you didn't retrain , but it does help some , 
+C:  that we would hopefully see that . 
+A:  Mm - hmm . 
+C:  So , that  that 's  that 's true . 
+F:  <mouth> Wait , did  ? 
+C:  I i 
+F:  So when you used 
+F:  original  the original models , and you just process 
+F:  the test set in this way , d do you get any  
+B:  <mouth> 
+B:  <inbreath> u <outbreath> 
+F:  do you get decent performance or not ? 
+B:  I  I  I think , um , 
+B:  for the far - mike HTK system I was using , 
+F:  Mm - hmm . 
+B:  it did help somewhat . I could re - check that . But it was such a bad baseline 
+F:  Mmm . 
+B:  that 
+B:  I don't know what that means . 
+F:  Right . 
+F:  Right . 
+F:  OK . 
+B:  Cuz the baseline word error rate was around forty percent on digits . 
+F:  Mm - hmm . 
+A:  On the far - field ? 
+B:  Right . 
+C:  Right . 
+C:  <breath> So  
+F:  <inbreath> OK . Well , I 'll  I can get started on the  
+F:  well , the first  
+F:  the one that already has a 
+C:  <laugh> 
+F:  cross there . We need to re - do that with small models . 
+F:  Right . 
+C:  Yeah . 
+F:  And then , have to ask , um , 
+F:  I guess , Don 
+F:  to , uh , cut the , 
+F:  um , 
+F:  cut the segments for the sh 
+F:  for the tis distant mike . 
+F:  Uh , uh  that 's  <breath> 
+F:  So we would be using the same channel 
+F:  for each  fo for everything ? 
+C:  Yeah . 
+A:  Mm - hmm . 
+F:  OK . 
+C:  <inbreath> I mean , do you ha do you have to rely on his segmentations at all to do the top one ? 
+F:  So . 
+F:  No , no . We would use the same segmentations , but he needs to extract  
+F:  extract the wavef form segments from a different channel . 
+C:  Oh . OK . 
+C:  Got it . 
+F:  Right . 
+A:  So when you said you were gonna start that top one , were you gonna use the new segmentations ? 
+F:  Mm - hmm . 
+F:  <noise> 
+F:  Um  
+F:  Yeah . 
+A:  OK . 
+F:  If  assuming that 
+F:  the performance 
+F:  turns out to be comparable with  
+F:  with the old experiments 
+A:  Right . OK . 
+F:  and the old segmentations . 
+F:  <breath> 
+
+
+F:  Now there 's the issue of  
+F:  <mouth> 
+F:  Oh , OK . So there 's the issue of speaker normalization . So , 
+F:  with the distant microphone you wouldn't know which speaker 
+F:  is talking . 
+F:  Right ? 
+C:  <mouth> 
+A:  Can we  ? 
+C:  We  we talked about this before . 
+C:  I think what we were saying was that , um , 
+C:  the very fact that in both cases we 're ignoring the overlap section 
+C:  means that , um , 
+C:  uh , 
+C:  we 're to some extent finessing that . So , 
+C:  um , I think , 
+C:  for the purposes of just determining whether a far - field microphone  
+C:  uh , what the effect of the far - field microphone is , we should do the same to both . 
+F:  Mm - hmm . 
+F:  I see . So you want to cheat ? 
+C:  I mean   
+F:  <laugh> 
+C:  <laugh> 
+E:  <laugh> 
+D:  <breath> 
+E:  <laugh> 
+C:  <breath-laugh> 
+D:  <breath> 
+C:  We want to i incorporate  <laugh> 
+E:  <laugh> 
+D:  <laugh> 
+A:  <breath-laugh> 
+C:  certain data that would not be available during final tests ,  
+E:  <breath-laugh> 
+D:  <laugh> 
+C:  uh , under a  a full fair test of it , much as we are in the  all the numbers that we have so far .  <laugh> 
+F:  OK . So we assume  we assume knowledge of the speakers as  
+A:  <breath-laugh> 
+D:  <laugh> 
+E:  Oops .  
+F:  as , um  <mouth> 
+F:  in a way that 's compatible with the close - talking 
+C:  Yeah . 
+F:  test set . OK . 
+C:  We  we simply wanna determine what 's the difference in performance due to being distant versus close . 
+F:  Oh , OK . 
+A:  So , 
+A:  does that mean you turn off speaker normalization when you run it ? Or you just let it do what it would do , an ? 
+F:  No . It means  No . It just means 
+F:  <breath> 
+F:  you  you group together 
+F:  the segments  that by magic you know belong 
+F:  to one speaker , 
+F:  and  and treat  
+C:  I mean to a lesser extent you had that same magic the other way , too , because 
+C:  you have leakage into other microphones . Right ? 
+C:  But , it 's just you 're using the fact that 
+C:  <breath> 
+F:  Right . 
+C:  this is 
+C:  where this person is . Right ? 
+F:  Right . <breath> 
+C:  So . 
+F:  But , um  
+C:  <cough> 
+C:  It 's just easier to do . 
+F:  Well , in the new test , actually , that 's not true . 
+F:  So  <breath> 
+F:  Again , if this  if these new segmentations work OK , 
+C:  Yeah . 
+F:  then we  then it 's a fair  
+F:  it 's a completely fair  test . 
+C:  So , how do you determine what you use to group together to be a  a  ? 
+F:  You group together all the data coming in through one channel 
+F:  and where  Thilo 's speech detector has  
+F:  has determined that there is speech . 
+F:  <breath> 
+F:  And that speech is  is deemed to come from that speaker , whether that 's true or not . 
+F:  So if you get some cross - talk from another microphone , then you just 
+F:  process this  it as if it were from that speaker . 
+C:  <breath> 
+C:  The only other alternative would be to turn off speaker adaptation in both . 
+F:  Well , that 's more of a problem . 
+E:  <breath-laugh> 
+F:  I mean , because it 's  You can just pretend it 's some kind of 
+F:  gene I mean you can pretend it 's all from one speaker and do all this processing the same , 
+F:  but then you 're gonna get results that are worse on account of not doing proper 
+C:  Mm - hmm .  
+F:  speaker normalization and you 're gonna have  
+F:  So , you could certainly do better than that by doing , for instance  uh , cluster the segments , 
+F:  which is what we do , say , in a Broadcast News system , where you don't have speaker labels . 
+F:  But that would be another processing step that 
+F:  I 'm  I would have to  debug first , and so forth , and so we wanna avoid that . 
+A:  Hmm .   
+A:  Mm - hmm . 
+F:  So I agree with you . We should  
+F:  <breath> 
+F:  we should , uh , do the  
+F:  you know , this sort of cheating experiment . 
+C:  OK . 
+
+
+C:  Yeah . An - and e so that will tell us  what the difference it between the mikes , and then , uh , in order to  
+C:  The  the other 
+C:  difference that we 'd have to take care of is that , uh  yeah , we  we don't have a mike that , uh , 
+C:  is particular to a person . And so we 'll have to do some clustering , and that 'll be another  
+C:  <inbreath> 
+C:  another , uh , issue , too . 
+F:  Mm - hmm . 
+C:  But , it  it  I could be wrong , but it seems to me that  that 
+C:  the speaker  the  
+C:  the level of degradation that you get 
+C:  from 
+C:  having the distant mike in a normal acoustic 
+F:  Hmm . 
+F:  It 's not just speaker adaptation . It 's the whole 
+C:  is much greater than what you get from , say , not applying speaker adaptation or applying speaker adaptation . 
+C:  I think that the  
+C:  <breath> 
+C:  I mean , we 'll see . But  but , I think that the kind of gains that we 've seen from speaker adaptation 
+C:  <inbreath> 
+C:  on Hub - five sort of things are like a few percent . Right ? And  
+F:  <mouth> 
+F:  norm feature normalization process . I it 's spea uh , all that is speaker - based . <breath> 
+F:  You know , so we  
+F:  So , in that I 'm , 
+F:  um  
+F:  Y you know , d d b the most important , of course , is the  cepstral mean subtraction . 
+F:  <breath> 
+F:  And that  
+C:  Yeah . 
+F:  I don't know if we  we never really  I don't remember , 
+C:  <inbreath> 
+F:  because it 's so far  <laugh> 
+F:  s so long ago that we didn't do that on a per speaker basis , but  
+C:  It doesn't make that much difference , I think . I would doubt that it would be a huge amount of difference for that . 
+C:  So , I mean , I  I think that that difference would definitely be marginal . 
+C:  <inbreath> 
+C:  I think the main thing is to do something  to do some cepstral mean subtraction on some level . 
+C:  And , uh , so what 's different about this processing is just that we 're doing it 
+C:  at a much longer time  scale . Right ? 
+A:  Hmm . 
+F:  Mmm . 
+C:  But  
+C:  Um  
+F:  <mouth> 
+F:  A and by the way , <breath> 
+B:  What wo 
+F:  it 's  actually we 're  
+C:  <cough> 
+F:  we 're already  If we use the same segmentations that we use for the close - talking microphone , then <breath> 
+F:  the segmentations assume that we have access to all channels and 
+F:  cross 
+C:  That 's right . 
+F:  correlate them , so <breath> 
+F:  there 's no point in not using that knowledge for speaker identification . 
+C:  Yeah . 
+B:  Uh , I I think also for the log spectral mean subtraction , 
+C:  Yeah . 
+B:  uh , we wanna know which speaker 's talking when , cuz we wanna 
+B:  chain together the audio from one particular speaker to calculate the mean and subtract it , and we don't  
+F:  Yeah . 
+F:  Right . 
+C:  Right . 
+F:  OK . 
+C:  <breath> Um . Yeah , I guess . 
+C:  But , um , 
+C:  <mouth> 
+C:  I also think that a again once we got into it , that , um , using some kind of clustering would probably 
+C:  work reasonably well there , too . 
+C:  Certainly for the  the two microphone case , which we 're not gonna mess with because it 's another whole 
+C:  deal with the low - quality microphones , um , 
+C:  we ought to be able to at least tell 
+C:  that it appears that things are coming from a particular direction . 
+B:  Hmm .  
+C:  So we ought to be able to use that information , 
+C:  um , as well . 
+C:  But , I think we might 
+C:  be able to do not too bad a job of 
+C:  separating out 
+C:  sp 
+C:  uh , segments that appear to come from a single speaker 
+C:  both in terms of s acoustic similarity and in terms of direction . 
+C:  So , I mean  But that 's another research thing to do and <breath> probably won't get done the next week . 
+E:  <breath-laugh> 
+C:  <breath-laugh> 
+
+
+F:  <breath> Right . So what  what is the schedule here ? 
+F:  <breath> 
+C:  <inbreath> 
+C:  Well , I mean , I 'm  I 'm leaving for <outbreath> for the , uh , 
+C:  the New Orleans meeting , uh , next Saturday , and  
+F:  Mm - hmm . 
+C:  and , um , <breath> it 'd be kinda nice to have 
+F:  <mike noise> 
+C:  some results at least a day or two before that , so that I could 
+F:  Mm - hmm . 
+F:  <mike noises> 
+C:  figure out what I wanted to say about it . 
+F:  Oh , we 'll call you when you get there . 
+C:  <laugh> 
+F:  <laugh> 
+D:  <laugh> 
+A:  <mouth> 
+E:  <laugh> 
+B:  <breath> 
+A:  You 'll have email . Right ? 
+C:  Yeah . <breath-laugh> 
+A:  <laugh> 
+C:  Uh , not to mention that  that , uh , Mari 's putting together this report 
+A:  <laugh> 
+E:  <breath-laugh> 
+F:  Mmm .  
+C:  next week , too , you know . So  
+F:  OK . 
+C:  Uh , 
+C:  what we were hoping was that over the weekend we could do , uh , the , um , calculation on the training set 
+F:  Mmm . 
+C:  and , uh  
+C:  uh , maybe , you know , we could  
+C:  by the end of the weekend , we could have the top one , and  and then 
+C:  <breath> 
+C:  early next week , do these . 
+F:  Mmm . 
+C:  If we had enough machines , maybe do them in parallel . 
+F:  Mm - hmm . 
+C:  So that by the middle of the week we had s had some kind of result . 
+C:  I mean , it 's  it 's one of these  Hail Mary kinds of things . I mean , it  
+C:  <breath> 
+C:  it , uh  
+F:  Mmm .  
+C:  might  might not  work out . 
+C:  But , uh , f figured I may as well ask for it . 
+C:  <laugh> 
+D:  <breath> 
+F:  I 'll ask  
+A:  So  ? 
+
+
+F:  The other thing is , um  
+F:  and I 'll ask Don which is easier to process in terms of creating these  
+F:  the  the test data for the far  
+F:  far microphone . 
+F:  If  if it turns out that for some reason it 's easier for him to <breath> 
+C:  <breath> 
+F:  use the old  um , 
+F:  <mouth> 
+F:  the  the  the old , uh , segmentations , 
+A:  Segmentation ? 
+F:  then we 'll just use that , I figure . 
+C:  Right . 
+F:  Um  
+A:  S So , 
+A:  um . 
+A:  I don't want you to have to be burdened with doing a lot of stuff . What  what can I do to  ? 
+A:  Y y you said it would be easy for you to do that  top one there , and  I guess Don can do the segmentations of the , 
+A:  uh , channel F ? 
+F:  Mm - hmm . 
+F:  Um  
+A:  I mean , I can certainly help with , uh , retraining  the short male models , 
+F:  Right . 
+A:  uh , once we have the new data . 
+C:  You have models of short males ? 
+A:  <laugh> 
+C:  <laugh> 
+E:  <breath-laugh> 
+D:  <breath-laugh> 
+F:  Yeah . 
+F:  <inbreath> 
+F:  Um  
+F:  Right . Uh , let 's see . The  the 
+F:  <breath> You  you can  I mean <breath> you could  
+F:  you could run the , 
+F:  um , 
+F:  you c Basically , once 
+F:  the , um , 
+A:  The top one is done . I c 
+F:  whe the top  the top one 's done , you could easily re - run the whole set of experiments . 
+A:  I can re - do the  next one . Yeah . 
+A:  Mm - hmm . 
+F:  Uh , I mean , 
+F:  manage the jobs and so forth , uh  
+A:  Yeah . Sure . 
+F:  <breath> 
+F:  Um , that 's all  
+A:  Yeah , the  
+A:  the bottom one would b just be a matter of pointing it at a new set of files and kicking it off , so that would be re 
+A:  I mean , th not the bottom one , but the middle one <breath> 
+F:  Mm - hmm . 
+A:  would be really easy once you 've got the top one going . I could do that . 
+F:  Yeah . 
+F:  Right . 
+A:  OK . So I guess I just need to 
+A:  get Don to , 
+A:  uh  
+
+
+F:  Right . So , somehow the  
+A:  <breath> 
+F:  Assuming he uses the new naming scheme , then 
+F:  he should call  the waveforms 
+F:  the  so , the waveform names have the , you know , meeting  meeting ID , 
+F:  and the  microphone , 
+F:  and the , 
+F:  <mouth> 
+F:  um  
+F:  I guess , the channel and the microphone and the speaker , 
+F:  um , 
+F:  <mouth> 
+F:  speaker  some something that identifies the speaker . 
+A:  Mm - hmm . 
+F:  <breath> So  
+A:  To keep it the same but j just change them all to channel F ? 
+F:  Exactly . So , uh  well , you still need to be able to distinguish the different speakers . 
+F:  That 's the key point . Because , if we wanna do what we just discussed  So  
+A:  Right . Right . 
+A:  Yeah . 
+F:  <breath> 
+F:  Uh , uh , the  the best  the easiest way to do that would be to just take  
+F:  You know , you make the channel be channel F , 
+F:  but then keep the speaker names the same as they would be in the old  
+A:  Yeah . 
+A:  OK . 
+A:  OK . <breath> 
+F:  in the close - talking , 
+F:  uh , 
+F:  version . 
+A:  OK . And so that 's something that Don would do  right ?  when he creates these . 
+F:  Right . Exactly . 
+A:  OK . OK . 
+A:  So will you talk to him about that , or do you want me to talk to him ? 
+F:  I , uh , I  I can talk to him . 
+A:  OK . 
+F:  <mouth> 
+
+
+A:  And then the bottom  one in terms of the test will be  ? 
+A:  Uh  
+A:  That will just be a copy of the one above it , except for  different models 
+B:  Well , we also have to mean subtract the test data . 
+A:  from training . 
+A:  <mouth> 
+A:  Ah . OK . 
+A:  So , we need to run  ? 
+A:  OK . 
+A:  <inbreath> 
+A:  Well , once we have the new , uh  
+A:  Well , once I do that , uh , second experiment , we 'll have the , 
+A:  um , files , and I can give you those to  to process . 
+B:  OK . 
+B:  And there 's , um , 
+B:  <mouth> 
+B:  S so the way this means subtraction expects to work , is it expects 
+B:  to have , um , 
+B:  this continuous stream of audio data 
+B:  from a particular speaker to operate on . And it goes along it with this sliding window , 
+B:  calculating the mean using the data in the window , 
+B:  and then subtracting that . 
+B:  I mean , uh  
+A:  So , do you create this continuous stream from the individual utterance files ? 
+B:  That 's  that 's how I 've been doing it , just by concatenating files together . 
+F:  Hmm . 
+B:  <inbreath> 
+B:  Um , and if these files  and the since they 're individual utterance files , um , 
+B:  s long silence periods are removed , which is a good thing . 
+B:  Because this method might estimate the mean badly , if it had to face long silence periods . 
+B:  <inbreath> 
+B:  But that does mean that I need as much  
+B:  I need twice as much disk space as the original set 
+B:  <inbreath> cuz I need  while I 'm running it  cuz I need to create this intermediate set , 
+B:  um , of these big files , 
+F:  Hmm .  
+A:  Yeah . 
+B:  and then  create the  finally , the mean subtracted , um , little files . 
+B:  And then I can get rid of the big files . 
+B:  But st while I 'm doing the processing , I 'll nee I need twice as much disk space . 
+A:  OK . I 'm gonna  I 'll check with , um , 
+A:  Markham , and see what happened with the  the disks . 
+A:  He went to put those on a couple of weeks ago and something  
+C:  I think  Markham 's out on  vacation . 
+C:  I think , che check with Dave . Yeah . 
+A:  Oh , OK . I 'll ask David , then . 
+E:  Yeah . 
+A:  You haven't seen new disks pop up , have you ? 
+E:  Nope . 
+E:  I was wondering  if they were  in . 
+A:  OK . 
+A:  Yeah . 
+F:  Well , they grow them on trees now . 
+F:  <laugh> 
+E:  <laugh> 
+D:  <laugh> 
+A:  <laugh> 
+C:  <laugh> I thought they were like mushrooms . <laugh> They 're popping up . <laugh> 
+B:  <laugh> 
+D:  <laugh> 
+A:  Well , he went to put them on  
+F:  Just , you shake them and they fall down . 
+A:  Yeah .  <laugh> 
+D:  <laugh> 
+F:  <laugh> 
+B:  <laugh> 
+A:  He went to put them on and then something happened . 
+D:  <breath-laugh> 
+A:  And he sent around a note saying " Oh , uh , 
+E:  Yeah . 
+E:  Yeah . Something w went wrong . 
+A:  it didn't work , and 
+A:  we 'll have to schedule another time . " And then , 
+F:  <breath> 
+A:  didn't see  nothing happened . 
+E:  Nothing happened . No ? Yeah . 
+A:  So  <inbreath> 
+A:  I 'll check with David about that . 
+A:  OK . 
+F:  OK . 
+C:  <mouth> 
+C:  Yeah .  
+C:  Cuz we still all have tha the  that other one going , which is the , uh  the Macrophone 
+
+
+B:  Right , an and  
+C:  training .  
+B:  So  so , Andreas , um , 
+F:  Mm - hmm ? 
+B:  in U doctor speech data SRI Hub - five , there 's this , uh , Hub - five training set . Now , is that the long training set there ? 
+F:  Mmm . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  That 's everything . Yeah , so  <breath> 
+B:  OK . 
+F:  So , I can give you a list of the short  version . 
+B:  OK . I th I think you already did , actually . 
+F:  So you can  
+F:  Oh , OK . 
+B:  <inbreath> 
+B:  OK . And so , say the Macrophone files that are included in this short training , are just 
+B:  a subset of the Macrophone files . Right ? 
+F:  That 's right . 
+B:  OK . So  so , um  when you  You did some TI - digits t t experiments training on Macrophone . 
+F:  Yeah . 
+B:  Um . 
+B:  But that 's not necessarily any less data  than the SRI Hub - five 
+B:  set . It 's not a  it 's not a subset of the short SRI Hu - Hub - five set . Right ? 
+F:  Um  
+F:  Wel - No , it is . 
+F:  Th - the  
+F:  Sorry . Um . 
+F:  Can you repeat the question ? <laugh> There wa it is a subse Yeah . 
+C:  <breath-laugh> 
+A:  <breath-laugh> 
+B:  Uh , whe when you trained on Macrophone , um , to do those digits experiments , did you use the entire Macrophone corpus ? 
+F:  No . Only the portion that was in the Hub - five training set . 
+B:  Oh . OK . 
+C:  That was in the Hub - five small training set ? 
+F:  Well , the Hub - five small training set contains 
+F:  as much Macrophone as the large training set , 
+C:  Yes . 
+F:  for historical reasons . Yeah . 
+B:  OK - OK . So  
+B:  Um  
+F:  So , do you have that processed there , then  right ? 
+F:  Because you already did  did y didn't you already do that experiment ? 
+B:  I  
+B:  I  I got confused , cuz I thought  I thought you were using 
+F:  Mm - hmm . 
+B:  <inbreath> the whole Macrophone set . 
+F:  No . 
+B:  Um . OK . 
+B:  Well , if  if  if I just need to use that subset , I  I can get it processed . I actually  got  
+B:  I think I got f 
+B:  into it before , and then I thought I was doing the wrong thing and I stopped . And it shouldn it shouldn't take that long to do . 
+F:  Mmm . 
+F:  OK . 
+F:  <mouth> Right . 
+C:  OK . 
+F:  And you need only the males . So . 
+C:  <inbreath> 
+B:  Oh , OK .  
+A:  <mouth> 
+
+
+A:  So , basically , Dave , so y for you to get your processing going , you need the list of the , uh , wave 
+A:  Well , I guess it 'll dep you 'll  you 'll  we 'll need to get the segmentations . 
+B:  Yeah . 
+A:  Figure out whether we 're using the new or the old  from Don . 
+F:  Hmm . 
+A:  And then , uh , 
+A:  from that you need the  from the segmentations you 'll have the list of 
+A:  wavefiles that the short , 
+A:  uh , set is trained on . 
+A:  And then <breath> 
+A:  you 'll need disk space . And once you 've got  those things , then you can start your processing . Right ? 
+B:  Yeah . 
+A:  OK . 
+C:  <mouth> 
+F:  <inbreath> 
+F:  Does this  th this  ? 
+F:  <breath> 
+E:  <breath> 
+
+
+F:  It - it 's sort of  f f 
+F:  not very nice to use the small training set for another reason , which is that the 
+F:  <breath> 
+F:  you also are losing on  
+F:  Again , 
+F:  because you don't use  all the data you have for one speaker . 
+F:  So , the normalizations you compute for your training speakers will be , 
+F:  uh , crummier  than they would in the large training set . 
+F:  <breath> 
+F:  So , <breath> 
+F:  um , I have to  So , to make it really a matching experiment , I have to find  
+C:  <mike noise> <breath> 
+F:  uh , I have to 
+F:  use short models that were trained on normalizations that were also only estimated on the  short 
+F:  set . 
+F:  Which is , uh  
+A:  Do you have this , uh  ?  
+F:  <mouth> I think so . I 've  I  
+F:  I have to check . In any case , I could retrain short models within <mouth> 
+F:  a few hours actually at  if I use 
+C:  <inbreath> 
+F:  machines at SRI . 
+C:  I wonder about that , though . 
+F:  Hmm ? 
+C:  I mean , because 
+C:  all we 're doing  The only reason we 're using the short training set is  is for speed . 
+C:  And there  we 're not really making any claims about using a smaller training set . 
+F:  Yeah . 
+C:  So as long as we 're not using any testing data from  
+F:  No . But the thing is , if  if we used  
+F:  if we used the whole training set for normalizations , 
+C:  Yeah . 
+F:  then  David would have to process much more data , 
+F:  which  That 's a  that 's one bottleneck , for us right , in terms of get 
+C:  Oh , you mean for  for his normalizations . 
+F:  Yeah . 
+C:  <inbreath> 
+C:  Oh , oh , oh . I 'm sorry . 
+F:  Right . 
+F:  So , you wanna do the exact same thing , or else  you 'll have apples and oranges . <breath> 
+C:  Right . 
+C:  Yeah . 
+F:  So . 
+F:  <breath> 
+F:  It doesn't make  I don't think it makes that much of a difference . It 's just this 
+F:  little detail that 
+C:  Mm - hmm .  
+F:  if you can 
+F:  take care of that , then you should . 
+F:  I  I think I have  I have the models , I have   
+C:  <outbreath> 
+F:  I have , um  
+F:  <mouth> 
+F:  let 's see , um   
+F:  Yeah . And if not I can retrain  those models very 
+A:  <mouth> 
+
+
+A:  Oh , there 's  there 's one other issue , 
+F:  quickly . 
+A:  uh , and that is that Dave throws out 
+A:  speakers that have less than twelve seconds of training data . 
+A:  And he said there were a few in the Macrophone set like that . 
+A:  So , do we need to wait 
+A:  to find out who he 's gonna throw out , so that we create 
+A:  a new set of short models that don't include those speakers ? 
+F:  Uh  
+C:  Say this again ? 
+C:  Sorry I missed it .  
+A:  So i in  
+A:  <breath> 
+A:  Th - the problem is that if we proceed like we just described , 
+A:  um , <breath> 
+A:  when he goes to 
+A:  m um , <sniff> 
+A:  create the new s training  data with his processing , he throws out some speakers . 
+A:  So the t two training sets won't be identical . 
+F:  Yeah . 
+C:  He throws out some speakers that are  that are very small . 
+A:  Yeah . Have just a little bit . 
+F:  Yeah . I don't think it 'll make a  matter . 
+C:  Yeah . I think there was only a few 
+A:  OK . 
+C:  we thought to be the case . Righ - ? 
+F:  In fact , I thought about throwing those out too , because 
+F:  when I heard how little speech there was for some of them , I thought they can only hurt your models , because they 're  
+F:  again their normalizations will be all  
+A:  Yeah . 
+C:  Right . 
+F:  all  all over the map , and 
+F:  you won't get 
+F:  very  very clean 
+F:  models from them , anyhow . So . 
+A:  So you think it 's OK , then ? 
+F:  Yeah . In fact , 
+F:  if  if you wanna do this , uh , to speed things up , 
+F:  um , 
+F:  you  we can leave out the Macrophone data altogether . 
+F:  That hurt  
+F:  Actually . Oh , no . Sorry . 
+F:  Not in the short . Then you have too little data . OK . 
+F:  Sorry . Forget that . 
+F:  Um , 
+F:  When you use  when you go to the large training set , 
+F:  then  leaving out Macrophone 
+F:  actually sometimes helps you , because it 's  
+F:  it it 's just not relevant to the  
+A:  It 's read . 
+F:  to the meeting and  or to conversational speech anyway . 
+F:  <mouth> OK . 
+F:  <breath> 
+F:  Yeah . Leave it out , and  <breath> 
+F:  Um , in the event that I retrain the short models , 
+F:  um , why don't you give me a list of the files that you throw out , and I  I 'll throw them out , too . 
+B:  Right . 
+F:  And then we have complete  <breath> 
+A:  <inbreath> 
+F:  completely  identical training conditions . 
+A:  We sh 
+A:  M Right . 
+A:  A actually you should be able to figure out , 
+A:  Dave , right , once you know the segmentations , 
+B:  Mm - hmm . 
+A:  uh , who you 're going to  
+A:  which speakers will get left out , even before you run your processing . Right ? 
+B:  The segmentations ? 
+A:  Yeah . The segmentations from Don ? 
+F:  But th the segmentations are only  
+A:  Once we  ? 
+B:  Oh . 
+F:  they only affect the test set . 
+F:  We 're talking about the training speakers . 
+A:  <inbreath> 
+A:  Ah . Right , right , right , right , right . 
+C:  No . The training set he could go through right now , and see how  how long the  
+F:  <mouth> Right . 
+A:  Right . But I 'm just wondering how long it will take to get 
+C:  <mike noise> 
+A:  that information . 
+B:  Um  <inbreath> 
+F:  He already has the in you already have the information . Right ? 
+B:  I  I have i I have it for  
+B:  for Macrophone , um , 
+B:  already , I think , and , um , I think by tomorrow I 'll have it 
+F:  Mm - hmm . 
+F:  OK . 
+B:  for th for the rest . 
+F:  Alright . 
+A:  OK . 
+C:  <breath> 
+F:  OK . 
+C:  At that one ? <breath> Maybe . 
+
+
+C:  Uh  
+C:  Been looking at synthesizers ? 
+C:  <breath-laugh> 
+D:  <breath> 
+E:  Synthesizers ? 
+C:  You were looking at Festival . Yeah . 
+E:  Yeah , yeah . I was doing something for  the SmartKom data collectioners . 
+E:  <breath> 
+E:  Robert has taken his laptop t back to Germany so we needed a new synthesis machine . 
+E:  And we have now a SUN workstation in the library , 
+E:  which does the synthesis and the Festival speech s s system is running on it .  
+A:  <mouth> 
+A:  Sorry , Robert did what ? 
+A:  Robert took what ? 
+E:  His laptop where , uh  
+E:  which we used for the SmartKom data collection , for the synthesis . 
+A:  Uh - huh . 
+E:  And so he took it to Germany 
+E:  and  so we couldn't do any data collection . Uh  
+A:  Oh . 
+A:  Is he gone now ? 
+E:  No . He 's just gone to a SmartKom workshop . 
+A:  Oh . 
+A:  Oh , oh . Oh , OK . 
+E:  And so , we have now the SUN in the library which can do that . 
+A:  Ah . 
+C:  <mouth> 
+E:  And I looked into the ts F - zero thing and talked to  
+E:  to Liz , and it seems that 
+E:  it 's quite 
+E:  s 
+E:  what she wants , but we 'll 
+E:  <breath> 
+E:  have to think about the  the energy thing  uh , what we wanna do . 
+C:  Right . 
+C:  <breath> 
+C:  This was a business about , uh , 
+C:  um , 
+C:  coming up with something that  that was purely prosodic . 
+F:  Mm - hmm . 
+C:  And so , uh , we 're just gonna 
+C:  use a pitch detector , drive a synthesizer , and 
+C:  since it doesn't have a hook in it for , uh , modifying energy , we 'll have a little 
+C:  box at the output that 'll modify the energy . 
+C:  So   
+F:  Hmm . 
+C:  <laugh> 
+A:  Hmm . 
+D:  <breath-laugh> 
+F:  OK .  
+F:  <mike noise> 
+C:  So . Rrrrr - rrrrm - rr . <nonword, vocal gesture imitating energy modifications> 
+F:  <laugh> 
+A:  <breath> 
+D:  <laugh> 
+C:  <laugh> 
+E:  <breath-laugh> 
+C:  Something like that .  
+A:  Are you  are you interfacing to that thing with the C - plus - plus routines ? 
+A:  Or are you  is there another interface that you use ? 
+E:  For w for Festival ? 
+A:  Yeah . 
+E:  Uh , you can just  use it from the  Yeah . 
+E:  Basically from the command line , and the defining the phones , whatever you want to have synthesized , and 
+A:  Oh . 
+E:  <breath> 
+A:  And it saves it in a  
+E:  give the F - zero targets , and then ts 
+E:  get  gives out a  a waveform , and I  I want to manipulate the  the waveform , then . 
+A:  I see . 
+A:  Oh , that 's neat . 
+F:  Hmm . 
+C:  <mouth> 
+C:  OK ? <breath> 
+C:  <breath> 
+
+
+C:  Digits ? 
+E:  <breath> 
+D:  <breath> 
+A:  <breath> 
+A:  Ah . OK . 
+C:  That 's all folks . 
+
+
+A:  Transcript L dash two eight eight .  
+A:  Five two three , eight one seven , seven one nine .  
+A:  Four two three , one five , eight eight two three .  
+A:  Seven six eight , six O eight , two two one two .  
+A:  Six nine two six , nine , two four nine .  
+A:  Five seven , three six , zero one , zero six , four five .  
+A:  One three one , three three four , three nine eight .  
+A:  One , six one two , six six , nine one one , eight .  
+A:  Zero two two , six seven , six six five one .  
+B:  Transcript L dash two nine zero .  
+B:  Four two eight zero , two three one three , one three eight two .  
+B:  Three , five two six , zero five , nine eight eight , one .  
+B:  One five , eight five , nine nine , four one , five six .  
+B:  Eight eight three , seven nine two , two seven two .  
+C:  <yawn> 
+B:  Three nine seven , three three three , two two six .  
+B:  Zero zero six , three eight , zero three three one .  
+B:  Eight three six three , four six four six , seven four seven three .  
+B:  Five nine , two two , zero zero , eight two , seven nine .  
+D:  Transcript L dash two eight zero .  
+D:  Five three zero , four six , four four three eight .  
+D:  Six three , eight four , nine eight , five zero , nine nine .  
+D:  Three nine seven zero , nine zero nine three , five nine seven five .  
+D:  Zero two one five , three one three three , eight one six six .  
+D:  Nine seven four , eight four seven , nine seven three .  
+D:  Two seven , four one , five nine , one two , six nine .  
+D:  Two four , two five , five seven , one nine , zero zero .  
+D:  Five one seven , three nine seven , zero six one eight .  
+F:  Transcript L two eight one .  
+F:  Zero four three one , eight zero seven eight , one four five nine .  
+F:  Two nine seven , one four six , six two O four .  
+F:  Zero three , six five , nine seven , six two , four seven .  
+E:  <clears throat> 
+F:  Five two , one five , eight four , one one , six six .  
+F:  Four six two one , four , six six four .  
+F:  Nine four zero two , one two three three , two O seven three .  
+F:  Nine , seven seven eight , zero four , seven two nine , five .  
+F:  Three seven , eight seven , nine seven , three four , six six .  
+E:  Transcript L dash two O eight .  
+A:  <mike noise> 
+E:  Two nine two , two six , nine six three four .  
+E:  Six , nine one seven , two nine , seven seven eight , two .  
+E:  Two eight three , four nine one , two seven seven .  
+E:  Four nine zero , eight six nine , six four three two .  
+E:  Nine six six , seven zero , four nine four O .  
+E:  Six three eight seven , two eight two six , nine zero five nine .  
+E:  One seven seven , five eight six , eight one four .  
+E:  Five six six , six five , six eight O nine .  
+C:  Transcript L dash two eight seven .  
+C:  One eight three , eight eight eight , eight one five five .  
+C:  Two three , zero nine , three three , six one , zero nine .  
+C:  Three six , eight five , one zero , three four , five two .  
+C:  One one , four three , nine three , six seven , zero two .  
+C:  One five seven one , zero zero seven two , eight eight nine six .  
+C:  Two two four six , five , nine one three .  
+C:  Zero seven two one , four , five nine eight .  
+C:  Six , four five four , one one , six three three , six .  
+
+

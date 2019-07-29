@@ -1,0 +1,450 @@
+C:  Sure . 
+C:  And uh Hans - uh , Hans - Guenter will be here , um , I think by next  next Tuesday or so . 
+C:  So he 's  he 's going to be here for about three weeks , 
+C:  and , 
+C:  uh  
+C:  Uh , we 'll see . 
+C:  We might  might end up with some longer collaboration or something . 
+C:  So he 's gonna look in on everything we 're doing 
+C:  and give us his  his thoughts . 
+C:  And so it 'll be another  another good person looking at things . 
+C:  Yeah , 
+C:  yeah . 
+C:  Oh , yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  No , he 'll be around for three weeks . 
+C:  He 's , uh , um , very , very , easygoing , 
+C:  easy to talk to , 
+C:  and , uh , very interested in everything . 
+C:  Yeah , 
+C:  yeah . 
+C:  Yeah , 
+C:  yeah , he 's been here before . 
+C:  I mean , he 's  he 's  he 's  he 's  
+C:  N nine months . 
+C:  Something like that . 
+C:  Yeah . 
+C:  Yeah . 
+C:  He 's  he 's done a couple stays here . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Um , 
+C:  yeah , I mean , it was pretty  it was pretty tiny . 
+C:  Yeah . 
+C:  But it  but looking at it the other way , isn't it  what you 're saying that it didn't help you to have the longer time for training , 
+C:  if you were going to have a short time for  
+C:  I mean , why would you do it , if you knew that you were going to have short windows in testing . 
+C:  Yeah . 
+C:  No , total . 
+C:  The other thing , um , which maybe relates a little bit to something else we 've talked about in terms of windowing and so on is , that , um , I wonder if you trained with twelve seconds , and then when you were two seconds in you used two seconds , 
+C:  and when you were four seconds in , you used four seconds , 
+C:  and when you were six  
+C:  and you basically build up to the twelve seconds . 
+C:  So that if you have very long utterances you have the best , 
+C:  but if you have shorter utterances you use what you can . 
+C:  OK . 
+C:  Yeah . 
+C:  Right . 
+C:  But I mean the other thing is that that 's  
+C:  I mean , the other way of looking at this , going back to , uh , mean cepstral subtraction versus RASTA kind of things , is that you could look at mean cepstral subtraction , 
+C:  especially the way you 're doing it , uh , as being a kind of filter . 
+C:  And so , the other thing is just to design a filter . 
+C:  You know , basically you 're  you 're  you 're doing a high - pass filter or a band - pass filter of some sort 
+C:  and  and just design a filter . 
+C:  And then , you know , a filter will have a certain behavior 
+C:  and you loo can look at the start up behavior when you start up with nothing . 
+C:  And  and , you know , it will , uh , if you have an IIR filter for instance , it will , um , uh , not behave in the steady - state way that you would like it to behave until you get a long enough period , 
+C:  but , um , 
+C:  uh , 
+C:  by just constraining yourself to have your filter be only a subtraction of the mean , you 're kind of , you know , tying your hands behind your back 
+C:  because there 's  filters have all sorts of be temporal and spectral behaviors . 
+C:  And the only thing , you know , consistent that we know about is that you want to get rid of the very low frequency component . 
+C:  Yeah . 
+C:  Yeah . 
+C:  And , um  
+C:  Yeah , and again , if you take this filtering perspective and if you essentially have it build up over time . 
+C:  I mean , if you computed means over two and then over four , and over six , essentially what you 're getting at is a kind of , uh , ramp up of a filter anyway . 
+C:  And so you may  may just want to think of it as a filter . 
+C:  But , uh , if you do that , then , um , in practice somebody using the SmartKom system , one would think   if they 're using it for a while , it means that their first utterance , instead of , you know , getting , uh , a forty percent error rate reduction , they 'll get a  uh , over what , uh , you 'd get without this , uh , um , policy , uh , you get thirty percent . 
+C:  And then the second utterance that you give , they get the full  you know , uh , full benefit of it if it 's this ongoing thing . 
+C:  Well , I 'm saying in practice , yeah , 
+C:  that 's  If somebody 's using a system to ask for directions or something , 
+C:  you know , they 'll say something first . 
+C:  And  and to begin with if it doesn't get them quite right , ma m maybe they 'll come back and say , " excuse me ? " 
+C:  uh , 
+C:  or some  
+C:  I mean it should have some policy like that anyway . 
+C:  And  and , uh , 
+C:  uh , in any event they might ask a second question . 
+C:  And it 's not like what he 's doing doesn't , uh , improve things . 
+C:  It does improve things , 
+C:  just not as much as he would like . 
+C:  And so , uh , there 's a higher probability of it making an error , uh , in the first utterance . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Right . 
+C:  Oh , the other thing I guess which  which , 
+C:  uh , 
+C:  I don't know much about  as much as I should about the rest of the system 
+C:  but  but , um , 
+C:  couldn't you , uh , if you  if you sort of did a first pass 
+C:  I don't know what kind of , uh , uh , capability we have at the moment for  for doing second passes on  on , uh , uh , some kind of little  small lattice , or a graph , or confusion network , or something . 
+C:  But if you did first pass with , um , the  with  either without the mean sub subtraction or with a  a very short time one , 
+C:  and then , um , once you , uh , actually had the whole utterance in , if you did , um , the , uh , uh , longer time version then , based on everything that you had , um , and then at that point only used it to distinguish between , you know , top N , um , possible utterances or something , you  you might  it might not take very much time . 
+C:  I mean , I know in the large vocabulary stu uh , uh , systems , people were evaluating on in the past , some people really pushed everything in to make it in one pass 
+C:  but other people didn't and had multiple passes . 
+C:  And , um , 
+C:  the argument , um , against multiple passes was u u has often been " but we want to this to be r you know  have a nice interactive response " . 
+C:  And the counterargument to that which , say , uh , BBN I think had ,  was " yeah , 
+C:  but our second responses are  second , uh , passes and third passes are really , really fast " . 
+C:  So , um , if  if your second pass takes a millisecond who cares ? 
+C:  Um . 
+C:  Yeah , 
+C:  so if it turned out to be a problem , that you didn't have enough speech because you need a longer  longer window to do this processing , then , uh , one tactic is  you know , looking at the larger system and not just at the front - end stuff   is to take in , um , the speech with some simpler mechanism or shorter time mechanism , 
+C:  um , do the best you can , and come up with some al possible alternates of what might have been said . 
+C:  And , uh , either in the form of an N - best list or in the form of a lattice , or  or confusion network , or whatever . 
+C:  And then the decoding of that is much , much faster or can be much , much faster if it isn't a big bushy network . 
+C:  And you can decode that now with speech that you 've actually processed using this longer time , uh , subtraction . 
+C:  So I mean , it 's  it 's common that people do this sort of thing where they do more things that are more complex or require looking over more time , whatever , in some kind of second pass . 
+C:  um , and again , if the second pass is really , really fast  Uh , another one I 've heard of is  is in  in connected digit stuff , um , going back and l and through backtrace and finding regions that are considered to be a d a digit , but , uh , which have very low energy . 
+C:  So , uh  I mean , there 's lots of things you can do in second passes , at all sorts of levels . 
+C:  Anyway , I 'm throwing too many things out . 
+C:  But . 
+C:  Is that using  in combination with something else ? 
+C:  With  with a  
+C:  No , no , 
+C:  but I mean in combination with our on - line normalization or with the LDA ? 
+C:  Oh , OK . 
+C:  So , does it g does that mean it gets worse ? 
+C:  Or  ? 
+C:  Yeah ? 
+C:  But that 's what I 'm confused about , 
+C:  cuz I think  I thought that our system was more like forty percent without the Wiener filtering . 
+C:  So I mean , if you can do all these in word errors it 's a lot  a lot easier actually . 
+C:  If you do all these in word error rates it 's a lot easier , right ? 
+C:  OK , 
+C:  cuz then you can figure out the percentages . 
+C:  Yeah . 
+C:  So  so  
+C:  so what 's it start on ? 
+C:  The MFCC baseline is  is what ? 
+C:  Is at what level ? 
+C:  No , what 's  what 's the number ? 
+C:  Four point three . 
+C:  What 's ten point seven ? 
+C:  Ah . 
+C:  Yeah . 
+C:  OK , 
+C:  four point three , 
+C:  ten point seven , 
+C:  and  
+C:  OK . 
+C:  Not changed . 
+C:  Eighteen point five . 
+C:  And what were you just describing ? 
+C:  But where 's the , uh , on - line normalization and so on ? 
+C:  OK , 
+C:  and what kind of number  
+C:  an and what are we talking about here ? 
+C:  Is this TI - digits 
+C:  or  
+C:  Italian ? 
+C:  And what did  
+C:  So , what was the , um , uh , corresponding number , say , for , um , uh , the Alcatel system for instance ? 
+C:  Do you know ? 
+C:  OK . 
+C:  OK . 
+C:  OK . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  But it 's a pretty similar number in any event . 
+C:  Yeah . 
+C:  But again , you 're  you 're more or less doing what they were doing , 
+C:  right ? 
+C:  Yeah . 
+C:  Uh - huh . 
+C:  OK . 
+C:  Mm - hmm . 
+C:  What 's a channel zero VAD ? 
+C:  I 'm  I 'm confused about that . 
+C:  Oh , oh , oh , oh . 
+
+C:  Right . 
+C:  I mean , 
+C:  so a are they going to pro 
+C:  What are they doing to do , 
+C:  do we know yet ? 
+C:  about  as far as what they 're  what the rules are going to be and what we can use ? 
+C:  So it 's not like that 's being done in one place or one time . 
+C:  That 's  that 's just a rule 
+C:  and we 'd  you  you were permitted to do that . 
+C:  Is  is that it ? 
+C:  Oh , so they will send files 
+C:  so everybody will have the same boundaries to work with ? 
+C:  OK . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah , 
+C:  Yeah , 
+C:  c 
+C:  Right 
+C:  actually , I guess  
+C:  Yeah . 
+C:  It 's all pretty related , 
+C:  yeah . 
+C:  It 's  it 's  there 's a di there 's a whole class of techniques where you try in some sense to minimize the noise . 
+C:  And it 's typically a mean square sense , uh  uh  uh , i in  in  in some way . 
+C:  And , uh  uh , spectral subtraction is  is , uh  uh , one approach to it . 
+C:  I mean , in the long run you 're doing the same thing 
+C:  but y but there you make different approximations , 
+C:  and  in spectral subtraction , for instance , there 's a  a  an estimation factor . 
+C:  You sometimes will figure out what the noise is 
+C:  and you 'll multiply that noise spectrum times some constant and subtract that 
+C:  rather than  
+C:  and sometimes people  
+C:  even though this really should be in the power domain , sometimes people s work in the magnitude domain because it  it  it works better . 
+C:  And , uh , uh , you know . 
+C:  I m I mean  
+C:  yeah , I mean , there 's Car - Carmen 's working on another , on the vector Taylor series . 
+C:  So they were just kind of trying to cover a bunch of different things with this task and see , you know , what are  what are the issues for each of them . 
+C:  Um . 
+C:  Yeah . 
+C:  So I 'm  I 'm still a little confused . 
+C:  Is that channel zero information going to be accessible during this test . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yes . 
+C:  OK . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Ma 
+C:  Makes sense . 
+C:  Uh , how about the subspace stuff ? 
+C:  OK . 
+C:  OK . 
+C:  Oh ! 
+C:  Um , uh , what are you doing with negative , uh , powers ? 
+C:  Right . 
+C:  Yep , there 's all  there 's all sorts of , uh , deviations from the ideal here . 
+C:  I mean , for instance , you 're  you 're talking about the signal and noise , um , at a particular point . 
+C:  And even if something is sort of stationary in ster terms of statistics , there 's no guarantee that any particular instantiation or piece of it is exactly a particular number or bounded by a particular range . 
+C:  So , you 're figuring out from some chunk of  of  of the signal what you think the noise is . 
+C:  Then you 're subtracting that from another chunk , 
+C:  and there 's absolutely no reason to think that you 'd know that it wouldn't , uh , be negative in some places . 
+C:  Uh , on the other hand that just means that in some sense you 've made a mistake 
+C:  because you certainly have stra subtracted a bigger number than is due to the noise . 
+C:  Um  Also , we speak  the whole  where all this stuff comes from is from an assumption that signal and noise are uncorrelated . 
+C:  And that certainly makes sense in s in  in a statistical interpretation , that , you know , over , um , all possible realizations that they 're uncorrelated 
+C:  or assuming , uh , ergodicity that i that i um , across time , uh , it 's uncorrelated . 
+C:  But if you just look at  a quarter second , uh , and you cross - multiply the two things , uh , you could very well , uh , end up with something that sums to something that 's not zero . 
+C:  So in fact , the two signals could have some relation to one another . 
+C:  And so there 's all sorts of deviations from ideal in this . 
+C:  And  and given all that , you could definitely end up with something that 's negative . 
+C:  But if down the road you 're making use of something as if it is a power spectrum , um , then it can be bad to have something negative . 
+C:  Now , the other thing I wonder about actually is , what if you left it negative ? 
+C:  What happens ? 
+C:  I mean , because  
+C:  Um , are you taking the log before you add them up to the mel ? 
+C:  Right . 
+C:  So the thing is , I wonder how  if you put your thresholds after that , I wonder how often you would end up with , uh  with negative values . 
+C:  Yeah . 
+C:  But nonetheless , uh , you know , these are  it 's another f kind of smoothing , right ? 
+C:  that you 're doing . 
+C:  Right . 
+C:  So , you 've done your best shot at figuring out what the noise should be , 
+C:  and now i then you 've subtracted it off . 
+C:  And then after that , instead of  instead of , uh , uh , leaving it as is and adding things  adding up some neighbors , you artificially push it up . 
+C:  Which is , you know , it 's  there 's no particular reason that that 's the right thing to do either , 
+C:  right ? 
+C:  So , um , 
+C:  uh , 
+C:  i in fact , what you 'd be doing is saying , " well , we 're d we 're  we 're going to definitely diminish the effect of this frequency in this little frequency bin in the  in the overall mel summation " . 
+C:  It 's just a thought . 
+C:  I d I don't know if it would be  
+C:  Nnn , yeah , 
+C:  although  
+C:  Yeah , 
+C:  but that means that in a situation where you thought that  that the bin was almost entirely noise , you left it . 
+C:  Uh . 
+C:  Yeah . 
+C:  Well , yeah that 's  that 's the opposite , 
+C:  yeah . 
+C:  Yeah . 
+C:  People can also , uh , reflect it back up and essentially do a full wave rectification instead of a  instead of half wave . 
+C:  But it was just a thought that  that it might be something to try . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  So these numbers he was giving before with the four point three , and the ten point one , and so forth , those were Italian , right ? 
+C:  Yeah . 
+C:  Right . 
+C:  Right . 
+C:  But do you have numbers in terms of word error rates on  on Italian ? So just so you have some sense of reference ? 
+C:  Uh - huh . 
+C:  Mm - hmm . 
+C:  And this is , um , spectral subtraction plus what ? 
+C:  On - line normalization and LDA ? 
+C:  Yeah . 
+C:  Yeah . 
+C:  Right . 
+C:  Yeah , 
+C:  plus , uh , I guess they have some sort of cepstral normalization , as well . 
+C:  I mean , it 's not clear that these musical noises hurt us in recognition . 
+C:  We don't know if they do . 
+C:  I mean , they  they sound bad . 
+C:  But we 're not listening to it , usually . 
+C:  Well , none of these systems , by the way , have  I mean , y you both are  are working with , um , our system that does not have the neural net , 
+C:  right ? 
+C:  OK . 
+C:  So one would hope , presumably , that the neural net part of it would  would improve things further as  as they did before . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Maybe . 
+C:  Yeah , 
+C:  it could do a nonlinear spectral subtraction 
+C:  but I don't know if it  
+C:  I mean , you have to figure out what your targets are . 
+C:  Right . 
+C:  Yeah , well , that 's not so much spectral subtraction then , 
+C:  but  but  but it 's  but at any rate , yeah , people , 
+C:  uh  
+C:  y yeah , 
+C:  in fact , we had visitors here who did that 
+C:  I think when you were here ba way back when . 
+C:  Uh , 
+C:  people  d done lots of experimentation over the years with training neural nets . 
+C:  And it 's not a bad thing to do . 
+C:  It 's another approach . 
+C:  M I mean , it 's  it , um  
+C:  The objection everyone always raises , which has some truth to it is that , um , it 's good for mapping from a particular noise to clean 
+C:  but then you get a different noise . 
+C:  And the experiments we saw that visitors did here showed that it  there was at least some , um , <mouth>  gentleness to the degradation when you switched to different noises . 
+C:  It did seem to help . 
+C:  So that  you 're right , 
+C:  that 's another  another way to go . 
+C:  Oh , yeah , 
+C:  it did very well . 
+C:  Yeah . 
+C:  Um , 
+C:  but to some extent that 's kind of what we 're doing . 
+C:  I mean , we 're not doing exactly that , 
+C:  we 're not trying to generate good examples 
+C:  but by trying to do the best classifier you possibly can , for these little phonetic categories , 
+C:  It 's  
+C:  Yeah , 
+C:  it 's kind of built into that . 
+C:  And  and that 's why we have found that it  it does help . 
+C:  Um  
+C:  so , 
+C:  um , 
+C:  yeah , I mean , we 'll just have to try it . 
+C:  But I  I would  I would  I would imagine that it will help some . 
+C:  I mean , it  we 'll just have to see whether it helps more or less the same , 
+C:  but I would imagine it would help some . 
+C:  So in any event , all of this  I was just confirming that all of this was with a simpler system . 
+C:  OK ? 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  It 's amazing how often that happens . 
+C:  Mm - hmm . 
+C:  One five ? 
+C:  One five ? 
+C:  Five zero ? 
+C:  Five zero . 
+C:  Yeah . 
+C:  What if you just look into the past ? 
+C:  How m by how much ? 
+C:  By how much ? 
+C:  Worse . 
+C:  Hmm . 
+C:  It 's depending on how all this stuff comes out 
+C:  we may or may not be able to add any latency . 
+C:  Um , 
+C:  s Yeah , I mean , I think the only thing is that  
+C:  I would worry about it a little . 
+C:  Because if we completely ignore latency , and then we discover that we really have to do something about it , we 're going to be  find ourselves in a bind . 
+C:  So , um , 
+C:  you know , maybe you could make it twenty - five . 
+C:  You know what I mean ? 
+C:  Yeah , just , you know , just be  be a little conservative 
+C:  because we may end up with this crunch where all of a sudden we have to cut the latency in half or something . 
+C:  OK . 
+C:  Well , in fact , everything is sent over in buffers cuz of  
+C:  isn't it the TCP buffer some  ? 
+C:  Yeah , 
+C:  yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  And  and that 's sort of one of the  
+C:  all of that sort of stuff is things that they 're debating in their standards committee . 
+C:  That 'd be more like the JRASTA thing in a sense . 
+C:  Yeah . 
+C:  I 'm confused . 
+C:  You said five hundred milliseconds 
+C:  but you said sixty - four milliseconds . 
+C:  Which is which ? 
+C:  What ? 
+C:  Yeah , 
+C:  yeah . 
+C:  Mm - hmm . 
+C:  So you take sixty - four millisecond F F Ts and then you average them  over five hundred ? 
+C:  Or  ? 
+C:  Uh , what do you do over five hundred ? 
+C:  Ah . 
+C:  OK . 
+C:  I see . 
+C:  I see . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  But are you comparing with something  
+C:  e I 'm  I 'm  p s a little confused again , 
+C:  i it  
+C:  Uh , when you compare it with the V A D - based , 
+C:  VAD - Is this  is this the  ? 
+C:  Oh , you 're not doing this with our system ? 
+C:  OK . 
+C:  Right . 
+C:  But  
+C:  OK . 
+C:  But the spectral subtraction scheme that you reported on also re requires a  a noise estimate . 
+C:  Couldn't you try this for that ? 
+C:  Do you think it might help ? 
+C:  I see , 
+C:  I see . 
+C:  Yeah . 
+C:  OK . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  It 's interesting . 
+C:  I mean , um , you know , in  in JRASTA we were essentially adding in , uh , white  uh , white noise dependent on our estimate of the noise . 
+C:  On the overall estimate of the noise . 
+C:  Uh , I think it never occurred to us to use a probability in there . 
+C:  You could imagine one that  that  that made use of where  where the amount that you added in was , uh , a function of the probability of it being s speech or noise . 
+C:  Yeah . 
+C:  Cuz that  that brings in sort of powers of classifiers that we don't really have in , uh , this other estimate . 
+C:  So it could be  it could be interesting . 
+C:  What  what  what point does the , uh , system stop recording ? 
+C:  How much  
+C:  It went a little long ? 
+C:  I mean , disk  
+C:  OK . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah , right . 
+C:  OK . 
+C:  Well , Hans - Guenter will be here next week 
+C:  so I think he 'll be interested in all  all of these things . 
+C:  And , so . 
+C:  Mmm . 
+C:  Yeah . 
+C:  Sure . 

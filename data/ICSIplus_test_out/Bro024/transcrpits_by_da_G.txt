@@ -1,0 +1,296 @@
+G:  OK . 
+G:  Do you use a PC for recording ? 
+G:  Or  
+G:  Uh - huh . 
+G:  Uh - huh . 
+G:  The quality is quite good ? 
+G:  Or  ? 
+G:  Mm - hmm . 
+G:  Yeah , 
+G:  we  we spoke about it already , 
+G:  yeah . 
+G:  I think what they do is they do it always on - line , 
+G:  I mean , that you just take what you have from the past , 
+G:  that you calculate the mean of this and subtract the mean . 
+G:  And then you can  yeah , you  you can increase your window whi while you get  while you are getting more samples . 
+G:  So do you have  uh , you  you mean you have files which are hours of hours long ? 
+G:  Or  ? 
+G:  Yeah . 
+G:  I mean , usually you have in the training set you have similar conditions , 
+G:  I mean , file lengths are , I guess the same order or in the same size as for test data , or 
+G:  aren't they ? 
+G:  Yeah . 
+G:  Hmm . 
+G:  Hmm . 
+G:  Yeah , I think what is important to see is that there is a big difference between the training modes . 
+G:  Uh - huh . 
+G:  If you have clean training , you get also a fifty percent improvement . 
+G:  But if you have muddy condition training you get only twenty percent . 
+G:  Mm - hmm . 
+G:  Mmm . 
+G:  Mmm . 
+G:  Mm - hmm . 
+G:  For the clean training . 
+G:  u 
+G:  And if you  if you look  
+G:  Yeah . 
+G:  Hmm . 
+G:  This is next  next page . 
+G:  Hmm . 
+G:  Improvement . 
+G:  Yeah . 
+G:  It 's  it 's a  
+G:  Yeah . 
+G:  The  the w there was a very long discussion about this on  on the  on the , uh , Amsterdam meeting . 
+G:  How to  how to calculate it then . 
+G:  I  I  I guess you are using finally this  the scheme which they  
+G:  OK . 
+G:  Mmm . 
+G:  Mmm . 
+G:  I mean , it uh , like , i i 
+G:  i It is well known , this  this medium match condition of the Finnish data has some strange effects . 
+G:  I mean , that is  
+G:  Yeah , 
+G:  that too . 
+G:  Yeah . 
+G:  Uh - huh . 
+G:  There is a l a  There is a lot of  Uh , there are a lot of utterances with music in  with music in the background . 
+G:  Mmm . 
+G:  But the  but the , uh , forty - seven point nine percent which you have now , that 's already a remarkable improvement in comparison to the first proposal . 
+G:  OK . 
+G:  Mm - hmm . 
+G:  Mmm . 
+G:  Mmm . 
+G:  Mmm . 
+G:  Yeah , 
+G:  I  I started thinking about also  
+G:  I mean yeah , uh , <breath> I discovered the same problem when I started working on  uh , on this Aurora task <breath> almost two years ago , 
+G:  that you have the problem with this mulit 
+G:  a at the beginning we had only this multi condition training of the TI - digits . 
+G:  And , uh , I  I found the same problem . 
+G:  Just taking um , what we were used to u <breath> use , I mean , uh , some type of spectral subtraction ,  y <breath> you get even worse results than <breath> the basis 
+G:  and uh  
+G:  I  I tried to find an explanation for it , 
+G:  so  
+G:  Mmm . 
+G:  Mm - hmm . 
+G:  Yeah , I think what you do is in  when  when you have the  the  this multi - condition training mode , um then you have  then you can train models for the speech , for the words , as well as for the pauses where you really have all information about the noise available . 
+G:  And 
+G:  it was surprising  
+G:  At the beginning it was not surprising to me that you get really the best results on doing it this way , 
+G:  I mean , in comparison to any type of training on clean data and any type of processing . 
+G:  But it was  
+G:  So , u u 
+G:  it  it seems to be the best what  wh wh what  what we can do in this moment is multi - condition training . 
+G:  And every when we now start introducing some  some noise reduction technique we  we introduce also somehow artificial distortions . 
+G:  And these artificial distortions  uh , I have the feeling that they are the reason why  why we have the problems in this multi - condition training . 
+G:  That means the H M Ms we trained , they are  they are based on Gaussians , 
+G:  and on modeling Gaussians . 
+G:  And if you  
+G:  Can I move a little bit with this ? 
+G:  Yeah . 
+G:  And if we introduce now this  this u spectral subtraction , or Wiener filtering stuff  
+G:  So , usually what you have is maybe , um  
+G:  I 'm  I 'm showing now an envelope 
+G:  um 
+G:  maybe you 'll  f for this time . 
+G:  So usually you have  maybe in clean condition you have something which looks like this . 
+G:  And if it is noisy it is somewhere here . 
+G:  And then you try to subtract it or Wiener filter or whatever . 
+G:  And what you get is you have always these problems , that you have this  these  these  these zeros in there . 
+G:  And you have to do something if you get these negative values . 
+G:  I mean , this is your noise estimate and you somehow subtract it or do whatever . 
+G:  Uh , and then you have  
+G:  And then I think what you do is you introduce some  some artificial distribution in this 
+G:  uh 
+G:  in  in the models . 
+G:  I mean , i you  you train it also this way 
+G:  but , i somehow there is  u u there is no longer a  a Gaussian distribution . 
+G:  It is somehow a strange distribution which we introduce with these <breath> artificial distortions . 
+G:  And  and I was thinking that  that might be the reason why you get these problems in the  especially in the multi - condition training mode . 
+G:  s 
+G:  Yeah . 
+G:  Yes . 
+G:  Mm - hmm . 
+G:  Hmm . 
+G:  Hmm . 
+G:  Mm - hmm . 
+G:  Hmm . 
+G:  Yeah , 
+G:  y I  I was  whe w w 
+G:  just yesterday when I was thinking about it <breath> um w what  what we could try to do , or do about it  
+G:  I mean , if you  if you get at this  in this situation that you get this  this negative values and you simply set it to zero or to a constant or whatever <breath> if we  if we would use there a somehow , um  a random generator which  which has a certain distribution , u not a certain   yeah , a special distribution we should see  we  we have to think about it . 
+G:  And that we , so , introduce again some natural behavior in this trajectory . 
+G:  Yeah , I mean , similar to what  what you see really u in  in the real um noisy situation . 
+G:  Or i in the clean situation . 
+G:  But  but somehow a  a natural distribution . 
+G:  Mm - hmm . 
+G:  Yeah . 
+G:  I think  e 
+G:  yeah . 
+G:  It 's  it 's just especially in these segments , 
+G:  I mean , you introduce , um , very artificial behavior . 
+G:  And  
+G:  Mm - hmm . 
+G:  I 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  I mean , we  we could trit uh , we  we could think how w what  what we could try . 
+G:  I mean , <breath> it  it was just an idea . 
+G:  I mean , we  
+G:  to  
+G:  Mmm . 
+G:  Uh - huh . 
+G:  So it  it  it  it  it is l somehow similar to what  
+G:  Uh - huh . 
+G:  Uh - huh . 
+G:  But  but they do not apply filtering of the log energy or what  
+G:  like  like a spectral subtraction 
+G:  or  
+G:  Yeah . 
+G:  I kn 
+G:  And then they calculate from this , the log energy 
+G:  or  ? 
+G:  Mm - hmm . 
+G:  Mmm . 
+G:  Mm - hmm . 
+G:  But  but is there  is there a problem with the one hundred eighty milliseconds ? 
+G:  Or  ? 
+G:  Yeah , I mean , I talked to  to  uh , I ta Uh , I talked , uh , about it with  with Hynek . 
+G:  I mean , there is  
+G:  Mmm . 
+G:  Mm - hmm . 
+G:  It 's  
+G:  It was in the order of thirty milliseconds 
+G:  or  
+G:  Thirty . 
+G:  Yeah . 
+
+G:  But  but I think this thirty milliseconds  they  they did  it did not include the  the delta calculation . 
+G:  And this is included now , 
+G:  you know ? 
+G:  Yeah . 
+G:  I  I don't remember the  
+G:  i th They were not using the HTK delta ? 
+G:  Nine - point . 
+G:  OK . 
+G:  Mmm . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Mmm . 
+G:  Mmm . 
+G:  No , I think I  I used this scheme as it was before . 
+G:  OK . 
+G:  So  so what is the lower curve and the upper curve ? 
+G:  Yeah . 
+G:  Ah , OK . 
+G:  And  and this  this curves are the average over the whole database , 
+G:  so . 
+G:  Mmm . 
+G:  Mm - hmm . 
+G:  So is the  is the  is the training  is the training based on these labels files which you take as reference here ? 
+G:  Wh - when you train the neural net y y you  
+G:  Hmm . 
+G:  Yeah , 
+G:  the  that was my idea . 
+G:  I mean , if  if it ha if it is not the same labeling which is taking the spaces . 
+G:  Mmm . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Hmm . 
+G:  Mm - hmm . 
+G:  So  so  so these numbers are simply  
+G:  Yeah . 
+G:  OK . 
+G:  s 
+G:  I  I  I think what you do is this . 
+G:  i When  when you have this , <breath> after you subtracted it , I mean , then you get something w w with this , uh , where you set the values to zero 
+G:  and then you simply add an additive constant again . 
+G:  So you shift it somehow . 
+G:  This  this whole curve is shifted again . 
+
+G:  E Hhh . 
+G:  Mm - hmm . 
+G:  But  but  
+G:  But the way Stephane did it , it is exactly the way I have implemented in the phone , 
+G:  so . 
+G:  Yeah I  I made s similar investigations like Stephane did here , 
+G:  just uh , adding this constant and  and looking how dependent is it on the value of the constant 
+G:  and then , must choose them somehow <breath> to give on average the best results for a certain range of the signal - to - noise ratios . 
+G:  So  
+G:  Uh , but you are not doing it now language dependent ? 
+G:  Or  ? 
+G:  No . 
+G:  It 's overall . 
+G:  OK . 
+G:  Mm - hmm . 
+G:  i 
+G:  Yeah . 
+G:  Your  your smoothing was @ @  uh , over this s so to say , the  the factor of the Wiener . 
+G:  And then it 's , uh  
+G:  What was it ? 
+G:  This  
+G:  this smoothing , it was over the subtraction factor , so to say . 
+G:  Was this done  
+G:  Mm - hmm . 
+G:  And  and you are looking into the future , into the past . 
+G:  And smoothing . 
+G:  Mm - hmm . 
+G:  And did  did you try simply to smooth um to smooth the  the  t to  to smooth stronger the  the envelope ? 
+G:  Mmm . 
+G:  Because I mean , it should have a similar effect if you  
+G:  I mean , you  you have now several stages of smoothing , so to say . 
+G:  You start up . 
+G:  As far as I remember you  you smooth somehow the envelope , 
+G:  you smooth somehow the noise estimate , 
+G:  and  <breath> and later on you smooth also this subtraction factor . 
+G:  Ah . 
+G:  Oh , it w it was you . 
+G:  Yeah . 
+G:  Yeah . 
+G:  Uh - huh . 
+G:  Uh . 
+G:  Mm - hmm . 
+G:  I just , uh  it  Experience shows you , if  if you do the  
+
+G:  The best is to do the smoo smoothing as early as possible . 
+G:  So w when you start up . 
+G:  I mean , you start up with the  with the  somehow with the noisy envelope . 
+G:  And , best is to smooth this somehow . 
+G:  And  
+G:  Yeah . 
+G:  Yeah . 
+G:  Uh - huh . 
+G:  Yes , 
+G:  y 
+G:  Yeah . 
+G:  Yeah . 
+G:  Right . 
+G:  Yeah , I think when 
+G:  w you  you could do it in this way that you say , if you  if I 'm  
+G:  you have somehow a noise estimate , 
+G:  and , if you say I 'm  I 'm  with my envelope 
+G:  I 'm close to this noise estimate , 
+G:  then you have a bad signal - to - noise ratio and then you  you would like to have a stronger smoothing . 
+G:  So you could  you could base it on your estimation of the signal - to - noise ratio on your actual  
+G:  s So to summarize the performance of these , SpeechDat - Car results is similar than  than yours so to say . 
+G:  Y you have  you have fifty - six point four 
+G:  and  and  <breath> and dependent on this additive constant , it is s better or  or worse . 
+G:  Yeah . 
+G:  Mm - hmm . 
+G:  Mu - my  mine was it too , I mean . 
+G:  Before I started working on this Aurora . 
+G:  so . 
+G:  Yeah . 
+G:  Maybe you  you are leaving in  in about two weeks Carmen . 
+G:  No ? 
+G:  Yeah . 
+G:  So I mean , if  if  if I would put it  put on the head of a project mana manager  I  I  I I would say , uh , um  I mean there is not so much time left now . 
+G:  I mean , if  <breath> um , 
+G:  what  what I would do is I  I  I would pick @ @  the best consolation , which you think , 
+G:  and <breath> c create  create all the results for the whole database that you get to the final number as  as Sunil did it 
+G:  and <breath> um 
+G:  and maybe also to  to write somehow a document where you describe your approach , and what you have done . 
+G:  Yeah . 
+G:  What is this ? 
+G:  OK . 

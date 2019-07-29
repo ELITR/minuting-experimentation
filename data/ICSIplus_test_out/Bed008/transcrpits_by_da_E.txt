@@ -1,0 +1,363 @@
+E:  Mm - hmm . 
+E:  Piece of paper ? I could borrow ? 
+E:  Nancy is uh currently in Berkeley but not here ? 
+E:  OK . 
+E:  Well I think one could go there 's 
+E:  I think we can di discuss everything . 
+E:  First of all this I added , I knew from sort of basically this has to be there 
+E:  right ? 
+E:  Um 
+E:  Given  given uh uh not transverse the castle , the decision is does the person want to go there or is it just 
+E:  And 
+E:  Hmm ? 
+E:  So Go - there in the first place or not is definitely uh one of the basic ones . 
+E:  We can start with that . 
+E:  Interesting effect . 
+E:  Um Is this basically true or false 
+E:  or maybe we 'll get 
+E:  what ? 
+E:  m right . 
+E:  Here we 
+E:  we actually get just probabilities , 
+E:  right 
+E:  for each down here . 
+E:  Hmm . 
+E:  Mm - hmm . 
+E:  When . 
+E:  How . 
+E:  Why , 
+E:  yeah . 
+E:  Hmm ? 
+E:  Hmm . 
+E:  Hmm . 
+E:  OK . 
+E:  And so I 've tried to come up with some initial things one could observe 
+E:  so who is the user ? 
+E:  Everything that has user comes from the user model 
+E:  everything that has situation comes from the situation model - A . 
+E:  We should be be clear . 
+E:  But when it comes to sort of writing down 
+E:  when you  when you do these things 
+E:  is it here ? 
+E:  You sort of have to a write the values this can take . 
+E:  And here I was really uh in some s sometimes I was really sort of standing in front of a wall feeling very stupid 
+E:  because um  this case it 's pretty simple , 
+E:  but as we will see the other ones um 
+E:  for example if it 's a running budget so what are the discrete values of a running budget ? 
+E:  So maybe my understanding there is too impoverished . 
+E:  How can I write here that this is something , a number that cr keeps on changing ? 
+E:  But OK . 
+E:  Thus is understandable ? 
+E:  So here for example . 
+E:  So here is the  the  we had that the user 's budget may influence the outcome of decisions . 
+E:  There we wanted to keep sort of a running total of things . 
+E:  Um the finance is sort of here thought of as  as the financial policy a person carries out in his life , 
+E:  he  is he cheap , average , or spendy ? 
+E:  And um I didn't come uh 
+E:  maybe a user 
+E:  I don't know , 
+E:  I didn't want to write greediness , 
+E:  but 
+E:  Welcome . 
+E:  Welcome . 
+E:  There it is . 
+E:  And it 's so simple even I can use it . 
+E:  OK , so here was 
+E:  OK , I can think of uh people being cheap , average , or spendy or we can even have a  a finer scale moderately cheap , 
+E:  doesn't matter . 
+E:  Agree there 
+E:  but here um I wasn't sure what to write in . 
+E:  If that 's permissible then I 'm happy . 
+E:  Yeah . 
+E:  Hmm . 
+E:  Yeah  this is where um 
+E:  OK anyways 
+E:  let 's forget it . 
+E:  OK , and so this , oh that 
+E:  I just accidentally 
+E:  Oops . 
+E:  Oh just uh accidentally erased this , 
+E:  I  I just had values here such as uh um is he s we had in our list we had " Is he staying in our hotel ? " , 
+E:  " Is he staying with friends ? " , 
+E:  and so forth 
+E:  uh 
+E:  so we 're 
+E:  OK . 
+E:  Something down here ? 
+E:  Mm - hmm . 
+E:  And um 
+E:  Oops . 
+E:  Ah , 
+E:  OK . No no no , 
+E:  EVA . 
+E:  Missed that one . 
+E:  Um mode was um 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Did I or didn't I ? 
+
+E:  Ah . Probably nothing done yet , 
+E:  oh I just did it on the upper ones , OK . 
+E:  Makes sense . 
+E:  OK , so this was EVA . 
+E:  Maybe we can think of more things , 
+E:  cross 
+E:  climb , emerge 
+E:  Mm - hmm , 
+E:  mmm . Yeah . 
+E:  OK , we 
+E:  w well the uh user was uh definitely more likely to enter if he 's a local 
+E:  more likely to view if he 's a tourist 
+E:  um 
+E:  and then of course we had the fact that given the fact that he 's thrifty and there will be admission then we get all these cross um 
+E:  We 'll d what type of building is it ? 
+E:  Yeah . 
+E:  What he has mentioned before . 
+E:  Uh we can load it up it you know very simple . 
+E:  So this was adjusted for this one mode thing . 
+E:  So that 's w w in our uh in  in Johno 's sort of pictogram everything that could contribute to whether a person wants to enter , view , or approach something . 
+E:  Is now this endpoint . 
+E:  We can just rename that , yeah . 
+E:  The prosody ? 
+E:  Seems to me that we 've sort of e em embedded a lot , em embedded a lot of these uh things we had in there previously in  in  in some of the other final decisions done here , 
+E:  for example if we would know that this thing is exhibiting something um 
+E:  if it 's exhibiting itself it is a landmark , 
+E:  meaning more likely to be viewed 
+E:  if it is exhibiting pictures or sculptures and stuff like this , then it 's more likely to be entered . 
+E:  Accessibility . 
+E:  If it 's closed one probably won't enter . 
+E:  Or if it 's not accessible to a tourist ever the likelihood of that person actually wanting to enter it , 
+E:  given that he knows it , of course . 
+E:  Yeah , all  all of these 
+E:  if it 's fixing things selling things , or servicing things 
+E:  These three ? 
+E:  Yeah . 
+E:  Um more likely to enter . 
+E:  Oh , OK . 
+E:  Um is  is that the object type node ? 
+E:  So are they the  is it the kind of object that sells , fixes , or services things ? 
+E:  Oh I just created it , it has none so far . 
+E:  Yeah . 
+E:  And then we have sort of the um 
+E:  Yeah , 
+E:  I w I was just gonna 
+E:  commercial action inside where people p 
+E:  And where was the accessible , yeah . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Um things . 
+E:  So places that service things sell things or fix things and pe places that e exhibit things . 
+E:  Well I think an entity maybe should be regard as a vector of several possible things , 
+E:  it can either em do s do sell things , fix things , service things , exhibit things , it can be a landmark at the same time as doing these things , 
+E:  it 's not either or 
+E:  mmm certainly a place can be a hotel and a famous site . 
+E:  Many come to mind . 
+E:  Things can be generally um a landmark and be accessible . 
+E:  IE a  a castle 
+E:  or can be a landmark a or not accessible , some statue 
+E:  you know can go inside . 
+E:  Could we just move it like this ? 
+E:  Oh , OK . 
+E:  Yeah . 
+E:  Yeah . 
+E:  Mmm . 
+E:  The old one was not that not that important , I think 
+E:  but 
+E:  Let 's do it then . 
+E:  But I can just take this 
+E:  copy it somewhere else . 
+E:  This was user something 
+E:  or 
+E:  end point ? 
+E:  Ah . 
+E:  Gotcha , yeah . 
+E:  Should I rename this  too ? 
+
+E:  It 's underscore - E . 
+E:  OK , shouldn't I be able to move them all ? 
+E:  No . 
+E:  Or  ? 
+E:  Can I ? 
+E:  Where ? 
+E:  What ? 
+E:  Wasn't this possible ? 
+E:  Yeah . 
+E:  Uh - huh . 
+E:  OK . 
+E:  So now we 're looking for user related things that um 
+E:  Well if he 's usi if he 's in a car right now 
+E:  what was that 
+E:  people with Harry drove the car into the cafe 
+E:  Well let 's  should we finish this , 
+E:  I mean but surely the user interests 
+E:  yeah , yeah 
+E:  Here this was one of my problems 
+E:  we have the user interest is a  is a vector of five hundred values , 
+E:  so 
+E:  um That 's from the user model , 
+E:  mm - hmm , 
+E:  no not levels of interest 
+E:  but things you can be interested in . 
+E:  Gothic churches versus Baroque townhouses versus 
+E:  Yea - n is that 
+E:  yeah 
+E:  uh I  I think 
+E:  Mm - hmm . 
+E:  Uh . 
+E:  Mm - hmm . 
+E:  Just as a mental note 
+E:  uh 
+E:  Mm - hmm . 
+E:  And  and should we say that this interests eh affects the likelihood of  of entering ? 
+E:  Yeah . 
+E:  And also if it 's an expensive place to enter , this may also 
+E:  Schedule ? 
+E:  Bhaskara ? 
+E:  Yeah . 
+E:  What do I have under user state anyhow 
+E:  cuz I named that already something . 
+E:  Oh that 's tired , fresh , 
+E:  yeah . 
+E:  Maybe should be renamed into physical state . 
+E:  That 's with a " G " ? 
+E:  Then we can make a user state . 
+E:  That don't . 
+E:  The user interests and the user who  who  who the user is are completely apart from the fact whether he is tired broke 
+E:  Maybe um if we look at the  if we split it up again into sort of um 
+E:  if we look at the uh the endpoint again we  we said that for each of these things there are certain preconditions 
+E:  so you can only enter a place if you are not too tired to do so 
+E:  and also eh have the money to do so if it costs something 
+E:  so if you can afford it and perform it is preconditions . 
+E:  Viewing usually is cheap or free . 
+E:  Is that always true ? 
+E:  I don't know . 
+E:  And so is approaching . 
+E:  Mm - hmm . 
+E:  Um 
+E:  so this might be 
+E:  What next ? 
+E:  Well let 's  th this 
+E:  go there or not I think is a good one . 
+E:  Is a very basic one . 
+E:  So 
+E:  what makes things more likely that  
+E:  So 
+E:  We  we also had discourse features of course for the endpoint . 
+E:  Identified that 
+E:  and so again re that 's completely correct , 
+E:  we have the user model , the situation model here , 
+E:  we don't have the discourse model here yet . 
+E:  Much the same way as we didn't  we don't have the ontology here . 
+E:  Really . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  Um 
+E:  This be specific for second year ? 
+E:  Um 
+E:  And  and we probably will have uh something like a discourse for endpoint . 
+E:  Hmm ? 
+E:  Yeah . 
+E:  Yeah . 
+E:  OK just for starters 
+E:  and here discourse um 
+E:  um 
+E:  well , I think um we 're looking at the  the little data that we have , 
+E:  so people say how do I get to the castle 
+E:  and this usually means they wanna go there . 
+E:  So this should sort of push it in one direction 
+E:  however people also sometimes say how do I get there 
+E:  in order to find out how to get there 
+E:  without wanting to go there . 
+E:  And sometimes um people say where is it 
+E:  because they wanna know where it is 
+E:  but in most cases they probably 
+E:  Oh yeah , 
+E:  true . 
+E:  So this is sort of some external thing that takes all the discourse stuff 
+E:  and then says here it 's either  yep , yay , A , or nay . 
+E:  Yeah . 
+E:  OK ? 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  I was just gonna 
+E:  How long does it take you to  to compute uh 
+E:  uh R recursive action ? 
+E:  Uh but this isn't , this is  this line is just coming from over here . 
+E:  Mmm . 
+E:  OK , these have no parents yet , but I guess that sort of doesn't matter . 
+E:  Right ? 
+E:  I mean this is sort of 
+E:  This comes from traffic and so forth , yeah . 
+E:  Sh - Should we just make some 
+E:  um 
+E:  if there 's parking maybe 
+E:  Mmm 
+E:  Oh who cares . 
+E:  OK . 
+E:  And if he has seen it already or not and so forth , 
+E:  OK . 
+E:  Um 
+E:  and discourse is something that sort of 
+E:  should we make a Keith note here ? 
+E:  That sort of comes from Keith . 
+E:  Just sort of so we don't forget . 
+E:  Oops . 
+E:  Have to get used to this . 
+E:  OK , 
+E:  whoops . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  But 
+E:  And it there 's a sort of also a split if you loo if you blow this up and look at it in more detail there 's something that comes from the discourse in terms of what was actually just said 
+E:  what 's the utterance go giving us 
+E:  and then what 's the discourse history give us . 
+E:  That 's uh two things then . 
+E:  Mmm . 
+E:  Mm - hmm 
+E:  But is th is this picture that 's emerging here just my wish that you have noticed already for symmetry 
+E:  or is it that we get for each  each decision on the very bottom we sort of get the sub - E , sub - D , sub - U and maybe a sub - O  " O " for " ontology " um meta node 
+E:  but it might just 
+E:  could be 
+E:  so this 
+E:  but this eh w wou wou would be nice though that , you know , we only have at most four at the moment um arrows going f to each of the uh bottom decisions . 
+E:  And four you  we can handle . 
+E:  It 's too much ? 
+E:  Right , true . 
+E:  But  but four  didn't we decide that all of these had true or false ? 
+E:  So is  it 's four 
+E:  Um for endpoint ? 
+E:  No it 's  it 's sh 
+E:  yeah , down here , 
+E:  but this one only has two . 
+E:  Want to view that , 
+E:  yeah yeah . 
+E:  C sl 
+E:  yeah 
+E:  R basically w we just need to sort of 
+E:  in order to get some closure on this figure out how we 're gonna get this picture sort of uh completely messy . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  It 's probably pretty easy do it  to do it in HTML , 
+E:  just  
+E:  Uh 
+E:  Yeah I have each of these thing each of the end belief - nets be  be a page and then you click on the thing 
+E:  and then li consider that it 's respective , 
+E:  but 
+E:  Hmm . 
+E:  ROVER , the ROVER decision . 
+E:  ROVER . 
+E:  All of their outputs combined to make a decision . 
+E:  Um 
+E:  Yeah . 
+E:  And that one outcome , that 's 
+E:  it 's X  X - one voted for A 
+E:  X - two voted for V 
+E:  and so forth ? 
+E:  Yeah . 
+E:  That 's the outcome . 
+E:  That 's one . 
+E:  Mm - hmm . 

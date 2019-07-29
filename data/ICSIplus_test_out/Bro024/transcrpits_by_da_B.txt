@@ -1,0 +1,427 @@
+B:  t 
+B:  Mmm , @ @ . 
+B:  Yeah . 
+B:  But I actually stuck most of this in our m last meeting with Guenter . 
+B:  Um , 
+B:  but I 'll just  
+B:  Um , 
+B:  so the last week , uh , I showed some results with only SpeechDat - Car 
+B:  which was like some fifty - six percent . 
+B:  And , uh , I didn't h 
+B:  I mean , I  I found that the results  
+B:  I mean , I wasn't getting that r results on the TI - digit . 
+B:  So I was like looking into " why , what is wrong with the TI - digits ? " . 
+B:  Why  why I was not getting it . 
+B:  And I found that , the noise estimation is a reason for the TI - digits to perform worse than the baseline . 
+B:  So , uh , I actually , picked th 
+B:  I mean , the first thing I did was I just scaled the noise estimate by a factor which is less than one to see if that  because I found there are a lot of zeros in the spectrogram for the TI - digits when I used this approach . 
+B:  So the first thing I did was I just scaled the noise estimate . 
+B:  And I found  
+B:  So the  the results that I 've shown here are the complete results using the new  
+B:  Well , the n the new technique is nothing but the noise estimate scaled by a factor of point five . 
+B:  So it 's just an ad - hoc  
+B:  I mean , some intermediate result , because it 's not optimized for anything . 
+B:  So the results  The trend  the only trend I could see from those results was like the  the p the current noise estimation or the , uh , noise composition scheme is working good for like the car noise type of thing . 
+B:  Because I 've  the only  only  p very good result in the TI - digits is the noise  car noise condition for their test - A , 
+B:  which is like the best I could see that 
+B:  uh , for any non - stationary noise like " Babble " or " Subway " or any  " Street " , some " Restaurant " noise , it 's like  it 's not performing w very well . 
+B:  So , 
+B:  the  <breath> So that  that 's the first thing I c uh , I could make out from this stuff . 
+B:  And  
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Uh , and in that twenty percent @ @ it 's very inconsistent across different noise conditions . 
+B:  So I have like a forty - five <breath> percent for " Car noise " 
+B:  and then there 's a minus five percent for the " Babble " , 
+B:  and there 's this thirty - three for the " Station " . 
+B:  And so <breath> it 's  it 's not  it 's not actually very consistent across . 
+B:  So . 
+B:  The only correlation between the SpeechDat - Car and this performance is the c stationarity of the noise that is there in these conditions and the SpeechDat - Car . 
+B:  And , uh  
+B:  so  
+B:  so the overall result is like in the last page , 
+B:  which is like forty - seven , 
+B:  which is still very imbalanced because there are like fifty - six percent on the SpeechDat - Car and thirty - five percent on the TI - digits . 
+B:  And  
+B:  uh , 
+B:  ps the fifty - six percent is like comparable to what the French Telecom gets , 
+B:  but the thirty - five percent is way off . 
+B:  Oh , 
+B:  yep . 
+B:  Yeah . 
+B:  For  that 's for the clean training and the noisy testing for the TI - digits . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah , yeah , yeah . 
+B:  No . 
+B:  Yeah . 
+B:  Uh , actually the noise compensation whatever , uh , we are put in it works very well for the high mismatch condition . 
+B:  I mean , it 's consistent in the SpeechDat - Car 
+B:  and in the clean training also it gives it  
+B:  But this fifty percent is  is that the  the high mismatch performance  equivalent to the high mismatch performance in the speech . 
+B:  Yeah . 
+B:  Yeah . 
+B:  I do . 
+B:  Yeah , yeah . 
+B:  So by putting this noise  
+B:  Yeah . 
+B:  The reference drops like a very fast  
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Oh  
+B:  Oh . Yeah . 
+B:  It 's not written anywhere . 
+B:  Yeah , it 's TI - digits . 
+B:  The first r spreadsheet is TI - digits . 
+B:  The " Car " ? 
+B:  Oh . 
+B:  Still  it still , uh  that  that 's still consistent . 
+B:  I mean , I get the best performance in the case of " Car " , which is the third column in the A condition . 
+B:  Uh  
+B:  That 's the next  next spreadsheet , is  
+B:  So that is the performance for Italian , Finnish and Spanish . 
+B:  Yeah . 
+B:  Improvement . 
+B:  That 's  " Percentage increase " is the percentage improvement over the baseline . 
+B:  So that 's  
+B:  Yeah . 
+B:  Yeah , yeah . 
+B:  Yeah . 
+B:  There 's  there 's a  
+B:  Which is there in the spreadsheet . 
+B:  I 'm not changing anything in there . 
+B:  So . 
+B:  Uh , 
+B:  yeah . 
+B:  So all the hi H M numbers are w very good , 
+B:  in the sense , they are better than what the French Telecom gets . 
+B:  So . 
+B:  But the  the only number that 's still  I mean , which Stephane also got in his result was that medium mismatch of the Finnish , 
+B:  which is very  <breath> which is a very strange situation where we used the  we changed the proto for initializing the HMM  
+B:  I mean , this  this is basically because it gets stuck in some local minimum in the training . 
+B:  That seventy - five point seven nine in the Finnish mismatch which is that  the eleven point nine six what we see . 
+B:  Yeah . 
+B:  Yeah  
+B:  so we start with that different proto and it becomes eighty - eight , 
+B:  which is like some fifty percent improvement . 
+B:  Different prototype , 
+B:  which is like a different initialization for the , uh , s transition probabilities . 
+B:  It 's just that right now , the initialization is to stay more in the current state , 
+B:  which is point four point six , right ? 
+B:  Yeah . 
+B:  And if it changes to point five point five , which is equal @ @ for transition and self loop where it becomes eighty - eight percent . 
+B:  Yeah . 
+B:  We can't do it . 
+B:  Yeah . 
+B:  So . 
+B:  Very s 
+B:  It has a very few at  uh , actually , c uh , tran I mean , words also . 
+B:  It 's a very , very small set , actually . 
+B:  So there is  
+B:  Yeah . 
+B:  Yeah , yeah , yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  It has some music also . 
+B:  I mean , very horrible music like like 
+B:  I know . 
+B:  Uh  
+B:  So , 
+B:  that  that 's the  that 's about the results . 
+B:  And , uh , 
+B:  the summary is like  
+B:  OK . 
+B:  So there are  the other thing what I tried was , which I explained in the last meeting , is using the channel zero for , uh , for both dropping and estimating the noise . 
+B:  And that 's like just to f n get a feel of how good it is . 
+B:  I guess the fifty - six percent improvement in the SpeechDat - Car becomes like sixty - seven percent . 
+B:  Like ten percent better . 
+B:  But that 's  that 's not a  that 's a cheating experiment . 
+B:  So . 
+B:  That 's just  
+B:  So , 
+B:  m 
+B:  w 
+B:  Yeah . 
+B:  So we had forty - four percent in the first proposal . 
+B:  Yeah . 
+B:  We have f a big im 
+B:  So <breath> the major improvement that we got was in all the high mismatch cases , 
+B:  because all those numbers were in sixties and seventies 
+B:  because we never had any noise compensations . 
+B:  So that 's where the biggest improvement came up . 
+B:  Not much in the well match and the medium match and TI - digits also right now . 
+B:  So this is still at three or four percent improvement over the first proposal . 
+B:  Yeah . 
+B:  So . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah , 
+B:  yeah . 
+B:  So . 
+B:  Yes . 
+B:  Stephane also has the same experience of using the spectral subtraction right ? 
+B:  Yeah . 
+B:  So here  here I mean , I found that it 's  if I changed the noise estimate I could get an improvement . 
+B:  So that 's  so it 's something which I can actually pursue , is the noise estimate . 
+B:  And  
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah , yeah . 
+B:  Th - That 's true . Yeah  
+B:  the c the models are not complex enough to absorb that additional variability that you 're introducing . 
+B:  Well , that 's  
+B:  Yeah . 
+B:  So  
+
+B:  It 's  
+B:  Mm - hmm . 
+B:  Very different from speech . 
+B:  Still , I mean , it shouldn't confuse the  
+B:  OK . 
+B:  Mm - hmm . 
+B:  Hmm . 
+B:  Yeah 
+B:  the  that 's true . 
+B:  That  those  those regions are the cause for this @ @  those negative values or whatever you get . 
+B:  Yeah . 
+B:  So . 
+B:  Yeah . 
+B:  Yeah , yeah . 
+B:  So  
+B:  Yep . 
+B:  C - z C - zero and log energy also , 
+B:  yeah . 
+B:  Now ? 
+B:  Oh . 
+B:  Yeah  
+B:  the  the log energy , the  after the clean  cleaning up . 
+B:  So they add a random  random noise to it . 
+B:  No . 
+B:  On - only to the log energy . 
+B:  Like , uh  I mean  
+B:  No  their filter is not M domain . 
+B:  S so they did filter their time signal 
+B:  and then what @ @  u 
+B:  Yeah  
+B:  then after that it is s almost the same as the baseline prop system . 
+B:  And then the final log energy that they  that they get , that  to the  to that they add some random noise . 
+B:  Yeah . 
+B:  So it 's not the mel . 
+B:  You know , it 's not the mel filter bank output . 
+B:  These are log energy computed from the time s domain signal , 
+B:  not from the mel filter banks . 
+B:  So  
+B:  did  
+B:  Becomes flat . 
+B:  The variance , yeah , reduces , 
+B:  so . 
+B:  Hmm , yeah . 
+B:  Yeah . 
+B:  Although  
+B:  Uh , 
+B:  so the  
+B:  OK . 
+B:  So the other thing is the  I 'm just looking at a little bit on the delay issue where the delay of the system is like a hundred and eighty millisecond . 
+B:  So <breath> I just  just tried another sk system  I mean , another filter which I 've like shown at the end . 
+B:  Which is very similar to the existing uh , filter . 
+B:  Only  Uh , only thing is that the phase is  is like a totally nonlinear phase 
+B:  because it 's a  it 's not a symmetric filter anymore . 
+B:  Yeah  
+B:  so  so this  this is like  So this makes the delay like zero for LDA 
+B:  because it 's completely causal . 
+B:  So  
+B:  So I got actually just the results for the Italian for that 
+B:  and that 's like  
+B:  So the fifty - one point O nine has become forty - eight point O six , 
+B:  which is like three percent relative degradation . 
+B:  So I have like the fifty - one point O nine 
+B:  and  
+B:  So . 
+B:  I don't know it f fares for the other conditions . 
+B:  So it 's just like  it 's like a three percent relative degradation , 
+B:  with the  
+B:  u Uh , may 
+B:  The French Telecom . 
+B:  Thirty - four . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  So if they include the delta , it will be an additional forty millisecond . 
+B:  No , they 're using a nine - point window , 
+B:  which is like a four on either side , 
+B:  which is like  
+B:  f so  
+B:  they didn't include that . 
+B:  So  
+B:  That 's the way the  the  the frames are packed , 
+B:  like you have to wait for one more frame to pack . 
+B:  Because it 's  the CRC is computed for two frames always . 
+B:  No . 
+B:  They actually changed the compression scheme altogether . 
+B:  So they have their own compression and decoding scheme 
+B:  and they  I don't know what they have . 
+B:  But they have coded zero delay for that . 
+B:  Because they ch I know they changed it , 
+B:  their compression . 
+B:  They have their own CRC , 
+B:  their  their own <breath> error correction mechanism . 
+B:  So they don't have to wait more than one more frame to know whether the current frame is in error . 
+B:  So they changed the whole thing so that there 's no delay for that compression and  part also . 
+B:  Even you have reported actually zero delay for the  compression . 
+B:  I thought maybe you also have some different  
+B:  OK . 
+B:  Ah . 
+B:  Mm - hmm . 
+B:  Thanks . 
+B:  No . 
+B:  So that threshold  
+B:  OK . 
+B:  S OK  
+B:  so d the detection threshold is very  
+B:  Yeah , yeah . 
+B:  Mmm . 
+B:  Yeah , 
+B:  so the median filtering is fixed . 
+B:  You just change the threshold ? 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  OK . 
+B:  So three  three hundred and fifty inputs , 
+B:  uh , 
+B:  six thousand hidden nodes and two outputs . 
+B:  t t 
+B:  Yeah . 
+B:  Yeah . 
+
+B:  Mmm . 
+B:  S so  
+B:  Well , it 's not trained on Finnish . 
+B:  I mean , the MLP 's not trained on Finnish . 
+B:  Oh  oh . 
+B:  Sorry . 
+B:  Uh , it 's Italian TI - digits . 
+B:  Yeah . 
+B:  That 's right . 
+B:  Yeah . 
+B:  Yeah , the  Yeah , it 's true . 
+B:  Yeah . 
+B:  Mmm . 
+B:  Yeah . 
+B:  So there are like some  some s some parameters you wanted to use or something ? 
+B:  Or  Yeah . 
+B:  Yeah . 
+B:  We actually trained , uh , the  on the Italian training part . 
+B:  We  we had another <breath> system with u 
+B:  Yeah . 
+B:  It must be somewhere . 
+B:  Yeah . 
+B:  What  
+
+B:  No it  
+B:  Yeah , yeah . 
+B:  That 's true . 
+B:  Syste 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  I just took their entire Italian training part . 
+B:  So it was both channel zero plus channel one . 
+B:  On one . 
+B:  Possible . 
+B:  We can do a realignment . 
+B:  That 's true . 
+B:  Yeah . 
+B:  Yeah , possible . 
+B:  I mean , it  
+B:  so the system  
+B:  so the VAD was trained on maybe different set of labels for channel zero and channel one 
+B:  and  
+B:  was the alignments were w were different for  s certainly different because they were independently trained . 
+B:  We didn't copy the channel zero alignments to channel one . 
+B:  Yeah . 
+B:  But for the new alignments what you generated , you just copied the channel zero to channel one , right ? 
+B:  Yeah . 
+B:  But this number . 
+B:  So this  
+B:  So by  uh , by  by reducing the noise a  a decent threshold like minus thirty DB , it 's like  Uh , you are like r r reducing the floor of the noisy regions , right ? 
+B:  Uh - huh . 
+B:  So before it 's like adding this , col to the  to the  o exi original  
+B:  OK . 
+B:  OK . 
+B:  Oh . 
+B:  For all the languages . 
+B:  OK . 
+B:  Yeah . 
+B:  d Does latency  
+B:  Sorry . 
+B:  Go ahead . 
+B:  Uh , actually I d I do all the smoothing . 
+B:  Yeah , yeah . 
+B:  So , before estimating the SNR , @ @ smooth the envelope . 
+B:  Yeah , 
+B:  or some silence probability from the VAD if you have  
+B:  Yeah , 
+B:  uh , so not  not right now maybe . 
+B:  Yeah , 
+B:  so the fifty - eight is like the be some fifty - six point  
+B:  Yeah , 
+B:  that 's true . 
+B:  Slightly better . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah , you  you caught up . 
+B:  Yep , 
+B:  that 's true . 
+B:  Yeah . 
+B:  Yeah , 
+B:  it 's better for high mismatch . 
+B:  So over all it gets , yeah , worse for the well matched condition , 
+B:  so y 
+B:  Uh , 
+B:  that 's  that 's the best thing , is like the French Telecom system is optimized for the well matched condition . 
+B:  They c 
+B:  Yeah . 
+B:  So they know that the weighting is good for the well matched , 
+B:  and so there 's  
+B:  everywhere the well matched 's s s performance is very good for the French Telecom . 
+B:  T we are  we may also have to do something similar @ @ . 
+B:  Um the  
+B:  So you  
+B:  That 's somewhere  
+B:  You s you have a better r 
+B:  Yeah . 
+B:  You have some results that are good for the high mismatch . 
+B:  Mm - hmm . 
+B:  Using the clean filter . 
+B:  Yeah . 
+B:  Yeah , I 'll try . 
+B:  I  I 'll try the cle 
+B:  No , I  I  my result is with the noisy  noisy LDA . 
+B:  Yeah . 
+B:  It 's with the noisy . 
+B:  Yeah . 
+B:  It 's  it 's not the clean LDA . 
+B:  It 's  In  in the front sheet , I have like  like the summary . 
+B:  Yeah . 
+B:  Oh . 
+B:  This is  Your results are all with the clean LDA result ? 
+B:  OK . @ @ . 
+
+B:  All noisy , 
+B:  yeah . 
+B:  Uh  
+
+B:  Uh  
+B:  On TI - digits this matters . 
+B:  Absolute . 
+B:  Uh  
+B:  Yeah , I  I  I will have to look at it . 
+B:  Yeah , that 's true . 
+B:  t 

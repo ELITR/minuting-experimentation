@@ -1,0 +1,853 @@
+B:  It 's a wrap . 
+B:  Test . 
+B:  Hmm . 
+B:  Let 's see . 
+B:  Move it bit . 
+B:  Test ? 
+B:  Test ? 
+B:  OK , 
+B:  I guess it 's alright . 
+B:  So , 
+B:  let 's see . 
+B:  Yeah , Barry 's not here and Dave 's not here . 
+B:  Um , I can say about  just q just quickly to get through it , that Dave and I submitted this ASRU . 
+B:  Yeah . 
+B:  So . 
+B:  Um . 
+B:  Yeah , it 's  it 's interesting . 
+B:  I mean , basically we 're dealing with rever reverberation , 
+B:  and , um , when we deal with pure reverberation , the technique he 's using works really , really well . 
+B:  Uh , and when they had the reverberation here , uh , we 'll measure the signal - to - noise ratio 
+B:  and it 's , uh , about nine DB . 
+B:  So , 
+B:  um , 
+B:  a fair amount of  
+B:  Yeah . 
+B:  Yeah . 
+B:  Um  
+B:  And actually it brought up a question which may be relevant to the Aurora stuff too . 
+B:  Um , I know that when you figured out the filters that we 're using for the Mel scale , there was some experimentation that went on at  at , uh  at OGI . 
+B:  Um , 
+B:  but one of the differences that we found between the two systems that we were using ,  the  the Aurora HTK system baseline system  and the system that we were  the  the uh , other system we were using , the uh , the SRI system , was that the SRI system had maybe a , um , hundred hertz high - pass . 
+B:  And the , uh , Aurora HTK , it was like twenty . 
+B:  Uh . 
+B:  Sixty - four ? 
+B:  Uh . 
+B:  Is that the ba band center ? 
+B:  The edge is really , uh , sixty - four ? 
+B:  For some reason , uh , Dave thought it was twenty , 
+B:  but . 
+B:  But do you know , for instance , h how far down it would be at twenty hertz ? 
+B:  What the  how much rejection would there be at twenty hertz , let 's say ? 
+B:  Yeah , 
+B:  any idea what the curve looks like ? 
+B:  It 's actually set to zero ? 
+B:  What kind of filter is that ? 
+B:  Is this  oh , from the  from  
+B:  Oh , so you , uh  so you really set it to zero , the FFT ? 
+B:  Right . 
+B:  OK . 
+B:  Um  
+B:  OK . 
+B:  So that 's  that 's a little different than Dave thought , I think . 
+B:  But  but , 
+B:  um , 
+B:  still , it 's possible that we 're getting in some more noise . 
+B:  So I wonder , is it  @ @ Was there  their experimentation with , uh , say , throwing away that filter or something ? 
+B:  And , uh  
+B:  Yeah . 
+B:  Right , 
+B:  but the question is , whether sixty - four hertz is  is , uh , too , uh , low . 
+B:  Yeah . 
+B:  On what test set ? 
+B:  Um , it was on the SpeechDat - Car . 
+B:  Um , 
+B:  and on  and on the , um , um , <mouth> TI - digits also ? 
+B:  Mmm . 
+B:  That 'd be something to look at sometime 
+B:  because what , um , eh , he was looking at was performance in this room . 
+B:  Would that be more like  
+B:  Well , you 'd think that 'd be more like SpeechDat - Car , 
+B:  I guess , 
+B:  in terms of the noise . 
+B:  The SpeechDat - Car is more , uh , sort of roughly stationary , a lot of it . 
+B:  And  and TI - digits maybe is not so much as  
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  OK . 
+B:  Well , maybe it 's not a big deal . 
+B:  But , um  
+B:  Anyway , that was just something we wondered about . 
+B:  But , um , 
+B:  uh , certainly a lot of the noise , uh , is , uh , below a hundred hertz . 
+B:  Uh , the signal - to - noise ratio , you know , looks a fair amount better if you  if you high - pass filter it from this room . 
+B:  But , um  
+B:  but it 's still pretty noisy . 
+B:  Even  even for a hundred hertz up , it 's  it 's still fairly noisy . 
+B:  The signal - to - noise ratio is  is  is actually still pretty bad . 
+B:  So , um , 
+B:  I mean , the main  the  the  
+B:  Yeah , 
+B:  that 's on the far field . 
+B:  Yeah , the near field 's pretty good . 
+B:  Well , we got a  a video projector in here , 
+B:  uh , 
+B:  and , uh  which we keep on during every  every session we record , 
+B:  which , you know , I  I  w we were aware of 
+B:  but  but we thought it wasn't a bad thing . 
+B:  I mean , that 's a nice noise source . 
+B:  Uh , and there 's also the , uh  uh , air conditioning . 
+B:  Which , uh , you know , is a pretty low frequency kind of thing . 
+B:  But  but , uh  
+B:  So , those are  those are major components , I think , 
+B:  uh , for the stationary kind of stuff . 
+B:  Um , 
+B:  but , um , 
+B:  it , uh  
+B:  I guess , I  maybe I said this last week too 
+B:  but it  it  it really became apparent to us that we need to  to take account of noise . 
+B:  And , uh , 
+B:  so I think when  when he gets done with his prelim study I think <laugh> one of the next things we 'd want to do is to take this , uh  uh , noise , uh , processing stuff and  and , uh  uh , synthesize some speech from it . 
+B:  And then  
+B:  Um , I think in about , um , a little less than two weeks . 
+B:  Yeah . 
+B:  Yeah . 
+B:  So . 
+B:  Uh , it might even be sooner . 
+B:  Uh , let 's see , this is the sixteenth , 
+B:  seventeenth ? 
+B:  Yeah , I don't know if he 's before  
+B:  It might even be in a week . 
+B:  A week , 
+B:  week and a half . 
+B:  They seem to be  
+B:  Well , the semester actually is starting up . 
+B:  Yeah , 
+B:  the semester 's late  late August they start here . 
+B:  So they do it right at the beginning of the semester . 
+B:  Yeah . 
+B:  So , uh  
+B:  Yep . 
+B:  I mean , that  that was sort of one  
+B:  I mean , 
+B:  the overall results seemed to be first place in  in  in the case of either , um , artificial reverberation or a modest sized training set . 
+B:  Uh , either way , uh , i uh , it helped a lot . 
+B:  And  But if you had a  a really big training set , a recognizer , uh , system that was capable of taking advantage of a really large training set  
+B:  I thought that  One thing with the HTK is that is has the  as we 're using  the configuration we 're using is w s is  being bound by the terms of Aurora , 
+B:  we have all those parameters just set as they are . 
+B:  So even if we had a hundred times as much data , we wouldn't go out to , you know , ten or t or a hundred times as many Gaussians or anything . 
+B:  So , 
+B:  um , it 's kind of hard to take advantage of  of  of big chunks of data . 
+B:  Uh , whereas the other one does sort of expand as you have more training data . 
+B:  It does it automatically , actually . 
+B:  And so , 
+B:  um , 
+B:  uh , 
+B:  that one really benefited from the larger set . 
+B:  And it was also a diverse set with different noises and so forth . 
+B:  Uh , so , um , 
+B:  that , uh  that seemed to be  
+B:  So , if you have that  that better recognizer that can  that can build up more parameters , and if you , um , have the natural room , which in this case has a p a pretty bad signal - to - noise ratio , then in that case , um , the right thing to do is just do  u use speaker adaptation . And  and not bother with  with this acoustic , uh , processing . 
+B:  But I think that that would not be true if we did some explicit noise - processing as well as , uh , the convolutional kind of things we were doing . 
+B:  So . 
+B:  That 's sort of what we found . 
+B:  Is there any word yet about the issues about , um , adjustments for different feature sets or anything ? 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah , 
+B:  it 's like that  that could r turn out to be an important issue for us . 
+B:  Yeah . 
+B:  For r w what test set ? 
+B:  But that has nothing to do with what we 're testing on , right ? 
+B:  Right . 
+B:  So they 're set they 're setting it based on that ? 
+B:  OK . 
+B:  So now , we may come back to the situation where we may be looking for a modification of the features to account for the fact that we can't modify these parameters . 
+B:  But , um , 
+B:  uh  
+B:  but it 's still worth , I think , just  since  you know , just chatting with Joe about the issue . 
+B:  Um  
+B:  Well , it 's not a secret . 
+B:  I mean , we 're , you know , certainly willing to talk about it with everybody , 
+B:  but I think  I think that , um  um , it 's probably best to start talking with him just to  
+B:  Uh @ @  you know , it 's a dialogue between two of you about what  you know , what does he think about this and what  what  you know  what could be done about it . 
+B:  Um , 
+B:  if you get ten people in  involved in it there 'll be a lot of perspectives based on , you know , how  
+B:  you know . 
+B:  Uh  
+B:  But , I mean , I think it all should come up eventually , 
+B:  but if  if  if there is any , uh , uh , way to move in  a way that would  that would , you know , be more open to different kinds of features . 
+B:  But if  if , uh  if there isn't , and it 's just kind of shut down and  and then also there 's probably not worthwhile bringing it into a larger forum where  where political issues will come in . 
+B:  Uh , this is slightly off topic 
+B:  but , uh , 
+B:  I noticed , just glancing at the , uh , Hopkins workshop , uh , web site that , uh , um  one of the thing I don't know  Well , we 'll see how much they accomplish , but one of the things that they were trying to do in the graphical models thing was to put together a  a , uh , tool kit for doing , uh r um , arbitrary graphical models for , uh , speech recognition . 
+B:  So  And Jeff , uh  the two Jeffs were 
+B:  Uh  
+B:  Oh , uh , do you know Geoff Zweig ? 
+B:  Oh . 
+B:  Uh , he  he , uh  he was here for a couple years 
+B:  and he , uh  got his PHD . 
+B:  He  
+B:  And he 's , uh , been at IBM for the last couple years . 
+B:  So . 
+B:  Uh , so he did  he did his PHD on dynamic Bayes - nets , 
+B:  uh , for  for speech recognition . 
+B:  He had some continuity built into the model , 
+B:  presumably to handle some , um , inertia in the  in the production system , 
+B:  and , 
+B:  um  
+B:  So . 
+B:  What was it using before ? 
+B:  S so , I 'm  I 'm sorry , 
+B:  there 's  there 's  there 's how many  how many inputs ? 
+B:  Twelve times nine inputs , 
+B:  and a hundred , uh , hidden . 
+B:  Two outputs . 
+B:  OK . 
+B:  So I guess about eleven thousand parameters , 
+B:  which  actually shouldn't be a problem , even in  in small phones . Yeah . 
+B:  And , it 's a l it 's a lot better . 
+B:  That 's great . 
+B:  What 's the latency ? 
+B:  I  I 'm confused . 
+B:  You started off with two - twenty and you ended up with one - seventy ? 
+B:  Two - seventy . 
+B:  Oh . 
+B:  So it 's two - twenty . 
+B:  I the is this  are these twenty - millisecond frames ? 
+B:  Is that why ? 
+B:  Is it after downsampling ? 
+B:  or  
+B:  a 
+B:  OK . 
+
+B:  One hundred milliseconds for smoothing . 
+B:  Uh , 
+B:  median . 
+B:  And then forty  
+B:  forty p 
+
+B:  Uh  
+B:  Uh , p Wait a minute . 
+B:  It 's forty  <laugh> forty for the  for the cleaning of the speech , 
+B:  forty for the I N  ANN , 
+B:  a hundred for the smoothing . 
+B:  Well , but at ten  , 
+B:  Twenty for delta . 
+B:  Delta at input to net ? 
+B:  And then ten milliseconds for  
+B:  ten milliseconds for LDA filter , 
+B:  and t and ten  another ten milliseconds you said for the frame ? 
+B:  OK . 
+B:  And then there 's delta besides that ? 
+B:  OK . 
+B:  Yeah . 
+B:  No , I mean , the  
+B:  after the noise part , the forty  the  the other hundred and eighty  
+B:  Well , I mean , 
+B:  Wait a minute . 
+B:  Some of this is , uh  is , uh  is in parallel , isn't it ? 
+B:  I mean , the LDA  
+B:  Oh , you have the LDA as part of the V D - uh , VAD ? 
+B:  Or  
+B:  Oh , it does ? 
+B:  Ah . 
+B:  So in that case there isn't too much in parallel . 
+B:  Uh  
+B:  Um , so the delta at the end is how much ? 
+B:  Fifty . 
+B:  Alright . 
+B:  So  
+B:  Yeah . 
+B:  So 
+B:  Yeah . 
+B:  So if you  if you put the delta before the , uh , ana on - line  If  
+B:  Yeah  
+B:  uh  then  then it could go in parallel . 
+B:  And then y then you don't have that additive  
+B:  OK . 
+B:  OK . 
+B:  And you ought to be able to shove tw , uh  sh uh  pull off twenty milliseconds from somewhere else to get it under two hundred , 
+B:  right ? 
+B:  I mean  
+B:  The hundred milla 
+B:  mill a hundred milliseconds for smoothing is sort of an arbitrary amount . 
+B:  It could be eighty 
+B:  and  and probably do @ @  
+B:  Well , we don't know . 
+B:  They 're still arguing about it . 
+B:  I mean , if it 's two  if  if it 's , uh  if it 's two - fifty , then we could keep the delta where it is if we shaved off twenty . 
+B:  If it 's two hundred , if we shaved off twenty , we could  we could , uh , meet it by moving the delta back . 
+B:  Uh , we don't , 
+B:  but it 's just  
+B:  I mean , the main thing is that since that we got burned last time , and  you know , by not worrying about it very much , we 're just staying conscious of it . 
+B:  And so , th 
+B:  I mean , if  if  if a week before we have to be done someone says , " Well , you have to have fifty milliseconds less than you have now " , it would be pretty frantic around here . 
+B:  So  
+B:  Uh  
+B:  He added a bit on , 
+B:  I guess , because before we were  we were  had  were able to have the noise , uh , stuff , uh , and the LVA be in parallel . 
+B:  And now he 's  he 's requiring it to be done first . 
+B:  Right . 
+B:  Well , so you say  
+B:  let 's say ten milliseconds  seconds for the LDA . 
+B:  Well , ten . 
+B:  And then forty for the other . 
+B:  Right , 
+B:  so you could start pulling back , 
+B:  but  
+B:  But I think you have  
+B:  I mean , you have twenty for delta computation 
+B:  which y now you 're sort of doing twice , 
+B:  right ? 
+B:  But yo w were you doing that before ? 
+B:  Right . 
+B:  So , what you have now is fort uh , forty for the  the noise , twenty for the delta , and ten for the LDA . 
+B:  That 's seventy milliseconds of stuff which was formerly in parallel , 
+B:  right ? 
+B:  So I think , 
+B:  you know , that 's  that 's the difference as far as the timing , 
+B:  right ? 
+B:  Um , 
+B:  and you could experiment with cutting various pieces of these back a bit , 
+B:  but  
+B:  I mean , we 're s we 're not  we 're not in terrible shape . 
+B:  Yeah . 
+B:  It 's  it 's not like it 's adding up to four hundred milliseconds or something . 
+B:  Well , it 's  I think it 's better than anything , uh , anybody got . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Uh 
+B:  With the f with the neural net . 
+B:  Yeah , 
+B:  and r and  
+B:  Yeah . 
+B:  Yeah . 
+B:  And we still don't have the neural net in . 
+B:  So  so it 's  
+B:  You know . 
+B:  So it 's  
+B:  We 're  we 're doing better . 
+B:  I mean , we 're getting better recognition . 
+B:  I mean , I 'm sure other people working on this are not sitting still either , 
+B:  but  
+B:  but  
+B:  but , uh  
+B:  Uh , 
+B:  I mean , the important thing is that we learn how to do this better , 
+B:  and , you know . 
+B:  So . 
+B:  Um , 
+B:  Yeah . 
+B:  So , our , 
+B:  um  
+B:  Yeah , you can see the kind of  kind of numbers that we 're having , say , on SpeechDat - Car 
+B:  which is a hard task , 
+B:  cuz it 's really , um  I think it 's just sort of  sort of reasonable numbers , starting to be . 
+B:  I mean , it 's still terri 
+B:  Yeah . 
+B:  Yeah . 
+B:  Probably half . 
+B:  Good ! 
+B:  Yeah . 
+B:  So you  you were get 
+B:  Probably . Yeah . 
+B:  So fi si fifty - three is what you were getting with the old VAD . 
+B:  And , uh  
+B:  and sixty - two with the  the , you know , quote , unquote , cheating VAD . 
+B:  And fifty - seven is what you got with the real VAD . 
+B:  That 's great . 
+B:  OK . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  No . 
+B:  Yeah , 
+B:  h he likes to use them both , 
+B:  cuz then it has one part that 's discriminative , 
+B:  one part that 's not . 
+B:  y 
+B:  You 're just using the full ninety features ? 
+B:  Y you have ninety features ? 
+B:  And from the other side it 's forty - five . 
+B:  So it 's  you have seventy - three features , 
+B:  and you 're just feeding them like that . 
+B:  There isn't any KLT or anything ? 
+B:  It 's a multiple of seven . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Well , yeah . 
+B:  But , I mean , just in general , adding information  
+B:  Suppose the information you added , well , was a really terrible feature and all it brought in was noise . 
+B:  Right ? 
+B:  So  so , um  
+B:  Or  or suppose it wasn't completely terrible , 
+B:  but it was completely equivalent to another one feature that you had , 
+B:  except it was noisier . 
+B:  Right ? 
+B:  In that case you wouldn't necessarily expect it to be better at all . 
+B:  Uh - huh . 
+B:  On the highly mismatched condition . 
+B:  So , " highly mismatched condition " means that in fact your training is a bad estimate of your test . 
+B:  So having  having , uh , a g a l a greater number of features , if they aren't maybe the right features that you use , certainly can e can easily , uh , make things worse . 
+B:  I mean , you 're right . 
+B:  If you have  if you have , uh , lots and lots of data , and you have  and your  your  your training is representative of your test , then getting more sources of information should just help . 
+B:  But  but it 's  It doesn't necessarily work that way . 
+B:  So I wonder , 
+B:  um , 
+B:  Well , what 's your  what 's your thought about what to do next with it ? 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Well , we might  uh , we might have to experiment with , uh better training sets . 
+B:  Again . 
+B:  But , 
+B:  I  The other thing is , I mean , before you found that was the best configuration , but you might have to retest those things now that we have different  The rest of it is different , 
+B:  right ? 
+B:  So , 
+B:  um , 
+B:  uh , 
+B:  For instance , what 's the effect of just putting the neural net on without the o other  other path ? 
+B:  I mean , you know what the straight features do . 
+B:  That gives you this . 
+B:  You know what it does in combination . 
+B:  You don't necessarily know what  
+B:  But , yeah , that 's obviously another thing to try , 
+B:  since things are  things are different . 
+B:  And I guess if the  
+B:  These are all  
+B:  so all of these seventy - three features are going into , um , the , uh  the HMM . 
+B:  And is  are  i i are  are any deltas being computed of tha of them ? 
+B:  n Not of the  
+B:  Are not . 
+B:  Could . 
+B:  i 
+B:  Yeah , 
+B:  but the other thing I was thinking was , 
+B:  um  
+B:  Uh , now I lost track of what I was thinking . 
+B:  But . 
+B:  Oh , 
+B:  I know what I was gonna say . 
+B:  No relation . 
+B:  The issue was that , um , this is supposed to be a standard that 's then gonna be fed to somebody 's recognizer somewhere 
+B:  which might be , you know , it  it might be a concern how many parameters are use  u used and so forth . 
+B:  And so , 
+B:  uh , 
+B:  they felt they wanted to set a limit . 
+B:  So they chose sixty . 
+B:  Some people wanted to use hundreds of parameters 
+B:  and  and that bothered some other people . 
+B:  u And so 
+B:  they just chose that . 
+B:  I  I  I think it 's kind of r arbitrary too . 
+B:  But  but that 's  that 's kind of what was chosen . 
+B:  I  I remembered what I was going to say . 
+B:  What I was going to say is that , um , maybe  <laugh> maybe with the noise removal , uh , these things are now more correlated . 
+B:  So you have two sets of things that are kind of uncorrelated , uh , within themselves , 
+B:  but they 're pretty correlated with one another . 
+B:  And , um , 
+B:  they 're being fed into these , uh , variants , only Gaussians and so forth , 
+B:  and  and , uh , 
+B:  so maybe it would be a better idea now than it was before to , uh , have , uh , one KLT over everything , 
+B:  to de - correlate it . 
+B:  Maybe . 
+B:  You know . 
+B:  Yeah . 
+B:  So we found this  this , uh  this Macrophone data , and so forth , that we were using for these other experiments , to be pretty good . 
+B:  So that 's  i after you explore these other alternatives , that might be another way to start looking , is  is just improving the training set . 
+B:  I mean , we were getting , uh , lots better recognition using that , than  
+B:  Of course , you do have the problem that , um , u i  we are not able to increase the number of Gaussians , uh , or anything to , uh , uh , to match anything . 
+B:  So we 're only improving the training of our feature set , 
+B:  but that 's still probably something . 
+B:  Yeah , 
+B:  that 's the only place that we can train . 
+B:  We can't train the other stuff with anything other than the standard amount , 
+B:  so . 
+B:  Um , 
+B:  um  
+B:  Yeah . 
+B:  How big is the net , by the way ? 
+B:  And again , you did experiments back then where you made it bigger 
+B:  and it  and that was  that was sort of the threshold point . 
+B:  Much less than that , it was worse , 
+B:  and 
+B:  much more than that , it wasn't much better . 
+B:  Hmm . 
+B:  Oh , 
+B:  so  Right . 
+B:  So the training  the  the neural net is being trained with noise compensated stuff . 
+B:  Which makes sense , 
+B:  but , uh , you 're saying  Yeah , the noisier ones are still going to be , even after our noise compensation , are still gonna be pretty noisy . 
+B:  Right . 
+B:  Yes . 
+B:  Right . 
+B:  Right . 
+B:  Right , 
+B:  but the SpeechDat - Car data that you 're seeing is also reduced in noise 
+B:  by the noise compensation . 
+B:  So . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah , I mean , it depends on whether you believe that the noise compensation is equally reducing the noise on the test set and the training set . 
+B:  Uh  
+B:  Right ? 
+B:  I mean , you 're saying there 's a mismatch in noise that wasn't there before , 
+B:  but if they were both the same before , then if they were both reduic reduced equally , then , there would not be a mismatch . 
+B:  So , 
+B:  I mean , this may be  
+B:  Heaven forbid , this noise compensation process may be imperfect , 
+B:  but . 
+B:  Uh , 
+B:  so maybe it 's treating some things differently . 
+B:  I mean , one of the things about  
+B:  I mean , the Macrophone data , um , I think , you know , it was recorded over many different telephones . 
+B:  And , um , 
+B:  so , there 's lots of different kinds of acoustic conditions . 
+B:  I mean , it 's not artificially added noise or anything . 
+B:  So it 's not the same . 
+B:  I don't think there 's anybody recording over a car from a car , 
+B:  but  I think it 's  it 's varied enough that if  if doing this adjustments , uh , and playing around with it doesn't , uh , make it better , the most  uh , it seems like the most obvious thing to do is to improve the training set . 
+B:  Um  
+B:  I mean , what we were  
+B:  uh  the condition  It  it gave us an enormous amount of improvement in what we were doing with Meeting Recorder digits , 
+B:  even though there , again , these m Macrophone digits were very , very different from , uh , what we were going on here . 
+B:  I mean , we weren't talking over a telephone here . 
+B:  But it was just  I think just having a  a nice variation in acoustic conditions was just a good thing . 
+B:  Number of deletions . 
+B:  Yeah . 
+B:  Me either . 
+B:  Did they increase the number of deletions even for the cases that got better ? 
+B:  Say , for the  I mean , it  
+B:  So it 's only the highly mismatched ? 
+B:  And it  Remind me again , 
+B:  the " highly mismatched " means that the  
+B:  Uh , sorry ? 
+B:  Close mike training  
+B:  Right . 
+B:  So  
+B:  Well , maybe the noise subtraction is subtracting off speech . 
+B:  Wh 
+B:  Yeah , right . 
+B:  Uh , that 's right , that 's right . 
+B:  Um  
+B:  But , yeah , 
+B:  actually  <mike noise> the TIMIT noises  are sort of a range of noises 
+B:  and they 're not so much the stationary driving kind of noises , right ? 
+B:  It 's  it 's pretty different . 
+B:  Isn't it ? 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Well , I  I think that if you run it  
+B:  Actually , you  maybe you remember this . 
+B:  When you  in  in the old experiments when you ran with the neural net only , and didn't have this side path , um , uh , with the  the pure features as well , did it make things better to have the neural net ? 
+B:  Was it about the same ? 
+B:  Uh , w i 
+B:  Than  ? 
+B:  So , 
+B:  until you put the second path in with the pure features , the neural net wasn't helping at all . 
+B:  Well , that 's interesting . 
+B:  Yeah . 
+B:  Yeah . 
+B:  They were doing similar enough things . 
+B:  Well , I still think it would be k sort of interesting to see what would happen if you just had the neural net without the side thing . 
+B:  And  and the thing I  I have in mind is , uh , maybe you 'll see that the results are not just a little bit worse . 
+B:  Maybe that they 're a lot worse . 
+B:  You know ? 
+B:  And , um  
+B:  But if on the ha other hand , uh , it 's , say , somewhere in between what you 're seeing now and  and  and , uh , what you 'd have with just the pure features , then maybe there is some problem of a  of a , uh , combination of these things , or correlation between them somehow . 
+B:  If it really is that the net is hurting you at the moment , then I think the issue is to focus on  on , uh , improving the  the net . 
+B:  Um . 
+B:  So what 's the overall effe 
+B:  I mean , you haven't done all the experiments 
+B:  but you said it was i somewhat better , say , five percent better , for the first two conditions , and fifteen percent worse for the other one ? 
+B:  But it 's  but of course that one 's weighted lower , 
+B:  so I wonder what the net effect is . 
+B:  Right . 
+B:  Right . 
+B:  So the  so the worst it could be , if the others were exactly the same , is four , 
+B:  and  and , uh , in fact since the others are somewhat better  
+B:  Uh . 
+B:  Yeah , it should be pretty close to cancelled out . 
+B:  Yeah . 
+B:  The a the argument i is kind of i in  
+B:  and it 's not like we really know , 
+B:  but the argument anyway is that , um , uh , we always have the prob 
+B:  I mean , discriminative things are good . 
+B:  LDA , neural nets , they 're good . 
+B:  Uh , they 're good because you  you  you learn to distinguish between these categories that you want to be good at distinguishing between . 
+B:  And PCA doesn't do that . 
+B:  It  PAC - PCA  low - order PCA throws away pieces that are uh , maybe not  not gonna be helpful just because they 're small , basically . 
+B:  But , uh , the problem is , training sets aren't perfect and testing sets are different . 
+B:  So you f you  you face the potential problem with discriminative stuff , be it LDA or neural nets , that you are training to discriminate between categories in one space 
+B:  but what you 're really gonna be g getting is  is something else . 
+B:  And so , uh , Stephane 's idea was , uh , let 's feed , uh , both this discriminatively trained thing and something that 's not . 
+B:  So you have a good set of features that everybody 's worked really hard to make , 
+B:  and then , uh , you  you discriminately train it , 
+B:  but you also take the path that  that doesn't have that , 
+B:  and putting those in together . 
+B:  And that  that seem 
+B:  So it 's kind of like a combination of the  uh , what , uh , Dan has been calling , you know , a feature  uh , you know , a feature combination versus posterior combination or something . 
+B:  It 's  it 's , you know , you have the posterior combination 
+B:  but then you get the features from that and use them as a feature combination with these  these other things . 
+B:  And that seemed , at least in the last one , as he was just saying , he  he  when he only did discriminative stuff , i it actually was  was  it didn't help at all in this particular case . 
+B:  There was enough of a difference , I guess , between the testing and training . 
+B:  But by having them both there  
+B:  The fact is some of the time , the discriminative stuff is gonna help you . 
+B:  And some of the time it 's going to hurt you , 
+B:  and by combining two information sources if , you know  if  if  
+B:  That i i 
+B:  I think that 's counter to that idea . 
+B:  Now , again , it 's  we 're just trying these different things . 
+B:  We don't really know what 's gonna work best . 
+B:  But if that 's the hypothesis , at least it would be counter to that hypothesis to do that . 
+B:  Um , 
+B:  and in principle you would think that the neural net would do better at the discriminant part than LDA . 
+B:  Though , maybe not . 
+B:  Right . 
+B:  Well , I think that 's a good idea . 
+B:  Did  did you do that 
+B:  or  tha that 's a  
+B:  Yeah . 
+B:  Yeah . 
+B:  No , well , that 's a good idea . 
+B:  I  I  
+B:  i Yeah . 
+B:  Oh , no 
+B:  it 's a g 
+B:  No , no , 
+B:  but it might not  not even be true . 
+B:  I mean , it 's  it 's  it 's  it 's  it 's a great idea . 
+B:  I mean , one of the things that always disturbed me , uh , in the  the resurgence of neural nets that happened in the eighties was that , um , a lot of people  Because neural nets were pretty easy to  to use  a lot of people were just using them for all sorts of things without , uh , looking at all into the linear , uh  uh , versions of them . 
+B:  And , uh , people were doing recurrent nets but not looking at IIR filters , 
+B:  and  You know , I mean , uh , 
+B:  so I think , yeah , it 's definitely a good idea to try it . 
+B:  Well , they 've been putting them in their systems off and on for ten years , 
+B:  but  but  but , uh , 
+B:  And now they all have that . 
+B:  I see . 
+B:  Yeah . 
+B:  I mean , part of why  
+B:  I  I think part of why you were getting into the KLT  Y you were describing to me at one point that you wanted to see if , uh , you know , getting good orthogonal features was  and combining the  the different temporal ranges  was the key thing that was happening or whether it was this discriminant thing , right ? 
+B:  So you were just trying  
+B:  I think you r 
+B:  I mean , this is  it doesn't have the LDA aspect 
+B:  but th as far as the orthogonalizing transformation , you were trying that at one point , right ? 
+B:  I think you were . 
+B:  Does something . 
+B:  It doesn't work as well . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  But  
+B:  i d I 'm sorry , 
+B:  does it still have the median  filter stuff ? 
+B:  So it still has most of the delay , 
+B:  it just doesn't  
+B:  Well , w i 
+B:  Oh , plus the delta , 
+B:  right . 
+B:  OK . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Now this  this  this , uh , " before and after clean " , it sounds like you think that 's a good feature . 
+B:  That  that , it  you th think that the , uh  the  i it appears to be a good feature , right ? 
+B:  What about using it in the neural net ? 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  So if we  if we can live with the latency or cut the latencies elsewhere , then  then that would be a , uh , good thing . 
+B:  Um , anybody  has anybody  you guys or  or Naren , uh , somebody , tried the , uh , um , second th second stream thing ? 
+B:  Uh . 
+B:  Uh - huh . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Well , what I think , you know , would be more what you 'd want to do is  is  is , uh , put it into another neural net . 
+B:  Right ? 
+B:  And then  
+B:  But , 
+B:  yeah , we 're  we 're not quite there yet . 
+B:  So we have to <laugh> figure out the neural nets , I guess . 
+B:  Wh - uh , the  the VAD what ? 
+B:  Uh - huh . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  You could feed it into the neural net . 
+B:  The other thing  you could do is just , um , p modify the , uh , output probabilities of the  of the , uh , uh , um , neural net , tandem neural net ,  based on the fact that you have a silence probability . 
+B:  Right ? 
+B:  So you have an independent estimator of what the silence probability is , 
+B:  and you could multiply the two things , and renormalize . 
+B:  Uh , I mean , you 'd have to do the nonlinearity part and deal with that . 
+B:  Uh , I mean , go backwards from what the nonlinearity would , you know  would be . 
+B:  But  but , uh  
+B:  Well , u Not sure . 
+B:  I mean , 
+B:  let 's put it this way . 
+B:  I mean , y you  you have this complicated system with thousands and thousand parameters 
+B:  and you can tell it , uh , " Learn this thing . " 
+B:  Or you can say , " It 's silence ! 
+B:  Go away ! " 
+B:  I mean , 
+B:  I mean , i 
+B:  Doesn't  ? 
+B:  I think  I think the second one sounds a lot more direct . 
+B:  Uh . 
+B:  Well , uh , 
+B:  Yeah , 
+B:  I mean , y you 'd have to actually run it continuously , 
+B:  but it 's  @ @  
+B:  Well , no , 
+B:  you want to train on  on the nonspeech also , 
+B:  because that 's part of what you 're learning in it , 
+B:  to  to  to generate , that it 's  it has to distinguish between . 
+B:  Well , yeah . 
+B:  But this other thing isn't perfect . 
+B:  So that you bring in some information from the net itself . 
+B:  Yeah . 
+B:  Now the only thing that  that bothers me about all this is that I  I  I  The  the fact  
+B:  i i It 's sort of bothersome that you 're getting more deletions . 
+B:  Is too high . 
+B:  Yeah . 
+B:  So maybe  
+B:  So  
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah , for instance . 
+B:  But I  bu 
+B:  Yeah . 
+B:  Now the only problem is you don't want to ta I guess wait for the output of the VAD before you can put something into the other system , 
+B:  cuz that 'll shoot up the latency a lot , 
+B:  right ? 
+B:  Am I missing something here ? 
+B:  Yeah . 
+B:  So that 's maybe a problem with what I was just saying . 
+B:  But  
+B:  but  I I guess  
+B:  No . 
+B:  Yeah . 
+B:  It 's kind of done in  
+B:  I mean , some of the things are , not in parallel , 
+B:  but certainly , it would be in parallel with the  with a tandem net . 
+B:  In time . 
+B:  So maybe , if that doesn't work , 
+B:  um  
+B:  But it would be interesting to see if that was the problem , anyway . 
+B:  And  and  and then I guess another alternative would be to take the feature that you 're feeding into the VAD , and feeding it into the other one as well . 
+B:  And then maybe it would just learn  learn it better . 
+B:  Um  
+B:  But that 's  
+B:  Yeah , that 's an interesting thing to try to see , if what 's going on is that in the highly mismatched condition , it 's , um , causing deletions by having this silence probability up  up too high , 
+B:  at some point where the VAD is saying it 's actually speech . 
+B:  Which is probably true . 
+B:  Cuz  
+B:  Well , the V A 
+B:  if the VAD said  
+B:  since the VAD is  is  is right a lot , 
+B:  uh  
+B:  Hmm . 
+B:  Anyway . 
+B:  Might be . 
+B:  Yeah . 
+B:  Well , we just started working with it . 
+B:  But these are  these are some good ideas I think . 
+B:  Problem is , if you are going to run this on different m test sets , including large vocabulary , 
+B:  um , 
+B:  I think  
+B:  Yeah . 
+B:  Yeah . 
+B:  Well , maybe . 
+B:  But I d I d it  it  i it 's all worth looking at , 
+B:  but it sounds to me like , uh , looking at the relationship between this and the  speech noise stuff is  is  is probably a key thing . 
+B:  That and the correlation between stuff . 
+B:  Well , we don't know what 's it 's gonna be the TI - digits yet . 
+B:  He hasn't got the results back yet . 
+B:  Sixty - two . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Hmm . 
+B:  Well  
+B:  Um  
+B:  So I won't be here for  
+B:  Uh , I 'm leaving next Wednesday . 
+B:  May or may not be in in the morning . 
+B:  I leave in the afternoon . 
+B:  Um , 
+B:  so I  
+B:  Yeah . 
+B:  Oh , well . 
+B:  I 'm talking about next week . 
+B:  I 'm leaving  leaving next Wednesday . 
+B:  This afternoon  uh  
+B:  Oh , right , 
+B:  for the Meeting meeting ? 
+B:  Yeah , that 's just cuz of something on campus . 
+B:  Yeah . 
+B:  But , um , 
+B:  yeah , 
+B:  so next week I won't , 
+B:  and the week after I won't , 
+B:  cuz I 'll be in Finland . 
+B:  And the week after that I won't . 
+B:  By that time you 'll be   Uh , you 'll both be gone  from here . 
+B:  So there 'll be no  definitely no meeting on  on September sixth . 
+B:  Uh , 
+B:  and  
+B:  Uh , that 's during Eurospeech . 
+B:  So , uh , Sunil will be in Oregon . 
+B:  Uh , Stephane and I will be in Denmark . 
+B:  Uh  
+B:  Right ? 
+B:  So it 'll be a few weeks , really , before we have a meeting of the same cast of characters . 
+B:  Um , 
+B:  but , uh  
+B:  I guess , just  
+B:  I mean , you guys should probably meet . 
+B:  And maybe Barry  Barry will be around . 
+B:  And  
+B:  and then uh , uh , we 'll start up again with Dave and  Dave and Barry and Stephane and us on the , uh , twentieth . 
+B:  No . 
+B:  Thirteenth ? 
+B:  About a month ? 
+B:  I 'm gone for two and a half weeks starting  starting next Wed - late next Wednesday . 
+B:  Uh , I won't  
+B:  it 's probably four because of  
+B:  is it three ? 
+B:  Let 's see , 
+B:  twenty - third , 
+B:  thirtieth , 
+B:  sixth . 
+B:  That 's right , 
+B:  next three . 
+B:  And the  the third one won't  probably won't be a meeting , 
+B:  cuz  cuz , uh , Su - Sunil , Stephane , and I will all not be here . 
+B:  Um  
+B:  Mmm .  So it 's just , uh , the next two where there will be  there , you know , may as well be meetings , 
+B:  but I just won't be at them . 
+B:  And then starting up on the thirteenth , <keyboard clicking in background> uh , we 'll have meetings again 
+B:  but we 'll have to do without Sunil here somehow . 
+B:  So . 
+B:  Yeah . 
+B:  Yeah . 
+B:  So . 
+B:  Cool . 
+B:  Yeah , 
+B:  it was supposed to be November fifteenth . 
+B:  Has anybody heard anything different ? 
+B:  Yep . 
+B:  But , no , this is good progress . 
+B:  So . 
+B:  Uh  
+B:  OK . 
+B:  Guess we 're done . 
+B:  Digits ? 
+B:  Yep . 
+B:  It 's a wrap . 

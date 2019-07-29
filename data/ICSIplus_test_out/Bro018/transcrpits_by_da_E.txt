@@ -1,0 +1,290 @@
+E:  That 'll work . 
+E:  Mm - hmm . 
+E:  The  the mel cepstrum ? 
+E:  Oh the  
+E:  OK , 
+E:  the Aurora system . 
+E:  OK . 
+E:  Hmm . 
+E:  What are the R 's ? 
+E:  I 'm sorry I missed it . 
+E:  Oh . 
+E:  So you 're saying take the features that go into the voiced - unvoiced - silence net and feed those into the other one , as additional inputs , rather than having a separate  
+E:  Mmm . 
+E:  Hmm . 
+E:  So  so don't uh  don't do the division , 
+E:  but let the net have everything . 
+E:  Mm - hmm . 
+E:  How long does it take , Carmen , to train up one of these nets ? 
+E:  Yeah . 
+E:  Hmm . 
+E:  The targets for the neural net , uh , they come from forced alignments ? 
+E:  Ah ! 
+E:  OK . 
+E:  Really ? 
+E:  For what  
+E:  For Aurora ? 
+E:  Oh ! 
+E:  Hmm . 
+E:  When are they planning  When would they do that ? 
+E:  Hmm . 
+E:  They have a constant in there , you said ? 
+E:  Is that some kind of base conversion , 
+E:  or  ? 
+E:  Experimental results . 
+E:  So they 're taking the number inside the log and raising it to sixteen over log base two . 
+E:  Does it have to do with those sixty - fours , 
+E:  or  ? 
+
+E:  Yeah , I was just gonna say maybe it has something to do with hardware , 
+E:  something they were doing . 
+E:  Well it just , yeah , puts it in the right range , 
+E:  or  
+E:  Do  have  Have people sort of stopped going to ICASSP in recent years ? 
+E:  Mm - hmm . 
+
+E:  Mm - hmm . 
+
+E:  Cool . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  It 's probably a good place to start . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Hmm . 
+E:  Yeah , you could even then  to  to get an idea about how different it is , you could maybe take some subset and you know , go through a few sentences , mark them by hand 
+E:  and then see how different it is from you know , the canonical ones , 
+E:  just to get an idea  a rough idea of h if it really even makes a difference . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Right . 
+E:  Right . 
+E:  Mm - hmm . 
+E:  You could define other events as being sequences of these events too . 
+E:  Unless you did like a second pass over it or something after you 've got your  
+E:  Yeah . 
+E:  Yeah , yeah . 
+E:  Yeah . 
+E:  I 'm adding complexity . 
+E:  Yeah . 
+E:  So what 's the advantage of support vector machines ? 
+E:  What  
+E:  Hmm . 
+E:  Hmm . 
+E:  Does there some kind of a distance metric that they use 
+E:  or how do they  for cla what do they do for classification ? 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Oh . 
+E:  So why save the examples ? 
+E:  Why not just save what the boundary itself is ? 
+E:  Mmm . 
+E:  Sort of an equivalent . 
+E:  Mm - hmm . 
+E:  Oh . 
+E:  Mm - hmm . 
+E:  I see . 
+E:  So rather than doing nearest neighbor where you compare to every single one , you just pick a few critical ones , 
+E:  and  
+E:  Hmm . 
+E:  Mm - hmm . 
+E:  Hmm . 
+E:  And you get that for each class , you get a zero or a one . 
+E:  Did the  did they get good results with that ? 
+E:  Hmm . 
+E:  Hmm . 
+E:  Mm - hmm . 
+E:  Hmm . 
+E:  Did you find any more mistakes in their tables ? 
+E:  So in your  in  in the thing that you 're doing , uh you have a vector of ones and zeros for each phone ? 
+E:  Yeah . 
+E:  Is that what you 're  
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  And so when you do your 
+E:  wh I 'm  what is the task for the class project ? 
+E:  To come up with the phones ? 
+E:  or to come up with these vectors to see how closely they match the phones , 
+E:  or  ? 
+E:  Mm - hmm . 
+E:  I think so . 
+E:  I guess  I mean , uh  I 'm not sure what you  what you 're  what you get out of your system . 
+E:  Do you get out a uh  a vector of these ones and zeros and then try to find the closest matching phoneme to that vector , 
+E:  or  ? 
+E:  Uh - huh . 
+E:  I see . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mmm . 
+E:  So they had one recurrent net for each particular feature ? 
+E:  I see . 
+E:  I wo did they compare that  I mean , what if you just did phone recognition and did the reverse lookup . 
+E:  So you recognize a phone and which ever phone was recognized , you spit out it 's vector of ones and zeros . 
+E:  I mean uh  
+E:  Yeah . 
+E:  No . 
+E:  Insertion penalty ? 
+E:  Uh . 
+E:  Well what I 've been  
+E:  " Changes to the data " , 
+E:  I 'm not sure I  
+E:  Yeah . 
+E:  Right . 
+E:  Mm - hmm . 
+E:  Uh right , 
+E:  no I haven't had a chance to do that . 
+E:  What I 've been doing is <outbreath> uh <outbreath> trying to figure out  
+E:  it just seems to me like there 's a um  
+E:  well it seems like there 's a bug , 
+E:  because the difference in performance is  it 's not gigantic 
+E:  but it 's big enough that it  it seems wrong . 
+E:  and  
+E:  Yeah , but I don't  I 'm not  
+E:  Yeah , 
+E:  I guess I don't think that the normalization difference is gonna account for everything . 
+E:  So what I was working on is um just going through and checking the headers of the wavefiles , 
+E:  to see if maybe there was a um  a certain type of compression or something that was done that my script wasn't catching . 
+E:  So that for some subset of the training data , uh the  the  the features I was computing were junk . 
+E:  Which would you know cause it to perform OK , 
+E:  but uh , you know , the  the models would be all messed up . 
+E:  So I was going through and just double - checking that kind of think first , to see if there was just some kind of obvious bug in the way that I was computing the features . 
+E:  Looking at all the sampling rates to make sure all the sampling rates were what  eight K , what I was assuming they were , 
+E:  um  
+E:  Yeah . 
+E:  So I was doing that first , before I did these other things , just to make sure there wasn't something  
+E:  Yeah , 
+E:  and I think , hhh   I 'm trying to remember but I think I recall that Andreas was saying that he was gonna run sort of the reverse experiment . 
+E:  Uh which is to try to emulate the normalization that we did 
+E:  but with the mel cepstral features . 
+E:  Sort of , you know , back up from the system that he had . 
+E:  I thought he said he was gonna  
+E:  I have to look back through my  my email from him . 
+E:  Yeah , 
+E:  he 's gone now . 
+E:  Um . 
+E:  But  
+E:  Right . 
+E:  Yeah see one thing that 's a little bit um  
+E:  I was looking  I 've been studying and going through the logs for the system that um Andreas created . 
+E:  And um his uh  the way that the  <laugh>  S R I system looks like it works is that it reads the wavefiles directly , 
+E:  uh and does all of the cepstral computation stuff on the fly . 
+E:  And , so there 's no place where these  where the cepstral files are stored , anywhere that I can go look at and compare to the PLP ones , 
+E:  so whereas with our features , he 's actually storing the cepstrum on disk , and he reads those in . 
+E:  But it looked like he had to give it  uh 
+E:  even though the cepstrum is already computed , he has to give it uh a front - end parameter file . 
+E:  Which talks about the kind of uh com computation that his mel cepstrum thing does , 
+E:  so i I  I don't know if that  it probably doesn't mess it up , 
+E:  it probably just ignores it if it determines that it 's already in the right format or something 
+E:  but  the  the  the two processes that happen are a little different . 
+E:  So . 
+E:  Yeah . 
+E:  Yeah . 
+E:  Yeah 
+E:  no and I didn't have a chance to do that . 
+E:  Yeah . 
+E:  Yeah . I 've been um ,  I 've been working with um Jeremy on his project 
+E:  and then I 've been trying to track down this bug in uh the ICSI front - end features . 
+E:  So one thing that I did notice , yesterday I was studying the um  the uh RASTA code 
+E:  and it looks like we don't have any way to um control the frequency range that we use in our analysis . 
+E:  We basically  it looks to me like we do the FFT , um and then we just take all the bins 
+E:  and we use everything . 
+E:  We don't have any set of parameters where we can say you know , " only process from you know a hundred and ten hertz to thirty - seven - fifty " . 
+E:  At least I couldn't see any kind of control for that . 
+E:  The  the filters ? 
+E:  Which filters ? 
+E:  Mm - hmm . 
+E:  When you get the mel  When you go to the mel scale . 
+E:  I saw something about uh  that looked like it was doing something like that , but I didn't quite understand it . 
+E:  So maybe  
+E:  Uh - huh . 
+E:  Mm - hmm . 
+E:  But  so the  but that 's a fixed uh thing ? 
+E:  There 's nothing that lets you  
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Use this analysis bandwidth or something . 
+E:  Yeah , I went through the Feacalc code and then looked at you know just calling the RASTA libs  and thing like that . 
+E:  And I didn't  I couldn't see any wh place where that kind of thing was done . 
+E:  But um I didn't quite understand everything that I saw , 
+E:  so  
+E:  Mm - hmm . 
+E:  Right . 
+E:  Yeah . 
+E:  Another thing I was thinking about was um is there a  
+E:  I was wondering if there 's maybe um <mouth> certain settings of the parameters when you compute PLP which would basically cause it to output mel cepstrum . 
+E:  So that , in effect , what I could do is use our code 
+E:  but produce mel cepstrum 
+E:  and compare that directly to  
+E:  Hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  There 's a cubic root that happens , 
+E:  right ? 
+E:  Hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Hmm . 
+E:  Yeah just  it just seems like this kind of behavior could be caused by you know s some of the training data being messed up . 
+E:  You know , you 're sort of getting most of the way there , but there 's a  
+E:  So I started going through and looking  
+E:  One of the things that I did notice was that the um log likelihoods coming out of the log recognizer from the PLP data were much lower , much smaller , 
+E:  than for the mel cepstral stuff , and that the average amount of pruning that was happening was therefore a little bit higher for the PLP features . 
+E:  So , since he used the same exact pruning thresholds for both , I was wondering if it could be that we 're getting more pruning . 
+E:  Yeah . 
+E:  Right . 
+E:  Right . 
+E:  Yeah , 
+E:  so  
+E:  That 's  
+E:  Right . 
+E:  Well , what I was gonna do is I was gonna take um a couple of the utterances that he had run through , 
+E:  then run them through again 
+E:  but modify the pruning threshold and see if it you know , affects the score . 
+E:  So . 
+E:  Mm - hmm . 
+E:  Right . 
+E:  Mm - hmm . 
+E:  Right . I mean , yeah , generally in these things you  you turn back pruning really far , 
+E:  so I  I didn't think it would be that big a deal 
+E:  because I was figuring well you have it turned back so far that you know it  
+E:  Yeah . 
+E:  Yeah . 
+E:  Yeah . 
+E:  And the uh the  the run time of the recognizer on the PLP features is longer 
+E:  which sort of implies that the networks are bushier , 
+E:  you know , there 's more things it 's considering 
+E:  which goes along with the fact that the matches aren't as good . 
+E:  So uh , you know , it could be that we 're just pruning too much . 
+E:  So . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . Right . 
+E:  Right . 
+E:  So . 
+E:  There 's lots of little differences . 
+E:  So . 
+E:  Uh . 
+E:  Trying to track it down . 
+E:  Yeah 
+E:  Mm - hmm . 
+E:  On  on the real data , not with artificial reverb ? 
+E:  Uh - huh . 
+E:  Mm - hmm , 
+E:  or it wa a it was around one . 
+E:  Yeah . 
+E:  It 's trained on a lot of different things . 
+E:  Um . 
+E:  It 's trained on uh a lot of Switchboard , Call Home , 
+E:  um a bunch of different sources , 
+E:  some digits , 
+E:  there 's some digits training in there . 
+E:  And it wasn't trained on this task either . 
+E:  Uh , yeah . 
+E:  Yep . 
+E:  Yeah . 
+E:  That 'll work . 

@@ -1,0 +1,143 @@
+A:  Yeah . 
+A:  I I 'm sorry ? 
+A:  I didn't 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Oh yeah . 
+A:  M yeah . 
+A:  Yeah . 
+A:  Y Actually , uh , um , for the Danish , there 's still some kind of mystery 
+A:  because , um , um , when we use the straight features , we are not able to get these nice number 
+A:  with the ICSI OGI one , I mean . 
+A:  We don't have this ninety - three seventy - eight , we have 
+A:  eight 
+A:  yeah . 
+A:  Uh , so , uh , that 's probably something wrong with the features that we get from OGI . 
+A:  Uh , and Sunil is working on  on trying to  to check everything . 
+A:  Hmm ? 
+A:  Yeah . 
+A:  Uh , Sunday . 
+A:  Yeah . 
+A:  Mmm . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah , 
+A:  actually , something that 's close to cepstral mean subtraction . 
+A:  But , uh , the way the mean is adapted  um , it 's signal dependent . 
+A:  I 'm  I 'm , uh 
+A:  So , basically , the mean is adapted during speech and not during silence . 
+A:  But it 's very close to  to cepstral mean subtraction . 
+A:  Yeah , 
+A:  yeah . 
+A:  Yeah , yeah . 
+A:  So 
+A:  Yeah , 
+A:  this Tuesday , 
+A:  yeah . 
+A:  Yeah , 
+A:  probably , 
+A:  well 
+A:  Yeah , well 
+A:  Yeah , 
+A:  it 's very short interval . 
+A:  Yeah , so there are two more columns in the sheets , 
+A:  two . Yeah , 
+A:  it 's the same sheets , 
+A:  yeah . 
+A:  Yeah . 
+A:  So , Hynek will try to push for trying to combine , uh , different things ? 
+A:  Or 
+A:  Hmm ? 
+A:  Uh , yeah . 
+A:  Yeah . 
+A:  They are working on this already ? 
+A:  Because  yeah , Su - Sunil told me that he was trying already to put some kind of , uh , filtering in the <outbreath>  France Telecom . 
+A:  Yeah . 
+A:  Uh , well 
+A:  Hmm 
+A:  Well , first , uh , to really have a look at  at the speech  <inbreath> from these databases 
+A:  because , well , we tried several thing , 
+A:  but we did not really look <inbreath> at what what 's happening , and <inbreath> where is the noise , and 
+A:  Eh 
+A:  Yeah . 
+A:  Yeah , 
+A:  yeah . 
+A:  Actually , there is one thing that  well  Um , generally we  we think that <inbreath> most of the errors are within phoneme classes , 
+A:  and 
+A:  so I think it could be interesting to  to see if it  I don't think it 's still true when we add noise , 
+A:  and <inbreath> so we have  I  I guess the confusion ma the confusion matrices are very different when  when we have noise , and when it 's clean speech . 
+A:  And probably , there is much more  between classes errors for noisy speech . 
+A:  And <inbreath> so , um 
+A:  Yeah , so perhaps we could have a  a large gain , eh , just by looking at improving the , uh , recognition , not of phonemes , but of phoneme classes , simply . 
+A:  And <inbreath> which is a s a s a simpler problem , perhaps , but  which is perhaps important for noisy speech . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  No . 
+A:  Sure . 
+A:  Mm - hmm . 
+A:  No , 
+A:  actually  actually the well - matched condition  is  still quite di still quite difficult . 
+A:  I mean , it 's  they have all these data from the close mike and from the distant mike , <inbreath> from different driving condition , open window , closed window , 
+A:  and they take all of this 
+A:  and they take seventy percent , I think , for training and thirty percent for testing . 
+A:  So , training is done <inbreath> on different conditions and different microphones , 
+A:  and testing also is done  on different microphone and conditions . 
+A:  So , probably if we only take the close microphones , <inbreath> I guess the results should be much much better than this . 
+A:  Mmm . 
+A:  Uh 
+A:  Yeah , 
+A:  so  there is this , the mismatched is , um  the same kind of thing , 
+A:  but  the driving conditions , I mean the speed and the kind of road , is different for training and testing , 
+A:  is that right ? 
+A:  And the last condition is close microphone for training and distant for testing . 
+A:  Yeah . 
+A:  So  <inbreath> s so  
+A:  Yeah . 
+A:  Mmm . 
+A:  Actually , yeah , it 's very close to clean speech training because , well , because the close microphone <inbreath> and noisy speech testing , 
+A:  yeah . 
+A:  Mmm . 
+A:  Yeah . 
+A:  But the  I mean , the  th th 
+A:  it doesn't work . 
+A:  It  
+A:  Mmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Yeah , 
+A:  Hmm . 
+A:  Yeah , 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah , 
+A:  so d 
+A:  well 
+A:  Actually , this is  tha that 's why we  
+A:  well , it 's a different kind of data . 
+A:  We 're not  we 're not used to work with this kind of data . 
+A:  That 's why we should have a loo more closer look at what 's going on . 
+A:  Um 
+A:  Yeah . 
+A:  So this would be the first thing , 
+A:  and then , of course , try to  well , <inbreath> kind of debug what was wrong , eh , when we do Aurora test on the MSG  particularly , and on the multi - band . 
+A:  Uh 
+A:  Yeah , but 
+A:  Again , it 's the kind of  of thing that , uh , we were thin thinking  thinking that it would work , but it didn't work . 
+A:  And , eh , so there is kind of  of  not a bug , but something wrong in what we are doing , perhaps . 
+A:  Uh , something wrong , perhaps in the  just in the  the fact that the labels are  
+A:  well 
+A:  What worked best is the hand - labeled data . 
+A:  Um 
+A:  Uh , so , yeah . 
+A:  I don't know if we can get some hand - labeled data from other languages . 
+A:  It 's not so easy to find . 
+A:  But  that would be something interesting t to  to see . 
+A:  Yeah . 
+A:  You on Friday or S on Saturday 
+A:  or  ? 
+A:  S oh yeah , Sunday , yeah . 
+A:  I 'll be back on Tuesday . 
+A:  Yeah , Amsterdam . 
+A:  Yeah . 
+A:  Yeah . 

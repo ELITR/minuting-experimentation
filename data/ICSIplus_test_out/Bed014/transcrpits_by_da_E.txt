@@ -1,0 +1,271 @@
+E:  Why don't  
+E:  What does your thing say on the back ? 
+E:  No . 
+E:  Look at the back . 
+E:  Well , he  he was very affirmative in his way of saying he will be here at four . 
+E:  But  you know , that was before he knew about that George lecture probably . 
+E:  Cool . 
+E:  Sure . 
+E:  Um . 
+E:  Well , I sort of had informal talks with most of you . 
+E:  So , Eva just reported she 's really happy about the  CBT 's being in the same order in the XML 
+E:  as in the um  be Java declaration format 
+E:  so you don't have to do too much in the style sheet transversion . 
+E:  The  uh , Java  the embedded Bayes  wants to take input  uh , uh , a Bayes - net  in  in some Java notation 
+E:  and Eva is using the Xalan style sheet processor to convert the XML that 's output by the Java Bayes for the  into the , uh , E Bayes input . 
+E:  Hmm . 
+E:  And , um , well  pretty mu pretty much on t on the top of my list , I would have asked Keith how the " where is X ? "  hand parse is standing . 
+E:  Um .  But we 'll skip that . 
+E:  Uh , there 's good news from Johno . 
+E:  The generation templates are done . 
+E:  Yes . 
+E:  We  w um  
+E:  OK , so  natural language generation  produces not a  just a surface string that is fed into a text - to - speech but , a  surface string with a syntax tree that 's fed into a concept - to - speech . 
+E:  Now and this concept - to - speech module has  certain rules on how  if you get the following syntactic structure , how to map this onto prosodic rules . 
+E:  And Fey has foolheartedly agreed to rewrite uh , the German concept uh syntax - to - prosody rules  
+E:  No , she doesn't . 
+E:  But she speaks English . 
+E:  Into English . 
+E:  And um therefore  the , 
+E:  uh  
+E:  if it 's OK that we give her a couple of more hours per week , then  she 'll do that . 
+E:  Yeah . 
+E:  That 's the LISP - type scheme . 
+E:  No , I  
+E:  My guess is  I  I asked for a commented version of that file ? 
+E:  If we get that , then it 's  doable , 
+E:  even without getting into it , even though the Scheme li uh , stuff is really well documented in the  Festival . 
+E:  Yep . We ha we have to change the voice . 
+E:  It is  Uh , we have the choice between the , uh , usual Festival voices , 
+E:  which I already told the SmartKom people we aren't gonna use because they 're really bad . 
+E:  But , um 
+E:  OGI has , uh , crafted a couple of diphone type voices that are really nice 
+E:  and we 're going to use  that . 
+E:  We can still , um , d agree on a gender , if we want . 
+E:  So we still have male or female . 
+E:  Hmm ? 
+E:  Uh . 
+E:  Oregon . 
+E:  Try Oregon . 
+E:  Hmm . 
+E:  OK . 
+E:  And it 's probably also absolutely uninteresting for all of you to , um learn that as of twenty minutes ago , David and I , per accident , uh managed to get the whole SmartKom system running on the  uh , ICSI Linux machines with the ICSI NT machines 
+E:  thereby increasing the number of running SmartKom systems in this house from  one on my laptop to three . 
+E:  Um , I suggested to try something that was really kind of  
+E:  even though against better knowledge shouldn't have worked , 
+E:  but it worked . 
+E:  Intuition . 
+E:  Maybe  maybe  maybe a bit for the AI i intuition thing . 
+E:  OK . 
+E:  And , um , we 'll never found out why . 
+E:  It - it 's just like why  why the generation ma the presentation manager is now working ? 
+E:  Which 
+E:  Hmm . 
+E:  So , <laugh> the  the people at Saarbruecken and I decided not to touch it ever again . 
+E:  Yeah , that would work . 
+E:  OK . 
+E:  Um  I was gonna ask you where something is 
+E:  and what we know about that . 
+E:  Where is X ? 
+E:  Oh , 
+E:  but by  Uh , we can ask , uh , did you get to read all four hundred words ? 
+E:  Was it OK ? 
+E:  Was it ? 
+E:  Hmm . 
+E:  That  
+E:  Yeah . 
+E:  Can we  ? <clears throat> Is it worth  thinking of an example out of our tourism thing domain , that involves a  a  a decent mental  space shift  or setting up  
+E:  Hmm , yeah . I think  I think we already came to the conclusion that we have two alternative  paths that we  two alternative ways of representing it . 
+E:  One is sort of a  has a 
+E:  um 
+E:  um 
+E:  or comes  
+E:  is resolved later . 
+E:  Yeah . 
+E:  Yeah . 
+E:  It 's  
+E:  Should we have a  a  a  
+E:  So  assume these are two , uh , nodes we can observe in the Bayes - net . 
+E:  So these are either true or false 
+E:  and it 's also just true  or false . 
+E:  If we encounter a phrase such as " where is X ? " , should that set this to true and this to true , 
+E:  and the Bayes - net figures out which under the c situation in general is more likely ? 
+E:  Um , or should it just activate this , have this be false , 
+E:  and the Bayes - net figures out whether this actually now means  ? 
+E:  One 
+E:  Or in some cases , it 's  it 's quite definitely 
+E:  s so that you just know  wanna know where it is . 
+E:  Hmm . 
+E:  And then the <clears throat> we had another idea floating around um , which we wanted to , uh , get your input on , 
+E:  and that concerns the  
+E:  But the nice thing is w we would have a person that would like to work on it , 
+E:  and that 's Ir - Irina Gurevich from EML  who is going to be visiting us , uh , the week before , uh , August 
+E:  and a little bit into August . 
+E:  And she would like to <outbreath> apply the  ontology that is , um <breath> being crafted at EML . 
+E:  That 's not the one I sent you . 
+E:  The one I sent you was from GMD , out of a European CRUMPET . 
+E:  Agreed . 
+E:  Um , and one of the reas one of the  those ideas was , 
+E:  so , 
+E:  back to the old Johno observation that if y if you have a dialogue history  and it said the word " admission fee " was uh , mentioned um , it 's more likely that the person actually wants to enter  than just take a picture of it 
+E:  from the outside . 
+E:  Now what could imagine  to , you know , have a list for each construction of things that one should look up in the discourse history , yeah ? 
+E:  That 's the really stupid way . 
+E:  Then there is the  really clever way that was suggested by Keith 
+E:  and then there is the , uh , middle way that I 'm suggesting 
+E:  and that is you  you get X , which is whatever , 
+E:  the castle . 
+E:  The ontology will tell us that castles have opening hours , 
+E:  that they have admission fees , 
+E:  they have whatever . 
+E:  And then , this is  We go via a thesaurus 
+E:  and look up  certain linguistic surface structures  that are related to these concepts 
+E:  and feed those through the dialogue history 
+E:  and check dynamically 
+E:  for each e entity . We look it up check whether any of these were mentioned and then activate the corresponding nodes on the discourse side . 
+E:  But Keith suggested that a  a much cleaner way would be  is , you know , to keep track of the discourse in such a way that you  if you know that something like that ha has been mentioned before , this just a continues to add up , 
+E:  you know , in th in a  
+E:  Yeah , I mean , if  if you ask " how much does a train ride and  and cinema around the vineyards cost ? " and then somebody tells you it 's sixty dollars and then you say " OK How much is , uh  I would like to  visit the  " <laugh> whatever , something completely different , " then I go to , you know , Point Reyes " , 
+E:  it  it 's not more likely that you want to enter anything , 
+E:  but it 's , as a matter of fact , a complete rejection of entering by doing that . 
+E:  Yeah . But that 's  
+E:  I mean this  this function , 
+E:  so , has the current object been mentioned in  in  with a question about  concerning its  
+E:  Mm - hmm . 
+E:  Well , it 's just another , sort of , construction side is how to get at the possible inferences we can draw from the discourse history 
+E:  or changing of the  probabilities , and - or  
+E:  Even though uh the lexical construction itself  out  out of context , uh , won't do it . 
+E:  I mean , y you have to keep track whether the person says 
+E:  " But I but I 'm not interested in the opening times " 
+E:  is sort of a more a V type . 
+E:  Yep . 
+E:  Hmm . 
+E:  So . 
+E:  But , we 'll  
+
+E:  uh , we have time to  
+E:  This is a s just a sidetrack , 
+E:  but uh 
+E:  I think it 's also something that people have not done before , is um , sort of abuse an ontology for these kinds of , uh , inferences , on 
+E:  whether anything relevant to the current something has been  <inbreath> uh , has crept up in the dialogue history already , or not . 
+E:  And , um 
+E:  I have the , uh  If we wanted to have that function in the dialogue hi dialogue module of SmartKom , I have the written consent of Jan to put it in there . 
+E:  Yes , 
+E:  um . That 's  uh , I 'm  I 'm keeping on good terms with Jan . 
+E:  Yeah . 
+E:  Mmm . 
+E:  Well , let 's  let 's talk after Friday the twenty - ninth . 
+E:  Then we 'll see how f f 
+E:  Yeah . 
+E:  I should try to finish it by then . Yeah . 
+E:  So . 
+E:  Mm - hmm . 
+E:  Was I ? In the room ? 
+E:  Constraints . 
+E:  Let 's call them constraints , around which one has to  
+E:  I 've always been  completely in favor of consensus decisions , 
+E:  so we 'll  we 'll find a way . 
+E:  It  it might even be  interesting then to  say that I should be forced to um , sort of pull some of the ideas that have been floating in my head out of the , uh  out of the top hat 
+E:  and , um  
+E:  That metaphor is not going anywhere , you know . 
+E:  Yes , and , um , it 's  Ha - None of that is basically still around , 
+E:  but it 's  
+E:  Hmm . 
+E:  Yeah , and I would like to d discuss it 
+E:  and , you know , get you guys 's input 
+E:  and make it sort of bomb - proof . 
+E:  Bullet - proof . 
+E:  That 's the word I was looking for . 
+E:  OK . 
+E:  Yeah , we need  we need some  Then we need to make some dates . 
+E:  Um . 
+E:  Meeting  regular meeting time for the summer , 
+E:  we really haven't found one . 
+E:  We did  Thursdays one for a while . 
+E:  I just talked to Ami . 
+E:  It 's - it 's a coincidence that he can't do  couldn't do it today  here . 
+E:  Usually he has no real constraints . 
+E:  So  
+E:  Yeah , it was just an exception . 
+E:  Mmm .  Yeah . 
+E:  And , um . How do we feel about doing it Wednesdays ? 
+E:  Because it seems to me that this is sort of a time where when we  have things to discuss with other people , there  
+E:  they seem to be s tons of people around . 
+E:  Or  
+E:  subgroup meetings 
+E:  The  I 'd like to have them all in one day , 
+E:  so package them up and then  
+E:  It 's OK , that  
+E:  Well , if  one  sort of thing is , this room is taken at  after three - thirty pr pretty much every day 
+E:  by the data collection . 
+E:  So we have subjects anyway  Except for this week , we have subjects in here . 
+E:  That 's why it was one . 
+E:  So we just knew i 
+E:  No , he can . 
+E:  So let 's say Thursday one . 
+E:  But for next week , this is a bit late . 
+E:  So  I would suggest that we need to  to talk  
+E:  OK . About the c the  th 
+E:  No . 
+E:  Yes . 
+E:  Because , uh , this room is again taken at two - thirty by Morgan . 
+E:  And the  s meeting recorder meeting meeting meeting recording on meeting meetings  
+E:  So . 
+E:  How about that ? 
+E:  I mean w 
+E:  Well , actually we w we we did scrap our Monday time just because Bhaskara couldn't come Monday . 
+E:  So there 's  Nothing 's impeding Monday anymore  either . 
+E:  Get a fresh start  
+E:  Yeah , that 's another s thing . Yeah . 
+E:  But , um . I mean , there are also usually then holidays anyways . 
+E:  I mean  like   Sometimes  it works out that way . 
+E:  So . Hmm ! 
+E:  OK , so  l forget about the b the camping thing . 
+E:  So let 's  eh , any other problems w w w ? 
+E:  But , I suggested Monday . 
+E:  If that 's a problem for me then I shouldn't  suggest it . 
+E:  So . 
+E:  Monday ? 
+E:  Mmm . 
+E:  OK . 
+E:  One , two , three ? 
+E:  Three 's too late . 
+E:  Two - thirty ? 
+E:  OK , two . 
+E:  W why do you  ? 
+E:  And 
+E:  do I get to see th uh , your formalism before  that ? 
+E:  Mm - hmm . 
+E:  I wo I would like  I would sort of  get a  get a notion of what  what you guys have in store for me . 
+E:  OK . 
+E:  You - y 
+E:  So the idea is on Monday at two we 'll  we 'll see an intermediate version of the formalism for the constructions , 
+E:  and do an on - line merging with my construal  ideas . 
+E:  So it won't be , like , a for semi - formal presentation of my  proposal . 
+E:  It 'll be more like towards  finalizing that proposal . 
+E:  OK , that 's fine . 
+E:  Yep , and then  
+E:  Yikes . 
+E:  Perfect . Can you also write it up ? 
+E:  I 'll  I 'll send you  
+E:  I 'll  I 'll send you a style file , right ? 
+E:  You just  
+E:  OK . 
+E:  And , um . 
+E:  Sounds good . 
+E:  Yeah . 
+E:  OK . Do you wanna run the indefinite pronoun idea past Jerry ? 
+E:  So  Mary fixed the car with a wrench . 
+E:  So you perform the mental sum 
+E:  and then , you know , " who fixed the car with a wrench ? " 
+E:  You  basically are told , to  to do this 
+E:  In the  in  analogously to the way you would do " someone fixed the car with a wrench " . 
+E:  And then you hand it back to your hippocampus 
+E:  and find out  what that , you know , 
+E:  means , 
+E:  and then  come up with that  so who that someone was . 
+E:  come up with this 
+E:  Well , if you  if you do wanna discuss focus  background and then get me into that 
+E:  because  I mean , I wo I w scientifically worked on that for  for almost two years . 
+E:  So , you your dance card is  completely filled now ? 
+E:  Why don't  

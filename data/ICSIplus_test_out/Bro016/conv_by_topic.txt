@@ -1,0 +1,1271 @@
+E:  Let 's see . Test ? 
+E:  Test ? Yeah . OK . 
+B:  Channel one . 
+A:  Hello ? 
+A:  Hello ? 
+F:  <spike> 
+B:  <two whistles>  
+B:  <whistle>  <breath> 
+C:  Test . 
+E:  <inbreath> 
+E:  I was saying Hynek 'll be here next week , uh , Wednesday through Friday  
+F:  <mike noise> 
+E:  uh , through Saturday , and , um , 
+F:  <mike noise> 
+E:  I won't be here Thursday and Friday . But my suggestion is that , uh , 
+E:  at least for this meeting , people should go ahead , uh , cuz Hynek will be here , and , 
+F:  <spike> 
+E:  you know , we don't have any Czech accent yet , uh , <laugh> as far as I know , so  
+F:  <breath-laugh> 
+F:  OK . 
+E:  There we go . <outbreath> 
+E:  Um . 
+E:  <mouth> So other than reading digits , what 's our agenda ? 
+E:  <outbreath> 
+F:  <breath-laugh> 
+A:  <laugh> 
+
+
+F:  I don't really have , uh , anything new . 
+F:  Been working on  Meeting Recorder stuff . So . 
+E:  OK . 
+E:  <inbreath> 
+E:  Um . <outbreath> 
+E:  Do you think that would be the case for next week also ? Or is  is , uh  ? What 's your 
+E:  projection 
+E:  on  ? 
+F:  <mouth> 
+F:  Um . 
+
+
+E:  <inbreath> Cuz the one thing  the one thing that seems to me we really should try , 
+E:  if you hadn't tried it before , because it hadn't occurred to me  it was sort of an obvious thing  
+E:  is , um , 
+E:  adjusting the , uh , sca the scaling and , uh , insertion penalty sorta stuff . 
+F:  I did play with that , actually , a little bit . 
+F:  Um . What happens is , uh , <clears throat> when you get to the noisy stuff , you start getting lots of insertions . 
+E:  Right . 
+F:  And , um , 
+F:  so I 've tried playing around a little bit with , um , 
+F:  the insertion penalties and things like that . 
+E:  Yeah . 
+F:  Um . 
+F:  I mean , it  it didn't make a whole lot of difference . Like for the well - matched case , it seemed 
+F:  like it was pretty good . 
+F:  Um . <mouth> I could do more playing with that , though . 
+F:  And , uh  
+F:  and see . 
+E:  But you were looking at mel cepstrum . 
+C:  <cough> 
+F:  Yes . 
+E:  Right . 
+F:  Oh , you 're talking about for th <cough> for our features . <cough> 
+E:  @ @  
+E:  Right . So , I mean , i it it 's not the direction that you were working with that we were saying 
+E:  what 's the  uh , what 's the best you can do with  with mel cepstrum . 
+F:  Mmm . 
+E:  But , 
+E:  they raised a very valid point , 
+E:  which , I guess  So , to first order  I mean , you have other things you were gonna do , 
+E:  but to first order , I would say that the conclusion is 
+E:  that if you , um , 
+E:  do , uh , some monkeying around with , uh , the exact 
+E:  HTK training 
+E:  and @ @  with , uh , you know , how many states and so forth , 
+E:  that it  it doesn't particularly improve the performance . In other words , 
+E:  that even though it sounds pretty dumb , 
+E:  just applying the same number of states to everything , more or less , no matter what language , isn't so bad . 
+E:  Right ? 
+E:  <inbreath> 
+E:  And I guess you hadn't gotten to all the experiments you wanted to do with number of Gaussians , 
+F:  Right . 
+E:  but , um , 
+E:  let 's just  If we had to  if we had to 
+B:  <clears throat> 
+E:  draw a conclusion on the information we have so far , we 'd say something like that . Right ? 
+F:  Mm - hmm . 
+E:  Uh , so the next question to ask , which is I think the one that  that  that Andreas was dre addressing himself to in the lunch meeting , 
+E:  is , 
+E:  um , 
+E:  we 're not supposed to adjust the back - end , 
+E:  but anybody using the system would . 
+F:  Yeah . 
+E:  So , 
+E:  if you were just adjusting the back - end , 
+E:  how much better would you do , uh , in noise ? 
+E:  Uh , because 
+E:  the language scaling and insertion penalties and so forth are probably set to be about right for mel cepstrum . 
+F:  Mm - hmm . 
+E:  But , 
+E:  um , 
+E:  they 're probably not at all set right 
+E:  for these things , particularly these things that look over , uh , larger time windows , in one way or another with  with LDA and KLT and neural nets and 
+E:  <inbreath> 
+E:  all these things . 
+E:  In the fa past we 've always found that we had to increase the insertion penalty to  to correspond to such things . 
+E:  So , 
+E:  I think that 's , uh , @ @  that 's kind of a first - order thing that  that we should try . 
+F:  <inbreath> So for th 
+F:  so the experiment is to , um , 
+F:  run our front - end like normal , with the default , uh , 
+F:  insertion penalties and so forth , 
+F:  and then 
+F:  tweak that a little bit and see how much of a difference it makes 
+E:  So by " our front - end " I mean take , you know , the Aurora - two s take some version that Stephane has that is , 
+F:  if we were  
+F:  Mm - hmm . 
+E:  you know , our current best version of something . 
+E:  Um . 
+E:  I mean , y don't wanna do this over a hundred different things that they 've tried but , you know , for 
+E:  some version that you say is a good one . You know ? <sniff> Um . 
+E:  How  
+E:  how much , 
+E:  uh , does it improve if you actually adjust that ? 
+F:  OK . 
+E:  <mouth> 
+E:  But it is interesting . You say you  you have for the noisy  How about for the  for the mismatched or  or  or  or the  or the medium 
+E:  mismatched conditions ? Have you  ? 
+E:  When you adjusted those numbers for mel cepstrum , did it  ? 
+F:  Uh , I  I don't remember off the top of my head . 
+F:  Um . 
+F:  Yeah . I didn't even write them down . 
+F:  I  I  I don't remember . I would need to  Well , I did write down , 
+F:  um  
+F:  <mouth> 
+F:  So , when I was doing  I just wrote down some numbers for the well - matched case . 
+E:  Yeah . 
+F:  Um . 
+F:  Looking at the  I wrote down what the deletions , substitutions , and insertions were , 
+F:  uh , 
+F:  for different numbers of states per phone . 
+E:  Yeah . 
+F:  Um , but , uh , that  that 's all I wrote down . 
+E:  OK . 
+F:  So . I  I would  Yeah . I would need to do that . 
+E:  OK . So  
+F:  I can do that for next week . 
+E:  Yeah . 
+E:  And , um  
+E:  Yeah . Also , eh , eh , sometimes if you run behind on some of these things , maybe we can get someone else to do it and you can supervise or something . But  
+E:  but I think it would be  it 'd be good to know that . 
+F:  OK . 
+F:  I just need to get , um , <breath> 
+F:  front - end , uh , stuff from you or you point me to some files  that you 've already calculated . 
+B:  Hmm . 
+B:  Yeah . 
+B:  Alright . 
+E:  OK . 
+E:  Uh . 
+F:  I probably will have time to do that and 
+F:  time to play a little bit with the silence 
+E:  Mm - hmm . 
+F:  model . 
+F:  So maybe I can have that for next week when Hynek 's here . 
+E:  Yeah . 
+B:  Mm - hmm .  
+E:  Yeah . Cuz , I mean , the  the other  
+E:  That , in fact , might have been 
+E:  part of what , uh , the difference was  
+E:  at least part of it that  that we were seeing . Remember we were seeing the SRI system was so much better than the tandem system . 
+F:  Hmm . 
+E:  Part of it might just be that the SRI system , they  they  they always adjust 
+F:  <inbreath> 
+E:  these things to be sort of optimized , and  
+F:  Is there  ? 
+F:  I wonder if there 's anything that we could do <breath> to the front - end 
+F:  that would affect the insertion  
+E:  Yes . I think you can . 
+F:  What could you do ? 
+E:  <inbreath> 
+E:  Well , um  
+E:  uh , 
+E:  part of what 's going on , 
+E:  um , is the , uh , the range 
+E:  of values . 
+E:  So , if you have something that has a much smaller range or a much larger range , 
+F:  Oh . 
+E:  and taking the appropriate root . 
+F:  Mm - hmm . 
+E:  You know ? If something is kind of like the equivalent of a bunch of probabilities multiplied together , 
+E:  you can take a root of some sort . If it 's like seven probabilities together , you can take the seventh root of it or something , or if it 's in the log domain , divide it by seven . 
+F:  Mm - hmm . 
+E:  But  <inbreath> 
+E:  but , 
+E:  um , 
+E:  that has a similar effect 
+E:  because it changes the scale 
+E:  of the numbers  of the differences between different candidates from the acoustic model 
+F:  Oh , right . So that w Right . So , in effect , 
+E:  as opposed to what 's coming from the language model . 
+F:  that 's 
+F:  changing the value of your insertion penalty . 
+E:  <inbreath> 
+E:  Yeah . I mean , it 's more directly like the  the language scaling or the , uh  the model scaling or acoustic scaling , 
+F:  That 's interesting . 
+E:  but you know that those things have kind of a similar effect to the insertion penalty anyway . They 're a slightly different way of  
+F:  Mm - hmm . 
+F:  Right . 
+E:  of handling it . So , um  
+F:  So if we know what the insertion penalty is , then we can get an idea 
+F:  about what range our number should be in , so that they  match with that . 
+E:  I think so . Yeah . 
+E:  <inbreath> 
+E:  Yeah . So that 's why I think 
+E:  that 's another reason other than curiosity as to why i it would in fact 
+E:  be kinda neat to find out if we 're way off . <breath> 
+F:  Mm - hmm . 
+E:  I mean , the other thing is , are aren't we seeing  ? Y y I 'm sure you 've already looked at this bu in these noisy cases , are  ? We are seeing lots of insertions . Right ? The insertion number is quite high ? 
+A:  <mike noise> 
+A:  <mike noise> 
+E:  @ @  I know the VAD takes pre care of part of that , but  
+B:  Yeah . 
+F:  Yeah . 
+F:  I 've seen that with the mel cepstrum . I don't  I don't know about  the Aurora front - end , but  
+B:  Yeah . 
+B:  I think it 's much more balanced with , uh  
+A:  <mike noise> 
+B:  when the front - end is more robust . 
+B:  Yeah . I could look at it  at this . Yeah . 
+E:  Yeah . Wha - what 's a typical number ? 
+B:  Mm - hmm . 
+B:  I don't  I don't know . 
+E:  Do we  ? Oh , you  oh , you don't know . OK . 
+B:  I don't have this in  
+E:  <inbreath> 
+E:  I 'm sure it 's more balanced , but it  it  it wouldn't surprise me if there 's still  <sniff> 
+B:  Mm - hmm . 
+E:  I mean , in  in the  the  the old systems we used to do , I  I  
+B:  Mm - hmm . 
+E:  uh , I remember numbers kind of like insertions being half the number of deletions , as being  
+E:  and both numbers being  
+E:  tend to be on the small side comparing to  to , uh , substitutions . 
+B:  Mm - hmm .  
+F:  Well , this  the whole 
+F:  problem with insertions was what I think , 
+F:  um , we talked about when 
+F:  the guy from OGI came down  that one time and  
+F:  and that 
+F:  was when people were saying , well we should have a , uh , 
+F:  uh , voice activity detector  
+E:  Right . 
+F:  that , because all that stuff  that we 're getting thr the silence that 's getting through is causing insertions . So . 
+B:  <clears throat> Mmm . 
+E:  Right . 
+F:  I 'll bet you there 's still a lot <breath> of insertions .  
+E:  <inbreath> 
+B:  Mm - hmm .  
+E:  Yeah . And it may be less of a critical thing . I mean , the fact that some get by may be less of a critical thing if you , 
+E:  uh , get things in the right range . 
+F:  Mm - hmm . 
+E:  So , I mean , the insertions is  is a symptom . 
+E:  It 's a symptom that there 's something , uh , wrong with the range . 
+F:  Right . 
+E:  But there 's  uh , your  your  your substitutions tend to go up as well . So , uh , I  I  I think that , 
+F:  Mm - hmm . 
+E:  uh , the most obvious thing is just the insertions , @ @ . But  
+E:  Uh  
+E:  um . 
+E:  If you 're operating in the wrong range  
+E:  I mean , that 's why just in general , if you 
+E:  <inbreath> 
+E:  change what these  these penalties and scaling factors are , you reach some point that 's a  that 's a minimum . So . 
+E:  Um . <mouth> 
+E:  Um . 
+E:  We do have to do well over a range of different conditions , some of which are noisier than others . Um . 
+E:  But , um , I think we may get a better handle on that if we  if we see  
+E:  Um , I mean we ca <inbreath> 
+E:  it 's if we actually could pick a  a  a more stable value for the range 
+E:  of these features , 
+E:  it , um , 
+E:  uh , 
+E:  could  
+E:  Uh  
+E:  <inbreath> Even though it 's  it 's  it 's true that in a real situation you can in fact adjust the  these  these scaling factors in the back - end , 
+E:  and it 's ar artificial here that we 're not adjusting those , 
+E:  you certainly don't wanna be adjusting those all the time . And if you have a nice front - end that 's in roughly the right range  
+F:  Hmm . 
+E:  I remember after we got our stuff more or less together in the previous systems we built , that 
+E:  we tended to set those scaling factors at kind of a 
+E:  standard level , and we would rarely adjust them again , even though you could get a  
+F:  Mm - hmm . 
+E:  for an evaluation you can get an extra point or something if you tweaked it a little bit . But , 
+E:  once we knew what rou roughly the right operating range was , it was pretty stable , and  
+E:  Uh , we might just not even be in the right operating range . 
+F:  So , would the  ? 
+F:  Uh , would a good idea be to try to map it into the same range that you get in the well - matched case ? 
+B:  <clears throat> 
+F:  So , if we computed what the range was in well - matched , 
+F:  and then when we get our noisy conditions out we try to make it 
+B:  <clears throat> 
+F:  have the same range as  ? 
+E:  No . You don't wanna change it for different conditions . 
+E:  No . No . I  I  I  What  what I 'm saying  
+F:  Oh , I wasn't suggesting change it for different conditions . I was just saying that 
+F:  when we pick a range , we  we wanna pick a range that we map our numbers into  we should probably pick it based on 
+E:  Yeah . 
+F:  the range that we get in the well - matched case . 
+F:  Otherwise , I mean , what range are we gonna 
+F:  choose 
+E:  <inbreath> 
+F:  to  to map everything into ? 
+E:  Well . It depends how much we wanna 
+E:  do gamesmanship and how much we wanna do  <laugh> I mean , i if he 
+F:  <laugh> 
+E:  it  to me , actually , even if you wanna be  play on the gamesmanship side , it can be kinda tricky . So , I mean , 
+E:  what you would do is set the  set the scaling factors , uh , 
+E:  so that you got the best number for this point four five times the  <laugh> you know , and so on . 
+F:  Mm - hmm . 
+E:  But they might change that  those weightings . 
+F:  Yeah . 
+E:  <breath> <mouth> 
+E:  Um . So  <breath> 
+E:  Uh  
+E:  I just sorta think we need to explore the space . 
+F:  Mm - hmm .  
+E:  Just take a look at it a little bit . And we  we  we may just find that  that we 're way off . 
+F:  OK . 
+F:  Mm - hmm . 
+E:  Maybe we 're not . 
+E:  You know ? As for these other things , it may turn out that , uh , 
+B:  <laugh> 
+E:  <inbreath> 
+E:  it 's kind of reasonable . But then  <inbreath> 
+E:  I mean , Andreas gave 
+E:  a very reasonable response , and he 's probably not gonna be the only one who 's gonna say this in the future  of , you know , people  
+E:  people within this tight - knit community who are doing this evaluation 
+E:  <inbreath> are accepting , uh , more or less , that these are the rules . 
+F:  Yeah . 
+E:  But , people outside of it who look in at the broader picture are certainly gonna say 
+E:  " Well , wait a minute . You 're doing all this standing on your head , uh , on the front - end , when all you could do is 
+E:  just adjust this in the back - end with one s one knob . " And 
+F:  Mm - hmm . 
+F:  <laugh> 
+A:  <breath-laugh> 
+E:  <breath> 
+E:  so we have to at least , 
+B:  <laugh> 
+E:  I think , determine 
+E:  that that 's not true , 
+E:  which would be OK , 
+E:  or determine that it is true , in which case we want to adjust that and then 
+E:  continue with  with what we 're doing . And as you say  as you point out  
+F:  Right . 
+E:  finding ways to then compensate for that in the front - end <clears throat> 
+E:  also then becomes a priority for this particular test , 
+E:  and saying you don't have to do that . 
+F:  Mm - hmm .  
+E:  So .  
+
+
+E:  OK . 
+E:  So , uh  
+E:  What 's new with you ? 
+E:  <laugh> 
+B:  Uh . So there 's nothing  
+B:  new . <laugh> 
+C:  <laugh> 
+E:  <laugh> 
+E:  Uh , what 's old with you that 's developed ? <laugh> You   
+B:  Um . 
+F:  <laugh> 
+B:  I 'm sorry ?  
+E:  OK . What 's old with you that has developed over the last week or two ?  <laugh> 
+B:  <laugh> 
+B:  <laugh> 
+B:  Mmm . 
+B:  Well , so we 've been mainly working on the report and  and  Yeah . 
+F:  Mainly working on what ? 
+B:  On the report  of the work that was already 
+F:  Oh . 
+B:  done . 
+B:  Um . 
+B:  Mm - hmm . That 's all . <laugh> 
+F:  How about that  ? 
+F:  Any - anything new on the thing that , 
+F:  uh , you were working on with the , uh  ? 
+C:  I don't have results yet . <laugh> 
+F:  No results ? Yeah . 
+E:  What was that ? 
+F:  <inbreath> The  the , uh , 
+A:  Voicing thing .  
+F:  voicing detector . 
+E:  I mean , what what 's  what 's going on now ? What are you  doing ? 
+A:  <laugh> 
+C:  Uh , to try to found , nnn , robust feature for detect between voice and unvoice . 
+C:  And we  w 
+C:  we try to use <breath> the variance <inbreath> 
+C:  of the es difference between the FFT spectrum and mel filter bank spectrum . 
+E:  Yeah . 
+C:  Uh , also the  another parameter is  relates with the auto - correlation function . 
+E:  Uh - huh . 
+C:  R - ze energy and the variance a also of the auto - correlation function . 
+E:  Uh - huh . 
+E:  So , that 's  Yeah . That 's what you were describing , I guess , a week or two ago . So . 
+C:  Yeah . But we don't have res we don't have result of the AURO for Aurora yet . We need to train the neural network and  
+E:  Mm - hmm . 
+E:  So you 're training neural networks now ? 
+C:  No , not yet . 
+E:  So , what  wha <laugh> wh wha what what 's going on ?  
+C:  <laugh> 
+C:  Well , we work in the report , too , because we have a lot of result , they are very dispersed , and was necessary to  to look in all the directory to  to  
+E:  Uh - huh . 
+C:  to give some more structure . 
+E:  So . B So  Yeah . I if I can summarize , basically what 's going on is that you 're going over a lot of material that you have generated in 
+B:  Yea - 
+E:  furious fashion , f generating many results and doing many experiments and trying to pull it together into some coherent 
+C:  Hm - hmm . 
+E:  form to be able to 
+E:  see wha see what happens . Yes ? 
+B:  Uh , y yeah . Basically we we 've stopped , 
+B:  uh , experimenting , I mean . We 're just writing some kind of technical report . 
+B:  And  
+F:  Is this a report that 's for Aurora ? Or is it just like a tech report for ICSI , or  ? 
+C:  No . 
+B:  Yeah . 
+C:  For ICSI . 
+F:  Ah . I see . 
+B:  Yeah . 
+C:  Just summary of the experiment and the conclusion and 
+C:  something like that . <laugh> 
+E:  Yeah . 
+B:  Mm - hmm .  
+E:  <inbreath> 
+E:  OK . 
+B:  <mouth> 
+E:  So , my suggestion , though , is that you  
+B:  <clears throat> 
+E:  you not necessarily finish that . 
+E:  <laugh> 
+E:  But that you put it all together so that it 's  you 've got  
+E:  you 've got a clearer structure to it . You know what things are , you have things documented , you 've looked things up that you 
+E:  needed to look up . So that , you know  so that such a thing can be written . 
+B:  Mm - hmm .  
+E:  And , um  
+E:  When  when  when do you leave again ? 
+C:  Uh , in July . First of July . 
+E:  First of July ? OK . 
+E:  And that you figure on 
+E:  actually finishing it 
+E:  in  in June . 
+E:  Because , you know , you 're gonna have another bunch of results to fit in there anyway . <sniff> 
+C:  <clears throat> 
+B:  Mm - hmm . 
+C:  Mm - hmm . 
+B:  <clears throat> 
+E:  And right now it 's kind of important that we actually 
+C:  <mouth> It 's not . 
+F:  <spike> 
+E:  go forward with experiments . So  so , I  I think it 's good to pause , 
+E:  and to gather everything together and make sure it 's in good shape , so that other people can get access to it and so that it can go into a report in June . But I think 
+E:  <inbreath> 
+E:  to  to really work on  on fine - tuning the report n at this point is  is probably bad timing , 
+B:  Mm - hmm . 
+E:  I  I  think . 
+B:  Yeah . 
+E:  <breath> 
+B:  Well , we didn't  
+B:  we just planned to work on it one week on this report , not  no more , anyway . 
+B:  Um . 
+C:  <cough> 
+E:  But you ma you may really wanna add other things later anyway because you  <inbreath> 
+B:  Yeah . 
+B:  Mm - hmm . 
+C:  <breath-laugh> 
+B:  Mmm . 
+E:  There 's more to go ? 
+B:  Yeah . Well , 
+B:  so I don't know . There are small things that we started to  to do . But  
+F:  Are you discovering anything , uh , 
+F:  that makes you scratch your head as you write this report , like why did we do that , or 
+F:  why didn't we do this , or  ? 
+B:  Uh . 
+B:  Yeah . 
+F:  <laugh> 
+B:  Yeah . <laugh> 
+A:  <laugh> 
+B:  And  
+E:  <laugh> 
+B:  Actually , there were some tables that were 
+B:  also 
+B:  with partial results . We just noticed that , 
+B:  wh while gathering the result that 
+B:  for some conditions we didn't have everything . 
+F:  Mmm . 
+
+
+B:  But anyway . <laugh> 
+B:  Um . 
+B:  Yeah , yeah . We have , yeah , extracted actually the noises from  the SpeechDat - Car . 
+B:  And so , 
+B:  we can train neural network 
+B:  with speech and these noises . 
+B:  Um . 
+B:  It 's difficult to say what it will give , because when we look at 
+B:  the Aurora  the TI - digits experiments , 
+B:  um , 
+E:  <deep breath> 
+B:  they have these three conditions that have different noises , and 
+B:  apparently this system perform as well 
+B:  on the seen noises  on the unseen noises and 
+B:  on the seen noises . 
+B:  But , 
+B:  I think this is something we have to try anyway . So  
+B:  adding the noises from  
+B:  from the SpeechDat - Car . 
+B:  Um . 
+E:  <mouth> That 's  
+B:  @ @ 
+E:  that 's , uh  
+E:  that 's permitted ? 
+B:  <mouth> 
+B:  <breath> 
+B:  Uh . <breath-laugh> Well , 
+B:  OGI does  did that . 
+B:  <mouth> 
+B:  Um . 
+B:  At some point they did that for  for the 
+B:  voice 
+C:  Uh , for a v VAD . 
+B:  activity detector . Right ? 
+B:  Um . <outbreath> 
+F:  Could you say it again ? What  what exactly did they do ? 
+B:  <mouth> 
+B:  They used some parts of the , um , Italian database to train the voice activity detector , I think . 
+E:  <inbreath> Yeah . I guess the thing is  Yeah . I guess that 's a matter of interpretation . The rules as I understand it , is that in principle 
+B:  It  
+B:  <clears throat> 
+B:  <clears throat> <breath> 
+E:  the Italian and the Spanish and the English  
+E:  no , Italian and the Finnish 
+E:  and the English ?  
+E:  were development data 
+B:  Yeah . And Spanish , yeah . 
+E:  on which you could adjust things . 
+E:  And the  and the German and Danish were the evaluation data . <sniff> 
+B:  <inbreath> 
+B:  Mm - hmm . 
+B:  <inbreath> 
+E:  And then when they finally actually evaluated things they used everything . 
+B:  Yeah . That 's right . Uh  
+E:  So  <laugh> 
+C:  <breath-laugh> 
+E:  Uh , and it is true that the performance , uh , 
+E:  on the German 
+E:  was  I mean , even though the improvement wasn't so good , the pre the raw performance was really pretty good . 
+B:  Mm - hmm . 
+E:  So  And , uh , 
+E:  it  it doesn't appear that there 's strong evidence that even though things were somewhat tuned on those three or four languages , 
+E:  that  that going to a different language really 
+E:  hurt you . And the noises were not exactly the same . Right ? Because it was taken from a different , 
+E:  uh  
+E:  I mean they were different 
+B:  Different cars . Yeah . 
+E:  drives . I mean , it was  it was actual different cars and so on . So . 
+B:  Yeah . 
+E:  Um , it 's somewhat tuned . It 's tuned more than , you know , a  a  a  a  
+B:  Mm - hmm . 
+E:  You 'd really like to have something that 
+E:  needed no particular noise at all , maybe just some white noise or something like that a at most . 
+B:  Mm - hmm . 
+E:  But that 's not really what this contest is . So . 
+E:  Um , I guess it 's OK . 
+B:  Mm - hmm . 
+F:  I think it 's  <clears throat> 
+E:  That 's something I 'd like to understand before we 
+E:  actually use something from it , because it would  
+F:  it 's probably something that , mmm , the  
+F:  you know , the , uh , experiment designers didn't 
+F:  really think about , because I think most people aren't doing 
+F:  trained systems , or , you know , uh , 
+F:  systems that are like ours , where you actually use the data to build models . I mean , they just  
+E:  <breath> 
+F:  doing signal - processing . So . 
+B:  Yeah . 
+E:  <mouth> Well , it 's true , except that , uh , that 's what we used in Aurora one , <sniff> 
+E:  and then they designed the things for Aurora - two knowing that we were doing that . 
+F:  Yeah . 
+F:  That 's true . 
+E:  Um . 
+F:  And they didn't forbid us  right ?  to build 
+E:  <mouth> 
+F:  models on the data ? 
+E:  No . 
+E:  But , I think  I think that it  it  
+E:  it probably would be the case that if , say , we trained on Italian , 
+E:  uh , data and then , uh , we tested on Danish data and it did terribly , 
+E:  uh , that  that it would look bad . And I think someone would notice and would say " Well , look . This is not generalizing . " I would hope tha I would hope they would . 
+F:  <laugh> 
+F:  Mm - hmm .  
+E:  Um . <breath> 
+E:  But , uh , 
+E:  it 's true . You know , maybe there 's parameters 
+E:  that 
+E:  other people have used  you know , th that they have tuned in some way for other things . So it 's  
+E:  it 's , uh  We should  we should  
+E:  Maybe  that 's maybe a topic  
+E:  <inbreath> 
+E:  Especially if you talk with him when I 'm not here , that 's a topic you should discuss with Hynek to , you know , double check it 's OK . 
+B:  Mm - hmm . 
+
+
+F:  Do we know anything about  the speakers for each of the , uh , training utterances ? 
+B:  What do you mean ? We  we  
+F:  Do you have speaker information ? 
+E:  Social security number  <laugh> 
+F:  <laugh> That would be good . <laugh> 
+A:  <laugh> 
+B:  Like , we have  male , female , 
+F:  Bank PIN . <spikes> 
+C:  Hmm . 
+F:  Just male f female ? 
+B:  at least . 
+B:  Mmm . 
+E:  What kind of information do you mean ? 
+F:  <inbreath> 
+F:  Well , I was thinking about things like , you know , gender , uh  
+F:  you know , gender - specific 
+F:  nets and , uh , vocal tract length normalization . 
+B:  <clears throat> Mm - hmm . 
+F:  Things like that . I d I don't  I didn't know what information we have about the speakers that we could try to take advantage of . 
+B:  Mm - hmm . 
+E:  Hmm .  
+E:  <mouth> 
+E:  Uh . 
+E:  Right . I mean , again , i if you had the whole system you were optimizing , that would be easy to see . But if you 're 
+E:  <inbreath> 
+E:  supposedly just using a fixed back - end and you 're just coming up with a feature vector , 
+E:  w w I 'm not sure  
+E:  I mean , having the two nets  
+E:  Suppose you detected 
+E:  that it was male , it was female  you come up with different  
+F:  Well , you could put them both in as separate 
+F:  streams or something .  
+E:  <breath> 
+F:  Uh .  
+B:  Mm - hmm . 
+E:  Maybe . 
+F:  I don't know . I was just 
+F:  wondering if there was other information we could exploit . 
+B:  Mm - hmm .  
+E:  Hmm . 
+E:  <mouth> 
+E:  Yeah , it 's an interesting thought . Maybe having something 
+E:  along the  I mean , you can't really do vocal tract normalization . But something that had some of that effect 
+F:  Yeah . 
+E:  being applied to the data in some way . 
+F:  Mm - hmm . 
+E:  Um . 
+B:  Do you have something simple in mind for  I mean , vocal tract length normalization ? 
+F:  Uh no . I hadn't  I hadn't thought  it was  thought too much about it , really . It just  something that popped into my head just now . And so I  I  
+F:  I mean , you could maybe use the ideas  
+F:  a similar  idea to what they do in vocal tract length normalization . You know , you have some sort of a , 
+F:  uh , general speech model , you know , maybe just a 
+F:  mixture of Gaussians that you evaluate 
+F:  every utterance against , and then you see 
+F:  where each , you know , utterance  like , the likelihood of each utterance . You divide the  
+F:  the range of the likelihoods up into discrete bins and then each bin 's got some knob  
+E:  <breath> Yeah . But just listen to yourself . I mean , that uh really doesn't sound like a real - time thing with less than two hundred milliseconds , uh , 
+F:  uh , setting . Yeah . 
+F:  <breath> Yeah . <breath> 
+B:  Mm - hmm . 
+E:  latency that  and where you 're not adjusting the statistical engine at all . 
+F:  <breath> Yeah . That 's true . 
+E:  <laugh> You know , that just  <breath> 
+F:  Right . 
+B:  Hmm . 
+F:  Could be expensive . 
+E:  I mean  Yeah . No . Well not just expensive . 
+E:  I  I  I don't see how you could possibly do it . You can't look at the whole utterance and do anything . You know , you can only  Right ? 
+F:  <outbreath> <mouth> 
+F:  Oh , right . 
+E:  Each frame comes in and it 's gotta go out the other end . So , uh  
+F:  Right . So whatever it was , it would have to be uh sort of on a per frame basis . 
+E:  Yeah . 
+B:  Mm - hmm .  
+E:  <breath> Yeah . I mean , you can do , um  
+E:  <mouth> 
+F:  Yeah . 
+E:  Fairly quickly you can do male female  f male female stuff .  
+F:  Yeah . 
+E:  But as far as , I mean  Like I thought BBN did a thing with , uh , uh , vocal tract normalization a ways back . Maybe other people did too . With  with , uh , uh , l 
+E:  trying to identify third formant  average third formant  
+E:  <inbreath> 
+E:  using that as an indicator of  <inbreath> 
+F:  I don't know .  
+E:  So . 
+E:  You know , third formant  I if you imagine that to first order what happens with , uh , changing vocal tract is that , 
+E:  uh , the formants get moved out by some proportion  
+F:  Mm - hmm . 
+E:  So , if you had a first formant that was one hundred hertz before , if the fifty  if the vocal tract is fifty percent shorter , 
+E:  then it would be out at seven fifty hertz , and so on . 
+E:  <inbreath> 
+E:  So , that 's a move of two hundred fifty hertz . Whereas the third formant which might have started off at twenty - five hundred hertz , 
+E:  you know , might be out to thirty - seven fifty , you know so it 's at  <inbreath> 
+E:  So , 
+E:  although , you frequently get less distinct 
+E:  higher formants , it 's still  third formant 's kind of a reasonable compromise , and  
+E:  <inbreath> 
+F:  Mm - hmm . 
+E:  So , I think , eh , if I recall correctly , they did something like that . And  and  But  
+F:  Hmm . 
+E:  Um , that doesn't work for just 
+E:  having one frame or something . You know ? That 's more like looking at third formant over  over a turn or something like that , and  
+F:  Yeah . 
+B:  Mm - hmm .  
+B:  <clears throat> 
+B:  Mm - hmm .  
+E:  <inbreath> 
+F:  Right . 
+E:  Um . So . But on the other hand , male female is a  is a  is a much simpler categorization than figuring out a  a factor to , 
+F:  Mm - hmm . 
+E:  uh , squish or expand the  
+E:  the spectrum . So , um . 
+E:  Y you could imagine that  I mean , just like we 're saying voiced - unvoiced is good to know  
+E:  uh , male female is good to know also . Um . 
+F:  Mm - hmm . 
+E:  But , 
+E:  you 'd have to figure out a way to  to  to , uh , incorporate it on the fly . 
+E:  Uh , I mean , I guess , as you say , one thing you could do is simply , uh , 
+E:  have the  the male and female 
+E:  output vectors  
+E:  you know , tr nets trained only on males and n trained only on females or  
+E:  <breath> 
+E:  or , uh , you know . But  
+E:  Um . 
+E:  I don't know if that would really help , because you already have 
+E:  males and females and it 's mm - hmm 
+F:  <inbreath> 
+E:  putting into one net . So is it  ? <clears throat> 
+F:  <spike> 
+F:  Is it balanced , um , in terms of gender  the data ? 
+E:  Do you know ? 
+B:  Mmm . Almost , yeah . 
+F:  Hmm . 
+B:  Mm - hmm . 
+E:  Hmm . 
+
+
+E:  OK . Y you 're  you were saying before  ?  
+B:  Uh . Yeah . So , this noise , um  
+B:  Yeah . The MSG  
+B:  Um . 
+B:  Mmm . 
+B:  There is something  perhaps , I could spend some days to look at this thing , 
+B:  cuz it seems that when we train networks on  
+B:  let 's say , on TIMIT with MSG features , they  
+B:  they look as good as networks trained on PLP . 
+B:  But , um , 
+B:  <mouth> when they are used on  
+B:  on the SpeechDat - Car data , it 's not the case  oh , well . 
+E:  <impulsive breath> 
+B:  <clears throat> The MSG features are much worse , 
+B:  and so 
+B:  maybe they 're , um , less  more sensitive to 
+B:  different recording conditions , 
+E:  <mouth> Shouldn't be . They should be less so . R right ? 
+B:  or  Shou - Yeah . But  
+E:  <inbreath> Wh - ? But let me ask you this . What  what 's the , um  ? 
+B:  Mmm . 
+E:  Do you kno recall if the insertions were  
+E:  were higher with MSG ? 
+B:  I don't know . I cannot tell . But  
+B:  It 's  it  
+B:  the  the error rate is higher . 
+E:  Yeah . But you should always look at insertions , deletions , and substitutions . So  
+B:  So , I don 
+B:  Yeah . Mm - hmm . 
+B:  Mm - hmm . 
+E:  so , uh  @ @  
+E:  MSG is very , very dif Eh , PLP is very much like mel cepstrum . 
+B:  <clears throat> 
+E:  MSG is very different from both of them . 
+B:  Mm - hmm . 
+E:  So , if it 's very different , then this is the sort of thing  I mean I 'm really glad Andreas brought this point up . 
+E:  I  sort of had forgotten to discuss it . 
+E:  Um . 
+E:  You always have to look at how 
+E:  this  uh , these 
+E:  adjustments , uh , affect things . 
+E:  And even though we 're not allowed to do that , again we maybe could reflect that back to our use of the features . 
+F:  <outbreath> 
+E:  So if it  if in fact , uh  The problem might be that the range of the MSG features is quite different than the range 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+E:  of the PLP or mel cepstrum . 
+E:  And you might wanna change that . 
+B:  Mm - hmm . 
+B:  <mouth> 
+B:  But  
+B:  Yeah . 
+B:  But , it 's d it 's after  Well , it 's 
+B:  tandem features , so  
+B:  Mmm . 
+E:  Yeah . 
+B:  Yeah . We  we have estimation of post posteriors 
+E:  Yeah . 
+B:  with PLP and with MSG as input , so I don Well . 
+B:  I don't know . 
+E:  That means they 're between zero and one . 
+B:  Mm - hmm . 
+E:  But i it  it  it  it doesn't necessarily  You know , they could be , 
+E:  um  
+E:  Do - doesn't tell you what the variance of the 
+E:  things is . 
+B:  Mmm . 
+B:  Mm - hmm . 
+E:  Right ? Cuz if you 're taking the log of these things , it could be , 
+E:  uh  
+E:  Knowing what the sum of the probabilities are , doesn't tell you what the sum of the logs are . 
+E:  <laugh> 
+B:  Mm - hmm . 
+B:  Yeah . <laugh> 
+E:  So . 
+B:  Yeah . So we should look at the likelihood , or  or what ? Or  well , 
+B:  at the log , perhaps , and  
+E:  Yeah . 
+B:  Mm - hmm . 
+E:  Yeah . 
+E:  Or what  you know , what you 're uh  the thing you 're actually looking at . 
+B:  Mm - hmm . 
+E:  So your  your  
+E:  the values that are  are actually being fed into HTK . 
+F:  <mouth> 
+B:  Mm - hmm . But  
+F:  No - 
+E:  What do they look like ? 
+F:  And so th the , uh  for the tandem system , the values that come out of the net don't go through the sigmoid . Right ? 
+F:  They 're sort of the pre - nonlinearity values ? 
+E:  Right . 
+B:  Yes . 
+E:  So they 're  kinda like log probabilities is what I was saying . 
+F:  And those  
+F:  OK . And tho that 's what goes  into  HTK ? 
+E:  <mouth> Uh , almost . But then you actually do a KLT on them . 
+F:  OK . 
+E:  Um . 
+E:  They aren't normalized after that , are they ? 
+B:  Mmm . No , they are not  no . 
+E:  No . 
+E:  OK . 
+F:  <spike> 
+E:  So , um . 
+E:  Right . So the question is  
+E:  Yeah . Whatever they are at that point , 
+E:  um , are they something for which taking 
+E:  a square root or cube root or fourth root or something like that is  is gonna be a good or a bad thing ? 
+E:  So . 
+B:  Mm - hmm .  
+E:  Uh , and that 's something that nothing  nothing else after that is gonna  Uh , things are gonna scale it  
+E:  Uh , you know , subtract things from it , scale it from it , but nothing will have that same effect . 
+E:  Um . 
+E:  So . 
+E:  Um . 
+E:  Anyway , eh  
+F:  Yeah . Cuz if  if the log probs that are coming out 
+B:  <breath-laugh> 
+E:  Well , the  
+F:  of the MSG are really big , 
+F:  the standard  insertion penalty is gonna have very little effect 
+E:  Right . 
+F:  compared to , 
+F:  you know , 
+E:  Yeah . 
+F:  a smaller set of log probs . 
+E:  No . Again you don't really  look at that . It 's something  that , and then it 's going through this transformation that 's 
+E:  probably pretty close to  It 's , eh , whatever the KLT is doing . But it 's probably pretty close to what a  a  a discrete cosine transformation is doing . 
+F:  Yeah . 
+E:  <inbreath> But still it 's  it 's not gonna probably radically change the scale of things . 
+E:  I would think . And , uh  
+E:  <inbreath> 
+E:  Yeah . It may be entirely off and  and it may be  at the very least it may be quite different for MSG than it is for mel cepstrum or PLP . 
+E:  So that would be  
+E:  So the first thing I 'd look at without adjusting anything would just be to go back to the experiment and look at the , uh , substitutions , insertions , and deletions . <inbreath> 
+E:  And if the  if 
+E:  the , uh  
+E:  i if there 's a fairly large effect of the difference , say , uh , uh , the r ratio between insertions and deletions 
+B:  Mm - hmm . 
+E:  for the two cases then that would be , uh , an indicator that it might  might be in that direction . 
+B:  Mm - hmm . 
+E:  Anything else ?  
+B:  Yeah . But , 
+B:  my  my point was more that it  it works sometimes and  
+E:  Yeah . 
+B:  but sometimes it doesn't work . So . 
+E:  Well . <laugh> 
+B:  And it works on TI - digits and on SpeechDat - Car it doesn't work , and  
+E:  Yeah . 
+B:  Mm - hmm . 
+B:  Yeah . Well . 
+E:  But , you know , some problems are harder than others , and  <laugh> 
+B:  Mm - hmm . 
+B:  Yeah . <laugh> 
+E:  And , uh , sometimes , you know , there 's enough evidence for something to work and then it 's harder , it breaks . You know , so it 's  
+B:  Mm - hmm . <laugh> 
+E:  But it  but , um , i it  it could be that 
+E:  when you say it works 
+E:  maybe we could be doing much better , even in TI - digits . Right ? 
+B:  Yeah . Yeah , sure . 
+E:  So . 
+B:  Uh . <outbreath> 
+E:  Hmm ? 
+E:  Yeah . 
+
+
+B:  Yeah . Well , there is also the spectral subtraction , which , um  
+B:  I think maybe we should , 
+B:  uh , try to integrate it in  in our system . 
+E:  Yeah . 
+B:  Mmm . 
+B:  Mm - hmm . 
+E:  Right . 
+E:  <inbreath> O 
+B:  But , I think that would involve to  <breath> 
+B:  to mmm <mouth> 
+B:  use a big  
+B:  a  al already a big bunch of the system of Ericsson . 
+E:  <mike noise> 
+B:  Because 
+B:  he has spectral subtraction , 
+B:  then it 's followed by , 
+B:  <mouth> um , 
+E:  <mike noise> 
+B:  other kind of processing that 's  are dependent on the  uh , if it 's speech or noi or silence . 
+E:  Mm - hmm . 
+B:  And there is this kind of spectral flattening after  if it 's silence , and  
+B:  and s I  I think it 's important , 
+B:  um , <mouth> 
+B:  to reduce this musical noise and this  this increase of variance during silence portions . 
+B:  So . Well . 
+B:  This was in this would involve to take almost everything from  from the  
+B:  this proposal and  
+B:  and then just add 
+B:  some kind of on - line normalization in  
+B:  in the neural network . 
+E:  <inbreath> OK . Well , this 'll be , I think , something for discussion with Hynek next week . 
+B:  Mmm . <sniff> 
+B:  Yeah . Mm - hmm . 
+E:  Yeah . 
+E:  OK . 
+
+
+E:  Right . <outbreath> 
+E:  So . 
+E:  How are , uh , uh  
+E:  how are things going with what you 're doing ? 
+D:  Oh . Well , um , 
+F:  <mike noise> 
+D:  I took a lot of time just getting my taxes out of the way  multi - national taxes . 
+E:  <laugh> 
+F:  <laugh> 
+C:  <laugh> 
+D:  So , I 'm  I 'm starting to write code now for my work but I don't have any results yet . 
+D:  Um , i it would be good for me to talk to Hynek , I think , when he 's here . 
+A:  <laugh> 
+E:  Yeah . 
+D:  Do you know what his schedule will be like ? 
+E:  Uh , he 'll be around for three days . 
+E:  Uh , we 'll have a lot of time . So , uh  
+D:  OK . So , y 
+D:  OK . 
+E:  Um . 
+E:  I 'll , uh  <inbreath> 
+E:  You know , he 's  he 'll  he 'll be 
+E:  talking with everybody in this room  So . 
+F:  But you said you won't  you won't be here next Thursday ? 
+E:  Not Thursday and Friday . Yeah . Cuz I will be at faculty retreat . 
+F:  Hmm . 
+E:  So . 
+E:  I 'll try to <inbreath> 
+E:  connect with him and 
+E:  people as  as I can on  on Wednesday . But  
+E:  Um .  
+E:  <mike noise> 
+E:  <inbreath> 
+
+
+E:  Oh , how 'd taxes go ? Taxes go OK ? 
+D:  Mmm . Yeah . <laugh> 
+F:  <laugh> 
+A:  <laugh> 
+E:  Yeah . Oh , good . Yeah . <laugh> 
+B:  <laugh> 
+A:  <laugh> 
+E:  Yeah . That 's just  that 's  that 's one of the big advantages of not making much money is <inbreath> 
+D:  <laugh> 
+F:  <laugh> 
+C:  <laugh> 
+E:  the taxes are easier . Yeah . <laugh> 
+A:  <laugh> 
+C:  <breath-laugh> 
+B:  <laugh> 
+F:  Unless you 're getting money in two countries . 
+E:  I think you are . Aren't you ? 
+F:  They both want their cut . 
+B:  Hmm . 
+D:  Hmm . Yeah . <laugh> 
+F:  Right ? 
+E:  Yeah . 
+E:  Yeah . 
+B:  <laugh> 
+E:  Huh . 
+E:  Canada w Canada wants a cut ? 
+D:  Mm - hmm . 
+E:  Have to do  So you  you have to do two returns ? 
+D:  Mmm . W uh , for two thousand I did . Yeah . 
+E:  Oh , oh . Yeah . For tw That 's right , ju 
+F:  But not for this next year ? 
+E:  Two thousand .  
+E:  Yeah . Probably not this next year , I guess . Yeah . 
+D:  Ye - <cough> 
+D:  Um . 
+E:  Yeah . 
+D:  Uh , I 'll  I 'll still have a bit of Canadian income but it 'll be less complicated because I will not be a  considered a resident of Canada anymore , so I won't have to declare my American income on my Canadian return . 
+E:  <laugh> OK .  
+B:  <laugh> 
+E:  Alright . <laugh> 
+A:  <laugh> 
+D:  <laugh> 
+E:  <inbreath> 
+
+
+E:  Uh . 
+E:  Barry , do you wanna  say something about your stuff here ? 
+A:  Oh , <outbreath> um . 
+D:  <mouth> 
+A:  Right . I  just , um , 
+A:  continuing looking at , uh , ph uh , phonetic events , 
+A:  and , uh , this Tuesday gonna be , 
+A:  uh , meeting with John Ohala with Chuck to talk some more about these , uh , ph um , phonetic events . 
+A:  <inbreath> 
+A:  Um , came up with , uh , 
+A:  a plan of attack , 
+A:  uh , gonna execute , and 
+A:  um  
+A:  <sniff> 
+A:  Yeah . It 's  that 's pretty much it . 
+E:  Oh , well . No - Um , why don't you say something about what it is ? 
+A:  Oh , you  oh , you want  you want details . Hmm . <mouth noise> 
+E:  <laugh> 
+F:  <laugh> 
+A:  OK . 
+E:  Well , we 're all gathered here together . I thought we 'd , you know  
+F:  <laugh> 
+A:  <laugh> 
+A:  <inbreath> I was hoping I could wave my hands . Um . 
+A:  So , um . 
+A:  So , once wa I  I was thinking getting  getting us a set of acoustic events to  
+A:  um , to be able to distinguish between , uh , phones and words and stuff . And <inbreath> 
+A:  um , once we  we would figure out a set of these events that can be , you know , um , 
+A:  hand - labeled or  or derived , uh , from h the hand - labeled phone targets . 
+A:  Um , we could take these events 
+A:  and , um , 
+A:  <mouth noise> 
+A:  do some cheating experiments , 
+A:  um , where we feed , um , these events into  an SRI system , um , eh , and evaluate its performance on a Switchboard task . 
+
+
+D:  Hey , Barry ? 
+A:  Uh , yeah . 
+D:  Can you give an example of an event ? 
+A:  Yeah . Sure . Um , I  I can give you an example of  twenty - odd events . 
+A:  Um  <sniff> 
+A:  So , he In this paper , um , it 's talking about phoneme recognition using acoustic events . 
+A:  So , things like frication 
+A:  or , uh , nasality . 
+E:  Whose paper is it ? 
+A:  Um , this is a 
+A:  paper by Hubener and Cardson  Benson  Bernds - Berndsen .  
+E:  Yeah . 
+E:  Huh . 
+E:  From , uh , 
+E:  University of Hamburg and 
+E:  Bielefeld . <inbreath> 
+A:  Mm - hmm . 
+E:  OK . 
+A:  <mouth> Um . 
+F:  Yeah . I think the  
+E:  <mike noise> 
+F:  just to expand a little bit on the idea of acoustic event . 
+E:  <scattered mike noise> 
+A:  Mm - hmm . 
+F:  There 's , um  in my mind , anyways , there 's a difference between , 
+F:  um , acoustic features and acoustic events . 
+F:  And I think of acoustic features as being , um , 
+E:  <mike noise> 
+F:  things that linguists talk about , like , um  
+E:  So , stuff that 's not based on data . 
+E:  <inbreath> Yeah . Oh , OK . <laugh> Yeah . Yeah , OK . 
+F:  Stuff that 's not based on data , necessarily . Right . That 's not based on , 
+E:  <breath-laugh> 
+F:  you know , acoustic data . So they talk about features for phones , like , uh , 
+F:  its height , its tenseness , laxness , things like that , which may or may not be all that easy to measure in the acoustic signal . 
+A:  Yeah . 
+A:  Mm - hmm . 
+F:  Versus an acoustic event , which is just <mike noise> some <spikes> something in the acoustic signal <spike> that is fairly easy to measure . 
+F:  Um . So it 's , um  it 's a little different , in  at least in my mind . <spike> 
+E:  <inbreath> I mean , when we did the SPAM work  I mean , there we had  we had this notion of an , uh , auditory  
+E:  @ @  auditory event . 
+A:  Good . That 's great .  
+E:  <breath-laugh> 
+E:  And , uh , um , 
+E:  <mouth> 
+E:  called them " avents " , <breath-laugh> 
+F:  Mm - hmm . 
+E:  uh , uh , uh , with an A at the front . Uh . 
+E:  And the  the  the idea was something that occurred that is important to a bunch of neurons somewhere . 
+E:  <laugh> So . 
+A:  Mm - hmm . 
+E:  Um . A sudden change or a relatively rapid change in some spectral characteristic 
+E:  will  will do sort of this . I mean , there 's certainly a bunch of  a bunch of places where you know that neurons are gonna fire because something novel has happened . 
+E:  <inbreath> 
+E:  <mouth> That was  that was the main thing that we were focusing on there . But there 's certainly other things 
+E:  beyond what we talked about there that aren't just sort of 
+E:  rapid changes , but  <breath> 
+F:  It 's kinda like the difference between top - down and bottom - up . 
+E:  Yeah . 
+F:  I think of the acoustic  
+F:  you know , phonetic features as being top - down . You know , you look at the phone and you say this phone is supposed to be  you know , have this feature , this feature , and this feature . 
+F:  Whether tha those features show up in the acoustic signal is sort of irrelevant . Whereas , an acoustic event goes the other way . Here 's the signal . 
+F:  Here 's some event . What  ? 
+A:  Mm - hmm . 
+F:  And then that  you know , that may map to this phone 
+F:  sometimes , and sometimes it may not . It just depen maybe depends on the context , things like that . And so it 's sort of a different way of looking . <spike> 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+A:  Yeah . 
+
+
+A:  So . Yeah . 
+D:  OK . 
+A:  Mm - hmm . 
+A:  Um  <mouth> 
+A:  Using these  these events , um , you know , we can  we can perform these  these , uh , cheating experiments . See how  how  how good they are , 
+A:  um , in , um  in terms of phoneme recognition or word recognition . 
+A:  And , 
+A:  um  <mouth> 
+A:  and then from that point on , I would , uh , s design robust event detectors , um , in a similar , 
+A:  um , wa spirit that Saul has done w uh , with his graphical models , and 
+A:  this  this probabilistic AND - OR model that he uses . 
+A:  Um , 
+F:  <spike> 
+A:  eh , try to extend it to , um  to account for other  other phenomena like , um , CMR co - modulation release . 
+A:  <inbreath> 
+A:  And , um  <mouth> 
+A:  and maybe also investigate ways to  to modify the structure of these models , um , in a data - driven way , 
+A:  uh , similar to the way that , uh , Jeff  Jeff , uh , Bilmes did his work . 
+A:  Um , <mouth> 
+A:  and while I 'm  I 'm doing these , um , event detectors , 
+A:  you know , I can ma mea measure my progress by comparing , 
+A:  um , the error rates in clean and noisy conditions to something like , uh , neural nets . 
+A:  Um , <mouth> and  
+A:  So  
+A:  so , once we have these  these , uh , event detectors , 
+A:  um , 
+A:  we could put them together and  and feed the outputs of the event detectors into  into the SRI , um , 
+A:  HMM  HMM system , 
+A:  and , 
+A:  um  <mouth> and test it on  on Switchboard or , um , maybe even Aurora stuff . 
+A:  And , that 's 
+A:  pretty much the  the big picture of  of 
+A:  um , the plan . 
+E:  <inbreath> 
+E:  By the way , um , 
+E:  <mouth> 
+E:  there 's , uh , a couple people who are gonna be here  I forget if I already told you this , but , a couple people who are gonna be here for six months . Uh  
+A:  Mm - hmm . 
+E:  uh , there 's a Professor Kollmeier , uh , from Germany who 's , uh , 
+E:  uh , 
+E:  quite big in 
+E:  the , uh , hearing - aid signal - processing 
+E:  area and , um , Michael Kleinschmidt , who 's worked with him , who also looks at <inbreath> 
+E:  auditory properties inspired by various , uh , brain function things . 
+E:  <inbreath> 
+A:  Hmm . 
+E:  So , um , 
+E:  <inbreath> 
+E:  um , I think they 'll be interesting 
+E:  to talk to , in this sort of issue as these detectors are  
+E:  are , uh , developing . 
+A:  Hmm . 
+A:  OK . 
+E:  So , he looks at interesting  interesting things in  in the  <inbreath> 
+E:  different ways of looking at spectra in order to  to get various speech properties out . So . 
+
+
+A:  OK . 
+E:  <breath> 
+E:  OK . Well , 
+E:  short meeting , but that 's OK . 
+E:  And , uh , we might as well do our 
+E:  digits . And like I say , I  I encourage you to go ahead and meet , uh , next week 
+F:  <spike> 
+E:  with , uh , 
+E:  uh , Hynek . 
+E:  Alright , I 'll  I 'll start . 
+E:  It 's , uh , one thirty - five .  
+E:  OK -  
+
+
+E:  Uh , OK , I 'm doing transcript L seventy - six .  
+E:  zero three two three six five five five zero  
+F:  <spike> <mike noise> 
+E:  seven zero five eight five nine nine two four six five seven  
+E:  seventeen 
+E:  eight zero three four six zero one five  
+E:  five four four eight four four five zero eight eight  
+E:  three six six six six zero one seven two six  
+E:  nine seven one two three five one five eight eight  
+E:  four eight two one eight zero four two three seven seven zero  
+E:  five two eight five seven eight eight six seven four  
+B:  Transcript L dash seventy - seven .  
+B:  five eight four five four seven four one six three  
+B:  one three zero two eight seven four five two  
+B:  one two one one six one four two two  
+B:  three eight nine one four eight three eight one seven four zero  
+B:  six five one eight six seven six two nine three  
+B:  three one three two six one three four two four  
+B:  zero two four three two one four one three one three seven  
+F:  <spike> 
+B:  zero zero one nine five zero seven nine five six  
+F:  Transcript L dash seventy - eight .  
+F:  one five four three five eight nine two seven six  
+F:  four four nine seven four six six four six  
+F:  seven eight seven three three seven six one eight two  
+F:  six eight nine O three three three one three three  
+F:  seven seven five one seven five five three six  
+F:  one one four one three zero zero seven  
+F:  five one O seven eight two four six one  
+F:  six four three eight two two five O three  
+A:  Transcript L dash seventy - nine .  
+A:  eight eight five two five two six one seven  
+A:  four four five one nine one two eight eight four  
+A:  one three one six eight four three zero zero four  
+A:  six six eight three nine eight six four eight six  
+A:  six seven five zero three one four one seven zero  
+A:  eight five nine five O three seven six O two  
+A:  six O eight two three O seven one nine eight seven five  
+A:  seven four two eight eight three seven one six eight  
+D:  Transcript L dash eight zero .  
+D:  nine five six six four three nine seven eight three  
+D:  O two six four three six one two eight nine  
+D:  three four four O five seven nine eight one  
+D:  three nine O eight eight O one O two zero nine nine  
+D:  five eight nine eight one eight nine five four eight  
+D:  seven nine six one eight seven eight eight three  
+D:  zero nine six seven six two nine zero five  
+D:  seven five six zero seven two nine seven  
+C:  Transcript L dash eighty - one .  
+C:  seven nine one five nine zero eight two  
+F:  <mike sound> 
+C:  one six one six eight six four zero one three  
+C:  four four zero five five six four two one  
+C:  nine four two one zero five one two seven two  
+B:  <clears throat> 
+F:  <spike> 
+C:  one two nine five eight eight six three nine two  
+C:  five eight eight four three six zero five three zero  
+B:  <cough> 
+C:  two three three two six two four three six five  
+C:  two six two four two eight five one four five  
+
+

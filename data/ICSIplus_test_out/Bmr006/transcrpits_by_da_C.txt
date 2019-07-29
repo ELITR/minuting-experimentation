@@ -1,0 +1,392 @@
+C:  OK . 
+C:  One two three four five six 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Uh - huh . 
+C:  Yeah . 
+C:  Yeah . 
+C:  It 's difficult . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  " Age - ist " . 
+C:  Yeah . Yeah . 
+C:  Yeah . 
+C:  But I  I  I think you need , uh , another portable thing a another portable equipment to  to do , eh , more e easier the recording process , eh , out from ICSI . 
+C:  Eh and probably . I don't know . 
+C:  Eh , if you  you want to  to record , eh , a seminar or a class , eh , in the university , you  you need  <mouth> It - it would be eh eh very difficult to  to put , <laugh> eh , a lot of , eh , head phones eh in different people when you have to  to record only with , eh , this kind of , eh , d device . 
+C:  Oh - yeah . 
+C:  Ye - Yeah , yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  See you . 
+C:  Eleven ? 
+C:  Tape ? 
+C:  Oh . 
+C:  Eleven hours ? 
+C:  Oh . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Oh . 
+C:  OK . 
+C:  Uh - huh . 
+C:  OK . 
+C:  I have , eh , <clears throat> The result of my work during the last days . 
+C:  Thank you for your information because I  I read . Eh , and the  the last , eh , days , eh , I work , eh , in my house , eh , in a lot of ways and thinking , reading eh , different things about the  the Meeting Recording project . 
+C:  And I have , eh , some ideas . 
+C:  Eh , this information is very  very useful . 
+C:  Because <laugh> you have the  the  the distribution , now . 
+C:  But for me , eh is interesting because , eh , eh , here 's i is the demonstration of the overlap , eh ,  problem . 
+C:  It 's a real problem ,  a frequently problem  uh , because you have overlapping zones eh , eh , eh , all the time . 
+C:  Yeah . 
+C:  Eh , by a moment I have , eh , nnn , the , eh ,  n I  I did a mark of all the overlapped zones in the meeting recording , 
+C:  with eh , a exact  mark . 
+C:  Heh ? That 's eh , yet b b Yeah , by  b b by hand  by hand because , eh , <mouth> eh  " Why . " 
+C:  My  my idea is to work  
+C:  I  I  I do I don I don't @ @  I don't know , eh , if , eh , it will be possible because I  I  I haven't a lot  eh , enough time to  to  to work . uh , only just eh , six months , as you know , 
+C:  but , eh , my idea is , eh , is very interesting to  to work  in  in the line of , eh , automatic segmenter . 
+C:  Eh but eh , eh , in my opinion ,  we need eh , eh , a reference  eh session to  t to  to evaluate the  the  the tool . 
+C:  And  No , no , with i 
+C:  Sorry ? 
+C:  No , I  I  plan to do that . 
+C:  I plan  I plan , but eh , eh , the idea <laugh> is the  is the following . 
+C:  Now , <mouth> eh , I need ehm , <mouth> to detect eh all the overlapping zones exactly . 
+C:  I  I will  I will eh , talk about eh ,  in the  in the blackboard about the  my ideas . 
+C:  Eh , um , <breath> <mouth> eh  This information eh , with eh , exactly time marks eh , for the overlapping zones <inbreath> eh  overlapping zone , and eh , a speaker  a  a pure speech eh , eh , speaker zone . 
+C:  I mean , eh zones eh of eh speech of eh , one speaker without any  any eh , noise eh , any  any acoustic event eh that eh , eh , w eh , is not eh , speech , real speech . 
+C:  And , I need t true eh , silence 
+C:  for that , because my  my idea is to  to study the nnn  the  <mouth> the set of parameters eh , what , eh , are more m more discriminant to eh , classify . 
+C:  the overlapping zones in cooperation with the speech  eh zones . 
+C:  The idea is  to eh  to use  eh , I 'm not sure to  eh yet , but eh my idea is to use a  a cluster  <mouth> eh algorithm or , nnn , a person strong in neural net algorithm to eh  to eh study 
+C:  what is the , eh , the property of the different feat eh feature , eh , to classify eh speech and overlapping eh speech . 
+C:  And my idea is eh , it would be interesting to  to have eh , <mouth> a control set . 
+C:  And my control set eh , will be the eh , silence , silence without eh , any  any noise . 
+C:  Yeah , acoustic with this .  With  with , yeah , the background . 
+C:  Eh , I  I mean eh , noise eh , eh claps eh , tape clips , eh , the difference eh , 
+C:  eh , eh , event eh , which , eh , eh , has , eh eh , a hard effect of distorti spectral distortion in the  in the eh  speech . 
+C:  Yeah , I have mark in  in  in  in that  Not in all  in all the  the file , 
+C:  only eh , eh , nnn ,  mmm , I have eh , ehm  I don't remind  what is the  the  the  the quantity , 
+C:  but eh , I  I have marked enough speech on over and all the overlapping zones . 
+C:  I have , eh ,  two hundred and thirty , more or less , overlapping zones , and is similar to  to this information , 
+C:  because with the program , I cross  the information of uh , of Jane  with eh , my my segmentation by hand . 
+C:  And  is eh , mor more similar . 
+C:  But  
+C:  Sorry , sorry . 
+C:  And the  the idea is , eh , <mouth> I  I will use , eh ,  I want   My idea is , eh , <clears throat> <cough> to eh   <noises from writing on whiteboard> to classify . 
+C:  I  I need eh , the exact eh , mark of the different , eh , eh , zones 
+C:  because I  I want to put , eh , for eh , each frame a label  indicating . It 's a sup supervised and , eh , hierarchical clustering process . 
+C:  I  I  I put , eh , eh , for each frame <noises from writing on whiteboard> a label indicating what is th the type , what is the class , eh , which it belong . 
+C:  Eh , I mean , the class you will <noises from writing on whiteboard> overlapping speech " overlapping " is a class , eh , " speech " <noises from writing on whiteboard> @ @ the class  that 's 
+C:  a I  I  I ha I h I  I put the mark by hand , 
+C:  because , eh , <mouth> my idea is , eh , in  in the first session , I need , eh ,  I  I need , eh , to be sure that the information eh , that , eh , I  I will cluster , is  is right . Because , eh , eh , if not , eh , I will  I will , eh , return to the speech file to analyze eh , what is the problems , 
+C:  eh . And <mouth> I  I 'd prefer  I would prefer , the to  to have , eh , this labeled automatically , 
+C:  but , eh , eh , fro th I need truth . 
+C:  Yeah . 
+C:  Yeah . Yeah . Yeah . 
+C:  Speech  
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Is  
+C:  One , two , three . 
+C:  but 
+C:  No , by th by the moment n Yeah . Yeah . Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Eh , in the first moment , because , eh , eh , I  I have information , eh , of the overlapping zones , eh , information about if the , eh , overlapping zone is , eh , from a speech , clear speech , from a one to a two eh speaker ,  or three speaker , or is  is the zone where the breath of a speaker eh , overlaps eh , onto eh , a speech , another , especially speech . 
+C:  No , no , es especially  eh , overlapping speech  from , eh , different eh , eh , speaker . 
+C:  Eh  
+C:  Ah ! 
+C:  Yeah . 
+C:  Yeah , he here I  I put eh speech from eh , from , eh , one speaker  without , eh , eh , any  any  any events more . 
+C:  Where ? Where  What is the class ? 
+C:  No . By the moment , no . 
+C:  For  for the  by the @ @ no , @ @ because I  I  I  I want to limit the  the  nnn , <laugh> the  the study . 
+C:  The  All  I  Exactly . 
+C:  Yeah , you mean  
+C:  Yeah , be 
+C:  Yeah . 
+C:  " Why ? 
+C:  Why ? 
+C:  What 's the reason ? " 
+C:  because  i it 's the first study . 
+C:  the first 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  In the  in the future , the  the idea is to  to extend  the class , 
+C:  to consider all the  all the information , you  you mentioned before 
+C:  but eh , the  the first idea  Because eh , I don't know  what hap what will happen  with the study . 
+C:  Yeah . 
+C:  i it 's pure  
+C:  No , no , it 's pure silence . 
+C:  It 's the control set . 
+C:  OK ? 
+C:  It 's the control set . 
+C:  It 's pure si pure silence  with the  with the machine on the  on the roof . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  h here yet , yet I  I  I  I  I think  I  I think , eh , there are  that  some kind of noises that , eh , don't  don't wanted to  to be in that , eh , in that control set . 
+C:  But I prefer , I prefer at  at the first , eh , the  the silence with eh , this eh this kind of the  of eh  of noise . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Is  is  is only  
+C:  OK . 
+C:  And , um , with this information <mouth> The idea is eh , eh , nnn , I have a label for  for each , eh , frame and , eh with a cluster eh  algorithm I  and  
+C:  Sorry . 
+C:  And eh I am going  to prepare a test bed , eh , well , eh , a  a set of  feature structure eh , eh , models . 
+C:  And  my idea is 
+C:  so  so  on  because I have a pitch extractor yet . 
+C:  I have to  to test , but eh I  
+C:  Yeah , yeah , yeah . 
+C:  I ha I have prepare . 
+C:  Is a modified version of  of  of a pitch tracker , eh , from , eh , Standar - eh Stanford University  
+C:  in Stanford ? 
+C:  No . 
+C:  From , eh , em , <mouth> Cambridge  University . 
+C:  Eh , em , I  I  I don't remember what is the  the name of the  of the author , 
+C:  because I  I have several  I have eh , eh , em , eh , library tools , from eh , Festival and  of  from Edinburgh eh , from Cambridge , eh , and from our department . 
+C:  And  And I have to  because , <mouth> in general the pitch tracker , doesn't work  <laugh> very well and  
+C:  Yeah . Yeah . 
+C:  This  this is  And  th the idea is to  to , eh , to obtain , eh ,  for example , eh ,  <mouth> eh diff eh , eh , different  well , no , a great number of eh FEC for example , eh ,  eh , twenty - five , eh , thirty  thirty parameters , eh , for  for each one . 
+C:  And in a first eh , nnn , step in the investi in the research in eh , my idea is try to , eh , to prove , what is the performance of the difference parameter , eh  to classify  the different , eh , what is the  the  the  the front - end approach to classify eh , the different , eh , frames of each class  eh and what is the  the , nnn , nnn , nnn , eh , what is the , the error  eh , of the data 
+C:  This is the  the eh , first idea 
+C:  and the second  is try to  eh , to use  some ideas eh , similar to the linear discriminant analysis . 
+C:  Eh ? 
+C:  Eh , similar , because the the idea is to  to study  what is the contribution of eh , each parameter to the process of classify correctly the different  the different parameters . 
+C:  Eh , the  the  the classifier is  nnn by the moment is eh  is eh , similar , nnn , that the classifier used eh , in a quantifier  vectorial quantifier is eh , used to  to eh , some distance  to  to put eh , a vector eh , in  in a class different . 
+C:  Is  Yeah ? W with a model , is  is only to cluster using a eh , @ @ or a similarity . 
+C:  A another possibility it to use eh a netw netw a neural network . 
+C:  But eh what 's the p <mouth> What is my idea ? 
+C:  What 's the problem I  I  I  I see in  in  in  <mouth> if you  you use the  the neural network ? 
+C:  If  w when  this kind of eh , mmm , cluster , clustering algorithm to can test , to can eh observe what happened you  you can't  you can't eh , eh put up with your hand  in the different parameter , 
+C:  but eh  If you use a neural net is  is a good idea , but eh you don't know what happened in the interior of the neural net . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  But  
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  And  
+C:  I  I  I will include too the  the  the differential de derivates too . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah , yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  S 
+C:  Yeah , because  
+C:  Yeah yeah . 
+C:  Yeah . 
+C:  Yeah . I  Yeah . But eh I  I  Is my my  my own vision , <laugh> of the  of the project . 
+C:  I  eh the  the Meeting Recorder project , for me , has eh , two <mouth> eh , w has eh several parts , several p <laugh> objective 
+C:  eh , because it 's a  a great project . 
+C:  But eh , at the first , in the acoustic , eh , eh , parts of the project , eh I think  you eh  we have eh <mouth>  two main eh objective . 
+C:  One  one of these is to  eh to detect the change , the acoustic change . 
+C:  And <mouth> for that , if you don't use , eh , <mouth> eh , a speech recognizer , eh broad class , or not broad class to  to try to  to   <mouth> to label the different frames , I think  the Ike criterion  or BIC criterion eh will be enough to detect the change . 
+C:  And  Probably .  I  I  I  I would like to  to t prove . 
+C:  Uh , probably . When you you have , eh , eh s eh the transition of speech or  or silence eh to overlap zone , this criterion is enough with   probably with , eh , this kind of , eh , eh the  the  the more eh use eh  use eh  used eh em  normal , regular eh parameter MF - MFCC . 
+C:  you  you have to  to  to find  you can find the  the mark . 
+C:  You can find the  nnn , the  the acoustic change . 
+C:  But eh eh I  I understand that you  your objective is  to eh classify , to know that eh that zone  not is only  a new zone in the  in the file , that eh you have eh , but you have to  to  to know that this is overlap zone . 
+C:  because in the future you will eh try to  to process that zone with a non - regular eh eh speech recognizer model , I suppose . 
+C:  you  you will pretend  to  to  to process the overlapping z eh zone with another kind of algorithm 
+C:  because it 's very difficult to  to  to obtain the transcription  from eh using eh eh a regular , normal speech recognizer . 
+C:  That , you know ,  I  I  I think is the idea . 
+C:  And so <mouth> eh the , nnn  the  <writing on whiteboard> the system  eh will have two models . 
+C:  A model to detect more acc the mor most accurately possible that is p uh , will be possible the , eh  the mark , the change 
+C:  and another  another model will @ @  or several models , to try s but  eh several model eh robust models , sample models to try to classify the difference class . 
+C:  Eh , the  the classifiers of the of the n to detect the different class to the different zones before try to  to recognize , eh with eh  to transcribe , with eh a speech recognizer . 
+C:  And my idea is to use eh , for example , a neural net 
+C:  with  the  information we obtain from this eh  this eh study of the parameter with the  selected  parameter to try to eh  to put the class of each frame . Eh  for  the difference  zone 
+C:  you  you eh , eh  have obtained in the first eh , step  with the  for example , BIC eh , eh  criterion compare model 
+C:  And  <laugh> You 
+C:  I don't - u 
+C:  i 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  It will be enough . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  This 
+C:  Sorry . 
+C:  but eh , eh <mouth> eh eh eh I don't know it is the first eh way to  to  do that 
+C:  and I would eh like to  to know what eh , your opinion . 
+C:  Eh <mouth> all this study in the f in the first moment , I  I w I  I will pretend to do  with eh eh equalizes speech . The  the equalizes speech , the speech eh , the mixes of speech . 
+C:  the  the mix , mixed speech . 
+C:  Eh , why ? 
+C:  Because eh the spectral distortion is    more eh  a lot eh clearer , very much clearer if we compare with the PDA . 
+C:  PDA speech file is eh  it will be eh difficult . 
+C:  I  
+C:  Yeah , 
+C:  fff !  Because the n the noise eh to sp the signal - to - noise relation is eh  is  is low . 
+C:  And , <mouth> I don't know  
+C:  I don't know eh uh i i that eh the  <mouth> the result of the  of the study eh with eh  with eh this eh  this speech , the mix speech eh  will work  exactly  with the  eh PDA files . 
+C:  eh What , I  I mean , what what is the effect of the low ' signal to  to  to noise relation , you know , eh with  
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . Yeah . 
+C:  Ah , yeah , yeah yeah yeah . 
+C:  But  
+C:  I  I  I  I think that the  the eh parameter we found , eh , eh <mouth> worked with both eh , speech file , 
+C:  but eh what is the  the  the relation of eh  of the <mouth> performance when eh you use eh the , eh eh speech file the PDA speech files . 
+C:  Yeah , I don't know . 
+C:  But it  I  I  I  I think it will be important . 
+C:  Because eh people eh eh , different groups eh has eh experience with this eh kind of problem . Is  eh is not easy eh to  to solve , because if you  
+C:  I  I  <mouth> I have seen the  the  the speech file from eh PDA , and s some parts is  very difficult 
+C:  because you  you don't see the spectrum  the spectrogram . 
+C:  Is very difficult to apply eh , eh a parameter to detect change when you don't see . 
+C:  But I suppose  
+C:  Yeah , yeah yeah , 
+C:  I  I  I will put eh the energy here . 
+C:  Yeah . Yeah . Yeah . 
+C:  You have a question . 
+C:  Oh . 
+C:  No . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah , yeah , yeah . 
+C:  Yeah . 
+C:  I  I  <breath> I  I  I th 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  I  I  Yeah . 
+C:  I  I  I think  
+C:  Sorry . 
+C:  I  I  I think because the the the distance between the two microph eh , microphone , eh , in the PDA is very near . 
+C:  But it 's uh  from my opinion , it 's an interesting idea to  to try to study the binaural eh problem eh , with information , because I  I found difference between the  the speech from  from each micro eh , in the PDA . 
+C:  Yeah . 
+C:  No . 
+C:  No . 
+C:  No , no , no . 
+C:  But  
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Correlation , yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah , yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  It will be more interesting to study the PZM because the  the  the separation  I  I think  
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Oh , right , oh , yeah . 
+C:  Hundred . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Very complex , uh  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah , yeah . 
+C:  OK . 
+C:  Mmm . 
+C:  Yeah . 
+C:  Yeah , I think  
+
+C:  Yeah . 
+C:  It 's a good idea . 
+C:  Yeah . Yeah , I think  
+
+C:  Yeah . 
+C:  Yeah . 
+C:  Because y y you don't know to know , eh  you don't need to know what i what is the iden identification of the  of the speakers . You only eh want to know  
+C:  Ah , for discourse , yeah . Yeah . Yeah . 
+C:  Yeah , yeah . 
+C:  Yeah . 
+C:  Yeah . Yeah , yeah , 
+C:  yeah . 
+C:  Yeah . Yeah , 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . <laugh> Yeah , is  
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  the ? ? 
+C:  Yeah . 
+C:  Yeah . 
+C:  OK . 
+C:  OK . 
+C:  OK . 

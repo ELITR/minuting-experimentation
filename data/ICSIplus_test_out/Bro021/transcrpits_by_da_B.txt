@@ -1,0 +1,434 @@
+B:  OK . S 
+B:  Uh . 
+B:  Somebody else should run this . 
+B:  I 'm sick of being the one to sort of go through and say , " Well , what do you think about this ? " 
+B:  You wanna  ? 
+B:  Yeah . Why don't you run it today ? 
+B:  OK . 
+B:  So do you maybe make errors in different places ? 
+B:  Different kinds of errors ? 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Um , 
+B:  I I really would like to suggest looking , um , a little bit at the kinds of errors . 
+B:  I know you can get lost in that and go forever and not see too much , but  <breath> sometimes , 
+B:  but  but , um , 
+B:  just seeing that each of these things didn't make things better may not be enough . 
+B:  It may be that they 're making them better in some ways and worse in others , 
+B:  or increasing insertions and decreasing deletions , 
+B:  or  
+B:  or , um , 
+B:  um , 
+B:  you know , helping with noisy case 
+B:  but hurting in quiet case . 
+B:  And if you saw that then maybe you  it would  <mouth> something would occur to you of how to deal with that . 
+B:  Mm - hmm . 
+B:  Mmm . 
+B:  Mm - hmm . 
+B:  Well , there 's less difference . Right ? 
+B:  Cuz it 's  
+B:  Yeah . 
+B:  So , I mean , again , if you trained in one kind of noise and tested in the same kind of noise , you 'd  you know , given enough training data you don't do b do badly . 
+B:  The reason that we d that we have the problems we have is because  it 's different in training and test . 
+B:  Even if <breath> the general kind is the same , the exact instances are different . 
+B:  And  and 
+B:  so when you whiten it , then it 's like you  the  the only noise  to  to first order , the only th noise that you have is white noise 
+B:  and you 've added the same thing to training and test . 
+B:  So it 's , 
+B:  uh  
+B:  Well , it 's a kind of smoothing , 
+B:  but  
+B:  Mm - hmm . 
+B:  Yeah , but you 're still getting more recognition errors , 
+B:  which means <breath> that the differences , even though they look like they 're not so big , <breath> are  are hurting your recognition . 
+B:  Right ? 
+B:  Yeah . 
+B:  Well , the other thing is that you just picked one particular way of doing it . 
+B:  Uh , I mean , first place it 's fifteen DB , uh , <breath> down across the utterance . 
+B:  And <breath> maybe you 'd want to have something that was a little more adaptive . 
+B:  Secondly , you happened to pick fifteen DB 
+B:  and maybe twenty 'd be better , 
+B:  or  or twelve . 
+B:  Yeah . 
+B:  Well , he  yeah , he had to figure out how much to add . 
+B:  So he was looking  he was looking at the peak value . 
+B:  Right ? 
+B:  And then  
+B:  Yeah . 
+B:  Yeah . 
+B:  So then afterwards a log is taken , 
+B:  and that 's so sort of why the  <breath> the little variation tends to go away . 
+B:  Or  or not constant but  but , uh , varying over time  in fact is another way  to go . 
+B:  Um . 
+B:  Were you using the  the normalization in addition to this ? 
+B:  I mean , what was the rest of the system ? 
+B:  OK . 
+B:  Mm - hmm . 
+B:  Sure . 
+B:  But on the other hand if everybody is trying different kinds of noise suppression things and so forth , it might be good to standardize on the piece <breath> that we 're not changing . 
+B:  Right ? 
+B:  So if there 's any particular reason to ha pick one or the other , 
+B:  I mean  
+B:  Which  which one is closer to what the proposal was that was submitted to Aurora ? 
+B:  Are they  
+B:  they both  ? 
+B:  Well , I mean  
+B:  Well , no , I  I 'm  I  
+B:  Yeah , you 're trying to add in France Telecom . 
+B:  Tell them about the rest of it . 
+B:  Like you said the number of filters might be <breath> different or something . 
+B:  Right ? 
+B:  Or  
+B:  Cep 
+B:  Yeah . 
+B:  So , I mean , I think we 'd wanna standardize there , 
+B:  wouldn't we ? 
+B:  So , sh you guys should pick something 
+B:  and  
+B:  Well , all th all three of you . 
+B:  I think as long as you guys agree on it , it doesn't matter . 
+B:  I think we have a maximum of sixty , <breath> uh , features that we 're allowed . 
+B:  So . 
+B:  Uh , 
+B:  no . I 'm just , you know , being a manager this week . 
+B:  So . 
+B:  The big one takes a while . 
+B:  Yeah . That takes two , three weeks . 
+B:  So  but , you know , uh , you can get  
+B:  I don't know if you even want to run the big one , uh , um , in the  in the final system , 
+B:  cuz , you know , it takes a little while to run it . 
+B:  So , <breath> um , you can scale it down by  
+B:  I 'm sorry , 
+B:  it was two , three weeks for training up for the large Broadcast News test set  training set . 
+B:  I don't know how much you 'd be training on . 
+B:  The full ? 
+B:  Uh , i so if you trained on half as much <breath> and made the net , uh , uh , half as big , then it would be one fourth  the amount of time 
+B:  and it 'd be nearly as good . 
+B:  So . 
+B:  Yeah . 
+B:  Also , I guess we had  we 've had these , uh , little di discussions  
+B:  I guess you ha haven't had a chance to work with it too much  
+B:  about  about , uh  uh , uh m other ways of taking care of the phase . 
+B:  So , I mean , I  I guess that was something I could say would be that we 've talked a little bit about 
+B:  you just doing it all with complex arithmetic 
+B:  and , uh  
+B:  and not  not , uh , doing the polar representation with magnitude and phase . 
+B:  But <breath> it looks like there 's ways that one could potentially just work with the complex numbers and  and  and in principle get rid of the <breath> effects of the average complex spectrum . 
+B:  But  
+B:  Yeah . 
+B:  P So . 
+B:  Yeah . 
+B:  So I 'm  I 'm still hopeful that  that  
+B:  I mean , we  we don't even know if the phase <breath> is something  the average phase is something that we do want to remove . 
+B:  I mean , maybe there 's some deeper reason why it isn't the right thing to do . 
+B:  But , um , 
+B:  at least in principle it looks like there 's  there 's , uh , a couple potential ways to do it . 
+B:  One  one being to just work with the complex numbers , 
+B:  um , 
+B:  and , uh  in rectangular kind of coordinates . 
+B:  And the other is <breath> to , uh , do a Taylor series  
+B:  Well . 
+B:  So you work with the complex numbers 
+B:  and then when you get the spectrum  the average complex spectrum  um , actually divide it out , 
+B:  um , as opposed to taking the log and subtracting . 
+B:  So then , 
+B:  um , 
+B:  um , 
+B:  you know , there might be some numerical issues . 
+B:  We don't really know that . 
+B:  The other thing we talked a little bit about was Taylor series expansion . 
+B:  And , um , 
+B:  uh , actually I was talking to Dick Karp about it a little bit , 
+B:  and  and  and , since I got thinking about it , 
+B:  and  and , uh , 
+B:  so one thing is that y you 'd have to do , I think , 
+B:  uh  
+B:  we may have to do this on a whiteboard , 
+B:  but I think you have to be a little careful about scaling the numbers that you 're <breath> taking  the complex numbers that you 're taking the log of 
+B:  because <breath> the Taylor expansion for it has , you know , a square and a cube , and  and so forth . 
+B:  And  and so if  <breath> if you have a  a number that is modulus , you know , uh , very different from one  <breath> It should be right around one , 
+B:  if it 's  
+B:  cuz it 's a expansion of log one  
+B:  one minus epsilon 
+B:  or o is  is <breath> one plus epsilon , 
+B:  or is it one plus  ? 
+B:  Well , there 's an epsilon squared over two 
+B:  and an epsilon cubed over three , 
+B:  and so forth . 
+B:  So if epsilon is bigger than one , then it diverges . 
+B:  So you have to do some scaling . 
+B:  But that 's not a big deal 
+B:  cuz it 's the log of  <breath> of K times a complex number , 
+B:  then you can just  that 's the same as log of K plus <breath> log of the complex number . 
+B:  Uh , 
+B:  so there 's  
+B:  converges . 
+B:  But . 
+B:  I  I missed the v 
+B:  I 'm sorry , 
+B:  I was  I was distracted . 
+B:  I missed the very first sentence . 
+B:  So then , I 'm a little lost on the rest . 
+B:  What  what  what  ? 
+B:  Yeah , I see . 
+B:  Oh , OK . 
+B:  OK . 
+B:  Uh - huh . 
+B:  OK . 
+B:  Right . 
+B:  Yeah . 
+B:  As  as he is wont to do . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  So , that 'd be good from  for analysis . 
+B:  It 's good to have some , uh , cases of the same utterance at different  different times . 
+B:  Yeah . 
+B:  I see . 
+B:  So that @ @  given that you 're using the VAD also , the effect of the VTS is not  so far  
+B:  Do you  How much of that do you think is due to just the particular implementation and how much you 're adjusting it ? 
+B:  Or how much do you think is intrinsic to  ? 
+B:  I have an idea . 
+B:  If  if , uh , uh , 
+B:  y you 're right . 
+B:  I mean , each of these require this . 
+B:  Um , given that we 're going to have for this test at least of  uh , boundaries , what if initially we start off by using  known sections of nonspeech  for the estimation ? 
+B:  Right ? 
+B:  S so , e um , 
+B:  first place , I mean even if ultimately we wouldn't be given the boundaries , <breath> uh , this would be a good initial experiment to separate out the effects of things . 
+B:  I mean , how much is the poor  <breath> you know , relatively , uh , unhelpful result that you 're getting in this or this or this 
+B:  is due to some inherent limitation to the method for these tasks 
+B:  and how much of it is just due to the fact that you 're not accurately <breath> finding enough regions that  that are really <mouth> n noise ? 
+B:  Um . 
+B:  So maybe if you tested it using that , <breath> you 'd have more reliable  stretches of nonspeech to do the estimation from 
+B:  and see if that helps . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+
+B:  I I 'm actually just confused about  the equations you have up there . 
+B:  So , uh , 
+B:  the top equation is  is  is  
+B:  Which is  which is the log domain ? 
+B:  And  
+B:  but Y is what ? 
+B:  Y of  the spectrum 
+B:  or  ? 
+B:  No , no . 
+B:  The top Y is what ? 
+B:  Is that power spectrum ? 
+B:  No , is that power spectrum ? 
+B:  Is it  ? 
+B:  Oh , OK . 
+B:  So that 's uh  
+B:  OK . 
+B:  Yeah , 
+B:  OK . 
+B:  So this  it 's the magnitude squared or something . 
+B:  OK , so you have power spectrum added there 
+B:  and down here you have  <breath> you  you put the  
+B:  depends on T , 
+B:  but  b all of this is just  you just mean  
+B:  you just mean the log of the  of the one up above . 
+B:  And , uh , so that is X times , 
+B:  uh , 
+B:  o 
+B:  X times one plus , uh , N  uh , N  N  N minus X ? 
+B:  And then , 
+B:  uh  So that 's log of X plus log of one plus , uh  
+B:  Well . 
+B:  Is that right ? 
+B:  Log of  
+B:  I actually don't see how you get that . 
+B:  Uh . 
+B:  Yeah . 
+B:  Uh  
+B:  No . 
+B:  That doesn't follow . 
+B:  Yeah . 
+B:  Yeah . 
+B:  I mean , just never mind what they are . 
+B:  Uh , it 's just if X and N are variables  
+B:  Right ? 
+B:  The  the  the log of X plus N is not the same as the log of E to the X plus E to the N . 
+B:  Maybe we can take it off - line , 
+B:  but I  I don't know . 
+B:  OK . 
+B:  I i 
+B:  OK . 
+B:  Yeah . Cuz it doesn't just follow what 's there . 
+B:  It has to be some , uh , Taylor series  
+B:  No . 
+B:  That doesn't follow . 
+B:  That  I mean , that  the f top one does not  imply the second one . 
+B:  Because  cuz the log of a sum is not the same as  th 
+B:  I mean , as  
+B:  Yeah . 
+B:  Right . 
+B:  Right . So you could s 
+B:  Yeah . 
+B:  N no , 
+B:  but  
+B:  I don't see how you get the second expression from the top one . 
+B:  The  I mean , just more generally here , <breath> if you say " log of , um , A plus B " , 
+B:  the log of  log of A plus B is not  
+B:  or A plus B is not the , um , log of E to the A plus E to the B . 
+B:  Right ? 
+B:  And that 's what you seem to be saying . 
+B:  Right ? 
+B:  Cuz you  cuz you  up here you have the A plus B  
+B:  Plus N . 
+B:  Right . 
+B:  Right . 
+B:  And then how do you go from there to the  ? 
+B:  Look . 
+B:  OK , 
+B:  so let 's  
+B:  I mean , C equals A plus B , 
+B:  and then  
+B:  Right . 
+B:  Yeah . 
+B:  That one 's right . 
+B:  Oh . 
+B:  I see . 
+B:  I see . 
+B:  OK , I understand now . 
+B:  Alright , thanks . 
+B:  OK . 
+B:  So , yeah . 
+B:  It 's just by definition  that the individual  <breath> that the , uh  
+B:  So , capital X is by definition the same as E to the little X 
+B:  because she 's saying that the little X is  is the , uh  is the log . 
+B:  Alright . 
+B:  Yeah . 
+B:  Alright . 
+B:  I think these things are a lot clearer when you can use fonts  different fonts there 
+B:  so you know which is which . 
+B:  But I  I under I understand what you mean now . 
+B:  OK . 
+B:  Sure . 
+B:  Oh . 
+B:  Yes . I understand now . 
+B:  And that 's where it comes from . 
+B:  Yeah . 
+B:  Right . 
+B:  Right . 
+B:  OK . 
+B:  Thanks . 
+B:  OK . So now once you get that  that one , then you  then you do a first or second - order , or something , Taylor <breath> series expansion of this . 
+B:  Right . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  So , um , 
+B:  how  h 
+B:  how much  in  in the work they reported , how much noisy speech did you need to get , uh , good enough statistics 
+B:  for the  to get this mapping ? 
+B:  Yeah . 
+B:  Yeah . 
+B:  Cuz I think what 's certainly characteristic of a lot of the  data in this test is that , um , you don't have  <breath> the  
+B:  the training set may not be a  a great estimator for the noise in the test set . 
+B:  Sometimes it is 
+B:  and sometimes it 's not . 
+B:  Uh - huh . 
+B:  And what are you using for the noisy  ? 
+B:  Y y doing that strictly  
+B:  Mm - hmm . 
+B:  And  and you  and you train it up entirely from , uh , nonspeech sections in the test ? 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mmm . 
+B:  What is the first variable in that probability ? 
+B:  No , no . I 'm sorry . 
+B:  In  in the one you pointed at . 
+B:  What 's that variable ? 
+B:  OK . 
+B:  Yes . 
+B:  Uh - huh . 
+B:  Uh - huh . 
+B:  Yes . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  So , I 'm  I 'm not following this perfectly 
+B:  but , um , 
+B:  I  
+B:  Are you saying that all of these estimates are done  using , um , estimates of the probability density for the noise that are calculated only from the first ten frames ? 
+B:  And never change throughout anything else ? 
+B:  Per  per  per utterance , 
+B:  or per  ? 
+B:  Per utterance . 
+B:  OK . 
+B:  So it 's done  it 's done new for each new utterance . 
+B:  So this changes the whole mapping for every utterance . 
+B:  OK . 
+B:  OK . 
+B:  Yeah ? 
+B:  Mm - hmm . 
+B:  So you estimated , uh , f completely forgetting what you had before ? 
+B:  Uh , or is there some adaptation ? 
+B:  OK . 
+B:  Now do we know , either from their experience or from yours , that , uh , just having , uh , two parameters , the  the mean and variance , is enough ? 
+B:  Yeah . 
+B:  I mean , I know you don't have a lot of data to estimate with , 
+B:  but  but , uh , 
+B:  um  
+B:  No , I 'm talking about the noise . 
+B:  There 's only one Gaussian . 
+B:  Right . 
+B:  And you  and  and it 's , 
+B:  uh , uh  
+B:  right , 
+B:  it 's only  
+B:  it 's only one  
+B:  Wait a minute . 
+B:  This is  
+B:  what 's the dimensionality of the Gaussian ? 
+B:  This is  
+B:  So this is twenty or something ? 
+B:  Twenty ? 
+B:  So it 's  
+B:  Yeah . So it 's actually forty numbers  that you 're getting . 
+B:  Yeah , maybe  maybe you don't have a  
+B:  Well , yeah . 
+B:  But , I mean , <laugh> no  no paper is  is a Bible , 
+B:  you know . 
+B:  This is  this is , uh  
+B:  The question is , um , <mouth> whether it would be helpful , i particularly if you used  if you had more  
+B:  So , suppose you did  
+B:  This is almost cheating . 
+B:  It certainly isn't real - time . 
+B:  But if y suppose you use the real boundaries that  that you were  in fact were given <breath> by the VAD and so forth 
+B:  or I  I guess we 're gonna be given even better boundaries than that . 
+B:  And you look  you take all o all of the nonspeech components in an utterance , 
+B:  so you have a fair amount . 
+B:  Do you benefit from having a better model for the noise ? 
+B:  That would be another question . 
+B:  So first question would be <breath> to what extent i are the errors that you 're still seeing <breath> based on the fact that you have poor boundaries for the , uh , uh , nonspeech ? 
+B:  And the second question might be , given that you have good boundaries , could you do better if you used more parameters to characterize the noise ? 
+B:  Um . 
+B:  Also another question might be  
+B:  Um , they are doing  they 're using first term only of the vector Taylor series ? 
+B:  Um , if you do a second term does it get too complicated cuz of the nonlinearity ? 
+B:  Yeah , OK . 
+B:  No , I won't ask the next question then . 
+B:  Yeah . 
+B:  No , it 's interesting . 
+B:  Uh , w we haven't had anybody work with it before , 
+B:  so it 's interesting to get your  get your feedback about it . 
+B:  Right . 
+B:  I have some . 
+B:  Uh , OK . 
+B:  They prefer to have them on 
+B:  just so that they 're continuing to get the distant , uh , information . 
+B:  OK . S 

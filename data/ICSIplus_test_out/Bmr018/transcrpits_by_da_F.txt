@@ -1,0 +1,119 @@
+F:  Uh , actually I have to  <inbreath> to go . 
+F:  Pre - crashed ! 
+F:  No . The next , 
+F:  right ? 
+F:  It 's like the  
+F:  So  so the deal is that I can , um , <inbreath> uh , I can be available after , uh , like ten thirty or something . 
+F:  I don't know how s how early you wanted to  
+F:  Oh , OK . 
+F:  So  
+F:  Saturday . 
+F:  Mm - hmm . 
+F:  Oh . 
+
+F:  Oh , I haven't  I haven't listened to them either , 
+F:  but there must be something wrong , 
+F:  I mean , 
+F:  unless our  
+F:  Yeah . 
+F:  Yeah . 
+F:  No , I d I didn't . 
+F:  Since I considered those preliminary , I didn't . 
+F:  But , yeah , if you take  
+F:  So if you  
+F:  Yeah , it 's actually , um , it  uh  it was trimodal , actually  
+F:  trimodal , 
+F:  so 
+F:  there were  <inbreath> t there was  there was one h one bump at ze around zero , which were the native speakers , 
+F:  the non - pathological native speakers . 
+F:  Then there was another bump at , um , <mouth> <inbreath> oh , like fifteen or something . 
+F:  whe 
+F:  Yeah . 
+F:  Those were the non - natives . 
+F:  And then there was another distinct bump at , like , a hundred , <laugh> which must have been some problem . 
+F:  I can't imagine that  
+F:  In the recording 
+F:  And there was this one meeting , I forget which one it was , where like , uh , six out of the eight channels were all , like  had a hundred percent error . 
+F:  But  
+F:  But  
+F:  So , if I excluded the pathological ones , <laugh> by definition , those that had like over ninety - five percent error rate , <inbreath> and the non - natives , then the average error rate was like one point four or something , 
+F:  which  which seemed reasonable given that , you know , the models weren't tuned for  <inbreath> for it . 
+F:  And the grammar wasn't tuned either . 
+F:  It was just a @ @ . 
+F:  I haven't split it up that way , 
+F:  but it would be  
+F:  Right . 
+F:  So it should  
+F:  Mm - hmm . 
+F:  Yeah . 
+F:  But if you p if you actually histogrammed it , and  it was a nice  uh , you know , it  it was  zero was the most of them , 
+F:  but then there were  the others were sort of decaying from there . 
+F:  And then there was the bump for the non - natives and then the pathological ones , 
+F:  so . 
+F:  Oh , well , yeah , so I 've been struggling with the forced alignments . 
+F:  Um . <mouth> <inbreath> So the scheme that I drew on the board last time where we tried to , um <mouth> allow reject models for the s speech from other speakers , 
+F:  um , <mouth> <inbreath> most of the time it doesn't work very well . 
+F:  So , <inbreath> um , <mouth> and the  I haven't done  I mean , the only way to check this right now was for me to actually <inbreath> load these into X Waves and , you know , plus the alignments , and s play them and see where the  
+F:  And it looks  And so I looked at all of the utterances from you , Chuck , in that one conversation , 
+F:  I don't know which  You probably know which one I mean , it 's where you were on the lapel <inbreath> and Morgan was sitting next to you 
+F:  and we can hear everything Morgan says . 
+F:  But  and  and some of what you  I mean , you also appear quite a bit in that cross - talk . 
+F:  So , <mouth> I actually went through all of those , 
+F:  there were I think fifty - five segments , <inbreath> um , in  in X Waves , and  and sort of did a crude check , 
+F:  and <inbreath> more often than not , it  it gets it wrong . 
+F:  So there 's either the beginning , mostly the beginning word , <inbreath> where th you , um , you know , Chuck talks somewhere into the segment , 
+F:  but the first , um , word of what he says , often " I " 
+F:  but it 's very reduced " I , " 
+F:  that 's just aligned <inbreath> to the beginning of someone else 's speech , uh in that segment , 
+F:  which is cross - talk . 
+F:  So , <inbreath> um , <mouth> I 'm still tinkering with it , 
+F:  but it might well be that we can't get clean alignments out of this  out of those , uh , <inbreath> channels , 
+F:  so . 
+F:  Yeah , right . 
+F:  I don't thi I d I don't think that was the issue . 
+F:  The issue was that you have  to  you have have  you first have to have a pretty good speech detection on the individual channels . 
+F:  I haven't checked those yet . 
+F:  It 's very tedious to check these . 
+F:  Um , we would really need , ideally , a transcriber <inbreath> to time mark the  you know , the be at least the beginning and s ends  of contiguous speech . 
+F:  Um , <mouth> <inbreath> and , you know , then with the time marks , you can do an automatic comparison of your  of your forced alignments . 
+F:  Mm - hmm . 
+F:  No , that 's how I 've been looking at it . 
+F:  I mean , I don't care that the individual words are aligned correctly , 
+F:  but <inbreath> you don't wanna , uh , infer from the alignment that someone spoke who didn't . 
+F:  so , so  
+F:  Yeah . 
+F:  I haven't  I ha just haven't had the time to , um , do the same procedure on one of the  
+F:  so I would need a k I would need a channel that has <inbreath> a speaker whose  who has a lot of overlap but s you know , is a non - lapel mike . 
+F:  And , um , <mouth> <inbreath> where preferably , also there 's someone sitting next to them who talks a lot . 
+F:  So , I  
+F:  maybe someone can help me find a good candidate and then I would be willing to 
+F:  you know , hand 
+F:  From the insertions , maybe ? 
+F:  fr fr from the  
+F:  Right . 
+F:  Mmm . 
+F:  There 's  
+F:  Yeah . 
+F:  I 'm probably going to spend another day or so trying to improve things by , um , <mouth> <inbreath> by using , um , acoustic adaptation . 
+F:  Um , the  <inbreath> Right now I 'm using the unadapted models for the forced alignments , 
+F:  and it 's possible that you get considerably better results if you , uh , manage to adapt the , <inbreath> uh , phone models to the speaker and the reject model to the  to  to all the other speech . 
+F:  Um , so 
+F:  That 's what I just said . 
+F:  Right . 
+F:  Oh , oh , I see . 
+F:  Um , 
+F:  No , it  
+F:  th 
+F:  Exactly . 
+F:  So you want to u 
+F:  That 's a good point . 
+F:  Yep . 
+F:  Yeah . 
+F:  Mm - hmm . 
+F:  So . 
+F:  Some good jokes in it ? 
+F:  Po - low power 
+F:  So we could compare before and after 
+F:  and see  
+F:  oh , Darn ! 
+F:  Uh , actually I have to  <inbreath> to go . 

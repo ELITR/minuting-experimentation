@@ -1,0 +1,133 @@
+C:  Yeah . 
+C:  Hmm . 
+C:  Hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  I guess it could be even better , 
+C:  because the voice activity detector that I choosed is something that cheating , it 's using the alignment of the speech recognition system , 
+C:  and only the alignment on the clean channel , and then mapped this alignment to the noisy channel . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  But maybe  I  I mean we are not too far from  from fifty percent , from the new baseline . 
+C:  Which would mean like sixty percent over the current baseline , which is  
+C:  Well . 
+C:  We are around fifty , fifty - five . 
+C:  So . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  I don't know exactly if it 's  
+C:  Yeah , because it de it depends on the weightings 
+C:  and  
+C:  Yeah . 
+C:  But . 
+C:  Mm - hmm . 
+C:  Yeah , 
+C:  finally we  we 've not finished with this . 
+C:  We stopped . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Well , we have a document that explain a big part of the experiments , 
+C:  but 
+C:  it 's not , yeah , finished yet . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Right . 
+C:  We 've fff  done some strange things like removing C - zero or C - one from the  <mouth> <inbreath> the vector of parameters , 
+C:  and we noticed that C - one is almost not useful at all . 
+C:  You can remove it from the vector , it doesn't hurt . 
+C:  Um . 
+C:  In the  
+C:  No , 
+C:  in the proposal . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Which  
+C:  Well , yeah , but we have several means . 
+C:  So . 
+C:  Right ? 
+C:  Wait . 
+C:  Which  
+C:  Yeah , 
+C:  but , at the  
+C:  No . 
+C:  But I think it 's  uh the  The variance is on  on the denominator in the  in the Gaussian equation . 
+C:  So . I think it 's maybe it 's the contrary . 
+C:  If you want to decrease the importance of a c parameter , you have to increase it 's variance . 
+C:  Hmm . 
+C:  That 's right . 
+C:  OK . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  I think  What I see  What could be done is you don't change your features , which are computed once for all , 
+C:  but you just tune the model . 
+C:  So . You have your features . 
+C:  You train your  your model on these features . 
+C:  And then if you want to decrease the importance of C - one you just take the variance of the C - one component in the  in the model and increase it if you want to decrease the importance of C - one or decrease it  
+C:  Well . 
+C:  Mmm . 
+C:  Just adjust the model , 
+C:  yeah . 
+C:  Mm - hmm . 
+C:  Yeah , 
+C:  it becomes more flat 
+C:  and  
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  No , 
+C:  that 's right . 
+C:  So it 's 
+C:  just tuning the models and testing , actually . 
+C:  It would be quick . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Maybe . 
+C:  They  t 
+C:  Yeah . 
+C:  They have smaller means , also . 
+C:  Uh . 
+C:  Uh - huh . 
+C:  Mmm . 
+C:  We can set up a webcam maybe . 
+C:  No . 
+C:  Uh no . 
+C:  We don't have . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  What about Harry ? 
+C:  Uh . We received a mail last week and you are starting to  to do some experiments . 
+C:  And use this Intel version . 
+C:  Hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Well , the  the only thing I would check is if he  does he use Intel math libraries , 
+C:  because if it 's the case , it 's maybe not so easy to use it on another architecture . 
+C:  Ah yeah . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Yeah . 
+
+C:  On Intel architecture maybe . 
+C:  I 'm  
+C:  Yeah . 
+C:  Yeah . 
+C:  Well . 
+C:  Yeah . 
+C:  Well there are  at least there are optimized version for their architecture . 
+C:  I don't know . 
+C:  I never checked carefully these sorts of  
+C:  Yeah . 

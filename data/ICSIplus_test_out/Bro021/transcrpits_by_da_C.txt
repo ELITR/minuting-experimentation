@@ -1,0 +1,297 @@
+C:  It 's one mixture of the model . Right ? 
+C:  Alright . 
+C:  Um . 
+C:  Well , the first thing maybe is that the p Eurospeech paper is , uh , accepted . 
+C:  Um . 
+C:  Yeah . 
+C:  So it 's the paper that describe basically the , um , system that were proposed for the  Aurora . 
+C:  Right , yeah . 
+C:  Um  Yeah . 
+C:  So and the , fff  comments seems  from the reviewer are good . 
+C:  So . 
+C:  Mmm  
+C:  Yeah . 
+C:  It 's , uh , Aalborg in Denmark . 
+C:  And it 's , 
+C:  yeah , 
+C:  September . 
+C:  Mmm  
+C:  Yeah . 
+C:  Then , uh , whhh 
+C:  well , I 've been working on  on t mainly on on - line normalization this week . 
+C:  Uh , I 've been trying different  slightly  slightly different approaches . 
+C:  Um , the first thing is trying to play a little bit again with the , um , time constant . 
+C:  Uh , second thing is , uh , the training of , uh , on - line normalization with two different means , 
+C:  one mean for the silence and one for the speech . 
+C:  Um , 
+C:  and so I have two recursions which are controlled by the , um , probability of the voice activity detector . 
+C:  Mmm . 
+C:  This actually don't s doesn't seem to help , 
+C:  although it doesn't hurt . 
+C:  So . 
+C:  But  well , both  on - line normalization approach seems equivalent . 
+C:  Well , they  
+C:  Yeah . 
+C:  They can be very different . 
+C:  Yeah . Mm - hmm . 
+C:  I didn't look , uh , more closely . 
+C:  Um . It might be , yeah . 
+C:  Mm - hmm . 
+C:  Um . 
+C:  Well , eh , there is one thing that we can observe , is that the mean are more different for  for C - zero and C - one than for the other coefficients . 
+C:  And  
+C:  Yeah . 
+C:  And  Yeah , it  the C - one is  
+C:  There are strange  strange thing happening with C - one , is that when you have different kind of noises , the mean for the  the silence portion is  can be different . 
+C:  And  
+C:  So when you look at the trajectory of C - one , it 's  has a strange shape 
+C:  and 
+C:  I was expecting th the s that these two mean helps , 
+C:  especially because of the  the strange C - ze C - one shape , 
+C:  uh , which can  like , yo you can have , um , a trajectory for the speech 
+C:  and then when you are in the silence it goes somewhere , 
+C:  but if the noise is different it goes somewhere else . 
+C:  So which would mean that if we estimate the mean based on all the signal , even though we have frame dropping , but we don't frame ev uh , drop everything , 
+C:  but  uh , this can  hurts the estimation of the mean for speech , 
+C:  and  
+C:  Mmm .  But I still have to investigate further , I think . 
+C:  Um , a third thing is , um , <mouth> that instead of t having a fixed time constant , I try to have a time constant that 's smaller at the beginning of the utterances 
+C:  to adapt more quickly to the r something that 's closer to the right mean . 
+C:  T t um  
+C:  Yeah . 
+C:  And then this time constant increases 
+C:  and I have a threshold that  
+C:  well , if it 's higher than a certain threshold , I keep it to this threshold to still , uh , adapt , um , the mean when  <clears throat> if the utterance is , uh , long enough to  to continue to adapt after , like , one second 
+C:  or  
+C:  Mmm . 
+C:  Uh , well , this doesn't help neither , 
+C:  but this doesn't hurt . 
+C:  So , well . 
+C:  It seems pretty  
+C:  I guess it was  
+C:  I don't know . 
+C:  No . 
+C:  u Maybe it 's this  this idea of having different  on - line normalization , um , tunings for the different MFCC 's . 
+C:  But  
+C:  Mm - hmm . 
+C:  Mmm . 
+C:  Yeah . There  
+C:  uh , actually , yeah . 
+C:  S um , it 's very important to normalize C - zero 
+C:  and  much less to normalize the other coefficients . 
+C:  And , um , 
+C:  actu 
+C:  uh , well , at least with the current on - line normalization scheme . 
+C:  And 
+C:  we  I think , we <mouth> kind of know that normalizing C - one doesn't help with the current scheme . 
+C:  And  
+C:  and  Yeah . 
+C:  In my idea , I  I was thinking that the  the  the reason is maybe because of these funny things that happen between speech and silence which have different means . 
+C:  Um  
+C:  Yeah . 
+C:  But maybe it 's not so  <outbreath> so easy to  
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Alright . 
+C:  Mmm . 
+C:  Yeah . 
+C:  W um , 
+C:  So that 's it , I think , for the on - line normalization . 
+C:  Um  
+C:  Yeah . I 've been playing a little bit with some kind of thresholding , 
+C:  and , 
+C:  mmm , 
+C:  as a first experiment , I think I 
+C:  Yeah . 
+C:  Well , what I did is t is to take , um  <mouth> to measure the average  
+C:  no , the maximum energy of s each utterance 
+C:  and then put a threshold  
+C:  Well , this for each mel band . 
+C:  Then put a threshold that 's fifteen DB below  
+C:  well , uh , a couple of DB below this maximum , 
+C:  and  
+C:  Actually it was not a threshold , 
+C:  it was just adding noise . 
+C:  So I was adding a white noise energy , 
+C:  uh , that 's fifteen DB below the maximum energy of the utterance . 
+C:  And  
+C:  Yeah . 
+C:  When we look at  at the , um , MFCC that result from this , they are  a lot more smoother . 
+C:  Um , 
+C:  when we compare , like , a channel zero and channel one utterance  
+C:  um , so a clean and , uh , the same noisy utterance  
+C:  well , there is almost no difference between the cepstral coefficients of the two . 
+C:  Um . 
+C:  And  Yeah . 
+C:  And the result that we have in term of speech recognition , actually it 's not  it 's not worse , 
+C:  it 's not better neither , 
+C:  but it 's , um , kind of surprising that it 's not worse 
+C:  because basically you add noise that 's fifteen DB  just fifteen DB below  the maximum energy . 
+C:  And 
+C:  at least  
+C:  It 's  I think , it 's whitening  This  the portion that are more silent , 
+C:  as you add a white noise that are  has a very high energy , it whitens everything 
+C:  and  
+C:  and the high - energy portion of the speech don't get much affected anyway by the other noise . 
+C:  And as the noise you add is the same is   the shape , it 's also the same . 
+C:  So they have  the trajectory are very , very similar . 
+C:  And  and  
+C:  Mm - hmm . 
+C:  I think it 's  I think it 's different . 
+C:  It 's  it 's something that  yeah , that affects more or less the silence portions 
+C:  because  
+C:  Well , anyway , the sp the portion of speech that ha have high energy are not ch a lot affected by the noises in the Aurora database . 
+C:  If  if you compare th the two shut channels of SpeechDat - Car during speech portion , it 's n n n the MFCC are not very different . 
+C:  They are very different when energy 's lower , 
+C:  like during fricatives or during speech pauses . 
+C:  And , 
+C:  uh  
+C:  Ye 
+C:  Yeah . So it distort <outbreath> the speech . 
+C:  Right . 
+C:  Um . 
+C:  No . 
+C:  It didn't . 
+C:  But  
+C:  Yeah . 
+C:  So , but in this case I  I really expect that maybe the  the two  these two stream of features , they are very different . 
+C:  I mean , and maybe we could gain something by combining them 
+C:  or  
+C:  Mmm . 
+C:  Yeah . 
+C:  Yeah . Right . 
+C:  Uh - huh . 
+C:  I systematically  add the noise , 
+C:  but the , um , noise level is just  some kind of threshold below the peak . 
+C:  Mmm . 
+C:  Um . 
+C:  Yeah . 
+C:  Which is not really noise , actually . 
+C:  It 's just adding a constant to each of the mel , uh , energy . 
+C:  To each of the  mel filter bank . 
+C:  Yeah . 
+C:  So , yeah , it 's really , uh , white noise . 
+C:  I th 
+C:  Mm - hmm . 
+C:  Um . 
+C:  Yeah . So may 
+C:  Well , the  this threshold is still a factor that we have to look at . 
+C:  And I don't know , maybe a constant noise addition would  <outbreath> would be fine also , 
+C:  or  
+C:  Um  
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Um  
+C:  Um  
+C:  Yeah . It was  it was , uh , the same system . 
+C:  Mm - hmm . 
+C:  It was the same system . 
+C:  Mmm . 
+C:  Oh , yeah . 
+C:  A third thing is that , um , <outbreath> I play a little bit with the , um  <outbreath> finding what was different between , um , 
+C:  And there were a couple of differences , 
+C:  like the LDA filters were not the same . 
+C:  Um , 
+C:  he had the France Telecom blind equalization in the system . 
+C:  Um , 
+C:  the number o of MFCC that was  were used was different . 
+C:  You used thirteen 
+C:  and we used fifteen . 
+C:  Well , a bunch of differences . 
+C:  And , um , actually the result that he  he got were much better on TI - digits especially . 
+C:  So I 'm kind of investigated to see what was the main factor for this difference . 
+C:  And it seems that the LDA filter is  is  was hurting . 
+C:  Um , <mouth> so when we put s some noise compensation the , um , LDA filter that  that 's derived from noisy speech is not more  anymore optimal . 
+C:  And it makes a big difference , um , <outbreath> on TI - digits 
+C:  trained on clean . 
+C:  Uh , if we use the  the old LDA filter , I mean the LDA filter that was in the proposal , we have , like , eighty - two point seven percent recognition rate , 
+C:  um , 
+C:  on noisy speech when the system is trained on clean speech . 
+C:  But  
+C:  and when we use the filter that 's derived from clean speech we jumped  
+C:  so from eighty - two point seven to eighty - five point one , 
+C:  which is a huge leap . 
+C:  Um . 
+C:  Yeah . 
+C:  So now the results are more similar , 
+C:  and 
+C:  I don't  I will not , I think , investigate on the other differences , 
+C:  which is like the number of MFCC that we keep and other small things 
+C:  that we can I think optimize later on anyway . 
+C:  I think  
+C:  Yeah . I think th th uh , the new system that I tested is , I guess , closer 
+C:  because it doesn't have  it have less of  of France Telecom stuff , 
+C:  I  
+C:  Mmm ? 
+C:  Yeah . 
+C:  But , we  
+C:  Mm - hmm . 
+C:  Yeah , yeah . 
+C:  I think we were gonna work with  with this or this new system , 
+C:  or with  
+C:  So  
+C:  Right . 
+C:  Yeah . 
+C:  But we will use the  the LDA filters f derived from clean speech . 
+C:  Well , yeah , actually it 's  it 's not the  the LDA filter . 
+C:  It 's something that 's also short enough in  in latency . 
+C:  So . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Yeah . 
+C:  And there is  there is also this log energy versus C - zero . 
+C:  Well . 
+C:  W w if  if  
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Mmm . 
+C:  Uh , that 's it , I think . 
+C:  Mmm . 
+C:  Oh . 
+C:  Are you still using only the ten first frame for noise estimation 
+C:  or  ? 
+C:  Or i ? 
+C:  Yeah . 
+C:  Hmm . 
+C:  Maybe you have to standardize this thing also , 
+C:  noise estimation , 
+C:  because all the thing that you are testing use a different  
+C:  They all need some  some noise  noise spectra 
+C:  but they use  every  all use a different one . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  p s this  
+C:  Yeah . I guess it 's the power spectrum of noisy speech . 
+C:  Yeah . And  
+C:  Mm - hmm . 
+C:  Mmm . 
+C:  Is it the first - order expansion ? 
+C:  Yeah , I guess . 
+C:  Yeah . 
+C:  Uh - huh . 
+C:  Yeah . 
+C:  Yeah , but the  the second  expression that you put is the first - order expansion of the nonlinear relation between  
+C:  What is that ? 
+C:  It 's log o of capital Y . 
+C:  Yeah , right . 
+C:  Capital  Y . 
+C:  Mm - hmm . 
+C:  Yeah . Right . 
+C:  Yeah , sure . 
+C:  And the  the model of clean speech is a codebook . Right ? 
+C:  Mm - hmm . 
+C:  Hmm . 
+C:  It 's one mixture of the model . Right ? 

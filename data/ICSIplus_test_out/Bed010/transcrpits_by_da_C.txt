@@ -1,0 +1,466 @@
+C:  I 'm sufficiently clueless that I count as a  
+C:  Alright . 
+C:  Good . 
+C:  Yeah . 
+C:  OK so , let 's get started . 
+C:  Nancy said she 's coming 
+C:  and that means she will be . 
+C:  Um . My suggestion is that Robert and Johno sort of give us a report on last week 's adventures uh to start . 
+C:  So everybody knows there were these guys f uh from Heidelber - uh , uh , actually from uh DFKI uh , part of the German SmartKom project , who were here for the week 
+C:  and , I think got a lot done . 
+C:  It doesn't know " I " . 
+C:  Alright . 
+C:  So it might be worth , Keith , you looking at this , 
+C:  um 
+C:  Yeah  
+C:  I thi 
+C:  Yeah . 
+C:  So . I think it 's not worth going over in the group , 
+C:  but sort of when you get free and you have the time uh either Robert or Johno or I can walk you through it . 
+C:  And you can ask all the questions about how this all fits together . 
+C:  It 's eee  messy 
+C:  but once you understand it you understand it . 
+C:  It 's  it 's  There 's nothing really complicated about it . 
+C:  Right . 
+C:  Right . 
+C:  Now , we 're  we 're not committed for our research to  do any of those things . 
+C:  So uh we are committed for our funding . 
+C:  OK ? 
+C:  to  uh  
+C:  Yeah , to  
+C:  n no , to just get the dem get the demos they need . 
+C:  OK ? 
+C:  So between us all we have t to get th the demos they need . 
+C:  If it turns out we can also give them lots more than that by , you know , tapping into other things we do , that 's great . 
+C:  But i it turns out not to be in an any of the contracts 
+C:  and , s deliberately . 
+C:  So , the reason I 'd like you to understand uh what 's going on in this demo system is not because it 's important to the research . 
+C:  It 's just for closure . 
+C:  So that if we come up with a question of " could we fit this deeper stuff in there ? " or something . 
+C:  You know what the hell we we 're talking about fitting in . 
+C:  So it 's just , uh in the sam same actually with the rest of us 
+C:  we just need to really understand what 's there . 
+C:  Is there anything we can make use of ? 
+C:  Uh , is there anything we can give back , beyond th the sort of minimum requirements ? 
+C:  But none of that has a short time fuse . 
+C:  So th the demo the demo requirements for this Fall are sort of taken care of as of later this week or something . 
+C:  And then  So , it 's probably fifteen months or something until there 's another serious demo requirement . 
+C:  That doesn't mean we don't think about it for fifteen months , 
+C:  but it means we can not think about it for six months . 
+C:  So . The plan for this summer uh , really is to step back from the applied project , 
+C:  keep the d keep the context open , but actually go after the basic issues . 
+C:  And , 
+C:  so The idea is there 's this uh , other subgroup that 's worrying about formalizing the nota getting a notation . 
+C:  But sort of in parallel with that , uh , the hope is tha in particularly you will work on constructions in English Ge - and German for this domain , 
+C:  but y not worry about parsing them or fitting them into SmartKom or any of the other  anything lik any other constraints for the time being . 
+C:  It 's hard enough to get it semantically and syntactically right and then  and get the constructions in their form and stuff . 
+C:  And , I don I don't want you f feeling that you have to somehow meet all these other constraints . 
+C:  Um . And similarly with the parsing , uh we 're gonna worry about parsing uh , the general case 
+C:  you know , construction parser for general constructions . 
+C:  And , if we need a cut - down version for something , or whatever , we 'll worry about that later . 
+C:  So I 'd like to , for the summer turn into science mode . 
+C:  And I assume that 's also , uh , your plan as well . 
+C:  Right . 
+C:  Yeah . 
+C:  Yeah . 
+C:  But  but we we 're swit 
+C:  Right . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  So , c sh we could set that up as actually an institute wide thing ? 
+C:  Just give a talk in the big room , and  and so peo people know what 's going on ? 
+C:  when you 're ready ? 
+C:  Yeah I mean , that 's the kind of thing  
+C:  That 's the level at which you know we can just li invite everybody and say " this is a project that we 've been working on and here 's a demo version of it " and stuff like that . 
+C:  Indeed . 
+C:  But any so that  e e 
+C:  It 's clear , then , I think . 
+C:  Actually , roughly starting uh let 's say , nex next meeting , cuz this meeting we have one other thing to tie up besides the trip report . 
+C:  But uh starting next meeting I think we want to flip into this mode where  
+C:  Uh . I mean there are a lot of issues , 
+C:  what 's the ontology look like , 
+C:  you know what do the constructions look like , 
+C:  what 's the execution engine look like , 
+C:  mmm lots of things . 
+C:  But , more focused on uh an idealized version than just getting the demo out . 
+C:  Now before we do that , let 's get back in  
+C:  Oh ! 
+C:  But , it 's still , I think , useful for you to understand the demo version enough , so that you can  can see what  what it is that  that uh it might eventually get retro - fitted into or something . 
+C:  And Johno 's already done that , uh , looked at the dem uh the  looked at the SmartKom stuff . 
+C:  Well , the parser , and that stuff . 
+C:  OK . Anyway . 
+C:  So , the trip  
+C:  the report on these  
+C:  the last we we sort of interrupted you guys telling us about what happened last week . 
+C:  Maybe you 're done , then . 
+C:  Anyth - any other <tongue taps>  uh repo visit reports sort of stories ? 
+C:  uh we  so we now know I think , what the landscape is like . 
+C:  And so we just push on and  and uh , do what we need to do . 
+C:  And one of the things we need to do is the um , and this I think is relatively tight  tightly constrained , is to finish up this belief - net stuff . 
+C:  So . 
+C:  Uh . And I was going to switch to start talking about that unless there 're m other more general questions . 
+C:  OK so here 's where we are on the belief - net stuff as far as I understand it . 
+C:  Um . Going back I guess two weeks ago uh Robert had laid out this belief - net , missing only the connections . 
+C:  Right ? 
+C:  That is   So , he 'd put all th all the dots down , 
+C:  and we went through this , and , I think , more or less convinced ourselves that at least the vast majority of the nodes that we needed for the demo level we were thinking of , were in there . 
+C:  Yeah  we may run across one or two more . 
+C:  But of course the connections weren't . 
+C:  So , uh Bhaskara and I went off and looked at some technical questions about were certain operations sort of legitimate belief - net computations and was there some known problem with them or had someone already uh , solved you know how to do this and stuff . 
+C:  And so Bhaskara tracked that down . 
+C:  The answer seems to be uh , " no , no one has done it , but yes it 's a perfectly reasonable thing to do if that 's what you set out to do " . 
+C:  And , so the current state of things is that , again , starting now , um we 'd like to actually get a running belief - net for this particular subdomain done in the next few weeks . 
+C:  So Bhaskara is switching projects as of the first of June , 
+C:  and uh , he 's gonna leave us an inheritance , which is a uh  hopefully a belief - net that does these things . 
+C:  And there 're two aspects to it , one of which is , you know , technical , 
+C:  getting the coding right , and making it run , and uh stuff like that . 
+C:  And the other is the actual semantics . 
+C:  OK ? What all  you know , what are the considerations and how and what are the ways in which they relate . 
+C:  So he doe h he doesn't need help from this group on the technical aspects or if he does uh we 'll do that separately . 
+C:  But in terms of what are the decisions and stuff like that , that 's something that we all have to work out . 
+C:  Is  is that right ? 
+C:  I mean that 's  that 's both you guys ' understanding of where we are ? 
+C:  OK . 
+C:  Yeah I mean , that 's a separate problem . 
+C:  We do in the long run wanna do better visualization and all that stuff . 
+C:  That 's separable , 
+C:  yeah . 
+C:  Yep . 
+C:  Right . 
+C:  Not  not at this point . 
+C:  Right . 
+C:  Well , we can p If it 's  If we can pay  
+C:  Yeah . If you know it 's paying a thousand dollars or something we can do that . 
+C:  OK ? 
+C:  So  so don't view free as  as a absolute constraint . 
+C:  OK . 
+C:  And you can ask Kevin . 
+C:  Hugin , 
+C:  yeah that 's free . 
+C:  Uh , it may be free to academics . 
+C:  Like I  I don't know . 
+C:  I have a co  I have a copy  that I l I downloaded . 
+C:  So , at one point it was free . 
+C:  Uh but yo I noticed people do use Hugin 
+C:  so um , 
+C:  HUGIN . 
+C:  And Bhaskara can give you a pointer . 
+C:  So then , in any case , um  
+C:  But paying a lit 
+C:  You know , if i if it 's uh  
+C:  Probably for university , it 's  it 's gonna be real cheap anyway . 
+C:  But um , you know , if it 's fifty thousand dollars we aren't gonna do it . 
+C:  I 'm mean , we have no need for that . 
+C:  No , 
+C:  he 's not gonna do that . 
+C:  Doesn't matter . 
+C:  Yeah and this is not a crisis that  I mean , you do , e everybody who 's a student should , you know do their work , get their c courses all in good shape 
+C:  and  and  and  and then we 'll dig  d dig down on this . 
+C:  Right . 
+C:  Well there  there  there There 're two different things you do . 
+C:  One is you design and the other is you learn . 
+C:  OK ? 
+C:  So uh what we 're gonna do initially is  is do design , and , i if you will , guess . 
+C:  OK . 
+C:  Uh that is you know use your best knowledge of  of the domain to uh , hypothesize what the dependencies are and stuff . 
+C:  If it 's done right , and if you have data then , there are techniques for learning the numbers given the structure 
+C:  and there are even techniques for learning the structure , although that takes a lot more data , 
+C:  and it 's not as @ @ and so forth and so on . 
+C:  So uh 
+C:  but for the limited amount of stuff we have for this particular exercise I think we 'll just design it . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Yeah make yourself a note . 
+C:  So and  and , of course Keith would like the German as well as the English , 
+C:  so whatever you guys can get . 
+C:  Yeah , the y your native language , 
+C:  right ? 
+C:  You remember that one . 
+C:  So he 'll get you some data . 
+C:  Yep . 
+C:  OK , 
+C:  so while we 're still at this sort of top level , anything else that we oughta talk about today ? 
+C:  Oh right . 
+C:  Mmm . 
+C:  So  
+C:  how much is that used in German ? 
+C:  Oh , OK . 
+C:  So , where is this huge project ? 
+C:  Mm - hmm . 
+C:  Well , that may be another thing that Keith wants to look at . 
+C:  Mm - hmm . 
+C:  No , it 's not . 
+C:  Hmm . 
+C:  Absolutely . 
+C:  Oh . 
+C:  Oh . 
+C:  Great . 
+C:  No , I 've not seen that . 
+C:  So that would be " origin " in English , 
+C:  right ? 
+C:  Alright . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Yeah , it sounds like it , 
+C:  doesn't it , 
+C:  yeah . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  I see this is  this is getting into Ami 's thing . 
+C:  He 's  he 's very interested in that . 
+C:  So . 
+C:  Uh . Yeah . 
+C:  Well , why don't you just put it on the web page ? 
+C:  There 's this EDU  
+C:  Right ? 
+C:  Or a link to it . 
+C:  Just 
+C:  Maybe just put a link on . 
+C:  Yeah . 
+C:  By the way , there  something that I didn't know until about a week ago or so , is apparently , there are separate brain areas for things within reach , and things that are out of reach . 
+C:  So there 's  there 's uh all this linguistic stuff about you know , near and far , or yon and  and so forth . 
+C:  So this is all  This is  There 's this linguistic facts . 
+C:  But apparently , the  Uh . Here 's the way the findings go . 
+C:  That , you know they do MRI , and  and if you 're uh  got something within reach then there 's one of your areas lights up , 
+C:  and if something 's out of reach uh a different one . 
+C:  But here 's the  the amazing result , um , they say . 
+C:  You get someone with a  with a deficit so that they have a perfectly normal ability at distance things . 
+C:  So the s typical task is subdivision . 
+C:  So there 's a  a line on the wall over there , and you give them a laser pointer , and you say , " Where 's the midpoint ? " 
+C:  And they do fine . 
+C:  If you give them the line , and they have to touch it , 
+C:  they can't . 
+C:  There 's just that part of the brain isn't functioning , so they can't do that . 
+C:  Here 's the real experiment . 
+C:  The same thing on the wall , you give them a laser , " where is it ? " , 
+C:  they do it . 
+C:  Give them a stick , long stick , and say " do it " , 
+C:  they can't do it . 
+C:  So there 's a remapping of distant space into nearby space . 
+C:  It 's not within reach and you use the Within - Reach uh , mechanism . 
+C:  So I 'll d I 'll dig you up this reference . 
+C:  And so this doe This is , uh  
+C:  First of all , it explains something that I 've always wondered about 
+C:  and I 'll do this  this test on you guys as well . 
+C:  So . 
+C:  Uh . How - I have had an experience , not often , but a certain number of times , when , for example , I 'm working with a tool , a screwdriver or something , for a long time , I start feeling the tip directly . 
+C:  Not indirectly , 
+C:  but you actually can feel the tip . 
+C:  And people who are uh accomplished violinists and stuff like that , claim they also have this kind of thing where you get a direct sensation of , physical sensation , of the end affector . 
+C:  Huh ? 
+C:  Yeah , 
+C:  within  
+C:  Huh ? 
+C:  Yeah , 
+C:  right . 
+C:  Have you hav y h had this ? 
+C:  Oh i it feels like your  as if your uh neurons had extended themselves out to this tool , and you 're feeling forces on it and so forth 
+C:  and  and you deal directly with it . 
+C:  Right , yeah  yeah  yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah , right . 
+C:  Right , 
+C:  Yeah , so anyway , so  So this was the first actual experimental evidence I 'd seen that was consistent with this anecdotal stuff . 
+C:  And of course it makes a lovely def uh story about why languages uh , make this distinction . 
+C:  Of course there are behavioral differences too . 
+C:  Things you can reach are really quite different than things you can't . 
+C:  But there seems to be an actu really deep embodied neural difference . 
+C:  And i this is , um  
+C:  So . In addition to the e 
+C:  Yeah uh exactly . 
+C:  So in addition to e ego and allocentric uh which appear all over the place , you also apparently have this proximal - distal thing which is very deeply uh embedded . 
+C:  S 
+C:  Yeah . 
+C:  Well there 's  there 's uh been a lot of behavioral things o on this , but that was the first neur neuro - physiological thing I saw . 
+C:  Anyway yeah , so we 'll  we 'll look at this . 
+C:  And . So , all of these issues now  are now starting to come up . 
+C:  So , now  we 're now done with demos . 
+C:  We 're starting to do science , 
+C:  right ? 
+C:  And so these issues about uh , reference , and  spatial  reference , discourse reference , uh - uh - uh - uh  all this sort of stuff , uh , deixis which is part of what you were talking about , 
+C:  um  So , all of this stuff is coming up essentially starting now . 
+C:  So we gotta do all this . 
+C:  So there 's that . 
+C:  And then there 's also a set of system things that come up . 
+C:  So " OK , we 're not using their system . That means we need our system . " 
+C:  Right ? 
+C:  It  it follows . 
+C:  And so , uh , in addition to the business about just getting the linguistics right , and the formalism and stuff , we 're actually gonna build something 
+C:  and uh , Johno is point person on the parser , analyzer , whatever that is , 
+C:  and we 're gonna start on that in parallel with the um , the grammar stuff . 
+C:  But to do that we 're gonna need to make some decisions like ontology , 
+C:  so , um  And so this is another thing where we 're gonna , you know , have to get involved and make s relatively early I think , make some decisions on uh , " is there an ontology API that  that "  
+C:  There 's a sort of standard way of getting things from ontologies 
+C:  and we build the parser and stuff around that , 
+C:  or is there a particular ontology that we 're gonna standardize on , and if so  For example , is there something that we can use there . 
+C:  i Does uh either the uh SmartKom project or one of the projects at EML have something that we can just p pull out , for that . 
+C:  Uh , so there are gonna be some  some  some things like that , which are not science but system . 
+C:  But we aren't gonna ignore those 
+C:  cuz we 're  we 're not only going  The plan is not only to lay out this thing , but to actually uh build some of it . 
+C:  And how much we build , and  and so forth . 
+C:  Uh . Part of it , if it works right , is wh 
+C:  It looks like we 're now in a position that the construction analyzer that we want for this applied project can be the same as the construction analyzer that Nancy needs for the child language modeling . 
+C:  So . It 's always been out of phase 
+C:  but it now seems that um , there 's a good shot at that . 
+C:  So we 've talked about it , 
+C:  and the hope is that we can make these things the same thing , 
+C:  and of course it 's only w In both cases it 's only one piece of a bigger system . 
+C:  But it would be nice if that piece were exactly the same piece . 
+C:  It was just this uh construction analyzer . 
+C:  And so we think  we think we have a shot at  at that . 
+C:  So . The for 
+C:  So . 
+C:  To  to come full circle on that , this formalization task , 
+C:  OK ? 
+C:  is trying to get the formalism into  into a shape where it can actually uh 
+C:  d Well , yeah , 
+C:  where it actually is  is  covers the whole range of things . 
+C:  And the  the  the  the thing that got Mark into the worst trouble is he had a very ambitious thing he was trying to do , 
+C:  and he insisted on trying to do it with a limited set of mechanisms . 
+C:  It turned out , inherently not to cover the space . 
+C:  And it just  it was just terribly frustrating for him , 
+C:  and he seemed fully committed to both sides of this i i irreconcilable thing . 
+C:  And . 
+C:  Uh . Johno is much more pragmatic . 
+C:  Uh . Huh ? 
+C:  Is  This is true , 
+C:  is it not ? 
+C:  OK . 
+C:  So there 's you know sort of , yeah , deep , really deep , emotional commitment to a certain theory being uh , complete . 
+C:  We - well it hasn't it  it certainly hasn't been observed , in any case . 
+C:  Um . Now , you do , but that 's OK . 
+C:  Uh . So . For  for  
+C:  Exactly right . 
+C:  Exactly . 
+C:  Right . 
+C:  Why  a actually , uh , the thing is , you  you do but , th the thing you have to im implement is so small that  Uh . 
+C:  Within that , 
+C:  yeah , 
+C:  and uh , it 's  a and still , I think , you know , get something done . 
+C:  But to try to do something upscale and purist Particularly if  if um what you 're purist about doesn't actually work , <laugh> is real hard . 
+C:  OK . 
+C:  And then the other thing is while we 're doing this uh Robert 's gonna pick a piece of this space , 
+C:  OK , 
+C:  uh , for his absentee thesis . 
+C:  I think you all know that  that you can just , in Germany  almost just send in your thesis . 
+C:  Yeah right . 
+C:  OK . 
+C:  It costs a lot . 
+C:  The  the amount  You put in your credit card and  <laugh> as well . 
+C:  But , uh ,  
+C:  But anyway , 
+C:  so , uh , that 's um , also gotta be worked out , hopefully over the next few weeks , 
+C:  so that  that it becomes clear uh , what piece uh , Robert wants to jump into . 
+C:  And , while we 're at this level , uh , there 's at least one new doctoral student in computer science who will be joining the project , either next week or the first of August , depending on the blandishments of Microsoft . 
+C:  So , de Uh . And her name is Eva . 
+C:  It really is . 
+C:  Nobody believed th th that  
+C:  Yeah . 
+C:  No , first year coming . 
+C:  So , she 's  she 's now out here 
+C:  she 's moved , 
+C:  and she 'll be a student as of then . 
+C:  And probably she 'll pick up from you on the belief - net stuff , 
+C:  so sh she 'll be chasing you down and stuff like that . 
+C:  Uh . 
+C:  Uh , against all traditions . 
+C:  And actually I talked today to a uh undergraduate who wants to do an honors thesis on this . 
+C:  Uh  
+C:  No , 
+C:  interestingly enough . 
+C:  Some of th some of them , yeah . 
+C:  So anyway , 
+C:  uh , but uh she 's another one of these ones with a three point nine average and so forth and so on . 
+C:  Uh , so , um , I 've give I 've given her some things to read . 
+C:  So we 'll see how this goes . 
+C:  Oh there 's yet another one of the incoming first   incoming first - year graduate students who 's expressed interest , 
+C:  so we 'll see how that goes . 
+C:  Um , 
+C:  anyway , 
+C:  so , I think as far as this group goes , um , it 's certainly worth continuing for the next few weeks to get closure on the uh belief - net and the ideas that are involved in that , and what are th what are the concepts . 
+C:  We 'll see whether it 's gonna make sense to have this be separate from the other bigger effort with the formalization stuff or not , 
+C:  I 'm not sure . 
+C:  It partly depends on w what your thesis turns out to be and how that goes . 
+C:  S so , we 'll see . 
+C:  And then , Ami , you can decide , you know , how much time you wanna put into it 
+C:  and uh , it it 's beginning to take shap shape , 
+C:  so uh and , 
+C:  I think you will find that if you want to look technically at some of the  your traditional questions in this light , uh Keith , who 's buil building constructions , will be quite happy to uh see what , you know , you envision as the issues and the problems and um , how they might uh get reflected in constructions . 
+C:  I suspect that 's right . 
+C:  OK , 
+C:  fine . 
+C:  And , um , if it 's useful we can probably arrange for you to drop by and visit either at Heidelberg or at the German AI center , while you 're in  in the neighborhood . 
+C:  Yeah . 
+C:  Yep . 
+C:  E o do y 
+C:  Well , we we 're connected to uh  
+C:  There 's a  there 's a  a very significant connection between  
+C:  We 'll  we 'll go through this , 
+C:  ICSI and EPFL , which is the , uh  It 's the  Fr 
+C:  Ge - Germany 's got two big technical institutes . 
+C:  There 's one in  in Zurich , 
+C:  E T 
+C:  and then there 's one , the French speaking one , in Lausanne , 
+C:  OK ? 
+C:  which is uh E P 
+C:  F L . So find out who they are associated with in Geneva . 
+C:  Probably we 're connected to them . 
+C:  OK . 
+C:  Yeah , 
+C:  and so anyway we c uh  We can m undoubtedly get Ami uh to give a talk at uh EML or something like that . While he 's in  in uh  
+C:  A lot of interest . Actually , either place , DFKI or uh  
+C:  Yeah , so , and  and if there is a book , that you 'll be building up some audience for it . 
+C:  And you 'll get feedback from these guys . 
+C:  Cuz they 've actually  these DFKI guys have done as much as anyone over the last decade in trying to build them . 
+C:  So we 'll set that up . 
+C:  OK . 
+C:  So , uh , unless we wanna start digging into the  uh the belief - net and the decisions now , which would be fine , it 's probably  
+C:  OK . 
+C:  So , how about if you two guys between now and next week come up with something that is partially proposal , and partially questions , 
+C:  saying " here 's what we think we understand , here are the things we think we don't understand " . 
+C:  And that we as a group will try to  to finish it . 
+C:  What I 'd like to do is shoot f for finishing all this next Monday . 
+C:  OK ? 
+C:  Uh , " these are the decisions "  
+C:  I don't think we 're gonna get lots more information . 
+C:  It 's a design problem . 
+C:  You know . We  
+C:  Yeah . 
+C:  And let 's come up with a first cut at what this should look like . And then finish it up . 
+C:  Does that so make sense ? 
+C:  Yeah . 
+C:  Oh . is it a take - home final ? 
+C:  Who 's doing this ? 
+C:  Yeah , figured . 
+C:  That would have been i my guess . 
+C:  Right . 
+C:  Um , But anyway , yeah . 
+C:  OK , so I guess that 's 
+C:  Right . 
+C:  right . 
+C:  So let 's do this , 
+C:  and then we we well there 's gonna be some separate co 
+C:  these guys are talking , 
+C:  uh we have a group on the formalization , 
+C:  uh Nancy and Johno and I are gonna talk about parsers . 
+C:  So there 're various kinds of uh  
+C:  Of course , nothing gets done even in a meeting of seven people , 
+C:  right ? 
+C:  So , um , two or three people is the size in which actual work gets done . 
+C:  So we 'll do that . 
+C:  Great . 
+C:  Oh , the other thing we wanna do is catch up with uh , Ellen and see what she 's doing 
+C:  because the um image schemas are going to be um , an important pa 
+C:  We  we want those , 
+C:  right ? 
+C:  And we want them formalized and stuff like that . 
+C:  So let me  let me make a note to do that . 
+C:  Oh right ! 
+C:  Right right right ! 
+C:  That 's great ! 
+C:  Yeah , I  I  Shweta mentioned that , although she said it 's a secret . 
+C:  Th - the faculty aren't  faculty aren't supposed to know . 
+C:  But um , 
+C:  I 'm sufficiently clueless that I count as a  

@@ -1,0 +1,302 @@
+B:  Mm 
+B:  Test , um . Test , test , test . 
+B:  Guess that 's me . 
+B:  Yeah . OK . 
+B:  So . 
+B:  There 's two sheets of paper in front of us . 
+B:  This is the arm wrestling ? 
+B:  Oh , good . 
+B:  Excellent . 
+B:  That 's the best thing . 
+B:  So , tell me about it . 
+B:  Right . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  OK . 
+B:  OK . 
+B:  Mm - hmm . 
+B:  Yeah . I mean , <laugh> it 's   it 's actually , uh , very similar . 
+B:  I mean , <clears throat> if you look at databases , 
+B:  uh , 
+B:  the , uh , one that has the smallest  smaller overall number is actually better on the Finnish and Spanish , 
+B:  uh , but it is , uh , worse on the , uh , Aurora  
+B:  I mean on the , uh , TI - TI - digits , 
+B:  uh , uh . 
+B:  Um . 
+B:  So , it probably doesn't matter that much either way . 
+B:  But , um , when you say u uh , unified do you mean , uh , it 's one piece of software now , 
+B:  or  ? 
+B:  Mm - hmm . 
+B:  OK . So a week ago  
+B:  maybe you weren't around when  when  when Hynek and Guenther and I  ? 
+B:  Oh , OK . So  Yeah , let 's summarize . 
+B:  Um  And then if I summarize somebody can tell me if I 'm wrong , 
+B:  which will also be possibly helpful . 
+B:  What did I just press here ? 
+B:  I hope this is still working . 
+B:  We , uh  we looked at , <mike noise> uh  
+B:  anyway we  <clears throat> after coming back from QualComm we had , you know , very strong feedback 
+B:  and , uh , I think it was <breath> Hynek and Guenter 's and my opinion also that , um , you know , we sort of spread out to look at a number of different ways of doing noise suppression . 
+B:  But given the limited time , uh , it was sort of time to  choose one . 
+B:  Uh , and so , uh , th the vector Taylor series hadn't really worked out that much . 
+B:  Uh , the subspace stuff , uh , had not been worked with so much . 
+B:  Um , so it sort of came down to spectral subtraction versus Wiener filtering . 
+B:  Uh , we had a long discussion about how they were the same and how they were d uh , completely different . 
+B:  And , uh , I mean , fundamentally they 're the same sort of thing 
+B:  but the math is a little different 
+B:  so that there 's a  a  <breath> there 's an exponent difference in the index  
+B:  you know , what 's the ideal filtering , 
+B:  and depending on how you construct the problem . 
+B:  And , uh , I guess it 's sort  you know , after  after that meeting it sort of made more sense to me 
+B:  because <breath> um , if you 're dealing with power spectra then how are you gonna choose your error ? 
+B:  And typically you 'll do  choose something like a variance . 
+B:  And so that means it 'll be something like the square of the power spectra . 
+B:  Whereas when you 're  when you 're doing the  the , uh , um , <mouth> looking at it the other way , you 're gonna be dealing with signals 
+B:  and you 're gonna end up looking at power  uh , noise power that you 're trying to reduce . 
+B:  And so , eh  so there should be a difference <breath> of  you know , conceptually of  of , uh , a factor of two in the exponent . 
+B:  But there 're so many different little factors that you adjust in terms of  of , uh , <breath> uh , over - subtraction and  and  and  and  and so forth , 
+B:  um , that <mouth> arguably , you 're c 
+B:  and  and  and the choice of do you  do you operate on the mel bands or do you operate on the FFT beforehand . 
+B:  There 're so many other choices to make that are  are almost  well , if not independent , certainly in addition to  the choice of whether you , uh , do spectral subtraction or Wiener filtering , 
+B:  that , um , <breath> @ @ again we sort of felt the gang should just sort of figure out which it is they wanna do 
+B:  and then let 's pick it , 
+B:  go forward with it . 
+B:  So that 's  that was  that was last week . 
+B:  And  <breath> and , uh , we said , uh , take a week , go arm wrestle , 
+B:  you know , 
+B:  figure it out . 
+B:  I mean , and th the joke there was that each of them had specialized in one of them . 
+B:  And  and so they  
+B:  so instead they went to Yosemite and bonded , and  and they came out with a single  single piece of software . 
+B:  So it 's <breath> another  another victory for international collaboration . 
+B:  So . 
+B:  Uh . 
+B:  Well , that 's fine , 
+B:  but the thing is  the important thing is that there is a piece of software that you  that we all will be using now . 
+B:  Yes . 
+B:  Yeah . 
+B:  Sure . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  But , uh  
+B:  w which we sort of were before 
+B:  but we were considerably far behind . 
+B:  And the thing is , this doesn't have neural net in yet for instance . 
+B:  You know ? 
+B:  So it  so , um , it 's  it it 's not using our full bal bag of tricks , if you will . 
+B:  And , uh , and it  it is , uh , very close in performance to the best thing that was there before . 
+B:  Uh , but , you know , looking at it another way , maybe more importantly , uh , <breath> we didn't have any explicit noise , uh , handling  
+B:  stationary  dealing with  e e 
+B:  we didn't explicitly have anything to deal with stationary noise . 
+B:  And now we do . 
+B:  Well , so  so  so argu arguably , I mean , what we should do  
+B:  I mean , I gather you have  it sounds like you have a few more days of  of nailing things down with the software and so on . 
+B:  But  and then  but , um , <sniff> arguably what we should do is , even though the software can do many things , we should for now pick a set of things , 
+B:  th these things I would guess , 
+B:  and not change that . 
+B:  And then focus on  everything that 's left . 
+B:  And I think , you know , that our goal should be by next week , when Hynek comes back , <breath> uh , to  uh , really just to have a firm path , uh , for the  you know , for the time he 's gone , 
+B:  of  of , uh , what things will be attacked . 
+B:  But I would  I would  I would thought think that what we would wanna do is not futz with this stuff for a while 
+B:  because what 'll happen is we 'll change many other things in the system , 
+B:  and then we 'll probably wanna come back to this and possibly make some other choices . 
+B:  But , um . 
+B:  Well , depending on its size  
+B:  Well , one question is , is it on the , um , server side or is it on the terminal side ? 
+B:  Uh , if it 's on the server side , it  you probably don't have to worry too much about size . 
+B:  So that 's kind of an argument for that . 
+B:  We do still , however , have to consider its latency . 
+B:  So the issue is  is , um , <breath> for instance , could we have a neural net that only looked at the past ? 
+B:  Um , what we 've done in uh  in the past is to use the neural net , uh , to transform , <breath> um , all of the features that we use . 
+B:  So this is done early on . 
+B:  This is essentially , <breath> um , um  I guess it 's  it 's more or less like a spee a speech enhancement technique here  
+B:  right ?  
+B:  where we 're just kind of creating <breath> new  if not new speech at least new  new FFT 's 
+B:  that  that have  you know , which could be turned into speech  
+B:  uh , that  that have some of the noise removed . 
+B:  Um , after that we still do a mess of other things to  to produce a bunch of features . 
+B:  And then those features are not now currently transformed <breath> by the neural net . 
+B:  And then the  the way that we had it in our proposal - two before , we had the neural net transformed features and we had <breath> the untransformed features , 
+B:  which I guess you  you actually did linearly transform with the KLT , 
+B:  but  but  but  uh , to orthogonalize them  
+B:  but  <breath> but they were not , uh , processed through a neural net . 
+B:  And Stephane 's idea with that , as I recall , was that <breath> you 'd have one part of the feature vector that was very discriminant and another part that wasn't , 
+B:  uh , which would smooth things a bit for those occasions when , uh , the testing set was quite different than what you 'd trained your discriminant features for . 
+B:  So , um , all of that is  is , uh  still seems like a good idea . 
+B:  The thing is now we know some other constraints . 
+B:  We can't have unlimited amounts of latency . 
+B:  Uh , y you know , that 's still being debated by the  by people in Europe 
+B:  but , <breath> uh , no matter how they end up there , it 's not going to be unlimited amounts , 
+B:  so we have to be a little conscious of that . 
+B:  Um . 
+B:  So there 's the neural net issue . 
+B:  There 's the VAD issue . 
+B:  And , uh , there 's the second stream  thing . 
+B:  And I think those that we  last time we agreed that those are the three things that have to get , uh , focused on . 
+B:  Well , better  ones are good . 
+B:  I guess they still allow two hundred milliseconds on either side or some ? 
+B:  Is that what the deal is ? 
+B:  With the rank ordering  ? 
+B:  I 'm sorry . 
+B:  Oh , this is for the VAD . 
+B:  Oh , OK . 
+B:  Yeah . 
+B:  Um . 
+B:  So   Yeah , I was just noticing on this that it makes reference to delay . 
+B:  So what 's the  ? If you ignore  
+B:  Um , the VAD is sort of in  in parallel , 
+B:  isn't i isn't it , 
+B:  with  with the  ? I mean , it isn't additive with the  the , uh , LDA and the Wiener filtering , and so forth . 
+B:  Right ? 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  And there  
+B:  And there didn't seem to be any , uh , penalty for that ? 
+B:  There didn't seem to be any penalty for making it causal ? 
+B:  OK . 
+B:  Well , may as well , then . 
+B:  And he says Wiener filter is  is forty milliseconds delay . 
+B:  So is it  ? 
+B:  The smoothing ? 
+B:  Right . 
+B:  OK . 
+B:  So that 's  that 's really not  not bad . 
+B:  So we may in fact  we 'll see what they decide . We may in fact have , <breath> um , the  the , uh , latency time available for  to have a neural net . 
+B:  I mean , sounds like we probably will . 
+B:  So . 
+B:  That 'd be good . 
+B:  Cuz I  cuz it certainly always helped us before . 
+B:  So . 
+B:  Uh . 
+B:  Well , they 're  you know , they 're disputing it . 
+B:  You know , they 're saying , uh  one group is saying a hundred and thirty milliseconds and another group is saying two hundred and fifty milliseconds . 
+B:  Two hundred and fifty is what it was before actually . 
+B:  So , 
+B:  uh , some people are lobbying  lobbying  to make it shorter . 
+B:  Um . 
+B:  And , um . 
+B:  Well , it just  it  when we find that out it might change exactly how we do it , is all . 
+B:  I mean , how much effort do we put into making it causal ? 
+B:  I mean , <inbreath> I think the neural net will probably do better if it looks at a little bit of the future . 
+B:  But , um , it will probably work to some extent to look only at the past . 
+B:  And we ha you know , limited machine and human time , and <laugh-breath> effort . 
+B:  And , you know , how  how much time should we put into  into that ? 
+B:  So it 'd be helpful if we find out from the  the standards folks whether , you know , they 're gonna restrict that or not . 
+B:  Um . 
+B:  But I think , you know , at this point our major concern is making the performance better 
+B:  and  and , um , <breath> if , uh , something has to take a little longer in latency in order to do it that 's  you know , a secondary issue . 
+B:  But if we get told otherwise then , you know , we may have to c clamp down a bit more . 
+B:  Uh - huh . 
+B:  Oh , 
+B:  oh . 
+B:  So that 's fixed in this . 
+B:  Yeah , we talked about that . 
+B:  Good . 
+B:  Uh - huh . 
+B:  So , @ @ I mean , you were doing a lot of changes . 
+B:  Did you happen to notice how much , <breath> uh , the change was due to just this frame - dropping problem ? 
+B:  What about this ? 
+B:  Uh - huh . 
+B:  Well . <breath> But like we 're saying , if there 's four or five things like that then <laugh> pretty sho soon you 're talking real improvement . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Oh , that 's a real good point . 
+B:  It might be hard if it 's at the server side . 
+B:  Right ? 
+B:  OK . 
+B:  Well , you could . 
+B:  Yeah . I mean , it  it always seemed to us that it would be kind of nice to  in addition to , uh , reducing insertions , actually use up less bandwidth . 
+B:  But nobody seems to have <laugh> cared about that in this  evaluation . 
+B:  So . 
+B:  So it would be more or less the same thing with the neural net , I guess , actually . 
+B:  Yeah . 
+B:  Um . 
+B:  OK . 
+B:  So , uh , 
+B:  what 's , uh  ? 
+B:  That 's  that 's a good set of work that  that , uh  
+B:  Yeah . I was wondering about that . 
+B:  That was  I  I had written that down there . 
+B:  Um  
+B:  Yeah . 
+B:  Uh - huh . 
+B:  Hmm . Yeah . Well , it 's not surprising it 'd be worse the first time . 
+B:  But , um , 
+B:  it does seem like , you know , i i i i some compromise between always depending on the first fifteen frames and a a always depending on a  a pause is  is  is a good idea . 
+B:  Uh , maybe you have to weight the estimate from the first - teen  fifteen frames more heavily than  than was done in your first attempt . 
+B:  But  
+B:  but  
+B:  Yeah . 
+B:  Um . 
+B:  No , I mean  
+B:  Um , 
+B:  do you have any way of assessing how well or how poorly the noise estimation is currently doing ? 
+B:  Yeah . 
+B:  So that 's something you could do with , um , this final system . 
+B:  Right ? 
+B:  Just do this  everything that is in this final system except , <breath> uh , use the channel zero . 
+B:  Yeah . 
+B:  And then see how much better it gets . 
+B:  If it 's , you know , essentially not better , then  it 's probably not worth 
+B:  any more . 
+B:  I see . 
+B:  Not using these methods anyway . Yeah . 
+B:  Well , yeah . And  and also there 's just the fact that , um , 
+B:  eh , uh , although we 're trying to do very well on this evaluation , um , we actually would like to have something that worked well in general . 
+B:  And , um , relying on having fifteen frames at the front or something is  is pretty  
+B:  I mean , you might , you might not . 
+B:  So , um . 
+B:  Um , it 'd certainly be more robust to different kinds of input if you had at least some updates . 
+B:  Um . 
+B:  But , um . 
+B:  Well , I don't know . 
+B:  What  what do you , uh  what do you guys see as  as being what you would be doing in the next week , given wha what 's  happened ? 
+B:  OK . 
+B:  This is a different net . 
+B:  You see , the idea is that the , um , initial decision to  that  that you 're in silence or speech happens pretty quickly . 
+B:  And that  
+B:  Yeah . And that 's sort of fed forward , and  and you say " well , flush everything , it 's not speech anymore " . 
+B:  Um , it is used , uh  
+B:  Yeah , it 's only used f Well , it 's used for frame - dropping . 
+B:  Um , it 's used for end of utterance 
+B:  because , you know , there 's  <breath> if you have  more than five hundred milliseconds of  of  of nonspeech then you figure it 's end of utterance or something like that . 
+B:  So , 
+B:  um . 
+B:  Um . 
+B:  Yeah . So probably the VAD and  and maybe testing out the noise  estimation a little bit . 
+B:  I mean , keeping the same method 
+B:  but  but , uh , <breath> seeing if you cou but , um noise estimation could be improved . 
+B:  Those are sort of related issues . 
+B:  It probably makes sense to move from there . 
+B:  And then , uh , <breath> later on in the month I think we wanna start including the  neural net at the end . 
+B:  Um . 
+B:  OK . Anything else ? 
+B:  Good . 
+B:  Yeah . You didn't  didn't fall . 
+B:  That 's good . 
+B:  Our e our effort would have been devastated 
+B:  if you guys had  <inbreath> run into problems . 
+B:  Yeah , that 's the plan . 
+B:  I guess the week after he 'll be , uh , going back to Europe , 
+B:  and so we wanna  
+B:  No , no . He 's  he 's  he 's dropped into the US . Yeah . Yeah . 
+B:  So . 
+B:  Uh . <breath> So , uh . 
+B:  Uh , the idea was that , uh , we 'd  we 'd sort out where we were going next with this  with this work before he , uh , left on this next trip . 
+B:  Good . <outbreath> <mouth> Uh , Barry , you just got through your <breath-laugh> quals , so I don't know if you <laugh> have much to say . 
+B:  But , uh . 
+B:  In conversational speech in particular . 
+B:  I think you can  you can put them in pretty reliably in synthetic speech . 
+B:  But <breath> we don't have too much trouble recognizing synthetic speech since we create it in the first place . 
+B:  So , it 's  
+B:  OK . Well , short meeting . 
+B:  That 's OK . 
+B:  OK . So next week hopefully we 'll  can get Hynek here to  to join us 
+B:  and , uh , 
+B:  uh . 
+B:  Digits , digits . 
+B:  OK , now . 
+B:  Alright . Let me get my glasses on so I can  see them . 
+B:  OK . 
+B:  Mm 

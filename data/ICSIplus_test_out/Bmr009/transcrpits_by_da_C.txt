@@ -1,0 +1,391 @@
+C:  OK . 
+C:  Starts  
+C:  No . 
+C:  No . 
+C:  There 's another  
+C:  I don't know . 
+C:  It starts with a P or something . 
+C:  I forget the word for it , but it 's  it 's um 
+C:  Typically when you  you 're ab r starting around forty for most people , 
+C:  it starts to harden and then it 's just harder for the lens to shift things 
+C:  and th the  the symptom is typically that you  <inbreath> you have to hold stuff uh uh further away to  to see it . 
+C:  In fact , uh m my brother 's a  gerontological psychologist 
+C:  and he  he uh <inbreath> came up with an  an uh  a uh body age test which uh gets down to sort of only three measurements that are good enough st statistical predictors of all the rest of it . 
+C:  And one of them is  is the distance <laugh> that you have to hold it at . 
+C:  Yeah . 
+C:  Oh . Yeah . 
+C:  About how old I am . 
+C:  OK . 
+C:  No , that 's OK . 
+C:  It also should be  later . 
+C:  Because Jane uh is not here yet . 
+C:  And uh she 'll be most interested in that . 
+C:  Uh , she 's probably least involved in the signal - processing stuff 
+C:  so maybe we can just  just uh , 
+C:  I don't think we should go though an elaborate thing , 
+C:  but um uh Jose and I were just talking about <inbreath> the uh <page turn> uh , speech e energy thing , 
+C:  and I uh  
+C:  We didn't talk about the derivatives . 
+C:  But I think , you know , the  the  i 
+C:  if I can  if you don't mind my  my speaking for you for a bit , um <inbreath> Uh . 
+C:  Right now , that he 's not really showing any kind of uh distinction , but uh  
+C:  but we discussed a couple of the possible things that uh he can look at . 
+C:  Um . And uh one is that uh this is all in log energy 
+C:  and log energy is basically compressing the distances <inbreath> uh  between things . 
+C:  Um  Another is that he needs to play with the  the different uh  uh temporal sizes . 
+C:  He was  he  he was taking everything over two hundred milliseconds 
+C:  uh , and uh he 's going to vary that number and also look at moving windows , as we discussed before . 
+C:  Um And uh  and the other thing is that the  yeah doing the  <inbreath> subtracting off the mean and the variance in the   uh and dividing it by the  standard deviation in the log domain , <inbreath> may not be  the right thing to do . 
+C:  Uh B Between  between  
+C:  No . 
+C:  Between  
+C:  Neither . 
+C:  It 's uh between the pauses  uh for some segment . 
+C:  And so i i his  his  He 's making the constraint it has to be at least two hundred milliseconds . 
+C:  And so you take that . 
+C:  And then he 's  he 's uh measuring at the frame level  
+C:  still at the frame level , of what  
+C:  and then  and then just uh normalizing with that larger amount . 
+C:  um and  But one thing he was pointing out is when he  he looked at a bunch of examples in log domain , it is actually pretty hard to see <inbreath> the change . 
+C:  And you can sort of  see that , because of j of just putting it on the board that <inbreath> if you sort of have log - X plus log - X , that 's the log of X plus the log of two 
+C:  and it 's just ,  you know , it  it diminishes the  effect of having two of them . 
+C:  Um . 
+C:  Yes , right . 
+C:  So  So what I was suggesting to him is that  
+C:  Actually , a PDF . 
+C:  But , you know , uh But , either way . 
+C:  Yeah . 
+C:  Yeah , eith eith uh <mouth> B 
+C:  Yeah , but I think  also u I think a good first indicator is when the  the  the researcher looks at <inbreath> examples of the data and can not see a change  in how big the  the signal is , <inbreath> when the two speaker  
+C:  Then , that 's a problem right there . 
+C:  So . I think you should at least be able , 
+C:  doing casual looking and can get the sense , " Hey , there 's something there . " 
+C:  and then you can play around with the measures . 
+C:  And when he 's looking in the log domain he 's not really seeing it . 
+C:  So . 
+C:  And when he 's looking in straight energy he is , 
+C:  so that 's a good place to start . 
+C:  Um . So that was  that was the discussion we just had . 
+C:  Um . <inbreath> The other thing 
+C:  Actually we ca had a question for Adam in this . 
+C:  Uh , when you did the <inbreath> sampling ? uh  over the  speech segments or s or sampling over the  the individual channels in order to do the e uh the  amplitude equalization , <inbreath> did you do it over just the entire  everything in the mike channels ? 
+C:  You didn't try to find speech ? 
+C:  Right , OK . 
+C:  So then that means that someone who didn't speak  very much <inbreath> would be largely represented by silence . 
+C:  And someone who would  who would be  
+C:  So the normalization factor probably is  i i i  is  is  
+C:  Yeah . 
+C:  OK . 
+C:  Yeah . 
+C:  Yeah . 
+C:  But that 's  
+C:  Right . 
+C:  So th 
+C:  OK . 
+C:  So yeah there  there  there  There 's a good chance then given that different people do talk different amounts  that there is  there  there is still a lot more to be gained from gain norm normalization with some sort 
+C:  if  if we can figure out a way to do it . 
+C:  Uh . But we were agreed that in addition to that  uh there should be  s stuff related to pitch and harmonics and so forth . 
+C:  So we didn't talk at all about uh the other derivatives , 
+C:  but uh again just  just looking at  
+C:  Uh , I think uh Liz has a very good point , that in fact it would be much more graphic just to show  
+C:  Well , actually , you do have some distributions here , uh for these cases . 
+C:  You have some histograms , 
+C:  um  and  uh , they don't look very separate . 
+C:  uh <laugh>  separated . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  " Number "  
+C:  Yeah . 
+C:  But  And so in  in these he 's got that . 
+C:  He 's got some pictures . 
+C:  But he doesn't  he doesn't in the  he i 
+C:  just in derivatives , but not in the  
+C:  but he d but he doesn't  doesn't  
+C:  But he didn't h have it for the energy . 
+C:  He had it for the derivatives . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Oh that  yeah that 's a good q 
+C:  did  did you have this sort of thing , for just the  just the l r uh the  the unnormalized log energy ? 
+C:  OK . Yeah . 
+C:  So she  she 's right . 
+C:  That 's a  
+C:  Yeah . 
+C:  That 's  That 's uh  cuz I 'd mentioned scatter plots before but she 's right , 
+C:  I mean , even before you get the scatter plots , just looking at a single feature <inbreath> uh , looking at the distribution , is a good thing to do . 
+C:  Yeah , but  but what she 's saying  is , which is right , is  le 
+C:  I mean , let 's start with the  
+C:  Before we get complicated , let 's start with the most basic wh thing , which is  we 're arguing that if you take energy  uh if you look at the energy , that , when two people are speaking at the same time , usually <inbreath>  there 'll be more energy than when one is 
+C:  right ? 
+C:  That 's  that sort of hypothesis . 
+C:  And the first way you 'd look at that , uh s she 's , you know , absolutely right , 
+C:  is that you would just take a look at the distribution of those two things , 
+C:  much as you 've plotted them here , 
+C:  You know , but just  but just   just uh do it  
+C:  Well in this case you have three . 
+C:  You have the silence , and that  that 's fine . 
+C:  So , uh with three colors or three shades or whatever , 
+C:  just  just look at those distributions . 
+C:  And then , given that as a base , you can see if that gets improved , you know , or  or   or worsened  by the  looking at regular energy , looking at log energy , 
+C:  we were just proposing that maybe it 's  you know , it 's harder to  see with the log energy , 
+C:  um and uh also these different normalizations , does a particular choice of normalization make it better ? 
+C:  But I had maybe made it too complicated by suggesting early on , that you look at scatter plots 
+C:  because that 's looking at a distribution in two dimensions . 
+C:  Let 's start off just in one , uh , with this feature . 
+C:  I think that 's probably the most basic thing , before anything very complicated . 
+C:  Um And then we w I think we 're agreed that pitch - related things are  are  are going to be a  a really likely candidate to help . 
+C:  Um  But  since  <inbreath> uh your intuition from looking at some of the data , is that when you looked at the regular energy , that it did in fact usually go up , <laugh> when two people were talking , <inbreath> that 's  eh you know , you should be able to come up with a measure which will  match your intuition . 
+C:  And she 's right , that a  that having a  having   having this table , with a whole bunch of things ,  with the standard deviation , the variance and so forth , it 's  it 's  it 's harder to interpret than just looking at the  the same kind of picture you have here . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . So there 'll be some cases for which  
+C:  But , the qu So  So they 'll be  
+C:  This is  <breath-laugh> I w want to point  to visual things , 
+C:  But I mean they  there 'll be time  There 'll be overlap between the distributions , 
+C:  but the question is , " If it 's a reasonable feature at all , there 's some separation . " 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Right . I mean the  the reason I had suggested the scatter f p features is I used to do this a lot , when we had thirteen or fifteen or twenty features  to look at . 
+C:  um Because something is a good feature uh by itself , you don't really know how it 'll behave in combination 
+C:  and so it 's nice to have as many  as many together at the same time as possible in uh in some reasonable visual form . 
+C:  There 's cool graphic things people have had sometimes to put together three or four in some funny  funny way . 
+C:  But it 's true that you shouldn't do any of that unless you know that the individual ones , at least , have  have some uh  some hope 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Right . 
+C:  Mm - hmm . 
+C:  Uh , no we don't have that . 
+C:  But . 
+C:  Yeah . 
+C:  Well  I  I  I  I would s actually still recommend that he do the overall thing 
+C:  because  it would be the quickest thing for him to do . 
+C:  He could  You see , he already has all his stuff in place , 
+C:  he has the histogram mechanism , 
+C:  he has the stuff that subtracts out  
+C:  and all he has to do is change it uh uh from  from log to plain energy and plot the histogram and look at it . 
+C:  And then he should go on and do the other stuff bec 
+C:  but  But this will  
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Hm - hmm . 
+C:  Mm - hmm . 
+C:  But I guess I was just saying that  that right now uh from the means that you gave , I don't have any sense of whether even , you know , there are any significant number of cases for which there is distinct  
+C:  and I would imagine there should be some  you know , there should be  The distributions should be somewhat separated . 
+C:  Uh and I  I would still guess that if they are not separated at all , that there 's some  there 's  there 's most likely something wrong in the way that we 're measuring it . 
+C:  Um , but  um For instance , I mean I wouldn't expect that it was very common overall , that when two people were talking at the same time , that it would  that it really was lower , 
+C:  although sometimes , as you say , it would . 
+C:  So . So . 
+C:  Yeah . 
+C:  I mean . 
+C:  No . 
+C:  It could  it probably does happen sometimes . 
+C:  Yeah . 
+C:  Yeah . 
+C:  OK . 
+C:  Mm - hmm . 
+C:  e <inbreath> e and  and again what they  what difference there was would kind of be lost in taking the log , 
+C:  so , 
+C:  as well . 
+C:  Mmm , no , 
+C:  if it 's  if i if it 's  
+C:  Well , it won't be as big . 
+C:  If  if you 're  a I guess my point is , if you 're doing essentially a linear separation , taking the log first does in fact make it harder to separate . 
+C:  So it 's  So , uh if you i i So i if there  if there close to things it does 
+C:  it 's a nonlinear operation that does in fact change the distinction . 
+C:  If you 're doing a non if you 're doing some fancy thing then  then 
+C:  yeah . 
+C:  And right now we 're essentially doing this linear thing by looking across here and  and saying we 're going to cut it here . 
+C:  Um and that  that 's the indicator that we 're getting . 
+C:  But anyway , yeah , we 're not  disagreeing on any of this , 
+C:  we should look at it more uh  more finely , but uh uh I think that  This often happens , you do fairly complicated things , and then you stand back from them and you realize that you haven't done something simple . 
+C:  So uh , if you generated something like that just for the energy and see , and then , a a a as  as Liz says , when they g have uh uh smaller um , more coherent groups to look at , that would be another interesting thing later . 
+C:  And then that should give us some indication  between those , should give us some indication of whether there 's anything to be achieved f from energy at all . 
+C:  And then you can move on to the uh  uh more <mike loud pop> pitch related stuff . 
+C:  OK . 
+C:  Yeah . 
+C:  But then the  
+C:  Have you started looking at the pitch related  stuff at all , 
+C:  or  ? 
+C:  Pitch  related ? 
+C:  Harmonicity and so on ? 
+C:  Preparing to  
+C:  Yeah . 
+C:  Yeah . 
+C:  Oh , that 's not what I meant . 
+C:  No , no . 
+C:  I  I  I  I  
+C:  Well , we certainly should see this but I  I  I  I think that the harm 
+C:  I certainly wasn't saying this was better than the harmonicity and pitch related things 
+C:  I was just saying 
+C:  Yeah . 
+C:  Yeah , I was just saying  
+C:  OK . 
+C:  OK . <inbreath> OK . 
+C:  But I think , like , all these derivatives and second derivatives and all these other very fancy things , 
+C:  I think I would just sort of look at the energy  and then get into the harmonicity as  as a suggestion . 
+C:  Uh OK . 
+C:  So maybe uh since w we 're trying to uh compress the meeting , 
+C:  um , I know Adam had some form stuff he wanted to talk about 
+C:  and did you have some ? 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  You  you want it around the overlapping part . 
+C:  You want it to include something that 's not in overlapping 
+C:  but  but uh 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  I 'm not sure that 's  necessarily true . 
+C:  Because  because it  because um again if you 're just compensating for the gain , 
+C:  you know , the fact that this  this gain thing was crude , 
+C:  and the gain wh if someone is speaking relatively at consistent level , just to  to give a  an extreme example , all you 're doing is compensating for that . 
+C:  And then you still s And then if you look at the frame with respect to that , it still should  should uh change 
+C:  Mm - hmm . 
+C:  Right . 
+C:  This was sort of where  where we were last week . 
+C:  But , anyway We  we 'll have to look at some core things . 
+C:  Yes . 
+C:  Well again for the close  mike stuff , we could come up  take a s take the Switchboard system or something , 
+C:  and  Um 
+C:  Just , you know , low - pass filter the speech and  
+C:  Yeah . 
+C:  There 's something we should talk about later 
+C:  but maybe not just now . 
+C:  But , uh , should talk about our options as far as the uh uh  transcription 
+C:  But . Well , w But we 'll do that later . 
+C:  We 'll talk about it later . 
+C:  So <breath-laugh> uh Uh 
+C:  " forms " . 
+C:  You had something on forms . 
+C:  Um . 
+C:  Oh . 
+C:  Why  What  what were you putting in ? 
+C:  Oh . 
+C:  Yeah , he 's been setting stuff up and going away . So . 
+C:  For some reason he doesn't want to sit through every meeting that 's  
+C:  Yeah . 
+C:  Uh - huh . 
+C:  What ? 
+C:  Digit . Digit form . 
+C:  So the main thing that the person fills out um  is the name and email and time ? 
+C:  You do the rest ? 
+C:  Right . 
+C:  " South Midland , North Midland " 
+C:  So is South Midland like Kansas ? 
+C:  and North Midland like  like uh Illinois , or  ? 
+C:  By definition ? 
+C:  Well , 
+C:  If you 're  if e <laugh> if y 
+C:  if you 're a TI or MIT <laugh> from <laugh> nineteen eighty - five . 
+C:  Yeah . 
+C:  You know , I think if you 're talking  if you 're thinking in terms of places ,  as opposed to  names different peop names people have given to  different ways of talking ,  I would think North Midwest , and South Midwest would be more common than saying Midland , 
+C:  right , 
+C:  I mean , I  I went to s 
+C:  Well . 
+C:  But what if you moved five times and  and uh 
+C:  I guess we don't really know . 
+C:  Oh , what is Northern ? 
+C:  Well and what  and what 's Northern ? 
+C:  But I  I 'm s I 'm  now that you mentioned it though , I am  really am confused by " Northern " . 
+C:  I really am . 
+C:  I mean , if  if you 're  in New England , that 's North . 
+C:  If you 're  i if you 're 
+C:  Uh yeah . That 's  
+C:  But that 's also North Midland , 
+C:  right ? 
+C:  And  and  and Oregon and  and Oregon and Washington are  are Western , but they 're also Northern . 
+C:  uh , Idaho ? 
+C:  Montana ? 
+C:  Maybe  Maybe we  Maybe we should put a little map and say " put an X on where you 're from " , 
+C:  Let 's  
+C:  Mm - hmm . 
+C:  We could always ask them if they 're from  
+C:  I 'd say , uh , " Boston , New York City , the South and Regular " . 
+C:  That 's a joke . 
+C:  That 's  
+C:  " Do you come from the Louisiana Purchase ? " 
+C:  Yeah . 
+C:  Well , Boston 's @ @ , too . 
+C:  How 
+C:  Well , <inbreath> I mean , it wasn't that long ago that we had somebody here who was from Texas who was absolutely sure that he didn't have any accent left . 
+C:  And  and had  he had a pretty <laugh> noticeable drawl . 
+C:  Right . 
+C:  Right . 
+C:  Right . 
+C:  Yeah last week  last week I was sort of r arguing for having it wide open , 
+C:  but then everybody said " Oh , no , 
+C:  but then it will be hard to interpret 
+C:  because some people will say Cincinnati and some will say Ohio " . 
+C:  And . 
+C:  Yeah . 
+C:  W This is just a small thing 
+C:  but um It says " Variety " and then it gives things that e have American as one of the choices . 
+C:  But then it says " Region " , 
+C:  but Region actually just applies to uh , US , 
+C:  right ? 
+C:  Ah , OK . 
+C:  S 
+C:  OK . 
+C:  Yes I  I  I think so . Yeah . 
+C:  U unless you 're from Midland , Kansas . 
+C:  But . 
+C:  Yeah . 
+C:  There 's a  Or Midland  Midland  
+C:  Is it Midland  Midland  Midland , Texas or Midland , Kansas ? 
+C:  I forget . 
+C:  But there 's a town . 
+C:  in  in there . 
+C:  I forget what it is @ @ . 
+C:  Yeah . 
+C:  Y yeah . 
+C:  And Colorado , right across the border , would be <laugh> North Midland . 
+C:  But you do in the others , too . So . 
+C:  Yeah . 
+C:  U 
+C:  Wait a minute . 
+C:  Where does  Where does   d w Where  Where 's  where does uh <inbreath> New  New York west of  west of uh New York City and  Pennsylvania  uh and uh 
+C:  N No , it 's not . 
+C:  Oh no . 
+C:  No , no .  No . 
+C:  Pennsylvania is not  
+C:  Pennsylvania  
+C:  Yeah . Pennsylvania is not New England . 
+C:  and uh New Jersey is not New England and Maryland is not New England and none of those are the South . 
+C:  That 's good . 
+C:  I like that . 
+C:  We 're all  sufficiently  tired of this that we 're agreeing with you . 
+C:  So . 
+C:  You like it ? 
+C:  OK . 
+C:  Good . 
+C:  Cockney ? 
+C:  CO  
+C:  Yeah . 
+C:  Liverpuddlian . 
+C:  OK . 
+C:  OK . 
+C:  Yes . 
+C:  OK . 
+C:  We uh  We done ? 
+C:  OK . 
+C:  um s e Any  any other uh open mike topics or should we go  right to the digits ? 
+C:  Yeah . 
+C:  Cou - i e I mean , y 
+C:  If there was some  Is there some way to  have someone write patches in something faster and  and  link it in , or something ? 
+C:  Or is that  
+C:  Yeah . 
+C:  They may well have not had much demand for it . 
+C:  Yeah . 
+C:  Yeah . Let 's do digits , 
+C:  uh , and then we 'll turn off the mikes , and then I have one other thing to discuss . 
+C:  Oh . 
+C:  OK . 
+C:  Well , we 'll talk to you about it  <inbreath> Uh 
+C:  Yeah , why don't you read the digits and then you can  go . 
+C:  Yeah . 
+C:  OK . 

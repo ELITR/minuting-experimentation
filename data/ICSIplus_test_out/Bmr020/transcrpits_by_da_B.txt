@@ -1,0 +1,266 @@
+B:  Perhaps there are <laugh> lots of errors in it 
+B:  That 's not allowed , I think . 
+B:  Curly brackets . 
+B:  Oops . 
+B:  So it 's not  it 's not that bad if it 's at the end , 
+B:  but it 's  in the beginning , it 's  bad . 
+B:  Manual post - processing . 
+B:  Oops . 
+B:  No 
+B:  it 's  
+B:  Yeah . 
+B:  Yeah . 
+B:  I got this mail from  
+B:  Was this  SmartKom message ? 
+B:  I think  Christoph Draxler sent this , 
+B:  yeah . 
+B:  Yeah . 
+B:  Oh . 
+B:  Short words . 
+B:  But  
+B:  And in f 
+B:  But  
+B:  Five percent of time or five percent of what ? 
+B:  Yeah . 
+B:  Yeah , 
+B:  so  
+B:  Then  then  then you have to  
+B:  Then  Yeah , then normalize by  by something like that , 
+B:  yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  I j was just wondering . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Don't  train  
+B:  Ah . 
+B:  Somewhere in between the start and the end ? 
+B:  OK . 
+B:  Somewhere in between the start and the end of the foreground ? 
+B:  Yeah . 
+B:  Tag by uh 
+B:  Oops . 
+B:  Font smaller , 
+B:  yeah . 
+B:  Put the abstract end . 
+B:  Yeah . 
+B:  Battery ? 
+B:  OK . 
+B:  Yeah . 
+B:  Looks good . 
+B:  Yeah . 
+B:  Yeah .  <mouth> <breath> Yeah , I also used I think something around zero point five seconds for the speech - nonspeech detector  
+B:  for the minimum silence length . 
+B:  So . 
+B:  Yeah and hopefully the new meetings  which will start from the channelized version will  will have better time boundaries  and alignments . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Whi - which could have one drawback . If there is uh a backchannel in between those three things , 
+B:  the  the n the backchannel will  will occur at the end of  of those three . 
+B:  And  and in  in the  in the previous version where in the n which is used now , <breath> there , the backchannel would  would be in - between there somewhere , 
+B:  so . 
+B:  That would be more natural 
+B:  but  
+B:  Yeah . 
+B:  So , 
+B:  I 'm @ @  now I 'm confused . 
+B:  You start with the presegmentation , 
+B:  r <breath> yeah ? 
+B:  Yeah ? 
+B:  OK . 
+B:  And you just  
+B:  and you just use the s the segments of the dominant speaker then ? For  for sending to  to IBM 
+B:  or  ? 
+B:  Yeah . 
+B:  On that meeting . 
+B:  Yeah . 
+B:  But  
+B:  But then we could just use the  the output of the detector , and do the beeping on it , and send it to I B 
+B:  Yeah . 
+B:  For some meetings , I 'm  I 'm sure it  i 
+B:  n 
+B:  That 's  And some  on some meetings it 's good . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  So we should perhaps just select meetings on which the speech - nonspeech detection works well , 
+B:  and just use , <breath> those meetings to  to  to send to IBM and , do the other ones . 
+B:  Uh , it really depends . 
+B:  Um , my  my  my impression is that it 's better for meetings with fewer speakers , 
+B:  and it 's better for  <breath> for meetings where nobody is breathing . 
+B:  Yeah , 
+B:  get  
+B:  That 's it . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  And erase  
+B:  Yeah . 
+B:  Yeah . 
+B:  Nope . 
+B:  Yeah , 
+B:  u u u 
+B:  Yeah . 
+B:  Yeah there 's  I  I think there are some meetings where it would  would  It 's possible like this . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  What  
+B:  Doing the gain ? It 's no problem . 
+B:  Adjusting the gain ? 
+B:  Yeah , that 's no problem . 
+B:  We can do that . 
+B:  Yeah . 
+B:  I  I used it , 
+B:  so . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Sure . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Mark it . 
+B:  Sure . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Uh . 
+B:  Yeah . 
+B:  So  
+B:  Yeah th 
+B:  Yeah , 
+B:  the  the problem is that , nnn , the numbers Ian gave in the paper is just uh , some frame error rate . 
+B:  So that 's  that 's not really  <breath> What will be effective for  for the transcribers , is  
+B:  They have to  yeah , in in they have to insure that that 's a real s spurt or something . 
+B:  And  but , <breath> the numbers  
+B:  Oops . 
+B:  Um  
+B:  Let me think . 
+B:  So the  speech  the amount of speech that is missed by the  detector , for a good meeting , I th is around  or under one percent , I would say . 
+B:  But there can be  
+B:  Yeah . 
+B:  For  
+B:  yeah , 
+B:  but there can be more  
+B:  There 's  There 's more amount speech  
+B:  uh , more amount of  
+B:  Yeah well , the detector says there is speech , 
+B:  but there is none . 
+B:  So that  that can be a lot when  when it 's really a breathy channel . 
+B:  Yeah . 
+B:  Yeah . 
+B:  I can't  really  hhh ,   Tsk .  I  don't have really representative numbers , I think . 
+B:  That 's really  
+B:  I  I did  this on  on four meetings and only five minutes of  of every meet of  of these meetings 
+B:  so , <breath> it 's not  not that representative , 
+B:  but , 
+B:  it 's perhaps , 
+B:  Fff . 
+B:  Um  
+B:  Yeah , it 's perhaps then  it 's perhaps five percent of something , 
+B:  which s uh the  the frames  speech frames which are  which are missed , 
+B:  but um , I can't  can't really tell . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  So  
+B:  But  
+B:  Yeah . 
+B:  Yeah , 
+B:  so  but I think that 's  n that really doesn't happen very often that  that  that a word is cut in the middle or something . 
+B:  That 's  that 's really not  not normal . 
+B:  That is marked as speech . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah , 
+B:  it 's  
+B:  Yeah , I als I  
+B:  Yeah I also thought of  there  there are really some channels where it is almost  um , only bre breathing in it . 
+B:  And to  to re - run 's 
+B:  Eh , um . Yeah . I 've got a  a  P - a  method with loops into the cross - correlation with the PZM mike , 
+B:  and then to reject everything which  which seems to be breath . 
+B:  So , I could run this on those breathy channels , 
+B:  and perhaps throw out  
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Process it , 
+B:  hear into it . 
+B:  I would  
+B:  Um ,  listen to it , 
+B:  and then  
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  No . 
+B:  That won't be good . 
+B:  Yeah . 
+B:  And there 's  there 's one point which I  uh  <breath> yeah , which  which I r <mouth> we covered when I  when I r listened to one of the EDU meetings , 
+B:  and that 's <breath> that somebody is playing sound from his laptop . 
+B:  And i <laugh> the speech - nonspeech detector just assigns randomly the speech to  to one of the channels , 
+B:  so . 
+B:  Uh - I haven't - I didn't think of  of s of <breath> this before , 
+B:  but what  what shall we do about s things like this ? 
+B:  But , 
+B:  sometimes the  <breath> the  the laptop is in the background 
+B:  and some  somebody is  is talking , 
+B:  and , <breath> that 's really a little bit confusing , 
+B:  but  
+B:  Yeah . 
+B:  Yeah . 
+B:  OK . 
+B:  Yeah , 
+B:  that 's  that 's a second question , 
+B:  " what  what will different transcribers do with  with the laptop sound ? " 
+B:  Yeah . 
+B:  It 's speech . 
+B:  Yeah . 
+B:  But , 
+B:  when thi when this is sent to  to the I M - eh , I B M transcribers , I don't know if  if they can tell that 's really  
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Yeah . 
+B:  It 's really good sound , 
+B:  so  
+B:  Yeah that would be very important , 
+B:  yeah . 
+B:  Yeah . 
+B:  So th 
+B:  there was a category for @ @  speech . 
+B:  OK . 
+B:  Yeah . 
+B:  OK . 
+B:  OK . 
+B:  With  
+B:  with the laptop sound , 
+B:  or  ? 
+B:  just  
+B:  Yeah . 
+B:  I think that  that will be a little bit of a problem 
+B:  as it really switches around between <breath> two different channels , I think . 
+B:  What  what I would  
+B:  Yeah . 
+B:  Yeah . 
+B:  Comparable , 
+B:  yeah . 
+B:  OK . 
+B:  So  
+B:  What time is it ? 
+B:  Oh , OK . 
+B:  Yeah . 
+B:  No . 
+B:  I don't . 
+B:  No . 
+B:  Perhaps there are <laugh> lots of errors in it 

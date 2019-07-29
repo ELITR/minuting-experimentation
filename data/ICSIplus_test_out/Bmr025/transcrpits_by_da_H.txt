@@ -1,0 +1,366 @@
+H:  I don't know about other people . 
+H:  Does anyone have anything to  add to the agenda ? 
+H:  Um 
+H:  as a somewhat segue into the next topic , um could I get a hold of uh the data even if it 's not really corrected yet 
+H:  just so I can get the data formats 
+H:  and make sure the information retrieval stuff is working ? 
+H:  So can you just  
+H:  Oh , it is . 
+H:  OK . 
+H:  Just  So , " transcripts " is the sub - directory ? 
+H:  OK . 
+H:  So I 'll  I 'll probably just make some copies of those 
+H:  rather than use the ones that are there . 
+H:  Um and then just  we 'll have to remember to delete them once the corrections are made . 
+H:  It 's this one . 
+H:  Is my mike on ? 
+H:  Yeah . 
+H:  And so we 're doing those as disjoint from the ones we 're transcribing here ? 
+H:  OK , good . 
+H:  Yeah , I think that 's the right way to do it , 
+H:  especially for the information retrieval stuff . 
+H:  Anything else on transcription status ? 
+H:  OK . 
+H:  Right , which uh  
+H:  So I 've been working on using the THISL tools to do information retrieval on meeting data 
+H:  and the THISL tools are  there 're two sets , there 's a back - end and a front - end , 
+H:  so the front - end is the user interface 
+H:  and the back - end is the indexing tool and the querying tool . 
+H:  And so I 've written some tools to convert everything into the right for file formats . 
+H:  And the command line version of the indexing and the querying is now working . 
+H:  So at least on the one meeting that I had the transcript for uh conveniently you can now do information retrieval on it , 
+H:  do  type in a  a string and get back a list of start - end times for the meeting , 
+H:  uh of hits . 
+H:  Keywords . 
+H:  Right ? And so  and then it munges it to pass it to the THISL IR which uses an SGML - like format for everything . 
+H:  Um , right now , I have a tool that will do that on a command line using our standard tools , 
+H:  but my intention is to do a prettier user interface based either  
+H:  So  so that 's the other thing I wanted to discuss , is well what should we do for the user interface ? 
+H:  We have two tools that have already been written . 
+H:  Um the SoftSound guys did a web - based one , 
+H:  um , which I haven't used , haven't looked at . 
+H:  Dan says it 's pretty good 
+H:  but it does mean you need to be running a web server . 
+H:  And so it  it 's pretty big and complex . 
+H:  Uh and it would be difficult to port to Windows 
+H:  because it means porting the web server to Windows . 
+H:  Uh the other option is Dan did the Tcl - TK THISL GUI front - end for Broadcast News 
+H:  which I think looks great . 
+H:  I think that 's a nice demo . 
+H:  Um and that would be much easier to port to Windows . 
+H:  And so I think that 's the way we should go . 
+H:  Mm - hmm . 
+H:  It 's a sort of standard , text - retrieval - based  
+H:  So it 's uh term frequency , inverse document frequency scoring . 
+H:  Um and then there are all sorts of metrics for spacing 
+H:  how far apart they have to be and things like that . 
+H:  So it  it 's 
+H:  i it 's like doing a Google query or anyth anything else like that . 
+H:  So i it uses  So it pr produces an index ahead of time 
+H:  so you don't  you 're not doing a linear search through all the documents . 
+H:  Cuz you can imagine if  with  if we have the sixty hours ' worth you do  wouldn't wanna do a search . 
+H:  Um you have to do preindexing 
+H:  and so that  these tools do all that . 
+H:  And so the work to get the front - end to work would be porting it  
+H:  well  uh to get it to work on the UNIX systems , our side is just rewriting them and modifying them to work for meetings . 
+H:  So that it understands that they 're different speakers and that it 's one big audio file instead of a bunch of little ones and just sorta things like that . 
+H:  On which tool ? 
+H:  The THISL GUI tool which is the one that Dan wrote , Tcl - TK 
+H:  um you type in a query and then you get back a list of hits 
+H:  and you can type on them and listen to them . 
+H:  Click on them rather  with a mouse . 
+H:  Right , you 'd get  
+H:  something  
+H:  You  you 'd get to listen to " beep " . 
+H:  You couldn't get a video . 
+H:  Right . 
+H:  And so I think there 'd be minimal effort to get it to work , minimally 
+H:  and then we 'd wanna add things like query by speaker and by meeting and all that sort of stuff . 
+H:  Um Dave Gelbart expressed some interest in working on that 
+H:  so I 'll work with him on it . 
+H:  And it  it 's looking pretty good , 
+H:  you know , the fact that I got the query system working . 
+H:  So if we wanna just do a video - based one I think that 'll be easy . 
+H:  If we wanna get it to Windows it 's gonna be a little more work 
+H:  because the THISL IR , the information retrieval tool 's  um , 
+H:  I had difficulty just compiling them on Solaris . 
+H:  So getting them to compile on Windows might be challenging . 
+H:  So . 
+H:  It certainly helps . 
+H:  Um , I mean without those I wouldn't even attempt it . 
+H:  But what those  they  what those do is provide sort of a BSD compatibility layer , 
+H:  so that the normal UNIX function calls all work . 
+H:  Um , 
+H:  But the problem is that  that the THISL tools didn't use anything like Autoconf 
+H:  and so you have the normal porting problems of different header files and th some things are defined and some things aren't 
+H:  and uh different compiler work - arounds and so on . 
+H:  So the fact that um it took me a day to get it c to compile under Solaris means it 's probably gonna take me s significantly more than that to get it to compile under Windows . 
+H:  Free BSD would probably be easier . 
+H:  That 's true . 
+H:  Actually you know I should check 
+H:  because he did port it to SPRACHcore 
+H:  so he might have done that already . 
+H:  I 'll check at that  
+H:  Yeah , right . 
+H:  Right . 
+H:  That 's right . 
+H:  So , and I 've been corresponding with Dan and also with uh uh , SoftSound guy , uh  
+H:  Blanking on his name . 
+H:  Do I mean Tony ? 
+H:  I guess I do . 
+H:  Or S or Steve Renals . 
+H:  Which one do I mean ? 
+H:  My brain is not working , 
+H:  I don't remember who I 've been corresponding with . 
+H:  Then it 's Steve Renals . 
+H:  So uh just getting documentation and uh and f and formats , 
+H:  so that 's all going pretty well , 
+H:  I think we 'll be OK with that . 
+H:  Um 
+H:  we have  
+H:  Well , that 's a good point too . 
+H:  I don't know . 
+H:  Well this is one of the reasons  
+H:  This is the  one of the reasons that I 'm gonna have uh Dave Gelbart  Gelbart  
+H:  Having him volunteer to work on it is a really good thing 
+H:  because he 's worked on the Transcriber stuff 
+H:  and he 's more familiar with Tcl - TK than I am . 
+H:  Well that 's Snack , not  not Transcriber . 
+H:  Yeah , yeah , I mean , I  I think THISL  THISL GUI probably uses Snack . 
+H:  And so my intention was just to base it on that . 
+H:  And if it doesn't  
+H:  Right , we 'll have to figure out a user interface for that , so . 
+H:  Yeah . 
+H:  It might be fairly difficult to get that to work in  the little short segments we 'd be talking about 
+H:  and having the search tools and so on . 
+H:  We  we can look into it , 
+H:  but  
+H:  Yeah , I mean we have to  I have to sit down and try it before I make too many judgments , 
+H:  so uh 
+H:  Um 
+H:  My experience with the Gnu compatibility library is really it 's just as hard and just as easy to port to any system . 
+H:  Right ? 
+H:  The Windows system isn't any harder 
+H:  because it  it looks like a BSD system . 
+H:  It 's just , you know , just like all of them , the " include " files are a little different and the function calls are a little different . 
+H:  So I  it might be a little easier 
+H:  but it 's not gonna be a lot easier . 
+H:  Mm - hmm . 
+H:  Mm - hmm , 
+H:  ranked . 
+H:  This month . 
+H:  Oh sorry , next month . 
+H:  Today isn't June first , 
+H:  is it . 
+H:  Um . 
+H:  So I 've been doing a bunch of XML tools 
+H:  where you  we 're sort of moving to XML as the general format for everything 
+H:  and I think that 's definitely the right way to go 
+H:  because there are a lot of tools that let you do extraction and reformatting of XML tools . 
+H:  Um . 
+H:  So yet again we should probably meet to talk about transcription formats in XML 
+H:  because I 'm not particularly happy with what we have now . 
+H:  I mean it works with Transcriber 
+H:  but it  it 's a pain to use it in other tools 
+H:  uh because it doesn't mark start and end . 
+H:  Uh  
+H:  Utterance . 
+H:  So it 's implicit in  in there 
+H:  but you have to do a lot of processing to get it . 
+H:  And so  and also I 'd like to do the indirect time line business . 
+H:  Um but regardless , I mean , w that 's something that you , me , and Jane can talk about later . 
+H:  Um , but I 've installed XML tools of various sorts in various languages 
+H:  and so if people are interested in doing  extracting any information from any of these files , 
+H:  either uh information on users because the user database is that way  
+H:  I 'm converting the Key files to XML so that you can extract m uh various inf uh sorted information on individual meetings 
+H:  and then also the transcripts . 
+H:  And so l just let me know there  
+H:  it 's mostly Java and Perl 
+H:  but we can get other languages too if  if that 's desirable . 
+H:  The seat information is on the Key files for the ones which 
+H:  it 's been recorded , 
+H:  yeah . 
+H:  Where  where you 're sitting . 
+H:  Right . 
+H:  " It 's pretty soft and squishy . " 
+H:  Oh , but that might just be me . 
+H:  Um . 
+H:  Maybe we should bleep that out . 
+H:  Right . 
+H:  The square bracket . 
+H:  You haven't been putting it in . 
+H:  Oh , OK . 
+H:  Yeah so we can go back and fill them in for the ones we have . 
+H:  I had told you guys about it 
+H:  but  
+H:  I mean this is why I wanna use a g a tool to do it rather than the plain text 
+H:  because with the plain text it 's very easy to skip those things . 
+H:  So . 
+H:  Um if you use the Edit - key , 
+H:  or Key - edit  
+H:  I think it 's Edit - key ,  command  
+H:  Did I show you guys that ? 
+H:  I did show it to you , 
+H:  but I think you both said " no , you 'll just use text file " . 
+H:  Um it has it in there , a place to fill it in . 
+H:  Yeah , and so if you don't fill it in , you 're not gonna get it in the meetings . 
+H:  So . 
+H:  Yep . 
+H:  Yeah and then the other thing also that Thilo noticed is , on the microphone , 
+H:  on channel zero it says hand - held mike or Crown mike , 
+H:  you actually have to say which one . 
+H:  So . 
+H:  Yeah that 's cuz you kn 
+H:  I  I know why . 
+H:  And then uh also in a couple of places instead of filling the participants under " participants " they were filled in under " description " . 
+H:  And so that 's also a problem . 
+H:  So anyway . 
+H:  That 's it . 
+H:  Oh uh also I 'm working on another version of this tool , 
+H:  the  the one that shows up here ,  that will flash yellow if the mike isn't connected . 
+H:  And it 's not quite ready to go yet 
+H:  because um it 's hard to tell whether the mike 's connected or not 
+H:  because the best quality ones , the Crown ones ,  are about the same level if they 're off 
+H:  and no one 's o off or if they 're on and no one 's talking . 
+H:  Um these  these ones , they are much easier , 
+H:  there 's a bigger difference . 
+H:  So I 'm working on that 
+H:  and it  it sorta works 
+H:  and so eventually we will change to that 
+H:  and then you 'll be able to see graphically if your mike is dropping in or out . 
+H:  Yep . 
+H:  Yep . 
+H:  Yep . 
+H:  Now  
+H:  Well I 'll turn off the screensaver too . 
+H:  Um the other thing is as I 've said before , it is actually on 
+H:  the thing . 
+H:  There 's a little level meter 
+H:  but of course no one ever pays attention to it . 
+H:  So I think having it on the screen is more easy to notice . 
+H:  Uh buzzer . 
+H:  " Bamp , bamp ! " 
+H:  OK , disk backup , et cetera ? 
+H:  Um I spoke with Dave Johnson about putting all the Meeting Recorder stuff on non - backed - up disk to save the overhead of backup 
+H:  and he pretty much said " yeah , you could do that if you want " 
+H:  but he thought it was a bad idea . 
+H:  In fact what he said is doing the manual one ,  doing uh NW archive to copy it  is a good idea 
+H:  and we should do that and have it backed up . 
+H:  He w he 's a firm believer in  in lots of different modalities of backup . 
+H:  I mean , his point was well taken . 
+H:  This data cannot be recovered . 
+H:  And so if a mistake is made and we lose the backup we should have the archive 
+H:  and if then a mistake is made and we lose the archive we should have the backup . 
+H:  Just  just the monthly full . 
+H:  Yeah . But he said that  that we sh shouldn't worry too much about that , 
+H:  that we 're getting a new backup system 
+H:  and we 're far enough away from saturation on full backups that it 's w probably OK . 
+H:  And uh , so the only issue here is the timing between getting more disks and uh recording meetings . 
+H:  Things that are recreatable easily and also  Yeah , basically things that are recreatable . 
+H:  The expanded files and things like that . 
+H:  They take up a lot more room anyway . 
+H:  Uh but we do need more disk . 
+H:  Yeah . 
+H:  And I  I think I agree with him . 
+H:  I mean his point was well taken that if we lose one of these we cannot get it back . 
+H:  I don't think there was any other et cetera there . 
+H:  Um unfortunately  we could burn C Ds but first of all it 's a pain . 
+H:  Because you have to copy it down to the PC and then burn it 
+H:  and that 's a multi - step procedure . 
+H:  And second of all the  the write - once burners as opposed to a professional press don't last . 
+H:  So I think burning them for distribution is fine 
+H:  but burning them for backup is not a good idea . 
+H:  Cuz th they  they fail after a couple years . 
+H:  Yes , since Tcl - TK runs on it , basically things 'll just work . 
+H:  Uh got an email from uh James Landay 
+H:  who basically said " if you 're not using them , could you return them ? " 
+H:  So he said he doesn't need them , he just periodically w at the end of each term sends out email to everyone who was recorded as having them 
+H:  and asks them if they 're still using them . 
+H:  We  we used them a couple times , 
+H:  but  
+H:  Yeah , we have two . 
+H:  Um . 
+H:  My opinion on it is , 
+H:  first , I never take notes anyway 
+H:  so I 'm not gonna use it , 
+H:  um and second , it 's another level of infrastructure that we have to deal with . 
+H:  And then you can download it 
+H:  and they have OCR and searching and all sorts of things . 
+H:  So i if you take notes it 's a great little device . 
+H:  But I don't take notes , 
+H:  so . 
+H:  Yep . 
+H:  Yep , and then just sort of died out . 
+H:  Yeah that 's right . 
+H:  Yep . 
+H:  Because that 's summary . 
+H:  Right . 
+H:  I mean that was one of the issues we talked about originally 
+H:  and that that 's w part of the difficulty is that we need an infrastructure for using the time  the CrossPads 
+H:  and so that means synchronizing the time  
+H:  You know you want it pretty close 
+H:  and there 's a fair amount of skew because it 's a hand - held unit with a battery 
+H:  and so you  
+H:  so you have to synchronize at the beginning of each meeting all the pads that are being used , 
+H:  so that it 's synchronized with the time on that 
+H:  and then you have to download to an application , 
+H:  and then you have to figure out what the data formats are and convert it over if you wanna do anything with this information . 
+H:  And so there 's a lot of infrastructure which 
+H:  unless someone  
+H:  Hmm . 
+H:  Well , but then there 's the infrastructure at the other end 
+H:  which someone has to listen to that and find that point , 
+H:  and then mark it . 
+H:  So . 
+H:  We can keep all  both of them for the whole whole year . 
+H:  I mean , it 's just  
+H:  Yep . 
+H:  Buttons . 
+H:  I mean for what  what you 've been describing buttons would be even more convenient than anything else , 
+H:  right ? 
+H:  You have the  
+H:  Well I 'm sure there would  
+H:  Action item . 
+H:  I mean I think the CrossPad idea is a good one . 
+H:  It 's just a question of getting people to use it 
+H:  and getting the infrastructure set up in such a way that it 's not a lot of extra work . 
+H:  I mean that 's part of the reason why it hasn't happened 
+H:  is that it 's been a lot of extra work for me 
+H:  and  
+H:  Well it 's digital but it 's in a format that is not particularly standard . 
+H:  Well  w we don't  we certainly don't have to return it , 
+H:  as I said . All  all he said is that if you 're not using it could you return it , if you are using it feel free to keep it . 
+H:  The point is that we haven't used it at all 
+H:  and are we going to ? 
+H:  OK . 
+H:  Yep . 
+H:  I mean if we had them out and sitting on the table people might use them a little more 
+H:  although there is a little  
+H:  Sounds breathy to me . 
+H:  Breath and lau 
+H:  " ha - ha - ha - ha " . 
+H:  " Ha - ha - ha - ha . " 
+H:  Um . 
+H:  That reminded me of something . 
+H:  Oh well , 
+H:  too late . 
+H:  It slipped out . 
+H:  Oh , 
+H:  equipment . 
+H:  Ordered  
+H:  Uh , well I 'm always gonna do that . 
+H:  W uh   We ordered uh more wireless , 
+H:  and so they should be coming in at some point . 
+H:  And then at the same time I 'll probably rewire the room as per Jane 's suggestion 
+H:  so that uh the first N channels are wireless , eh are the m the close - talking and the next N are far - field . 
+H:  wired less , wired more . 
+H:  Should we do digits ? 
+H:  Do we have anything else ? 
+H:  So just the transcript number and then the  then the  
+H:  Should we do simultaneous ? 
+H:  Yeah , 
+H:  absolutely . 
+H:  I mean you hav sorta have to . 
+H:  OK . 
+H:  Well I have to , 
+H:  I don't know about other people . 

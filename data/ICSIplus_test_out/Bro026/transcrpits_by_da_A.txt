@@ -1,0 +1,131 @@
+A:  Right . 
+A:  Yeah . 
+A:  You probably received the mail . 
+A:  Yeah . 
+A:  What was the update ? 
+A:  So there is th then  the  all the new features that go in . 
+A:  The , um , noise suppression , the re - synthesis of speech after suppression . 
+A:  These are the  
+A:  Yeah . 
+A:  I don't know if they use it , 
+A:  but . 
+A:  Um , I don't know if Hari did that or  You d 
+A:  Actually I  I tried wh while  when I installed the  repository , I tried from Belgium . 
+A:  I logged in there and I tried  to import  
+A:  Yeah , it works . 
+A:  But it 's  So , right now it 's the mechanism with SSH . 
+A:  I don't  s I didn't set up  You can also set up a CVS server  on a new port . 
+A:  It 's like well  uh , a main server , or d You can do a CVS server . 
+A:  But . 
+A:  Yeah , right . 
+A:  But I didn't do that because I was not sure about  security problems . 
+A:  I  I would have to  
+A:  Right . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah , you ha in this way you ca you have to set up a CVS server but then , yeah , you can access it . 
+A:  you  you can set up priorities . 
+A:  You can access them and mostly if you  if y the set the server is set up like this . 
+A:  Mm - hmm . 
+A:  Mmm , since the meeting , 
+A:  well , I  I 've been  I 've been train training a new VAD and a new  feature net . 
+A:  So they should be ready . 
+A:  Um . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Well . So we 've been working like six weeks on  on the noise compensation and we end up with something that seems reasonable . 
+A:  Um . 
+A:  So finally it 's  it 's , um , Wiener filtering on FFT bins . 
+A:  And it uses , uh , two steps , smoothing of the transfer function , 
+A:  the first step , that 's along time , which use recursion . 
+A:  And <clears throat> after this step there is a further smoothing along frequency , which use a sliding window of twenty FFT bins . 
+A:  Mmm . 
+A:  And , uh  
+A:  Yeah , 
+A:  yeah . 
+A:  It was  
+A:  Yeah . 
+A:  Uh , <clears throat> it 's on the transfer function . 
+A:  So  
+A:  Yeah . 
+A:  Yeah , so basically we tried <clears throat> different configuration within this idea . 
+A:  We tried u u applying this on mel bands , having spectral subtraction instead of wiener filtering . 
+A:  Um . 
+A:  Well , finally we end up with  this configuration that works , uh , quite well . 
+A:  So we are going to fix this for the moment and work on the other aspects of <clears throat> the whole system . 
+A:  So  
+A:  Mm - hmm . 
+A:  We  we do not fo 
+A:  Well  well , we do , but we don't  don't re - synthesize . 
+A:  In  in the program we don't re - synthesize and then re - analyze once again . 
+A:  We just use the clean FFT bins . 
+A:  This is an option that  then you can  
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Yeah , well , <clears throat> the , um , the other parts of the system are the  the blocks that were already present before and that we did not modify a lot . 
+A:  Yeah , th then the mel filter bank , 
+A:  then the log operation , 
+A:  Mmm . 
+A:  Yeah . 
+A:  Then the LDA filter , 
+A:  mmm , then the downsampling , 
+A:  DCT , 
+A:  then , um , on - line normalization , 
+A:  followed by  upsampling . 
+A:  Then finally , we compute delta and we put the neural network also . 
+A:  Yeah . 
+A:  And finally frame dropping , which um , <clears throat> would be a neural network also , used for estimated silence probabilities . 
+A:  And the input of this neural network would be somewhere between log  mel bands or one of the earlier stages of the processing . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  It , uh , 
+A:  Ri - right now it 's second . 
+A:  Um . 
+A:  No , we didn't . 
+A:  No , 
+A:  um . 
+A:  Yeah , yeah . 
+A:  Yeah . 
+A:  Mmm . 
+A:  Uh , we are between their two systems . 
+A:  So 
+A:  I  It is a triumph . 
+A:  But everything is  within the range of one  one percent . 
+A:  So . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Um  Yeah , not better , not worse . 
+A:  What about norm normalizing also ? 
+A:  Yeah . 
+A:  And there is also the idea of using TRAPS , maybe , for the VAD , 
+A:  which , um  
+A:  Well , Pratibha apparently showed , when , she was at IBM , that it 's a good idea . 
+A:  So . 
+A:  I have no idea . 
+A:  It would have to fit 
+A:  but  
+A:  Yeah . 
+A:  Uh , yeah . 
+A:  I I 've a new feature net ready also . 
+A:  No , uh . Well p two network , one VAD and one  feature net . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Um . 
+A:  But , yeah , I think there are plenty of issues to work on for the feature net @ @ . 
+A:  Sorry . 
+A:  Apparently , no . 
+A:  It 's training on a range between ten and twenty DB , I think , and testing between five and fifteen . 
+A:  That 's what I got  on  
+A:  Yeah , 
+A:  and  So the noise is  There is a range of different noises also  um  which are selected randomly and added randomly , uh , to the files . 
+A:  And there are noises that are different from the noises used  on TI - digits . 
+A:  I don't know , 
+A:  uh . 
+A:  We can  <clears throat> For September , we can set up a work schedule and we can maybe work independently . 
+A:  And then at some point it maybe be better to work together again . 
+A:  I  
+A:  Maybe , yeah . 
+A:  But , uh  Huh . 
+A:  Mm - hmm . 
+A:  Mm - hmm 
+A:  Right . 

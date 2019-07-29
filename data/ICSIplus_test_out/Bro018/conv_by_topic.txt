@@ -1,0 +1,1803 @@
+C:  OK . So uh , he 's not here , so you get to  
+D:  <mouth> <inbreath> 
+D:  So . <laugh> 
+D:  Yeah , I will try to explain the thing that I did this  this week  during this week . 
+E:  <mike noise> 
+C:  Yeah . 
+D:  <inbreath> 
+D:  Well eh you know that I work  I begin to work with a new feature to detect voice - unvoice . 
+E:  Mm - hmm . 
+D:  What I trying two MLP 
+D:  to  to the  with this new feature and the fifteen feature 
+D:  uh from the 
+D:  eh bus base system 
+E:  The  the mel cepstrum ? 
+E:  <mike noise> 
+D:  No , satly the mes the Mel Cepstrum , the new base system  the new base system . 
+E:  Oh the  OK , the Aurora system . 
+D:  Yeah , we  yeah the Aurora system with the new filter , 
+E:  OK . 
+
+
+D:  VAD or something like that . And I 'm trying two MLP , one 
+D:  one that only have t three output ,  voice , unvoice , and silence , and 
+C:  Mm - hmm . 
+D:  other one that have fifty - six output . 
+D:  The probabilities of the allophone . And 
+D:  I tried to do some experiment of recognition with that 
+D:  and only have result with  with the MLP with the three output . 
+D:  And I put together the fifteen features and the three MLP output . 
+D:  And , well , the result are 
+D:  li a little bit better , but more or less similar .  
+C:  Uh , I  I 'm  I 'm slightly confused . What  what feeds the uh  the three - output net ? 
+E:  Hmm . 
+D:  Voice , unvoice , and si 
+C:  No no , what feeds it ? What features does it see ? 
+D:  The feature  the input ? 
+D:  The inputs are the fifteen  the fifteen uh 
+D:  bases feature . 
+C:  Uh - huh . 
+D:  the  with the new code . 
+D:  And the other three features are R , the variance of the difference between the two spectrum , 
+C:  Uh - huh . 
+D:  the variance of the auto - correlation function , except the  the first point , because half the height value is R - zero and also R - zero , 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+D:  the first coefficient of the auto - correlation function . That is like the energy 
+C:  Right . 
+D:  with these three feature , also these three feature . 
+C:  You wouldn't do like R - one over R - zero or something like that ? 
+C:  I mean usually for voiced - unvoiced you 'd do  yeah , you 'd do something  you 'd do energy but then you have something like spectral slope , which is you get like R - one ov over R - zero or something like that . 
+D:  Yeah . 
+D:  Uh yeah . <outbreath> 
+E:  What are the R 's ? 
+E:  I 'm sorry I missed it . 
+C:  R correlations . 
+D:  No , R c No . 
+E:  Oh . 
+D:  Auto - correlation ? Yes , yes , the variance of the auto - correlation function that uses that @ @ 
+C:  Ye - 
+C:  Well that 's the variance , but if you just say " what is  " I mean , to first order , 
+C:  um yeah one of the differences between voiced , unvoiced and silence is energy . 
+D:  Yeah , I I 'll  
+C:  Another one is  but the other one is the spectral shape . 
+D:  The spectral shape , yeah . 
+C:  Yeah , and so R - one over R - zero is what you typically use for that . 
+D:  No , I don't use that  I can't use  
+C:  No , I 'm saying that 's what people us typically use . 
+D:  Mmm . 
+C:  See , because it  because this is  this is just like a single number to tell you 
+C:  um 
+C:  " does the spectrum look like that or does it look like that " . 
+D:  Mm - hmm . 
+C:  <laugh> 
+A:  Oh . R  R - zero .  
+C:  Right ? 
+D:  Mm - hmm . 
+C:  So if it 's  if it 's um  if it 's low energy uh but the  but the spectrum looks 
+C:  like that or like that , 
+D:  Mm - hmm . 
+C:  it 's probably silence . 
+C:  Uh but if it 's low energy and the spectrum looks like that , 
+C:  it 's probably unvoiced . 
+D:  Yeah . 
+C:  So if you just  if you just had to pick 
+C:  two features to determine voiced - unvoiced , 
+C:  you 'd pick something about the spectrum like uh R - one over R - zero , 
+D:  Mm - hmm , OK . 
+C:  um and R - zero 
+C:  or i i you know you 'd have some other energy measure and like in the old days people did like uh zero crossing 
+D:  <pages flipping> 
+C:  counts . 
+D:  Yeah , yeah . 
+C:  Right . S  Yeah . Um , 
+D:  Well , I can also th use this . 
+D:  Bec - because the result are a little bit better but we have in a point that 
+C:  Yeah . 
+D:  everything is more or less the similar  more or less similar . 
+C:  But um 
+D:  It 's not quite better . 
+C:  Right , but it seemed to me that what you were 
+C:  what you were getting at before was that there is something about the difference between the original signal or the original FFT and with the filter which is what  and the variance was one take uh on it . 
+D:  Yeah , I used this too . 
+C:  Right . But it  it could be something else . Suppose you didn't have anything like that . Then in that case , if you have two nets , 
+C:  Alright , and this one has three outputs , 
+D:  Mm - hmm . 
+C:  and this one has f 
+C:  whatever , fifty - six , or something , if you were to sum up the probabilities for the voiced and for the unvoiced and for the silence here , we 've found in the past you 'll do better at voiced - unvoiced - silence than you do with this one . 
+D:  Mm - hmm . 
+C:  So just having the three output thing doesn't  doesn't really buy you anything . 
+D:  Yeah . 
+D:  <inbreath> 
+C:  The issue is what you feed it . 
+D:  <inbreath> 
+D:  Yeah , I have  yeah . 
+C:  So uh 
+E:  So you 're saying take the features that go into the voiced - unvoiced - silence net and feed those into the other one , 
+D:  No  
+C:  w 
+E:  as additional inputs , rather than having a separate  
+C:  W well that 's another way . That wasn't what I was saying but yeah that 's certainly another thing to do . No I was just trying to say if you b if you 
+D:  Yeah . 
+C:  bring this into the picture over this , what more does it buy you ? 
+E:  Mmm . 
+C:  And what I was saying is that the only thing I think that it buys you is um 
+C:  based on whether you feed it something different . 
+C:  And something different in some fundamental way . And so the kind of thing that  that she was talking about before , 
+C:  was looking at something uh ab um  
+C:  something 
+C:  uh about the difference between the  the uh um 
+D:  <mike noise> 
+C:  log FFT uh log power uh 
+C:  and the log magnitude uh F F - spectrum uh and the um uh filter bank . 
+D:  Yeah . 
+C:  And so the filter bank 
+C:  is chosen in fact to sort of integrate out the effects of pitch and she 's saying you know trying  So the particular measure that she chose was the variance of this m of this difference , 
+A:  <mike noise> 
+D:  Mm - hmm . 
+C:  but that might not be the right number . 
+D:  Maybe . <laugh> 
+C:  Right ? I mean maybe there 's something about the variance that 's  that 's not enough or maybe there 's something else that  that one could use , but 
+C:  I think that , for me , the thing that  that struck me was that uh you wanna get something back here , so here 's  here 's an idea . 
+C:  uh What about it you skip all the  all the really clever things , and just fed the log magnitude spectrum into this ? 
+D:  Ah  I 'm sorry . 
+C:  This is f 
+C:  You have the log magnitude spectrum , 
+D:  Yeah . Mm - hmm . 
+C:  and you were looking at that 
+C:  and the difference between the filter bank and  and c c computing the variance . 
+D:  Mm - hmm . 
+C:  That 's a clever thing to do . What if you stopped being clever ? 
+E:  <laugh> 
+D:  Mm - hmm . 
+C:  And you just took this thing in here because it 's a neural net and neural nets are wonderful and 
+A:  <laugh> 
+C:  figure out what they can  what they most need from things , and 
+A:  <laugh> 
+D:  Yeah . 
+C:  I mean that 's what they 're good at . 
+C:  <laugh> 
+C:  So I mean you 're  you 're  you 're trying to be clever and say what 's the statistic that should  we should get about this difference but uh in fact , 
+C:  you know maybe just feeding this in or  
+E:  Hmm . 
+C:  or feeding both of them in 
+C:  <laugh> 
+C:  you know , another way , saying let it figure out what 's the  what is the 
+C:  interaction , especially if you do this over multiple frames ? 
+D:  Mm - hmm . 
+C:  Then you have this over time , 
+C:  and  and both kinds of measures and uh you might get uh something better . 
+D:  Mm - hmm . 
+C:  Um . 
+E:  So  so don't uh  
+E:  don't do the division , but let the net 
+E:  have everything . 
+C:  That 's another thing you could do yeah . Yeah . 
+D:  Yeah . 
+C:  Um . 
+C:  I mean , it seems to me , if you have exactly the right thing then it 's better to do it without the net because otherwise you 're asking the net to learn this  you know , say if you wanted to learn how to do multiplication . 
+D:  <mike noise> 
+E:  Mm - hmm . 
+C:  I mean you could feed it a bunch of s you could feed two numbers that you wanted to multiply into a net 
+C:  and have a bunch of nonlinearities in the middle and train it to get the product of the output and it would work . 
+C:  But , it 's kind of crazy , cuz we know how to multiply and you  you 'd be you know much lower error usually <laugh> if you just multiplied it out . 
+E:  <laugh> 
+E:  <laugh> 
+C:  But suppose you don't really know what the right thing is . And that 's what these sort of dumb machine learning methods are good at . So . 
+C:  Um . Anyway . It 's just a thought . 
+A:  <clear throat> 
+E:  How long does it take , Carmen , to train up one of these nets ? 
+D:  <inbreath> 
+D:  Oh , not too much . 
+E:  Yeah . 
+D:  Mmm , one day or less . 
+E:  Hmm . 
+C:  Yeah , it 's probably worth it . 
+
+
+A:  What are  what are your f uh frame error rates for  for this ? 
+D:  <inbreath> 
+D:  Eh fifty - f six 
+D:  uh no , the frame error rate ? Fifty - six I think . 
+A:  O 
+C:  Is that  maybe that 's accuracy ? 
+D:  Percent . 
+D:  The accuracy . 
+A:  Fif - fifty - six percent accurate for v voice - unvoice 
+D:  Mm - hmm . 
+D:  <inbreath> 
+D:  No for , yes f 
+A:  <inbreath> 
+D:  I don't remember for voice - unvoice , maybe for the other one . 
+A:  Oh , OK . 
+D:  <inbreath> 
+C:  Yeah , voiced - unvoiced hopefully would be a lot better . 
+A:  OK . 
+D:  for voiced . I don't reme 
+A:  Should be in nineties somewhere . 
+D:  Better . Maybe for voice - unvoice . This is for the other one . I should  
+A:  Right . 
+D:  I can't show that . 
+A:  OK . 
+D:  But I think that fifty - five was for the  when the output are the fifty - six phone . 
+A:  Mm - hmm . 
+D:  That I look in the  with the other  nnn the other MLP that we have are more or less the same number . 
+D:  Silence will be better but more or less the same . 
+C:  I think at the frame level for fifty - six that was the kind of number we were getting for  for uh um reduced band width uh 
+D:  I think that  I  I  I think that for the other one , for the three output , is sixty sixty - two , sixty 
+C:  stuff . 
+A:  Mm - hmm . 
+D:  three more or less . It 's  
+C:  That 's all ? 
+D:  Yeah . 
+C:  That 's pretty bad . 
+D:  <inbreath> 
+D:  Yeah , because it 's noise also . 
+C:  Aha ! 
+A:  Oh yeah . 
+D:  And we have 
+A:  <laugh> 
+D:  <laugh> 
+A:  <groan or sigh> 
+A:  <laugh> 
+C:  Aha ! 
+C:  Yeah . Yeah . OK . 
+D:  I know . <laugh> 
+C:  But even i in  
+C:  Oh yeah , in training . Still , 
+C:  Uh . 
+C:  <laugh> 
+C:  Well actually , so this is a test that you should do then . 
+C:  Um , if you 're getting fifty - six percent over here , uh that 's in noise also , right ? 
+D:  Yeah , yeah , yeah . 
+C:  Oh OK . 
+C:  If you 're getting fifty - six here , 
+C:  try adding together the probabilities of all of the voiced phones here and all of the unvoiced phones 
+D:  will be  
+C:  and see what you get then . 
+D:  Yeah . 
+A:  <clear throat> 
+C:  I bet you get better than sixty - three . 
+D:  Well I don't know , but  
+D:  I th I  I think that we  I have the result more or less . Maybe . I don't know . 
+D:  I don't  I 'm not sure but 
+D:  I remember @ @ that I can't show that . 
+C:  OK , but that 's a  
+C:  That is a  a good check point , you should do that anyway , OK ? 
+D:  Yeah . 
+C:  Given this  this uh 
+A:  <long outbreath> 
+C:  regular old net that 's just for choosing for other purposes , 
+C:  uh add up the probabilities of the different subclasses and see  see how well you do . 
+C:  Uh and that  you know anything that you do over here should be at least as good as that . 
+D:  Mm - hmm . 
+C:  OK .  
+D:  I will do that . 
+D:  <inbreath> 
+E:  <inbreath> 
+D:  But  
+
+
+E:  The targets for the neural net , 
+E:  uh , they come from forced alignments ? 
+D:  Uh ,  
+A:  <inbreath> 
+D:  no . 
+A:  TIMIT canonical ma mappings . 
+D:  TIMIT . 
+E:  Ah ! 
+C:  Oh . So , this is trained on TIMIT . 
+E:  OK . 
+D:  Yeah . 
+A:  Yeah , noisy TIMIT . 
+C:  OK . 
+D:  Yeah this for TIMIT . 
+C:  But noisy TIMIT ? 
+D:  Noisy TIMIT . We have noisy TIMIT with the noise of the  the 
+A:  Right . 
+D:  TI - digits . And now we have another noisy TIMIT also with the noise of uh Italian database . 
+D:  <laugh> 
+C:  <laugh> 
+A:  <laugh> 
+C:  I see .  
+C:  Yeah . 
+C:  Well there 's gonna be  it looks like there 's gonna be a noisy uh  
+C:  some large vocabulary noisy stuff too . Somebody 's preparing . 
+E:  Really ? 
+C:  Yeah . 
+C:  I forget what it 'll be , resource management , Wall Street Journal , something . Some  some read task actually , that they 're  
+A:  Hmm !  
+E:  For what  
+C:  preparing . 
+E:  For Aurora ? 
+C:  Yeah . 
+E:  Oh ! 
+C:  Yeah , so the uh  
+C:  Uh , 
+C:  the issue is whether people make a decision now based on what they 've already seen , or they make it later . And one of the arguments for making it later is let 's make sure 
+C:  that whatever techniques that we 're using work for something more than  than connected digits . 
+E:  Hmm . 
+C:  So . 
+E:  When are they planning  
+E:  When would they do that ? 
+C:  Mmm , I think late  uh I think in the summer sometime . 
+E:  Hmm . 
+C:  So . 
+C:  OK , thanks . <outbreath> 
+D:  <inbreath> 
+
+
+D:  This is the work that I did during this date and also mmm 
+C:  Uh - huh . 
+D:  I  H Hynek last week say that if I have time I can to begin to  to study 
+D:  well seriously the France Telecom proposal to look at the code and something like that 
+C:  Mm - hmm . 
+D:  to know exactly what they are doing because maybe that we can have some ideas 
+C:  Mm - hmm . 
+D:  but not only to read the proposal . Look insi look i 
+D:  carefully what they are doing with the program @ @ and I begin to  to work also in that . 
+D:  But the first thing that I don't understand is that they 
+D:  are using R - 
+D:  the uh log energy that this quite  I don't know why they have some 
+D:  constant in the expression of the lower energy . I don't know what that means . 
+D:  <clear throat> 
+E:  They have a constant in there , you said ? 
+D:  Yeah . 
+D:  <cough> 
+C:  Oh , 
+C:  at the front it says uh " log energy is equal to the rounded version of sixteen over the log of two " 
+D:  This  
+D:  Yeah . 
+C:  Uh . 
+C:  <laugh> 
+C:  uh times the  Well , this is natural log , and maybe it has something to do with the fact that this is  
+D:  Then maybe I can understand . 
+E:  Is that some kind of base conversion , or  ?  
+C:  I  I have no idea . 
+C:  Yeah , that 's what I was thinking , but  but um , 
+C:  then there 's the sixty - four , 
+C:  Uh , 
+C:  <laugh> 
+A:  <laugh> 
+C:  I don't know .  
+D:  <laugh> 
+C:  <laugh> 
+D:  Because maybe they 're  the threshold that they are using on the basis of this value  I don't know exactly , because well th I thought maybe they have a meaning . But I don't know what is the meaning of take exactly this value . 
+E:  <laugh-breath> 
+C:  <long outbreath> 
+E:  Experimental results . 
+A:  Mc - McDonald 's constant . 
+D:  <laugh> 
+C:  Yeah , it 's pretty funny looking . 
+E:  So they 're taking the number inside the log and raising it to 
+C:  I don't know . 
+E:  sixteen over log 
+E:  base two . 
+C:  Yeah , I  
+D:  <mike noise> 
+C:  um 
+C:  Right . 
+C:  Sixteen over  
+E:  Does it have to do with those sixty - fours , or  ?  
+C:  two . 
+C:  Um . 
+C:  If we ignore the sixteen , 
+C:  the natural log of t one over the natural log of two times the natu 
+C:  I don't know . 
+D:  <laugh> 
+E:  Hmm . 
+C:  Well , maybe somebody 'll think of something , but this is uh  
+D:  <inbreath> 
+C:  It may just be that they  they want to have  for very small energies , they want to have some 
+D:  Yeah , the e 
+C:  kind of a  
+D:  The effect I don't  
+D:  @ @ I can understand the effect of this , no ? because it 's to  
+D:  to do something like that . 
+D:  No ? 
+C:  Well , it says , since you 're taking a natural log , it says that when  when you get down to essentially zero energy , 
+D:  Mm - hmm . 
+C:  this is gonna be the natural log of one , which is zero . 
+C:  So it 'll go down to 
+C:  uh 
+C:  to <mike noise on "p"> 
+C:  the natural log being  
+C:  So the lowest value for this would be zero . So y you 're restricted to being positive . 
+C:  And this sort of smooths it for very small energies . 
+C:  Uh , why they chose sixty - four and something else , that was probably just experimental . 
+D:  Yeah . 
+C:  And the  the  the constant in front of it , I have no idea . 
+C:  um 
+D:  Well . I  I will look to try if I move this parameter in their code what happens , <laugh> maybe everything is  
+C:  <laugh> 
+C:  uh  
+D:  Maybe they tres hole are on basis of this . 
+C:  I mean  
+D:  I don't know . 
+C:  it  
+C:  <outbreath> 
+C:  they  they probably have some fi particular 
+C:  s fixed point arithmetic that they 're using , and then it just  
+E:  Yeah , I was just gonna say maybe it has something to do with hardware , something they were doing . 
+C:  Yeah .  
+C:  Yeah , 
+C:  I mean that  they 're s probably working with fixed point or integer or something . I think you 're supposed to on this stuff anyway , and  
+C:  and so maybe that puts it in the right realm somewhere . 
+E:  Well it just , yeah , puts it in the right range , or  
+C:  <inbreath> 
+D:  <laugh> 
+D:  <inbreath> 
+C:  Yeah . 
+C:  I think , given at the level you 're doing things in floating point on the computer , I don't think it matters , would be my guess , but . 
+D:  Mm - hmm . 
+D:  <inbreath> 
+C:  <laugh> 
+D:  I  this more or less anything 
+C:  Yeah . 
+C:  OK , and wh when did Stephane take off ? He took off  
+D:  I think that Stephane will arrive today or tomorrow . 
+C:  Oh , he was gone these first few days , and then he 's here for a couple days before he goes to Salt Lake City . OK . 
+D:  Mm - hmm . 
+D:  He 's  I think that he is in Las Vegas or something like that . 
+D:  <laugh> 
+C:  Yeah . 
+E:  <laugh> 
+C:  Yeah . 
+
+
+C:  So he 's  he 's going to ICASSP which is good . I  I don't know if there are many people 
+C:  who are going to ICASSP 
+D:  Yeah . 
+C:  so  so I thought , make sure somebody go . 
+D:  Yeah . 
+E:  Do  have  
+E:  Have people sort of stopped going to ICASSP in recent years ? 
+C:  Um , 
+C:  people are less consistent about going to ICASSP and I think it 's still  
+C:  it 's still a reasonable forum 
+C:  for students to  to present things . 
+C:  Uh , 
+C:  it 's  
+C:  I think for engineering students of any kind , I think it 's  it 's if you haven't been there much , it 's good to go to , 
+E:  Hmm . 
+E:  Mm - hmm . 
+C:  uh to get a feel for things , a range of things , not just speech . Uh . 
+C:  But I think for  for sort of dyed - in - the - wool speech people , um I think that ICSLP and Eurospeech are much more targeted . 
+C:  Uh . And then there 's these other meetings , like HLT and  and uh 
+E:  Mmm . 
+C:  ASRU  
+C:  so there 's  there 's actually plenty of meetings that are really relevant to  
+C:  to uh 
+C:  computational uh speech processing of one sort or another . 
+E:  Mm - hmm . 
+C:  Um . 
+C:  So . I mean , I mostly just ignored it because I was too busy and <laugh> didn't get to it . 
+E:  <laugh> 
+
+
+C:  So uh 
+C:  Wanna talk a little bit about what we were talking about this morning ? Just briefly , or  
+A:  Oh ! um  uh  
+C:  Or anything else ? 
+A:  Yeah . So . I  I guess 
+A:  some of the 
+A:  progress , I  I 've been getting a  getting my committee members for the quals . 
+C:  <mike noise> 
+A:  And um so far I have Morgan and Hynek , 
+A:  <inbreath> 
+A:  Mike Jordan , 
+A:  and I asked John Ohala and he agreed . 
+A:  <inbreath> 
+E:  Cool . 
+A:  Yeah . Yeah . 
+A:  So I 'm  I  I just need to ask um 
+A:  Malek . 
+A:  One more . 
+A:  <inbreath> 
+A:  Um . 
+A:  Tsk . 
+
+
+A:  Then uh I talked a little bit about 
+A:  <inbreath> 
+A:  um continuing with these dynamic ev um acoustic events , 
+A:  <inbreath> 
+A:  and um 
+A:  <inbreath> <mouth> 
+A:  we 're  we 're  we 're 
+A:  <inbreath> 
+A:  thinking about a way to test the completeness of 
+C:  <mike noise> 
+A:  a  a set of um dynamic uh events . 
+A:  <inbreath> 
+A:  Uh , completeness in the  in the sense that 
+A:  <inbreath> 
+A:  um if we  if we pick these X number of acoustic events , 
+A:  <inbreath> 
+A:  do they provide sufficient coverage 
+A:  <inbreath> 
+A:  for the phones that we 're trying to recognize 
+A:  <inbreath> 
+A:  or  or the f the words that we 're gonna try to recognize later on . 
+A:  <inbreath> 
+A:  And so Morgan and I were uh discussing 
+A:  <inbreath> 
+A:  um s uh s 
+A:  a form of a cheating experiment 
+A:  <inbreath> 
+A:  where we get  
+A:  <mouth> 
+A:  um we have uh 
+A:  <inbreath> 
+A:  um 
+A:  a chosen set of features , or acoustic events , 
+A:  <inbreath> 
+A:  and we train up a hybrid 
+A:  <inbreath> 
+A:  um system to do phone recognition on TIMIT . 
+A:  So i i the idea is if we get good phone recognition results , 
+A:  <inbreath> 
+A:  using um these set of acoustic events , 
+A:  <inbreath> 
+A:  then 
+A:  <inbreath> 
+A:  um that  that says that these acoustic events are g sufficient to cover 
+A:  <inbreath> 
+A:  a set of phones , at least found in TIMIT . 
+A:  <inbreath> 
+A:  Um so i it would be a  
+A:  <inbreath> 
+A:  a measure of 
+A:  " are we on the right track with  with the  
+A:  the choices of our acoustic events " . 
+A:  <inbreath> 
+A:  Um , 
+A:  <mouth> 
+A:  So that 's going on . And 
+A:  <inbreath> 
+A:  also , just 
+A:  uh working on my 
+A:  <inbreath> 
+A:  uh final project for Jordan 's class , uh which is  
+C:  <inbreath> 
+A:  <inbreath> 
+C:  Actually , let me  Hold that thought . Let me back up while we 're still on it . The  the other thing I was suggesting , though , is that given that you 're talking about binary features , 
+A:  Yeah . 
+A:  OK , sure . 
+C:  uh , maybe the first thing to do is just to count 
+C:  and uh count co - occurrences and get probabilities for a discrete HMM 
+C:  cuz that 'd be pretty simple because it 's just  Say , if you had ten  ten events , 
+C:  uh that you were counting , uh each frame would only have a thousand possible values for these ten bits , 
+C:  and uh so you could make a table that would  say , if you had thirty - nine phone categories , that would be a thousand by thirty - nine , and just count the co - occurrences and divide them by the  the uh  uh uh occ uh 
+C:  count the co - occurrences between the event and the phone and divide them by the number of occurrences of the phone , and that would give you the likelihood of the  of the event given the phone . And um then just use that in a very simple HMM and uh 
+C:  you could uh do phone recognition then and uh wouldn't have any of the issues of the uh training of the net or  I mean , it 'd be on the simple side , but 
+E:  Mm - hmm . 
+C:  uh 
+C:  um 
+C:  you know , if  uh uh the example I was giving was that if  if you had um 
+C:  onset of voicing and  and end of voicing as being two kinds of events , 
+C:  then if you had those a all marked correctly , and you counted co - occurrences , you should get it completely right . 
+E:  Mm - hmm . 
+C:  So . 
+C:  <inbreath> um  
+C:  But you 'd get all the other distinctions , you know , randomly wrong . I mean there 'd be nothing to tell you that . 
+C:  So 
+C:  um 
+C:  <inbreath> uh 
+C:  If you just do this by counting , then you should be able to find out in a pretty straightforward way whether you have a sufficient uh set of events to  to do the kind of level of  <breath> of uh classification of phones that you 'd like . 
+C:  So that was  that was the idea . And then the other thing that we were discussing was  was um 
+C:  <breath> 
+C:  OK , how do you get the  your training data . 
+E:  Mm - hmm . 
+C:  Cuz uh the <laugh> Switchboard transcription project uh uh you know was 
+E:  <laugh> 
+A:  <laugh> 
+C:  half a dozen people , or so working off and on over a couple years , and 
+C:  <inbreath> 
+C:  uh similar  <outbreath> similar amount of data <outbreath> to what you 're talking about with TIMIT training . So , 
+C:  it seems to me that the only reasonable starting point is 
+C:  uh to automatically translate the uh 
+C:  current TIMIT markings into the markings you want . 
+C:  And uh 
+C:  <inbreath> 
+C:  it won't have the kind of characteristic that you 'd like , of catching funny kind of things that maybe aren't 
+E:  Mm - hmm . 
+C:  there from these automatic markings , but  but uh 
+C:  it 's uh  
+E:  It 's probably a good place to start . 
+C:  Yeah . 
+E:  Yeah . 
+C:  Yeah and a short  short amount of time , just to  again , just to see if that information is sufficient 
+E:  Mm - hmm . 
+C:  to uh determine the phones . 
+E:  Hmm . 
+C:  So . 
+E:  <mouth> 
+E:  Yeah , you could even then  
+E:  to  
+E:  to get an idea about 
+E:  how different it is , you could maybe take some subset 
+E:  and 
+E:  you know , go through a few sentences , mark them by hand and then see how different it is 
+E:  from 
+E:  you know , the canonical ones , just to get an idea  a rough idea of 
+C:  Right . 
+E:  h if it really even makes a difference . 
+C:  You can get a little feeling for it that way , yeah that is probably right . 
+E:  Yeah . 
+C:  I mean uh my  my guess would be that this is  since TIMIT 's read speech that this would be less of a big deal , if you went and looked at spontaneous speech it 'd be more  more of one . 
+E:  Mm - hmm . 
+E:  Right . 
+E:  Right . 
+E:  <mike noise> 
+C:  And the other thing would be , say , if you had these ten events , you 'd wanna see , well what if you took 
+C:  two events or four events or ten events or t and you know , and  
+C:  and hopefully there should be some point at which <breath> 
+C:  having more information doesn't tell you 
+C:  really all that much more about what the phones are . 
+E:  Mm - hmm . 
+E:  <inbreath> 
+E:  You could define 
+E:  other events as being sequences of these events 
+E:  too . <mike noise> 
+C:  <inbreath> 
+C:  Uh , you could , but the thing is , what he 's talking about here is a uh  a translation to a per - frame feature vector , 
+D:  <mike noise> 
+C:  so there 's no sequence in that , I think . I think it 's just a  
+E:  Unless you did like a second pass over it or something after you 've got your  
+C:  Yeah , but we 're just talking about something simple here , 
+E:  Yeah . Yeah , yeah . 
+C:  yeah , 
+C:  to see if  
+E:  Yeah . 
+C:  <laugh> 
+E:  <laugh> 
+E:  <inbreath> I 'm adding complexity . 
+C:  <inbreath> 
+E:  <laugh> 
+A:  <laugh> 
+C:  Yeah . Just  You know . The idea is with a  with a very simple statistical structure , could you  could you uh at least verify that you 've chosen features that 
+A:  <laugh> 
+E:  Yeah . 
+C:  <mouth> 
+C:  are sufficient . 
+
+
+C:  OK , and you were saying something  starting to say something else about your  your class project , or  ?  
+A:  Oh . 
+A:  Yeah th Um . 
+C:  Yeah . 
+A:  So for my class project I 'm 
+D:  <mike noise> 
+A:  <inbreath> 
+A:  um 
+A:  <mouth> <inbreath> 
+A:  I 'm 
+A:  tinkering with uh support vector machines ? something that we learned in class , and uh um basically just another method for doing classification . 
+A:  <inbreath> 
+A:  And so I 'm gonna apply that to 
+A:  <inbreath> 
+A:  um compare it with the results by um King and Taylor who did 
+A:  <inbreath> 
+A:  um these 
+A:  <inbreath> 
+A:  um using recurrent neural nets , 
+A:  they recognized 
+A:  <inbreath> 
+A:  um 
+A:  <mouth> 
+A:  a set of phonological features 
+A:  um 
+A:  and made a mapping from the MFCC 's to these phonological features , so I 'm gonna 
+A:  <inbreath> 
+A:  do a similar thing with  
+A:  <inbreath> 
+A:  with support vector machines and see if  
+E:  <inbreath> 
+E:  So what 's the advantage of support vector machines ? What  
+A:  <mouth> 
+A:  Um . So , support vector machines are  are good with dealing with a less amount of data 
+E:  <mike noise> 
+A:  <inbreath> 
+E:  Hmm . 
+A:  and um so if you  if you give it less data it still does a reasonable job 
+A:  <inbreath> 
+A:  in learning the  the patterns . 
+A:  <inbreath> 
+E:  Hmm . 
+A:  Um and 
+A:  <inbreath> 
+A:  um 
+C:  I guess it  yeah , they 're sort of succinct , 
+C:  and  and they 
+C:  <inbreath> 
+A:  Yeah . 
+C:  uh 
+E:  Does there some kind of a distance metric that they use or how do they  
+E:  for cla what do they do for classification ? 
+A:  <inbreath> 
+A:  Um . Right . So , 
+A:  <inbreath> 
+A:  the  the simple idea behind a support vector machine is 
+A:  <inbreath> 
+A:  um , 
+A:  <inbreath> 
+A:  you have  
+A:  you have this feature space , right ? and then it finds the optimal separating plane , 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+A:  um between these two different um classes , 
+A:  <inbreath> 
+E:  Mm - hmm . 
+A:  and um 
+A:  <mouth> 
+A:  and so 
+A:  <inbreath> 
+A:  um , 
+A:  what it  i at the end of the day , what it actually does is 
+A:  <inbreath> 
+A:  it picks 
+A:  <inbreath> 
+A:  those 
+A:  examples of the features that are closest to the separating boundary , and remembers those 
+E:  Mm - hmm . 
+A:  <inbreath> 
+A:  and  
+A:  <inbreath> 
+A:  and uses them to recreate the boundary for the test set . 
+A:  So , given these 
+A:  <inbreath> 
+A:  um these features , or  or these  these examples , 
+A:   um ,  critical examples , 
+A:  <inbreath> 
+A:  which they call support f support vectors , 
+A:  <inbreath> 
+E:  Oh . 
+A:  then um 
+A:  <inbreath> 
+A:  given a new example , 
+A:  <inbreath> 
+A:  if the new example falls 
+A:  <inbreath> 
+A:  um away from the boundary in one direction then it 's classified as being a part of this particular class 
+A:  <inbreath> 
+A:  and otherwise it 's the other class . 
+E:  So why save the examples ? Why not just save what the 
+A:  <inbreath> 
+A:  Mm - hmm . 
+E:  boundary itself is ? 
+A:  <mouth> <inbreath> 
+A:  Um . Hmm . Let 's see . 
+A:  Uh .  
+A:  Yeah , that 's a good question . I  yeah . 
+C:  <inbreath> 
+C:  That 's another way of doing it . 
+C:  Right ? So  so it  I mean I  I guess it 's  
+E:  Mmm . 
+E:  Sort of an equivalent . 
+C:  You know , it  it goes back to nearest - neighbor <outbreath> sort of thing , right ? Um , 
+E:  Mm - hmm . 
+C:  i i if  is it eh w 
+C:  When is nearest - neighbor good ? Well , nearest - neighbor good  is good if you have lots and lots of examples . 
+C:  Um but of course if you have lots and lots of examples , then it can take a while to  to use nearest - neighbor . There 's lots of look ups . 
+C:  So a long time ago people talked about things where you would have 
+C:  uh a condensed nearest - neighbor , where you would  you would  you would pick out uh some representative examples which would uh be sufficient to represent  to  to correctly classify everything that came in . 
+E:  Oh . 
+D:  <mike noise> 
+E:  Mm - hmm . 
+C:  I  I think s I think support vector stuff sort of goes back to  
+C:  <inbreath> 
+C:  to that kind of thing . 
+E:  I see . 
+C:  Um . 
+E:  So rather than doing nearest neighbor where you compare to every single one , 
+E:  you just pick a few 
+E:  critical ones , and  
+C:  Yeah . 
+E:  Hmm . 
+C:  And th the 
+C:  You know , um 
+C:  neural net approach uh or Gaussian mixtures for that matter are sort of  fairly brute force kinds of things , where you sort of  
+C:  <inbreath> 
+C:  you predefine that there is this big bunch of parameters and then you  you place them as you best can to define the boundaries , and in fact , as you know , 
+C:  <inbreath> 
+C:  these things do take a lot of parameters and  and uh 
+C:  <inbreath> 
+C:  if you have uh only a modest amount of data , you have trouble 
+D:  <mike noise> 
+C:  <inbreath> 
+C:  uh learning them . 
+C:  Um , 
+E:  Mm - hmm . 
+C:  so I  I guess the idea to this is that it  it is reputed to uh be somewhat better in that regard . 
+D:  <clear throat> 
+A:  Right . I it can be a  a reduced um <mouth> parameterization of  of the  the model by just keeping <inbreath> certain selected examples . 
+E:  Hmm . 
+A:  Yeah . 
+A:  So . 
+C:  But I don't know if people have done sort of careful 
+C:  comparisons of this on large tasks or anything . 
+C:  Maybe  maybe they have . 
+C:  I don't know . 
+A:  Yeah , I don't know either . 
+C:  Yeah . 
+B:  S do you get some kind of 
+B:  number between zero and one at the output ? 
+A:  <mouth> <inbreath> 
+A:  Actually you don't get a  you don't get a nice number between zero and one . You get  you get either a zero or a one . 
+A:  Um , 
+A:  uh there are  there are pap 
+A:  Well , basically , it 's  
+A:  it 's um <mouth> 
+C:  <outbreath> 
+A:  you  you get a distance measure 
+A:  at the end of the day , 
+C:  <outbreath> 
+A:  <inbreath> 
+A:  and then that distance measure is  is um  
+A:  <inbreath> 
+A:  is translated to a zero or one . 
+A:  <inbreath> 
+A:  Um . 
+C:  <inbreath> 
+C:  But that 's looking at it for  for classification  for binary classification , right ? 
+A:  That 's for classification , right . 
+E:  And you get that for each class , you get a zero or a one . 
+A:  Right . 
+C:  <inbreath> 
+C:  But you have the distances to work with . 
+A:  You have the distances to work with , yeah . 
+C:  <inbreath> 
+C:  Cuz actually Mississippi State people did use support vector machines for uh uh speech recognition and they were using it to estimate probabilities . 
+A:  <inbreath> 
+A:  Yeah . 
+A:  <inbreath> 
+A:  Yeah , they  
+A:  <inbreath> 
+A:  they had a  had a way to translate the distances into  into probabilities with the  with the simple 
+A:  <inbreath> 
+A:  um 
+A:  <mouth> 
+A:  uh sigmoidal function . 
+C:  Yeah , and d did they use sigmoid or a softmax type thing ? And didn't they like exponentiate or something and then <inbreath> divide by the sum of them , or  ?  
+A:  Um  <inbreath> 
+A:  Yeah , there 's some  there 's like one over one plus the exponential or something like that . 
+C:  Oh it  i 
+C:  Oh , so it is a sigmoidal . 
+A:  Yeah . 
+C:  OK . 
+C:  Alright . 
+E:  Did the  did they get 
+E:  good results with that ? 
+C:  I mean , they 're OK , I  I don't  I don't think they were earth  earth shattering , but I think that 
+D:  <mike noise> 
+E:  Hmm . 
+C:  <inbreath> 
+C:  uh 
+C:  this was a couple years ago , I remember them doing it at some meeting , and  and um 
+C:  I don't think people were very critical because it was interesting just to  
+C:  to try this and 
+C:  you know , it was the first time they tried it , so  
+E:  Hmm . 
+C:  <inbreath> 
+C:  so the  you know , the numbers were not 
+C:  incredibly good but there 's you know , 
+C:  it was th reasonable . 
+E:  Mm - hmm . 
+C:  I  I don't remember anymore . 
+C:  I don't even remember what the task was , 
+E:  <laugh> 
+C:  it  was Broadcast News , or 
+A:  <laugh> 
+C:  <inbreath> 
+C:  something . I don't know . 
+E:  Hmm . 
+A:  Right . 
+B:  Uh s So Barry , if you just have zero and ones , how are you doing the speech recognition ? 
+D:  <mike noise> 
+A:  Oh I 'm not do I 'm not planning on doing speech recognition with it . I 'm just doing 
+D:  <mike noise> 
+B:  Oh . OK . 
+A:  <inbreath> 
+A:  detection of phonological features . 
+A:  <inbreath> 
+A:  So uh for example , 
+A:  <inbreath> 
+A:  this  this uh feature set called the uh sound patterns of English 
+A:  <inbreath> 
+A:  um is just a bunch of 
+A:  <inbreath> 
+A:  um 
+A:  <mouth> 
+A:  binary valued features . 
+A:  Let 's say , is this voicing , or is this not voicing , is this 
+A:  <inbreath> 
+A:  sonorants , not sonorants , and 
+A:  <inbreath> 
+B:  OK . 
+A:  stuff like that . So . 
+C:  <inbreath> 
+E:  Did you find any more mistakes in their tables ? 
+A:  <inbreath> 
+A:  Oh ! Uh I haven't gone through the entire table ,  yet . Yeah , yesterday I brought Chuck <inbreath> 
+D:  <sneeze> 
+E:  <laugh> 
+A:  the table and I was like , " wait , this  is  
+A:  Is the mapping from N to  to this phonological feature called um " coronal " , 
+A:  <inbreath> is  is  should it be  shouldn't it be a one ? or should it  should it be you know coronal instead of not coronal as it was labelled in the paper ? "  
+D:  <mike noise> 
+A:  So I ha haven't hunted down all the  all the mistakes yet , but  
+C:  Uh - huh . 
+C:  <mouth> <inbreath> 
+C:  But a as I was saying , people do get probabilities from these things , and  and uh 
+B:  <mouth> 
+B:  OK . 
+C:  we were just trying to remember how they do , but people have used it for speech recognition , and they have gotten probabilities . So they have some conversion from these distances to 
+B:  OK . OK . OK . 
+C:  probabilities . 
+A:  Right , yeah . 
+C:  <inbreath> 
+C:  There 's  you have  you have the paper , right ? The Mississippi State paper ? 
+A:  Mm - hmm . Mm - hmm . 
+C:  Yeah , if you 're interested y you could look , yeah . 
+B:  And  OK . OK . 
+A:  Yeah , I can  I can show you  I  yeah , our  
+E:  So in your  in  in the thing that you 're doing , uh 
+A:  Mm - hmm . 
+E:  you have a vector of ones and zeros for each phone ? 
+A:  Uh , is this the class project , or  ?  
+E:  Yeah . 
+A:  OK . 
+A:  um 
+E:  Is that what you 're  
+A:  Right ,  
+A:  Right , right f so for every phone there is  there is a um  a vector of ones and zeros 
+A:  <inbreath> 
+A:  f uh corresponding to whether it exhibits a particular phonological feature or not . 
+C:  <yawn> 
+E:  Mm - hmm . 
+A:  <inbreath> 
+E:  Mm - hmm . 
+E:  <inbreath> 
+E:  And so when you do your wh I 'm  what is the task for the class project ? To 
+A:  Um 
+E:  come up with the phones ? or to come up with these vectors to see how closely they match the phones , or  ?  
+A:  <inbreath> Oh . <inbreath> 
+A:  Right , um to come up with a mapping from um MFCC 's or s some feature set , 
+E:  Mm - hmm . 
+A:  <inbreath> 
+A:  um to 
+A:  <inbreath> uh w 
+A:  to whether there 's existence of a particular phonological feature . 
+A:  And um yeah , basically it 's to learn a mapping 
+A:  <inbreath> 
+A:  from  
+A:  <inbreath> 
+A:  from the MFCC 's to 
+A:  <inbreath> 
+A:  uh phonological features . 
+A:  Is it  did that answer your question ? 
+E:  I think so . 
+A:  OK . 
+A:  <inbreath> C 
+E:  I guess  
+E:  I mean , uh  
+E:  I 'm not sure what you  what you 're  what you get out of your system . Do you get out a 
+A:  Mm - hmm . 
+E:  uh  
+E:  a vector of these ones and zeros and then try to find the closest matching phoneme to that vector , or  ?  
+A:  <inbreath> 
+A:  Oh . No , no . I 'm not  I 'm not planning to do any  any phoneme mapping yet . Just  
+E:  Uh - huh . 
+A:  <inbreath> 
+A:  it 's  it 's basically  it 's  it 's really simple , basically a detection 
+A:  <inbreath> 
+A:  of phonological features . 
+E:  <mouth> 
+E:  I see . 
+A:  Yeah , and um 
+A:  <mouth> <inbreath> 
+A:  cuz the uh  
+A:  So King and  and Taylor 
+E:  Yeah . 
+A:  <inbreath> 
+A:  um did this with uh recurrent neural nets , and this i their  their idea was to first find 
+E:  Mm - hmm . 
+A:  <inbreath> 
+A:  a mapping from MFCC 's to 
+A:  <inbreath> 
+A:  uh phonological features and then later on , once you have these 
+A:  <inbreath> 
+A:  phonological features , 
+A:  <inbreath> 
+E:  Mm - hmm . 
+A:  then uh map that to phones . So I 'm  I 'm sort of reproducing phase one of their stuff . 
+E:  Mmm . 
+E:  <inbreath> 
+E:  So they had one recurrent net for each particular feature ? 
+A:  <mouth> 
+A:  Right . 
+A:  Right . 
+E:  I see . 
+A:  Right . 
+D:  <mike noise> 
+A:  Right . 
+E:  I wo did they compare that  I mean , what if you just did phone recognition and did the reverse lookup . 
+A:  Uh . 
+E:  So you recognize a phone and which ever phone was recognized , you spit out it 's vector of ones and zeros . 
+A:  Mm - hmm . <outbreath> 
+E:  I mean uh  
+C:  I expect you could do that . That 's probably not what he 's going to do on his class project . 
+A:  Uh . 
+E:  <laugh> 
+E:  Yeah . No .  
+C:  Yeah . 
+C:  <laugh> 
+E:  <laugh> 
+
+
+
+
+C:  So um have you had a chance to do 
+A:  Yeah . 
+C:  this um thing we talked about yet with the uh  
+C:  <inbreath> 
+C:  um 
+E:  Insertion penalty ?  
+C:  Uh . No actually I was going a different  That 's a good question , too , but I was gonna ask about the  
+E:  <laugh> 
+C:  <inbreath> 
+C:  the um 
+C:  <mouth> 
+C:  changes to the data in comparing PLP and mel cepstrum 
+C:  for the SRI 
+C:  system . 
+E:  Uh . 
+E:  Well what I 've been  
+E:  " Changes to the data " , I 'm not sure I  
+C:  Right . 
+C:  <inbreath> 
+C:  So we talked on the phone about this , that  
+E:  Yeah . 
+C:  that there was still a difference of a  
+E:  <mike noise> 
+C:  of a few percent 
+E:  Right . 
+E:  <mike noise> 
+C:  and 
+C:  <inbreath> 
+C:  you told me that there was a difference in how the normalization was done . 
+C:  And I was asking if you were going to do  
+C:  <inbreath> 
+C:  redo it 
+E:  Mm - hmm . 
+C:  uh for PLP with the normalization done as it had been done for the mel cepstrum . 
+E:  Uh 
+E:  right , no I haven't had a chance to do that . 
+E:  What I 've been doing is 
+C:  OK . 
+E:  <outbreath> uh <outbreath> 
+E:  trying to figure out  it just seems to me like there 's a um  
+E:  <mouth> well it seems like there 's a bug , 
+E:  because 
+E:  the difference 
+E:  in performance is  
+E:  it 's not gigantic 
+E:  but it 's big enough that it  it seems wrong . 
+C:  <inbreath> 
+C:  Yeah , I agree , but I thought that the normalization difference was one of the 
+E:  and  
+E:  Yeah , but I don't  I 'm not  
+C:  possibilities , right ? 
+E:  Yeah , I guess I don't 
+E:  think that the normalization difference is gonna account for everything .  
+E:  So what I was working on is um 
+C:  OK . 
+E:  just going through and checking the headers of the wavefiles , to see if 
+E:  maybe there was a um  
+E:  a certain type of compression or something that was done that my script wasn't catching . So that for some subset of 
+E:  the training data , 
+E:  uh the  the  
+E:  the features I was computing were junk . 
+C:  OK . 
+E:  Which would you know 
+E:  cause it to perform OK , but uh , 
+E:  you know , the  the models would be all messed up . So I was going through and just double - checking that kind of think first , 
+C:  Mm - hmm . 
+E:  to see if 
+E:  there was just some kind of obvious bug in the way that I was computing the features . 
+C:  I see . 
+C:  OK . 
+E:  Looking at all the sampling rates to make sure all the sampling rates were what  
+E:  eight K , what I was assuming they were , um  
+C:  Yeah . 
+C:  <inbreath> 
+C:  Yeah , that makes sense , to check all that . 
+E:  Yeah . So I was doing that first , before I did these other things , just to make sure there wasn't something  
+C:  <outbreath> 
+C:  Although really , 
+C:  uh 
+C:  uh , a couple three percent 
+C:  uh difference in word error rate 
+C:  uh  
+C:  could easily come 
+C:  from some difference in normalization , I would think . 
+C:  But 
+E:  Yeah , and I think , hhh   I 'm trying to remember but I think I recall that Andreas was saying that he was gonna run 
+E:  sort of the reverse experiment . 
+E:  Uh 
+E:  which is to 
+E:  try to 
+E:  emulate the 
+E:  normalization that we did but with the mel cepstral features . 
+E:  Sort of , you know , 
+E:  back up from the system that he had . 
+E:  I thought he said he was gonna  I have to look back through my  my email from him . 
+C:  Yeah , he 's probably off at  at uh his 
+E:  Yeah , he 's gone 
+C:  meeting now , 
+E:  now . 
+E:  Um . 
+C:  yeah . 
+C:  Yeah . 
+C:  But yeah the  I sh think they should be 
+E:  But  
+C:  <inbreath> 
+C:  roughly equivalent , 
+C:  um  
+C:  I mean again 
+C:  the Cambridge folk found the PLP actually to be a little better . 
+E:  Right . 
+C:  Uh 
+C:  So it 's  
+C:  <inbreath> 
+C:  um 
+C:  I mean the other thing I wonder about was whether there was something just in the  
+C:  the bootstrapping of 
+C:  their system which was 
+C:  based on  
+C:  but maybe not , since they  
+E:  Yeah see one thing that 's a little bit um  
+E:  I was looking  I 've been studying and going through the logs for the system that um Andreas created . 
+E:  And um 
+E:  his uh  the way that the  
+C:  <laugh>  
+A:  <laugh>  
+E:  <laugh>  
+E:  S R I system looks like it works is that it reads the wavefiles directly , 
+E:  uh 
+C:  Right . 
+E:  and does all of the cepstral computation stuff on the fly . 
+C:  Right . 
+E:  And , 
+E:  so there 's no place where these  
+E:  where the cepstral files are stored , anywhere that I can go look at and compare 
+E:  to the PLP ones , so 
+E:  whereas with our features , he 's actually storing 
+E:  the cepstrum on disk , and he reads those in . But it looked like he had to give it  
+C:  Right . 
+E:  uh even though the cepstrum is already computed , he has to give it 
+E:  uh 
+E:  a front - end parameter file . Which talks about the kind of 
+E:  uh 
+E:  com computation that his mel cepstrum thing does , so 
+C:  Uh - huh . 
+E:  i 
+E:  I  I don't know if that  it probably doesn't mess it up , it probably just ignores it if it determines that it 's already 
+C:  <mike noise> 
+E:  in the right format or something but  
+E:  the  the  the two processes that happen are a little different . 
+E:  So . 
+C:  Yeah . 
+C:  So anyway , there 's stuff there to sort out . 
+E:  Yeah . 
+E:  Yeah . 
+C:  <inbreath> 
+C:  So , OK . Let 's go back to what you thought I was asking you . <laugh> 
+E:  Yeah no and I didn't have a chance to do that . 
+C:  <laugh> Ha ! 
+E:  <laugh> 
+C:  Oh ! You had the sa same answer anyway .  
+A:  <laugh> 
+C:  <laugh> 
+E:  Yeah .  
+E:  <inbreath> 
+E:  Yeah . I 've been um ,  
+A:  <laugh> 
+E:  I 've been working with um 
+E:  Jeremy 
+E:  on his project and then I 've been trying to track down this bug 
+C:  Uh - huh .  
+E:  in uh the ICSI front - end features . 
+
+
+E:  So one thing that I did notice , yesterday I was studying the um  
+E:  the uh RASTA code 
+C:  Uh - huh .  
+E:  and it looks like we don't have any way to um 
+E:  control the frequency range that we use in our analysis . We basically  it looks to me like we do the FFT , um and then we just take all the bins 
+E:  and we use everything . 
+E:  We don't have any set of parameters where we can say 
+E:  you know , " only process from 
+E:  you know a hundred and ten hertz to thirty - seven - fifty " . 
+C:  Um  
+E:  At least I couldn't see any kind of control for that . 
+C:  Yeah , I don't think it 's in there , I think it 's in the uh uh 
+C:  uh the filters . 
+C:  So , the F F T is on everything , but the filters 
+C:  um , for instance , ignore the  the lowest 
+C:  bins 
+C:  and the highest bins . 
+C:  And what it does is it  it copies 
+E:  The  the filters ? Which filters ? 
+C:  um 
+C:  The filter bank which is created by integrating over F F T bins . 
+E:  Mm - hmm . 
+C:  um 
+E:  When you get the mel  
+E:  When you go to the mel scale . 
+C:  Right . 
+C:  Yeah , it 's bark scale , and it 's  it  
+C:  it um  
+C:  it actually copies 
+C:  the uh um  
+C:  the second 
+C:  filters over to the first . So the first filters are always  and you can s you can specify a different number of 
+C:  <inbreath> 
+C:  uh features  different number of filters , I think , 
+C:  as I recall . 
+C:  <inbreath> 
+C:  So you can specify a different number of filters , and whatever 
+C:  <inbreath> 
+C:  um 
+C:  uh you specify , the last ones are gonna be ignored . So that  that 's a way that you sort of 
+C:  change what the  what the bandwidth is . 
+C:  Y you can't do it without I think changing the number of filters , but  
+E:  I saw something about uh  
+E:  that looked like it was doing something like that , but I didn't quite understand it . 
+E:  So maybe  
+C:  Yeah , so the idea is that the very lowest frequencies and  and typically the veriest  highest frequencies are kind of junk . 
+E:  Uh - huh . 
+C:  And so um you just  for continuity you just approximate them by  
+C:  <inbreath> 
+C:  by the second to highest and second to lowest . 
+E:  Mm - hmm . 
+C:  It 's just a simple thing we put in . 
+E:  <inbreath> 
+C:  And  and so if you h 
+E:  But  so the  but that 's a fixed uh thing ? There 's nothing that lets you  
+C:  Yeah ,  
+C:  I think that 's a fixed thing . But 
+C:  see  see my point ? If you had  
+C:  <inbreath> 
+C:  If you had ten filters , 
+C:  <inbreath> 
+C:  then you would be throwing away a lot at the two ends . 
+E:  Mm - hmm . 
+C:  And if you had  
+C:  if you had 
+C:  fifty filters , you 'd be throwing away hardly anything . 
+E:  Mm - hmm . 
+C:  Um , I don't remember there being an independent way of saying " we 're just gonna 
+C:  make them from here to here " . 
+E:  Use this analysis bandwidth or something . 
+C:  <inbreath> 
+C:  But I  I  I don't know , it 's actually been awhile since I 've looked at it . 
+E:  <inbreath> 
+E:  Yeah , I went through the Feacalc code and then 
+E:  looked at 
+E:  you know just calling the RASTA libs  and thing like that . And I didn't  I couldn't see any wh place where that kind of thing was done . 
+E:  But 
+E:  um 
+E:  I didn't quite understand everything that I saw , so  
+C:  <inbreath> 
+C:  Yeah , see I don't know Feacalc at all . 
+E:  Mm - hmm . 
+C:  But it calls RASTA with some options , and 
+E:  Right . 
+C:  um 
+C:  <inbreath> 
+C:  But I  I think in  
+C:  I don't know . I guess for some particular database you might find that you could tune that and tweak that to get that a little better , but I think that 
+C:  <inbreath> 
+C:  in general it 's not 
+C:  that critical . I mean there 's  
+E:  Yeah . 
+C:  <inbreath> 
+C:  You can  
+C:  You can throw away stuff below a hundred hertz or so and it 's just 
+C:  not going to affect 
+E:  <inbreath> 
+C:  phonetic classification at all . 
+
+
+E:  Another thing I was thinking about was um is there a  
+E:  I was wondering if there 's maybe um <mouth> 
+E:  certain settings of the parameters when you compute PLP which would basically cause it to output 
+E:  mel cepstrum . 
+C:  <inbreath> 
+E:  So that , in effect , what I could do is use our code but produce mel cepstrum 
+C:  <outbreath> 
+E:  and compare that directly to  
+C:  Well , it 's not precisely . 
+C:  Yeah . I mean , um , 
+E:  Hmm . 
+C:  <inbreath> 
+C:  um 
+C:  what you can do 
+C:  is um 
+C:  you can definitely change the  the filter bank from being uh 
+C:  a uh trapezoidal integration to a  a  a triangular one , 
+C:  <inbreath> 
+E:  Mm - hmm . 
+C:  which is what the typical mel  mel cepstral uh filter bank does . 
+E:  Mm - hmm . 
+C:  <inbreath> 
+C:  And some people have claimed that they got some better performance doing that , so you certainly could do that 
+C:  easily . 
+C:  <inbreath> 
+C:  But the fundamental difference , I mean , there 's other small differences  
+E:  There 's a cubic root that happens , right ? 
+C:  Yeah , but , you know , as opposed to the log in the other case . I mean 
+C:  <inbreath> 
+C:  the fundamental d d difference that we 've seen any 
+C:  kind of difference from before , which is actually an advantage for the P L P i uh , I think , is that the  the smoothing at the end is auto - regressive instead of being cepstral  
+C:  uh ,  from cepstral truncation . 
+C:  <inbreath> 
+C:  So um it 's a little more noise robust . 
+E:  Hmm . 
+C:  Um , and that 's  that 's why when 
+C:  people started getting databases that had a little more noise in it , like  
+C:  like uh um 
+C:  Broadcast News and so on , that 's why c Cambridge switched to PLP I think . 
+E:  Mm - hmm . 
+C:  So um 
+C:  That 's a difference that I don't 
+C:  <inbreath> 
+C:  think we put any way to get around , since it was an advantage . 
+E:  Mm - hmm . 
+C:  um 
+C:  <inbreath> 
+C:  uh but we did  
+C:  eh we did hear this comment 
+C:  from people at some point , 
+C:  that 
+C:  <inbreath> 
+C:  um 
+C:  it 
+C:  uh they got some better results with the triangular filters rather than the trapezoidal . So that is an option 
+C:  in RASTA . 
+C:  <inbreath> 
+E:  Hmm . 
+C:  Uh and you can certainly 
+C:  play with that . 
+C:  <inbreath> 
+C:  But I think you 're probably doing the right thing to look for bugs first . 
+E:  <mouth> <inbreath> 
+E:  Yeah just  it just seems like this kind of behavior could be caused by 
+C:  I don't know . 
+E:  you know s 
+E:  some of the training data being messed up . 
+C:  Could be . 
+
+
+E:  You know , you 're sort of getting most of the way there , but there 's a  
+E:  So I started going through and looking  
+E:  One of the things that I did notice was that the um 
+E:  log likelihoods coming out of the log recognizer 
+E:  from the PLP data 
+E:  were much 
+E:  lower , 
+E:  much smaller , 
+E:  than for the mel cepstral stuff , 
+E:  and that the 
+E:  average amount of pruning that was happening 
+E:  was therefore a little bit higher 
+E:  for the PLP features . 
+C:  Oh - huh ! 
+E:  So , since he used the same exact pruning thresholds for both , 
+E:  I was wondering if it could be that we 're getting more pruning . 
+C:  Oh ! 
+C:  He  he  
+C:  <inbreath> 
+C:  He used the identical pruning thresholds even though the s the range of p of the likeli 
+E:  Yeah . 
+C:  Oh well that 's  
+E:  Right . 
+C:  <inbreath> 
+E:  Right . 
+C:  That 's a pretty good  point right there . Yeah . 
+E:  Yeah , so  
+C:  <inbreath> 
+C:  I would think that you might wanna do something like uh 
+C:  you know , look at a few points to see where you are starting to get significant search errors . 
+E:  That 's  
+E:  Right . 
+E:  Well , what I was gonna do is I was gonna take 
+E:  um a couple of the utterances that he had run through , 
+E:  then 
+E:  run them through again but modify the pruning threshold and see if it 
+E:  you know , 
+C:  Yeah . 
+E:  affects the score . 
+C:  Yeah . 
+C:  <inbreath> 
+C:  But I mean you could  uh if  
+E:  So . 
+C:  if  if that looks promising you could , you know , r uh run 
+C:  <inbreath> 
+C:  the overall test set 
+C:  with a  with a few different uh pruning thresholds for both , 
+E:  Mm - hmm . 
+C:  <inbreath> 
+E:  Right . 
+C:  and presumably he 's running at some pruning threshold that 's  
+C:  that 's uh , you know  
+C:  gets 
+C:  very few search errors but is  is relatively fast and  
+E:  Mm - hmm . 
+E:  <inbreath> 
+E:  Right . I mean , yeah , generally in these things you  
+E:  you turn back pruning really far , so 
+E:  I  I didn't think it would be that big a deal because I was figuring well you have it turned back so far that 
+E:  you know it  
+C:  But you may be in the wrong range for the P L P features for some reason . 
+E:  Yeah . 
+E:  Yeah . 
+E:  Yeah . 
+E:  And the uh the  the run time of the recognizer on the PLP features is longer 
+E:  which sort of implies that the networks are bushier , 
+E:  you know , there 's more things it 's considering 
+E:  which goes along with the fact that the matches aren't as good . 
+E:  So 
+E:  uh , you know , it could be that we 're just pruning 
+E:  too much . 
+E:  So . 
+C:  Yeah . 
+C:  Yeah , maybe just be different kind of distributions and  and yeah so that 's another 
+E:  Mm - hmm . 
+C:  possible thing . 
+C:  <inbreath> 
+E:  Mm - hmm . 
+C:  They  they should  really shouldn't  There 's no particular reason why they would be 
+C:  exactly  behave exactly the same . 
+E:  Mm - hmm . 
+E:  Right . 
+E:  Right . 
+C:  So . 
+E:  So . 
+E:  There 's lots of little differences . So . 
+C:  Yeah . 
+E:  Uh . <laugh> 
+C:  Yeah . 
+E:  Trying to track it down . 
+C:  Yeah . 
+C:  <inbreath> 
+C:  I guess this was a little bit off topic , I guess , because I was  I was thinking in terms of th this as being a  a  a  a core 
+E:  Yeah <laugh> 
+C:  <inbreath> 
+C:  item that once we  once we had it going we would use for a number of the front - end things also . 
+E:  Mm - hmm . 
+C:  So . 
+C:  <inbreath> 
+C:  <mouth> 
+
+
+C:  um 
+C:  Wanna  
+B:  That 's  
+B:  as far as my stuff goes , 
+C:  What 's  what 's on  
+B:  yeah , well I 
+C:  Yeah . 
+B:  <inbreath> 
+B:  tried this mean subtraction method . Um . Due to Avendano , 
+B:  <inbreath> 
+B:  I 'm taking s um 
+B:  <inbreath> 
+B:  six seconds of speech , um 
+B:  <inbreath> 
+B:  I 'm using two second 
+B:  <inbreath> 
+B:  FFT analysis frames , 
+B:  <inbreath> 
+B:  stepped by a half second 
+B:  so it 's a quarter length step and I  
+B:  <inbreath> 
+B:  I take that frame and four f the four  I take  Sorry , I take the current frame and the four past frames and the 
+B:  <inbreath> 
+B:  four future frames and that adds up to six seconds of speech . 
+B:  <inbreath> 
+B:  And I calculate um 
+B:  <mouth> 
+B:  the spectral mean , 
+A:  <sniff> 
+B:  <inbreath> 
+B:  of the log magnitude spectrum  over that N . 
+B:  <inbreath> 
+B:  I use that to normalize the s the current center frame 
+E:  <mike noise> 
+E:  <mike noise> 
+E:  <mike noise> 
+B:  <inbreath> 
+B:  by mean subtraction . 
+B:  And I then  then I move to the next frame and I  
+B:  <inbreath> 
+B:  I do it again . 
+B:  Well , actually I calculate all the means first and then I do the subtraction . 
+D:  <mike noise> 
+B:  <inbreath> 
+B:  And um 
+A:  <breath> 
+B:  <inbreath> 
+B:  the  I tried that with HDK , the Aurora setup of HDK training on clean TI - digits , 
+B:  <inbreath> 
+B:  and um 
+B:  <inbreath> 
+B:  it  it helped um in a phony reverberation case 
+B:  um 
+B:  <inbreath> 
+B:  where I just used the simulated impulse response 
+A:  <sniff> 
+B:  um 
+B:  <inbreath> 
+B:  the error rate went from something like eighty 
+B:  it was from something like eighteen percent 
+B:  <inbreath> 
+B:  to um four percent . 
+B:  <inbreath> 
+B:  And on meeting rec recorder far mike digits , mike  
+B:  on channel F , it went from um 
+B:  <mouth> <inbreath> 
+B:  forty - one percent error to eight percent error . 
+E:  On  on the real data , not with artificial reverb ? 
+B:  Right . 
+E:  Uh - huh . 
+B:  And that  that was um 
+B:  <inbreath> 
+B:  trained on clean speech only , which I 'm guessing is the reason why the baseline was so bad . 
+B:  Uh - huh . 
+C:  <inbreath> 
+B:  And  
+C:  That 's ac 
+C:  actually a little side point is I think that 's the first results that we have 
+C:  uh 
+C:  uh 
+C:  uh of any sort 
+C:  on the far field uh  
+E:  <mike noise> 
+C:  on  on the far field data 
+C:  uh for  recorded in  in meetings . 
+B:  Oh um actually um 
+B:  Adam ran the SRI recognizer . 
+C:  Did he ? 
+C:  On the near field , on the ne 
+B:  On the far field also . He did one PZM channel and one PDA channel . 
+C:  Oh did he ? 
+C:  Oh ! I didn't recall that . 
+C:  What kind of numbers was he getting with that ? 
+B:  I  
+B:  <inbreath> 
+B:  I 'm not sure , I think it was about five percent error for the PZM channel . 
+C:  Five . 
+B:  f I think . Yeah . 
+C:  So why were you getting forty - one here ? Is this  
+B:  Um . 
+B:  I  I 'm g I 'm guessing it was the  the training data . 
+B:  <inbreath> 
+B:  Uh , clean TI - digits is , like , 
+B:  pretty pristine 
+B:  <inbreath> 
+B:  training data , and if they trained 
+B:  <inbreath> 
+B:  the SRI system on this 
+B:  TV broadcast type stuff , I think it 's a much wider range of channels and it  
+C:  <inbreath> 
+C:  No , but wait a minute . I  
+C:  I  I th  
+C:  I think he   
+C:  What am I saying here ? Yeah , so that was the SRI system . 
+C:  <inbreath> 
+C:  Maybe you 're right . Yeah . Cuz it was getting like one percent  
+C:  <inbreath> 
+C:  So it 's still this kind of ratio . It was  it was getting one percent or something on the near field . Wasn't it ? 
+E:  Mm - hmm , or 
+C:  Yeah . Yeah . I think it was getting around one percent for the near  for the n 
+E:  it wa a it was around one . Yeah . 
+C:  for the close mike . 
+C:  <inbreath> 
+B:  Huh ? 
+C:  So it was like one to five  So it 's still this kind of ratio . It 's just  
+B:  OK . 
+C:  yeah , it 's a lot more training data . 
+C:  <inbreath> 
+B:  <uncodeable vocal gesture> 
+C:  So 
+C:  <inbreath> 
+C:  So probably it should be something we should try then is to  is to see if  
+C:  is <inbreath> at some point just to take  
+A:  <sniff> 
+C:  i to transform the data and then  
+C:  <inbreath> 
+C:  and then uh use th use it for the SRI system . 
+B:  b You me you mean um ta 
+C:  So you 're  so you have a system which for one reason or another is relatively poor , 
+C:  <inbreath> 
+B:  Yeah . 
+C:  and  and uh you have something like forty - one percent error 
+C:  <inbreath> 
+C:  uh and then you transform it to eight by doing  doing this  this work . 
+C:  <inbreath> 
+C:  Um . <mouth> 
+C:  So here 's this other system , which is a lot better , 
+C:  <inbreath> but there 's still this kind of ratio . It 's something like five percent error 
+A:  <sniff> 
+C:  <inbreath> 
+C:  with the  the distant mike , and one percent with the close mike . 
+B:  OK . 
+C:  <inbreath> 
+C:  So the question is 
+C:  <inbreath> 
+C:  how close to that one can you get 
+C:  <inbreath> 
+C:  if you transform the data using that system . 
+B:  <inbreath> 
+B:  r Right , so  so I guess this SRI system is trained on a lot of s Broadcast News or Switchboard data . 
+B:  <inbreath> 
+C:  Yeah . 
+B:  Is that right ? Do you know which one it is ? 
+E:  It 's trained on a lot of different things . Um . 
+E:  It 's trained on 
+E:  uh a lot of Switchboard , Call Home , 
+B:  Uh - huh . 
+E:  um 
+E:  a bunch of different sources , some digits , there 's some digits training in there . 
+B:  OK . 
+B:  O one thing I 'm wondering about is what this mean subtraction method 
+A:  Hmm . 
+B:  <inbreath> 
+B:  um will do if it 's faced with additive noise . 
+B:  <inbreath> 
+A:  <sniff> 
+B:  Cuz I  I  it 's cuz I don't know what log magnitude spectral subtraction is gonna do 
+C:  <inbreath> <outbreath> 
+B:  to additive noise . 
+C:  Yeah , well , it 's  it 's not exactly the right thing but 
+B:  That 's  that 's the  
+B:  Uh - huh . 
+C:  <laugh> uh <inbreath> 
+C:  but you 've already seen that cuz there is added noise here . 
+B:  That 's  that 's  Yeah , that 's true . 
+C:  Yeah . 
+B:  That 's a good point . 
+C:  So um  
+B:  OK , so it 's then  then it 's  it 's  
+C:  <sniff> 
+B:  it 's reasonable to expect it would be helpful if we used it with the SRI system and 
+B:  <inbreath> 
+C:  <mouth> 
+C:  Yeah , I mean , as helpful  I mean , 
+C:  so that 's the question . 
+C:  <inbreath> 
+C:  Yeah , w we 're often asked this when we work with a system that  that isn't  isn't sort of industry  industry standard great , 
+B:  Uh - huh . 
+C:  uh and we see some reduction in error using some clever method , then , you know , will it work on a  
+C:  <inbreath> 
+C:  on a  on a good system . 
+C:  So 
+C:  uh  
+C:  you know , this other one 's  it was a pretty good system . I think , 
+C:  you know , one  one percent 
+C:  word error rate on digits is  uh digit strings is not 
+B:  <sniff> 
+C:  <inbreath> 
+C:  uh you know stellar , but  
+C:  but given that this is real 
+C:  <inbreath> 
+B:  Mm - hmm . 
+C:  digits , as opposed to uh sort of laboratory  
+B:  <mouth> 
+C:  <inbreath> 
+C:  Well . 
+E:  And it wasn't trained on this task either . 
+C:  And it wasn't trained on this task . Actually one percent is sort of  
+C:  you know , sort of in a reasonable range . People would say " yeah , I could  I can imagine getting that " . 
+B:  Mm - hmm . 
+C:  <inbreath> 
+C:  And uh so the  the four or five percent or something is  is  is quite poor . 
+B:  Mm - hmm . 
+C:  <inbreath> 
+C:  Uh , you know , if you 're doing a uh  
+C:  <inbreath> 
+C:  a sixteen digit uh credit card number you 'll 
+C:  basically get it wrong almost all the time . 
+C:  So . So . Uh , 
+B:  Hmm . 
+C:  <inbreath> 
+C:  um a significant reduction in the error for that would be great . 
+B:  Huh , OK . 
+C:  And  and then , uh Yeah . So . 
+C:  Yeah . 
+C:  Cool . 
+B:  Sounds good . 
+B:  <inbreath> 
+C:  Yeah . 
+C:  <inbreath> 
+
+
+C:  Alright , um , 
+C:  I actually have to run . 
+C:  So I don't think I can do the digits , but 
+C:  um , 
+C:  <inbreath> 
+C:  I guess I 'll leave my microphone on ? 
+E:  Uh , yeah . 
+C:  Yeah . Thank you . <mike noise> 
+E:  Yep . <mike noise> 
+C:  <mike noise> 
+C:  Actually , I could just go first , come to think of it . 
+C:  Then I can be out of here quickly .  
+A:  <sigh> 
+E:  Yeah . That 'll work . 
+C:   <laugh> 
+E:  <laugh> 
+A:  <laugh> 
+C:  <inbreath> 
+C:  That 's alright . I just have to run for another appointment . 
+C:  OK , did I t Yeah . I left it on . 
+D:  <coughs twice> 
+C:  OK . 
+
+
+C:  OK , this is transcript L dash one one zero .  
+C:  nine zero two five seven three two six six  
+C:  one six six six seven four two zero eight  
+C:  five one six nine four seven seven nine five zero  
+C:  five six zero two two five seven seven  
+A:  <sniff> 
+C:  six zero eight nine zero seven two six four five  
+C:  two one nine two eight nine five five eight eight  
+C:  three two five zero two nine three four  
+C:  four six one two zero eight eight five  
+A:  <sniff> 
+A:  Um transcript L one one one .  
+A:  three six two eight three three two two O seven  
+A:  one six six five four two six eight nine zero zero six  
+A:  three nine three three four seven five four seven nine six zero  
+A:  nine nine zero three seven four three two seven five four two  
+A:  four nine three five one nine seven eight one  
+A:  eight five O four nine four zero seven five three  
+A:  seven five eight four four one seven zero one  
+A:  eight five five three two five O three eight  
+E:  Transcript L dash one one two .  
+E:  zero seven eight seven six two one six four six five three  
+E:  one two five eight four seven seven two seven zero  
+E:  six three six three four seven nine seven six  
+E:  five two nine nine three two seven three two nine  
+E:  nine nine three eight nine one four one seven six O four  
+E:  four zero zero eight six seven four five eight  
+E:  zero six six three five nine seven seven seven  
+E:  seven three five five three two four five zero eight  
+B:  R I 'm reading transcript L dash one one three .  
+B:  six five six nine seven two eight four four O eight seven  
+B:  five one eight seven four zero five seven zero two  
+B:  four two five O three seven six eight one  
+B:  seven seven nine two one seven nine zero nine  
+A:  <sniff> 
+B:  zero six zero five six eight eight five nine  
+B:  five two two two five five six six two nine  
+B:  one one seven two zero six seven one six two  
+B:  zero two three zero one nine zero two three  
+D:  Transcript L dash w one one five .  
+D:  zero six four seven three two two seven one  
+D:  zero eight seven five eight six seven three  
+D:  seven five seven five five one one nine one four  
+D:  nine eight four one nine three one zero zero two  
+D:  four one zero three six eight two one nine  
+D:  six two eight nine six nine one eight six  
+D:  five six five zero three one one six  
+D:  six three nine eight seven eight three nine eight nine  
+
+

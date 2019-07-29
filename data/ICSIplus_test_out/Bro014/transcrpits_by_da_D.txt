@@ -1,0 +1,31 @@
+D:  Oh , OK . 
+D:  Channel three . 
+D:  Channel three . 
+D:  Channel three . Alright . 
+D:  N um , not not not much is new . 
+D:  So when I talked about what I 'm planning to do last time , <breath> I said I was , um , going to use Avendano 's method of , um , <breath> using a transformation , um , <mouth> to map from long analysis frames which are used for removing reverberation to short analysis frames for feature calculation . 
+D:  He has a trick for doing that  involving viewing the DFT as a matrix . 
+D:  Um , 
+D:  but , uh , um , I decided <breath> not to do that after all 
+D:  because I  I realized to use it I 'd need to have these short analysis frames get plugged directly into the feature computation somehow 
+D:  and right now I think our feature computation is set to up to , um , <breath> take , um , audio as input , in general . 
+D:  So I decided that I  I 'll do the reverberation removal on the long analysis windows 
+D:  and then just re - synthesize audio 
+D:  and then send that . 
+D:  Um , 
+D:  or  
+D:  or even if I 'm using our system , I was thinking it might be easier to just re - synthesize the audio , 
+D:  because then I could just feacalc as is 
+D:  and I wouldn't have to change the code . 
+D:  Uh - huh . 
+D:  Right . That 's true . 
+D:  But  e u 
+D:  From the re - synthesis ? 
+D:  Um , 
+D:  O - OK . 
+D:  I don't know anything about re - synthesis . 
+D:  Uh , how likely do you think that is ? 
+D:  OK . 
+D:  That  Yeah , e That 's it , that 's it . 
+D:  Uh - huh . 
+D:  Oh , OK . 

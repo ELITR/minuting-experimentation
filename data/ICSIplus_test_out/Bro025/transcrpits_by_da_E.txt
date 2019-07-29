@@ -1,0 +1,157 @@
+E:  The Half Dome was great . 
+E:  Yeah . So . 
+E:  Yeah . Almost . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  So it 's  well , it 's  spectral subtraction or Wiener filtering , 
+E:  um , 
+E:  depending on if we put  if we square the transfer function or not . 
+E:  And then with over - estimation of the noise , depending on the , uh  the SNR , with smoothing along time , 
+E:  um , 
+E:  smoothing along frequency . 
+E:  It 's very simple , smoothing things . 
+E:  And , um , <mouth> the best result is <clears throat> when we apply this procedure on FFT bins , uh , with a Wiener filter . 
+E:  And there is no noise addition after  after that . 
+E:  So it 's good 
+E:  because <breath> <clears throat> it 's difficult when we have to add noise to  to  to find the right level . 
+E:  Yeah . So the sh it 's the sheet that gives fifty - f three point sixty - six . 
+E:  Um , <mouth> the second sheet is abo uh , about the same . 
+E:  It 's the same , um , idea but it 's working on mel bands , <breath> and it 's a spectral subtraction instead of Wiener filter , 
+E:  and there is also a noise addition after , uh , cleaning up the mel bins . 
+E:  Mmm . 
+E:  Well , the results are similar . 
+E:  Mm - hmm . 
+E:  It 's worse on  
+E:  on the multi - condition in TI - digits . Yeah . 
+E:  Mmm . 
+E:  So now we are , yeah , setting up the software . 
+E:  Um , it should be ready , uh , very soon . 
+E:  Um , and we 
+E:  p - p - p 
+E:  Oh boy . 
+E:  Yeah . 
+E:  I need to allow it to do everything and even more  more than this . 
+E:  Well , if we want to , like , optimize different parameters of  
+E:  Yeah , we can do it later . 
+E:  But , still  so , there will be a piece of software with , <mouth> <clears throat> uh , will give this system , the fifty - three point sixty - six , by default 
+E:  and  
+E:  Mm - hmm . 
+E:  It 's just one percent off of the  best proposal . 
+E:  It 's between  i we are second actually if we take this system . 
+E:  Right ? 
+E:  Mm - hmm . Yeah . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mmm . 
+E:  Mm - hmm . 
+E:  Yeah . Yeah . Right . 
+E:  Mm - hmm . 
+E:  Uh , so th um , they keep two hundred milliseconds at the beginning and end of speech . And they keep all the  
+E:  Yeah . 
+E:  And all the speech pauses , 
+E:  which is  Sometimes on the SpeechDat - Car you have pauses that are more than one or two seconds . 
+E:  More than one second for sure . 
+E:  Um . 
+E:  Yeah . 
+E:  And , yeah , it seems to us that this way of just dropping the beginning and end is not  
+E:  We cou we can do better , I think , 
+E:  because , um , <mouth> with this way of dropping the frames they improve  over the baseline by fourteen percent 
+E:  and <clears throat> Sunil already showed that with our current VAD we can improve by more than twenty percent . 
+E:  Just using either their VAD or our current VAD . 
+E:  So , our current VAD is  is more than twenty percent , 
+E:  while their is fourteen . 
+E:  Yeah . 
+E:  So . 
+E:  Yeah . 
+E:  And  another thing that we did also is that we have all this training data for  let 's say , for SpeechDat - Car . 
+E:  We have channel zero which is clean , 
+E:  channel one which is far - field microphone . 
+E:  And 
+E:  if we just take only the , um , VAD probabilities computed on the clean signal and apply them on the far - field , uh , test utterances , <breath> then results are much better . 
+E:  In some cases it divides the error rate by two . 
+E:  So it means that there are stim  still  
+E:  If  if we can have a good VAD , well , it would be great . 
+E:  Uh , right now it 's , um , a neural net with nine frames . 
+E:  So it 's forty milliseconds plus , um , the rank ordering , 
+E:  which , uh , should be 
+E:  ten  
+E:  Yeah . 
+E:  So , right now it 's one hundred and forty  milliseconds . 
+E:  The  The , um  
+E:  Yeah . It 's not a median filtering . 
+E:  It 's just  We don't take the median value . We take something  
+E:  Um , so we have eleven , um , frames . 
+E:  And  
+E:  for the VAD , yeah  
+E:  and we take th the third . 
+E:  Um . 
+E:  Mmm . 
+E:  Mm - hmm . 
+E:  Mmm . 
+E:  Mm - hmm . 
+E:  Yeah . Uh - huh . 
+E:  Mm - hmm . 
+E:  Just the frame - dropping problem . 
+E:  Yeah . But it 's  it 's difficult . 
+E:  Sometime we  we change two  two things together 
+E:  and  But it 's around  maybe  it 's less than one percent . 
+E:  It  
+E:  Yeah . 
+E:  Yeah . And it  
+E:  Yeah . 
+E:  And then we have to be careful with that also  with the neural net 
+E:  because in  the proposal the neural net was also , uh , working on  after frame - dropping . 
+E:  Um . 
+E:  So . Well , we 'll have to be  
+E:  to do the same kind of correction . 
+E:  Mmm . Well , we can do the frame - dropping on the server side 
+E:  or we can just be careful at the terminal side to send a couple of more frames before and after , 
+E:  and  So . 
+E:  I think it 's OK . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  So , we , uh  actually I did the first experiment . 
+E:  This is  with just fifteen frames . 
+E:  Um . 
+E:  We take the first fifteen frame of each utterance to it , 
+E:  and average their power spectra . 
+E:  Um . 
+E:  I tried just plugging the , um , <mouth> uh , Guenter noise estimation on this system , 
+E:  and it  uh , it got worse . 
+E:  Um , 
+E:  but of course I didn't play  with it . 
+E:  But  Mm - hmm . 
+E:  Uh , I didn't  do much more  for noise estimation . I just tried this , 
+E:  and  
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah , I guess . 
+E:  Mmm . No , we don't . 
+E:  We don't have nothing  that  
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  So , should we keep the same  ? I think we might try to keep the same idea 
+E:  of having a neural network , 
+E:  but <clears throat> training it on more data 
+E:  and adding better features , I think , 
+E:  but  because the current network is just PLP features . 
+E:  Well , it 's trained on noisy  PLP  
+E:  PLP features computed on noisy speech . 
+E:  But <breath> <clears throat> there is no nothing particularly robust in these features . 
+E:  There 's no RASTA , no  
+E:  Oh , yeah . Hmm . 
+E:  Mm - hmm . 
+E:  Mmm . 
+E:  And it seems important for , like , the on - line normalization . 
+E:  Um . We don't want to update the mean and variance during silen long silence portions . 
+E:  Um . So it  it has to be done before 
+E:  this mean and variance normalization . 
+E:  Um . 
+E:  Mm - hmm . 
+E:  The Half Dome was great . 

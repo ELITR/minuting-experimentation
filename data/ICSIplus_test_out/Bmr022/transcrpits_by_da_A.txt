@@ -1,0 +1,441 @@
+A:  Oop !  Ouch ! 
+A:  OK , here we go . 
+A:  So  
+A:  Definitely have to go to tea . 
+A:  So  
+A:  That too , 
+A:  but  
+A:  Um  So , 
+A:  only a couple of agenda items , since no one sent me email for agenda items . 
+A:  Uh , the first is the IBM transcripts . I 'd like to uh , mention  
+A:  I s I spoke with several of you about this , 
+A:  but just to brainstorm a little bit about what we can do with it . 
+A:  So we got back the IBM transcript , and the accuracy looks OK . 
+A:  There are  I mean , there are areas which are clearly wrong 
+A:  and there are a lot of areas where they put question marks , where the acoustics weren't very good . 
+A:  And I think that 's fine . Putting it in question marks is better than doing it wrong . 
+A:  The big problem was , they had the wrong number of beeps in it . 
+A:  So it didn't align . 
+A:  And that 's exactly what I was afraid of . 
+A:  And I went in , and more or less by hand , corrected it , by loading it  
+A:  I wrote a script that will convert it to the multi the Channeltrans format , looked at it in  in Channeltrans and found the places where it got a unsynchronized , 
+A:  and then either  
+A:  And in this case only  only had to remove beeps , 
+A:  because that was th always the error , is that they put in it extraneous beeps . 
+A:  But it 's not easy to do , 
+A:  because the whole thing gets offset , 
+A:  and basically , it 's assigning the wrong speaker to the text , and it all gets unaligned . 
+A:  So it 's very difficult to do . 
+A:  So it took me several hours just to do that . 
+A:  Yep . 
+A:  It took me a couple hours to write the scripts , 
+A:  and then it  it probably took me maybe forty - five minutes , just going through it . 
+A:  Now obviously it will be a lot faster from now on , 
+A:  because now I sort of understand how it works . 
+A:  But , I think if we had some way  uh some tool that made it easier to insert and delete beeps it would make it a lot easier . 
+A:  Cuz one of the problems is that it takes a very long time when you make a change to load it back up in the channel transcriber . 
+A:  And so there may be  
+A:  I didn't just say that , no . 
+A:  So th so this is the o the other approach which is , what do we do in the future , to try to make this less common ? 
+A:  But it 's still gonna happen . 
+A:  So  
+A:  Yeah , we don't know what their process is . 
+A:  So I had two ideas . 
+A:  The first was to provide them a text template that had both the beeps in it and the speaker I Ds . 
+A:  You know , just " male - female " , " English - nonEnglish " , " one two three four " . 
+A:  Um  
+A:  And they just filled it in . 
+A:  It was like a hundred twenty , 
+A:  and they had a hundred twenty - three or something like that . 
+A:  Is that right ? 
+A:  Well I  I don't remember . 
+A:  Yep . 
+A:  Yep . 
+A:  How would that help ? 
+A:  Oh , you mean just break the one hour into a few chunks . 
+A:  I 'm sure they would prefer it sort of one hour . 
+A:  That  I mean , just naming schemes will get  
+A:  We can definitely do that . 
+A:  So t so one question is , are there good places in the files where we can really do that ? 
+A:  I mean , so  so  so someone will have to go through them and listen to them and pick a place to break them . 
+A:  They are played from the individual . 
+A:  You mean , so , actually put  put the wavefile in with beep in it . 
+A:  And pu and have a beep model . 
+A:  Yes , it would be , cuz it 's very , very regular . 
+A:  Yeah . 
+A:  You have to  may  add some jitter to it . 
+A:  It 's just in this case they were not . 
+A:  So I think  uh , Chuck had a good explanation for it which I liked , 
+A:  which is these  they 're listening to it and so they write something down , and let 's say they miss it , they rewind . 
+A:  Well , they hear the beep again . 
+A:  Was that that beep , or was that a different beep ? 
+A:  So that 's why Chuck was suggesting different tones . 
+A:  My original thought was , you could have a different tone for each speaker . 
+A:  You know , there 's plenty of tone space . 
+A:  And that might help cue the transcriptionist . 
+A:  You know , give them a little cue about where they are . 
+A:  What do you mean ? 
+A:  That 's what I was saying . Is that  that you could have  each speaker could have their own tone . 
+A:  And you know , since there are no more than , you know , ten speakers or so per meeting , there 's plenty of tone space . 
+A:  Oh , OK . 
+A:  Bo - eep  be - oop . 
+A:  Oh , oh , th oh , I see . 
+A:  Well  
+A:  Yep . 
+A:  I mean , Chuck 's suggestion of just two beeps is nice 
+A:  because then you could have them actually transcribe " H - beep " or " L - beep " , 
+A:  " high beep " or " low beep " . 
+A:  It would be much easier . 
+A:  Yep . 
+A:  Yeah , we can , 
+A:  yeah , like , do  do , uh , one for each ca one for each person in the meeting , you can only hire people who have perfect pitch , 
+A:  and they can say " A - flat " <laugh> " B " . 
+A:  Yep . 
+A:  Mm - hmm . 
+A:  So I think , certainly , doing two beeps is  is no - brainer . 
+A:  And then the other question is , if they can  
+A:  If they do something on a computer in a format we can handle , we could give them a text file that was a template with speaker ID and beeps already in it . 
+A:  And then they could just fill that in . 
+A:  Right . 
+A:  Well , as I said , I think  We don't actually know , 
+A:  but I think Chuck 's hypothesis was a good one , 
+A:  which is , you re r you listen to something , you write down what you thought you heard , but you want to listen to it again , so you r rewind . 
+A:  And then you hear the beep  again , and then you say " well , is that that beep , 
+A:  or is that a new beep ? 
+A:  I don't remember . " 
+A:  And so , you know , a couple times they got it wrong . 
+A:  Well , we could . 
+A:  We could , but then that starts getting pretty long . 
+A:  Well , they would have to have a mark . 
+A:  Well , it 's sequential . 
+A:  Right , you would go sequential . So unless you got pretty unlucky , 
+A:  what the person was saying and the number  
+A:  So beep number . 
+A:  Yeah the 
+A:  It 's just getting pretty long . 
+A:  You know , the utterances are very short . 
+A:  And so you 're gonna be talking beep , number , " yes ! " beep , number , " no " . 
+A:  And when they transcribe this meeting it 's gonna be really impossible . 
+A:  Yeah , yep . 
+A:  It 's not a bad idea . 
+A:  That would help get them synchronized . 
+A:  I think it would be , 
+A:  because they would know their place . 
+A:  Yeah . 
+A:  They would know their place , darn it ! 
+A:  Those transcriptionists need to know their place . 
+A:  Yeah , the numbers are a good idea . 
+A:  Othe - other than lengthening the transcript , I think it would be very helpful . 
+A:  Yeah , you don't have to  
+A:  you could keep them short by not s or just go one through ten , one through ten , one through ten , or one through twenty . 
+A:  Mm - hmm . 
+A:  Yep . 
+A:  Yeah , single digit numbers  
+A:  That also appeals to me . So that you don't have to , you know  
+A:  " One hundred twenty - four " 
+A:  " Beep . One thousand three hundred forty - two " 
+A:  Mm - hmm . 
+A:  I don't remember . 
+A:  Chuck was saying there was more than that . 
+A:  More beeps than that . 
+A:  Was it that many ? 
+A:  I just don't recall . 
+A:  Yep . 
+A:  Easy enough to figure out . 
+A:  We have all that data . 
+A:  Yeah , you 're right . 
+A:  It had to have been more than that . 
+A:  I mean , it was a forty - five minute meeting , 
+A:  so  
+A:  And it certainly was not a minute a chunk , 
+A:  it was a few seconds a chunk . 
+A:  So I 'm just mis - remembering . 
+A:  I 'm just mis - remembering . 
+A:  So . 
+A:  It might make the transcript faster  
+A:  W wel I mean I  A quick conversation with Brian would be good , 
+A:  so . 
+A:  OK . 
+A:  And other than that  
+A:  Mm - hmm . 
+A:  Right . 
+A:  Yep . 
+A:  Right . I mean , that 's what we want to avoid . 
+A:  But that won't work 
+A:  because it 's  
+A:  Well , but , all we 'll get  
+A:  Right , you  you need  But you need the text 
+A:  to tell it where it got it wrong . 
+A:  Yeah . 
+A:  Because you have to know which ones match which . 
+A:  And we can do that with wordcount . 
+A:  Right ? We already know that  that we 're three short . 
+A:  And so if we just did spee uh beep and non - beep all you would get is that you have three mistakes , 
+A:  but you wouldn't tell you which ones were wrong . 
+A:  You need some of the words in there , so that you can say " well , this segment matches this one , 
+A:  this segment matches this one , 
+A:  and this one doesn't match at all , 
+A:  unless we insert a beep " . 
+A:  Well , actually , you know , there 's an even easier way . 
+A:  We don't really need a beep model . 
+A:  Um , just extract the segments and do a forced alignment , 
+A:  and if the score is good , then you say it matches  
+A:  Right . 
+A:  Well , the numbered ones would make it a lot easier , 
+A:  cuz you could then really localize where the error is . 
+A:  Yep . 
+A:  Yeah , I mean , we could certainly break the meetings  
+A:  We could certainly break the meetings into pi pieces . 
+A:  So , just  
+A:  That 's true , yeah . 
+A:  I think that was Chuck . 
+A:  Yep . 
+A:  Yeah , it does look good . 
+A:  I mean , I found several errors , 
+A:  but they were not significant . 
+A:  They were all things that I could easily listen to and sometimes convince myself they said one thing and sometimes the other , 
+A:  so . 
+A:  OK . 
+A:  Um  
+A:  We still haven't really sat down and talked about file reorganization , 
+A:  and directory reorganization . 
+A:  So we still have to do that . 
+A:  But I don't think we need to do that in this meeting . 
+A:  But , uh  It is something that needs to get done , 
+A:  and I wanna also coordinate it with Dave so that we do a level zero backup right after . 
+A:  So we don't waste a lot of tapes . 
+A:  But , uh  
+A:  So  let 's  let 's try to do that sometime , 
+A:  OK ? 
+A:  ch OK ? 
+A:  Um  
+A:  We also still  have to make a decision about mike issues , 
+A:  what we wanna do with that . 
+A:  And just swap them in and out ? 
+A:  Yeah , we could certainly do that . 
+A:  So  uh , Morgan , just to  
+A:  uh , since you weren't at the meeting last week , uh , apparently a bunch of the EDU fe folks really hate this style mike . 
+A:  I mean , that 's  that 's  that 's a fairly strong indication of dislike . 
+A:  Um  
+A:  The Crown . 
+A:  So what I was thinking is , we could get a few more of the Sony ones 
+A:  and just unplug them and plug them in . 
+A:  And the only thing is that when you fill out the digit forms , you have to be sure to indicate which mike was actually used . 
+A:  So , I mean , that 's easy to do . 
+A:  Um  
+A:  it  it  moves us away from this uniform , all the mikes are the same , 
+A:  which some people had said was a benefit . 
+A:  But  
+A:  It is . Yeah . 
+A:  Yep . 
+A:  I mean  
+A:  th 
+A:  We abs th 
+A:  We have lots o of choices of microphones . 
+A:  Mm - hmm . 
+A:  Mmm . 
+A:  Yeah . 
+A:  Right . 
+A:  Right . 
+A:  I mean , so we can go microphone shopping , and get  get more microphones . 
+A:  It 's just  w 
+A:  I 'm just not sure what we should do . 
+A:  Yep . 
+A:  Well , I  
+A:  I agree with that , 
+A:  and so my feeling is , we should get mikes that people like . 
+A:  And so I my feeling is , going out and buying a few more mikes is fine . 
+A:  So should I just go do that ? 
+A:  OK . 
+A:  And then also , should we go ahead and get another wireless system ? 
+A:  You know , for whatever it 's gonna be , uh  
+A:  Uh , no , actually , get  we need another box . 
+A:  Because each  each box in the back room can only take six . 
+A:  So we could 
+A:  Yep . 
+A:  OK . 
+A:  So I 'll just go d I 'll do that . 
+A:  Yep . 
+A:  Yep . 
+A:  OK . Then I will just go do that , 
+A:  and send the bill to  uh , 
+A:  what 's - her - name . Whoever will pay . 
+A:  You . 
+A:  Yeah . 
+A:  This  it 's  it 's a cell phone jack . 
+A:  Th - d 
+A:  Yep . 
+A:  Except that one 's even bigger than most of the ones I 've seen . 
+A:  Most of the ones are just a little boom . 
+A:  Mm - hmm . 
+A:  Yeah . The  the biggest issue is the stupid cable 
+A:  that Sony  
+A:  The connector that Sony has , that , uh  
+A:  It 's non - standard , 
+A:  and so you can't just plug something in . 
+A:  You need to get it wired . 
+A:  Right . 
+A:  Right . 
+A:  I wonder if you could do an adaptor . 
+A:  I don't know if you can or not . 
+A:  An adaptor might be a better idea than do redoing the wiring all the time . 
+A:  Right . 
+A:  Mm - hmm . 
+A:  Yep . 
+A:  Demo . 
+A:  Yep . 
+A:  I mean , what I was envisioning was a PDA with a cellular link in it . 
+A:  You know , with one of the r short - range wireless . 
+A:  And let th Just do  capture the audio on the PDA and send the audio over the wireless net . 
+A:  But . 
+A:  Uh , Bluetooth is shorter range , 
+A:  but you could use Bluetooth . 
+A:  Wh - whatever the network guys already have hooked up for this floor . 
+A:  I don't remember what it 's called . 
+A:  OK , then uh , another issue on file reorganization is , uh , making data available to people outside ICSI . 
+A:  So , specifically , the U W folks have been wanting to get access to it . 
+A:  So I think the right thing to do for that , is figure out how to do CVS without uh , compromising security . 
+A:  Some pass SSH tunneled CVS , 
+A:  and then give them access . 
+A:  Yes , except that the command has to not take a password . 
+A:  Because it it 's non - interactive . 
+A:  And so the only way to do that is with , uh  S - hosts , 
+A:  which is insecure . 
+A:  So we still have to sort of look at it a little bit . 
+A:  I mean , I 'm sure it 's been solved , 
+A:  and I just haven't found the solution yet . 
+A:  But I am sure that people have done it 
+A:  because it 's gonna be a problem a lot of people have . 
+A:  But , um  
+A:  Uh , n n not really , 
+A:  because then we have the coordination issue . 
+A:  I mean , so one thing they could do  
+A:  I mean , I guess that 's true . 
+A:  They could simply log in to ICSI 
+A:  and do everything locally . 
+A:  Yeah , except they could share one . 
+A:  The , uh  the SSH accounts , and the user accounts don't have to be similar . 
+A:  So . 
+A:  I mean , there are lots of ways of doing it , 
+A:  but w but if we can't figure out a remote way of doing it , just letting them log in to ICSI might be OK . 
+A:  So the intention was to put everything except the audio files themselves under revision control . 
+A:  And the audio files , it 's not worth doing 
+A:  cuz they 're too big . 
+A:  You 're never gonna be copying them around and making working copies of them . 
+A:  And then the other issue Jane and I spoke of  briefly is just general permission issues . 
+A:  That right now , lots of people create the files 
+A:  and then we have group " Meeting Recorder " . 
+A:  But that means anyone in the Meeting Recorder group can overwrite the files . 
+A:  And so that 's a pretty coarse level of  granularity . 
+A:  So we might wanna think about doing a Meeting Recorder user  owner for those files , 
+A:  and then doing group slightly differently . 
+A:  But  
+A:  I think what we have now  
+A:  Another option is to m make a non make it owned by a not real user , 
+A:  and then root will be able to do it . 
+A:  But root is pretty tightly controlled here . 
+A:  So th I don't think that 's a good solution . 
+A:  Yes , but if you do that , then someone who isn't the owner can't unchange it . 
+A:  Yeah , as I said , it 's just a question of , uh , do you wanna have to track down root if you have to make any change . 
+A:  You have security issues with that . 
+A:  So . 
+A:  No , with doctor - speech , it 's just a group . 
+A:  So  there 're lots of different owners of i i of the files , but the group is always doctor - speech . 
+A:  Or real , usually . 
+A:  Nnn 
+A:  Oh , do you ? 
+A:  Oh , OK . 
+A:  I mean , I 'm not too worried , 
+A:  because the group 's pretty small . 
+A:  But  
+A:  Well , and just  You , then , also just have the general problem of permission on the other files , 
+A:  that , do you want people checking out a transcript file when they find an error , and correcting it , 
+A:  or do they wa do you want it to go through you ? 
+A:  OK , but that means that you 're gonna have to be available for people , all the time , who say " there 's an error here " , 
+A:  rather than just  them just going in and correcting it . 
+A:  Well , but  You have a choice . 
+A:  Either you let people do it themselves , or you don't . 
+A:  Right . 
+A:  Right , so you could get email . 
+A:  Send email to Jane that someone has done a revision . 
+A:  Well , so , you don't have to release it to the world until you 're ready to . 
+A:  So the question is s w 
+A:  So you would keep it in a separate file structure until you were ready to put it in the repository . 
+A:  Or just keep the lock on it . 
+A:  Until you 're  
+A:  Yep . 
+A:  Cuz it 's not remote . 
+A:  The nice thing about CVS is  is , you can be on a different machine . 
+A:  No , because UW wants to have access to these files . 
+A:  That 's the whole point . 
+A:  Well , if they k en if they record a meeting , and they create a " key " file , and they find an error in their " key " file , they shouldn't have to tell us about that 
+A:  so that they can create  correct an error in one of their files . 
+A:  So that 's why I wanna do it  
+A:  Different than what ? 
+A:  Well  
+A:  B 
+A:  But , I mean , the meetings are gonna be the same way . 
+A:  So UW records a meeting , 
+A:  we transcribe it . 
+A:  A few months later they listen to it 
+A:  and they say " Ope !  They got that acronym wrong . " 
+A:  Why  why sh 
+A:  Mm - hmm . 
+A:  The  the p the point here is that it would be nice t for there to be one repository . 
+A:  And if we don't let them modify their own data ,  they 're not gonna store their data in our repository . 
+A:  Or if we make it inconvenient for them to change their data . 
+A:  I  I 'm just looking at it the other way around . 
+A:  So  so let 's say we k 
+A:  Ye - well , I don't see a real difference between RCS and any other system . 
+A:  I mean , it 's just mechanisms . 
+A:  The nice thing about CVS is that you can have multiple people modifying 
+A:  and if the changes don't overlap each other , they can just do it . 
+A:  So the problem with RCS is that if two people want to modify a file at the same time they can't , 
+A:  because the granularity of locking is at the file level . 
+A:  Uh , there 're lots of different policies for dealing with it . 
+A:  So  
+A:  At the repository level , there certainly is . 
+A:  You can mark a file as  as " you can't check this out " . 
+A:  Yep . 
+A:  Well , it 's  it 's just like source code , 
+A:  right ? 
+A:  So that , when you 're developing it and it 's really rough , you don't put it in the repository . 
+A:  You wait to the point when you 're ready to release it , 
+A:  and then you put it in the repository 
+A:  and if other people wanna  Copy . 
+
+A:  Mm - hmm . 
+A:  I 'm just  
+A:  Imagine that we reverse this 
+A:  and they were keeping the repository and we were d collecting meetings and sending them to them . 
+A:  If I found an error , and I sent them email and said " here 's this error " , and I didn't get a response for a couple weeks , I would stop sending them the  my data 
+A:  and I would start collecting it here 
+A:  and we would end up with two corpora . 
+A:  And I don't want that to happen . 
+A:  So we have to make it convenient for them to make changes that they wanna make . 
+A:  Mm - hmm . 
+A:  Well  
+A:  I just  I don't s 
+A:  I don't see that this is e 
+A:  Yep . 
+A:  Can you write " unread " on that ? 
+A:  Yeah , thank you . 
+A:  Probably not transcripts , 
+A:  but it would be nice to have one mechanism for all the files . 
+A:  And they 're certainly gonna wanna change tools . 
+A:  And so  you know , it 's the same as source code . 
+A:  You  you release source code at some point . 
+A:  And , either you have to do everything or you share responsibility . 
+A:  Mm - hmm . 
+A:  Right . 
+A:  You can back everything out . 
+A:  Right , but what I want to avoid is ending up with two corpora . 
+A:  And so if you make it too hard for them to check back in , they 'll check it out once , 
+A:  they 'll make all the changes , 
+A:  they 'll never tell us about the changes , 
+A:  and we 'll get two different corpora . 
+A:  Right ? 
+A:  Nope . 
+A:  Shall we do some digits ? 
+A:  I wasn't planning on doing it simultaneously . 
+A:  Oop !  Ouch ! 

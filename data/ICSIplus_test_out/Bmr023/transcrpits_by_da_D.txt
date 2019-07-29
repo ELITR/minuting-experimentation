@@ -1,0 +1,159 @@
+D:  Yeah . 
+D:  I saw her earlier . 
+D:  I think  
+D:  Yeah . 
+D:  She 'll probably come up . 
+D:  I 've got a couple of things to talk about . 
+D:  Uh , IBM stuff and , um , just getting <breath> uh , meeting information organized . 
+D:  In my mind . 
+D:  Now the  the  You saw the note that the PLP now is getting basically the same as the MFCC . 
+D:  Right ? 
+D:  Yeah . So , um , talked with Brian and gave him the alternatives to the single beep at the end of each utterance that we had generated before . 
+D:  And so  
+D:  Yeah . 
+D:  The Chuck chunks . 
+D:  Right . 
+D:  And so he talked it over with the transcriber 
+D:  and the transcriber thought that the easiest thing for them would be if there was a beep and then the nu a number , a digit , and then a beep , uh , at the beginning of each one 
+D:  and that would help keep them from getting lost . 
+D:  And , um , <inbreath> so Adam wrote a little script to generate those style , uh , beeps 
+D:  and so we 're  
+D:  I came up here and just recorded the numbers one through ten . 
+D:  So . 
+D:  Does it sound OK ? 
+D:  So , um  Yeah . We just used those . 
+D:  Yeah . He  then he d I recorded  Actually , I recorded one through ten three times at three different speeds and then he picked . 
+D:  He liked the fastest one , so he just cut those out <breath> and spliced them in between , uh , two beeps . 
+D:  Does it ? 
+D:  Yeah . With my  
+D:  That 'll throw them , 
+D:  huh ? 
+D:  Yeah .  Huh ! Maybe . 
+D:  And she said it wasn't gonna  the transcriber said it wouldn't be a problem cuz they can actually make a template , uh , that has beep , number , beep . 
+D:  So for them it 'll be very quick 
+D:  to  to put those in there <breath> when they 're transcribing . 
+D:  So , um , we  We 're gonna send them one more sample meeting , 
+D:  uh , and Thilo has run his segmentation . 
+D:  Adam 's gonna generate the chunked file . 
+D:  And then , um , I 'll give it to Brian and they can try that out . 
+D:  And when we get that back we 'll see if that sort of fixes the problem we had with , uh , too many beeps in the last transcription . 
+D:  Uh . Our s our  On our side ? 
+D:  or including IBM 's ? 
+D:  Well , I don't know . 
+D:  The last one seemed like it took a couple of weeks . 
+D:  Um , maybe even three . 
+D:  Uh , that 's just the I B M side . 
+D:  Our side is quick . 
+D:  I mean , I  I don't know . How long does your  ? 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Right . 
+D:  Yeah . 
+D:  I  Yeah , I  I hope @ @  we can get a better estimate from this  one that we send them . 
+D:  So . Um . 
+D:  I  I don't know yet how long that 'll take . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Right . Right . 
+D:  Burn - out . 
+D:  Yeah . So , um , uh , Jane and Adam and I had a meeting where we talked about the reorganization of the  directory structure for all of the meeting  
+D:  No . 
+D:  For all the Meeting Recorder data . 
+D:  We should have . 
+D:  Um . And so we 've got a plan for what we 're gonna do there . 
+D:  And then , Jane also s prepared a  um , started getting all of the  the meetings organized , so she prepared a  <breath> a spreadsheet , which I spent the last couple of days adding to . 
+D:  So I went through all of the data that we have collected so far , and have 
+D:  been putting it into , uh , a spreadsheet <breath> with start time , the date , the old meeting name , the new meeting name , the number of speakers , the duration of the meeting , comments , you know , what its transcription status is , all that kind of stuff . 
+D:  And so , the idea is that we can take this and then export it as HTML and put it on the Meeting Recorder web page 
+D:  so we can keep people updated about what 's going on . 
+D:  Um , I 've gotta get some more information from Jane 
+D:  cuz I have some  some gaps here that I need to get her to fill in , 
+D:  but <inbreath> so far , um , <inbreath> as of Monday , the fourteenth , um , we 've had a total number of meeting sixty - two hours of meetings that we have collected . 
+D:  And , um  
+D:  Uh , some other interesting things , average number of speakers per meeting is six . 
+D:  Um , 
+D:  and I 'm gonna have on here the total amount that 's been transcribed so far , 
+D:  but I 've got a bunch of  
+D:  uh , that 's what I have to talk to Jane about , figuring out exactly which ones have  have been completed and so forth . 
+D:  But , um , <breath> this 'll be a nice thing that we can put up on the  the web site and people can <breath> be informed of the status of various different ones . 
+D:  And <breath> it 'll also list , uh , like under the status , if it 's at IBM or if it 's at ICSI , uh , or if it 's completed or which ones we 're excluding 
+D:  and  and there 's a place for comments , so we can , <breath> um , say why we 're excluding things and so forth . 
+D:  So . 
+D:  Content , really . 
+D:  Talk . 
+D:  Could it have to do with the  the lower frequency cut - off on the Switchboard ? 
+D:  Hmm . 
+D:  Were they out of balance ? 
+D:  I didn't  I didn't notice . 
+D:  Mm - hmm . 
+D:  Hmm . We 're using sixty - four , 
+D:  right ? 
+D:  Yeah . 
+D:  Than you do with the standard ? 
+D:  Well , that was combined with the triangular . 
+D:  Right ? 
+D:  Yeah . Right . 
+D:  The low - frequency cut - off . 
+D:  What  what is the parameter ? 
+D:  Is it , uh , just the f lower cut - off that you want ? 
+D:  Mm - hmm . 
+D:  Oh , OK . 
+D:  One experiment we should  we 'll probably need to do though when  um , at some point , is , since we 're using that same  the net that was trained on PLP without all these things in it , for the tandem system , we may wanna go back and retrain , 
+D:  yeah , yeah , 
+D:  for the tandem . You know , 
+D:  so we can see if it  what effect it has on the tandem processing . 
+D:  So , we  But  but we may not . I mean , if it doesn't perform as well , we may not know why . 
+D:  Right ? 
+D:  Cuz we need to do the exact experiment . 
+D:  So , Morgan , an another thing that Andreas and I were talking about was , 
+D:  so @ @  in the first experiment that he did <breath> we just took the whole fifty - six , uh , outputs 
+D:  and that 's , um , basically compared to a thirty - nine input feature vector from either MFCC or PLP . 
+D:  But one thing we could do is  
+D:  Yeah . Through the regular tandem outputs . 
+D:  Through the KLT . 
+D:  All that kinda stuff . 
+D:  That 's what we did . 
+D:  Right ? 
+D:  So one thing we were wondering is , if we did principal components and , say , took out just thirteen , and then did deltas and double - deltas on that  
+D:  so we treated the th first thirteen as though they were <breath> standard features . 
+D:  I mean , did Dan do experiments like that to  ? 
+D:  Mmm . 
+D:  Yeah . 
+D:  Hmm . 
+D:  Cuz in a sense , the net 's already got quite a bit of context in those features , 
+D:  so if we did deltas and double - deltas on top of those , we 're getting sort of even more . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah . There could be a bug in  in the  somewhere before that . 
+D:  Mm - hmm . 
+D:  Right . 
+D:  I 'm doing what Eric  
+D:  E Eric coached me through then  that part of it , 
+D:  so I 'm pretty confident in that . 
+D:  I mean , the only slight difference is that I use normalization values that , um , Andreas calculated 
+D:  from the original  PLP , 
+D:  which is right . 
+D:  N 
+D:  Yeah . 
+D:  So , I u I do  
+D:  Oh , we actually don't do that normalization for the PLP , 
+D:  do we ? 
+D:  For the st just the straight PLP features ? 
+D:  S R I system does that . Right . 
+D:  So that 's  that 's another  
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah . It 's hard with features , 
+D:  cuz you don't know what they should look like . 
+D:  I mean , you can't just , like , print the  the values out in ASCII and , you know , look at them , see if they 're  
+D:  So another huge experiment we could do would be to take the tandem features , uh , do SRI forced alignments using those features , and then re - do the net with those . 
+D:  Mmm . 
+D:  Yeah . Yeah . 
+D:  Mm - hmm . 
+D:  Did he  did he try to  ? 
+D:  So he always ended up with a feature vector that was  twice as long as either one of the  ? 
+D:  Yeah . 

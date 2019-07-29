@@ -1,0 +1,95 @@
+F:  Mm - hmm . 
+F:  OK . 
+F:  OK . 
+F:  So should I go so that , uh , 
+F:  you 're gonna talk about Aurora stuff , per se ? 
+F:  OK . 
+F:  Um . 
+F:  Well , this past week I 've just been , uh , getting down and dirty into writing my  my proposal . 
+F:  So , 
+F:  um  
+F:  Mmm . 
+F:  I just finished a section on , uh  on talking about these intermediate categories that I want to classify , um , as a  as a middle step . 
+F:  And , um , 
+F:  I hope to  hope to get this , um  a full rough draft done by , uh , Monday so I can give it to Morgan . 
+F:  Um , my meeting 
+F:  with , uh  ? 
+F:  Oh , oh , you mean the  the quals . 
+F:  Uh , the quals are happening in July twenty - fifth . 
+F:  Yeah . 
+F:  D - Day . 
+F:  Uh - huh . 
+F:  Right , right . 
+F:  So , y you write up a proposal , and give it to people ahead of time , 
+F:  and you have a short presentation . 
+F:  And , um , 
+F:  and then , um  then everybody asks you questions . 
+F:  Yeah . 
+F:  Yep . 
+F:  So , um . 
+F:  Y s 
+F:  Oh . 
+F:  Uh , a little bit about  ? 
+F:  Oh , 
+F:  the  the  
+F:  Right . 
+F:  Well , I was , 
+F:  um , 
+F:  I think one of the perplexing problems is , 
+F:  um , 
+F:  for a while I was thinking that I had to come up with a complete set of intermediate features  in intermediate categories to  to classify right away . 
+F:  But what I 'm thinking now is , I would start with  with a reasonable set . 
+F:  Something  something like , um , um  like , uh , re regular phonetic features , 
+F:  just to  just to start off that way . 
+F:  And do some phone recognition . 
+F:  Um , build a system that , uh , classifies these , um  these feat uh , these intermediate categories using , uh , multi - band techniques . 
+F:  Combine them and do phon phoneme recognition . 
+F:  Look at  
+F:  then I would look at the errors produced in the phoneme recognition and say , OK , well , I could probably reduce the errors if I included this extra feature or this extra intermediate category . 
+F:  That would  that would reduce certain confusions over other confusions . 
+F:  And then  and then <breath> reiterate . 
+F:  Um , build the intermediate classifiers . 
+F:  Uh , do phoneme recognition . 
+F:  Look at the errors . 
+F:  And then postulate new  or remove , um , intermediate categories . 
+F:  And then do it again . 
+F:  Um , for that  for that part of the  the process , yeah , I would use TIMIT . 
+F:  And , 
+F:  um , 
+F:  then  
+F:  after  after , uh , um , doing TIMIT . 
+F:  Right ? 
+F:  Um , that 's  <breath> that 's , um  that 's just the ph the phone recognition task . 
+F:  Uh , I wanted to take a look at , um , things that I could model within word . 
+F:  So , I would mov I would then shift the focus to , um , something like Schw - Switchboard , 
+F:  uh , where I 'd  I would be able to , um  to model , um , intermediate categories that span across phonemes , 
+F:  not just within the phonemes , themselves , 
+F:  um , 
+F:  and then do the same process there , um , on  on a large vocabulary task like Switchboard . 
+F:  Uh , 
+F:  and for that  
+F:  for that part I would  I 'd use the SRI recognizer 
+F:  since it 's already set up for  for Switchboard . 
+F:  And I 'd run some  some sort of tandem - style processing with , uh , my intermediate classifiers . 
+F:  Yeah . That 's why I  I was asking about that . 
+F:  Yeah . 
+F:  Um , 
+F:  and 
+F:  I guess that 's  that 's it . 
+F:  Any  any questions ? 
+F:  Um , yeah . 
+F:  A few more . 
+F:  It 's a  it 's a month and  and a week . 
+F:  Yeah . 
+F:  Oh . 
+F:  Hmm ! 
+F:  That 's with the new IIR filters ? 
+F:  OK . 
+F:  Uh , gets rid of the speech . 
+F:  Oh , wow . 
+F:  Yeah . 
+F:  Yeah . 
+F:  SRI . 
+F:  Hmm . 
+F:  Hmm . 
+F:  Mm - hmm . 

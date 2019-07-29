@@ -1,0 +1,225 @@
+A:  Good enough . 
+A:  Alright , so I 'm - I should read all of these numbers ? 
+A:  Oh yeah . 
+A:  " Go there " . 
+A:  I mean it seems that you could um uh it seems that those things would be logically independent 
+A:  like you would wanna have them separate or binary , 
+A:  Go - there and then the  the possibilities of how to go there 
+A:  because  
+A:  because , you know it might be easy to figure out that this person is going to need more film eventually from their utterance 
+A:  but it 's much more complex to query when would be the most appropriate time . 
+A:  Hmm . 
+A:  Think so . 
+A:  Uh , no , 
+A:  but I think I 'm following it . 
+A:  So far . 
+A:  Yeah . 
+A:  Hmm . 
+A:  User thrift . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  OK . 
+A:  Wow , that is simple . 
+A:  Climb , rob . 
+A:  The Charles Bridge , you know . 
+A:  No , I mean , if you go to re you know if you go to Prague or whatever one of your  your key points that you have to do is cross the Charles Bridge 
+A:  and doesn't really matter which way you cross 
+A:  which  where you end up at the end 
+A:  but the part  the good part is walking over it , 
+A:  so . 
+A:  mm - hmm 
+A:  mm - hmm 
+A:  So 
+A:  Can I ask about " slurred " and " angry " as inputs to this ? 
+A:  What  why ? 
+A:  OK . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  Drunk . 
+A:  Less likely to enter . 
+A:  Hmm . 
+A:  OK . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  So we 're deriving um this  the  this feature of whether the  the main action at this place happens inside or outside or what we 're deriving that from what kind of activity is done there ? 
+A:  Couldn't you have it as just a primitive feature of the entity ? 
+A:  OK . 
+A:  I mean it seems like that 's much more reliable 
+A:  cuz you could have outdoor places that sell things 
+A:  and you know indoor places that do something else 
+A:  and 
+A:  Hmm . 
+A:  OK . 
+A:  OK . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  I 'm just thinking about how people , human beings who know about places and places to go and so on would store this 
+A:  and it would probably  you wouldn't just sort of remember that they sell stuff and then deduce from that that it must be going on inside or something . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Huh . 
+A:  Well  
+A:  Hmm . 
+A:  User schedule . 
+A:  " Do I have time to go in and climb all the way to the top of the Koelner Dome  or do I just have to  " " time to take a picture of the outside ? " 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Well what about the Grand Canyon , 
+A:  right ? 
+A:  No , never mind . 
+A:  I mean are there  are there large things that you would have to pay to get up close to 
+A:  like , I mean 
+A:  never mind , 
+A:  not in the current  
+A:  OK . 
+A:  Yeah . 
+A:  OK . 
+A:  Right , sure . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Well , what  
+A:  Whoops . 
+A:  Right . 
+A:  Also , that node , I mean the Go - there s S node would just be fed by separate ones for 
+A:  you know , there 's different things , the strikes and the 
+A:  Yeah , the time of day . 
+A:  Um actually  
+A:  Um actually is this the  the right way to have it 
+A:  where um go there from the user and go there from the situation just sort of don't know about each other but they both feed the go there decision 
+A:  because isn't the , I mean 
+A:  uh , 
+A:  hmm 
+A:  OK . 
+A:  But that still allows for the possibility of the  of the user model affecting our decision about whether a strike is the sort of thing which is going to keep this user away from  
+A:  That  all that  that kind of decision making happens at the Go - there node . 
+A:  Uh . 
+A:  If you needed it to do that . 
+A:  But uh OK I was just thinking 
+A:  I guess maybe I 'm conflating that user node with possible  possible asking of the user 
+A:  you know 
+A:  hey there 's a strike on , uh does that affect whether or not you wanna go or something 
+A:  or 
+A:  Yeah , so that might not come out of a user model 
+A:  but , you know , directly out of interaction . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  Right , right . 
+A:  Yeah . 
+A:  Right , sure , OK . 
+A:  Mm - hmm . 
+A:  Alright . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Now . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Right . 
+A:  Darn . 
+A:  Hmm . 
+A:  I think so , yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Right . 
+A:  Hmm . 
+A:  Point three . 
+A:  No . 
+A:  So  so the function of the thing that comes out of H is very different from the function of the other inputs . 
+A:  It 's driving how the other four are interpreted . 
+A:  OK . 
+A:  Well a vector with three zero 's and one one , 
+A:  right ? 
+A:  Um Does H have to have another input to tell it alpha , beta , whatever , or is the  
+A:  that 's determined by what the experts are saying , 
+A:  like the type of situ 
+A:  OK . 
+A:  Hmm . 
+A:  OK . 
+A:  OK . 
+A:  I mean It  it just seems that like without that  that outside input that you 've got a situation where , you know , like if  if uh X - one says no , 
+A:  you know , a low value coming out of X - on 
+A:  or i if X - one says no then ignore X - one , 
+A:  you know , 
+A:  I mean that seems like that 'd be weird , 
+A:  right ? 
+A:  Oh , OK . 
+A:  OK . 
+A:  Alright , right . 
+A:  Right , right . 
+A:  Uh - huh . 
+A:  Like how thrifty the user is , 
+A:  or do we have access to that ? 
+A:  Mm - hmm . 
+A:  Oh right . 
+A:  Oh good . 
+A:  OK . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  No . 
+A:  So 
+A:  Yeah . 
+A:  Yeah . 
+A:  By the way um uh just talking about uh about that general end of things 
+A:  uh is there gonna be data soon from what people say when they 're interacting with the system and so on ? 
+A:  Like , I mean , what kind of questions are being given  being asked ? 
+A:  Cuz  
+A:  OK . 
+A:  Yeah yeah . 
+A:  OK . 
+A:  OK . 
+A:  Fey , you mean . 
+A:  OK . 
+A:  OK . 
+A:  O OK . 
+A:  OK . 
+A:  I 'm just wondering , because in terms of , you know , 
+A:  I mean 
+A:  uh w 
+A:  the figure  I was thinking about this figure that we talked about , 
+A:  fifty constructions or whatever 
+A:  that 's uh that 's a whole lot of constructions 
+A:  and um you know , I mean one might be f fairly pleased with getting a really good analysis of five maybe ten in a summer 
+A:  so , I mean I know we 're going for sort of a rough and ready . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  OK . 
+A:  I mean , I  I  I  I was  uh I was talking about the , you know , if you wanted to do it really in detail 
+A:  and we don't really need all the detail for what we 're doing right now 
+A:  but anyway in terms of just narrowing that task you know 
+A:  which fifty do I do , 
+A:  I wanna see what people are using , 
+A:  so 
+A:  Well , it will inspire me . 
+A:  Right , sure sure . 
+A:  Right . 
+A:  Yeah , sure . 
+A:  Sure . 
+A:  Yeah . 
+A:  OK . 
+A:  Touche . 
+A:  Good enough . 

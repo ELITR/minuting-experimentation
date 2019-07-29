@@ -1,0 +1,43 @@
+G:  OK . 
+G:  Uh , OK . 
+G:  Well , in my lunch talk last week I  I said I 'd tried phase normalization and gotten garbage results using that l um , long - term mean subtraction approach . 
+G:  It turned out there was a bug in my Matlab code . 
+G:  So I tried it again , 
+G:  um , 
+G:  and , um , the results <clears throat> were  were better . 
+G:  I got intelligible speech back . 
+G:  But they still weren't as good as just subtracting the magnitude  the log magnitude means . 
+G:  And also I 've been talking to , um , Andreas and Thilo about the , um , SmartKom language model 
+G:  and about coming up with a good model for , um , far mike use of the SmartKom system . 
+G:  So 
+G:  I 'm gonna be working on , um , implementing this mean subtraction approach in the <breath> far - mike system  
+G:  for the SmartKom system , I mean . 
+G:  And , um , 
+G:  one of the experiments we 're gonna do is , um , we 're gonna , um , train the  a Broadcast News net , 
+G:  which is because that 's what we 've been using so far , 
+G:  and , um , adapt it on some other data . Um , An - Andreas wants to use , 
+G:  um , 
+G:  data that resembles read speech , 
+G:  like  these digit readings , 
+G:  because he feels that the SmartKom system interaction is not gonna be exactly conversational . 
+G:  S so actually I was wondering , how long does it take to train that Broadcast News net ? 
+G:  Two , three weeks . 
+G:  Oh . 
+G:  OK . 
+G:  OK . 
+G:  OK . 
+G:  Mm - hmm . 
+G:  And , um , 
+G:  actually , regarding the phase normalization  
+G:  So I did two experiments , 
+G:  and one is  
+G:  So , phases get added , modulo two pi , 
+G:  and  because you only know the phase of the complex number t t to a value modulo two pi . 
+G:  And so I thought at first , um , that , uh , what I should do is unwrap the phase 
+G:  because that will undo that . 
+G:  Um , but I actually got worse results doing that unwrapping using the simple phase unwrapper that 's in Matlab than I did not unwrapping at all . 
+G:  And that 's all I have to say . 
+G:  OK . 
+G:  Oh . 
+G:  Oh . 
+G:  OK . 

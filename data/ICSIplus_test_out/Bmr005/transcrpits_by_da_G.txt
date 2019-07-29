@@ -1,0 +1,223 @@
+G:  OK , leave  leave them on for a moment until I turn this off , cuz that 's when it crashed last time . 
+G:  So I think maybe what 's causing it to crash is I keep starting it and then stopping it to see if it 's working . 
+G:  And so I think starting it and then stopping it and starting it again causes it to crash . 
+G:  So , I won't do that anymore . 
+G:  No . 
+G:  I 'm gonna collect the digit forms and write it down . 
+G:  So  
+G:  So they should be right 
+G:  with what 's on the digit forms . 
+G:  OK , so I 'll go ahead and start with digits . 
+G:  u 
+G:  And I should say that uh , you just pau you just read each line an and then pause briefly . 
+G:  And I 'm surprised I sort of  I 'm surprised I forgot that , 
+G:  but uh I think that would be a good thing to add . 
+G:  After I just printed out a zillion of them . 
+G:  You wanna just go around ? 
+G:  Hmm , metaphorically . 
+G:  So , do you think his interest is in using this as  a data source , 
+G:  or  training material , 
+G:  or what ? 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Wrong , 
+G:  yeah . 
+G:  And I imagine that transcripts of speech  I mean text that is speech  probably has more of those than sort of prepared writing . 
+G:  I  I don't know whether it would or not , but it seems like it would . 
+G:  Mm - hmm . 
+G:  Yeah , I 'm just thinking , you know , when you 're  when you 're face to face , you have a lot of backchannel 
+G:  and  And  
+G:  Yeah . 
+G:  And so I think it 's just easier to do that sort of broad inference jumping if it 's face to face . 
+G:  I mean , so , if I just read that Dan was saying " we 're ahead of the game "  in that  in that context , 
+G:  I might not realize that he was talking about disk space as opposed to anything else . 
+G:  Uh - huh . 
+G:  Mm - hmm . 
+G:  I guess it would be the same . 
+G:  It 's in my notes . 
+G:  Well , I think he 's doing that intentionally , 
+G:  aren't you ? 
+G:  Oh , that would be interesting . 
+G:  Well , especially with Morgan , with the way we have the microphones arranged . I 'm sort of right on axis 
+G:  and it would be very hard to tell . 
+G:  Uh . 
+G:  Sure , but I think if I 'm talking like this ? 
+G:  Right now I 'm looking at Jane and talking , 
+G:  now I 'm looking at Chuck and talking , 
+G:  I don't think the microphones would pick up that difference . 
+G:  So if I 'm talking at you , or I 'm talking at you . 
+G:  Lawyers . 
+G:  And we did mention who " he " was . 
+G:  Early in the conversation . 
+G:  Do  Sh - Can I say 
+G:  or  or is that just too sensitive ? 
+G:  It 's not a meeting . 
+G:  Well , we t we t we talked about this during the anon anonymization . 
+G:  If we wanna go through and extract from the audio and the written every time someone says a name . 
+G:  And I thought that our conclusion was that we didn't want to do that . 
+G:  Well , the inference structures was Lokendra . 
+G:  Yeah . 
+G:  Yeah . 
+G:  Oh , I don't think we 've been doing it at that level of detail . 
+G:  So . 
+G:  Mm - hmm . 
+G:  So it was  
+G:  Well  You weren't talking about just overlaps 
+G:  were you ? 
+G:  You were just talking about acoustic events . 
+G:  Someone starts , someone stops  
+G:  Yeah . 
+G:  Mm - hmm . 
+G:  Oh , God ! 
+G:  Ugh . 
+G:  Well  So let 's  
+G:  So let 's say me and Jane are talking at the same time , 
+G:  and then Liz starts talking also over all of us . 
+G:  How many events would that be ? 
+G:  So , two people are talking ,  and then a third person starts talking . 
+G:  Is there an event right here ? 
+G:  So i if two or more people are talking . 
+G:  Well , but  But you could imagine that three people talking has a different spectral characteristic than two . 
+G:  So . You had to start somewhere . 
+G:  Yep . 
+G:  That 's a lot of overlap , 
+G:  yeah , 
+G:  for forty - five minutes . 
+G:  Silence starting or silence ending  
+G:  Yep . 
+G:  Right . 
+G:  Right . 
+G:  Right . 
+G:  The  the reason that I generated the mixed file was for IBM to do word level transcription , not speech event transcription . 
+G:  So I agree that if someone wants to do speech event transcription , that the mixed signals here  
+G:  I mean , if I 'm tapping on the table , you it 's not gonna show up on any of the mikes , but it 's gonna show up rather loudly in the PZM . 
+G:  So . 
+G:  If you use the combination of the close - talking mikes , you would hear Jane interrupting me , 
+G:  but you wouldn't hear the paper rustling . 
+G:  And so if you 're interested in  
+G:  Right . 
+G:  Although the other issue is that the  mixed close - talking mikes  
+G:  I mean , I 'm doing weird normalizations and things like that . 
+G:  Yep . 
+G:  Right . 
+G:  Yep . 
+G:  Yep . 
+G:  Did  Did you 
+G:  Well , it 's more realistic but it 'll  it 'll be a lot harder . 
+G:  Twelve minutes . 
+G:  Well , not just the overlaps , everything . 
+G:  Well , also Jane  Jane was doing word level . 
+G:  So we weren't concerned with  exactly when an overlap started and stopped . 
+G:  Right . 
+G:  Yep . 
+G:  Right . 
+G:  Always need more for  
+G:  But if it takes sixty to one  
+G:  And 
+G:  Right . 
+G:  Well , that 's  
+G:  That 's what I was gonna bring up . 
+G:  Yeah , that 's his , uh  
+G:  I 'm working on a program to do that , and  
+G:  And  
+G:  I 've  I 've written a program to do that , 
+G:  and it , uh  
+G:  and  so  but it 's  it 's doing something very , very simple . 
+G:  It just takes a threshold , based on  on the volume , 
+G:  um , and then it does a median filter , and then it looks for runs . 
+G:  And , it seems to work , 
+G:  I 've  I 'm sort of fiddling with the parameters , to get it to actually generate something , 
+G:  and I haven't  
+G:  I don't  what I 'm working on  was working on  was getting it to a form where we can import it into the user interface that we have ,  into Transcriber . 
+G:  And so  I told  I said it would take about a day . 
+G:  I 've worked on it for about half a day , 
+G:  so give me another half day and I we 'll have something we can play with . 
+G:  But  
+G:  Thanks . 
+G:  Yeah , 
+G:  and I haven't tried using that . 
+G:  It would probably help the program that I 'm doing to first feed it through that . 
+G:  It 's a cross - correlation filter . 
+G:  So I  I haven't tried that , but that  If  It  it might be something  it might be a good way of cleaning it up a little . 
+G:  Exactly . Yep . 
+G:  Yep . 
+G:  It seemed like the right thing to do . 
+G:  That was with zero literature search . 
+G:  That 's good validation . 
+G:  Yeah , do you have a patent on it ? 
+G:  Just output . 
+G:  Although if you  if you have some parameters like what 's a good window size for the median filter  
+G:  That 's alright . 
+G:  I was doing pretty short , you know , tenth of a second ,  sorts of numbers . 
+G:  I b I bet they 're more , because the beginning of the meeting had a lot more overlaps than  than sort of the middle . 
+G:  Middle or end . 
+G:  Because i we 're  we 're dealing with the  Uh , in the early meetings , 
+G:  we 're recording while we 're saying who 's talking on what microphone ,  and things like that , 
+G:  and that seems to be a lot of overlap . 
+G:  Yep . 
+G:  What 's that ? 
+G:  Yeah , something like that . 
+G:  And then  then we 
+G:  Well , I haven't sent them yet because I was having this problem with the  missing files . 
+G:  About twelve  by now . Twelve or thirteen . 
+G:  Nope . 
+G:  Jerry . 
+G:  That 's what we 're aiming for . 
+G:  Although  
+G:  Yeah . 
+G:  We 'll find out tomorrow whether we can really do this or not . 
+G:  Right . 
+G:  Actually that 's something I wanted to ask , 
+G:  is I have a bunch of scripts to help with the transcription of the digits . 
+G:  We don't have to hand - transcribe the digits because we 're reading them and I have those . 
+G:  And so I have some scripts that let you very quickly extract the sections of each utterance . 
+G:  But I haven't been ru I haven't been doing that . 
+G:  Um , if I did that , is someone gonna be working on it ? 
+G:  I mean , is it something of interest ? 
+G:  OK . 
+G:  I mean , I I 'm  I 'm interested in it , 
+G:  I just don't have time to do it now . 
+G:  So 
+G:  Yep . Yep . 
+G:  I  I would really like someone to do adaptation . 
+G:  So if we got someone interested in that , I think it would be great for Meeting Recorder . 
+G:  Since it 's the same people over and over . 
+G:  We had some good ones earlier . 
+G:  I think it 's hard to record those . 
+G:  Oh , that 's a good idea . 
+G:  That 's  That would be a good match . 
+G:  Right , as we are . 
+G:  Right . 
+G:  Right . 
+G:  Stage some political debates . 
+G:  We don't have to do the digits at all if we don't want to . 
+G:  Yep . 
+G:  It seems like it 's a big part of this corpus is to have the close - talking mikes . 
+G:  Well , I 've been burning two C Ds a day , which is about all I can do with the time I have . 
+G:  So it 'll be early next week . 
+G:  Yep . 
+G:  Yep . 
+G:  Yeah , but  
+G:  Yeah , who knows where they are . 
+G:  Nope . 
+G:  Yeah , you  we can't complain . 
+G:  Yep . I think that 's probably true . 
+G:  It 's pipeline , pipeline issues . 
+G:  Once the pipeline fills . 
+G:  Oh , and we 're just chatting ? 
+G:  Yeah , we have a lot of those . 
+G:  Yeah , the problem with that is I would  I think I would feel a little constrained to  You know ? Uh , some of the meetings  
+G:  You know , our " soccer ball " meeting ? 
+G:  I guess none of you were there for our soccer ball meeting . 
+G:  That was hilarious . 
+G:  Right . 
+G:  Yep . 
+G:  I just really doubt that uh any of the State of California meetings would be recordable and then releasable to the general public . 
+G:  So I  I mean I talked with some people at the Haas Business School who are i who are interested in speech recognition 
+G:  and , they sort of hummed and hawed and said " well maybe we could have meetings down here " , 
+G:  but then I got email from them that said " no , we decided we 're not really interested and we don't wanna come down and hold meetings . " 
+G:  So , I think it 's gonna be a problem to get people regularly . 
+G:  Yep . 
+G:  Um . We 're getting towards the end of our disk space , 
+G:  so we should think about trying to wrap up here . 
+G:  OK , leave  leave them on for a moment until I turn this off , cuz that 's when it crashed last time . 

@@ -73,26 +73,31 @@ def get_speakers_words(data_root, topics_folder, words_folder, meeting_name):
     return speakers_words
 
 
+def get_words_in_segment(segment, speaker_segments, speakers_words):
+    id = segment.get('{http://nite.sourceforge.net/}id')
+    words_in_segment = []
+    for child in segment.iter(tag='{http://nite.sourceforge.net/}child'):
+        href = child.get('href').split('#')
+        speaker = href[0][href[0].find('.') + 1]
+        start_word = href[1][href[1].find('(') + 1: href[1].find(')')]
+        end_word = href[1][href[1].rfind('(') + 1: href[1].rfind(')')]
+        keys_list = list(speakers_words[ord(speaker) - ord('A')].keys())
+        start_index = keys_list.index(start_word)
+        end_index = keys_list.index(end_word)
+        words_in_segment = list(speakers_words[ord(speaker) - ord('A')].values())[start_index: end_index + 1]
+        words_in_segment.insert(0, speaker + ': ')
+        speaker_segments[id] = words_in_segment
+    for segment in segment.findall('segment'):
+        get_words_in_segment(segment, speaker_segments, speakers_words)
+
+
 def parse_segments_file(data_root, segments_folder, meeting_name, speaker_name, speakers_words):
     tree = ET.parse(os.path.join(data_root, segments_folder, meeting_name + '.' + speaker_name + '.segs.xml'))
     root = tree.getroot()
 
     speaker_segments = OrderedDict()
-    for segment in root:
-        id = segment.get('{http://nite.sourceforge.net/}id')
-        words_in_segment = []
-        for child in segment:
-            href = child.get('href').split('#')
-            speaker = href[0][href[0].find('.') + 1]
-            start_word = href[1][href[1].find('(') + 1: href[1].find(')')]
-            end_word = href[1][href[1].rfind('(') + 1: href[1].rfind(')')]
-            keys_list = list(speakers_words[ord(speaker) - ord('A')].keys())
-            start_index = keys_list.index(start_word)
-            end_index = keys_list.index(end_word)
-            words_in_segment = list(speakers_words[ord(speaker) - ord('A')].values())[start_index: end_index + 1]
-            words_in_segment.insert(0, speaker + ': ')
-            speaker_segments[id] = words_in_segment
-            # words_in_segment = [speaker + ': '] + speakers_words[ord(speaker) - ord('A')][start_word:end_word + 1]
+    for segment in root.findall('segment'):
+        get_words_in_segment(segment, speaker_segments, speakers_words)
 
     return speaker_segments
 
@@ -108,35 +113,6 @@ def get_segments(data_root, segments_folder, meeting_name, speakers_words):
         except FileNotFoundError:
             break
     return speakers_segments
-
-
-# output_root = './output'
-# data_root = './input'
-
-words_folder = 'words'
-topics_folder = 'topics'
-segments_folder = 'segments'
-dialogue_acts_folder = 'dialogueActs'
-extractive_sum_folder = 'extractive'
-abstractive_sum_folder = 'abstractive'
-ontologies_folder = 'ontologies'
-
-parser = argparse.ArgumentParser()
-parser.add_argument('--src', default='./src', help='source directory')
-parser.add_argument('--dest', default='./dest', help='destination directory')
-args = parser.parse_args()
-
-data_root = parser.parse_args().src
-output_root = parser.parse_args().dest
-
-if not os.path.exists(data_root):
-    sys.exit('source directory does not exist.')
-if not os.path.exists(output_root):
-    os.makedirs(output_root)
-
-# get set of meetings' names
-name_of_meetings = {x.split('.')[0] for x in os.listdir(os.path.join(data_root, words_folder))}
-name_of_meetings = sorted(name_of_meetings)
 
 
 def get_words_in_topic(topic, rec_segments, output_words_in_topics_dict, output_descriptions_in_topics_dict):
@@ -173,13 +149,162 @@ def get_words_in_topics(data_root, topics_folder, meeting_name, segments):
     return words_in_topics, topic_description
 
 
+def save_meeting_converses_by_topic(output_root, meeting_name, words_in_topics, descriptions):
+    """
+    :param output_root: main folder of output data
+    :param meeting_name: name of the meeting being analyzed
+    :param words_in_topics: words in the topics
+    """
+    # create a directory for meeting
+    output_dir_for_meeting = os.path.join(output_root, meeting_name)
+    if not os.path.exists(output_dir_for_meeting):
+        os.makedirs(output_dir_for_meeting)
+
+    # writing the topic file
+    topic_file = open(output_dir_for_meeting + "/topic_descriptions.txt", "w+")
+    # writing the transcripts by topic
+    transcrpits_by_topic = open(output_dir_for_meeting + "/conv_by_topic.txt", "w+")
+    for topics_it in words_in_topics:
+        for words_of_each_speaker in words_in_topics[topics_it]:
+            for one_segment in words_of_each_speaker:
+                for word_it in one_segment:
+                    transcrpits_by_topic.write(word_it + " ")
+                transcrpits_by_topic.write('\n')
+        transcrpits_by_topic.write('\n\n')
+
+        topic_file.write(str(descriptions[topics_it]) + "\n")
+    topic_file.close()
+    transcrpits_by_topic.close()
+    return
+
+
+def save_meeting_topics_descriptions(output_root, meeting_name, descriptions):
+    '''
+    :param output_root: main folder of output data
+    :param meeting_name: name of the meeting being analyzed
+    :param descriptions: words in the topics
+    '''
+    # create a directory for meeting
+    output_dir_for_meeting = os.path.join(output_root, meeting_name)
+    if not os.path.exists(output_dir_for_meeting):
+        os.makedirs(output_dir_for_meeting)
+
+    # writing the topic file
+    topic_file = open(output_dir_for_meeting + "/topic_descriptions.txt", "w+")
+    for desc in descriptions:
+        topic_file.write(str(descriptions[desc]) + "\n")
+    topic_file.close()
+    return
+
+
+# output_root = './output'
+# data_root = './input'
+
+words_folder = 'words'
+topics_folder = 'topics'
+segments_folder = 'segments'
+dialogue_acts_folder = 'dialogueActs'
+extractive_sum_folder = 'extractive'
+abstractive_sum_folder = 'abstractive'
+ontologies_folder = 'ontologies'
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--src', default='./src', help='source directory')
+parser.add_argument('--dest', default='./dest', help='destination directory')
+args = parser.parse_args()
+
+data_root = parser.parse_args().src
+output_root = parser.parse_args().dest
+
+if not os.path.exists(data_root):
+    sys.exit('source directory does not exist.')
+if not os.path.exists(output_root):
+    os.makedirs(output_root)
+
+# get set of meetings' names
+name_of_meetings = {x.split('.')[0] for x in os.listdir(os.path.join(data_root, words_folder))}
+name_of_meetings = sorted(name_of_meetings)
+
+
+def get_speaker_dialogue_acts(data_root, dialogue_acts_folder, meeting_name, speakers_words, c):
+    """
+    :param c: speaker name
+    :param data_root: root folder of all data
+    :param dialogue_acts_folder: folder of all dialogue acts
+    :param meeting_name: name of the meeting being analyzed
+    :param speakers_words: list of speakers each containing their list of words
+    :return: speaker_das, speaker_das_descriptions
+    """
+    speaker_das = OrderedDict()
+    # speaker_das_descriptions = OrderedDict()
+    tree = ET.parse(os.path.join(data_root, dialogue_acts_folder, meeting_name + '.' + c + '.dialogue-acts.xml'))
+    root = tree.getroot()
+    for da in root:
+        words_in_da = []
+        index = da.get('{http://nite.sourceforge.net/}id')
+        for child in da:
+            href = child.get('href').split('#')
+            speaker = href[0][href[0].find('.') + 1]
+            start_word = href[1][href[1].find('(') + 1: href[1].find(')')]
+            end_word = href[1][href[1].rfind('(') + 1: href[1].rfind(')')]
+            keys_list = list(speakers_words[ord(speaker) - ord('A')].keys())
+            start_index = keys_list.index(start_word)
+            end_index = keys_list.index(end_word)
+            words_in_da = list(speakers_words[ord(speaker) - ord('A')].values())[start_index: end_index + 1]
+            words_in_da.insert(0, speaker + ': ')
+            speaker_das[id] = words_in_da
+
+        speaker_das[index] = words_in_da
+    return speaker_das
+
+
+def save_meeting_dialogue_acts(output_root, meeting_name, speaker_das, c):
+    """
+    :param c: speaker name
+    :param meeting_name: name of the meeting being analyzed
+    :param speaker_das: dialogue acts of the speaker
+    """
+    # create a directory for meeting
+    output_dir_for_meeting = os.path.join(output_root, meeting_name)
+    if not os.path.exists(output_dir_for_meeting):
+        os.makedirs(output_dir_for_meeting)
+
+    # writing the transcripts by da
+    transcrpits_by_da = open(output_dir_for_meeting + "/transcrpits_by_da_" + str(c) + ".txt", "w+")
+    for das_it in speaker_das:
+        for word in speaker_das[das_it]:
+            transcrpits_by_da.write(word + " ")
+        transcrpits_by_da.write('\n')
+    return
+
+def get_dialogue_acts(data_root, dialogue_acts_folder, meeting, speakers_words):
+
+    # get the dialogue_acts
+    speakers_das = []
+    # speakers_das_descriptions = []
+    for c in string.ascii_uppercase:
+        try:
+            speaker_das = get_speaker_dialogue_acts(data_root, dialogue_acts_folder, meeting, speakers_words, c)
+            speakers_das.append(speaker_das)
+        except FileNotFoundError:
+            continue
+        save_meeting_dialogue_acts(output_root, meeting, speaker_das, c)
+
+
 for meeting in name_of_meetings:
     speakers_words = get_speakers_words(data_root, topics_folder, words_folder, meeting)
     if speakers_words is None:
         continue
 
     segments = get_segments(data_root, segments_folder, meeting, speakers_words)
+
     words_in_topics, topic_description = get_words_in_topics(data_root, topics_folder, meeting, segments)
+    save_meeting_converses_by_topic(output_root, meeting, words_in_topics, topic_description)
+    save_meeting_topics_descriptions(output_root, meeting, topic_description)
+
+    speakers_das = get_dialogue_acts(data_root, dialogue_acts_folder, meeting, speakers_words)
+
+    print(meeting)
 
     # save_meeting_converses_by_topic(output_root, meeting, words_in_topics)
     # save_meeting_topics_descriptions(output_root, meeting, topic_description)

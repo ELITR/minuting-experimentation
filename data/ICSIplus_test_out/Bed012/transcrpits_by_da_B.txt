@@ -1,0 +1,427 @@
+B:  Otherwise it gets really tough for the tr 
+B:  So I guess this is more or less now just to get you up to date , Johno . 
+B:  This is what , uh , 
+B:  um , 
+B:  Eva , Bhaskara , and I did . 
+B:  Um . Why ? 
+B:  Uh , no . 
+B:  This is  
+B:  Um , 
+B:  Ha ! 
+B:  Very nice . 
+B:  Um , so we thought that , <click> We can write up uh , an element , 
+B:  and  for each of the situation nodes that we observed in the Bayes - net ? 
+B:  So . 
+B:  What 's the situation like at the entity that is mentioned ? 
+B:  if we know anything about it ? 
+B:  Is it under construction ? 
+B:  Or is it on fire or something  happening to it ? 
+B:  Or is it stable ? 
+B:  and so forth , 
+B:  going all the way um , f through Parking , Location , Hotel , Car , Restroom , @ @  Riots , Fairs , Strikes , or Disasters . 
+B:  That 's basically  just specifying the  the input for the  w what 's 
+B:  Um . Just because it forces us to be specific about the values  here ? 
+B:  And , also , I mean , this is a  what the input is going to be . 
+B:  Right ? 
+B:  So , we will , uh  
+B:  This is a schema . This is  
+B:  No , because I mean if we  I mean we 're sure gonna interface to  We 're gonna get an XML document from somewhere . 
+B:  Right ? 
+B:  And that XML document will say " We are able to  We were able to observe that w the element , um , @ @  of the Location that the car is near . " 
+B:  So that 's gonna be  <lateral tongue click>  Um . 
+B:  Yep . 
+B:  So this is just , again , a an XML schemata which defines a set of possible , uh , permissible XML structures , 
+B:  which we view as input into the Bayes - net . 
+B:  Right ? 
+B:  Yea - Are you talking  are you talking about the  the structure ? 
+B:  I mean when you observe a node . 
+B:  Um - hmm . 
+B:  No , it 's certainly not this . 
+B:  Nuh . 
+B:  XSL .  Yeah . 
+B:  Yep . 
+B:  That 's  That 's no problem , 
+B:  but I even think that , um  
+B:  I mean , once  Once you have this sort of as  running as a module  
+B:  Right ? 
+B:  What you want is  You wanna say , " OK , give me the posterior probabilities of the Go - there  node , when this is happening . " 
+B:  Right ? 
+B:  When the person said this , the car is there , it 's raining , and this is happening . 
+B:  And with this you can specify the  what 's happening in the situation , and what 's happening with the user . 
+B:  So we get  After we are done , through the Situation we get the User Vector . 
+B:  So , this is a  
+B:  Yep . 
+B:  And , 
+B:  all the possible outputs , too . 
+B:  So , we have , um , for example , the , uh , Go - there decision node 
+B:  which has two elements , 
+B:  going - there and its posterior probability , 
+B:  and not - going - there and its posterior probability , 
+B:  because the output is always gonna be all the decision nodes and all the  the  a all the posterior probabilities for all the values . 
+B:  Um , pretty much , yes , 
+B:  but I think it 's a little bit more complex . 
+B:  As , if I understand it correctly , it always gives you all the posterior probabilities for all the values of all decision nodes . 
+B:  So , when we input something , we always get the , uh , posterior probabilities for all of these . 
+B:  Right ? 
+B:  So there is no way of telling it t not to tell us about the EVA  values . 
+B:  So  so we get this whole list of  of , um , things , 
+B:  and the question is what to do with it , 
+B:  what to hand on , 
+B:  how to interpret it , 
+B:  in a sense . 
+B:  So y you said if you  " I 'm only interested in whether he wants to go there or not " , then I just look at that node , 
+B:  look which one  
+B:  Yep . 
+B:  Look at that Struct in the  the output , 
+B:  even though I wouldn't call it a " Struct " . 
+B:  But . 
+B:  Oh . Mm - hmm . 
+B:  So every part of a structure is a " Struct " . 
+B:  Yeah . 
+B:  That element or object , I would say . 
+B:  Yeah . 
+B:  OK . 
+B:  And , um , 
+B:  the reason is  why I think it 's a little bit more complex or why  why we can even think about it as an interesting problem in and of itself is  
+B:  Um . 
+B:  So . The , uh  
+B:  Let 's look at an example . 
+B:  Yeah . w We 'd need to prune . 
+B:  Right ? 
+B:  Throw things away . 
+B:  No 
+B:  Yeah , exactly . The  @ @  Xerxes allows you to say , u " Just give me the value of that , and that , and that . " 
+B:  But , we don't really know what we 're interested in  before we look at the complete  at  at the overall result . 
+B:  So the person said , um , " Where is X ? " 
+B:  and so , 
+B:  we want to know , um , is  Does he want info ? 
+B:  o on this ? 
+B:  or know the location ? 
+B:  Or does he want to go there ? 
+B:  Let 's assume this is our  our question . 
+B:  Nuh ? 
+B:  So . 
+B:  Um . 
+B:  Do this in Perl . 
+B:  So we get  
+B:  OK . 
+B:  Let 's assume this is the output . 
+B:  So . 
+B:  We should con be able to conclude from that that  
+B:  I mean . It 's always gonna give us a value of how likely we think i it is that he wants to go there and doesn't want to go there , 
+B:  or how likely it is that he wants to get information . 
+B:  But , maybe w we should just reverse this to make it a little bit more delicate . 
+B:  So , does he wanna know where it is ? or does he wanna go there ? 
+B:  Right . 
+B:  I  I  I tend to agree . 
+B:  And if it 's  If  
+B:  And i if there 's sort of a clear winner here , 
+B:  and , um  and this is pretty , uh  indifferent , 
+B:  then we  then we might conclude that he actually wants to just know where , uh t uh , he does want to go there . 
+B:  Or Go - there . 
+B:  A lot of people ask that , if they actually just wanna go there . 
+B:  People come up to you on campus and say , " Where 's the library ? " 
+B:  You 're gonna say  y you 're gonna say , g " Go down that way . " 
+B:  You 're not gonna say " It 's  It 's five hundred yards away from you " or " It 's north of you " , or  " it 's located  " 
+B:  Um . 
+B:  I don't know whether I understand what you mean . 
+B:  But . Again , in this  Given this input , we , also in some situations , may wanna postulate an opinion whether that person wants to go there now 
+B:  the nicest way , 
+B:  use a cab , 
+B:  or so s 
+B:  wants to know it  wants to know where it is because he wants something fixed there , because he wants to visit t it or whatever . 
+B:  So , it  n I mean  a All I 'm saying is , whatever our input is , we 're always gonna get the full output . 
+B:  And some  some things will always be sort of too  not significant enough . 
+B:  Yep . 
+B:  Oh ! 
+B:  Mm - hmm . 
+B:  OK . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  So , basically , the idea is to f to feed the output of that belief - net into another belief - net . 
+B:  But , why  why  why only those three ? 
+B:  Why not the whol 
+B:  Yeah . But we believe that all the decision nodes are  can be relevant for the Where - Is , 
+B:  and the Where  How - do - I - get - to 
+B:  or the Tell - me - something - about . 
+B:  Yes , it is allowed . 
+B:  Mm - hmm . 
+B:  Yep . 
+B:  I mean  
+B:  Let 's not forget we 're gonna get some very strong  input from  these sub dis from these discourse things , 
+B:  right ? 
+B:  So . 
+B:  " Tell me the location of X . " 
+B:  Nuh ? 
+B:  Or " Where is X located at ? " 
+B:  Nuh ? 
+B:  Mm - hmm . 
+B:  I think it 's th called " the Crown " . 
+B:  Yeah , 
+B:  versus " the Sony " . 
+B:  Mm - hmm . 
+B:  The manufacturer . 
+B:  You w 
+B:  You 're on - line ? 
+B:  We 're discussing this . 
+B:  So . 
+B:  Assume we have something coming in . 
+B:  A person says , " Where is X ? " , 
+B:  and we get a certain  We have a Situation vector and a User vector and everything is fine ? 
+B:  An - an and  and our  and our  
+B:  And , um , 
+B:  let 's just assume our Bayes - net just has three decision nodes for the time being . 
+B:  These three , he wants to know something about it , he wants to know where it is , he wants to go there . 
+B:  Yeah , but , mmm . 
+B:  Yeah . 
+B:  No , I can  I can do the Timing node in here , too , 
+B:  and say " OK . " 
+B:  OK . 
+B:  And , um , 
+B:  OK , and , 
+B:  Go - there has two values , 
+B:  right ? , 
+B:  Go - there and not - Go - there . 
+B:  Let 's assume those are the posterior probabilities of that . 
+B:  Info - on has True or False and Location . 
+B:  So , he wants to know something about it , 
+B:  and he wants to know something  he wants to know Where - it - is , 
+B:  has these values . 
+B:  And , um , 
+B:  And , um , in this case we would probably all agree that he wants to go there . 
+B:  Our belief - net thinks he wants to go there , 
+B:  right ? 
+B:  In the , uh , whatever , 
+B:  if we have something like this here , 
+B:  and 
+B:  this like that 
+B:  and maybe here also some  
+B:  something like that , 
+B:  then we would guess , " Aha ! He , our belief - net ,  has s stronger beliefs that he wants to know where it is , than actually wants to go  there . " 
+B:  Right ? 
+B:  What do you mean by " differently weighted " ? 
+B:  They don't feed into anything really anymore . 
+B:  OK . 
+B:  Makes sense . 
+B:  Yeah . 
+B:  But  
+B:  Mmm ? 
+B:  I don't see your point . 
+B:  What  what  what I am thinking , or what we 're about to propose here is we 're always gonna get the whole list of values and their posterior probabilities . 
+B:  And now we need an expert system or belief - net or something that interprets that , 
+B:  that looks at all the values and says , " The winner is Timing . 
+B:  Now , go there . " 
+B:  " Uh , go there , Timing , now . " 
+B:  Or , " The winner is Info - on , Function - Off . " 
+B:  So , he wants to know  something about it , and what it does . 
+B:  Nuh ? 
+B:  Uh , regardless of  of  of the input . Wh - Regardle 
+B:  Based on the k what the question was , so what the discourse , the ontology , the situation and the user model gave us , we came up with these values for these decisions . 
+B:  Mm - hmm . 
+B:  Well , look at  look  Face yourself with this pr question . 
+B:  You get this  You 'll have  y This is what you get . 
+B:  And now you have to make a decision . What do we think ? 
+B:  What does this tell us ? 
+B:  And not knowing what was asked , and what happened , and whether the person was a tourist or a local , 
+B:  because all of these factors have presumably already gone into making these posterior probabilities . 
+B:  What  what we need is a  just a mechanism that says , " Aha ! There is  " 
+B:  Yep . 
+B:  Because there are interdependencies , 
+B:  right ? 
+B:  The uh  
+B:  Uh , no . So if  if for example , the Go - there posterior possibility is so high , um , 
+B:  uh , w if it 's  if it has reached  reached a certain height , then all of this becomes irrelevant . 
+B:  So . If  even if  if the function or the history or something is scoring pretty good on the true node , true value  
+B:  He wants to go there and know something about it ? 
+B:  I think to some extent they are . 
+B:  Or maybe they 're not . 
+B:  Well , if he doesn't want to go there , even if the Enter posterior proba 
+B:  So . 
+B:  Go - there is No . 
+B:  Enter is High , 
+B:  and Info - on is High . 
+B:  Hmm ? 
+B:  No , there 's  No . 
+B:  But  
+B:  It 's through the  
+B:  Mm - hmm . 
+B:  Hmm . 
+B:  Yeah , I 'm also agreeing that  a simple 
+B:  pru  Take the ones where we have a clear winner . 
+B:  Forget about the ones where it 's all sort of middle ground . 
+B:  Prune those out 
+B:  and just hand over the ones where we have a winner . 
+B:  Yeah , because that would be the easiest way . 
+B:  We just compose as an output an XML mes <inbreath> message that says . " Go there  now . " " Enter historical information . " 
+B:  And not care whether that 's consistent with anything . 
+B:  Right ? 
+B:  But in this case if we say , " definitely he doesn't want to go there . He just wants to know where it is . " 
+B:  or let 's call this  this " Look - At - H " 
+B:  He wants to know something about the history of . 
+B:  So he said , " Tell me something about the history of that . " 
+B:  Now , the e But for some reason the Endpoint - Approach gets a really high score ,  too . 
+B:  We can't expect this to be sort of at O point  three , three , three , O point , three , three , three , O point , three , three , three . 
+B:  Right ? 
+B:  Somebody needs to zap that . 
+B:  You know ? 
+B:  Or know  There needs to be some knowledge that  
+B:  Yep . 
+B:  Yep . 
+B:  Yep . It 's sort of one of those , that 's  It 's more like a decision tree , if  if you want . 
+B:  You first look o at the lowball ones , 
+B:  and then  
+B:  Mm - hmm . 
+B:  Um . 
+B:  Aren't we always computing all ? 
+B:  Yeah , but that 's  that 's just shifting the problem . 
+B:  Then you would have to make a decision , 
+B:  " OK , if it 's a Where - Is question , which decision nodes do I query ? " 
+B:  That 's un 
+B:  Mmm . 
+B:  Yeah . 
+B:  Yeah  it 's  it 's  it 's apples and oranges . 
+B:  Nuh ? 
+B:  I mean , maybe it does make a difference in terms of performance , computational time . 
+B:  So either you always have it compute all the posterior possibilities for all the values for all nodes , and then prune the ones you think that are irrelevant , 
+B:  or you just make a p @ @  a priori estimate of what you think might be relevant and query those . 
+B:  Um , by the way , are  Do we know whether Jerry and Nancy are coming ? 
+B:  Or  ? 
+B:  Mm - hmm . 
+B:  OK . 
+B:  Because 
+B:  basically , what  where we also have decided , prior to this meeting is that we would have a rerun of the three of us sitting together 
+B:  sometime  this week  again 
+B:  and finish up the , uh , values of this . 
+B:  So we have , uh  Believe it or not , we have all the bottom ones here . 
+B:  Yep . 
+B:  We  we  we have  Actually what we have is this line . 
+B:  Right ? 
+B:  Hmm ? 
+B:  Hmm . 
+B:  Four . 
+B:  Yep . 
+B:  And we have all the top ones , 
+B:  all the ones to which no arrows are pointing . 
+B:  What we 're missing are the  these , 
+B:  where arrows are pointing , 
+B:  where we 're combining top ones . 
+B:  So , we have to come up with values for this , and this , this , this , and so forth . 
+B:  And maybe just fiddle around with it a little bit more . 
+B:  And , um . 
+B:  And then it 's just , uh , edges , 
+B:  many of 
+B:  edges . 
+B:  And , um , we won't  meet next Monday . 
+B:  So . 
+B:  Yep . 
+B:  Yeah . 
+B:  On  on Friday . 
+B:  This  this Friday . 
+B:  This Friday . 
+B:  Yep . 
+B:  Two weeks . 
+B:  Well , it 's a country . 
+B:  Buildings . 
+B:  People . 
+B:  Hmm ? 
+B:  Vacation . 
+B:  Do you guys  
+B:  Oh , yeah . So . Part of what we actually want to do is sort of schedule out what we want to surprise him with when  when he comes back . 
+B:  Um , so  
+B:  Yeah ? 
+B:  You  or have a finished construction parser and a working belief - net , 
+B:  and uh  
+B:  Well , that 's actually what I had planned , personally . 
+B:  I had  I  I had sort of scheduled out in my mind that you guys do a lot of work , and I do nothing . 
+B:  And then , I sort of  
+B:  sort of bask in  in your glory . 
+B:  But , uh , i do you guys have any vacation plans , 
+B:  because I myself am going to be , um , gone , 
+B:  but this is actually not really important . 
+B:  Just this weekend we 're going camping . 
+B:  Ah . 
+B:  But we 're all going to be here on Tuesday again ? 
+B:  Looks like it ? 
+B:  OK , then . Let 's meet  meet again next Tuesday . 
+B:  And , um , finish up this Bayes - net . 
+B:  And once we have finished it , I guess we can , um  
+B:  and that 's going to be more just you and me , 
+B:  because Bhaskara is doing probabilistic , recursive , structured , object - oriented , uh , 
+B:  reasoning machines . 
+B:  And , um  
+B:  Uh . 
+B:  The whole group . 
+B:  And we present our results , 
+B:  our final , 
+B:  definite  
+B:  Yeah . We should do this th the upcoming days . 
+B:  So , this week , yeah . 
+B:  And , Ami might . 
+B:  Yep . 
+B:  Because , th you know , 
+B:  once we have the belief - net done  
+B:  We will . 
+B:  OK . Because then , once we have it sort of up and running , then we can start you know , defining the interfaces 
+B:  and then feed stuff into it 
+B:  and get stuff out of it , 
+B:  and then hook it up to some fake construction parser 
+B:  and  
+B:  Yeah . 
+B:  And , um , 
+B:  Yeah , I can worry about the ontology interface 
+B:  and you can  Keith can worry about the discourse . 
+B:  I mean , this is pretty  Um , I mean , I  I  I hope everybody uh knows that these are just going to be uh dummy values , 
+B:  right ? 
+B:  where the  
+B:  S so  so if the endpoint  if the Go - there is Yes and No , then Go - there - discourse will just be fifty - fifty . 
+B:  Right ? 
+B:  Um . 
+B:  Yep . 
+B:  But , what are the values of the Go - there - discourse ? 
+B:  Yeah , but , uh , we have no discourse input . 
+B:  Yep . 
+B:  Well , this is D  
+B:  OK , this , I can  I can get it in here . 
+B:  I can get it in here , 
+B:  so th We have the , uh , um , 
+B:  sk let 's  let 's call it " Keith - Johno 
+B:  node " . 
+B:  There is an H  somewhere printed . 
+B:  Yeah . 
+B:  And , um , 
+B:  But , when you abbreviate yourself as the " Basman " , you don't use any H 's . 
+B:  OK . 
+B:  OK . 
+B:  Which is F . 
+B:  Voiced . 
+B:  Well , it 's just the difference between voiced and unvoiced . 
+B:  Yep . 
+B:  We 'll make them zero for now , 
+B:  because it  who  who knows what they come up with , 
+B:  what 's gonna come in there . 
+B:  OK . 
+B:  And , um , 
+B:  then 
+B:  should we start on Thursday ? 
+B:  And not meet tomorrow ? 
+B:  OK . 
+B:  I 'll send an email , 
+B:  make a time suggestion . 
+B:  Yeah , they would still c sort of get the closest , best fit . 
+B:  Mm - hmm . 
+B:  OK . 
+B:  Mm - hmm . 
+B:  Or , if even something Chinese , for example . 
+B:  So . 
+B:  Phoneme . 
+B:  Yep . 
+B:  Rhetorical constructions . 
+B:  Yeah . 
+B:  But , I mean , you know , you can probably count  count the ways . 
+B:  I mean . 
+B:  Yeah . 
+B:  Well , you can come up with new constructions . 
+B:  OK . 
+B:  Mm - hmm . 
+B:  Turn off the mikes . 
+B:  Otherwise it gets really tough for the tr 

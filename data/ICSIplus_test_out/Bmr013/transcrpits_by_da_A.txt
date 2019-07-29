@@ -1,0 +1,120 @@
+A:  S  s 
+A:  New version of the presegmentation . 
+A:  Per digit . 
+A:  Place . 
+A:  Yeah . 
+A:  Uh , oh yeah , um , <breath> I worked a little bit on the  on the presegmentation to  to get another version which does channel - specific , uh , speech - nonspeech detection . 
+A:  And , what I did is I used some normalized features which , uh , look in into the  which is normalized energy , uh , energy normalized by the mean over the channels and by the , minimum over the , other . 
+A:  within each channel . 
+A:  And to  to , mm , to , yeah , to normalize also loudness and  and modified loudness and things and that those special features actually are in my feature vector . 
+A:  And , and , therefore to be able to , uh , somewhat distinguish between foreground and background speech in  in the different  in  each channel . 
+A:  And , eh , I tested it on  on three or four meetings and it seems to work , well yeah , fairly well , I  I would say . 
+A:  There are some problems with the lapel mike . 
+A:  Yeah . 
+A:  Uh , yeah . 
+A:  And . 
+A:  Yeah . 
+A:  And . 
+A:  Yeah , and  and I had  I had , uh , specific problems with . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah  yeah , then  I  I did some  some  some things like that , 
+A:  as there  there are some  some problems in , when , in the channel , there  they  the the speaker doesn't  doesn't talk much or doesn't talk at all . 
+A:  Then , the , yeah , there are  there are some problems with  with  with n with normalization , and , then , uh , there the system doesn't work at all . 
+A:  So , I 'm  I 'm glad that there is the  the digit part , where everybody is forced to say something , 
+A:  so , that 's  that 's great for  for my purpose . 
+A:  And , the thing is I  I , then the evaluation of  of the system is a little bit hard , as I don't have any references . 
+A:  Yeah , that 's the one  one wh where I do the training on so I can't do the evaluation on 
+A:  So the thing is , can the transcribers perhaps do some , some  some meetings in  in terms of speech - nonspeech in  in the specific channels ? 
+A:  Yeah . 
+A:  Oh , great . 
+A:  OK . 
+A:  OK , that 's great . 
+A:  That 's great 
+A:  for me . Yeah , so . 
+A:  OK . 
+A:  Yeah . 
+A:  Yeah . 
+A:  OK . 
+A:  OK . 
+A:  Yeah . 
+A:  Yeah . 
+A:  so , yeah  yeah , that  that  that 's great , but what would be nice to have some more meetings , not just one meeting to  to be sure that  that , there is a system , 
+A:  OK . 
+A:  Yeah . 
+A:  It seems to me that it would be good to have , a few minutes from  from different meetings , 
+A:  so . 
+A:  But I 'm not sure about how much . 
+A:  Both  
+A:  both . 
+A:  Different  different number of speakers , different speakers , different  conditions . 
+A:  Yeah , m 
+A:  Yeah . 
+A:  Uh , not really as  
+A:  uh , because of the normalization , yeah . 
+A:  Yeah . 
+A:  OK . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  With the recognizer ? 
+A:  Yeah . 
+A:  Yeah . 
+A:  M 
+A:  I  I would quite like to have some manually transcribed references for  for the system , as I 'm not sure if  if it 's really good to compare with  with some other automatic , found boundaries . 
+A:  Yeah . 
+A:  Yeah  sure . 
+A:  Yeah . 
+A:  Yeah . 
+A:  To a adjust them , or , 
+A:  yeah . 
+A:  Yeah , yeah . 
+A:  Yeah , great . 
+A:  Yeah . 
+A:  OK , great . 
+A:  If it 's not the first minute of  of the meeting , that  that 's OK with me , 
+A:  but , in  in the first minute , uh , Often there are some  some strange things going on which  which aren't really , well , for , which  which aren't re re really good . 
+A:  So . What  what I 'd quite like , perhaps , is , to have , some five minutes of  of  of different meetings , 
+A:  so . 
+A:  Yeah . 
+A:  I  I could do a  a retraining with that , yeah . 
+A:  That 's  but  but I hope that I  I don't need to do it . 
+A:  So , uh it c can be do in an unsupervised way . 
+A:  So . 
+A:  I 'm  I 'm not sure , 
+A:  but , for  for  for those three meetings whi which I  which I did , it seems to be , quite well , 
+A:  but , there are some  some  as I said some problems with the lapel mike , 
+A:  but , perhaps we can do something with  with cross - correlations to , to get rid of the  of those . 
+A:  And . 
+A:  Yeah . 
+A:  That 's  that 's what I  that 's my  future work . 
+A:  Well  well what I want to do is to  to look into cross - correlations for  for removing those , false overlaps . 
+A:  I 'm  I 'm not sure , um , if  if there are any wired mikes in those meetings , or , uh , I have  have to loo have a look at them 
+A:  but , I 'm  I 'm  I think there 's no difference between , 
+A:  Yeah . 
+A:  Yeah . 
+A:  No . 
+A:  Yeah , that  
+A:  Yeah , I know , some of the NSA meetings , yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  That 's  that 's . 
+A:  So . 
+A:  Do the transcribers actually start wi with , uh , transcribing new meetings , or  are they ? 
+A:  OK . 
+A:  OK . 
+A:  OK . 
+A:  Yeah . 
+A:  OK . 
+A:  Yeah . 
+A:  Yep . 
+A:  Yeah . 
+A:  Sure . 
+A:  I  I  I thought that perhaps the transcribers could start then from the  those mult multi - channel , uh , speech - nonspeech detections , if they would like to . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yep . 
+A:  S  s 

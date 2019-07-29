@@ -1,0 +1,88 @@
+C:  Yeah . 
+C:  Pre - prelim hell . 
+C:  Get down . 
+C:  Para 
+C:  So with this , uh , new stream would you train up a VAD on both  both features , somehow ? 
+C:  OK . 
+C:  that 's  
+C:  OK . 
+C:  Would  would that fit on the handset , 
+C:  or  ? 
+C:  Oh ! 
+C:  OK . 
+C:  OK . 
+C:  Right . 
+C:  Oh , right . 
+C:  Yeah . Cuz sh 
+C:  Right . 
+C:  Cuz she also does the , uh  the correlation - based , uh , TRAPS , with without the neural net , just looking at the correlation between  
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Right . 
+C:  Mm - hmm . 
+C:  Feature net . 
+C:  Is this their , um , SVM recognizer ? 
+C:  Oh , OK . 
+C:  Uh - huh . 
+C:  Oh , OK . 
+C:  Oh , OK . 
+C:  Gaussian mixture HMM . 
+C:  OK . 
+C:  Mm - hmm . 
+C:  Um . 
+C:  Well , I 've been reading some literature about clustering of data . 
+C:  Just , um , I guess , let me put it in context . 
+C:  OK , so we 're talking about discovering intermediate categories to , um  to classify . 
+C:  And , uh , I was looking at some of the work that , uh , Sangita was doing on these TRAPS things . 
+C:  So she has , um  she has temporal patterns for , um , a certain set of phonemes , from  from TIMIT , 
+C:  right ? 
+C:  the most common phonemes . 
+C:  And each one of them has  has a  a nice pattern over time , a one  one second window . 
+C:  And it has  has these patterns . 
+C:  Um , so she has , um a TRAP for each one of the phonemes , um , times fifteen , for each of the fifteen critical bands . 
+C:  And , um , <mouth> she does this agglomerative hierarchical clustering which  which basically , um , is a clustering algorithm that , uh , starts with many , many , many different points  many different clusters  uh , corresponding to the number of data , uh , patterns that you have in the data . 
+C:  And then you have this distance mej metric which , uh , measures how  how closely related they are . 
+C:  And you start , um <mouth> by merging the patterns that are most closely related . 
+C:  And 
+C:  y yeah , yeah , 
+C:  a dendrogram tree . 
+C:  Um . 
+C:  Right , usually it 's when , um  when the sol similarity measures , um , don't go down as much . 
+C:  And so , uh  so you stop at that point . 
+C:  And what she found was , sh um , was there were five broad , um  broad categories , uh , corresponding to , uh , things like , uh , fricatives and , uh , vocalic , um , and , uh , stops . 
+C:  And , uh , one for silence and  and another one for schwa  schwa sounds . 
+C:  Um , and , um , I was thinking about ways to  to generalize this 
+C:  because w you 're  it 's sort of like a  it 's not a completely automatic way of clustering , 
+C:  because yo beforehand you have these  these TRAPS and you 're saying that  that these frames correspond to this particular phoneme . 
+C:  Um , and that 's  that 's constraining your  your clustering to  to the set of phonemes that you already have . 
+C:  Um , whereas maybe we want to just take  take a look at , um , arbitrary windows in time , um , of varying length , um , and cluster those . 
+C:  And I 'm thinking if we  if we do that , then we would probably , um , at some point in the clustering algorithm find that we 've clustered things like , OK , thi this is a transition , um , this is a relatively stable  stable point . 
+C:  Um , and I 'm hoping to find other things of  of similarity and maybe use these things as the intermediate , um  intermediate categories that , uh , um , I 'll later classify . 
+C:  Um , right . 
+C:  F um , I 'm  
+C:  Yeah , 
+C:  yeah . 
+C:  I  I haven't exactly figured out , um , the exact details for that 
+C:  but , uh , the  the representation of the data that I was thinking of , was using , um , critical band , um , energies , <mouth> um , over different lengths of time . 
+C:  So  
+C:  Yeah . 
+C:  OK . 
+C:  Mm - hmm . 
+C:  Right . 
+C:  Mm - hmm . 
+C:  Hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mmm . 
+C:  Mm - hmm . 
+C:  Hmm . 
+C:  Right . 
+C:  Yeah . 
+C:  OK . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . We 're  we 're doing some sort of prediction of what  
+C:  Yeah . 

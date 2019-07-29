@@ -1,0 +1,292 @@
+I:  Sev 
+I:  Oh . 
+I:  Yeah . That 's great . 
+I:  Is that because the transcripts get longer ? 
+I:  The f transcript file gets longer ? 
+I:  But th but that 's  that 's n 
+I:  You didn't have to change the software for that yet . 
+I:  Right ? 
+I:  It 's just formatting the right kind of , uh , XML  ? 
+I:  Mm - hmm . OK . 
+I:  Oh , good . That 's very good . OK . 
+I:  Mm - hmm . 
+I:  Right . 
+I:  Mm - hmm . 
+I:  Right . 
+I:  Cool . 
+I:  Mm - hmm . 
+I:  Hmm . 
+I:  Hmm . 
+
+I:  So this  the  this  uh , the sluggishness of the loading is all due to the parsing of the XML format . 
+I:  Right ? 
+I:  Hmm . 
+I:  Mmm . 
+I:  But  d y 
+I:  No . Whenever you load a new  meeting or a new  transcript . 
+I:  Right . 
+I:  You just have to have the thing running before you open your laptop . 
+I:  Just make shorter files . 
+I:  Yeah . 
+I:  You missed that part . 
+I:  So  If  if raw speed is the problem  This thing is written in Tcl . 
+I:  Right ? 
+I:  Y I mean , John Osterhaut , uh  Y you know , he started his own company based on Tcl stuff , 
+I:  and maybe they have the native code compiler or something . 
+I:  Hmm . 
+I:  Hmm . 
+I:  Oh , darn . 
+I:  I haven't done that yet . 
+I:  Er  OK . 
+I:  Stalk them @ @ at their  
+I:  Like in the morning , when I leave for work . 
+I:  Cold calling at lunch time ? Uh , dinner time , I mean . 
+I:  Chuck , you wanna talk about recognition ? 
+I:  However , I just got an email from Thilo saying that we are ready to run  
+I:  I mean , we have segmentations for the old meetings that  are from his segmenter , 
+I:  and so  
+I:  You  you had three different versions , with different , like , pause thresholds  between the segments ? 
+I:  Right . And you recommended using the one with two s maximum of two seconds ? 
+I:  But two s 
+I:  Mm - hmm . 
+I:  I mean , the only advantage to using the longer threshold would be that you run less risk of missing some  some speech . 
+I:  Right ? 
+I:  But two seconds is pretty long . 
+I:  So  
+I:  Hmm . 
+I:  Hmm . 
+I:  Hmm . 
+I:  Mmm . 
+I:  I think two seconds  mmm 
+I:  I would maybe go with one second . 
+I:  I don't know , it 's a  
+I:  See what the length distribution is . 
+I:  Yeah . 
+I:  Really ? 
+I:  Uh  bu I 'm  I 'm  I 'm just scared that with two seconds you get  you get , um  <mouth> you  you get false recognitions . 
+I:  You 're gonna  Yeah , you 're gonna hurt yourself occasionally by having  missing the language model context . 
+I:  But you might hurt yourself more by having misrecognitions due to  background speech , or , uh , y noise , or whatever . 
+I:  Oh , I see . Then  Oh , I see . OK . 
+I:  Oh , right . Oh , that 's  
+I:  Mm - hmm . OK . Sure . 
+I:  We can try them all and see which works better . 
+I:  Mm - hmm . 
+I:  OK . 
+I:  Mm - hmm . 
+I:  OK . So  so we need to split the waveforms , then . 
+I:  Or do you already have them split up ? 
+I:  No , you don't . 
+I:  Right ? 
+I:  So  so , I guess Don  would need your help to  to create a new set of split , uh , meetings . 
+I:  If  
+I:  Right . 
+I:  But th 
+I:  Oh , yeah . There 's that pressure . 
+I:  Oops .  I 'm sorry . 
+I:  OK . 
+I:  Hmm . 
+I:  Pop goes the data . 
+I:  Right . 
+I:  u un 
+I:  Can I have butter on my meeting ? 
+I:  I is that independent 
+I:  or related to  also being able to write out the , uh , feature file  i in the SRI format 
+I:  f r 
+I:  Oh , OK . So then you could use , um  You could use , um  <mouth smack>  uh , like Feacalc and s just specify as an output format 
+I:  the  the  
+I:  Oh , OK . 
+I:  Th - t I 'm just ignorant about the <inbreath> sof software architecture of this thing . 
+I:  Uh - huh . 
+I:  Oh , cool . 
+I:  Great . 
+I:  So , b speaking of Linux . So  <inbreath> Th - there 's some i impetus at , um , <mouth> SRI to actually <breath> u u p th  uh , build  support Linux as a platform . 
+I:  So . 
+I:  What that means is , <laugh> once we have , uh , everything running on Linux we can 
+I:  also use a Li - <inbreath> eh 
+I:  Yeah . Exac 
+I:  I mean , if you can't use all the processors on whatever machine , we 'll help you with that . 
+I:  Right . Exactly . 
+I:  Yeah . 
+I:  So it 's just , uh  
+I:  Uh . Yeah . 
+I:  Or if  uh , you know , in the future , if Linux machines become like way cheaper , than , <mouth> uh , you know , Solaris machines , then  you know , that wouldn't be a reason not to  use Linux anymore . 
+I:  So . 
+I:  For the meeting ? 
+I:  Mm - hmm . 
+I:  Mm - hmm . 
+I:  Mmm . 
+I:  Mm - hmm . 
+I:  Mmm . 
+I:  Mm - hmm . 
+I:  Mmm . 
+I:  Right . 
+I:  Right . 
+I:  Right . 
+I:  Right . 
+I:  You just di you just  
+I:  Right . 
+I:  Yeah . That  that becomes another problem , actually . 
+I:  n s 
+I:  So , d s so  fo not  well , for everything . 
+I:  For  s for  f even feature normalization , for , uh , vocal tract length estimation , 
+I:  all of  all of these assume you know who 's speaking . 
+I:  So , 
+I:  you would have to do a speaker segmentation first on the far - field micropho signal . 
+I:  You mean you wanna cheat . 
+I:  No . If  i i 
+I:  OK . We g we 're gonna bleep that out . 
+I:  You mean you do you don't do all those normalizations . 
+I:  Um , actually  <laugh> We don't have any models . 
+I:  Um , you can  
+I:  Um  
+I:  A actually , it 's that  it 's  it 's  We would have to retrain models that are not  that have none of that stuff , uh , in it . 
+I:  But actually we could  
+I:  We can just run it , assuming that it 's all one speaker , basically . 
+I:  And see what happens . 
+I:  Yeah . 
+I:  Actually  
+I:  Actually , no . Th - th 
+I:  Sorry . 
+I:  Yeah . 
+I:  No , actually  
+I:  No , actually , what  Here 's  here 's what we would usually do u under these circumstances . 
+I:  We would actually  we would run some sort of segmentation . 
+I:  Thilo 's is as  good as any , probably . 
+I:  Um , and then we would do an unsupervised clustering of  of the segments , to  
+I:  and  and put the similar ones into bins that would be sort of pseudo - speakers . 
+I:  And then we would do our standard processing on these pseudo - speakers . 
+I:  And that turns out to work very well on Broadcast News , SPINE  
+I:  those types of tasks , where you don't have the speaker segmentation given to you . 
+I:  Um , you can either do it by target number or by some measure of dissimilarity that you use as a threshold . 
+I:  Right . 
+I:  Well , you can do  <mouth> You can  you can  you can do certain normalizations like , you know , gain control , 
+I:  uh , before you do the clustering to rule out those  those types of things . 
+I:  Mmm . 
+I:  OK . That would be fun  fun to try . 
+I:  Mm - hmm . 
+I:  OK . 
+I:  Hmm . 
+I:  Oh , yeah . Then we should  
+I:  Well , first you have to filter the whole training set and retrain . 
+I:  Oh . 
+I:  That would solve all of our problems . 
+I:  Wouldn't it ? 
+I:  Hmm . 
+I:  Right . Then you can do like an  you can estimate the  the noise estimates . 
+I:  Right ? Yeah . 
+I:  Mmm 
+I:  Hmm . 
+I:  Yeah . 
+I:  You get out Switchboard . 
+I:  That 's just the lang the language model . 
+I:  Ha 
+I:  Yeah . So we have this new speaker adaptation . 
+I:  Um 
+I:  A  b Oh , it 's a s sort of feature normalization 
+I:  t 
+I:  uh , like f speaker adaptation , 
+I:  which , uh , which I wr which I  wrote about in the last status report , 
+I:  which seems to be helping about a percent and a half on Hub - five . 
+I:  So , um . We haven't tried that yet on the meetings , 
+I:  uh , but hopefully it 'll help there , too . 
+I:  Hmm . 
+I:  Mm - hmm . 
+I:  Well , we  we have a frozen  we do all our experiments with a frozen version of the transcripts as of , I don't know 
+I:  A a as of  
+I:  no , a little  
+I:  I don't know . 
+I:  When  when did we grab the transcripts ? 
+I:  The  
+I:  We 're talking about which  which version we 're using for evaluating the recognition . 
+I:  Which version of the transcripts . 
+I:  No , no . 
+I:  Yeah . O obviously . Yeah . 
+I:  The  uh , the other thing is  
+I:  Th - the  the  
+I:  Hmm . And  
+I:  Well , the  and the other thing is , it takes only a  a minute to rescore all the old outputs with  
+I:  If you had new transcripts , then we j we just re rescore the old  
+I:  Sorry ? 
+I:  W we just  We save  
+I:  Well , the  the  
+I:  Right . 
+I:  So , I  I  The thing is , when  
+I:  Right . 
+I:  So , whenever the  Right now , the s the scoring is based on segments . 
+I:  Um , which is not great 
+I:  because , for instance  
+I:  So  so , the  the <mike noise> other way to do the scoring is using a  a NIST format called STM . S 
+I:  uh , Segment Time Marked , 
+I:  where  
+I:  So , um , I have to convert the , uh , transcripts into this format , and then the scoring program actually looks at the times . 
+I:  And , uh , you know , it  You can have a different segmentation in your recognizer output than in your references , 
+I:  and it will still do the right thing . 
+I:  So , that 's what we need to basically , uh , to  
+I:  Hmm ? 
+I:  Oh . 
+I:  Well . But then there 's other changes . 
+I:  So . I mean , there 's other  
+I:  We  we strip away a lot of the mark - up , uh , in the transcripts , 
+I:  which , you know , isn't relevant to the scoring of the speech recognition output . 
+I:  So 
+I:  No . I mean if  suppo 
+I:  I  I assume you also changed some boundaries . 
+I:  Right ? 
+I:  So , if we want to use new transcripts with a different segmentation , then we can't use them in the current way we do scoring . 
+I:  We have to  m m switch to this o 
+I:  No . We have to r 
+I:  There 's a difference  
+I:  Right . Right . 
+I:  That 's true . 
+I:  No . But if you w just want to see what  
+I:  Like , suppose you fixed some typ No , Jane fixed some typos and you wanna see what effect does that have on the word error , 
+I:  then we can f we c 
+I:  No , but that 's what the pr 
+I:  Well , that 's what I 'm saying . 
+I:  You can line them up based on the times . 
+I:  So the scoring program with  if you give it an STM reference file , it will actually compare the words based on their time marks . 
+I:  So therefore , you can , 
+I:  um  
+I:  It 's per utterance , 
+I:  but it  it allows  As long as you hypothesize the word in the right segment in the reference , it gives you credit for that . 
+I:  So it does a  <inbreath> it does a word alignment , like you have to do for scoring , 
+I:  but it constrains the words to lie within the t the time bins of the reference . 
+I:  And  fo for you to get a credit for it . 
+I:  So . 
+I:  So  so , it 's  it should be just a straightforward re - formatting issue of the references . 
+I:  So . 
+I:  It 's a  it 's a technical term . 
+I:  If  i Well , you i i in a  To a broader audience you could call it a diagnostic experiment , rather than a cheating experiment . 
+I:  But they don't run experiments . 
+I:  Hmm . 
+I:  It 's like a disclaimer . 
+I:  Now we have to l delete that expletive . 
+I:  Hmm . 
+I:  Hmm . 
+I:  Hmm . 
+I:  Mmm . 
+I:  Hmm . 
+I:  But weren't you cheating in those experiments ? 
+I:  S self  
+I:  Hmm . 
+I:  What does it put out ? 
+I:  Hmm . 
+I:  Mmm . 
+I:  Yeah . You could still  eh 
+I:  Well , it 's even  If y if you could still transcribe the words based on the  far - field microphone or something , <mike noises> you could , uh , still use it for , say , language modeling , 
+I:  you know . 
+I:  Right . 
+I:  Well , if  
+I:  Right . 
+I:  I guess there is no  
+I:  there 's  there 's no shortage of meetings , 
+I:  so 
+I:  we can afford  we can a 
+I:  Hmm . 
+I:  Hmm . 
+
+I:  Hmm . <mouth> Hey , I bet there 's tea . 
+I:  Yeah . 
+I:  Hey , I 've never done one of those . 
+I:  Right . 
+I:  Sev 

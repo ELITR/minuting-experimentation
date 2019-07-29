@@ -1,0 +1,1893 @@
+A:  <papers shuffling> 
+D:  OK . 
+A:  Mike . Mike - one ?  
+B:  Ah . 
+B:  <mike noise> 
+A:  <whistle> 
+E:  <mike noise>  
+D:  We 're on ? 
+G:  Have a good meeting .  
+G:  Do you want this closed ? 
+C:  <blows into mike>  
+D:  Yes , please . 
+D:  I mean , we 're testing noise robustness but let 's not get silly . <laugh> 
+B:  <clears throat> 
+C:  <laugh> 
+C:  <laugh> 
+D:  OK , so , uh , 
+D:  you 've got some , uh , 
+D:  Xerox things to pass out ? 
+D:  That are  Yeah . 
+A:  Yeah , um . 
+A:  Yeah . 
+A:  <papers shuffling> 
+A:  Yeah , I 'm sorry for the table , but as it grows in size , uh , it . <laugh> 
+C:  <breath> <inbreath> 
+D:  <laugh> 
+C:  <laugh> 
+D:  Uh , so for th the last column we use our imagination . 
+D:  <sniff> 
+D:  OK . 
+B:  Ah , yeah . 
+D:  Ah . 
+A:  Uh , yeah . 
+B:  Uh , do you want @ @ . 
+D:  This one 's nice , though . This has nice big font . 
+B:  <papers shuffling> 
+D:  <laugh> 
+A:  Yeah . 
+A:  <laugh> 
+D:  <sniff> 
+C:  <laugh> 
+D:  <clears throat> 
+A:  @ @ 
+C:  Let 's see . Yeah . 
+D:  Yeah . 
+C:  Chop ! 
+D:  When you get older you have these different perspectives . I mean , lowering the word hour rate is fine , but having big font ! 
+A:  So I 
+E:  <laugh> 
+C:  <laugh> 
+B:  <laugh> 
+D:  <laugh> 
+A:  <laugh> 
+D:  That 's what 's  
+A:  Next time we will put colors or something . <laugh> 
+D:  <laugh> 
+C:  <laugh> 
+D:  Yeah . It 's mostly big font . 
+A:  Uh . 
+D:  OK . Uh  
+
+
+A:  OK , s 
+D:  Go ahead . 
+A:  so there is kind of summary of 
+A:  what has been done  
+A:  It 's this . 
+A:  Summary of experiments since , well , since last week and also since the  
+D:  Oh . OK . 
+A:  we 've started to run  work on this . 
+
+
+A:  Um .  So since last week we 've started to fill the column with um 
+A:  <mouth> uh features 
+A:  w with nets trained on PLP 
+A:  with on - line normalization but with delta also , because the column was not completely  well , it 's still not completely filled , but  
+D:  Mm - hmm . Mm - hmm . 
+C:  <swallow> 
+A:  we have more results to compare with network using without PLP and  
+A:  finally , hhh ,  um  ehhh  PL - uh delta seems very important . 
+C:  <loud breath> 
+A:  <breath> Uh  I don't know . If you take um , 
+A:  let 's say , 
+A:  anyway Aurora - two - B ,  
+A:  so , the next  t the second , uh , part of the table ,  
+D:  Mm - hmm . 
+A:  uh  when we use the large training set using French , Spanish , and English , 
+A:  you have one hundred and six 
+D:  Mm - hmm . 
+A:  without delta and eighty - nine with the delta . 
+D:  a And again all of these numbers are with a hundred percent being , uh , the baseline performance , but with a mel cepstra system going straight into the HTK ? Yes . 
+A:  Yeah , on the baseline , yeah . 
+A:  So  
+A:  Yeah . 
+A:  Yeah . 
+A:  So now we see that the gap between the different training set is much  uh 
+A:  uh 
+A:  much smaller  
+C:  It 's out of the way .  
+A:  um  
+C:  Right .  
+A:  But , 
+A:  actually , um , 
+A:  for English training on TIMIT is still better than the other languages . 
+A:  And 
+A:  Mmm ,  Yeah . 
+A:  And f also for Italian , actually . 
+A:  If you take the second 
+A:  set of experiment for Italian , so , the mismatched condition ,  
+D:  Mm - hmm . 
+A:  um  
+A:  when we use the training on TIMIT  
+A:  so , it 's multi - English , we have a ninety - one number ,  
+D:  Mm - hmm . 
+A:  and training with other languages is a little bit worse . 
+D:  Um  
+D:  Oh , I see . Down near the bottom of this sheet . 
+D:  Uh ,   yes . 
+A:  So , yeah . 
+D:  OK . 
+A:  And , yeah , and here the gap is still more important between using delta and not using delta . 
+D:  Yes . 
+A:  If y if I take the training s the large training set , it 's  we have one hundred and seventy - two , 
+D:  Yeah . 
+A:  and one hundred and four when we use delta . 
+D:  Mm - hmm . 
+A:  Uh .  
+C:  <breath-laugh> 
+A:  Even if the contexts used is quite the same , because without delta we use seventeenths  seventeen frames . 
+
+
+A:  Uh .  
+A:  Yeah , um , so the second point is that we have no single cross - language experiments , 
+A:  uh , that we did not have last week . 
+A:  Uh , so this is 
+A:  training the net on French 
+C:  <swallow> 
+A:  only , or on English only , and testing on Italian . 
+D:  Mm - hmm . 
+A:  And training the net on French only and Spanish only and testing on , 
+A:  uh 
+A:  TI - digits . 
+D:  Mm - hmm . 
+A:  And , fff  um , 
+A:  yeah . 
+A:  What we see is that 
+A:  these nets are not as good , except for the multi - English , which is always one of the best . 
+C:  <laugh> 
+A:  Yeah , then we started to work 
+A:  on a large dat database containing , 
+A:  uh , sentences from the French , from the Spanish , from the TIMIT , from SPINE , 
+A:  uh from  
+C:  <laugh> 
+A:  uh English digits , and from Italian digits . 
+A:  So this is the  another line  
+A:  another set of lines in the table . 
+D:  Ah , yes . Mm - hmm . 
+A:  Uh , @ @ with SPINE and  
+A:  uh , actually we did this before knowing the result of all the data , 
+A:  uh , so we have to to redo 
+A:  the uh  the experiment training the net with , uh PLP , but with delta . 
+D:  Mm - hmm . 
+A:  But um 
+A:  this  this net performed quite well . 
+A:  Well , 
+A:  it 's  it 's better than the net using French , Spanish , and English only . 
+
+
+A:  Uh . 
+A:  So , uh , yeah . We have also started feature combination experiments . 
+A:  Uh many experiments using features and net outputs together . 
+A:  And this is  
+A:  The results are on the other document . 
+A:  <papers shuffling> 
+A:  Uh , we can discuss this after , perhaps  well , just , 
+A:  @ @ . 
+A:  Yeah , so basically there are four  
+A:  four kind of systems . The first one , yeah , is combining , um , 
+A:  two feature streams , 
+A:  uh using  
+A:  and each feature stream has its own MPL . So it 's the  
+A:  kind of similar to the tandem that was proposed for the first . 
+A:  The multi - stream tandem for the first proposal . 
+A:  The second is using features and 
+A:  KLT transformed MLP outputs . 
+A:  And the third one is to u use a single KLT trans transform 
+A:  features as well as MLP outputs . 
+A:  Um ,  
+A:  yeah . 
+A:  Mmm . <papers shuffling> 
+A:  You know you can  you can comment these results , or   
+B:  <inbreath> 
+B:  Yes , I can s I would like to say that , for example , 
+B:  um , mmm , if we doesn't use the delta - delta , 
+B:  uh we have an improve 
+B:  when we use s some combination . 
+B:  But when w 
+A:  Yeah , we ju just to be clear , the numbers here are 
+B:  Yeah , this  
+A:  uh recognition accuracy . 
+A:  So it 's not the  <laugh> Again we switch to another  
+B:  Yeah , this number recognition acc 
+B:  Yes , and the baseline  the baseline have  i is eighty - two . 
+C:  <breath-laugh> 
+A:  <breath-laugh> 
+A:  Mm - hmm . 
+D:  Baseline is eighty - two . 
+B:  Yeah 
+A:  So it 's experiment only on the Italian mismatched for the moment for this . 
+D:  <inbreath> 
+D:  Uh , this is Italian mismatched . OK . 
+B:  Yeah , by the moment . 
+A:  Um . 
+A:  Mm - hmm . 
+B:  And first in the experiment - one 
+B:  I  I do  
+B:  I  I use different MLP , 
+D:  Mm - hmm . 
+B:  and 
+B:  is obviously that the multi - English MLP is the better . 
+B:  Um . 
+B:  for the ne  rest of experiment I use multi - English , 
+B:  only multi - English . 
+B:  And I try to combine different type of feature , but the result 
+B:  is that the MSG - three feature doesn't work for the Italian database 
+B:  because never help to increase the accuracy . 
+A:  Yeah , eh , actually , if w we look at the table , the huge table , 
+D:  Mm - hmm . 
+A:  um , we see that for TI - digits MSG perform as well as the PLP , 
+A:  but this is not the case for Italian what  where the error rate is c is almost uh twice the error rate of PLP . 
+C:  <laugh> 
+D:  Mm - hmm . 
+A:  So , um 
+A:  <mouth> 
+A:  uh , well , I don't think this is a bug but this  this is something in  probably in the MSG 
+A:  um process that 
+A:  uh 
+A:  I don't know what exactly . Perhaps the fact that the  the  
+A:  there 's no low - pass filter , well , or no pre - emp pre - emphasis filter and that 
+A:  there is some DC offset in the Italian , or , well , something simple like that . 
+A:  But  that we need to sort out if want to 
+D:  Mm - hmm . 
+A:  uh get improvement by combining PLP and MSG because 
+D:  Mm - hmm . 
+A:  for the moment MSG do doesn't bring much information . And 
+D:  <inbreath> I 
+A:  as Carmen said , if we combine the two , we have the result , basically , of PLP . 
+D:  <outbreath> 
+D:  Um , the uh , baseline system  when you said the baseline system was uh , uh eighty - two percent , that was trained on what and tested on what ? 
+A:  Mm - hmm . 
+D:  That was , uh Italian mismatched d uh , uh , digits , uh , is the testing , and the training is Italian digits ? 
+A:  <sniff> 
+B:  Yeah . 
+A:  <sniff> 
+A:  <sniff> 
+B:  Yeah . 
+D:  So the " mismatch " just refers to the noise and  and , uh microphone and so forth , right ? 
+B:  Yeah . 
+A:  Yeah .  
+D:  So , um 
+D:  did we have  So would that then correspond to the first line here of where the training is  is the uh Italian digits ? 
+D:  The  3 x 
+B:  The train the training of the HTK ? Yes . Ah yes ! This h Yes . Th - Yes . 
+D:  Yes . 
+D:  Yes . Training of the net , yeah . 
+B:  Yeah . 
+D:  So , um  So what that says is that in a matched condition , 
+D:  <sniff> 
+D:  we end up with a fair amount worse putting in the uh PLP . 
+D:  Now w would  do we have a number , 
+D:  I suppose for the matched  
+D:  I  I don't mean matched , but uh use of Italian  training in Italian digits for PLP only ? 
+B:  Uh  yes ? 
+A:  Uh  yeah , so this is  basically this is in the table . 
+A:  Uh  so the number is fifty - two , 
+B:  Another table . 
+A:  uh  
+D:  Fifty - two percent . 
+A:  Fift - So  
+B:  No . 
+D:  No , fifty - two percent of eighty - two ? 
+A:  No , it 's  it 's the  
+A:  Of  of  
+A:  of uh  eighteen  of eighteen . 
+B:  Eighty . Eighty . 
+A:  So it 's  it 's error rate , basically . It 's er error rate ratio . So  
+B:  It 's 
+B:  plus six . 
+D:  Oh this is accuracy ! Oy !  OK . <laugh> 
+B:  Yeah . 
+A:  Uh , so we have nine  nine  let 's say ninety percent . 
+D:  Ninety .  
+A:  Yeah . 
+A:  Um  
+A:  which is 
+A:  uh  
+A:  what we have also if use PLP and MSG together , eighty - nine point seven . 
+D:  Yeah . 
+D:  OK , so even just 
+D:  PLP , 
+D:  uh , it is not , in the matched condition  
+D:  Um 
+D:  I wonder if it 's a difference between PLP and mel cepstra , 
+D:  or whether it 's that the net half , for some reason , is not helping . 
+A:  Uh . 
+A:  P - PLP and Mel cepstra give the same  
+D:  Same result pretty much ?  
+A:  same results . Well , we have these results . I don't know . It 's not  
+D:  <inbreath> 
+A:  Do you have this result with PLP alone ,  
+D:  So , s 
+A:  j fee feeding HTK ? That  That 's what you mean ? 
+B:  Yeah , yeah yeah yeah yeah , at the first  
+A:  Just PLP at the input of HTK . 
+B:  and the  
+B:  Yeah . 
+A:  Yeah . 
+A:  So , PLP  
+D:  Eighty - eight point six . 
+A:  Yeah . 
+D:  <sniff> 
+D:  Um , so adding MSG 
+A:  Um   
+D:  um  
+D:  Well , but that 's  yeah , that 's without the neural net , right ? 
+A:  Yeah , that 's without the neural net and that 's the result basically that OGI has also with the MFCC with on - line normalization . 
+D:  But she had said eighty - two . 
+A:  This is the  w well , but this is without on - line normalization . 
+D:  Right ? 
+D:  Oh , this  
+C:  <inbreath> <mouth> 
+B:  @ @ 
+A:  Yeah . 
+D:  the eighty - two . 
+A:  Eighty - two is the  it 's the Aurora baseline , so MFCC . 
+C:  <inbreath>  
+D:  <sniff> 
+A:  Then we can use  
+A:  well , OGI , they use MFCC  
+A:  th the baseline MFCC 
+D:  Oh , I 'm sorry , I k I keep getting confused because this is accuracy . 
+A:  plus on - line normalization 
+A:  @ @ Yeah , sorry . Yeah . 
+D:  <laugh> OK . 
+B:  Yeah . <laugh> 
+C:  <laugh> 
+A:  Yeah . <laugh> 
+D:  Alright . Alright . So this is  I was thinking all this was worse . OK so this is all better because eighty - nine is bigger than eighty - two . OK . 
+C:  <laugh> 
+B:  Yes , better . <laugh> 
+A:  Mm - hmm . 
+B:  Yeah . 
+D:  I 'm  I 'm all better now . OK , go ahead . <laugh> 
+C:  <laugh> 
+A:  So what happ what happens is that when we 
+C:  <laugh> 
+A:  apply on - line normalization 
+D:  Yeah . 
+A:  we jump to almost ninety percent .  
+D:  Mm - hmm . 
+A:  Uh , when we apply a neural network , is the same . We j jump to ninety percent .  
+B:  Nnn , we don't know exactly . 
+D:  Yeah . 
+A:  And  
+A:  And um  
+A:  whatever the normalization , actually . 
+A:  If we use n neural network , even if the features are not correctly normalized , 
+A:  we jump to ninety percent . 
+D:  So we go from eighty - si eighty - eight point six to  to ninety , or something . 
+A:  So  
+A:  Well , ninety  
+A:  No , I  I mean ninety It 's around eighty - nine , ninety , eighty - eight . 
+D:  Eighty - nine . 
+B:  Yeah . 
+A:  Well , there are minor  minor differences . 
+D:  And then adding the MSG does nothing , basically . 
+A:  No . 
+D:  Yeah . 
+D:  OK . 
+A:  Uh 
+A:  For Italian , yeah . 
+D:  For this case , right ? 
+A:  Mm - hmm . 
+A:  Um . 
+D:  Alright . 
+D:  So , um  So actually , the answer for experiments with one is that adding MSG , if you  uh does not help in that case . 
+A:  Mm - hmm . 
+D:  Um  
+D:  The other ones , we 'd have to look at it , but  
+A:  But w Yeah . 
+B:  <click> 
+D:  And the multi - English , does 
+D:  uh  
+D:  So if we think of this in error rates , 
+D:  we start off with , uh eighteen percent error rate , roughly . 
+A:  Mm - hmm . 
+D:  Um  and  we uh 
+D:  almost , uh cut that in half 
+D:  by um 
+D:  putting in the on - line normalization and the neural net . 
+A:  Yeah  
+D:  And the MSG doesn't however particularly affect things . 
+A:  No . 
+D:  And we 
+D:  cut off , I guess about twenty - five percent of the error . 
+D:  Uh  no , not quite that , is it . Uh , two point six 
+D:  out of eighteen . About , 
+D:  um  
+D:  sixteen percent or something of the error , 
+A:  Mm - hmm . 
+D:  um , if we use multi - English instead of the matching condition . 
+C:  <mike noise> 
+D:  Not matching condition , but uh , the uh , Italian training . 
+A:  Yeah . 
+B:  Yeah . 
+A:  Mm - hmm . 
+D:  OK . 
+A:  Mmm . 
+B:  We select these  these  these tasks because it 's the more difficult .  
+B:  <laugh> 
+D:  Yes , good . 
+D:  OK ? 
+D:  So then you 're assuming multi - English is closer to the kind of thing that you could use since you 're not gonna have matching , 
+D:  uh , data for the  uh for the new  for the other languages and so forth . 
+D:  Um , 
+D:  one qu thing is that , uh  I think I asked you this before , but I wanna double check . When you say 
+D:  " ME " in these other tests , 
+A:  <two sniffs> 
+D:  that 's the multi - English , but it is not all of the multi - English , right ? It is some piece of  part of it . 
+A:  That 's  
+A:  it 's a part  it 's  
+A:  Or , one million frames . 
+D:  <inbreath> And the multi - English is how much ? 
+B:  <inbreath> 
+B:  You have here the information . 
+A:  It 's one million and a half . 
+A:  Yeah . 
+D:  Oh , so you used almost all You used two thirds of it , 
+A:  Yeah . 
+D:  you think . 
+D:  So , it it 's still  it hurts you  seems to hurt you a fair amount to add in this French and Spanish . 
+A:  Mmm . 
+B:  Yeah . 
+D:  <laugh> I wonder why  Yeah . 
+B:  <laugh> 
+C:  <laugh> 
+A:  <laugh> 
+D:  Uh . 
+C:  Well Stephane was saying that they weren't hand - labeled , 
+B:  Yeah . 
+A:  Yeah , it 's  Yeah . 
+C:  the French and the Spanish . 
+B:  The Spanish . 
+B:  Maybe for that . 
+C:  Yeah . 
+D:  Hmm . 
+A:  Mmm . 
+D:  It 's still  
+D:  OK . 
+D:  Alright , go ahead .  And then  then  
+B:  Um . 
+B:  Mmm , with the 
+B:  experiment type - two , 
+B:  I  first I tried to to combine , nnn , some feature from the MLP and other feature  
+B:  another feature . 
+D:  Mm - hmm . 
+B:  And we s 
+B:  we can  
+B:  first the feature are without delta and delta - delta , 
+B:  and we can see that in the situation , 
+B:  uh , the MSG - three , 
+D:  Mm - hmm . 
+B:  the same help nothing . 
+B:  And then I do the same but with the delta and delta - delta  PLP delta and delta - delta . 
+B:  And they all p 
+B:  but they all put off the MLP is it without delta and delta - delta . 
+B:  And we have a l little bit less result than the  
+D:  Mm - hmm . 
+B:  the  
+A:  <cough> 
+B:  the baseline PLP with delta and delta - delta . 
+B:  Maybe if  when we have the new  
+B:  the new  neural network trained with PLP delta and delta - delta , maybe the final result must be better . I don't know . 
+B:  Uh  
+A:  Actually , just to be some more  
+A:  Do - This number , this eighty - seven point one number , 
+A:  has to be compared with the um   
+D:  Yes , yeah , I mean it can't be compared with the other cuz this is , uh  with multi - English , uh , training . So you have to compare it with the one over that you 've got in a box , which is that , uh the eighty - four point six . 
+A:  Which number ? 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+D:  Right ? 
+A:  Uh . 
+D:  So  
+A:  Yeah , but I mean in this case for the eighty - seven point one we used 
+A:  MLP outputs for the PLP net 
+D:  Yeah . 
+A:  and straight features with delta - delta . 
+D:  Yeah . 
+B:  Mm - hmm . 
+A:  And straight features with delta - delta 
+A:  gives you what 's on the first sheet . It 's eight eighty - eight point six . 
+D:  Not t not tr 
+D:  No . No . No . Not trained with multi - English . 
+B:  Yes . 
+B:  <inbreath> 
+B:  No , but they  they feature @ @ without  
+A:  Uh , yeah , but th this is the second configuration . So we use 
+A:  feature out uh , net outputs together with features . 
+A:  So yeah , this is not  perhaps not clear here but in this table , 
+A:  the first column is for MLP and the second for the features . 
+D:  Eh .  Oh , I see . 
+D:  Ah . So you 're saying w so asking the question , " What  what has adding the MLP done to improve over the , uh   Yes . 
+A:  So , 
+A:  just  
+A:  Yeah so , actually it  it  it decreased the  the accuracy . 
+B:  Yeah . 
+D:  Uh - huh . 
+A:  Because we have eighty - eight point six . 
+A:  And even the MLP alone  
+A:  What gives the MLP alone ? 
+A:  Multi - English PLP . Oh no , it gives eighty - three point six . 
+B:  But  
+A:  So we have our eighty - three point six and now eighty - eighty point six , that gives eighty - seven point one . 
+D:  Mm - hmm . 
+D:  Eighty - s I thought it was eighty Oh , OK , eighty - three point six and eighty  eighty - eight point six . 
+A:  Eighty - three point six . Eighty  
+D:  OK . 
+A:  Is th is that right ?  
+A:  Yeah ? 
+B:  Yeah . 
+B:  But  
+B:  I don't know  but maybe if we have the neural network trained with the PLP  delta and delta - delta , 
+B:  maybe 
+B:  tha this can help . 
+A:  Perhaps , yeah . 
+D:  Well , that 's  that 's one thing , but see the other thing is that , um , I mean it 's good to take the difficult case , but let 's  let 's consider what that means . 
+D:  What  what we 're saying is that one o one of the things that  I mean my interpretation of your  your s original suggestion is something like this , as motivation . 
+D:  When we train on data that is in one sense or another , 
+D:  similar to the testing data , 
+A:  Mm - hmm . 
+D:  then we get a win by having discriminant training . 
+D:  When we train on something that 's quite different , 
+A:  Mm - hmm . 
+D:  we have a potential to have some problems . 
+D:  And , um , if we get something that helps us when it 's somewhat similar , 
+D:  and doesn't hurt us too much when it  when it 's quite different , 
+A:  Yeah . 
+D:  that 's maybe not so bad . 
+D:  So the question is , if you took the same combination , 
+A:  Mmm . 
+D:  and you tried it out on , uh  on say digits , 
+A:  On TI - digits ? OK . Yeah . 
+D:  you know , d Was that experiment done ? 
+A:  No , not yet . 
+D:  Yeah , OK . 
+D:  <sniff> 
+A:  <inbreath>  
+D:  Uh , then does that , 
+D:  eh  you know maybe with similar noise conditions and so forth ,  
+D:  does it  does it then look much better ? 
+A:  Mm - hmm . 
+D:  And so what is the range over these different kinds of uh  of tests ? 
+D:  So , an anyway . 
+D:  OK , go ahead . 
+A:  Yeah . Mm - hmm . 
+B:  And , with this type of configuration which I do on experiment 
+B:  using the new neural net 
+B:  with name broad klatt s twenty - seven , uh , d I have found more or less the same result . 
+D:  Mm - hmm . 
+A:  So , it 's 
+B:  Little bit better ?  
+A:  slightly better , yeah . 
+D:  Slightly better . 
+A:  Yeah . 
+B:  Slightly bet better . Yes , is better . 
+B:  <inbreath> 
+D:  And  and you know again maybe if you use the , uh , delta  
+D:  there , uh , you would bring it up to where it was , uh you know at least about the same for a difficult case . 
+B:  Yeah , maybe . Maybe . Maybe . 
+A:  Yeah . 
+B:  Oh , yeah . 
+A:  Yeah . 
+D:  So . 
+B:  Oh , yeah . 
+A:  Well , so perhaps let 's  let 's jump at the last experiment . It 's 
+B:  Yeah . 
+A:  either less information from the neural network if we use only the silence output . 
+B:  i 
+D:  Mm - hmm . 
+A:  It 's again better . So it 's eighty - nine point  point one . <laugh> 
+D:  Mm - hmm . <laugh> 
+B:  Yeah , 
+B:  and we have only forty  forty feature <laugh> 
+A:  So .  
+B:  because in this situation we have one hundred and three 
+B:  feature . 
+D:  Yeah . 
+B:  <inbreath> 
+B:  Yeah . 
+B:  And then w with the first configuration , I f 
+D:  <laugh> 
+D:  Yeah . 
+B:  I am found that 
+B:  work , 
+B:  uh , doesn't work  
+B:  uh , well , 
+B:  work , but is better , the second configuration . 
+B:  Because I  for the del Engli - PLP delta and delta - delta , 
+B:  here I have eighty - five point three accuracy , and 
+B:  with the second configuration I have eighty - seven point one . 
+D:  Um , by the way , there is a another , uh , suggestion that would apply , uh , to the second configuration , 
+D:  um , which , uh , was made , uh , by , uh , Hari . 
+D:  And that was that , um , if you have  uh feed two streams into HTK , 
+D:  um , and you , uh , change the , uh variances  
+D:  if you scale the variances associated with , uh these streams 
+D:  um , you can effectively scale  the streams . 
+D:  Right ? So , um , 
+A:  Mmm . 
+D:  you know , without changing the scripts for HTK , which is the rule here , 
+A:  Mm - hmm . 
+D:  uh , you can still change the variances which would effectively change the scale of these  these , uh , two streams that come in . 
+D:  <sniff> 
+A:  Uh ,  yeah . 
+D:  And , um , 
+D:  so , 
+D:  um , if you do that , 
+D:  for instance it may be the case 
+D:  that , um , 
+D:  the MLP should not be considered as strongly , 
+D:  for instance . 
+A:  Mmm . 
+D:  And , um , so this is just setting them to be , <clears throat> 
+D:  excuse me ,  of equal  equal weight . 
+D:  Maybe it shouldn't be equal weight . 
+B:  Maybe . 
+D:  Right ? You know , I I 'm sorry to say that gives more experiments if we wanted to look at that , but  
+A:  <laugh> 
+B:  <laugh> 
+D:  but , uh , um , you know on the other hand it 's just experiments at the level of the HTK recognition . It 's not even the HTK , uh , 
+A:  Mmm . 
+A:  Yeah . 
+B:  Yeah . 
+D:  uh  Well , I guess you have to do the HTK training also . Uh , do you ? 
+B:  Yeah . 
+B:  so this is what we decided to do . 
+D:  Let me think . 
+D:  Maybe you don't . 
+D:  Uh . 
+D:  Yeah , you have to change the  
+D:  No , you can just do it in  as  once you 've done the training  
+C:  And then you can vary it . Yeah .  
+D:  Yeah , the training is just coming up with the variances so I guess you could  
+D:  you could just scale them all . 
+A:  Scale the  ?  
+D:  Variances .  
+A:  Yeah . 
+A:  But  
+A:  Is it  i th I mean the HTK models are diagonal covariances , so I d 
+D:  That 's uh , exactly the point , I think , that if you change  
+A:  Is it  
+A:  Hmm . 
+D:  um , 
+D:  change what they are  
+D:  It 's diagonal covariance matrices , but you 
+A:  Mm - hmm . 
+D:  say what those variances are . 
+A:  Mm - hmm . 
+D:  So , 
+D:  that  you know , it 's diagonal , but the diagonal means th that then you 're gonna  it 's gonna  it 's gonna internally multiply it  and  and uh , 
+D:  <sniff> 
+D:  uh , i it im uh implicitly exponentiated to get probabilities , and so it 's  it 's gonna  
+A:  Mmm . 
+D:  it 's  it 's going to affect the range of things if you change the  change the variances  of some of the features . 
+A:  Mmm . 
+B:  do ? 
+D:  So , i it 's precisely given that model you can very simply affect , uh , the s the strength that you apply the features . 
+D:  That was  that was , uh , Hari 's suggestion . 
+A:  Yeah . Yeah . 
+D:  So , um  
+B:  Yeah . 
+D:  Yeah . 
+D:  So .  So it could just be that h treating them equally , tea treating two streams equally is just  just not the right thing to do . 
+D:  Of course it 's potentially opening a can of worms because , 
+C:  <mike noise> 
+D:  you know , maybe it should be a different 
+D:  <laugh> number for  for each <laugh> kind of  test set , or something , but  
+A:  Mm - hmm .  
+D:  OK . 
+A:  Yeah .  
+D:  <inbreath> 
+D:  So I guess the other thing is to take  
+C:  <papers shuffling> 
+D:  you know  if one were to take , uh , you know , a couple of the most successful of these , 
+A:  Yeah , and test across everything .  
+D:  and uh  
+D:  Yeah , try all these different tests . 
+A:  Mmm . 
+B:  Yeah . 
+D:  <sniff> 
+A:  Yeah . 
+A:  <breath> 
+D:  Alright . Uh . 
+
+
+A:  So , the next point , yeah , 
+A:  we 've had some discussion with Steve and Shawn , 
+A:  um , about their um , 
+A:  uh , articulatory stuff , 
+A:  um . 
+A:  <breath> 
+A:  So we 'll perhaps start something next week . 
+D:  Mm - hmm . 
+A:  Um , discussion with Hynek , Sunil and Pratibha for 
+A:  trying to plug in their 
+C:  <mike noise> 
+A:  our  
+A:  our networks with their  within their block diagram , 
+C:  <mike noise> 
+A:  uh , where to plug in the  the network , uh , 
+A:  after the  the feature , before as um 
+A:  a as a plugin or as a anoth another path , 
+A:  discussion about multi - band and TRAPS , 
+A:  um , actually Hynek would like to see , 
+A:  perhaps if you remember the block diagram there is , 
+A:  uh , temporal LDA followed b by a spectral LDA 
+A:  for each uh critical band . 
+A:  And he would like to replace these by a network 
+A:  which would , uh , make the system look like a TRAP . 
+A:  Well , 
+A:  basically , it would be a TRAP system . 
+A:  <breath> 
+A:  Basically , this is a TRAP system  
+A:  kind of TRAP system , I mean , but 
+A:  where the neural network are replaced by LDA . 
+A:  Hmm . 
+A:  <breath> 
+A:  Um , 
+A:  yeah , and about multi - band , 
+A:  uh , I started multi - band MLP trainings , 
+A:  um <mouth> 
+A:  mmh  
+A:  Actually , I w I w hhh  prefer to do exactly what I did 
+A:  when I was in Belgium . 
+A:  So I take exactly the same 
+A:  configurations , seven bands with nine frames of context , 
+A:  and we just train on TIMIT , 
+A:  and on the large database , 
+A:  so , with SPINE and everything .  
+A:  And , mmm , 
+A:  I 'm starting to train also , networks with 
+A:  larger contexts . 
+A:  So , this would  would be something between TRAPS and multi - band because 
+A:  we still have quite large bands , 
+A:  and  but with a lot of context also . 
+A:  So 
+A:  Um 
+A:  Yeah , we still have to work on Finnish , 
+A:  um , 
+A:  basically , to make a decision on which MLP 
+C:  <papers shuffling> 
+A:  can be the best across the different languages . 
+A:  For the moment it 's the TIMIT network , 
+A:  and perhaps 
+A:  the network trained on everything . 
+A:  So . 
+A:  Now we can test these two networks on  
+A:  with  with delta and 
+A:  large networks . 
+A:  Well , test them also on Finnish and see 
+B:  Mmm . 
+A:  which one is the  the  
+A:  the best . 
+
+
+A:  Uh , well , the next part of the document is , well , basically , a kind of summary of what  everything that has been done . So . 
+A:  We have seventy - nine M L Ps 
+A:  trained on  
+A:  one , two , three , four , uh , three , four , five , six , seven  
+C:  <papers rustling> 
+A:  ten  on ten different databases . 
+D:  Mm - hmm . 
+A:  Uh , 
+A:  the number of frames is bad also , so we have one million and a half 
+A:  for some , three million for other , and six million for the last one . 
+C:  <papers rustling> 
+A:  Uh , yeah !  
+A:  As we mentioned , TIMIT is the only 
+A:  that 's hand - labeled , 
+A:  and perhaps this is what makes the difference . 
+A:  Um . 
+A:  <breath> 
+A:  Yeah , the other are just Viterbi - aligned . 
+A:  So these seventy - nine MLP differ on different things . First , 
+C:  <mike noise> 
+A:  um with respect to the on - line normalization , 
+A:  there are  
+A:  that use bad on - line normalization ,  
+C:  <laugh> 
+A:  and other good on - line normalization .  
+A:  Um . 
+A:  With respect to the features , 
+A:  with respect to the use of delta or no , 
+A:  uh with respect to the hidden layer size 
+A:  and to the targets . 
+A:  Uh , but of course we don't have all the combination of these 
+A:  different parameters 
+A:  <inbreath> 
+A:  Um . 
+A:  s 
+C:  <mike noise> 
+D:  <mike noise> 
+A:  What 's this ? 
+A:  We only have two hundred eighty six different tests  
+C:  <laugh> 
+A:  And no not two thousand . 
+D:  Ugh ! 
+D:  I was impressed boy , two thousand . 
+D:  OK . <laugh> 
+A:  Yeah . 
+B:  Ah , yes . <laugh> 
+A:  <laugh> 
+C:  <laugh> 
+B:  <laugh> I say this morning that @ @ thought it was the  
+D:  Alright , now I 'm just slightly impressed , OK . 
+C:  <laugh> 
+A:  Um . 
+B:  <laugh> 
+A:  Yeah , basically the observation is what we discussed already . 
+A:  The MSG problem , 
+A:  um , 
+A:  the fact that the MLP trained on target task decreased the error rate . 
+A:  but 
+A:  when the M - MLP is trained on the um  
+A:  is not trained on the target task , it increased the error rate compared to using straight features . 
+A:  Except if the features are bad  
+A:  uh , actually except if 
+A:  the features are not correctly on - line normalized . 
+A:  In this case 
+A:  the tandem is still better even if it 's trained on  not on the target digits . 
+D:  Yeah . So it sounds like <inbreath> yeah , the net corrects some of the problems with some poor normalization . 
+D:  But if you can do good normalization it 's  
+A:  Yeah . 
+A:  Yeah . 
+B:  Yeah . 
+A:  <inbreath> 
+D:  it 's uh  
+A:  Uh , so the fourth point is , yeah , 
+D:  OK . 
+A:  the TIMIT 
+A:  plus noise seems to be 
+A:  the training set that gives better  
+A:  the best network . 
+D:  So 
+D:  So - Let me  
+A:  Mm - hmm . 
+D:  bef before you go on to the possible issues . So , 
+D:  on the MSG uh problem 
+D:  <sniff> 
+D:  um , 
+D:  I think that in  in the  
+D:  um , 
+D:  in the short  time  solution 
+D:  um , 
+D:  that is , 
+D:  um , 
+D:  trying to figure out what we can proceed forward with to make the greatest progress , 
+A:  Mm - hmm . 
+D:  uh , much as I said with JRASTA , even though I really like JRASTA and I really like MSG , 
+A:  Mm - hmm . 
+D:  I think it 's kind of in category that it 's , it  it may be complicated . 
+D:  <laugh> 
+A:  Yeah . 
+D:  And uh it might be  if someone 's interested in it , uh , certainly encourage anybody to look into it in the longer term , 
+D:  once we get out of this particular rush  uh for results . But in the short term , unless you have some  some s strong idea of what 's wrong , 
+A:  Mm - hmm . 
+D:  uh  
+A:  I don't know at all but 
+A:  I 've  
+A:  perhaps  I have the feeling that it 's something that 's quite  
+A:  quite simple or 
+D:  Yeah , probably . 
+A:  just like nnn , 
+A:  no high - pass filter or  
+A:  Mmm . 
+A:  <lengthened vocal squeak> 
+A:  Yeah .  My  But I don't know . 
+D:  There 's supposed to  well MSG is supposed to have a an on - line normalization though , right ? 
+A:  It 's  
+A:  There is , yeah , an AGC - kind of AGC . 
+A:  Yeah . 
+D:  Yeah , but also there 's an on - line norm besides the AGC , there 's an on - line normalization that 's supposed to be uh , 
+A:  <inbreath> 
+A:  Yeah . 
+A:  Yeah . 
+D:  yeah , 
+A:  Mmm . 
+D:  taking out means and variances and so forth . So . 
+A:  Yeah . 
+D:  In fac in fact the on - line normalization that we 're using came from the MSG design , so it 's  
+A:  Um . 
+A:  Yeah , but  
+A:  Yeah . 
+A:  But this was the bad on - line normalization . 
+A:  Actually . 
+A:  Uh . Are your results are still with the bad  the bad  
+B:  Maybe , may  
+D:  <sniff> 
+B:  No ? 
+B:  With the better  No ? 
+A:  With the O - OLN - two ? 
+A:  <papers shuffling> 
+D:  Yes . 
+D:  " On - line - two " is good . 
+A:  Ah yeah , you have  
+B:  Oh ! Yeah , yeah , yeah ! With " two " , with " on - line - two " . Yeah , yeah , yeah . 
+A:  you have OLN - two , yeah . 
+A:  <papers shuffling> 
+A:  So it 's , is the good yeah . 
+B:  Yep , 
+D:  " Two " is good ? 
+B:  it 's a good . 
+A:  And  
+D:  No , " two " is bad . 
+A:  Yeah . 
+D:  OK . 
+B:  Well , actually , it 's good with the ch with the good . 
+D:  <laugh> 
+D:  Yeah . So  Yeah , I  I agree . It 's probably something simple 
+D:  uh , i if  if uh someone , you know , 
+D:  uh , wants to play with it for a little bit . I mean , 
+D:  you 're gonna do what you 're gonna do but  
+A:  Mmm . 
+D:  but my  my guess would be 
+A:  But  
+D:  that it 's something that is a simple thing that could take a while to find . 
+A:  Yeah .  Mmm . I see , yeah .  
+D:  <laugh> 
+C:  <laugh> 
+D:  Yeah .  
+A:  And  
+D:  Uh .  
+A:  <breath> 
+D:  And the other  the results uh , observations two and three , 
+A:  Mmm . 
+D:  Um , is uh  
+D:  Yeah , that 's pretty much what we 've seen . That 's  that  what we were concerned about is that if it 's not on the target task  
+D:  If it 's on the target task then it  it  it helps 
+D:  to have the MLP transforming it . 
+A:  Mmm . 
+D:  If it uh  if it 's not on the target task , 
+D:  then , depending on how different it is , 
+D:  uh you can get uh , a reduction in performance . 
+A:  Mmm . 
+D:  And the question is now how to  
+D:  how to get one and not the other ? Or how to  how to ameliorate 
+D:  the  the problems . 
+A:  Mmm . 
+D:  Um , because it  it certainly does  is nice to have in there , when it  <laugh> when there is something like the 
+A:  Mm - hmm . 
+D:  training data . 
+A:  <page turning> 
+A:  Um . 
+A:  Yeah . So ,  the  the reason  Yeah , the reason is that the  perhaps the target  the  the task dependency  the language dependency , 
+D:  So that 's what you say th there . I see . 
+A:  <inbreath> 
+A:  and the noise dependency  
+A:  Well , 
+A:  the e e But this is still not clear because , 
+A:  um , 
+A:  <mouth> 
+A:  I  I  I don't think we have enough result to 
+A:  talk about the  the language dependency . Well , 
+A:  the TIMIT network is still the best but 
+A:  there is also an the other difference , the fact that it 's  it 's hand - labeled . 
+D:  Hey !  
+F:  Sorry , I 'm very late , uh , 
+F:  Am I still accommodated , or  ?  
+D:  Um , just  you can just sit here . 
+D:  <laugh> Uh , I d I don't think we want to mess with the microphones but it 's uh  
+C:  <laugh> 
+D:  Just uh , have a seat . 
+D:  Um . 
+D:  s Summary of the 
+D:  first uh , uh forty - five minutes is that some stuff work and  works , and some stuff doesn't 
+A:  <laugh> 
+D:  <laugh> OK , <laugh> 
+C:  <laugh> 
+A:  We still have uh  this   
+A:  One of these perhaps ? Mm - hmm . 
+D:  Yeah , I guess we can do a little better than that but  <laugh> 
+B:  Yeah . 
+C:  <laugh> 
+D:  I think if you  if you start off with the other one , 
+D:  actually , that sort of has it in words and then th that has it the  associated results .  OK . 
+B:  Um . <turns page> 
+A:  <clears throat> 
+D:  So you 're saying that um , 
+D:  um , although 
+D:  from what we see , yes there 's what you would expect in terms of a language dependency and a noise dependency . That is , 
+D:  uh , when the neural net is trained on 
+D:  one of those and tested on something different , we don't do as well as in the target thing . But you 're saying 
+A:  Mm - hmm . 
+D:  that uh , it is  
+D:  Although that general thing is observable so far , 
+D:  there 's something you 're not completely convinced about . And  and what is that ? 
+D:  I mean , you say " not clear yet " . What  what do you mean ? 
+A:  Uh , 
+A:  mmm , uh ,  
+A:  I mean , that the  the fact that s Well , for  for TI - digits the TIMIT net is the best , 
+A:  which is the English net . 
+D:  Mm - hmm . 
+A:  But the other are slightly worse . But 
+A:  you have two  two effects , the effect of changing language and the effect of training on something that 's  Viterbi - aligned instead of hand  hand - labeled . 
+B:  Yeah . 
+A:  So . 
+A:  Um . 
+A:  Yeah . 
+D:  Do you think the alignments are bad ? 
+D:  I mean , have you looked at the alignments at all ? What the Viterbi alignment 's doing ? 
+A:  Mmm . 
+A:  I don't  I don't know . 
+A:  Did - did you look at the Spanish alignments Carmen ? 
+B:  Mmm , no . 
+D:  <mouth> 
+D:  Might be interesting to look at it . @ @  Because , I mean , 
+D:  that is just looking but 
+D:  um , 
+D:  um  
+D:  It 's not 
+D:  clear to me you necessarily would do so badly from a Viterbi alignment . It depends how good the recognizer is that 's  
+A:  Mm - hmm . 
+A:  <mouth> 
+D:  that  the  the engine is that 's doing the alignment . 
+A:  Yeah . But  Yeah . 
+A:  But , perhaps it 's not 
+A:  really the  the alignment that 's bad but the  just the ph phoneme string 
+B:  <inbreath> 
+A:  that 's used for the alignment or  
+D:  <inbreath> Aha ! 
+A:  Mmm . I mean  for  
+B:  Yeah . @ @ 
+D:  The pronunciation models and so forth 
+A:  We  It 's single pronunciation , 
+A:  uh  
+D:  Aha . 
+D:  I see . 
+A:  French  French s 
+A:  uh , phoneme strings were corrected manually so 
+A:  we asked people to listen to the um  
+A:  the sentence 
+A:  and we gave the phoneme string and they 
+A:  kind of correct them . 
+A:  But still , 
+A:  @ @ 
+A:  there  there might be errors just in the  in  
+A:  in the ph 
+A:  string of phonemes . 
+A:  Mmm . 
+A:  <mouth> 
+A:  Um . 
+A:  Yeah , so this is not really the Viterbi alignment , in fact , yeah . 
+A:  <inbreath> 
+A:  Um , the third  The third uh issue is the noise dependency perhaps 
+A:  but , well , this is not clear yet because 
+A:  all our nets are trained on the same noises and   
+A:  <inbreath> 
+A:  Mmm . 
+D:  <inbreath> I thought some of the nets were trained with SPINE and so forth . So it  And that has other noise . 
+A:  Yeah . 
+A:  So  Yeah . 
+A:  But  
+A:  Yeah . 
+A:  Results are only coming for  for this net . <inbreath> 
+A:  Mmm . 
+D:  OK , yeah , just don't  just need more  more results there with that @ @ . 
+A:  Yeah . 
+A:  <inbreath> 
+
+
+A:  Um . 
+A:  So . 
+A:  Uh , from these results we have some questions with answers . 
+A:  What should be the network input ? 
+A:  Um , PLP work as well as MFCC , I mean . 
+A:  <inbreath> 
+A:  Um . 
+A:  But it seems impor important to use the delta . 
+A:  Uh , with respect to the network size , 
+A:  there 's one experiment that 's still running and we should have the result today , 
+A:  comparing network with five hundred and  one thousand units . 
+A:  So , 
+A:  nnn , still no answer actually . <laugh> 
+D:  Hm - hmm . 
+A:  Uh , the training set , well , 
+A:  some kind of answer . We can , we can tell which training set gives the best result , 
+A:  <inbreath> but 
+A:  <mouth> 
+A:  we don't know exactly why . 
+D:  <laugh> Uh . 
+A:  Uh , so . 
+D:  Right , I mean the multi - English 
+D:  so far is  is the best . 
+A:  Yeah . 
+D:  " Multi - multi - English " just means " TIMIT " , right ? 
+A:  Yeah . 
+B:  Yeah . 
+D:  So uh 
+D:  That 's  Yeah . So . And  and when you add other things in to  to broaden it , it gets worse  uh typically . Yeah . <laugh> 
+A:  Mmm . 
+A:  Mm - hmm . 
+A:  <laugh> 
+
+
+A:  Then uh 
+D:  OK . 
+A:  some questions without answers . 
+A:  Uh , 
+A:  training set , 
+A:  um , 
+D:  Uh - huh . 
+D:  <sniff> 
+A:  uh , training targets  
+D:  I like that . The training set is both questions , with answers and without answers . It 's sort of , yes  it 's mul it 's multi - uh - purpose . OK . 
+A:  It 's  Yeah . 
+A:  Yeah . <laugh> 
+A:  Yeah .  
+C:  <laugh> 
+A:  Uh , 
+A:  training s Right . So  
+A:  Yeah , the training targets actually , the two of the main issues perhaps are still the language dependency 
+A:  <inbreath> 
+A:  and the noise dependency . And 
+A:  perhaps to try to reduce the language dependency , 
+A:  we should focus on 
+A:  finding 
+A:  some other kind of training targets . 
+D:  Mm - hmm . 
+A:  And labeling s labeling seems important 
+A:  uh , because of TIMIT results . 
+D:  Mm - hmm . 
+A:  Uh . For moment you use  we use phonetic targets but we could also use articulatory targets , soft targets ,  
+A:  and perhaps even , um 
+A:  use networks that doesn't do classification but just regression so 
+A:  uh , train to have neural networks that 
+A:  um , 
+A:  um , 
+D:  Mm - hmm . 
+A:  uh , does a regression 
+A:  and 
+A:  well , 
+A:  basically com com compute features 
+A:  and noit not , nnn , 
+A:  features without noise . I mean uh , 
+D:  <mouth> <inbreath> 
+A:  transform the fea noisy features <inbreath> 
+A:  in other features that are not noisy . 
+A:  But continuous features . Not uh 
+D:  Mm - hmm . 
+A:  uh , hard targets . 
+D:  Mm - hmm . 
+D:  <inbreath> 
+A:  Uh  
+D:  Yeah , that  seems like a good thing to do , probably , uh , 
+D:  not uh again a short - term 
+A:  Yeah . 
+D:  sort of thing . 
+D:  <inbreath> 
+D:  I mean one of the things about that is that 
+D:  um 
+D:  it 's  
+D:  e u the ri I guess the major risk you have there of being  is being dependent on  very dependent on the kind of noise and  and so forth . 
+A:  <inbreath> 
+A:  Yeah . f 
+A:  But , yeah . 
+D:  Uh . 
+
+
+A:  So , this is w w 
+D:  But it 's another thing to try . 
+A:  i wa wa 
+A:  this is one thing , this  this could be  
+A:  could help  could help perhaps to reduce language dependency <inbreath> 
+A:  and for the noise part um 
+A:  we could combine this with other approaches , like , well , the Kleinschmidt approach . 
+A:  So the d the idea of 
+A:  putting all the noise that we can find inside a database . 
+D:  Mm - hmm . 
+B:  Yeah . 
+A:  I think Kleinschmidt was using more than fifty different noises to train his network , 
+C:  <laugh> 
+A:  and  
+A:  So this is one <laugh> approach 
+D:  Mm - hmm . 
+A:  and the other is multi - band 
+D:  Mm - hmm . 
+A:  <mouth> 
+A:  <inbreath> 
+A:  uh , that I think is more robust to the noisy changes . 
+A:  So perhaps , 
+A:  I think something like multi - band trained on a lot of noises 
+A:  with uh , features - based targets could  
+D:  Yeah , if you  i i It 's interesting thought maybe if you just trained up  
+A:  could  could help . 
+D:  I mean w yeah , one  one fantasy would be you have something like articulatory targets 
+D:  and you have  um 
+D:  some reasonable database , um 
+D:  but then  which is um <breath> 
+D:  copied over many times with a range of different noises ,  
+A:  Mm - hmm . 
+D:  And uh  
+D:  <breath> 
+D:  If  Cuz what you 're trying to  do is come up with a  
+D:  a core , reasonable feature set which is then gonna be used 
+D:  uh , by the  the uh HMM  system . So . 
+A:  Mm - hmm . 
+D:  Yeah , OK . 
+D:  <breath> 
+A:  So , 
+A:  um , 
+A:  yeah . The future work is ,  well , try to connect to the  to make  to plug in the system to the OGI 
+A:  <inbreath> 
+A:  system . 
+A:  Um , there are still open 
+A:  questions there ,  where to put the MLP 
+D:  Mm - hmm . 
+A:  basically . 
+A:  Um . 
+A:  <clears throat> 
+D:  And I guess , you know , the  the  the real open question , 
+D:  I mean , e u there 's lots of open questions ,  but one of the core quote  " open questions " for that is um , 
+D:  um , if we take 
+D:  the uh  
+D:  you know , the best ones here , maybe not just the best one , but the best few or something  
+A:  Mm - hmm . 
+D:  You want the most promising group from these other experiments . 
+D:  Um , how well do they do over a range of these different tests , not just the Italian ? 
+D:  Um . And y  Right ? And then um  
+A:  Mmm ,  Yeah , yeah . 
+D:  then see ,  again , how  
+D:  We know that there 's a mis there 's a uh  
+D:  a  a loss in performance when the neural net is trained on conditions that are different than  than , uh 
+D:  we 're gonna test on , but 
+D:  well , if you look over a range of these different tests 
+D:  um , how well do these different ways of combining the straight features with the MLP features , uh stand up 
+D:  over that range ? 
+B:  Mm - hmm . 
+D:  That 's  that  that seems like the  the  
+D:  the real question . 
+D:  And if you know that  
+D:  So if you just take PLP with uh , the double - deltas . 
+D:  Assume that 's the p the feature . 
+D:  look at these different ways of combining it . 
+D:  And uh , take  let 's say , just take uh 
+D:  multi - English cause that works pretty well for the training . 
+A:  Mm - hmm . 
+D:  And just look  take that case and then look over all the different things . How does that  
+D:  How does that compare between the  
+A:  So all the  all the test sets you mean , yeah . 
+B:  Yeah . 
+D:  All the different test sets , 
+A:  And  
+D:  and for  and for the couple different ways that you have of  of  of combining them . 
+A:  Yeah . 
+D:  Um .  How well do they stand up , 
+D:  over the  
+A:  And perhaps doing this for  cha changing the variance of the streams and so on  getting different scaling   
+B:  Mm - hmm . 
+A:  Mmm . 
+D:  <mouth> 
+D:  That 's another possibility if you have time , yeah . 
+D:  Yeah . 
+A:  OK .  
+A:  <inbreath> 
+A:  Um . 
+D:  @ @ 
+A:  Yeah , so thi this sh 
+A:  would be more working on 
+A:  the MLP as an additional path 
+A:  instead of an insert to the  to their diagram . 
+A:  Cuz  Yeah . Perhaps the insert 
+A:  idea is kind of strange because 
+A:  nnn , they  they make LDA 
+A:  and then we will again add a network does discriminate anal nnn , 
+D:  Yeah .  It 's a little strange but on the other hand they 
+A:  that discriminates , or  ? 
+A:  Mmm ? 
+D:  did it before . 
+D:  Um the <outbreath> 
+A:  Mmm .  And  and  and yeah . And because also perhaps we know that 
+A:  the  when we have very good features the MLP doesn't help . 
+A:  So . I don't know . 
+D:  <inbreath> 
+D:  Um , the other thing , though , is that um  
+D:  So . Uh , we  we wanna get their path 
+D:  running here , right ? If so , we can add this other stuff . 
+A:  <inbreath> Um . 
+D:  as an additional path right ? 
+A:  Yeah , the  the way we want to do  
+D:  Cuz they 're doing LDA  RASTA . 
+A:  The d What ? 
+D:  They 're doing LDA RASTA , yeah ? 
+A:  Yeah , the way we want to do it perhaps is to  just to get the VAD labels and the final features . 
+A:  So they will send us the  Well , 
+D:  I see . <outbreath> 
+A:  provide us with the feature files , 
+D:  I see . 
+A:  and with VAD uh , binary labels so that we can 
+A:  uh , 
+A:  get our MLP features 
+A:  and filter them with the VAD and then combine them with 
+A:  their f feature stream . 
+D:  <inbreath> 
+D:  I see . So we  So . First thing of course we 'd wanna do there is to make sure that when we get those labels of final features is that we get the same results as them . 
+A:  So . 
+A:  @ @ 
+D:  Without putting in a second path . 
+A:  Uh . 
+A:  You mean  Oh , yeah ! Just re re retraining r 
+D:  Yeah just th w i i 
+A:  retraining the HTK ? 
+D:  Just to make sure that we  have  we understand properly what things are , our very first thing to do is to  is to double check that we get the exact same results as them on HTK . 
+A:  Oh yeah . @ @ 
+A:  Yeah , OK . Mmm . 
+D:  Uh , I mean , I don't know that we need to r 
+B:  Yeah . 
+A:  Yeah . 
+D:  Um  
+D:  Do we need to retrain I mean we can just take the re their training files also . But .  
+D:  But , 
+D:  uh  just 
+D:  for the testing , 
+D:  jus just make sure that we get the same results  so we can duplicate it before we add in another   
+A:  Mmm . 
+A:  OK . 
+D:  Cuz otherwise , you know , we won't know what things mean . 
+A:  Oh , yeah . OK . 
+
+
+A:  And um . 
+A:  Yeah , so fff , LogRASTA , I don't know if we 
+A:  want to  
+A:  We can try  
+A:  networks 
+A:  with LogRASTA filtered features . 
+D:  Maybe . 
+A:  Mmm . 
+F:  Would you be using on - line normalization with that ? 
+A:  I 'm sorry ? 
+F:  Would you be using on - line normalization with LogRASTA - PLP ? 
+A:  Yeah . Well  
+A:  Yeah . 
+D:  Oh ! You know , the other thing is when you say comb 
+A:  But  
+D:  I 'm  I 'm sorry , I 'm interrupting .  that u Um , 
+D:  uh , when you 're talking about combining multiple features , 
+D:  um  
+D:  Suppose we said , " OK , we 've got these different features and so forth , but PLP seems  pretty good . " 
+D:  If we take the approach that Mike did 
+D:  and have  
+D:  I mean , one of the situations we have is we have these different conditions . We have different languages , we have different  <inbreath> different noises ,  
+D:  Um  If we 
+D:  have some drastically different conditions and we just train up different M L Ps  with them . 
+A:  Mm - hmm . 
+D:  And put  
+D:  put them together . 
+D:  <inbreath> 
+D:  What  what  
+D:  What Mike found , for the reverberation case at least , I mean  
+D:  I mean , who knows if it 'll work for these other ones . 
+D:  That you did have nice interpolative effects . 
+D:  That is , that 
+D:  yes , if you knew  what the reverberation condition was gonna be 
+D:  and you trained for that , then you got 
+D:  the best results . But if you had , say , a heavily - reverberation ca heavy - reverberation case and a no - reverberation case , 
+A:  Mm - hmm . 
+D:  uh , and then you fed the thing , uh 
+D:  something that was a modest amount of reverberation then you 'd get some result in between the two . So it was sort of  
+D:  behaved reasonably . Is tha that a fair   
+F:  Yeah . 
+C:  <long breath> 
+D:  Yeah . 
+F:  Um . It also seems like whe if you try to train , like , a single MLP with too much noise , 
+F:  um , 
+F:  you 'll get some nice interval of power for unseen cases but 
+F:  um but any unmatched cases it 'll start , um , interfering . 
+A:  Yeah . 
+A:  So you  you think it 's perhaps better to have several M L Ps ? 
+F:  Well , it 's easier . 
+F:  Um , that way you can turn things off @ @ turn things on . 
+B:  <laugh> 
+F:  Um . But you then  
+A:  Yeah but  
+A:  Mmm . 
+F:  A single MLP of course will work a little bit better because uh it 'll have uh  
+F:  It 's a nonlinear kind of merging  of the features . 
+D:  <inbreath> It works better if  what ?  
+A:  <inbreath> Yea - 
+F:  Uh , well , in general nonlinear mergings seems to work a little better then just the straight linear coefficients , but um 
+F:  it just means it 's  you have to have bigger nets and 
+F:  more training time , and if you want to turn things off 
+F:  um that 's harder to do . 
+D:  I see . 
+D:  <inbreath> 
+D:  Well , see , i oc <mouth> 
+D:  You were doing some something that was  
+D:  So maybe the analogy isn't quite right .  
+D:  You were doing something that was in way a little better behaved . You had reverb for a single variable which was re uh , uh , reverberation . 
+D:  <inbreath> Here the problem seems to be is that we don't have 
+D:  a hug a really huge net 
+D:  with a really huge amount of training data . 
+D:  But we have s f  for this kind of task , I would think ,  sort of a modest amount . I mean , a million frames actually isn't that much . 
+D:  We have a modest amount of  of uh training data 
+D:  from a couple different conditions , 
+D:  and then uh  in  yeah , that  
+D:  and the real situation is that there 's enormous variability 
+D:  that we anticipate in the test set 
+D:  in terms of language , and noise type  uh , and uh ,  uh , channel characteristic ,  
+D:  sort of all over the map . A bunch of different dimensions . 
+D:  <inbreath> 
+D:  And so , I 'm just concerned that 
+D:  we don't really have  um , 
+D:  the data to train up  I mean 
+D:  one of the things that we were seeing is that when we added in  
+D:  we still don't have a good 
+D:  explanation for this ,  but 
+D:  we are seeing that we 're adding in uh , a fe few different databases 
+D:  and uh the performance is getting worse 
+D:  and uh , 
+D:  when we just take one of those databases that 's a pretty good one , it actually is  is  is  is  is better . 
+D:  And uh that says to me , yes , that , you know , there might be some problems with the pronunciation models that some of the databases we 're adding in or something like that . But one way or another  we don't have 
+D:  uh , seemingly , the ability  to represent , in the neural net of the size that we have , 
+D:  um , all of the variability  that we 're gonna be covering . 
+D:  So that I 'm  I 'm  I 'm hoping that um , 
+D:  this is another take on the efficiency argument you 're making ,  which is I 'm hoping that with moderate size neural nets , 
+D:  uh , that uh if we  if they look at 
+D:  more constrained conditions they  they 'll have enough parameters to really represent them . 
+F:  I think the way that Hynek or  or Malik had  had told me was that if you try to train a classifier  
+F:  on too much  too many conditions then it 'll do good on none of them , 
+F:  but it 'll start doing something else . 
+D:  Mm - hmm . <mike noise> 
+F:  Which means , if you have something 
+D:  Mm - hmm . 
+F:  else in there it 'll be nicer @ @ I 'm not sure @ @ 
+C:  <cough> 
+D:  Mm - hmm . 
+D:  <inbreath> 
+F:  I also have some  some  a new theory on why 
+F:  um LogRASTA - PLP  uh PLP  with on - line normalization might be 
+F:  a little bit better than LogRASTA - PLP with on - line normalization . 
+F:  It has to do with certain distribution characteristics . 
+F:  But if you take away the on - line normalization , LogRASTA seems to do better than PLP but not in all cases . 
+D:  Yeah . 
+D:  <inbreath> 
+A:  So doing both is  is not  is not right , you mean , or  ?  
+F:  Um . 
+F:  not so much not right , but it if you throw in the on - line normalization then it might not be necessary to use the LogRASTA - PLP . 
+A:  Yeah . 
+D:  Yeah . 
+D:  <inbreath> 
+D:  I  I just sort of have a feeling   
+A:  But  Yeah . Mm - hmm . 
+D:  Yeah . 
+D:  I mean  <inbreath> 
+D:  i i e 
+D:  The um  I think it 's true that the OGI folk found 
+D:  that using LDA  RASTA , which is 
+D:  a kind of LogRASTA , it 's just that they have the  
+D:  I mean it 's done in the log domain , as I recall , and it 's  it uh  it 's just that they d it 's trained up , right ? 
+A:  Mm - hmm . 
+D:  <inbreath> 
+D:  That that 
+D:  um 
+D:  benefitted from on - line normalization . 
+D:  So they did  At least in their case , 
+D:  it did seem to 
+D:  be somewhat complimentary . 
+D:  So will it be in our case , where we 're using the neural net ? I mean they  they were not  not using the neural net . 
+D:  Uh 
+D:  I don't know . 
+D:  <inbreath> 
+
+
+D:  OK , so the other things you have here are uh , trying to improve 
+D:  results from a single  Yeah . Make stuff better . 
+D:  OK . <laugh> Uh . <laugh> 
+D:  Yeah . And CPU memory issues . Yeah . We 've been sort of ignoring that , haven't we ? 
+A:  Yeah , so I don't know .  
+D:  But  
+A:  But we have to address the problem of CPU and memory we   
+D:  Yeah , but I li 
+D:  Well , I think  
+D:  My impression  You  you folks have been looking at this more than me . But my impression was that <inbreath> 
+D:  uh , there was a  a  a  a strict 
+D:  constraint on the delay , 
+B:  Yeah . 
+D:  but beyond that it was kind of that 
+D:  uh 
+D:  using less memory was better , and <inbreath> 
+D:  using less CPU was better . Something like that , right ? 
+A:  Yeah , but  Yeah . 
+A:  So , yeah , but we 've  I don't know . We have to 
+A:  get some reference point to 
+A:  where we  Well , 
+A:  what 's 
+A:  a reasonable number ? 
+A:  Perhaps be because if it 's  if it 's too large or  large or @ @  
+D:  <inbreath> 
+D:  Um , well I don't think we 're <outbreath> 
+D:  um <outbreath> 
+D:  completely off the wall . I mean I think that if we  if we have  
+D:  Uh , I mean 
+D:  the 
+D:  ultimate fall back that we could do  
+D:  If we find uh  
+D:  I mean we may find that we  we 're not really gonna worry about the M L P . 
+D:  You know , if the MLP ultimately , after all is said and done , doesn't really help then we won't have it in . 
+D:  <inbreath> 
+A:  Mmm . 
+D:  If the MLP does , we find , help us enough in some conditions , 
+D:  uh , we might even have more than one MLP . 
+D:  We could simply say that is uh , done on the uh , server . 
+A:  Mmm . 
+D:  And it 's uh  
+D:  <inbreath> 
+D:  We do the other manipulations that we 're doing before that . 
+D:  So , I  I  I think  I think that 's   that 's OK . 
+A:  And  Yeah . 
+D:  <mouth> <inbreath> 
+
+
+D:  So I think the key thing was um , 
+D:  this plug into OGI . 
+D:  Um , what  what are they  What are they gonna be working  Do we know what they 're gonna be working on 
+D:  while we take their 
+D:  features , and  ? 
+A:  They 're  
+A:  They 're starting to wor work on some kind of multi - band . So . Um  
+A:  This  that was Pratibha . Sunil ,  what was he doing , do you remember ? 
+B:  Sunil ? 
+A:  Yeah . 
+A:  He was doing something new or  ?  
+B:  I  I don't re I didn't remember . 
+B:  Maybe he 's working with  
+A:  I don't think so . 
+A:  Trying to tune  wha networks ? 
+B:  neural network . 
+B:  Yeah , I think so . 
+A:  I think they were also mainly , well , 
+A:  working a little bit of new things , like networks and multi - band , but mainly trying to tune their  
+A:  their system as it is now to  
+A:  just 
+B:  Yeah . 
+A:  trying to get the best from this  this architecture . 
+D:  <inbreath> 
+A:  Mmm . 
+D:  OK . So I guess the way it would work is that you 'd get  
+A:  Mm - hmm . 
+D:  There 'd be some point where you say , " OK , this is their version - one " or whatever , 
+D:  and we get these VAD labels and features and so forth for all these test sets from them , 
+D:  and then um , 
+D:  uh , that 's what we work with . We have a certain level we try to improve it with this other path 
+D:  and then um , 
+D:  uh , when it gets to be uh , 
+D:  January 
+D:  some point uh , 
+D:  we say , " OK we  we have shown that we can improve this , in this way .  So now uh  um  what 's your newest version ? "   
+A:  <laugh> 
+D:  And then maybe they 'll have something that 's better and then we  we 'd combine it . 
+D:  This is always hard . I mean I  I  I used to work  with uh 
+D:  folks who were trying to improve a good 
+D:  uh , HMM system with uh  with a neural net system 
+D:  and uh , it was  a common problem that you 'd   
+D:  Oh , and this  Actually , this is true not just for neural nets but just for  in general if people were  working with uh , rescoring 
+D:  uh , N - best lists or lattices that come  came from uh , a mainstream recognizer . Uh , You get something from the  
+D:  the other site at one point and you work really hard on making it better with rescoring . 
+D:  But they 're working really hard , too . 
+D:  So by the time  you have uh , improved their score , 
+A:  Mmm . 
+C:  <laugh> 
+D:  they have also improved their score and now there isn't any difference , because the other   <laugh> 
+A:  Yeah . 
+B:  <laugh> Yeah . 
+D:  So , um , I guess at some point we 'll have to uh   
+A:  So it 's  
+D:  Uh , I  I don't know . I think we 're  we 're integrated a little more tightly than happens in a lot of those cases . I think at the moment they  
+D:  they say that they have a better thing we can  we  e e <inbreath> 
+D:  What takes all the time here is that th we 're trying so many things , presumably 
+A:  Mmm . 
+D:  uh , in a  in a day we could turn around uh , taking a new set of things from them and  and rescoring it , right ? So . 
+A:  Mmm . 
+A:  Yeah . 
+A:  Yeah , perhaps we could . 
+D:  Yeah . 
+D:  Well , OK . No , this is  I think this is good . I think that the most wide open thing is the issues about the 
+D:  uh , you know , 
+D:  different trainings . You know , da training targets and 
+A:  Mmm . 
+D:  noises and so forth . That 's sort of wide open . 
+A:  So we  we can for  we c we can forget combining multiple features and MLG perhaps , or 
+D:  <inbreath> 
+A:  focus more on the targets and on the training data and  ?  
+D:  <inbreath> 
+D:  Yeah , I think for right now um , I th I  I really liked MSG . And I think that , you know , one of the things I liked about it is has such different temporal properties . <inbreath> 
+D:  And um , I think that there is ultimately a really good 
+D:  uh , potential for , you know , bringing in things with different temporal properties . 
+D:  Um , but um , 
+D:  uh , 
+D:  we only have limited time and there 's a lot of other things we have to look at . And it seems like much more core questions are issues about the training set 
+A:  Mmm . 
+D:  and the training targets , 
+D:  and fitting in uh 
+D:  what we 're doing with what they 're doing , and , you know , with limited time . 
+D:  Yeah . I think  we have to start cutting down . So uh  
+A:  Mmm . 
+D:  <mouth> 
+D:  I think so , yeah . 
+D:  And then , you know , once we  
+D:  Um , 
+D:  having gone through this  process and trying many different things , I would imagine that 
+D:  certain things uh , come up that you are curious about uh , that you 'd not getting to and so when the 
+D:  dust settles from the evaluation uh , I think that would time to go back and take whatever 
+D:  intrigued you most , you know , got you most interested uh and uh  and  and work with it , you know , for the next round . 
+B:  <inbreath> 
+D:  @ @ 
+D:  <inbreath> 
+D:  Uh , as you can tell from these numbers uh , nothing that any of us is gonna do is actually gonna completely solve the problem . So . 
+A:  Mmm . 
+C:  <laugh> 
+D:  So ,  there 'll still be plenty to do . <laugh> 
+A:  <laugh> 
+
+
+D:  Barry , you 've been pretty quiet . 
+D:  @ @ 
+C:  Just listening . <laugh> 
+D:  <laugh> Well I figured that , but  <laugh> 
+D:  That  what  what  what were you involved in in this primarily ? 
+C:  Um , <mouth> helping out <mouth> uh , preparing  Well , they 've been kind of running all the experiments and stuff and 
+D:  <mike noise> 
+C:  I 've been uh , uh w doing some work on the  on the  preparing all  all the data for them to  to um , train and to test on . 
+C:  Um 
+C:  Yeah . Right now , I 'm  I 'm focusing mainly on this final project I 'm working on in Jordan 's class . 
+D:  Ah ! I see . <laugh>  Right . <laugh> What 's  what 's that ? 
+C:  Yeah . 
+B:  <laugh> 
+C:  <laugh> 
+C:  Um , <mouth> 
+C:  I 'm trying to um  
+C:  So there was a paper in ICSLP about um this  this 
+C:  multi - band um , belief - net structure .  
+D:  Mm - hmm . 
+C:  This guy did  
+C:  uh basically it was two H M Ms with  with a  with a dependency arrow between the two H M Ms <inbreath> 
+D:  Uh - huh . 
+C:  And so I wanna try  try coupling them instead of t having an arrow that  that flows from one sub - band to another sub - band . I wanna try having the arrows go both ways . 
+C:  And um , <mouth> I 'm just gonna see if  if that  that better models  um , uh 
+C:  asynchrony in any way or um   Yeah . 
+D:  Oh ! OK . 
+D:  Well , that sounds interesting . 
+C:  Yeah . 
+C:  <laugh> 
+D:  OK . 
+D:  <inbreath> 
+
+
+D:  Alright , so uh ,  
+D:  <inbreath> 
+D:  since uh , we didn't ha get a channel on for you ,  you don't have to read any digits but the rest of us will . <laugh> 
+F:  Light 's on here . @ @ Yeah . 
+D:  Uh , is it on ? 
+D:  Well . 
+D:  We didn't uh  
+D:  I think I won't touch anything cuz I 'm afraid of making the driver crash which it seems to do ,  pretty easily . 
+C:  <laugh> 
+E:  <breath-laugh> 
+D:  OK , thanks . 
+D:  OK , so we 'll uh  I 'll start off the uh 
+E:  <breath-laugh> 
+E:  <breath-laugh> 
+D:  um  connect the  
+A:  My battery is low . 
+D:  Well , let 's hope it works . Maybe you should go first and see <clears throat> so that you 're  
+E:  <laugh> 
+E:  <breath-laugh> 
+C:  <laugh> 
+E:  <breath-laugh> 
+D:  OK . 
+D:  Guess we 're done . OK , uh 
+D:  so . 
+D:  <pressing numbers on the telephone>  
+D:  Just finished digits .  
+G:  OK . I 'll be right up .  
+D:  OK .  
+D:  <hangs up the telephone> <laugh> 
+A:  <turns off mike> 
+D:  Yeah , so . 
+D:  Uh 
+D:  <sniff> 
+D:  <loud outbreath>  
+D:  Well , it 's good . 
+D:  I think  I guess we can turn off our microphones now . 
+D:  <turns off mike> 
+C:  Just pull the batteries out . <whispered> <noise> 
+C:  <turns off mike> 
+
+
+D:  Alright . <outbreath> 
+D:  Anything to  <outbreath> 
+D:  you wanted to  No . OK .  
+D:  Silent partner in the  <laugh> in the meeting . Oh , we got a laugh out of him , that 's good . 
+E:  <laugh> 
+D:  <inbreath>  OK , everyone h must contribute to the  our  our sound  
+E:  <laugh> 
+D:  <laugh> sound files here . OK , so speaking of which , if we don't have anything else that we need  
+D:  You happy with where we are ? Know  know wher know where we 're going ? 
+A:  Mmm . 
+D:  Uh  
+E:  <laugh> 
+A:  I think so , yeah . <laugh> 
+D:  Yeah , yeah . You  you happy ? 
+B:  Mmm . 
+B:  <breath-laugh> 
+D:  You 're happy . OK everyone  should be happy . 
+B:  <laugh> 
+D:  OK . 
+D:  You don't have to be happy . You 're almost done .  
+F:  @ @ . 
+D:  Yeah , yeah . <laugh> OK . 
+E:  Al - actually I should mention  So if   um , about the Linux machine " Swede . "  So it looks like the um , neural net tools are installed there .  And um 
+D:  Yeah . 
+A:  Mmm . 
+E:  Dan Ellis  I believe knows something about using that machine so 
+E:  If people are interested in  in getting jobs running on that maybe I could help with that . 
+A:  Mmm . 
+A:  Yeah , but 
+A:  I don't know if we really need now a lot of 
+A:  machines . Well . 
+A:  we could start computing another huge table but  
+A:  yeah , we  
+D:  Well . 
+A:  <laugh> 
+D:  Yeah , I think we want a different table , at least <laugh> 
+A:  Yeah , sure .  
+D:  Right ? I mean there 's  there 's some different things that we 're 
+A:  But  
+D:  trying to get at now . But  
+A:  Yeah . 
+A:  Mmm . 
+D:  <inbreath> 
+D:  So . Yeah , as far as you can tell , you 're actually OK on C - on CPU uh , for training and so on ? 
+D:  Yeah .  
+A:  Ah yeah . I think so . Well , more is always better , but 
+A:  mmm , 
+A:  I don't think we have to train a lot of networks , now that we know  
+A:  We just select what works  fine and 
+D:  OK . 
+D:  OK . 
+B:  Yeah . 
+D:  And we 're OK on  
+A:  try to improve this and  
+B:  to work 
+D:  And we 're OK on disk ? 
+A:  It 's OK , yeah . Well 
+A:  sometimes we have 
+A:  some problems . 
+B:  Some problems with the   <laugh> You know . 
+D:  But they 're correctable , uh problems . 
+A:  Yeah , restarting the script basically and  <laugh> 
+D:  Yes . 
+D:  Yeah , I 'm familiar with <inbreath> that one , OK . 
+B:  <laugh> 
+C:  <laugh> 
+D:  <inbreath> 
+
+
+A:  I 'm reading transcript two five seven one , two five nine O .  
+B:  @ @ batteries ? 
+A:  one nine four three  
+C:  Yeah , your battery 's going down too .  
+A:  two six  
+A:  three  
+A:  four  
+A:  five  
+A:  seven one  
+A:  eight three zero six seven four four  
+A:  nine three O four nine O O  
+B:  <cough> 
+A:  O nine nine eight four  
+A:  zero  
+A:  one  
+A:  two O two eight six nine one  
+A:  four one  
+A:  five six nine zero seven five four  
+A:  six six  
+A:  seven  
+A:  eight  
+A:  nine  
+A:  O O O  
+A:  one two seven three O seven three  
+D:  Transcript uh 
+D:  two  
+C:  Carmen 's battery is d going down too . 
+D:  Oh , OK . Yeah . Why don't you go next then . 
+B:  Uh , transcript number two five one one dash two five three zero channel one .  
+B:  nine zero five  
+B:  O O four seven  
+B:  one three zero zero six three seven  
+B:  two five five four four five four  
+B:  three three one  
+B:  four seven O  
+B:  five  
+B:  six  
+B:  seven zero seven  
+B:  nine one  
+B:  O four  
+B:  zero four seven  
+B:  one seven five two O four O  
+B:  two nine  
+B:  three  
+B:  four zero five five two six eight  
+B:  six three eight nine zero nine zero  
+B:  seven six four seven  
+B:  eight six one  
+B:  nine  
+B:  <mike noise> 
+D:  OK . 
+D:  Um , transcript two five three one dash two five five zero  
+D:  O  
+D:  zero zero  
+D:  one O three five two one seven  
+D:  three one one zero six five six  
+D:  four three three six four six three  
+D:  five eight one one two four four  
+D:  six nine nine  
+D:  seven eight O one  
+D:  eight O O  
+D:  nine  
+D:  zero one six zero  
+D:  one two three eight one  
+D:  two six zero four  
+D:  three nine  
+D:  four nine five  
+D:  five  
+D:  six zero four eight three  
+D:  eight two four two  
+D:  nine three three three  
+D:  O five  
+E:  I 'm reading transcript two five five one dash two five seven O  
+E:  zero six six nine five four seven  
+E:  one  
+E:  two  
+E:  three O O  
+E:  five one  
+E:  six two five seven  
+B:  <turns off mike, low batteries> 
+E:  seven five  
+E:  eight  
+E:  nine  
+E:  O  
+E:  zero zero five zero eight nine six  
+E:  two one three O five  
+E:  three five seven two three six zero  
+E:  four three  
+E:  five six nine nine  
+E:  six seven  
+E:  seven O six  
+E:  eight zero six five zero  
+E:  O three eight five four  
+E:  zero two  
+C:  I 'm reading transcript two four nine one dash two five one zero on channel two .  
+C:  eight  
+C:  nine  
+C:  zero seven nine zero two  
+C:  one four O six  
+C:  two six three one  
+C:  three eight two O five eight four  
+C:  four  
+C:  five  
+C:  six O eight  
+C:  eight one two zero six  
+C:  nine six two zero four four three  
+C:  O seven three  
+C:  zero seven  
+C:  one  
+C:  two O five  
+C:  four one five one  
+C:  five six  
+C:  six nine  
+C:  seven five nine one three  
+C:  eight seven two nine seven two six  
+
+

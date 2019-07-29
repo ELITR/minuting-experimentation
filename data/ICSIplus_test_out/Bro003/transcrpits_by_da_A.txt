@@ -1,0 +1,228 @@
+A:  It sort of gives you your  the best you could hope for , kind of . 
+A:  Uh - oh . 
+A:  I 've got to move a bunch of furniture . 
+A:  Let me see . 
+A:  Yeah , that 's good . 
+A:  You 're alright ? 
+A:  Will that  be enough time ? 
+A:  I guess once you get past the bridge  that that would be the worst . 
+A:  Yeah . 
+A:  Once you get past the turnoff to the  Bay Bridge . 
+A:  Yeah . 
+A:  Yeah . 
+A:  OK . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Oh , I  
+A:  Did you  happen to find out anything about the OGI multilingual database ? 
+A:  Oh , they are ? 
+A:  OK . 
+A:  And so , ideally , what you 'd wanna do is you 'd wanna run it with and without the target language and the training set for a wide range of languages . 
+A:  And that way you can say , " Well , " you know , " we 're gonna build it for what we think are  the most common ones " , 
+A:  but if that  somebody uses it with a different language , you know , " here 's what 's you 're l here 's what 's likely to happen . " 
+A:  Right . 
+A:  I don't know anything about Finnish . 
+A:  Hmm . 
+A:  Hmm . 
+A:  Resistance is futile . 
+A:  So , when you said that you were getting the labels for TIMIT ,  um , are y what do you mean by that ? 
+A:  Mmm . 
+A:  Were the digits , um , hand - labeled for phones ? 
+A:  Or were they  those labels automatically derived ? 
+A:  Mmm . 
+A:  I was just wondering because that test you 're t 
+A:  I  I think you 're doing this test because you want to determine whether or not , uh , having s general speech performs as well as having specific  speech . 
+A:  Mm - hmm . 
+A:  And I was  
+A:  yeah , 
+A:  so I was just wondering if the fact that TIMIT  you 're using the hand - labeled stuff from TIMIT might be  confuse the results that you get . 
+A:  Right , but if it 's better , it may be better because  it was hand - labeled . 
+A:  Yeah . OK . 
+A:  Oh , OK . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Right . 
+A:  What about the differences in the phone sets ? 
+A:  No , between TIMIT and the  the digits . 
+A:  Oh , OK . 
+A:  I see . 
+A:  Out of that fifty - six ? 
+A:  Oh , OK . 
+A:  Mm - hmm . 
+A:  Mmm . 
+A:  Yeah , 
+A:  and I think some of them , they were making distinctions between silence at the end and silence at the beginning , 
+A:  when really they 're  both silence . 
+A:  I th I think it was things like that that got it mapped down to fifty - six . 
+A:  Yeah . 
+A:  There 's not much difference , really . 
+A:  And  the ones that are gone , I think are  I think there was  they also in TIMIT had like a glottal stop , 
+A:  which was basically a short period of silence , 
+A:  and so . 
+A:  I don't know . 
+A:  So . 
+A:  What about mel cepstrum ? 
+A:  Or is that  
+A:  you don't include that because it 's part of the base or something ? 
+A:  It 'd be an interesting test just to have  just to do MFCC with the neural net 
+A:  and everything else the same . 
+A:  Compare that with just M - MFCC without the  the net . 
+A:  Oh . 
+A:  Where did th where did that come from ? 
+A:  Digits ? 
+A:  Oh . 
+A:  Is that  Was that distributed with Aurora , 
+A:  or  ? 
+A:  Where did that  ? 
+A:  What about TI - digits ? 
+A:  Uh - huh . 
+A:  Oh . Oh OK . 
+A:  Ah . 
+A:  I see . 
+A:  What about combinations of things ? 
+A:  Well , you just select multiple things on the one dimension . 
+A:  When you do that , you 're increasing the size of the inputs to the net . 
+A:  Do you have to reduce the hidden layer , or something ? 
+A:  No , no , 
+A:  I 'm  I 'm just wondering about number of parameters in the net . 
+A:  Do you have to worry about keeping that the same , 
+A:  or  ? 
+A:  But wh what about a net that 's trained on multiple languages , though ? 
+A:  Is that just separate nets for each language then combined , 
+A:  or is that actually one net trained on ? 
+A:  In one net . 
+A:  Mm - hmm . 
+A:  I don't know . 
+A:  Depends on the corpuses , right ? 
+A:  Is it faster to do it on the SPERT , 
+A:  or  ? 
+A:  Is it ? 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  So you 're just having a problem converting the labels . 
+A:  Nuh - uh . 
+A:  Right . 
+A:  Yeah , I 'm not sure what 's available on  
+A:  is it  
+A:  you said Nutmeg 
+A:  and what was the other one ? 
+A:  Mustard . 
+A:  OK . 
+A:  Right , right . 
+A:  Well , I 'll check on that . 
+A:  What you can do , when you 're on that machine , is , uh , just go to the slash - scratch directory , and do a DF minus K , 
+A:  and it 'll tell you if there 's space available . 
+A:  Uh , and if there is then , uh  
+A:  Well , there 's different  there , um , there 's  
+A:  Right . 
+A:  So there 's the slash - X - whatever disks , and then there 's slash - scratch . 
+A:  And both of those two kinds are not backed up . 
+A:  And if it 's called " slash - scratch " , it means it 's probably an internal disk to the machine . 
+A:  Um . 
+A:  And so that 's the kind of thing where , like if  um , OK , if you don't have an NT , but you have a  a  a Unix workstation , and they attach an external disk ,  it 'll be called " slash - X - something " uh , if it 's not backed up 
+A:  and it 'll be " slash - D - something " if it is backed up . 
+A:  And if it 's inside the machine on the desk , it 's called " slash - scratch " . 
+A:  But the problem is , if you ever get a new machine , they take your machine away . 
+A:  It 's easy to unhook the external disks , 
+A:  put them back on the new machine , 
+A:  but then your slash - scratch is gone . 
+A:  So , you don't wanna put anything in slash - scratch that you wanna keep around for a long period of time . 
+A:  But if it 's a copy of , say , some data that 's on a server , you can put it on slash - scratch 
+A:  because , um , first of all it 's not backed up , 
+A:  and second it doesn't matter if that machine disappears and you get a new machine 
+A:  because you just recopy it to slash - scratch . 
+A:  So tha that 's why I was saying you could check slash - scratch on those  on  on , um , Mustard and  and Nutmeg to see if  if there 's space that you could use there . 
+A:  You could also use slash - X - whatever disks on Mustard and Nutmeg . 
+A:  Um . 
+A:  Yeah , 
+A:  and we do have  
+A:  I mean , 
+A:  yeah , 
+A:  so  so you  
+A:  yeah , it 's better to have things local if you 're gonna run over them lots of times so you don't have to go to the network . 
+A:  Mm - hmm . 
+A:  Yeah , so , <clear throat> one of the things that I need to  I 've started looking at  
+A:  Uh , is this the appropriate time to talk about the disk space stuff ? 
+A:  I 've started looking at , um , disk space . 
+A:  Dan  David , um , put a new , um , drive onto Abbott , that 's an X disk , 
+A:  which means it 's not backed up . 
+A:  So , 
+A:  um , I 've been going through and copying data that is , you know , some kind of corpus stuff usually , that  that we 've got on a CD - ROM or something , onto that new disk to free up space  on other disks . 
+A:  And , um , so far , um , I 've copied a couple of Carmen 's , um , databases over there . 
+A:  We haven't deleted them off of the slash - DC disk that they 're on right now in Abbott , 
+A:  um , 
+A:  uh , but we  I would like to go through  sit down with you about some of these other ones and see if we can move them onto , um , this new disk also . 
+A:  There 's  there 's a lot more space there , 
+A:  and it 'll free up more space for doing the experiments and things . 
+A:  So , anything that  that you don't need backed up , we can put on this new disk . 
+A:  Um , but if it 's experiments and you 're creating files and things that you 're gonna need , you probably wanna have those on a disk that 's backed up , just in case something  goes wrong . 
+A:  So . 
+A:  Um 
+A:  So far I 've  I 've copied a couple of things , 
+A:  but I haven't deleted anything off of the old disk to make room yet . 
+A:  Um , 
+A:  and I haven't looked at the  any of the Aurora stuff , 
+A:  except for the Spanish . 
+A:  So I  I guess I 'll need to get together with you and see what data we can move onto the new disk . 
+A:  I think that would be a  I think that 's a big  big deal . 
+A:  Because the  you know , the thing that Sunil was talking about , uh , with the labels , uh , labeling the database when it got to the noisy stuff ? 
+A:  The  That  that really throws things off . 
+A:  You know , having the noise all of a sudden , your  your , um , speech detector , 
+A:  I mean the  the , um  
+A:  What was it ? 
+A:  What was happening with his thing ? 
+A:  He was running through these models very quickly . 
+A:  He was getting lots of , uh , uh insertions , is what it was , 
+A:  in his recognitions . 
+A:  What about training up a , um , a multilingual net ? 
+A:  Mm - hmm . 
+A:  Another year . 
+A:  So you 'd have to create a mapping from each language to the superset . 
+A:  It uses special diacritics and stuff , which you can't do with ASCII characters . 
+A:  So the SAMPA 's just mapping those . 
+A:  So they just throw the speech from all different languages together , 
+A:  then cluster it into sixty or fifty or whatever clusters ? 
+A:  Automatically derived  
+A:  Mm - hmm . 
+A:  Automatically derived broad classes , or  ? 
+A:  Uh - huh . 
+A:  So you 're saying that there may not be enough information coming out of the net to help you discriminate the words ? 
+A:  Hmm . 
+A:  So the targets of the net  are these  ? 
+A:  Articulatory features . 
+A:  But that implies that you can have more than one on at a time ? 
+A:  Ah . 
+A:  OK . 
+A:  I see . 
+A:  We could do an interesting cheating experiment with that too . 
+A:  We could  I don't know , if you had uh the phone labels , you could replace them by their articulatory features 
+A:  and then feed in a vector with those uh , things turned on based on what they 're supposed to be for each phone 
+A:  to see if it  if you get a big win . 
+A:  Do you know what I 'm saying ? 
+A:  So , 
+A:  um , 
+A:  I mean , if your net is gonna be outputting , uh , a vector of  basically of  
+A:  well , it 's gonna have probabilities , 
+A:  but let 's say that they were ones and zeros , 
+A:  then y and you know for each , 
+A:  um , 
+A:  I don't know if you know this for your testing data , 
+A:  but if you know for your test data , you know , what the string of phones is and  and you have them aligned , then you can just  instead of going through the net , just create the vector for each phone and feed that in 
+A:  to see if that data helps . 
+A:  Eh , eh , what made me think about this is , I was talking with Hynek and he said that there was a guy at A T - andT who spent eighteen months working on a single feature . 
+A:  And because they had done some cheating experiments  
+A:  Oh , OK . 
+A:  Right , 
+A:  OK , 
+A:  right . 
+A:  And they  they had done a cheating experiment or something , right ? 
+A:  and determined that  
+A:  Well , Hynek said that  that , I guess before they had him work on this , they had done some experiment where if they could get that one feature right , it dramatically improved the result . 
+A:  So I was thinking , you know  it made me think about this , 
+A:  that if  it 'd be an interesting experiment just to see , you know , if you did get all of those right . 
+A:  Right . 
+A:  Yeah . 
+A:  Yeah . 
+A:  And then you also don't know what error they 've got on the HTK side . 
+A:  You know ? 
+A:  It sort of gives you your  the best you could hope for , kind of . 

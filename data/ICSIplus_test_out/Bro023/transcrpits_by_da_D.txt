@@ -1,0 +1,536 @@
+D:  Mm - hmm . 
+D:  Damn . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mmm . 
+D:  The baseline is something similar to 
+D:  a w I mean , 
+D:  the t the  the baseline that you are talking about is the MFCC baseline , right ? 
+D:  Or  ? 
+D:  Mm - hmm . 
+D:  Yeah , 
+D:  so it looks to be , um  
+D:  Yep , 
+D:  it 's three point four , 
+D:  uh , eight point , uh , seven , 
+D:  and , uh , thirteen point seven . 
+D:  Mm - hmm . 
+D:  No , I don't think so . 
+D:  Is it on Italian ? 
+D:  Oh , yeah , fifty - seven  
+D:  Right . 
+D:  Uh - huh . 
+D:  Mm - hmm . 
+D:  So it 's the close - talking microphone . 
+D:  Yeah , 
+D:  so actually I received a  a new document , describing this . 
+D:  And what they did finally is to , mmm , uh , not to align the utterances but to perform recognition , 
+D:  um , only on the close - talking microphone , 
+D:  and to take the result of the recognition to get the boundaries uh , of speech . 
+D:  And  
+D:  Uh , I think they will send , um , files 
+D:  but we  we don't  Well , apparently  
+D:  Yeah . 
+D:  Yeah . 
+D:  Oh , i 
+D:  Yeah , 
+D:  so what happened here is that , um , the overall improvement that they have with this method  
+D:  So  Well , to be more precise , what they have is , they have these alignments 
+D:  and then they drop the beginning silence and  and the end silence 
+D:  but they keep , uh , two hundred milliseconds before speech and two hundred after speech . 
+D:  And they keep the speech pauses also . 
+D:  Um , 
+D:  and the overall improvement over the MFCC baseline 
+D:  So , when they just , uh , add this frame dropping in addition it 's r uh , forty percent , right ? 
+D:  Fourteen percent , I mean . 
+D:  Um , 
+D:  which is , 
+D:  um , 
+D:  t 
+D:  which is the overall improvement . 
+D:  But in some cases it doesn't improve at all . 
+D:  Like , uh , y do you remember which case ? 
+D:  Yeah , 
+D:  some @ @ . 
+D:  Right . 
+D:  Mmm . 
+D:  Yeah . 
+D:  And  Yeah , the other thing also is that fourteen percent is less than what you obtain using a real VAD . 
+D:  So with without cheating like this . 
+D:  So  
+D:  Uh  
+D:  So I think this shows that there is still work  
+D:  Uh , well , working on the VAD is still  still important I think . 
+D:  Uh  
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Uh , yeah . 
+D:  So , <clears throat> I 've been , uh , working still on the spectral subtraction . 
+D:  Um , 
+D:  So to r to remind you <swallow> <mouth> a little bit of  of what I did before , is just <breath> to apply some spectral subtraction with an overestimation factor 
+D:  also to get , um , an estimate of the noise , uh , spectrum , 
+D:  and subtract this estimation of the noise spectrum from the , uh , signal spectrum ,  but subtracting more when the SNR is  is , uh , low , 
+D:  which is a technique that it 's often used . 
+D:  So you overestimate the noise spectrum . 
+D:  You multiply the noise spectrum by a factor , uh , which depends on the SNR . 
+D:  So , above twenty DB , 
+D:  it 's one , so you just subtract the noise . 
+D:  And then it 's b 
+D:  Generally  Well , I use , actually , a linear , uh , function of the SNR , 
+D:  which is bounded to , like , two or three ,  when the SNR is below zero DB . 
+D:  Um , doing just this , uh , either on the FFT bins or on the mel bands , um , t doesn't yield any improvement 
+D:  o 
+D:  Yeah . 
+D:  So there is also a threshold , of course , 
+D:  because after subtraction you can have negative energies , 
+D:  and  
+D:  So what I  I just do is to put , uh  to  to add  to put the threshold first and then to add a small amount of noise , 
+D:  which right now is speech - shaped . 
+D:  Um  
+D:  Yeah , 
+D:  so it 's  a it has the overall  overall energy , 
+D:  uh  
+D:  pow 
+D:  it has the overall power spectrum of speech . 
+D:  So with a bump around one kilohertz . 
+D:  i 
+D:  Uh - huh . 
+D:  Yeah . 
+D:  There can be frequency bins with negative values . 
+D:  For each frequencies I a I 'm adding some , uh , noise , 
+D:  but the a the amount of  the amount of noise I add is not the same for all the frequency bins . 
+D:  Uh . Right now I don't think if it makes sense to add something that 's speech - shaped , 
+D:  because then you have silence portion that have some spectra similar to the sp the overall speech spectra . 
+D:  But  
+D:  Yeah . 
+D:  So this is something I can still work on , 
+D:  but  
+D:  Hmm . 
+D:  That means that  
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  So  so yeah , you have an  an estimation of the noise spectrum , 
+D:  but sometimes , of course , it 's  as the noise is not perfectly stationary , 
+D:  sometimes this estimation can be , uh , too small , 
+D:  so you don't subtract enough . 
+D:  But sometimes it can be too large also . If  if the noise , uh , energy in this particular frequency band drops for some reason . 
+D:  Mmm . 
+D:  Mm - hmm , 
+D:  yeah . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  And , yeah , 
+D:  some people also  if it 's a negative value they , uh , re - compute it using inter interpolation from the edges and bins . 
+D:  Well , there are different things that you can do . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yep . 
+D:  Well , actually I tried , <clears throat> something else based on this , um , is to  to put some smoothing , 
+D:  um , because it seems to  to help or it seems to help the Wiener filtering 
+D:  and , 
+D:  mmm  
+D:  So what I did is , uh , some kind of nonlinear smoothing . 
+D:  Actually I have a recursion that computes  
+D:  Yeah , let me go back a little bit . 
+D:  Actually , when you do spectral subtraction you can , uh , find this  this equivalent in the s in the spectral domain . 
+D:  You can uh compute , 
+D:  y you can say that d your spectral subtraction is a filter , 
+D:  um , and the gain of this filter is the , um , <mouth> signal energy minus what you subtract , divided by the signal energy . 
+D:  And this is a gain that varies over time , and , you know , of course , uh , depending on the s on the noise spectrum and on the speech spectrum . 
+D:  And  
+D:  what happen actually is that during low SNR values , the gain is close to zero 
+D:  but it varies a lot . 
+D:  Mmm , 
+D:  and this  this is the cause of musical noise and all these  the   the fact you  we go below zero one frame and then you can have an energy that 's above zero . 
+D:  And  
+D:  Mmm . 
+D:  So the smoothing is  I did a smoothing actually on this gain , uh , trajectory . 
+D:  But it 's  the smoothing is nonlinear in the sense that I tried to not smooth if the gain is high , 
+D:  because in this case we know that , uh , the estimate of the gain is correct 
+D:  because we  we are not close to  to  to zero , 
+D:  um , and to do more smoothing if the gain is low . 
+D:  Mmm . 
+D:  Um . 
+D:  Yeah . 
+D:  So , 
+D:  well , 
+D:  basically that 's this idea , 
+D:  and it seems to give pretty good results , 
+D:  uh , although I 've just  just tested on Italian and Finnish . 
+D:  And on Italian it seems  my result seems to be a little bit better than the Wiener filtering , 
+D:  right ? 
+D:  Uh , I don't know if you have these improvement the detailed improvements for Italian , Finnish , and Spanish there 
+D:  or you have  just have your own . 
+D:  Mm - hmm . 
+D:  Uh  
+D:  uh , no , 
+D:  we 've  
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  On Italian . 
+D:  But on Finnish it 's a little bit worse , apparently . 
+D:  Um  
+D:  Yeah . 
+D:  Uh , so , it 's , uh , three point , uh , eight . 
+D:  Am I right ? 
+D:  And then , uh , d uh , nine point , uh , one . 
+D:  And finally , uh , sixteen point five . 
+D:  Plus  plus nonlinear smoothing . 
+D:  Well , it 's  the system  it 's exactly the sys the same system as Sunil tried , 
+D:  but  
+D:  Yeah . 
+D:  But instead of double stage Wiener filtering , it 's  it 's this smoothed spectral subtraction . 
+D:  Um , yeah . 
+D:  For what ? 
+D:  It  it 's Wiener filtering , 
+D:  am I right ? 
+D:  Well , it 's some kind of Wiener filtering  
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  But they also have two  two different smoothing @ @ . 
+D:  One in the time domain 
+D:  and one in the frequency domain by just taking the first , um , coefficients of the impulse response . 
+D:  So , basically it 's similar . 
+D:  I mean , what you did , it 's similar 
+D:  because you have also two  two kind of smoothing . 
+D:  One in the time domain , 
+D:  and one in the frequency domain , 
+D:  yeah . 
+D:  Um  
+D:  Yeah . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Uh , actually the  the smoothing that I did  do here reduced the musical noise . 
+D:  Well , it  
+D:  Mmm . 
+D:  Well , I cannot  you cannot hear beca 
+D:  well , actually what I d did not say is that this is not in the FFT bins . 
+D:  This is in the mel frequency bands . 
+D:  Um  
+D:  So , 
+D:  it could be seen as a f a  a smoothing in the frequency domain because I used , in ad mel bands in addition and then the other phase of smoothing in the time domain . 
+D:  Mmm . 
+D:  But , when you look at the spectrogram , if you don't have an any smoothing , you clearly see , like  in silence portions , and at the beginning and end of speech , you see spots of high energy randomly distributed over the  the spectrogram . 
+D:  Um  
+D:  Which is musical noise , 
+D:  yeah , 
+D:  if  if it  If you listen to it  
+D:  uh , if you do this in the FFT bins , then you have spots of energy randomly distributing . 
+D:  And if you f if you re - synthesize these spot sounds as , like , sounds , 
+D:  uh  
+D:  And  
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Um  
+D:  Yeah , 
+D:  although if  if we , um , look at the result from the proposals ,  one of the reason , uh , the n system with the neural net was , um , more than  well , around five percent better , is that it was much better on highly mismatched condition . 
+D:  I 'm thinking , for instance , on the TI - digits trained on clean speech and tested on noisy speech . 
+D:  Uh , for this case , the system with the neural net was much better . 
+D:  But not much on the  in the other cases . 
+D:  And 
+D:  if we have no , uh , spectral subtraction or Wiener filtering , um , i the system is  Uh , we thought the neural  neural network is much better than before , 
+D:  even in these cases of high mismatch . 
+D:  So , maybe the neural net will help less 
+D:  but , um  
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah , 
+D:  yeah . 
+D:  Um , 
+D:  Yeah , so this is th the , um  
+D:  Well , actually , this was kind of the first try with this spectral subtraction plus smoothing , 
+D:  and I was kind of excited by the result . 
+D:  Um , then I started to optimize the different parameters . 
+D:  And , 
+D:  uh , the first thing I tried to optimize is the , um , time constant of the smoothing . 
+D:  And it seems that the one that I chose for the first experiment was the optimal one , 
+D:  so <laugh> uh , 
+D:  Um , 
+D:  so this is the first thing . 
+D:  Um  
+D:  Yeah , another thing that I  it 's important to mention is , um , that this has a this has some additional latency . 
+D:  Um . 
+D:  Because when I do the smoothing , uh , it 's a recursion that estimated the means , so  of the g of the gain curve . 
+D:  And 
+D:  this is a filter that has some latency . 
+D:  And I noticed that it 's better if we take into account this latency . 
+D:  So , instead o of using the current estimated mean to , uh , subtract the current frame , it 's better to use an estimate that 's some somewhere in the future . 
+D:  Um  
+D:  Yeah . 
+D:  It 's the recursion , 
+D:  so it 's  it 's the center recursion , 
+D:  right ? 
+D:  Um  
+D:  and the latency of this recursion is around fifty milliseconds . 
+
+D:  Five zero , 
+D:  yeah . 
+D:  Um , 
+D:  mmm . 
+D:  Yeah , 
+D:  the mean estimation has some delay , 
+D:  right ? 
+D:  I mean , the  the filter that  that estimates the mean has a time constant . 
+D:  Yeah . 
+D:  It 's , uh , not as good . 
+D:  It 's not bad . 
+D:  Um , it helps a lot over the ba the baseline 
+D:  but , mmm  
+D:  it  
+D:  It 's around three percent , um , relative . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Um , 
+D:  mmm  
+D:  So , uh  
+D:  Yeah , but  
+D:  Yeah . 
+D:  So , yeah , it depends . 
+D:  Uh , y actually , it 's  it 's l it 's three percent . 
+D:  Right . 
+D:  Mmm . 
+D:  Yeah , 
+D:  b but I don't think we have to worry too much on that right now while  you kno . 
+D:  Mm - hmm . 
+D:  So  
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Oh yes . 
+D:  s 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Um . 
+D:  So , 
+D:  yeah , there are other things in the , um , algorithm that I didn't , uh , @ @ a lot yet , 
+D:  which  
+D:  Mm - hmm . 
+D:  No , 
+D:  it 's  it 's added . 
+D:  Mm - hmm . 
+D:  Mmm . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  Mm - hmm . 
+D:  Yeah . 
+D:  So , 
+D:  um , 
+D:  there is uh ,  these parameters that I still have to  to look at . 
+D:  Like , I played a little bit with this overestimation factor , 
+D:  uh , 
+D:  but I still have to  to look more at this , 
+D:  um , 
+D:  at the level of noise I add after . Uh , I know that adding noise helped , um , the system just using spectral subtraction without smoothing , 
+D:  but I don't know right now if it 's still important or not , and if the level I choose before is still the right one . 
+D:  Same thing for the shape of the  the noise . 
+D:  Maybe it would be better to add just white noise instead of speech shaped noise . 
+D:  Mm - hmm . 
+D:  Um , yep . 
+D:  Uh , and another thing is to  
+D:  Yeah , 
+D:  for this I just use as noise estimate the mean , uh , spectrum of the first twenty frames of each utterance . 
+D:  I don't remember for this experiment what did you use for these two stage  
+D:  The ten frames ? 
+D:  Mm - hmm . 
+D:  Um . 
+D:  But , so what 's this result you told me about , the fact that if you use more than ten frames you can  improve by t 
+D:  Oh , OK . 
+D:  But this is ten frames plus  plus 
+D:  channel  
+D:  Uh , no , 
+D:  these results with two stage Wiener filtering is ten frames 
+D:  but possibly more . 
+D:  I mean , if channel one VAD gives you  
+D:  Yeah . 
+D:  OK . 
+D:  Yeah , 
+D:  but in this experiment I did  I didn't use any VAD . 
+D:  I just used the twenty first frame to estimate the noise . 
+D:  And  So I expected it to be a little bit better , <clears throat> if , uh , I use more  more frames . 
+D:  Um . 
+D:  OK , that 's it for spectral subtraction . 
+D:  The second thing I was working on is to , um , try to look at noise estimation ,  mmm , and using some technique that doesn't need voice activity detection . 
+D:  Um , 
+D:  and for this I u simply used some code that , uh , <breath-laugh> I had from  from Belgium , 
+D:  which is technique that , um , takes a bunch of frame , 
+D:  um , 
+D:  and for each frequency bands of this frame , takes a look at the minima of the energy . 
+D:  And then average these minima and take this as an  an energy estimate of the noise for this particular frequency band . 
+D:  And there is something more to this actually . 
+D:  What is done is that , <clears throat> uh , these minima are computed , um , based on , um , high resolution spectra . 
+D:  So , I compute an FFT based on the long , uh , signal frame 
+D:  which is sixty - four millisecond  
+D:  What  what I  what I d uh , I do actually , is to take a bunch of  to take a tile on the spectrogram 
+D:  and this tile is five hundred milliseconds long and two hundred hertz wide . 
+D:  And this tile  
+D:  Uh , in this tile appears , like , the harmonics if you have a voiced sound , 
+D:  because it 's  it 's the FTT bins . 
+D:  And when you take the m the minima of  of these  this tile , 
+D:  when you don't have speech , these minima will give you some noise level estimate , 
+D:  If you have voiced speech , these minima will still give you some noise estimate because the minima are between the harmonics . 
+D:  And  If you have other  other kind of speech sounds then it 's not the case , 
+D:  but if the time frame is long enough , uh , like s five hundred milliseconds seems to be long enough ,  you still have portions which , uh , are very close  whi which minima are very close to the noise energy . 
+D:  Mmm ? 
+D:  Sixty - four milliseconds is to compute the FFT , uh , bins . 
+D:  The  the FFT . 
+D:  Um , 
+D:  actually it 's better to use sixty - four milliseconds because , um , if you use thirty milliseconds , then , uh , because of the  this short windowing and at low pitch , uh , sounds , <clears throat> the harmonics are not , wha uh , correctly separated . 
+D:  So if you take these minima , it  b <mouth noises, perhaps drinking and swallowing> they will overestimate the noise a lot . 
+D:  So I take  to  I take a bunch of these sixty - four millisecond frame to cover five hundred milliseconds , 
+D:  and then I look for the minima , 
+D:  on the  on  on the bunch of uh fifty frames , right ? 
+D:  Mmm . 
+D:  So the interest of this is that , as y with this technique you can estimate u some reasonable noise spectra with only five hundred milliseconds of  of signal , 
+D:  so if the  the n the noise varies a lot , uh , you can track  better track the noise , 
+D:  which is not the case if you rely on the voice activity detector . 
+D:  So even if there are no no speech pauses , you can track the noise level . 
+D:  The only requirement is that you must have , in these five hundred milliseconds segment ,  you must have voiced sound at least . 
+D:  Cuz this  these will help you to  to track the  the noise level . 
+D:  Um . 
+D:  So what I did is just to simply replace the VAD - based , uh , noise estimate by this estimate , 
+D:  first on SpeechDat - Car  
+D:  Well , only on SpeechDat - Car actually . 
+D:  And it 's , uh , slightly worse , 
+D:  like one percent relative compared to the VAD - based  estimates . 
+D:  Um , 
+D:  I think the reason why it 's not better , is that the SpeechDat - Car noises are all stationary . 
+D:  Um . 
+D:  So , u 
+D:  y y there really is no need to have something that 's adaptive 
+D:  and  Uh , 
+D:  well , they are mainly stationary . 
+D:  Um . 
+D:  But , I expect s maybe some improvement on TI - digits 
+D:  because , nnn , in this case the noises are all sometimes very variable . 
+D:  Uh , so I have to test it . 
+D:  Mmm . 
+D:  Mm - hmm . 
+D:  It 's  
+D:  It 's the France - Telecom - based spectra , s uh , Wiener filtering and VAD . 
+D:  So it 's their system 
+D:  but just I replace their noise estimate by this one . 
+D:  In i I 'm not  
+D:  No , no . 
+D:  Yeah , 
+D:  it 's our system 
+D:  but with just the Wiener filtering from their system . 
+D:  Right ? 
+D:  Mmm . 
+D:  Yeah . 
+D:  Actually , th the best system that we still have is , uh , our system but with their noise compensation scheme , 
+D:  right ? 
+D:  So I 'm trying to improve on this , and  by  by replacing their noise estimate by , uh , something that might be better . 
+D:  Yeah . 
+D:  Yeah . 
+D:  But I di 
+D:  Not yet , 
+D:  because I did this in parallel , 
+D:  and I was working on one and the other . 
+D:  Um , 
+D:  Yeah , for  for sure I will . 
+D:  I can try also , mmm , the spectral subtraction . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Um . 
+D:  Yeah . 
+D:  I , um , also implemented a sp um  spectral whitening idea 
+D:  which is in the , um , Ericsson proposal . 
+D:  Uh , the idea is just to <sniff> um , flatten the log , uh , spectrum , um , and to flatten it more if the  the probability of silence is higher . 
+D:  So in this way , you can also reduce  somewhat reduce the musical noise 
+D:  and you reduce the variability if you have different noise shapes , 
+D:  because the  the spectrum becomes more flat in the silence portions . 
+D:  Um . 
+D:  Yeah . 
+D:  With this , no improvement , 
+D:  uh , but there are a lot of parameters that we can play with 
+D:  and , 
+D:  um  
+D:  Actually , this  this could be seen as a soft version of the frame dropping 
+D:  because , um , you could just put the threshold and say that " below the threshold , I will flatten  comp completely flatten the  the spectrum " . 
+D:  And above this threshold , uh , keep the same spectrum . 
+D:  So it would be like frame dropping , 
+D:  because during the silence portions which are below the threshold of voice activity probability ,  uh , w you would have some kind of dummy frame 
+D:  which is a perfectly flat spectrum . 
+D:  And this , uh , whitening is something that 's more soft because , um , you whiten  you just , uh , have a function  the whitening is a function of the speech probability , 
+D:  so it 's not a hard decision . 
+D:  Um , 
+D:  so I think maybe it can be used together with frame dropping and when we are not sure about if it 's speech or silence , 
+D:  well , maybe it has something do with this . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Yeah , w 
+D:  Yeah , right now it 's a constant that just depending on the  the noise spectrum . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  So . 
+D:  Yeah . 
+D:  Uh  
+D:  Yeah , so there are  with this technique there are some  
+D:  I just did something exactly the same as  as the Ericsson proposal 
+D:  but , um , <mouth> the probability of speech is not computed the same way . 
+D:  And I think , i for  yeah , for a lot of things , actually a g a good speech probability is important . 
+D:  Like for frame dropping you improve , like  you can improve from ten percent as Sunil showed , if you use the channel zero speech probabilities . 
+D:  For this it might help , 
+D:  um  
+D:  S so , yeah . 
+D:  Uh , 
+D:  so yeah , 
+D:  the next thing I started to do is to , <laugh> uh , try to develop a better voice activity detector . 
+D:  And , 
+D:  um  
+D:  I d 
+D:  um  
+D:  yeah , for this I think we can maybe try to train the neural network for voice activity detection on all the data that we have , including all the SpeechDat - Car data . 
+D:  Um  
+D:  And so I 'm starting to obtain alignments on these databases . 
+D:  Um , and the way I mi I do that is that I just use the HTK system but I train it only on the close - talking microphone . 
+D:  And then I aligned  I obtained the Viterbi alignment of the training utterances . 
+D:  Um  
+D:  It seems to be , 
+D:  uh i 
+D:  Actually what I observed is that for Italian it doesn't seem  Th - there seems to be a problem . 
+D:  Well . 
+D:  Because  
+D:  What ? 
+D:  Yeah . 
+D:  Yeah . 
+D:  So , u but actually the VAD was trained on Italian also , 
+D:  so  Um , 
+D:  the c the current VAD that we have was trained on , uh , t SPINE , right ? 
+D:  Italian , and TI - digits with noise and  
+D:  Uh , yeah . 
+D:  And it seems to work on Italian but not on the Finnish and Spanish data . 
+D:  So , maybe one reason is that s s Finnish and Spanish noise are different . 
+D:  And 
+D:  actually we observed  we listened to some of the utterances and sometimes for Finnish there is music in the recordings and strange things , 
+D:  right ? 
+D:  Um  
+D:  Yeah , so the idea was to train all the databases and obtain an alignment to train on these databases , 
+D:  and , um , 
+D:  also to , um , try different kind of features , <clears throat> uh , as input to the VAD network . 
+D:  And 
+D:  we came up with a bunch of features that we want to try 
+D:  like , um , the spectral slope , the , um , the degree o degree of voicing with the features that , uh , we started to develop with Carmen , um , e with , uh , the correlation between bands and different kind of features , 
+D:  and  Yeah . 
+D:  The energy . 
+D:  Yeah . Of course . 
+D:  Yeah . 
+D:  Mm - hmm . 

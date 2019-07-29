@@ -1,0 +1,210 @@
+B:  Great ! 
+B:  Blow into it , 
+B:  it works really well . 
+B:  I was there . 
+B:  With Hynek ? 
+B:  Yeah . 
+B:  Oh the  What we talked about yesterday ? 
+B:  Yeah that was actually my  
+B:  I was wearing the  I was wearing the lapel and you were sitting next to me , 
+B:  and I only said one thing but you were talking and it was picking up all your words . 
+B:  What about the stuff that um Mirjam has been doing ? 
+B:  And  and S Shawn , yeah . 
+B:  Oh . 
+B:  So they 're training up nets to try to recognize these acoustic features ? 
+B:  I see . 
+B:  Yeah . 
+B:  And their  their targets are based on canonical mappings of phones to acoustic f features . 
+B:  What does  what did um Larry Saul use for  it was the sonorant uh detector , 
+B:  right ? 
+B:  How did he  
+B:  H how did he do that ? 
+B:  Wh - what was his detector ? 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Oh , OK . 
+B:  Mm - hmm . 
+B:  So how did he combine all these features ? 
+B:  What  what r mmm classifier did he 
+B:  Hmm . 
+B:  Oh right . 
+B:  You were talking about that , yeah . 
+B:  I see . 
+B:  Hmm ! 
+B:  Pierced tongues and 
+B:  Yeah . 
+B:  You could just mount it to that and they wouldn't even notice . 
+B:  Weld it . 
+B:  Zzz . 
+B:  Yeah . 
+B:  I 
+B:  That 's right . 
+B:  You could  what you could do is you could sell little rings and stuff with embedded you know , transmitters in them and things 
+B:  and 
+B:  Yeah . 
+B:  Hmm ! 
+B:  There 's a bunch of data that l around , 
+B:  that  people have done studies like that w way way back 
+B:  right ? 
+B:  I mean <inbreath> I can't remember where  uh Wisconsin or someplace that used to have a big database of  
+B:  Yeah . 
+B:  I remember there was this guy at A T - andT , 
+B:  Randolph ? 
+B:  or r What was his name ? 
+B:  Do you remember that guy ? 
+B:  Um , <mouth> <inbreath> researcher at A T - andT a while back that was studying , trying to do speech recognition from these kinds of features . 
+B:  I can't remember what his name was . 
+B:  Dang . 
+B:  Now I 'll think of it . 
+B:  That 's interesting . 
+B:  Mark Randolph . 
+B:  Oh is he ? 
+B:  Oh OK . 
+B:  Yeah . 
+B:  I can't remember exactly what he was using , now . 
+B:  But I know  I just remember it had to do with you know <inbreath> uh positional parameters 
+B:  and trying to m you know do speech recognition based on them . 
+B:  Hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Could you cluster the  just do some kind of clustering ? 
+B:  Bin them up into different categories and  
+B:  So you 're talking about using that data to get 
+B:  uh 
+B:  instead of using canonical mappings of phones . 
+B:  So you 'd use that data to give you sort of what the  <inbreath> the true mappings are for each phone ? 
+B:  I see . 
+B:  Hmm . 
+B:  So he doesn't have  
+B:  Mm - hmm . 
+B:  So he doesn't have to have truth marks 
+B:  or  Ho 
+B:  Mm - hmm . 
+B:  OK . 
+B:  I see . 
+B:  So where did he get his  uh his tar his uh high - level targets about what 's sonorant and what 's not ? 
+B:  OK . 
+B:  Using TIMIT ? 
+B:  or using  
+B:  Uh - huh . 
+B:  Mm - hmm . 
+B:  I could say a little bit about w stuff I 've been playing with . 
+B:  I um 
+B:  Huh ? 
+B:  Yes , I 'm playing . 
+B:  Um <inbreath> so I wanted to do this experiment to see um <mouth> uh what happens if we try to uh improve the performance of the back - end recognizer for the Aurora task 
+B:  and see how that affects things . 
+B:  And so I had this um  I think I sent around last week a  <inbreath> this plan I had for an experiment , 
+B:  this matrix where <inbreath> I would take the um  the original um the original system . 
+B:  So there 's the original system trained on the mel cepstral features 
+B:  and then com and then uh optimize the b HTK system and run that again . 
+B:  So look at the difference there 
+B:  and then uh do the same thing for <inbreath> the ICSI - OGI front - end . 
+B:  This is  
+B:  that I looked at ? 
+B:  Uh I 'm looking at the Italian right now . 
+B:  So as far as I 've gotten is I 've uh <two mouth clicks> been able to go through from beginning to end the um full HTK <inbreath> system for the Italian data 
+B:  and got the same results that um  that uh <inbreath> Stephane had . 
+B:  So um I started looking  to  and now I 'm  I 'm sort of lookin at the point where I wanna know what should I change in the HTK back - end in order to try to  uh to improve it . 
+B:  So . 
+B:  One of the first things I thought of was the fact that they use <inbreath> the same number of states for all of the models 
+B:  and so I went on - line and I uh found a pronunciation dictionary for Italian digits 
+B:  and just looked at , you know , the number of phones in each one of the digits . 
+B:  Um you know , sort of the canonical way of setting up a  an HMM system is that you use <inbreath> um three states per phone 
+B:  and um <inbreath> so then the  the total number of states for a word would just be , you know , the number of phones times three . 
+B:  And so when I did that for the Italian digits , I got a number of states , ranging on the low end from nine to the high end , eighteen . 
+B:  Um . <mouth> Now you have to really add two to that because in HTK there 's an initial null and a final null 
+B:  so when they use <inbreath> uh models that have eighteen states , there 're really sixteen states . 
+B:  They 've got those initial and final null states . 
+B:  And so um <mouth> <inbreath> their guess of eighteen states seems to be pretty well matched to the two longest words of the Italian digits , 
+B:  the four and five <inbreath> which um , according to my , you know , sort of off the cuff calculation , should have eighteen states each . 
+B:  And so they had sixteen . 
+B:  So that 's pretty close . 
+B:  Um <mouth> <inbreath> but for the  most of the words are sh much shorter . 
+B:  So the majority of them wanna have nine states . 
+B:  And so theirs are s sort of twice as long . 
+B:  So <inbreath> my guess  uh 
+B:  And then if you  I  I printed out a confusion matrix um <inbreath> uh for the well - matched case , 
+B:  and it turns out that the longest words are actually the ones that do the best . 
+B:  So my guess about what 's happening is that <inbreath> you know , if you assume a fixed  the same amount of training data for each of these digits 
+B:  and a fixed length model for all of them 
+B:  but the actual words for some of them are half as long 
+B:  you really um have , you know , half as much training data for those models . 
+B:  Because if you have a long word and you 're training it to eighteen states , <inbreath> <mouth> uh you 've got  you know , you 've got the same number of Gaussians , you 've gotta train in each case , 
+B:  but for the shorter words , you know , the total number of frames is actually half as many . 
+B:  So <inbreath> it could be that , you know , for the short words there 's  because you have so many states , you just don't have enough data to train all those Gaussians . 
+B:  So um I 'm going to try to um create more word - specific <inbreath> um uh prototype H M Ms to start training from . 
+B:  Mm - hmm . 
+B:  Yeah so I 'll  I 'll , the next experiment I 'm gonna try is to just um you know create <inbreath> uh models that seem to be more w matched to my guess about how long they should be . 
+B:  And as part of that um I wanted to see sort of how the um  
+B:  how these models were coming out , you know , what w <inbreath> when we train up uh th you know , the model for " one " , which wants to have nine states , you know , 
+B:  what is the  uh what do the transition probabilities look like  in the self - loops ,  look like in  in those models ? 
+B:  And so I talked to Andreas and he explained to me how you can <inbreath> calculate the expected duration of an HMM just by looking at the transition matrix 
+B:  and so I wrote a little Matlab script that calculates that 
+B:  and 
+B:  so I 'm gonna sort of print those out for each of the words to see what 's happening , you know , how these models are training up , 
+B:  you know , the long ones versus the short ones . 
+B:  I d I did  
+B:  quickly , I did the silence model 
+B:  and  <inbreath> and um 
+B:  that 's coming out with about one point two seconds as its average duration 
+B:  and the silence model 's the one that 's used at the beginning and the end of each of the <inbreath> string of digits . 
+B:  Yeah , yeah . 
+B:  And so the S P model , which is what they put in between digits , I  I haven't calculated that for that one yet , 
+B:  but um . 
+B:  So they basically  their  <inbreath> their model for a whole digit string is silence <inbreath> digit , SP , digit , SP blah - blah - blah and then silence at the end . 
+B:  And so . 
+B:  I have to look at that , but I 'm not sure that they are . 
+B:  Now the one thing about the S P model is really it only has a single s emitting state to it . 
+B:  So if it 's not optional , you know , it 's  it 's not gonna hurt a whole lot 
+B:  and it 's tied to the center state of the silence model so it 's not its own  
+B:  um It doesn't require its own training data , 
+B:  it just shares that state . 
+B:  So it , I mean , it 's pretty good the way that they have it set up , 
+B:  but um 
+B:  i So I wanna play with that a little bit more . 
+B:  I 'm curious about looking at , you know <inbreath> how these models have trained and looking at the expected durations of the models 
+B:  and I wanna compare that in the  the well - matched case f to the unmatched case , and see if you can get an idea of  
+B:  just from looking at the <inbreath> durations of these models , you know , what what 's happening . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  And Hynek , when I wa told him about this , he had an interesting point , 
+B:  and that was th um <inbreath> the  the final models that they end up training up have I think probably something on the order of six Gaussians per state . 
+B:  So they 're fairly , you know , hefty models . 
+B:  And Hynek was saying that well , probably in a real application , <inbreath> you wouldn't have enough compute to handle models that are very big or complicated . 
+B:  So in fact what we may want are simpler models . 
+B:  And compare how they perform to that . 
+B:  But <inbreath> you know , it depends on what the actual application is 
+B:  and it 's really hard to know what your limits are in terms of how many Gaussians you can have . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Right . 
+B:  Yeah , yeah . 
+B:  Well one thing  I mean , if I  if  if I start um reducing the number of states for some of these shorter models <inbreath> that 's gonna reduce the total number of Gaussians . 
+B:  So in a sense it 'll be a simpler system . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Right . 
+B:  Right . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  I really wasn't even gonna play with that part of the system yet , 
+B:  I was just gonna change the  the t 
+B:  yeah , just look at the length of the models and just see what happens . 
+B:  So . 
+B:  Does anybody know how to um <inbreath> run Matlab 
+B:  sort of in batch mode like you c send it <inbreath> s a bunch of commands to run and it gives you the output . 
+B:  Is it possible to do that ? 
+B:  Yeah ? 
+B:  Octave . 
+B:  Ah ! 
+B:  OK . 
+B:  Great . 
+B:  Thanks . 
+B:  I was going crazy trying to do that . 
+B:  Great ! 
+B:  If it 'll do like a lot of the basic matrix and vector stuff 
+B:  that 's perfect . 
+B:  Great ! 

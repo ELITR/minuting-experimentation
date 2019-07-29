@@ -1,0 +1,244 @@
+G:  And th 
+G:  Make sure to turn your microphone on . 
+G:  There 's a battery . 
+G:  OK . 
+G:  Your channel number 's already on this blank sheet . 
+G:  So you just  If you can  
+G:  The gai the gain 's up at it  what it usually is , 
+G:  but if you think it 's  
+G:  Yeah . It 's sort of a default . 
+G:  But I can set it higher if you like . 
+G:  Yeah ? 
+G:  Well , we started recording , but  Yeah . 
+G:  She can just walk in , I guess , or  
+G:  Since we 're starting late I figured we 'd better just start . 
+G:  Well , we were gonna do a mock - up , like , question answering or something , I thought , 
+G:  that was totally separate from the interface . 
+G:  Do you remember ? 
+G:  Remember , like , asking questions and retrieving , <outbreath> but in a pre - stored fashion . 
+G:  That was the thing we talked about , I think , before the transcriber  
+G:  Come on in . 
+G:  You like these . 
+G:  Right ? 
+G:  OK , good . 
+G:  No . That was all , um , previously here . 
+G:  I was writing  the digits and then I realized I could xerox them , 
+G:  because I didn't want people to turn their heads from these microphones . 
+G:  So . 
+G:  We all , by the way , have the same digit form , for the record . 
+G:  So . 
+G:  Yeah . 
+G:  It 's just cuz I didn't have any more digit sheets . 
+G:  So . 
+G:  Yeah . 
+G:  I mean , it  Actually it might be good to have them separately and have the same exact strings . 
+G:  I mean , we could use them for normalizing or something , 
+G:  but it of course goes more quickly doing them in unison . 
+G:  I don't know . 
+G:  See how long we go . 
+G:  Right . 
+G:  Right . 
+G:  We 'd be like a chorus . 
+G:  Yes . 
+G:  So you just need to  copy over to this one . 
+G:  Yeah . 
+G:  And even  The good thing is that since you , um , have high recall ,  even if you have low precision cuz you 're over - generating , that 's good 
+G:  because we could train noise models in the recognizer for these kinds of , uh , transients and things that come from the microphones , 
+G:  but <breath> I know that if we run recognition unconstrained on a whole waveform , we do very poorly because we 're  we 're getting insertions in places what  that you may well be cutting out . 
+G:  So we do need some kind of pre - segmentation . 
+G:  Mmm . 
+G:  Yeah . 
+G:  And , yeah , using Thilo 's , you know , posteriors or some kind of  or  
+G:  right now they 're  they 're discrete , 
+G:  yes or no for a speaker , to consider those particular speaker background models . 
+G:  So . 
+G:  There 's lots of ins interesting things that could be done . 
+G:  So . 
+G:  That 's a great idea . 
+G:  Oh , right . 
+G:  Great . 
+G:  Well , they won't hear this since they 're going . They won't be transcribing this meeting . 
+G:  It 'd be great , too , if , um , we can  we might need some help again getting the tighter boundaries 
+G:  or some hand  to experiment with , um  <mouth> you know , to have a ground truth for this segmentation work , 
+G:  which  I guess you have some already that was really helpful , and we could probably use more . 
+G:  Oh . 
+G:  Oh , the new ones 
+G:  with the tighter boundaries . Yeah . 
+G:  OK . 
+G:  Hmm . 
+G:  That 's great . 
+G:  Is there actually a record of where they change ? 
+G:  I mean , you can compare , do a diff on the  
+G:  just so that we <breath> knew  
+G:  I mean , if we keep a old copy of the old time marks 
+G:  just so that if we run it we know whether we 're  which ones were cheating 
+G:  and 
+G:  which one would be good . 
+G:  Mm - hmm . 
+G:  Mmm , that 's great . 
+G:  Yeah . As long as we have a record , I guess , of the original  automatic one , we can always find out how well  we would do fr from the recognition side by using those boundaries . 
+G:  Um . 
+G:  You know , a completely non - cheating version . 
+G:  Also if you need someone to record this meeting , I mean , I 'm happy to  for the transcribers  
+G:  I could do it , or Chuck or Adam . 
+G:  Oh , great . 
+G:  Well , i if Jane is clarifying question question , then , you know , how can they agree to it before they know her final version ? 
+G:  Thing  
+G:  I mean , with the web interface it 's interesting , because you could allow the person who signs to be informed when their transcript changes , 
+G:  or something like that . 
+G:  And , I mean , I would say " no " . Like , I don't wanna know , 
+G:  but some people might be really <breath> interested 
+G:  and then y In other words , they would be informed if there was some significant change other than typos and things like that . 
+G:  Well , <laugh> I don't know what happened to the small heads thing , 
+G:  but I j <laugh> Um , I 'm just saying that , like , you know , you can sort of say that any things that are deemed  
+G:  Anyway . I mean , I agree that at some point people <breath> probably won't care about typos but they would care about significant meaning changes 
+G:  and then they could be asked for their consent , I guess , if  if those change . 
+G:  Cuz assumi <breath> assuming we  we don't really distribute things that have any significant changes from what they sign anyway . 
+G:  Oh , my God . 
+G:  But no one will listen to the hours and hours of  
+G:  You  you d 
+G:  That 's like  
+G:  I I  I think 
+G:  that 's a lot to ask for people that have been in a lot of meetings . 
+G:  Well . 
+G:  I mean , it 's  I guess one thing we 're learning is that the amount  
+G:  We have eight meetings there 
+G:  because we couldn't use the non - native  all non - native meetings 
+G:  and <breath> it 's , well , probably below threshold on enough data for us for the things we 're looking at 
+G:  because the <breath> prosodic features are  very noisy and so you  you need a lot of data in order to model them . 
+G:  Um , so we 're starting to see some patterns 
+G:  and we 're hoping that maybe with , <breath> I don't know , double or triple the data  with twenty meetings or so , that we would start to get better results . 
+G:  But we did find that some of the features that , I gue Jane would know about , that are expressing sort of the <breath> distance of , um , <mouth> boundaries from peaks in the utterance and <breath> some  local , um , range  pitch range effects , like how close people are to their floor , are showing up in these classifiers , 
+G:  which are also being given some word features that are cheating , cuz they 're true words . 
+G:  Um , so these are based on forced alignment . 
+G:  Word features like , um , word frequency 
+G:  and whether or not something 's a backchannel and so forth . 
+G:  So , we 're starting to see , I think , some interesting patterns . 
+G:  I think it depends what you 're looking at , a actually . 
+G:  Right . 
+G:  Um , 
+G:  spurts is not cheating except that of course you know the real words , 
+G:  but roughly speaking , the recognized words are gonna give you a similar type of position . 
+G:  It 's either early or late . 
+G:  Not exactly , but i 
+G:  Y yeah it should be . 
+G:  Well , we don't know 
+G:  and actually that 's one of the things we 're interested in doing , is a sort of  
+G:  So . 
+G:  Eh  
+G:  You know , uh 
+G:  Yeah , 
+G:  uh , we didn't try it , 
+G:  but it 's s 
+G:  Right . 
+G:  And it depends on speaking rate  
+G:  speaking rate . Yeah . 
+G:  Yeah . That 's actually why I didn't use it at first . 
+G:  But we  one of the interesting things was 
+G:  I guess you reported on some te punctuation type  
+G:  finding sentence boundaries , finding disfluency boundaries , 
+G:  and then I had done some work on finding from the foreground speech whether or not someone was likely to interrupt , 
+G:  so where  you know , if I 'm talking now and someone  and  and Andreas is about to interrupt me , is he gonna choose a certain place in my speech , either prosodically or word - based . 
+G:  And there the prosodic features actually showed up 
+G:  and a neat thing  
+G:  even though the word features were available . 
+G:  And a neat thing there too is I tried some  <breath> putting the speaker  
+G:  So , I gave everybody <breath> a short version of their name . 
+G:  So the real names are in there , 
+G:  which we couldn't use . 
+G:  Uh , we should use I Ds or something . 
+G:  And those don't show up . 
+G:  So that means that overall , um , it wasn't just modeling Morgan , or it wasn't just modeling a single person , 
+G:  um , 
+G:  but was sort of trying to , <breath> uh , get a general idea  
+G:  the model  the tree classifier was trying to find general locations that were applicable to different speakers , 
+G:  even though there are huge speaker effects . 
+G:  So . 
+G:  The  but the main limitation now is I  because we 're only looking at things that happen every <breath> ten words or every twenty words , we need more  more data and more data per speaker . 
+G:  So . 
+G:  It 'd also be interesting to look at the EDU meetings 
+G:  because we did include meeting type as a feature , 
+G:  so 
+G:  whether you were in a r Meeting Recorder meeting or a Robustness meeting did matter <breath> to  interrupts 
+G:  because there are just fewer interrupts in the Robustness meetings . 
+G:  And so the classifier learns more about Morgan than it does about sort of the average person , 
+G:  which is <breath> not bad . 
+G:  It 'd probably do better than  <breath-laugh> Um , but it wasn't generalizing . 
+G:  So it 's  
+G:  And I think Don , um  Well , we have a long list of things he 's starting to look at now over the summer , 
+G:  where we can  
+G:  And he 'll be able to report on more things  in the future . 
+G:  But it was great that we could at least go from the  <breath> you know , Jane 's transcripts and the , <breath> uh , recognizer output and get it  to this point . 
+G:  And I think it 's something Mari can probably use in her preliminary report  
+G:  like , " yeah , we 're at the point where we 're training these classifiers 
+G:  and we 're just <breath> reporting very preliminary but suggestive results that <mouth> some features , both word and pro prosodic , work . " 
+G:  The other thing that was interesting to me is that the pitch features are better than in Switchboard . 
+G:  And I think that really is from the close - talking mikes , 
+G:  cuz the pitch processing that was done has much cleaner behavior than  than the Switchboard telephone bandwidth . 
+G:  Um . Well , first of all , the pitch tracks are m have less , um , halvings and doublings than  than Switchboard 
+G:  and there 's a lot less dropout , 
+G:  so if you ask how many regions where you would normally expect some vowels to be occurring <breath> are completely devoid of pitch information , 
+G:  in other words the pitch tracker just didn't get a high enough probability of voicing for words  
+G:  for  for , you know , five word 
+G:  there are much fewer than in Switchboard . 
+G:  So the missing  <breath> We had a big missing data problem in Switchboard 
+G:  and , so the features weren't as reliable 
+G:  cuz they were often just not available . 
+G:  So that 's actually good . 
+G:  Ma - maybe . I mean , the tele we had telephone bandwidth for Switchboard 
+G:  and we had the an annoying sort of telephone handset movement problem that I think may also affect it . 
+G:  So we 're just getting better signals in  in this data . 
+G:  Which is nice . 
+G:  So . 
+G:  Anyway , Don 's been doing a great job 
+G:  and we hope to continue with , um , Andreas 's help and also some of Thilo 's help on this , 
+G:  to  to try to get a non - cheating version of how all this would work . 
+G:  Deletions ? 
+G:  Wait . So you mean you improve one percent over a system that doesn't have any V T L in it already ? 
+G:  OK . 
+G:  Yeah . Why did that cha ? 
+G:  Hmm . 
+G:  There was a  like a hum or some or  when they recorded it ? 
+G:  Or just  ? 
+G:  Huh . 
+G:  Hmm . 
+G:  Well  
+G:  eh , and also they 're not  I mean , as I understand it , you  you don't have a way to optimize the features for the final word error . 
+G:  Right ? 
+G:  I mean , these are just discriminative , 
+G:  but they 're not , um , optimized for the final  
+G:  Right . So it  there 's always this question of whether you might do better with those features if there was a way to train it for the word error metric that you 're actually  that you 're actually  
+G:  Well , right . It 's indirect , so you don't know  
+G:  Mmm , uh  Exactly . Exactly . 
+G:  So that you can optimize it for the word error . 
+G:  Yeah . 
+G:  Yeah . That  
+G:  Didn't you  did you  do that already 
+G:  or  ? 
+G:  Oh . That makes a lot of sense . 
+G:  Huh . 
+G:  Yeah . That makes sense . 
+G:  As  you should never do worse . 
+G:  Yeah . 
+G:  We need to close up 
+G:  cuz I need to save the data and , um , get a call . 
+G:  Right . 
+G:  Did people wanna do the digits 
+G:  or , um , do them together ? 
+G:  I don't know . 
+G:  Should we just  ? 
+G:  OK . 
+G:  I mean , are we trying to do them <mike noise> in synchrony ? 
+G:  That might be fun . 
+G:  Adam 's not here , so he 's not here to tell me no . 
+G:  Sure . 
+G:  Maybe just whatever people would naturally do ? 
+G:  I don't know . 
+G:  Be harmony . 
+G:  Yeah .  Yeah . 
+G:  Sorry . So I set up 
+G:  and we didn't have  enough digit forms 
+G:  so I xeroxed the same one seven times . 
+G:  No . 
+G:  e 
+G:  And th 

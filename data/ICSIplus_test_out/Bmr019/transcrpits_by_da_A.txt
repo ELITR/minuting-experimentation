@@ -1,0 +1,441 @@
+A:  He 's try No , he 's trying to get good recognition performance . 
+A:  Now you 're all watching me . 
+A:  Alright . 
+A:  This way . 
+A:  You 're all watching . 
+A:  This is terrible . 
+A:  I 'll get it . 
+A:  OK . 
+A:  It 's this thing 's  This is too big for my head . 
+A:  No , my  my  But this is too big for my head . 
+A:  So , I mean ,   it doesn't  you know , it 's sit 
+A:  OK . 
+A:  No this way . 
+A:  Yeah . 
+A:  Right . 
+A:  I already  tried to get it close . 
+A:  OK . 
+A:  Actually if you run , though , on a close - talking mike over the whole meeting , during all those silences , you get , like , four hundred percent word error . 
+A:  Or  or some high number . 
+A:  Yeah . 
+A:  Where you know who the speaker is and there 's no overlap ? 
+A:  And you do just the far - field for those regions ? 
+A:  Right . I understand that . 
+A:  I just meant that  so you have  three choices . 
+A:  There 's , um  You can use times where that person is talking only from the transcripts but the segmentations were  were synchronized . 
+A:  Or you can do a forced alignment on the close - talking to determine that , the you know , within this segment , these really were the times that this person was talking 
+A:  and elsewhere in the segment other people are overlapping 
+A:  and just front - end those pieces . 
+A:  Or you can run it on the whole data , 
+A:  which is  which is , you know , a  
+A:  In the H L T paper we took  segments that are channel  time - aligned , 
+A:  which is now h being changed in the transcription process , 
+A:  which is good , 
+A:  and we took cases where the transcribers said there was only one person talking here , 
+A:  because no one else had time  any words in that segment 
+A:  and called that " non - overlap " . 
+A:  Yes . 
+A:  Tho - good  the good numbers . 
+A:  The bad numbers were from  the segments where there was overlap . 
+A:  Yeah . 
+A:  Right . So we  we can do that . 
+A:  Yeah . 
+A:  Right . 
+A:  It might also depend on which speaker th it is and how close they are to the PZM ? 
+A:  I don't know how different they are from each other . 
+A:  To be best  
+A:  f 
+A:  OK . 
+A:  So we would then use that one , too , 
+A:  or  ? 
+A:  Well , yeah . You could look at , I guess , that PZM or something . 
+A:  And aren't these pretty bad microphones ? 
+A:  I mean  
+A:  I just remember you saying you got them to be cheap on purpose . 
+A:  Cheap in terms of their quality . 
+A:  So . 
+A:  Mm - hmm . 
+A:  I see . 
+A:  Mm - hmm . 
+A:  Right . 
+A:  Uh  
+A:  Oh . 
+A:  Yes , we have  
+A:  I don't know , 
+A:  did you wanna talk about it , 
+A:  or  ? 
+A:  I can give a  I was just telling this to Jane 
+A:  and  and  W we  we were able to get some definite improvement on the forced alignments by looking at them first and then realizing the kinds of errors  that were occurring 
+A:  and um , 
+A:  some of the errors occurring very frequently are just things like the first word being moved to as early as possible in the recognition , 
+A:  which is a um , I think was both a  a pruning  problem 
+A:  and possibly a problem with needing constraints on word locations . 
+A:  And so we tried both of these st things . 
+A:  We tried saying  
+A:  I don't know , 
+A:  I got this <outbreath> whacky idea that  just from looking at the data , that when people talk  their words are usually chunked together . 
+A:  It 's not that they say one word and then there 's a bunch of words together . 
+A:  They 're  might say one word and then another word far away if they were doing just backchannels ? 
+A:  But in general , if there 's , like , five or six words and one word 's far away from it , that 's probably wrong on average . 
+A:  So , um  
+A:  And then also , ca the pruning , of course , was too  too severe . 
+A:  Actually it was better with  slightly better or about th 
+A:  it was the same with tighter pruning . 
+A:  It 's probably cuz the recognition 's just bad en at a point where it 's bad enough that  that you don't lose anything . 
+A:  Right . 
+A:  Yeah . I mean , yeah , it isn't always true , 
+A:  and I think what we really want is some clever way to do this , 
+A:  where , um , you know , from the data or from maybe some hand - corrected alignments from transcribers that 
+A:  things like words that do occur just by themselves  a alone , like backchannels or something that we did allow to have background speech around it  
+A:  those would be able to do that , 
+A:  but the rest would be constrained . 
+A:  So , I think we have a version that 's pretty good for the native speakers . 
+A:  I don't know yet about the non - native speakers . 
+A:  And , um , 
+A:  we basically also made noise models for the different  sort of grouped some of the  mouth noises together . 
+A:  Um , so , and then there 's a background speech model . 
+A:  And we also  
+A:  There was some neat  or , interesting cases , 
+A:  like there 's one meeting where , <inbreath> um , Jose 's giving a presentation 
+A:  and he 's talking about , um , the word " mixed  signal " 
+A:  and someone didn't understand , uh , that you were saying " mixed "  
+A:  I think , Morgan . 
+A:  And so your speech - ch was s saying something about mixed signal . 
+A:  And the next turn was a lot of people saying " mixed " , 
+A:  like " he means mixed signal " or " I think it 's mixed " . 
+A:  And the word " mixed " in this segment occurs , like , a bunch of times . 
+A:  And Chuck 's on the lapel here , 
+A:  and he also says " mixed " 
+A:  but it 's at the last one , 
+A:  and of course the aligner th aligns it everywhere else to everybody else 's " mixed " , 
+A:  cuz there 's no adaptation yet . 
+A:  So there 's  <inbreath> I think there 's some issues about  u 
+A:  We probably want to adapt at least the foreground speaker . 
+A:  But , I guess Andreas tried adapting both the foreground and a background generic speaker , 
+A:  and that 's actually a little bit of a f funky model . 
+A:  Like , it gives you some weird alignments , 
+A:  just because often the background speakers match better to the foreground than the foreground speaker . 
+A:  So there 's some things there , 
+A:  especially when you get lots of the same words , uh , occurring in the  
+A:  Right . I mean , in general we actually  
+A:  Right now the words like  partial words are  reject models 
+A:  and you normally allow those to match to any word . 
+A:  But then the background speech was also a reject model , 
+A:  and so this constraint of not allowing rejects in between  
+A:  you know , it needs to differentiate between the two . 
+A:  So just sort of working through a bunch of debugging kinds of issues . 
+A:  And another one is turns , like people starting with <inbreath> " well I think " 
+A:  and someone else is  " well how about " . 
+A:  So the word " well " is in this  in this  segment multiple times , 
+A:  and as soon as it occurs usually the aligner will try to align it to the first person who says it . 
+A:  But then that constraint of sort of  uh , proximity constraint will push it over to the person who really said it in general . 
+A:  Right now it 's a kluge . 
+A:  Yeah . 
+A:  Yeah . 
+A:  I looked at them . 
+A:  I spent two days  um , in Waves  
+A:  Oh , it was painful 
+A:  because <inbreath> the thing is , you know the alignments share a lot in common , 
+A:  so  
+A:  And you 're  yo you 're looking at these segments where there 's a lot of speech . 
+A:  I mean , a lot of them have a lot of words . 
+A:  Not by every speaker 
+A:  but by some speaker there 's a lot of words . 
+A:  No , not  
+A:  I mean that if you look at the individual segments from just one person you don't see a lot of words , 
+A:  but altogether you 'll see a lot of words up there . 
+A:  And so the reject is also mapping and pauses  
+A:  So I looked at them all in Waves 
+A:  and just lined up all the alignments , 
+A:  and , at first it sort of looked like a mess 
+A:  and then the more I looked at it , I thought " OK , well it 's moving these words leftward 
+A:  and  " You know , it wasn't that bad . 
+A:  It was just doing certain things wrong . 
+A:  So  
+A:  But , I don't , you know , have time to l  to look at all of them 
+A:  and it would be really useful to have , like , a  a transcriber who could use Waves , 
+A:  um , just mark , like , the beginning and end of the foreground speaker 's real words  
+A:  like , the beginning of the first word , the end of the last word  
+A:  and then we could , you know , do some adjustments . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah . I mean , if  if you can , um  if you wanna  
+A:  well , Jane and I were  just in terms of the tool , talking about this . 
+A:  I guess Sue had had some  reactions . 
+A:  You know , interface - wise if you 're looking at speech , you wanna be able to know really where the words are . 
+A:  And so , <inbreath> we can give you some examples of sort of what this output looks like , 
+A:  um , and see if you can in maybe incorporate it into the Transcriber tool some way , 
+A:  or  
+A:  Um . 
+A:  You mean like  Yeah , word start insights . 
+A:  Right . 
+A:  Yeah . 
+A:  Yeah . 
+A:  So , I mean  
+A:  Yeah , it wou the advantage would just be that when you brought up a bin you would be able  if you were zoomed in enough in Transcriber to see all the words , 
+A:  you would be able to , like , have the words sort of located in time , 
+A:  if you wanted to do that . 
+A:  So . 
+A:  Mm - hmm . 
+A:  You mean on  on the hand - marked , um  
+A:  So we  we only r hav I only looked at actually alignments from one meeting that we chose , 
+A:  I think MR four , 
+A:  just randomly , um  
+A:  And  
+A:  Not randomly  
+A:  It had sort of  average recognition performance in a bunch of speakers 
+A:  and it was a Meeting Recorder meeting . 
+A:  Um . 
+A:  But , yeah , we should try to use what you have . 
+A:  I did re - run recognition on your new version of MR one . 
+A:  I  I mean the  the one with Dan  Ellis in it <laugh> and Eric . 
+A:  Um  
+A:  That  
+A:  Yeah , actually it wasn't the new new , 
+A:  it was the medium new . 
+A:  But  but we would  we should do the  the latest version . 
+A:  It was the one from last week . 
+A:  Right . 
+A:  Right . 
+A:  Right . 
+A:  Don  Don has had  <laugh> He knows  he can just read it like a play . 
+A:  " And then she said , and then he said . " 
+A:  Yeah . 
+A:  Right . 
+A:  Well , that 's interesting . 
+A:  Yeah . 
+A:  No , that 's really interesting . 
+A:  That 's interesting . 
+A:  Well , actu Yeah , when we looked at this  
+A:  Mm - hmm . 
+A:  Right . 
+A:  It 's  
+A:  Well , but it 's interesting 
+A:  cuz , uh  
+A:  But there are fewer  I think there are fewer " uh - huhs " . 
+A:  I mean , just from  We were looking at word frequency lists to try to find the cases that we would allow to have the reject words in between in doing the alignment . 
+A:  You know the ones we wouldn't constrain to be next to the other words . 
+A:  And " uh - huh " is not as frequent 
+A:  as it sort of would be in Switchboard , 
+A:  if you looked at just a word frequency list of one - word short utterances . 
+A:  And " yeah " is way up there , 
+A:  but not " uh - huh " . 
+A:  And so I was thinking 
+A:  thi it 's not like  you 're being encouraged by everybody else to keep  talking in the meeting . 
+A:  And uh , that 's all , I I 'll stop there , 
+A:  cuz I I think what you say makes a lot of sense . 
+A:  But it was sort of  
+A:  Right . 
+A:  There 's just probably less backchannelling in general , 
+A:  even if you consider every other person altogether one person in the meeting , 
+A:  but we 'll find out anyway . 
+A:  We were  I guess the other thing we 're  we 're  I should say is that we 're gonna , um try  compare this type of overlap analysis to Switchboard , 
+A:  where  
+A:  and CallHome , 
+A:  where we have both sides , so that we can try to answer this question of , you know , <inbreath> is there really more overlap in meetings or is it just because we don't have the other channel in Switchboard 
+A:  and we don't know what people are doing . 
+A:  Try to create a paper out of that . 
+A:  Um , you mean the one due tomorrow ? 
+A:  Yeah . Well , we 're still , like , writing the scripts for doing the research , 
+A:  and we will  Yes , we 're gonna try . 
+A:  And I was telling Don , do not  take this as an example of how people should work . 
+A:  So ,  we will try . 
+A:  It 'll probably be a little late , 
+A:  but I 'm gonna try it . 
+A:  Right . 
+A:  Well , I 'm no We may be in the same position , 
+A:  and I figured <inbreath> we 'll try , 
+A:  because that 'll at least get us to the point where we have  We have this really nice database format that Andreas and I were working out that  
+A:  It  it 's not very fancy . 
+A:  It 's just a ASCII line by line format , 
+A:  but it does give you information  
+A:  It  Yeah , we 're calling these " spurts " after Chafe . 
+A:  I was trying to find what 's a word for  a continuous region with  pauses around it ? 
+A:  They do ? 
+A:  Oh ! 
+A:  Oh . 
+A:  I would jus 
+A:  Ah , right ! 
+A:  It 's just , like , defined by the acoustics . 
+A:  Right . 
+A:  Right . 
+A:  Well , that 's what we were calling spurt , 
+A:  so  
+A:  Well , well , Chafe had this wor I think it was Chafe , or somebody had a  the word " spurt " originally , 
+A:  and so I  
+A:  But tha that 's good to know . 
+A:  Was thi it 's Chafe ? 
+A:  Maybe it was Sue  ? 
+A:  Y 
+A:  So we have spurts and we have spurt - ify dot shell and spurt - ify 
+A:  And then it 's got all  it 's a verb now . 
+A:  Yes . Right . 
+A:  It looks like a Waves label file almost . Right ? 
+A:  It 's just  
+A:  Yeah . These are things that we had Don  
+A:  So , Don sort of , um , propagated the punctuation from the original transcriber  
+A:  so whether it was , like , question mark or period or , <inbreath> um , you know , comma and things like that , 
+A:  and we kept the  and disfluency dashes  uh , kept those in because we sort of wanna know where those are relative to the spurt overlaps  
+A:  sp overlaps , 
+A:  or  
+A:  Uh , I mean , I think that 's actually really u useful also 
+A:  because even if you weren't studying overlaps , if you wanna get a transcription for the far - field mikes , how are you gonna know which words from which speakers occurred at which times relative to each other ? 
+A:  You have to be able to  get a transcript like  like this anyway , just for doing far - field recognition . 
+A:  So , 
+A:  you know , it 's  it 's sort of  
+A:  I thi it 's just an issue we haven't dealt with before , 
+A:  how you time - align things that are overlapping anyway . 
+A:  I mean , i I never thought about it before , 
+A:  but  
+A:  Right . 
+A:  But you can't get it directly from the transcription . 
+A:  Yeah , this is like a poor man 's ver formatting version . 
+A:  But it 's , you know  It 's clean , 
+A:  it 's just not fancy . 
+A:  Um . 
+A:  Yeah . 
+A:  Just  sort of huge . 
+A:  Yeah . 
+A:  Yeah . It 's  it 's nice to know , 
+A:  and also I think as a human , like , I don't always hear these in the actual order that they occur . 
+A:  So I can have two foreground speakers , 
+A:  you know , Morgan an and <inbreath> um , Adam and Jane could all be talking , 
+A:  and I could align each of them to be starting their utterance at the correct time , 
+A:  and then look where they are relative to each other , 
+A:  and that 's not really what I heard . 
+A:  Cuz it 's just hard to do . 
+A:  Y Yeah . 
+A:  It 's sort of  
+A:  Yeah , you sort of move things around until you get to a  low information point 
+A:  and yo then you can bring in the other person . 
+A:  So it 's <inbreath> actually not even possible , I think , for any person to listen to a mixed signal , 
+A:  even equalize , and make sure that they have all the words in the right order . 
+A:  So , I guess , we 'll try to write this Eurospeech paper . 
+A:  I mean , we will write it . 
+A:  Whether they accept it  late or not , I don't know . 
+A:  Um , and the good thing is that we have  It 's sort of a beginning of what Don can use to link the prosodic features from each file to each other . 
+A:  So . 
+A:  i You know , might as well . 
+A:  We - I ju Otherwise we won't get the work done  <laugh> on our deadline . 
+A:  Yeah . 
+A:  Right . 
+A:  Forces you to do the work . 
+A:  Exactly . 
+A:  Right . 
+A:  So  
+A:  Right . 
+A:  Uh  
+A:  Oh . 
+A:  Oh . 
+A:  Oh , well maybe we 'll submit to s  <laugh> Actually  
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Maybe they 'll get s 
+A:  Well , maybe it won't be after this <laugh> deadline  extension . 
+A:  Maybe they 'll  
+A:  Do  uh , d d 
+A:  Do not  do not  we are not setting a good example . 
+A:  This is not a  
+A:  Anyway . 
+A:  But the good thing is this does  
+A:  Uh ,  " beep " <laugh> " bee " 
+A:  Are we meeting in here probably 
+A:  or  ? 
+A:  OK . 
+A:  Yeah . 
+A:  We won't have enough microphones , 
+A:  but  
+A:  There 's no way . 
+A:  Depends how fast you can  throw it . 
+A:  It 's just  
+A:  Yeah . 
+A:  We don't even have enough channel  
+A:  At the same time . 
+A:  We c 
+A:  That 's their initiation into our 
+A:  w 
+A:  Yeah , our  Yeah , our  
+A:  So can you send out a schedule once you know it , jus ? 
+A:  Is  is there a r ? 
+A:  There 's a res 
+A:  Is it changed now , or  ? 
+A:  OK . 
+A:  And w we should get  the two meetings from y 
+A:  I mean , I know about the first meeting , 
+A:  um , 
+A:  but the other one that you did , 
+A:  the NSA one , 
+A:  which we  hadn't done cuz we weren't running recognition on it , 
+A:  because the non - native speaker  
+A:  there were five non - native speakers . 
+A:  But , it would be useful for the  to see what we get  with that one . 
+A:  So . 
+A:  Yeah , three . 
+A:  Right . 
+A:  So  
+A:  N S A three , I think . 
+A:  I don't know what they said 
+A:  but I know the number . 
+A:  They are hard to understand . 
+A:  They 're very , uh , out there . 
+A:  I have no idea what they 're talking about . 
+A:  It 's the person 's fault . 
+A:  It 's Morgan 's fault . 
+A:  Yeah . 
+A:  Tha - There are some cases like where the  the wrong speaker  uh , these ca Not a lot , but where the  the wrong person  the  the speech is addre attached to the wrong speaker 
+A:  and you can tell that when you run it . 
+A:  Or at least you can get  clues to it . 
+A:  So these are from the early transcriptions that people did on the mixed signals , like what you have . 
+A:  Mm - hmm . 
+A:  Yeah , if you can get it to  
+A:  Oh ! 
+A:  Oh . 
+A:  Oh . 
+A:  Yeah . 
+A:  Oh . 
+A:  Right . 
+A:  Why is it that I can read your mind ? 
+A:  You  This is our reward if we  do our digi 
+A:  Oh . 
+A:  Oh , thanks , Jose . 
+A:  Oh , wow . 
+A:  We could do digits while other people eat . 
+A:  So it 's background crunching . 
+A:  We don't have background chewing . 
+A:  No , we don't have any data with background eating . 
+A:  I 'm serious . 
+A:  You 
+A:  I am serious . 
+A:  Well  ? 
+A:  And it  
+A:  You have to write down , like , while y what you 're  what ch chocolate you 're eating 
+A:  cuz they might make different sounds , 
+A:  like n nuts  chocolate with nuts , chocolate without nuts . 
+A:  That w Oh , yeah , they  they might . 
+A:  Maybe those ? 
+A:  They 're so  
+A:  I don't know . 
+A:  This is  You know , this is a different kind of speech , 
+A:  looking at chocolates , deciding  
+A:  you know , it 's another style . 
+A:  OK . 
+A:  And you laughed at me , too , f the first time I said that . 
+A:  You laughed at me , too , the first time I sa said  
+A:  You really shouldn't , uh , te 
+A:  You have to sort of , um  Jose , if you haven't done this , you have to plug your ears while you 're t talking 
+A:  so that you don't get confused , I guess . 
+A:  Yeah . 
+A:  Oh , you 've done this one before ? 
+A:  Together ? 
+A:  I 'm not  we  we  Oh , and you haven't done this either . 
+A:  I the first time is  traumatic , 
+A:  but  
+A:  That 'd be good . 
+A:  We - we 'll give everybody the same sheet 
+A:  but they say different  
+A:  Well , different digits 
+A:  but same groupings . 
+A:  So they would all be  
+A:  Yeah . 
+A:  He 's try No , he 's trying to get good recognition performance . 

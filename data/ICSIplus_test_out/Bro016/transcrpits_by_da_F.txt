@@ -1,0 +1,232 @@
+F:  And so it 's sort of a different way of looking . 
+F:  OK . 
+F:  I don't really have , uh , anything new . 
+F:  Been working on  Meeting Recorder stuff . 
+F:  So . 
+F:  Um . 
+F:  I did play with that , actually , a little bit . 
+F:  Um . What happens is , uh , <clears throat> when you get to the noisy stuff , you start getting lots of insertions . 
+F:  And , um , 
+F:  so I 've tried playing around a little bit with , um , the insertion penalties and things like that . 
+F:  Um . 
+F:  I mean , it  it didn't make a whole lot of difference . 
+F:  Like for the well - matched case , it seemed like it was pretty good . 
+F:  Um . <mouth> I could do more playing with that , though . 
+F:  And , uh  
+F:  and see . 
+F:  Yes . 
+F:  Oh , you 're talking about for th <cough> for our features . 
+F:  Mmm . 
+F:  Right . 
+F:  Mm - hmm . 
+F:  Yeah . 
+F:  Mm - hmm . 
+F:  So for th 
+F:  so the experiment is to , um , run our front - end like normal , with the default , uh , insertion penalties and so forth , 
+F:  and then tweak that a little bit 
+F:  and see how much of a difference it makes 
+F:  if we were  
+F:  Mm - hmm . 
+F:  OK . 
+F:  Uh , I  I don't remember off the top of my head . 
+F:  Um . 
+F:  Yeah . I didn't even write them down . 
+F:  I  I  I don't remember . 
+F:  I would need to  
+F:  Well , I did write down , 
+F:  um  
+F:  So , when I was doing  I just wrote down some numbers for the well - matched case . 
+F:  Um . 
+F:  Looking at the  I wrote down what the deletions , substitutions , and insertions were , 
+F:  uh , 
+F:  for different numbers of states per phone . 
+F:  Um , but , uh , that  that 's all I wrote down . 
+F:  So . 
+F:  I  I would  
+F:  Yeah . 
+F:  I would need to do that . 
+F:  I can do that for next week . 
+F:  OK . 
+F:  I just need to get , um , <breath> front - end , uh , stuff from you 
+F:  or you point me to some files  that you 've already calculated . 
+F:  I probably will have time to do that and time to play a little bit with the silence model . 
+F:  So maybe I can have that for next week when Hynek 's here . 
+F:  Hmm . 
+F:  Is there  ? 
+F:  I wonder if there 's anything that we could do <breath> to the front - end that would affect the insertion  
+F:  What could you do ? 
+F:  Oh . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Oh , 
+F:  right . 
+F:  So that w 
+F:  Right . 
+F:  So , in effect , that 's changing the value of your insertion penalty . 
+F:  That 's interesting . 
+F:  Mm - hmm . 
+F:  Right . 
+F:  So if we know what the insertion penalty is , then we can get an idea about what range our number should be in , 
+F:  so that they  match with that . 
+F:  Mm - hmm . 
+F:  Yeah . 
+F:  I 've seen that with the mel cepstrum . 
+F:  I don't  I don't know about  the Aurora front - end , 
+F:  but  
+F:  Well , this  
+F:  the whole problem with insertions was what I think , um , we talked about when the guy from OGI came down  that one time 
+F:  and  
+F:  and that was when people were saying , well we should have a , uh , uh , voice activity detector  
+F:  that , because all that stuff  that we 're getting thr the silence that 's getting through is causing insertions . 
+F:  So . 
+F:  I 'll bet you there 's still a lot <breath> of insertions . 
+F:  Mm - hmm . 
+F:  Right . 
+F:  Mm - hmm . 
+F:  Hmm . 
+F:  Mm - hmm . 
+F:  So , would the  ? 
+F:  Uh , would a good idea be to try to map it into the same range that you get in the well - matched case ? 
+F:  So , if we computed what the range was in well - matched , and then when we get our noisy conditions out we try to make it have the same range as  ? 
+F:  Oh , I wasn't suggesting change it for different conditions . 
+F:  I was just saying that when we pick a range , we  we wanna pick a range that we map our numbers into  
+F:  we should probably pick it based on the range that we get in the well - matched case . 
+F:  Otherwise , I mean , what range are we gonna choose 
+F:  to  to map everything into ? 
+F:  Mm - hmm . 
+F:  Yeah . 
+F:  Mm - hmm . 
+F:  OK . 
+F:  Mm - hmm . 
+F:  Yeah . 
+F:  Mm - hmm . 
+F:  Right . 
+F:  Mm - hmm . 
+F:  Mainly working on what ? 
+F:  Oh . 
+F:  How about that  ? 
+F:  Any - anything new on the thing that , uh , you were working on with the , uh  ? 
+F:  No results ? 
+F:  Yeah . 
+F:  The  the , 
+F:  uh , 
+F:  voicing detector . 
+F:  Is this a report that 's for Aurora ? 
+F:  Or is it just like a tech report for ICSI , 
+F:  or  ? 
+F:  Ah . 
+F:  I see . 
+F:  Are you discovering anything , uh , that makes you scratch your head as you write this report , 
+F:  like why did we do that , 
+F:  or why didn't we do this , 
+F:  or  ? 
+F:  Mmm . 
+F:  Could you say it again ? 
+F:  What  what exactly did they do ? 
+F:  I think it 's  
+F:  it 's probably something that , mmm , the  you know , the , uh , experiment designers didn't really think about , 
+F:  because I think most people aren't doing trained systems , or , you know , uh , systems that are like ours , where you actually use the data to build models . 
+F:  I mean , they just  doing signal - processing . 
+F:  So . 
+F:  Yeah . 
+F:  That 's true . 
+F:  And they didn't forbid us  
+F:  right ?  
+F:  to build models on the data ? 
+F:  Mm - hmm . 
+F:  Do we know anything about  the speakers for each of the , uh , training utterances ? 
+F:  Do you have speaker information ? 
+F:  That would be good . 
+F:  Bank PIN . 
+F:  Just male f female ? 
+F:  Well , I was thinking about things like , you know , gender , uh  you know , gender - specific nets and , uh , vocal tract length normalization . 
+F:  Things like that . 
+F:  I d I don't  I didn't know what information we have about the speakers that we could try to take advantage of . 
+F:  Well , you could put them both in as separate streams or something . 
+F:  Uh . 
+F:  I don't know . 
+F:  I was just wondering if there was other information we could exploit . 
+F:  Yeah . 
+F:  Mm - hmm . 
+F:  Uh no . I hadn't  I hadn't thought  it was  thought too much about it , really . 
+F:  It just  something that popped into my head just now . 
+F:  And so I  I  
+F:  I mean , you could maybe use the ideas  a similar  idea to what they do in vocal tract length normalization . 
+F:  You know , you have some sort of a , uh , general speech model , 
+F:  you know , maybe just a mixture of Gaussians that you evaluate every utterance against , 
+F:  and then you see where each , you know , utterance  like , the likelihood of each utterance . You divide the  the range of the likelihoods up into discrete bins 
+F:  and then each bin 's got some knob  uh , setting . 
+F:  Yeah . 
+F:  Yeah . 
+F:  Yeah . 
+F:  That 's true . 
+F:  Right . 
+F:  Could be expensive . 
+F:  Oh , 
+F:  right . 
+F:  Right . 
+F:  So whatever it was , it would have to be uh sort of on a per frame basis . 
+F:  Yeah . 
+F:  Yeah . 
+F:  I don't know . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Hmm . 
+F:  Yeah . 
+F:  Right . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Is it balanced , 
+F:  um , in terms of gender  
+F:  the data ? 
+F:  Hmm . 
+F:  No 
+F:  And so th the , uh  for the tandem system , the values that come out of the net don't go through the sigmoid . 
+F:  Right ? 
+F:  They 're sort of the pre - nonlinearity values ? 
+F:  And those  
+F:  OK . 
+F:  And tho that 's what goes  into  HTK ? 
+F:  OK . 
+F:  Yeah . 
+F:  Cuz if  if the log probs that are coming out of the MSG are really big , the standard  insertion penalty is gonna have very little effect 
+F:  compared to , you know , a smaller set of log probs . 
+F:  Yeah . 
+F:  But you said you won't  you won't be here next Thursday ? 
+F:  Hmm . 
+F:  Unless you 're getting money in two countries . 
+F:  They both want their cut . 
+F:  Right ? 
+F:  But not for this next year ? 
+F:  Yeah . I think the  
+F:  just to expand a little bit on the idea of acoustic event . 
+F:  There 's , um  in my mind , anyways , there 's a difference between , um , acoustic features and acoustic events . 
+F:  And I think of acoustic features as being , um , things that linguists talk about , 
+F:  like , um  
+F:  Stuff that 's not based on data , necessarily . 
+F:  Right . 
+F:  That 's not based on , you know , acoustic data . 
+F:  So they talk about features for phones , 
+F:  like , uh , its height , 
+F:  its tenseness , 
+F:  laxness , 
+F:  things like that , 
+F:  which may or may not be all that easy to measure in the acoustic signal . 
+F:  Versus an acoustic event , which is just <mike noise> some <spikes> something in the acoustic signal <spike> that is fairly easy to measure . 
+F:  Um . So it 's , um  it 's a little different , 
+F:  in  at least in my mind . 
+F:  Mm - hmm . 
+F:  It 's kinda like the difference between top - down and bottom - up . 
+F:  I think of the acoustic  you know , phonetic features as being top - down . 
+F:  You know , you look at the phone 
+F:  and you say this phone is supposed to be  you know , have this feature , this feature , and this feature . 
+F:  Whether tha those features show up in the acoustic signal is sort of irrelevant . 
+F:  Whereas , an acoustic event goes the other way . 
+F:  Here 's the signal . 
+F:  Here 's some event . 
+F:  What  ? 
+F:  And then that  you know , that may map to this phone sometimes , 
+F:  and sometimes it may not . 
+F:  It just depen maybe depends on the context , 
+F:  things like that . 
+F:  And so it 's sort of a different way of looking . 

@@ -1,0 +1,367 @@
+C:  no I have to go as well . 
+C:  Who 's channel B ? 
+C:  Uh oh . 
+C:  No I 
+C:  yeah , 
+C:  yeah , you 're channel B . 
+C:  So can you talk a bit ? 
+C:  I thought it might be too 
+C:  OK . 
+C:  OK . 
+C:  A actually , wait a minute , 
+C:  shouldn't it be the other way around ? 
+C:  On the other side , 
+C:  yeah . 
+C:  O yeah . 
+C:  W we don't care how they  old they really are . 
+C:  I still don't see the problem . 
+C:  I guess  what time do we have to leave ? 
+C:  Three thirty ? 
+C:  Yeah , 
+C:  so . 
+C:  Um Well , I  I sent out an email s couple hours ago 
+C:  so 
+C:  um with Andreas ' help um Andreas put together a sort of no frills recognizer 
+C:  which is uh gender - dependent but like no adaptation , no cross - word models , no trigrams  
+C:  a bigram recognizer 
+C:  and that 's trained on Switchboard which is telephone conversations . 
+C:  Um and thanks to Don 's help wh who  
+C:  Don took the first meeting that Jane had transcribed 
+C:  and um <mouth> you know separated  used the individual channels we segmented it in into the segments that Jane had used 
+C:  and uh Don sampled that so  so eight K 
+C:  um and then we ran up to I guess the first twenty minutes , 
+C:  up to synch time of one two zero zero 
+C:  so is that  that 's twenty minutes or so ? 
+C:  Um yeah because I guess there 's some , 
+C:  and Don can talk to Jane about this , 
+C:  there 's some bug in the actual synch time file that ah uh 
+C:  I 'm  we 're not sure where it came from but stuff after that was a little messier . 
+C:  Anyway so it 's twenty minutes and I actually 
+C:  um 
+C:  There 's  there 's a  
+C:  yeah , 
+C:  so that actually 
+C:  um 
+C:  if it was twenty minutes in then I don't know 
+C:  Wel 
+C:  No actually it was  
+C:  yeah i it was a complicated bug 
+C:  because they were sometimes one off and then sometimes totally random 
+C:  so 
+C:  um 
+C:  Yeah 
+C:  so that 's what we have 
+C:  but that  that will be completely gone if this synch time problem 
+C:  So you guys know . 
+C:  Yeah . 
+C:  So here 's the actual copy of the email 
+C:  um oh OK 
+C:  so does this glitch occur at other  
+C:  Oh . 
+C:  Right . 
+C:  And is it only once that that happens ? 
+C:  OK . 
+C:  There 's  the previous page has some more information about sort of what was wrong 
+C:  but 
+C:  OK 
+C:  so that 's actually 
+C:  It  y it 's  
+C:  OK 
+C:  no  
+C:  What happens is it actually affects the script that Don  
+C:  I mean if we know about it then I guess it could always be checked for it 
+C:  but they 
+C:  Yeah . 
+C:  Well , the  the synch time  the synch numbers have more significant digits than they should , 
+C:  right ? 
+C:  There 's things that are l in smaller increments than a frame . 
+C:  And so then , I mean you look at that and it 's got you know more than three significant digits in a synch time then that can't be right 
+C:  so anyway it 's  it 's just  
+C:  that 's why we only have twenty minutes 
+C:  but there 's a significant amount of  
+C:  Yeah that was fine . 
+C:  That  that was OK . 
+C:  Well that would really be a problem , 
+C:  yeah . 
+C:  So anyway these are just the ones that are the prebug for one meeting . 
+C:  um and what 's  which  
+C:  this is really encouraging cuz this is free recognition , 
+C:  there 's no I mean the language model for Switchboard is totally different 
+C:  so you can see some like this Trent Lott which 
+C:  um I mean 
+C:  these are sort of funny ones , 
+C:  there 's a lot of perfect ones and good ones and all the references , 
+C:  I mean you can read them and when we get more results you can look through and see 
+C:  but 
+C:  um it 's pretty good . 
+C:  Well so I guess we can generate 
+C:  um 
+C:  there 's  
+C:  No those are actually 
+C:  a lot of the errors I think are out of vocabulary , 
+C:  so is it like PZM is three words , 
+C:  it 's PZM , 
+C:  I mean there 's nothing 
+C:  There 's no language model for PZM or 
+C:  um 
+C:  No language model , I mean those  
+C:  Well  well there 's all kinds of other stuff like Jimlet 
+C:  and I mean um anyway there  
+C:  so <laugh> but this is really encouraging because 
+C:  so , I mean the bottom line is even though it 's not a huge amount of data um it should be uh reasonable to actually run recognition and be like within the scope of  of r reasonable s you know Switchboard 
+C:  this is like h about how well we do on Switchboard - two data with the Switchboard - one trained  mostly trained recognizer 
+C:  and Switchboard - two is  got sort of a different population of speakers and a different topic 
+C:  and they 're talking about things in the news that happened after Switchboard - one 
+C:  so there was @ @ so that 's great . 
+C:  Um 
+C:  Oh yeah 
+C:  I mean this is really , 
+C:  and thanks to Andreas who , I mean this is a 
+C:  eh um 
+C:  yeah 
+C:  So and what al also this means is that 
+C:  um 
+C:  I mean there 's a bunch of things in this note to various people 
+C:  especially I guess um with Jane that  that would help for  
+C:  since we have this new data now uh in order to go from the transcripts more easily to um just the words that the recognizer would use for scoring . 
+C:  I had to deal with some of it by hand but I think a lot of it can be automated s by  
+C:  Yeah . 
+C:  No . 
+C:  And actually  we actually um used Switchboard telephone bandwidth models 
+C:  which I guess 
+C:  so that 's the on that 's the only acoustic training data that we have a lot of 
+C:  and I guess Ramana , 
+C:  so a guy at SRI said that um there 's not a huge amount of difference going from  
+C:  it 's  it 's not like we probably lose a huge amount 
+C:  but we won't know 
+C:  because we don't have any full band models for s conversational speech . 
+C:  So . 
+C:  Right . 
+C:  Right , so it 's  so 
+C:  Yeah 
+C:  so I wou 
+C:  so that 's good . 
+C:  Yeah . 
+C:  Like Trent Lott must have been from 
+C:  I guess <laugh> Switchboard was before 
+C:  uh . 
+C:  The j 
+C:  Yeah 
+C:  but you know Jane and Adam have you kn about equal performance 
+C:  and uh and that 's interesting 
+C:  cuz I think the  their language models are quite different 
+C:  so 
+C:  and I  I 'm pretty sure from listening to Eric that , you know given the words he was saying and given his pronunciation that the reason that he 's so much worse is the lapel . 
+C:  So it 's nice now if we can just sort of eliminate the lapel one when  when we get new microphones 
+C:  that would be worth it 
+C:  um 
+C:  Yeah 
+C:  he  he  he sounded to me just from  he sounded like a , 
+C:  what 's it a sheep or a goat ? 
+C:  Sheep , 
+C:  right . 
+C:  Sounded good . 
+C:  Right so um so I guess the good news is that 
+C:  and  and again this is without a lot of the sort of bells and whistles that we c can do with the SRI system 
+C:  and we 'll have more data and we can also start to maybe adapt the language models once we have enough meetings . 
+C:  So this is only twenty minutes of one meeting with no  no tailoring at all . 
+C:  Yeah . 
+C:  The voca the vocabulary especially 
+C:  yeah . 
+C:  Yeah , so . 
+C:  Yeah . 
+C:  It 's pretty good 
+C:  um so then 
+C:  PZM 
+C:  and then there 's things like for the transcription I got when someone has a digit in the transcript I don't know if they said , you know one one or eleven 
+C:  and I don't know if they said Tcl or TCL . 
+C:  there 's things like that where , you know the um we 'll probably have to ask the transcribers to indicate some of those kinds of things 
+C:  but in general it was really good 
+C:  and I 'm hoping  
+C:  and this is  this is good news 
+C:  because that means the force alignments should be good 
+C:  and if the force alignments , 
+C:  I mean it 's good news anyway 
+C:  but if the force alignments are good we can get all kinds of information . 
+C:  For example about , you know prosodic information 
+C:  and speaker overlaps and so forth directly from the aligned times . 
+C:  Um so that 'll be something that 
+C:  actually in order to assess the forced alignment um we need s some linguists or some people to look at it and say are these boundaries in about the right place . 
+C:  Because it 's just gonna give us time marks 
+C:  so . 
+C:  For forced alignment . 
+C:  Ye - right . 
+C:  Right . 
+C:  So this would be like if you take the words um you know and force align them on all the individual close talk uh close talking mikes then how good are these sort of in reality 
+C:  and then I was thinking it  
+C:  Oh 
+C:  or  i have someone look at the alignments 
+C:  uh maybe a linguist who can say um you know roughly if these are OK and how far away they are . 
+C:  Um but I think it 's gotta be pretty good 
+C:  because otherwise the word recognition would be really b crummy . 
+C:  It wouldn't necessarily be the other way around , 
+C:  if the wor word recognition was crummy the alignment might be OK 
+C:  but if the word recognition is this good the alignment should be pretty good . 
+C:  So that 's about it . 
+C:  This i 
+C:  yeah . 
+C:  This is not that good . 
+C:  Right . 
+C:  Yeah . 
+C:  No I think it 's really , 
+C:  I mean this way we least have a baseline 
+C:  we know that for instance the transcripts are very good 
+C:  so once you can get to the words that the recognizer which is a total subset of the things you need to understand the  the text 
+C:  um yeah they 're pretty good 
+C:  so and  and it 's converting automatically from the XML to the chopping up the wave forms and so forth 
+C:  it 's not the case that the end of one utterance is in the next segment and things like that which we had more problems with in Switchboard 
+C:  so that 's good . 
+C:  And um let 's see 
+C:  there was one more thing I wanted to  to mention  
+C:  I can't remember 
+C:  um 
+C:  Sorry can't remember . 
+C:  anyway it 's  
+C:  well it was , I mean I really didn't do this myself 
+C:  so Andreas set up this recognizer and  
+C:  by the way the recognizer all the files I 'm moving to SRI and running everything there 
+C:  so I brought back just these result files 
+C:  and people can look at them 
+C:  um so 
+C:  From the outside world or 
+C:  Um oh . 
+C:  Well OK 
+C:  we have n no names . 
+C:  Although I sh um 
+C:  de audio data itself ? 
+C:  Uh so well I can  I can protect my directories through there . 
+C:  Right now they 're not  they 're in the speech group directories which  so I will  
+C:  I didn't know that actually . 
+C:  Yeah OK . 
+C:  Right OK . 
+C:  That 's true . 
+C:  Yeah actually the bleeps are also an issue I thought . 
+C:  Don did this . 
+C:  Re - re ref 
+C:  yeah . 
+C:  Missing all the vowels . 
+C:  Some of the vowels , 
+C:  almost all the vowels , 
+C:  that 's the hard part . 
+C:  Yeah we could  we could try that and  and compare 
+C:  Yeah . 
+C:  We can try it . 
+C:  I  I only downsampled them first cuz I was 
+C:  yeah 
+C:  Well they 're just bigger to transfer , 
+C:  that 's why I s downsampled them before but 
+C:  Well I mean that was  if it 's the same then we can downsample here 
+C:  but if it 's  
+C:  Yeah . 
+C:  We could try that . 
+C:  Well it takes more disk space too 
+C:  so I was just  
+C:  So we could try that with this particular twenty minutes of speech and sort of see if there 's any differences . 
+C:  Well it 's just as easy to  to give you the sixteen K individual , 
+C:  it was just more disk space you know for storing them 
+C:  so 
+C:  Well we could try . 
+C:  Could easily try 
+C:  so 
+C:  Well we can try it if you generate like the same set of files just up to that point where we stopped anyway 
+C:  and just sti stick them somewhere 
+C:  and I 'll rerun it with 
+C:  OK . 
+C:  Right . 
+C:  Right . 
+C:  I mean I corrected all  
+C:  I mean I hand - edited the whole  the whole meeting 
+C:  so that can be run 
+C:  it 's just  
+C:  Once we get the  the bug out . 
+C:  And that 's actually said in your meeting , 
+C:  that 's how I know that . 
+C:  I  I <laugh> It 's like are we downsampling to sixteen ? 
+C:  Right . 
+C:  Thank God it 's not <laugh> more than that . 
+C:  And I guess if you 're comparing like  uh if you wanna run recognition on the PZM stuff you would want you don't want to downsample the wh that 
+C:  right ? 
+C:  Well I don I mean if it 's any better 
+C:  Yeah 
+C:  well we could try it . 
+C:  OK . 
+C:  Yeah . 
+C:  Oh yeah 
+C:  there was just one more thing I wanted to say which is totally unrelated to the recognition except that 
+C:  um 
+C:  well  well it 's sort of related 
+C:  but um 
+C:  good news also 
+C:  uh I got  
+C:  well Chuck Fillmore agreed to record meetings but he had too many people in his meetings 
+C:  and that 's too bad cuz they 're very animated 
+C:  and but uh Jerry also agreed so uh we 're starting on  on 
+C:  Well but he has fewer  
+C:  he  he won't have more than eight 
+C:  and it 's a meeting on even deeper understanding , EDU , 
+C:  so that sounds interesting . 
+C:  As a compliment to our front - end meeting 
+C:  and um so that 's gonna start Monday 
+C:  and one of the things that I was realizing is um it would be really great if anyone has any ideas on some kind of time synchronous way that people in the meeting can make a comment to the person whose gonna transcribe it 
+C:  or  or put a <mouth> push a button or something when they wanna make a note about " oh boy you should probably erase those last few " 
+C:  or uh " wait I want this not to be recorded now " 
+C:  or uh something like that s 
+C:  Cuz I was thinking you know if  if the person who sets up the meeting isn't there and it 's a group that we don't know 
+C:  um and this came up talking to  to Jerry also 
+C:  that you know is there any way for them to indicate  to make sure that the qu request that they have that they make explicitly get addressed somehow 
+C:  so I don't know if anyone has ideas 
+C:  or  you could even write down " oh it 's about three twenty five and "  
+C:  That would be great . 
+C:  That be great . 
+C:  For  for each ? 
+C:  I mean the tuner is four thirty for each . 
+C:  Wow . 
+C:  Comfort . 
+C:  Cuz I mean I think the microphones are OK 
+C:  it 's just the  the 
+C:  Could make our own handbands and 
+C:  It 's a lot of money for a handband . 
+C:  Can I ask a really dumb question ? 
+C:  Is  <laugh> is there any way we can have you know like a  a wireless microphone that you pass around to the people who you know the extra people for the times they wanna talk that  
+C:  I mean  
+C:  Well I mean  
+C:  Well but  
+C:  well but there might be a way to say that there are gonna be these different people 
+C:  um and I don't know identifying somehow ? 
+C:  You know I was just thinking of Jerry Springer . 
+C:  I mean for the few times that you might wanna have that . 
+C:  Well or also for you know if people are not 
+C:  No not the lapel . 
+C:  I don't know 
+C:  but I d I know the lapel is really suboptimal . 
+C:  Right . 
+C:  I mean the ones they really pass around must be sort of OK . 
+C:  Yeah just these ones that they pass around with no you know wireless 
+C:  Right . 
+C:  Yeah because there 's only I mean as Andreas pointed out actually I think in the large  the larger the group the less interaction  the less people are talking um over each other  
+C:  it just  there might be a lot of people that speak once or twice 
+C:  and 
+C:  Uh it 's great  
+C:  I j and this  I got this email from Jane at like two in the morning or something 
+C:  so it 's really great 
+C:  It 's really great . 
+C:  That 's a great idea . 
+C:  That 's a great idea cuz I 'd like to g have it recorded so that we can remember all the little things , 
+C:  that 's a great idea . 
+C:  Or just have them talk amongst themselves . 
+C:  And have 
+C:  that would be great . 
+C:  That 's a great idea . 
+C:  Be great . 
+C:  Yeah . 
+C:  It 's  they will get to transcribe their own meeting but they also get paid for having a break 
+C:  and I think that 's a good idea , 
+C:  get them involved . 
+C:  Um that 's a great idea . 
+C:  I 'm really sorry I have to g 
+C:  no I have to go as well . 

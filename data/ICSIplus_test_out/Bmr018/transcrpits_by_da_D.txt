@@ -1,0 +1,317 @@
+D:  So , and maybe we won't laugh this time also . 
+D:  It never crashes on me . 
+D:  What is  what is that ? 
+D:  Ah . 
+D:  Ah . 
+D:  So then there would be no temp files . 
+D:  OK .  Hmm . 
+D:  Oh wait  It  
+D:  it doesn't clear them , 
+D:  OK . 
+D:  But that 's usually the meeting that I recorded , and it neve it doesn't crash on me . 
+D:  Oh  
+D:  Oh , right . 
+D:  OK . 
+D:  Huh , OK . 
+D:  It was quick . 
+D:  Well , I had this idea we could make our whole meeting faster that way . 
+D:  And we 'll just all leave , 
+D:  and  
+D:  Yeah . 
+D:  Uh , I had one question about  
+D:  Aren't the UW folks coming this weekend ? 
+D:  Next weekend ? 
+D:  Sorry , not  not  not the days coming up , but  
+D:  Yeah , 
+D:  within ten days . 
+D:  So , are we  do we have like an agenda or anything that we should be  
+D:  OK . 
+D:  Wait , this is on  on Sunday ? 
+D:  Or Saturday ? 
+D:  OK . 
+D:  Except for <clears throat> it doesn't do well on short things , remember . 
+D:  It will miss them . 
+D:  It will miss most of the really short things . 
+D:  Like that . 
+D:  Uh - huh . 
+D:  It will  it will miss  
+D:  Yeah , you have to say " uh - huh " more slowly to  to get c 
+D:  No , I 'm s I 'm actually serious . 
+D:  So it will miss stuff like that which  
+D:  Right , 
+D:  and that 's what I 'm not sure about . 
+D:  Yeah , it 's very slow to do that . 
+D:  That w 
+D:  Yeah . 
+D:  That 's actually what I thought of , loading the chopped up waveforms , I mean , you know , that  that would make it faster  
+D:  So . 
+D:  Right , but if you 
+D:  a at some point  
+D:  No , I mean the individual channels that were chopped up that  
+D:  it 'd be nice to be able to go back and forth between those short segments . 
+D:  Cuz you don't really nee like nine tenths of the time you 're throwing most of them out , 
+D:  but what you need are tho that particular channel , or that particular location , 
+D:  and , 
+D:  um , might be nice , cuz we save those out already ,  um , to be able to do that . 
+D:  But it won't work for IBM of course , 
+D:  it only works here cuz they 're not saving out the individual channels . 
+D:  I don't know that you can locate them very well from the mixed signal , 
+D:  but you would know that they were there , and then you would switch . 
+D:  Right . 
+D:  And then you would switch into the other  
+D:  Yeah . 
+D:  But there 's no overlap during the digit readings , so it shouldn't really matter . 
+D:  Right , but that 's  I mean , that was our plan , 
+D:  but it 's clear from Dan that this is not something you can do in a short amount of time . 
+D:  So  
+D:  so we  you know , we had spent a lot of time , um , writing up the HLT paper 
+D:  and we wanted to use that , uh , kind of analysis , 
+D:  but the HLT paper has , you know , it 's a very crude measure of overlap . 
+D:  It 's not really something you could scientifically say is overlap , 
+D:  it 's just whether or not the , um , the segments that were all synchronized , whether there was some overlap somewhere . 
+D:  And , you know , that pointed out some differences , 
+D:  so he thought well if we can do something quick and dirty because Dan said the cross - cancellation , it 's not straight - forward . 
+D:  If it were straight - forward then we would try it , 
+D:  but  
+D:  so , it 's sort of good to hear that it was not straight - forward , thinking if we can get decent forced alignments , then at least we can do sort of a overall report of what happens with actual overlap in time , 
+D:  but , um  
+D:  and the  but there are some issues of this timing , um , in the recordings 
+D:  and  
+D:  I  
+D:  yeah , that was sort of a side issue . 
+D:  And it 's dynamic , so I guess it was more dynamic than some simple models would be able t to  
+D:  so  so there are some things available , 
+D:  and I don't know too much about this area 
+D:  where if people aren't moving around much than you could apply them , 
+D:  and it should work pretty well if you took care of this recording time difference . 
+D:  Which a at least is well defined , 
+D:  and 
+D:  um , but then if you add the dynamic aspect of adapting distances , then it wasn't  
+D:  I guess it just wasn't something that he could do quickly  and not  in time for us to be able to do something by two weeks from now , 
+D:  so . 
+D:  Well less than a week . 
+D:  So  um , so I don't know what we can do if anything , that 's sort of worth , you know , a Eurospeech paper at this point . 
+D:  Right . 
+D:  Actually y we can tell from the data that we have , 
+D:  um , yeah , there 's a way to tell . 
+D:  It might not be a single person who 's always overlapping that person but any number of people , 
+D:  and , um , if you align the two hypothesis files across the channels , you know , just word alignment , you 'd be able to find that . 
+D:  So  so I guess that 's sort of a last  
+D:  ther there 're sort of a few things we could do . 
+D:  One is just do like non - lapels if we can get good enough alignments . 
+D:  Another one was to try to get  
+D:  somehow align Thilo 's energy segmentations with what we have . 
+D:  But then you have the problem of not knowing where the words are because these meetings were done before that segmentation . 
+D:  But maybe there 's something that could be done . 
+D:  Well , I guess I  I wanted to just do something not on recognition experiments 
+D:  because that 's ju way too early , but to be able to report , you know , actual numbers . 
+D:  Like if we  if we had hand - transcribed pe good alignments or hand - checked alignments , then we could do this paper . 
+D:  It 's not that we need it to be automatic . 
+D:  But without knowing where the real words are , in time  
+D:  To  to know what an overlap really  if it 's really an overlap , or if it 's just a  a  a segment correlated with an overlap , 
+D:  and I guess that 's the difference to me between like a real paper and a sort of , promissory paper . 
+D:  So , um , if we d 
+D:  it might be possible to take Thilo 's output 
+D:  and like if you have , um , like right now these meetings are all , 
+D:  um , 
+D:  you know , they 're time - aligned , 
+D:  so if these are two different channels and somebody 's talking here and somebody else is talking here , just that word , 
+D:  if Thilo can tell us that there 're boundaries here , we should be able to figure that out 
+D:  because the only thing transcribed in this channel is this word . 
+D:  But , um , you know , if there are things  
+D:  Yeah , if you have two and they 're at the edges , it 's like here and here , 
+D:  and there 's speech here , then it doesn't really help you , 
+D:  so , um  
+D:  Well it w it would , but , um , we don't know exactly where the words are because the transcriber gave us two words in this time bin 
+D:  and we don't really know , 
+D:  I mean , 
+D:  yeah it 's  
+D:  I mean , if you have any ideas . 
+D:  I would  
+D:  Right . 
+D:  I mean , that  that would be really helpful . 
+D:  That was sort of another possibility . 
+D:  Yeah . 
+D:  Right . 
+D:  I mean , I guess in the future it won't be as much as an issue if transcribers are using the tightened boundaries to start with , 
+D:  then we have a good idea of where the forced alignment is constrained to . 
+D:  So I 'm no I don't know if this 
+D:  Oh it 's  it 's a  
+D:  yeah . 
+D:  Yeah . 
+D:  But he  he also can adjust this minimum time duration constraint and then what you get is noises mostly , 
+D:  but that might be OK , 
+D:  an 
+D:  Right . 
+D:  And you can also see in the waveform  
+D:  exac 
+D:  yeah . 
+D:  Yeah . 
+D:  I think it 's  
+D:  You could just say it 's a noise , though , and write , you know , a post - processor will just  
+D:  all you have to do is just  
+D:  or just say it 's  just put " X , " you know , like " not speech " or something , 
+D:  and then you can get  
+D:  Yeah , or 
+D:  Anyways , so I  I guess  
+D:  There 's something nice , though , about keeping , and this is probably another discussion , keeping the stuff that Thilo 's detector detected as possible speech and just marking it as not speech than deleting it . 
+D:  Because then when you align it , then the alignment can  you can put a reject model or whatever , 
+D:  and you 're consistent with th the automatic system , 
+D:  whereas if you delete it  
+D:  Yeah , or some , you know , dummy reject mod 
+D:  whatever , 
+D:  yeah . 
+D:  That 's actually a better way to do it 
+D:  cuz the a the forced alignment will probably be more consistent than  
+D:  I mean if it 's just as easy , 
+D:  but  
+D:  Anyway , quick question , though , at a high level do people think , 
+D:  let 's just say that we 're moving to this new era of like using the , um , pre - segmented t you know , non - synchronous conversations , 
+D:  does it make sense to try to take what we have now , which are the ones that , you know , we have recognition on which are synchronous and not time - tightened , and try to get something out of those for sort of purposes of illustrating the structure and the nature of the meetings , or is it better to just , you know , forget that and tr 
+D:  I mean , it 's  
+D:  Right . 
+D:  That was everybody 's hope . 
+D:  And maybe we can for the non - lapel , but 
+D:  is it worth  
+D:  if we can't then we can fake it even if we 're  we report , you know , we 're wrong twenty percent of the time or ten percent of the time . 
+D:  Uh  uh , that 's a good question actually . 
+D:  Actually that 's a good question 
+D:  because we 'd have to completely redo those meetings , and we have like ten of them now . 
+D:  No , you 're right , 
+D:  actually  
+D:  Uh , no , that 's a good point , though , 
+D:  because for feature extraction like for prosody or something , I mean , the meetings we have now , 
+D:  it 's a good chunk of data  
+D:  we need to get a decent f 
+D:  OK . 
+D:  So we should at least try it even if we can't , 
+D:  right ? 
+D:  I mean , we might be able , at the very worst , we can get transcribers to correct the cases where  
+D:  I mean , you sort of have a good estimate where these places are because the recognition 's so poor . 
+D:  Right ? 
+D:  And so you 're  
+D:  Yeah . 
+D:  So we need some way to push these first chunk of meetings into a state where we get good alignments . 
+D:  Yeah . 
+D:  Right . 
+D:  But what you do wanna do is take the , even if it 's klugey , take the segments  the synchronous segments , the ones from the HLT paper , where only that speaker was talking . 
+D:  Use those for adaptation , 
+D:  cuz if you  if you use everything , then you get all the cross - talk in the adaptation , and it 's just sort of blurred . 
+D:  And that we know , I mean , we have that . 
+D:  And it 's about roughly two - thirds , I mean , very roughly averaged . 
+D:  That 's not completely negligible . 
+D:  Like a third of it is bad for adaptation or so . 
+D:  It really  it depends a lot . 
+D:  This is just sort of an overall  
+D:  Yeah . 
+D:  But I think we 're  oh , Morgan 's talk went very well , I think . 
+D:  I think Morgan 's talk went very well it woke  
+D:  you know , it was really a well presented  and got people laughing  
+D:  Yeah . 
+D:  No , I d I don't think that paper is really  
+D:  the HLT paper is really more of a introduction - to - the - project paper , and , um  
+D:  Well , yeah , it  it 's  probably wouldn't make sense , 
+D:  but  
+D:  Right , right . 
+D:  Oh . 
+D:  Oh , 
+D:  so  
+D:  That might  might have been the one  one of the ones that we did . 
+D:  So that might actually be useful but they 're all non - native speakers . 
+D:  And e and e and extremely hard to follow , like word - wise , 
+D:  I bet the transcri I mean , I have no idea what they 're talking about , 
+D:  so , 
+D:  um , 
+D:  I mean , this is tough for a language model probably  
+
+D:  but  but that might be useful just for speech . 
+D:  Maybe the  yeah , the s thing that you have tightened @ @ , 
+D:  oh . 
+D:  Yeah . 
+D:  So we have to 
+D:  So I 'm not saying anything about bias towards small headsize , 
+D:  but does seem , uh  
+D:  Right . 
+D:  A little , 
+D:  um , 
+D:  And arrays , 
+D:  which is the i interesting  
+D:  and video , right . 
+D:  Mm - hmm . 
+D:  Right . 
+D:  That 's a great idea . 
+D:  Mm - hmm 
+D:  But they 're still planning to do like fake  
+D:  they have to do something like that , 
+D:  right . 
+D:  Yeah , th that 's true . 
+D:  Mm - hmm . 
+D:  No . 
+D:  Well , it 's  it 's a good paper , I mean  
+D:  Bring the  
+D:  Right . 
+D:  Well , the summarization stuff was interesting , 
+D:  I mean , I don't know anything about that field , 
+D:  but for this proposal on meeting summarization , 
+D:  um , I mean , it 's sort of a far cry 
+D:  because they weren't working with meeting type data , 
+D:  but he got sort of an overview on some of the different approaches , 
+D:  so . 
+D:  Well there 're  
+D:  this was the last day , 
+D:  but , I mean , there 's  that 's a huge field and probably the groups there may not be representative of the field , 
+D:  I  I don't know exactly that everyone submits to this particular conference , 
+D:  but 
+D:  yet there was , let 's see , this was on the last day , Mitre , BBN , and , um , Prager  
+D:  um , I wo it was  
+D:  no it was  
+D:  this was Wednesday morning . 
+D:  The sentence ordering one , was that Barselou , and these guys ? 
+D:  Anyway , I  I  it 's in the program , 
+D:  I should have read it to remind myself , 
+D:  but that 's sort of useful 
+D:  and I think like when Mari and Katrin and Jeff are here it 'd be good to figure out some kinds of things that we can start doing maybe just on the transcripts 
+D:  cuz we already have  
+D:  you know , 
+D:  yeah . 
+D:  Right . 
+D:  But I think what 's interesting is there 's all these different evaluations , like  just , you know , how do you evaluate whether the summary is good or not , 
+D:  and that 's what 's  was sort of interesting to me is that there 's different ways to do it , 
+D:  and  
+D:  Hm - umm . 
+D:  No . 
+D:  Yeah . 
+D:  The data issue comes up all the ti 
+D:  Yeah  yeah  yeah  
+D:  And there and their and  
+D:  and that you could do better with more data , I mean , that 's clearly statistically  
+D:  You mean the bigger the company the more words they use for training ? 
+D:  If you add more data ? 
+D:  Or  
+D:  Huh . 
+D:  It 's just no  
+D:  Well it 's different for different tasks . 
+D:  So it depends a lot on whether , you know , it  disambiguation is exactly the case where more data is better , 
+D:  right ? 
+D:  You 're  you 're  you can assume similar distributions , 
+D:  but if you wanted to do disambiguation on a different type of , uh , test data then your training data , then that extra data wouldn't generalize , 
+D:  so . 
+D:  Or done another language , or  
+D:  I mean , you  so there 's papers on portability and rapid prototyping and blah - blah - blah , 
+D:  and then there 's people saying , " Oh , just add more data . " 
+D:  So , 
+D:  these are like two different religions , basically . 
+D:  Yeah , 
+D:  yeah . 
+D:  Yeah . 
+D:  But th you know , the same thing has happened in computational linguistics , 
+D:  right ? 
+D:  You look at the ACL papers coming out , and now there 's sort of a turn back towards , OK we 've learned statistic  
+D:  you know , we 're basically getting what we expect out of some statistical methods , 
+D:  and , 
+D:  you know , the there 's arguments on both sides , 
+D:  so  
+D:  Yeah , yeah . 
+D:  And  and then you hit this  
+D:  Yes ! 
+D:  So , and maybe we won't laugh this time also . 

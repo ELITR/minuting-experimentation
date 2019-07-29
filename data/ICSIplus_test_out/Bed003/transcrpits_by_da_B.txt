@@ -1,0 +1,494 @@
+B:  So that has nothing to do with economics or anything . 
+B:  Goats eat cans , to my understanding . 
+B:  Tin cans . 
+B:  Could I hit  hit F - seven to do that ? 
+B:  on the  
+B:  Robert ? 
+B:  Oh , the remote will do it 
+B:  OK . 
+B:  Cuz I 'm already up there ? 
+B:  You are in control . 
+B:  Already ? 
+B:  I  Well it makes it easier  to do 
+B:  So ,  we were  
+B:  Ah ! 
+B:  OK . 
+B:  So , Let 's see . 
+B:  Which one of these buttons will do this for me ? 
+B:  Aha ! 
+B:  OK . 
+B:  Do I wanna go back to the first one ? 
+B:  OK . 
+B:  OK . 
+B:  Introduce . 
+B:  Although I 've  I 've never  I don't know what the light bulb is for . 
+B:  I didn't i install that into my  PowerPoint presentation . 
+B:  Ah . 
+B:  I 'd prefer not to . 
+B:  Because I 'm gonna switch to the JavaBayes program 
+B:  and then  if I do that it 'll mess everything up . 
+B:  Is that OK ? 
+B:  You want me to  
+B:  Wait , what do you want me to do ? 
+B:  Well I can do that , 
+B:  but then I have to end the presentation in the middle so I can go back to open up 
+B:  Here , let 's see if I can  
+B:  Is that better ? 
+B:  OK . 
+B:  Uh  I 'll also get rid of this " Click to add notes " . 
+B:  OK . 
+B:  So then the features we decided  or we decided we were  talked about , 
+B:  right ? 
+B:  Uh the  the prosody , the discourse ,  verb choice . 
+B:  You know . We had a list of things like " to go " and " to visit " and what not . 
+B:  The " landmark - iness " of uh  
+B:  I knew you 'd like that . 
+B:  Thank you . 
+B:  uh , of a  of a building . 
+B:  Whether the 
+B:  and this i we actually have a separate feature 
+B:  but I decided to put it on the same line  for space . 
+B:  " Nice walls " <breath> which we can look up 
+B:  because I mean if you 're gonna  get real close to a building in the Tango mode , 
+B:  right , 
+B:  there 's gotta be a reason for it . 
+B:  And it 's either because you 're in route to something else or you wanna look at the walls . 
+B:  The context , which in this case we 've limited to  " business person " , " tourist " , or  " unknown " , 
+B:  the time of day , 
+B:  and " open to suggestions " , isn't actually a feature . 
+B:  It 's  " We are open to suggestions . " 
+B:  Oh  
+B:  They 're separate things . 
+B:  Yeah . 
+B:  I either could put " nice walls " on its own line or " open to suggestions " off the slide . 
+B:  Right . 
+B:  Or one time I was at this  
+B:  But see the thing is , if it 's  
+B:  Yeah but if it 's architecturally significant you might be able to see it from  
+B:  Like you m might be able to " Vista " it , 
+B:  right ? 
+B:  And be able to  
+B:  Yeah , 
+B:  versus , like , 
+B:  I was at this place in Europe where they had little carvings of , like , dead people on the walls or something . 
+B:  I don't remember w 
+B:  It was a long time ago . 
+B:  But if you looked at it real close , you could see the  the in intricacy of the  of the walls . 
+B:  Right . 
+B:  Exactly . 
+B:  Robert ? 
+B:  Right . 
+B:  Yeah . 
+B:  Right . 
+B:  Right . 
+B:  But  
+B:  Yeah . 
+B:  Tourist - y landmarks also happen to be  
+B:  Wouldn't  couldn't they also be  
+B:  They 're not exclusive groups , 
+B:  are they ? 
+B:  Like  non - tourist - y landmarks and 
+B:  direct navigational  
+B:  Yeah . 
+B:  OK . 
+B:  OK , So our initial idea was not very satisfying ,  because  uh our initial idea was basically all the features pointing to the output node . 
+B:  Uh . 
+B:  Right . 
+B:  And uh , so we  
+B:  Reasons being , you know , it 'd be a pain to set up all the probabilities for that . 
+B:  If we moved onto the next step and did learning of some sort , uh according Bhaskara we 'd be handicapped . 
+B:  I don't know belief - nets very well . 
+B:  And they wouldn't look pretty . 
+B:  So . 
+B:  Uh . 
+B:  So then our next idea was to add a middle layer , 
+B:  right ? 
+B:  So the thinking behind that was <breath> we have the features that we 've drawn  from the communication of some  Like , the someone s 
+B:  The person at the screen is trying to communicate some abstract idea , 
+B:  like " I 'm  " the  the abstract idea being " I am a tourist 
+B:  I want to go  to this place . " 
+B:  Right ? 
+B:  So we 're gonna set up features along the lines of where they want to go 
+B:  and  what they 've said previously and whatnot . 
+B:  And then we have  the means <breath> that they should use . 
+B:  Right ? 
+B:  but the middle thing , we were thinking along the lines of maybe trying to figure out , like , the concept of whether they 're a tourist  or  whether they 're running an errand or something like that 
+B:  along those lines . 
+B:  Or  
+B:  Yes , we could things we couldn't extract the  from the data , the hidden variables . 
+B:  Yes , 
+B:  good . 
+B:  So then the hidden variables  hair variables we came up with were whether someone was on a tour , running an errand , or whether they were in a hurry , 
+B:  because we were thinking uh , if they were in a hurry there 'd be less likely to  like  or th 
+B:  Right . 
+B:  Or they might be more likely to be using the place that they want to go to as a  like a  navigational point to go to another place . 
+B:  Whether the destination was their final destination , 
+B:  whether the destination was closed . 
+B:  Those are all  
+B:  And then " Let 's look at the belief - net "  OK . 
+B:  So that means that I should switch to the  other program . 
+B:  Um right now it 's still kind of  in a toy  version of it , 
+B:  because we didn't know the probabilities of   or  
+B:  Well I 'll talk about it when I get the picture up . 
+B:  OK . 
+B:  So this right  what we  
+B:  Let 's see . 
+B:  What happens if I maximize this ? 
+B:  There we go . 
+B:  But uh  
+B:  So . The mode  basically has three different  outputs . 
+B:  The probability  whether the probability of a Vista , Tango , or Enter . 
+B:  Um  The " context " , we simplified . 
+B:  Basically it 's just the businessman , the tourist , unknown . 
+B:  " Verb used " is actually personally amusing 
+B:  mainly because it 's  it 's just whether the verb is a Tango verb , an Enter verb , or a  Vista verb . 
+B:  No . 
+B:  Yeah . 
+B:  Right . 
+B:  Um  
+B:  Why don't you mention things about this , Bhaskara , 
+B:  that I am  not  that are not coming to my mind right now . 
+B:  Well i it 's  
+B:  it 's so it sort of is 
+B:  because it 's  because have the  the time of day 
+B:  and the close 
+B:  it just had the  er and what time it closed . 
+B:  Yeah the   the actual parse is somewhere up around in here . 
+B:  Right . 
+B:  Right . 
+B:  There were  there 'd be other things besides just the admission fee , 
+B:  but  you know ,  we didn't have  
+B:  That was the  initial one that we found . 
+B:  From the discourse that  
+B:  Yeah . 
+B:  Right . 
+B:  One , uh  Uh . <breath> Um , 
+B:  anything else you want to say Bhaskara ? 
+B:  One thing  uh  
+B:  Yeah , th 
+B:  OK . 
+B:  so one thing I  I 'm you know unsure about , is how we have the discus uh  the " admission fee " thing set up . 
+B:  So one  thing that we were thinking was <breath> by doing the layers like this , 
+B:  Uh  we kept um  things from directly affecting the mode  beyond the concept , 
+B:  but you could see perhaps discus the " admission fee " going directly to the mode pointing at " Enter " , 
+B:  right ? 
+B:  Versus pointing to just at " tourist " , 
+B:  OK ? 
+B:  But we just decided to keep all the things we extracted  to point at the middle and then  down . 
+B:  Right . 
+B:  Navigational landmarks , 
+B:  yeah . 
+B:  Yeah , 
+B:  that would be  whatever building they referred to . 
+B:  That 's how we have it currently set up , 
+B:  but it could be ,  you know , based upon hour 
+B:  or  dis we could discrete it  des descret - ize it . 
+B:  Right . 
+B:  Or un  unknown , 
+B:  yeah . 
+B:  Wi 
+B:  It is binary 
+B:  but it doesn't have question mark because it 's extracted . 
+B:  Yeah . 
+B:  Hmm . Yeah . 
+B:  I want to get to the church quickly , 
+B:  and uh  
+B:  Right . 
+B:  Excellent . 
+B:  Do we have anything else to say about this ? 
+B:  Oh the 
+B:  Yeah , we could . 
+B:  But the demo doesn't work very well . 
+B:  Observe nodes . 
+B:  OK . 
+B:  Dat - dat - dah . 
+B:  What should I observe ? 
+B:  OK . 
+B:  OK . 
+B:  OK . 
+B:  I love nice walls , 
+B:  OK ? 
+B:  I 'm a big fan . 
+B:  And the time of day is night ? 
+B:  Alright . 
+B:  Oh , they  
+B:  OK . 
+B:  Oh whoops . 
+B:  I forgot to uh  
+B:  Ach ! 
+B:  One thing that bugs me about JavaBayes is you have to click that and do this . 
+B:  That all you want ? 
+B:  OK . 
+B:  So let 's see . 
+B:  I want  to query , 
+B:  right ? 
+B:  the mode . 
+B:  OK , and then on here  
+B:  So let 's see . 
+B:  Yeah . 
+B:  If it 's night time ,  they have not discussed admission fee , and the n walls are nice . 
+B:  So , yeah . 
+B:  I guess that  sort of makes sense . 
+B:  The reason I say the  demo doesn't work very well is yesterday we uh   observed everything in favor of  taking a tour , 
+B:  and it came up as " Tango " , 
+B:  right ? 
+B:  Over and over again . 
+B:  We couldn't  we couldn't figure out how to turn it off of " Tango " . 
+B:  Yeah , yeah . 
+B:  Yeah . 
+B:  Yeah , 
+B:  that 's  that 's at  
+B:  Spent my youth practicing the tango de la muerte . 
+B:  We would actually  
+B:  I guess once we look at the data more we 'll get more hidden  nodes , 
+B:  but I 'd like to see more . 
+B:  Not because it would  expedite the probabilities , cuz it wouldn't . 
+B:  It would actually slow that down tremendously . 
+B:  But . 
+B:  No , 
+B:  I think we should have uh  exponentially more  middle nodes than features we 've extracted . 
+B:  I 'm ju I 'm just jo 
+B:  Well the I kind of  thought of " doing business " as more of running an errand type thing . 
+B:  So  i wi th 
+B:  Right . 
+B:  OK . 
+B:  Right . 
+B:  Oops . 
+B:  No . 
+B:  We were thi 
+B:  Yeah , 
+B:  We were th 
+B:  Uh , well it depends on how many things it 's linked to . 
+B:  Right . 
+B:  Yeah , that 's true . 
+B:  Also   you know , didn't we have a  size as one ? 
+B:  The size of the landmark . 
+B:  Cuz if it 's  
+B:  Yeah . 
+B:  For some reason I had that  OK , that was a thought that I had at one point 
+B:  but then went away . 
+B:  Way 
+B:  Does it actually help to distinguish between those two cases though ? 
+B:  Whether it 's practically speaking enterable , or actually physically enterable  or not ? 
+B:  Well I can see why  
+B:  Whether it 's a  Whether it 's a public building , and whether it 's  actually has a door . 
+B:  OK . 
+B:  So Tom Cruise 's house is  not a public building 
+B:  but it has a door . 
+B:  But the thing is  
+B:  OK , sh 
+B:  explain to me why it 's necessary  to distinguish between whether something has a door and is  not public . 
+B:  Or , if something  
+B:  It seems like it 's equivalent to say that it doesn't have a door a  and it  
+B:  Or " not public " and " not a door " are equivalent things , 
+B:  it seems like in practice . 
+B:  Right . 
+B:  OK . 
+B:  Hmm . 
+B:  Does it have nice walls ? 
+B:  Excellent . 
+B:  OK . 
+B:  You could affect   Theoretically you could affect " doing business " with " has door " . 
+B:  Let 's see . 
+B:  Well ,  we have it saved . 
+B:  So . <laugh> We can rel open it up again . 
+B:  The  safety net . 
+B:  Let 's see . 
+B:  So this is " has door " 
+B:  Uh , true , false . 
+B:  That 's acceptable . 
+B:  And I want to edit the function going to that , 
+B:  right ? 
+B:  Oh no . 
+B:  Right . 
+B:  It was fine . 
+B:  added this one . 
+B:  This  
+B:  Oh wait , 
+B:  it might be  
+B:  Did we w 
+B:  Yes , 
+B:  that 's not good . 
+B:  Let 's see . 
+B:  Oops . 
+B:  No it doesn't , actually . 
+B:  I didn't think it did learning . 
+B:  Maybe it did a little bit of learning , 
+B:  I don't remember . 
+B:  Which is w quite positive , 
+B:  yeah . 
+B:  But actually it had an interface . 
+B:  A lot of them were like , you know . 
+B:  Huh . 
+B:  The c 
+B:  There 's like an XML format for  Bayes - nets . 
+B:  The - there is one . 
+B:  I don't know if this uses it . 
+B:  But it  
+B:  Yeah , the  the  
+B:  Yeah . 
+B:  Uh , yes I do actually . 
+B:  Let me see . 
+B:  Oh man , 
+B:  I didn't n  Is there an ampersand in DOS ? 
+B:  We - That 's alright . 
+B:  I can probably double cli click on it . 
+B:  Let 's see . 
+B:  Let 's see , 
+B:  come on . 
+B:  One of these days , it should open this , 
+B:  theoretically . 
+B:  Oh there we go . 
+B:  Maybe it was just  
+B:  Oh ! 
+B:  W Ah , it was dead . To the world . 
+B:  OK . 
+B:  I like  I like Word Pad because it has the uh  the returns , 
+B:  the carriage returns on some of them . 
+B:  You know how they get " auto - fills " I guess , 
+B:  or whatever you call it . 
+B:  It just basically looks like it just specifies a bunch of 
+B:  Yeah . 
+B:  It just that  it 's  
+B:  Yeah the ordering isn't very clear on  
+B:  Actually we could write a program that could generate this . 
+B:  Yeah you could . 
+B:  We were doing it  
+B:  We could  manipulate the source  itself ? 
+B:  Or  
+B:  I don't know if he actually  
+B:  Does he  
+B:  Oh . 
+B:  I didn't e 
+B:  Up one . 
+B:  Ah yes , good . 
+B:  " Source " . 
+B:  That 's  that 's quite nice . 
+B:  Right . 
+B:  Yeah I know there is an  I was looking on the we web page 
+B:  and he 's updated it for an XML version of I guess Bayes - nets . 
+B:  There 's a Bayes - net spec for  in XML . 
+B:  Yeah . 
+B:  Well th you can either  you ca or you can read both . 
+B:  To my understanding . 
+B:  Because uh  
+B:  Well at least the  uh  
+B:  I could have misread the web page , 
+B:  I have a habit of doing that , 
+B:  but . 
+B:  Do I have more slides ? 
+B:  Um yes , 
+B:  one more . 
+B:  " Future Work " . 
+B:  I think every presentation have a should have a " Future Work " slide . 
+B:  But uh it 's basically  
+B:  we already talked about all this stuff , 
+B:  so . 
+B:  Uh that 's future future work . 
+B:  Right . 
+B:  And of course if you have a presentation that doesn't  have something that doesn't work at all , then you have " What I learned " , as a slide . 
+B:  You could . 
+B:  My first approach failed . 
+B:  What I learned . 
+B:  OK , so I think that uh our presentation 's finished . 
+B:  I know what I like about these meetings is one person will nod , and then the next person will nod , and then it just goes all the way around the room . 
+B:  No I  Earlier I went <nonverbal gesture, nodding> and Bhaskara went <nonverbal gesture, nodding> and you did it . 
+B:  You did it . 
+B:  Should I pull up the  net again ? 
+B:  Yes . 
+B:  There we go . 
+B:  And actually I was  
+B:  cuz I got a wireless mike on . 
+B:  So instead of single node , for  like , if they said the word " admission fee "  
+B:  " admission fee " , or maybe , you know , " how much to enter " 
+B:  or you know something , 
+B:  other cues . 
+B:  Exactly . 
+B:  That would all f funnel into one node that would  constitute entrance requirements or something like that . 
+B:  OK . 
+B:  One thing that 's kind of been bugging me when I  more I look at this is that the  
+B:  I guess , the fact that the  there 's a complete separation between the  observed features and in the output . 
+B:  I mean , it makes it cleaner , but then uh  I mean . 
+B:  For instance if the discourse does  
+B:  well for instance , the " discourse admission fee "  node seems like it should point directly to the  
+B:  or increase the probability of " enter  directly " versus " going there via tourist " . 
+B:  Right . 
+B:  Yeah , 
+B:  that makes sense . 
+B:  There are places in Germany where it costs two hundred fifty dollars to enter ? 
+B:  Really ? 
+B:  I see . 
+B:  If you want to see " The Magic Flute " or something . 
+B:  The Spagos of Heidelberg . 
+B:  Hmm . 
+B:  Oh yeah , 
+B:  I think I see . 
+B:  So the discourse refers to " admission fee " but it just turns out that they change their mind in the middle of the discourse . 
+B:  Right . 
+B:  What sort of discourse  processing is uh  are the  
+B:  How much is built into SmartKom and  
+B:  Mm - hmm . 
+B:  Hmm . 
+B:  OK . 
+B:  Hmm . 
+B:  You 'd uh probably have to transfer in Chicago . 
+B:  I think  
+B:  One time I saw a report on trains , 
+B:  and I think there is a l 
+B:  I don't know if  
+B:  I thought there was a line that went from somewhere , 
+B:  maybe it was Sacramento to Chicago , 
+B:  but there was like a California to Chicago line of some sort . 
+B:  I could be wrong though . 
+B:  It was a while ago . 
+B:  Yeah 
+B:  but I don't know if it 's still  
+B:  They might have blown it up . 
+B:  I 'm frightened by Amtrak myself . 
+B:  I just  
+B:  They seem to have a lot of accidents on the Amtrak . 
+B:  Yeah . Yeah . 
+B:  This is going to be an interesting transcript . 
+B:  Yeah . 
+B:  It 'd help it figure it out . 
+B:  Hmm . 
+B:  Refined y re just refine the  
+B:  The features , 
+B:  I don't know , 
+B:  whatever you  
+B:  Basically just refine  some of the more general nodes . 
+B:  Some of them are completely absurd too , 
+B:  like  <breath> they want to enter , but it 's closed , 
+B:  it 's night time , 
+B:  you know 
+B:  there are tourists and all this weird stuff happens at the line up and you 're like  
+B:  confused . 
+B:  Yeah . 
+B:  Who 's talking on Wednesday ? 
+B:  I haven't  J Jerry never sent out a  sent out an email , 
+B:  did he , ever ? 
+B:  Ah ! 
+B:  Yeah . 
+B:  Right . 
+B:  Do you want to  trade ? 
+B:  Uh  
+B:  Why does SmartKom need a network ? 
+B:  Ah . 
+B:  It 's plugged in . 
+B:  Yeah . 
+B:  One of us , 
+B:  yeah . 
+B:  I like how we 've  you guys have successfully narrowed it down . 
+B:  " Is one of you going to be the subject ? " 
+B:  Is one of you  
+B:  jump in . 
+B:  Yeah . 
+B:  I know . 
+B:  That 's probably a good enough test of  
+B:  I like that . 
+B:  " Test the wizard . " 
+B:  I want that on a T - shirt . 
+B:  Alrighty . 
+B:  So is this the official end of the meeting now ? 
+B:  I just randomly  label things . 
+B:  So that has nothing to do with economics or anything . 

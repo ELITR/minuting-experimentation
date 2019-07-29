@@ -1,0 +1,73 @@
+B:  Sounds good . 
+B:  S do you get some kind of number between zero and one at the output ? 
+B:  Uh s So Barry , if you just have zero and ones , how are you doing the speech recognition ? 
+B:  Oh . OK . 
+B:  OK . 
+B:  OK . 
+B:  OK . 
+B:  And  
+B:  OK . OK . 
+B:  That 's  as far as my stuff goes , 
+B:  yeah , 
+B:  well I <inbreath> tried this mean subtraction method . 
+B:  Um . 
+B:  Due to Avendano , <inbreath> I 'm taking s um <inbreath> six seconds of speech , 
+B:  um <inbreath> I 'm using two second <inbreath> FFT analysis frames , <inbreath> stepped by a half second 
+B:  so it 's a quarter length step 
+B:  and I  <inbreath> I take that frame and four f the four  I take  
+B:  Sorry , 
+B:  I take the current frame and the four past frames and the <inbreath> four future frames 
+B:  and that adds up to six seconds of speech . 
+B:  And I calculate um <mouth> the spectral mean , <inbreath> of the log magnitude spectrum  over that N . 
+B:  I use that to normalize the s the current center frame <inbreath> by mean subtraction . 
+B:  And I then  then I move to the next frame and I  <inbreath> I do it again . 
+B:  Well , actually I calculate all the means first 
+B:  and then I do the subtraction . 
+B:  And um <inbreath> the  I tried that with HDK , 
+B:  the Aurora setup of HDK training on clean TI - digits , 
+B:  and um <inbreath> it  it helped 
+B:  um in a phony reverberation case 
+B:  um <inbreath> where I just used the simulated impulse response um <inbreath> the error rate went from something like eighty it was from something like eighteen percent <inbreath> to um four percent . 
+B:  And on meeting rec recorder far mike digits , mike  on channel F , it went from um <mouth> <inbreath> forty - one percent error to eight percent error . 
+B:  Right . 
+B:  And that  that was um <inbreath> trained on clean speech only , 
+B:  which I 'm guessing is the reason why the baseline was so bad . 
+B:  And  
+B:  Oh um actually um Adam ran the SRI recognizer . 
+B:  On the far field also . 
+B:  He did one PZM channel and one PDA channel . 
+B:  I  <inbreath> I 'm not sure , 
+B:  I think it was about five percent error for the PZM channel . 
+B:  f I think . 
+B:  Yeah . 
+B:  Um . 
+B:  I  I 'm g I 'm guessing it was the  the training data . 
+B:  Uh , clean TI - digits is , like , pretty pristine <inbreath> training data , 
+B:  and if they trained <inbreath> the SRI system on this TV broadcast type stuff , 
+B:  I think it 's a much wider range of channels 
+B:  and it  
+B:  Huh ? 
+B:  OK . 
+B:  b You me you mean um ta 
+B:  Yeah . 
+B:  OK . 
+B:  r Right , so  so I guess this SRI system is trained on a lot of s Broadcast News or Switchboard data . 
+B:  Is that right ? 
+B:  Do you know which one it is ? 
+B:  Uh - huh . 
+B:  OK . 
+B:  O one thing I 'm wondering about is what this mean subtraction method <inbreath> um will do if it 's faced with additive noise . 
+B:  Cuz I  I  it 's cuz I don't know what log magnitude spectral subtraction is gonna do to additive noise . 
+B:  That 's  that 's the  
+B:  Uh - huh . 
+B:  That 's  that 's  Yeah , that 's true . 
+B:  That 's a good point . 
+B:  OK , so it 's then  then it 's  it 's  it 's reasonable to expect it would be helpful if we used it with the SRI system 
+B:  and 
+B:  Uh - huh . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Hmm . 
+B:  Huh , OK . 
+B:  Sounds good . 

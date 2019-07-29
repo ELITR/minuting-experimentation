@@ -1,0 +1,2583 @@
+A:  OK . So . 
+D:  You know . 
+A:  This time the form 
+A:  discussion should be very short , right ? 
+C:  <inbreath> 
+A:  <laugh> 
+C:  It also should be  later . 
+E:  <laugh> 
+A:  OK . 
+C:  Because Jane uh is not here yet . 
+A:  Good point . 
+C:  And uh she 'll be most interested in that . 
+C:  <inbreath> 
+C:  Uh , she 's probably least involved in the signal - processing stuff so maybe we can just  
+C:  just uh , I don't think we should go though an elaborate thing , 
+
+
+C:  Starts  
+C:  No . 
+D:  No . 
+D:  That 's a different thing . <laugh> 
+C:  No . 
+C:  There 's another  I don't know . It starts with a P or something . I forget the word for it , 
+D:  Oh . 
+C:  but it 's  it 's um 
+C:   <inbreath> 
+C:  Typically when you  you 're ab r 
+C:  starting around forty for most people , 
+C:  it starts to harden and then it 's just harder for the lens to 
+D:  Oh . 
+C:  shift things and th the  the symptom is typically that you  
+E:  Uh - huh . 
+C:  <inbreath> 
+C:  you have to hold stuff uh uh further away to  
+E:  Yeah . 
+C:  to see it . 
+C:  In fact , uh m my brother 's a  gerontological psychologist and he  he uh 
+E:  <laugh> 
+E:  <laugh> 
+C:  <inbreath> 
+C:  came up with an  an uh  a uh body age test which uh 
+C:  gets down to sort of only three measurements that are good enough st statistical predictors of all the rest of it . 
+C:  <inbreath> 
+C:  And one of them is  is the distance 
+A:  <laugh> 
+E:  <laugh> Yeah . 
+C:  <laugh> that you have to hold it at .  
+D:  Give someone a piece of paper and then they  
+C:  Yeah . 
+E:  <laugh> 
+A:  We 're  we 're live by the way , so we 've got a good intro here 
+D:  Oh . 
+A:  <laugh> 
+D:  <laugh> 
+E:  <laugh> 
+C:  Oh . Yeah . About how old I am . OK . 
+C:  <laugh> 
+A:  Yep . <laugh> We can edit that out if you want . 
+D:  Oh , that 's optional . <breath-laugh> 
+C:  No , that 's OK . 
+E:  Mm - hmm . 
+C:  <laugh> 
+
+
+
+
+C:  but um uh Jose and I were just talking about 
+C:  <inbreath> 
+C:  the uh 
+C:  <page turn> 
+C:  uh , speech e energy thing , 
+E:  The @ @  
+E:  Yeah . 
+C:  and I uh  We didn't talk about the derivatives . But I think , 
+C:  you know , the  the  i 
+D:  <clear throat> 
+C:  if I can  
+C:  if you don't mind my  my speaking for you for a bit , 
+C:  um <inbreath> 
+C:  Uh . Right now , that he 's not really showing any kind of uh distinction , 
+C:  but uh  but we discussed a couple of the possible things that uh he can look at . 
+C:  Um . And uh one is that uh this is all in log energy and log energy is basically compressing the distances 
+C:  <inbreath> 
+C:  uh  between things . 
+C:  Um  Another is that he needs to play with the  the different uh  uh temporal 
+C:  sizes . He was  he  he was taking everything over two hundred milliseconds 
+C:  <inbreath> 
+C:  uh , and uh he 's going to vary that number and also look at moving windows , as we discussed before . 
+C:  <inbreath> 
+C:  Um 
+E:  <laugh> 
+C:  And uh  and the other thing is that the  yeah doing the  
+C:  <inbreath> 
+C:  subtracting off the mean and the variance in the  
+C:   uh and dividing it by the  standard deviation in the log domain , 
+C:  <inbreath> 
+C:  may not be  the right thing to do . 
+C:  <breath> 
+E:  Hi . Yeah . 
+A:  Hi Jane ! 
+A:  We just started . 
+A:  Could you take that mike there ? 
+D:  Are these the long term means ? Like , over the whole  I mean , 
+C:  <clear throat> 
+E:  <breath-laugh> 
+D:  the means of  what ? 
+C:  Uh B Between  
+D:  All the frames in the conversation ? Or of things that  
+A:  Thanks . 
+C:  between  
+C:  No . 
+C:  Between  
+C:  Neither . It 's uh between the pauses  uh for some segment . 
+E:  No . 
+D:  Oh . 
+C:  And so i i his  his  He 's making the constraint it has to be at least two hundred milliseconds . 
+D:  Oh . 
+C:  <inbreath> 
+C:  And so you take that . And then he 's  
+C:  he 's uh measuring at the frame level  
+C:  still at the frame level , 
+D:  Right . 
+C:  of what  
+C:  and then  and then just uh normalizing with that larger amount . 
+C:  <inbreath> 
+C:  um and  
+C:  But one thing he was pointing out is when he  he looked at a bunch of examples in log domain , it is actually pretty hard to see 
+C:  <inbreath> 
+C:  the change . 
+C:  And you can sort of  see that , because of j of just 
+C:  putting it on the board that 
+E:  Yep . 
+C:  <inbreath> 
+C:  if you sort of have log - X plus 
+C:  log - X , 
+D:  Yeah , maybe it 's not log distributed .  
+C:  that 's the log of X plus the log of two and it 's just ,  you know , it  it diminishes the  effect of having two of them . 
+E:  Mmm . Yeah . 
+C:  <inbreath> 
+E:  @ @ 
+D:  But you could do like a C D F there instead ? I mean , we don't know that the distribution here is 
+C:  Um . 
+C:  Yes , right . 
+D:  normally . 
+C:  So  
+D:  So just some kind of a simple  
+C:  So what I was suggesting to him is that  
+C:  Actually , a PDF . 
+C:  But , you know , uh 
+D:  PDF 
+C:  But , either way . Yeah . 
+C:  <breath-laugh> 
+D:  Yeah . 
+E:  Yeah . 
+C:  Yeah , eith eith uh 
+D:  Something like that where it 's sort of data driven . 
+C:  <mouth> 
+C:  B Yeah , but I think  also 
+C:  u 
+C:  I think a good first indicator is when the  the  the researcher looks at 
+C:  <inbreath> 
+C:  examples of the data 
+C:  and can not see 
+C:  a change  in how big the  the signal is , 
+C:  <inbreath> 
+E:  Yeah . 
+C:  when the two speaker  
+C:  Then , that 's a problem 
+C:  right there . 
+E:  Yeah . 
+C:  So . 
+D:  Oh yeah . 
+C:  I think you should at least be able , 
+C:  doing casual looking and can get the sense , " Hey , there 's something there . " and then you can play around with the measures . 
+D:  Oh yeah . 
+E:  Yeah . 
+C:  And when he 's looking in the log domain he 's not really seeing it . 
+C:  So . And when he 's looking in straight energy he is , 
+C:  <inbreath> 
+C:  so that 's a good place to start . 
+E:  Yeah . 
+C:  Um . 
+C:  So that was  that was the discussion we just had . 
+C:  Um . 
+C:  <inbreath> 
+
+
+C:  The other thing 
+C:  Actually we ca had a question for Adam in this . 
+C:  <inbreath> 
+E:  How  
+C:  Uh , when you did the 
+C:  <inbreath> 
+C:  sampling ? 
+C:  uh  over the  speech segments or s or sampling over the  
+C:  the individual channels in order to do the e 
+C:  uh the  amplitude equalization , 
+C:  <inbreath> 
+C:  did you do it over 
+C:  just the entire  everything in the mike channels ? You didn't try to find speech ? 
+A:  No , I just took over the entire s uh entire channel 
+A:  um  sampled ten minutes randomly . 
+C:  Right , OK . So then that means that someone who didn't speak 
+C:   very much 
+C:  <inbreath> 
+C:  would be largely represented by silence . 
+A:  Yep . 
+C:  <inbreath> 
+C:  And someone who would  who would be  
+C:  So the normalization factor 
+C:  probably is  i i i 
+C:   is  is  
+A:  Yeah , this was quite quick and dirty , and it was just for  listening . 
+E:  Yeah . 
+C:  Yeah . 
+C:  OK . 
+A:  And for listening it seems to work really well . 
+E:  Yeah . 
+C:  Yeah . 
+E:  Yeah . 
+A:  So . 
+C:  Yeah . 
+C:  But that 's  
+C:  Right . So th 
+A:  But , it 's not  
+E:  Yeah . 
+A:  Not a good measure . <laugh> 
+E:  <laugh> 
+C:  OK . 
+C:  So yeah there  there  there  
+C:  There 's a good chance then given that 
+C:  different people do talk different amounts  that there is  
+E:  Yeah . 
+C:  there  there is still a lot more to be gained from gain norm normalization with some 
+E:  Yeah . 
+E:  Mmm . 
+A:  Yes , absolutely . 
+C:  sort if  
+C:  if we can figure out a way to do it . 
+E:  Yeah . 
+C:  <inbreath> 
+C:  Uh . But 
+C:  we were agreed that in addition to that  
+E:  <laugh> 
+C:  uh there should be  
+C:  s stuff related to pitch and harmonics and so forth . 
+E:  Yeah . 
+C:  <inbreath> 
+
+
+C:  So we didn't talk at all about uh the other derivatives , but uh again just  just looking at  
+C:  <inbreath> 
+C:  Uh , I think uh Liz has a very good point , 
+C:  that in fact it would be much more graphic just to show  
+C:  <inbreath> 
+E:  Yeah . 
+C:  Well , actually , you do have some distributions here , 
+C:  uh for these cases . 
+E:  Yeah . 
+C:  You have some histograms , 
+C:  <inbreath> 
+E:  Yeah . 
+C:  um  and  uh , 
+C:  they don't look very separate . 
+C:   uh <laugh>  separated . 
+E:  This is the  the first derivate of log of frame energy 
+D:  What  
+C:  Yeah . 
+C:  Yeah . 
+E:  uh without any kind of normalization . 
+C:  Yeah . 
+D:  Log energy . 
+E:  These the 
+D:  Sorry . 
+E:  These are the  the first experiments uh with comment uh 
+D:  Frame energy .  
+A:  Except that  
+A:  it 's hard to judge this because the  they 're not normalized . 
+A:  It 's just number of frames . 
+D:  Yeah . 
+C:  Yeah . 
+E:  Yeah . 
+D:  Yeah . 
+A:  But yeah , even so . 
+D:  W 
+D:  <inbreath> 
+D:  I mean , what I meant is , even if you use linear ,  you know , raw  
+C:  " Number "   
+C:  <outbreath> 
+D:  measures , like  raw energy or whatever , 
+D:  maybe 
+D:  we shouldn't make any assumptions about the distribution 's shape , 
+D:  and just use  
+D:  you know , use the distribution to model the  
+D:  <inbreath>  
+D:  the mean , or what y 
+D:  you know , rather than the mean take some  
+C:  Yeah . But  And so in  in these he 's got 
+D:  Yeah . 
+C:  that . 
+C:  He 's got some pictures . 
+E:  Yeah . 
+C:  But he doesn't  he doesn't in the  
+C:  he i 
+C:  just in derivatives , 
+D:  Yeah .  
+C:  but not in the  
+D:  Oh . 
+D:  Right . So , we don't  know what they look like  on the ,  tsk   
+C:  but he d 
+C:  but he doesn't  
+C:  doesn't  
+C:  But he didn't h have it for the energy . 
+D:  For the raw . 
+C:  He had it for the derivatives . 
+D:  Yeah . 
+D:  So . 
+C:  Yeah . 
+D:  I mean , there might be something there . I don't know . 
+D:  Huh . 
+C:  Yeah . 
+A:  Interesting  
+E:  <inbreath> 
+E:  Here I  I 
+C:  <inbreath> 
+C:  Oh that  yeah that 's a good q 
+E:  in  
+C:  did  did you have this sort of thing , for just the  
+C:  just the l 
+C:  r uh the  
+C:  the 
+C:  unnormalized 
+E:  No 
+C:  log energy ? 
+E:  I  I  I haven't the result 
+C:  OK . Yeah . So she  she 's right . That 's a  
+E:  but it 's the  it 's the  the  the following . 
+D:  Well it might be just good to know what it looks like . <laugh> 
+C:  Yeah . That 's  
+D:  Cuz  
+E:  Huh ? 
+C:  That 's uh  cuz I 'd mentioned scatter plots before but she 's right , I mean , even before you get the scatter plots , just looking at a single feature 
+C:  <inbreath> 
+E:  Yeah . 
+C:  uh , 
+C:  looking at the distribution , is a good thing to do . 
+E:  Catal - uh  Combining the different possibilities of uh the parameters . 
+E:  I  I  I  I mean the  the  the scatter plot 
+E:   combining eh different  n two combination . 
+C:  <inbreath> 
+E:  combination of two ,  of energy and derivate  
+C:  Yeah , but  but what she 's saying  
+C:  is , which is right , is  le 
+C:  I mean , let 's start with the  Before we get complicated , 
+C:  let 's start with the most basic wh thing , 
+C:  which is  we 're arguing 
+C:  that if you take energy  
+C:  uh if you look at the energy , 
+C:  that , when two people are speaking at the same time , usually 
+C:  <inbreath>  
+C:  there 'll be more energy than when one is right ?  
+E:  <laugh> 
+E:  Yeah . 
+C:  That 's  that sort of hypothesis . And the first way you 'd look at that , 
+E:  That 's right .  
+C:  uh s 
+C:  she 's , you know , absolutely right , is that you would 
+C:  just take a look at the distribution of those two things , 
+E:  Yeah . 
+C:  much as you 've plotted them here , 
+C:  You know , but just  but just  
+E:  Yeah . 
+C:   just uh do it  
+C:  <inbreath> 
+C:  Well in this case you have three . 
+C:  You have the silence , and that  that 's fine . 
+E:  Yeah . 
+C:  So , 
+C:  uh with three colors or three shades or whatever , 
+C:  just  just look at those distributions . 
+E:  Yeah . 
+C:  And then , given that as a base , you can see if that gets improved , 
+E:  <drinking sounds> 
+C:  you know , or  or  
+C:   or worsened  by the  
+C:  looking at regular energy , 
+C:  looking at log energy , we were just proposing that maybe it 's  
+C:  you know , it 's harder to  see with the log energy , 
+E:  Yeah . 
+C:  um 
+C:  and uh 
+C:  also these different normalizations , 
+C:  does a particular choice of normalization make it better ? 
+C:  But I had maybe made it too complicated 
+C:  by suggesting 
+C:  early on , that you look at scatter plots because that 's looking at a distribution in two dimensions . 
+C:  Let 's start off just in one , 
+E:  Yeah . 
+E:  Yeah . 
+C:  uh , with this feature . 
+C:  <inbreath> 
+E:  Yeah . 
+C:  I think that 's probably the most basic thing , before anything very complicated . 
+D:  Yeah . 
+C:  Um 
+E:  Yeah . 
+C:  And then we w I think we 're agreed that 
+E:  I agree , yeah . 
+C:  pitch - related things are  are  are going to be a  a really likely candidate 
+E:  Uh - huh . 
+C:  to help . 
+C:  Um  
+E:  OK . 
+C:  But  
+C:  since  
+C:  <inbreath> 
+C:  uh your intuition 
+C:  from looking at some of the data , 
+C:  is that when you looked at the regular energy , 
+C:  that it did in fact usually go up , 
+E:  <breath-laugh> 
+C:  <laugh> when two people were talking , 
+E:  Yeah . 
+E:  Yeah . 
+C:  <inbreath> 
+E:  Yeah , yeah , yeah . 
+C:  that 's  eh 
+C:  you know , you should be able to come up with a measure which will 
+C:   match your intuition . 
+C:  And she 's right , 
+C:  that a  
+C:  that having a  
+E:  <inbreath> 
+E:  But  
+C:  having   
+C:  having this table , with a whole bunch of things ,  with the standard deviation , the variance and so forth , 
+E:  Uh - huh . 
+C:  it 's  it 's  
+C:  it 's harder to interpret than just looking at the  
+E:  Yeah . 
+E:  But  
+C:  the same kind of picture you have here . 
+E:  It  it 's curious but uh I f I found it in the  in the mixed file , 
+E:  in one channel 
+E:  <inbreath> that eh in several  oh e eh several times eh you have an speaker 
+E:  talking alone 
+C:  Mm - hmm . 
+E:  with a high level of energy 
+C:  Mm - hmm . 
+E:  eh 
+E:  in the middle eh a zone of overlapping 
+C:  Mm - hmm . 
+E:  with 
+E:  mmm less energy 
+E:  and 
+E:  eh come with another speaker with high energy and the 
+C:  Mm - hmm . 
+E:  overlapping zone 
+E:  has 
+E:  eh less energy . 
+C:  <mouth> 
+C:  Yeah . 
+C:  So there 'll be some cases for which  
+E:  Because there reach very many @ @ 
+D:  Right . 
+C:  But , the qu So  
+C:  So they 'll be  
+C:  <breath-laugh> 
+C:  This is  <breath-laugh> 
+E:  <laugh> 
+C:  I w want to point  to visual things , 
+E:  <laugh> 
+C:  <inbreath> 
+C:  But I mean they  there 'll be time  
+C:  There 'll be overlap 
+C:  between the distributions , 
+A:  <laugh> 
+C:  but the question is , 
+E:  Yeah . 
+C:  " If it 's a reasonable feature at all , 
+C:  there 's some separation . " 
+E:  Yeah . 
+D:  Especially 
+D:  locally . 
+C:  Mm - hmm . 
+D:  So . Locally . And the other thing is I 
+E:  just locally , yeah . 
+A:  And  
+D:  Sorry . I  
+A:  I was just going to say that  that  
+A:  right now we 're just exploring . 
+E:  Yeah . 
+A:  What you would imagine eventually , is that you 'll feed all of these features into some  
+A:  discriminative system . 
+C:  Yeah . 
+E:  Yeah .  
+A:  And so even if  if one of the features 
+A:  does a good job at one type of overlap , another feature might do a good job at another type of overlap . 
+E:  Yeah . 
+E:  Yeah . 
+C:  <mouth> <inbreath> 
+E:  Yeah , this is the  
+C:  Right . I mean the  
+C:  the reason I had suggested the scatter f p features is I used to do this a lot , 
+C:  when we had 
+C:  thirteen or fifteen or twenty features  to look at . 
+C:  <inbreath> 
+E:  <breath-laugh> 
+C:  um 
+C:  Because something is a good feature 
+C:  uh by itself , 
+C:  you don't really know how it 'll behave in combination and so it 's nice to have as many  
+C:  as many together at the same time as possible 
+C:  in uh in some reasonable visual form . There 's cool graphic things people have had sometimes to put together three or four in some funny  
+E:  <breath-laugh> 
+C:  funny way . 
+C:  But it 's true 
+C:  that you shouldn't do any of that unless you know 
+C:  that 
+C:  the individual ones , at least , have  
+E:  Yeah . 
+C:  have some uh  
+D:  Well , especially for normalizing . I mean , 
+C:  some hope 
+C:  Mm - hmm . 
+D:  it 's really important to  pick a normalization that matches the distribution for that feature . 
+C:  Mm - hmm . 
+D:  And it may not be the same 
+D:  for all the types of overlaps or 
+D:  the windows may not be 
+D:  the same . 
+
+
+D:  e Actually , I was wondering , <exhale> 
+D:  right now 
+D:  you 're taking a  
+D:  all of the  speech , 
+D:  from the whole meeting , 
+D:  and you 're trying to find points of overlap , 
+D:  but we don't really know which speaker is overlapping with which speaker , right ? 
+C:  Right . 
+E:  Yeah . 
+D:  So I mean another way would just be to take 
+D:  the speech from just , say , Morgan , 
+D:  And just Jane and then just their overlaps , 
+D:  like  
+D:  but by hand , by cheating , 
+D:  <inbreath> 
+D:  and looking at 
+D:  you know , if you can detect something that way , because if we can't do it that way , there 's no 
+A:  No prayer .  
+D:  good way that we 're going to be able to do it . 
+D:  That  You know , there might be something 
+D:  helpful and cleaner about looking at just  individuals and then that combination alone . 
+E:  Yeah . 
+D:  Plus , I think it 
+C:  Mm - hmm . 
+D:  has more elegant  
+D:  e 
+D:  The m the right model will be  easier to see that way . 
+D:  So if  I don't know , if you go through and you find 
+E:  Yeah . 
+D:  Adam , cuz he has a lot of overlaps and some other speaker who also has e enough speech and just 
+D:  sort of look at those 
+E:  Yeah . 
+D:  three cases of Adam and the other person and the overlaps , maybe  
+D:  <inbreath>  
+D:  and just look at the distributions , maybe there is a clear 
+E:  Yeah . 
+E:  Uh - huh . 
+D:  pattern but we just can't 
+D:  see it because there 's too many 
+D:  combinations of  of people 
+E:  Yeah . 
+D:  that can overlap . 
+B:  I had the same intuition last  last  last week . 
+D:  So . 
+E:  Yeah . 
+D:  Just seems sort of complex . 
+B:  I think it 's  to start with it 's s 
+B:  your  your idea of simplifying , 
+B:  starting with something that 
+C:  <mouth> 
+B:   you can see 
+B:   eh you know without 
+B:  the  
+B:  extra  
+B:  layers of  
+D:  Right . 
+D:  Cuz if energy doesn't matter there , like  
+D:  I don't think this is true , but what if 
+E:  To study individual ? 
+D:  Hmm ? 
+B:  Sorry , what ? 
+E:  To study individual ? 
+B:  <inbreath> 
+E:  The  the  the  
+B:  Well , you  you  you don't have to study everybody individually but  
+D:  Well , to study the simplest case 
+E:  But  
+B:  just simple case and 
+D:  to get rid of extra  
+E:  Consider  
+B:  the one that has the lot of data associated with it . 
+A:  <laugh> 
+D:  Right . 
+D:  Cuz what if it 's the case and I don't think this is true  
+A:  That was a great overlap by the way . <laugh> 
+D:  <laugh> 
+E:  <laugh> 
+D:  <breath-laugh> 
+D:  What if it 's the case that when two people overlap they equate their  
+D:  you know , there 's a  conservation of energy and everybody  
+C:  <laugh> 
+E:  <laugh> 
+D:  both people talk more softly ? I don't think this happens at all . 
+B:  Or  or what if what if the equipment  
+D:  Or they get louder . 
+B:  what if the equipment adjusts somehow , 
+B:  there 's some 
+B:  equalizing in there ? 
+D:  Yeah 
+D:  or  
+C:  Uh , 
+D:  I mean . 
+C:  no we don't have that . 
+D:  <outbreath> 
+C:  But . 
+E:  <laugh> 
+A:  Well , but  
+B:  OK .  
+A:  But I think that 's what I was saying about 
+A:  different types of 
+B:  Saturation . 
+A:  overlap . 
+D:  <outbreath> <inbreath> 
+D:  There are  there are different 
+E:  <scratchy noise> 
+D:  types , 
+D:  and within those types , 
+D:  like as Jose was saying , that  sounded like a backchannel overlap , 
+D:  meaning the kind that 's  a friendly encouragement , like " Mm - hmm . " , " Great ! " , " Yeah ! " 
+E:  Yeah . 
+D:  And it doesn't take  you don't take the floor . 
+D:  Um , but , 
+D:  some of those , as you showed , I think can be discriminated by the duration of the overlap . 
+E:  Yeah . 
+D:  So . 
+D:  It  
+D:  Actually the s new student , Don , who um Adam has met , and he was 
+D:  at one of our meetings  He 's  
+D:  getting his feet wet and then he 'll be starting again 
+D:   in mid - January . He 's interested in trying to distinguish the types of overlap . 
+D:  I don't know if he 's talked with you yet . 
+E:  Yeah . 
+D:  But in sort of honing in on these different types and  
+E:  I don't consi 
+E:  Now I don't consider that possibility . 
+E:  This is a s a general studio of the overlapping 
+D:  So maybe  
+C:  Yeah . 
+C:  <inbreath> 
+E:  we 're studying the  
+D:  So it might be something that we can 
+C:  Well  I  
+D:   help by categorizing some of them and then , 
+E:  i 
+C:  I  
+C:  I  I would s 
+D:  you know , look at that .  
+C:  actually still recommend that he do the overall thing 
+C:  because  it would be the quickest thing for him to do . 
+D:  <inbreath> 
+C:  He could  You see , he already has all his stuff in place , he has the histogram mechanism , 
+D:  Yeah . 
+C:  he has the stuff that subtracts out  
+C:  and all he has to do 
+C:  is change it uh 
+C:  uh from  from log to plain energy 
+C:  and plot the histogram 
+C:  and look at it . 
+C:  And then he should go on and do the other stuff 
+D:  Yeah . 
+C:  bec 
+C:  but  
+D:  <inbreath> 
+D:  Yeah , no . I didn't mean that  
+C:  But this will  
+D:  that  
+D:  for you to do that , but I was thinking if  
+D:  if Don and I are trying to get  categories and we label some data for you , and we say this is what we think is going  
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+D:  So you don't have to worry about it . And here 's the three types of overlaps . And we 'll  we 'll do the labelling for you . 
+E:  Yeah . 
+E:  Yeah . 
+C:  Hm - hmm . 
+D:  Um . 
+E:  Consider different class of overlap ? 
+D:  Yeah , that we would be working on anyway . 
+E:  If there 's time . 
+E:  Yeah . 
+D:  Then maybe  you can try some different things for those three cases , and see if that helps , or  
+E:  Yeah . 
+E:  This is the thing I  I comment with you before , 
+E:  that uh we have a great variation of th situation of overlapping . 
+C:  Mm - hmm . 
+E:  And the behavior for energy is , 
+E:  uh log energy , 
+E:  <inbreath> 
+E:  is not uh the same all the time . 
+C:  <mouth> <inbreath> 
+D:  Mm - hmm . 
+E:  And  
+C:  <inbreath> 
+C:  But I guess I was just saying that  that right now 
+E:  <laugh> 
+C:  uh 
+C:  from the means that you gave , 
+C:  I don't have any sense 
+C:  of whether 
+C:  even , 
+C:  you know , there are any significant number of cases for which there is distinct  and I would imagine there should be 
+C:  some  
+E:  Yeah . 
+C:  you know , there should be  
+C:  The distributions 
+C:  should be somewhat separated . 
+E:  <laugh> Yeah . 
+C:  <breath-laugh> 
+C:  Uh and 
+C:  I  I would still guess that if they are not separated at all , 
+C:  that there 's some  
+E:  Yeah . 
+C:  there 's  there 's most likely something wrong in the way that we 're measuring it . 
+E:  Yeah . 
+E:  Yeah . 
+C:  Um , 
+A:  <sniff> 
+C:  but  
+C:  um 
+C:  For instance , I mean I wouldn't expect that it was very common 
+C:  overall , that 
+C:  when two people were talking at the same time , 
+C:  that it would  that it really was 
+C:  lower , although sometimes , as you say , it would . 
+E:  Yeah . 
+E:  Yeah . 
+D:  Yeah , no , that was  That was a jok 
+C:  So . 
+C:  So . 
+D:  or a sort of , 
+C:  Yeah . 
+E:  <laugh> 
+C:  <laugh> 
+D:  a case where  where you would never know that unless you actually 
+C:  I mean . No . It could  it probably does happen sometimes . 
+E:  Yeah . 
+D:  go and look at 
+C:  Yeah . 
+A:  Right . 
+C:  Yeah . 
+D:  two individuals . So . 
+E:  Yeah . 
+A:  Mind if I turned that light off ? The flickering is annoying me . 
+A:  <laugh> 
+C:  OK . 
+E:  <laugh> 
+D:  <inbreath> 
+D:  It might the case , though , that the significant energy , just as Jose was saying , comes in the non - backchannel cases . 
+D:  Because in back Most people when they 're talking don't change their own 
+D:   energy when they get a backchannel , cuz they 're not really predicting the backchannel . 
+C:  Mm - hmm . 
+D:  And sometimes it 's a nod and sometimes it 's an " mm - hmm " . And the " mm - hmm " is really usually very low energy . 
+E:  Yeah . 
+E:  Yeah . 
+D:  So maybe those don't actually have much difference in energy . But 
+D:   all the other cases might . 
+C:  <inbreath> e 
+D:  and the backchannels are sort of easy to spot 
+D:  s in terms of their words or  I mean , just listen to it . So . 
+C:  <inbreath> e 
+E:  Yeah . 
+E:  But  
+C:  and  and again what they  what difference there was would kind of be lost in taking the log , 
+C:  so , <laugh> 
+D:  Well , it would be lost  no matter what you do . It just  
+C:  <laugh> as well . 
+E:  Yeah . 
+C:  Mmm , 
+C:  no , if it 's  
+C:  if i 
+C:  if it 's  
+A:  Tone 
+C:  Well , it won't be as big . 
+D:  I mean , even if you take the log , you can  your model just has a more sensitive  measures . So . 
+E:  Yeah . 
+A:  Sure , but tone might be very 
+A:  Yeah , you 're " mm - hmm " tone is going to be very different . 
+D:  Yeah . 
+D:  Right . 
+D:  Right . 
+A:  You could imagine doing specialized ones for different types of backchannels , 
+A:  if you could  if you had a good model for it . 
+C:  <inbreath> 
+A:  Your " mm - hmm " detector . 
+C:  If  if you 're  a 
+E:  <mouth> <inbreath> 
+C:  I guess my point is , if you 're doing essentially a linear separation , taking the log first does in fact make it harder to separate . 
+A:  Right . 
+E:  Yeah . 
+C:  So it 's  
+C:  So , uh if you i i 
+C:  So i if there  if there close to things it does 
+D:  Yeah . 
+C:  it 's a nonlinear operation that does in fact change the distinction . If you 're doing a non if you 're doing some fancy thing then  then yeah . 
+C:  And right now we 're essentially doing this linear thing by looking across here and  and saying we 're going to cut it here . 
+E:  <laugh> 
+E:  <laugh> 
+C:  <inbreath> 
+C:  Um 
+C:  and that  that 's the indicator that we 're getting . 
+C:  But anyway , yeah , we 're not  disagreeing on any of this , we should look at it more uh  more finely , 
+C:  but uh uh I think that  
+C:  This often happens , you do fairly complicated things , 
+C:  and then you stand back from them and you realize that you haven't done something simple . 
+D:  <breath-laugh> 
+C:  So 
+C:  uh , if you generated something like that just for the energy and see , 
+C:  and then , a a a as  as Liz says , when they g have uh uh smaller um , more coherent groups to look at , that would be another interesting thing later . 
+E:  Uh - huh . 
+E:  Uh - huh . 
+C:  And then that should give us some indication  
+C:  between those , should give us some indication of whether there 's anything to be achieved f from energy at all . 
+C:  And then you can move on to the uh  
+C:  uh more <mike loud pop> pitch related stuff . 
+E:  Mm - hmm . 
+E:  <mouth> 
+E:  I  I  I think this is a good idea . 
+C:  OK . 
+E:  Not consider the log 
+B:  Mm - hmm . 
+E:  energy . 
+C:  Yeah . 
+E:  @ @ 
+
+
+C:  But then the  
+C:  Have you started looking at the pitch related  stuff at all , or  ?  
+E:  The  ?  
+C:  Pitch  related ? 
+C:  Harmonicity and so on ? 
+E:  I  I 'm preparing the  the program but I don't  I don't begin 
+B:  <long loud breath> 
+C:  Preparing to  
+E:  because eh 
+C:  Yeah . 
+E:  <laugh> 
+E:  I saw your email and 
+E:   I agree with you 
+C:  Yeah . 
+E:  it 's better to  
+E:  I suppose it 's better to  to consider the  the energy this kind of parameter 
+C:  <inbreath> 
+E:  <inbreath> 
+C:  Oh , that 's not what I meant . 
+E:  bef 
+C:  No , no . I  I  I  
+C:  I  Well , 
+C:  we certainly should see this but I  I  I  
+C:  I think that the harm 
+B:  <long loud breath> 
+C:  I certainly wasn't saying this was better than the 
+C:  harmonicity and pitch related things I was just saying 
+E:  I  I go on with the  with the 
+C:  Yeah . 
+E:  pitch , aha ! 
+E:   OK . 
+C:  Yeah , I was just saying  
+E:  I  I  I  I understood uh that eh 
+E:   I  I had to finish 
+E:   by the moment with the 
+E:  <laugh> 
+E:  and  and concentrate my  my energy in that problem .  
+C:  OK . OK . 
+C:  <inbreath> 
+E:  <laugh> 
+C:  OK . But I think , like , all these derivatives and second derivatives and all these other very fancy things , I think I would just sort of look at the energy  and then 
+C:  get into the harmonicity as  as 
+E:  OK . I go on 
+C:  a suggestion . 
+E:  with the pitch . 
+C:  Uh 
+
+
+C:  OK . So maybe uh 
+C:  since w we 're trying to 
+C:  uh compress the meeting , 
+C:  um , I know Adam had some form stuff he wanted to talk about 
+C:  and did you have some ? 
+B:  <inbreath> 
+B:  I wanted to ask just s something on the end of this top topic . So , 
+B:  when I presented my results about the uh distribution of overlaps and the speakers and the profiles of the speakers , 
+E:  Uh - huh . 
+B:  at the bottom of that I did have a proposal , and I had plan to go through with it , of  of co coding the types of overlaps that people were involved in s 
+B:  just with reference to speaker style so , 
+D:  Oh . 
+B:  you know , with reference  and you know I said that on my  in my summary , that 
+D:  That 'd be great . 
+D:  Yeah , I remem Right . 
+B:   you know so it 's like people may have different amounts of being overlapped with or overlapping 
+B:  but that in itself is not informative without knowing what types of overlaps they 're involved in so 
+B:  I was planning to do a taxonomy of types overlaps with reference to that . 
+D:  That would be great . That would be really great . 
+E:  Yeah . 
+B:  So , 
+B:  but it you know it 's like 
+A:  Hmm . 
+B:  it sounds like you also have uh something in that direction . 
+E:  <laugh> 
+B:  Is  is it  
+D:  We have nothing  You know , basically , we got  his environment set up . He 's  he 's a double - E  
+E:  <laugh> 
+D:  you know . So . 
+D:  It 's mostly that , 
+D:   if we had to  label it ourselves , we  we would or we 'd have to , to get started , 
+D:  but if   It  
+D:  it would be much better if you can do it . 
+D:  You 'd be much better  at doing it also because 
+D:  <inbreath> 
+D:  you know , I  I 'm not  
+B:  Interesting .  
+D:  I don't have a good feel for how they should be sorted out , and I really didn't wanna 
+D:  go into that if I didn't have to . So if  
+D:  If you 're w willing to do that or  or  
+B:  Well maybe we can OK . 
+A:  It would be interesting , though , to talk , maybe not at the meeting , 
+E:  Yeah . 
+A:  but at some other time about what are the classes . 
+B:  Mm - hmm .  
+D:  Yeah . 
+E:  Yeah . 
+B:  Mm - hmm . 
+D:  I think that 's a research  effort in and of itself , 
+A:  Yeah , it would be interesting . 
+D:  because you can read the literature , but I don't know how it 'll  turn out and , 
+E:  Yeah . 
+B:  <inbreath> 
+E:  <mouth> 
+E:  I would think it 's interesting , yeah . 
+D:  You know , it 's always an interesting question . 
+B:  It seems like we also s with reference to a purpose , too , that we we 'd want to have them coded . 
+E:  Yeah . 
+D:  That 'd be great . 
+E:  Yeah . 
+A:  Yep . 
+D:  That 'd be really great . And we 'd still have some  funding 
+B:  OK . 
+B:  I can do that . 
+E:  uh uh 
+D:  for this project , like probably , 
+D:  if we had to hire some  like an undergrad , because uh Don is being 
+E:  hhh . 
+D:  covered half time on something else  
+B:  Mm - hmm . 
+D:  I mean , 
+D:  he  we 're not paying him  the full 
+D:  RA - ship for  all the time . So . 
+D:  <inbreath> 
+D:  um 
+D:  If we got it to where we wanted  we needed someone to do that  I don't think there 's really enough 
+D:  data where  where  
+B:  Mm - hmm . 
+B:  Yeah , I see this as a prototype , 
+E:  Yeah . 
+B:  to use the only the  
+D:  Yeah . 
+B:  the already transcribed meeting as just a prototype . 
+E:  I  I think a a another 
+E:  parameter we c we  
+D:  But  
+E:  we can consider is eh the  duration . 
+A:  Mm - hmm . 
+
+
+E:  Another e e m 
+E:  besides eh the  the class of overlap , 
+E:  the duration . 
+E:  Because is possible <inbreath> eh some s s um eh 
+E:  some classes eh has eh  
+E:  a type of a duration , eh , 
+E:   a duration very short 
+B:  Mm - hmm . 
+E:  uh when we have  
+D:  Yeah , definitely .  
+B:  Yeah , maybe  
+B:  It may be correlated . 
+E:  <inbreath> we have overlapping with speech . 
+E:  Is possible 
+B:  Mm - hmm . 
+E:  to have . 
+E:  And it 's interesting , 
+E:   I think , 
+E:   to consider the  the window of normalization , 
+E:   normalization window . 
+E:  Eh  because eh if we have a type of , 
+E:   a kind of eh 
+E:  overlap , eh 
+E:  backchannel overlap , 
+E:  with a short duration , 
+E:  is possible 
+E:   eh to normali i i 
+E:  that if we normalize eh with eh  
+E:  eh consider only the  the eh window 
+E:  eh by the left eh ri eh  
+E:  side on the right side 
+E:  overlapping with a  a very 
+E:   eh oh a small window 
+E:  eh the  if the fit of normalization is eh 
+E:  mmm 
+E:  bigger 
+E:  eh in that overlapping zone eh very short 
+B:  Mm - hmm .  
+D:  Yeah , that 's true . The window shouldn't be larger than the backchannel . 
+E:  I  I me 
+E:  I  I understand . 
+E:  I mean that you have 
+D:  Yeah .  
+E:  eh you have a backchannel , eh , eh  you have a overlapping zone 
+E:  very short 
+E:  and you consider 
+E:  eh n eh 
+E:  all the channel 
+E:  to normalize 
+C:  Mm - hmm . 
+E:  this very short eh  
+C:  Mm - hmm . 
+E:  for example " mmm mm - hmm hmm " 
+A:  <laugh> 
+E:  eh 
+E:  And the energy is not eh height 
+E:  eh I think if you consider all the channel 
+E:  to normalize and the channel is 
+E:   mmm 
+E:  bigger  
+C:  Mm - hmm . 
+E:  eh eh eh 
+E:  compared with the  with the overlapping 
+E:  eh duration , 
+E:   eh the effect 
+E:  is 
+E:  mmm 
+E:  stronger  
+E:  eh  
+E:  that 
+E:  I  I mean the  the e effect of the normalization 
+E:  eh with the mean and the  and the variance 
+C:  Mm - hmm . 
+E:  eh is different that if you consider 
+E:   only a 
+E:   window 
+E:  compared 
+E:  eh with the n the duration of overlapping . 
+E:  <inbreath> 
+E:  Not  
+C:  You  you want it 
+C:  around the overlapping part . You want it to include something that 's not in overlapping but  
+E:  Yeah . 
+E:  Yeah . 
+E:  Yeah . 
+B:  Mm - hmm . 
+C:  but uh 
+E:  I  I don't know . Is  s 
+C:  Yeah . 
+D:  Well it 's a sliding window , right ? So if you take the  the measure 
+E:  If  
+C:  Mm - hmm . 
+D:  in the center of the overlapped  piece , 
+E:  Yeah . 
+E:  Yeah . 
+D:  you know , there 'd better be some 
+D:  something . But if your window is really huge then yeah you 're right you won't even  The portion of the   
+E:  Yeah , 
+E:  This is the  
+D:  of the backchannel won't  won't effect anything . But you  
+E:  This is the  the idea , 
+E:  <inbreath> to consider only the  the small window 
+D:  Yeah . So . 
+E:  near  near  
+E:  near the  the overlapping zone . 
+D:  You know , you shouldn't be more than  
+D:  like   You should definitely not be three times as big as your  
+D:  as your  backchannel . 
+E:  Yeah . 
+D:  Then you 're gonna w have a wash . 
+B:  Mm - hmm . 
+E:  <laugh> 
+D:  And hopefully it 's more like 
+C:  <mouth> 
+C:  I 'm not sure that 's  necessarily true . 
+D:  on the order of  
+E:  Yeah ? 
+E:  <laugh> 
+B:  <inbreath> 
+B:  It is an empirical question , it seems like . 
+D:  Yea - 
+C:  Because  
+E:  Yeah . 
+C:  because it  
+C:  because 
+B:  Yeah . 
+C:  um 
+C:  again if you 're just compensating for the gain , 
+C:  you know , the fact that this  this gain thing was crude , 
+C:  and the gain wh 
+C:  if someone is speaking relatively 
+C:  at consistent level , 
+C:  just to  to give a  an extreme example , 
+C:  all you 're doing is compensating for that . 
+C:  And then you still s 
+C:  And then if you look at the frame with respect to that , 
+C:  it still should  should uh 
+C:  change 
+D:  Yeah , it depends how different your normalization is , as you slide your window across . I mean . That 's something we don't know . 
+C:  Mm - hmm . 
+B:  <mouth> 
+B:  It 's possible to try it both ways , isn't it ? 
+A:  Well , I mean we 're also talking about 
+B:  in this small @ @ 
+A:  a couple of different things . I mean , one is your analysis window and then the other is any sort of normalization that you 're doing . 
+D:  Yeah I was talking about the n normalization window . 
+A:  And the  
+A:  And they could be quite different . 
+D:  Yeah . 
+C:  Right . 
+E:  Yeah . 
+C:  This was sort of where  
+D:  Yeah . That 's true . 
+E:  <laugh> 
+A:  Yep . 
+C:  where we were last week . 
+D:  Yeah . 
+C:  But , anyway 
+C:  We  we 'll have to look at some core things . 
+D:  Um . 
+E:  OK . 
+B:  OK . 
+D:  But that 'd be great if  if you 're marking those and  
+B:  Great . 
+D:  um . 
+B:  OK . 
+E:  Yeah . 
+D:  But 
+D:  it is definitely true that we need to have the time marks , 
+B:  Mm - hmm . 
+B:  <long inbreath> 
+D:  and I was assuming that will be inherited because , 
+B:  Yep , I agree . 
+D:  if you have the words and they 're roughly aligned in time 
+B:  <long outbreath> 
+B:  Mm - hmm . 
+D:  via 
+D:  forced alignment or whatever we end up using , 
+A:  <laugh> 
+D:  then 
+D:  you know , this  student and I would be looking at the time 
+D:  marks and classifying all the frames inside those as whatever labels 
+B:  Coming off of the other  
+E:  Yeah . 
+B:  Good . So , it wouldn't be  
+D:  Jane gave 
+B:  I wasn't planning to label the time marks . 
+E:  <inbreath> 
+E:  I can give you 
+B:  I was thinking that that would come from the engineering side , yeah . 
+E:  my transcription file , no ? 
+D:  @ @ 
+D:  I don't think you need to . 
+D:  Yeah . That should be linked to the words which are linked to time somehow , right ? 
+B:  There you go . 
+A:  Well we 're not any time soon going to get a forced alignment .  So . 
+D:  Not now . 
+E:  Yeah .  
+A:  Um 
+A:  If it 's not hand - marked then we 're not going to get the times . 
+D:  Well , it 's something that w 
+D:  Well , we  we wouldn't be able to do any work without a forced alignment anyway , so somehow if  
+E:  Yes 
+D:  once he gets going we 're gonna 
+D:  hafta come up with one and 
+C:  Yes . 
+D:  Yeah . 
+B:  Good . 
+A:  I mean w I guess we could do a very bad one with Broadcast News . 
+D:  So whatever you would label would be 
+B:  Good . 
+D:  attached to the words , I think . 
+B:  Great ! 
+B:  Good , good . Mm - hmm . 
+E:  Yeah . 
+C:  <inbreath> 
+C:  Well again for the close  mike 
+C:  stuff , 
+A:  That might be good enough . 
+C:  we could come up  
+C:  take a s 
+C:  take the Switchboard 
+C:  system or something , and  
+A:  Yeah . 
+C:  Um 
+A:  It 'd be worth a try . It would be interesting to see what we get . 
+C:  Just , you know , low - pass filter the speech and  
+D:  Cuz there 's  there 's a lot of work you can't do without that , I mean , 
+D:  how  how would you  
+C:  Yeah . 
+D:  You 'd have to go in and measure every 
+D:  start and stop point 
+D:  next to a word 
+D:  is y if you 're interested in anything to do with words . So . 
+B:  It would be very inefficient . 
+A:  Yep . 
+E:  Yeah .  
+B:  Mm - hmm . 
+D:  Anyway  So that 'd be great . 
+B:  Good . OK . 
+E:  Yeah . 
+
+
+C:  There 's something we should 
+C:  talk about later but 
+C:  maybe not just now . 
+C:  But , uh , 
+C:  should talk about our options as far as the uh 
+C:  uh  
+C:  transcription 
+C:  <inbreath> 
+E:  <outbreath> 
+A:  Yep , if IBM doesn't  
+C:  But . Well , w 
+B:  OK . Good . 
+D:  <laugh> 
+E:  <laugh> 
+C:  But 
+D:  Do we hafta  turn  
+A:  <laugh> 
+C:  we 'll do that later . 
+D:  Are we supposed to keep recording here ? 
+B:  Yeah . Let 's do that later . 
+B:  Yeah . 
+A:  Yeah <laugh 1 syll> Right . 
+E:  <laugh> 
+B:  <laugh> 
+C:  We 'll talk about it later . 
+B:  Yeah . 
+
+
+
+
+C:  So <breath-laugh> 
+E:  <laugh> 
+C:  uh 
+C:  Uh " forms " .  You had something on forms . 
+A:  Forms 
+A:  Next iteration of forms . 
+A:  Oops .  
+B:  Oh ! Oh good , OK . 
+C:  Um . 
+C:  Oh . 
+B:  How  So it 's two pages per person ? 
+A:  Nope . 
+A:  One 's a digit form , one 's a speaker form . 
+B:  Oh ! 
+A:  So one is a one time only  speaker form and the other is the digits . 
+B:  Oh , I see . 
+E:  Oh it 's the same . 
+E:  Oh no no . Is  is new Is OK . 
+A:  So don't fill these out . 
+E:  <clear nose> 
+A:  <laugh>  
+B:  Alright . 
+A:  This is just the suggestion for uh what the new forms would look like . 
+A:  So , they incorporate the changes  that we talked about . 
+B:  Date and time . <whispered> 
+B:  <inbreath> 
+B:  Uh why did you switch the order of the Date and Time fields ? 
+B:  This is rather a low - level , but  <laughing> 
+A:  On which one ? 
+B:  On  on the new one , Time comes first and then Date , 
+B:  but I thought  
+A:  Oh you mean on the digit form ? 
+B:  This is  
+B:  this is rather a low level question , but  
+A:  Uh , because 
+B:  but it used  used to be Date came first . 
+A:  the user fills out the first three fields and I fill out the rest . 
+B:  Oh I see . 
+B:  Well , how would the  
+A:  So it was intentional . It 's an interesting observation , but it was intentional . 
+B:  How would the user know the time if they didn't know the date ? 
+A:  Because the date is when you actually read the digits and the time 
+C:  <breath-laugh> 
+A:  and , excuse me , the time is when you actually read the digits , 
+A:  but I 'm filling out the date beforehand . If you look at the form in front of you ? 
+B:  Yeah . 
+A:  that you 're going to fill out when you read the digits ? 
+A:  you 'll see I 've already filled in the date but not the time . 
+B:  <inbreath> 
+B:  I always assumed  
+B:  So the time is supposed to be pretty exact , because I 've just been taking beginning time  
+D:  Yeah , me too .  
+B:  time of the meeting . 
+E:  Yeah , 
+A:  Yeah , I 've noticed that in the forms . 
+E:  I  yeah . 
+D:  <laugh> 
+A:  The  the reason I put the time in , is so that the person 
+E:  <laugh> 
+B:  <laugh> 
+D:  @ @ 
+E:  Me too . 
+B:  <laugh> 
+A:  who 's extracting the digits , meaning me , 
+E:  Oh ! 
+A:  will know where to look in the meeting , 
+B:  Oh dear . We 've been  
+E:  But  
+A:  to try to find the digits . 
+B:  we 've been messing up your forms . 
+A:  I know . 
+B:  <laugh> 
+E:  I am put  I am putting the beginning of the meeting . 
+D:  So you should call it , like , " digits start time " . Or . 
+C:  <breath-laugh> 
+A:  And I haven't said anything . 
+A:  Yep . 
+B:  <laugh> 
+E:  in  on there . 
+C:  Why  What  what were you putting in ? 
+E:  <laugh> 
+B:  <inbreath> 
+B:  Oh , well , I was saying if we started the meeting at 
+E:  Yeah . 
+B:  two thirty , I 'd put two thirty , and I guess d 
+B:  e everyone was putting two thirty , and 
+C:  Oh . 
+E:  Yeah . 
+C:  <laugh> 
+B:  I didn't realize there was " uh oh 
+A:  No , it 's about fifty fifty . 
+B:  I 'm about to read this and I should "  
+A:  Actually it 's about one third each . About one third of them are blank ,  about one third of them are when the digits are read , and about one third of them are when the  meeting starts . 
+B:  <laugh> 
+E:  Oh . 
+D:  <breath-laugh> 
+A:  So . 
+B:  This would be a radical suggestion but  
+A:  I could put instructions ? 
+B:  Ei - either that or maybe you could 
+A:  Nah . 
+E:  Yeah . 
+B:  maybe write down when people <laugh> 
+B:  start reading digits on that particular session . 
+A:  But if I 'm not at the meeting , I can't do that . 
+B:  <inbreath> I know , OK . 
+C:  Yeah , he 's been setting stuff up and going away . So . 
+B:   That 's a good point . 
+B:  I see . Good point good point . 
+C:  For some reason he doesn't want to sit through every meeting that 's  
+A:  Yep , but that is the reason Name , Email and Time are where they are . 
+B:  Oh , OK . Alright . 
+C:  Yeah . 
+B:  I rest my  
+A:  And then the others are later on . 
+C:  Uh - huh . 
+B:  OK . w 
+E:  And the Seat is this number ? 
+A:  Mm - hmm . 
+B:  Seat and Session .  
+D:  " For official use only " 
+D:  That 's  
+E:  <laugh> 
+E:  " use only "  
+C:  <laugh> 
+D:  <laugh> Well , he 's very professional .  
+B:  <inbreath> 
+E:  <laugh> 
+B:  Actually you could  
+A:  <laugh> 
+B:  Well that does raise another question , which is why is the " Professional use only " line not higher ? 
+D:  <laugh> 
+B:  Why doesn't it come in at the point of Date and Seat ? 
+B:  Oh . 
+A:  What ? 
+B:  Because we 're filling in other things . 
+C:  What ? 
+B:  Well , because  
+B:  If y 
+B:  your  your professional use , you 're gonna already have the date , 
+B:  and the s 
+A:  What  which form are you talking about ? 
+B:  Well I 'm comparing the new one with the old one . 
+B:  This is the digit form . 
+E:  Oh . 
+A:  Oh you 're talking about the digit form . The digit form doesn't  
+E:  Yeah . 
+C:  Digit . 
+B:  Oh ! I wasn't supposed to  
+C:  Digit form . 
+E:  Yeah . 
+A:  The digit  No , that 's alright . The digit form doesn't have a " for official use only " line . 
+B:  Sorry . 
+B:  Sorry .  
+A:  It just has a line , 
+A:   which is what you 're supposed to read . 
+B:  That  uh OK . 
+B:   @ @ 
+B:  Sorry about that . Yeah . 
+A:  So on the digits form , 
+A:  everything above the line is a fill - in form 
+A:   and everything below the line is digits that the user reads . 
+B:  Yeah . 
+B:  OK . 
+E:  <laugh> 
+B:  Alright s but I didn't mean to derail our discussion here , so you really wanted to start with this other form . 
+A:  No , either way is fine I just  
+A:  You just started talking about something , and I didn't know which form you were referring to . 
+B:  Alright yeah , I was comparing  so th this is  
+B:  So I was looking at the change first . So it 's like we started with this and now we 've got a new version of it 
+B:  wi  with reference to this . So the digit form , we had one already . 
+B:  Now the f the fields 
+B:  are slightly different . 
+C:  So the main thing that the person fills out 
+C:  um  is the name and email and 
+E:  Yeah . 
+C:  time ? 
+A:  Right . 
+E:  Ah !  
+C:  You do the rest ? 
+A:  Yep . 
+A:  Just as uh  as I have 
+C:  Right . 
+A:  for all the others . 
+B:  What  
+B:  And there 's an addition of the native language , 
+
+
+B:  which is a bit redundant . 
+B:  This one has Native Language and this one does too . 
+A:  That 's because the one , the digit form that has native language is the old form not the new form . 
+B:  Oh ! Thank you .  Thank you , thank you . There we go . 
+E:  Yeah . 
+B:   Oh , yeah . I 'll catch up here . 
+B:  OK , I see . 
+C:  " South Midland , North Midland "  
+B:  That 's the old and that 's the new .  
+A:  <laugh> 
+A:  Yeah this was the problem with these categories , I  
+A:  I picked those categories from TIMIT . 
+A:  I don't know what those are . <laugh> 
+E:  <laugh> 
+D:  <inbreath> 
+D:  Actually , the only way I know is from working with the database and having to figure it out . 
+E:  What  
+A:  With TIMIT , yeah ? 
+E:  uh - huh . 
+C:  So is South Midland like Kansas ? and North Midland like  like uh Illinois , or  ?  
+E:  What i 
+A:  So , I was gonna ask wh 
+A:  w 
+D:  Well yeah . 
+E:  Yeah . 
+D:  Nor - um  
+A:  I mean . So  so what accent are we speaking ? 
+A:  Western ? 
+D:  <long loud breath> 
+C:  By definition ? 
+E:  And for simple for  for me ? 
+E:  Is mean my native language Spanish  
+C:  Well , 
+D:  Probably Western , yeah . 
+E:  Spanish ? 
+E:  eh 
+E:  The original 
+E:  is the center of Spain and the 
+E:  <laugh> beca <laugh> 
+A:  Yeah , I mean you could call it whatever you want . 
+A:   For the foreign language we couldn't 
+A:  classify every single one . So I just left it blank and you can put whatever you want .  
+E:  Because 
+E:  is different , the Span - uh 
+E:   the Spanish language from the  the north of Spain , of the south , of the west and the  
+A:  Sure . 
+E:  But .  
+E:  <drinking sounds> 
+A:  So I 'm not sure what to do about the Region field for English variety . 
+E:  Yeah . 
+A:  You know , when I wrote  I was writing those down , I was thinking , " You know , these are great  if you 're a linguist " . 
+E:  <laugh> 
+D:  <inbreath> 
+B:  Yeah . 
+D:  Actually even if you <laugh> 
+A:  But I don't know how to  I don't know how to  I don't know how to categorize them . 
+E:  <laugh> 
+B:  Yeah . 
+D:   t 
+C:  If you 're  
+C:  if e <laugh> 
+D:  This wasn't developed by  
+D:  th these regions weren't  
+C:  if y <laugh> 
+C:  if you 're a TI or MIT <laugh> from <laugh> nineteen eighty - five . 
+E:  <laugh> 
+A:  Yeah 
+C:  Yeah . 
+A:  So I guess my only question was if  if you were a South Midland speaking 
+A:  region , person ? 
+D:  Mm - hmm . 
+A:  Would you know it ? Is that what you would call yourself ? 
+D:  I don't know . 
+A:  Yeah . 
+E:  <laugh> 
+C:  <inbreath> 
+B:  <inbreath> 
+C:  You know , I think if you 're talking  
+C:  if you 're thinking in terms of places ,  
+C:  as opposed to  
+C:  names different peop 
+C:  names people have given to  different ways of talking ,  
+C:  I would think 
+C:  North Midwest , and South Midwest would be more common than saying Midland , right , I mean , I  
+D:  Yeah . Now  the usage  
+C:  I went to s 
+D:  Maybe we can give them a li  like a little map ? <laugh> 
+D:  with the regions and they just  
+E:  <laugh> 
+D:  No , I 'm serious . <laugh> 
+E:  <laugh> 
+B:  No , that 's not bad . 
+D:  Because 
+E:  i at this  
+B:  Yeah . 
+D:  it takes less time , and it 's sort of cute there 's no figure . 
+E:  <laugh> 
+E:  in that side  
+E:  in that side of the  the paper . <laugh> 
+B:  <inbreath> 
+D:  Well just a little  You know , it doesn't have all the detail , but you sort of  
+C:  Well . 
+C:  But 
+C:  what if you moved five times and  and uh 
+E:  <laugh> 
+B:  Well , I was thinking you could have ma multiple ones 
+D:  No , but you 're categorized . 
+D:  That 's the same  
+B:  and then the amount of time  so , roughly . 
+B:  So . You could say , 
+B:   you know " ten years 
+C:  <breath-laugh> 
+B:   on the east coast , 
+A:  Well , 
+B:  five years on the west coast " or something or other . 
+A:  We  I think we don't want 
+A:  to get that level of detail 
+A:  at this form . I think that 's alright if we want to follow up . 
+A:  But . 
+C:  I guess we don't really know . 
+D:  I mean I  
+D:  As I said , I don't think there 's a huge  benefit 
+D:  to this region thing . It  it gets  
+D:  The problem is that 
+D:  for some things it 's really 
+D:  clear and usually listening to  it 
+D:  you can tell right away if it 's a New York or Boston accent , 
+D:  but New York and Boston are two  
+D:  well , I guess they have the NYC , but 
+D:  New England has a bunch of very different 
+D:  dialects and  
+B:  Mm - hmm . 
+D:  and  so does 
+D:  um 
+A:  Yeah , so I picked these regions cuz we had talked about TIMIT , and those are right from TIMIT . 
+D:  S So do other places . 
+D:  Right . And so 
+D:  these would be  satisfying like 
+A:  So . 
+D:  a speech  research  community if we released the database , 
+E:  <breath-laugh> 
+E:  <breath-laugh> 
+D:  but as to whether subjects know where they 're from , I 'm not sure because 
+D:  um 
+D:  I know that they had to fill this out for Switchboard . This is i almost exactly the same as Switchboard 
+D:  regions or 
+B:  Oh . OK .  
+D:  very close . Yeah . 
+D:  Um 
+D:  And I don't know how they filled that out . 
+D:  But th if Midland  
+D:  Yeah , Midland is the one that 's 
+D:  difficult I guess . 
+B:  <mouth> 
+B:  I think a lot of people  Yeah . 
+D:  Also Northwest you 've got Oreg - Washington and Oregon now which 
+D:  uh y people don't know if it 's western or northern . 
+A:  Yeah , I certainly don't . I mean , I was saying I don't even know what I speak . 
+D:  It 's like Northwest <laugh> 
+E:  <laugh> 
+E:  <laugh> 
+C:  Oh , what is Northern ? 
+A:  Am I speaking  
+A:  Am I speaking 
+A:  Western ? 
+B:  <breath-laugh> 
+C:  <inbreath> 
+C:  Well and what  and what 's Northern ? 
+D:  I think originally it was North  
+A:  Northwest ? 
+D:  Northwest 
+E:  Yeah . 
+D:  But  
+A:  Yeah , so this is a real problem . I don't know what to do about it .  
+D:  Yeah . 
+B:  I wouldn't know how to characterize mine either . And  and so I would think  
+E:  <laugh> 
+B:  I would say , I 've  I 've got a mix of California and Ohio . <laugh> 
+A:  I c 
+A:  <laugh> 
+E:  <laugh> 
+E:  <laugh> 
+D:  <laugh> 
+B:  <laugh> 
+A:  <laugh> 
+A:  I think at the first level , for example , we speak the same . 
+D:  I don't know . 
+A:  our  our dialects 
+B:  Uh - huh . 
+A:  Or  whatever you  region are the same . But I don't know what it is . 
+A:  So . 
+D:  Well , you have a like techno - speak accent I think .  
+A:  a techno - speak accent ? 
+E:  <laugh> A techno <laugh> 
+D:  Yeah , you know ? 
+B:  <laugh> 
+A:  A  a geek region ? 
+D:  Well it 's  
+C:  <laugh> 
+B:  Geek region .  
+D:  I mean I  you can sort of identify it f 
+B:  <laugh> 
+A:  <laugh> 
+D:  It 's  it 's  
+E:  Is different . Is different . <laugh> 
+D:  not  not that that 's  
+A:  <laugh> 
+D:  but  but 
+D:  maybe that  
+D:  maybe we could 
+A:  <laugh> 
+D:  leave this and see what people  
+E:  <laugh> 
+D:  See what people choose 
+D:   and then um 
+D:  let them just fill in if they don't  
+D:  I mean I don't know what else we can do , cuz  
+B:  I 'm wondering about a question like , " Where are you from mostly ? " 
+D:  <laugh> 
+A:  <laugh> 
+B:  <laugh> 
+E:  Yeah . <laugh> 
+C:  But I  I 'm s 
+E:  Yeah . 
+B:  <laugh> 
+C:  I 'm  now that you mentioned it though , I am  really am confused by " Northern " . 
+A:  <laugh> 
+E:  <laugh> 
+B:  I agree . 
+C:  I really am . I mean , 
+B:  I agree . 
+E:  Yeah . 
+C:  if  if you 're  
+B:  I agree . 
+C:  in New England , that 's North . 
+C:  If you 're  i if you 're 
+E:  <laugh> 
+B:  Scandinavian , the Minnesota area 's north . 
+C:  Uh yeah . That 's  
+D:  That 's North Midland . 
+C:  But that 's also North Midland , right ? 
+E:  Yeah . 
+B:  Oh , @ @ .  OK . 
+C:  And  and  and Oregon and  
+D:  Yeah . Of course , that 's very different from , like , Michigan , 
+C:  and Oregon and Washington are  are Western , but 
+D:  or  
+E:  Mmm . 
+C:  they 're also Northern . 
+B:  Mm - hmm . 
+C:  uh , Idaho ? 
+D:  Well there are hardly any subjects from Idaho . 
+C:  Montana ? 
+A:  <laugh> No problem .  
+C:  <laugh> 
+B:  <laugh> Just rule them out . 
+D:  <inbreath> 
+D:  There 's only a few people in Idaho .  
+A:  There are hardly any subjects from " beep "  
+B:  <laugh> 
+D:  <laugh> 
+A:  <laugh> 
+E:  Yeah . 
+D:  Sorry . 
+D:  <laugh> 
+B:  <laugh> 
+A:  <laugh> 
+D:  No , that 's  
+E:  And  is  in those  
+C:  Maybe  
+C:  Maybe we  
+C:  Maybe we should put a little map and say " put an X on where you 're from " , <laugh> 
+A:  Yeah really . 
+E:  And if you put  
+D:  We could ask where they 're from . Yeah . But - 
+B:  It 'd be pretty simple , yeah . 
+E:  Yeah . 
+E:  If you put eh the state ? 
+D:  We went back to that . 
+A:  <inbreath> 
+A:  Well well we sort of  
+B:  Where are you from mostly ? 
+D:  We  we went  we went around this and then  a lot of people 
+E:  Uh - huh . 
+D:  ended up saying that it  
+E:  Mm - hmm . 
+D:  You know . 
+A:  <inbreath> 
+A:  Well , I like the idea of asking " what variety of English do you speak " as opposed to where you 're from 
+A:  Because th if we start asking where we 're from , again you have to start saying , " well , is that the language you speak or is that just where you 're from ? " 
+E:  Yeah . 
+B:  Hmm ? 
+D:  Right . 
+D:  Right . 
+E:  Yeah . 
+C:  <mouth> 
+C:  Let 's  Mm - hmm . 
+D:  I mean it gives us good information on where they 're from , but 
+A:  And  
+A:  <laugh> 
+D:  that doesn't  tell us anything  well , enough about their  
+C:  <inbreath> 
+C:  We could always ask them if they 're from  
+A:  I mean . So  so I would say Germany 
+E:  <laugh> 
+D:  like  
+A:  You know am I speaking with German accent I don't think so . 
+B:  Oh . 
+B:  <inbreath> 
+D:  Right . 
+B:  Well , see , I 'm thinking " Where are you from mostly " 
+A:  Oh , OK yeah . 
+B:  because , you know , then you have some  some kind of subjective amount of time factored into it . 
+E:  Yeah . 
+E:  Yeah . 
+A:  Yep . 
+A:  <inbreath> 
+C:  <inbreath> 
+E:  Yeah . 
+A:  Yeah , I guess I could try to put  squeeze in a little map . I mean there 's not a lot of r of room 
+C:  I 'd say , uh , 
+C:  " Boston , New York City , the South and Regular " . 
+D:  <inbreath> 
+E:  <laugh> 
+C:  <laugh> 
+B:  <laugh> 
+B:  Well  
+B:  <inbreath> 
+E:  And  And  
+C:  <laugh> 
+A:  I think of those , Northern is the only one that I don't even know what they 're meaning . 
+D:  Oh , I don't know . 
+B:  Yeah . 
+B:  Yeah .  
+C:  That 's a joke . That 's  <laugh> 
+B:  <laugh> 
+D:  So let 's make it up . 
+B:  <laugh> 
+D:  S I mean , who cares . Right ? We can make up our own  So we can say " Northwest " , 
+D:  " Rest of West " or something . 
+D:  You know . 
+D:  " West " 
+D:  and 
+A:  Ye - hhh . 
+E:  <inbreath> 
+A:  I don't think the Northwest people speak any differently than I do . 
+D:  I mean . 
+E:  Um  
+D:  It doesn't even  
+D:  Yeah , exactly . That 's not really a region . 
+B:  <inbreath> 
+C:  " Do you come from the Louisiana Purchase ? " 
+B:  I  
+E:  And usually here  people here know what is their 
+D:  So we could take out " North "  
+C:  <laugh> 
+D:  " Northern " . 
+A:  @ @ 
+E:  kind of mmm 
+E:  lang English language ? 
+A:  That  that 's exactly what we 're arguing about . We don't know . 
+E:  eh here 
+D:  That 's  Yeah , w It 's  In  
+E:  Is easy for people to know ? 
+D:  It 's  it 's harder in America 
+D:  anywhere else , basically . 
+E:  because you have  
+A:  <inbreath> 
+A:  I mean some of them are very obvious . If you  if you talk to someone speaking with Southern drawl , you know . 
+E:  N m 
+E:  Yeah . 
+B:  Yeah , or Boston . 
+A:  Or Boston , yeah . 
+B:  I can't do it , but  
+E:  Or Boston ? 
+B:  <laugh> 
+D:  And those people , if you ask them to self - identify their accent they know . 
+C:  Yeah . 
+E:  Yeah . 
+B:  Yeah , they do . 
+D:  They know very well . 
+B:  Yeah I agree I agree . I agree . 
+D:  They know they don't speak the same as the 
+A:  But 
+C:  <inbreath> 
+B:  And they 're proud of it . 
+D:  day o 
+B:  Yeah . 
+D:  Yeah , exactly . <laugh> 
+A:  is Boston New England ? 
+B:  It 's identity thing . 
+D:  And they 're glad to tell you . 
+E:  @ @ style . 
+D:  Well . 
+D:  Depends who you ask , I suppose .  
+A:  W <laugh> 
+E:  Oh . 
+D:  <laugh> 
+A:  I guess that 's the problem with these categories . 
+D:  But that 's why they have New York City but  
+B:  <inbreath> 
+B:  Well , we ca 
+C:  Well , Boston 's @ @ , too . 
+B:  Well , why can't we just say characterize  
+D:  Or  
+B:  something like char characterize your accent 
+D:  " Characterize your accent  if you can . " 
+B:  and  and so I would say , " I don't know " . 
+D:  Yeah . 
+B:  <laugh> 
+D:  Right , which probably means you have a very  
+B:  But someone from Boston with a really strong coloration would know . And so would an R - less Maine  
+D:  And that 's actually good . 
+E:  Yeah . 
+B:  or something , yeah . 
+D:  I was  I was thinking of something along that line because  if you don't know , 
+C:  How - 
+B:  Good . 
+D:  then , 
+D:  you know , ruling out the fact that you 're totally  inept or something , 
+E:  <laugh> 
+B:  Hmm . 
+C:  <inbreath> 
+D:  if somebody doesn't know , it probably means their accent isn't very strong compared to the sort of 
+C:  Well , 
+C:  <inbreath> 
+C:  I mean , 
+D:  midwest 
+B:  Hmm ? 
+E:  <laugh> 
+C:  it wasn't that long ago that we had somebody here who was from Texas who was absolutely sure that he didn't have any accent left . 
+D:  standard . 
+E:  <laugh> 
+B:  <breath-laugh> 
+C:  And  and had  he had a 
+C:  pretty 
+A:  OK , so . I propose ,  take out Northern 
+E:  <laugh> 
+C:  <laugh> 
+C:  noticeable drawl . 
+A:  add , don't know . 
+B:  Oh .  Yeah . I  I would say more  more sweepingly , " how would you characterize your 
+E:  Yeah . 
+B:  accent ? " 
+A:  So you want to change the instructions also not just say region ? 
+D:  <inbreath> W 
+B:  <outbreath> 
+B:  Well , I think this discussion has made me think that 's s something to consider . 
+A:  I don't know if I  if I read this form , I think they 're going to ask  it  
+A:  they 're going to answer the same way if you say , " What 's variety of English do you speak ?  Region . " 
+A:  as if you say " what variety of region  region  do you speak ? 
+A:  Please characterize your accent ? " 
+B:  <inbreath> 
+A:  They 're going to answer the same way . 
+B:  I guess  
+B:  Well , I was not sure that  I  
+E:  Mmm . 
+B:  So . I was suggesting not having the options , just having them  
+A:  <inbreath> 
+A:  Oh , I see . 
+E:  Huh .  
+A:  Well what we talked about with that is  is so that they would understand the granularity . 
+D:  <very long outbreath> 
+B:  <inbreath> 
+C:  <inbreath> 
+B:  Yes , but if , as Liz is suggesting , people who have strong accents know 
+B:  that they do  
+C:  <inbreath> 
+A:  I mean that 's what I had before , and you told me to list the regions to list them . 
+E:  <laugh> 
+B:  and are  
+E:  <laugh> 
+D:  Each  each one has pros and cons I mean we  we  
+B:  Well , I know . 
+C:  Right . 
+C:  Right . Right . 
+A:  So . 
+E:  <laugh> 
+B:  That 's true . 
+C:  Yeah last week  last week I was sort of r arguing for having it wide open , but then everybody said " Oh , no , but then it will be hard to interpret 
+D:  <laugh> 
+E:  <laugh> 
+C:  because some people will say Cincinnati and some will say Ohio " . And . 
+A:  I mean I had it wide open last week and  and you said TIMIT . 
+D:  What if we put in both ? 
+B:  Yeah . 
+C:  Yeah . 
+D:  And  Would people  
+A:  That 's what the " Other " is for . 
+D:  No , I mean what if we put in both ways of asking them ? 
+D:  So . One is  Region and the another one is " if you had to characterize yourself  your accent , 
+D:  what would you say ? " 
+A:  Won't they answer the same thing ? 
+D:  Well they might only answer only one of the questions but 
+D:  if 
+B:  Yeah that 's fine . 
+D:  You know . 
+B:  <inbreath> 
+B:  They might say " Other " for Region because they don't know what category to use 
+D:  Actually   
+E:  <laugh> 
+D:  Right . It just  
+B:  but they might have something  
+B:  because it is easier to have it open ended . 
+D:  And we  we might learn from what they say , as to which one 's a better  way to ask it . 
+C:  <inbreath> W 
+D:  But  I  Cuz I really don't know . 
+C:  This is just a small thing but 
+D:  @ @ 
+C:  um 
+C:  It says " Variety " and then it gives things that e have 
+C:  American as one of the choices . 
+C:  But then it says " Region " , but Region actually just applies to 
+C:  uh , US , right ? 
+A:  Right . 
+A:  I mean that 's why I put the " Other " in . 
+B:  <inbreath> 
+B:  Well , we thought about it . 
+C:  Ah , OK . 
+B:  Yeah , OK . 
+B:  We just  We sort of thought , " yes ,  " 
+C:  S 
+B:  y y I mean  
+B:  At the last meeting , my recollection was that 
+B:   we felt people would have 
+B:  uh 
+B:  less  
+B:  that  that there are so many types and varieties of  these other languages and we are not going to have that many subjects from these different 
+B:  language groups and that it 's a 
+A:  Yep . 
+B:  huge waste of  
+B:  of space . 
+C:  OK . 
+A:  So I mean , I  I mean the way I had it last time  was Region was blank , it just said Region colon . 
+B:  That 's what I thought . 
+B:  Yeah . 
+B:  Yeah . 
+A:  And  and I think that that 's the best way to do it , 
+A:  because  because of the problems we 're talking about but what we said last week , was no , put in a list , so I put in a list . So should we go back to  
+E:  <laugh> 
+E:  <laugh> 
+D:  Maybe we can make the list a little smaller . 
+E:  <laugh> 
+A:  Well , certainly dropping " Northern " I think is right , because none of us know what that is . 
+D:  Cuz , I mean  
+D:  <inbreath> 
+D:  And keeping " Other " , 
+E:  <laugh> 
+D:  and then  maybe this North Midland , we call it " North Midwest " . 
+D:  South  Midwest , or just  
+C:  Yes I  
+D:  South Midwest . 
+D:  Does that make sense ? 
+C:  I  I think so . Yeah . 
+E:  South Midwest ? 
+D:  That would help me  Yeah . Cuz  
+C:  U unless you 're from Midland , Kansas . But . Yeah . 
+D:  Midland  
+D:  I don't know where Midland is  
+E:  <laugh> 
+C:  There 's a  
+C:  Or Midland  Midland  
+C:  Is it Midland  
+A:  Is " Midwest " one word ? 
+C:  Midland  Midland , Texas or Midland , Kansas ? I forget . 
+A:  <laugh> 
+D:  Y yeah , one w 
+C:  But there 's a town . 
+C:  <inbreath> 
+B:  <laugh> 
+D:  Oh . 
+C:  in  in there . I forget what it is @ @ . 
+E:  <laugh> 
+B:  I don't think that 's what they mean . 
+B:  <laugh> 
+D:  But , yeah . So . Kansas would be  South Midland . Right ? 
+C:  Yeah . 
+B:  <laugh> 
+C:  Y yeah . 
+D:  And  and wouldn't  Yeah . 
+B:  <laugh> 
+E:  <laugh> Southern Midland . @ @ <laugh> 
+D:  So , th 
+C:  And Colorado , right across the border , would be 
+D:  I 'm from Kansas , 
+D:  actually . 
+C:  <laugh> 
+B:  <laugh> 
+D:  <laugh> 
+C:  North Midland . 
+C:  <laugh> 
+D:  Yeah . 
+E:  <laugh> 
+B:  <laugh> 
+D:  Colora - Oh , right . And then , the  
+A:  And uh  
+C:  <laugh> 
+D:  the  dropping North ,  so it would be 
+D:  Western . It 's just one big 
+D:  shebang , 
+D:  where , of course , you have huge variation in dialects , but   
+A:  <inbreath> 
+C:  But you do in the others , too . So . 
+A:  But that 's true of New England too . 
+D:  but so do you  Yeah . 
+C:  <laugh> 
+A:  So . I mean only one  
+C:  Yeah . 
+D:  Yeah . 
+D:  Yeah . 
+A:  Well , I shouldn't say that . I have no clue . I was going to say the only one that doesn't have a huge variety is New York City . But I have no idea whether it does or not . 
+B:  It does seem  I mean . I  I would 
+C:  U 
+B:  think that these categories would be more  
+B:  w 
+B:  would be easier for an an analyst to put in rather than the subject himself . 
+C:  <inbreath> 
+A:  <inbreath> 
+A:  I think that  that was what happened with TIMIT , 
+C:  <inbreath> 
+B:  OK . 
+A:  was that it was an analyst . 
+C:  Wait a minute . Where does  
+C:  Where does  
+D:  Yeah , I don't know how it came from . 
+C:   d w 
+B:  OK . 
+C:  Where  Where 's  where does uh 
+C:  <inbreath> 
+E:  <laugh> 
+C:  New  New York west of  west of uh New York City 
+C:  and  
+C:  Pennsylvania  
+C:  uh 
+C:  and uh 
+C:  <breath-laugh> 
+D:  So . That 's New England I think . Yeah . 
+A:  New England 
+C:  N 
+B:  <inbreath> 
+C:  No , it 's not . 
+A:  <laugh> Oh , no . 
+E:  <laugh> 
+C:  Oh no . 
+B:  I sort of thought they were part of the  one of the Midlands . 
+C:  No , no .  No . Pennsylvania is not  
+A:  " Other " , it goes under " Other " , definitely under " Other " . 
+E:  <laugh> 
+D:  <inbreath> 
+D:  Well , you know , Pennsylvania has a pretty strong dialect and it 's totally different than  
+C:  Pennsylvania  Yeah . Pennsylvania is not New England . 
+C:  and uh New Jersey is not New England and Maryland is not New England and none of those are the South . 
+A:  OK . So . 
+A:  Another suggestion . 
+E:  <laugh> 
+B:  Yeah . 
+A:  Rather than have circle fill in forms , 
+D:  <laugh> 
+A:  say " Region , open paren , E G Southern comma Western comma close paren colon . " 
+E:  <laugh> 
+B:  OK . 
+D:  OK ! 
+C:  That 's good . 
+E:  Yeah . 
+B:  Fine by me , fine by me . 
+D:  Sure ! 
+D:  <laugh> 
+C:  I like that . 
+B:  Yeah . 
+D:  Let 's just  And we 'll see what we get . 
+E:  Yeah . 
+B:  <inbreath> 
+C:  We 're all  sufficiently  tired of this 
+B:  Be easier on the subjects . 
+E:  <laugh> 
+C:  that we 're agreeing with you . 
+E:  <laugh> 
+B:  I think that 's fine . 
+C:  So . <laugh>  
+B:  No . I think   
+B:  I like that . I like that . 
+D:  <laugh> 
+C:  You like it ? 
+C:  OK . 
+B:  Yeah , I do . 
+B:  <inbreath> 
+C:  Good . 
+A:  Actually , maybe we do one non - English one as well . 
+A:  Southern , Cockney ? 
+D:  Yeah , and  
+E:  Yeah . 
+A:  Is that a  real accent ? 
+B:  Sure , yeah ! 
+E:  Yeah . 
+A:  How do you spell it ? 
+B:  I think that 's fine . 
+A:  <laugh> 
+C:  Cockney ? 
+E:  <laugh> 
+C:  CO  
+A:  N E Y ? 
+C:  Yeah . 
+D:  You could say Liverpool .  
+E:  <laugh> 
+A:  <laugh> 
+C:  Liverpuddlian . 
+C:  <laugh> 
+B:  Yeah . 
+D:  Actually , Liverpool doesn't l Yeah . It 's  
+B:  Alright . 
+C:  <laugh> 
+B:  Well . Well . I mean , pure  
+A:  OK , we 'll do it that way . Actually , I like that a lot . 
+D:  <long loud breath> 
+B:  <laugh> 
+C:  OK . 
+A:  Because that get 's at both of the things we were trying to do , 
+A:  the granularity , 
+A:  and the person can just self - assess and we don't have to argue about what these regions are . 
+B:  That 's right . 
+E:  Yeah . 
+C:  OK . 
+B:  And it 's easy on the subjects . 
+B:  <inbreath> 
+A:  Yep . 
+B:  Now I have one suggestion on the next section . 
+E:  Mm - hmm . 
+A:  Mm - hmm . 
+B:  So you have native language , you have region , 
+B:  and then you have time spent in English speaking country . 
+B:  Now , I wonder if it might be useful to have another open field saying " which one 
+B:  parenthesis S  
+B:  paren closed parenthesis " .  
+B:  Cuz if they spent  time in  
+B:  in Britain and America  
+C:  Yes . 
+B:  <inbreath> 
+B:  It doesn't have to be ex all  at all exact , just in the same open field 
+B:  format that you have . 
+A:  Yep , just which one . I think that 's fine . 
+B:  Mm - hmm . 
+E:  Mm - hmm . 
+B:  with a  with an S   
+B:  " which one 
+B:  sss ,  
+B:  optional S .  
+B:  <laugh> 
+C:  OK . 
+E:  <laugh> 
+B:  Yeah .  
+C:  We uh  
+C:  We done ? 
+A:  Yep . 
+B:  Yeah , that 's good . 
+
+
+C:  OK . 
+C:  um 
+C:  s e 
+C:  Any  any other 
+C:  uh open mike topics or should we go  right to the digits ? 
+A:  Um , did you guys get my email on the multitrans ? 
+A:  That  
+A:  OK . 
+B:  Isn't that wonderful ! Yeah . 
+B:  Excellent ! Thank you ! 
+A:  Yeah . So . 
+D:  I 'm s 
+A:  So . I  I have a version also which actually displays all the channels . 
+D:  I ha It 's really great . 
+A:  But it 's hideously slow . 
+B:  <inbreath> 
+B:  So you  this is n Dan 's patches , Dan Ellis 's patches . 
+A:  The  what  the ones I applied , that you can actually do are Dan 's , because it doesn't slow it down . 
+D:  M 
+B:  Fantastic ! 
+A:  Just uses a lot of memory . 
+D:  So when you say " slow " , does that mean to  
+A:  No , the  the one that 's installed is fine . It 's not slow at all . 
+A:  I wrote another version . 
+A:  Which , instead of having the one pane with the one view , 
+A:  It has multiple panes  with the views . 
+E:  Yeah . 
+D:  Mm - hmm . 
+A:  But the problem with it 
+A:  is the drawing of those waveforms is so slow 
+A:  that every time you do anything it just crawls . 
+B:  Mm - hmm . 
+D:  It 's  
+A:  It 's really bad . 
+D:  So , it  it 's the redrawing of the w 
+B:  That 's a consideration .  
+A:  Mm - hmm . 
+D:  oh uh - huh , 
+D:  w as you move . 
+A:  As you play , as you move , as you scroll . 
+A:  Just about anything , and it  it was so slow it was not usable . 
+B:  And this 'll be a  
+A:  So that 's why I didn't install it and didn't pursue it . 
+B:  hav having the multiwave will be a big help cuz  
+B:  in terms of like disentangling overlaps and things , 
+D:  Oh yeah . 
+B:  that 'll be a big help . 
+A:  <inbreath> 
+A:  So . 
+D:  Yeah .  
+A:  I think that the one Dan has is usable enough . 
+A:  It doesn't display the others . It displays just the mixed signal . 
+B:  Mm - hmm . 
+A:  But you can listen to any of them . 
+B:  That 's excellent . He also has version control which is another nice 
+E:  Yeah . 
+B:  e so you  
+A:  No , he suggested that , but he didn't  
+B:  e the patches that you  
+A:   It 's not installed . 
+B:  Oh , I thought it was in one of those patches . 
+A:  No . 
+A:  No . 
+B:  Oh OK . 
+B:  Well . 
+B:  Alright . 
+D:  So is there any hope for actually displaying 
+D:  the wave form ? 
+A:  Um , not if we 're going to use Tcl - TK 
+D:  OK . 
+A:  At least not if we 're going to use Snack . 
+A:  I mean you would have to do something ourselves .  
+B:  Well , or use the one that crawls . 
+D:  OK . 
+D:  <inbreath> 
+B:  <laugh> 
+D:  <inbreath> 
+E:  <laugh> 
+D:  Well , I 'm  
+D:  I probably would be trying to use the   
+C:  <breath-laugh> 
+D:  whatever 's there . And 
+A:  Why don't we  we see how Dan 's works and if it  
+D:  it 's useful to have the  
+D:  Yeah .  
+A:  If we really need the display  
+D:  I mean . 
+D:  I wonder  I 'm just wondering if we can display things other than the wave form . So . Suppose we have a feature  
+D:  a feature stream . 
+D:  And it 's just , you know , a  a 
+E:  Yeah . 
+D:  uni - dimensional feature , 
+D:  varying in time . 
+D:  And we want to plot that , instead of the whole wave form . 
+A:  I mean . 
+E:  Yeah . 
+D:  That might be faster . Right ? So . 
+E:  Yeah . 
+A:  We  we could do that but that would mean changing 
+A:  the code . 
+A:  I mean this isn't a program we wrote . 
+C:  Yeah . 
+A:  This is a program that we got from someone else , 
+A:  and we 've done patches on . 
+D:  OK . 
+D:  OK . 
+B:  Mm - hmm . 
+E:  Yeah . 
+D:  Well , I 'll talk to you about it and we can see but 
+C:  Cou - 
+A:  So . 
+B:  <inbreath> 
+A:  Yeah . 
+C:  i e 
+D:  it 's definitely  great to have the other one . That 's  
+C:  I mean , y 
+C:  <outbreath> 
+C:  <inbreath> 
+C:  If there was some  
+C:  Is there some way to  have someone write 
+D:  <long loud breath> 
+C:  patches 
+C:  in something faster and  
+C:  and  
+C:  link it in , or something ? Or is that  
+A:  Not easily . I mean y yes we could do that . You could  you can write 
+A:  widgets in C . 
+C:  Yeah . 
+A:  And try to do it that way but I just don't think  
+A:  it  
+A:  Let 's try it with Dan 's and if that isn't enough , 
+D:  Right .  
+A:  we can do it otherwise . I think it is , cuz when I was playing with it , the mixed signal has it all in there . 
+A:  And so it 's really  It 's not too bad to find places in the  in the stream 
+D:  OK . 
+A:  where things are happening . 
+B:  <inbreath> 
+B:  And it 's also  
+E:  Hmm ? 
+A:  So I  I don't think it 'll be bad . 
+B:  also the case that  that uh this multi - wave thing 
+B:   is proposed to the  
+B:  So . Dan proposed it to the Transcriber central people , 
+B:  and it 's likely that uh  So . And  and 
+B:  they responded favorably looks as though it will be incorporated in the future version . 
+D:  Oh . 
+B:  They said that the only reason they hadn't had the multi the parallel 
+B:  uh stream one before was simply that 
+B:   they hadn't had time to do it . 
+B:  And uh 
+E:  Yeah . 
+B:   so it 's likely that this  this may be entered into the ch this central 
+B:  @ @ . 
+C:  They may well have not had much demand for it . 
+A:  And if  if  
+B:  Well that 's  that 's  that 's true , too . 
+C:  Yeah . 
+B:  This is a  
+D:  So . You mean they could  they could do it and it would be  fast enough if they do it ? Or  ?  
+E:  Yeah . 
+B:   a useful thing for us . 
+B:  <inbreath> 
+B:  Oh . No . 
+A:  Depends on how much work they did . 
+B:  I just mean  I just mean that it 's  that  that his  So . 
+E:  Oh . 
+B:   This one that 
+B:  we now have 
+D:  Mm - hmm . 
+B:  does have the status of 
+B:   potentially being incorporated 
+B:  l likely being incorporated into the central code . 
+D:  <inbreath> 
+D:  OK . 
+B:  Now , tha Now , if we develop further 
+B:  then , y uh , I don't  
+B:  I mean it 's  I think it 's a nice feature to have it  
+A:  <mouth> 
+A:  I think if  if  if one of us sat down and coded it , so that it could be displayed fast enough 
+B:  set that way . 
+A:  I 'm sure they would be quite willing to incorporate it . 
+B:  Mm - hmm . 
+A:  But it 's not a trivial task . 
+D:  OK .  
+B:  Mm - hmm . Yeah . 
+B:  I just like the idea of it being something that 's , 
+B:  you know , tied back into the original , so that other people can benefit from it . 
+A:  Yeah . 
+D:  <inbreath> <outbreath> 
+B:  Yeah . 
+B:  However . I also understand that you can have 
+E:  <laugh> 
+D:  <long loud breath> 
+B:   widgets that are very useful for their purpose and that you don't need to 
+B:  always go that w route . 
+B:  Yeah . 
+E:  OK . 
+
+
+A:  OK 
+C:  OK . 
+B:  Turn it off . 
+C:   <shuts off mike> 
+B:  But wait till he  
+B:  OK . 
+A:  And   
+
+
+A:  anyway , shall we do digits ? 
+B:  Yeah .  
+C:  Yeah . Let 's do digits , 
+C:  uh , and then we 'll turn off the mikes , and then I have one other thing to discuss . 
+B:  OK . 
+C:  <laugh> 
+D:  <inbreath> 
+E:  <laugh> 
+D:  I actually have to leave . So . 
+A:  OK . 
+D:  Um . 
+D:  I mean  I had to leave at three thirty ,  
+B:  Uh - oh . <long outbreath> 
+D:  so I can  
+C:  Oh . 
+A:  OK . 
+D:  <inbreath> 
+D:  Well , I can wait  for the digits but I 
+A:  Well , you want to go first ? Or . 
+D:  can't stay for the discussion I c 
+D:   I have to make a call . 
+D:  So . 
+C:  OK . Well , we 'll talk to you about it  
+B:  Well , should we  e should we switch off the g 
+D:  Um . 
+A:  Do you wanna go do digits or do you wanna just skip digits ? 
+D:  No , I can do digits if  
+A:  Then  
+D:  if  
+C:  <inbreath> 
+D:  But I don't wanna butt in , 
+A:  Alright . 
+D:  or something . 
+A:  You go ahead . 
+E:  <laugh> 
+D:  But if there 's something on the rest of the  
+D:  I 'm  I 'll be around just have to make call before quarter of . So . 
+E:  Mm - hmm . 
+C:  Uh 
+D:  So I  
+B:  <inbreath> 
+D:  Or we can talk about it . 
+B:  Ke - 
+A:  Why don't you read the digits ? 
+D:  OK . <laugh> Alright . 
+A:  <laugh> 
+C:  Yeah , why don't you read the digits and then you can  go . 
+E:  <laugh> 
+D:  Oh , this is the new one . 
+D:  <laugh> 
+E:  <laugh> 
+C:  Yeah . 
+A:  Yeah , don't  
+D:  Alright . 
+D:  The  
+A:  Don't read the old one . 
+D:  And the 
+D:  time is . 
+E:  <laugh> 
+D:  OK . 
+A:  <laugh> 
+D:  <laugh> 
+
+
+D:  This is transcript two seven five one , two seven seven zero   
+D:  nine two five four four  
+D:  O four O one six  
+D:  zero five nine zero seven  
+D:  one seven nine zero eight three eight  
+D:  two  
+D:  three  
+D:  four zero zero seven zero three zero  
+D:  six four three seven  
+D:  seven six eight nine  
+D:  eight four  
+D:  nine nine five one  
+D:  O  
+D:  zero zero eight  
+D:  one zero six  
+D:  three four  
+D:  four two  
+D:  five five nine  
+D:  six seven zero  
+D:  seven  
+D:  eight O five three three  
+E:  Transcript uh two seven one one dash two seven three zero .  
+E:  seven five seven six  
+E:  eight eight seven zero  
+E:  nine seven four four four  
+E:  O O one nine  
+E:  zero zero one six seven  
+E:  two two nine  
+E:  three four six one seven  
+E:  four five seven zero one  
+E:  five s   
+E:  five six four two nine five O  
+E:  six  
+E:  seven  
+E:  eight zero seven five six  
+E:  O one five nine  
+E:  zero four four zero five  
+E:  one five two two  
+E:  two eight one O two four O  
+E:  three  
+E:  four  
+E:  five  
+E:  seven one eight two  
+A:  Transcript two six five one , two six seven O .  
+A:  four  
+A:  five zero four seven nine seven two  
+E:  <cough> 
+A:  seven one three six five  
+A:  eight three O eight  
+A:  nine six zero five six  
+A:  O  
+A:  zero  
+A:  one  
+A:  two zero two  
+A:  four three eight two  
+A:  five two zero seven seven eight three  
+A:  six seven six  
+A:  seven nine seven one seven  
+A:  eight  
+A:  nine  
+A:  O O two two  
+A:  one three seven  
+A:  two five five  
+A:  three five seven one five three eight  
+A:  four eight one one zero  
+C:  Transcript number two six seven one dash two six nine zero  
+C:  five  
+C:  six  
+C:  seven O eight three O  
+C:  nine two two  
+C:  O three six O seven O four  
+C:  zero six  
+C:  one  
+C:  two seven one O one two four  
+C:  three  
+C:  four zero six seven two  
+C:  six four seven eight  
+C:  seven four  
+C:  eight three O  
+C:  nine  
+C:  O  
+C:  zero  
+C:  one zero eight nine nine  
+C:  three one nine  
+C:  four two seven seven five  
+C:  five seven five two  
+B:  Transcript two six nine one , two seven one O .  
+B:  six nine  
+B:  seven  
+B:  eight  
+B:  nine zero  
+B:  zero two six eight two two four  
+B:  one four zero eight  
+B:  two three three three  
+B:  three  
+B:  four nine two four five zero six  
+B:  five  
+B:  six O six  
+B:  eight four one three four  
+B:  nine three four  
+B:  O eight six  
+B:  zero  
+B:  one  
+B:  two  
+B:  three  
+B:  five two seven one eight four eight  
+B:  six six six two O seven one  
+
+

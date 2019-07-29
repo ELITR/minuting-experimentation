@@ -1,0 +1,505 @@
+A:  Right . 
+A:  It 's not very significant . 
+A:  Ta 
+A:  Great . 
+A:  What 's wrong with  ? 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  So you  you run with three , two , two , five ? That 's a 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Um . 
+A:  Yeah . 
+A:  There was a conference call this Tuesday . 
+A:  Um . 
+A:  I don't know yet the  <breath> what happened <breath> Tuesday , 
+A:  but <breath> the points that they were supposed to discuss is still , <mouth> uh , things like <breath> the weights , 
+A:  uh  
+A:  Yeah . 
+A:  Yeah . 
+A:  Mmm . 
+A:  I have no idea . 
+A:  Mmm , I just  
+A:  Yeah . 
+A:  Um , 
+A:  yeah . 
+A:  So the points were the  the weights  how to weight the different error rates <breath> that are obtained from different language and  and conditions . 
+A:  Um , 
+A:  it 's not clear that they will keep the same kind of weighting . 
+A:  Right now it 's a weighting on  on improvement . 
+A:  Some people are arguing that it would be better to have weights on 
+A:  uh  
+A:  well , to  to combine error rates  before computing improvement . 
+A:  Uh , and the fact is that for  right now for  the English , they have weights  
+A:  they  they combine error rates , 
+A:  but for the other languages they combine improvement . 
+A:  So it 's not very consistent . 
+A:  Um  
+A:  Yeah . 
+A:  The , um  
+A:  Yeah . 
+A:  And so  
+A:  Well , <breath> this is a point . 
+A:  And right now actually there is a thing also , <breath> uh , that happens with the current weight is that a very non - significant improvement  on the well - matched case result in  huge differences in  <breath> in the final number . 
+A:  And so , perhaps they will change the weights to  
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  In 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Tha - that 's what they do . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  And so when you average the  the relative improvement it tends to  <mouth> to give a lot of  of , um , <breath> importance to the well - matched case 
+A:  because  the baseline is already very good 
+A:  and , 
+A:  um , 
+A:  i it 's  
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Hmm . 
+A:  Yeah . 
+A:  Combine error rates 
+A:  and then  
+A:  Yeah . 
+A:  Well  
+A:  But there is this  this  is this still this problem of weights . 
+A:  When  when you combine error rate it tends to  give more importance to the difficult cases , 
+A:  and some people think that  
+A:  well , they have different , <breath> um , opinions about this . 
+A:  Some people think that <breath> it 's more important to look at  <breath> to have ten percent imp relative improvement on  well - matched case than to have fifty percent on the m mismatched , 
+A:  and other people think that it 's more important to improve a lot on the mismatch 
+A:  and  
+A:  So , bu 
+A:  l de fff ! 
+A:  Mmm . 
+A:  Yeah . 
+A:  Mmm . 
+A:  Yeah . 
+A:  Mmm . 
+A:  Um , <mouth> it 's  
+A:  Yeah . 
+A:  Medium mismatch is everything with the far  microphone , 
+A:  but trained on , like , low noisy condition , 
+A:  like low speed 
+A:  and  or  stopped car 
+A:  and tested on  high - speed conditions , I think , 
+A:  like on a highway 
+A:  and  
+A:  So  
+A:  Same microphone 
+A:  but  
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mmm . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Uh , so  
+A:  Yeah . 
+A:  Yeah , 
+A:  but there is probably a  a big change that will <breath> be made 
+A:  is that the  the baseline  th they want to have a new baseline , perhaps , 
+A:  which is , um , MFCC 
+A:  but with <breath> a voice activity detector . 
+A:  And apparently , <mouth> uh , some people are pushing to still keep this fifty percent number . 
+A:  So they want <breath> to have at least fifty percent improvement on the baseline , 
+A:  but w which would be a much better baseline . 
+A:  And if we look at the result that Sunil sent , <breath> just putting the VAD in the baseline improved , like , more than twenty percent , 
+A:  which would mean then  then  mean that fifty percent on this new baseline is like , well , more than sixty percent improvement on  
+A:  on  o e e uh  
+A:  Right now , nobody would be there , 
+A:  but  
+A:  Yeah . 
+A:  Uh - huh . 
+A:  Uh , they didn't decide yet . 
+A:  I guess i this was one point of the conference call also , 
+A:  but  
+A:  mmm , 
+A:  so I don't know . 
+A:  Um , 
+A:  but  
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  M 
+A:  Yeah . 
+A:  But I guess perhaps  
+A:  I don't know 
+A:  w <breath> Yeah . 
+A:  Uh , yeah . 
+A:  Per - e s s someone told that perhaps it 's not fair to do that because the , um  to make a good VAD  you don't have enough to  with the  the features that are  the baseline features . 
+A:  So  
+A:  mmm , 
+A:  you need more features . 
+A:  So you really need to put more  more in the  in  in the front - end . 
+A:  So i 
+A:  S 
+A:  Yeah . 
+A:  Yeah , 
+A:  if i 
+A:  Mm - hmm . 
+A:  That 's not clear , 
+A:  but this  <breath> e 
+A:  Yeah . 
+A:  Mmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Right . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Um . 
+A:  Yeah . 
+A:  So 
+A:  we 'll see what happen with this . 
+A:  And  
+A:  Yeah . 
+A:  So what happened since , um , <breath> last week is  
+A:  well , from OGI , these experiments on  putting VAD on the baseline . 
+A:  And these experiments also are using , uh , some kind of noise compensation , 
+A:  so spectral subtraction , 
+A:  and putting on - line normalization , um , just after this . 
+A:  So I think spectral subtraction , LDA filtering , and on - line normalization , 
+A:  so which is similar to <breath> the pro proposal - one , but with  spectral subtraction in addition , 
+A:  and it seems that on - line normalization doesn't help further when you have spectral subtraction . 
+A:  I  
+A:  I have no idea , 
+A:  because the issue I brought up was with a very simple spectral subtraction approach , 
+A:  and the one that <breath> they use at OGI is one from  from <breath> the proposed  the  the  the Aurora prop uh , proposals , 
+A:  which might be much better . 
+A:  So , yeah . 
+A:  I asked <breath> Sunil for more information about that , 
+A:  but , uh , 
+A:  I don't know yet . 
+A:  Um . 
+A:  And what 's happened here is that we  
+A:  so we have this kind of new , um , reference system which <breath> use a nice  a  a clean downsampling - upsampling , 
+A:  which use a new filter <breath> that 's much shorter 
+A:  and which also cuts the frequency below sixty - four hertz , 
+A:  which was not done on our first proposal . 
+A:  I 
+A:  No . 
+A:  No . 
+A:  Because we 're still testing . 
+A:  So we have the result for , <mouth> uh , just the features 
+A:  and we are currently testing with putting the neural network in the KLT . 
+A:  Um , it seems to improve on the well - matched case , 
+A:  um , <mouth> but it 's a little bit worse on the mismatch and highly - mismatched  
+A:  I mean when we put the neural network . 
+A:  And with the current weighting I think it 's sh it will be better 
+A:  because the well - matched case is better . 
+A:  Mmm . 
+A:  It 's like , uh , fff , fff  <breath>  um ,  <breath> <mouth>  ten percent relative . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Uh - y w when I say it 's worse , it 's not  it 's when I  I  uh , compare proposal - two to proposal - one , 
+A:  so , 
+A:  r 
+A:  uh , y putting neural network <breath> compared to n not having any neural network . 
+A:  I mean , this new system is  is  is better , 
+A:  because it has <breath> um , this sixty - four hertz cut - off , 
+A:  uh , clean <breath> downsampling , 
+A:  and , 
+A:  um  what else ? 
+A:  Uh , yeah , a good VAD . 
+A:  We put the good VAD . 
+A:  So . 
+A:  Yeah , I don't know . I  I  j uh , uh  pr 
+A:  Latency is short  
+A:  is  
+A:  Yeah . 
+A:  And so 
+A:  Yeah . 
+A:  Mainly because  <mouth> of  the sixty - four hertz and the good VAD . 
+A:  And then I took this system and , <mouth> mmm , w uh , I p we put the old filters also . 
+A:  So we have this good system , with good VAD , 
+A:  with the short filter and with the long filter , 
+A:  and , 
+A:  um , 
+A:  with the short filter it 's not worse . 
+A:  So  
+A:  well , is it  
+A:  it 's in  
+A:  Yes . Uh  
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Probably , yeah . 
+A:  Um  
+A:  So , yeah . 
+A:  Uh . 
+A:  Yeah , but it 's a good thing anyway to have <breath> shorter delay . 
+A:  Then we tried , um , <mouth> to do something like proposal - two 
+A:  but having , um , e using also MSG features . 
+A:  So there is this KLT part , which use just the standard features , 
+A:  and then two neura two neural networks . 
+A:  Mmm , 
+A:  and it doesn't seem to help . 
+A:  Um , however , we just have <breath> one result , 
+A:  which is the Italian mismatch , 
+A:  so . 
+A:  Uh . 
+A:  We have to wait for that to fill the whole table , 
+A:  but  
+A:  Yeah . 
+A:  Um , <breath> yeah . 
+A:  So basically we try to , <breath> <breath> uh , find <breath> good features that could be used for voicing detection , 
+A:  uh , but it 's still , uh  on the , 
+A:  um  
+A:  t 
+A:  we  w basically we are still playing with Matlab to  <laugh> to look at  at what happened , 
+A:  and  
+A:  So we would be looking at , um , the  variance of the spectrum of the excitation , 
+A:  something like this , 
+A:  which is  should be high for voiced sounds . 
+A:  Uh , 
+A:  we  
+A:  Yeah . 
+A:  So the  
+A:  So basically the spectrum of the excitation <breath> for a purely periodic sig signal shou sh 
+A:  e 
+A:  That 's right . 
+A:  Yeah . 
+A:  So  
+A:  Yeah . 
+A:  So we have the mel f filter bank , 
+A:  we have the FFT , 
+A:  so we  just  
+A:  No . 
+A:  Yeah , that 's right . 
+A:  Um  
+A:  Yeah . 
+A:  E yeah , 
+A:  but it 's  it 's still  
+A:  Yeah . 
+A:  So , 
+A:  well , 
+A:  for unvoiced portion we have something tha <breath> that has a mean around O point three , 
+A:  and for voiced portion the mean is O point fifty - nine . 
+A:  But the variance seem quite <breath> high . 
+A:  So  
+A:  Mmm . 
+A:  We used , uh , TIMIT 
+A:  and we used canonical mappings between the phones 
+A:  and 
+A:  th Yeah . 
+A:  Yeah , 
+A:  but  
+A:  Yeah . 
+A:  Uh , so it 's noisy TIMIT . 
+A:  That 's right . 
+A:  Yeah . 
+A:  It seems quite robust to noise , 
+A:  so when we take  we draw its parameters across time for a clean sentence and then nois the same noisy sentence , it 's very close . 
+A:  Yeah . So there are  there is this . 
+A:  There could be also the , um  <mouth> something like the maximum of the auto - correlation function 
+A:  or  
+A:  which  
+A:  Right now we just are trying to find some features . 
+A:  And , 
+A:  uh  
+A:  Yeah . Hopefully , I think what we want to have is to put these features in s some kind of , 
+A:  um  
+A:  well , to  to obtain a statistical model on these features 
+A:  and to  or just to use a neural network 
+A:  and hopefully these features w would help  
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Except the variance is quite high . 
+A:  Yeah . 
+A:  Uh - huh . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mmm . 
+A:  Yeah . 
+A:  Yeah , but ther more obvious is that  
+A:  Yeah . 
+A:  The  the more obvious is that  that  
+A:  well , using the  th the FFT , um , <breath> you just  it gives you just information about if it 's voiced or not voiced , ma mainly , I mean . 
+A:  But  So , 
+A:  this is why we  we started to look  by having sort of voiced phonemes 
+A:  and  
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  Uh , I guess we don't know exactly yet . 
+A:  But , <breath> um  
+A:  Yeah . 
+A:  Th 
+A:  Uh , no . 
+A:  No . 
+A:  No , the idea was , I guess , to  to use them as  as features . 
+A:  Uh  
+A:  Yeah , it could be , uh  it could be <breath> a neural network that does voiced and unvoiced detection , 
+A:  but it could be in the  also the big neural network that does phoneme classification . 
+A:  Mmm . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Um , we just  
+A:  How did we do it up again ? 
+A:  Mm - hmm . 
+A:  S 
+A:  Yeah . I think we have linear interpolation . 
+A:  So we have  we have one point for  one energy for each filter bank , 
+A:  which is  the energy  that 's centered on  on  on the triangle  
+A:  Yeah . 
+A:  That 's right . 
+A:  Then we compute the difference . 
+A:  Yeah . 
+A:  Uh - huh . 
+A:  So . 
+A:  And I think the variance is computed only from , like , two hundred hertz to  one  to fifteen hundred . 
+A:  Because  
+A:  Fifteen hundred . 
+A:  Because  
+A:  Yeah . 
+A:  Above , um  <breath> it seems that  
+A:  Well , some voiced sound can have also , <breath> like , a noisy  part on high frequencies , 
+A:  and  
+A:  But  
+A:  Well , it 's just  
+A:  So this is  
+A:  Yeah . 
+A:  In log domain . 
+A:  Yeah . 
+A:  Uh , yeah . 
+A:  So . 
+A:  Yeah . 
+A:  What happen if  what we have  have  what we would like to have is  some spectrum of the excitation signal , 
+A:  which is for voiced sound ideally 
+A:  a  a pulse train 
+A:  and for unvoiced it 's something that 's more flat . 
+A:  And the way to do this <breath> is that  
+A:  well , we have the  we have the FFT because it 's computed in  in the  in the system , 
+A:  and we have <breath> the mel <breath> filter banks , 
+A:  and so if we  if we , like , remove the mel filter bank from the FFT , <breath> we have something that 's  close to the  excitation signal . 
+A:  It 's something that 's like <breath> a  a a train of p a pulse train for voiced sound 
+A:  and that 's  that should be flat for  
+A:  So - It 's  Y 
+A:  yeah . 
+A:  You have several  some unvoiced ? 
+A:  Oh . 
+A:  But  
+A:  Yeah . 
+A:  This is another voiced example . 
+A:  Yeah . 
+A:  Oh , yeah . 
+A:  This is  
+A:  Right . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  So , of course , it 's around zero , 
+A:  but  
+A:  Well , 
+A:  no . 
+A:  It is  
+A:  So it 's  
+A:  Yeah . 
+A:  It 's the pitch . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Do you have the mean  
+A:  do you have the mean for the auto - correlation  ? 
+A:  Well , I mean for the  the energy . 
+A:  They should be more close . 
+A:  Yeah . 
+A:  So they are  
+A:  this is  there is less difference . 
+A:  This is less  it 's less robust . 
+A:  Oh , yeah . 
+A:  Mm - hmm . 
+A:  But  
+A:  Yeah . Well . 
+A:  Mm - hmm . 
+A:  It seems , 
+A:  yeah . 
+A:  Um , 
+A:  No , no , no . 
+A:  But th the kind of robustness to noise  
+A:  So if  if you take this frame , <breath> uh , from the noisy utterance and the same frame from the clean utterance  
+A:  Y y y yeah . 
+A:  We end up with  
+A:  Yeah . 
+A:  Yeah , 
+A:  that 's  
+A:  Yeah . 
+A:  This is kind of inter interesting also 
+A:  because if we use the standard , <breath> uh , frame length of  of , like , twenty - five milliseconds , <breath> um , <mouth> what happens is that for low - pitched voiced , because of the frame length , y you don't really have  <breath> you don't clearly see this periodic structure , 
+A:  because of the first lobe of  of each  each of the harmonics . 
+A:  So , this is like  yeah , fifty milliseconds or something like that . 
+A:  Yeah , but it 's the same frame 
+A:  and  
+A:  Yeah . 
+A:  So , yeah . 
+A:  I see that . 
+A:  Oh , yeah . 
+A:  Yeah . 
+A:  So with a short frame basically you have only two periods 
+A:  and it 's not  not enough to  to have this kind of neat things . 
+A:  But  
+A:  Yeah . 
+A:  So probably we 'll have to use , <breath> like , long f long frames . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Uh , <breath> maybe . 
+A:  Mmm . 
+A:  Um , 
+A:  I guess it depends . 
+A:  How they 're doing it ? 
+A:  Yeah . 
+A:  Um , 
+A:  I guess Ericsson is on the , um , filter bank , 
+A:  no ? 
+A:  It 's on the filter bank , 
+A:  so . 
+A:  So , yeah , 
+A:  probably  
+A:  I i it  Yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mmm . 
+A:  Uh . <breath> Yeah , 
+A:  that 's all . 
+A:  So we 'll perhaps <breath> <mouth> <breath> try to convince OGI people to use the new  <breath> the new filters 
+A:  and  
+A:  Yeah . 
+A:  Uh , 
+A:  not yet 
+A:  but I wi I will <breath> call them 
+A:  and  
+A:  now they are  I think they have more time 
+A:  because they have this  
+A:  well , Eurospeech deadline is <breath> over 
+A:  and  
+A:  It 's , um , in June . 
+A:  Yeah . 
+A:  I don't know 
+A:  w 
+A:  Yeah , but  
+A:  Yeah . 
+A:  Right . 

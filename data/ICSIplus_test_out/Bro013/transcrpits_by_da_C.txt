@@ -1,0 +1,55 @@
+C:  OK . 
+C:  Yeah . 
+C:  OK . 
+C:  And 
+C:  um 
+C:  so I 've been looking at Avendano 's work 
+C:  and um 
+C:  uh I 'll try to write up in my next stat status report a nice description of <breath> what he 's doing , 
+C:  but it 's  it 's an approach to deal with <breath> reverberation or that  the aspect of his work that I 'm interested in 
+C:  the idea is that um <mouth> <breath> <breath> normally an analysis frames are um <breath> too short to encompass reverberation effects um in full . 
+C:  You miss most of the reverberation tail in a ten millisecond window 
+C:  and so <breath> <mouth> you  you 'd like it to be that <breath> um <breath> the reverberation responses um simply convolved um in , 
+C:  but it 's not really with these ten millisecond frames 
+C:  cuz you j 
+C:  But if you take , say , a two millisecond <breath> um window  
+C:  I 'm sorry 
+C:  a two second window 
+C:  then in a room like this , most of the reverberation response <breath> is included in the window 
+C:  and the  then it um <breath> then things are l more linear . 
+C:  It is  it is more like the reverberation response is simply c convolved 
+C:  and um  <breath> and you can use channel normalization techniques <breath> like 
+C:  uh in his thesis he 's assuming that the reverberation response is fixed . 
+C:  He just does um <breath> mean subtraction , 
+C:  which is like removing the DC component of the modulation spectrum 
+C:  and <breath> that 's supposed to d um deal  uh deal pretty well with the um reverberation 
+C:  and um <breath> the neat thing is you can't take these two second frames and feed them to a speech recognizer 
+C:  um <breath> so he does this <breath> um <mouth> method training trading the um <breath> the spectral resolution for time resolution <breath> and um <breath> come ca uh synthesizes a new representation which is with say ten second frames but a lower s um <breath> frequency resolution . 
+C:  So I don't really know the theory . 
+C:  I guess it 's  these are called " time frequency representations " 
+C:  and h he 's making the  the time sh um finer grained and the frequency resolution um less fine grained . 
+C:  s so I 'm  I guess my first stab actually in continuing <breath> his work is to um <breath> re - implement this  this thing which um <breath> changes the time and frequency resolutions 
+C:  cuz he doesn't have code for me . 
+C:  So that that 'll take some reading about the theory . 
+C:  I don't really know the theory . 
+C:  Oh , and um , <breath> another f first step is 
+C:  um , 
+C:  so the  the way I want to extend his work is make it able to deal with a time varying reverberation response 
+C:  um <breath> and um 
+C:  we don't really know <breath> how fast the um  the reverberation response is varying the Meeting Recorder data 
+C:  um so um <breath> we  we have this um block least squares um imp echo canceller implementation 
+C:  and um <breath> I want to try <breath> finding <breath> the  the response , say , between a near mike and the table mike for someone using the echo canceller 
+C:  and looking at the echo canceller taps and then <breath> see how fast that varies <breath> from block to block . 
+C:  That should give an idea of how fast the reverberation response is changing . 
+C:  Um . 
+C:  S so um 
+C:  y you do  I think you read some of the  the zeros as O 's and some as zeros . 
+C:  Is there a particular way we 're supposed to read them ? 
+C:  Alright . 
+C:  OK . 
+C:  OK . 
+C:  Is this a change from the last batch of  of um forms ? 
+C:  Because in the last batch it was spelled out which one you should read . 
+C:  Oh . OK . 
+C:  OK . 
+C:  OK . 

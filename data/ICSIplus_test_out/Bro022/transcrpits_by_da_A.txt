@@ -1,0 +1,129 @@
+A:  Transcript L dash two one five . 
+A:  And what was that , Morgan ? 
+A:  What project ? 
+A:  Oh . 
+A:  It was true for two years . 
+A:  So , should we just do the same kind of deal where we  go around and do , uh , status report  kind of things ? 
+A:  OK . 
+A:  And I guess when Sunil gets here he can do his last or something . 
+A:  So . 
+A:  OK . 
+A:  That 's a good idea . 
+A:  Any objection ? 
+A:  Do y 
+A:  OK , 
+A:  M 
+A:  Do you want to start , Morgan ? 
+A:  Do you have anything , 
+A:  or  ? 
+A:  Yeah . 
+A:  Why don't you go ahead , Barry ? 
+A:  OK . 
+A:  When is your , uh , meeting ? 
+A:  Yeah . 
+A:  The quals . 
+A:  Yeah . 
+A:  Oh . 
+A:  Soon . 
+A:  Uh - huh . 
+A:  Yeah . 
+A:  So , is the idea you 're going to do this paper 
+A:  and then you pass it out to everybody ahead of time 
+A:  and  ? 
+A:  Hmm . 
+A:  I remember now . 
+A:  Have you d ? 
+A:  I was just gonna ask , do you want to say any  a little bit about it , 
+A:  or  ? 
+A:  Mmm . 
+A:  Wh - what you 're  what you 're gonna  
+A:  You said  you were talking about the , uh , particular features that you were looking at , 
+A:  or  
+A:  So you 're gonna use TIMIT ? 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Oh . So that 's why you were interested in getting your own features into the SRI files . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Sounds good . 
+A:  So you just have a few more weeks , 
+A:  huh ? 
+A:  It 's about a month from now ? 
+A:  Yeah . 
+A:  So , uh , you want to go next , Dave ? 
+A:  And we 'll do  
+A:  Did you add  this data to the training set , for the Aurora ? 
+A:  Or you just tested on this ? 
+A:  Well , Morgan was just saying that , uh , as long as you do it in both training and testing , it shouldn't have any effect . 
+A:  But I  I was  sort of under the impression that you just tested with this data . 
+A:  You didn't  train it also . 
+A:  I wonder if there could be something like , uh  for s for the PZM data , 
+A:  uh , you know , if occasionally , uh , somebody hits the table or something , you could get a spike . 
+A:  Uh . 
+A:  I 'm just wondering if there 's something about the , um  you know , doing the mean normalization where , uh , it  it could cause  you to have better signal - to - noise ratio . 
+A:  Um . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  So was that  was that everything , Dave ? 
+A:  What does it leave ? 
+A:  Well , could you take what was left over and then subtract that ? 
+A:  All set ? 
+A:  Do you want to go , Stephane ? 
+A:  It didn't seem to help in the HTK system . 
+A:  Well , there 's also the normalization . 
+A:  Like they do , 
+A:  um  
+A:  I 'm not sure how they would do it when they 're working with the digits , 
+A:  but , like , in the Switchboard data , there 's , um  conversation - side normalization for the  non - C - zero 
+A:  components , 
+A:  Mm - hmm . 
+A:  Right . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  So  
+A:  so the n stuff on the numbers you got , the two point seven , is that using the same training data that the SRI system used and got one point two ? 
+A:  So exact same training data ? 
+A:  OK . 
+A:  You know , it would also be interesting to see , uh  to do the regular Aurora test , 
+A:  um , 
+A:  but use the SRI system instead of HTK . 
+A:  Why not the full Aurora , uh , test ? 
+A:  Mm - hmm . 
+A:  Right . 
+A:  Yeah . 
+A:  That 's what I mean . 
+A:  So , like , comple 
+A:  Mmm . 
+A:  Well , I mean , 
+A:  uh , 
+A:  uh , 
+A:  I guess the work would be into getting the  the files in the right formats , or something . 
+A:  Right ? 
+A:  I mean  
+A:  Because when you train up the Aurora system , you 're , uh  you 're also training on all the data . 
+A:  I mean , it 's  
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Yeah . 
+A:  No 
+A:  Something that  that I 've used in the past is , um  when just looking at the energy , is to look at the derivative . 
+A:  And you  make your decision when the derivative is increasing for  so many frames . 
+A:  Then you say that 's beginning of speech . 
+A:  But , I 'm  I 'm trying to remember if that requires that you keep some amount of speech in a buffer . 
+A:  I guess it depends on how you do it . 
+A:  But  I mean , that 's  that 's been a useful thing . 
+A:  Mm - hmm . 
+A:  Right . 
+A:  Right . 
+A:  Yeah . 
+A:  OK . 
+A:  How about you , Carmen ? 
+A:  Is that it ? 
+A:  OK ? 
+A:  Yep . 
+A:  Want to go ahead , Morgan ? 
+A:  Transcript L dash two one five . 

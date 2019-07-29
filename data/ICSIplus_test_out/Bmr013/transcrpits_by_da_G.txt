@@ -1,0 +1,191 @@
+G:  Huh . 
+G:  Yeah , why don't you summarize the  
+G:  And I guess that includes some  the filtering for the , the ASI refs , too . 
+G:  For the references that we need to go from the  the  fancy transcripts to the sort of <mike noise> brain - dead . 
+G:  With Don , as well . 
+G:  What do you mean , the prosodics ? 
+G:  So what are they doing in Aurora , 
+G:  are they reading actual phone numbers , 
+G:  or , a  a digit at a time , or  ? 
+G:  Cuz it 's  
+G:  Connected . 
+G:  So there 's also the  not just the prosody but the cross  the cross - word modeling is probably quite different . 
+G:  Right . 
+G:  It 's the beginning of time in speech recognition . 
+G:  It 's like the , single cell , you know , it 's the beginning of life , 
+G:  yeah . 
+G:  Right . 
+G:  Well it 's definitely true that , when people are , reading , even if they 're re - reading what , they had said spontaneously , that they have very different patterns . 
+G:  Mitch showed that , and some , dissertations have shown that . 
+G:  So the fact that they 're reading , first of all , whether they 're reading in a room of , people , or rea you know , just the fact that they 're reading will make a difference . 
+G:  And , depends what you 're interested in . 
+G:  Well it 's also , there 's , really a difference between , the pronunciation models in the dictionary , and , the pronunciations that people produce . 
+G:  And , so , You get , some of that information from Steve 's work on the  on the labeling 
+G:  and it really , 
+G:  I actually think that data should be used more . 
+G:  That maybe , although I think the meeting context is great , that he has transcriptions that give you the actual phone sequence . 
+G:  And you can go from  not from that to the articulatory features , but that would be a better starting point for marking , the gestural features , then , data where you don't have that , 
+G:  because , we  you wanna know , both about the way that they 're producing a certain sound , and what kinds of , you know what kinds of , phonemic , differences you get between these , transcribed , sequences and the dictionary ones . 
+G:  Right . 
+G:  Right . 
+G:  But  Right . 
+G:  But it still is  there 's a  there are two steps . 
+G:  One  you know , one is going from a dictionary pronunciation of something , like , " gonna see you tomorrow " , 
+G:  it could be " going to " or " gonna " or " gonta s " you know . 
+G:  And , yeah . 
+G:  " Gonna see you tomorrow " , uh , " guh see you tomorrow " . 
+G:  And , that it would be nice to have these , intermediate , or these  some  these reduced pronunciations that those transcribers had marked or to have people mark those as well . 
+G:  Because , it 's not , um , that easy to go from the , dictionary , word pronuncia the dictionary phone pronunciation , to the gestural one without this intermediate or a syllable level kind of , representation . 
+G:  It depends how you look at it , and 
+G:  I  I understand what you 're saying about this , kind of transcription exactly , 
+G:  because I 've seen  you know , where does the voicing bar start and so forth . 
+G:  All I 'm saying is that , it is useful to have that  the transcription of what was really said , and which syllables were reduced . 
+G:  Uh , if you 're gonna add the features 
+G:  it 's also useful to have some level of representation which is , is a reduced  it 's a pronunciation variant , that currently the dictionaries don't give you 
+G:  because if you add them to the dictionary and you run recognition , you , you add confusion . 
+G:  So people purposely don't add them . 
+G:  So it 's useful to know which variant was  was produced , at least at the phone level . 
+G:  Right . 
+G:  That 's all , I mean . 
+G:  Exactly . 
+G:  Exactly . 
+G:  And Steve 's type is fairly  it 's not that slow , 
+G:  uh , uh , 
+G:  I dunno exactly what the , timing was , but . 
+G:  Mm - hmm . 
+G:  Right . 
+G:  Right . 
+G:  Right . 
+G:  That 's what I meant is  
+G:  an and in some places it would fill in , So  the kinds of gestural features are not everywhere . 
+G:  So there are some things that you don't have access to either from your ear or the spectrogram , 
+G:  but you know what phone it was and that 's about all you can  all you can say . 
+G:  And then there are other cases where , nasality , voicing  
+G:  Right . 
+G:  Right . 
+G:  Right . 
+G:  Right . 
+G:  You can add the features in , uh , but it 'll be underspecified . 
+G:  Th - there 'll be no way for you to actually mark what was said completely by features . 
+G:  And i if you 're  
+G:  Well , we  we 've probably have a <laugh> separate , um , discussion of , uh  of whether you can do that . 
+G:  Yeah that  that 's all I was thinking about . 
+G:  it is telephone band , so , the bandwidth might be  
+G:  Yeah . 
+G:  That 's actually what I was thinking , is tha  
+G:  the problem is when you run , uh , if you run a regular dictionary , um , even if you have variants , in there , which most people don't , you don't always get , out , the actual pronunciations , 
+G:  so that 's why the human transcriber 's giving you the  that pronunciation , 
+G:  and so y 
+G:  they  they  I thought that they were  
+G:  we should catch up on what Steve is , 
+G:  uh  I think that would be a good i good idea . 
+G:  Yeah . 
+G:  Yeah . 
+G:  Might  
+G:  It might be  
+G:  I was thinking it might be n 
+G:  Well it might be neat to do some , phonetic , features on these , nonword words . 
+G:  Are  are these kinds of words that people never  the " huh "s and the " hmm "s and the " huh " <inbreath> and the uh  
+G:  These k No , I 'm serious . 
+G:  There are all these kinds of  functional , uh , elements . 
+G:  I don't know what you call  them . 
+G:  But not just fill pauses but all kinds of ways of  interrupting  and so forth . 
+G:  And some of them are , <laugh> yeah , " uh - huh "s , and " hmm "s , and , " hmm ! " 
+G:  " hmm "  " OK " , " uh "  Grunts , 
+G:  uh , 
+G:  that might be interesting . 
+G:  In the meetings . 
+G:  We can try running  
+G:  we haven't done this yet because , um , uh , Andreas an is  is gonna move over the SRI recognizer . 
+G:  i basically I ran out of machines at SRI , 
+G:  cuz we 're running the evals 
+G:  and I just don't have machine time there . 
+G:  But , once that 's moved over , uh , hopefully in a  a couple days , then , we can take , um , what Jane just told us about as , the presegmented , <breath> <mike noise> the  the segmentations that you did , at level eight or som  at some , threshold that Jane , tha  right , and try doing , forced alignment . um , on the word strings . 
+G:  And if it 's good , then that will  that may give you a good boundary . 
+G:  Of course if it 's good , we don't  then we 're  we 're fine , 
+G:  but , I don't know yet whether these , segments that contain a lot of pauses around the words , will work or not . 
+G:  Yeah . 
+G:  Right . 
+G:  Right . 
+G:  They might be OK . 
+G:  It  you know it really depends on a lot of things , 
+G:  but , I would have maybe a transciber , uh , look at the result of a forced alignment and then adjust those . 
+G:  That might save some time . 
+G:  If they 're horrible it won't help at all , 
+G:  but they might not be horrible . 
+G:  So  but I 'll let you know when we , uh , have that . 
+G:  Are the , um , wireless , different than the wired , mikes , at all ? 
+G:  I mean , have you noticed any difference ? 
+G:  So it 's just the lapel versus everything else ? 
+G:  We 're gonna be recording them every  Monday , 
+G:  so  
+G:  So they 're really running out of , data , prett I mean that 's good . 
+G:  Um , OK . 
+G:  So  
+G:  Yeah , please . 
+G:  Go ahead . 
+G:  And this afternoon . 
+G:  Right . 
+G:  Then lots of  
+G:  Right . 
+G:  Yeah we j we just needed a way to , strip , you know , all the comments , all the things th the  that linguist wants but the recognizer can't do anything with . 
+G:  Um , but to keep things that we mapped to like reject models , or , you know , uh , mouth noise , or , cough . 
+G:  And then there 's this interesting issue Jane brought up 
+G:  which I hadn't thought about before 
+G:  but I was , realizing as I went through the transcripts , that there are some noises like , 
+G:  um , 
+G:  well the  good example was an inbreath , where a transcriber working from , the mixed , signal , doesn't know whose breath it is , 
+G:  and they 've been assigning it to someone that may or may not be correct . 
+G:  And what we do is , if it 's a breath sound , you know , a sound from the speaker , we map it , to , a noise model , like a mouth - noise model in the recognizer , 
+G:  and , yeah , it probably doesn't hurt that much once in a while to have these , 
+G:  but , if they 're in the wrong channel , that 's , not a good idea . 
+G:  And then there 's also , things like door - slams that 's really in no one 's channel , 
+G:  they 're like  it 's in the room . 
+G:  And  uh , Jane had this nice , uh , idea of having , like an extra , uh couple tiers , 
+G:  yeah . 
+G:  And we were thinking , that is useful also when there 's uncertainties . 
+G:  So if they hear a breath and they don't know who breath it is it 's better to put it in that channel than to put it in the speaker 's channel 
+G:  because maybe it was someone else 's breath , 
+G:  or  Uh , 
+G:  so I think that 's a good  you can always clean that up , post - processing . 
+G:  So a lot of little details , 
+G:  but I think we 're , coming to some kinda closure , on that . 
+G:  So the idea is then , uh , Don can take , uh , Jane 's post - processed channelized version , and , with some scripts , you know , convert that to  to a reference for the recognizer 
+G:  and we can , can run these . 
+G:  So  when that 's , ready  you know , as soon as that 's ready , and as soon as the recognizer is here we can get , twelve hours of force - aligned and recognized data . 
+G:  And , you know , start , working on it , 
+G:  so we 're , I dunno a coup a week or two away I would say from , 
+G:  uh , if  if that process is automatic once we get your post - process , transcript . 
+G:  Yeah , some of them are quite long . 
+G:  Just from  
+G:  I dunno 
+G:  how long were  
+G:  you did one ? 
+G:  Right . 
+G:  Right . It 's not the  it 's not the fact that we can't process a twenty second segment , it 's the fact that , there 's twenty seconds in which to place one word in the wrong place 
+G:  You know , if  if someone has a very short utterance there , 
+G:  and that 's where , we , might wanna have this individual , you know , ha have your pre pre - process input . 
+G:  And I just don't know , 
+G:  I have to run it . 
+G:  Right . 
+G:  Right . 
+G:  So that 's probably what will happen , 
+G:  but we 'll try it this way and see . 
+G:  I mean it 's probably good enough for force - alignment . 
+G:  If it 's not then we 're really  then we def definitely 
+G:  uh , but for free recognition I 'm  it 'll probably not be good enough . 
+G:  We 'll probably get lots of errors because of the cross - talk , and , noises and things . 
+G:  So what happens to our old microphones ? 
+G:  Do we give them to someone , 
+G:  or  ? 
+G:  We don't have more receivers , 
+G:  we just have  
+G:  Right . 
+G:  Just the lapel itself . 
+G:  Mm - hmm . 
+G:  OK . 
+G:  Right . 
+G:  However , he may be solicited after these meetings are distributed . 
+G:  Don't worry about finishing your dissertation . 
+G:  Yes . 
+G:  Huh . 

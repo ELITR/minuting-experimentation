@@ -1,0 +1,42 @@
+A:  Yeah . 
+A:  Sorry . 
+A:  Um , <mouth> still working on my  my quals preparation stuff . 
+A:  Um , <mouth> so I 'm  I 'm thinking about , um , starting some , <breath> uh , cheating experiments to , uh , determine the , um  <mouth> the relative effectiveness of , um , some intermediate categories that I want to classify . 
+A:  So , for example , um , <mouth> if I know where voicing occurs and everything , um , <mouth> I would do a phone  um , phone recognition experiment , 
+A:  um , somehow putting in the  the , uh  the perfect knowledge that I have about voicing . 
+A:  So , um , in particular I was thinking , <breath> um , in  in the hybrid framework , just taking those LNA files , <breath> and , um , <mouth> setting to zero those probabilities that , um  that these phones are not voicing . 
+A:  So say , like , I know this particular segment is voicing , 
+A:  um , <mouth> I would say , uh , go into the corresponding LNA file and zonk out the  the posteriors for , um , those phonemes that , um , are not voiced , 
+A:  and then see what kinds of improvements I get . 
+A:  And so this would be a useful thing , um , to know <breath> in terms of , like , which  which , um  which of these categories are  are good for , um , speech recognition . 
+A:  So , that 's  
+A:  I hope to get those , uh  those experiments done by  by the time quals come  come around in July . 
+A:  Yeah . 
+A:  I  I  I was thinking  
+A:  OK , so just set to  set to some really low number , the  the non - voiced , um , phones . 
+A:  Right ? 
+A:  And then renormalize . 
+A:  Right . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Yeah , 
+A:  m 
+A:  Um , well , I 'm gonna f work with TIMIT  
+A:  TIMIT  uh , phone recognition with TIMIT . 
+A:  And , um  
+A:  Oh . 
+A:  Um , the outputs of the net go into the standard , h um , ICSI hybrid , um , recognizer . 
+A:  So maybe , um , Chronos 
+A:  or  
+A:  Phone recognition . 
+A:  Right , right . 
+A:  So . 
+A:  And , uh , another thing would be to extend this to , uh , digits or something where I can look at whole words . 
+A:  And I would be able to see , uh , not just , like , phoneme events , but , um , <mouth> inter - phoneme events . 
+A:  So , like , this is from a stop to  to a vo a vocalic 
+A:  segment . 
+A:  You know , 
+A:  so something that is transitional in nature . 
+A:  Yeah . 
+A:  So that 's  that 's it . 
+A:  Yeah . 

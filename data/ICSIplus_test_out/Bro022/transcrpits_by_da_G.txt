@@ -1,0 +1,168 @@
+G:  Pratibha . 
+G:  Um , what is the reverberation time  like  there ? 
+G:  On , uh , the  the one what  the s in the speech that you are  you are using like ? 
+G:  It 's , uh  
+G:  Oh , this room ? 
+G:  OK . 
+G:  Mm - hmm . 
+G:  OK . 
+G:  Mm - hmm . 
+G:  Mm - hmm . Mm - hmm . 
+G:  Yeah . 
+G:  With the  with the HTK back - end ? What we have for Aurora ? 
+G:  I know in the meeting , like  
+G:  Right . 
+G:  Oh . 
+G:  No . The DC component could be negligible . 
+G:  I mean , if you are  recording it through a mike . 
+G:  I mean , any  all of the mikes have the DC removal  some capacitor sitting right in  that bias it . 
+G:  Oh , OK . 
+G:  Oh , 
+G:  so it is the digital  
+G:  OK . 
+G:  It 's the A - toD that introduces the DC in . 
+G:  Yeah . Yeah . Yeah . 
+G:  OK . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Oh , OK . 
+G:  OK . 
+G:  Yeah . 
+G:  Oh , it 's  
+G:  And the acoustic models are like - k triphone models or  or is it the whole word ? 
+G:  Yeah . 
+G:  It 's triphone . 
+G:  Oh . It 's like the tied state . 
+G:  OK . 
+G:  Mm - hmm . 
+G:  Because w we were wondering whether that  VAD is going to be , like , a realistic one or is it going to be some manual segmentation . 
+G:  And then , like , if  if that VAD is going to be a realistic one , then we can actually use their markers to shift the point around , I mean , the way we want 
+G:  to find a  
+G:  I mean , rather than keeping the twenty frames , we can actually move the marker to a point which we find more  suitable for us . 
+G:  But if that is going to be something like a manual , uh , segmenter , then we can't  use that information anymore , 
+G:  because that 's not going to be the one that is used in the final evaluation . 
+G:  So . We don't know what is the type of  <uncodeable sounds>  VAD which they 're going to provide . 
+G:  With some  some gap . 
+G:  I mean , with some pauses in the center , 
+G:  provided they meet that  whatever the hang - over time which they are talking . 
+G:  Yeah . 
+G:  Then the they will just fill  fill it up . 
+G:  I mean , th  
+G:  Yeah . 
+G:  Yeah . 
+G:  Yeah . Well , every everywhere has a delay associated with it . 
+G:  I mean , you still have to k always keep a buffer , 
+G:  then only make a decision because  you still need to smooth the  decision further . 
+G:  So that 's always there . 
+G:  Can smooth the SNR estimate , also . 
+G:  Your filter is a function of SNR . Hmm ? 
+G:  Yeah . 
+G:  Actually , it 's , 
+G:  uh  
+G:  Uh . 
+G:  I don't know , 
+G:  it 's  
+G:  go ahead . 
+G:  And it 's  
+G:  go ahead . 
+G:  OK . 
+G:  So , uh  
+G:  u 
+G:  th I 've been playing with this Wiener filter , like . 
+G:  And there are  there were some bugs in the program , 
+G:  so I was p initially trying to clear them up . 
+G:  Because one of the bug was  I was assuming that always the VAD  uh , the initial frames were silence . 
+G:  It always started in the silence state , 
+G:  but it wasn't for some utterances . 
+G:  So the  it wasn't estimating the noise initially , 
+G:  and then it never estimated , 
+G:  because I assumed that it was always silence . 
+G:  Yeah . 
+G:  SpeechDat - Car Italian . 
+G:  Yeah . 
+G:  There 're a few cases , actually , which I found later , that there are . 
+G:  So that was one of the  bugs that was there in estimating the noise . 
+G:  And , uh , so once it was cleared , uh , I ran a few experiments with  different ways of smoothing the estimated clean speech and how t estimated the noise and , eh , smoothing the SNR also . 
+G:  And so the  the trend seems to be like , <mouth> uh , smoothing the  current estimate of the clean speech for deriving the SNR , 
+G:  which is like  deriving the Wiener filter , 
+G:  seems to be helping . Then updating it quite fast 
+G:  using a very small time constant . 
+G:  So we 'll have , like , a few results where the  
+G:  estimating the  
+G:  the  More smoothing is helping . 
+G:  But still it 's like  it 's still comparable to the baseline . 
+G:  I haven't got anything beyond the baseline . 
+G:  But that 's , like , not using any Wiener filter . 
+G:  And , uh , so I 'm  I 'm trying a few more experiments with different time constants for smoothing the noise spectrum , and smoothing the clean speech , and smoothing SNR . 
+G:  So there are three time constants that I have . 
+G:  So , I 'm just playing around . 
+G:  So , one is fixed in the line , like  Smoothing the clean speech is  is helping , 
+G:  so I 'm not going to change it that much . 
+G:  But , the way I 'm estimating the noise and the way I 'm estimating the SNR , I 'm just trying  trying a little bit . 
+G:  So , that h 
+G:  And the other thing is , like , putting a floor on the , uh , SNR , 
+G:  because that  if 
+G:  some  In some cases the clean speech is , like  when it 's estimated , it goes to very low values , 
+G:  so the SNR is , like , very low . 
+G:  And 
+G:  so that actually creates a lot of variance in the low - energy region of the speech . 
+G:  So , I 'm thinking of , like , putting a floor also for the SNR so that it doesn't  vary a lot in the low - energy regions . 
+G:  And , uh . So . The results are , like  
+G:  So far I 've been testing only with the  baseline , which is  which doesn't have any LDA filtering and on - line normalization . 
+G:  I just want to separate the  the contributions out . 
+G:  So it 's just VAD , plus the Wiener filter , plus the baseline system , 
+G:  which is , uh , just the spectral  I mean , the mel sp mel , uh , frequency coefficients . 
+G:  Um . 
+G:  And the other thing that I tried was  but I just <mouth> took of those , uh ,  <mouth> Carlos filters , which Hynek had , 
+G:  to see whether it really h helps or not . 
+G:  I mean , it was just a  a run to see whether it really degrades or it helps . 
+G:  And 
+G:  it 's  it seems to be like it 's not <mouth> hurting a lot by just blindly picking up one filter 
+G:  which is nothing but a  four hertz  a band - pass m m filter on the cubic root of the power spectrum . 
+G:  So , that was the filter that Hy - uh , Carlos had . 
+G:  And 
+G:  so  
+G:  Yeah . Just  just to see whether it really  it 's  it 's  is it worth trying or not . 
+G:  So , it doesn't seems to be degrading a lot on that . 
+G:  So there must be something that I can  that can be done with that type of noise compensation also , 
+G:  which  <mouth> I guess I would ask Carlos about that . 
+G:  I mean , how  how he derived those filters 
+G:  and  
+G:  and where d if he has any filters which are derived on OGI stories , added with some type of noise which  what we are using currently , 
+G:  or something like that . 
+G:  So maybe I 'll  
+G:  Yeah . 
+G:  Cubic root of power spectrum . 
+G:  Yeah . 
+G:  And I 'm , like , floating it to z zeros right now . 
+G:  So it has , like  the spectrogram has , like  
+G:  Uh , 
+G:  it actually , uh , enhances the onset and offset of  I mean , the  the begin and the end of the speech . 
+G:  So it 's  there seems to be , like , deep valleys in the begin and the end of , like , high - energy regions , 
+G:  because the filter has , like , a sort of Mexican - hat type structure . 
+G:  So , those are the regions where there are , like  
+G:  when I look at the spectrogram , there are those deep valleys on the begin and the end of the speech . 
+G:  But the rest of it seems to be , like , pretty nice . 
+G:  So . 
+G:  That 's  something I observe using that filter . 
+G:  And  
+G:  Yeah . 
+G:  There are a few  
+G:  very  
+G:  not a lot of  
+G:  because the filter doesn't have a  really a deep negative portion , 
+G:  so that it 's not really creating a lot of negative values in the cubic root . 
+G:  So , 
+G:  I 'll  I 'll s may continue with that for some w 
+G:  I 'll  I 'll  Maybe I 'll ask Carlos a little more about how to play with those filters , 
+G:  and  but while  making this Wiener filter better . 
+G:  So . 
+G:  Yeah . 
+G:  That  that 's it , Morgan . 
+G:  Yeah . 
+G:  I  I  I would actually m m didn't get enough time to work on the subspace last week . 
+G:  It was mostly about  finding those bugs 
+G:  and 
+G:  th you know , things , 
+G:  and I didn't work much on that . 
+G:  Pratibha . 

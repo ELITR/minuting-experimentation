@@ -1,0 +1,202 @@
+F:  OK . 
+F:  Yeah . 
+F:  Self - learning , yeah . 
+F:  Can w 
+F:  I could always say something about transcription . 
+F:  I 've been  <laugh> but  but  uh , well  
+F:  Yeah . 
+F:  Yeah , yeah , yeah . 
+F:  This does sound like we 're doing fine , 
+F:  yeah . 
+F:  That won't do . 
+F:  Oh ! By  throw them out completely ? 
+F:  Mm - hmm . 
+F:  Well , and s and you 're talking string - wise , 
+F:  you 're not talking about the entire page ? 
+F:  I get it . 
+F:  Mm - hmm . Yeah , true . 
+F:  Mm - hmm . Mm - hmm . 
+F:  No , not yet . 
+F:  Oh  
+F:  Oh . 
+F:  Well , if there 's space , though , between them . 
+F:  I mean , you can  
+F:  With  when you space them out they don't look like , uh , forty - three anymore . 
+
+F:  Yeah . 
+F:  But , you know , when you , do things like that you can always  
+F:  as long as you have  
+F:  uh , you can always search from the beginning or the end of the string . 
+F:  You know , so " zero zero two "  
+F:  Yeah . 
+F:  Yeah , well , your example was really  
+F:  i 
+F:  OK . 
+F:  I  I would think though that the transcribe  the transcripts themselves wouldn't need to have such lengthy names . 
+F:  So , I mean , you 're dealing with a different domain there , and with start and end times and all that , 
+F:  and channels and stuff , 
+F:  so , it 's a different  set . 
+F:  Fine . Fine . 
+F:  The  the news is that I 've  I uh  
+F:  s So  in s um  
+F:  So I 've switched to  
+F:  Start my new sentence . 
+F:  I  I switched to doing the channel - by - channel transcriptions to provide , uh , the  uh , tighter time bins for  partly for use in Thilo 's work 
+F:  and also it 's of relevance to other people in the project . 
+F:  And , um , I discovered in the process a couple of  of interesting things , 
+F:  which , um , 
+F:  one of them is that , um , it seems that there are time lags involved in doing this , 
+F:  uh , uh , 
+F:  using an interface that has so much more complexity to it . 
+F:  And I  and I wanted to maybe ask , uh , Chuck to help me with some of the questions of efficiency . 
+F:  Maybe  I was thinking maybe the best way to do this in the long run may be to give them single channel parts 
+F:  and then piece them together later . 
+F:  And I  I have a script , 
+F:  I can piece them together . 
+F:  I mean , so it 's like , I  I know that I can take them apart and put them together and I 'll end up with the representation 
+F:  which is where the real power of that interface is . 
+F:  And it may be that it 's faster to transcribe a channel at a time with only one , uh , sound file and one , uh , set of  of , uh , utterances to check through . 
+F:  Oh , yes . OK . 
+F:  But , um , with the mixed , when you have an overlap , you only have a  a choice of one start and end time for that entire overlap , 
+F:  which means that you 're not tightly , uh , tuning the individual parts th of that overlap by different speakers . 
+F:  So someone may have only said two words in that entire big chunk of overlap . 
+F:  And for purposes of  of , uh , things like  
+F:  well , so things like training the speech - nonspeech segmentation thing . 
+F:  Th - it 's necessary to have it more tightly tuned than that . 
+F:  And w and w and , you know , is a It would be wonderful if , uh , it 's possible then to use that algorithm to more tightly tie in all the channels after that 
+F:  but , um , you know , I 've  th the  
+F:  So , 
+F:  I I don't know exactly where that 's going at this point . 
+F:  But m I was experimenting with doing this by hand 
+F:  and 
+F:  I really do think that it 's wise that we 've had them start the way we have 
+F:  with , uh , m y working off the mixed signal , 
+F:  um , 
+F:  having the interface that doesn't require them to do the ti uh , the time bins for every single channel at a t uh , through the entire interaction . 
+F:  Um , I did discover a couple other things by doing this though , 
+F:  and one of them is that , 
+F:  um , um , 
+F:  once in a while a backchannel will be overlooked by the transcriber . 
+F:  As you might expect , 
+F:  because when it 's 
+F:  a b backchannel could well happen in a very densely populated overlap . 
+F:  And if we 're gonna study types of overlaps , 
+F:  which is what I wanna do , 
+F:  an analysis of that , 
+F:  then that really does require listening  to every single channel all the way through the entire  length for all the different speakers . 
+F:  Now , for only four speakers , that 's not gonna be too much time , 
+F:  but if it 's nine speakers , then that i that is more time . 
+F:  So it 's li you know , kind of wondering  
+F:  And I think again it 's like this  it 's really valuable that Thilo 's working on the speech - nonspeech segmentation 
+F:  because maybe , um , we can close in on that wi without having to actually go to the time that it would take to listen to every single channel from start to finish through every single meeting . 
+F:  OK . 
+F:  Well so then  then , maybe the answer is to , uh , listen especially densely in places of overlap , 
+F:  just so that they 're  they 're not being overlooked because of that , 
+F:  and count on accuracy during the sparser phases . 
+F:  Cuz there are large s spaces of the  
+F:  That 's a good point . 
+F:  There are large spaces where there 's no overlap at all . 
+F:  Someone 's giving a presentation , 
+F:  or whatever . 
+F:  That 's  that 's a good  that 's a good thought . 
+F:  And , um , let 's see , there was one other thing I was gonna say . 
+F:  I  I think it 's really interesting data to work with , 
+F:  I have to say , it 's very enjoyable . 
+F:  I really , not  not a problem spending time with these data . 
+F:  Really interesting . 
+F:  And not just because I 'm in there . 
+F:  No , it 's real interesting . 
+
+F:  Di - digital camera . 
+F:  I I did i it did occur to me that this is  uh , the return to the transcription , 
+F:  that there 's one third thing I wanted to  to ex raise as a to as an issue 
+F:  which is , um , how to handle breaths . 
+F:  So , I wanted to raise the question of whether people in speech recognition want to know where the breaths are . 
+F:  And the reason I ask the question is , 
+F:  um , aside from the fact that they 're obviously very time - consuming to encode , 
+F:  uh , the fact that there was some  
+F:  I had the indication from Dan Ellis in the email that I sent to you , 
+F:  and you know about , 
+F:  that in principle we might be able to , um , handle breaths by accessi by using cross - talk from the other things , 
+F:  be able that  
+F:  in principle , maybe we could get rid of them , 
+F:  so maybe  
+F:  And I was  
+F:  I  I don't know , 
+F:  I mean we had this an 
+F:  and I didn't  couldn't get back to you , 
+F:  but the question of whether it 'd be possible to eliminate them from the audio signal , 
+F:  which would be the ideal situation , 
+F:  cuz  
+F:  Well , except that these are really truly  
+F:  I mean , ther there 's a segment in o the one I did  
+F:  n the first one that I did for  i for this , 
+F:  where truly w we 're hearing you breathing like  as if we 're  you 're in our ear , 
+F:  you know , and it 's like  it 's like  
+F:  I y i 
+F:  I mean , breath is natural , 
+F:  but not 
+F:  Except that we 're  we 're trying to mimic  
+F:  Oh , I see what you 're saying . 
+F:  You 're saying that the PDA application would have  uh , have to cope with breath . 
+F:  But  
+F:  OK , then the  then  I have two questions . 
+F:  Yeah ? 
+F:  OK , so maybe the question is notating it . 
+F:  Yeah ? 
+F:  OK , well  
+F:  Well this is in very interesting 
+F:  because i it basically has a i it shows very clearly the contrast between , uh , speech recognition research and discourse research 
+F:  because in  in discourse and linguistic research , what counts is what 's communit communicative . 
+F:  And  breath , 
+F:  you know , everyone breathes , 
+F:  they breathe all the time . 
+F:  And once in a while breath is communicative , 
+F:  but r very rarely . 
+F:  OK , so now , I had a discussion with Chuck about the data structure 
+F:  and the idea is that the transcripts will  that  get stored as a master 
+F:  there 'll be a master transcript 
+F:  which has in it everything that 's needed for both of these uses . 
+F:  And the one that 's used for speech recognition will be processed via scripts . 
+F:  You know , like , Don 's been writing scripts 
+F:  and  and , 
+F:  uh , to process it for the speech recognition side . 
+F:  Discourse side will <breath> have 
+F:  this  this side over he the  we we 'll have a s ch 
+F:  Sorry , not being very fluent here . 
+F:  But , um , 
+F:  this  the discourse side will have a script which will stri strip away the things which are non - communicative . 
+F:  OK . So then the  then  let 's  let 's think about the practicalities of how we get to that master copy with reference to breaths . 
+F:  So what I would  r r what I would wonder is would it be possible to encode those automatically ? 
+F:  Could we get a breath detector ? 
+F:  Well , I mean , you just have no idea . 
+F:  I mean , if you 're getting a breath several times every minute , 
+F:  and just simply the keystrokes it takes to negotiate , to put the boundaries in , to  to type it in , i it 's just a huge amount of time . 
+F:  And you wanna be sure it 's used , 
+F:  and you wanna be sure it 's done as efficiently as possible , 
+F:  and if it can be done automatically , that would be ideal . 
+F:  Well , but  
+F:  Well , OK . So now there 's  there 's another  another possibility 
+F:  which is , um , the time boundaries could mark off words  from nonwords . 
+F:  And that would be extremely time - effective , if that 's sufficient . 
+F:  OK . But that would maybe include a pause as well , 
+F:  and that wouldn't be a problem to have it , uh , pause plus breath plus laugh plus sneeze ? 
+F:  That 's what they 've been doing . 
+F:  So , within an overlap segment , they  they do this . 
+F:  Yeah , you 're saying it 's  uncharted territory . 
+F:  Mm - hmm . 
+F:  Yeah . 
+F:  OK , fair enough . 
+F:  I guess , um , I  uh , what I was wondering is what  what  at what level does the breathing aspect enter into the problem ? 
+F:  Because if it were likely that a PDA would be able to be built which would get rid of the breathing , so it wouldn't even have to be processed at thi at this computational le 
+F:  well , let me see , it 'd have to be computationally processed to get rid of it , 
+F:  but if there were , uh , like likely on the frontier , a good breath extractor 
+F:  then , um , and then you 'd have to  
+F:  Yeah , well , see and that 's what I wouldn't know . 
+F:  OK . 
+F:  I guess there 's another aspect 
+F:  which is that as we 've improved our microphone technique , we have a lot less breath in the  in the more recent , uh , recordings , 
+F:  so it 's  in a way it 's an artifact that there 's so much on the  on the earlier ones . 
+F:  OK , and it 's also the fact that they differ a lot from one channel to the other 
+F:  because of the way the microphone 's adjusted . 
+F:  OK . 

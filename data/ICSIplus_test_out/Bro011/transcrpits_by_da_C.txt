@@ -1,0 +1,119 @@
+C:  like Matlab , or  ? 
+C:  Uh - oh . 
+C:  Radio four . 
+C:  Mmm . 
+C:  Oh yeah . 
+C:  Alright . 
+C:  Well . Uh first we discussed about some of the points that I was addressing in the mail I sent last week . 
+C:  So . 
+C:  Yeah . 
+C:  About the um , well  the downsampling problem . 
+C:  Uh and about the f the length of the filters 
+C:  and  
+C:  Yeah . 
+C:  So we had  
+C:  So the fact that there  there is no uh low - pass filtering before the downsampling . 
+C:  Well . 
+C:  There is because there is LDA filtering but that 's perhaps not uh the best 
+C:  w m 
+C:  Well . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  So we discussed about this , about the um  
+C:  Uh " try it " . 
+C:  Yeah . 
+C:  I guess . 
+C:  Uh . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  We don't have yet 
+C:  um <inbreath> So , yeah . 
+C:  We should have a look first at , perhaps , <inbreath> the modulation spectrum . 
+C:  Um . So there is this , 
+C:  there is the um length of the filters . 
+C:  Um . <mouth> <inbreath> So the i this idea of trying to find filters with shorter delays . 
+C:  Um . We started to work with this . 
+C:  Mmm . 
+C:  And the third point um <mouth> <inbreath> was the um , 
+C:  yeah , <inbreath> the on - line normalization where , 
+C:  well , the recursion f recursion for the mean estimation <inbreath> is a filter with some kind of delay 
+C:  and that 's not taken into account right now . 
+C:  Um . Yeah . 
+C:  And there again , yeah . 
+C:  For this , the conclusion of Hynek was , well , " we can try it but  " 
+C:  Um . 
+C:  So try to um <inbreath> <mouth> um take into account the delay of the recursion for the mean estimation . 
+C:  Mmm . 
+C:  And this  we 've not uh worked on this yet . 
+C:  Um , yeah . 
+C:  And so while discussing about these  these LDA filters , some i issues appeared , like 
+C:  well , the fact that if we look at the frequency response of these filters it 's 
+C:  uh , well , we don't know really what 's the important part in the frequency response 
+C:  and there is the fact that <inbreath> in the very low frequency , these filters don't  don't really remove a lot . <inbreath> compared to the  to the uh standard RASTA filter . 
+C:  Uh and that 's probably a reason why , yeah , on - line normalization helps because it  it , 
+C:  yeah , it removed this mean . 
+C:  Um . Yeah , but perhaps everything could  should be  could be in the filter , 
+C:  I mean , uh the  the mean normalization and  
+C:  Yeah . 
+C:  So . 
+C:  Yeah . 
+C:  So basically that was  that 's <inbreath> all we discussed about . 
+C:  We discussed about <inbreath> good things to do 
+C:  also uh well , generally good stuff <laugh> to do for the research . 
+C:  And this was this LDA uh tuning perhaps and <inbreath> Hynek proposed again to his uh TRAPS , 
+C:  so . 
+C:  Yeah , 
+C:  um . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Well , but . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Well  
+C:  Yeah 
+C:  I don't know what happened really , but 
+C:  I guess it 's  it 's also so uh the time constraints . 
+C:  Because , <inbreath> well , we discussed about that  about this problem 
+C:  and they told us " well , we will do all that 's possible to have enough space for a network " 
+C:  but then , yeah , perhaps they were too short with the time and 
+C:  uh yeah . 
+C:  But there was also problem  perhaps a problem of communication . 
+C:  So , yeah . 
+C:  Now we will try to  
+C:  Yeah , slikes and send mails . 
+C:  u s 
+C:  o o Yeah . 
+C:  Uh . 
+C:  OK . 
+C:  Yeah . 
+C:  Basically . 
+C:  Um . 
+C:  Mm - hmm . 
+C:  Yeah , yeah . 
+C:  So yeah we 're  will start to do this also . 
+C:  Uh so Carmen is just looking at the Ericsson  Ericsson code . 
+C:  And 
+C:  Yeah . 
+C:  Yeah . 
+C:  Oh yeah ? 
+C:  Hmm . 
+C:  Well he was the guy  the guy that was using  
+C:  Is it the guy that was using the pattern of pressure on the tongue 
+C:  or  ? 
+C:  What  
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Yeah , 
+C:  I guess we can try to <inbreath> have some kind of new baseline for next week perhaps . 
+C:  with all these minor things <inbreath> <mouth> modified . 
+C:  And then do other things , 
+C:  play with the spectral subtraction , 
+C:  and <mouth> retry the MSG and things like that . 
+C:  Big list ? 
+C:  What is Octave so ? 
+C:  It 's a free software ? 
+C:  Yeah . 
+C:  And it does the same syntax and everything 
+C:  eh 
+C:  like Matlab , or  ? 

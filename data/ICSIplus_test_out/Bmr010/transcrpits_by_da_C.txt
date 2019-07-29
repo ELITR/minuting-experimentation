@@ -1,0 +1,146 @@
+C:  Yeah . 
+C:  Yeah . 
+C:  I would prefer this . 
+C:  Which is  ? 
+C:  Yeah . 
+C:  Yeah . 
+C:  Speech - nonspeech ? 
+C:  OK . 
+C:  Um , so , uh , what we basically did so far was using the mixed file to  to detect s speech or nonspeech  portions in that . 
+C:  And what I did so far is I just used our old Munich system , 
+C:  which is an HMM - ba based system with Gaussian mixtures for s speech and nonspeech . 
+C:  And it was a system which used only one Gaussian for silence and one Gaussian for speech . 
+C:  And now I added , uh , multi - mixture possibility for  <inbreath> for speech and nonspeech . 
+C:  And I did some training on  on one dialogue , which was transcribed by  
+C:  Yeah . We  we did a nons s speech - nonspeech transcription . 
+C:  Adam , Dave , and I , we did , 
+C:  for that dialogue 
+C:  and I trained it on that . 
+C:  And I did some pre - segmentations for  for Jane . 
+C:  And I 'm not sure how good they are or what  what the transcribers say . 
+C:  They  they can use it 
+C:  or  ? 
+C:  Yeah . 
+C:  Uh , yeah . 
+C:  That  that was one  one  one thing , 
+C:  uh , why I added more mixtures for  for the speech . 
+C:  So I saw that there were loud  loudly speaking speakers and quietly speaking speakers . 
+C:  And so I did two mixtures , one for the loud speakers and one for the quiet speakers . 
+C:  I did that for  for five minutes of one dialogue 
+C:  and that was enough to  to train the system . 
+C:  And so it  it adapts , uh , on  while running . 
+C:  So . 
+C:  Hopefully . 
+C:  It 's just our  our old Munich , uh , loudness - based spectrum 
+C:  on mel scale twenty  twenty critical bands and then loudness . 
+C:  And four additional features , which is energy , loudness , modified loudness , and zero crossing rate . 
+C:  So it 's twenty - four  twenty - four features . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  You can specify <inbreath> the minimum length of speech or  and silence portions which you want . 
+C:  And so I did some  some modifications in those parameters , 
+C:  basically changing the minimum  minimum  length for s for silence 
+C:  to have , er 
+C:  to have , um  
+C:  yeah  
+C:  to have more or less , uh , silence portions in inserted . 
+C:  So . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  That 's it . 
+C:  Yeah . 
+C:  Yeah . 
+C:  No . 
+C:  No . W w we  originally we did that 
+C:  but we saw , uh , 
+C:  when we used it , uh , f for our close - talking microphone , which  
+C:  yeah , for our  for our recognizer in Munich  
+C:  we saw that w it 's  it 's not  it 's not so necessary . 
+C:  It  it works as well f with  with  without , uh , a LDA or something . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yes . 
+C:  Um , I <mouth> talked with , uh , Munich guys from  from Ludwi - Ludwig Maximilians University , who do a lot of transcribing and transliterations . 
+C:  And they basically said they have  they have , uh , a tool they developed  themselves 
+C:  and they can't give away , uh , f it 's too error - prone , 
+C:  and had  it 's not supported , 
+C:  a a a and  
+C:  But , um , 
+C:  Susanne Bur - Burger , who is at se CMU , he wa who was formally at  in Munich and w and is now at  with CMU , 
+C:  she said she has something 
+C:  which she uses to do eight channels , uh , trans transliterations , 
+C:  eight channels simultaneously , 
+C:  but it 's running under Windows . 
+C:  So I 'm not sure if  if  if we can use it . 
+C:  She said she would give it to us . 
+C:  It wouldn't be a problem . 
+C:  And I 've got some  some kind of manual  down in my office . 
+C:  Yeah . 
+C:  Yeah , but then I 'm not sure  that 's the right thing for us . 
+C:  No . No , Praat  
+C:  Yeah . Yeah . 
+C:  Yeah . 
+C:  That 's not Praat . 
+C:  It 's called " trans transedit "  I think . 
+C:  The  the , uh  the tool from  from Susanne . 
+C:  Yeah . 
+C:  Mmm . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Cross 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Mmm . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  No . 
+C:  No . 
+C:  Yeah . 
+C:  Sure . 
+C:  OK . 
+C:  Yeah , but I 'm not too sure if  if we can  really represent <inbreath> overlap with  with the s  detector I  I  I used up to now , 
+C:  the  to speech - nonspeech as  
+C:  it 's only speech or it 's  it 's  it 's nonspeech . 
+C:  So . 
+C:  Yeah . 
+C:  OK . 
+C:  Yeah . Uh , I could have a look at it . 
+C:  So . 
+C:  OK . 
+C:  Yeah . 
+C:  OK . 
+C:  Yeah . 
+C:  Yeah . Sure . 
+C:  Yeah . 
+C:  Yeah , OK . 
+C:  So  
+C:  Yeah . 
+C:  Yeah . 
+C:  Um  
+C:  I 'm not sure . 
+C:  I  I thought about , uh , adding , uh , uh , another class too . 
+C:  But it 's not too easy , I think , the  the transition between the different class , to model them in  in the system I have now . 
+C:  But it  it  it could be possible , I think , 
+C:  in principle . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  I had the impression . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 

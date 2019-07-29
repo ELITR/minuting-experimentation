@@ -1,0 +1,1519 @@
+B:  <clears throat> 
+E:  Is it on ? <mike noise> 
+A:  OK , here we go . 
+B:  Uh , so  uh , so I c I definitely have to leave at three - thirty today for  whatever . That 's  
+A:  So  
+A:  Definitely have to go to tea . So  <laugh> 
+B:  Yeah , they 're  they 're having birthday cake and such and so I can't miss that . 
+A:  That too , but  
+C:  You 're a May birthday , right ? 
+B:  I 'm a May birthday , yeah , so I have to  
+D:  Oops .  
+C:  Barbara told me . Barbara Peskin . 
+B:  Yeah . <laugh> 
+
+
+A:  Um  
+A:  So , 
+A:  only a couple of agenda items , since no one sent me email for agenda items . Uh , the first is the IBM transcripts . I 'd like to 
+A:  uh , mention  I s I spoke with several of you about this , but just to 
+A:  brainstorm a little bit about what we can do with it . 
+F:  Mm - hmm . 
+
+
+
+
+A:  So we got back the IBM transcript , and the accuracy looks OK . There are  I mean , there are areas which are 
+A:  clearly wrong and there are a lot of areas where they put question marks , 
+A:  where the acoustics weren't very good . And I think that 's fine . Putting it in question marks is better than doing it wrong . 
+A:  The big problem was , they had the wrong number of beeps in it .  
+D:  Oops .  
+A:  So it didn't align . 
+B:  <laugh> 
+A:  And that 's exactly what I was afraid of . 
+A:  And I went in , and more or less by hand , corrected it , by loading it  I wrote a script that will convert it to the multi the Channeltrans format , 
+A:  looked at it in  in Channeltrans and 
+A:  found the places where it got a unsynchronized , and then either  
+F:  Hmm . 
+D:  Inserted ones .  
+A:  And in this case only  only had to remove beeps , because that was th always the error , 
+A:  is that they put in it extraneous beeps . But it 's not easy to do , 
+F:  Hmm . 
+A:  because the whole thing gets 
+A:  offset , and basically , it 's assigning the wrong speaker to the text , and it all gets unaligned . So it 's very difficult 
+F:  Hmm . 
+A:  to do . So it took me several hours 
+B:  So this is  
+A:  just to do that . 
+D:  For one meeting . 
+B:  this is one  it 's one hour of  of  of speech ? 
+A:  Yep . 
+B:  And it took you a few hours to  to do it . 
+A:  It took me a couple hours to write the scripts , and then 
+A:  it  it probably took me 
+A:  maybe forty - five minutes , just going through it . Now obviously it will be a lot faster from now on , because now I sort of understand how it works . 
+A:  But , I think if we had some way  uh some tool that made it easier to insert and delete beeps 
+A:  it would make it a lot easier . Cuz one of the problems is that it takes a very long time when you make a change to load it back up in the channel transcriber . 
+D:  Yep . 
+F:  Yeah , that 's true . I 've noticed that . Yeah . 
+
+
+A:  And so there may be  
+E:  One of the things that Adam said that I thought would be a good idea would be , um , 
+F:  Which makes sense . 
+E:  if we g used different beeps . So for example if we alternated between two beeps , a high and a low . 
+B:  He said that ? 
+E:  th 
+E:  Uh , well in  in some email that , uh , we had . 
+F:  Oh , on the email . 
+D:  For  
+B:  Oh , oh , OK . 
+F:  Yeah . 
+A:  I didn't just say that , no . <laugh> 
+F:  <laugh> 
+E:  Yeah . Um  Because then  
+B:  <laugh-breath> 
+A:  So th so this is the o the other approach which is , what do we do in the future , to try to make this less common ? But it 's still gonna happen . 
+E:  Yeah . 
+F:  Well , and then the other possibility was  e that we provide them with a  a file that already has the beeps in it or something . Wasn't that what you said ? 
+A:  So  
+B:  Hunh . 
+E:  Sort of a text template , but I don't know how 
+B:  <breath> <sniff> <breath> 
+F:  Uh - huh . 
+E:  we can do that . 
+A:  Yeah , we don't know what their process is . So I had two ideas . The first was to provide them a text template that had both the beeps in it and the speaker I Ds . 
+F:  Yeah . 
+A:  You know , just " male - female " , " English - nonEnglish " , " one two three four " . 
+A:  Um  
+B:  Can I  I  I just  
+A:  And they just filled it in . 
+B:  <inbreath> 
+B:  How - how many  how many beeps are there , and how many do we were they  
+D:  <breath-laugh> 
+B:  d were  were off ? 
+A:  It was like a hundred twenty , and they had a hundred twenty - three or something like that . Is that right ? 
+B:  Alright . 
+E:  Well , l I I thought it was a lot more than that . 
+B:  And is it a  
+A:  Well I  I don't remember . 
+E:  They were three off , basically . 
+B:  Yeah , and it was a hundred - ish . 
+C:  And this is the mixed signal ? 
+F:  Oh ! 
+B:  So  so if you get one  
+F:  Hmm . 
+B:  uh , uh , excuse me . If you get one off , it  t everything is off cuz of the alignment right ? 
+A:  Yep . 
+D:  Yep . 
+B:  Uh , and this is all in one file that 's continuous . 
+E:  Yeah . 
+A:  Yep . 
+B:  So why don't you make it multiple files ? 
+A:  How would that help ? 
+B:  Because then if they have one off , then  then it would only screw up that file . 
+A:  Oh , you mean just break the one hour into 
+B:  Yeah . 
+A:  a few chunks . 
+B:  I mean , it seems now , if you just ha make one mistake then everything is off . 
+E:  Well the only  the only question about that that I have is , um , I think Brian has to put all this stuff onto a tape . 
+E:  So I don't know whether  
+B:  Yeah . 
+A:  I 'm sure they would prefer it sort of one hour . 
+E:  Can he send them  I guess he could send them multiple 
+F:  <cell phone ringing> 
+F:  Oh !   
+E:  tapes  
+F:  <mike noise> <cell phone ringing> 
+E:  Uh  
+B:  Yeah , just say , " OK , is  " 
+B:  ten minutes is  " I mean , 
+B:  maybe there 's other things to do that are more clever , but this just seemed to be the sort of the obvious thing because , again , if you make one mistake , 
+B:  then everything after that mistake is off . 
+E:  Mm - hmm . 
+B:  And , uh  
+E:  Well , the only other issue is we 'd have to worry about reassembling them in the proper order . 
+E:  Uh  
+B:  Yeah . 
+A:  That  I mean , just naming schemes will get  
+A:  We can definitely do that . So t so one question is , are there good places in the files where we can really do that ?  
+F:  <mike noise> 
+C:  Well , the other thing  You can  
+A:  I mean , so  so  so someone will have to go through them and listen to them and pick a place to break them . 
+D:  Yeah . 
+C:  The other thing you can do This is on the mixed signal ,  or are these the individual  
+F:  <mike noise> 
+C:  the ones with the beeps that they 're getting , 
+C:  that they made mistakes on is 
+A:  They are played from the 
+C:  the mixed one ? 
+E:  Individual channels .  
+D:  Individual channels .  
+C:  Or they 're indivi If it 's individual , um  
+A:  individual . 
+C:  y c we can  
+C:  probably run a forced alignment , 
+C:  where you c include the beeps as words 
+C:  and pretty much figure out where the errors are . 
+C:  I don't think we could do it on the mixed signal , cuz it  
+C:  But on the individual channels that would probably work , if they have enough 
+E:  <inbreath>  
+C:  words in the transcript . 
+E:  Yeah , we  In fact , that 's  Yeah , maybe we  
+C:  So , I mean , that 's pretty quick to run . It  it 's , um  
+C:  I mean , we could try it . 
+C:  Cuz if a beep is treated as a 
+A:  You mean , so , actually put  put the wavefile in with beep in it . 
+C:  unique word , " beep "   
+C:  Put in  put " beep " in as a word . 
+A:  And pu and have a beep model . 
+C:  Yeah . Yeah . Well  
+E:  We have the original wavefile with all the beeps . 
+C:  the beep model  Actually , you could train a beep model . That  that 's a good idea . 
+E:  It would be very good . <laugh> 
+B:  <laugh> 
+C:  Um  
+A:  Yes , it would be , cuz it 's very , very regular .  
+D:  <laugh> 
+C:  Yeah . 
+C:  Yeah . So , um  
+B:  Oh . Kind of low variance , wouldn't that be ? <laugh> You sort of  might end up with 
+D:  Yeah . <laugh> 
+E:  Yeah , very low .  
+A:  Yeah .  
+F:  <laugh> 
+C:  Um , that might actually  
+B:  some infinities there , but   
+A:  You have to  may  add some jitter to it . 
+B:  Can I see that ?  
+C:  I mean , that might actually work , because you 'll  
+B:  Where 's the case ? 
+C:  I guess the trick is figuring out , you know , where it doesn't align ?  
+C:  But if it 's a problem of extra beeps , 
+C:  rather than missing beeps , then  
+C:  um  
+C:  that 's easier 
+E:  It could t it could  
+C:  and it might work . Oh . 
+E:  There could be some missing ones . But  
+B:  So is this a 
+A:  It 's just in this case they were not . 
+B:  seven or something ? Or  What is it ? 
+F:  M - one - hundred .  
+A:  So I think  uh , Chuck had a good explanation for it which I liked , which is these  they 're listening to it and so they write something down , and let 's say they miss it , they rewind . 
+B:  M - one - hundred . Oh . 
+F:  <mike noise> 
+B:  <breath> 
+A:  Well , they hear the beep again . Was that that beep , or was that a different beep ? So that 's why Chuck was suggesting different tones . My original thought 
+C:  Oh , yeah . 
+A:  was , you could have a different tone for each speaker . 
+A:  You know , there 's plenty of tone space . 
+D:  <laugh> 
+A:  And that might help cue 
+A:  the transcriptionist . 
+A:  You know , give them a little cue about where they are . 
+B:  Or you could  you could have ascending tones , or something . 
+A:  What do you mean ? 
+C:  <laugh-breath> 
+B:  Uh  
+B:  Or  <laugh> 
+C:  Yeah .  <laugh-breath> 
+E:  Increasingly high  higher frequencies . 
+C:  You could have , um , each speaker in the meeting say " beep " and record it and that will be their pro  
+B:  <vocalized outbreath> 
+B:  <laugh> No , I just  thi I don't know . If you have a hundred or something just  just sort of move them up i mu up a  a half tone or something for  for <laugh> each one , and then  
+A:  <laugh> 
+D:  <laugh> 
+C:  <hiccup> 
+C:  <laugh> Sorry . 
+C:  <breath-laugh> 
+E:  <breath-laugh> 
+A:  That 's what I was saying . Is that  that you could have  each speaker could have their own tone . 
+B:  Oh was it ? Oh . 
+B:  See , I should listen . Yeah ? 
+C:  Hmm . 
+A:  And you know , since there are no more than , 
+A:  you know , ten speakers or so per meeting , 
+F:  Oh . 
+F:  Well  
+F:  <inbreath>  
+A:  there 's plenty of tone space . 
+F:  But  
+B:  Uh , OK , yeah . So the only  
+B:  That might work too . Yeah , I was just thinking that actually temporally just , uh , uh , uh , an increasing tones so that 
+A:  Oh , OK . 
+A:  Bo - eep  be - oop .  
+B:  they would really have a sense of whether they were going , you know , forward or backward or  Yeah . 
+D:  In the end ? Yeah . 
+F:  Well you th 
+F:  So just r r truly chron chromatically up  all the way through the entire meeting . 
+B:  Yeah . 
+B:  Well , it 's a thought . 
+F:  Interesting . 
+A:  Oh , oh , th oh , I see . 
+F:  It 'd be impossible to r to misorder them . 
+B:  Yeah . 
+F:  Yeah . 
+C:  But yo I guess you 'd still get the mistake that you mentioned , because 
+C:  the person  I mean , if that 's some of the errors , those would probably stay the same , regardless . 
+A:  Well  
+A:  Yep . 
+A:  I mean , Chuck 's suggestion of just two beeps is nice because then you could have them actually transcribe " H - beep " or " L - beep " , " high beep " or " low beep " . 
+B:  Yeah , maybe . 
+E:  And then when we get them back , if we see two L - beeps in a row  
+A:  It would be much easier . 
+B:  That 's probably better , yeah . S scratch my other idea . 
+C:  Yeah , you have like a sanity  sanity check on them . That 's a good idea . Alternating . 
+F:  It 's pretty simple , pretty simple . 
+B:  <laugh-breath> 
+B:  Yeah . 
+A:  Yep . 
+B:  Yeah . 
+E:  And it would  it seems like it would help them , you know , if they 
+E:  just finished a long passage and they heard 
+E:  one beep and then they 
+E:  hear it again , they know it 's the same beep . 
+E:  Versus if they heard a slightly different one .  
+B:  Yeah . 
+F:  Hmm , interesting . 
+C:  Yeah , that 's a good , like , error checking 
+C:  approach , I think . 
+A:  Yeah , we can , 
+A:  yeah , like , do  do , uh , 
+A:  one for each ca one for each person in the meeting , you can only hire people who have perfect pitch , and they can say " A - flat " <laugh> " B " . <laugh> 
+B:  <laugh> 
+E:  <laugh> 
+F:  Well . <laugh> Well , " high " , " low " is pretty straightforward , yeah . 
+D:  <laugh> 
+C:  <laugh> 
+B:  Great idea , yeah . 
+B:  No , two is probably better than what I was suggesting , because what I was suggesting , in order to make it through a reasonable range for the whole 
+B:  thing , you 'd have to have the  
+B:  the tonal differences between the two kind of small , and actually you want them large . So . 
+F:  <laugh> 
+A:  Yep . 
+F:  You 'd have to  they 'd have to have the acoustics of dogs t <laugh> hear into the high high ranges . 
+C:  <laugh> 
+A:  Mm - hmm . 
+B:  <laugh> 
+F:  <laugh> Yeah . 
+B:  Yeah . 
+A:  So I think , certainly , doing two beeps is  is no - brainer . And then the other question is , if they can  
+F:  <laugh> 
+A:  If they 
+A:  do something on a computer in a format we can handle , we could give them a text file that was a template with speaker ID and beeps already in it . 
+F:  <laugh> 
+A:  And then they could just fill that in . 
+E:  Yeah . 
+B:  So what  
+E:  Maybe I should write to Brian and tell him what the problem was and what our proposed solutions are . 
+F:  <laugh-breath> 
+A:  Right . 
+B:  Yeah . 
+E:  See what he thinks would work best with them . 
+B:  I mean , what 's going wrong on the other end ? What are they doing ? What , uh  
+A:  Well , as I said , I think  We don't actually know , but I think Chuck 's hypothesis was a good one , which is , you re r you listen to something , 
+A:  you write down what you thought you heard , 
+A:  but you want to listen to it again , so you r rewind . 
+E:  And there are some  
+A:  And then you hear the beep  again , and then you say " well , is that that beep , 
+A:  or is that a new beep ? I don't remember . " And so , you know , a couple times they got it wrong . 
+E:  And there are some cases where there 's , um , 
+E:  very little speech before you hear a beep . So you hear a little bit of speech , beep , a little bit of speech , beep . 
+D:  Yeah . 
+F:  Mm - hmm . 
+E:  Maybe three of those in a row , and was that three beeps , was that two beeps ?  
+E:  Um  See , they have th Brian said the setup that they have is , um  
+A:  <clears throat> 
+E:  uh  
+E:  i um  
+E:  They 've got headphones and then I guess they have a computer , and they have a foot pedal which lets them quickly 
+E:  scan back and forth through the tape . I i t i s makes the tape go real fast forward or fast backward . 
+E:  And so they can hear something , then step on the pedal and quickly rewind 
+E:  and go back and hear it again . And so they 're  
+E:  I think they 're probably going over and over f sections . And then they get confused about whether 
+E:  they 've already <mike noise> put that beep , or if they heard , you know , three beeps in a row , was that three or two , and   
+F:  It 's a shame we can't really give a number . So it would be a number and a beep . 
+B:  OK , s 
+F:  e 
+F:  It 's a shame we can't do that . 
+A:  Well , we could .  
+E:  Oh , that 's an interesting idea . 
+A:  We could , but then that starts getting 
+A:  pretty long . 
+E:  No , no , no . But wait , maybe  
+E:  maybe what we have instead of a beep is a , uh , synthesized number . 
+D:  Yep . 
+E:  And they put the number in when they hear it . 
+F:  That 'll work .  
+E:  So , inst replacing the beep with " twenty - three " , 
+E:  " twenty - four " , 
+E:  " twenty - five "   And then they have to transcribe what that number is each time . 
+F:  Wow , that 'd also be shorter to type . 
+E:  Yeah , just a " two three , two four " , that would be  
+A:  Well , they would have to have a mark . 
+E:  There 'd be some kind of mark in front of it . 
+F:  Interesting . 
+B:  Well , cuz they 're s distinguishing between twenty - three  
+B:  that 's your indicator there , and twenty - three that somebody happens to say in a meeting . 
+F:  Oh , that 's true . 
+E:  Well it would have t yeah , it would have to be um , 
+E:  you know either obviously a s sounding synthesized , uh , little  
+D:  Yeah .  
+B:  But they might miss that , right ? 
+F:  Or maybe could it be a click and the number . 
+E:  Yeah . 
+E:  Or a beep and the number . 
+A:  Well , it 's sequential . 
+F:  Or a beep and the number , and then  and then you just do the  the num th you do it as a d a digit . 
+A:  Right , you would go sequential . So unless you got pretty unlucky , 
+E:  Uh , right . 
+D:  Yeah . 
+A:  what the person was saying and the number  
+E:  <inbreath> In fact , we could put it at the beginning of each utterance . We could say " beep 
+E:  one " . 
+E:  And then they 'll hear the speech . 
+B:  I think having a beep too is good . 
+A:  So beep number . Yeah the It 's just getting pretty long . You know , the utterances are very short . 
+E:  Or a number beep  
+D:  Yep . 
+E:  Mm - hmm . 
+A:  And so you 're gonna be talking beep , number , " yes ! " beep , number , " no " .  <laugh> 
+B:  <laugh> 
+D:  <laugh> 
+E:  Mm - hmm . 
+F:  Well , if  if it saves time , yeah . 
+E:  Yeah , and u I think it would  I  Actually , I thi I like that . I think it would  
+A:  <coughs twice> 
+A:  And when they transcribe this meeting it 's gonna be really impossible .  
+D:  Yeah ,  that 's funny . <laugh> 
+E:  <laugh> 
+B:  <laugh> 
+F:  <laugh> 
+B:  W we 're saying " beep " . Yeah   for instance . 
+C:  <breath-laugh> 
+A:  Yeah , yep . 
+E:  Yeah . 
+E:  But see that would  that would definitely keep  
+A:  It 's not a bad idea . 
+E:  Yeah . Keep 
+E:  things from getting out of sequence . If they heard it over again they would know . It would be obvious from their transcript whether they did that one or not . 
+F:  It might actually help them in terms of their place holding . Yeah . 
+A:  That would help get them synchronized . 
+F:  And it might be helpful to them in terms of d act 
+E:  Yeah . 
+A:  I think it would be , because they would know their place . Yeah . 
+E:  And we have plenty of digits data , so . 
+E:  <laugh> 
+A:  They would know their place , darn it !   
+E:  We -  
+F:  <laugh> 
+E:  <laugh> 
+F:  Know   
+F:  <laugh> 
+A:  Those transcriptionists need to know their place . 
+D:  Oh . 
+F:  Well , no no no no . <laugh> 
+B:  But it sounds like a k a  a  a short conversation with Brian might be  might be helpful to get a sense of what 's going on . 
+A:  <laugh> 
+E:  Yeah . I 'll  I 'll  I 'll write him an  
+A:  Yeah , the numbers are a good idea . 
+E:  Yeah . 
+F:  OK . 
+D:  Or just  
+A:  Othe - other than lengthening the transcript , 
+A:  I think it would be very helpful . 
+D:  Just instead of the sequential number , for 
+D:  perhaps just the speaker ID  or something . Just say speaker one  or spea or just one , two , three , four  for four speakers or something .  
+D:  Pppt !  
+F:  <inbreath> I  i 
+D:  Could  could be helpful . 
+A:  Yeah , you don't have to  
+A:  you could keep them short by not s or just go one through ten , one through ten , one through ten , or one through twenty . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yep . 
+F:  And then also , if we  I mean , I don't know what their setup is , but your template idea might be a way of  of 
+A:  Mm - hmm . 
+F:  of  We could actually build the numbers into a template . 
+A:  Yep . 
+F:  Well .  
+E:  I 'll talk to Brian , and see what he  
+A:  Yeah , single digit numbers  
+A:  That also appeals to me . So that you don't have to , you know  
+D:  Yeah . 
+F:  That 's a good idea . 
+F:  Very simple . 
+A:  " One hundred twenty - four " <laugh> 
+F:  <laugh> 
+E:  Yeah . 
+D:  Yeah . <laugh> 
+B:  Well , th although  
+A:  " Beep . One thousand three hundred forty - two " 
+F:  <laugh> 
+D:  <laugh> 
+B:  You 're saying i it 's  it 's about an hour meeting , and there were a hundred and twenty - three  
+A:  Mm - hmm . 
+A:  I don't remember . 
+F:  It 's forty - five minutes . 
+A:  Chuck was saying there was more than that . 
+B:  Hmm ? 
+F:  Forty - five minutes for that one .  
+A:  More beeps than that .  
+E:  I was thinking there was on the order of 
+E:  fifteen hundred segments , but maybe I 'm  
+C:  There must be . Because otherwise , you 're going a whole  
+D:  I think it should be more , yeah . 
+F:  It 's possible . 
+C:  That was 
+C:  at least forty - five minutes , right ? 
+F:  Yeah . That 's right . 
+A:  Was it that many ? I just don't recall . 
+F:  Yeah , it was forty - five minutes . 
+C:  That 's the shortest meeting we have . Most of them are double that , or 
+A:  Yep . 
+B:  Well , I was just wondering what the average length 
+C:  so 
+E:  Oh , of a  of a segment that they 're hearing ? 
+D:  It 's  
+B:  thing was . 
+B:  Yeah . 
+E:  I don't know . 
+D:  <brief vocalized outbreath> <mike noise> 
+F:  Hmm , interesting . 
+B:  Uh - 
+A:  Easy enough to figure out . We have all that data . 
+E:  I don't know . 
+C:  So if there are in the  
+E:  Yeah . 
+C:  in the hundreds and thou or thousands of these  
+C:  It must be in the high hundreds of them , at least . 
+B:  So , right . So i 
+C:  So that 's getting a little cumbersome for them to type , like , 
+D:  Yeah . 
+F:  Well , with just one digit though , 
+C:  five hundred ?  
+F:  I think  
+B:  Well  
+C:  But yeah , if they recycle through  
+E:  Yeah , if we  if we did mod ten , then  
+D:  Yeah . 
+B:  Right , but my point was , you know , if  It 's a big difference to me if there 's a thousand or there 's a hundred . If 
+D:  <laugh> 
+B:  there 's a thousand , then that means 
+B:  that this is only happening three times out of a thousand . 
+B:  Which means , you know , even just splitting it up into a few files would probably take  You know , nearly all the time , there would be no   
+C:  Yeah . 
+B:  W if it 's a hundred , then  you know , that 's not the issue ,  but if it 's a hundred , 
+B:  then , the average length of each one is pretty  pretty long and so having a little thing at the front of it is no big deal . 
+E:  Mm - hmm . 
+B:  So , that 's why I was curious . 
+A:  Yeah , you 're right . It had to have been more than that . I mean , it was a forty - five minute meeting , so  
+C:  Right . 
+A:  And it certainly was not a minute a chunk , it was a few seconds a chunk . 
+C:  That 's what I  
+E:  Mm - hmm . 
+C:  Yeah , so it 'd be a lot of overhead to type . 
+A:  So I 'm just mis - remembering . 
+A:  I 'm just mis - remembering . 
+C:  Oh , I  
+A:  So . 
+F:  Well , and the other thing is , maybe the numbers would help them keep their place in the transcript and speed the process  
+C:  Yeah .  
+A:  It might make the transcript faster  W wel I mean I  A quick conversation with Brian would be good , so . 
+C:  Yeah . 
+F:  Mm - hmm . 
+E:  Yeah . 
+A:  OK . 
+A:  And other than that  
+C:  Actually , if it is  
+C:  u 
+C:  I mean , it 's not a bad 
+C:  idea to try the alignment . 
+C:  Um , if there 's only like three of them , 
+C:  then 
+C:  if you align , the first point at which things get messed up is sort of the location of the first problem . 
+A:  Mm - hmm . 
+C:  And then , the second p I mean , 
+C:  you could do it that way , or you could  
+C:  It 's  it 's  
+C:  it would be 
+C:  able to handle any errors . So if they make , on the average , that many , 
+A:  Right . 
+C:  and it costs them more time to do something different than what they 're doing , which I don't know ,  but if it does , 
+B:  <mike noise> 
+C:  then we could try doing that as a post - process , and , 
+C:  um , have a student or a transcriber run this alignment , or we can do it and  
+A:  Yep . 
+E:  You know actually , what  all that we would  
+C:  then you can iteratively 
+C:  figure out  where the problems are . 
+E:  You know , Liz , all we would re 
+C:  It would take a little work , but not any real human  not a lot of human work . 
+A:  Right . I mean , that 's what we want to avoid . 
+E:  I mean if  in terms of the alignment , actually , all we would need is  we wouldn't even need words . We would need a general speech model and a beep model . 
+B:  <mike noise> 
+E:  Cuz all we 're really concerned about is missing beeps or too many beeps . 
+C:  Well , the for the forced alignment will run fa otherwise it 'll take forever . I mean , 
+E:  So if we had a  
+E:  Mm - hmm . 
+C:  to really run recognition ?  
+E:  Well  l I guess what I 'm thinking of is that w 
+C:  Or  ?  
+E:  that a lot of times 
+E:  there will be  they 'll put in question marks , 
+E:  that represent some unknown amount of speech , so we 're gonna have to have some kind of  
+C:  Right . 
+C:  Yeah , then we just map it to a reject model . 
+C:  In  and in fact , that 's what we do now . Cuz there 's cases , even after Jane listens , where , you know , we have  
+E:  Right , h 
+C:  an expert can't even tell what they 're talking about . 
+E:  Yeah . 
+C:  Um , so that 's OK . Just map that to reject and  
+F:  <laugh> 
+E:  Right . 
+E:  Well , what I was thinking is , map all the speech to the reject model . And then you have a beep model . 
+F:  <breath> 
+B:  Yeah . 
+A:  But that won't work because it 's  
+B:  Yeah , you 're still talking a forced al 
+C:  The forced alignment might not work then ,  although we can try it . 
+C:  Um  
+A:  Well , but , all we 'll get  
+B:  Well , with the beep models , is what 's really  you 'd have really g it would be really good though . So  
+E:  The beep model is  is gonna match , like , really well . 
+C:  Right . 
+B:  so it 's p so it 's really just doing , yeah , a keyword , like a spotting for beep with  
+C:  Right . But it 'll  it 'll grab the next beep , in other words . It 'll be  
+C:  You 'll get back another offset . 
+C:  Um  I mean , I was thinking of  then I  and then I realized " Well , 
+C:  the recognizer will just go along and line up all the beeps , 
+C:  and then there 'll be all the extra beeps at the end  if there were more beeps then you 
+C:  wanted . " 
+A:  Right , you  you need  But you need the text 
+C:  So you need the word  you need the word to c sort of control the relative location . 
+A:  to tell it where it got it wrong . Yeah . 
+E:  No , I 'm not sug I 'm not suggesting that we don't have anything between the beeps . 
+C:  It will tell you  
+C:  Oh . 
+E:  But I  what I 'm saying is , what 's between the beeps we don't really care about . 
+C:  I think you do care about it . 
+A:  Because you have to know which ones match which . 
+C:  Unless you wanna know if they 're  
+C:  Right . Otherwise you just count up the total 
+A:  And we can do that with wordcount .   
+C:  number of beeps . 
+A:  Right ? We already know that  that we 're three short . And so if we just did 
+C:  Yeah . 
+A:  spee uh beep and non - beep all you would get is that you have three mistakes , but you wouldn't tell you which ones were wrong . 
+C:  Right . 
+A:  You need some of the words in there , so that you can say " well , this segment matches this one , this segment matches this one , and this one doesn't match at all , 
+A:  unless we insert a beep " . 
+C:  I mean the only thing I 'm worried about with that approach is that if 
+B:  OK . 
+C:  we need to 
+C:  figure out the beep 
+C:  alignment problem 
+C:  before the transcribers do the corrections here ,  then we 're in trouble . In other words , if the transcripts aren't sort of 
+C:  good enough that the aligner 
+C:  constraints are good enough to sort of 
+C:  show you where the errors are , then 
+C:  it wouldn't work . But it might work . It might work to do this if their transcripts are pretty close 
+C:  on the words that usually get recognized correctly , which are the , 
+C:  you know , function words , the common words . 
+A:  Well , actually , you know , there 's an even easier way . We don't really need a beep model . 
+A:  Um , just extract the segments and do a forced alignment , 
+A:  and if the score is good , then you say it matches  
+C:  Right , you can also  
+C:  In fact that 's what we do  
+C:  Right . The individual segments between the beeps  
+C:  Um , if beeps were like the segments that we get from 
+C:  um , the transcription tool already , that that 's what we have done , and it works very well . You can see these 
+C:  segments align and these don't . 
+C:  Um , then you just have to go back in and figure out where the endpoints of those segments are , cuz some of them will be wrong . 
+C:  Because the bi the beeps were missing , by definition . 
+A:  Right . 
+E:  So do you get a score for each alignment ? Is that what you get ? 
+C:  So it might actually work . 
+C:  Um , you ca you get , um  
+C:  Definitely when they don't align at all , it  it  it fails . 
+C:  I mean , that  that 's how we found a lot of 
+E:  Mm - hmm . 
+C:  problems before , with , um , words being on the wrong place or something . 
+C:  So a failed alignment is a very good indicator that  
+E:  Mm - hmm . 
+C:  that  
+C:  the words don't match up . 
+E:  I 'm just wondering when  wha what it means to fail . 
+C:  Um  
+E:  Is it the  the likelihood scores below some threshold  
+C:  Yeah , is , uh  it  Right . 
+C:  It can't match up the  
+C:  That 's why you actually need the text . In order to force you to try to match something that gives you a model to match against . 
+C:  So  It 's just an idea , if  
+C:  if it turns out that  
+C:  I mean , I also like this idea of high and low beeps , or  
+C:  But it  if  
+C:  Suppose we get one or two errors , still , per  
+C:  you know , per transcript , then we z 
+C:  we might wanna try some approach like that . 
+A:  Well , the numbered ones would make it a lot easier , cuz you could then really localize where the error is . 
+F:  Mm - hmm . 
+F:  Yeah . 
+C:  Where it is .  
+C:  Right . 
+C:  If  so , if that doesn't add time for them , that 'd be great . You know , like  
+F:  Yeah . 
+A:  Yep . 
+F:  I think it would save them time . I think it would help them keep the track  track of it . 
+C:  We have to ask them . 
+B:  Uh  uh , again , especially if there 's hundred  many hundreds or thousands I still think it would  it would cut the incidence of this a lot if it was possible to break it into a couple files . 
+D:  <breath-laugh> 
+F:  Interesting , yeah . 
+B:  Yeah . Cuz it , you know , it 's r r 
+C:  I guess also even for the transcribers , 
+C:  it 's quicker to load a smaller file   
+C:  into the  You know , t for the checking problem .  
+A:  Yeah , I mean , we could certainly break the meetings  
+A:  We could certainly break the meetings into pi pieces .  
+C:  Into 
+C:  twenty minutes chunks or something , or  
+A:  So , just  
+B:  I mean , you 've already broken them into chunks , so if you have  if you have a th if you have a thousand chunks then 
+E:  Just  
+E:  Just accumulate it till you get twenty minutes worth ?  
+B:  make  ten things of a hundred , or  or you know . 
+E:  There 's one file . 
+A:  That 's true , yeah . 
+D:  Yep . 
+B:  And then it will be , you know , this  Eve - every now and then there 'll be a  a beep missing . 
+E:  <inbreath> 
+F:  So , someone 's gonna talk to Brian . 
+E:  Yeah , I 'll  
+A:  I think that was Chuck . 
+E:  I 'll talk to him . 
+F:  OK . 
+A:  Yep . 
+F:  I also looked thr over the text and I was impressed by the accuracy , it looks really good . 
+A:  Yeah , it does look good . I mean , I found several errors , but they were not 
+A:  significant . 
+A:  They were all things that I could easily listen to and 
+A:  sometimes convince myself they said one thing and sometimes the other , so . 
+F:  Yeah , it 's there . Mm - hmm . 
+C:  I haven't looked at these , um  
+C:  cuz I was gone last week , but  
+C:  but Don had told me that there 's a difference in some of the conventions ? 
+F:  Oh . Yes . But this is not important . It 's systematic , yeah .  
+C:  So  but those are all easy things , right ? 
+C:  Yeah . 
+C:  OK . 
+F:  And  and Brian actually forwarded me in advance . He  he wor he very nicely worked out 
+F:  a set of conventions which is intermediate between ours and the ones that they 're used to . Which is  which is really a good  a good way to do it . 
+C:  OK . 
+C:  So we can just map  
+C:  map them to  
+F:  No problem . 
+C:  Great . 
+C:  Hmm . 
+
+
+
+
+A:  OK . 
+A:  Um  
+A:  We still haven't really sat down and talked about file reorganization ,  and directory reorganization . So we still have to do that . 
+A:  But I don't think we need to do that in this meeting . 
+A:  But , uh  
+A:  It is something that needs to get done , and I wanna also coordinate it with Dave so that we do a level zero backup right after . 
+A:  So we don't waste a lot of tapes . 
+A:  But , uh  
+A:  So  let 's  let 's try to do that sometime , OK ? <laugh> ch OK ? 
+F:  Yeah . We can do it this week . 
+F:  Yeah . 
+A:  Um  
+
+
+A:  We also still  have to make a decision about mike issues , what we wanna do with that . 
+F:  I thought we were going to get two more of the 
+F:  ones  
+A:  And just swap them in and out ? 
+A:  Yeah , we could certainly do that . 
+D:  So why not ? 
+A:  So  
+A:  uh , Morgan , just to  
+A:  uh , since you weren't at the meeting last week , uh , apparently a bunch of the EDU fe folks really hate this style mike . 
+C:  Um , I wouldn't  well , it  
+C:  they didn't say " hate " but they  
+D:  <laugh> 
+E:  <laugh> 
+C:  they c they come on time to their meetings in order to not be left the last person who has to sit by those 
+F:  Can I  I c I  
+A:  I mean , that 's  that 's  that 's a fairly strong indication of dislike . 
+C:  mikes . 
+C:  <laugh> 
+F:  I actually really like them though .  
+A:  Um  
+B:  Which one is these ? The uh  
+C:  There were a few people  you , and like , three or four people who really like them . 
+A:  The Crown . 
+B:  Uh - huh . 
+F:  Yeah , I do . 
+C:  And e and th all the others 
+C:  really don't . 
+A:  So what I was thinking is , we could get a few more of the Sony ones and just unplug them and plug them in . And the only thing is that 
+B:  <long breath> 
+A:  when you fill out the digit forms , you have to be sure to indicate which mike was actually used . 
+A:  So , I mean , that 's easy to do . Um  
+A:  it  it  
+A:  moves us away from this uniform , all the mikes are the same , which some people had said was a benefit . 
+A:  But  
+F:  The other thing , too , is th y you said that the acoustic pra q quality of the one that you 're wearing , the fancy one , is actually somewhat better than 
+A:  It is . 
+A:  Yeah . 
+F:  So I I don't know if it 's a noticeable difference , but it is  
+F:  I mean , I p I personally really prefer that model , so I think you know we 've got this problem of people having different  
+F:  different preferences . 
+B:  You know , there are so many things about this that are non - uniform that I think having  
+B:  having some modicum of uniformity is a good thing , but you 're just not going to  I mean we 've  
+F:  OK . 
+B:  uh  
+B:  For instance , jus just the fact that people sit in different positions , different times , the  exactly where they put it with respect to their mouth is different each time . 
+A:  Yep . 
+D:  <sudden expulsive outbreath> 
+B:  Uh  
+B:  I  I just don't  I mean , I think we  we 're  we 're getting rid of major differences like we 're not using the lapel anymore , an and so forth . But 
+F:  Mm - hmm . 
+B:  the other stuff is just gonna  some variability we 're gonna have to accept . 
+F:  <inbreath> 
+F:  It 's  I  I understand , that 's fine with me . I  I g would say that um , I find this model easier to adjust , that 's one of the reasons I don't like these , cuz I keep m 
+A:  <inbreath>  
+B:  Uh - huh . 
+F:  you know , bending it , and then it 's n and I never really know  
+B:  Yeah , see I  I happen to like the old one better . 
+B:  But  
+F:  You do ? OK . 
+B:  Yeah . 
+C:  What about just a different headband thing ? 
+B:  And some people do , but  
+C:  Or even if we could attach two headband  Like , I don't mind those , but it  
+A:  I mean  
+A:  th 
+A:  We abs th 
+A:  We have lots o of choices of microphones . So  
+C:  they bounce around . 
+A:  Mm - hmm . 
+C:  I mean , can we keep the microphones , and just 
+C:  somehow attach a more comfortable  
+C:  thing over your head ? 
+A:  Mmm . 
+A:  Yeah . 
+C:  That 's my problem with this one . The  
+C:  the ear thing comes out to here . It doesn't even fit over my ear . 
+E:  <breath-laugh> 
+A:  Right . 
+C:  And for some of the others , it 's  their ears were shaped in a way that 
+F:  Hmm . 
+C:  didn't hold the  
+A:  Right . 
+F:  @ @ Huh . 
+A:  I mean , so we can go microphone shopping , and get  get more microphones . It 's just  w <laugh> 
+B:  <inbreath>  
+F:  Then they have to be rewired though , don't they ? 
+B:  <outbreath> 
+A:  I 'm just not sure what we should do . 
+D:  Yeah . 
+B:  <inbreath> You know . I mean , here 's another argument against worrying too much about uniformity . We have something like forty - five hours of data collected . 
+F:  Specially . 
+B:  And , uh , we 're also gonna be integrating in this corpus stuff that 's  that 's being done at UW , 
+A:  Yep . 
+B:  uh , with entirely different microphones . So I  I think , 
+B:  you know , 
+B:  getting away from the lapel , 
+B:  having close - mounted mikes , having people adjust them as they 're most  as  as  as comfortable as they can  
+A:  <inbreath> Well , I  
+B:  I think that 's sort of the big deal . 
+A:  I agree with that , and so my feeling is , 
+A:  we should get mikes that people like . 
+B:  Yeah . 
+F:  Yeah . 
+A:  And so I my feeling is , going out and buying a few more mikes is fine . 
+B:  Yeah . 
+D:  Yeah , that 's right . 
+A:  So should I just go do that ? 
+B:  Yeah . 
+A:  OK . 
+C:  What about these  
+A:  And then also , should we go ahead and get another wireless system ? 
+A:  You know , for whatever it 's gonna be , uh  
+F:  Mm - hmm . 
+B:  Uh , another wireless system .  
+B:  You mean , another transmitter ? Or  or  
+A:  Uh , no , actually , get  we need another box . Because each  each box in the back room can only take six . 
+B:  Oh , to get r to get rid of the wired things . Yes , absolutely . 
+A:  So we could 
+A:  Yep . 
+A:  OK . 
+B:  Yeah . 
+B:  Uh , because  cuz we 've had  With the exception of forgetting to change the batteries from time to time , uh , we 've really had no tr no trouble with this at all , right ? And  
+A:  So I 'll just go d I 'll do that . 
+A:  Yep . 
+B:  and the wired stuff is just gonna continue to degrade as , you know , and 
+C:  <laugh-breath> 
+B:  nobody will remember how to  
+C:  Another one just bit the dust . <laugh> 
+B:  yeah , nobody will remember how to repair a Jimbox or a Jimlet or a  you know , it 's  
+E:  Really ? 
+C:  I think there 's a problem with this one . 
+A:  Yep . 
+A:  OK . Then I will just go do that , and send the bill to  
+B:  Yeah . 
+A:  uh , what 's - her - name . 
+B:  Whoever will pay , yeah . 
+A:  Whoever will pay . You . <laugh> 
+B:  Yeah , yeah . <laugh> 
+E:  <laugh-breath> 
+C:  I have a quick question about microphones , um  
+C:  I got  
+C:  this crazy idea that , um , i 
+C:  in the future , people 
+C:  will just walk around with 
+C:  the microphones that they use for their cell phones ? 
+C:  You know , these little boom ones , 
+C:  like , and really go to meetings with close talking mikes . If they 're their own personal microphone . 
+F:  <mike noise>  
+C:  And so I 'm wondering if 
+C:  we can get a couple of tho I don't know how good quality they are , but it would be really interesting to see if they 're good enough . 
+B:  Do you mean the kind that hang from the ear , sort of thing , or the  
+C:  The k kind that guys that like to look like they 're really cool at airports wear . 
+D:  Yeah . 
+A:  Yeah . <laugh> 
+B:  Yeah , but I don't know that one . So what 's that mean ? <laugh> 
+F:  <mike noise>  
+A:  This  it 's  it 's a cell phone jack . 
+E:  <laugh> Oh , yeah , you do . <laugh> 
+D:  <laugh> 
+C:  You can't miss it . <laugh> 
+C:  You cannot miss it . They 're the guys going around  they 're probably talking to nobody , but 
+B:  Is this  just this little  
+B:  Oh they  they have little headsets ? Or what do they  
+D:  Yep . 
+A:  Th - d 
+C:  Yes . They wear the heads 
+A:  Yep . 
+F:   
+C:  E Well , there you go . Yes . That 's  that  it looks sort of like that . 
+B:  Oh you 've  you 've got one . 
+A:  Except that one 's even bigger than most of the ones I 've seen . Most of the ones are just a little boom . 
+B:  So where  where does  how do you wear that ? What does that  
+F:  You  you put it over the corner of your ear .  
+B:  Yeah , over the corner of the ear  
+F:  I can't  I 'm having competing microphone  headphone problems here . <laugh> 
+D:  <laugh> 
+E:  There 's another kind which s goes in your ear and it hangs down . There 's a little b   bulb 
+B:  Huh . 
+F:  <mike noise> 
+D:  Yep . It just ha just hangs down there . Yeah . 
+B:  Yeah , that I 've seen . Yeah . 
+E:  that hangs  has the mike on it . 
+C:  OK , so whatever people sort of 
+F:  This one . 
+A:  Mm - hmm . 
+C:  wear to use l Yeah , something like tha with their cell phones , 
+B:  Yeah . 
+C:  it 'd be really great , I think , if we can argue t that  
+F:  It 's an interesting idea . 
+C:  people like that . 
+F:  The acoustics  
+F:  the acoustics on this are really s m better than when I talk into it directly . 
+A:  Yeah . The  the biggest issue is the stupid cable 
+B:  But  what  
+C:  Are they ? 
+B:  Why would it be cool ? 
+A:  that Sony  
+A:  The connector that Sony has , that , uh  
+C:  Oh , OK . 
+C:  So it 's  they 're not compatible ? 
+A:  It 's non - standard , 
+A:  and so you can't just plug something in . You need to get it wired . 
+B:  Oh , I 'm sorry . You 're talking about that as a possible thing to plug into the Sonys . No ? 
+C:  Well , 
+C:  um , just as an example for , 
+A:  Right . 
+E:  How standard are these ? 
+F:  Works with this . I don't know . 
+C:  you know , the future , of the fact that maybe people will wear those microphones , or some people might ,  
+B:  Well , some people will , yeah . 
+C:  to meetings , you know . 
+C:  Not a  I 'm not saying there 's not a far - field microphone , 
+D:  <laugh> 
+C:  uh , application , but  
+C:  If we have a choi I 've always wondered how well they would work . 
+E:  It is an interesting idea . If we could build an adaptor that went from  cuz I think mine looks like this too . If we had this style plug that went to that , 
+A:  Right . 
+E:  then we 'd just have adaptors and people would plug them in . 
+E:  You could use  they could use their own . <mike noise> 
+C:  Oh , right . So they could use the  
+A:  I wonder if you could do an adaptor . I don't know if you can or not . 
+C:  Anyway , it 's just an idea . Um  
+B:  Yeah . 
+A:  An adaptor might be a better idea than do redoing the wiring all the time . 
+C:  Mmm . 
+B:  Well , I mean , another s 
+B:  An - another side to that is that , um , in principle , uh , if it 
+B:  all comes together , supposedly we 're gonna get two 
+B:  um , IRAM boards . 
+A:  Right . <laugh> 
+B:  Uh , little later on in the year . 
+B:  And so , we 're gonna wanna be thinking in terms of some 
+B:  wireless connection 
+A:  Mm - hmm . 
+B:  to it . 
+B:  Um , 
+B:  so we have , you know , some kind of little something , 
+B:  and , uh , we have a wireless connection , this board , that 's doing the computation for the f the , uh  
+B:  the recognition . 
+B:  And so , you know , we wanna be able to show off to somebody , 
+B:  you know , we have a base station somewhere , and 
+B:  you 're wandering around , uh , 
+B:  hands free , and  
+A:  Yep . 
+E:  I don't understand . So  so there 's a mike that plugs in  
+E:  You 're saying there 's a mike that plugs in to the IRAM board ? or  
+B:  No , no , what I 'm saying is that we 're gonna have to put together some kind of a 
+A:  Demo . 
+B:  little superstructure , d some sort of demo box that it  that doesn't 
+B:  do a whole lot , but it somehow connects to  
+B:  uh , remotely to this IRAM board which will be doing the real computation . 
+E:  Oh , I see . 
+B:  In other words , we 're  we 're not gonna attempt to build , uh , it  
+B:  do the real work of building a portable device that 's little , that 
+B:  is doing all the computation we wanna do for the recognition and the far - field mike , uh , 
+B:  compensation and all that stuff . So we 're gonna do all that on this powerful board , 
+B:  and , uh , have some wireless connection to it . And then the question is what is  
+B:  what does it look like , does it look like 
+B:  something that you  you 
+B:  hold like this , or do we make a big deal out of it that you hold it arm  at arm 's length th so that you can see some display , 
+B:  or , uh , 
+B:  do we have one of these  You know . I don't know . 
+B:  So , it th these are all possibilities . 
+A:  Yep . 
+A:  I mean , what I was envisioning was a PDA with a cellular link in it . 
+A:  You know , with one of the r 
+A:  short - range wireless . 
+A:  And let th 
+A:  Just do  capture the audio on the PDA and send the audio over the 
+A:  wireless net . 
+B:  Yeah . So , is is Bluetooth the sort of thing that 'd be , uh  
+A:  But . 
+A:  Uh , Bluetooth is shorter range , but you could use Bluetooth . 
+A:  Wh - whatever the network guys already have hooked up for this floor . I don't remember what it 's called . 
+
+
+B:  Hmm . 
+A:  OK , then uh , 
+A:  another issue on file reorganization is , uh , 
+A:  making data available to people outside ICSI . 
+A:  So , specifically , the U W folks have been 
+A:  wanting to get access to it . So I think the right thing to do for that , is figure out how to do CVS without 
+A:  uh , compromising security . Some pass SSH tunneled 
+A:  CVS , 
+E:  Well , I I was  
+A:  and then give them access . 
+E:  I was reading through some of the CVS documentation and you can just substitute CVS for your R S H command . 
+A:  <inbreath> 
+A:  Yes , except that the command has to not take a password . 
+E:  Hmm . 
+A:  Because it it 's non - interactive . And so the only way to do that is with , uh  
+A:  S - hosts , which is insecure . 
+E:  Hmm . 
+A:  So we still have to sort of look at it a little bit . I mean , I 'm sure it 's been solved , and I just haven't found the solution yet . 
+A:  But I am sure that people have done it because it 's gonna be a problem a lot of people have . 
+A:  But , um  
+B:  Who  Well , we 're s talking about a fairly limited group , are  are  is it a small enough group that they would  could just have accounts ? Does that solve anything ? 
+A:  Uh , n n 
+A:  not really , because then we have the coordination issue . 
+A:  I mean , so one thing they could do  I mean , I guess that 's true .  They could simply log in to ICSI 
+B:  Yeah . 
+E:  Well they 're gonna have to have accounts  
+A:  and do everything locally . 
+E:  If they use SSH they have to have an account anyways . 
+A:  Yeah , except they could share one . 
+B:  Well , but that 's not  
+A:  The , uh  
+A:  the SSH accounts , and the 
+A:  user accounts don't have to be similar . 
+A:  So . 
+A:  I mean , there are lots of ways of doing it , but w but 
+A:  if we can't figure out a remote way of doing it , just letting them log in to ICSI 
+A:  might be OK . 
+C:  Mm - hmm . 
+A:  <inbreath> So the intention was to put everything except the audio files themselves under revision control . 
+A:  And the audio files , it 's not worth doing cuz they 're too big . You 're never gonna be copying them around 
+A:  and making working copies of them . 
+D:  <breath-laugh> 
+B:  Right . 
+A:  And then the other issue Jane and I spoke of  briefly is just general permission issues . 
+A:  That right now , lots of people create the files and then we have group " Meeting Recorder " . 
+A:  But that means anyone in the Meeting Recorder group can overwrite the files . 
+A:  And so that 's a pretty coarse level of  granularity . So we might wanna think about doing a Meeting Recorder user  owner 
+A:  for those files , and then doing group slightly differently . But  
+C:  Can you just do , like , SUX or something to modify  
+A:  I think what we have now  
+C:  I mean , if you just have one user that  
+A:  <inbreath> 
+A:  Another option is to m 
+A:  make a non 
+A:  make it owned by a not real user , and then root will be able to do it . 
+A:  But root is pretty tightly controlled here . 
+F:  I had another thought .  
+C:  Mm - hmm . 
+A:  So th I don't think that 's a good solution . 
+F:  Would  w would it be possi There are scripts that uh , run , 
+F:  and  and when it 's finished compressing , would it be possible for the script to change the permissions on the file to be more strict ? 
+F:  Have them  
+A:  Yes , but if you do that , then someone who isn't the owner can't 
+A:  unchange it . 
+F:  But after the meeting 's done , would they want to ? 
+A:  Yeah , as I said , it 's just a question of , 
+A:  uh , do you wanna have to track down root 
+A:  if you have to make any change . 
+C:  But it doesn't have to be root . It could be some other user that we all can SUX to . 
+F:  That 's true . 
+A:  You have security issues with that . 
+A:  So . 
+F:  Yeah , that 's true . 
+C:  I mean  
+E:  That 's what we do with doctor - speech though , right ? 
+A:  No , with doctor - speech , it 's just a group . 
+A:  So  there 're lots of different owners of i i of the files , but the group is always doctor - speech . 
+A:  Or real , usually . 
+E:  But there is a user doctor - speech . 
+E:  Right ? 
+E:  I mean , I  I SUX to doctor - speech w when I need to make a  
+A:  Nnn - 
+A:  Oh , do you ? 
+C:  Oh . So tha 
+C:  that 's what I meant , it  just some 
+E:  a directory on , uh , one of the  
+C:  user like " meeting - root " or something . 
+C:  <breath-laugh> 
+A:  Oh , OK . 
+C:  I don't know . 
+A:  I mean , I 'm not too worried , because the group 's pretty small . 
+A:  But  
+B:  Yeah . 
+F:  Also it seems like once it 's been stored that night , it 's  it 's possible to recover from backups , 
+F:  so that the main risk is avoiding it being accidentally deleted during the day that it was recorded . 
+A:  Well , and just  You , then , also just have the general problem of permission on the other files , 
+A:  that , do you want people checking out a transcript file 
+B:  <cough> <sniff> 
+A:  when they find an error , 
+A:  and correcting it , or do they wa do you want it to go through you ? 
+F:  Yeah . 
+F:  Yeah . 
+F:  And I 'd prefer it to go through me . 
+A:  OK , but that means that you 're gonna have to be available for people , all the time , who say " there 's an error here " , 
+A:  rather than just  them just going in and correcting it . 
+F:  <inbreath> 
+F:  Well I p At this point   Yeah .  
+E:  Well , with CVS , though , you don't actually have to do it that way . 
+C:  Yeah . 
+A:  Well , but  
+F:  <inbreath>  
+A:  You have a choice . Either you let people do it themselves , or you don't . <laugh> 
+F:  Yeah . 
+F:  <inbreath> 
+E:  What I 'm saying is that it can be the case that people can do it themselves and it can be reviewed . 
+F:  w w 
+F:  Well -  
+E:  Right ? 
+A:  Right . 
+E:  I mean , it 's not like it 's one or the other . We can do both . 
+C:  Yeah , you can  
+A:  Right , so you could get email . 
+A:  Send email to Jane that someone has done a 
+E:  Right . 
+F:  <inbreath> 
+F:  I  I wanna also say that , you know , this is a  
+A:  revision .  
+F:  uh , uh , My  my view on this is that once it 's in a final version and I 'm working toward all these being final versions , 
+C:  <mike noise> 
+F:  then 
+F:  it can go into this next ro this next realm . But it  it 's sort of counter - productive to have 
+F:  changes made which I would be making if I 'd just gotten that far in the file . You know , it 's  it 's , um . 
+A:  Well , so , you don't have to release it 
+A:  to the world until you 're ready to . 
+F:  Yeah . 
+F:  That 's right . 
+A:  So the question is s w 
+F:  And then after that , then this would probably work . 
+F:  Yeah . 
+A:  So you would keep it in a separate file structure until you were ready to put it in the repository . 
+F:  Good , good . 
+C:  <mike noise> I mean  
+A:  Or just keep the lock on it . 
+C:  Is CVS , like  Yeah , just keep the lock on . 
+C:  I mean , just check it out  check it out and don't let anyone check it out  
+A:  Until you 're  Yep . 
+E:  No , it does not  the CVS doesn't work that way .  
+C:  Oh , it  
+C:  Oh , it doesn't . Oh , OK . 
+E:  There 's no  there 's no lock when you check something out , not like RCS . 
+E:  In other words , everybody can check out anything . 
+C:  Oh . 
+E:  The C stands for " concurrent " .  
+C:  So why not use RCS at that point ? Just at that stage ? 
+A:  Cuz it 's not remote . 
+C:  It 's not remote . 
+A:  The nice thing about CVS is  is , you can be on a different machine . 
+C:  But at that point  
+C:  we only want , probably , Jane to be in control anyway , and she  I mean , it 's just an i 
+A:  No , because UW 
+A:  wants to have access to these files . That 's the whole point . 
+C:  But not to modify them , right ? Just to read them . 
+A:  Well , if they k en if they record a meeting , and they create a " key " file , and they find an error in their " key " file , 
+A:  they shouldn't have to tell us about that 
+A:  so that they can create  
+A:  correct an error in one of their files . 
+F:  <mouth> <inbreath> 
+C:  <mike noise> 
+F:  Well , the " key " file is  
+A:  So that 's why I wanna do it  
+C:  I don't know , uh  I mean  
+F:  ke " key " file 's different . 
+A:  <outbreath> 
+F:  " Key " fi 
+A:  Different than what ? 
+F:  Well , " key " file has the extra attributes that if you notice that there are lots of spikes on channel so - and - so , it 's useful as a repository for putting that there . 
+F:  And also if you notice that  there was an extra speaker , and didn't get mentioned in the " key " file , but they were only there for a second , but it 's t useful to mention that they were there . 
+F:  So I th I think that the " key " file is usefu for notations related to the meeting , 
+A:  Well  
+A:  B 
+A:  But , I mean , the meetings are gonna be the same way . So UW records a meeting , we transcribe it . 
+F:  but it 's different from the transcript .  
+F:  Yeah . 
+A:  A few months later they listen to it and they say " Ope !  They got that acronym wrong . " 
+F:  Yeah . 
+C:  Then they should send that through  Well  
+A:  Why  why sh 
+C:  It 's sort of not really a question about permissions , but more of procedure . Either those all go through Jane , or through someone , 
+A:  Mm - hmm . 
+C:  or they all don't . But it 's sort of  
+C:  And if they all do , then there isn't a problem , right ? Cuz once they give us the data , it 's 
+C:  ours , and if they wanna make changes  I mean , ours to sort of 
+C:  transcribe and annotate . 
+A:  The  the p the point here is that it would be nice t for there to be one repository . 
+C:  And if they wanna make changes , they can  do that . 
+B:  Yeah  
+F:  Yeah . 
+A:  And if we don't let them modify their own data ,  
+A:  they 're not gonna store their data in our repository . 
+A:  Or if we make it inconvenient for them to change their data . 
+C:  So then if they do have acc 
+A:  I  I 'm just looking at it the other way around . 
+C:  OK , so what if they have  
+C:  What if they have accounts here , 
+A:  So  so let 's say we k 
+C:  and they use RCS , 
+C:  at that point , where you can l really lock a file . 
+C:  I mean , I 'm worried . If you can't lock a file , this  this to me sounds very scary . 
+F:  Hmm . 
+C:  Um  
+C:  And if they have accounts here and they 're modifying it  If they 're ac 
+C:  if they 're so closely linked that they 're actually 
+C:  modifying transcripts and " key " files , 
+C:  then they could do it 
+C:  by , you know , secure - shelling into ICSI , 
+C:  under RCS , at that point . 
+A:  Ye - well , I don't see a real difference between RCS and any other system . 
+A:  I mean , it 's just mechanisms . The nice thing about CVS is that 
+A:  you can have multiple people modifying and if the changes don't overlap each other , 
+A:  they can just do it . 
+F:  Hmm . 
+F:  That 's interesting . 
+A:  So the problem with RCS is that if two people 
+D:  Yeah . 
+A:  want to modify a file at the same time they can't , 
+A:  because the granularity of locking is at the file level . 
+B:  What - what does CVS do if they  if they do overlap ? 
+A:  Uh , there 're lots of different policies for dealing with it . So  
+D:  <laugh> 
+C:  Mm - hmm . 
+E:  But typically a person has to , 
+D:  Yeah . 
+E:  uh , mediate 
+F:  Oh . 
+E:  you know , which changes actually get  go through . 
+D:  Yeah , to decide which one is  Yeah . 
+F:  Oh . 
+F:  <inbreath>  
+B:  Oh , I 
+C:  So , maybe there is a way in CVS to effectively  
+C:  lock something if you don't want people to make any changes ? 
+A:  At the repository level , there certainly is . You can mark a file as  as " you can't check this out " . 
+C:  Uh - huh . 
+C:  Oh . So  
+E:  CVS is pretty good . 
+C:  So then you could use CVS 
+C:  and , you know , just f have remote access , but then it 's up to whoever 
+B:  OK .  
+A:  Yep . 
+C:  is , sort of , responsible for that level of transcription to decide 
+C:  how and when to put these locks , or  
+A:  Well , it 's  it 's just like source code , right ? 
+A:  So that , when you 're developing it and it 's really rough , you don't put it in the repository . 
+A:  You wait to the point when you 're ready to release it , and then you put it in the repository and if other people wanna  
+C:  Yeah . 
+C:  <mike noise> 
+E:  Yeah , so the w 
+F:  Mm - hmm . 
+E:  In - 
+E:  The  Maybe the model  It 's a little bit different in CVS . When you check something out , you actually create your own directory with copies of everything in it , and that 's what you work on . 
+A:  Copy .  
+E:  So , until you 're ready to check it in , 
+E:  nobody sees anything you 've done . And then when you check it in , it puts , sort of , you know  every change that you 've done is  goes into the central  
+C:  Right . 
+C:  So if that 's at an 
+B:  Hmm . 
+C:  I guess it depends on Jane 's  Uh , you know , if that 's  if that model works for the transcripts , then 
+C:  that 's fine . But if that pr 
+C:  @ @ 
+C:  um , allows 
+C:  someone to come in and modify while you 're modifying , and they turn out to be changes that , 
+C:  you know , would have been better to wait until your version came out , then 
+F:  <inbreath>  
+C:  that 's really up to you , not up to the software , so . 
+F:  Well , 
+F:  I also think , um , that the type of change ch ch varies an I think it 's a very good point . Because what if 
+F:  the  uh , what if one set of changes one person was making was 
+F:  with reference to some typographical convention . 
+A:  Mm - hmm . 
+F:  And the other person n unkn n 
+F:  quite unknowingly , was changing it the other way around . <laugh> 
+F:  Then you could end up with a real mess , in terms of , like , consistency of conventions across a file , there is an argument to be made for having a single editor editing at that level . 
+F:  But I like b I like what Liz is saying about  
+E:  Well yeah , there would  there would have to be somebody to enforce the consistency . Yeah . 
+F:  That 's right . And I also like  I l also like Liz 's uh , k um , 
+F:  phraseology of " at this level of "  I don't remember how you put it ,  but this  " at this level of transcription " or whatever . I mean it 's like there are different layers of whatever and different types of conventions , 
+F:  and if it were an acronym , then I would  I think that it would make sense f for them to 
+F:  have input into that level of things , but I wouldn't want them to be changing  
+A:  I 'm just  
+A:  Imagine that we reverse this and they were keeping the repository and we were d collecting meetings and sending them to them . 
+F:  Yeah . 
+F:  Mm - hmm . 
+A:  If I found an error , 
+A:  and I sent them email and said " here 's this error " , and I didn't get a response for a couple weeks , 
+A:  I would stop sending them the  my data and I would start collecting it here and we would end up with two corpora . 
+F:  Well , yeah . 
+A:  And I don't want that to happen . So we have to make it convenient for them to make changes that they wanna make . 
+F:  I agree . 
+F:  Well  <laugh> 
+F:  <inbreath>  
+F:  Well , I see now , we 're k back into the same situation as when we were , 
+F:  uh , talking about a allowing people to edit 
+F:  the transcripts before they  become public . 
+F:  So there 's a question of how easy or how hard to modify , and how that 
+A:  Mm - hmm . 
+F:  impacts the amount of changing that 's done . 
+F:  And I  I think that it 's , um , 
+F:  I  I have received some suggestions for change , which I 've made . 
+F:  And um , I think with an acronym , that 's a clear case where it would be an easy change to incorporate . 
+F:  But it would worry me to have people , um , 
+F:  having free reign to change these things , because of the need to have consistent conventions . And  people who 
+F:  are only just visiting the data might not have a sense of the larger system . 
+C:  Yeah , that 's what I would be worried about too . 
+E:  Well , I think  yeah , I think there are probably ways that you can say that , you know , only certain users are allowed to change 
+F:  Yeah . 
+E:  things . 
+F:  Mm - hmm . 
+E:  Uh , so we can probably restrict it to be  
+E:  You know , f casual users who are just browsing can just r get it read - only , can't check in to the archive . 
+F:  Mm - hmm . 
+E:  Whereas we could say " other people " , you know , " these people are allowed to actually submit changes " . 
+C:  Right . 
+E:  I mean , 
+E:  I  I think one thing that 's probably everybody would agree on is that 
+E:  there will never be a point where 
+E:  you know , we can say that for sure there 's no problems with any of the transcripts . I mean there 's , 
+E:  uh  f You know , something 's going to get overlooked at some point , or somebody 's gonna wanna make a change somehow . So we need to 
+E:  have some mechanism for , 
+E:  um , handling changes in the future . 
+F:  I agr I agree but I have to also add one other thing which i before I forget it ,  which is 
+F:  Adam 's point about when you were reviewing the IBM transcripts . 
+F:  u This was mentioned at the beginning of the meeting .  
+F:  You said that there were some places where  it wasn't what y was written already , but you could see how they might have thought that 's what it said . 
+F:  So there  it 's not just a right and wrong thing . Sometimes there tru there are absolutely stretches where there is no  no  k if you were at the meeting and you could ask the person , 
+E:  Yeah . Exactly . 
+E:  Mm - hmm . 
+F:  maybe , m you know , they could  they could 've told you , but five minutes later they might not have been able to tell you , 
+E:  Right . 
+F:  even if they were listening to it . 
+F:  So , sometimes it isn't right and wrong , sometimes it 's multiple interpretations , and  
+E:  Yeah . 
+E:  Good point . Yeah . 
+F:  Now  But of course , this does raise the possibility of allowing , 
+F:  um , an extra annotation for , you know , alternative interpretations of a stretch . 
+E:  Mm - hmm . 
+F:  But I just wanted to say it isn't simply right or wrong . 
+E:  Yeah , that 's a good point . 
+F:  Or overlooked or not overlooked . 
+F:  Sometimes they 're truly ambiguous , and 
+E:  Mm - hmm . 
+F:  um , uh , um , nice to have a notation for that , but . Yeah . 
+B:  Gotta go .   
+E:  Yeah . 
+C:  I mean , I like that idea because even a casual user can always send email 
+E:  Mm - hmm . 
+C:  to whoever 's in charge , and say , 
+C:  you know , " we 'd like these changes " and , 
+A:  Well  
+C:  you know , hopefully we 'll give them a response . And if they really do it a lot , and they say 
+A:  I just  I don't s 
+A:  I don't see that this is e 
+A:  Yep . 
+C:  " we 're a casual user but we want a chance to change the transcripts " then we can 
+C:  face that if it happens , but 
+A:  Can you write " unread " on that ?  
+A:  Yeah , thank you . 
+C:  I don't really see the people at UW that I know of right now making huge amoun investing huge amounts of time in changing transcripts . But I could be wrong . 
+A:  Probably not transcripts , but it would be nice to have one mechanism for all the files . 
+A:  And they 're certainly gonna wanna change tools . 
+C:  Yeah . 
+A:  And so  you know , it 's the same as source code . You  you release source code at some point . 
+A:  And , either you have to do everything or you share responsibility . <laugh> 
+E:  Yeah I mean a lot of the open source pro 
+E:  projects face this same problem . 
+C:  Right . 
+E:  You know , p anybody can check out the code , 
+E:  but not everybody can check it in . Yeah . 
+C:  Right . And there 's some happy medium and we don't know what that is yet 
+C:  until we get feedback from people , but 
+C:  what if it 's OK to just handle it 
+C:  with 
+C:  sort of a person in charge of the philosophy behind the changes , 
+C:  and some people with permissions , 
+C:  maybe by request , to make changes , That we don't just give people permissions if they 're not gonna make changes . Because I 've overwritten a  
+C:  a file by mistake , not wanting to have done that cuz I didn't think I had permission , when I did . 
+A:  Mm - hmm . 
+C:  Um , and then just 
+F:  Mm - hmm . 
+C:  seeing if that is enough to  
+C:  to handle the transcript changes . 
+C:  I 'm just worried about 
+C:  letting everybody go in and make changes , cuz it 's real easy when you 're 
+C:  trying to , I don't know , run alignments and there 's a word you wanna fix , to go in and do that and then mess up other things , 
+C:  if you don't know , 
+C:  you know , the overall philosophy behind the  the conventions . 
+F:  Mm - hmm . 
+A:  Right . 
+F:  <inbreath> And als it also  Mm - hmm . 
+E:  Then  There is also the possibility  Remember , in CVS , when we talk about making changes , 
+A:  You can back everything out .  
+E:  there 's sort of two types that can be made .  To your local , 
+E:  or to the global . 
+C:  Mm - hmm . 
+E:  And so people can make changes to their local and if they screw those up , 
+C:  Right . 
+C:  Exactly . 
+E:  that 's , you know , in their  that 's only on them . It 's w it 's the checking in part that r we really care about , and 
+F:  Mm - hmm . 
+E:  that we can control with , you know , who can check things in and stuff . So we can  I think we can do this . 
+C:  Or just , yeah , start by make it a really tight control and then as people really need the control you can 
+F:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah . They can still check it out  
+C:  ascertain whether or not to  
+E:  Yeah , cuz they can still check out full copies and make whatever changes they want to their local copies . 
+C:  Right . 
+E:  And it won't affect the  the g the global , official , ones at all . 
+C:  Right . 
+A:  Right , but what I want to avoid is ending up with two corpora . 
+D:  Yeah . 
+E:  Yes . 
+E:  Definitely .  
+A:  And so if you make it too hard for them to check back in , they 'll check it out once , 
+E:  Yep . 
+A:  they 'll make all the changes , they 'll never tell us about the changes , 
+E:  Mm - hmm . 
+A:  and we 'll get two different corpora . 
+E:  Mm - hmm . 
+A:  Right ? 
+C:  I think we 're already gonna  I mean there 's already 
+C:  some chance that different annotations , different 
+C:  places , you know  
+C:  But you can 
+C:  control that by knowing you 're making two corpora or knowing that you 're adding 
+C:  um , annotations on one version and you don't have the latest corrections maybe at that point . And then you finish the project and you realize that there were 
+C:  corrections made on your originals and then 
+C:  you have to merge them . 
+C:  And the b 
+C:  the thing that makes it ea OK to do that , is 
+C:  knowing where the synch time boundaries are . 
+C:  Cuz you can automatically pretty much merge things if you 've only got twenty words or so in an utterance . It 's when you get the whole meeting 
+C:  and the synch times ch 
+C:  have changed , or you can't correspond to a previous version with synch times , that you get in trouble . 
+C:  So . 
+
+
+C:  Was there anything else on your list ? 
+A:  Nope . 
+A:  Shall we do some digits ? 
+A:  <mouth> 
+A:  <noise> Oop !  Ouch !  
+F:  Ooo !  
+
+
+A:  Uh , Transcript L one one six .  
+C:  Now , wait , are  are we doing them simultaneously or one at a time ? <laugh> Alright . 
+A:  I wasn't planning on doing it simultaneously .  
+E:  <laugh> Lee , you liked that l huh ? <laugh> 
+A:  Transcript L one one six .  
+C:  <laugh> 
+A:  eight two six , four four five , one nine nine  
+F:  <laugh> 
+A:  one three one one , eight seven three six , seven one one seven  
+A:  eight , two eight three , eight zero , three eight two , nine  
+A:  two , seven five eight , four three , zero nine nine , seven  
+A:  zero nine four , four eight four , four seven four  
+A:  seven six , four one , eight eight , nine nine , eight seven  
+A:  three two , four six , four three , one nine , two eight  
+A:  four seven six two , four O four five , nine six five one .  
+C:  Transcript L one one seven .  
+C:  seven five eight , five one three , O seven one four  
+C:  two six nine four , five six two three , seven O four four  
+C:  seven , five one three , seven four , eight O one , five  
+C:  six six two seven , five , three seven six  
+C:  eight O six , nine seven six , one four two  
+C:  one three nine , eight five , two three one O  
+C:  eight eight four four , four , two nine five  
+C:  four six one , one O three , two two four .  
+E:  Transcript L dash one two seven .  
+E:  two eight two , two seven six , eight six four  
+E:  eight eight three , two zero six , two six two  
+E:  eight seven , five six , seven six , one seven , zero zero  
+E:  seven eight three zero , seven five two seven , five three eight three  
+E:  five five , seven three , zero eight , five nine , five seven  
+E:  one , four eight two , eight nine , six six seven , zero  
+E:  two nine three six , nine two one five , zero five eight zero  
+E:  nine seven six , six O three , nine seven six .  
+F:  Transcript L one two nine .  
+F:  zero nine , zero zero , five three , nine two , five five  
+F:  six , zero three seven , seven zero , nine eight eight , nine  
+F:  zero seven five , nine six nine , one one eight two  
+F:  six eight seven , two five , one one four four  
+F:  O four four , five five two , seven five O five  
+F:  five , seven five three , O O , six seven nine  
+F:  one seven eight four , three , two seven eight  
+F:  six three seven five , one , two eight four .  
+D:  Transcript L one two eight .  
+D:  eight , four three two , three six , one O seven , six  
+D:  zero four six , six nine , six five O nine  
+D:  six two , eight seven , eight one , seven seven , O two  
+D:  nine , seven nine two , one zero , zero five five , one  
+D:  three zero , four seven , nine , six one five  
+D:  two zero seven two , six zero , six zero , six seven , four two  
+D:  three , five two four , zero six , six O two , eight  
+D:  three eight two , two seven , one nine nine six .  
+
+

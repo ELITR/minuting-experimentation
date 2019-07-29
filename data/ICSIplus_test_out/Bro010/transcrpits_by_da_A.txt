@@ -1,0 +1,190 @@
+A:  So I guess we 're  we 're done . 
+A:  OK , we 're on . 
+A:  Oh , this was the , uh , talk where they were supposed to try to decide  
+A:  Ah , right . 
+A:  What 's the allowable ? 
+A:  What were they thinking of changing it to ? 
+A:  Huh . 
+A:  Ah ! 
+A:  Think of it as what ? 
+A:  Hmm . 
+A:  Right . 
+A:  Mm - hmm . 
+A:  And I don't think anybody 's gonna notice the difference between a quarter of a second of latency and thirty milliseconds of latency . 
+A:  Um , we had a silence detector , 
+A:  so 
+A:  we would look for the end of an utterance based on the silence detector . 
+A:  And I  I can't remember now off the top of my head how many frames of silence we had to detect before we would declare it to be the end of an utterance . 
+A:  Um , 
+A:  but it was , 
+A:  uh , 
+A:  I would say it was probably around the order of two hundred and fifty milliseconds . 
+A:  Yeah , 
+A:  we did the back trace at that point 
+A:  to get the answer . 
+A:  No , 
+A:  no it was pretty quick . 
+A:  So  
+A:  this w 
+A:  Right . 
+A:  Right . 
+A:  Right . 
+A:  And it felt to , uh , the users that it was instantaneous . 
+A:  I mean , as fast as talking to a person . 
+A:  It  th I don't think anybody ever complained about the delay . 
+A:  Yeah . 
+A:  Yeah . 
+A:  I don't remember the exact numbers 
+A:  but 
+A:  it was something like that . 
+A:  I don't think you can really tell . 
+A:  A person  I don't think a person can tell the difference between , uh , you know , a quarter of a second and a hundred milliseconds , 
+A:  and  
+A:  I 'm not even sure if we can tell the difference between a quarter of a second and half a second . 
+A:  I mean it just  it feels so quick . 
+A:  Yeah . 
+A:  Yeah . 
+A:  I mean , it may feel different than talking to a person 
+A:  because when we talk to each other we tend to step on each other 's utterances . 
+A:  So like if I 'm asking you a question , you may start answering before I 'm even done . 
+A:  So it  it would probably feel different 
+A:  but I don't think it would feel slow . 
+A:  So is the latency from the neural net caused by how far ahead you 're looking ? 
+A:  Wasn't there  
+A:  Was it in the , uh , recurrent neural nets where they weren't looking ahead at all ? 
+A:  A little bit . 
+A:  OK . 
+A:  We 've always had  usually we used the symmetric windows 
+A:  but 
+A:  I don't think  
+A:  Yeah . 
+A:  Change the what ? 
+A:  I 'm missing that last word . 
+A:  Context 
+A:  KLT . 
+A:  Oh , KLT . 
+A:  Uh - huh . 
+A:  What is the advantage of that ? 
+A:  Hmm . 
+A:  Really ? 
+A:  Huh ! 
+A:  Hmm ! 
+A:  Oh ! 
+A:  Uh - huh . 
+A:  Hmm ! 
+A:  Hmm ! 
+A:  Is the estimate of the noise spectrum a running estimate ? 
+A:  Or  
+A:  Hmm ! 
+A:  Mm - hmm . 
+A:  So do you  is there some long window that extends into the past over which you calculate the average ? 
+A:  A couple seconds ? 
+A:  Hmm . 
+A:  But wh don't they overlap sometimes ? 
+A:  OK . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  But what is the  
+A:  it seems like this kind of thing could add to the latency . 
+A:  I mean , depending on where the window was that you used to calculate  the signal - to - noise ratio . 
+A:  OK , 
+A:  well that  I guess that was my question , 
+A:  yeah . 
+A:  Guess . 
+A:  Were his , uh , windows centered around the  
+A:  We could probably get a really good estimate of the noise if we just went to the noise files , 
+A:  and built the averages from them . 
+A:  Very slow adaptation . 
+A:  th 
+A:  If they 're going to provide a , uh , voice activity detector that will tell you the boundaries of the speech , then , couldn't you just go outside those boundaries and do your estimate there ? 
+A:  What are  what are some of the low level detectors that they use ? 
+A:  Hmm . 
+A:  And so are each of these , low level detectors   are they , 
+A:  uh  
+A:  are these something that you decide ahead of time , 
+A:  like " I 'm going to look for this particular feature 
+A:  or I 'm going to look at this frequency , " 
+A:  or  
+A:  What  what  what are they looking at ? 
+A:  What are their inputs ? 
+A:  Ah , 
+A:  OK , 
+A:  OK . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Cool . 
+A:  Right . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  How did they measure the performance of their detector ? 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Didn't they  
+A:  Didn't they also do some kind of an oracle experiment 
+A:  where they said " if we  could detect the sonorants perfectly  and then show how it would improve speech recognition ? 
+A:  I thought I remember hearing about an experiment like that . 
+A:  Mm - hmm . 
+A:  Hmm . 
+A:  Hmm . 
+A:  When we  when we talked with John Ohala the other day we made a list of some of the things that w 
+A:  like frication , 
+A:  abrupt closure , 
+A:  R - coloring , 
+A:  nasality , 
+A:  voicing  
+A:  Uh . 
+A:  Mm - hmm . 
+A:  There 's also things like stress . 
+A:  You can look at stress . 
+A:  Yeah , 
+A:  there 's a few cases where it can like permit  and permit . 
+A:  But  that 's not very common in English . 
+A:  In other languages it 's more uh , important . 
+A:  No , I 'm saying , i i e I thought you were saying that stress doesn't help you distinguish between words . 
+A:  Oh , I see what you 're saying . 
+A:  As long as you get  The sequence , 
+A:  right ? 
+A:  Yeah . 
+A:  Yeah , yeah , yeah . Yeah . 
+A:  Right . 
+A:  So where it could help is maybe at a higher level . 
+A:  Yeah . 
+A:  Understanding , 
+A:  yeah . 
+A:  Exactly . 
+A:  Uh , 
+A:  well I don't know . 
+A:  We d we sort of didn't get that far . 
+A:  Um , we just talked about some possible features that could be marked by humans 
+A:  and , um , 
+A:  because of having maybe some extra transcriber time we thought we could go through and mark some portion of the data for that . 
+A:  And , uh  
+A:  Yeah , 
+A:  right . 
+A:  I 'm definitely interested in this area , too , 
+A:  f uh , acoustic feature stuff . 
+A:  So . 
+A:  That could help though . 
+A:  That 's what the head 's for ? 
+A:  To separate the ears ? 
+A:  Actually the , um  For some reason the digit forms are blank . 
+A:  Uh , I think th that may be due to the fact that  Adam ran out of digits ,  uh , and didn't have time to regenerate any . 
+A:  Yeah , 
+A:  if you want to put your credit card numbers and , uh  
+A:  Uh , yeah , 
+A:  I do need your names and  and the time , and all that , 
+A:  cuz we put that into the " key " files . 
+A:  Um . 
+A:  But w 
+A:  That 's why we have the forms , 
+A:  uh , even if there are no digits . 
+A:  So I guess we 're  we 're done . 

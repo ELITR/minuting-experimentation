@@ -1,0 +1,221 @@
+G:  So , did you  Jeremy , did you know that whoever finishes last has to buy  cappuccino for everybody ? 
+G:  There 're some words that weren't  
+G:  See , there 're some stretches that weren't even in one or the other , 
+G:  so  
+G:  What are you gonna do about those , though ? 
+G:  You 're never  
+G:  Sure . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  You mean , pi will be close to one half ? 
+G:  That 's new . 
+G:  Right . 
+G:  You know , this  this raises some  
+G:  Mm - hmm . 
+G:  How do you transcribe that ? 
+G:  Oh . B uh  
+G:  We can  
+G:  Well , we already use it for digit training . 
+G:  I mean  
+G:  Well , we did do some training on digits  
+G:  uh , rather adaptation on digits  digits . 
+G:  I mean , supervised adaptation . 
+G:  So . 
+G:  Yeah . I mean , uh  
+G:  Well , 
+G:  I would  I would love to do some , um  
+G:  you know , with adaptation you can use fairly small amount of data to improve your performance . 
+G:  Um , and 
+G:  n you know , it 's just basically , 
+G:  uh  uh 
+G:  You know , I  I don't have to time to  to do too much these days 
+G:  except what I 'm already doing . 
+G:  So  
+G:  um , but if there 's some  someone has some free time , I 'm  I 'll be happy to show them how it works 
+G:  and  you can play with it . 
+G:  No , supervised adaptation . 
+G:  So , we 're doing s unsupervised speaker adaptation . 
+G:  But <inbreath> you could  build a test set which you sort of take your models and ada do supervised adaptation . 
+G:  And then you start with the speaker adaptation from sort of channel - adapted 
+G:  or room - adapted 
+G:  or whatever . 
+G:  Right . 
+G:  It 's  it 's sort of like in , um , Broadcast News 
+G:  because you have those people who re - occur over and over . 
+G:  I mean , the anchor speakers tend typically . 
+G:  So , 
+G:  um  m m m m 
+G:  Yeah . As long as you 're aware that you 're doing that , that 's  I don't see that as a problem . 
+G:  Mm - hmm . 
+G:  Yeah . 
+
+G:  But it would be interesting to hear what they intend to do about the speaker overlap , for instance . 
+G:  It could be interesting . 
+G:  Well , it will be interesting to find out why they are choosing a higher sampling  
+G:  But then they 're just  they 're just  there 's just deferring the problem to later 
+G:  and they might save themselves a lot of disk space problems by doing it right away . 
+G:  I mean that 's wha 
+G:  That 's like three times  three times as much disk space . 
+G:  We should warn them that these disk space issues  are gonna creep up on them very fast . 
+
+
+G:  Linguistic Data Consortium . 
+G:  We should just talk less . 
+G:  Uh , OK . 
+G:  So f so for dis 
+G:  for distribution purposes it might make sense to split it by channel , uh , rather than by meetings . 
+G:  So , you could distribute , like , only the near - field signals , uh , uh , uh , together for a bunch of meetings 
+G:  and then have a second row . 
+G:  Yeah . 
+
+G:  Right . 
+G:  But the University of Hawaii has issued a request . 
+G:  Yeah . 
+G:  Uh , you know those Europeans . 
+G:  They got a lot of vaca 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  So , we had  
+G:  the  the transcribers  have trouble with your backchannel , 
+G:  because  
+G:  Yeah , with your backchannels . 
+G:  Because sometimes you have this sort of  this  this " uh - huh " that you don't n 
+G:  So there 's " uh - huh " 
+G:  and then there 's " aha ! " . 
+G:  And it 's not quite clear always what  what it is you mean . 
+G:  Yeah . 
+G:  Yeah . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  u Do you take  do you take feature requests ? 
+G:  That would  th w 
+G:  s 
+G:  Well , actually , I think it is worth doing 
+G:  because here 's the thing . We 're sort of  we 're starting to move from transcription to annotation . 
+G:  And  the Transcriber interface is fine  if essentially what you 're doing is stringing words together to p to make transcripts . 
+G:  But , um , in  for instance , what we 're doing now w with , uh , Communicator data , but which we would like to do with Meeting data , is to actually label utterances , or words , or whatever units you want <inbreath> with , uh , you know , basically doing a multiple choice type of labelling . 
+G:  And for those type of tasks , it wou it 's much more efficient to present , <inbreath> uh , the  th p present a bunch of , uh , clickable buttons or whatever 
+G:  and , um  
+
+G:  And  and th that 's actually a good model , which is what this current tool that we 're using has , is to atta to associate these <inbreath> labels with , um , attributes of SGML tags . 
+G:  So , you know , you have , say , a tag for  
+G:  I don't know  
+G:  what type of utterance , 
+G:  whether it 's a question or a statement or whatever . 
+G:  And then <inbreath> you have an , uh  you know , an  a tag attribute 
+G:  and the value of that encodes the choice . 
+G:  Oh , you mean display as in showing the waveform ? 
+G:  OK . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Yeah , but we didn't have the exact comparison . 
+G:  But  you know , there were  i i 
+G:  the experiments were based on different segmentations and different transcripts . 
+G:  So we weren't quite sure which  whether the difference came from different  transcripts , for instance . 
+G:  And so <inbreath> Thilo 's  
+G:  But the recognizer 's putting up some resistance 
+G:  because it doesn't like the un - segmented data . 
+
+G:  Yeah . 
+G:  Yeah . 
+G:  You know , I 'll bet  You know , Bush went on this European trip recently 
+G:  and <inbreath> they told him there that they get more vacations . 
+G:  So he came back here and thought " oh , I  I can afford some more vacation too " . 
+G:  Yeah . It 's hard to keep concentration , you know , 
+G:  and the focus on the  
+G:  Um . 
+G:  So while he 's vacationing , um , we 've been , uh  
+G:  Well basically this is like a joint effort . 
+G:  Uh , d we were just  
+G:  Um , 
+G:  you know , f apart from getting  preparing the  the da the data for the , 
+G:  um  <mouth> for these experiments for the , um , <mouth> uh  for this prosody workshop , 
+G:  um , we just , um  we just had a phone call with Mari and her students , in fact , 
+G:  and they want to , um , e m They 're bringing up their own meeting recognizer , 
+G:  which is based on Bill Byrne 's , uh , recognizer from Johns Hopkins . 
+G:  u  Based on their Hub - five recognizer . 
+G:  And , uh , 
+G:  so they 've been getting from us the , um  <inbreath> you know , some support in terms of getting the latest transcripts 
+G:  and the  also the  actually the , <inbreath> uh , transcripts annotated with events , 
+G:  uh , like sentence boundaries and stuff like that . 
+G:  Um , because one of Mari 's students was to  wants to do some language modeling for , uh , predicting overlaps and , uh , stuff like that . 
+G:  Um . 
+G:  Mm - hmm . 
+
+G:  Yeah . 
+G:  Um , on the recognition side , actually , um , I think the main person doing that is , uh , Harriet from  Harriet Nock from , uh  formerly of Cambridge . 
+G:  Um , <mouth> and apparently they get reasonable results 
+G:  except in some portions they get very high insertion rates  
+G:  even higher than we get with  with the , um  <mouth> like even , you know , on lapel mikes with , uh , <inbreath> background speech . 
+G:  And so they were trying to track that down , 
+G:  and  
+G:  It could be that our recognizer 's actually doing relatively well 
+G:  because it has a reject model for , you know , mismatched speech , essentially , 
+G:  or for unspecified speech . 
+G:  And , um , so  
+G:  so , uh , they 'll  I sent them our recognition output 
+G:  so they can sort of do a  line - by - line comparison 
+G:  and see if  if they , um  <inbreath> you know , their insertions correspond to our rejects and stuff like that . 
+G:  So , um , we 'll see what that , uh , leads to . 
+G:  Um . 
+G:  Yeah . Other than that , uh , 
+G:  we 're  Well , that 's pretty m pretty much it as far as meetings are concerned . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  Right . 
+G:  But is it still true that basically the s speaker adaptation , um , sort of negates much of the advantage ? 
+G:  With it . 
+G:  OK . 
+G:  Mm - hmm . 
+G:  Right . 
+G:  Right . 
+G:  Mm - hmm . 
+G:  Yeah . 
+G:  OK . 
+G:  There 's some work , um , <outbreath> that  
+G:  Do you remember this  paper or poster  by , um , some CMU folks at , uh , HLT ? 
+G:  They were talking about  
+G:  and  and they s they referred to an upcoming ICASSP paper , I think , at the time . 
+G:  Some - someone in Karlsruhe , I think , um , worked on , <mouth> uh , es you know , estimating noise from the silent regions 
+G:  and then , <inbreath> uh , doing some explicit  
+G:  I don't know if it 's something akin to parallel model combination or something like that to  to , uh , 
+G:  Right . Anyway , uh , so I  I  I couldn't judge whether this was original or not , 
+G:  but  but it seemed like they got pretty good results on their meeting data . 
+G:  So we might want to look into that . 
+G:  Right . 
+G:  Right . 
+G:  Mm - hmm . 
+G:  Right . 
+G:  Mm - hmm . 
+G:  Mm - hmm . 
+G:  OK . 
+G:  Right . 
+G:  Hey ! We could use that in the English  
+G:  We have to do the English synthesis for 
+G:  What if we make the system really  annoyed ? 
+G:  But  but you can't do it  
+G:  I mean you can't just normalize it based on the utterance 
+G:  because then you 're gonna have zero everywhere . 
+G:  Right ? 
+G:  So you 'd have to normalize it based on  the  
+G:  Yeah , OK . But that 's not really feasible 
+G:  because you 're having a sys you have a system , a dialogue system , where you only have access to the  what the speaker said before . 
+G:  So it 'd have to be sort of a causal , uh , version of @ @ . 
+G:  Or you c u 
+G:  Mmm . 
+G:  Well , we 're not gonna build a parametric model of the  o o of the  of the feature . 
+G:  Right ? 
+G:  We 're just gonna  we we 're gonna use <inbreath> like thresholding or something . 
+G:  Right , right . OK . 
+G:  Right . 
+G:  Right . 
+G:  OK . 
+G:  Uh , yeah . 
+G:  Mm - hmm . 
+G:  But they didn't tell her . 
+G:  It  you know , to keep  to keep us , uh  
+G:  OK . 
+
+G:  Hmm . 
+G:  So , did you  Jeremy , did you know that whoever finishes last has to buy  cappuccino for everybody ? 

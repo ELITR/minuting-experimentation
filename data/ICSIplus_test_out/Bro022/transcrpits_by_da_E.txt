@@ -1,0 +1,125 @@
+E:  and it was about six point six percent . 
+E:  Oh . 
+E:  OK , 
+E:  sure . 
+E:  So , um , 
+E:  last week I finally got results from the SRI system about this mean subtraction approach . 
+E:  And , um , we  we got an improvement , uh , in word error rate , training on the TI - digits data set and testing on Meeting Recorder digits of , um , <mouth> six percent to four point five percent , 
+E:  um , on the n on the far - mike data 
+E:  using PZM F , 
+E:  but , um , the near - mike performance worsened , um , from one point two percent to two point four percent . 
+E:  And , um , 
+E:  wh why would that be , um , <breath> considering that we actually got an improvement in near - mike performance using HTK ? 
+E:  And so , 
+E:  uh , with some input from , uh , Andreas , I have a theory in two parts . 
+E:  Um , 
+E:  first of all HTK  sorry , SR - the SRI system is doing channel adaptation , 
+E:  and so HTK wasn't . 
+E:  Um , 
+E:  so this , 
+E:  um  
+E:  This mean subtraction approach will do a kind of channel  normalization 
+E:  and so that might have given the HTK use of it a boost that wouldn't have been applied in the SRI case . 
+E:  And also , um , the  Andreas pointed out the SRI system is using more parameters . 
+E:  It 's got finer - grained acoustic models . 
+E:  So those finer - grained acoustic models could be more sensitive to the artifacts  in the re - synthesized audio . 
+E:  Um . 
+E:  And me and Barry were listening to the re - synthesized audio 
+E:  and sometimes it seems like you get of a bit of an echo of speech in the background . 
+E:  And so that seems like it could be difficult for training , 
+E:  cuz you could have  different phones  lined up with a different foreground phone , <breath> um , <breath> depending on  the timing of the echo . 
+E:  So , um , 
+E:  I 'm gonna try training on a larger data set , 
+E:  and then , eh , the system will have seen more examples o of these artifacts and hopefully will be more robust to them . 
+E:  So I 'm planning to use the Macrophone set of , um , read speech , 
+E:  and , um  
+E:  Hmm . 
+E:  Uh - huh . 
+E:  Mm - hmm . 
+E:  Uh - huh . 
+E:  Uh - huh . 
+E:  OK . 
+E:  Hmm . 
+E:  In thi in this room ? 
+E:  Uh  
+E:  Y Yeah . 
+E:  I  I  I  I don't know . 
+E:  O o one thing , um , I noticed is that , um , the mean subtraction seems to make the PZM signals louder after they 've been re - synthesized . 
+E:  So I was wondering , is it possible that one reason it helped with the Aurora baseline system is  just as a kind of gain control ? 
+E:  Cuz some of the PZM signals sound pretty quiet if you don't amplify them . 
+E:  Yeah . I don't know why - y , uh , either . 
+E:  Oh , 
+E:  OK . 
+E:  It w i i it wouldn't affect things . 
+E:  OK . 
+E:  Uh  
+E:  Um . 
+E:  Did I w what ? 
+E:  Sorry ? 
+E:  Yeah . 
+E:  I  
+E:  I b 
+E:  I  
+E:  Right . 
+E:  I trained on clean TI - digits . 
+E:  I  I did the mean subtraction on clean TI - digits . 
+E:  But I didn't  I 'm not sure if it made the clean ti TI - digits any louder . 
+E:  I only remember noticing it made the , um , PZM signal louder . 
+E:  Huh . 
+E:  I don't know . 
+E:  If it 's  if it 's  like , if it 's trying to find a  a reverberation filter , it could be that this reverberation filter is making things quieter . 
+E:  And then if you take it out  that taking it out makes things louder . 
+E:  I mean . 
+E:  Nuh - huh . 
+E:  The mean . 
+E:  OK . 
+E:  Yeah , 
+E:  I see . 
+E:  Yeah . 
+E:  OK . 
+E:  So I should maybe listen to that stuff again . 
+E:  Oh . OK . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Hmm . 
+E:  Uh . 
+E:  I think so . 
+E:  If you 're talking about the Macrophone results that Andreas had about , um , a week and a half ago , I think it 's the same system . 
+E:  Mm - hmm . 
+E:  That 's  
+E:  I  
+E:  I didn't . 
+E:  No . 
+E:  Oh . 
+E:  And I also , um , did some experiments  about normalizing the phase . 
+E:  Um . 
+E:  So I c I came up with a web page that people can take a look at . 
+E:  And , um , 
+E:  the interesting thing that I tried was , um , Adam and Morgan had this idea , 
+E:  um , since my original attempts to , um , take the mean of the phase spectra over time and normalize using that , by subtracting that off , didn't work . Um , so , well , that we thought that might be due to , um , problems with , um , the arithmetic of phases . 
+E:  They  they add in this modulo two pi way 
+E:  and , 
+E:  um , 
+E:  there 's reason to believe that that approach of taking the mean of the phase spectrum wasn't really  mathematically correct . 
+E:  So , <breath> what I did instead is I <breath> took the mean of the FFT spectrum without taking the log or anything , and then I took the phase of that , 
+E:  and I subtracted that phase  off 
+E:  to normalize . 
+E:  But that , um , didn't work either . 
+E:  And , yeah , that 's everything . 
+E:  Right . 
+E:  For  with the SRI system  
+E:  You know , the  the Aurora baseline is set up with these , um  <mouth> this version of the clean training set that 's been filtered with this G - seven - one - two filter , 
+E:  and , 
+E:  um , to train the SRI system on digits S - Andreas used the original TI - digits , 
+E:  um , under U doctor - speech data TI - digits , 
+E:  which don't have this filter . 
+E:  But I don't think there 's any other difference . 
+E:  Um . Uh - huh . 
+E:  W w it was one  one point two 
+E:  with the SRI system , 
+E:  I  
+E:  D d 
+E:  Do you mean the b ? 
+E:  The baseline Aurora - two system , trained on TI - digits , tested on Meeting Recorder near , 
+E:  I think we saw in it today , 
+E:  and it was about six point six percent . 

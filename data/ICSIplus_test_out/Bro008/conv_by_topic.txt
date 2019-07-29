@@ -1,0 +1,681 @@
+D:  OK . 
+D:  <outbreath> 
+D:  So , uh  
+D:  You can fill those out , uh  after , actually , so  
+D:  <inbreath> <clears throat> 
+
+
+D:  So , I got , uh  these results from , uh , Stephane . 
+D:  Also , um , I think that , uh  um  we might hear later today , about other results . 
+D:  I think s that , uh , there were some other very good results that we 're gonna wanna compare to . 
+D:  But , <inbreath> r our results from other  other places , yeah . 
+A:  I I 'm sorry ? I didn't - 
+D:  Um , I got this from you  and then I sent a note to Sunil about the  cuz he has been running some other systems other than the  the ICSI OGI one . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Oh yeah . 
+
+
+D:  So  um , I wan wanna  wanna see what that is . 
+D:  But , uh , you know , so we 'll see what it is comparatively later . 
+D:  But  it looks like , um <inbreath>  
+A:  M yeah . 
+D:  You know most of the time , even  I mean even though it 's true that the overall number for Danish  we didn't improve it  
+D:  <inbreath> 
+D:  If you look at it individually , what it really says is that there 's , um , uh  
+D:  Looks like out of the six cases , between the different kinds of , uh , matching conditions  out of the six cases , there 's basically , um , a couple where it stays about the same , uh , three where it gets better , and one where it gets worse . 
+A:  Yeah . 
+D:  Uh , go ahead . 
+A:  Y Actually , uh , um , for the Danish , there 's still some kind of mystery <inbreath> because , um , um , when we use the straight features , we are not able to get these nice number with the ICSI OGI one , I mean . 
+A:  We don't have this ninety - three seventy - eight , we have  eight yeah . 
+E:  Eighty - nine forty - four . 
+A:  Uh , so , uh , that 's probably something wrong with the features that we get from OGI . 
+A:  Uh , and Sunil is working on  on trying to  to check everything . 
+D:  Oh , and  and we have a little time on that  and  actually so  
+A:  Hmm ? 
+D:  We have a little bit of time on that , actually . 
+A:  Yeah . 
+D:  We have a day or so , so  
+D:  <inbreath> 
+D:  When  when  when do you folks leave ? 
+A:  Uh , Sunday . 
+D:  Sunday ? 
+D:  So  
+D:  So , uh  
+D:  Yeah , until Saturday midnight , or something , we have  
+D:  <laugh> 
+D:   W we  we have time , yeah . 
+D:  <inbreath> 
+D:  Well , that would be good . 
+D:  That 'd be good . 
+A:  Yeah . 
+D:  Yeah . 
+D:  <laugh> <inbreath> 
+D:  Uh , and , you know , i u when whenever anybody figures it out they should also , for sure , email Hynek because Hynek will be over there <inbreath> telling people <laugh> what we did , so he should know . 
+A:  Mmm . 
+D:  Good , OK . 
+A:  Yeah . 
+
+
+D:  So , um  
+D:  <inbreath> 
+D:  So , we 'll  we 'll hold off on that a little bit . 
+D:  I mean , even with these results as they are , it 's  it 's  it 's really not that bad . 
+D:  But  but , uh , um  
+D:  <inbreath> 
+D:  And it looks like the overall result as they are now , even without , you know , any  any bugs being fixed is that , uh , on the  the other tasks , we had this average of , uh , forty uh  nine percent , or so , improvement . 
+D:  And here we have somewhat better than that than the Danish , and somewhat worse than that on the German , but I mean , it sounds like , uh , one way or another , the methods that we 're doing can reduce the error rate from  from mel ceptrum  down by , you know  a fourth of them to , uh , a half of them . 
+D:  Somewhere in there , depending on the  exact case . 
+D:  So  
+D:  So that 's good . 
+D:  I mean , I think that , uh , one of the things that Hynek was talking about was understanding what was in the other really good proposals and  and trying to see if what should ultimately be proposed is some , uh , combination of things . 
+D:  Um , if , uh  
+D:  <inbreath> 
+D:  Cuz there 's things that they are doing  there that we certainly are not doing . 
+D:  And there 's things that we 're doing that  they 're not doing . 
+D:  And  and they all seem like good things . 
+A:  Yeah . 
+E:  Mmm , yeah . 
+D:  So  
+D:  <laugh> 
+D:  So  
+C:  How much  how much better was the best system than ours ? 
+D:  Well , we don't know yet . 
+C:  Mmm . 
+D:  Uh , I mean , first place , there 's still this thing to  to work out , and second place  second thing is that the only results that we have so far from before were really development set results . 
+C:  Oh , OK . 
+D:  So , I think in this community that 's of interest . 
+D:  It 's not like everything is being pinned on the evaluation set . 
+D:  <inbreath> 
+D:  But , um , for the development set , our best result was a little bit short of fifty percent . 
+D:  And the best result of any system was about fifty - four , where these numbers are the , uh , relative , uh , reduction in , uh , word error rate . 
+C:  Oh , OK . 
+D:  And , um , the other systems were , uh , somewhat lower than that . 
+D:  There was actually  there was much less of a huge range than there was in Aurora one . 
+D:  In Aurora one there were  there were systems that ba basically didn't improve things . 
+D:  <inbreath> 
+C:  Hmm . 
+D:  And here the  the worst system  still reduced the error rate by thirty - three percent , or something , in development set . 
+C:  Oh , wow . 
+D:  So  so , you know , sort of everybody is doing things between , well , roughly a third of the errors , and half the errors being eliminated , <inbreath> uh , and varying on different test sets and so forth . 
+C:  Mm - hmm . 
+D:  So I think  
+D:  Um  
+D:  It 's probably a good time to look at what 's really going on and seeing if there 's a  there 's a way to combine the best ideas while at the same time not blowing up the amount of , uh , resources used , cuz that 's  that 's critical for this  this test . 
+C:  Do we know anything about  who  who 's was it that had the lowest on the dev set ? 
+D:  Um , uh , the , uh , the there were two systems that were put forth by a combination of  of , uh , French Telecom and Alcatel . 
+D:  And , um they  they differed in some respects , but they e em one was called the French Telecom Alcatel System the other was called the Alcatel French Telecom System , <inbreath> uh , which is the biggest difference , I think . 
+D:  But  but there 're  there 're  there 're some other differences , too . 
+D:  Uh , and  and , uh , they both did very well , you know ? 
+C:  Uh - huh . 
+D:  So , <inbreath> um , my impression is they also did very well on  on the  the , uh , evaluation set , but , um , I  I we haven't seen  you 've - you haven't seen any final results for that yeah . 
+C:  And they used  the main thing that  that they used was spectral subtraction ? Or  
+D:  There is a couple pieces to it . 
+D:  There 's a spectral subtraction style piece  it was basically , you know , Wiener filtering . 
+D:  <inbreath> 
+D:  And then  then there was some p some modification of the cepstral parameters , where they  
+A:  Yeah , actually , something that 's close to cepstral mean subtraction . 
+A:  <inbreath> 
+A:  But , uh , the way the mean is adapted  um , it 's signal dependent . 
+A:  I 'm  I 'm , uh  
+A:  So , basically , the mean is adapted during speech and not during silence . 
+D:  Yeah . 
+A:  But it 's very close to  to cepstral mean subtraction . 
+D:  But some people have done <inbreath>  
+D:  exactly that sort of thing , of  of  and the  I mean it 's not  
+D:  To  to look in  speech only , to try to m to measure these things during speech , that 's p that 's not that uncommon . 
+A:  Yeah , yeah . 
+D:  <inbreath> 
+D:  But i it it  so it looks like they did some  some , uh , reasonable things , uh , and they 're not things that we did , precisely . 
+D:  We did unreasonable things , <laugh> which  because we like to try strange things , and  and , uh , and our things worked too . 
+C:  Hmm . 
+D:  And so , um , uh , it 's possible that some combination of these different things that were done would be the best thing to do . 
+D:  <inbreath> 
+D:  But the only caveat to that is that everybody 's being real conscious of how much memory and how much CPU they 're using because these , 
+C:  Mm - hmm . 
+D:  <inbreath> <sniff> <mouth> 
+D:  uh , standards are supposed to go on cell phones with m moderate resources in both respects . 
+C:  Did anybody , uh , do anything with the models as a  an experiment ? Or  
+D:  Uh , they didn't report it , if they did . 
+C:  N nobody reported it ? 
+D:  Yeah . 
+D:  I think everybody was focused elsewhere . 
+
+
+D:  Um , now , one of the things that 's nice about what we did is , we do have a  a , uh  a filtering , which leads to a  a , uh  a reduction in the bandwidth in the modulation spectrum , which allows us to downsample . 
+D:  So , uh , as a result of that we have a reduced , um , transmission rate for the bits . 
+C:  Mm - hmm . 
+D:  That was misreported the first time out . 
+D:  It  it said the same amount because for convenience sake in the particular way that this is being tested , uh , they were repeating the packets . 
+D:  So it was  they were s they  they had twenty - four hundred bits per second , but they were literally creating forty - eight hundred bits per second , <inbreath> um , even though y it was just repeated . 
+C:  Oh . 
+C:  Mm - hmm . 
+C:  Right . 
+D:  So , uh , in practice  
+C:  So you could 've had a repeat count in there or something . 
+D:  <laugh> 
+D:  Well , n I mean , this was just a ph phoney thing just to  to fit into the  the software that was testing the errors  channel errors and so on . 
+C:  Oh . 
+D:  So  so in reality , if you put this  this system in into , uh , the field , it would be twenty - four hundred bits per second , not forty - eight hundred . 
+C:  Oh . 
+D:  So , um , so that 's a nice feature of what  what we did . 
+D:  Um , but , um , well , we still have to see how it all comes out . 
+C:  Hmm . 
+
+
+D:  Um , and then there 's the whole standards process , which is another thing altogether . 
+C:  When is the development set  I mean , the , uh , uh , test set results due ? 
+C:  Like the day before you leave or something ? 
+D:  Uh , probably the day after they leave , but we 'll have to  <laugh> we 'll have to stop it the day before  we leave . 
+A:  Yeah , yeah . 
+A:  So  
+C:  Huh . 
+D:  I think tha I think the  the meeting is on the thirteenth or something . 
+A:  Yeah , this Tuesday , yeah . 
+D:  And , uh , they , uh  
+D:  Right . And the  the , uh , results are due like the day before the meeting or something . 
+D:  So  
+A:  Yeah , probably , well  
+A:  <laugh> 
+D:  I th I think  I I think they are , yeah . 
+A:  Yeah , well  
+D:  So  <nasal inbreath> um , since we have a bit farther to travel than <laugh> some of the others , <inbreath> uh , we 'll have to get done a little quicker . 
+D:  But , um , I mean , it 's just tracing down these bugs . 
+D:  I mean , just exactly this sort of thing of , you know , why  why these features seem to be behaving differently , uh , in California than in Oregon . 
+C:  Hmm . 
+D:  Might have something to do with electricity shortage . 
+D:  Uh , we didn't  we didn't have enough electrons here and  
+D:  <laugh> 
+D:  Uh , but , um  
+D:  Uh , I think , you know , the main reason for having  
+D:  I mean , it only takes w to run the  the two test sets in  just in computer time is just a day or so , right ? 
+D:  So  <inbreath> yeah . 
+A:  Yeah , <outbreath> it 's very short interval . 
+D:  So , I think the who the whole reason for having as long as we have , which was  like a week and a half , is  is because of bugs like that . 
+C:  Hmm . 
+D:  So  
+D:  Huh  
+D:  So , we 're gonna end up with these same kind of sheets that have the  the percentages and so on just for the  
+A:  Yeah , so there are two more columns in the sheets , two . 
+D:  Oh , I guess it 's the same sheets , yeah , yeah  just with the missing columns filled in . 
+A:  Yeah , it 's the same sheets , yeah . 
+A:  Yeah . 
+D:  Yeah . 
+D:  Well , that 'll be good . 
+D:  So , I 'll dis I 'll disregard these numbers . 
+D:  That 's  that 's  that 's good . 
+
+
+A:  So , Hynek will try to push for trying to combine , uh , different things ? Or  
+D:  Uh , well that 's  um  yeah  
+A:  Hmm ? 
+D:  I mean , I think the question is " Is there  is there some advantage ? " 
+D:  I mean , you could just take the best system and say that 's the standard . 
+D:  <inbreath> 
+D:  But the thing is that if different systems are getting at good things , um , a again within the constraint of the resources , if there 's something simple that you can do  
+D:  <inbreath> 
+D:  Now for instance , uh , it 's , I think , very reasonable to have a standard for the terminal 's side and then for the server 's side say , " Here 's a number of things that could be done . " 
+D:  <inbreath> 
+D:  So , um , everything that we did could probably just be added on to what Alcatel did , and i it 'd probably work pretty well with them , too . 
+D:  So , um , uh , that 's one  one aspect of it . 
+D:  And then on the terminal 's side , I don't know how much , um , memory and  and CPU it takes , but it seems like the filtering  
+D:  Uh , I mean , the VAD stuff they both had , right ? 
+D:  And , um , so  and they both had some kind of on - line normalization , right ? 
+A:  Uh , yeah . 
+D:  Of sorts , yeah ? 
+D:  So  so , it seems like the main different there is the  is the , uh , filtering . 
+D:  And the filtering  I think if you can  shouldn't take a lot of memory to do that 
+D:  Uh , and I also wouldn't think the CPU , uh , would be much either for that part . 
+D:  So , if you can  if you can add those in  um  then , uh , you can cut the data rate in half . 
+A:  Yeah . 
+D:  So it seems like the right thing to do is to  on the  on the terminal 's side , take what they did , if it  if it does seem to generalize well to German and Danish , uh , take what they did add in a filter , and add in some stuff on the server 's side and  and  and that 's probably a reasonable standard . 
+D:  Um  
+A:  They are working on this already ? Because  yeah , Su - Sunil told me that he was trying already to put some kind of , uh , filtering in the <outbreath>  France Telecom . 
+D:  Uh  
+D:  Yeah , so that 's  that 's  that 's what  
+D:  <noise> 
+D:  That would be ideal  would be is that they could , you know , they could actually show that , in fact , a combination of some sort , <inbreath> uh , would work even better than what  what any of the systems had . 
+D:  And , um , then it would  it would , uh  be something to  to discuss in the meeting . 
+D:  <mouth> 
+D:  But , uh , not clear what will go on . 
+D:  Um , I mean , on the one hand , um , sometimes people are just anxious to get a standard out there . 
+D:  I mean , you can always have another standard after that , but <inbreath> this process has gone on for a while on  already and  and people might just wanna pick something and say , " OK , this is it . " 
+D:  And then , that 's a standard . 
+D:  <inbreath> 
+D:  Uh , standards are always optional . 
+D:  It 's just that , uh , if you disobey them , then you risk not being able to sell your product , or  
+D:  <breath-laugh> 
+D:  Uh  um  
+D:  And people often work on new standards while an old standard is in place and so on . 
+D:  So it 's not final even if they declared a standard . 
+D:  <inbreath> 
+D:  The other hand , they might just say they just don't know enough yet to  to declare a standard . 
+D:  So  you  you  you will be  you will become experts on this and know more  far more than me about the tha this particular standards process once you  you go to this meeting . 
+D:  So , be interested in hearing . 
+D:  <mouth> <inbreath> 
+
+
+
+
+D:  So , uh , I 'd be , uh , interested in hearing , uh , your thoughts now  
+D:  <inbreath> 
+D:  I mean you 're almost done . 
+D:  I mean , you 're done in the sense that , um , you may be able to get some new features from Sunil , and we 'll re - run it . 
+D:  Uh , but other than that , you 're  you 're basically done , right ? 
+D:  So , uh , I 'm interested in hearing  hearing your thoughts about  where you think we should go from this . 
+A:  Yeah . 
+D:  I mean , we tried a lot of things in a hurry , and , uh , if we can back off from this now and sort of take our time with something , and not have doing things quickly be quite so much the constraint , what  what you think would be the best thing to do . 
+A:  Uh , well  
+A:  <laugh> 
+E:  <laugh> 
+A:  <clears throat> 
+A:  Hmm  
+A:  Well , first , uh , to really have a look at  at the speech  <inbreath> from these databases because , well , we tried several thing , but we did not really look <inbreath> at what what 's happening , and <inbreath> where is the noise , and  
+A:  <outbreath> <inbreath> 
+D:  OK . 
+A:  Eh  
+D:  It 's a novel idea . 
+D:  Look at the data . 
+D:  OK . 
+D:  <laugh> 
+A:  Yeah . 
+D:  Or more generally , I guess , what  what is causing the degradation . 
+A:  Yeah , yeah . 
+A:  Actually , there is one thing that  well  
+
+
+A:  Um , generally we  we think that <inbreath> most of the errors are within phoneme classes , <inbreath> and  <clears throat>  so I think it could be interesting to  to see if it  
+A:  I don't think it 's still true when we add noise , and <inbreath> so we have  I  I guess the confusion ma the confusion matrices are very different when  when we have noise , and when it 's clean speech . 
+A:  <inbreath> 
+A:  And probably , there is much more  between classes errors for noisy speech . 
+D:  Mm - hmm . 
+A:  <inbreath> 
+A:  And <inbreath> so , um  
+A:  Yeah , so perhaps we could have a  a large gain , eh , just by looking at improving the , uh , recognition , not of phonemes , but of phoneme classes , simply . 
+A:  <inbreath> 
+D:  Mm - hmm . 
+A:  And <inbreath> which is a s a s a simpler problem , perhaps , but  
+A:  which is perhaps important for noisy speech . 
+
+
+D:  The other thing that strikes me , just looking at these numbers is , just taking the best cases , I mean , some of these , of course , even with all of our  our wonderful processing , still are horrible kinds of numbers . 
+D:  <inbreath> 
+D:  But just take the best case , the well - matched  uh , German case after  er well - matched Danish after we  the kind of numbers we 're getting are about eight or nine  uh  p percent  error  per digit . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+D:  This is obviously not usable , right ? 
+A:  No . 
+D:  I mean , if you have ten digits for a phone number  I mean , every now and then you 'll get it right . 
+A:  Sure . 
+D:  I mean , it 's  it 's , uh , <inbreath> um  
+D:  So , I mean , the other thing is that , uh  
+D:  And  and  a and  and also , um  part of what 's nice about this is that this is , uh , <inbreath> um  a realistic  almost realistic database . 
+D:  I mean , it 's still not people who are really trying to accomplish something , but  but , uh , within the artificial setup , it isn't noise artificially added , you know , simulated , uh , additive noise . 
+A:  Mm - hmm . 
+D:  It 's real noise condition . 
+D:  <inbreath> 
+D:  And , um , <outbreath> the  the training  the training , I guess , is always done on the close talking  
+A:  No , actually  actually the well - matched condition  is  still quite di still quite difficult . 
+D:  No ? 
+A:  I mean , it 's  they have all these data from the close mike and from the distant mike , <inbreath> from different driving condition , open window , closed window , <inbreath> and they take all of this  and they take seventy percent , I think , for training and thirty percent for testing . 
+D:  Yeah . 
+E:  Mm - hmm . 
+A:  So , training is done <inbreath> on different conditions and different microphones , and testing also is done  on different microphone and conditions . 
+A:  <inbreath> 
+A:  So , probably if we only take the close microphones , <inbreath> I guess the results should be much much better than this . 
+D:  I see . 
+A:  Mmm . 
+A:  <inbreath> 
+D:  Oh , OK , that explains it partially . 
+A:  Uh  
+D:  <inbreath> 
+D:  Wha - what about i in  so the  the  go ahead . 
+A:  Yeah , so  there is this , the mismatched is , um  the same kind of thing , but  the driving conditions , I mean the speed and the kind of road , is different for training and testing , is that right ? 
+E:  Yeah . 
+A:  And the last condition is close microphone for training and distant for testing . 
+A:  Yeah . 
+D:  Uh , OK , so  
+A:  So  <inbreath> s so  
+D:  I see . 
+D:  So , yeah , so the high  so the  right  so the highly mismatched <inbreath> case  is in some sense a good model for what we 've been , you know , typically talking about when we talk about additive noise in  
+D:  <inbreath> 
+D:  And so  and i i k it does correspond to a realistic situation in the sense that , <inbreath> um , people might really be trying to , uh , call out telephone numbers or some or something like that , in  in their cars <inbreath> and they 're trying to connect to something . 
+A:  Yeah . 
+D:  <inbreath> 
+A:  Mmm . 
+D:  Um  
+A:  Actually , yeah , it 's very close to clean speech training because , well , because the close microphone <inbreath> and noisy speech testing , yeah . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah . 
+D:  <inbreath> 
+A:  Mmm . 
+D:  And the well - matched condition  is what you might imagine that you might be able to approach , if you know that this is the application . 
+D:  You 're gonna record a bunch on people in cars and so forth , and do these training . 
+D:  <inbreath> 
+D:  And then , uh , when y you sell it to somebody , they will be a different person with a different car , and so on . 
+D:  So it 's  this is a an optim somewhat optimistic view on it , uh , so , you know , the real thing is somewhere in between the two . 
+D:  <inbreath> 
+D:  Uh , uh , but  
+A:  Yeah . 
+A:  But the  I mean , the  th th it doesn't work . 
+D:  Even the optimistic one is  
+A:  <laugh> 
+D:  Yeah , right . 
+D:  <laugh> 
+A:  It  
+A:  <laugh> 
+D:  Right , it doesn't work . 
+D:  <inbreath> 
+D:  So , in a way , that 's , you know , that 's sort of the dominant thing is that even , say on the development set stuff that we saw , the , uh , the numbers that , uh , that Alcatel was getting when choosing out the best single numbers , <inbreath> it was just  you know , it wasn't good enough for  for  a  a  for a real system . 
+A:  Mmm . 
+A:  Mm - hmm . 
+D:  You  you  you , <inbreath> um  
+D:  So , uh , we still have stuff to do . 
+D:  <laugh> 
+A:  Yeah . 
+A:  <laugh> 
+D:  Uh , and , uh  I don't know  
+D:  So , looking at the data , where , you know  what 's the  what 's  what 's th what 's characteristic i e yeah , I think that 's  that 's a good thing . 
+
+
+D:  Does a any you have any thoughts about what else <inbreath> y you 're thinking that you didn't get to that you would like to do if you had more time ? 
+D:  Uh  
+E:  Oh , f a lot of thing . 
+E:  <inbreath> 
+E:  Because we trying a lot of s  thing , and we doesn't work , <inbreath> we remove these . 
+E:  Maybe <inbreath> we trying again with the articulatory feature . 
+E:  I don't know exactly because we tried  we  some  one experiment that doesn't work . 
+E:  Um , forgot it , something  
+D:  Mm - hmm . 
+E:  I don't know exactly because , tsk  <inbreath> 
+E:  maybe do better some step the general , <inbreath> eh , diagram . 
+E:  <inbreath> 
+D:  Mm - hmm . 
+E:  I don't know exactly s to think what we can improve . 
+E:  <inbreath> 
+D:  Yeah , cuz a lot of time it 's true , there were a lot of times when we 've tried something and it didn't work right away , even though we had an intuition that there should be something there . 
+D:  And so then we would just stop it . 
+D:  Um  
+E:  <laugh> 
+D:  And , uh , one of the things  I don't remember the details on , but I remember at some point , when you were working with a second stream , and you tried a low - pass filtering to cepstrum , in some case you got  
+E:  MSG 
+D:  Well , but it was  an MSG - like thing , but it wasn't MSG , right ? 
+E:  Yeah . 
+D:  <inbreath> 
+D:  Uh , you  y I think in some case you got some little improvement , but it was , you know , sort of a small improvement , and it was a  a big added complication , so you dropped it . 
+D:  But , um , that was just sort of one try , right ? 
+D:  You just took one filter , threw it there , right ? 
+A:  Yeah , yeah . 
+D:  And it seems to me that , um , if that is an important idea , which , you know , might be , that one could work at it for a while , as you 're saying . 
+A:  Hmm . 
+D:  And , uh  
+D:  Uh , and you had , you know , you had the multi - band things also , and , you know , there was issue of that . 
+A:  Yeah , mmm . 
+A:  Mm - hmm . 
+D:  <inbreath> 
+E:  Mm - hmm . 
+D:  Um , Barry 's going to be , uh , continuing working on multi - band things as well . 
+D:  We were just talking about , um , <inbreath> some , uh , some work that we 're interested in . 
+D:  <inbreath> 
+D:  Kind of inspired by the stuff by Larry Saul with the , uh  uh , learning articulatory feature in  I think , in the case of his paper  with sonorance based on , uh , multi - band information where you have a  a combination of gradient learning an and , uh , EM . 
+D:  Um , and  
+D:  <sniff> <inbreath> 
+
+
+D:  Um , so , I think that , you know , this is a , uh  this is a neat data set . 
+D:  Um , and then , uh , as we mentioned before , we also have the  the new , uh , digit set coming up from recordings in this room . 
+D:  So , there 's a lot of things to work with . 
+D:  Um  and , uh  what I like about it , in a way , is that , uh , the results are still so terrible . 
+B:  <laugh> 
+C:  <laugh> 
+D:  Uh  
+A:  <laugh> 
+D:  <laugh> 
+D:  Uh  
+D:  <laugh> 
+D:  I mean , they 're much better than they were , you know . 
+D:  We 're talking about thirty to sixty percent , uh , error rate reduction . 
+D:  That 's  that 's really great stuff to  to do that in relatively short time . 
+D:  But even after that it 's still , you know , so poor that  that , uh , no one could really use it . 
+D:  So , um  
+D:  <inbreath> 
+D:  I think that 's great that  because  and y also because again , it 's not something  sometimes we 've gotten terrible results by taking some data , and artificially , you know , convolving it with some room response , or something  we take a very  
+D:  Uh , at one point , uh , Brian and I went downstairs into the  the basement where it was  it was in a hallway where it was very reverberant and we  we made some recordings there . And then we <inbreath>  we , uh  uh , made a simulation of the  of the room acoustics there and  and applied it to other things , and uh  
+A:  Mm - hmm . 
+D:  But it was all pretty artificial , and  and , you know , how often would you really try to have your most crucial conversations in this very reverberant hallway ? 
+A:  <laugh> 
+C:  <laugh> 
+D:  Um  
+D:  So , <swallow> uh  
+D:  This is what 's nice about the Aurora data and the data here , is that  is that it 's sort of a realistic room situation  uh , acoustics  acoustic situation , both terms in noise and reflections , and so on and n n 
+D:  And , uh , <inbreath> uh , with something that 's still relatively realistic , it 's still very very hard to do very well . 
+D:  So  
+D:  Yeah . 
+A:  Yeah , so d well  
+A:  Actually , this is  tha that 's why we  well , it 's a different kind of data . 
+A:  We 're not  we 're not used to work with this kind of data . 
+D:  Yeah . 
+A:  That 's why we should have a loo more closer look at what 's going on . 
+E:  Mm - hmm . 
+A:  Um  
+A:  Yeah . 
+A:  So this would be the first thing , and then , of course , try to  well , <inbreath> kind of debug what was wrong , eh , when we do Aurora test on the MSG  particularly , and on the multi - band . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Yeah . 
+A:  Uh  
+D:  Yeah . 
+D:  Yeah . No , I  I think there 's lots of  lots of good things to do with this . 
+D:  So  
+
+
+D:  Um  
+D:  So let 's  I guess  
+D:  You were gonna say something else ? 
+D:  Oh , OK . 
+D:  What do you think ? 
+C:  About  
+D:  <laugh> 
+D:  Anything  
+C:  About other experiments ? 
+B:  <laugh> 
+A:  <laugh> 
+C:  Uh , now , I 'm interested in , um , uh  looking at the experiments where you use , um  uh , data from multiple languages to train the neural net . 
+C:  And I don't know how far , or if you guys even had a chance to try that , but  that would be some it 'd be interesting to me . 
+D:  <inbreath> 
+A:  Yeah , but  
+D:  S b 
+A:  Again , it 's the kind of  of thing that , uh , we were thin thinking  thinking that it would work , but it didn't work . 
+A:  And , eh , so there is kind of  of  not a bug , but something wrong in what we are doing , perhaps . 
+D:  Yeah . 
+C:  Right . 
+C:  Right . 
+A:  <inbreath> 
+C:  Right . 
+A:  Uh , something wrong , perhaps in the  just in the  the fact that the labels are  well  
+C:  Mm - hmm . 
+A:  What worked best is the hand - labeled data . 
+A:  <inbreath> 
+C:  Mm - hmm . 
+A:  Um  
+A:  Uh , so , yeah . 
+A:  I don't know if we can get some hand - labeled data from other languages . 
+C:  Yeah . 
+A:  <inbreath> 
+A:  It 's not so easy to find . 
+C:  Right . 
+A:  But  that would be something interesting t to  to see . 
+C:  Yeah , yeah . 
+D:  Yeah . 
+D:  Also , uh , <inbreath> I mean , there was just the whole notion of having multiple nets that were trained on different data . 
+D:  So one form of different data was  is from different languages , but the other  
+D:  Well , i in fact , uh , m in those experiments it wasn't so much combining multiple nets , it was a single net that had different  
+A:  Yeah . 
+D:  <inbreath> 
+D:  So , first thing is would it be better if they were multiple nets , for some reason ? 
+D:  <inbreath> 
+D:  Second thing is , never mind the different languages , just having acoustic conditions rather than training them all up in one , would it be helpful to have different ones ? 
+D:  So , um  
+D:  That was a question that was kind of raised by Mike Shire 's thesis , and on  in that case in terms of reverberation . 
+D:  Right ? That  that sometimes it might be better to do that . 
+D:  But , um , <inbreath> I don't think we know for sure . 
+
+
+C:  OK . 
+
+
+D:  So , um  
+D:  Right . So , next week , we , uh , won't meet because you 'll be in Europe . 
+D:  Whe - when are you two getting back ? 
+E:  Um , I 'm  
+A:  You on Friday or S on Saturday or  ? 
+E:  Sunday because it 's  it 's less expensive , the price  the price the ticket . 
+A:  S oh yeah , Sunday , yeah . 
+D:  Yeah , that 's right . 
+C:  Ah . 
+D:  You 've gotta S have a Saturday overnight , right ? 
+A:  I 'll be back on Tuesday . 
+D:  Tuesday . 
+D:  <inbreath> 
+C:  Where  where 's the meeting ? 
+D:  Um  
+D:  Uh , Amsterdam , I think , yeah ? Yeah . 
+A:  Yeah , Amsterdam . 
+C:  Uh - huh . 
+D:  Yeah , yeah . 
+D:  Yep . 
+D:  Um  
+D:  So , we 'll skip next week , and we 'll meet two weeks from now . 
+D:  And , uh , I guess the main topic will be , uh , you telling us what happened . 
+D:  <laugh> 
+A:  Yeah . 
+A:  <breath-laugh> 
+E:  Yeah . 
+D:  Uh , so  
+D:  Yeah , well , if we don't have an anything else to discuss , we should , uh , turn off the machine and then say the real nasty things . 
+C:  <laugh> 
+D:  <laugh> 
+A:  <laugh> 
+B:  <laugh> 
+C:  Should we do digits first ? 
+B:  Oh , yeah , digits . 
+D:  Oh yeah , digits ! 
+A:  Yeah . 
+D:  Yeah . Good point . 
+D:  Yeah , good thinking . 
+D:  <mike noise> 
+D:  Why don't you go ahead . 
+C:  OK . 
+C:  Transcript three seven nine one three eight one zero  
+C:  nine zero four  
+C:  zero two zero zero seven  
+C:  one one seven O four  
+C:  two four O nine two two one  
+C:  three six one three five O nine  
+C:  four nine  
+C:  five  
+C:  six zero six zero seven  
+C:  eight five six eight zero  
+C:  nine seven  
+C:  O five O five  
+C:  zero seven zero one zero zero nine  
+C:  one  
+C:  two  
+C:  three O seven nine eight eight O  
+C:  five seven  
+C:  six three nine  
+C:  seven seven one eight  
+C:  eight  
+C:  nine  
+D:  Transcript three seven five one dash three seven seven zero .  
+D:  eight five five seven three zero six  
+D:  nine six six O  
+D:  O  
+D:  zero  
+D:  one  
+D:  two O  
+D:  four two  
+D:  five five six  
+D:  six six  
+D:  seven eight two  
+D:  eight  
+D:  nine  
+D:  O O  
+D:  one one  
+D:  two three four  
+D:  three eight six  
+D:  four four eight three  
+D:  five  
+D:  six  
+D:  seven zero four three zero zero seven  
+B:  Transcript three six seven one dash three six nine zero .  
+B:  four  
+B:  five zero zero four two  
+B:  seven two O three  
+B:  eight five three O five one O  
+B:  nine seven one eight four seven six  
+B:  O  
+B:  zero nine four five  
+B:  one O three  
+B:  two  
+B:  four one one five  
+B:  five four nine nine two  
+B:  six six three  
+B:  seven seven nine  
+B:  eight eight zero zero two eight five  
+B:  nine O seven O  
+B:  O O eight  
+B:  one two  
+B:  two eight six eight  
+B:  three five three seven one zero nine  
+B:  four five  
+A:  Transcript six nine  
+A:  Uh , yeah , I 'm sorry .  
+A:  Transcript three six nine one three seven one O .  
+A:  five  
+A:  six  
+A:  seven O six  
+A:  nine four five  
+A:  O one five  
+A:  zero three two  
+A:  one seven two zero  
+A:  two six two four  
+A:  three O four four O five five  
+A:  four  
+A:  six one seven O O  
+A:  seven five eight six two eight three  
+A:  eight eight four  
+A:  nine eight O  
+A:  O  
+A:  zero zero one nine eight  
+A:  one zero zero  
+A:  three two eight zero nine  
+A:  four two  
+A:  five four five  
+E:  Transcript number three seven seven one dash three seven nine O .  
+E:  nine one O eight  
+E:  O four six nine O  
+E:  zero seven  
+E:  one six O one  
+E:  two  
+E:  three  
+E:  four zero zero zero six four seven  
+E:  six five nine nine zero eight five  
+E:  seven six seven two eight five six  
+E:  eight three six seven four one three  
+E:  nine eight nine  
+E:  O  
+E:  zero  
+E:  O  
+E:  @ @ I 'm sorry .  
+E:  one O  
+E:  three one four O  
+E:  four seven  
+E:  five seven three six nine  
+E:  six five  
+E:  seven  
+E:  eight  
+
+

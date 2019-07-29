@@ -1,0 +1,337 @@
+C:  Should we do digits ? 
+C:  Yes , again . 
+C:  We did it again , Morgan . 
+C:  Is he gonna come here ? 
+C:  So when you said " in town " , you mean  Oregon . 
+C:  Oh . 
+C:  I have something just fairly brief to report on . 
+C:  Um , I did some  experim uh , uh , just a few more experiments before I had to , <breath> uh , go away for the w well , that week . 
+C:  Was it last week or whenever ? 
+C:  Um , 
+C:  so what I was started playing with was the  th again , this is the HTK back - end . 
+C:  And , um , 
+C:  I was curious because the way that they train up the models , <breath> they go through about four sort of rounds of  of training . 
+C:  And in the first round they do  uh , I think it 's three iterations , 
+C:  and for the last three rounds e e they do seven iterations of re - estimation in each of those three . 
+C:  And so , 
+C:  you know , that 's part of what takes so long to train the  the  the back - end for this . 
+C:  Yeah . 
+C:  Uh , 
+C:  maybe I should write it on the board . 
+C:  So , <breath> there 's four rounds of training . 
+C:  Um , 
+C:  I g I g I guess you could say iterations . 
+C:  The first one is three , then seven , seven , and seven . 
+C:  And what these numbers refer to is the number of times that the , uh , HMM re - estimation is run . 
+C:  It 's this program called H E 
+C:  OK . 
+C:  So what happens is , um , at each one of these points , you increase the number of Gaussians in the model . 
+C:  Yeah . 
+C:  The mix up . 
+C:  Right . 
+C:  And so , in the final one here , you end up with , uh  for all of the  the digit words , you end up with , uh , three  mixtures per state , 
+C:  eh , in the final  thing . 
+C:  So I had done some experiments where I was  I  I want to play with the number of mixtures . 
+C:  But , um , 
+C:  uh , I wanted to first test to see if we actually need to do  this many iterations early on . 
+C:  And so , 
+C:  um , I  I ran a couple of experiments where I <breath> reduced that to l to be three , two , two , <breath> uh , five , I think , 
+C:  and I got almost the exact same results . 
+C:  And  but it runs much much faster . 
+C:  So , um , 
+C:  I  I think m  it only took something like , uh , three or four hours to do the full training , 
+C:  as opposed to wh what , sixteen hours or something like that ? 
+C:  I mean , it takes  you have to do an overnight basically , the way it is set up now . 
+C:  So , 
+C:  uh , 
+C:  even we don't do anything else , doing something like this could allow us to turn experiments around a lot faster . 
+C:  And when you have your final thing , we go back to this . 
+C:  So , um , 
+C:  and it 's a real simple change to make . 
+C:  I mean , it 's like one little text file you edit and change those numbers , 
+C:  and you don't do anything else . 
+C:  And then you just run . 
+C:  So it 's a very simple change to make 
+C:  and it doesn't seem to hurt all that much . 
+C:  So I  
+C:  Uh , I  I have to look to see what the exact numbers were . 
+C:  I  I thought was , like , three , two , two , five , 
+C:  but I I 'll  I 'll double check . 
+C:  It was <laugh> over a week ago that I did it , 
+C:  so I can't remember exactly . 
+C:  But , uh  
+C:  um , but it 's so much faster . 
+C:  I it makes a big difference . 
+C:  So we could do a lot more experiments and throw a lot more stuff in there . 
+C:  Um . 
+C:  Oh , the other thing that I did was , um , <breath> I compiled  the HTK stuff for the Linux boxes . 
+C:  So we have this big thing that we got from IBM , 
+C:  which is a five - processor machine . 
+C:  Really fast , 
+C:  but it 's running Linux . 
+C:  So , you can now run your experiments on that machine 
+C:  and you can run five at a time 
+C:  and it runs , <breath> uh , as fast as , you know , uh , five different machines . 
+C:  So , um , 
+C:  I 've forgotten now what the name of that machine is 
+C:  but I can  I can send email around about it . 
+C:  And so we 've got it  
+C:  now HTK 's compiled for both the Linux and for , um , the Sparcs . 
+C:  Um , you have to make  you have to make sure that in your dot CSHRC , <breath> um , it detects whether you 're running on the Linux or a  a Sparc and points to the right executables . 
+C:  Uh , 
+C:  and you may not have had that in your dot CSHRC before , if you were always just running the Sparc . 
+C:  So , 
+C:  um , 
+C:  uh , I can  I can tell you exactly what you need to do to get all of that to work . 
+C:  But it 'll  it really increases what we can run on . 
+C:  So , <breath> together with the fact that we 've got these  faster Linux boxes and that it takes less time to do  these , um , we should be able to crank through a lot more experiments . 
+C:  So . 
+C:  So after I did that , then what I wanted to do  was try  increasing the number of mixtures , 
+C:  just to see , um  see how  how that affects performance . 
+C:  So . 
+C:  Mm - hmm . 
+C:  Exactly . 
+C:  Right . 
+C:  Right . 
+C:  Uh - huh . 
+C:  Uh , 
+C:  let 's see , 
+C:  uh . 
+C:  It goes from 
+C:  this  uh , try to go it backwards  this  at this point it 's two mixtures  per state . 
+C:  So this just adds one . 
+C:  Except that , uh , actually for the silence model , it 's six mixtures per state . 
+C:  Uh , so it goes to two . 
+C:  Um . 
+C:  And I think what happens here is  
+C:  Yeah . I think that 's what it is . 
+C:  Uh , 
+C:  yeah . It 's , uh  
+C:  Shoot . 
+C:  I  I  I can't remember now what happens at that first one . 
+C:  Uh , I have to look it up and see . 
+C:  Um , 
+C:  there  because they start off with , uh , an initial model 
+C:  which is just this global model , 
+C:  and then they split it to the individuals . 
+C:  And so , <breath> it may be that that 's what 's happening here . 
+C:  I  I  <mouth> I have to look it up and see . 
+C:  I  I don't exactly remember . 
+C:  So . That 's it . 
+C:  Hmm . 
+C:  How should that be done ? 
+C:  I mean , it  it seems like there 's a simple way  
+C:  Uh , this seems like an obvious mistake or something . 
+C:  Th - they 're  
+C:  Mm - hmm . 
+C:  Well , it seems like they should do , like , the percentage improvement or something , 
+C:  rather than the  absolute improvement . 
+C:  Oh . 
+C:  Why don't they not look at improvements but just look at your av your scores ? 
+C:  You know , figure out how to combine the scores 
+C:  with a weight or whatever , 
+C:  and then give you a score  
+C:  here 's your score . 
+C:  And then they can do the same thing for the baseline system  
+C:  and here 's its score . 
+C:  And then you can look at  
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Hmm . 
+C:  It sounds like they don't really have a good idea about what the final application is gonna be . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  I  I guess what I 'm  
+C:  I mean , I  I was thinking about it in terms of , if I were building the final product 
+C:  and I was gonna test to see which front - end I 'd  <clears throat> I wanted to use , 
+C:  I would <breath> try to  weight things depending on the exact environment that I was gonna be using the system in . 
+C:  If I  
+C:  Yeah . 
+C:  So if  if they don't know , doesn't that suggest the way for them to go ? 
+C:  Uh , 
+C:  you assume everything 's equal . 
+C:  I mean , y y I mean , you  
+C:  Yeah . 
+C:  Right . 
+C:  Mm - hmm . 
+C:  So not  
+C:  So not try to combine them . 
+C:  Yeah . 
+C:  The training and testing . 
+C:  Yeah . 
+C:  So  
+C:  so you should weight those other conditions v very  you know , really small . 
+C:  I mean , that 's more of an information kind of thing . 
+C:  Uh - huh . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Well , that 'll teach them to roll their window up . 
+C:  Mm - hmm . 
+C:  Hmm . 
+C:  Yeah . 
+C:  Wait a minute . 
+C:  I  I 'm confused . 
+C:  Wha - what do you mean ? 
+C:  Oh , 
+C:  oh . I see . 
+C:  So there 's this assumption that the v the voice activity detector can only use the MFCC ? 
+C:  Yeah . 
+C:  I g 
+C:  Yeah . 
+C:  I don't s 
+C:  But they seem like two  separate issues . 
+C:  Right ? 
+C:  I mean  
+C:  But it seems like you should do both . 
+C:  Right ? 
+C:  Yeah . It seems like you should try to make your baseline as good as possible . 
+C:  And if it turns out that  you can't improve on that , well , I mean , then , you know , nobody wins and you just use MFCC . 
+C:  Right ? 
+C:  It seems like whatever they choose they shouldn't , <breath> you know , purposefully brain - damage a part of the system to  make a worse baseline , 
+C:  or  
+C:  You know ? 
+C:  Mmm . 
+C:  Mm - hmm . 
+C:  Is this related to the issue that you brought up a couple of meetings ago with the  the <breath> musical tones 
+C:  and  ? 
+C:  Mmm . 
+C:  What sorts of  
+C:  what sorts of features are you looking at ? 
+C:  Wait a minute . 
+C:  I  what does that mean ? 
+C:  The variance of the spectrum of excitation . 
+C:  How do you know  ? 
+C:  How did you get your  voiced and unvoiced truth data ? 
+C:  Is this a  a s a trained system ? 
+C:  Or is it a system where you just pick some thresholds ? 
+C:  Ho - how does it work ? 
+C:  Mm - hmm . 
+C:  Because it seems like what you said about the mean of the  the voiced and the unvoiced   <breath> that seemed pretty encouraging . 
+C:  Right ? 
+C:  Well , y 
+C:  Well , y I  I don't know that I would trust that so much 
+C:  because you 're doing these canonical mappings from TIMIT labellings . 
+C:  Right ? 
+C:  So , 
+C:  really that 's sort of a cartoon picture about what 's voiced and unvoiced . 
+C:  So that could be giving you a lot of variance . 
+C:  I mean , 
+C:  i it  it may be that  that you 're finding something good 
+C:  and that the variance is sort of artificial because of how you 're getting your truth . 
+C:  Mm - hmm . 
+C:  Right . 
+C:  Right . 
+C:  So i is the idea that you 're going to take  whatever features you develop and  and just add them onto the future vector ? 
+C:  Or , what 's the use of the  the voiced - unvoiced detector ? 
+C:  It 's not part of a VAD system that you 're doing ? 
+C:  Oh , 
+C:  OK . 
+C:  Features . 
+C:  I see . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  I think it 's a neat thing . 
+C:  Uh , it seems like a good idea . 
+C:  So how does  
+C:  uh , maybe I 'm going in too much detail , 
+C:  but <breath> how exactly do you make the difference between the FFT and the smoothed  spectral envelope ? 
+C:  Wha - wh i i uh , how is that , uh  ? 
+C:  Mm - hmm . 
+C:  Mmm . 
+C:  So you  you end up with a vector that 's the same length as the FFT  vector ? 
+C:  And then you just , uh , compute differences 
+C:  and , 
+C:  uh , sum the differences ? 
+C:  Oh ! OK . 
+C:  So this is  uh , basically this is comparing <clears throat> an original version of the signal to a smoothed version of the same signal ? 
+C:  Uh - huh . 
+C:  Like which of the  ? 
+C:  Yeah . 
+C:  Right , right . 
+C:  It 's the ratio . 
+C:  So what 's th uh , what 's the intuition behind this kind of a thing ? 
+C:  I  I don't know really know the signal - processing well enough to understand what  <breath> what is that doing . 
+C:  Uh - huh . 
+C:  Uh - huh . 
+C:  Right . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  OK . 
+C:  Oh ! OK . 
+C:  Yeah . 
+C:  I see . 
+C:  So do you have a picture that sh ? 
+C:  Is this for a voiced segment , 
+C:  this picture ? 
+C:  What does it look like for unvoiced ? 
+C:  This is the difference . 
+C:  OK . 
+C:  Hmm . 
+C:  So , 
+C:  does  does the periodicity of this signal say something about the  the  
+C:  the pitch ? 
+C:  OK . 
+C:  OK . 
+C:  I see . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Right . 
+C:  Right . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Right . 
+C:  Oh . 
+C:  This moved in the  
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Right . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+C:  Hmm . 
+C:  That 's  that 's really neat . 
+C:  So you don't have one for unvoiced  picture ? 
+C:  Oh . 
+C:  I would li I would like to see those  pictures . 
+C:  Yeah . 
+C:  And so you said this is pretty  
+C:  doing this kind of thing is pretty robust to noise ? 
+C:  Huh . 
+C:  You end up with a similar difference 
+C:  over here ? 
+C:  OK . 
+C:  Cool ! 
+C:  Oh , that 's clean . 
+C:  Oh , OK 
+C:  Oh . 
+C:  OK . 
+C:  So this one inclu is a longer  Ah . 
+C:  Oh , it 's that time - frequency trade - off thing . 
+C:  Right ? 
+C:  I see . 
+C:  Yeah . 
+C:  Oh . Oh , so this i is this the difference here , 
+C:  for that ? 
+C:  Oh , that 's the f the original . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Oh . 
+C:  That 's interesting . 
+C:  Would you  would you wanna do this kind of , uh , difference thing <breath> after you do spectral subtraction ? 
+C:  Seems like you 'd wanna do it on the FFT bins . 
+C:  I I mean , if you were gonna  
+C:  uh , for  for this purpose , that is . 
+C:  When is the next , um , Aurora  deadline ? 
+C:  June . 
+C:  Y 
+C:  Should we do digits ? 

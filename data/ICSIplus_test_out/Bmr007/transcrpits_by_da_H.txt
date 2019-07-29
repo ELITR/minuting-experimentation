@@ -1,0 +1,257 @@
+H:  OK , thank you . 
+H:  Yeah , so if  uh   So if anyone hasn't signed the consent form , please do so . 
+H:  The new consent form . 
+H:  The new and improved consent form . 
+H:  And uh , shall I go ahead and do some digits ? 
+H:  OK , whatever you want . 
+H:  It 's uh   Yeah , it doesn't matter . 
+H:  OK . 
+H:  So we all forgot . 
+H:  And I have some  short research issues . 
+H:  Do you want me to  be there for that ? 
+H:  I noticed you C C ' ed me , but I wasn't actually a recipient . 
+H:  I didn't quite know what to make of that . 
+H:  OK . 
+H:  Is this the same as the email or different ? 
+H:  OK . 
+H:  Is this uh  just raw counts or is it  
+H:  So it would be interesting to see how much each person spoke . 
+H:  Normalized to how much  
+H:  No  no actually , that would be actually statistically correct , 
+H:  but 
+H:  Yes , that 's right , so you don't nee OK . 
+H:  Yeah , when  this is what  This is actually  when Jane sent this email first , is what caused me to start thinking about anonymizing the data . 
+H:  Uh - huh . 
+H:  Yep . 
+H:  Hundred ninety - seven . 
+H:  S n are  
+H:  Statistical . 
+H:  Yep . 
+H:  Mm - hmm . 
+H:  I want to go back and listen to minute forty - one . 
+H:  Cuz i i I find it interesting that there were a large number of overlaps and they were all two - speaker . 
+H:  I mean what I thought  what I would have thought in  is that when there were a large number of overlaps , it was because everyone was talking at once , <inbreath> but uh apparently not . 
+H:  That 's really neat . 
+H:  This is  really interesting data . 
+H:  Mm - hmm . 
+H:  Though it wasn't  in the design . 
+H:  Right . 
+H:  Yep . 
+H:  I could certainly see it going either way . 
+H:  Um . 
+H:  Yep , we need to put trackers on it . 
+H:  Yeah , you don't have it . 
+H:  Your mike is  
+H:  That is an earphone , so if you just put it  so it 's on your ear . 
+H:  There you go . 
+H:  Thank you . 
+H:  It 'd be interesting if we could do prediction . 
+H:  Language model prediction of overlap , that would be really interesting . 
+H:  Right . 
+H:  Mm - hmm . 
+H:  Let 's pick a different word . 
+H:  Trying to get the floor . 
+H:  It 's been studied a lot . 
+H:  Ach . 
+H:  Mm - hmm . 
+H:  Well , but from the acoustic point of view , it 's all good . 
+H:  Yep . 
+H:  Well , that 's  the  that was my  my status report , 
+H:  so <laugh>  Once we 're done with this stuff discussing , 
+H:  Mm - hmm . 
+H:  Can . 
+H:  Right . 
+H:  Yeah , we talked about this repeatedly . 
+H:  It just seems like that 's a very different  thing than what we 're doing . 
+H:  Barriers ! 
+H:  OK , we can record , but no one can look at each other . 
+H:  Close your eyes . 
+H:  Turn off the lights . 
+H:  Um , what  I had thought we were gonna do is just take pictures of the whiteboards . rather than take pictures of the meeting . 
+H:  And , uh  
+H:  Seat number , that 's a good idea . 
+H:  I 'll do that . 
+H:  I 'll do that on the next set of forms . 
+H:  I finally remembered to put , uh put native language on the newer forms . 
+H:  No . 
+H:  The wireless ones . 
+H:  And even the jacks , I mean , I 'm sitting here and the jack is  over  in front of you . 
+H:  It would be another task . 
+H:  Having  having ground tu truth would be nice , so  seat number would be good . 
+H:  So I 'm gonna put little labels on all the chairs with the seat number . 
+H:  That 's a good idea . 
+H:  But , uh  
+H:  Yep . 
+H:  Yep . 
+H:  Yeah . 
+H:  Hmm . 
+H:  Of course , the  where we sit at the table , I find is very interesting , that we do tend to  cong  to gravitate to the same place each time . 
+H:  and it 's somewhat coincidental . 
+H:  I 'm sitting here so that I can run into the room if the hardware starts , you know , catching fire or something . 
+H:  I just want to be at the head of the table . 
+H:  Take control . 
+H:  Yeah , I 've been playing with , um uh , using the close - talking mike to do  to try to figure out who 's speaking . 
+H:  So my first attempt was just using thresholding and filtering , that we talked about  about two weeks ago , 
+H:  and so I played with that a little bit , and <inbreath> it works O K ,  except that  it 's very sensitive to your choice of <inbreath> your filter width and your <inbreath> threshold . 
+H:  So if you fiddle around with it a little bit and you get good numbers you can actually do a pretty good job of segmenting when someone 's talking and when they 're not . 
+H:  But if you try to use the same paramenters on another speaker , it doesn't work anymore , 
+H:  even if you normalize it based on the absolute loudness . 
+H:  It does work for the one speaker throughout the whole meeting . 
+H:  Um Pretty well . 
+H:  Pretty well . 
+H:  How did I do it ? 
+H:  What do you mean ? 
+H:  The algorithm was , uh take o every frame that 's over the threshold , and then median - filter it , <outbreath> and then look for runs . 
+H:  So there was a minimum run length , 
+H:  so that  
+H:  A threshold that you pick . 
+H:  Yeah . 
+H:  So you take a  each frame , and you compute the energy 
+H:  and if it 's over the threshold you set it to one , and if it 's under the threshold you set it to zero , <inbreath> so now you have a bit stream  of zeros and ones . 
+H:  And then I median - filtered that <inbreath> using , um  a fairly long  filter length . 
+H:  Uh  well , actually I guess depends on what you mean by long , you know , tenth of a second sorts of numbers . 
+H:  Um and that 's to average out you know , pitch , you know , the pitch contours , and things like that . 
+H:  And then , uh looked for long runs . 
+H:  And that works O K , if you fil if you tune the filter parameters , if you tune <inbreath> how long your median filter is and how high you 're looking for your thresholds . 
+H:  No . 
+H:  I certainly could though . 
+H:  But this was just I had the program mostly written already so it was easy to do . 
+H:  OK and then the other thing I did , was I took <inbreath> Javier 's speaker - change detector  acoustic - change detector , and I implemented that with the close - talking mikes , 
+H:  and  unfortunately that 's not working real well , and it looks like it 's  
+H:  the problem is  he does it in two passes , 
+H:  the first pass <inbreath> is to find candidate places to do a break . 
+H:  And he does that using a neural net doing broad phone classification and he has the <inbreath> the , uh  one of the phone classes is silence . 
+H:  And so the possible breaks are where silence starts and ends . 
+H:  And then he has a second pass which is a modeling  a Gaussian mixture model . 
+H:  Um looking for <inbreath> uh <inbreath> whether it improves or  or degrades to split at one of those particular places . 
+H:  And what looks like it 's happening is that the  even on the close - talking mike the broad phone class classifier 's doing a really bad job . 
+H:  Uh , I have no idea . 
+H:  I don't remember . 
+H:  Does an do you remember , Morgan , 
+H:  was it Broadcast News ? 
+H:  Um  So , at any rate , my next attempt ,  which I 'm in the midst of and haven't quite finished yet was actually using the <inbreath> uh , thresholding as the way of generating the candidates . 
+H:  Because one of the things that definitely happens is if you put the threshold low <inbreath> you get lots of breaks . 
+H:  All of which are definitely acoustic events . 
+H:  They 're definitely <inbreath> someone talking . 
+H:  But , like , it could be someone who isn't the person here , but the person over there or it can be the person breathing . 
+H:  And then feeding that into the acoustic change detector . 
+H:  And so I think that might work . 
+H:  But , I haven't gotten very far on that . 
+H:  But all of this is close - talking mike , 
+H:  so 
+H:  it 's , uh  just  just trying to get some ground truth . 
+H:  Oh , absolutely . 
+H:  So  s my intention for this is  is as an aide for ground truth . 
+H:  not  
+H:  Say it again ? 
+H:  I 'm  I 'm not sure what you 're saying , 
+H:  can you try  
+H:  Onset detector , OK . 
+H:  Right . 
+H:  Right . 
+H:  But different speakers . 
+H:  Ah , in the clo in the P D A , you mean ? 
+H:  Absolutely . 
+H:  Yeah , no question . 
+H:  It 'll be much harder . 
+H:  Much harder . 
+H:  Right . 
+H:  Mm - hmm . 
+H:  Yeah , when a  phone changes . 
+H:  Yep . 
+H:  Do something . 
+H:  Right . 
+H:  Absolutely . 
+H:  Right . 
+H:  With the what file ? 
+H:  " Mixed ? " 
+H:  Oh , absolutely . 
+H:  This is  this is not what I was suggesting to do . 
+H:  Well , also what I 'm doing right now is not intended to be an acoustic change detector for far - field mikes . 
+H:  What I 'm doing <inbreath> is trying to use the close - talking mike <inbreath> and just use   Can - and just generate candidate and just  try to get a first pass at something that sort of works . 
+H:  and I haven't spent a lot of time on it and I 'm not intending to spend a lot of time on it . 
+H:  So . 
+H:  Yep . 
+H:  Everyone else . 
+H:  All the  Yep . 
+H:  It 's a little big . 
+H:  Two to the N . 
+H:  Two to the number of people in the meeting . 
+H:  Anyway . 
+H:  I was thinking about doing that originally to find out  who 's the loudest , 
+H:  and that person is certainly talking . 
+H:  But I also wanted to find threshold  uh , excuse me , mol overlap . 
+H:  So , not just  just the loudest . 
+H:  OK . 
+H:  Could you fill that out anyway ? 
+H:  Just ,  put your name in . 
+H:  Are y you want me to do it ? 
+H:  I 'll do it . 
+H:  I know . 
+H:  And everyone else is low , yeah . 
+H:  Ding , ding , ding , ding . 
+H:  Nodding with blindfolds , 
+H:  " what are you nodding about ? " 
+H:  " Sorry , I 'm just  I 'm just going to sleep . " 
+H:  Mm - hmm . 
+H:  Well , we could just turn out the lights . 
+H:  The acoustics . 
+H:  I think , blindfolds . 
+H:  Yeah , that 's right , we didn't tell them we would be blindfolding . 
+H:  Hasn't been sent yet , but  It 's getting ready . 
+H:  Mm - hmm . 
+H:  I  I did a bunch of stuff for supporting of digits . 
+H:  So ,  OK , I 'll send you a sentence that doesn't just say " a bunch of " ? 
+H:  Yep . 
+H:  " Stuff "  is not very technical . 
+H:  I 'll try to  phrase it in passive voice . 
+H:  It 's just , uh  beeping out parts that you don't want included in the meeting 
+H:  so , you know you can say things like , " Well , this should probably not be on the record , but beep " 
+H:  Yeah , you can either beep or it can be silence . 
+H:  I  I couldn't decide . which was the right way to do it . 
+H:  Beep is good auditorily , 
+H:  if someone is listening to it , there 's no mistake that it 's been beeped out , 
+H:  but for software it 's probably better for it to be silence . 
+H:  Yep . 
+H:  And I use  it 's  it 's , uh  it 's an A below middle C beep , 
+H:  so 
+H:  Yep . 
+H:  Yeah , it 's not  
+H:  Yep . 
+H:  Of course . 
+H:  Yeah you have to do it on all channels because it 's , uh  audible . 
+H:  Uh , it 's  it 's potentially audible , you could potentially recover it . 
+H:  Yeah . 
+H:  Well , I  I haven't thrown away any of the meetings that I beeped . 
+H:  Actually yours is the only one that I beeped and then , uh  the ar DARPA meeting . 
+H:  Sorry , 
+H:  and then the DARPA meeting I just excised completely , 
+H:  so it 's in a private directory . 
+H:  OK . 
+H:  Right . 
+H:  Yeah , since we wanna  possibly synchronize these things as well . 
+H:  Oh , I should have done that . 
+H:  Shoot . 
+H:  Oh well . 
+H:  You 'll lose it . 
+H:  There 's no way around that . 
+H:  Agenda ? 
+H:  Thursday crept up on me this week . 
+H:  It 's cool stuff , definitely . 
+H:  I was gonna say " can you do that for the other meetings , 
+H:  can you do it for them ? " 
+H:  And , no actually , you can't . 
+H:  " Ooo , cool ! " 
+H:  It 's  As soon as we get labels , yep . 
+H:  If it works well enough . 
+H:  Right now it 's not . Not quite to the point where it works . 
+H:  Yeah , my  my algorithm worked great actually on these , 
+H:  but when you wear it like that or with the uh , lapel  or if you have it very far from your face , that 's when it starts  failing . 
+H:  It doesn't matter . 
+H:  I mean , we want it to work , 
+H:  right ? 
+H:  I  I don't want  to change the way we do the meeting . 
+H:  It 's uh   so , it was just a comment on the software , not a comment on <inbreath> prescriptions on how you wear microphones . 
+H:  Get the bolts , " whh whh " 
+H:  OK . 
+H:  OK , thank you . 

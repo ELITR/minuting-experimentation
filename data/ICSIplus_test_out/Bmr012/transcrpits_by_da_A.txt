@@ -1,0 +1,144 @@
+A:  Um Gotta go . 
+A:  By the way , there was a bug . 
+A:  Yeah , i it wasn't using the proper 
+A:  basically it wasn't adapting anything . 
+A:  Hmm ? 
+A:  Oh , because when it estimates the transformer pro produces like a single matrix or something . 
+A:  Basically there were no counts 
+A:  Hello , hello . 
+A:  OK . 
+A:  Mmm . 
+A:  I think  
+A:  Um may I make one suggestion ? 
+A:  Instead of age put date of  uh year of birth 
+A:  because age will change , but The year of birth changes , you know , stays the same , usually . 
+A:  Yeah . 
+A:  Well the thing is , if ten years from now you look at this form knowing that  
+A:  Well  well I don't know . 
+A:  Anyway . 
+A:  OK . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  OK . 
+A:  Well it was interesting , 
+A:  suddenly  the  the overall error rate when we first ran it was like eighty percent 
+A:  but i looking at  the first sentences looked much better than that 
+A:  and then suddenly it turned very bad 
+A:  and then we noticed that the reference was always one off with the  
+A:  it was actually recognized 
+A:  so 
+A:  OK . 
+A:  OK . 
+A:  So  so we have everything recognized but we scored only the first uh whatever , up to that time to 
+A:  Mmm . 
+A:  Oh , and  
+A:  I  I have  
+A:  Yeah . 
+A:  Mmm . 
+A:  Mmm . 
+A:  Mmm . 
+A:  Mm - hmm . 
+A:  There are a fair number of errors that are , you know where  got the plural S wrong or the inflection on the verb wrong . 
+A:  Mmm , so if  
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mmm . 
+A:  Mmm . 
+A:  Oh it 's the  
+A:  Well it 's  
+A:  Yeah . 
+A:  Well that 's  those are the only we ones there are , 
+A:  I mean 
+A:  Right . 
+A:  Oh yeah . 
+A:  Yeah . 
+A:  I should  I should say that  the language model is not just Switchboard 
+A:  it 's also  
+A:  I mean there 's uh actually more data is from Broadcast News 
+A:  but with a little less weight 
+A:  uh because 
+A:  mm - hmm , 
+A:  right . 
+A:  Um By the way just  for fun we also ran , 
+A:  I mean our complete system starts by doing ge a gender detection 
+A:  so just for the heck of it I ran that 
+A:  um and it might be reassuring for everybody to know that it got all the genders right . 
+A:  Yeah so 
+A:  Yeah . 
+A:  Yes . 
+A:  I mean clearly there are um with just a small amount of uh actual meeting transcriptions uh thrown into the language model you can probably do quite a bit better 
+A:  because the  
+A:  Not that much the vocabulary actually 
+A:  I think  um well we have to see 
+A:  but  it 's uh  
+A:  We  we talked about setting up the SRI recognizer here . 
+A:  That 's  you know if  if there are more machines um uh here 
+A:  plus people can  could run their own uh you know variants of  of  of the recognition  runs 
+A:  um 
+A:  certainly doable . 
+A:  Um . 
+A:  Yeah . 
+A:  Yeah . 
+A:  U um 
+A:  Oh . 
+A:  Mmm . 
+A:  U uh actually I had a question about the downsampling , 
+A:  um I don't know who , I mean how this was done 
+A:  but is  is there  are there any um <mouth> issues with downsampling 
+A:  because I know that the recognizer um that we use h can do it sort of on the fly 
+A:  um 
+A:  so we wouldn't have to have it eh you know do it uh explicitly beforehand . 
+A:  And is there any um i 
+A:  are there other d sev uh is there more than one way to do the downsampling where one might be better than another ? 
+A:  OK . 
+A:  Right . 
+A:  OK . 
+A:  So  so the  th 
+A:  So  so the other thing we should try is to just take the original wave forms , 
+A:  I mean segment them but not downsample them . 
+A:  And  and feed them to  feed them to the SRI recognizer and see if  if the SRI front - end does something . 
+A:  Well  
+A:  Right and  and it doesn't  is no more work <laugh> for um you know for us . 
+A:  Well but they 're only twice as big 
+A:  so 
+A:  I mean it 's  it 's just a 
+A:  Yeah I mean it would be uh you know it would probably take uh about um you know 
+A:  minus the transfer time it would  it would take uh you know ten minutes to try and  and  and 
+A:  And  and if for some reason we see that it works better then we might investigate why 
+A:  and , you know , what  
+A:  Yeah . 
+A:  Yeah . 
+A:  Right . 
+A:  Right . 
+A:  You know a at some point someone might have optimized whatever filtering is done for the actual recognition um performance . 
+A:  So in other words 
+A:  right , 
+A:  so 
+A:  Mel cepstrum . 
+A:  That 's what I would assume but you never know , 
+A:  you know . 
+A:  Mm - hmm . 
+A:  Actually , no . 
+A:  Don't stop . 
+A:  Don't stop at that part because we 're actually using the entire conversation to estimate the speaker parameters , 
+A:  so shouldn't use  you should s you know , get 
+
+A:  Right . 
+A:  Mmm . 
+A:  Right . 
+A:  Mmm . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mmm . 
+A:  They 're less animated . 
+A:  Like uh like you know Jerry Springer thing , 
+A:  you know r 
+A:  Yeah . 
+
+A:  Do you have to hand it around 
+A:  and if you have two pieces of 
+
+A:  Pretty soon . 
+A:  Um Gotta go . 

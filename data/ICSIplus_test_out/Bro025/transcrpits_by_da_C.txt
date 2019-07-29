@@ -1,0 +1,127 @@
+C:  Well , yeah . 
+C:  Uh . Yeah , we formed a coalition actually . 
+C:  We already made it into one . 
+C:  Yeah . 
+C:  Hynek was here . 
+C:  Mm - hmm . 
+C:  Well , the piece of software has , like , plenty of options , 
+C:  like you can parse command - line arguments . 
+C:  So depending on that , it  it becomes either spectral subtraction or Wiener filtering . 
+C:  So , ye 
+C:  Yeah . Yeah . 
+C:  There 's just one piece of software . 
+C:  Right . 
+C:  Parameters . Yeah . 
+C:  Best system . 
+C:  Yeah . 
+C:  Yeah . 
+C:  No . 
+C:  Our way . 
+C:  Like another ten frames . 
+C:  The  the  the smoothing  the m the  the filtering of the probabilities . 
+C:  on the R . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  The LDA ? 
+C:  Yeah . So  so what happened right now , we removed the delay of the LDA . 
+C:  So we  I mean , if  so if we  if  so which is like if we reduce the delay of VA 
+C:  So , the f the final delay 's now ba is f determined by the delay of the VAD , 
+C:  because the LDA doesn't have any delay . 
+C:  So if we re if we reduce the delay of the VAD , I mean , it 's like effectively reducing the delay . 
+C:  So the LDA and the VAD both had a hundred millisecond delay . 
+C:  So and they were in parallel , 
+C:  so which means you pick either one of them  
+C:  the  the biggest , whatever . 
+C:  So , right now the LDA delays are more . 
+C:  Pardon ? 
+C:  Oh , no . It actually made it , like , point one percent better or something , actually . 
+C:  Or something like that 
+C:  and  
+C:  Yeah . So that 's the one which Stephane was discussing , like  
+C:  Yeah . The  you smooth it and then delay the decision by  
+C:  So . 
+C:  Mm - hmm . 
+C:  So , the one  one  one difference is that  was there is like we tried computing the delta and then doing the frame - dropping . 
+C:  The earlier system was do the frame - dropping and then compute the delta on the  
+C:  So this  
+C:  Yeah . 
+C:  Yeah . 
+C:  So we have no delta . And then  
+C:  So the frame - dropping is the last thing that we do . 
+C:  So , yeah , what we do is we compute the silence probability , 
+C:  convert it to that binary flag , 
+C:  and then in the end you c up upsample it to <breath> match the final features number of  
+C:  It seems to be helping on the well - matched condition . 
+C:  So that 's why this improvement I got from the last result . 
+C:  So . And it actually r reduced a little bit on the high mismatch , 
+C:  so in the final weightage it 's b b better 
+C:  because the well - matched is still weighted more than  
+C:  Uh , y you had something on it . 
+C:  Right ? 
+C:  Yeah . 
+C:  Yes , it could be . 
+C:  It 's , like , you mean you just transferred everything 
+C:  and then finally drop the frames after the neural net . 
+C:  Right ? 
+C:  Yeah . That 's  that 's one thing which  
+C:  Yeah . Right now we are  
+C:  Uh , ri 
+C:  Right now what  wha what we did is , like , we just mark  we just have this additional bit which goes around the features , <breath> saying it 's currently a  it 's a speech or a nonspeech . 
+C:  So there is no frame - dropping till the final features , like , including the deltas are computed . 
+C:  And after the deltas are computed , you just pick up the ones that are marked silence and then drop them . 
+C:  So . Yeah , that 's what  that 's what  that 's what , uh , this is doing right now . 
+C:  Just one more thing . 
+C:  Like , should we do something f more for the noise estimation , 
+C:  because we still  ? 
+C:  Yeah . 
+C:  Is there  was there any experiment with  ? 
+C:  Well , I  I did  The only experiment where I tried was I used the channel zero VAD for the noise estimation 
+C:  and frame - dropping . 
+C:  So I don't have a  <breath> I don't have a split , like which one helped more . 
+C:  So . It  it was the best result I could get . 
+C:  So , that 's the  
+C:  Mm - hmm . 
+C:  For the noise estimation . 
+C:  Yeah . We can try something . 
+C:  Mm - hmm . Sure . 
+C:  Yeah . But the Guenter 's argument is slightly different . 
+C:  It 's , like , ev even  even if I use a channel zero VAD , I 'm just averaging the  <breath> the s power spectrum . 
+C:  But the Guenter 's argument is , like , if it is a non - stationary  segment , then he doesn't update the noise spectrum . 
+C:  So he 's , like  he tries to capture only the stationary part in it . 
+C:  So the averaging is , like , <breath> different from  updating the noise spectrum only during stationary segments . 
+C:  So , th the Guenter was arguing that , I mean , even if you have a very good VAD , averaging it , like , over the whole thing is not a good idea . 
+C:  Because you 're averaging the stationary and the non - stationary , and finally you end up getting something 
+C:  which is not really the s because , you  anyway , you can't remove the stationary part fr I mean , non - stationary part from <breath> the signal . 
+C:  So  
+C:  Yeah . So you just  update only doing  or update only the stationary components . 
+C:  Yeah . So , that 's  so that 's still a slight difference from what Guenter is trying 
+
+C:  Yeah , yeah . 
+C:  Mmm . 
+C:  Cure the VAD ? 
+C:  VAD . 
+C:  And  
+
+C:  Just the cepstra . 
+C:  Yeah . 
+C:  No . 
+C:  So we have a VAD which is like neur that 's a neural net . 
+C:  Yeah . 
+C:  So that  that VAD was trained on the noisy features . 
+C:  So , right now we have , like , uh  we have the cleaned - up features , 
+C:  so we can have a better VAD by training the net on  the cleaned - up speech . 
+C:  Yeah , but we need a VAD for uh noise estimation also . 
+C:  So it 's , like , where do we want to put the VAD ? 
+C:  Uh , it 's like  
+C:  For  
+C:  Mm - hmm . 
+C:  Uh , it actually comes at v at the very end . 
+C:  So the net  the final net  I mean , which is the feature net  
+C:  so that actually comes after a chain of , like , LDA plus everything . 
+C:  So it 's , like , it takes a long time to get a decision out of it . 
+C:  And  <breath> and you can actually do it for final frame - dropping , 
+C:  but not for the VA - f noise estimation . 
+C:  Hmm . 
+C:  Yeah . 
+C:  Well , yeah . 

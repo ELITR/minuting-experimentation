@@ -1,0 +1,367 @@
+A:  We 're done . 
+A:  We 're going ? 
+A:  OK . 
+A:  Sh - Close your door on  door on the way out ? 
+A:  Thanks . 
+A:  Yeah . 
+A:  Probably wanna get this other door , too . 
+A:  OK . 
+A:  So . 
+A:  Um . <mouth> <breath> What are we talking about today ? 
+A:  Oh , yeah . That was kind of uh interesting . 
+A:  The  both the uh  <breath> the SRI System and the oth 
+A:  And for one thing that  that sure shows the <breath> difference between having a lot of uh training data <laugh> or not , 
+A:  uh , the uh  <breath> The best kind of number we have on the English uh  on near microphone only is  is uh three or four percent . 
+A:  And uh it 's significantly better than that , using fairly simple front - ends <breath> on  <laugh> on the uh  <breath> uh , with the SRI system . 
+A:  So I th I think that the 
+A:  uh  
+A:  But that 's  that 's using uh a  a pretty huge amount of data , 
+A:  mostly not digits , of course , 
+A:  but  but then again  
+A:  Well , yeah . 
+A:  In fact , mostly not digits for the actual training the H M Ms whereas uh in this case we 're just using digits for training the H M 
+A:  Did anybody mention about whether the  the SRI system is a  <breath> is  is doing the digits um the wor as a word model or as uh a sub s sub - phone states ? 
+A:  Yeah . 
+A:  Probably . 
+A:  Huh ? 
+A:  Yeah . 
+A:  That 's true . 
+A:  OK . 
+A:  It 's tha it 's that much , huh ? 
+A:  Oh . 
+A:  OK . 
+A:  Still . 
+A:  But  but uh what  what I think I 'd be interested to do given that , is that we  we should uh <breath> take  
+A:  I guess that somebody 's gonna do this , 
+A:  right ?  
+A:  is to take some of these tandem things and feed it into the SRI system , 
+A:  right ? 
+A:  Yeah . 
+A:  Yeah . Because  
+A:  Yeah , 
+A:  but he 's doing it with the same data , right ? 
+A:  I mean so to  <breath> So there 's  there 's  there 's two things being affected . 
+A:  I mean . One is that  that , you know , there 's something simple that 's wrong with the back - end . 
+A:  We 've been playing a number of states 
+A:  uh I  I don't know if he got to the point of playing with the uh number of Gaussians yet 
+A:  but  but uh , 
+A:  uh , you know . 
+A:  But , yeah , so far he hadn't gotten any big improvement , 
+A:  but that 's all with the same amount of data which is pretty small . 
+A:  And um . 
+A:  Well , you could do that , but I 'm saying even with it not  with that part not retrained , 
+A:  just  just using  having the H M Ms  much better H M 
+A:  Yeah . 
+A:  Um . <breath> But just train those H M Ms using different features , 
+A:  the features coming from our Aurora stuff . 
+A:  So . 
+A:  Well , yeah . 
+A:  I  I  I 'm sorry . 
+A:  What  what is the problem that you 're trying to explain ? 
+A:  That the  
+A:  Oh . 
+A:  So much worse ? 
+A:  Oh . 
+A:  I uh but I 'm  I 'm almost certain that it  it  <breath> I mean , that it has to do with the um amount of training data . 
+A:  It  it 's  it 's orders of magnitude off . 
+A:  But  but having a huge  
+A:  If  <breath> if you look at what commercial places do , they use a huge amount of data . 
+A:  This is a modest amount of data . 
+A:  So . <breath> I mean , ordinarily you would say " well , given that you have enough occurrences of the digits , you can just train with digits rather than with , you know "  
+A:  But the thing is , if you have a huge  
+A:  in other words , do word models  
+A:  But if you have a huge amount of data then you 're going to have many occurrences of similar uh allophones . 
+A:  And that 's just a huge amount of training for it . 
+A:  So it 's <breath> um  <breath> I  I think it has to be that , because , as you say , this is , you know , this is near - microphone , 
+A:  it 's really pretty clean data . 
+A:  Um . 
+A:  Now , some of it could be the fact that 
+A:  uh  
+A:  let 's see , in the  in these multi - train things did we include noisy data in the training ? 
+A:  I mean , that could be hurting us actually , for the clean case . 
+A:  It is if  
+A:  Yeah . 
+A:  Yeah . 
+A:  Cuz this is clean data , 
+A:  and so that 's not too surprising . 
+A:  But um . Uh . 
+A:  So . 
+A:  Uh - huh . 
+A:  Mm - hmm . 
+A:  What kind of numbers are we getting on TI - digits ? 
+A:  Oh . 
+A:  I see . 
+A:  So in the actual TI - digits database we 're getting point eight percent , 
+A:  and here we 're getting three or four  three , 
+A:  let 's see , three for this ? 
+A:  Yeah . 
+A:  Sure , but I mean , 
+A:  um point eight percent is something like double uh or triple what people have gotten who 've worked very hard at doing that . 
+A:  And  and also , as you point out , there 's adaptation in these numbers also . 
+A:  So if you , you know , put the ad adap take the adaptation off , then it  for the English - Near you get something like two percent . 
+A:  And here you had , you know , something like three point four . 
+A:  And I could easily see that difference coming from this huge amount of data that it was trained on . 
+A:  So it 's  
+A:  You know , I don't think there 's anything magical here . 
+A:  It 's , you know , we used a simple HTK system with a modest amount of data . 
+A:  And this is a  a , you know , modern <breath> uh system 
+A:  uh has  has a lot of nice points to it . 
+A:  Um . 
+A:  So . I mean , the HTK is an older HTK , even . 
+A:  So . 
+A:  Yeah it  it 's not that surprising . 
+A:  But to me it just  it just meant a practical <breath> point that um if we want to <breath> publish results on digits that  that people pay <breath> attention to we probably should uh  
+A:  Cuz we 've had the problem before that you get  show some <breath> nice improvement on something that 's  that 's uh , uh  it seems like too large a number , 
+A:  and uh <breath> uh people don't necessarily take it so seriously . 
+A:  Um . 
+A:  Yeah . 
+A:  Yeah . 
+A:  So the three point four percent for this uh is  is 
+A:  uh  
+A:  So why is it  
+A:  It 's an interesting question though , still . 
+A:  Why is  why is it three point four percent for the d the digits recorded in this environment as opposed to <breath> the uh point eight percent for  for  for the original TI - digits database ? 
+A:  Um . 
+A:  Given  given the same  
+A:  Yeah . So ignore  ignoring the  the  the SRI system for a moment , 
+A:  just looking at <breath> the TI - di the uh tandem system , 
+A:  if we 're getting point eight percent , which , yes , it 's high . 
+A:  It 's , you know , it  it 's not awfully high , 
+A:  but it 's , you know  it 's  it 's high . 
+A:  Um . <breath> Why is it <breath> uh four times as high , or more ? 
+A:  Right ? 
+A:  I mean , there 's  <breath> even though it 's close - miked there 's still  there really is background noise . 
+A:  Um . And <breath> uh I suspect when the TI - digits were recorded if somebody fumbled or said something wrong or something that they probably made them take it over . 
+A:  It was not  I mean there was no attempt to have it be realistic in any  in any sense at all . 
+A:  Mm - hmm . 
+A:  Right . 
+A:  Yeah . 
+A:  So I think they were  
+A:  Bless you . 
+A:  I  Yeah . I think it 's  it 's  
+A:  So . Yes . 
+A:  It 's  I think it 's  it 's the indication it 's harder . 
+A:  Uh . <breath> Yeah and again , you know , i that 's true either way . 
+A:  I mean so take a look at the uh  <breath> um , the SRI results . 
+A:  I mean , they 're much much better , 
+A:  but still you 're getting something like one point three percent for uh things that are same data as in T  TI - digits the same  same text . 
+A:  Uh . And uh , I 'm sure the same  same system would  would get , you know , point  point three or point four or something <breath> on the actual TI - digits . 
+A:  So this  I think , on both systems the <breath> these digits are showing up as harder . 
+A:  Um . 
+A:  Which I find sort of interesting cause I think this is closer to  
+A:  uh I mean it 's still read . 
+A:  But I still think it 's much closer to  to what  what people actually face , <breath> um when they 're  they 're dealing with people saying digits over the telephone . 
+A:  I mean . <breath> I don't think uh  
+A:  I mean , I 'm sure they wouldn't release the numbers , 
+A:  but I don't think that uh <breath> the uh  the  the companies that  that do telephone <breath> speech get anything like point four percent on their <breath> digits . 
+A:  I 'm  I 'm  I 'm sure they get  
+A:  Uh , I mean , for one thing people do phone up who don't have uh uh Middle America accents and 
+A:  it 's a we we it 's  it 's  it 's US . 
+A:  it has  has many people <breath> <laugh> who sound in many different ways . 
+A:  So . 
+A:  Um . 
+A:  I mean . 
+A:  OK . 
+A:  That was that topic . 
+A:  What else we got ? 
+A:  Did we end up giving up on  on , any Eurospeech submissions , 
+A:  or  ? 
+A:  I know Thilo and Dan Ellis are  are submitting something , 
+A:  but uh . 
+A:  Um . <breath> Now , actually for the  for the Aur - uh 
+A:  we do have stuff for Aurora , right ? 
+A:  Because  because we have ano an extra month or something . 
+A:  Yeah . 
+A:  Well , that 's fine . 
+A:  So th so  so we have a couple  a couple little things on Meeting Recorder 
+A:  and we have  <breath> We don't  we don't have to flood it with papers . 
+A:  We 're not trying to prove anything to anybody . 
+A:  so . 
+A:  That 's fine . 
+A:  Um . 
+A:  Anything else ? 
+A:  Hmm . 
+A:  Mm - hmm . 
+A:  So wha where did this good VAD come from ? 
+A:  This is the one they had originally ? 
+A:  Oh . 
+A:  Yeah , but they had to  get rid of it because of the space , 
+A:  didn't they ? 
+A:  Well . So that 's a problem . 
+A:  Yeah . 
+A:  But the other thing is uh to use a different VAD entirely . 
+A:  I mean , uh i if  if there 's a <breath> if  if  
+A:  I  I don't know what the thinking was amongst the  the  the <breath> the ETSI folk 
+A:  but um if everybody agreed sure let 's use this VAD and take that out of there  
+A:  OK . 
+A:  Determined . 
+A:  I see . 
+A:  But I was thinking that  that uh <breath> s " Sure , there may be some interaction , 
+A:  but I don't think we need to be stuck on using our or OGI 's  VAD . 
+A:  We could use somebody else 's if it 's smaller 
+A:  or  
+A:  You know , as long as it did the job . 
+A:  So that 's good . 
+A:  Right . 
+A:  Yeah . 
+A:  You didn't gain anything , right ? 
+A:  Mm - hmm . 
+A:  So that means logically , in principle , it should be better . 
+A:  So probably it 'll be worse . 
+A:  Or in the basic perverse nature uh of reality . 
+A:  Yeah . 
+A:  OK . 
+A:  OK . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  Uh - huh . 
+A:  Huh ? 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Right . 
+A:  Yeah . 
+A:  Uh - huh . 
+A:  Uh . 
+A:  Well , I 'm s uh  
+A:  There 's  
+A:  None of these axes are labeled , 
+A:  so I don't know what this  
+A:  What 's this axis ? 
+A:  Frame . 
+A:  And what 's th what this ? 
+A:  For this one . 
+A:  For the noi 
+A:  Oh . 
+A:  There 's two things on the same graph . 
+A:  So w which is clean and which is noise ? 
+A:  OK . 
+A:  So it 's harder to distinguish 
+A:  but it  but it g 
+A:  with noise of course 
+A:  but  but  
+A:  Uh . 
+A:  And presumably when there 's a  a  
+A:  Uh - huh . 
+A:  Uh - huh . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah 
+A:  Yeah . 
+A:  And this is the difference ? 
+A:  No pre - emphasis ? 
+A:  Yeah . 
+A:  Yeah so it 's  
+A:  doesn't do too well there . 
+A:  Right . 
+A:  So now I wonder  
+A:  I mean , do you want to  
+A:  I know you want to get at something orthogonal from what you get with the smooth spectrum 
+A:  Um . But if you were to really try and get a voiced - unvoiced , do you  do you want to totally ignore that ? 
+A:  I mean , do you  do you  
+A:  I mean , clearly a  a very big  very big cues <breath> for voiced - unvoiced come from uh spectral slope and so on , 
+A:  right ? 
+A:  Um . 
+A:  Yeah . 
+A:  I see . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Well , you probably want  
+A:  I mean , <breath> certainly if <breath> you want to do good voiced - unvoiced detection , you need a few features . 
+A:  Each  each feature is <breath> by itself not enough . 
+A:  But , you know , people look at  at slope and <breath> uh first auto - correlation coefficient , divided by power . 
+A:  Or  or uh 
+A:  um 
+A:  there 's uh  
+A:  I guess we prob probably don't have enough computation to do a simple pitch detector or something ? 
+A:  I mean with a pitch detector you could have a  <breath> have a  an estimate of  of what the  
+A:  Uh . 
+A:  Or maybe you could you just do it going through the P FFT 's figuring out some um probable <breath> um harmonic structure . 
+A:  Right . 
+A:  And  and uh . 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah . 
+A:  Right . 
+A:  Yeah . 
+A:  That 's as  as a separate thing . 
+A:  Yeah . 
+A:  Separate thing ? 
+A:  Yeah . 
+A:  Yeah . 
+A:  Maybe so . 
+A:  Um . 
+A:  Yeah . 
+A:  So , what  
+A:  Yeah . 
+A:  What I was talking about was just , starting with the FFT 
+A:  you could  you could uh do a very rough thing to estimate  estimate uh pitch . 
+A:  And uh uh , given  you know , given that , uh <breath> you could uh uh come up with some kind of estimate of how much of the low frequency energy was  was explained by  <breath> by uh uh those harmonics . 
+A:  Uh . 
+A:  It 's uh a variant on what you 're s what you 're doing . 
+A:  The  I mean , the  the <breath> the mel does give a smooth thing . 
+A:  But as you say it 's not that smooth here . 
+A:  And  and so if you  <breath> if you just you know subtracted off uh your guess of the harmonics then something like this would end up with <breath> quite a bit lower energy in the first fifteen hundred hertz or so 
+A:  and  and our first kilohertz , even . 
+A:  And um <breath> if was uh noisy , the proportion that it would go down would be 
+A:  if it was  if it was unvoiced or something . 
+A:  So you oughta be able to <breath> pick out voiced segments . 
+A:  At least it should be another  another cue . 
+A:  So . <breath> Anyway . 
+A:  OK ? 
+A:  That 's what 's going on . 
+A:  Uh . 
+A:  What 's up with you ? 
+A:  Mm - hmm . 
+A:  Hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  OK . 
+A:  Um . I think we 're <breath> sort of done . 
+A:  So let 's read our digits and go home . 
+A:  Yeah . 
+A:  No . " O "  " O "  " O " 
+A:  " O "  " O "  " O " and " zero " are two ways that we say that digit . 
+A:  So it 's  
+A:  so it 's  i 
+A:  No . 
+A:  I mean . I think people will do what they say . 
+A:  It 's OK . 
+A:  I mean in digit recognition we 've done before , you have  you have two pronunciations for that value , " O " and " zero " . 
+A:  No , they just write  
+A:  they  they write down OH . 
+A:  or they write down ZERO 
+A:  a and they  and they each have their own pronunciation . 
+A:  But people wouldn't know what that wa 
+A:  I mean <breath> there is no convention for it . 
+A:  See . I mean , you 'd have to tell them <breath> " OK when we write this , say it tha " , 
+A:  you know , 
+A:  and you just  They just want people to read the digits as you ordinarily would 
+A:  and  and people say it different ways . 
+A:  Yes . 
+A:  That 's right . 
+A:  It was  it was spelled out , and they decided they wanted to get at more the way people would really say things . 
+A:  That 's also why they 're  they 're bunched together in these different groups . 
+A:  So  so it 's  
+A:  Yeah . 
+A:  So it 's  it 's  
+A:  Everything 's fine . 
+A:  OK . 
+A:  Actually , let me just s since  since you brought it up , I was just  it was hard not to be self - conscious about that when it <laugh> after we  since we just discussed it . 
+A:  But I realized that  that um <breath> when I 'm talking on the phone , certainly , and  and saying these numbers , <breath> I almost always say zero . 
+A:  And uh  cuz  because uh i it 's two syllables . 
+A:  It 's  it 's more likely they 'll understand what I said . 
+A:  So that  that  that 's the habit I 'm in , 
+A:  but some people say " O " and  
+A:  Yeah it 's shorter . 
+A:  Yeah . 
+A:  So it 's  So . <breath> So uh . 
+A:  Now , don't think about it . 
+A:  OK . 
+A:  We 're done . 

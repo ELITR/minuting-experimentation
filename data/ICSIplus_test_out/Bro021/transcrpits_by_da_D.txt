@@ -1,0 +1,149 @@
+D:  OK . 
+D:  Yeah . 
+D:  Mmm . 
+D:  Yeah . 
+D:  Hmm . 
+D:  You mean the  
+D:  The  whatever you , uh , tested with recently . Right ? 
+D:  Yeah ? 
+D:  The number of cepstral coefficients is what ? 
+D:  Yeah . 
+D:  Yeah . 
+D:  Uh , so the  the  right now , the  the system that is there in the  what we have in the repositories , with  uses fifteen . 
+D:  Yeah , 
+D:  so  Yeah , 
+D:  so  Yep . 
+D:  Yeah , yeah . 
+D:  So  
+D:  Yeah . 
+D:  Well . 
+D:  Yeah . 
+D:  So , we haven't  w we have been always using , uh , fifteen coefficients , 
+D:  not thirteen ? 
+D:  Yeah . 
+D:  Well , uh , that 's  something 's  
+D:  Um . 
+D:  Yeah . 
+D:  Then  
+D:  mmm  
+D:  Yeah . Ma - maybe we can  I mean , at least , 
+D:  um , I 'll t s run some experiments to see whether  once I have this <3 tongue taps>  noise compensation to see whether thirteen and fifteen really matters or not . 
+D:  Never tested it with the compensation , 
+D:  but without , <breath> uh , compensation it was like fifteen was s slightly better than thirteen , 
+D:  so that 's why we stuck to thirteen . 
+D:  Sorry , 
+D:  fifteen . 
+D:  Yeah , the log energy versus C - zero . 
+D:  Uh , that 's  that 's the other thing . 
+D:  I mean , without noise compensation certainly C - zero is better than log energy . 
+D:  Be - I mean , because the  there are more , uh , mismatched conditions than the matching conditions for testing . 
+D:  You know , 
+D:  always for the matched condition , you always get a  slightly better performance for log energy than C - zero . 
+D:  But not for  
+D:  I mean , for matched and the clean condition both , you get log energy  
+D:  I mean you get a better performance with log energy . 
+D:  Well , um , maybe once we have this noise compensation , I don't know , we have to try that also , whether we want to go for C - zero or log energy . 
+D:  We can see that . 
+D:  Hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  So , um , I 've been , uh , implementing this , uh , Wiener filtering for this Aurora task . 
+D:  And , uh , 
+D:  I  I actually thought it was  it was doing fine when I tested it once . 
+D:  I it 's , like , using a small section of the code . 
+D:  And then I ran the whole recognition experiment with Italian 
+D:  and I got , <breath> like , worse results than not using it . 
+D:  Then I  
+D:  So , I 've been trying to find where the problem came from . 
+D:  And then it looks like I have some problem in the way  
+D:  there is some  some very silly bug somewhere . 
+D:  And , ugh ! 
+D:  I  I mean , i uh , it actually  i it actually made the whole thing worse . 
+D:  I was looking at the spectrograms that I got 
+D:  and it 's , like  w it 's  it 's very horrible . 
+D:  Like , when I  
+D:  Oh , I mean  
+D:  Oh , yeah . 
+D:  I actually implemented the Wiener f f fil filtering as a module and then tested it out separately . 
+D:  And it  it  it gave , like  I just got the signal out 
+D:  and it  it was OK . 
+D:  So , I plugged it in somewhere 
+D:  and then  I mean , it 's like I had to remove some part 
+D:  and then plugging it in somewhere . 
+D:  And then I  in that process I messed it up somewhere . 
+D:  So . 
+D:  So , it was real 
+D:  I mean , I thought it was all fine 
+D:  and then I ran it , and I got something worse than not using it . 
+D:  So , 
+D:  I was like  I 'm trying to find where the m m problem came , 
+D:  and it seems to be , like , somewhere  
+D:  some silly stuff . 
+D:  And , um , the other thing , uh , was , uh , uh  
+D:  Well , Hynek showed up one  suddenly on one day 
+D:  and then I was t talking wi 
+D:  Uh , yeah . 
+D:  So I was actually  that day I was thinking about d doing something about the Wiener filtering , and then Carlos matter of stuff . 
+D:  And then he showed up 
+D:  and then I told him . 
+D:  And then he gave me a whole bunch of filters  
+D:  what Carlos used for his , uh , uh , thesis 
+D:  and then <laugh> that was something which came up . 
+D:  And then , um  
+D:  So , uh , I 'm actually , <breath> uh , thinking of using that also in this , uh , W Wiener filtering 
+D:  because that is a m modified Wiener filtering approach , 
+D:  where instead of using the current frame , it uses <breath> adjacent frames also in designing the Wiener filter . 
+D:  So instead of designing our own new Wiener filters , I may just use one of those Carlos filters in  in this implementation 
+D:  and see whether it  it actually gives me something better 
+D:  than using just the current f current frame , 
+D:  which is in a way , uh , something like the smoothing  the Wiener filter  
+D:  but @ @  
+D:  S so , I don't know , 
+D:  I was h 
+D:  I 'm  I 'm  I 'm , like  
+D:  that  so that is the next thing . Once this  I  once I sort this pro uh , problem out maybe I 'll just go into that also . 
+D:  And 
+D:  the  the other thing was about the subspace approach . 
+D:  So , um , 
+D:  I , like , plugged some groupings for computing this eigen uh , uh , uh , s values and eigenvectors . 
+D:  So just  I just @ @ some small block of things which I needed to put together for the subspace approach . 
+D:  And I 'm in the process of , like , building up that stuff . 
+D:  And , um , 
+D:  uh  <pages turning> Yeah . 
+D:  I guess  Yep . I guess that 's it . 
+D:  And , uh , th th that 's where I am right now . 
+D:  So . 
+D:  New  
+D:  Mmm . 
+D:  Mmm . 
+D:  One  one plus N by X . 
+D:  One plus N by X . 
+D:  Uh , and  
+D:  And , log of  
+D:  Mm - hmm . 
+D:  No . 
+D:  Well , if E restricts  
+D:  It is y 
+D:  What is , uh  ? 
+D:  The log  
+D:  the Taylor series expansion for log one plus N by X is  
+D:  Yeah , the first one . 
+D:  Yeah . 
+D:  Yeah . 
+D:  Y yeah . If  if you take log X into log one plus N by X , and then expand the log one plus N by X into Taylor series  
+D:  Mmm . 
+D:  No . 
+D:  Uh . 
+D:  X . X . 
+D:  This is X , inside . 
+D:  One and  
+D:  X K C noise . 
+D:  Weak . 
+D:  So probably it  it would do that . 
+D:  It 's overlapping . 
+D:  S 
+D:  S so , we switch off with this 
+D:  or n ? 
+D:  No . OK . 
+D:  OK . 
+D:  OK . 

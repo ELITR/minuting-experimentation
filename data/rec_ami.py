@@ -143,11 +143,11 @@ def get_words_in_topics(data_root, topics_folder, meeting_name, default_topics_d
 
 
 def save_meeting_converses_by_topic(output_root, meeting_name, words_in_topics):
-    '''
+    """
     :param output_root: main folder of output data
     :param meeting_name: name of the meeting being analyzed
     :param words_in_topics: words in the topics
-    '''
+    """
     # create a directory for meeting
     output_dir_for_meeting = os.path.join(output_root, meeting_name)
     if not os.path.exists(output_dir_for_meeting):
@@ -246,12 +246,12 @@ def get_speaker_dialogue_acts(data_root, dialogue_acts_folder, meeting_name, spe
 
 
 def save_meeting_dialogue_acts(output_root, meeting_name, speaker_das, c):
-    '''
+    """
     :param c: speaker name
     :param data_root: root folder of all data
     :param meeting_name: name of the meeting being analyzed
     :param speaker_das: dialogue acts of the speaker
-    '''
+    """
     # create a directory for meeting
     output_dir_for_meeting = os.path.join(output_root, meeting_name)
     if not os.path.exists(output_dir_for_meeting):

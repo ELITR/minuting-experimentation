@@ -1,0 +1,1583 @@
+C:  Uh , is it the twenty - fourth ? Yeah . 
+F:  now we 're on . 
+A:  Uh Chuck , is the mike type wireless  
+F:  Yes . 
+A:  wireless headset ? OK . 
+F:  Yes . 
+C:  Yeah . <inbreath> 
+F:  For you it is . 
+C:  Yeah . We uh  we abandoned the lapel because they sort of were not too  not too hot , not too cold , they were  you know , they were <inbreath> 
+B:  <mike noise> 
+A:  <outbreath> 
+B:  <mike noise> 
+C:  uh , far enough away that you got more background noise , uh , and uh  and so forth but they weren't so close that they got quite the  you know , the really good  No , th 
+A:  Uh - huh . 
+A:  OK . 
+C:  they  I mean they didn't  
+B:  <mike noise> 
+C:  Wait a minute . I 'm saying that wrong . 
+C:  They were not so far away that they were really good representative distant mikes , 
+C:  but on the other hand they were not so close that they got rid of all the interference . So it was no  didn't seem to be a good point to them . 
+A:  Uh - huh . 
+B:  <mike noise> 
+B:  <mike noise> 
+C:  On the other hand if you only had to have one mike in some ways you could argue the lapel was a good choice , precisely because it 's in the middle . 
+F:  <mike noise> 
+B:  <mike noise> 
+A:  Yeah , yeah . 
+C:  There 's uh , some kinds of junk that you get with these things that you don't get with the lapel uh , little mouth clicks and 
+B:  <mike noise> 
+C:  breaths and so forth are worse with these than with the lapel , but 
+C:  given the choice we  there seemed to be very strong opinions for uh , getting rid of lapels . 
+C:  <outbreath> So , 
+A:  The mike number is   
+F:  Uh , your mike number 's written on the back of that unit there . 
+A:  Oh yeah . One . 
+F:  And then the channel number 's usually one less than that . 
+G:  <mike noise> 
+A:  Oh , OK . 
+F:  It - it 's one less than what 's written on the back of your  yeah . 
+A:  OK . 
+A:  OK . OK . 
+F:  So you should be zero , actually . 
+A:  Hello ? Yeah . 
+G:  <mike noise> 
+F:  For your uh , channel number . 
+A:  Yep , yep . 
+C:  And you should do a lot of talking so we get a lot more of your pronunciations . 
+C:  <laugh> no , they don't  don't have a  have any Indian pronunciations . 
+F:  <laugh> 
+A:  <laugh> 
+G:  <mike noise> 
+F:  So what we usually do is um , we typically will have our meetings and then at the end of the meetings we 'll read the digits . Everybody goes around and reads the digits on the  the bottom of their forms . 
+C:  Yeah . 
+C:  Session R - 
+D:  R - nineteen ? 
+A:  OK . 
+C:  R - nineteen . 
+F:  Yeah . We 're  This is session R - nineteen . 
+C:  If you say so . 
+C:  <inbreath> 
+
+
+C:  O K . Do we have anything like an agenda ? What 's going on ? Um . 
+C:  I guess um . 
+C:  So . <clears throat> 
+C:  One thing  
+F:  Sunil 's here for the summer ? 
+C:  Sunil 's here for the summer , right . 
+C:  Um , so , one thing is to talk about a kick off meeting 
+C:  maybe 
+C:  uh , and then just uh , I guess 
+C:  uh , progress reports individually , and then uh , plans 
+C:  for where we go between now and then , pretty much . 
+C:  Um . 
+F:  I could say a few words about um , some of the uh , compute stuff that 's happening around here , so that people in the group know . 
+C:  Mm - hmm . 
+C:  OK . 
+C:  Why don't you start with that ? That 's sort of  Yeah ? 
+F:  OK . 
+
+
+F:  We um  So we just put in an order for 
+F:  about twelve new machines , uh , to use as sort of a compute farm . 
+F:  And um , 
+F:  uh , we ordered uh , SUN - Blade - one - hundreds , and um , 
+F:  I 'm not sure exactly how long it 'll take for those to come in , but , uh , in addition , we 're running  
+A:  Uh , I need a little orientation about this environment and uh scr s how to run some jobs here because I never d did anything so far 
+A:  with this X emissions  So , 
+F:  OK . 
+A:  I think maybe I 'll ask you after the meeting . 
+F:  Um . 
+F:  Yeah . Yeah , and  and also uh , Stephane 's a  a really good resource for that if you can't 
+A:  Yeah , yeah , yeah . Yep . OK , sure @ @ 
+F:  find me .  
+D:  Mmm . 
+F:  Especially with regard to the Aurora stuff . He  he knows that stuff better than I do . 
+A:  OK . 
+
+
+F:  So the plan for using these is , uh , we 're running P - make and Customs here and Andreas has sort of gotten that all 
+F:  uh , fixed up and up to speed . 
+F:  And he 's got a number of little utilities that make it very easy to um , 
+F:  <mouth> run things using P - make and Customs . You don't actually have to 
+F:  write P - make scripts and things like that . 
+F:  The simplest thing  And I can send an email around or , maybe I should do an FAQ on the web site about it or something . 
+F:  Um , there 's a c 
+C:  How about an email that points to the FAQ , you know what I 'm saying ? so that you can  <laugh> Yeah . 
+F:  Yeah , yeah . <laugh> 
+G:  <laugh> 
+F:  Uh , there 's a command , uh , that you can use called " run command " . " Run dash command " , " run hyphen command " . 
+F:  And , if you say that and then some job that you want to execute , 
+F:  uh , it will find the fastest currently available machine , 
+F:  and export your job to that machine , 
+F:  and uh  and run it there and it 'll duplicate your environment . So 
+F:  <mouth> you can try this as a simple test with uh , the L S command . So you can say " run dash command L S " , 
+F:  and , um , it 'll actually export that <laugh> LS command to some machine in the institute , and um , do an LS on your current directory . 
+G:  <laugh> 
+C:  <outbreath> 
+F:  So , substitute LS for whatever command you want to run , and um  And that 's a simple way to get started using  using this . 
+C:  <laugh> 
+G:  <laugh> 
+G:  <laugh> 
+F:  And , so , soon , when we get all the new machines up , 
+F:  <mouth> um , e then we 'll have lots more compute to use . Now th one of the nice things is that uh , each machine that 's part of the 
+F:  P - make and Customs network has attributes associated with it . Uh , attributes like how much memory the machine has , what its speed is , what its operating system , 
+F:  and when you use something like " run command " , you can specify those attributes for your program . For example if you only want your 
+F:  thing to run under Linux , you can give it the Linux attribute , and then it will find the fastest available Linux machine and run it on that . So . 
+F:  You can control where your jobs go , to a certain extent , 
+C:  <mike noise> 
+F:  all the way down to an individual machine . Each machine has an attribute which is the name of itself . 
+F:  So you can give that as an attribute and it 'll only run on that . 
+F:  If there 's already a job running , on some machine that you 're trying to select , your job will get queued up , 
+F:  and then when that resource , that machine becomes available , your job will get exported there . So , 
+F:  there 's a lot of nice features to it and it kinda helps to balance the load of the machines and uh , 
+F:  right now Andreas and I have been the main ones using it and we 're  Uh . The SRI recognizer has all this P - make customs stuff built into it . So . 
+C:  So as I understand , you know , he 's using all the machines and you 're using all the machines , 
+F:  Yeah . Exactly . <laugh> 
+C:  is the rough division of   <laugh> 
+A:  <laugh> 
+B:  <laugh> 
+G:  <laugh> 
+F:  Yeah , you know , I  I sort of got started  using the recognizer just recently and uh , 
+A:  <laugh> 
+F:  uh I fired off a training job , and then I fired off a recognition job and I get this email about midnight from Andreas saying , 
+F:  " uh , are you running two <laugh> trainings simultaneously s my m my jobs are not getting run . "  
+G:  <laugh> 
+F:  So I had to back off a little bit . But , 
+F:  soon as we get some more machines then uh  
+G:  <laugh> 
+F:  then we 'll have more compute available . So , um , 
+F:  that 's just a quick update about what we 've got . So . 
+C:  So why would one use that rather than P - make ? 
+F:  Well , if you have , um  Like , for example , uh if you didn't wanna write a P - make script and you just had a , uh  an HTK training job that you know is gonna take uh , six hours to run , 
+F:  and somebody 's using , uh , the machine you typically use , you can say " run command " and your HTK thing and it 'll find another machine , the fastest currently available machine and  and run your job there . 
+C:  Now , does it have the same sort of behavior as P - make , which is that , you know , if you run something on somebody 's machine and they come in and hit a key then it   
+F:  Yes . Yeah , there are um  Right . So some of the machines at the institute , um , 
+F:  have this attribute called " no evict " . 
+F:  And if you specify that , 
+F:  in  in one of your attribute lines , then it 'll go to a machine which your job won't be evicted from . 
+C:  Mm - hmm . 
+F:  But , the machines that don't have that attribute , 
+F:  if a job gets fired up on that , 
+F:  which could be somebody 's desktop machine , and  
+F:  and they were at lunch , they come back from lunch and they start typing on the console , 
+C:  Mm - hmm . 
+F:  then your machine will get evicted  your job  will get evicted from their machine and be restarted on another machine . Automatically . 
+F:  So  which can cause you to lose time , right ? If you 
+F:  had a two hour job , and it got halfway through and then somebody came back to their machine and it got evicted . So . 
+F:  If you don't want your job to run on a machine where it could be evicted , then you give it the minus  the attribute , you know , " no evict " , 
+F:  and it 'll pick a machine that it can't be evicted from . So . 
+C:  Um , what  what about  I remember always used to be an issue , maybe it 's not anymore , that 
+C:  if you  if something required  if your machine required somebody hitting a key in order to evict things that are on it so you could work , <inbreath> 
+F:  Mm - hmm . 
+C:  but if you were logged into it from home ? 
+C:  and you weren't hitting any keys ? cuz you were , home ? <laugh> 
+F:  Yeah , I  I 'm not sure how that works . Uh , it seems like Andreas did something for that . Um . 
+C:  Yeah . 
+C:  Hmm . 
+C:  OK . We can ask him sometime . 
+F:  But  
+F:  Yeah . I don't know whether it monitors the keyboard or actually looks at the console TTY , so maybe if you 
+F:  echoed something to the 
+F:  you know , dev  dev console or something .  Hmm ? 
+C:  You probably wouldn't ordinarily , though . Yeah . Right ? 
+C:  You probably wouldn't ordinarily . I mean you sort of  
+C:  you 're at home and you 're trying to log in , and it takes forever to even log you in , and you probably go , " screw this " , and  <laugh> You know . Yeah . 
+F:  Yeah , yeah . 
+G:  <laugh> 
+F:  Yeah . 
+G:  <laugh> 
+F:  Yeah , so , um , yeah . I  I can  I 'm not sure about that one . But uh . 
+C:  yeah . 
+C:  <inbreath> OK . 
+
+
+G:  Um , I have  I have a question about the uh , 
+G:  parallelization ? 
+F:  Mm - hmm . 
+G:  So , um , let 's say I have like , a thousand little  little jobs to do ? 
+F:  Mm - hmm . 
+G:  Um , how do I do it with " run command " ? I mean do  
+F:  You could write a script uh , which called run command on each sub - job right ? But you probably 
+G:  Uh - huh . 
+G:  A thousand times ? 
+G:  OK . 
+F:  wanna be careful with that because um , you don't wanna saturate the network . 
+F:  Uh , so , um , 
+F:  you know , you should  you should probably not run more than , say ten 
+F:  jobs yourself at any one time , uh , just because then it would 
+G:  Oh , too much file transfer and stuff . 
+F:  keep other people  
+F:  Well it 's not that so much as that , you know , e with  if everybody ran fifty jobs at once then it would just bring everything to a halt and , you know , people 's jobs would get delayed , so it 's sort of a sharing thing . 
+G:  <laugh> 
+G:  OK . 
+F:  Um , so you should try to limit it to somet sometim some number around ten jobs at a time . Um . So if you had a script for example that had a thousand things it needed to run , um , 
+F:  you 'd somehow need to put some logic in there if you were gonna use " run command " , uh , to only have ten of those going at a time . 
+F:  And uh , then , when one of those finished you 'd fire off another one . 
+F:   Um , 
+C:  I remember I  I forget whether it was when the Rutgers or  or Hopkins workshop , I remember one of the workshops I was at there were  
+C:  everybody was real excited cuz they got twenty - five machines and there was some kind of P - make like thing that sit sent things out . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+C:  So all twenty - five people were sending things to all twenty - five machines <laugh> and <laugh> and things were a lot less efficient than if you 'd just use your own machine . <laugh> as I recall , but . <laugh> Yeah . <laugh> 
+G:  <laugh> 
+F:  <laugh> Yeah . <laugh> Yeah . <laugh> Yep . 
+F:  Yeah , exactly . Yeah , you have to be a little bit careful . 
+D:  <laugh> 
+A:  <laugh> 
+D:  Hmm . 
+F:  Um , 
+F:  but uh , you can also  If you have that level of parallelization um , and you don't wanna have to worry about writing the logic in  in a Perl script to take care of that , you can use um , P - make 
+G:  Just do P - make . s 
+F:  and  and you basically write a Make file that uh , you know your final job depends on these one thousand things , and when you run 
+G:  Mm - hmm . 
+F:  P - make , uh , on your Make file , you can give it the dash capital J 
+G:  Mm - hmm . 
+F:  and  and then a number , and that number represents how many uh , machines to use at once . 
+G:  Right . 
+F:  And then it 'll make sure that it never goes above that . 
+G:  Right . OK . 
+F:  So , 
+F:  I can get some documentation . 
+D:  So it  it 's  it 's not systematically queued . I mean 
+D:  all the jobs are running . 
+D:  If you launch twenty jobs , they are all running . 
+F:  It depends . If you  " Run command " , that I mentioned before , is  doesn't know about other things that you might be running . 
+D:  Alright . 
+D:  Uh - huh . 
+F:  So , it would be possible to run a hundred run jobs at once , 
+D:  Right . 
+F:  and they wouldn't know about each other . 
+F:  But if you use P - make , then , it knows about all the jobs that it has to run 
+D:  Mm - hmm . 
+F:  and it can control , uh , how many it runs simultaneously . 
+C:  So " run command " doesn't use P - make , or  ?  
+F:  <inbreath> It uses " export " underlyingly . 
+F:  But , if you  
+F:  i It 's meant to be run one job at a time ? 
+F:  So you could fire off a thousand of those , and it doesn't know  any one of those doesn't know about the other ones that are running . 
+D:  <clears throat> 
+
+
+C:  <inbreath> OK . <outbreath> Well , why don't we uh , 
+C:  uh , 
+C:  Sunil since you 're <inbreath> haven't  haven't been at one of these yet , why don't yo you tell us what 's  what 's up with you ? Wh - what you 've been up to , hopefully . 
+A:  Um . 
+A:  Yeah . 
+A:  So , 
+A:  uh , shall I start from  
+A:  Well I don't know how may I  how  
+A:  OK . Uh , I think I 'll start from the post uh Aurora submission maybe . 
+C:  Yeah . 
+D:  <outbreath> <clears throat> 
+A:  Uh , yeah , after the submission the  
+A:  what I 've been working on mainly was to take  take other s submissions and then 
+A:   
+B:   
+C:   
+D:   
+E:   
+F:   
+G:   
+A:  over their system , what they submitted , 
+A:  because we didn't have any speech enhancement system in  in ours . So  
+A:  So I tried uh , 
+A:   
+B:   
+D:   
+E:   
+F:   
+G:   
+C:   
+A:  And u 
+
+
+A:  First I tried just LDA . And then I found that uh , 
+G:   
+A:   
+B:   
+C:   
+D:   
+E:   
+F:   
+A:  I mean , if  if I combine it with LDA , it gives @ @ improvement over theirs . 
+A:  Uh  
+F:  Are y are you saying LDA ? 
+A:  Yeah . 
+F:  LDA . 
+F:  OK . 
+A:  Yeah . 
+A:  So , 
+A:  just  just the LDA filters . I just plug in  
+A:  I just take the cepstral coefficients coming from their system and then plug in LDA on top of that . 
+F:  Mm - hmm . 
+A:  But the LDA filter that I used was different from what we submitted in the proposal . What I did was 
+A:  <inbreath> 
+A:  I took the LDA filter 's design using clean speech , 
+A:  uh , mainly because the speech is already cleaned up after the enhancement so , instead of using this , 
+A:  uh , narrow  narrow band LDA filter that we submitted uh , 
+A:  I got new filters . So 
+A:  that seems to be giving  
+A:  uh , improving over their uh , system . 
+A:  Slightly . But , not very significantly . 
+A:  And uh , that was 
+C:   
+D:   
+G:   
+B:   
+E:   
+F:   
+A:   
+A:  uh , showing any improvement over  final  by plugging in an LDA . 
+A:  And uh , 
+A:  so then after  after that I  I added uh , on - line normalization also on top of that . And that  
+A:  there  there also I n 
+A:  I found that I have to make some changes to their 
+A:  time constant that I used 
+A:  because th it has a  a mean and variance update time constant and  
+A:  which is not 
+A:  suitable for the enhanced speech , 
+A:  and whatever we try it on with proposal - one . 
+A:  But um , 
+A:  I didn't  I didn't play with that time constant a lot , I just t g 
+A:  I just found that I have to reduce the value  I mean , I have to increase the time constant , or reduce the value of the update value . 
+A:  That 's all I found So I have to . 
+A:  Uh , 
+A:  Yeah . 
+
+
+A:  And uh , 
+A:  uh , the other  other thing what I tried was , I just um , 
+A:  uh , took the baseline and then 
+A:  ran it with the endpoint inf uh th information , 
+A:  just the Aurora baseline , 
+A:  to see that how much the baseline itself improves 
+A:  by just supplying the information of the  I mean the w 
+A:  speech and nonspeech . 
+A:  And uh , 
+A:  I found that the baseline itself improves by twenty - two percent by just giving the wuh . 
+C:  <inbreath> Uh , can you back up a second , I  I  I missed something , uh , 
+D:  <clears throat> 
+C:  I guess my mind wandered . Ad - ad When you added the on - line normalization and so forth , uh , uh things got better again ? or is it ? Did it not ? 
+A:  Yeah . 
+A:  No . No . No , things didn't get better with the same time constant that we used . 
+C:  No , no . With a different time constant . 
+A:  With the different time constant I found that  
+A:  I mean , I didn't get an improvement over 
+A:  not using on - line normalization , 
+C:  Oh . No you didn't , OK . 
+A:  because I  I found that I would have change the value of the update factor . 
+A:  But I didn't play it with 
+C:  Yeah . 
+A:  play  play quite a bit to make it better than . 
+C:  OK . 
+A:  So , it 's still not  
+A:  I mean , the on - line normalization didn't give me any improvement . 
+C:  OK . 
+A:  And uh , 
+B:  <breath> 
+A:  <mouth> 
+C:  OK . 
+A:  so , 
+A:  oh yeah So I just stopped there with the uh , speech enhancement . The  the other thing what I tried was the  adding the 
+A:  uh , endpoint information to the baseline and that itself gives like twenty - two percent because the  
+A:  the second  the new phase is going to be with the endpointed speech . And just to get a feel of how much the baseline itself is going to change by adding this endpoint information , I just , 
+C:  Hmm . 
+A:  uh , use  <outbreath> 
+F:  So people won't even have to worry about , uh , doing speech - nonspeech then . 
+A:  Yeah that 's , that 's what the feeling is like . 
+F:  Mmm . 
+A:  They 're going to give the endpoint information . 
+F:  I see . 
+C:  G I guess the issue is that people do that anyway , everybody does that , and they wanted to see , 
+A:  <outbreath> 
+A:  Yeah . 
+C:  given that you 're doing that , what  what are the best features that you should use . 
+F:  Yeah , I see . 
+A:  So , 
+C:  I mean clearly they 're interact . So I don't know that I entirely agree with it . But  but it might be uh  In some ways it might be better t to  
+A:  <outbreath> 
+F:  Yeah . 
+C:  rather than giving the endpoints , to have a standard 
+F:  Mm - hmm . 
+C:  that everybody uses and then interacts with . But , you know . It 's  it 's still someth reasonable . 
+F:  So , are people supposed to assume that there is uh  
+F:  Are  are people not supposed to use any speech outside of those endpoints ? 
+C:  <breath> 
+A:  <inbreath> Uh  
+F:  Or can you then 
+A:  No . No . That i I  
+F:  use speech outside of it for estimating background noise and things ? 
+A:  Yeah . 
+A:  Yeah , yeah , exactly . 
+A:  I guess that is  that is where the consensus is . 
+A:  Like y you will  you will  
+A:  You 'll be given the information about the beginning 
+A:  and the end of speech 
+A:  but the whole speech is available to you . 
+F:  OK . 
+C:  <inbreath> So it should make the spectral subtraction style things work even better , 
+A:  So .  
+C:  because you don't have the mistakes in it . 
+A:  Yeah . 
+C:  Yeah ? 
+A:  Yeah . So  
+C:  OK . 
+A:  So that  that  The baseline itself  I mean , it improves by twenty - two percent . I found that in s one of the SpeechDat - Car cases , 
+A:  that like , the Spanish one improves by just fifty percent by just putting the endpoint . 
+F:  Wow . 
+A:  w 
+A:  I mean you don't need any further speech enhancement with fifty .  
+F:  <laugh> 
+A:  So , uh , <laugh> 
+G:  <laugh> 
+C:  <laugh> 
+F:  So the baseline itself improves by fifty percent . 
+C:  <inbreath> <mouth> 
+A:  Yeah , by fifty percent . <laugh> 
+C:  Yeah . So it 's g it 's gonna be harder to <breath-laugh> beat that actually . But  but  
+F:  Wow . 
+F:  Yeah . 
+A:  Yeah , so  
+A:  so that is when uh , the  the qualification criteria was 
+A:  reduced from fifty percent to something like 
+A:  twenty - five percent for well - matched . And I think they have  
+F:  <laugh> 
+A:  they have actually changed their qualification c criteria now . 
+G:  <laugh> 
+A:  And uh , 
+A:  Yeah , I guess after that , 
+A:  I just went home f I just had a vacation fo for four weeks . <laugh> 
+F:  <laugh> 
+C:  <laugh> 
+F:  <laugh> 
+G:  <laugh> 
+F:  <laugh> 
+C:  OK . No , that 's  that 's  that 's a good  good update . 
+A:  Uh . 
+D:  <laugh> 
+A:  Ye - 
+A:  Yeah , and I  I came back and I started working on 
+A:  uh , some other speech enhancement algorithm . I mean , so  
+A:  I  from the submission what I found that people have tried spectral subtraction and Wiener filtering . These are the main 
+A:  uh , approaches where people have tried , so just to  
+C:  Yeah . 
+A:  just to fill the space with some f few more speech enhancement algorithms to see whether it 
+D:  <sniff> 
+A:  improves a lot , I  I 've been working on this uh , signal subspace approach for speech enhancement where you 
+A:  take the noisy signal and then decomposing the signal s 
+A:  and the noise subspace and then try to estimate the clean speech from the signal plus noise subspace . 
+C:  Mm - hmm . 
+A:  And  
+A:  So , I 've been actually running some s 
+A:  So far I 've been trying it only on Matlab . I have to  
+C:  Yeah . 
+A:  to  to test whether it works first or not and then I 'll 
+A:  p port it to C and I 'll update it with the repository once I find it it giving any some positive result . 
+A:  So , yeah . <outbreath> 
+C:  S 
+C:  <inbreath> 
+C:  So you s you 
+A:  <outbreath> 
+C:  So you said one thing I want to jump on for a second . 
+C:  So  so now 
+C:  you 're  you 're getting tuned into the repository thing that he has here and  
+A:  Yeah . 
+C:  so we we 'll have a <inbreath> single place where the stuff is . 
+A:  Yep . 
+A:  Yeah . 
+C:  Cool . 
+C:  <inbreath> 
+
+
+
+
+C:  Um , 
+C:  so maybe uh , just briefly , you could 
+C:  remind us about the related experiments . Cuz you did some stuff that you talked about last week , I guess ? 
+D:  Mm - hmm . 
+C:  Um , where you were also combining something  both of you I guess were both combining something from the uh , 
+G:  <mike noise> 
+D:  Right . 
+C:  French Telecom system with <inbreath> the u uh  I  I don't know whether it was system one or system two , or  ?  
+D:  Mm - hmm . It was system one . So we  
+C:  OK . 
+D:  The main thing that we did is just to take the spectral subtraction from the France Telecom , which provide us some speech samples that are uh , with noise removed . 
+C:  So I let me  let me just stop you there . So then , one distinction is that 
+C:  uh , you were taking the actual France Telecom features and then applying something to  
+A:  Uh , no there is a slight different . Uh 
+A:   
+B:   
+C:   
+D:   
+E:   
+F:   
+G:   
+A:  I mean , which are extracted at the handset 
+C:  Yeah . 
+A:  because they had another back - end blind equalization   
+C:  Yeah . 
+C:  But that 's what I mean . 
+A:  Yeah . Yeah . 
+C:  But u u Sorry , yeah , I 'm not being  I 'm not being clear . 
+A:  Yeah . 
+A:  Yeah . 
+C:  What I meant was you had something like cepstra or something , right ? 
+A:  Yeah , yeah , yeah , yeah . 
+C:  And so one difference is that , I guess you were taking spectra . 
+A:  The speech . 
+B:  Yeah . 
+D:  Yeah . But I guess it 's the s exactly the same thing because 
+D:  on the heads uh , handset they just applied this Wiener filter and then compute cepstral features , right ? or  ? 
+A:  Yeah , the cepstral f The difference is like  There may be a slight difference in the way  because they use exactly the baseline system for converting the cepstrum once you have the speech . 
+D:  Right . 
+A:  I mean , if we are using our own code for th 
+A:  I mean that  that could be the only difference . I mean , there is no other difference . Yeah . 
+D:  Mm - hmm . 
+C:  <snap> 
+C:  But you got some sort of different result . So I 'm trying to understand it . But uh , 
+D:  <inbreath> <mouth> 
+D:  Yeah , well I think we should uh , have a table with all the result because I don't know I uh , I don't exactly know what are your results ? But , 
+C:  I th 
+A:  OK . OK . 
+D:  Mmm . <inbreath> 
+D:  Yeah , but so we did this , and another difference I guess is that we just applied 
+C:  <mike noise> 
+D:  uh , proposal - one system after this without  
+D:  well , with our modification to reduce the delay of the  the LDA filters , and 
+A:  Uh - huh . 
+D:  Well there are slight modifications , but it was the full proposal - one . In your case , if you tried 
+B:  And the filter  
+A:  Only LDA . 
+D:  just putting LDA , then maybe on - line normalization  ?  
+A:  Yeah . 
+A:  <mouth> 
+A:  Af - I  after that I added on - line normalization , yeah . 
+D:  Mm - hmm . So we just tried directly to  to 
+D:  just , keep the system as it was <inbreath> and , 
+D:  um , when we plug the spectral subtraction it improves uh , signif significantly . 
+D:  Um , but , what seems clear also is that we have to retune the time constants of the on - line normalization . Because if we keep the value that was submitted 
+A:  Yeah , yeah . Yeah . 
+D:  uh , it doesn't help at all . You can remove on - line normalization , or put it , it doesn't change anything . 
+D:  Uh , uh , as long as you have the spectral subtraction . 
+D:  <inbreath> 
+D:  But , you can still find 
+D:  some kind of optimum somewhere , and we don't know where exactly but , 
+A:  Yeah . 
+D:  uh . 
+A:  Yeah , I assume . 
+D:  <sniff> 
+C:  So it sounds like you should look at some tables of results or something and see where i 
+D:  Right . Yeah . 
+A:  Yeah . 
+C:  where the  
+D:  Mm - hmm . 
+C:  <inbreath> 
+C:  where they were different and what we can learn from it . 
+D:  Mm - hmm . 
+C:  <inbreath> <outbreath> 
+D:  <inbreath> 
+A:   
+B:   
+C:   
+D:   
+E:   
+F:   
+G:   
+A:  without any change . 
+D:  Yeah . 
+B:  But it 's  
+A:  OK . 
+D:  Well , 
+B:  It 's the new . 
+D:  with  
+D:  with  
+D:  with changes , because we change it the system to have  
+A:  with 
+B:  The new . 
+A:  Oh yeah , I mean the  the new LDA filters . I mean  OK . 
+B:  The new . 
+D:  Yeah . LDA filters . 
+D:  There are other things that we finally were shown to improve also like , 
+D:  the sixty - four hertz cut - off . 
+B:  Mm - hmm . 
+A:  Mm - hmm . 
+D:  w 
+D:  Uh , it doesn't seem to hurt on TI - digits , finally . 
+A:  OK . 
+D:  Maybe because of other changes . 
+A:  OK . 
+D:  Um , well there are some <outbreath> minor changes , yeah . 
+A:  Mm - hmm . 
+D:  And , right now if we look at the results , it 's , 
+D:  um , always better than  
+D:  it seems always better than France Telecom for mismatch and high - mismatch . 
+D:  And it 's still slightly worse for well - matched . 
+D:  Um , 
+B:  But 
+D:  but this is not significant . 
+D:  But , 
+D:  the problem is that it 's not significant , but if you 
+D:  put this in the , mmm , 
+D:  uh , spreadsheet , it 's still worse . 
+C:  <laugh> 
+D:  Even with very minor  
+D:  uh , 
+D:  even if it 's only slightly worse for well - matched . 
+C:  Mm - hmm . 
+D:  And significantly better for HM . 
+D:  Uh , but , well . <outbreath> 
+D:  I don't think it 's importa important because when they will change their metric , 
+C:  <laugh> 
+D:  uh , <inbreath> 
+B:  <laugh> 
+D:  uh , mainly because of uh , when you p you plug the um , 
+D:  frame dropping in the baseline system , 
+D:  it will improve a lot HM , and MM , <inbreath> so , 
+A:  Yeah . 
+D:  um , I guess what will happen  <outbreath> 
+D:  I don't know what will happen . But , the different contribution , I think , for the different test set will be more even . 
+A:  Because the  your improvement on HM and MM will also go down significantly in the spreadsheet so . But the  the well - matched may still  I mean the well - matched may be the one which is least affected by adding the 
+D:  Mm - hmm . 
+A:  endpoint information . 
+C:  Right . 
+A:  Yeah . So the  the MM  
+D:  Mm - hmm . 
+A:  MM and HM are going to be v hugely affected by it . Yeah . 
+D:  <outbreath> 
+D:  Yeah , so um , 
+D:  <outbreath> 
+D:  yeah . 
+A:  Yeah . 
+A:  But they d the  everything I mean is like , but there 
+A:  that 's how they reduce  why they reduce the qualification to twenty - five percent or some  something on . 
+G:  <mike noise> 
+D:  Mm - hmm . 
+C:  But are they changing the weighting ? 
+G:  <mike noise> 
+A:  Uh , no , I guess they are going ahead with the same weighting . 
+D:  Yeah . 
+A:  Yeah . 
+G:  <mike noise> 
+A:  So there 's nothing on  
+C:  I don't understand that . I guess I  I haven't been part of the 
+A:  Yeah . 
+A:  <laugh> 
+C:  discussion , so , um , 
+C:  it seems to me that the well - matched condition is gonna be unusual , 
+C:  in this case . Unusual .  
+A:  Usual .  
+A:  Uh - huh . 
+C:  Because , um , you don't actually have 
+C:  good matches ordinarily for what any @ @  particular person 's car 
+C:  is like , or 
+C:  <breath-laugh> 
+A:  Mmm . Mmm . 
+C:  uh , 
+C:  It seems like something like the middle one is  is more 
+A:  Hmm . 
+C:  natural . 
+C:  So I don't know why the  well - matched is 
+A:  Right . 
+C:  uh  <breath-laugh> 
+D:  Mm - hmm . 
+A:  Yeah , but actually the well  well 
+A:  the well - matched um , 
+A:  uh , 
+A:  I mean the  the well - matched condition is not like , uh , the one in TI - digits where 
+D:  <outbreath> 
+A:  uh , you have all the training , uh , conditions exactly like replicated in the 
+A:  testing condition also . It 's like , this is not calibrated by SNR or something . The well - matched has also some  some mismatch in that which is other than the  
+C:  The well wa matched has mismatch ?  
+A:  has  has also some slight mismatches , unlike the TI - digits where it 's like prefectly matched because it 's artificially added noise . 
+F:  Perfect to match . 
+C:  Yeah . 
+C:  Yeah . 
+A:  But this is natural recording . 
+C:  So remind me of what well - matched meant ? You 've told me many times . 
+A:  The  the well - matched is like  
+A:  the  the well - matched is defined like it 's seventy percent of the whole database is used for training and thirty percent for testing . 
+D:  Yeah . Well , so it means that if the database is large enough , it 's matched . Because 
+A:  It 's  it 's  
+A:  <laugh> OK , it 's  
+D:  it 
+C:  Yeah . 
+D:  in each set you have a range of conditions  Well  
+F:  <mike noise> 
+C:  Right . So , I mean , yeah , unless they deliberately chose it to be different , which they didn't because they want it to be well - matched , it is pretty much  You know , so it 's  so it 's sort of saying if you  
+F:  <mike noise> 
+F:  <mike noise> 
+F:  It 's  it 's not guaranteed though . 
+A:  Yeah . <outbreath> 
+C:  Uh , it 's not guaranteed . Right . Right . 
+A:  Yeah . 
+D:  Mm - hmm . 
+A:  Yeah because the m the main  major reason for the m 
+A:  the main mismatch is coming from the amount of noise and the silence frames and all those present in the database actually . 
+C:  Again , if you have enough  if you have enough  
+A:  No - yeah , yeah . Yeah . 
+C:  So it 's sort of i i it 's sort of saying OK , so you  much as you train your dictation machine for talking into your computer , 
+F:  <mike noise> 
+C:  um , you  you have a car , and so you drive it around a bunch and  and record noise conditions , or something , and then  I don't think that 's very realistic , I mean I th <laugh> I  I you know , so I  
+F:  <mike noise> 
+A:  Mm - hmm . 
+D:  <laugh> 
+G:  <laugh> 
+C:  I  I  you know , I guess they 're saying that if you were a company that was selling the stuff commercially , 
+G:  <clears throat> 
+C:  that you would have a bunch of people driving around in a bunch of cars , and  and you would have something that was roughly similar and maybe that 's the argument , but I 'm not sure I buy it , so . 
+A:  Yeah , yeah , yeah . 
+C:  Uh , 
+C:  <inbreath> So <outbreath> 
+
+
+C:  What else is going on ? 
+D:  Mmm . <outbreath> 
+D:  You - Yeah . We are playing  we are also playing , trying to put other 
+D:  spectral subtraction 
+D:  mmm , 
+D:  in the code . Um , 
+D:  it would be a very simple spectral subtraction , on the um , mel energies 
+D:  which I already tested but without the um 
+D:  frame dropping actually , and I think it 's important to have frame dropping 
+F:  Is it  is spectral subtraction typically done on the  after the mel , uh , scaling or is it done on the FFT bins ? 
+D:  if you use spectral subtraction . 
+D:  Um , 
+F:  Does it matter , or  ?  
+D:  <outbreath> 
+D:  I d 
+D:  I don't know . Well , it 's both  both uh , cases can i 
+F:  Oh . 
+D:  Yeah . 
+D:  So - some of the proposal , uh , we 're doing this on the bin  on the FFT bins , others on the um , mel energies . <inbreath> You can do both , but I cannot tell you what 's  
+F:  Hmm . 
+D:  which one might be better or  
+F:  Hmm . 
+D:  I  
+A:  I guess if you want to reconstruct the speech , it may be a good idea to do it on FFT bins . 
+D:  I don't know . 
+F:  Mmm . 
+D:  Yeah , but 
+A:  But for speech recognition , it may not . 
+A:  I mean it may not be very different if you do it on mel 
+A:  warped or whether you do it on FFT . 
+F:  I see . 
+A:  So you 're going to do a linear weighting anyway after that . 
+A:  Well  Yeah ? <outbreath> 
+F:  Hmm . 
+A:  So , it may not be really a big different . 
+D:  Well , it gives something different , but I don't know what are the , pros and cons of 
+A:  It - 
+A:  I Uh - huh . 
+D:  both . 
+C:  Hmm . 
+A:  So 
+C:  OK . 
+A:  The other thing is like when you 're putting in a speech enhancement technique , uh , 
+A:  is it like one stage speech enhancement ? Because everybody seems to have a mod two stages of speech enhancement in all the proposals , which is really giving them some improvement . 
+D:  Yeah . 
+B:  <outbreath> Mm - hmm . 
+D:  Mm - hmm . 
+A:   
+B:   
+C:   
+D:   
+E:   
+F:   
+G:   
+A:  I mean they just do the same thing again once more . 
+C:  Mm - hmm . 
+A:   
+B:   
+C:   
+D:   
+E:   
+F:   
+G:   
+A:  And  So , there 's something that is good about doing it  
+A:  I mean , to cleaning it up once more . 
+D:  Yeah , it might be . Yeah . 
+A:  <outbreath> 
+A:  Yeah , so we can  
+D:  So maybe in my implementation I should also 
+A:  <outbreath> 
+A:  Yeah . 
+D:  try to inspire me from 
+C:  <inbreath> 
+A:  That 's what 
+D:  this kind of thing and  Yeah . 
+C:  Well , the other thing would be to combine what you 're doing . I mean maybe one or  one or the other of the things that you 're doing would benefit from the other happening first . 
+A:  That 's wh 
+A:  Yeah . 
+A:  So , 
+C:  <laugh> Right , so he 's doing a signal subspace thing , maybe it would work better if you 'd already done some simple spectral subtraction , or maybe vi maybe the other way around , you know ? 
+D:  Yeah , mm - hmm . 
+A:  Yeah . 
+D:  Mm - hmm . 
+
+
+A:  So I 've been thinking about combining the Wiener filtering with signal subspace , 
+A:  I mean just to see all  some  some such permutation combination to see whether it really helps or not . 
+D:  Mm - hmm . 
+D:  Mm - hmm . 
+D:  Mm - hmm . <inbreath> 
+D:  Yeah . 
+D:  Yeah . 
+C:  How is it  I  I guess I 'm ignorant about this , how does  
+C:  I mean , since Wiener filter also assumes that you 're  that you 're adding together the two signals , 
+C:  how is  how is that differ from signal subspace ? 
+A:  The signal subspace ? 
+C:  Yeah . 
+A:  The  
+A:  The signal subspace approach has actually an in - built Wiener filtering in it . 
+C:  Oh , OK . 
+A:  Yeah . It is like a KL transform followed by a Wiener filter . 
+A:  Is the signal is  is a signal substrate . 
+C:  Oh , oh , OK so the difference is the KL . 
+A:  So , the  the different  the c the  the advantage of combining two things is mainly coming from the signal subspace approach doesn't 
+A:  work very well if the SNR is very bad . 
+A:  It 's   
+C:  I see . 
+A:  it works very poorly with the poor SNR conditions , and in colored noise . 
+C:  So essentially you could do simple spectral subtraction , followed by a KL transform , followed by a 
+A:  Wiener filtering .  
+C:  Wiener filter . 
+A:  It 's a  it 's a cascade of two s 
+C:  Yeah , in general , you don't  that 's right you don't wanna othorg orthogonalize if the things are noisy . 
+C:  Actually . 
+C:  Um , that was something that uh , Herve and I were talking about with um , the multi - band stuff , that if you 're converting things to 
+C:  from uh , bands , groups of bands into cepstral coef you know , local sort of local cepstral coefficients that it 's not that great to do it if it 's noisy . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  Yeah . 
+C:  Uh , 
+C:  so . 
+A:  So . 
+A:  So that  that 's one reason maybe we could combine 
+A:  s some  something to improve SNR a little bit , 
+C:  Yeah . 
+A:  first stage , and then do a something in the second stage which could take it 
+A:  further . 
+F:  <mike noise> 
+D:  What was your point about  about colored noise there ? 
+A:  Oh , the colored noise uh  
+D:  Yeah . 
+A:  the colored noise  the  the v the signal subspace approach has  
+A:  I mean , it  it actually depends on inverting 
+A:  the matrices . So it  it  ac 
+A:  the covariance matrix of the noise . 
+D:  Mm - hmm . 
+A:  So if  if it is not 
+A:  positive definite , I mean it has a  it 's  
+A:  It doesn't behave very well if it is not positive definite ak 
+A:  It works very well with white noise because we know 
+A:  for sure that it has a positive definite . 
+C:  So you should do spectral subtraction and then add noise . 
+A:  <laugh> 
+B:  <laugh> 
+C:  <laugh> 
+A:  <laugh> So the way they get around is like they do an inverse filtering , first of the colo colored noise and then make the noise white , and then finally when you reconstruct the speech back , you do this filtering again . 
+C:  <outbreath> 
+C:  Yeah . 
+C:  Yeah . 
+D:  Yeah , right . 
+F:  <mike noise> 
+C:  I was only half kidding . I mean if you  sort of <laugh> you do the s spectral subtraction , 
+D:  Yeah . 
+A:  Yeah . 
+A:  Yeah . <laugh> 
+C:  that also gets rid  and then you  then  then add a little bit l noise  noise addition  
+C:  I mean , that sort of what J  JRASTA does , in a way . 
+C:  If you look at what JRASTA doing essentially i i it 's equivalent to sort of adding a little  adding a little noise , <laugh> 
+A:  Yeah . Huh ? Uh - huh . 
+A:  <laugh> 
+D:  Uh - huh . 
+C:  in order to get rid of the effects of noise . 
+C:  <laugh> 
+G:  <laugh> 
+A:  So . 
+C:  <mike noise> 
+D:  Yeah . 
+C:  OK . 
+A:  <mike noise> 
+
+
+D:  Uh , yeah . So there is this . And 
+D:  maybe we  well we find some people so that <inbreath> 
+D:  uh , agree to maybe work with us , 
+D:  and they have implementation of VTS techniques 
+D:  so it 's um , 
+D:  Vector Taylor Series that are used to mmm , 
+D:  <outbreath> uh f to model the transformation between clean 
+D:  cepstra and noisy cepstra . 
+D:  So . Well , if you take the standard model of channel plus noise , 
+C:  Mm - hmm . 
+D:  uh , it 's  it 's a nonlinear 
+D:  eh uh , transformation in the cepstral domain . 
+D:  <outbreath> 
+C:  Yes . 
+D:  And 
+D:  uh , there is a way to approximate this using 
+D:  uh , first - order or second - order Taylor Series and 
+D:  <inbreath> 
+D:  it can be used for 
+D:  <mouth> uh , getting rid of the noise and the channel effect . 
+C:  Who is doing this ? 
+D:  Uh w working in the cepstral domain ? So there is one guy 
+D:  in Grenada , 
+B:  Yeah , in Grenada 
+D:  and another in  uh , Lucent that I met at ICASSP . 
+B:  one of my friend . 
+D:  uh , 
+C:  Who 's the guy in Grenada ? 
+B:  Uh , Jose Carlos Segura . 
+C:  I don't know him . 
+A:  This VTS has been proposed by CMU ? Is it  is it the CMU ? Yeah , yeah , OK . From C . 
+D:  Mm - hmm . 
+B:  Yeah , yeah , yeah . Originally the idea was from CMU . 
+D:  Mm - hmm . 
+D:  Yeah . 
+C:  Uh - huh . 
+D:  Well , it 's again a different thing <outbreath> <laugh> that could be tried . 
+D:  Um , <outbreath> 
+C:  Uh - huh . 
+D:  Mmm , yeah . 
+C:  Yeah , so at any rate , you 're looking 
+C:  general , 
+C:  uh , standing back from it , 
+C:  looking at ways to combine 
+C:  one form or another of uh , noise removal , 
+C:  uh , with  with these other things we have , 
+D:  <outbreath> Mm - hmm . 
+C:  uh , looks like a worthy thing to  
+C:  to do here . 
+D:  Uh , yeah . <outbreath> 
+C:  <laugh> 
+D:  But , yeah . But for sure there 's required to  that requires to 
+D:  re - check everything else , and re - optimize 
+C:  Oh yeah . 
+D:  the other things and , 
+D:  for sure the on - line normalization may be the LDA filter . 
+D:  Um , <outbreath> 
+C:  Well one of the  seems like one of the things to go through next week when Hari 's here , cuz Hari 'll have his own ideas 
+D:  I  <outbreath> 
+D:  Uh - huh . 
+C:  too  or  I guess not next week , week and a half , 
+C:  uh , will be sort of go through these alternatives , what we 've seen so far , and come up with some game plans . Um . You know . So , I mean one way would  <inbreath> 
+C:  he Here are some alternate visions . I mean one would be , 
+C:  you look at a few things very quickly , you pick on something that looks like it 's promising and then everybody works really hard on the same  different aspects of the same thing . 
+C:  Another thing would be to have t to  to pick two pol two plausible things , and  and you know , have t sort of two working things for a while until we figure out what 's better , and then , you know , uh , 
+D:  Mm - hmm . 
+C:  but , w um , 
+C:  uh , he 'll have some ideas on that too . 
+
+
+A:  The other thing is to , uh  Most of the speech enhancement techniques have reported results on small vocabulary tasks . 
+A:  But we  we going to address this Wall Street Journal in our next stage , 
+A:  which is also going to be a noisy task so s very few people have reported something on 
+A:  using some continuous speech at all . So , there are some  I mean , I was looking at some literature on speech enhancement 
+G:  <mike noise> 
+A:  applied to large vocabulary tasks and 
+C:  <outbreath> 
+D:  <mike noise> 
+A:  spectral subtraction doesn't seems to be the thing to do for 
+A:  large vocabulary tasks . And it 's  
+A:  Always people have shown improvement with Wiener filtering and maybe subspace approach over spectral subtraction everywhere . 
+A:  But if we  if we have to use simple spectral subtraction , we may have to do some optimization  to make it 
+C:  <inbreath> So they 're making  there  Somebody 's generating Wall Street Journal with additive  artificially added noise or something ? 
+A:  work @ @ . 
+A:  Yeah , yeah . 
+C:  Sort of a  sort of like what they did with TI - digits , and ? Yeah , OK . 
+A:  Yeah . 
+A:  Yeah . I m I guess Guenter Hirsch is in charge of that . 
+A:  Guenter Hirsch and TI . Maybe Roger  r Roger , maybe in charge of . 
+C:  OK . 
+C:  And then they 're  they 're uh , uh , generating HTK scripts to   
+A:  Yeah . 
+A:  Yeah , I don't know . There are  they have  there is no  I don't know if they are converging on HTK or are using some 
+A:  Mississippi State , yeah . I 'm not sure about that . 
+C:  Mis - Mississippi State maybe , yeah . 
+C:  Yeah , so that 'll be a little  little task in itself . <inbreath> Um , well we 've  
+A:  Yeah . 
+C:  Yeah , it 's true for the additive 
+C:  noise , y artificially added noise we 've always used small vocabulary too . 
+C:  But for n there 's been noisy speech this larv large vocabulary that we 've worked with in Broadcast News . So we we did the Broadcast News evaluation and 
+A:  Mm - hmm . 
+C:  some of the focus conditions were noisy and  and  But we  but we didn't do spectral subtraction . We were doing our funny stuff , right ? We were doing multi multi uh , multi - stream and  and so forth . 
+A:  It had additive n 
+A:  Yeah . 
+C:  But it , you know , we di stuff we did helped . I mean it , 
+C:  did something . So . 
+A:  OK . 
+C:  Um , 
+C:  now we have this um , meeting data . 
+C:  You know , like the stuff we 're  recording right now , and  
+A:  Yeah . Yeah . 
+C:  and uh , 
+C:  that we have uh , for the  
+C:  uh , the quote - unquote noisy data there is just  
+C:  noisy and reverberant actually . It 's the far field mike . 
+C:  And uh , we have 
+C:  uh , 
+C:  the digits that we do at the end of these things . And that 's what most o again , most of our work has been done with that , with  with uh , connected digits . 
+A:  Uh - huh . 
+C:  Um , 
+C:  but uh , we have recognition now 
+C:  with some of the continuous speech , 
+C:  large vocabulary continuous speech , using Switchboard  uh , Switchboard recognizer , 
+A:  Yeah . 
+A:  OK . 
+C:  uh , no training , <laugh> from this , just  just plain using the Switchboard . 
+A:  Oh . You just take the Switchboard trained  ? Yeah , yeah . 
+C:  That 's  that 's what we 're doing , yeah . Now there are some adaptation though , that  that uh , Andreas has been playing with , but we 're hop uh , actually uh , Dave and I were just talking earlier today about maybe at some point not that distant future , trying some of the techniques 
+A:  OK . Yeah . That 's cool . OK . 
+C:  that we 've talked about on , uh , some of the large vocabulary data . Um , 
+C:  I mean , I guess no one had done  yet done test one on 
+C:  the distant mike 
+C:  using uh , the SRI recognizer and , uh , 
+F:  I don't  not that I know of . 
+C:  Yeah , cuz everybody 's scared . 
+F:  <laugh> 
+C:  <laugh> 
+F:  <laugh> 
+A:  Yeah . 
+C:  You 'll see a little smoke coming up from the  the CPU or something <laugh> trying to  trying to do it , but 
+F:  That 's right <laugh> 
+A:  <laugh> 
+C:  uh , yeah . But , you 're right that  that  that 's a real good point , that uh , we  we don't know 
+C:  yeah , uh , I mean , what if any of these ta I guess that 's why they 're pushing that in the uh  in the evaluation . 
+A:  Yeah . 
+C:  Uh , 
+F:  <mike noise> 
+C:  But um , 
+C:  Good . 
+C:  OK . 
+
+
+C:  Anything else going on ? at you guys ' end , or  ?  
+B:  I don't have good result , with the  inc including the new parameters , I don't have good result . 
+B:  Are  similar or a little bit worse . 
+A:  With what  what other new p new parameter ? 
+G:  You 're talking about your voicing ? 
+C:  Yeah . So maybe  You probably need to back up a bit seeing as how Sunil , yeah . 
+B:  Yeah . 
+B:  Mm - hmm . 
+A:  Yeah . 
+B:  I tried to include another new parameter to the 
+B:  traditional parameter , the coe the cepstrum coefficient , that , like , the 
+A:  Uh - huh . 
+B:  auto - correlation , the R - zero 
+A:  Mm - hmm . 
+B:  and R - one over R - zero 
+A:  Mm - hmm . 
+B:  and another estimation of the 
+B:  var the variance of the difference for  of the spec si uh , spectrum of the signal and  
+B:  and the spectrum of time after 
+B:  filt mel filter bank . 
+A:  I 'm so sorry . I didn't get it . <laugh> 
+B:  Nuh . Well . Anyway . The  First you have the sp 
+B:  the spectrum of the signal , and you have the  
+A:  Mm - hmm . 
+B:  on the other side you have the output of the mel filter bank . 
+A:  Mm - hmm . 
+B:  You can extend the coefficient of the mel filter bank and obtain an approximation of the spectrum of the signal . 
+A:  Mmm . 
+A:  OK . 
+B:  I do the difference  
+A:  OK . 
+B:  I found a difference at the variance of this different because , suppose 
+A:  Uh - huh . 
+B:  we  we think that 
+B:  if the variance is high , maybe you have n uh , noise . 
+A:  Yeah . 
+B:  And if the variance is small , 
+B:  maybe you have uh , speech . 
+A:  Uh - huh . 
+B:  To  to 
+B:  <inbreath> To  The idea is to found another feature for discriminate between 
+B:  voice sound and unvoice sound . 
+A:  OK . 
+B:  And we try to use this new feature  feature . And I did experiment  
+B:  I need to change  to obtain this new feature I need to change the size  the window size  size . 
+B:  of the a of the  analysis window size , 
+B:  to have more information . 
+A:  Yeah . Make it longer . 
+B:  Uh , sixty - two point five milliseconds I think . 
+A:  OK . 
+
+
+B:  And 
+B:  I do  
+B:  I did two type of experiment to include this feature directly 
+F:  <mike noise> 
+B:  with the  
+B:  with the other feature and to train a neural network 
+B:  to select it voice - unvoice - silence  silence and to  to concat this new feature . But the result are 
+A:  Unvoiced . 
+A:  Well . 
+B:  n with the neural network I have more or less the same result . 
+A:  As using just the cepstrum , or  ?  
+B:  Result . 
+B:  Yeah . 
+B:  Yeah . <outbreath> 
+A:  OK . 
+B:  It 's neve e e sometime it 's worse , sometime it 's a little bit better , but not significantly . 
+B:  And  
+A:  Uh , is it with TI - digits , or with  ?  
+B:  No , I work with eh , Italian and Spanish basically . 
+A:  OK . OK . 
+B:  And if I don't y use the neural network , and use directly 
+B:  the feature 
+A:  Uh - huh . 
+B:  the results are worse . 
+B:  But 
+B:  Doesn't help . <laugh> 
+C:  <inbreath> I  I  I really wonder though . I mean we 've had these discussions before , and  and one of the things that struck me was that  uh , about this line of thought that was 
+D:  Mm - hmm . 
+F:  <mike noise> 
+C:  particularly interesting to me was that 
+C:  we um  
+C:  whenever you condense things , 
+C:  uh , in an irreversible way , 
+C:  um , you throw away some information . 
+C:  And , that 's mostly viewed on as a good thing , in the way we use it , because we wanna suppress things that will cause variability for uh particular , uh , phonetic units . 
+C:  Um , 
+C:  but , you 'll do throw something away . 
+C:  And so the question is , uh , can we figure out if there 's something we 've thrown away that we shouldn't have . 
+C:  And um . So , 
+C:  when they were looking at the difference between the filter bank and the FFT that was going into the filter bank , I was thinking " oh , OK , so they 're picking on something 
+C:  they 're looking on it to figure out noise , or voice  voiced property whatever . " So that  that 's interesting . Maybe that helps to drive the  
+C:  the thought process of coming up with the features . But for me sort of the interesting thing was , " well , 
+C:  but is there just something in that difference which is useful ? " So another way of doing it , maybe , would be just to take the FFT 
+C:  uh , power spectrum , and feed it into a neural network , 
+B:  To know   
+C:  and then use it , you know , in combination , or alone , or  or whatever 
+F:  Wi - with what targets ? 
+A:  Voiced , unvoiced is like  
+C:  Uh , no . 
+A:  Oh . 
+A:  Or anything . 
+C:  No the  just the same  same way we 're using  I mean , the same way that we 're using the filter bank . 
+F:  Phones . 
+A:  Oh , OK . 
+D:  Mm - hmm . 
+C:  Exact way  the same way we 're using the filter bank . I mean , the filter bank is good for all the reasons that we say it 's good . But it 's different . 
+C:  And , you know , maybe if it 's used in combination , it will get at something that we 're missing . 
+D:  Mm - hmm . 
+C:  And maybe , you know , using , orth you know , KLT , or uh , um , 
+C:  adding probabilities , I mean , all th all the different ways that we 've been playing with , 
+C:  that we would let the  essentially let the neural network determine what is it 
+C:  that 's useful , that we 're missing here . 
+D:  Mm - hmm . 
+D:  Yeah , but there is so much variability in the power spectrum . 
+A:  Mm - hmm . 
+C:  Well , that 's probably why y i it would be unlikely to work as well by itself , but it might help in combination . 
+D:  Mm - hmm . 
+D:  Mmm . 
+C:  But I  I  I have to tell you , I can't remember the conference , but , uh , I think it 's about 
+C:  ten years ago , I remember going to 
+C:  one of the speech conferences and  and uh , 
+C:  I saw within very short distance of one another a couple different posters that showed about the wonders of some auditory inspired front - end or something , and a couple posters away it was somebody 
+C:  who compared one to uh , just putting in the FFT and the FFT did slightly better .  
+F:  <laugh> 
+D:  Mm - hmm . 
+C:  So I mean the  i i It 's true there 's lots of variability , but again we have these wonderful statistical mechanisms for 
+D:  <laugh> 
+C:  quantifying that a that variability , and you know , doing something reasonable with it . So , um , 
+D:  Mm - hmm . 
+C:  uh , 
+C:  It - it 's same , you know , argument 
+C:  that 's gone both ways about uh , you know , we have these data driven filters , in LDA , 
+C:  and on the other hand , if it 's data driven it means it 's driven by things that have lots of variability , and that are necessarily  not necessarily gonna be the same in training and test , 
+C:  so , in some ways it 's good to have data driven things , and in some ways it 's bad to have data driven things . So , 
+A:  Yeah , d 
+C:  part of what we 're discovering , is ways to combine things that are data driven than are not . 
+A:  Yeah . 
+C:  Uh , so anyway , it 's just a thought , that  that if we  if we had that  maybe it 's just a baseline 
+C:  uh , which would show us " well , what are we really getting out of the filters " , or maybe i i probably not by itself , but in combination , 
+D:  Mm - hmm . 
+C:  uh , you know , maybe there 's something to be gained from it , and let the  
+C:  But , you know , y you 've only worked with us for a short time , maybe in a year or two you w you will actually come up with the right set of things 
+D:  <sniff> 
+C:  to extract from this information . 
+C:  But , maybe the neural net and the H M Ms could figure it out quicker than you . 
+C:  <laugh> So . <laugh> It 's just a thought . 
+B:  Maybe . <laugh> Yeah , I can  I will try to do that . <laugh> 
+C:  <mike noise> 
+C:  Yeah . 
+A:  What  one  one um p 
+A:  one thing is like what  before we started using this VAD 
+A:  in this Aurora , 
+D:  <clears throat> <outbreath> 
+A:  the  th what we did was like , 
+A:  I  I guess most of you know about this , adding this additional speech - silence bit to the cepstrum and training the HMM on that . 
+C:  Mm - hmm . 
+A:  That is just a binary feature and that seems to be <inbreath> improving a lot on the SpeechDat - Car where there is a lot of 
+A:  noise but not much on the TI - digits . So , a adding an additional feature to distin to discriminate between speech and nonspeech was helping . 
+A:  That 's it . 
+D:  Wait  I  I 'm sorry ? 
+A:  Yeah , we actually added an additional binary feature to the cepstrum , just the baseline . 
+D:  Yeah ? 
+B:  You did some experiment . <outbreath> 
+A:  Yeah , yeah . Well , in  in the case of TI - digits it didn't actually give us anything , 
+A:  because there wasn't any f anything to discriminate between speech , and it was very short . 
+D:  Yeah . 
+D:  Hmm . 
+A:  But Italian was like 
+D:  Well  
+A:  very  it was a huge improvement on Italian . 
+D:  Mm - hmm . 
+D:  But anyway the question is even more , is within speech , can we get some features ? 
+D:  Are we drop dropping information that can might be useful within speech , I mean . To  maybe to distinguish between voice sound and unvoiced sounds ? 
+A:  OK . 
+A:  Mm - hmm . 
+A:  Yeah , yeah . 
+A:  Yeah . 
+C:  And it 's particularly more relevant now since we 're gonna be given the endpoints . 
+D:  Yeah . 
+D:  Mm - hmm . 
+C:  So . <laugh> 
+A:  Yeah , yeah . 
+F:  <sniff> 
+C:  Uh . 
+F:  <sniff> 
+D:  Mmm . 
+C:  So . 
+C:  Um . 
+A:  Mmm . 
+A:  There was a paper in ICASSP  this ICASSP  over the uh extracting some 
+A:  higher - order uh , 
+A:  information from the cepstral coefficients and 
+A:  I forgot the name . Some is some harmonics  I don't know , I can  I can pull that paper out from ICASSP . It  Huh ? 
+D:  Yeah . 
+C:  Talking cumulants or something ? Cumulants or something . But  No . 
+A:  Uh , I don't know . I don't remember . It wa it was taking the , um  
+A:  It was about finding the higher - order 
+A:  moments of  
+A:  Yeah . And I 'm not sure about whether it is the higher - order moments , or  
+C:  Yeah , cumulants , yeah . 
+A:  maybe higher - order cumulants and  
+C:  Oh . 
+A:  Yeah . 
+C:  Or m e 
+A:  It was  it was  Yeah . I mean , he was showing up uh some  something on noisy speech , some improvement on the noisy speech . 
+C:  Yeah . 
+D:  Mm - hmm . 
+A:  Some small vocabulary tasks . 
+C:  Uh . 
+A:  So it was on PLP derived cepstral coefficients . 
+C:  Yeah , but again  You could argue that th that 's exactly what the neural network does . 
+A:  Mmm . 
+C:  So n neural network uh , 
+C:  is in some sense equivalent to computing , you know , higher - order moments of what you  yeah . 
+A:  trying to f 
+A:  to 
+A:  Moments , yeah . 
+A:  Yeah . 
+C:  So . 
+C:  I mean , it doesn't do it very specifically , and 
+D:  Mm - hmm . 
+C:  pretty  you know . But . 
+A:  Yep . 
+
+
+C:  Uh , anything on your end you want to talk about ? Uh . 
+G:  Um , nothing I wanna really talk about . I can  I can just uh , um , share a little bit  Sunil hasn't  hasn't heard about uh , what I 've been doing . Um , so , 
+C:  <laugh> 
+C:  Yeah . 
+G:  um , I told you I was  I was  I was getting prepared to take this qualifier exam . So basically that 's just , um , trying to propose um , uh , 
+G:  your next your  your following years of  of your PHD work , trying  trying to find a project to  to define and  and to work on . 
+G:  So , I 've been , uh , looking into , um , doing something about r uh , speech recognition using acoustic events . So , 
+G:  um , the idea is you have all these  these different events , for example voicing , nasality , R - coloring , you know burst or noise , uh , frication , that kinda stuff , um , building robust 
+G:  um , primary detectors for these acoustic events , and using the outputs of these robust detectors to do speech recognition . 
+G:  Um , and , um , these  these primary detectors , um , will be , uh , 
+G:  inspired by , you know , multi - band techniques , um , doing things , um , similar to Larry Saul 's work on , uh , graphical models 
+G:  to  to detect these  these , uh , acoustic events . And , um , so I  I been  I been thinking about that and some of the issues that I 've been running into are , um , exactly what  what kind of acoustic events I need , what  
+G:  um , what acoustic events will provide a  a good enough coverage to  in order to do the later recognition steps . And , also , um , once I decide a set of acoustic events , um , h how do I  
+G:  how do I get labels ? Training data for  for these acoustic events . And , then later on down the line , I can start playing with the  the models themselves , the  the primary detectors . Um , so , 
+G:  um , I kinda see  like , after  after building the primary detectors I see um , myself taking the outputs 
+G:  and feeding them in , sorta tandem style into  into a um , Gaussian mixtures HMM back - end , um , and doing recognition . Um . <mouth> So , that 's  
+G:  that 's just generally what I 've been looking at . Um , 
+A:  Yeah . 
+C:  By  by the way , uh , the voiced - unvoiced version of that for instance could tie right in to what Carmen was looking at . So , 
+G:  Yeah . 
+D:  Mm - hmm . 
+C:  you know , um , if you  if a multi - band approach was helpful as  as I think it is , it seems to be helpful for determining voiced - unvoiced , that one might be another 
+G:  Mm - hmm . 
+G:  Yeah . 
+C:  thing . 
+B:  Mm - hmm . 
+G:  Yeah .  
+G:  Um , were  were you gonna say something ? Oh . It looked  OK , never mind . Um , yeah . And so , this  this past week um , I 've been uh , looking a little bit into uh , TRAPS 
+F:  Mmm . 
+D:  <clears throat> 
+G:  um , 
+G:  and doing  doing TRAPS on  on these e events too , just , um , seeing  seeing if that 's possible . Uh , and 
+
+
+G:  um , other than that , uh , I was kicked out of I - house for living there for four years . 
+C:  Oh no . So you live in a cardboard box in the street now or , no ? 
+G:  Yeah . 
+D:  <laugh> 
+G:  Uh , well , s s som something like that . In Albany , yeah . <laugh> Yeah . 
+D:  <laugh> 
+C:  Yeah . <laugh> 
+A:  <laugh> 
+F:  <mike noise> 
+A:  <laugh> 
+G:  And uh . Yep . That 's it . 
+C:  <laugh> 
+A:  <laugh> 
+C:  Suni - i d ' you v 
+C:  did uh  
+C:  did you find a place ? Is that out of the way ? 
+A:  Uh , no not yet . 
+A:  Uh , yesterday I called up a lady who ha who 
+A:  will have a vacant room from May thirtieth and she said she 's interviewing two more people . 
+A:  So . And she would get back to me on Monday . 
+D:  <yawn> 
+A:  So that 's  that 's only thing I have and Diane has a few more 
+A:  houses . She 's going to take some pictures and send me after I go back . 
+C:  OK . 
+A:  So it 's  that 's  
+F:  Oh . So you 're not down here permanently yet ? 
+A:  No . I 'm going back to OGI today . 
+F:  Ah ! 
+F:  Oh , OK . 
+G:  Oh . 
+C:  OK . And then , you 're coming back uh   
+A:  Uh , i I mean , I  I p I plan to be here on thirty - first . 
+C:  Thirty - first , OK . 
+G:  Thirty - first . <whispered> 
+A:  Yeah , well if there 's a house available or place to  Yeah , I hope . 
+C:  Well , I mean i i if  if  They 're available , and they 'll be able to get you something , so worst comes to worst we 'll put you up in a hotel for  for  for a while until you  
+A:  Yeah . So , in that case , I 'm going to be here on thirty - first definitely . 
+C:  OK . 
+E:  You know , if you 're in a desperate situation and you need a place to stay , you could stay with me for a while . I 've got a spare bedroom right now . 
+C:  <mike noise> 
+A:  Oh . OK . Thanks . 
+A:  That sure is nice of you . <laugh> 
+A:  So , it may be he needs more than me . <laugh> 
+D:  <laugh> 
+E:  <outbreath> <laugh> 
+G:  Oh r oh . 
+G:  Oh no , no . <laugh> My  my cardboard box is actually a nice spacious two bedroom apartment . <laugh> 
+C:  <laugh> 
+D:  <laugh> 
+C:  <laugh> 
+D:  <laugh> 
+F:  <mike noise> 
+A:  <laugh> 
+C:  <laugh> So a two bedroom cardboard box . <laugh> 
+F:  <laugh> 
+B:  <laugh> 
+D:  <laugh> 
+C:  Th - that 's great . Thanks Dave . 
+D:  <laugh> 
+G:  yeah 
+A:  Yeah . Yeah . <laugh> Yeah . 
+A:  Yeah . 
+
+
+C:  Um , 
+A:  Yeah . 
+C:  Do y wanna 
+C:  say anything about  You  you actually been  
+C:  Uh , last week you were doing this stuff with Pierre , you were  you were mentioning . Is that  that something worth talking about , or  ?  
+E:  Um , 
+E:  it 's  
+E:  Well , um , it  I don't think it directly relates . Um , well , so , I was helping a speech researcher named Pierre Divenyi and he 's int He wanted to um , look at um , 
+E:  how people respond to formant changes , I think . Um . So he  he created a lot of synthetic audio files of vowel - to - vowel transitions , and then he wanted a psycho - acoustic um , spectrum . 
+E:  And he wanted to look at um , 
+E:  how the energy is moving  over time in that spectrum and compare that to the  to the listener tests . And , um . So , I 
+E:  gave him a PLP spectrum . And  to um  he  he t wanted to track the peaks so he could look at how they 're moving . So I took the um , PLP LPC coefficients and um , 
+E:  I found the roots . This was something that Stephane suggested . I found the roots of the um , LPC polynomial to , um , track the peaks in the , um , PLP LPC spectra . 
+A:  well there is aligned spectral pairs , is like the  the  Is that the aligned s 
+C:  It 's a r root LPC , uh , of some sort . 
+A:  Oh , no . So you just  
+D:  Mm - hmm . 
+C:  Yeah . 
+A:  instead of the log you took the root square , 
+A:  I mean cubic root or something . 
+A:  What di w I didn't get that . 
+C:  No , no . It 's  it 's  it 's taking the  finding the roots of the LPC polynomial . 
+A:  Polynomial . Yeah . Is that the line spectral  
+C:  So it 's like line spectral pairs . Except I think what they call line spectral pairs they push it towards the unit circle , don't they , to sort of ? 
+A:  Oh , it 's like line sp 
+A:  Yeah , yeah , yeah , yeah . 
+C:  But it  But uh , you know . But what we 'd used to do w when I did synthesis at National Semiconductor twenty years ago , the 
+C:  technique we were playing with initially was  was taking the LPC polynomial and  and uh , 
+C:  finding the roots . It wasn't PLP cuz Hynek hadn't invented it yet , but it was just LPC , and 
+F:  <laugh> 
+G:  <laugh> 
+C:  uh , we found the roots of the polynomial , And th When you do that , sometimes 
+C:  they 're f they 're what most people call formants , sometimes they 're not . 
+A:  Mmm . 
+C:  So it 's  it 's  it 's a little , uh  Formant tracking with it can be a little tricky cuz you get these funny <inbreath> values in  in real speech , but . 
+D:  Hmm . <outbreath> 
+F:  So you just  You typically just get a few roots ? You know , two or three , something like that ? 
+C:  Well you get these complex pairs . And it depends on the order that you 're doing , but . 
+D:  Mm - hmm . 
+E:  Right . So , um , 
+E:  if  
+E:  @ @  
+E:  Every root that 's  Since it 's a real signal , the LPC polynomial 's gonna have real coefficients . So I think that means that every root that is not 
+E:  a real root  
+F:  Mm - hmm . 
+E:  is gonna be a c complex pair , 
+E:  um , of a complex value and its conjugate . 
+E:  Um . 
+E:  So for each  And if you look at that on the unit circle , um , one of these  one of the members of the pair will be a positive frequency , one will be a negative frequency , I think . So I just  <inbreath> So , um , 
+E:  f for the  I 'm using an eighth - order polynomial and I 'll get three or four of these pairs 
+D:  <sniff> 
+C:  Yeah . 
+E:  which give me s which gives me three or four peak positions .  
+A:  Hmm . 
+C:  This is from synthetic speech , or  ?  
+E:  It 's  Right . Yeah . 
+C:  Yeah . So if it 's from synthetic speech then maybe it 'll be cleaner . I mean for real speech in real  then what you end up having is , like I say , funny little things that are  don't exactly fit your notion of formants 
+F:  How did  
+C:  all that well . But  but mostly they are . Mostly they do . And  and what  I mean in  in what we were doing , 
+D:  But - 
+D:  Yeah . 
+E:  Mmm , 
+B:  <mike noise> 
+D:  I  
+B:  <mike noise> 
+C:  which was not so much looking at things , it was OK because it was just a question of quantization . 
+C:  Uh , we were just you know , storing  It was  We were doing , uh , stored speech , uh , quantization . But  but uh , in your case 
+D:  Mm - hmm . 
+C:  um , you know  
+D:  Actually you have peaks that are not at the formant 's positions , but 
+G:  <mike noise> 
+E:  But  there 's some of that , yes . 
+D:  they are lower in energy and  Well they are 
+D:  much lower . 
+F:  If this is synthetic speech can't you just get 
+F:  the formants directly ? I mean h how is the speech created ? 
+E:  It was created from a synthesizer , <inbreath> and um  
+F:  Wasn't a formant synthesizer was it ? <laugh> 
+C:  <laugh> 
+C:  I bet it  it might have  may have been but maybe he didn't have control over it or something ? 
+E:  I  d d this  
+E:  In  in fact w we  we could get , um , formant frequencies out of the synthesizer , 
+E:  as well . And , um , <outbreath> w one thing that the , um , LPC approach will hopefully give me 
+E:  in addition , um , is that I  I might be able to find the b the bandwidths 
+E:  of these humps as well . Um , Stephane suggested looking at each complex pair as a  like a se second - order IIR filter . Um , but I don't think 
+C:  Yeah . 
+E:  there 's a g a really good reason not to um , get the formant frequencies from the synthesizer instead . Except that you don't have the psycho - acoustic modeling in that . 
+C:  <mouth> <inbreath> 
+C:  <inbreath> 
+C:  Yeah , so the actual  So you 're not getting the actual formants per se . You 're getting the  Again , you 're getting sort of the , uh  
+D:  Mm - hmm . 
+C:  You 're getting something that is  is uh , af strongly affected by the PLP model . And so it 's more psycho - acoustic . So it 's a little  It 's  It 's  It 's sort of  sort of a different thing . 
+B:  <outbreath> <mike noise> 
+F:  Oh , I see . 
+B:  <mike noise> 
+F:  That 's sort of the point . 
+C:  But  Yeah . i Ordinarily , in a formant synthesizer , the bandwidths as well as the ban uh , formant centers are  I mean , that 's  Somewhere in the synthesizer that was put in , as  
+F:  Yeah . 
+E:  Mm - hmm . 
+C:  as what you  But  but yeah , you view each complex pair as essentially a second - order section , which has , uh , band center and band width , and um , 
+C:  um  
+C:  But . 
+C:  Yeah . 
+
+
+C:  O K . So , uh , yeah , you 're going back today and then back in a week I guess , and . 
+F:  <mike noise> 
+A:  Yeah . 
+C:  Yeah . Great ! Well , welcome . 
+A:  <laugh> Thanks . 
+F:  I guess we should do digits quickly . 
+D:  Mmm . 
+C:  Oh yeah , digits . I almost forgot that . I almost forgot our daily digits . 
+B:  Digits . 
+F:  <clears throat> 
+G:  <laugh> 
+F:  You wanna go ahead ? 
+B:  <outbreath> 
+C:  Sure . 
+F:  OK . 
+
+
+C:  Transcript L dash one four two  
+C:  one nine seven five three three six zero three zero  
+C:  zero eight one four one eight seven eight four five  
+C:  eight seven two five five four two three two  
+C:  one one eight seven th three two one one  
+C:  zero eight four one six five zero five six five  
+C:  two five one nine two seven seven four  
+C:  seven zero eight four eight four eight four  
+C:  one seven three two nine six four one seven two  
+F:  Transcript L dash one four three  
+F:  eight nine seven four nine one six eight six two one nine  
+F:  four eight nine nine four eight eight six one  
+F:  one six one nine two five nine two six eight three nine  
+F:  eight four eight zero zero six zero seven  
+F:  six five one five two six two one seven eight  
+F:  seven five four two nine two five four nine eight  
+F:  seven four two seven eight three two nine seven two three two  
+F:  one six six seven five two six two  
+F:  <mike noise> 
+G:  Transcript L dash one forty four  
+F:  <mike noise> 
+G:  nine seven two one seven five six three two two  
+G:  six eight four three two zero two eight two  
+G:  zero nine one eight six four one zero four two  
+G:  five seven seven seven one eight five nine two  
+G:  seven six nine five eight five four nine seven zero  
+G:  six nine nine four five three eight seven two  
+G:  nine three four five seven two two nine O three four two  
+G:  two one zero eight two nine seven one seven  
+E:  Reading transcript L dash one four five  
+E:  five eight nine nine five one four nine zero  
+E:  zero seven one one four three two nine five  
+E:  seven three six eight seven seven one six zero  
+E:  three zero zero four six five seven seven nine seven  
+E:  three one two seven three two five nine  
+G:  <mike noise> 
+E:  one one seven one five zero three five  
+E:  one zero five zero two one seven five  
+E:  one six six five six two two eight four six eight nine  
+A:  Transcript L dash one four six  
+A:  nine one three three O O seven O six four  
+A:  four six three seven seven three one two four four  
+A:  six three six nine three zero two seven two eight  
+A:  two seven six eight seven five two two four  
+A:  nine seven six nine three eight nine six  
+A:  one nine one three four eight one two three four four two  
+A:  six one nine three three O three four five  
+A:  seven nine four two seven eight five six five two  
+B:  Transcript L dash one four O .  
+B:  three five three one eight four zero one two  
+B:  four five six three three four O six three four  
+F:  <mike noise> 
+F:  <mike noise> 
+B:  five two five nine two two seven seven five  
+F:  <mike noise> 
+F:  <mike noise> 
+F:  <mike noise> 
+B:  seven one eight two seven five two eight four  
+F:  <mike noise> 
+B:  zero four seven eight six zero zero four nine  
+B:  nine eight zero seven five five one six zero zero seven one  
+F:  <mike noise> 
+B:  O one six zero five nine six O five two  
+B:  five eight four five seven seven one nine seven  
+D:  Transcript L dash one four one  
+D:  six two two seven six O O four two  
+F:  <mike noise> 
+D:  nine five three seven eight nine three six five four  
+F:  <mike noise> 
+D:  two five eight nine eight five one five one six one seven  
+F:  <mike noise> 
+D:  three zero eight eight nine four nine two four seven seven nine  
+D:  nine two three nine two nine zero zero five six  
+D:  zero nine zero one seven nine eight five O five O five  
+D:  nine two five four four four three nine five  
+D:  eight nine eight four three zero four two three two nine seven  
+
+

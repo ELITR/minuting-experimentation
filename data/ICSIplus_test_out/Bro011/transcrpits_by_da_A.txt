@@ -1,0 +1,352 @@
+
+A:  OK , guess we 're done . 
+A:  Am I on ? 
+A:  I guess so . 
+A:  Radio two . 
+A:  Hmm . 
+A:  Radio two . 
+A:  Wow . 
+A:  People say the strangest things when their microphones are on . 
+A:  So everybody everybody 's on ? 
+A:  Yeah . 
+A:  So y you guys had a  a meeting with uh  with Hynek which I unfortunately had to miss . 
+A:  Um 
+A:  and uh somebody 
+A:  eh e and uh 
+A:  I guess Chuck you weren't there either , 
+A:  so the uh 
+A:  Oh you were there ? 
+A:  Yeah . 
+A:  So everybody knows what happened except me . 
+A:  OK . <laugh> Maybe somebody should tell me . 
+A:  Uh - huh . 
+A:  Yeah . 
+A:  What was the  w what was the downsampling problem again ? 
+A:  I forget . 
+A:  Uh - huh . 
+A:  Depends what it 's frequency characteristic is , yeah . 
+A:  So you could do a  you could do a stricter one . 
+A:  Maybe . 
+A:  Yeah . 
+A:  Was there any conclusion about that ? 
+A:  I see . 
+A:  Yeah . 
+A:  So again this is th this is the downsampling <inbreath> uh of the uh  the feature vector stream 
+A:  and 
+A:  um Yeah I guess the  the uh LDA filters they were doing do have 
+A:  um <mouth> uh let 's see , so the  the  the feature vectors are calculated every ten milliseconds 
+A:  so 
+A:  uh the question is how far down they are at fifty  fifty hertz . 
+A:  Uh . <inbreath> Um . 
+A:  Sorry at twenty - five hertz since they 're downsampling by two . 
+A:  So . Does anybody know what the frequency characteristic is ? 
+A:  Oh OK . 
+A:  OK . 
+A:  Yeah . 
+A:  Hmm - hmm . 
+A:  Yeah . 
+A:  Uh - huh . 
+A:  Try  try what ? 
+A:  OK . 
+A:  Right . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  I mean I g I guess the key thing for me is  is figuring out how to better coordinate between the two sides 
+A:  cuz  because um 
+A:  uh I was talking with Hynek about it later 
+A:  and the  the  sort of had the sense sort of that  that neither group of people wanted to  to bother the other group too much . 
+A:  And  and I don't think anybody is , you know , closed in in their thinking or are unwilling to talk about things 
+A:  but I think that <inbreath> you were sort of waiting for them to <inbreath> tell you that they had something for you 
+A:  and  and that  and expected that they would do certain things 
+A:  and they were sor they didn't wanna bother you 
+A:  and <inbreath> they were sort of waiting for you 
+A:  and  and  and uh we ended up with this thing where they  they were filling up all of the possible latency themselves , 
+A:  and they just had hadn't thought of that . 
+A:  So . 
+A:  Uh . <outbreath> <laugh> <inbreath> <outbreath> <inbreath> I mean it 's true that maybe  maybe no one really thought about that  that this latency thing would be such a  a strict issue 
+A:  in  in uh  the other  
+A:  Yeah . 
+A:  Then they couldn't . 
+A:  I see . 
+A:  Just talk more . 
+A:  Yeah . 
+A:  Yeah . 
+A:  So there 's um  
+A:  Alright . 
+A:  Well maybe we should just 
+A:  uh I mean you 're  you 're bus other than that you folks are busy doing all the  all the things that you 're trying that we talked about before 
+A:  right ? 
+A:  And this  machines are busy 
+A:  and <inbreath> you 're busy 
+A:  and 
+A:  Yeah . 
+A:  OK . 
+A:  Oh . 
+A:  Let 's  let 's , I mean , I think that as  as we said before that one of the things that we 're imagining is that uh there  there will be <inbreath> uh in the system we end up with there 'll be something to explicitly uh uh do something about noise 
+A:  in addition to the uh other things that we 're talking about 
+A:  and that 's probably the best thing to do . 
+A:  And there was that one email that said that <inbreath> it sounded like uh uh things looked very promising up there 
+A:  in terms of uh I think they were using Ericsson 's <inbreath> approach or something 
+A:  and <inbreath> in addition to  
+A:  They 're doing some noise removal thing , 
+A:  right ? 
+A:  Yeah . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah , sure . 
+A:  Yeah . 
+A:  When you say you don't have a result yet you mean it 's  it 's just that it 's in process 
+A:  or that you  <inbreath> it finished and it didn't get a good result ? 
+A:  Oh . 
+A:  OK . 
+A:  Yeah . 
+A:  Yeah . 
+A:  OK . 
+A:  So um I suggest actually now we  we  we sorta move on and  and hear what 's  what 's  what 's happening in  in other areas 
+A:  like <inbreath> what 's  what 's happening with your <inbreath> investigations <inbreath> about echos and so on . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  OK . 
+A:  Yeah I haven't read it in a while so I 'm not gonna be too much help unless I read it again , 
+A:  so . 
+A:  OK . 
+A:  Um . <inbreath> The um  
+A:  so you , and then <outbreath> you 're also gonna be doing this echo cancelling between the  the close mounted and the  <inbreath> and the  the  the  what we 're calling a cheating experiment uh of sorts 
+A:  between the distant  
+A:  Ah ! 
+A:  OK . 
+A:  F um 
+A:  Delegate . 
+A:  That 's good . 
+A:  It 's good to delegate . 
+A:  Great . 
+A:  Great . 
+A:  Yeah actually um he should uh 
+A:  I wonder who else is 
+A:  I think maybe it 's Dan Ellis is going to be doing uh a different cancellation . 
+A:  Um . <inbreath> One of the things that people working in the meeting task wanna get at is they would like to have cleaner <inbreath> close - miked recordings . 
+A:  So uh this is especially true for the lapel 
+A:  but even for the close  close - miked uh cases 
+A:  um we 'd like to be able to have <inbreath> um other sounds from other people and so forth removed from  
+A:  So when someone isn't speaking you 'd like the part where they 're not speaking to actually be  
+A:  So <inbreath> what they 're talking about doing is using ec uh echo cancellation - like techniques . 
+A:  It 's not really echo but <inbreath> uh just um uh 
+A:  taking the input from other mikes and using uh <inbreath> uh a uh  <mouth> an adaptive filtering approach to remove the effect of that uh other speech . 
+A:  So . 
+A:  Um what was it , 
+A:  there was  there was some  some  some point where <inbreath> eh uh Eric or somebody was  was speaking and he had lots of <inbreath> silence in his channel 
+A:  and I was saying something to somebody else uh <inbreath> which was in the background 
+A:  and it was not  
+A:  it was recognizing my words , which were the background speech <inbreath> on the close  <laugh> close mike . 
+A:  Yes . 
+A:  Oh you  
+A:  it was you I was 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  So they would like clean channels . 
+A:  Uh and for that  mmm uh  that purpose uh they 'd like to pull it out . 
+A:  So I think  <inbreath> I think Dan Ellis or somebody who was working with him was going to uh work on that . 
+A:  So . 
+A:  OK . 
+A:  Right ? 
+A:  Um . <inbreath> And uh I don't know if we 've talked lately about the  the plans you 're developing that we talked about this morning 
+A:  uh I don't remember if we talked about that last week or not , 
+A:  but <inbreath> maybe just a quick reprise of  of what we were saying this morning . 
+A:  Uh . 
+A:  But that 's uh uh all  that 's  is a  a certainly relevant  <inbreath> uh study 
+A:  and , you know , what are the features that they 're finding . 
+A:  We have this problem with the overloading of the term " feature " 
+A:  so 
+A:  uh <breath-laugh> what are the variables , 
+A:  what we 're calling this one , 
+A:  what are the variables that they 're found  finding useful 
+A:  um 
+A:  for  
+A:  Right . 
+A:  And that 's certainly one thing to do and we 're gonna try and do something more f more fine than that 
+A:  but uh 
+A:  um 
+A:  so 
+A:  um 
+A:  So I guess you know what , I was trying to remember some of the things we were saying , 
+A:  do you ha still have that  ? 
+A:  Yeah . 
+A:  There 's those <inbreath>  that 
+A:  uh 
+A:  yeah , some of  some of the issues we were talking about was in j just getting a good handle on  on uh <inbreath> what " good features " are 
+A:  and  
+A:  And the other thing you were talking about is  is  is where we get the targets from . 
+A:  So I mean , there 's these issues of what are the  what are the variables that you use 
+A:  and do you combine them using the soft " AND - OR " or you do something , you know , more complicated 
+A:  um and then the other thing was so where do you get the targets from ? 
+A:  The initial thing is just the obvious that we 're discussing is starting up with phone labels <inbreath> from somewhere and then uh doing the transformation . 
+A:  But then the other thing is to do something better 
+A:  and eh w why don't you tell us again about this  this database ? 
+A:  This is the  
+A:  And then tell them to talk naturally ? 
+A:  Yeah , yeah . 
+A:  Maybe you could go to these parlors and  and you could , you know  you know have  have , you know , reduced rates if you  <laugh> if you can do the measurements . 
+A:  Yeah . 
+A:  Yeah , be cool and help science . 
+A:  OK . 
+A:  Do you mean eh  but you  I mean  Mar 
+A:  you mean when was  was Mark Randolph there , or  ? 
+A:  Yeah he 's  he 's  he 's at Motorola now . 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  So the only  the only uh hesitation I had about it since , I mean I haven't see the data is it sounds like it 's  it 's <inbreath> continuous variables and a bunch of them . 
+A:  And so 
+A:  I don't know how complicated it is to go from there  
+A:  What you really want are these binary  labels , and just a few of them . 
+A:  And maybe there 's a trivial mapping if you wanna do it 
+A:  and it 's e but it  
+A:  I  I  I worry a little bit that this is a research project in itself , 
+A:  whereas um <inbreath> if you did something instead that  like um having some manual annotation by <inbreath> uh you know , linguistics students , 
+A:  this would  there 'd be a limited s set of things that you could do a as per our discussions with  with John before 
+A:  but the things that you could do , like nasality and voicing and a couple other things you probably could do reasonably well . 
+A:  And then there would  it would really be uh this uh uh binary variable . 
+A:  Course then , that 's the other question is do you want binary variables . 
+A:  So . 
+A:  I mean the other thing you could do is <inbreath> boot trying to  to uh get those binary variables 
+A:  and take the continuous variables from <inbreath> uh the uh <inbreath> uh the data itself there , 
+A:  but I  I 'm not sure  
+A:  Guess you could , yeah . 
+A:  Yeah . 
+A:  So anyway that 's  that 's uh  that 's another whole direction that cou could be looked at . 
+A:  Um . <inbreath> Um . <inbreath> I mean in general it 's gonna be  for new data that you look at , 
+A:  it 's gonna be hidden variable because we 're not gonna get everybody sitting in these meetings to <inbreath> wear the pellets and  
+A:  Um . So . 
+A:  Yeah . 
+A:  So wh yeah , where this fits into the rest in  in my mind , I guess , is that um <inbreath> we 're looking at different ways that we can combine <inbreath> uh different kinds of  of rep front - end representations <inbreath> um in order to get robustness under difficult or even , you know , typical conditions . 
+A:  And part of it , this robustness , seems to come from <inbreath> uh multi - stream or multi - band sorts of things 
+A:  and Saul seems to have <inbreath> a reasonable way of looking at it , at least for one  <click> <inbreath> one um articulatory feature . 
+A:  The question is is can we learn from that <inbreath> to change some of the other methods we have , since  
+A:  I mean , one of the things that 's nice about what he had I thought was that  that it  it um  
+A:  the decision about how strongly to train the different pieces is based on uh a  a reasonable criterion with hidden variables 
+A:  rather than <inbreath> um just assuming <inbreath> that you should train e e every detector uh with equal strength <inbreath> towards uh it being this phone or that phone . 
+A:  Right ? 
+A:  So it  so um <inbreath> he 's got these um uh uh 
+A:  he " AND 's " between these different <inbreath> features . 
+A:  It 's a soft " AND " , I guess 
+A:  but in  in principle <inbreath> you  you wanna get a strong concurrence of all the different things that indicate something 
+A:  and then he " OR 's " across the different  soft " OR 's " across the different uh <inbreath> multi - band channels . 
+A:  And um <mouth> the weight 
+A:  yeah , the target for the training of the " AND "  " AND ' ed " things <inbreath> is something that 's kept <inbreath> uh as a hidden variable , 
+A:  and is learned with EM . 
+A:  Whereas what we were doing is  is uh <inbreath> taking <inbreath> the phone target and then just back propagating from that 
+A:  which means that it 's  <inbreath> it 's uh i It could be for instance <inbreath> that for a particular point in the data <inbreath> you don't want to um uh train a particular band  train the detectors for a particular band . 
+A:  You  you wanna ignore <inbreath> that band , cuz that 's a  Ban - band is a noisy  noisy measure . 
+A:  And we don't  
+A:  We 're  we 're still gonna try to train it up . 
+A:  In our scheme we 're gonna try to train it up to do as well  well as it can at predicting . 
+A:  Uh . Maybe that 's not the right thing to do . 
+A:  Well at the  at the tail end , yeah , he has to know what 's  where it 's sonorant . 
+A:  But he 's  but what he 's - but what he 's not training up  uh what he doesn't depend on as truth is 
+A:  um I guess one way of describing would be 
+A:  if  if a sound is sonorant is it sonorant in this band ? 
+A:  Is it sonorant in that band ? 
+A:  Is it sonorant in that band ? 
+A:  i It 's hard to even answer that 
+A:  what you really mean is that the whole sound is sonorant . 
+A:  So 
+A:  then it comes down to , you know , to what extent should you make use of information from particular band <inbreath> towards making your decision . 
+A:  And um <inbreath> uh we 're making in a sense sort of this hard decision that you should  you should use everything <inbreath> uh with  with uh equal strength . 
+A:  And uh because in the ideal case we would be going for posterior probabilities , 
+A:  if we had <inbreath> uh enough data to really get posterior probabilities 
+A:  and if the  if we also had enough data so that it was representative of the test data 
+A:  then we would in fact be doing the right thing to train everything as hard as we can . 
+A:  But um this is something that 's more built up along an idea of robustness from  from the beginning 
+A:  and so you don't necessarily want to train everything up towards the  
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah . 
+A:  I mean we ha we have a kind of <inbreath> iterative training because we do this embedded Viterbi , 
+A:  uh so there is some something that 's suggested , based on the data 
+A:  but it 's  it 's not  
+A:  I think it s doesn't seem like it 's quite the same , cuz of this  
+A:  cuz then whatever <inbreath> that alignment is , it 's that for all  all bands . 
+A:  Well no , that 's not quite right , we did actually do them separate  tried to do them separately 
+A:  so that would be a little more like what he did . 
+A:  Um . 
+A:  But it 's still <inbreath> not quite the same because then it 's  it 's um setting targets based on where you would say <inbreath> the sound begins in a particular band . 
+A:  Where he 's s this is not a labeling per se . 
+A:  Might be closer I guess if we did a <inbreath> soft  soft target uh <inbreath> uh embedded <inbreath> neural net training like we 've done a few times 
+A:  uh <inbreath> f the forward um  do the forward calculations to get the gammas and train on those . 
+A:  Mmm . 
+A:  Uh what 's next ? 
+A:  Oh . 
+A:  You 're playing ? 
+A:  You 're playing ? 
+A:  What  which test set was this ? 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah , I mean , it 's not at all uncommon you do worse on long word on short words than long words anyway just because you 're accumulating more evidence for the  for the longer word , 
+A:  but . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Wow . 
+A:  Lots of silence . 
+A:  Are the SP 's optional ? 
+A:  I mean skip them ? 
+A:  Mm - hmm . 
+A:  I see . 
+A:  Mm - hmm . 
+A:  Mm - hmm . 
+A:  Yeah , I mean , I think that uh , as much as you can , it 's good to d sort of not do anything really tricky . 
+A:  Not do anything that 's really finely tuned , 
+A:  but just sort of eh you know you t you i z 
+A:  The premise is kind of you have a  a good person look at this for a few weeks and what do you come up with ? 
+A:  And uh 
+A:  Could be . 
+A:  Right . 
+A:  And that , I mean , at the moment that 's not the limitation , 
+A:  so . 
+A:  I mean , I  I  I  what I thought you were gonna say i but which I was thinking was um 
+A:  where did six come from ? 
+A:  Probably came from the same place eighteen came from . 
+A:  You know , 
+A:  so . 
+A:  Uh <laugh> that 's another parameter , 
+A:  right ? 
+A:  that  that maybe , you know , uh  you really want three or nine or  
+A:  Right . 
+A:  Yeah . 
+A:  Yeah . 
+A:  But I think right now again the idea is doing just very simple things 
+A:  how much better can you make it ? 
+A:  And um since they 're only simple things there 's nothing that you 're gonna do that is going to blow up the amount of computation 
+A:  um so 
+A:  if you found that nine was better than six that would be O K , I think , actually . 
+A:  Doesn't have to go down . 
+A:  Mm - hmm , OK . 
+A:  Yeah , just work with the models , 
+A:  yeah . 
+A:  Yeah . 
+A:  Cool . 
+A:  OK . 
+A:  So uh <inbreath> what 's uh 
+A:  I guess your plan for  You  you  you guys ' plan for the next  next week is <inbreath> just continue on these  these same things we 've been talking about for Aurora and 
+A:  Yeah . 
+A:  Yeah . 
+A:  Yeah we  we have a big list . 
+A:  You have a big list of  <laugh> of things to do . 
+A:  So . 
+A:  Well that 's good . 
+A:  I think <inbreath> that after all of this uh um confusion settles down in another  
+A:  some point a little later next year there will be some sort of standard and it 'll get out there 
+A:  and <inbreath> hopefully it 'll have some effect from something <laugh> that  <inbreath> that has uh been done by our group of people 
+A:  but uh 
+A:  e even if it doesn't there 's  <inbreath> there 's go there 'll be standards after that . 
+A:  So . 
+A:  Huh . 
+A:  OK , guess we 're done . 

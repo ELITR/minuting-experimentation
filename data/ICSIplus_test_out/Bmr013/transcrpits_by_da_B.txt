@@ -1,0 +1,223 @@
+B:  Oh . 
+B:  Alright . 
+B:  Um , do we wanna say something about the , an update of the , uh , transcript ? 
+B:  Mmm . 
+B:  It 'll  it 'll be  basically it 'll be a re - cap of a meeting that we had jointly this morning . 
+B:  Mm - hmm . 
+B:  My feeling is that 
+B:  we discussed this right before coffee 
+B:  and I think it 's a  it 's a fine idea partly because , um , it 's not un unrelated to their present skill set , 
+B:  but it will add , for them , an extra dimension , it might be an interesting break for them . 
+B:  And also it is contributing to the , uh , c composition of the transcript 
+B:  cuz we can incorporate those numbers directly and it 'll be a more complete transcript . 
+B:  So I 'm  I think it 's fine , that part . 
+B:  Mm - hmm . 
+B:  And , that , you know , I 'm not , that  that one I 'm not so sure if it 's into the  the , things that , I , wanted to use the hours for , 
+B:  because the , the time that they 'd be spending doing that they wouldn't be able to be putting more words on . 
+B:  But that 's really your choice , it 's your  
+B:  Hmm . 
+B:  It 's gonna be fun to see how we , compare at this . 
+B:  Very exciting . s @ @ . 
+B:  s @ @ . It s strikes me that there are more  each of them is more informative because it 's so , random , 
+B:  and that people might articulate more , 
+B:  and you that might end up with more  a closer correspondence . 
+B:  Mm - hmm . 
+B:  H That could  could be an interesting design , too , cuz then you 'd have the com the comparison of the , uh , predictable speech versus the less predictable speech 
+B:  and maybe you 'd find that it worked in , in the , case of the pr of the , uh , non - predictable . 
+B:  Well . 
+B:  Also I thought you were thinking of a much more restricted set of features , that  
+B:  Yeah , sure . 
+B:  Sure . 
+B:  Yeah . 
+B:  Yeah 
+B:  OK . 
+B:  It would seem to me that the points of articulation would be m more , g 
+B:  uh , I mean that 's  I think about articulatory features , I think about , points of articulation , which means , uh , rather than vowels . 
+B:  So , is it , uh , bilabial or dental or is it , you know , palatal . 
+B:  Which  which are all like where  where your tongue comes to rest . 
+B:  Place . 
+B:  Thank you , what  whatev whatever I s said , that 's  
+B:  I really meant place . 
+B:  Yeah . 
+B:  Hmm . 
+B:  That 's  Well ,  isn't that  I thought that was , well but that  wasn't that kinda the direction ? 
+B:  I thought 
+B:  W Well it seems like you could do both . 
+B:  I mean , I was thinking that it would be interesting , to do it with respect to , parts of Switchboard anyway , in terms of , 
+B:  uh  partly to see , if you could , generate first guesses at what the articulatory feature would be , based on the phone representation at that lower level . 
+B:  It might be a time gain . 
+B:  But also in terms of comparability of , um , 
+B:  what you gain 
+B:  Yep . 
+B:  Mm - hmm . 
+B:  And you could tell that  
+B:  And you get the relative gain up ahead . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  So in  in our case you 'd think about us s starting with maybe the regular dictionary entry , 
+B:  and then ? 
+B:  Or  would we  
+B:  But  
+B:  Mm - hmm . 
+B:  So I was thinking  
+B:  Yeah . 
+B:  Oh . 
+B:  OK . 
+B:  And I 'm  and these people might  they  they are , s most of them are trained with IPA . 
+B:  They 'd be able to do phonetic - level coding , or articulatory . 
+B:  Well , you know , I mean they , they  they 're interested in continuing working with us , 
+B:  so  I mean  I , and this would be up their alley , so , we could  when the  when you d meet with , with John Ohala and find , you know what taxonomy you want to apply , then , they 'd be , good to train onto it . 
+B:  Yeah . 
+B:  I think so , too . 
+B:  Interesting idea . 
+B:  He 's got lip   lipsmacks . 
+B:  Yeah . 
+B:  Wow . 
+B:  Interesting . 
+B:  Well , I have  
+B:  Well , OK , so , now we need  
+B:  so , um , 
+B:  I think I might have done what you 're requesting , though I did it in the service of a different thing . 
+B:  I have thirty minutes that I 've more tightly transcribed with reference to individual channels . 
+B:  And I could  And  
+B:  And  
+B:  No , actually it 's a different meeting . 
+B:  So , um , e so the , you know , we have the , th they transcribe as if it 's one channel with these  with the slashes to separate the overlapping parts . 
+B:  And then we run it through  then it  then I 'm gonna edit it and I 'm gonna run it through channelize which takes it into Dave Gelbart 's form format . 
+B:  And then you have , all these things split across according to channel , 
+B:  and then that means that , if a person contributed more than once in a given , overlap during that time bend that  that two parts of the utterance end up together , it 's the same channel , 
+B:  and then I took his tool , and last night for the first thirty minutes of one of these transcripts , I , tightened up the , um , boundaries on individual speakers ' channels , 
+B:  cuz his  his interface allows me to have total flexibility in the time tags across the channels . 
+B:  And  um , so . 
+B:  Yes . 
+B:  Might not be what you need . 
+B:  Oh , OK . 
+B:  Uh , how  how m much 
+B:  time  so the meetings vary in length , 
+B:  what are we talking about in terms of the number of minutes you 'd like to have as your  as your training set ? 
+B:  OK , now you 're saying different meetings because of different speakers or because of different audio quality or both or  ? 
+B:  OK . 
+B:  Mm - hmm . 
+B:  The pre presegment 
+B:  yeah . 
+B:  Well , no , if we were to start with this and then tweak it h manually , would that  that would be OK ? 
+B:  OK . 
+B:  How many minutes would you want from  
+B:  I mean , we could  easily , get a section , you know , like say a minute or so , from every meeting that we have so f from the newer ones that we 're working on , everyone that we have . 
+B:  And then , 
+B:  should provide this . 
+B:  Somewhere not in the very beginning , five minutes , OK . 
+B:  And , then I wanted to ask you just for my inter information , 
+B:  then , would you , be trai 
+B:  cuz I don't quite unders 
+B:  so , would you be training then , um , the segmenter so that , it could , on the basis of that , segment the rest of the meeting ? 
+B:  So , if I give you like  five minutes is the idea that this would then be applied to , uh , to , providing tighter time  bands ? 
+B:  Wow , interesting . 
+B:  OK . 
+B:  Uh - huh . 
+B:  Excellent . 
+B:  Excellent , OK . 
+B:  Wonderful . 
+B:  OK , so then , if that 's five minutes per meeting we 've got like twelve minutes , twelve meetings , roughly , that I 'm  that I 've been working with , then  
+B:  Well  oh wa in terms of the speakers or the conditions or the ? 
+B:  Um , we have different combinations of speakers . 
+B:  I mean , just from what I 've seen , uh , there are some where , um , you 're present or not present , 
+B:  and , then  then you have the difference between the networks group and this group 
+B:  Yep , we do . 
+B:  Um , no . 
+B:  We could , 
+B:  I mean you  you recorded one last week or so . 
+B:  I could get that new one in this week  I get that new one in . 
+B:  Great . 
+B:  OK , so if I , 
+B:  OK , included  include , 
+B:  OK , then , uh , if I were to include all together samples from twelve meetings that would only take an hour 
+B:  and I could get the transcribers to do that 
+B:  right  
+B:  I mean , what I mean is , that would be an hour sampled , and then they 'd transcribe those  that hour , 
+B:  right ? 
+B:  That 's what I should do ? 
+B:  I don't mean transcribe 
+B:  I mean  I mean adjust . 
+B:  So they get it into the multi - channel format and then adjust the timebands so it 's precise . 
+B:  Absolutely . 
+B:  I did  I did , um , uh , so , last night I did , uh , 
+B:  Oh gosh , 
+B:  well , last night , I did about half an hour in , three hours , which is not , terrific , 
+B:  but , um , 
+B:  anyway , it 's an hour and a half per  
+B:  Well , I can't calculate on my , <laugh> on my feet . 
+B:  Well , um they 're still working  they still have enough to finish that I haven't assigned a new meeting , 
+B:  but the next , m m 
+B:  I was about to need to assign a new meeting 
+B:  and I was going to take it from one of the new ones , 
+B:  and I could easily give them Jerry Feldman 's meeting , 
+B:  no problem . 
+B:  And , then  
+B:  Mm - hmm . 
+B:  Uh , that first set . 
+B:  And so I was in the process of like editing them but this is wonderful news . 
+B:  We funded the experiment with , uh  
+B:  also we were thinking maybe applying that that to getting the , 
+B:  Yeah , that 'll be , very useful to getting the overlaps to be more precise all the way through . 
+B:  Yes , it does . 
+B:  So , um ,  um , Liz , and  and Don , and I met this morning , in the BARCO room , with the lecture hall , 
+B:  and this afternoon , 
+B:  it drifted into the afternoon ,  <inbreath> uh , concerning this issue of , um , the , well there 's basically the issue of the interplay between the transcript format and the processing that , they need to do for , the SRI recognizer . 
+B:  And , um , well , so , I mentioned the process that I 'm going through with the data , 
+B:  so , you know , I get the data back from the transcri Well , s uh , metaphorically , get the data back from the transcriber , 
+B:  and then I , check for simple things like spelling errors and things like that . 
+B:  And , um , I 'm going to be doing a more thorough editing , with respect to consistency of the conventions . 
+B:  But they 're  they 're generally very good . 
+B:  And , then , I run it through , uh , the channelize program to get it into the multi - channel format , OK . 
+B:  And  the , what we discussed this morning , I would summarize as saying that , um , these units that result , in a  a particular channel and a particular timeband , at  at that level , um , vary in length . 
+B:  And , um , <mike noise> their recognizer would prefer that the units not be overly long . 
+B:  But it 's really an empirical question , whether the units we get at this point through , just that process I described might be sufficient for them . 
+B:  So , as a first pass through , a first chance without having to do a lot of hand - editing , what we 're gonna do , is , I 'll run it through channelize , give them those data after I 've done the editing process and be sure it 's clean . 
+B:  And I can do that , pretty quickly , with just , that minimal editing , without having to hand - break things . 
+B:  And then we 'll see if the units that we 're getting , uh , with the  at that level , are sufficient . 
+B:  And maybe they don't need to be further broken down . 
+B:  And if they do need to be further broken down then maybe it just be piece - wise , maybe it won't be the whole thing . 
+B:  So , that 's  that 's what we were discussing , this morning as far as I  Among  
+B:  also we discussed some adaptational things , 
+B:  so it 's like , 
+B:  uh  You know I hadn't , uh , incorporated , a convention explicitly to handle acronyms , for example , 
+B:  but if someone says , PZM it would be nice to have that be directly interpretable from , the transcript what they said , 
+B:  or Pi - uh Tcl  TCL I mean . 
+B:  It 's like 
+B:  y it 's  and so , um , I 've  I 've incorporated also convention , with that 
+B:  but that 's easy to handle at the post editing phase , 
+B:  and I 'll mention it to , transcribers for the next phase 
+B:  but that 's OK . 
+B:  And then , a similar conv uh , convention for numbers . 
+B:  So if they say one - eighty - three versus one eight three . 
+B:  Um , and also I 'll be , um , encoding , as I do my post - editing , the , things that are in curly brackets , which are clarificational material . 
+B:  And eh to incorporate , uh , keyword , at the beginning . 
+B:  So , it 's gonna be either a gloss or it 's gonna be a vocal sound like a , laugh or a cough , or , so forth . 
+B:  Or a non - vocal sound like a doors door - slam , and that can be easily done with a , you know , just a  one little additional thing in the , in the general format . 
+B:  Yeah . 
+B:  I 've been  I 've been adding that to the ones I 've been editing . 
+B:  Yeah . 
+B:  And  
+B:  Mm - hmm . 
+B:  And that doesn't  the amount of editing that it would require is not very much either . 
+B:  I 'm just hoping that the units that are provided in that way , <mike noise> will be sufficient 
+B:  cuz I would save a lot of , uh , time , dividing things . 
+B:  Well n 
+B:  One question , 
+B:  e w would that be a single speaker or is that multiple speakers overlapping ? 
+B:  Yeah . 
+B:  That 's very important . 
+B:  In  in doing the hand - marking ? 
+B:  Yeah that 's what I was thinking , too . 
+B:  Yeah . 
+B:  Oh I wanted to ask one thing , 
+B:  the microphones  the new microphones , 
+B:  when do we get , uh ? 
+B:  Oh , exciting . K . 
+B:  K . 
+B:  You said it was used by aerobics instructors ? 
+B:  That says a lot . 
+B:  Oh . 
+

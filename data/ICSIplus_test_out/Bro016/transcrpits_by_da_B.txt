@@ -1,0 +1,227 @@
+B:  Hmm . 
+B:  Channel one . 
+B:  Hmm . 
+B:  Yeah . 
+B:  Alright . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Yeah . 
+B:  I think it 's much more balanced with , uh  when the front - end is more robust . 
+B:  Yeah . 
+B:  I could look at it  at this . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  I don't  I don't know . 
+B:  I don't have this in  
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mmm . 
+B:  Mm - hmm . 
+B:  Uh . 
+B:  So there 's nothing  new . 
+B:  Um . 
+B:  I 'm sorry ? 
+B:  Mmm . 
+B:  Well , so we 've been mainly working on the report 
+B:  and  and  
+B:  Yeah . 
+B:  On the report  of the work that was already done . 
+B:  Um . 
+B:  Mm - hmm . 
+B:  That 's all . 
+B:  Yea 
+B:  Uh , 
+B:  y yeah . Basically we we 've stopped , uh , experimenting , 
+B:  I mean . We 're just writing some kind of technical report . 
+B:  And  
+B:  Yeah . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Well , we didn't  
+B:  we just planned to work on it one week on this report , 
+B:  not  no more , anyway . 
+B:  Um . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Mmm . 
+B:  Yeah . 
+B:  Well , 
+B:  so I don't know . There are small things that we started to  to do . 
+B:  But  
+B:  Uh . 
+B:  Yeah . 
+B:  Yeah . 
+B:  And  
+B:  Actually , there were some tables that were also with partial results . 
+B:  We just noticed that , 
+B:  wh while gathering the result that for some conditions we didn't have everything . 
+B:  But anyway . 
+B:  Um . 
+B:  Yeah , yeah . 
+B:  We have , yeah , extracted actually the noises from  the SpeechDat - Car . 
+B:  And so , 
+B:  we can train neural network with speech and these noises . 
+B:  Um . 
+B:  It 's difficult to say what it will give , 
+B:  because when we look at the Aurora  the TI - digits experiments , um , they have these three conditions that have different noises , 
+B:  and apparently this system perform as well on the seen noises  on the unseen noises and on the seen noises . 
+B:  But , 
+B:  I think this is something we have to try anyway . 
+B:  So  
+B:  adding the noises from  from the SpeechDat - Car . 
+B:  Um . 
+B:  Uh . 
+B:  Well , 
+B:  OGI does  did that . 
+B:  Um . 
+B:  At some point they did that for  for the voice activity detector . 
+B:  Right ? 
+B:  Um . 
+B:  They used some parts of the , um , Italian database to train the voice activity detector , I think . 
+B:  It  
+B:  Yeah . 
+B:  And Spanish , yeah . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  That 's right . 
+B:  Uh  
+B:  Mm - hmm . 
+B:  Different cars . 
+B:  Yeah . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  What do you mean ? 
+B:  We  we  
+B:  Like , we have  male , female , 
+B:  at least . 
+B:  Mmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Do you have something simple in mind for  I mean , vocal tract length normalization ? 
+B:  Mm - hmm . 
+B:  Hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mmm . 
+B:  Almost , 
+B:  yeah . 
+B:  Mm - hmm . 
+B:  Uh . Yeah . 
+B:  So , this noise , 
+B:  um  
+B:  Yeah . The MSG  
+B:  Um . 
+B:  Mmm . 
+B:  There is something  perhaps , I could spend some days to look at this thing , 
+B:  cuz it seems that when we train networks on  let 's say , on TIMIT with MSG features , they  they look as good as networks trained on PLP . 
+B:  But , 
+B:  um , 
+B:  when they are used on  on the SpeechDat - Car data , it 's not the case  
+B:  oh , well . 
+B:  The MSG features are much worse , 
+B:  and so maybe they 're , um , less  more sensitive to different recording conditions , 
+B:  or  Shou 
+B:  Yeah . 
+B:  But  
+B:  Mmm . 
+B:  I don't know . 
+B:  I cannot tell . 
+B:  But  
+B:  It 's  it  
+B:  the  the error rate is higher . 
+B:  So , I don 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  But  
+B:  Yeah . 
+B:  But , it 's d it 's after  
+B:  Well , it 's tandem features , 
+B:  so  
+B:  Mmm . 
+B:  Yeah . 
+B:  We  we have estimation of post posteriors with PLP and with MSG as input , 
+B:  so I don 
+B:  Well . 
+B:  I don't know . 
+B:  Mm - hmm . 
+B:  Mmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Yeah . 
+B:  So we should look at the likelihood , 
+B:  or  or 
+B:  what ? 
+B:  Or  
+B:  well , 
+B:  at the log , perhaps , 
+B:  and  
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  But  
+B:  Yes . 
+B:  Mmm . No , 
+B:  they are not  
+B:  no . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Yeah . But , 
+B:  my  my point was more that it  it works sometimes 
+B:  and  
+B:  but sometimes it doesn't work . 
+B:  So . 
+B:  And it works on TI - digits 
+B:  and on SpeechDat - Car it doesn't work , 
+B:  and  
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Well . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Yeah . 
+B:  Yeah , sure . 
+B:  Uh . 
+B:  Yeah . 
+B:  Well , 
+B:  there is also the spectral subtraction , 
+B:  which , 
+B:  um  
+B:  I think maybe we should , uh , try to integrate it in  in our system . 
+B:  Mmm . 
+B:  Mm - hmm . 
+B:  But , 
+B:  I think that would involve to  <breath> to mmm <mouth> use a big  a  al already a big bunch of the system of Ericsson . 
+B:  Because he has spectral subtraction , 
+B:  then it 's followed by , <mouth> um , other kind of processing that 's  are dependent on the  uh , if it 's speech or noi or silence . 
+B:  And there is this kind of spectral flattening after  if it 's silence , 
+B:  and  
+B:  and s I  I think it 's important , um , <mouth> to reduce this musical noise and this  this increase of variance during silence portions . 
+B:  So . 
+B:  Well . 
+B:  This was in this would involve to take almost everything from  from the  this proposal 
+B:  and  
+B:  and then just add some kind of on - line normalization in  in the neural network . 
+B:  Mmm . 
+B:  Yeah . 
+B:  Mm - hmm . 
+B:  Hmm . 

@@ -1,0 +1,273 @@
+E:  OK . 
+E:  OK . 
+E:  D did  did you guys get your code pushed together ? 
+E:  Cool . 
+E:  Oh , right , I saw  I saw the note . 
+E:  Mm - hmm . 
+E:  Is the , um  the CVS mechanism working  well ? 
+E:  Are  are people , uh , up at OGI grabbing code uh , via that ? 
+E:  Or  ? 
+E:  Uh - huh . 
+E:  Mmm . 
+E:  Yeah . 
+E:  I see . 
+E:  I see . 
+E:  OK . 
+E:  Mm - hmm . 
+E:  So has  Has anybody tried remotely accessing the CVS using , uh , uh , SSH ? 
+E:  Have you tried it yet ? 
+E:  OK . 
+E:  Yeah ? 
+E:  It worked good ? 
+E:  Oh , good ! 
+E:  Great ! 
+E:  Yeah . 
+E:  Right . 
+E:  Then that 's using the CVS password mechanism and all that , 
+E:  right ? 
+E:  So w when you came in from Belgian   Belgium , using SSH , uh , was it asking you for your own  password into ICSI ? 
+E:  So if yo you can only do that if you have an account at ICSI ? 
+E:  OK . 
+E:  Cuz there is an  a way to set up anonymous CVS 
+E:  right ? 
+E:  So that  
+E:  Oh , OK . 
+E:  So the anonymous mechanism  
+E:  OK . 
+E:  Because a lot of the open source stuff works with anonymous CVS 
+E:  and I 'm just wondering  Uh , I mean , for our transcripts we may want to do that . 
+E:  Uh . 
+E:  Mm - hmm . 
+E:  Yeah , 
+E:  yeah , yeah . 
+E:  Oh , I wasn't suggesting for this . 
+E:  I 'm  thinking of the Meeting Recorder  stuff 
+E:  but . 
+E:  Yeah . 
+E:  OK . 
+E:  Cool . 
+E:  What 's new ? 
+E:  Oh , great . 
+E:  You 're talking about the meeting with Hynek ? 
+E:  Uh - huh . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  That 's  that 's nice . 
+E:  Are you gonna use  which of the two techniques ? 
+E:  So this is on the  uh , before any mel scaling has been done ? 
+E:  This is  
+E:  Mm - hmm . 
+E:  So Dave hasn't  tried that yet ? 
+E:  I guess he 's busy with  
+E:  Yeah . 
+E:  Yeah . 
+E:  Hmm . 
+E:  The other half of the channel ? 
+E:  That what you mean ? 
+E:  Mm - hmm . 
+E:  Hmm . 
+E:  So if you took the system the way it is now , the way it 's fro you 're gonna freeze it , and it ran it on the last evaluation , where it would it be ? 
+E:  In terms of ranking ? 
+E:  Mm - hmm . 
+E:  So on the ones that you did test it on it would have been second ? 
+E:  Where  where  where were we actually on the last test ? 
+E:  Uh - huh . 
+E:  I see . 
+E:  OK . 
+E:  We 're  so this second that you 're saying now is system - wide second ? 
+E:  Still institutionally second ? 
+E:  Oh , wow ! 
+E:  That 's very close . 
+E:  Yeah . 
+E:  So how did they fill up this  all these  these bits ? 
+E:  I mean , if we 're u 
+E:  Yeah . 
+E:  Or how are they using more than half , I guess maybe is what I  
+E:  So th So  
+E:  I see . 
+E:  I see . 
+E:  So what if you didn't  So do you explicitly downsample then ? 
+E:  Do we explicitly downsample ? 
+E:  And what if we didn't do that ? 
+E:  Would we get worse performance ? 
+E:  I see . 
+E:  OK . 
+E:  Yeah . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  So you would  you 're  You 're thinking to put the , uh , mel spectrum in before any of the noise removal stuff ? or after ? 
+E:  Cuz that happens before the mel conversion , 
+E:  right ? 
+E:  So this second stream , will it add latency to the system 
+E:  or  ? 
+E:  S 
+E:  Yeah . 
+E:  Same data . 
+E:  OK . 
+E:  So the meeting with Hynek that you guys just had was to decide exactly what you were gonna freeze in this system ? 
+E:  Is that  ? 
+E:  Or was there  ? 
+E:  Were you talking about what t new stuff , 
+E:  or  ? 
+E:  Mmm . 
+E:  What about the , um  uh , the new part of the evaluation , 
+E:  the , uh , Wall Street Journal part ? 
+E:  No . 
+E:  Not yet . 
+E:  OK . 
+E:  Mm - hmm . 
+E:  So what  how is the , uh , interaction supposed to happen ? 
+E:  Uh , I remember the last time we talked about this , it was sort of up in the air whether they were going to be taking , uh , people 's features and then running them or they were gonna give the system out or  
+E:  Oh , so they 're gonna just deliver a system basically . 
+E:  Uh - huh . 
+E:  I see . 
+E:  So we 'll have to grab this over CVS or something ? 
+E:  Is that how they do it ? 
+E:  OK . 
+E:  OK . 
+E:  Mm - hmm . 
+E:  Sure . 
+E:  OK . 
+E:  And it  but it 's not ready yet , the system ? 
+E:  Are those going to be parameters that are frozen , nobody can change ? 
+E:  Or  ? 
+E:  Oh , but everybody 's gonna have to use the same values . 
+E:  Oh ! 
+E:  Interesting . 
+E:  OK . 
+E:  Using our features . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  And we may be able to revisit this idea about , you know , somehow modifying our features to work with  
+E:  Yeah . 
+E:  Yeah . 
+E:  So wha what 's the significance of November fifteenth ? 
+E:  OK . 
+E:  OK . 
+E:  Is  is this part of the evaluation just a small part , 
+E:  or ho how important is this to the overall  ? 
+E:  This is one of those things that will be debated afterwards ? 
+E:  Mmm . 
+E:  Mmm . 
+E:  Seems to me that if it 's a double check , they should give you a one or a zero . 
+E:  Y you passed the threshold or you didn't pass the threshold , 
+E:  and they shouldn't even care about what the score is . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Oh . 
+E:  Mm - hmm . 
+E:  So is this , uh  ? 
+E:  Uh , Guenter was putting a bunch of Wall Street Journal data on our disks . 
+E:  So that 's the data that we 'll be running on ? 
+E:  I see . 
+E:  OK . 
+E:  So this test may take quite a while to run , then . May - judging by the amount of data that he was putting on . 
+E:  I  I guess , I 'm not sure . 
+E:  I just  
+E:  OK . 
+E:  So there 's  
+E:  Uh , one  one last question on that . 
+E:  When did they estimate that they would have that system available for download ? 
+E:  Oh , so there 's w something you can download to just learn ? 
+E:  OK , 
+E:  good . 
+E:  OK . 
+E:  So , just so that I understand , they 're providing scripts and everything so that basically , uh , you  you push a button and it does training , and then it does test , and everything ? 
+E:  Is that  the idea ? 
+E:  Mm - hmm . 
+E:  I see . 
+E:  Hmm . 
+E:  Somehow yo there 's hooks to put your features in and  
+E:  Hmm . 
+E:  Mm - hmm . 
+E:  OK . 
+E:  Yeah , 
+E:  that 'd be great . 
+E:  I  I could send him an email . 
+E:  I  I know him really well . 
+E:  I  I was just talking with him on email the other day actually . 
+E:  About other things , 
+E:  but . 
+E:  I have Hari 's  
+E:  OK . 
+E:  Would it be better if I asked Hari to ask Joe ? 
+E:  OK . 
+E:  OK . 
+E:  OK . 
+E:  OK . 
+E:  Is that a password controlled  ? 
+E:  OK . 
+E:  And you create a tree . 
+E:  Mm - hmm . 
+E:  And then you can pick , uh , values anywhere along that tree to fix your set of clusters . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  Yeah . 
+E:  I guess  
+E:  I don't  I don't  um , it 's not clear to me how to reconcile , you know , what you 're saying , which I think is right , with  the way I 've been looking at it . 
+E:  That it 's  it 's  it 's all not very clear to me . 
+E:  But it seems to me that the desire  the desirable feature to have is something that , um , is bottom - up . 
+E:  You know , however we do that . 
+E:  And and so I guess what I don't understand is how to do that and still be discriminative , 
+E:  because to be discriminative you have to have categories and the only categories that we know of to use are sort of these human  human sig significant  categories that are significant to humans , like phonemes , things like that . 
+E:  But that 's sort of what you want to avoid . 
+E:  And so that feels  I don't know how to get out of this . 
+E:  Mm - hmm . 
+E:  Right . 
+E:  So the question is , how far down ? 
+E:  We could stop at words , but we don't , 
+E:  right ? 
+E:  We go all the way down to phonemes . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  But words would be a nice  
+E:  Yeah , so the common  right , the common wisdom is you can't do words because there 's too many of them , 
+E:  right ? 
+E:  So you have to have some smaller set that you can use , 
+E:  uh , and  and so everybody goes to phonemes . 
+E:  But the problem is that we  we build models of words in terms of phonemes and these models are  are really cartoon - ish , 
+E:  right ? 
+E:  So when you look at conversational speech , for example , you don't see the phonemes that you  that you have in your word models . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Right . 
+E:  Right . 
+
+E:  Right . 
+E:  Yeah . 
+E:  Mm - hmm . 
+E:  Mm - hmm . 
+E:  Right . 
+E:  Uh - huh . 
+E:  Mm - hmm . 
+E:  No , but I think the important part in there is that , you know , if you want to be discriminative , you have to have uh , you know , categories . 
+E:  And I think this  the important categories are the words , and  not the phones . 
+E:  Maybe . 
+E:  And so  
+E:  Right . 
+E:  If you can put the words in to the loop somehow for determining goodness of your sets of clusters  Uh  
+E:  Mm - hmm . 
+E:  Yeah . 
+E:  Yeah , 
+E:  yeah . 
+
+E:  Mmm . 
+E:  So it 's almost like there 's this mechanism that we have that , you know , when  when we 're hearing read speech and all the phonemes are there you know , we  we deal with that , 
+E:  but  but when we go to conversational , and then all of a sudden not all the phonemes are there , it doesn't really matter that much to us as humans 
+E:  because we have some kind of mechanism that allows for these word models , whatever those models are , to be  munged , you know , 
+E:  and  and it doesn't really hurt , 
+E:  and 
+E:  I 'm not sure how  <laugh> how to build that in . 
+E:  Uh . 
+E:  I think part of the difficulty is that a l a lot of the robustness that we have is probably coming from a much higher level . 
+E:  You know , we understand the context of the situation when we 're having a conversation . 
+E:  And so if there 's noise in there , you know , our brain fills in and imagines what  what should be there . 
+E:  Yeah , exactly . 
+E:  Hmm . 
+E:  Yeah . 
+E:  Go ahead , Morgan . 
+E:  OK . 

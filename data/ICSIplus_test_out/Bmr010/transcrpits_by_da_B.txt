@@ -1,0 +1,87 @@
+B:  Sorry . 
+B:  Chuck was telling too many jokes , or something ? 
+B:  Hmm . 
+B:  Since , uh  since I have to leave as usual at three - thirty , can we do the interesting stuff first ? 
+B:  Well , uh , I guess the work that 's been  done on segmentation would be most  
+B:  Yeah . 
+B:  W What  ? 
+B:  What kind of , uh , front - end processing did you do ? 
+B:  Mm - hmm . 
+B:  Mmm . 
+B:  But you s 
+B:  But about the need for transcription , 
+B:  I mean , don't we  didn't we previously <breath> decide that the  IBM  transcripts would have to be  checked anyway and possibly augmented ? 
+B:  So , I think having a good tool is worth something no matter what . 
+B:  So who 's gonna do that ? 
+B:  Who 's gonna do forced alignment ? 
+B:  Oh , OK . 
+B:  OK . 
+B:  He asked for more work . 
+B:  It 's interesting , 
+B:  uh , 
+B:  I talked to some IBM guys , uh , last January , I think , I was there . 
+B:  And  
+B:  so people who were working on the  on their ViaVoice dictation product . 
+B:  And they said , uh , the breathing is really a  a terrible problem  for them , 
+B:  to  to not recognize breathing as speech . 
+B:  So , anything to reduce breathing is  is  is a good thing . 
+B:  Mm - hmm . 
+B:  Right . 
+B:  Mm - hmm . 
+B:  But , uh , just to  to , um  
+B:  One more remark , uh , concerning the SRI recognizer . 
+B:  Um . 
+B:  It is useful to transcribe and then ultimately train models for things like breath , 
+B:  and also laughter is very , very frequent and important to  <inbreath> to model . 
+B:  So , 
+B:  if you can in your transcripts mark  
+B:  mark very audible breaths and laughter especially , 
+B:  um  
+B:  OK . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  Mm - hmm . 
+B:  It 's not so  I don't think it 's , um  
+B:  As  as long as there is an indication that there was laughter somewhere between  two words <inbreath> I think that 's sufficient , 
+B:  because 
+B:  actually the recognition of laughter once you kn um  you know , is pretty good . 
+B:  So as long as you can stick a  you know , a t a tag in there that  that indicates that there was laughter , 
+B:  that would probably be , uh , sufficient to train models . 
+B:  Hmm . 
+B:  Mm - hmm . 
+B:  Right . 
+B:  Well , the thing that you  is hard to deal with is whe <inbreath> when they speak while laughing . 
+B:  Um , and that 's , uh  I don't think that we can do very well with that . 
+B:  So  
+B:  But , um , that 's not as frequent as just laughing between speaking , 
+B:  so  
+B:  We tried both . 
+B:  Uh , currently , um , we use special words . 
+B:  There was a  there 's actually a word for  uh , it 's not just breathing but all kinds of mouth  
+B:  uh , mouth  mouth stuff . 
+B:  And then laughter is a  is a special word . 
+B:  Same thing ? 
+B:  Yeah . 
+B:  Yeah . You ha Oh . And each of these words has a dedicated phone . 
+B:  So the  so the  the mouth noise , uh , word has just a single phone , 
+B:  um , that is for that . 
+B:  Yeah . 
+B:  Yeah . 
+B:  And the  the pronun the pronunciations  the pronunciations are l are somewhat non - standard . 
+B:  They actually are  
+B:  uh , it 's just a single , s uh , you know , a single phone in the pronunciation , 
+B:  but it has a self - loop on it , 
+B:  so it can  
+B:  r can go on forever . 
+B:  It 's just a  it 's just a word . 
+B:  We train it like any other word . 
+B:  Yeah . 
+B:  We also tried , <inbreath> um , absorbing these  uh , both laughter and  and actually also noise , 
+B:  and , um  
+B:  Yes . 
+B:  OK . 
+B:  Anyway . We also tried absorbing that into the pause model  
+B:  I mean , the  the  the model that  that matches the stuff between words . 
+B:  And , um , 
+B:  it didn't work as well . So . 
+B:  Sorry . 

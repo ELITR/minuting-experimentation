@@ -1,0 +1,220 @@
+C:  OK . 
+C:  Yes . 
+C:  One , two , three , four , f 
+C:  No crashing . 
+C:  Yeah ? 
+C:  No ? 
+C:  Yeah . 
+C:  Mm - hmm . Yeah . 
+C:  Yeah . 
+C:  Uh - huh . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Four thous Ah ! Four thousand . 
+C:  Yeah . 
+C:  Mmm . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Tomorrow . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Hmm . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Mm - hmm . 
+
+C:  Yeah . 
+C:  Uh - huh . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Uh - huh . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Is true . 
+C:  I haven't results , eh , yet 
+C:  but , eh , 
+C:  I  I 'm continue working with the mixed signal now ,  after the  the last experience . 
+C:  And  and I 'm tried to  to , uh , adjust the  to  to improve , eh , an harmonicity , eh , detector that , eh , I  I implement . 
+C:  But I have problem 
+C:  because , eh , I get , eh , 
+C:  eh , 
+C:  very much harmonics now . 
+C:  Um , harmonic  possi possible harmonics , 
+C:  uh , 
+C:  eh , and now I 'm  I 'm  I 'm trying to  to find , eh , some kind of a , um  <breath> of h of help , eh , using the energy to  to distinguish between possible harmonics , and  and other fre frequency peaks , that , eh , corres not harmonics . 
+C:  And , 
+C:  eh , I have to  to talk with y with you , with the group , eh , about the instantaneous frequency , 
+C:  because I have , eh , an algorithm , 
+C:  and , I get , 
+C:  mmm , eh , 
+C:  t t results  similar results , like , eh , the paper , eh , that I  I am following . 
+C:  But , eh , the  the rules , eh , that , eh , people used in the paper to  to distinguish the harmonics , is  doesn't work well . 
+C:  And I  I  I  I not sure that i <breath> eh , the  the way  o to  ob the way to obtain the  the instantaneous frequency is  right , 
+C:  or it 's  it 's not right . 
+C:  Eh , 
+C:  I haven't enough file feeling to  to  to distinguish what happened . 
+C:  Yeah . 
+C:  I talked with Stephane and  and Thilo 
+C:  and , 
+C:  they  nnn they  <laugh> they   <breath> they <laugh> didn't  
+C:  they think that  the experience is not enough to  
+C:  No , no it 's  No  
+C:  No . 
+C:  No . 
+C:  No . I  I  I  I don't proth process the  the fundamental . 
+C:  I  <breath> I , ehm  I calculate the  the phase derivate using the FFT . 
+C:  And  
+C:  The algorithm said that , eh , <breath> if you  if you change the  the  <mouth> the , 
+C:  eh , nnn  
+C:  the X - the frequency " X " , eh , using the in the instantaneous frequency , 
+C:  you can find , eh , how , eh , in several frequencies that proba probably the  the harmonics , eh , 
+C:  the errors of peaks  the frequency peaks , eh , eh , move around  these , eh  eh frequency harmonic  
+C:  the frequency of the harmonic . 
+C:  And , <breath> eh , if you  if you compare the  the instantaneous frequency , <breath> eh , <breath> of the  of the , eh , continuous , eh , <breath> eh , filters , that , eh  that , eh , they used eh , to  <breath> to  to get , eh , the  the instantaneous frequency , 
+C:  it probably too , you can find , <breath> eh , that the instantaneous frequency <breath> for the continuous , eh , <breath> eh  the output of the continuous filters are very near . 
+C:  And in  my case  i in  equal with our signal , <breath> it doesn't happened . 
+C:  And  
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Using the energy of the  of the multiple of the frequency . 
+C:  Yeah . 
+C:  I don't use . 
+C:  But , I  I know many people use , eh , low - pass filter to  to  to get , eh , the pitch . 
+C:  I don't use . 
+C:  To get the pitch , yes . 
+C:  But the harmonic , no . 
+C:  Yeah ? 
+C:  Yeah . 
+C:  Yeah . 
+C:  I will prepare for the next week eh , all my results about the harmonicity 
+C:  and  will  will try to come in 
+C:  and to discuss here , 
+C:  because , eh , I haven't enough feeling to  <laugh> to u <breath> many time to  <mouth> to understand what happened with the  with , eh , so many peaks , 
+C:  eh , eh , 
+C:  and <mouth> I  I see the harmonics there many time 
+C:  but , eh , <breath> there are a lot of peaks , 
+C:  eh , that , eh , they are not harmonics . 
+C:  Um , 
+C:  I have to discover what  what is the  the w the best way to  to   to  c to use them 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Is height . 
+C:  Yeah . 
+C:  This  this is the idea  the idea I  I  I had 
+C:  to  to compare the  the ratio of the  <breath> the energy of the harmonics with the  eh , with the , eh , total energy in the spectrum 
+C:  and try to get a ratio to  to distinguish between overlapping and speech . 
+C:  Mmm . 
+C:  No , no , no . 
+C:  It 's a  it 's a  o 
+C:  i w the band  the band is , eh , from zero to  to four kilohertz . 
+C:  And I  I ot I  
+C:  Yeah . I u m t I  I used two m two method  two methods . 
+C:  Eh , one , eh , based on the F  eh , FTT . 
+C:  to FFT 
+C:  to  to obtain the  or to study the harmonics 
+C:  from  from the spectrum directly , 
+C:  and to study the energy and the multiples of 
+C:  frequency . 
+C:  And another  another algorithm I have 
+C:  is the  in the  instantaneous frequency , 
+C:  based on  on  
+C:  on the FFT to  
+C:  to  to calculate the  the phase derivate 
+C:  in the time . 
+C:  Eh , uh n the d 
+C:  I mean I  I have two  two algorithms . 
+C:  But , eh , in m  i in my opinion the  the  the instantaneous frequency , 
+C:  the  the  the behavior , 
+C:  eh , was  
+C:  th it was very interesting . 
+C:  Because I  I saw <breath> eh , how the spectrum  concentrate , eh , 
+C:  around the  the harmonic . 
+C:  But then 
+C:  when I apply the  the rule , 
+C:  eh , of the  in the   the instantaneous frequency of the ne of the continuous filter in the  the near filter , 
+C:  the  the rule that , eh , people propose in the paper 
+C:  doesn't work . 
+C:  And I don't know 
+C:  why . 
+C:  Yeah . 
+C:  I  I  I not sure . 
+C:  I  I  I try to  to  
+C:  When <clears throat> first I   <mouth> I calculate , eh , using the FFT , 
+C:  the  the  
+C:  I get the   the spectrum , 
+C:  and I represent 
+C:  all the frequency . 
+C:  And  when ou 
+C:  I obtained the instantaneous frequency . 
+C:  And I change <breath> the  the  the @ @ , 
+C:  using the 
+C:  instantaneous frequency , here . 
+C:  I use  
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Because when  when  
+C:  eh , when i 
+C:  I  I use these  these frequency , 
+C:  eh , the range is different , and the resolution is different . 
+C:  And 
+C:  I observe 
+C:  more  
+C:  more or less , 
+C:  thing like this . 
+C:  And 
+C:  the paper said that , eh , 
+C:  these frequencies 
+C:  are probably , 
+C:  eh , harmonics . 
+C:  But , eh , they used , 
+C:  eh , a rule , 
+C:  eh , 
+C:  based in the  in the  
+C:  because 
+C:  to  to calculate the 
+C:  instantaneous frequency , 
+C:  they use a Hanning window . 
+C:  And , they said that , eh , 
+C:  if  these  peak are , eh , harmonics , 
+C:  the 
+C:  f 
+C:  instantaneous frequency , 
+C:  of the 
+C:  contiguous , 
+C:  eh  w eh 
+C:  eh , filters 
+C:  are very near , 
+C:  or have to be very near . 
+C:  But , eh , phh ! 
+C:  I don't  
+C:  I  I  I  I don I 
+C:  I  and I don't know what is the  
+C:  what is the distance . 
+C:  And I tried to  to put different distance , 
+C:  eh , 
+C:  to put difference , eh  
+C:  eh , length of the window , 
+C:  eh , different front sieve , 
+C:  Pfff ! 
+C:  and I  I not sure what happened . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Hmm . 
+C:  Yeah . 
+C:  OK . 

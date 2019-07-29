@@ -1,0 +1,465 @@
+F:  No . 
+F:  C we  
+F:  Yeah . 
+F:  Mm - hmm . 
+F:  We should do that second , 
+F:  because Liz might join us in time for that . 
+F:  Talk about aligning people 's schedules . 
+F:  Yeah . 
+F:  If we 're very  
+F:  Yeah . 
+F:  It 's pretty sad . 
+F:  Yeah . 
+F:  No , actually I  I have to  I have to shuttle  kids from various places to various other places . 
+F:  So . 
+F:  And I don't have  and I don't , um , have a cell phone 
+F:  so I can't be having a conference call while driving . 
+F:  Plus , it would make for interesting noise  background noise . 
+F:  Uh  
+F:  Oh , yeah . 
+F:  Oh , yeah . 
+F:  I 'll let  I 'd let  
+F:  I let , uh , my five - year - old have a try at the digits , 
+F:  eh . 
+F:  Exactly . 
+F:  D do the lapel mikes have any directionality to them ? 
+F:  Because I  I suppose you could make some that have sort of  that you have to orient towards your mouth , 
+F:  and then it would  
+F:  Mm - hmm . 
+F:  It is against my head . 
+F:  And we know  
+F:  Di - did I send you some results without adaptation ? 
+F:  Yeah , I think I did , actually . 
+F:  So there was a significant loss from not doing the adaptation . 
+F:  Um . 
+F:  A  a  a couple percent or some 
+F:  I mean  
+F:  Well , I don't know it  Overall  
+F:  Uh , I  I don't remember , 
+F:  but there was  <adjusts mike> there was a significant , um , loss or win  from adaptation  with  with adaptation . 
+F:  And , um , 
+F:  that was the phone - loop adaptation . 
+F:  And then there was a very small  like point one percent on the natives  uh , win from doing , um , you know , adaptation to  the recognition hypotheses . 
+F:  And  I tried both means adaptation and means and variances , 
+F:  and the variances added another  or subtracted another point one percent . 
+F:  So , <inbreath> it 's , um  that 's the number there . 
+F:  Point six , I believe , is what you get with both , uh , means and variance adaptation . 
+F:  This exact same recognizer ? 
+F:  No . 
+F:  But  but , I have  I mean , people  people at SRI are actually working on digits . 
+F:  I could  and they are using a system that 's , um  you know , h is actually trained on digits , 
+F:  um , but h h otherwise uses the same , you know , decoder , the same , uh , training methods , and so forth , 
+F:  and I could ask them what they get  on TI - digits . 
+F:  Mm - hmm . 
+F:  Well , Adam knows how to run it , 
+F:  so you just make a f 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Mmm . 
+F:  Hmm . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Well . 
+F:  But  remember , we 're using a telephone bandwidth front - end here , uh , on this , uh  on this SRI system , 
+F:  so , <mouth> um , I was  I thought that maybe that 's actually a good thing 
+F:  because it  it gets rid of some of the  uh , the noises , 
+F:  um , you know , in the  the  below and above the  um , the , you know , speech bandwidth 
+F:  and , um , 
+F:  I suspect that to get sort of the last bit out of these higher - quality recordings you would have to in fact , uh , use models that , uh , were trained on wider - band data . 
+F:  And of course we can't do that or  
+F:  Mm - hmm . 
+F:  Right . 
+F:  But  but , I would  
+F:  Yeah . 
+F:  It 's  it 's easy enough to try , 
+F:  just run it on  
+F:  Now , eh , does  
+F:  one  one issue  
+F:  one issue with  with that is that <mouth> um , the system has this , uh , notion of a speaker to  which is used in adaptation , variance norm uh , you know , both in , uh , mean and variance normalization 
+F:  and also in the VTL  estimation . 
+F:  So  
+F:  Do y ? 
+F:  Is  ? 
+F:  So does  so th so does  does , um , <mouth> the TI - digits database have speakers that are known ? 
+F:  And is there  is there enough data or a comparable  comparable amount of data to  to what we have in our recordings here ? 
+F:  OK . 
+F:  Right . Uh , but I 'm not so much worried about the adaptation , actually , than  than the , um , <mouth> um  the , uh , VTL estimation . 
+F:  If you have only one utterance per speaker you might actually screw up on estimating the  the warping , uh , factor . 
+F:  So , um  
+F:  Right . But it 's not the amount of speakers , 
+F:  it 's the num it 's the amount of data per speaker . 
+F:  Right . 
+F:  Right . 
+F:  So  
+F:  OK . 
+F:  The key  
+F:  So th the system actually extracts the speaker ID from the waveform names . 
+F:  And there 's a  there 's a script  and that is actually all in one script . 
+F:  So there 's this one script that parses waveform names 
+F:  and extracts things like the , um , speaker , uh , ID 
+F:  or something that can stand in as a speaker ID . 
+F:  So , we might have to modify that script to recognize the , um , speakers , <inbreath> um , in the  in the , uh , um , <mouth> TI - digits  database . 
+F:  Or you can fake  you can fake  names for these waveforms that resemble the names that we use here for the  for the meetings . 
+F:  That would be the , sort of  probably the safest way to do  
+F:  Uh - huh . 
+F:  Right . 
+F:  By the way , I think we can improve these numbers if we care to compr improve them <inbreath> by , um , <mouth> not starting with the Switchboard models but by taking the Switchboard models and doing supervised adaptation on a small amount of digit data collected in this setting . 
+F:  Because that would adapt your models to the room acoustics 
+F:  and f for the far - field microphones , you know , to the noise . 
+F:  And that should really improve things , um , further . 
+F:  And then you use those adapted models , which are not speaker adapted but sort of acous you know , channel adapted  
+F:  use that as the starting models for your speaker adaptation . 
+F:  Well , I don't know . 
+F:  Right . 
+F:  Um , but , you know , I  uh , my impression was that you were actually interested in the far - field microphone , uh , problem , 
+F:  I mean . 
+F:  So , 
+F:  you want to  you want to  That 's the obvious thing to try . 
+F:  Right ? 
+F:  Then , eh  because you  you don't have any  
+F:  That 's where the most m acoustic mismatch is between the currently used models and the  the r the set up here . 
+F:  So . 
+F:  Mm - hmm . 
+F:  It is ? 
+F:  Uh . 
+F:  I I  
+F:  I  I already adjusted this a number of times . 
+F:  I  I 
+F:  can't quite seem to  
+F:  Yeah , I think this contraption around your head is not  working so well . 
+F:  Right . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Yeah , basically your ears are too big . 
+F:  I mean , mine are too . 
+F:  E th everybody 's ears are too big for these things . 
+F:  Uh  
+F:  What k u By the way , wh what factor of two did you  ? 
+F:  I mean  
+F:  Oh , th OK . 
+F:  That factor of two . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  You want to probably choose the PZM channel that is closest to the speaker . 
+F:  Oh , OK . 
+F:  Mm - hmm . 
+F:  So  so , but where is this now ? 
+F:  I mean , what 's  where do we go from here ? 
+F:  I mean , 
+F:  we  so we have a  we have a  a system that works pretty well 
+F:  but it 's not , you know , the system that people here are used to using  to working with . 
+F:  So what  what do we do now ? 
+F:  Mm - hmm . 
+F:  OK . 
+F:  OK . 
+F:  OK . Alright . 
+F:  Mm - hmm . 
+F:  OK . 
+F:  So  so the key  thing that 's missing here is basically the ability to feed , you know , other features <outbreath> i into the recognizer 
+F:  and also then to train the system . 
+F:  OK . 
+F:  And , uh , es I don't know when Chuck will be back 
+F:  but that 's exactly what he  he 's gonna  
+F:  Oh , OK . 
+F:  So , I think that 's one of the things that he said he would be working on . 
+F:  Um . 
+F:  Just sort of t to make sure that  we can do that 
+F:  and  Um . 
+F:  It 's  uh , I mean , the  the front - end is f i tha that 's in the SRI recognizer is very nice in that it does a lot of things on the fly 
+F:  but it unfortunately  is not  designed and , um  <mouth> like the , uh , ICSI system is , where you can feed it from a pipeline of  of the command . 
+F:  So , the  what that means probably for the foreseeable future is that you have to , uh , dump out , um  
+F:  you know , if you want to use some new features , you have to dump them into individual files 
+F:  and  give those files to the recognizer . 
+F:  OK . 
+F:  Oh , OK . 
+F:  Alright . 
+F:  Yeah , the  the  the cumbersome thing is  is , um  is that you actually have to dump out little  little files . 
+F:  So for each segment that you want to recognize <breath> you have to  dump out  a separate file . 
+F:  Just like i th like th as if there were these waveform segments , 
+F:  but instead you have sort of feature file segments . 
+F:  But , you know  
+F:  So . 
+F:  So that 's actually interesting . 
+F:  The pruning was the same value that we used for recognition . 
+F:  And we had lowered that  we had used tighter pruning after Liz ran some experiments showing that , you know , it runs slower 
+F:  and there 's no real difference in  
+F:  Right . 
+F:  So for free recognition , this  the lower pruning value is better . 
+F:  You  
+F:  Correct . 
+F:  Right . 
+F:  Um , but it turned out for  for  to get accurate alignments it was really important to open up the pruning significantly . 
+F:  Um  because otherwise it would sort of do greedy alignment , um , in regions where there was no real speech yet from the foreground speaker . 
+F:  Um , <mouth> so that was one big factor that helped improve things 
+F:  and then the other thing was that , 
+F:  you know , as Liz said the  we f enforce the fact that , uh , the foreground speech has to be continuous . 
+F:  It cannot be  you cannot have a background speech hypothesis in the middle of the foreground speech . 
+F:  You can only have background speech at the beginning and the end . 
+F:  Oh  
+F:  Well , the  
+F:  I  I think you can do better by <mouth> uh , cloning  
+F:  so we have a reject phone . 
+F:  And you  and what we wanted to try with  you know , once we have this paper written and have a little more time , <inbreath> uh , t cloning that reject model 
+F:  and then one copy of it would be adapted to the foreground speaker to capture the rejects in the foreground , 
+F:  like fragments and stuff , 
+F:  and the other copy would be adapted to the background speaker . 
+F:  And  
+F:  Mm - hmm . 
+F:  Right . 
+F:  We  we didn't  
+F:  No . 
+F:  We  w 
+F:  OK . 
+F:  We  it 's straightforward to actually just have a  a penalty that doesn't completely disallows it but discourages it . 
+F:  But , um , we just didn't have time to play with , you know , tuning yet another  yet another parameter . 
+F:  And really the reason we can't do it is just that we don't have a  we don't have ground truth for these . 
+F:  So , <inbreath> we would need a hand - marked , um , <mouth> word - level alignments 
+F:  or at least sort of the boundaries of the speech betw you know , between the speakers . 
+F:  Um , and then use that as a reference 
+F:  and tune the parameters of the  of the model , uh , to op to get the best  performance . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  No . 
+F:  Mm - hmm . 
+F:  We don't care what  what tool you use . 
+F:  U uh  
+F:  Yeah , whatever you use . 
+F:  I mean , we convert it to this format that the , um , NIST scoring tool unders uh , CTM . Conversation Time - Marked file . 
+F:  And  and then that 's the  that 's what the  
+F:  Right . 
+F:  Mm - hmm . 
+F:  Actually , not randomly . 
+F:  We knew  we knew that it had these insertion errors from  
+F:  Yeah . 
+F:  Yeah . 
+F:  Well , 
+F:  I think  
+F:  No . I think it 's  actually I think what 's going on is backchannelling is something that happens in two - party conversations . 
+F:  And if you ask someone a question , you essentially initiating a little two - party conversation . 
+F:  So then you 're  so and then you 're expected to backchannel 
+F:  because the person is addressing you directly and not everybody . 
+F:  Yeah . 
+F:  Yeah . 
+F:  Right . 
+F:  Right . 
+F:  And 
+F:  It 's the  it 's the spurt format . 
+F:  Oh . 
+F:  So maybe we should talk  
+F:  Uh . 
+F:  So s 
+F:  W uh , w 
+F:  We 
+F:  So what we 're doing  
+F:  uh , this  this is just  maybe someone has s some  some ideas about how to do it better , 
+F:  but we  So we 're taking these , uh , alignments from the individual channels . 
+F:  We 're  
+F:  from each alignment we 're producing , uh , one of these CTM files , 
+F:  which essentially has  it 's just a linear sequence of words with the begin times for every word and the duration . 
+F:  And  and  and of course  
+F:  Right . But it has  one  the first column has the meeting name , 
+F:  so it could actually contain several meetings . 
+F:  Um . 
+F:  And the second column is the channel . 
+F:  Third column is the , um , start times of the words and the fourth column is the duration of the words . 
+F:  And then we 're , 
+F:  um  
+F:  OK . Then we have a messy alignment process where we actually insert into the sequence of words the , uh , tags 
+F:  for , like , where  where sentence  ends of sentence , 
+F:  question marks , 
+F:  um , <mouth> various other things . 
+F:  Uh . 
+F:  Right . 
+F:  Mm - hmm . 
+F:  Right . 
+F:  So  so those are actually sort of retro - fitted into the time alignment . 
+F:  And then we merge all the alignments from the various channels 
+F:  and we sort them by time . 
+F:  And then there 's a  then there 's a process where you now determine the spurts . 
+F:  That is  Actually , no , you do that before you merge the various channels . 
+F:  So you  you id identify by some criterion , 
+F:  which is pause length  
+F:  you identify the beginnings and ends of these spurts , 
+F:  and you put another set of tags in there to keep those straight . 
+F:  And then you merge everything in terms of , you know , linearizing the sequence based on the time marks . 
+F:  And then <mouth> you extract the individual channels again , 
+F:  but this time you know where the other people start and end talking  
+F:  you know , where their spurts start and end . 
+F:  And so you extract the individual channels , uh , one sp spurt by spurt as it were . 
+F:  Um , and inside the words or between the words you now have begin and end  tags for overlaps . 
+F:  So , you  you basically have everything sort of lined up and in a form where you can look at the individual speakers and how their speech relates to the other speakers ' speech . 
+F:  And  
+F:  Yeah . 
+F:  So  
+F:  And  and we  
+F:  In  
+F:  Right . 
+F:  Well , this is  this is just  
+F:  Well , there 's lots of little things . 
+F:  It 's like there 're twelve different scripts which you run 
+F:  and then at the end you have what you want . 
+F:  But , um , 
+F:  at the very last stage we throw away the actual time information . 
+F:  All we care about is whether  that there 's a certain word was overlapped by someone else 's word . 
+F:  So you sort of  at that point , you discretize things into just having overlap or no overlap . 
+F:  Because we figure that 's about the level of analysis that we want to do for this paper . 
+F:  But if you wanted to do a more fine - grained analysis and say , you know , how far into the word is the overlap , you could do that . 
+F:  It 's just  it 'll just require more  
+F:  you know , slightly different  
+F:  Right . 
+F:  Yeah . 
+F:  Plus , mayb 
+F:  I don't know , m 
+F:  I mean , u u Jane likes to look at data . 
+F:  Maybe , you know , you could  you could look at this format and see if you find anything interesting . 
+F:  I don't know . 
+F:  Yeah . 
+F:  Mm - hmm . 
+F:  Well th th the other thing that  that  that yo that you usually don't tell your graduate students is that these deadlines are actually not that , um , you know , strictly enforced , 
+F:  because  the  
+F:  because  
+F:  bec b <laugh> Nah  
+F:  i Because these  the conference organizers actually have an interest in getting lots of submissions . 
+F:  I mean , a  a monetary interest . 
+F:  So  <mouth> Um . 
+F:  And good submission 
+F:  Right . 
+F:  Well  
+F:  That 's another issue , 
+F:  but  
+F:  Mm - hmm . 
+F:  When  
+F:  Mmm . 
+F:  Mmm . 
+F:  Well , then you can just  
+F:  Maybe you can submit the digits paper on e for the Aurora session . 
+F:  Yeah . 
+F:  But  but the people  I mean , 
+F:  a  a paper that is not on Aurora would probably be more interesting at that point 
+F:  because everybody 's so sick and tired of the Aurora task . 
+F:  Well , no . If you  if you have  it 's to  if you discuss some relation to the Aurora task , 
+F:  like if you use the same  
+F:  Um . 
+F:  Well , a relation other than negation , maybe , 
+F:  um . 
+F:  So . 
+F:  I don't know . 
+F:  How well does an Aurora system do on  on  you know , on digits collected in a  in this environment ? 
+F:  Yeah . 
+F:  Maybe . 
+F:  Mm - hmm . 
+F:  Well , that 's maybe why they don't f know that they have a crummy system . 
+F:  I mean , a crummy back - end . 
+F:  No , I mean  I mean , seriously , 
+F:  if you  if you have a very  
+F:  No , I 'm sorry . 
+F:  No . I didn't mean anybody  any particular system . 
+F:  I meant this H T K back - end . 
+F:  If they  
+F:  I don't h I don't have any stock in HTK or Entropic or anything . 
+F:  Right . 
+F:  But so , if you  But maybe you should , you know , consider more  using more data , 
+F:  or  I mean  
+F:  If yo if you sort of hermetically stay within one task and don't look left and right , then you 're gonna  
+F:  Right . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Hmm . 
+F:  Mm - hmm . 
+F:  Mmm . 
+F:  Right . 
+F:  OK . 
+F:  Whew ! 
+F:  Actually this  this , um  So , there 's another paper . 
+F:  It 's a Eurospeech paper but not related to meetings . 
+F:  But it 's on digits . 
+F:  So , um , 
+F:  uh , a colleague at SRI developed a improved version of MMIE training . 
+F:  And he tested it mostly on digits 
+F:  because it 's sort of a  you know , it doesn't take weeks to train it . 
+F:  Um . 
+F:  And got some very impressive results , um , with , you know , discriminative , uh , Gaussian training . Um , you know , like , um , error rates  go from  I don't know , in very noisy environment , like from , 
+F:  uh , uh  
+F:  I for now I  OK , now I have the order of magnit 
+F:  I 'm not sure about the order of magnitude . 
+F:  Was it like from ten percent to <inbreath> eight percent or from e e you know , point  you know , from one percent to point eight percent ? 
+F:  I mean , it 's a  
+F:  It got better . 
+F:  That 's the important thing . 
+F:  Yeah . 
+F:  But it 's  
+F:  Yeah . Right . 
+F:  It 's , uh , something in  
+F:  Right . 
+F:  Yeah . 
+F:  Are we recording it ? 
+F:  OK . 
+F:  But you know th 
+F:  Mm - hmm . 
+F:  Can use the Oprah mike . 
+F:  Mm - hmm . 
+F:  Because it would be a different kind of meeting , 
+F:  that 's what I 'm  
+F:  But  
+F:  Maybe just  maybe not the whole day 
+F:  but just , you know , maybe some  I mean , 
+F:  part of it ? 
+F:  Please . 
+F:  Maybe the sections that are not right afte you know , after lunch when everybody 's still munching 
+F:  and  
+F:  Right . 
+F:  Um . 
+F:  Not the  
+F:  Yeah . 
+F:  Uh . 
+F:  The  th the  
+F:  Wait . 
+F:  The  
+F:  The , um  
+F:  th the other good thing about the alignments is that , um , it 's not always the machine 's fault if it doesn't work . 
+F:  So , you can actually find , um , 
+F:  problem  uh , proble 
+F:  You can find  
+F:  You can find , uh , problems with  with the transcripts , 
+F:  um , you know , 
+F:  and go back and fix them . 
+F:  But  
+F:  Oh ! 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Mm - hmm . 
+F:  Mmm . 
+F:  Mmm . 
+F:  Mmm . 
+F:  Have a good trip . 
+F:  Keep in touch . 
+F:  No , we prefer to keep it for ourselves . 
+F:  Yeah , yeah . 
+F:  Yeah . 
+F:  Mmm ! 
+F:  Mm - hmm . 
+F:  Mmm . 
+F:  Oh . 
+F:  Oh , yeah . 
+F:  Th - it doesn't  it won't leave this room . 
+F:  Mmm . 
+F:  Mmm . 
+F:  Mmm . 
+F:  Chocolate adaptation . 
+F:  Mmm . 
+F:  Mmm . 
+F:  Mmm . 
+F:  Mmm . 
+F:  Right . 
+F:  You mean that the  the grouping is supposed to be synchronized ? 
+F:  No ? 
+F:  No ? 
+F:  It 's like a  like a Greek  like a Greek choir ? 
+F:  You know ? 
+F:  Like  
+F:  Yeah . 
+F:  No . 

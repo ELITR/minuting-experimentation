@@ -1,0 +1,332 @@
+C:  and engage in conversation on the history and the art and the architecture and so forth . 
+C:  OK . 
+C:  Oh yeah , um , Liz suggested we could start off by uh , doing the digits all at the same time . 
+C:  Yep . 
+C:  No , no , just  just start whenever you want . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Just to save time . 
+C:  Does matter for them . 
+C:  We could . 
+C:  We might . 
+C:  Not  not rehearse , 
+C:  I mean , I have just not spent any time on it , 
+C:  so I can show you what I 've got , get your input on it , and maybe some suggestions , 
+C:  that would be great . 
+C:  And the same is true for the proposal . 
+C:  I will have time to do some revision and some additional stuff on various airplanes and trains . 
+C:  So , um . 
+C:  I don't know how much of a chance you had to actually read it 
+C:  because  
+C:  but you could always send me comments per electronic mail 
+C:  and they will be incorporated . 
+C:  Um , <clears throat> the  
+C:  It basically says , well " this is construal " , 
+C:  and then it continues to say that one could potentially build a probabilistic relational model that has some general , domain - general rules 
+C:  how things are construed , 
+C:  and then the idea is to use ontology , situation , user , and discourse model to instantiate elements in the classes of the probabilistic relational model  to do some inferences in terms of what is being construed as what 
+C:  in our beloved tourism domain . 
+C:  But , with a focus on 
+C:  Hmm ? 
+C:  Um , I don't  I , uh  I don't need it . 
+C:  Um , actually this is the  the newest version after your comments , 
+C:  and  
+C:  Yeah . 
+C:  Yep . 
+C:  Yeah , 
+C:  um , if you would have checked your email you may have received a note from Yees asking you to send me the , uh , up - to - d 
+C:  current formalism thing that you presented . 
+C:  But for this it doesn't matter . 
+C:  But , uh  
+C:  And  
+C:  And any type of comment whether it 's a spelling or a syntax or 
+C:  readability  
+C:  Hmm ? 
+C:  Interesting . 
+C:  Twenty - ninth . 
+C:  The twenty - ninth . 
+C:  That 's when I 'm meeting with Wolfgang Wahlster to sell him this idea . 
+C:  OK ? 
+C:  Then I 'm also going to present a little talk at EML , about what we have done here 
+C:  and so 
+C:  of course , I 'm  I 'm gonna start out with this slide , 
+C:  so the most relevant aspects of our stay here , 
+C:  and um , 
+C:  then I 'm asking them to imagine that they 're standing somewhere in Heidelberg 
+C:  and someone asks them in the morning  The Cave Forty - Five is a  is a well - known discotheque 
+C:  which is certainly not open at that  that time . 
+C:  And so 
+C:  they 're supposed to imagine that , you know , do they think the person wants to go there , or just know where it is ? 
+C:  Uh , 
+C:  which is probably not , uh , the case in that discotheque example , 
+C:  or in the Bavaria example , 
+C:  you just want to know where it is . 
+C:  And so forth . 
+C:  So basically we can make a point that here is ontological knowledge 
+C:  but if it 's nine  nine PM in the evening then the discotheque question would be , for example , one that might ask for directions instead of just location . 
+C:  Um , <outbreath> and so forth and so forth . 
+C:  That 's sort of motivating it . 
+C:  Then what have we done so far ? 
+C:  We had our little bit of , um , um , SmartKom stuff , that we did , 
+C:  um , 
+C:  everth 
+C:  That 's the  not the construction parser . 
+C:  That 's the , uh , tablet - based parser , 
+C:  and 
+C:  the generation outputter . 
+C:  That 's done . 
+C:  You have to change those strategies , 
+C:  right ? 
+C:  That 's , ten words ? 
+C:  Twelve ? OK . 
+C:  And , um , and Fey is doing the synthesis stuff as we speak . 
+C:  That 's all about that . 
+C:  Then I 'm going to talk about the data , 
+C:  you know these things about  
+C:  uh , actually I have an example , 
+C:  probably . 
+C:  Two s 
+C:  Can you hear that ? 
+C:  Or should I turn the l volume on . 
+C:  Mm - hmm . 
+C:  But they 're  they 're mimicking the synthesis when they speak to the computer , 
+C:  the  you can observe that all the time , 
+C:  they 're trying to match their prosody onto the machine . 
+C:  Yeah , you have to  
+C:  OK . And so forth and so forth . 
+C:  Um , I will talk about our problems with the rephrasing , 
+C:  and how we solved it , 
+C:  and some preliminary observations , 
+C:  also , um , 
+C:  I 'm not gonna put in the figures from Liz , 
+C:  but I thought it would interesting to , uh , um , point out that it 's basically the same . 
+C:  Um , as in every human - human telephone conversation , and the human - computer telephone conversation is of course quite d quite different from , uh , some first , uh , observations . 
+C:  Then 
+C:  sort of feed you back to our original problem 
+C:  cuz , uh  
+C:  how to get there , 
+C:  what actually is happening there today , 
+C:  and then maybe talk about the big picture here , 
+C:  e tell a little bit  as much as I  can about the NTL story . 
+C:  I  I wa I do wanna , um  
+C:  I 'm not quite sure about this , whether I should put this in , 
+C:  um , that , you know , you have these two sort of different ideas that are  or two different camps of people envisioning how language understanding works , 
+C:  and then , <outbreath> talk a bit about the embodied and simulation approach favored here 
+C:  and as a prelude , I 'll talk about monkeys in Italy . 
+C:  And , um , Srini was gonna send me some slides 
+C:  but he didn't do it , 
+C:  so from  but I have the paper , 
+C:  I can make a resume of that , 
+C:  and then I stole an X - schema from one of your talks I think . 
+C:  I think that 's Bergen , Chang , something , or the other . 
+C:  Um , and that 's  
+C:  now I 'm not going to bring that . 
+C:  So that 's basically what I have , so far , 
+C:  and the rest is for airplanes . 
+C:  So X - schemas , then , I would like to do  
+C:  talk about the construction aspect 
+C:  and then at the end about our Bayes - net . 
+C:  End of story . 
+C:  Anything I forgot that we should mention ? 
+C:  Oh , maybe the FMRI stuff . 
+C:  Should I mention the fact that , um , we 're also actually started  going to start to look at people 's brains in a more direct way ? 
+C:  " Future activities " something . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  Yeah . 
+C:  Yeah , I  I  I do have it here . 
+C:  Um . 
+C:  And , of course , you know , the  the big picture is this bit . 
+C:  But , you know , it would  
+C:  But I don't think I  I am capable of  of do pulling this off and doing justice to the matter . 
+C:  I mean , there is interesting stuff in her terms of how language works , 
+C:  so the emergentism story would be nice to be  you know , it would be nice to tell people 
+C:  how  what 's happening there , 
+C:  plus how the , uh , language learning stuff works , 
+C:  but  
+C:  Yeah , th that  that 's c that comes up to the X - schema slide , 
+C:  so basically I 'm gonna steal that from Nancy , 
+C:  one of Nancy 's st 
+C:  Uh , I  
+C:  yeah , but I also have stuff you  trash you left over , 
+C:  your quals and your triple - AI . 
+C:  Well , I  I don't feel bad about it at all 
+C:  because  because you are on the , uh , title . 
+C:  I mean on the  the , you 're  that 's  see , that 's you . 
+C:  Hmm ? 
+C:  Propagated ? 
+C:  I mean I might even mention that this work you 're doing is sort of also with the MPI in Leipzig , 
+C:  so . 
+C:  Because , um , EML is building up a huge thing in Leipzig . 
+C:  So it  
+C:  It 's on biocomputation . Would  
+C:  Yeah . 
+C:  Well , the  the offices are actually a little  
+C:  the , 
+C:  think of um , ramps , coming out of the double helix 
+C:  and then you have these half - domes , glass half - domes , 
+C:  and the offices are in  in the glass half - dome . 
+C:  Uh , as a model . 
+C:  But I th 
+C:  Yeah , if somebody has something to say . 
+C:  Oh , in the presentation here . 
+C:  I was ac actually worried about bibtex . 
+C:  Uh . No , that 's quite possible . 
+C:  That 's copy and paste from something . 
+C:  Uh , it did , 
+C:  there is a reference to Srini  
+C:  Mm - hmm . 
+C:  Yeah , 
+C:  mmm . Um . 
+C:  Um , but I  I did not focus on that aspect 
+C:  but , um  Ehhh , 
+C:  um , it 's just underneath , uh , um , that reference to metaphor . 
+C:  So it 's the last paragraph 
+C:  before two . 
+C:  So on page two , 
+C:  um , the main focus  
+C:  But that 's really  
+C:  Yeah . 
+C:  Why . 
+C:  Mm - hmm . 
+C:  No , it doesn't say it at all . No . 
+C:  Even though  <clears throat> One could argue what  if there are basic cases , even . 
+C:  I mean , it seems like nothing is context - free . 
+C:  But " walked into the cafe and ordered a drink , " and " walked into the cafe and broke his nose , " 
+C:  that 's sort of  
+C:  Mmm . Yeah . 
+C:  Mm - hmm . 
+C:  Yep . 
+C:  Yep . 
+C:  No . 
+C:  Mm - hmm . 
+C:  Yep . 
+C:  You don't find that usage , 
+C:  uh  uh , I checked for it in the Brown national corpus . 
+C:  The " walk into it " never really means , w as in walked smack  
+C:  Yeah , but , y y if you find " walked smacked into the cafe " or " slammed into the wall "  
+C:  Mm - hmm . 
+C:  Right . 
+C:  Yeah . Or you can run into an old friend , or run . 
+C:  Pro - probably not your marks in the kitchen , today . 
+C:  Not  not your marks . 
+C:  Well , 
+C:  Well there  actually  
+C:  the  i what would have been really nice is to find an example for all of this , uh , from our domain . 
+C:  So maybe if we w if we can make one up  now , that would be c incredibly helpful . 
+C:  How  
+C:  w Well we have , for example , a canonical use of something 
+C:  and y it 's , you know , we have some constructions 
+C:  and then it 's construed as something , 
+C:  and then we  we may get the same constructions with a metaphorical use that 's also relevant to the  to the domain . 
+C:  Mm - hmm . 
+C:  I had two hours w with George on this , 
+C:  so it , 
+C:  um  Um . 
+C:  " On the bus " is a m is a metaphorical metonymy 
+C:  that relates some meta path metaphorically 
+C:  and you 're on  on that path 
+C:  and th w I mean it 's  he  there 's a platform notion , 
+C:  right ? 
+C:  " he 's on the  standing on the bus waving to me . " 
+C:  But th the regular as we speak " J Johno was on the bus to New York , " 
+C:  um , uh , 
+C:  he 's  
+C:  that 's , uh , 
+C:  what did I call it here , 
+C:  the transportation schema , something , 
+C:  where you can be on the first flight , on the second flight , 
+C:  and you can be , you know , on the wagon . 
+C:  Yeah . 
+C:  But it 's  it 's  unfortunately , this is not really something a tourist would ever say . 
+C:  So . 
+C:  Yeah . 
+C:  But um . 
+C:  So in terms of the  this  
+C:  We had  we had  initially we 'd  started discussing the " out of film . " 
+C:  And there 's a lot of " out of " analysis , 
+C:  so , um , 
+C:  could we capture that 
+C:  with a different construal of  
+C:  So running  running out of something is different from being out of somewhere . 
+C:  Is the d the final state of running out of something is being out of it . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  There 's gonna be four computational linguists , 
+C:  computer 
+C:  it 's  
+C:  More  there 's going to be the  just four computational linguists , by coincidence , 
+C:  but the rest is , whatever , biocomputing people and physicists . 
+C:  Oh , the thesis ! 
+C:  That 's  that 's computa should be very computational , 
+C:  and , uh , someth 
+C:  I mean the  the old bakery example might be nice , 
+C:  " Is there a bakery around here " . 
+C:  So if you c we really just construe it as a  
+C:  No , it 's the bakery itself  
+C:  is it a building ? uh , that you want to go to ? or is it something to eat that you want to buy ? 
+C:  And then  
+C:  Mmm . 
+C:  No . 
+C:  Where is the castle ? 
+C:  How old is it ? 
+C:  How much does it cost ? 
+C:  S 
+C:  But as Nancy just su suggested it 's probably ellipticus . 
+C:  Huh . 
+C:  Well , I mean , my argument here is  it 's  it 's  it 's the same thing as " Plato 's on the top shelf , " 
+C:  I 'm con 
+C:  you know , th that you can refer to a book of Plato by using " Plato , " 
+C:  and you can refer back to it , 
+C:  and so you can  Castles have  as tourist sites , have admission fees , 
+C:  so you can say " Where is the castle , 
+C:  how much does it cost ? " 
+C:  Um . 
+C:  " How far is it from here ? " 
+C:  So , 
+C:  You 're also not referring to the width of the object , or so , 
+C:  www . 
+C:  Mm - hmm . 
+C:  Well , I  I  I  
+C:  Well I  when , uh  just f u 
+C:  the data that I 've looked at so far that rec 
+C:  I mean , there 's tons of cases for polysemy . 
+C:  So , you know , mak re making reference to buildings as institutions , as containers , as build 
+C:  you know , whatever . 
+C:  Um , so ib in mus for example , in museums , you know , as a building or as something where pictures hang versus , you know , ev something that puts on exhibits , 
+C:  so forth . 
+C:  But  
+C:  Um . 
+C:  Hmm ? 
+C:  Yeah , well  
+C:  No , but this  
+C:  that 's what I have , you know , started doing . 
+C:  Metonymy , polysemy . 
+C:  But I think the argument should be  uh , can be made that , you know , despite the fact that this is not the most met metaphorical domain , 
+C:  because people interacting with HTI systems try to be straightforward and less lyrical , 
+C:  construal still is , uh , you know , completely , um , key in terms of finding out any of these things , 
+C:  so , um . 
+C:  We , uh  I  with a  I looked  with a student I looked at the entire database that we have on Heidelberg for cases of metonymy . 
+C:  Hardly anything . 
+C:  So not even in descriptions w did we find anything , um , relevant . 
+C:  But OK this is just something we 'll  we 'll see , 
+C:  um , 
+C:  and deal with . 
+C:  I mean maybe the " where is something " question as a whole , you know , can be construed as , u i locational versus instructional request . 
+C:  So , if we 're not talk about the lexic 
+C:  instruction . 
+C:  Yeah . 
+C:  Yeah but then you 're not on the lexical level , 
+C:  that 's sort of one level higher . 
+C:  But I don't need it . 
+C:  Mm - hmm . 
+C:  Also it would be nice to get  ultimately to get a nice mental space example , 
+C:  so , even temporal references are  
+C:  just in the spatial domain are rare . 
+C:  When  when you 're getting information on objects . 
+C:  So , I mean  
+C:  Yeah . 
+C:  Yeah , maybe we can include that also in our second , uh , data run . 
+C:  We c we can show people pictures of objects 
+C:  and then have then ask the system about the objects 
+C:  and engage in conversation on the history and the art and the architecture and so forth . 

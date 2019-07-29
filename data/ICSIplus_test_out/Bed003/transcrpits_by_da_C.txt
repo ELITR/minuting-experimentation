@@ -1,0 +1,439 @@
+C:  OK . 
+C:  Nice . 
+C:  Right . 
+C:  Yeah , I 've have never handled them . 
+C:  Wow . 
+C:  Johno , where are you ? 
+C:  Should you go back to the first one ? 
+C:  Well  
+C:  Well , I mean ,  just to  
+C:  Yeah , um <mouth> Well , " the search for the middle layer " . 
+C:  It 's basically uh talks about uh  <inbreath> It just refers to the fact that uh  one of main things we had to do was to  decide what the intermediate sort of nodes were , 
+C:  you know , because  
+C:  Can you maximize the window ? 
+C:  Can you maximize the window so all that stuff on the side isn't  doesn't appear ? 
+C:  OK , fine . 
+C:  Alright . 
+C:  Yeah . 
+C:  No . 
+C:  We have a separate 
+C:  feature . 
+C:  Like you could have a p 
+C:  You  Like you could have a post office with uh  you know , nice murals or something . 
+C:  Architecturally appealing from the outside . 
+C:  Yeah , 
+C:  we meant , uh , touristic reasons . 
+C:  Yeah . 
+C:  Yep . 
+C:  Well usually , I mean , you know , N  
+C:  If you have N features , then it 's two to the N   or exponential in N . 
+C:  Yeah , 
+C:  they 'd all be like pointing to the one node . 
+C:  Want to do Vista , 
+C:  right ? 
+C:  Because  if you want to view things you wouldn't be in a hurry . 
+C:  Yeah , 
+C:  that one needs a lot of  
+C:  Not at all . 
+C:  That 's  that  that needs a lot of work . 
+C:  But uh <laugh>  that would 've made the probably significantly be more complicated to enter , 
+C:  so we decided that for the purposes of this  it 'd be simpler to just have three verbs . 
+C:  OK , so  Yeah , so note the four nodes down there , the  sort of , the things that are not directly extracted . 
+C:  Actually , the five things . 
+C:  The " closed " is also not directly extracted I guess , 
+C:  from the uh  
+C:  Hmm . 
+C:  Actually , no , 
+C:  wait . 
+C:  It is . 
+C:  OK , " closed " sort of is . 
+C:  Right , 
+C:  so f 
+C:  Right , 
+C:  but the other ones , the final destination , the whether they 're doing business , whether they 're in a hurry , and whether they 're tourists , 
+C:  that kind of thing is all uh <mouth> sort of  you know probabilistically depends on the other things . 
+C:  Yeah . 
+C:  And the mode , you know , depends on all those things only . 
+C:  Yeah . 
+C:  So we haven't uh , managed  
+C:  Like we don't have nodes for " discourse " and " parse " , 
+C:  although like in some sense they are parts of this belief - net . 
+C:  But uh  <breath> The idea is that we just extract those features from them , so we don't actually have a node for the entire parse , 
+C:  because we 'd never do inference on it anyway , 
+C:  so . 
+C:  whether they discuss the admission fees . 
+C:  So we looked at the data 
+C:  and in a lot of data people were saying things like <breath> " Can I get to this place ? " 
+C:  " What is the admission fee ? " . 
+C:  So that 's like a huge uh clue that they 're trying to Enter the place rather than uh to Tango or Vista , 
+C:  so . 
+C:  That was like our example . 
+C:  Um . 
+C:  Yeah , 
+C:  I m I mean  
+C:  Yeah . 
+C:  Right . 
+C:  So let 's see . 
+C:  The variables . 
+C:  Disc - " admission fee " is a binary thing , 
+C:  " time of day " is like morning , afternoon , night . 
+C:  Is that the deal ? 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Normally context will include a huge amount of information , 
+C:  but um , we are just using the particular <cough> part of the context which consists of the switch that they flick to indicate whether they 're a tourist or not , I guess . 
+C:  So  
+C:  Right , 
+C:  so it 's not really all of context . 
+C:  Similarly prosody is not all of prosody 
+C:  but simply <breath> for our purposes whether or not they appear tense or relaxed . 
+C:  and 
+C:  Yeah . 
+C:  Unknown , 
+C:  right ? 
+C:  Which is th Which one ? 
+C:  Yeah , it does . 
+C:  Everything is probablistic , 
+C:  and  There 's always  
+C:  Yeah . 
+C:  Um , right . 
+C:  So then landmark is  
+C:  Oh , 
+C:  sorry . 
+C:  " Verb used " is like , 
+C:  right now we only have three values , 
+C:  but in general they would be a probability distribution over all verbs . 
+C:  Rather , 
+C:  let me rephrase that . 
+C:  It  it can take values <breath> in the set of all verbs , that they could possibly use . 
+C:  Um " nice walls " is binary , 
+C:  " closed " is binary 
+C:  " final destination " , again  
+C:  Yeah , all those are binary I guess . 
+C:  And " mode " is one of three things . 
+C:  Yeah , 
+C:  anything with a question mark after it in that picture is a binary node . 
+C:  Which things ? 
+C:  Oh . 
+C:  " Nice walls " is uh  something that we extract from our world knowledge . 
+C:  Yeah , a Oh 
+C:  yeah . Sorry . It is binary . 
+C:  That 's true . 
+C:  Yeah . 
+C:  OK , I see your point . 
+C:  Yeah , similarly " closed " , I guess . 
+C:  Well , we 
+C:  To do that we would add another uh  value for that . 
+C:  And that would require s updating the probability distribution for " mode " as well . 
+C:  Because it would now have to like uh  take that possibility into account . 
+C:  Yeah . 
+C:  Right . 
+C:  Other syntactic information you mean ? 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah , 
+C:  right . 
+C:  Yeah , 
+C:  correct . 
+C:  We can do a little demo . 
+C:  I mean  We can do a demo in the sense that we can um , <breath> just ob observe the fact that this will , in fact do inference . 
+C:  So we can , you know , set some of the uh nodes 
+C:  and then try to find the probability of other nodes . 
+C:  Just se set a few of them . 
+C:  You don't have to do the whole thing that we did last time . 
+C:  Just like uh , <breath> maybe the fact that they use a certain verb  
+C:  Actually forget the verb . 
+C:  just uh  
+C:  I don't know , 
+C:  say they discussed the admission fee  
+C:  and uh  <breath> the place has nice walls 
+C:  and it 's night . 
+C:  Yeah , 
+C:  no 
+C:  wait . 
+C:  That  that doesn't uh  
+C:  it 's not really consistent . 
+C:  They don't discuss the admission fee . 
+C:  Make that false . 
+C:  And it 's night . 
+C:  That didn't work . 
+C:  OK . 
+C:  Yes . 
+C:  " Go " and , right , " query " . 
+C:  So that  is the probability that they 're Entering , Vista - ing or Tango - ing . 
+C:  And uh  
+C:  Yeah . 
+C:  It loves the Tango . 
+C:  Well , that 's obviously just to do with our probabilities . 
+C:  Like ,  we totally hand - tuned the probabilities , 
+C:  right . 
+C:  We were like <breath> " hmm , well if the person does this and this and this , let 's say forty percent for this , 
+C:  fifty per " Like , you know . 
+C:  So obviously that 's gonna happen . 
+C:  Yeah . 
+C:  It 's  So we have to like fit the probabilities . 
+C:  Yeah . 
+C:  Um . Well , yeah , 
+C:  I guess . 
+C:  Not that much though . 
+C:  Only a little early . 
+C:  OK . 
+C:  Um . Yeah , 
+C:  well  <breath> That 's  that 's an interesting point . 
+C:  Whether you 're  It 's whether  It 's not  
+C:  I think it 's more like " Are you are tourist ? 
+C:  are you in Ham - like Heidelberg for a  " 
+C:  That 's a different thing . 
+C:  What if the context , which is not set , but still they say things like , " I want to go  uh , see the uh  the  the castle and uh , et cetera . " 
+C:  Yeah . 
+C:  Business on the other hand is , uh , definitely what you 're doing . 
+C:  Yeah . 
+C:  And that 'll affect whether you want to enter or you if you  
+C:  kinda thing . 
+C:  Yeah , 
+C:  I think this context node is a bit of a  
+C:  I don't know , 
+C:  like in d 
+C:  Uh  Do we  wanna have  
+C:  Like it 's  
+C:  If the context were to set one way or another , that like strongly uh um , says something about whether  whether or not they 're tourists . 
+C:  So what 's interesting is when it 's not  when it 's set to " unknown " . 
+C:  Right now we haven't observed it , 
+C:  so I guess it 's sort of averaging over all those three possibilities . 
+C:  But yes , 
+C:  you can set it to un " unknown " . 
+C:  Well no , 
+C:  because we  Th - the way we set the probabilities <breath> might not have  
+C:  Yeah , 
+C:  it 's  it 's an  it 's an issue , 
+C:  right ? 
+C:  Like  
+C:  Yeah , 
+C:  it is . 
+C:  So the issue is that um in belief - nets , it 's not common to do what we did of like having , you know , a d bunch of values and then " unknown " as an actual value . 
+C:  What 's common is you just like don't observe the variable , 
+C:  right , 
+C:  and then just marginalizes  
+C:  But uh  <breath> We didn't do this because we felt that there 'd  
+C:  I guess we were thinking in terms of a switch that actually  
+C:  But uh  I don't know y what the right thing is to do for that . 
+C:  I 'm not  I don't know if I totally am happy with <breath> the way it is . 
+C:  Another node on what ? 
+C:  Good point . 
+C:  So basically it 's addressing a variable that 's " enterable or not " . 
+C:  So like an " enterable , question mark " . 
+C:  What ? 
+C:  Um . Not when we were doing this , 
+C:  but I guess at some point we did . 
+C:  So you want to have a  a node for like whether or not it can be entered ? 
+C:  Yeah . 
+C:  Hmm . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah . 
+C:  Mm - hmm . 
+C:  What would it , uh , connect to ? 
+C:  Like , what would , uh , it affect ? 
+C:  What I was thinking was if you had a  like  
+C:  Yeah . 
+C:  OK . 
+C:  Right . 
+C:  Yeah , 
+C:  I don't know if JavaBayes is nice about that . 
+C:  It might be that if you add a new thing pointing to a variable , you just like  it just overwrites everything . 
+C:  But  you can check . 
+C:  OK . 
+C:  It 's true . 
+C:  Well that 's fine , 
+C:  but we have to see the function now . 
+C:  Has it become all point fives or not ? 
+C:  No . 
+C:  This is fine , 
+C:  this business . 
+C:  Yep . 
+C:  What would be nice if it  is if it just like kept the old function for either value 
+C:  but . 
+C:  Nope . 
+C:  Didn't  do it . 
+C:  That 's  kind of annoying . 
+C:  Hmm . 
+C:  Ha - So have you used JavaBayes a lot ? 
+C:  OK . 
+C:  It might be worth uh  asking around . 
+C:  Like , we looked at sort of uh  a page that had like a bunch of  
+C:  OK . 
+C:  Yeah , 
+C:  S I guess he 'd be the person . 
+C:  Yeah . 
+C:  Cuz  
+C:  Yeah . 
+C:  I mean in a way this is a lot of good features in Java 
+C:  it 's cra has a GUI and it 's uh  
+C:  I guess those are the main two things . 
+C:  It does learning , 
+C:  it has  
+C:  What ? 
+C:  OK . 
+C:  Oh right . 
+C:  Maybe you 're right . 
+C:  OK . 
+C:  Right . 
+C:  But uh  it 's free . 
+C:  But uh , 
+C:  yeah . 
+C:  Maybe another thing that uh  
+C:  But I mean its interface is not the greatest . 
+C:  So . 
+C:  Yeah . 
+C:  There is actually a text file that you can edit . 
+C:  But it 's  
+C:  You don't have to do that . 
+C:  Is it XML ? 
+C:  Oh , I see . 
+C:  No this doesn't use it . 
+C:  I didn't think it did . 
+C:  You can look at the text file . 
+C:  But do you have it here ? 
+C:  Well , maybe you don't . 
+C:  Oh yes , 
+C:  of course . 
+C:  Like , there 's the  
+C:  Nope . 
+C:  Just s l start up a new DOS . 
+C:  Or  
+C:  Yeah , right . 
+C:  Yep . 
+C:  It 'll ask you what you  what it wants  what you want to open it with and see what BAT , I guess . 
+C:  That 's  
+C:  Oh ! 
+C:  Anyway , there it is . 
+C:  Uh , Yeah . 
+C:  Yeah . 
+C:  That 's how actual probability tables are specified . 
+C:  As , like , lists of numbers . 
+C:  So theoretically you could edit that . 
+C:  But  they 're not very friendly . 
+C:  So you 'd have to like figure out  Like you have to go and  
+C:  Yeah . 
+C:  Well I  
+C:  Yeah . 
+C:  I think so . 
+C:  it 's not  
+C:  Yeah 
+C:  we can maybe write an interface th for uh entering probability distributions easily , 
+C:  something like  like a little script . 
+C:  That might <breath> be worth it . 
+C:  The other thing is it is in Java 
+C:  so . 
+C:  Yeah . 
+C:  Uh , yeah . we do 
+C:  I  I saw directory called " source " , 
+C:  or  
+C:  Yeah . 
+C:  Go up one ? 
+C:  Yeah . 
+C:  I don't know if it actually manipulate the source , though . 
+C:  That might be a bit complicated . 
+C:  I think it might  it might be simpler to just  have a script that , you know  
+C:  It 's , like , friendly , 
+C:  it allows you enter things well . 
+C:  Mm - hmm . 
+C:  He 's  Like this guy has ? 
+C:  The JavaBayes guy ? 
+C:  So  but , e he doesn't use it . 
+C:  So in what sense has he updated it ? 
+C:  Oh . I see . 
+C:  OK . 
+C:  That would be awesome . 
+C:  OK . 
+C:  Um . The additional thing is I guess learning the probabilities ,  also . 
+C:  E That 's maybe , 
+C:  I don't know  <breath> If  
+C:  Does  
+C:  That 's  
+C:  Yeah . 
+C:  Very future . 
+C:  Ha . 
+C:  Sure . 
+C:  Yeah . 
+C:  Sure . 
+C:  Yep . 
+C:  Yeah . 
+C:  So essentially a lot of those nodes can be expanded into little Bayes - nets of their own . 
+C:  Yeah . 
+C:  That 's true . 
+C:  Yeah . 
+C:  Or we could like add more , uh , sort of middle nodes . 
+C:  Like we could add a node like do they want to enter it , 
+C:  which is affected by admission fee and by whether it 's closed and by whether it has a door . 
+C:  So it 's like  There are  Those are the two options . 
+C:  Either like make an arrow directly or put a new node . 
+C:  Really . 
+C:  Yeah .  <noise> Yeah . 
+C:  What ? 
+C:  Why ? 
+C:  Really ? 
+C:  Yeah . 
+C:  And there 's much more of them . 
+C:  Yeah , they 're Yeah , it 's  way better 
+C:  Yeah . 
+C:  I 've done that kind of thing . 
+C:  I  I want to see what it does with uh " landmark - iness " . 
+C:  That 's  
+C:  So . 
+C:  Yeah . 
+C:  OK . 
+C:  For which ? 
+C:  Just observable nodes , 
+C:  evidence nodes ? 
+C:  Yeah . 
+C:  Yeah . 
+C:  Yeah , this is totally like  
+C:  The probabilities and all are completely ad - hoc . 
+C:  We need to look at all of them . 
+C:  I mean but , they 're even like <laugh>  I mean like , close to the end we were like , uh , you know we were like uh <laugh> really ad - hoc . 
+C:  Right ? 
+C:  Cuz if it 's like , uh  If it 's four things coming in , 
+C:  right ? 
+C:  And , say , some of them have like three possibilities and all that . 
+C:  So you 're thinking like  like a hundred and forty four or something  possible things  numbers to enter , 
+C:  right ? 
+C:  So . 
+C:  Yeah , the only like possible interpretation is that they are like  come here just to rob the museum or  something to that effect . 
+C:  Yeah . 
+C:  Yeah , another thing to do , um , is also to , um  I guess to ask around people about other Bayes - net packages . 
+C:  Is Srini gonna be  at the meeting tomorrow , 
+C:  do you know ? 
+C:  Wait  
+C:  Day after tomorrow . 
+C:  Yeah . 
+C:  Maybe we can ask him about it . 
+C:  No . 
+C:  But he mentioned at the last meeting that someone was going to be talking , 
+C:  I forget who . 
+C:  Uh . 
+C:  Oh . 
+C:  But . 
+C:  OK . 
+C:  But once you start  sart start SmartKom you can be on  You don't have to be on a network anymore . 
+C:  Is that the deal ? 
+C:  Ah , interesting . 
+C:  So who would be the subject  of this trial run ? 
+C:  Who  Will there be a  Is one  Is you  one of you gonna be the subject ? 
+C:  Like are you  
+C:  Well I just figured it has to be someone who 's , um , familiar enough with the data to cause problems for the wizard , so we can , uh , see if they 're you know good . 
+C:  Yeah . 
+C:  I mean that 's what we wanna  check , 
+C:  right ? 
+C:  Isn't that what it is ? 
+C:  I guess that would be reasonable . 
+C:  Sort of having an actively antagonistic , uh  
+C:  OK . 
+C:  Yep . 
+C:  So what 's " Economics , the fallacy " ? 
+C:  Oh , really ? 
+C:  OK . 

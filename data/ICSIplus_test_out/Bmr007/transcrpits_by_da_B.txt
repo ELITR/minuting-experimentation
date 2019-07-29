@@ -1,0 +1,177 @@
+B:  I 'm sorry . 
+B:  We 're , I mean  we  We didn't have a house before . 
+B:  Oh , yeah ! 
+B:  Right . 
+B:  The new consent form . 
+B:  Mm - hmm . 
+B:  Exactly ! 
+B:  Mm - hmm . 
+B:  Hmm . 
+B:  That 's   that 's good , yeah , cuz the overall rate is  
+B:  Yeah . 
+B:  Ah but , yeah . 
+
+B:  Yeah . 
+B:  I think what 's really interesting though , it is  before d  saying " yes , meetings have a lot of overlaps " is to actually find out how many more  we have than two - party . 
+B:  Cuz in two - party conversations , like Switchboard , there 's an awful lot too if you just look at backchannels , if you consider those overlaps ? 
+B:  it 's also ver it 's huge . 
+B:  It 's just that people haven't been  looking at that because they 've been doing single - channel processing for  speech recognition . 
+B:  So , the question is , you know , how many more overlaps  <inbreath> do you have  of , say the two - person type , by adding more people . to a meeting , 
+B:  and it may be a lot more but i it may   it may not be . 
+B:  So . 
+B:  Mm - hmm ? 
+B:  Well , it 's not really  " nice " . 
+B:  It depends what you 're doing . 
+B:  So if you were actually  <inbreath> having , 
+B:  uh  
+B:  depends what you 're doing , 
+B:  if  Right now we 're do we have individual mikes on the people in this meeting . 
+B:  So the question is , you know  " are there really more overlaps happening than there would be in a two - person  party " . 
+B:  And  and there well may be , but  
+B:  I  I agree that it 's an issue here  but it 's also an issue for Switchboard 
+B:  and if you  think of meetings  being recorded over the telephone , which I think , you know , this whole point of studying meetings isn't just to have people in a room but to also have  meetings over different phone lines . 
+B:  Maybe far field mike people wouldn't be interested in that but all the dialogue issues still apply , 
+B:  so if each of us was calling and having  <inbreath> a meeting that way  you kn you know like a conference call . 
+B:  And , just the question is ,  y you know , in Switchboard  you would think that 's the simplest case of a meeting of more than one person , 
+B:  and  <inbreath> I 'm wondering how much more  overlap  of  the types that  that Jane described happen with more people present . 
+B:  So it may be that having three people  <inbreath> is very different from having two people or it may not be . 
+B:  So . 
+B:  Not you , me . 
+B:  But uh  but  but 
+B:  There  there 's 
+B:  actually to tell you the truth , the reason why it 's hard to measure is because of 
+B:  so , from the point of view of studying dialogue , I mean , which  Dan Jurafsky and Andreas and I had some projects on , you want to know the sequence of turns . 
+B:  So what happens is if you 're talking and I have a backchannel in the middle of your turn , and then you keep going what it looks like in a dialogue model is your turn and then my backchannel , 
+B:  even though my backchannel occurred completely inside your turn . 
+B:  So , for things like language modeling or dialogue modeling  <inbreath> it 's  We know that that 's wrong in real time . 
+B:  But , because of the acoustic segmentations that were done and the fact that some of the acoustic data in Switchboard were missing , people couldn't study it , 
+B:  but that doesn't mean in the real world that people don't talk that way . 
+B:  So , it 's  um 
+B:  Well , we 've als 
+B:  Right . 
+B:  We 're looking at it here . 
+B:  Um . 
+B:  Yeah , all I meant is that if you 're asking the question from the point of view of  what 's different about a meeting , studying meetings of , say , more than two people versus  what kinds of questions you could ask with a two - person  meeting . 
+B:  It 's important to distinguish  that , you know , this project  is getting a lot of overlap  but other projects were too , but we just couldn't study them . 
+B:  And and so uh 
+B:  Well , there is a high rate , 
+B:  So . 
+B:  It 's  but I don't know how high , in fact 
+B:  that would be interesting to know . 
+B:  Mm - hmm . 
+B:  Yeah , I  I don't di I agree with that . 
+B:  Right . 
+B:  That 's also true of Switchboard . 
+B:  It may not be  
+B:  Right . 
+B:  So it 's just , um 
+B:  OK . 
+B:  All I 'm saying is that from the 
+B:  Right . 
+B:  No , I  I agree with that . 
+B:  I 'm just  <inbreath> saying that it may   the reason you get overlaps may or may not be due to sort of the number of people in the meeting . 
+B:  And that 's all . 
+B:  And  and it would actually be interesting to find out 
+B:  because some of the data say Switchboard , which isn't exactly the same kind of context , 
+B:  I mean these are two people who don't know each other and so forth , 
+B:  But we should still be able to somehow say what  what is the added contra contribution to sort of overlap time of each additional person , or something like that . 
+B:  But yeah . 
+B:  Right . 
+B:  Right . 
+B:  Right . 
+B:  If you can see them , actually . 
+B:  It 's interesting , 
+B:  so if you watch people are going like    Right  right , like this here , 
+B:  but That may not be the case if you couldn't see them . 
+B:  Yeah . 
+B:  There 's a lot of head - nodding , in this 
+B:  Yes . 
+B:  Yeah . 
+B:  Yes . 
+B:  Right . 
+B:  Sorry , what were you saying ? 
+B:  Oh . 
+B:  I think there 's a lot of the kind that Jose was talking about , where   I mean , this is called " precision timing " in  conversation analysis , where  <inbreath> they come in overlapping ,  but at a point where the  information is mostly  complete . 
+B:  So all you 're missing is some last syllables or something or the last word or some highly predictable words . 
+B:  So technically , it 's an overlap . 
+B:  But  you know , from information flow point of view it 's not an overlap in  the predictable information . 
+B:  Yeah . 
+B:  Well , that 's exactly , exactly why we wanted to study the precise timing of overlaps ins in uh Switchboard , 
+B:  say , because there 's a lot of that . 
+B:  Mm - hmm . 
+B:  Well , I was thinking you should be able to do this from the  acoustics , on the close - talking mikes , 
+B:  right ? 
+B:  Right , I mean Adam was  
+B:  right . 
+B:  I mean , not as well as what  I mean , you wouldn't be able to have any kind of typology , obviously , 
+B:  but you 'd get some rough statistics . 
+B:  So . 
+B:  I guess my  my first comment was , um  only that <inbreath> um we should n not attribute overlaps only to meetings , 
+B:  but maybe that 's obvious , 
+B:  maybe everybody knew that , 
+B:  but that <inbreath> in normal conversation with two people there 's an awful lot of the same kinds of overlap , 
+B:  and that it would be interesting to look at  whether there are these kinds of constraints that Jane mentioned , that <inbreath> what maybe the additional people add to this competition that happens right after a turn , 
+B:  you know , because now you can have five people trying to grab the turn , 
+B:  but pretty quickly there 're  they back off 
+B:  and you go back to this sort of only one person at a time with one person interrupting at a time . 
+B:  So , I don't know . 
+B:  To answer your question I  it  I don't think it 's crucial to have controls 
+B:  but I think it 's worth recording all the meetings we  can . 
+B:  So , um  you know . 
+B:  D I wouldn't not record a two - person meeting just because it only has two people . 
+B:  Can we actually record ? 
+B:  I mean  physically  can we record the o the other  
+B:  That 's what they did on Map Task , you know , this Map Task corpus ? 
+B:  They ran exactly the same pairs of people with and without visual cues 
+B:  and it 's quite interesting . 
+B:  Well , we could just put  b blindfolds on . 
+B:  and we 'd take a picture of everybody sitting here with blindfolds . 
+B:  That would  
+B:  Ee -  you mean , transc  no  
+B:  But probably from these you could 've  infer it . 
+B:  It would be a research task . 
+B:  Yeah , yeah . 
+B:  But you have to keep the chairs in the same pla like here . 
+B:  The fashion statement . 
+B:  But does it work for that one speaker throughout the whole meeting ? 
+B:  I think that 'd be really interesting too , with blindfolds . 
+B:  Then  
+B:  Yeah . 
+B:  The question is ,  like  whether  
+B:  Well , trying with and   with and without , yeah . 
+B:  But then there 's just one @ @ , like . 
+B:  Oh , yeah , that 's really common . 
+B:  It 's very difficult if you try  while you 're trying , say , to convince somebody on the phone it 's difficult not to move your hands . 
+B:  Not  You know , if you watch people they 'll actually do these things . 
+B:  So . 
+B:  I still think we should try a  a meeting or two with the blindfolds , 
+B:  at least of this meeting that we have lots of recordings of 
+B:  Um , maybe for part of the meeting , we don't have to do it the whole meeting . 
+B:  That could be fun . 
+B:  It 'll be too hard to make barriers , I was thinking because they have to go all the way 
+B:  you know , I can see Chuck even if you put a barrier here . 
+B:  Y Yeah ? 
+B:  But then we also have these mikes , is the other thing I was thinking , 
+B:  so we need a barrier that doesn't disturb  the sound , 
+B:  um 
+B:  I mean , it sounds weird but  but   you know it 's  <laugh> it 's cheap and , uh Be interesting to have the camera going . 
+B:  I think the beep is a really good idea . 
+B:  Also  
+B:  Notice how quiet I am . 
+B:  You have some people who only have beeps as their speech in these meetings . 
+B:  Yeah , definitely . 
+B:  So I guess if there 's an overlap ,  like , if I 'm saying something that 's  bleepable and somebody else overlaps during it they also get bleeped , too ? 
+B:  And , I wanted to say , I think this is really interesting  analysis . 
+B:  I meant to say that before I started off on the  Switchboard stuff . 
+B:  It 's neat . 
+B:  Yeah . 
+B:  Does it take  
+B:  How long does it  take , just briefly , like  t to   OK .  to label the , 
+B:  OK . 
+B:  OK . 
+B:  It 's really neat . 
+B:  Well , I can wear it , I mean if you  
+B:  OK . 
+B:  I feel like this troublemaker . 
+B:  OK . 
+B:  I 'm sorry . 

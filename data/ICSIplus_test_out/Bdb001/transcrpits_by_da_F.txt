@@ -1,0 +1,457 @@
+F:  Go next . 
+F:  Oh , that 's good . 
+F:  Cuz we have a lot of breath noises . 
+F:  In fact , if you listen to just the channels of people not talking , it 's like " @ @ " . 
+F:  It 's very disgust 
+F:  Sorry . 
+F:  Exactly . 
+F:  It 's very disconcerting . 
+F:  OK . 
+F:  So , um , 
+F:  I was gonna try to get out of here , like , in half an hour , 
+F:  um , 
+F:  cuz I really appreciate people coming , 
+F:  and <breath> the main thing that I was gonna ask people to help with today is  to give input on what kinds of database format we should  use in starting to link up things like word transcripts and annotations of word transcripts , 
+F:  so anything that transcribers or discourse coders or whatever put in the signal , <breath> with time - marks for , like , words and phone boundaries and all the stuff we get out of the forced alignments and the recognizer . 
+F:  So , we have this , um  
+F:  I think a starting point is clearly the  the channelized  output of Dave Gelbart 's program , 
+F:  which Don brought a copy of , 
+F:  um , 
+F:  which  
+F:  Right . 
+F:  So , 
+F:  I actually mostly need to be able to link up , or  
+F:  I it 's  it 's a question both of what the representation is and  
+F:  OK , 
+F:  yeah . 
+F:  So you should , definitely . 
+F:  Mm - hmm . 
+F:  Right , 
+F:  right . 
+F:  Right . 
+F:  OK . 
+F:  It 's an O instead of an I , 
+F:  but the D is good . 
+F:  Yeah . 
+F:  OK . 
+F:  So , 
+F:  I mean , that seems  that seems g great for all of the encoding of things with time 
+F:  and , 
+F:  um  
+F:  I  I guess my question is more , uh , what d what do you do with , say , a forced alignment ? 
+F:  I mean you 've got all these phone labels , 
+F:  and what do you do if you  just conceptually , if you get , um , transcriptions where the words are staying but the time boundaries are changing , cuz you 've got a new recognition output , 
+F:  or s sort of  what 's the , um , sequence of going from the waveforms that stay the same , the transcripts that may or may not change , and then the utterance which  where the time boundaries that may or may not change  ? 
+F:  Um . 
+F:  And you 'd be able to propagate all of the  the information ? 
+F:  Yeah , 
+F:  yeah , especially at the phone - level . 
+F:  The  we  we have phone - level backtraces . 
+F:  Um  
+F:  OK . 
+F:  So , if you were doing that and you had this sort of companion , uh , thing that gets called up for phone - level , uh , what would that look like ? 
+F:  How would you  ? 
+F:  H h 
+F:  So you could have some file that configures how much information you want in your  in your XML or something . 
+F:  Um , 
+F:  cuz th it does get very bush with  
+F:  Right . 
+F:  Yeah . 
+F:  Yeah . 
+F:  Definitely . 
+F:  I mean , we actually have  
+F:  So , one thing that Don is doing , is we 're  we 're running  For every frame , you get a pitch value , 
+F:  and not only one pitch value but different kinds of pitch values 
+F:  depending on  
+F:  Meaning  ? 
+F:  OK . 
+F:  That you could call  that you would tie into this representation with like an ID . 
+F:  And  
+F:  OK . 
+F:  So that might  that might work . 
+F:  I mean these are long meetings 
+F:  and with  for every frame , 
+F:  um  
+F:  These are big files . 
+F:  These are really  
+F:  I mean  
+F:  And th it 's  
+F:  Phones are every five frames though , 
+F:  so . 
+F:  Or something like that . 
+F:  Yeah , 
+F:  but we actually  
+F:  Oh , so you mean pause phones take up a lot of the  
+F:  long pause phones . 
+F:  Yeah . 
+F:  OK . 
+F:  That 's true . 
+F:  But you do have to keep them in there . 
+F:  Y yeah . 
+F:  OK . 
+F:  OK . 
+F:  So  
+F:  Do you  Are you familiar with it ? 
+F:  I haven't seen this particular format , 
+F:  but  
+F:  OK . 
+F:  Oh . 
+F:  So that  that sounds  that sounds about what I w 
+F:  You do ? 
+F:  OK . 
+F:  Is there some documentation on this somewhere ? 
+F:  OK , 
+F:  great . 
+F:  So , 
+F:  I mean , that sounds good . 
+F:  I  I was just looking for something  
+F:  I 'm not a database person , 
+F:  but something sort of standard enough that , you know , if we start using this we can give it out , 
+F:  other people can work on it , 
+F:  or   Is it  ? 
+F:  But it 's  been used here 
+F:  and people 've  
+F:  OK . 
+F:  Yeah . 
+F:  Yeah . 
+F:  Th - this is exactly the kind of decision  It 's just whatever  
+F:  Actually , I  I just  you know , we  we 've done this stuff on prosodics 
+F:  and three or four places have asked for those prosodic files , 
+F:  and we just have an ASCII , uh , output of frame - by - frame . 
+F:  Which is fine , 
+F:  but it gets unwieldy to go in and  and query these files with really huge files . 
+F:  I mean , we could do it . 
+F:  I was just thinking if there 's something that  where all the frame values are  
+F:  Hmm ? 
+F:  They 're  they 're fair they 're quite large . 
+F:  And these are for ten - minute Switchboard conversations , 
+F:  and  
+F:  So it 's doable , 
+F:  it 's just that you can only store a feature vector at frame - by - frame 
+F:  and it doesn't have any kind of , 
+F:  um  
+F:  I  I don't know enough about what we 're gonna do with the data . 
+F:  But I thought it would be good to get something that we can  that other people can use or adopt for their own kinds of encoding . 
+F:  And just , I mean we have to use some we have to make some decision about what to do . 
+F:  And especially for the prosody work , what  what it ends up being is you get features from the signal , 
+F:  and of course those change every time your alignments change . 
+F:  So you re - run a recognizer , 
+F:  you want to recompute your features , um , and then keep the database up to date . 
+F:  Or you change a word , or you change a <mouth> utterance boundary segment , which is gonna happen a lot . 
+F:  And so I wanted something where  all of this can be done in a elegant way 
+F:  and that if somebody wants to try something or compute something else , that it can be done flexibly . 
+F:  Um , 
+F:  it doesn't have to be pretty , 
+F:  it just has to be , you know , easy to use , and  
+F:  Oh . 
+F:  Uh  
+F:  And why did you not choose that type of approach ? 
+F:  OK . 
+F:  OK . 
+F:  But other than that , are they compatible ? 
+F:  I mean , you could sort of  
+F:  I mean , you  you could  
+F:  Yeah , that 's w 
+F:  So , 
+F:  OK . 
+F:  I don't  
+F:  So this is what the meeting 's about , 
+F:  just sort of how to  
+F:  Um , cuz we need to come up with a database like this just to do our work . 
+F:  And I actually don't care , as long as it 's something useful to other people , what we choose . 
+F:  So maybe it 's  maybe oth you know , 
+F:  if  if you have any idea of how to choose , cuz I don't . 
+F:  And you can have as much information in the tag as you want , 
+F:  right ? 
+F:  Can you  But you can add to those structures if you  
+F:  Yeah . 
+F:  So  
+F:  So why would it be a  a waste to do it this way if it 's similar enough that we can always translate it ? 
+F:  But it  but that sounds  
+F:  As long as it is  
+F:  I mean , would the tools  would the tools run on something like this , if you can translate them anyway ? 
+F:  I mean , that  I guess it 's a question that  
+F:  uh , yeah . 
+F:  OK . 
+F:  OK . 
+F:  Yeah . 
+F:  Actually , 
+F:  so it 's  
+F:  that  that would really be the question , is just what you would feel is in the long run the best thing . 
+F:  Cuz <inbreath> once we start , sort of , doing this I don't  we don't actually have enough time to probably have to rehash it out again 
+F:  and  
+F:  s 
+F:  Right . 
+F:  Right . 
+F:  I mean , I like this . 
+F:  This is sort of intuitively easy to actually r read , 
+F:  as easy it could  as it could be . 
+F:  But , 
+F:  I suppose that  as long as they have a type here that specifies " utt " , 
+F:  um , 
+F:  it 's  yeah , close enough that  
+F:  You have to make a different type . 
+F:  So  
+F:  Well , if you look at it 
+F:  and  Um , 
+F:  I guess in my mind I don't know enough  Jane would know better ,  about the  types of annotations 
+F:  and  and  But I imagine that those are things that would  well , you guys mentioned this ,  that could span any  
+F:  it could be in its own channel , 
+F:  it could span time boundaries of any type , 
+F:  it could be instantaneous , 
+F:  things like that . 
+F:  Um , 
+F:  and then from the recognition side we have backtraces at the phone - level . 
+F:  If  if it can handle that , it could handle states or whatever . 
+F:  And then at the prosody - level we have frame  sort of like cepstral feature files , 
+F:  uh , like these P - files or anything like that . 
+F:  And that 's sort of the world of things that I  
+F:  And then we have the aligned channels , of course , 
+F:  and  
+F:  Yeah . 
+F:  I  I definitely agree 
+F:  and I wanted to find actually a f a nicer format or a  maybe a more compact format than what we used before . 
+F:  Just cuz you 've got <breath> ten channels or whatever and two hours of a meeting . 
+F:  It 's  it 's a lot of  
+F:  Yeah . 
+F:  Actually , it 's the channel , I think , that  
+F:  I mean , w 
+F:  yeah , channel is what the channelized output out 
+F:  Yeah , but  
+F:  And what if you actually have  
+F:  So right now what you have as utterance , um , the closest thing that comes out of the channelized is the stuff between the segment boundaries that the transcribers put in or that Thilo put in , 
+F:  which may or may not actually be , like , a s it 's usually not  um , the beginning and end of a sentence , say . 
+F:  So , 
+F:  right . 
+F:  Um , so it 's like a segment or something . 
+F:  So , 
+F:  I mean , I assume this is possible , that if you have  someone annotates the punctuation or whatever when they transcribe , you can say , you know , from  for  from the c beginning of the sentence to the end of the sentence , from the annotations , this is a unit , 
+F:  even though it never actually  
+F:  i It 's only a unit by virtue of the annotations  at the word - level . 
+F:  And then that would get a tag somehow . 
+F:  OK . 
+F:  OK . 
+F:  But it 's just not overtly in the  
+F:  Um , cuz this is exactly the kind of  
+F:  I think that should be  possible as long as the  
+F:  But , uh , what I don't understand is where the  where in this type of file  that would be expressed . 
+F:  S so it would just be floating before the sentence or floating after the sentence without a time - mark . 
+F:  See , cuz it 's  
+F:  it 's  
+F:  S 
+F:  But they 're  
+F:  they 're actually overlapping each other , sort of . 
+F:  You have to have another type then , I guess . 
+F:  Yeah . 
+F:  OK . 
+F:  OK . 
+F:  Well , it 's definitely true with the segment . 
+F:  That 's what I  exactly what I meant by the utterances versus the sentence could be sort of  
+F:  Yeah . 
+F:  Yeah . 
+F:  Right . 
+F:  An - Right . 
+F:  So you would be able to go in and say , you know , " give me all the words in the bound in the prosodic phrase 
+F:  and give me all the words in the  " 
+F:  Yeah . 
+F:  Um , OK . 
+F:  OK . 
+F:  That 's good . 
+F:  Well , 
+F:  uh , and , I mean , you guys might  
+F:  I don't know if this is premature 
+F:  because I suppose once you get the representation you can do this , 
+F:  but the kinds of things I was worried about is , 
+F:  uh  
+F:  Well , OK . 
+F:  So i if it  
+F:  I I mean , I can't do it , 
+F:  but I can  
+F:  um , 
+F:  Right . 
+F:  You 'd need a p sort of a paradigm for how to do it . 
+F:  But an example would be " find all the cases in which Adam started to talk while Andreas was talking and his pitch was rising , 
+F:  Andreas 's pitch " . 
+F:  That kind of thing . 
+F:  Well , the rising pitch will never be  hand - annotated . 
+F:  So the  all the prosodic features are going to be automatically  
+F:  So they 're gonna be in those  
+F:  So  
+F:  Right . 
+F:  So normally what we would do is we would say " what do we wanna assign rising pitch to ? " 
+F:  Are we gonna assign it to words ? 
+F:  Are we gonna just assign it to sort of  
+F:  when it 's rising we have a begin - end rise representation ? 
+F:  But suppose we dump out this file 
+F:  and we say , uh , for every word we just classify it as , w you know , rise or fall or neither ? 
+F:  OK . 
+F:  So we would basically be sort of , um , taking the format and enriching it with things that we wanna query in relation to the words that are already in the file , 
+F:  and then querying it . 
+F:  OK . 
+F:  If  
+F:  Uh  
+F:  But as long as the  
+F:  But it seems like as long as the features that  
+F:  That 's true if the features from your acoustics or whatever that are not explicitly in this are at the level of these types . 
+F:  That  that if you can do that  
+F:  That 's right . 
+F:  That 's true . 
+F:  That 's why I was trying to figure out what 's the best format for this representation . 
+F:  And it 's still gonna be  
+F:  it 's still gonna be , uh , not direct . 
+F:  You know , it  
+F:  Or another example was , you know , uh , where in the language  where in the word sequence are people interrupting ? 
+F:  So , 
+F:  I guess that one 's actually easier . 
+F:  Huh . 
+F:  It seems like the kind of thing you 'd do if  I don't know , if people start adding all kinds of s bells and whistles to the data . 
+F:  And so that might be  
+F:  I mean , it 'd be good for us to know  to use a format where we know we can easily , um , input that to some database if other people are using it . 
+F:  Something like that . 
+F:  So  
+F:  OK . 
+F:  Is a  
+F:  See , I think the kinds of questions , at least in the next  to the end of this year , are  there may be a lot of different ones , 
+F:  but they 'll all have a similar nature . 
+F:  They 'll be looking at either a word - level prosodic , uh , an  a value , 
+F:  like a continuous value , 
+F:  like the slope of something . 
+F:  But 
+F:  you know , we 'll do something where we  some kind of data reduction where the prosodic features are sort o uh , either at the word - level or at the segment - level , 
+F:  or  or something like that . 
+F:  They 're not gonna be at the phone - level and they 're no not gonna be at the frame - level when we get done with sort of giving them simpler shapes and things . 
+F:  And so the main thing is just being able  
+F:  Well , I guess , the two goals . 
+F:  Um , one that Chuck mentioned is starting out with something that we don't have to start over , that we don't have to throw away if other people want to extend it for other kinds of questions , 
+F:  and being able to at least get enough , uh , information out on  where we condition the location of features on information that 's in the kind of file that you  put up there . 
+F:  And that would  that would do it , 
+F:  I mean , for me . 
+F:  In the between , 
+F:  right . 
+F:  And especially that the representation doesn't have to be thrown away , 
+F:  even if your tools change . 
+F:  Yeah . 
+F:  I mean , that sounds good to me . 
+F:  I  I don't  
+F:  So 
+F:  if  if you would l look at that and let us know what you think . 
+F:  I mean , I think we 're sort of guinea pigs , 
+F:  cuz I  I want to get the prosody work done 
+F:  but I don't want to waste time , you know , getting the  
+F:  Yeah ? 
+F:  OK . 
+F:  Yeah , definitely . 
+F:  Especially if there 's , e um  you know , if someone can help with at least the  the setup of the right  
+F:  Oh , hi . 
+F:  the right representation , 
+F:  then , i you know , I hope it won't  
+F:  We don't actually need the whole full - blown thing to be ready , 
+F:  so . 
+F:  Um , 
+F:  so maybe if you guys can look at it and sort of see what , 
+F:  um  
+F:  I think we 're  we 're  <laugh> we 're actually just  
+F:  yeah , 
+F:  wrapping up , 
+F:  but , 
+F:  um  
+F:  Yeah , 
+F:  sorry , it 's a uh short meeting , 
+F:  but , um  
+F:  Well , I don't know . 
+F:  Is there anything else , 
+F:  like  
+F:  I mean that helps me a lot , 
+F:  but  
+F:  So , I guess , 
+F:  yeah , 
+F:  if  if you and Don can  if you can show him the P - file stuff and see . 
+F:  So this would be like for the F - zero  
+F:  It 's like the history of ICSI . 
+F:  Like  
+F:  Yeah ? 
+F:  And that isn't really , I guess , as important as the  the main  I don't know what you call it , the  the main sort of word - level  
+F:  Huh . 
+F:  OK . 
+F:  Well , that 's really useful . 
+F:  I mean , this is exactly the kind of thing that I wanted to settle . 
+F:  Um , 
+F:  so  
+F:  Great . 
+F:  Yeah . 
+F:  I guess it 's also sort of a political deci 
+F:  I mean , if  if you feel like that 's a community that would be good to tie into anyway , then it 's  sounds like it 's worth doing . 
+F:  OK , 
+F:  great . 
+F:  Cuz we actually can start  
+F:  I mean , we can start with , um , I guess , this input from Dave 's , 
+F:  which you had printed out , the channelized input . 
+F:  Cuz he has all of the channels , 
+F:  you know , with the channels in the tag and stuff like that . 
+F:  So that would be i directly , 
+F:  um  
+F:  Yeah . 
+F:  And so then it would just be a matter of getting  making sure to handle the annotations that are , you know , not at the word - level and , um , t to import the 
+F:  Well , right now , I g Jane would  <laugh> would  
+F:  Yeah . 
+F:  Yeah , 
+F:  any kind of annotation  that , like , isn't already there . 
+F:  Uh , you know , anything you can envision . 
+F:  Right . 
+F:  Or the time . 
+F:  I guess . 
+F:  Mm - hmm . 
+F:  Well , all the Switchboard in it . 
+F:  Yeah . 
+F:  Mm - hmm . 
+F:  W - diff or diff . 
+F:  Yeah . 
+F:  You could definitely do that with the  
+F:  But the one thing that would work here actually for i that is more reliable than the utterances is the  the speaker ons and offs . 
+F:  So if you have a good , 
+F:  um  
+F:  Yeah . 
+F:  You just have to know wha what to tie it to . 
+F:  And  
+F:  Right , right . 
+F:  But , 
+F:  d isn't that something where whoever  if <clears throat>  if the people who are making changes , say in the transcripts , cuz this all happened when the transcripts were different  ye um , if they tie it to something , like if they tied it to the acoustic segment  if they  
+F:  You know what I mean ? 
+F:  Then  Or if they tied it to an acoustic segment and we had the time - marks , that would help . 
+F:  But the problem is exactly as Adam said , that you get , you know , y you don't have that information or it 's lost in the merge somehow , 
+F:  so  
+F:  But they 've also  
+F:  Exactly . 
+F:  And so that 's exactly what we should  somehow when you distribute the data , say that  you know , that  have some way of knowing how to merge it back in and asking people to try to do that . 
+F:  Uh , yeah , time is the  
+F:  Time is passing ! 
+F:  Yeah . 
+F:  He  he 's a language modeling person , though . 
+F:  But still they  
+F:  Exactly . 
+F:  Yeah . 
+F:  Yeah . 
+F:  You only know the boundaries of the  
+F:  Right . 
+F:  Right . 
+F:  You can merge at the level of the representation that the other person preserved and that 's it . 
+F:  And beyond that , all you know is  is relative ordering 
+F:  and sometimes even that is wrong . 
+F:  So . 
+F:  And then infer that their time - marks are somewhere in between . 
+F:  Yeah , exactly . 
+F:  Definitely . 
+F:  Definitely . 
+F:  Alright . 
+F:  Well , I guess , w I  I didn't want to keep people too long 
+F:  and Adam wanted t people  
+F:  I 'll read the digits . 
+F:  If anyone else offers to , that 'd be great . 
+F:  And 
+F:  if not , I guess  
+F:  Thanks  thanks a lot . 
+F:  It 's really helpful . 
+F:  I mean , Adam and Don <spike on "Don"> will sort of meet 
+F:  and I think that 's great . 
+F:  Very useful . 
+F:  Go next . 
