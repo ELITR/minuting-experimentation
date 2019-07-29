@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nite:root xmlns:nite="http://nite.sourceforge.net/">
+<abstract nite:id="Bro025.abstract.1">
+<sentence nite:id="Bro025.s.1">ICSI's Meeting Recorder Group have returned from a meeting with some important decisions to make.</sentence>  <sentence nite:id="Bro025.s.2">They have developed a piece of software which allows them to implement their two main approaches to dealing with noise.</sentence>  <sentence nite:id="Bro025.s.3">The base rate is currently set at the second best rate as of the last project evaluation, and it does not yet include everything the group have been working on.</sentence>  <sentence nite:id="Bro025.s.4">With this in mind, they have decided to set most things, and concentrate on studying only a few key aspects, the neural network, the voice activity detector, and the noise estimation.</sentence>
+
+</abstract>
+<decisions nite:id="Bro025.decisions.1">
+<sentence nite:id="Bro025.s.5">By the time a senior member of their research partners OGI returns, they want to have a firm plan of what they will be doing.</sentence>  
+
+</decisions>
+<problems nite:id="Bro025.problems.1">
+<sentence nite:id="Bro025.s.6">System latency is still an issue, but limits have still not been set by the project heads.</sentence>  <sentence nite:id="Bro025.s.7">The group have encountered problems with frame-dropping, and will need to bear that in mind since their neural network would come after that stage.</sentence>  
+
+</problems>
+<progress nite:id="Bro025.progress.1">
+<sentence nite:id="Bro025.s.8">While deciding which of two approaches to finally adopt, the group put together one piece of software for all to use that implements both spectral subtraction and wiener filtering.</sentence>  <sentence nite:id="Bro025.s.9">Speaker me026 has done his quals, and is looking at some of the feedback he received.</sentence>  
+
+</progress>
+</nite:root>

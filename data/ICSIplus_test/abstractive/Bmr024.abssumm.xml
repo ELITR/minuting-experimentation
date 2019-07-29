@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nite:root xmlns:nite="http://nite.sourceforge.net/">
+<abstract nite:id="Bmr024.abstract.1">
+<sentence nite:id="Bmr024.s.1">This meeting mainly outlines the progress of the meeting recorder project.</sentence> <sentence nite:id="Bmr024.s.2">In particular, the group discuss their preparation of materials for the transcriptions of digits by IBM, and also the human transcribers who are working towards preparing the set of 20 for the DARPA meeting.</sentence> <sentence nite:id="Bmr024.s.3">Other discussion focuses on the re-evaluation of recognition without cheating on segmentation, and also how SRI recognition can be improved, especially for the female group.</sentence>
+<sentence nite:id="Bmr024.s.4">A number of issues regarding the management of data are addressed by the group:</sentence> <sentence nite:id="Bmr024.s.5">The inclusion of different data types in the corpus, and the storage and back-up of the group's data.</sentence> <sentence nite:id="Bmr024.s.6">Progress has been made in naming conventions, with file reorganisation to be done at a later date, however this was not discussed fully due to Chuck's absence.</sentence>
+<sentence nite:id="Bmr024.s.7">Finally, Absinthe is now up and running with improved performance.</sentence> <sentence nite:id="Bmr024.s.8">Discussion of demos for the July DARPA meeting were left to the individuals concerned.</sentence>
+
+</abstract>
+<decisions nite:id="Bmr024.decisions.1">
+<sentence nite:id="Bmr024.s.9">A number of data issues were resolved:</sentence> <sentence nite:id="Bmr024.s.10">After discussing the human-computer interaction Smartkom data, the group decide that different types of data can be included in the meeting corpus, but that it should be structured into different directories according to data type.</sentence> <sentence nite:id="Bmr024.s.11">Some of the data storage problems can be overcome by backing up using the NW archive.</sentence> <sentence nite:id="Bmr024.s.12">However, file reorganisation will be left until just before zero-level back up.</sentence> <sentence nite:id="Bmr024.s.13">The group decide to use IBM transcription of the digits, in addition to automatic methods.</sentence> <sentence nite:id="Bmr024.s.14">If IBM methods work, transcribers will check and comment these.</sentence> <sentence nite:id="Bmr024.s.15">Discussion of demos for the July meeting has been postponed: the individuals concerned will meet independently.</sentence>
+
+</decisions>
+<problems nite:id="Bmr024.problems.1">
+<sentence nite:id="Bmr024.s.16">Disk space is an issue for the group, especially in terms of back-up, which is 75% full: DVDs or CDs are unreliable and cannot be used, and although tape is reliable, this creates access issues.</sentence>
+<sentence nite:id="Bmr024.s.17">Experimentation with the SRI recognition have shown greater error when using tandem features, with vocal tract normalisation also making results worse.</sentence> <sentence nite:id="Bmr024.s.18">In particular more error is found with the female group which is 1-2% worse than the males.</sentence>
+</problems>
+<progress nite:id="Bmr024.progress.1">
+<sentence nite:id="Bmr024.s.19">Digit and beeps have been re-recorded by Chuck to aid IBM transcription, and enable alignment.</sentence> <sentence nite:id="Bmr024.s.20">The group discuss the extent to which digits can be automatically transcribed, including their experimentation with forced alignment and speech recognition.</sentence>
+<sentence nite:id="Bmr024.s.21">Transcription is progressing well: two transcribers hired and and two more will be hired soon.</sentence> <sentence nite:id="Bmr024.s.22">Five "set 2" meetings are being edited by the head transcriber, and "set 3" are being prepared, with the aim of having 20 available for the DARPA demo.</sentence> <sentence nite:id="Bmr024.s.23">Pre-segmentation is very useful, with visual information desirable for transcription of backchannel behaviour.</sentence>
+<sentence nite:id="Bmr024.s.24">Now Thilo's segmenter is working, the group discuss re-evaluation of recognition without cheating on the segmentation, possibly using time-constrained alignment.</sentence> <sentence nite:id="Bmr024.s.25">Also, they discuss the use of recogniser alignment to train the speech detector.</sentence>
+<sentence nite:id="Bmr024.s.26">The group discuss possible ways to improve the SRI recognition error rate, suggestions include use of low-pass filter, or retraining models.</sentence> <sentence nite:id="Bmr024.s.27">Differences in smoothing are proposed to be mainly responsible for the difference between the male and female results.</sentence>
+<sentence nite:id="Bmr024.s.28">File reorganisation was discussed briefly as Chuck was not present, however progress has been made in sharing file naming conventions with UW.</sentence> <sentence nite:id="Bmr024.s.29">Also, the Absinthe machine is now working well, and has speeded up in proportion to its extra processors.</sentence>
+
+</progress>
+</nite:root>

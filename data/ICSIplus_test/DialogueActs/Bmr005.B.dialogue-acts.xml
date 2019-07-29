@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nite:root nite:id="Bmr005.B.dialogue-acts" xmlns:nite="http://nite.sourceforge.net/">
+   <dialogueact nite:id="Bmr005.B.dialogueact6" starttime="18.393" endtime="24.713" comment="FBH" type="z" adjacency="1a" original-type="z" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.68)..id(Bmr005.w.94)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact8" starttime="24.713" endtime="25.823" comment="FBH ERRORCODE1 CSV: &quot;it's like you have the ==&quot;" type="z" original-type="z" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.101)..id(Bmr005.disfmarker.2)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact10" starttime="26.053" endtime="26.883" type="z" original-type="z" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.109)..id(Bmr005.disfmarker.3)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact11" starttime="27.203" endtime="29.503" type="z" adjacency="2a" original-type="z" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.115)..id(Bmr005.w.128)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact13" starttime="31.381" endtime="31.581" type="z" adjacency="3b-1" original-type="z" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.141)..id(Bmr005.w.142)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact71" starttime="530.35" endtime="530.64" type="s^bk" adjacency="9b" original-type="s^bk" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,484)..id(Bmr005.w.1,485)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact72" starttime="531.35" endtime="532.28" type="qy^rt^t" adjacency="10a" original-type="qy^rt^t" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,486)..id(Bmr005.w.1,492)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact74" starttime="532.28" endtime="532.49" type="s^bk" adjacency="11b" original-type="s^bk" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,493)..id(Bmr005.w.1,494)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact75" starttime="532.98" endtime="542.069" comment="FBH" type="fh|s" original-type="fh|s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,503)..id(Bmr005.w.1,533)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact76" starttime="542.069" endtime="552.751" comment="FBH" type="fh|s^e" original-type="fh|s^e" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,534)..id(Bmr005.w.1,555)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact77" starttime="552.751" endtime="555.531" type="s.%--" original-type="s.%--" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,556)..id(Bmr005.w.1,567)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact78" starttime="555.531" endtime="558.311" comment="FBH" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,568)..id(Bmr005.w.1,583)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact79" starttime="558.371" endtime="565.381" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,584)..id(Bmr005.w.1,611)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact80" starttime="565.381" endtime="566.311" type="s^bd" original-type="s^bd" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,612)..id(Bmr005.w.1,619)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact81" starttime="566.311" endtime="567.181" type="s^e" original-type="s^e" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,620)..id(Bmr005.w.1,625)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact82" starttime="567.181" endtime="570.561" comment="FBH" type="s^rt:s" original-type="s^rt:s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,626)..id(Bmr005.w.1,642)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact83" starttime="570.907" endtime="578.437" comment="FBH" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,643)..id(Bmr005.w.1,665)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact84" starttime="578.437" endtime="582.435" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,666)..id(Bmr005.w.1,681)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact85" starttime="582.435" endtime="583.605" type="s^e" original-type="s^e" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,682)..id(Bmr005.w.1,688)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact86" starttime="583.665" endtime="590.225" type="fh|s" original-type="fh|s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,689)..id(Bmr005.w.1,715)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact87" starttime="590.425" endtime="603.915" type="fh|s" original-type="fh|s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,716)..id(Bmr005.w.1,758)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact88" starttime="604.523" endtime="610.358" comment="Quoted stuff from here to 650" type="fh|s:qy" original-type="fh|s:qy" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,759)..id(Bmr005.w.1,778)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact89" starttime="611.038" endtime="618.068" type="fh|s:s" original-type="fh|s:s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,779)..id(Bmr005.w.1,805)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact90" starttime="618.068" endtime="620.808" type="qh" original-type="qh" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,806)..id(Bmr005.w.1,818)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact91" starttime="620.808" endtime="624.828" type="fh|s:s" adjacency="1a" original-type="fh|s:s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,819)..id(Bmr005.w.1,844)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact92" starttime="625.218" endtime="634.578" type="fh|s^co^rt" original-type="fh|s^co^rt" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,845)..id(Bmr005.w.1,884)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact94" starttime="635.245" endtime="639.835" comment="FBH" type="s^e" original-type="s^e" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,885)..id(Bmr005.w.1,895)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact95" starttime="640.005" endtime="643.875" comment="FBH ERRORCODE1 CSV: &quot;and he continued it's like we're so ahead of the game because now we have built in down sampling .&quot;" type="s:s" original-type="s:s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,896)..id(Bmr005.w.1,918)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact96" starttime="644.595" endtime="650.685" comment="FBH" type="s^co:s" original-type="s^co:s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,919)..id(Bmr005.w.1,945)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact97" starttime="650.685" endtime="655.885" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,946)..id(Bmr005.w.1,957)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact98" starttime="656.225" endtime="659.095" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,958)..id(Bmr005.w.1,971)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact99" starttime="660.539" endtime="661.989" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.1,972)..id(Bmr005.w.1,982)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact114" starttime="723.885" endtime="724.555" type="s^am" adjacency="4b" original-type="s^am" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,220)..id(Bmr005.w.2,223)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact115" starttime="724.805" endtime="729.345" comment="FBH" type="s^df" adjacency="4b+" original-type="s^df" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,224)..id(Bmr005.w.2,249)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact117" starttime="729.615" endtime="731.155" type="s^e" original-type="s^e" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,250)..id(Bmr005.w.2,255)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact119" starttime="731.155" endtime="732.875" comment="FBH" type="s.%-" original-type="s.%-" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,256)..id(Bmr005.disfmarker.65)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact121" starttime="733.578" endtime="736.432" type="fh|s" original-type="fh|s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,274)..id(Bmr005.w.2,285)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact125" starttime="744.888" endtime="745.568" type="s.%-" original-type="s.%-" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,342)..id(Bmr005.disfmarker.71)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact126" starttime="747.491" endtime="752.001" comment="FBH" type="s" adjacency="5b" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,346)..id(Bmr005.w.2,359)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact129" starttime="752.001" endtime="754.691" type="s" adjacency="5b+.6a" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,360)..id(Bmr005.w.2,371)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact131" starttime="755.051" endtime="756.921" comment="FBH" type="s^e" original-type="s^e" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,374)..id(Bmr005.w.2,382)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact133" starttime="756.921" endtime="759.161" comment="FBH" type="s^e" original-type="s^e" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,383)..id(Bmr005.disfmarker.73)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact142" starttime="785.291" endtime="786.741" type="s^bk|s^nd" adjacency="7b-2" original-type="s^bk|s^nd" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,493)..id(Bmr005.w.2,503)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact143" starttime="786.741" endtime="791.511" comment="FBH" type="s^df" adjacency="7b-2+" original-type="s^df" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,504)..id(Bmr005.w.2,528)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact145" starttime="791.641" endtime="791.911" type="fh" original-type="fh" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,529)..id(Bmr005.w.2,530)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact148" starttime="796.36" endtime="796.64" comment="FBH" type="s^fe" adjacency="8b.9a" original-type="s^fe" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,562)..id(Bmr005.w.2,563)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact149" starttime="796.93" endtime="797.7" comment="FBH" type="s^bu" adjacency="8b+.9a+" original-type="s^bu" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,564)..id(Bmr005.w.2,566)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact153" starttime="804.051" endtime="804.241" comment="FBH" type="%" original-type="%" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,593)..id(Bmr005.disfmarker.85)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact154" starttime="808.454" endtime="808.684" type="b" original-type="b" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,621)..id(Bmr005.w.2,622)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact156" starttime="813.38" endtime="817.1" type="s" adjacency="10b" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,640)..id(Bmr005.w.2,660)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact158" starttime="817.1" endtime="820.33" comment="FBH" type="s.%--" original-type="s.%--" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,661)..id(Bmr005.disfmarker.90)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact159" starttime="820.51" endtime="823.82" type="s:s" original-type="s:s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,672)..id(Bmr005.w.2,695)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact161" starttime="824.861" endtime="828.271" comment="FBH" type="s.%-" adjacency="11a" original-type="s.%-" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,704)..id(Bmr005.disfmarker.91)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact163" starttime="828.627" endtime="828.867" type="s^aa" adjacency="12b" original-type="s^aa" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,726)..id(Bmr005.w.2,729)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact164" starttime="828.987" endtime="830.357" type="s^arp" adjacency="12b+" original-type="s^arp" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,730)..id(Bmr005.w.2,737)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact165" starttime="830.357" endtime="832.037" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.2,738)..id(Bmr005.w.2,747)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact199" starttime="886.246" endtime="886.706" type="qy.%-" original-type="qy.%-" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,039)..id(Bmr005.w.3,040)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact207" starttime="905.374" endtime="906.204" type="s^arp.%-" adjacency="21b-2" original-type="s^arp.%-" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,130)..id(Bmr005.disfmarker.107)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact210" starttime="906.922" endtime="907.842" type="s.%-" original-type="s.%-" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,137)..id(Bmr005.disfmarker.108)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact212" starttime="907.842" endtime="909.422" type="qy^bu^rt" adjacency="22a" original-type="qy^bu^rt" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,141)..id(Bmr005.w.3,148)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact218" starttime="918.885" endtime="919.095" type="s^bk" adjacency="24b" original-type="s^bk" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,211)..id(Bmr005.w.3,213)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact224" starttime="935.845" endtime="936.355" type="s^na" adjacency="26b" original-type="s^na" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,296)..id(Bmr005.w.3,299)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact226" starttime="939.231" endtime="939.781" type="s^r" adjacency="26b+" original-type="s^r" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,323)..id(Bmr005.w.3,326)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact240" starttime="948.505" endtime="948.735" type="s.%-" original-type="s.%-" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,398)..id(Bmr005.disfmarker.121)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact242" starttime="952.138" endtime="954.378" type="s^nd" adjacency="29b" original-type="s^nd" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,418)..id(Bmr005.w.3,429)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact246" starttime="954.378" endtime="958.508" type="s^t" original-type="s^t" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,430)..id(Bmr005.w.3,454)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact247" starttime="958.508" endtime="960.208" comment="FBH" type="s^bd" original-type="s^bd" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,455)..id(Bmr005.w.3,467)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact248" starttime="960.208" endtime="960.998" type="s.%--" original-type="s.%--" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,468)..id(Bmr005.disfmarker.128)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact249" starttime="961.218" endtime="968.358" type="s:s" original-type="s:s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,472)..id(Bmr005.w.3,498)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact250" starttime="969.778" endtime="971.408" type="fh|s^e:s" original-type="fh|s^e:s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,499)..id(Bmr005.w.3,509)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact251" starttime="971.408" endtime="973.408" type="s:s" original-type="s:s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,510)..id(Bmr005.w.3,517)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact252" starttime="973.408" endtime="980.728" comment="FBH" type="s:s" original-type="s:s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,518)..id(Bmr005.w.3,551)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact253" starttime="980.828" endtime="983.588" type="s^cc:s" original-type="s^cc:s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,552)..id(Bmr005.w.3,573)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact254" starttime="983.588" endtime="990.988" comment="FBH" type="s:s" original-type="s:s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,574)..id(Bmr005.w.3,620)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact256" starttime="991.438" endtime="1001.36" type="s^df" adjacency="30a" original-type="s^df" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,624)..id(Bmr005.w.3,670)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact257" starttime="1001.36" endtime="1006.25" type="s^bs^cs" adjacency="30a+" original-type="s^bs^cs" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,671)..id(Bmr005.w.3,692)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact258" starttime="1006.25" endtime="1011.11" comment="FBH ERRORCODE1 CSV: &quot;because if there's a slanderous aspect to it then how much do we want to be able to have to remove .&quot;" type="s^df" adjacency="30a++" original-type="s^df" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,693)..id(Bmr005.w.3,715)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact273" starttime="1048.03" endtime="1052.15" comment="FBH" type="fg|s.x" adjacency="31a" original-type="fg|sj.x" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,887)..id(Bmr005.w.3,902)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact274" starttime="1052.43" endtime="1052.73" type="qy^d^g" adjacency="31a+" original-type="qy^d^g" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.3,903)..id(Bmr005.w.3,905)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact283" starttime="1077.26" endtime="1077.84" type="s^bk" adjacency="34b" original-type="s^bk" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.4,021)..id(Bmr005.w.4,023)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact284" starttime="1077.84" endtime="1081.73" comment="FBH" type="s^ba^df" adjacency="34b+.35a" original-type="s^ba^df" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.4,024)..id(Bmr005.w.4,040)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact286" starttime="1081.81" endtime="1083.14" type="fh|s^co^tc" original-type="fh|s^co^tc" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.4,041)..id(Bmr005.w.4,050)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact289" starttime="1085.89" endtime="1086.27" type="b" original-type="b" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.4,090)..id(Bmr005.w.4,093)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact297" starttime="1101.24" endtime="1102.54" comment="FBH ERRORCODE1 CSV: &quot;yeah it depends on which one you mean .&quot;" type="s" adjacency="39b-2" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.4,173)..id(Bmr005.w.4,181)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact318" starttime="1124.59" endtime="1124.85" type="b" original-type="b" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.4,290)..id(Bmr005.w.4,291)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact374" starttime="1303.93" endtime="1304.41" type="qy^rt.%--" original-type="qy^rt.%--" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.4,861)..id(Bmr005.w.4,863)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact375" starttime="1304.41" endtime="1308.37" type="qw^rt" adjacency="11a" original-type="qw^rt" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.4,864)..id(Bmr005.w.4,880)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact386" starttime="1338.19" endtime="1338.52" type="%-" original-type="%-" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.5,000)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact421" starttime="1447.25" endtime="1448.33" type="s^bu" adjacency="18a++" original-type="s^bu" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.5,383)..id(Bmr005.w.5,389)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact423" starttime="1448.94" endtime="1449.23" type="s^bk" adjacency="19b-1" original-type="s^bk" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.5,394)..id(Bmr005.w.5,395)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact446" starttime="1481.54" endtime="1482.81" comment="FBH" type="s.%-" original-type="s.%-" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.5,567)..id(Bmr005.w.5,571)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact448" starttime="1484.01" endtime="1486.43" type="s.%-" adjacency="23a" original-type="s.%-" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.5,593)..id(Bmr005.disfmarker.266)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact454" starttime="1489.09" endtime="1493.16" comment="FBH" type="fh|s^nd^r" adjacency="25b" original-type="fh|s^nd^r" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.5,614)..id(Bmr005.w.5,632)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact458" starttime="1497.25" endtime="1497.87" type="s^m" adjacency="26b-1.27a" original-type="s^m" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.5,653)..id(Bmr005.w.5,654)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact614" starttime="1969.82" endtime="1971.17" type="s^fe" original-type="s^fe" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.7,354)..id(Bmr005.w.7,355)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact628" starttime="1995.4" endtime="1996.83" type="s^bk" adjacency="17b-2" original-type="s^bk" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.7,461)..id(Bmr005.w.7,465)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact656" starttime="2064.55" endtime="2064.76" type="fg" original-type="fg" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.7,746)..id(Bmr005.disfmarker.460)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact658" starttime="2066.64" endtime="2068.25" comment="FBH" type="s^aap" adjacency="22b.23a" original-type="s^aap" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.7,751)..id(Bmr005.w.7,763)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact659" starttime="2068.32" endtime="2072.57" comment="FBH" type="s" adjacency="24a" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.7,764)..id(Bmr005.w.7,783)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact665" starttime="2072.98" endtime="2077.5" comment="FBH" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.7,784)..id(Bmr005.w.7,806)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact666" starttime="2077.5" endtime="2085.29" comment="FBH" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.7,807)..id(Bmr005.w.7,856)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact668" starttime="2085.29" endtime="2087.47" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.7,857)..id(Bmr005.w.7,873)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact670" starttime="2087.67" endtime="2090.84" comment="FBH" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.7,874)..id(Bmr005.w.7,891)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact673" starttime="2090.84" endtime="2091.01" type="%-" original-type="%-" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.7,892)..id(Bmr005.disfmarker.466)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact677" starttime="2096.81" endtime="2097.04" type="b" original-type="b" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.7,951)..id(Bmr005.w.7,952)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact680" starttime="2099.38" endtime="2099.66" type="b" original-type="b" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.7,979)..id(Bmr005.w.7,980)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact796" starttime="2346.01" endtime="2346.28" type="b" original-type="b" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.9,086)..id(Bmr005.w.9,087)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact832" starttime="2413.74" endtime="2414.17" comment="FBH" type="b" original-type="b" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.9,462)..id(Bmr005.w.9,465)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact835" starttime="2416.67" endtime="2418.55" type="s^t.%-" original-type="s^t.%-" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.9,478)..id(Bmr005.disfmarker.547)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact842" starttime="2424.36" endtime="2431.64" comment="questioning but no ^rt at end FBH ERRORCODE1 CSV: &quot;was that um - there m- - there was this already a script i believe uh - that dan had written - that uh - handles bleedthrough .&quot;" type="s^bu" adjacency="2a" original-type="sj^bu" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.9,516)..id(Bmr005.w.9,539)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact843" starttime="2431.64" endtime="2437.08" type="fh|s^df" original-type="fh|s^df" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.9,540)..id(Bmr005.w.9,557)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact849" starttime="2449.3" endtime="2450.78" type="s.%-" original-type="s.%-" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.9,620)..id(Bmr005.disfmarker.555)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact850" starttime="2452.95" endtime="2455.42" type="s" adjacency="3a" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.9,627)..id(Bmr005.w.9,640)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact853" starttime="2456.26" endtime="2457.0" type="s^t" original-type="s^t" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.9,691)..id(Bmr005.w.9,697)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact874" starttime="2517.88" endtime="2518.77" type="qy^rt" adjacency="7a" original-type="qy^rt" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.9,960)..id(Bmr005.w.9,963)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact880" starttime="2527.75" endtime="2529.66" comment="FBH" type="qy" adjacency="9a" original-type="qy" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.10,002)..id(Bmr005.w.10,017)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact881" starttime="2529.66" endtime="2530.04" type="qrr.%--" adjacency="9a+" original-type="qrr.%--" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.10,018)..id(Bmr005.w.10,021)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact882" starttime="2530.31" endtime="2530.46" type="s^bk^m" adjacency="10b" original-type="s^bk^m" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.10,022)..id(Bmr005.w.10,023)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact884" starttime="2530.83" endtime="2530.99" type="s^bk" adjacency="10b+" original-type="s^bk" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.10,024)..id(Bmr005.w.10,025)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact887" starttime="2533.33" endtime="2533.49" comment="FBH" type="b" original-type="b" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.10,062)..id(Bmr005.w.10,063)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact888" starttime="2533.77" endtime="2538.29" comment="FBH ERRORCODE1 CSV: &quot;i just thought if it was tried and true then he's gone through ad- - additional levels of - of development .&quot;" type="s" original-type="sj" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.10,064)..id(Bmr005.w.10,085)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact904" starttime="2573.48" endtime="2575.65" type="qy^rt" adjacency="13a" original-type="qy^rt" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.10,218)..id(Bmr005.w.10,226)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact905" starttime="2575.65" endtime="2585.8" comment="FBH" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.10,227)..id(Bmr005.w.10,275)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact907" starttime="2585.91" endtime="2590.38" type="qr.%-" adjacency="14a" original-type="qr.%-" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.10,276)..id(Bmr005.w.10,291)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact909" starttime="2591.46" endtime="2591.88" type="s^m.%--" adjacency="15b" original-type="s^m.%--" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.10,295)..id(Bmr005.disfmarker.589)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact910" starttime="2592.14" endtime="2593.95" type="qw" adjacency="16a" original-type="qw" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.10,297)..id(Bmr005.w.10,304)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact916" starttime="2605.24" endtime="2605.64" type="s^2" adjacency="17b.18a" original-type="s^2" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.10,347)..id(Bmr005.w.10,349)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact917" starttime="2605.77" endtime="2606.01" type="s^bk" adjacency="18b" original-type="s^bk" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.10,350)..id(Bmr005.w.10,351)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact926" starttime="2624.36" endtime="2625.34" type="s^no" adjacency="19b" original-type="s^no" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.10,459)..id(Bmr005.w.10,463)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact931" starttime="2634.3" endtime="2635.86" comment="FBH" type="s" adjacency="19_b.19__a" original-type="sj" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.10,468)..id(Bmr005.w.10,475)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact932" starttime="2635.86" endtime="2636.74" type="s^cs" original-type="s^cs" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.10,476)..id(Bmr005.w.10,483)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact935" starttime="2636.74" endtime="2638.67" comment="FBH" type="s^no" original-type="s^no" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.10,484)..id(Bmr005.w.10,495)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1120" starttime="3172.54" endtime="3174.8" type="qy^rt" adjacency="5a" original-type="qy^rt" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.12,747)..id(Bmr005.w.12,755)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1121" starttime="3174.8" endtime="3176.06" type="qrr" adjacency="5a+" original-type="qrr" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.12,756)..id(Bmr005.w.12,764)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1151" starttime="3329.52" endtime="3333.55" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.13,303)..id(Bmr005.w.13,319)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1152" starttime="3333.98" endtime="3334.34" type="fh" original-type="fh" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.13,320)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1153" starttime="3334.97" endtime="3340.98" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.13,321)..id(Bmr005.w.13,340)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1154" starttime="3340.98" endtime="3344.2" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.13,341)..id(Bmr005.w.13,357)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1155" starttime="3344.77" endtime="3346.79" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.13,358)..id(Bmr005.w.13,370)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1156" starttime="3346.79" endtime="3351.3" comment="FBH" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.13,371)..id(Bmr005.w.13,394)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1157" starttime="3351.3" endtime="3353.79" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.13,395)..id(Bmr005.w.13,406)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1158" starttime="3353.79" endtime="3358.79" type="fh|s" adjacency="6a" original-type="fh|s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.13,407)..id(Bmr005.w.13,428)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1203" starttime="3483.64" endtime="3486.0" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.13,917)..id(Bmr005.w.13,927)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1204" starttime="3486.1" endtime="3488.09" type="s^t" adjacency="10a" original-type="s^t" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.13,928)..id(Bmr005.w.13,938)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1228" starttime="3585.33" endtime="3585.93" comment="FBH" type="s^ba^fe" adjacency="12_b" original-type="s^ba^fe" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.14,367)..id(Bmr005.w.14,368)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1285" starttime="3760.6" endtime="3765.44" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.15,174)..id(Bmr005.w.15,195)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1288" starttime="3765.44" endtime="3771.8" type="s^e" original-type="s^e" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.15,196)..id(Bmr005.w.15,221)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1291" starttime="3771.8" endtime="3773.81" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.15,222)..id(Bmr005.disfmarker.850)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1292" starttime="3773.93" endtime="3782.79" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.15,232)..id(Bmr005.w.15,265)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1293" starttime="3783.19" endtime="3786.09" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.15,266)..id(Bmr005.w.15,278)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1294" starttime="3786.54" endtime="3790.95" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.15,279)..id(Bmr005.w.15,297)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1295" starttime="3790.95" endtime="3793.09" type="s" adjacency="2a" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.15,298)..id(Bmr005.w.15,309)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1296" starttime="3793.09" endtime="3793.35" type="qy^d^g^rt" adjacency="2a+" original-type="qy^d^g^rt" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.15,310)..id(Bmr005.w.15,311)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1304" starttime="3805.69" endtime="3806.26" type="s" original-type="sj" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.15,368)..id(Bmr005.w.15,372)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1306" starttime="3806.26" endtime="3807.26" type="s" original-type="sj" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.15,373)..id(Bmr005.w.15,378)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1315" starttime="3849.04" endtime="3850.56" type="s^cs" original-type="s^cs" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.15,558)..id(Bmr005.w.15,566)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1317" starttime="3850.56" endtime="3851.81" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.15,567)..id(Bmr005.w.15,574)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1318" starttime="3851.87" endtime="3854.63" comment="FBH ERRORCODE1 CSV: &quot;you and - you could - you could hold some additional meetings if you wanted .&quot;" type="s^cs" original-type="s^cs" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.15,575)..id(Bmr005.w.15,589)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1332" starttime="3887.54" endtime="3887.76" comment="FBH" type="s^na" adjacency="5_b" original-type="s^na" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.15,751)..id(Bmr005.w.15,753)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1334" starttime="3887.76" endtime="3888.47" comment="FBH" type="s" adjacency="5_b+" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.15,754)..id(Bmr005.w.15,757)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1335" starttime="3888.47" endtime="3890.12" comment="FBH ERRORCODE1 CSV: &quot;we had - this came up when she- - she - she was here .&quot;" type="s" adjacency="5_b++" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.15,758)..id(Bmr005.w.15,768)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1336" starttime="3890.12" endtime="3890.71" type="s^ba" original-type="sj^ba" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.15,769)..id(Bmr005.w.15,772)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1419" starttime="4099.65" endtime="4103.36" type="s^ng" adjacency="14b.15a" original-type="s^ng" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.16,796)..id(Bmr005.w.16,819)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1422" starttime="4103.42" endtime="4110.56" comment="FBH" type="s^df" original-type="s^df" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.16,820)..id(Bmr005.w.16,855)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1423" starttime="4110.56" endtime="4120.52" comment="FBH ERRORCODE1 CSV: &quot;but um - it does seem to me that we might be able to get subjects from campus to come down and - and do something that wouldn't be too artificial .&quot;" type="s^cs" original-type="s^cs" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.16,856)..id(Bmr005.w.16,884)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1424" starttime="4120.52" endtime="4124.65" comment="FBH" type="s^e" adjacency="15_a" original-type="s^e" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.16,885)..id(Bmr005.w.16,898)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1426" starttime="4124.65" endtime="4124.86" comment="FBH" type="fh" original-type="fh" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.16,899)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1427" starttime="4125.53" endtime="4126.75" comment="FBH" type="s.%--" original-type="s.%--" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.16,904)..id(Bmr005.disfmarker.923)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1428" starttime="4127.13" endtime="4129.21" comment="FBH" type="s.%--" original-type="s.%--" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.16,911)..id(Bmr005.w.16,923)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1429" starttime="4129.21" endtime="4133.71" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.16,924)..id(Bmr005.w.16,937)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1430" starttime="4133.71" endtime="4137.14" comment="FBH" type="s" original-type="s" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.16,938)..id(Bmr005.w.16,959)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1431" starttime="4137.45" endtime="4144.24" comment="FBH" type="s^cs" original-type="s^cs" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.16,960)..id(Bmr005.w.16,987)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1433" starttime="4149.44" endtime="4150.26" type="s^cs" original-type="s^cs" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.17,008)..id(Bmr005.w.17,012)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1440" starttime="4161.33" endtime="4161.66" type="b" original-type="b" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.17,075)..id(Bmr005.w.17,076)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1486" starttime="4256.44" endtime="4256.61" comment="FBH" type="s^fe" adjacency="21b-2" original-type="s^fe" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.17,580)..id(Bmr005.w.17,581)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1487" starttime="4257.52" endtime="4258.03" type="s^ba" original-type="s^ba" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.17,582)..id(Bmr005.w.17,587)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bmr005.B.dialogueact1490" starttime="4260.15" endtime="4260.74" type="s^ba^r" original-type="s^ba^r" channel="c1" participant="fe008">
+      <nite:child href="Bmr005.B.words.xml#id(Bmr005.w.17,597)..id(Bmr005.w.17,602)"/>
+   </dialogueact>
+</nite:root>

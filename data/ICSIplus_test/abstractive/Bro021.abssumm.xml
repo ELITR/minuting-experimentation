@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nite:root xmlns:nite="http://nite.sourceforge.net/">
+<abstract nite:id="Bro021.abstract.1">
+<sentence nite:id="Bro021.s.1">The ICSI Meeting Recorder Group at Berkeley met once more to discuss group members' progress.</sentence>  <sentence nite:id="Bro021.s.2">The majority of the group are working on tasks related to the Aurora Project, including on-line normalization and Wiener filtering.</sentence>  <sentence nite:id="Bro021.s.3">Other progress was also reported.</sentence>  <sentence nite:id="Bro021.s.4">A large part of the meeting was spent discussing calculations and approaches using the white-board in the room.</sentence>
+
+</abstract>
+<decisions nite:id="Bro021.decisions.1">
+<sentence nite:id="Bro021.s.5">At me013's behest, the group need to look closer at the errors made in tests on the aurora project, because the error rate may not be telling the whole picture.</sentence>  <sentence nite:id="Bro021.s.6">Mn052 volunteers to run some experiments into how different numbers of MFCCs affect results.</sentence>
+
+</decisions>
+<problems nite:id="Bro021.problems.1">
+<sentence nite:id="Bro021.s.7">Some previously reported results from me026 were determined to be garbage due to a bug in the code  Speaker mn052 also feels that his strange results are down to a bug.</sentence>
+
+</problems>
+<progress nite:id="Bro021.progress.1">
+<sentence nite:id="Bro021.s.8">This week, speaker mn007 has mostly been focusing on trying different approaches to on-line normalization, but making little impact on results.</sentence>  <sentence nite:id="Bro021.s.9">He has also been playing with thresholding, effectively adding white noise to the data, but again with minimal affect.</sentence>  <sentence nite:id="Bro021.s.10">Also making little improvement is fn002's work with Vectorial Taylor series, as a means of dealing with noise.</sentence>  <sentence nite:id="Bro021.s.11">Mn052 has been adding Wiener filtering to the aurora task, and is thinking about future work on subspace.</sentence>  <sentence nite:id="Bro021.s.12">Speaker me026 has been investigating phase normalization, and the possibility of adding spectral subtraction to an existing system.</sentence>  <sentence nite:id="Bro021.s.13">Speaker me006 is still planning some cheating experiments to investigate features for recognition, alongside preparing for his quals.</sentence>  <sentence nite:id="Bro021.s.14">also, the groups submission to the Eurospeech conference has been accepted.</sentence>
+
+</progress>
+</nite:root>

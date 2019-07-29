@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nite:root xmlns:nite="http://nite.sourceforge.net/">
+<abstract nite:id="Bro011.abstract.1">
+<sentence nite:id="Bro011.s.1">The Berkeley Meeting Recorder Group met to discuss their recent progress.</sentence>  <sentence nite:id="Bro011.s.2">This included a recap of a meeting with one of the members of their research partner OGI.</sentence>  <sentence nite:id="Bro011.s.3">There were progress reports from group members working on echo cancellation, acoustic feature detection, and HTK optimization, along with discussion of many issues arising from this topics.</sentence>
+
+</abstract>
+<decisions nite:id="Bro011.decisions.1">
+<sentence nite:id="Bro011.s.4">The group must try to communicate more with research partners OGI.</sentence>
+
+</decisions>
+<problems nite:id="Bro011.problems.1">
+<sentence nite:id="Bro011.s.5">There have been communication problems between the group and their partners at OGI, with both groups waiting for the other to be the one to make contact.</sentence>  <sentence nite:id="Bro011.s.6">This has made it hard to coordinate efforts.</sentence>  <sentence nite:id="Bro011.s.7">When looking at articulatory features, the data will be continuous, so may need a mapping to binary decisions.</sentence>  <sentence nite:id="Bro011.s.8">This could end up as a huge research project by itself, so must be careful.</sentence> 
+
+</problems>
+<progress nite:id="Bro011.progress.1">
+<sentence nite:id="Bro011.s.9">Mn002 and fe002 are continuing with try to reduce delays and improve the system of the groups main digit recogniser project.</sentence>  <sentence nite:id="Bro011.s.10">This includes look at filers, and trying to remove noise.</sentence>  <sentence nite:id="Bro011.s.11">In the coming weeks they have much to try.</sentence>  <sentence nite:id="Bro011.s.12">Speaker Me018 has also been looking to improve results on the Aurora digit task.</sentence>  <sentence nite:id="Bro011.s.13">More specifically he is looking at the number of states in the HMMs representing the digits, and is interested in shortening some of them, making them more word specific and hence more accurate.</sentence>  <sentence nite:id="Bro011.s.14">Speaker Me026 reports his minimal progress on echo cancellation work, in that he is awaiting code along with a better understanding of the original process he is studying.</sentence>  <sentence nite:id="Bro011.s.15">Me006 is looking to combine previous sonorant detection work with other articulatory feature work.</sentence>
+
+</progress>
+</nite:root>

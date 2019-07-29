@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nite:root xmlns:nite="http://nite.sourceforge.net/">
+<abstract nite:id="Bro013.abstract.1">
+<sentence nite:id="Bro013.s.1">The Main purpose of the meeting of ICSI's Meeting Recorder Group at Berkeley was to discuss the recent progress of it's members.</sentence>  <sentence nite:id="Bro013.s.2">This includes reports on the progress of the groups main digit recogniser project, with interest on voice-activity detectors and voiced/unvoiced detection, work on acoustic feature detection, and research into dealing with reverberation.</sentence>  <sentence nite:id="Bro013.s.3">There was also talk of comparing different recognition systems and training datasets, and a discussion of the pronunciation of the digit zero for the recording at the end of the meeting.</sentence>
+
+</abstract>
+<decisions nite:id="Bro013.decisions.1">
+<sentence nite:id="Bro013.s.4">In his next status report, me026 will summarise the work he has been researching.</sentence>  
+
+</decisions>
+<problems nite:id="Bro013.problems.1">
+<sentence nite:id="Bro013.s.5">The digit recognition system is still not working well enough, they must get better results if they want to publish and be noticed.</sentence>  <sentence nite:id="Bro013.s.6">They have not really made many improvements, which may be due to their comparatively small training set, or the conditions the data is recorded under.</sentence>  <sentence nite:id="Bro013.s.7">The new VAD is quite a large network, and adds a delay to the process.</sentence>  <sentence nite:id="Bro013.s.8">This caused OGI to drop it, though speaker mn007 is assuming that a smaller and equally effective system can be developed.</sentence>  <sentence nite:id="Bro013.s.9">The alternative is to get yet another VAD form somewhere else, though it's not clear if they will even be required in the final system.</sentence>  <sentence nite:id="Bro013.s.10">There are some problems with the voiced/unvoiced feature detection, because some pitches are slipping through the filtering.</sentence>
+
+</problems>
+<progress nite:id="Bro013.progress.1">
+<sentence nite:id="Bro013.s.11">The group have been comparing their recognition system to a few others, and theirs has not come off favourably.</sentence>  <sentence nite:id="Bro013.s.12">There could be many reasons for this, including smaller training set, more realistic data, or older technology.</sentence>  <sentence nite:id="Bro013.s.13">Speaker mn007 has put the best voice activity detector into the system, to great improvements along with designing new filters that run at the correct latency.</sentence>  <sentence nite:id="Bro013.s.14">Speaker fn002 has started to find parameters for voiced/unvoiced feature detection, and has found some classic ones, although there are other things she wishes to look at.</sentence>  <sentence nite:id="Bro013.s.15">Me013 offers a few ideas of simple things she may want to try, as he is not confident with everything she is trying.</sentence>  <sentence nite:id="Bro013.s.16">Speaker me006 is continuing with the idea of extending work on acoustic feature detection.</sentence>  <sentence nite:id="Bro013.s.17">He is continuing to read, and has discussed the suitability of factorial HMMs with a colleague.</sentence>  <sentence nite:id="Bro013.s.18">Speaker me026 has been learning more about previous work on reverberation, and is ready to start with a re-implementation of the theory.</sentence>  <sentence nite:id="Bro013.s.19">From there he wants to extend the work to look at time-varying reverb.</sentence>
+
+</progress>
+</nite:root>

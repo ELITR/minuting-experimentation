@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nite:root xmlns:nite="http://nite.sourceforge.net/">
+<abstract nite:id="Bmr025.abstract.1">
+<sentence nite:id="Bmr025.s.1">This meeting of the Berkley Meeting Recorder group charts the progress of their project and covers ongoing issues as well as some new ones.</sentence>
+<sentence nite:id="Bmr025.s.2">The most pressing issue concerns the demos which the group are preparing for the DARPA meeting next month.</sentence> <sentence nite:id="Bmr025.s.3">Here they discuss the querying and indexing tool which is progressing well albeit with a few front-end issues, and also the transcriber tool.</sentence>
+<sentence nite:id="Bmr025.s.4">Transcription is progressing well, with new people hired, and double checking almost complete.</sentence> <sentence nite:id="Bmr025.s.5">Work is also going on in parallel with IBM.</sentence>
+<sentence nite:id="Bmr025.s.6">Additionally, the group have progressed further with data storage issues, with backing-up their data now regarded as a priority, and more disk space required.</sentence>
+<sentence nite:id="Bmr025.s.7">Tools for accessing key file information have been developed which should ensure all meeting information is present.</sentence> <sentence nite:id="Bmr025.s.8">The collection of CrossPad note-taking data will be pursued in future meetings.</sentence>
+<sentence nite:id="Bmr025.s.9">Finally, other progress made includes getting the ChannelTrans interface working, ordering more wireless microphones, and analysing recognition runs.</sentence>
+
+</abstract>
+<decisions nite:id="Bmr025.decisions.1">
+<sentence nite:id="Bmr025.s.10">DARPA demo illustrating prosody of meeting events will be completed by the end of the (next) month, so as to allow a week or so for transferring data across to laptops.</sentence>
+<sentence nite:id="Bmr025.s.11">After consulting others, the group decide that not backing up their meeting data is a bad idea, since this cannot be recovered.</sentence> <sentence nite:id="Bmr025.s.12">Therefore, meeting recorder data will be backed up, and also stored manually using the NW archive.</sentence> <sentence nite:id="Bmr025.s.13">More disk space will be purchased, however for now, data which is easily re-creatable will not be backed up.</sentence> 
+<sentence nite:id="Bmr025.s.14">After evaluating the use of the CrossPads, the group decide to return one, and also keep one which will be left out in meetings to encourage its use.</sentence> <sentence nite:id="Bmr025.s.15">Use of PDAs and buttons for note-taking will be investigated, along with using the data for a student research project.</sentence>
+<sentence nite:id="Bmr025.s.16">Because of time constraints, the group decide to do simultaneous digits.</sentence>
+
+</decisions>
+<problems nite:id="Bmr025.problems.1">
+<sentence nite:id="Bmr025.s.17">Improving the THISL front-end user interface may be difficult if it is to run on Windows as a web server Tcl-TK may need to be used instead.</sentence>
+<sentence nite:id="Bmr025.s.18">More information on XML transcription formats is required for the creation of the tools.</sentence> <sentence nite:id="Bmr025.s.19">Information for key files, such as Microphone type, seating, and participant information, is not being properly recorded, and in some cases the microphones aren't working properly.</sentence> <sentence nite:id="Bmr025.s.20">However this should be rectified by the use of appropriate XML tools.</sentence>
+<sentence nite:id="Bmr025.s.21">The CrossPads have not been used to their full potential, which is because of a number of problems regarding their use:</sentence> <sentence nite:id="Bmr025.s.22">First, they need to be synchronised with the time of the meeting recording, and secondly, they use a non standard data format which needs converting.</sentence> <sentence nite:id="Bmr025.s.23">Additionally, some people tend not to make notes in meetings.</sentence>
+
+</problems>
+<progress nite:id="Bmr025.progress.1">
+<sentence nite:id="Bmr025.s.24">Several transcribers have now been hired, and double-checking is almost finished.</sentence> <sentence nite:id="Bmr025.s.25">Information retrieval will progress using uncorrected transcripts.</sentence> <sentence nite:id="Bmr025.s.26">In parallel to the transcription, the first five EDU meetings are chunked and ready to go to IBM, once the IBM transcript is checked and satisfactory.</sentence> 
+<sentence nite:id="Bmr025.s.27">For the DARPA demo:</sentence> <sentence nite:id="Bmr025.s.28">Tools have been written to convert everything into the correct file formats, an now the THISTL back-end querying and indexing tool is now working on the command line.</sentence> <sentence nite:id="Bmr025.s.29">Work is also underway to improve the front-end THISTL interface.</sentence><sentence nite:id="Bmr025.s.30">The demo of Transcriber interface was discussed, and may include graphical illustration of prosodic features indicating sentence or turn boundaries.</sentence>
+<sentence nite:id="Bmr025.s.31">Work is continuing to create tools for handling XML data, which extract data from the XML key files.</sentence> <sentence nite:id="Bmr025.s.32">Tools will also be provided to ensure that appropriate meeting information is present, and that microphones and recording is working.</sentence>
+<sentence nite:id="Bmr025.s.33">The ChannelTrans interface is now working on Windows machines.</sentence>
+<sentence nite:id="Bmr025.s.34">More wireless microphones have been ordered, and the room is to be re-wired as suggested by Jane, using the wireless close-talking microphones first, and then the far-field microphones.</sentence>
+<sentence nite:id="Bmr025.s.35">Analysis of the recognition runs to identify features and their characteristics is on-going.</sentence>
+
+</progress>
+</nite:root>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Metadata file for using ICSI data with NXT (http://groups.inf.ed.ac.uk/nxt/) -->
+
+<corpus description="ICSI meeting data" id="ICSI" links="ltxml1">
+    <reserved-attributes>
+        <identifier name="nite:id"/>
+        <starttime name="starttime"/>
+        <endtime name="endtime"/>
+        <agentname name="agent"/>
+    </reserved-attributes>
+    <reserved-elements>
+        <pointername name="nite:pointer"/>
+        <child name="nite:child"/>
+    </reserved-elements>
+    <agents>
+        <!-- there are between 3 and 10 speakers -->
+        <agent name="A"/>
+        <agent name="B"/>
+        <agent name="C"/>
+        <agent name="D"/>
+        <agent name="E"/>
+        <agent name="F"/>
+        <agent name="G"/>
+        <agent name="H"/>
+        <agent name="I"/>
+        <agent name="J"/>
+    </agents>
+    <!-- SIGNALS -->
+    <signals path="Signals">
+        <interaction-signals>
+            <signal extension="wav" format="WAV" name="interaction" type="audio" pathmodifier="observation"/>
+        </interaction-signals>
+    </signals>
+
+    <!-- CORPUS RESPOUCES -->
+    <corpus-resources path=".">
+        <corpus-resource-file name="speakers" description="anonymised details of meeting contributors">
+        <structural-layer name="speaker-layer" recursive-points-to="speaker-layer">
+         <code name="speaker">
+           <attribute name="gender" value-type="enumerated">
+               <value>Male</value>
+               <value>Female</value>
+           </attribute>
+           <attribute name="tag" value-type="string"/>
+           <attribute name="formdate" value-type="string"/>
+           <attribute name="age" value-type="string"/>
+           <attribute name="education" value-type="string"/>
+         </code>
+         <code name="language" text-content="true">
+           <attribute name="name" value-type="string"/>
+           <attribute name="region" value-type="string"/>
+         </code>
+         <code name="education" text-content="true"/>
+         <code name="age" text-content="true"/>
+         <code name="note" text-content="true"/>
+         <code name="variety" text-content="true"/>
+         <code name="region" text-content="true"/>
+         <code name="influences" text-content="true"/>
+         <code name="native" text-content="true"/>
+         <code name="nonnative" text-content="true"/>
+         <code name="time" text-content="true"/>
+         <code name="country" text-content="true"/>
+        </structural-layer>
+
+       </corpus-resource-file>
+    </corpus-resources>
+
+    <!-- CODINGS -->
+    <codings path=".">
+        <agent-codings>
+
+            <!-- dialogue acts from the DADB files. These now point to
+            the same words as the segments do for consistency. -->
+            <coding-file name="dialogue-acts" path="DialogueActs">
+                <time-aligned-layer name="dialogue-acts-layer" points-to="words-layer">
+                    <code name="dialogueact">
+                        <attribute name="participant" value-type="string"/>
+                        <attribute name="type" value-type="string"/>
+                        <attribute name="original-type" value-type="string"/>
+                        <attribute name="channel" value-type="string"/>
+                        <attribute name="comment" value-type="string"/>
+                        <attribute name="adjacency" value-type="string"/>
+                    </code>
+                </time-aligned-layer>
+            </coding-file>
+
+
+            <!-- Speech quality is extracted as a separate coding file
+            that opoints to the words. The source is the MRT files -->
+            <coding-file name="speech-quality" path="SpeechQuality">
+                <structural-layer name="quality-layer" recursive-points-to="words-layer">
+                    <code name="speechquality">
+                        <attribute name="dur" value-type="number"/>
+                        <attribute name="pronunciation" value-type="string"/>
+                        <attribute name="language" value-type="string"/>
+                        <attribute name="description" value-type="string"/>
+                        <attribute name="numsyllables" value-type="number"/>
+                        <attribute name="type" value-type="enumerated">
+                            <value>emphasis</value>
+                            <value>pronounce</value>
+                            <value>unsure</value>
+                            <value>foreign</value>
+                        </attribute>
+                    </code>
+                </structural-layer>
+            </coding-file>
+
+            <!-- The original segmentation from MRT files, but can be
+            recursive to allow for sub-segmentation -->
+            <coding-file name="segs" path="Segments">
+                <time-aligned-layer name="segment-layer" recursive-points-to="words-layer">
+                    <code name="segment">
+                        <attribute name="dur" value-type="number"/>
+                        <attribute name="participant" value-type="string"/>
+                        <attribute name="digittask" value-type="string"/>
+                        <attribute name="closemic" value-type="string"/>
+                        <attribute name="timing-provenance" value-type="string"/>
+                        <attribute name="type" value-type="enumerated">
+                            <value>subsegment</value>
+                            <value>supersegment</value>
+                            <value>segment</value>
+                        </attribute>
+                    </code>
+                </time-aligned-layer>
+            </coding-file>
+
+            <!-- The main words layer from the MRT files, but getting
+            their times from the dialogue act words -->
+            <coding-file name="words" path="Words">
+                <time-aligned-layer name="words-layer">
+                    <code name="w" text-content="true">
+                        <attribute name="c" value-type="string"/>
+                        <!-- TRUNCW - truncated; LET - spoken letter; -->
+                        <attribute name="k" value-type="string"/>
+                        <attribute name="qut" value-type="string"/>
+                        <!-- T attribute added by jonathan to make some further distinctions -->
+                        <attribute name="t" value-type="enumerated">
+                            <value>PROM</value>
+                            <!-- prosodic prominence -->
+                            <value>PLET</value>
+                            <!-- pronounced letters -->
+                        </attribute>
+                    </code>
+                    <code name="vocalsound">
+                        <attribute name="dur" value-type="number"/>
+                        <attribute name="description" value-type="string"/>
+                    </code>
+                    <code name="nonvocalsound">
+                        <attribute name="dur" value-type="number"/>
+                        <attribute name="description" value-type="string"/>
+                    </code>
+                    <code name="comment">
+                        <attribute name="dur" value-type="number"/>
+                        <attribute name="description" value-type="string"/>
+                    </code>
+                    <code name="pause">
+                        <attribute name="dur" value-type="number"/>
+                    </code>
+                    <code name="disfmarker"/>
+                    <!-- disfluency marker -->
+                </time-aligned-layer>
+            </coding-file>
+
+	    <!-- Third-party Annotations -->
+
+            <!-- prosody courtesy of Gabriel Murray, Edinburgh -->
+            <coding-file name="prosody" path="Contributions/AutomaticProsody">
+                <structural-layer name="prosody-layer" points-to="words-layer">
+                    <code name="prosody">
+                        <attribute name="f0_mean" value-type="number"/>
+                        <attribute name="f0_std" value-type="number"/>
+                        <attribute name="energy" value-type="number"/>
+                        <attribute name="duration" value-type="number"/>
+                        <attribute name="tfidf" value-type="number"/>
+                    </code>
+                </structural-layer>
+            </coding-file>
+
+            <!-- Automatic subjectivity annotations, Theresa Wilson, Edinburgh -->
+            <coding-file name="autosubj" path="Contributions/subjectivity/autosubj_ref_v1">
+                <structural-layer name="autosubj-layer" points-to="dialogue-acts-layer">
+                    <code name="autosubj" text-content="false">
+                        <attribute name="subjclass" value-type="enumerated">
+                            <value>objective</value>
+                            <value>subjective</value>
+                        </attribute>
+                        <attribute name="wordclasspred" value-type="enumerated">
+                            <value>0</value>
+                            <value>1</value>
+                        </attribute>
+                        <attribute name="charclasspred" value-type="enumerated">
+                            <value>0</value>
+                            <value>1</value>
+                        </attribute>
+                        <attribute name="phonclasspred" value-type="enumerated">
+                            <value>0</value>
+                            <value>1</value>
+                        </attribute>
+                    </code>
+                </structural-layer>
+            </coding-file>
+
+        </agent-codings>
+
+        <interaction-codings>
+            <!-- topic codings from the NXT topic Segmenter -->
+            <coding-file name="topic" path="Contributions/TopicSegmentation">
+                <structural-layer name="topic-layer" recursive-points-to="segment-layer">
+                    <code name="topic">
+                        <attribute name="type" value-type="string"/>
+                        <attribute name="description" value-type="string"/>
+                    </code>
+                </structural-layer>
+            </coding-file>
+
+            <!-- topic codings from Michel Galley et al. - these are
+            not hierarchical and have a simpler definition. -->
+            <coding-file name="tops">
+                <time-aligned-layer name="galley-topic-layer">
+                    <code name="top">
+                        <attribute name="type" value-type="enumerated">
+                            <value>digits</value>
+                            <value>cut</value>
+                            <value>agenda</value>
+                        </attribute>
+                    </code>
+                </time-aligned-layer>
+            </coding-file>
+
+            <!-- topic codings from TNO -->
+            <coding-file name="tno-topics">
+                <time-aligned-layer name="tno-topic-layer">
+                    <code name="tno-topic">
+                        <attribute name="description" value-type="string"/>
+                        <pointer number="*" role="rating_1" target="segs"/>
+                        <pointer number="*" role="rating_2" target="segs"/>
+                        <pointer number="*" role="rating_3" target="segs"/>
+                    </code>
+                </time-aligned-layer>
+            </coding-file>
+
+            <!-- SUMMARIZATION: first abstractive, then extractive and links -->
+            <coding-file name="abssumm" path="Contributions/Summarization/abstractive">
+               <structural-layer name="abssumm-layer"  points-to="abstract-section-layer">
+                 <code name="abssumm" />
+               </structural-layer>
+               <structural-layer name="abstract-section-layer"  points-to="sentence-layer">
+                 <code name="abstract" />
+                 <code name="decisions" />
+                 <code name="progress" />
+                 <code name="problems" />
+               </structural-layer>
+               <structural-layer name="sentence-layer">
+                 <code name="sentence"  text-content="true"/>
+               </structural-layer>
+            </coding-file>
+
+
+            <coding-file name="extsumm"  path="Contributions/Summarization/extractive">
+               <structural-layer name="extsumm-layer"  inherits-time="false" points-to="dialogue-acts-layer">
+                 <code name="extsumm" />
+               </structural-layer>
+            </coding-file>
+
+            <coding-file name="summlink" path="Contributions/Summarization/extractive">
+               <featural-layer name="summlink-layer">
+                 <code name="summlink">
+                    <pointer number="1" role="extractive" target="dialogue-acts-layer"/>
+                    <pointer number="1" role="abstractive" target="sentence-layer"/>
+                 </code>
+               </featural-layer>
+            </coding-file>
+
+
+            <!-- Bales codings - one per dialogue act. These were added
+            using the NXT Bales coder. -->
+            <coding-file name="bales">
+                <structural-layer name="bales-layer" points-to="dialogue-acts-layer">
+                    <code name="bales">
+                        <attribute name="type" value-type="enumerated">
+                            <value>shows_solidarity</value>
+                            <value>shows_tension_release</value>
+                            <value>agrees</value>
+                            <value>gives_suggestion</value>
+                            <value>gives_opinion</value>
+                            <value>gives_orientation</value>
+                            <value>asks_for_orientation</value>
+                            <value>asks_for_opinion</value>
+                            <value>asks_for_suggestion</value>
+                            <value>disagrees</value>
+                            <value>shows_tension</value>
+                            <value>shows_antagonism</value>
+                            <value>unclassifiable</value>
+                            <value>not_a_contribution</value>
+                        </attribute>
+                    </code>
+                </structural-layer>
+            </coding-file>
+        </interaction-codings>
+
+    </codings>
+
+    <!-- Programs that display or add annotations to this data set -->
+    <!-- Note that these programs generally assume signals to be in
+         the directory Signals rather than Signals/observation_name -->
+    <callable-programs>
+      <callable-program name="ICSIExtract2" description="extractive summary coder: stage 2">
+        <required-argument name="corpus" type="corpus" /> 
+        <required-argument name="observation" type="observation" /> 
+      </callable-program>
+      <callable-program name="ICSITopicSegmenter" description="topic segmenter">
+        <required-argument name="corpus" type="corpus"/>
+        <required-argument name="observation" type="observation"/>
+      </callable-program>
+      <callable-program name="ICSIDisplay" description="simple dialogue-act based display">
+        <required-argument name="corpus" type="corpus"/>
+        <required-argument name="observation" type="observation"/>
+      </callable-program>
+    </callable-programs>
+
+    <observations>
+        <observation name="Bdb001"/>
+        <observation name="Bed002"/>
+        <observation name="Bed003"/>
+        <observation name="Bed004"/>
+        <observation name="Bed005"/>
+        <observation name="Bed006"/>
+        <observation name="Bed008"/>
+        <observation name="Bed009"/>
+        <observation name="Bed010"/>
+        <observation name="Bed011"/>
+        <observation name="Bed012"/>
+        <observation name="Bed013"/>
+        <observation name="Bed014"/>
+        <observation name="Bed015"/>
+        <observation name="Bed016"/>
+        <observation name="Bed017"/>
+        <observation name="Bmr001"/>
+        <observation name="Bmr002"/>
+        <observation name="Bmr003"/>
+        <observation name="Bmr005"/>
+        <observation name="Bmr006"/>
+        <observation name="Bmr007"/>
+        <observation name="Bmr008"/>
+        <observation name="Bmr009"/>
+        <observation name="Bmr010"/>
+        <observation name="Bmr011"/>
+        <observation name="Bmr012"/>
+        <observation name="Bmr013"/>
+        <observation name="Bmr014"/>
+        <observation name="Bmr015"/>
+        <observation name="Bmr016"/>
+        <observation name="Bmr018"/>
+        <observation name="Bmr019"/>
+        <observation name="Bmr020"/>
+        <observation name="Bmr021"/>
+        <observation name="Bmr022"/>
+        <observation name="Bmr023"/>
+        <observation name="Bmr024"/>
+        <observation name="Bmr025"/>
+        <observation name="Bmr026"/>
+        <observation name="Bmr027"/>
+        <observation name="Bmr028"/>
+        <observation name="Bmr029"/>
+        <observation name="Bmr030"/>
+        <observation name="Bmr031"/>
+        <observation name="Bns001"/>
+        <observation name="Bns002"/>
+        <observation name="Bns003"/>
+        <observation name="Bro003"/>
+        <observation name="Bro004"/>
+        <observation name="Bro005"/>
+        <observation name="Bro007"/>
+        <observation name="Bro008"/>
+        <observation name="Bro010"/>
+        <observation name="Bro011"/>
+        <observation name="Bro012"/>
+        <observation name="Bro013"/>
+        <observation name="Bro014"/>
+        <observation name="Bro015"/>
+        <observation name="Bro016"/>
+        <observation name="Bro017"/>
+        <observation name="Bro018"/>
+        <observation name="Bro019"/>
+        <observation name="Bro021"/>
+        <observation name="Bro022"/>
+        <observation name="Bro023"/>
+        <observation name="Bro024"/>
+        <observation name="Bro025"/>
+        <observation name="Bro026"/>
+        <observation name="Bro027"/>
+        <observation name="Bro028"/>
+        <observation name="Bsr001"/>
+        <observation name="Btr001"/>
+        <observation name="Btr002"/>
+        <observation name="Buw001"/>
+    </observations>
+</corpus>

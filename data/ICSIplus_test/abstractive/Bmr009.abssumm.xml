@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nite:root xmlns:nite="http://nite.sourceforge.net/">
+<abstract nite:id="Bmr009.abstract.1">
+<sentence nite:id="Bmr009.s.1">The Berkely Meeting Recorder group discussed efforts by speaker mn005 to measure energy levels in cases of speaker overlap in which the time window analyzed was 200 milliseconds or greater.</sentence> <sentence nite:id="Bmr009.s.2">Preliminary results were presented showing that log domain analyses did not reveal a significant difference in mean energy levels for windows of overlapping versus non-overlapping speech.</sentence> <sentence nite:id="Bmr009.s.3">In contrast, raw energy analyses were successful in showing the two groups to be distinct.</sentence> <sentence nite:id="Bmr009.s.4">Participants discussed alternate strategies for examining energy and the importance of categorizing types of speaker overlap.</sentence> <sentence nite:id="Bmr009.s.5">Participants also reviewed the latest iteration of speaker forms, and discussed recent changes to the Transcriber tool.</sentence>
+
+</abstract>
+<decisions nite:id="Bmr009.decisions.1">
+<sentence nite:id="Bmr009.s.6">Continuing efforts by speaker mn005 to measure energy levels in cases of speaker overlap will not include additional log energy analyses, but rather an analysis of raw energy for normalized speaker dataacross windows of varying duration, followed by an examination of pitch- and harmonicity-related features.</sentence> <sentence nite:id="Bmr009.s.7">Speakers fe008 and fe016 discussed plans to categorize and produce a taxonomy of types of speaker overlap.</sentence>
+
+</decisions>
+<problems nite:id="Bmr009.problems.1">
+<sentence nite:id="Bmr009.s.8">Time marks for transcribed or force-aligned data are needed to analyze types of speaker overlap.</sentence> <sentence nite:id="Bmr009.s.9">With respect to speaker forms, the group discussed problems associated with categorizing regional dialects of American English.</sentence> <sentence nite:id="Bmr009.s.10">The new version of Transcriber does not feature the waveform, as re-drawing of this window is too slow using Snack.</sentence> 
+
+</problems>
+<progress nite:id="Bmr009.progress.1">
+<sentence nite:id="Bmr009.s.11">The latest iteration of speaker forms was presented.</sentence> <sentence nite:id="Bmr009.s.12">New mutitrans patches were added to the Transcriber tool to enable it to run with fewer delays, still allowing users to open multiple panes and listen to different channels of the mixed signal.</sentence> 
+
+</progress>
+</nite:root>

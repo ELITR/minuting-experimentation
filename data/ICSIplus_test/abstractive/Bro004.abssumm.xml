@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nite:root xmlns:nite="http://nite.sourceforge.net/">
+<abstract nite:id="Bro004.abstract.1">
+<sentence nite:id="Bro004.s.1">The meeting was dominated by a discussion of the first results coming
+in.</sentence>  <sentence nite:id="Bro004.s.2">There have been four types of test, in which the training data
+varies, and a variety of input features have been tried.</sentence>  <sentence nite:id="Bro004.s.3">The process
+and results were explained to the group, the implications of the
+results discussed, and plans for moving forward were made.</sentence>
+<sentence nite:id="Bro004.s.4">There was also discussion of some of the work being conducted by
+research partners OGI, including how the two groups should best work
+together.</sentence>  <sentence nite:id="Bro004.s.5">The group also briefly touched upon resource issues.</sentence>
+
+</abstract>
+<decisions nite:id="Bro004.decisions.1">
+<sentence nite:id="Bro004.s.6">Speaker mn007 would like to investigate increasing the context of the
+phonemes.</sentence>  <sentence nite:id="Bro004.s.7">speaker mn013 does agree with mn007s assessment of the
+outcome, and points out the lack of data, but acknowledges that if
+mn007 is interested he will go ahead with it.</sentence>
+<sentence nite:id="Bro004.s.8">Must be careful in choosing which experiments to perform as an
+important visitor is coming soon.</sentence>  <sentence nite:id="Bro004.s.9">Also need to come up with a
+stronger plan for collaboration with OGI.</sentence>  <sentence nite:id="Bro004.s.10">Must decide what from both
+can be brought together, and how then can the work be divided.</sentence>
+<sentence nite:id="Bro004.s.11">Someone (implied with gestures in the meeting) must speak to a person
+outside the group with regards to using a multiprocessor Linux machine
+that is available.</sentence>  <sentence nite:id="Bro004.s.12">Debugging the process while there are just two
+processors bodes well for when they have 8 to multi-thread.</sentence>
+<sentence nite:id="Bro004.s.13">Speaker mn026 volunteers to get some training running under Linux.</sentence>  <sentence nite:id="Bro004.s.14">It
+is agreed that he should start with the neural net training, then work
+on HTK.</sentence>
+
+</decisions>
+<problems nite:id="Bro004.problems.1">
+<sentence nite:id="Bro004.s.15">Incorrect assumptions were made when considering the on-line
+normalization for the main task.  members used different values to a
+previous study, and whilst it was believed not to make a difference,
+it does, so networks are being retrained.</sentence>
+<sentence nite:id="Bro004.s.16">Currently working with noise conditions being the same in training and
+test data, but there is nothing which matches the noise on the Italian
+test data.</sentence>  <sentence nite:id="Bro004.s.17">In fact no other language matches the noise from Aurora
+data.</sentence> 
+<sentence nite:id="Bro004.s.18">Spanish was being used to train for Italian as it was assumed they
+were the most similar, but that may not be as close a match as
+thought.</sentence>  
+<sentence nite:id="Bro004.s.19">OGI have an interesting approach to Voice Activation Detection for
+removing blocks of silence, that shows good results, but currently the
+word model being used is too poor to make good use of this and no one
+is working on improving it.</sentence>
+
+</problems>
+<progress nite:id="Bro004.progress.1">
+<sentence nite:id="Bro004.s.20">Speakers mn007 and fn002 have been running experiments.</sentence>  <sentence nite:id="Bro004.s.21">Looking at
+different features, under different training conditions.</sentence>  <sentence nite:id="Bro004.s.22">Moving from
+training with task data to broad data increases error rate by 10%, and
+moving to multiple languages increases a further 20-30%.</sentence>  <sentence nite:id="Bro004.s.23">PLP with
+JRASTA better than just PLP on mismatched conditions, but slightly
+worse on well matched.</sentence>
+<sentence nite:id="Bro004.s.24">Speaker fn002 is also looking at the HTK training, but does not yet
+have results.</sentence>
+<sentence nite:id="Bro004.s.25">Speaker mn007 is going to start work on creating broad phonetic
+categories based on various features, and combine this with original
+features like PLP.</sentence>  <sentence nite:id="Bro004.s.26">As yet unsure how to combine the data however.</sentence>
+
+</progress>
+</nite:root>

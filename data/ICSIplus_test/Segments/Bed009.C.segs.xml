@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nite:root nite:id="Bed009.C.segs" xmlns:nite="http://nite.sourceforge.net/">
+   <segment nite:id="Bed009.segment.1" starttime="1.99" endtime="4.41" participant="me012" timing-provenance="dialogueact">
+      <nite:child href="Bed009.C.words.xml#id(Bed009.w.1)..id(Bed009.w.6)"/>
+   </segment>
+   <segment nite:id="Bed009.segment.4" starttime="6.74" endtime="6.94" participant="me012" timing-provenance="dialogueact">
+      <nite:child href="Bed009.C.words.xml#id(Bed009.w.11)..id(Bed009.w.12)"/>
+   </segment>
+   <segment nite:id="Bed009.segment.7" starttime="12.056" endtime="12.519" participant="me012" timing-provenance="segment">
+      <nite:child href="Bed009.C.words.xml#id(Bed009.vocalsound.2)"/>
+   </segment>
+   <segment nite:id="Bed009.segment.8" starttime="14.87" endtime="15.362" participant="me012" timing-provenance="segment">
+      <nite:child href="Bed009.C.words.xml#id(Bed009.vocalsound.3)..id(Bed009.comment.3)"/>
+   </segment>
+   <segment nite:id="Bed009.segment.9" starttime="17.139" endtime="19.101" participant="me012" timing-provenance="segment">
+      <nite:child href="Bed009.C.words.xml#id(Bed009.vocalsound.4)..id(Bed009.comment.4)"/>
+   </segment>
+</nite:root>

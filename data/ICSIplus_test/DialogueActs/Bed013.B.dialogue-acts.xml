@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nite:root nite:id="Bed013.B.dialogue-acts" xmlns:nite="http://nite.sourceforge.net/">
+   <dialogueact nite:id="Bed013.B.dialogueact1" starttime="1.23" endtime="1.54" type="s^aa" adjacency="1b" original-type="s^aa" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.4)..id(Bed013.w.5)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact2" starttime="5.569" endtime="6.019" type="%" original-type="%" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.6)..id(Bed013.w.7)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact3" starttime="10.278" endtime="12.658" type="s^rt" original-type="s^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.8)..id(Bed013.w.14)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact4" starttime="14.626" endtime="18.276" type="s:qw" adjacency="2a" original-type="s:qw" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.15)..id(Bed013.w.30)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact7" starttime="25.9" endtime="26.85" type="s" adjacency="3b" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.49)..id(Bed013.w.51)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact11" starttime="39.18" endtime="39.5" type="b" original-type="b" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.69)..id(Bed013.w.70)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact15" starttime="51.06" endtime="52.01" type="qw" adjacency="4a" original-type="qw" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.95)..id(Bed013.w.104)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact16" starttime="52.01" endtime="52.37" type="s" adjacency="4a+" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.105)..id(Bed013.w.107)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact20" starttime="71.89" endtime="72.18" type="b" original-type="b" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.154)..id(Bed013.w.155)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact32" starttime="118.287" endtime="119.287" type="s" adjacency="6b" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.255)..id(Bed013.w.258)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact38" starttime="130.148" endtime="131.618" type="qy^bu^rt" adjacency="9b.10a" original-type="qy^bu^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.307)..id(Bed013.w.315)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact40" starttime="133.08" endtime="134.57" type="s^bk|s^ba^rt" adjacency="11b" original-type="s^bk|s^ba^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.318)..id(Bed013.w.332)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact41" starttime="136.09" endtime="138.13" type="s" adjacency="12a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.333)..id(Bed013.w.345)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact42" starttime="138.13" endtime="138.31" type="fh" original-type="fh" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.346)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact50" starttime="166.41" endtime="167.25" type="qw^bu^d.%-" adjacency="13b.14a" original-type="qw^bu^d.%-" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.418)..id(Bed013.w.419)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact52" starttime="167.31" endtime="167.6" type="s^bk" adjacency="15b" original-type="s^bk" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.420)..id(Bed013.w.421)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact63" starttime="208.53" endtime="209.0" type="b" original-type="b" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.534)..id(Bed013.w.537)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact71" starttime="262.32" endtime="267.38" type="s" adjacency="18b" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.654)..id(Bed013.w.665)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact72" starttime="267.38" endtime="270.55" type="s" adjacency="18b+" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.666)..id(Bed013.w.679)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact73" starttime="271.54" endtime="272.23" type="fh" original-type="fh" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.680)..id(Bed013.w.682)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact74" starttime="273.53" endtime="280.66" type="s" adjacency="19" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.683)..id(Bed013.w.715)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact75" starttime="280.66" endtime="281.85" type="qy^rt" adjacency="19a+" original-type="qy^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.716)..id(Bed013.w.722)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact77" starttime="282.694" endtime="282.924" type="s^bk" adjacency="20b" original-type="s^bk" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.725)..id(Bed013.w.726)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact102" starttime="382.67" endtime="385.2" type="s" adjacency="25b.26a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.995)..id(Bed013.w.1,008)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact105" starttime="396.87" endtime="398.46" type="s^aap" adjacency="27b.28a" original-type="s^aap" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,032)..id(Bed013.w.1,039)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact107" starttime="400.88" endtime="404.69" type="s" adjacency="29b.30a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,045)..id(Bed013.w.1,064)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact126" starttime="475.19" endtime="479.37" type="s^bu^rt" adjacency="34b" original-type="s^bu^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,324)..id(Bed013.w.1,341)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact127" starttime="479.75" endtime="482.59" type="s^df" adjacency="34b+.35a" original-type="s^df" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,342)..id(Bed013.w.1,356)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact132" starttime="490.62" endtime="491.67" type="s" adjacency="36b" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,390)..id(Bed013.w.1,397)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact133" starttime="491.67" endtime="492.17" type="%--" original-type="%--" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,398)..id(Bed013.w.1,400)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact137" starttime="503.296" endtime="504.088" type="%" original-type="%" channel="c1" participant="me003">
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact139" starttime="504.903" endtime="506.363" type="s" adjacency="37b.38a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,443)..id(Bed013.w.1,449)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact140" starttime="506.363" endtime="506.903" type="%--" original-type="%--" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,450)..id(Bed013.w.1,452)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact142" starttime="508.52" endtime="509.75" type="s" adjacency="39a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,455)..id(Bed013.w.1,461)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact143" starttime="509.75" endtime="513.72" type="s" adjacency="40a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,462)..id(Bed013.w.1,486)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact147" starttime="514.52" endtime="518.28" type="s^bu|qy^d^g^rt" adjacency="41a" original-type="s^bu|qy^d^g^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,493)..id(Bed013.w.1,510)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact149" starttime="519.265" endtime="521.775" type="s^e:s" adjacency="42a" original-type="s^e:s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,511)..id(Bed013.w.1,529)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact153" starttime="528.348" endtime="529.588" type="s^ar|s^nd" adjacency="43b.44a" original-type="s^ar|s^nd" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,547)..id(Bed013.w.1,553)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact154" starttime="529.588" endtime="530.278" type="%--" original-type="%--" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,554)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact164" starttime="558.15" endtime="558.63" type="s^aa" adjacency="45b" original-type="s^aa" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,650)..id(Bed013.w.1,651)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact180" starttime="604.49" endtime="609.442" type="s^aap|s^aa" adjacency="1b.2a" original-type="s^aap|s^aa" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,822)..id(Bed013.w.1,837)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact189" starttime="652.83" endtime="653.11" type="%-" adjacency="3b" original-type="%-" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,976)..id(Bed013.disfmarker.56)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact191" starttime="654.32" endtime="659.533" type="s" adjacency="3b+.4a.5a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.1,979)..id(Bed013.w.2,008)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact192" starttime="659.533" endtime="663.43" type="s" adjacency="3b+.5a+" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,009)..id(Bed013.w.2,018)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact199" starttime="674.145" endtime="676.745" type="s^na" adjacency="6b" original-type="s^na" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,068)..id(Bed013.w.2,080)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact202" starttime="676.805" endtime="677.675" type="s" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,081)..id(Bed013.w.2,087)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact203" starttime="677.675" endtime="679.745" type="s:s" original-type="s:s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,088)..id(Bed013.w.2,098)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact204" starttime="679.745" endtime="684.92" type="s.%-" adjacency="7a" original-type="s.%-" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,099)..id(Bed013.disfmarker.64)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact206" starttime="686.13" endtime="687.07" type="s^bk^m" adjacency="8b" original-type="s^bk^m" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,124)..id(Bed013.w.2,127)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact208" starttime="688.39" endtime="692.25" type="s.%--" adjacency="9a" original-type="s.%--" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,128)..id(Bed013.disfmarker.66)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact209" starttime="693.72" endtime="696.1" type="s^rt" adjacency="9a+" original-type="s^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,140)..id(Bed013.w.2,156)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact210" starttime="699.37" endtime="700.76" type="s" adjacency="9a++" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,157)..id(Bed013.w.2,163)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact216" starttime="709.14" endtime="709.91" type="s.%--" original-type="s.%--" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,195)..id(Bed013.w.2,200)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact217" starttime="710.75" endtime="712.13" type="s" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,201)..id(Bed013.w.2,212)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact218" starttime="715.02" endtime="717.9" type="s.%--" original-type="s.%--" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,213)..id(Bed013.w.2,222)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact219" starttime="718.54" endtime="718.9" type="s.%--" original-type="s.%--" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,223)..id(Bed013.disfmarker.68)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact220" starttime="719.06" endtime="721.3" type="s.%--" original-type="s.%--" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,225)..id(Bed013.w.2,231)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact221" starttime="721.3" endtime="725.26" type="s^rt" adjacency="10a" original-type="s^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,232)..id(Bed013.w.2,254)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact222" starttime="728.14" endtime="728.89" type="s.%--" original-type="s.%--" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,265)..id(Bed013.w.2,267)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact226" starttime="736.01" endtime="736.62" type="qy^bu^d^rt" adjacency="11b" original-type="qy^bu^d^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,287)..id(Bed013.w.2,291)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact227" starttime="737.74" endtime="739.1" type="s" adjacency="11b+.12a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,292)..id(Bed013.w.2,301)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact228" starttime="739.1" endtime="744.54" type="s" adjacency="13a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,302)..id(Bed013.w.2,327)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact233" starttime="747.33" endtime="753.334" type="s" adjacency="14a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,340)..id(Bed013.w.2,366)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact236" starttime="753.89" endtime="754.23" type="s^bsc.%--" adjacency="15a" original-type="s^bsc.%--" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,367)..id(Bed013.w.2,371)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact237" starttime="754.23" endtime="755.19" type="s^fa|s^bsc" adjacency="15a+" original-type="s^fa|s^bsc" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,372)..id(Bed013.w.2,377)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact239" starttime="758.75" endtime="759.16" type="s^aa" adjacency="16b.17a" original-type="s^aa" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,392)..id(Bed013.w.2,393)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact241" starttime="760.27" endtime="760.49" type="s^e.%-" original-type="s^e.%-" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,401)..id(Bed013.disfmarker.71)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact242" starttime="760.49" endtime="761.34" type="s^m^na" adjacency="18b" original-type="s^m^na" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,404)..id(Bed013.w.2,411)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact243" starttime="761.34" endtime="761.71" type="s.%--" original-type="s.%--" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,412)..id(Bed013.disfmarker.73)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact244" starttime="761.71" endtime="763.46" type="fg|s" adjacency="19a" original-type="fg|s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,413)..id(Bed013.w.2,421)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact245" starttime="763.46" endtime="764.17" type="qw" adjacency="19a+" original-type="qw" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,422)..id(Bed013.w.2,427)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact254" starttime="782.47" endtime="787.378" type="s" adjacency="21b" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,518)..id(Bed013.w.2,546)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact255" starttime="787.378" endtime="787.848" type="s.%--" adjacency="22a" original-type="s.%--" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,547)..id(Bed013.disfmarker.75)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact257" starttime="788.57" endtime="789.31" type="s^co" adjacency="23a" original-type="s^co" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,551)..id(Bed013.w.2,556)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact261" starttime="792.657" endtime="793.997" type="s" adjacency="24b" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,563)..id(Bed013.w.2,570)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact262" starttime="797.83" endtime="799.43" type="s^df" adjacency="25a.26a" original-type="s^df" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,571)..id(Bed013.w.2,577)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact264" starttime="803.59" endtime="805.36" type="s^e" adjacency="26a+" original-type="s^e" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,582)..id(Bed013.w.2,588)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact275" starttime="827.29" endtime="827.75" type="s^co|qw^rt" adjacency="30b.31a" original-type="s^co|qw^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,664)..id(Bed013.w.2,667)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact277" starttime="830.01" endtime="830.78" type="s^bk|s" adjacency="32b" original-type="s^bk|s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,679)..id(Bed013.w.2,683)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact290" starttime="863.32" endtime="865.03" type="s" adjacency="33b.34a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,766)..id(Bed013.w.2,775)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact293" starttime="868.53" endtime="869.95" type="s" adjacency="35b.36a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,793)..id(Bed013.w.2,802)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact295" starttime="871.84" endtime="873.37" type="s" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,805)..id(Bed013.w.2,816)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact296" starttime="873.74" endtime="875.28" type="s^df" original-type="s^df" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,817)..id(Bed013.w.2,829)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact297" starttime="875.28" endtime="881.754" type="s^df^e:s" original-type="s^df^e:s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,830)..id(Bed013.w.2,854)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact298" starttime="882.77" endtime="884.37" type="s.%-" adjacency="37a" original-type="s.%-" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,855)..id(Bed013.disfmarker.82)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact300" starttime="886.34" endtime="886.65" type="s^aa" adjacency="38b" original-type="s^aa" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,870)..id(Bed013.w.2,871)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact301" starttime="887.441" endtime="889.501" type="s:s" adjacency="38b+" original-type="s:s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,872)..id(Bed013.w.2,885)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact302" starttime="889.501" endtime="891.321" type="s" adjacency="38b++" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,886)..id(Bed013.w.2,899)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact304" starttime="892.17" endtime="893.53" type="s^e" adjacency="39a" original-type="s^e" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,902)..id(Bed013.w.2,910)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact306" starttime="895.83" endtime="896.0" comment="&quot;no&quot; used as &quot;yes&quot;" type="s^aa" adjacency="40b" original-type="s^aa" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,915)..id(Bed013.w.2,916)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact307" starttime="897.06" endtime="897.97" type="s" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,917)..id(Bed013.w.2,923)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact308" starttime="900.191" endtime="902.811" type="s" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,924)..id(Bed013.w.2,931)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact309" starttime="902.811" endtime="904.291" type="s" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,933)..id(Bed013.w.2,940)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact310" starttime="904.431" endtime="906.161" type="s" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,941)..id(Bed013.w.2,954)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact311" starttime="906.351" endtime="907.381" type="s" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,955)..id(Bed013.w.2,960)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact312" starttime="907.381" endtime="908.061" type="s.%--" original-type="s.%--" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,961)..id(Bed013.w.2,965)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact314" starttime="911.06" endtime="911.51" type="%--" original-type="%--" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,968)..id(Bed013.w.2,970)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact315" starttime="911.51" endtime="913.91" type="s" adjacency="41a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,971)..id(Bed013.w.2,987)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact316" starttime="914.19" endtime="914.55" type="fh" original-type="fh" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.2,988)..id(Bed013.w.2,989)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact321" starttime="917.85" endtime="921.26" type="s.%--" adjacency="42b" original-type="s.%--" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,004)..id(Bed013.disfmarker.85)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact322" starttime="921.26" endtime="921.86" type="s^co" original-type="s^co" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,020)..id(Bed013.w.3,025)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact323" starttime="921.86" endtime="922.73" type="s" adjacency="43a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,026)..id(Bed013.w.3,031)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact326" starttime="925.3" endtime="925.65" type="s^bk^m" adjacency="44b.45a" original-type="s^bk^m" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,037)..id(Bed013.w.3,038)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact328" starttime="927.23" endtime="928.12" type="s" adjacency="46a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,041)..id(Bed013.w.3,049)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact335" starttime="938.88" endtime="939.53" type="s" adjacency="47b" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,065)..id(Bed013.w.3,070)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact336" starttime="939.53" endtime="940.03" type="s.%--" original-type="s.%--" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,071)..id(Bed013.w.3,072)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact337" starttime="943.96" endtime="945.32" type="s^rt" original-type="s^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,073)..id(Bed013.w.3,081)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact338" starttime="946.17" endtime="948.59" type="s^rt" original-type="s^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,082)..id(Bed013.w.3,099)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact339" starttime="948.731" endtime="949.271" type="s^rt" original-type="s^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,100)..id(Bed013.w.3,105)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact340" starttime="949.421" endtime="951.051" type="s" adjacency="48a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,106)..id(Bed013.w.3,117)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact341" starttime="951.461" endtime="951.801" type="fh" original-type="fh" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,118)..id(Bed013.w.3,119)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact344" starttime="952.704" endtime="953.004" type="s.%-" original-type="s.%-" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,128)..id(Bed013.disfmarker.87)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact346" starttime="958.09" endtime="960.27" type="s" adjacency="49b" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,133)..id(Bed013.w.3,147)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact347" starttime="960.27" endtime="962.2" type="s^df" adjacency="49b+" original-type="s^df" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,148)..id(Bed013.w.3,159)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact348" starttime="962.2" endtime="965.41" type="s^df^e:s" adjacency="49b++" original-type="s^df^e:s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,160)..id(Bed013.w.3,180)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact349" starttime="965.58" endtime="965.93" type="fh" original-type="fh" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,181)..id(Bed013.w.3,182)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact352" starttime="968.2" endtime="970.13" type="s" adjacency="50a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,186)..id(Bed013.w.3,200)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact353" starttime="970.13" endtime="970.4" type="fh" original-type="fh" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,201)..id(Bed013.w.3,202)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact374" starttime="1009.97" endtime="1011.34" type="fg|qy^rt" adjacency="53b-2.54a" original-type="fg|qy^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,378)..id(Bed013.w.3,385)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact375" starttime="1011.34" endtime="1011.84" type="qrr.%-" adjacency="53b-2+.54a+" original-type="qrr.%-" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,386)..id(Bed013.disfmarker.98)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact388" starttime="1054.12" endtime="1056.62" type="s" adjacency="56b.57a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,502)..id(Bed013.w.3,513)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact409" starttime="1117.26" endtime="1118.15" type="qy^rt" adjacency="58a" original-type="qy^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,703)..id(Bed013.w.3,707)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact412" starttime="1119.0" endtime="1119.26" type="s^ba" adjacency="59b.60a" original-type="s^ba" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,712)..id(Bed013.w.3,713)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact414" starttime="1121.76" endtime="1122.09" type="s^aa" adjacency="61b.62a" original-type="s^aa" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,721)..id(Bed013.w.3,722)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact418" starttime="1124.33" endtime="1124.58" type="s^bk" adjacency="63b.64a" original-type="s^bk" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,740)..id(Bed013.w.3,741)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact427" starttime="1131.97" endtime="1133.86" type="s" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,786)..id(Bed013.w.3,798)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact429" starttime="1133.86" endtime="1135.66" type="s^rt" adjacency="66a" original-type="s^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,799)..id(Bed013.w.3,809)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact431" starttime="1137.58" endtime="1139.66" type="qy^rt" adjacency="67a" original-type="qy^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,814)..id(Bed013.w.3,826)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact432" starttime="1139.66" endtime="1140.17" type="s" adjacency="67a+" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,827)..id(Bed013.w.3,830)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact435" starttime="1143.29" endtime="1144.46" type="s^m^na|s^e^na" adjacency="68b.69a" original-type="s^m^na|s^e^na" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,836)..id(Bed013.w.3,843)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact442" starttime="1153.52" endtime="1154.29" type="qy^rt" adjacency="72a" original-type="qy^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,892)..id(Bed013.w.3,896)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact446" starttime="1155.19" endtime="1155.46" type="s^bk" adjacency="73b" original-type="s^bk" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.3,906)..id(Bed013.w.3,907)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact522" starttime="1318.06" endtime="1318.33" type="qy^rt" adjacency="19b-1" original-type="qy^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.4,541)..id(Bed013.w.4,543)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact553" starttime="1385.03" endtime="1385.71" type="s.%-" adjacency="24b-2" original-type="s.%-" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.4,814)..id(Bed013.disfmarker.142)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact555" starttime="1385.79" endtime="1387.76" type="qy^bu^rt" adjacency="24b-2+" original-type="qy^bu^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.4,820)..id(Bed013.w.4,827)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact563" starttime="1392.36" endtime="1393.58" type="s^bu^rt" adjacency="29a" original-type="s^bu^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.4,865)..id(Bed013.w.4,874)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact565" starttime="1393.58" endtime="1394.91" type="qy^e.%-" adjacency="29a+" original-type="qy^e.%-" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.4,875)..id(Bed013.w.4,879)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact598" starttime="1436.23" endtime="1438.15" type="s" adjacency="36b-2.37a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.5,100)..id(Bed013.w.5,110)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact599" starttime="1438.27" endtime="1439.48" type="qy^bu^d^rt" adjacency="37b.38a" original-type="qy^bu^d^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.5,111)..id(Bed013.w.5,116)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact606" starttime="1451.54" endtime="1452.7" type="qw^j^rt" adjacency="40b.41a" original-type="qw^j^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.5,162)..id(Bed013.w.5,169)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact620" starttime="1474.75" endtime="1475.28" type="s" adjacency="47b.48a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.5,271)..id(Bed013.w.5,275)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact622" starttime="1477.0" endtime="1479.3" type="s:s" adjacency="49a" original-type="s:s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.5,278)..id(Bed013.w.5,293)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact680" starttime="1575.51" endtime="1576.44" type="s" adjacency="71b.72a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.5,630)..id(Bed013.w.5,638)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact705" starttime="1616.3" endtime="1617.0" type="s^t3" adjacency="81b" original-type="s^t3" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.5,768)..id(Bed013.w.5,769)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact706" starttime="1617.65" endtime="1618.02" type="s^fa" adjacency="82b" original-type="s^fa" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.5,770)..id(Bed013.w.5,773)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact730" starttime="1657.28" endtime="1658.3" type="s^ar|s^nd" adjacency="88b-2" original-type="s^ar|s^nd" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.5,963)..id(Bed013.w.5,972)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact748" starttime="1692.54" endtime="1694.23" type="s" adjacency="95b" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.6,112)..id(Bed013.w.6,121)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact749" starttime="1694.23" endtime="1700.61" type="qy^bu.%-" adjacency="96a" original-type="qy^bu.%-" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.6,122)..id(Bed013.disfmarker.189)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact798" starttime="1813.56" endtime="1814.68" type="s^aa^j|s^j" adjacency="1b" original-type="s^aa^j|s^j" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.6,595)..id(Bed013.w.6,601)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact808" starttime="1841.98" endtime="1847.04" type="qy" adjacency="3a" original-type="qy" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.6,695)..id(Bed013.w.6,718)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact811" starttime="1852.7" endtime="1854.89" type="s:s" adjacency="4b.5a" original-type="s:s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.6,726)..id(Bed013.w.6,738)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact815" starttime="1858.3" endtime="1862.47" type="s^rt" adjacency="6b.7a" original-type="s^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.6,754)..id(Bed013.disfmarker.208)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact816" starttime="1862.47" endtime="1868.04" type="s^e^rt" adjacency="6b+.7a+" original-type="s^e^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.6,780)..id(Bed013.w.6,803)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact818" starttime="1868.32" endtime="1870.48" type="s^e^rt" adjacency="6b++.7a++" original-type="s^e^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.6,804)..id(Bed013.w.6,816)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact820" starttime="1872.05" endtime="1873.38" type="s" adjacency="8a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.6,825)..id(Bed013.w.6,830)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact821" starttime="1873.38" endtime="1874.2" type="fh" original-type="fh" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.6,831)..id(Bed013.disfmarker.210)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact825" starttime="1877.53" endtime="1880.03" type="s" adjacency="9b" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.6,845)..id(Bed013.w.6,855)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact827" starttime="1884.51" endtime="1885.27" type="s^aa" adjacency="10b" original-type="s^aa" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.6,865)..id(Bed013.w.6,867)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact846" starttime="1927.08" endtime="1927.18" type="qw^br^rt" adjacency="17b-2.18a" original-type="qw^br^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.6,974)..id(Bed013.w.6,975)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact851" starttime="1930.2" endtime="1931.34" type="s^bk" adjacency="20b-1" original-type="s^bk" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.7,006)..id(Bed013.w.7,013)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact853" starttime="1932.52" endtime="1934.96" type="s" adjacency="21a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.7,023)..id(Bed013.w.7,035)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact879" starttime="1969.6" endtime="1970.38" type="qw" adjacency="29a" original-type="qw" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.7,169)..id(Bed013.w.7,175)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact880" starttime="1970.38" endtime="1971.62" type="s^df^no" original-type="s^df^no" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.7,176)..id(Bed013.w.7,183)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact887" starttime="1981.12" endtime="1981.65" type="b" original-type="b" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.7,217)..id(Bed013.w.7,220)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact906" starttime="2020.69" endtime="2022.14" type="s" adjacency="34b-2" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.7,361)..id(Bed013.w.7,370)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact970" starttime="2162.57" endtime="2164.58" type="s|s^aa" adjacency="43b.44a" original-type="s|s^aa" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.7,880)..id(Bed013.w.7,888)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact974" starttime="2166.08" endtime="2167.3" type="s^e" original-type="s^e" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.7,923)..id(Bed013.w.7,928)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1077" starttime="2504.24" endtime="2505.5" type="s^df|s^fa" adjacency="4a" original-type="s^df|s^fa" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.9,133)..id(Bed013.w.9,141)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1080" starttime="2510.59" endtime="2511.2" type="s^bk.%" original-type="s^bk.%" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.9,152)..id(Bed013.disfmarker.274)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1095" starttime="2596.6" endtime="2596.91" type="%-" original-type="%-" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.9,373)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1098" starttime="2607.04" endtime="2607.32" type="s.%-" original-type="s.%-" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.9,401)..id(Bed013.disfmarker.284)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1100" starttime="2608.04" endtime="2608.69" type="%" original-type="%" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.9,403)..id(Bed013.w.9,404)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1102" starttime="2608.8" endtime="2609.62" type="s.%-" original-type="s.%-" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.9,416)..id(Bed013.disfmarker.286)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1103" starttime="2610.26" endtime="2614.48" type="s^nd^no" adjacency="7b-2.8a" original-type="s^nd^no" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.9,421)..id(Bed013.w.9,443)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1105" starttime="2614.48" endtime="2618.03" type="s^e" adjacency="7b-2+.8a+" original-type="s^e" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.9,444)..id(Bed013.w.9,463)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1106" starttime="2618.03" endtime="2618.32" type="fh" original-type="fh" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.9,464)..id(Bed013.w.9,466)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1110" starttime="2620.7" endtime="2621.19" type="qy^bu^d^rt" adjacency="9b.10a" original-type="qy^bu^d^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.9,480)..id(Bed013.w.9,482)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1112" starttime="2622.24" endtime="2622.51" type="s^bk" adjacency="11b" original-type="s^bk" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.9,492)..id(Bed013.w.9,493)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1113" starttime="2622.51" endtime="2626.23" type="s^bu|qy^d^g" adjacency="12a" original-type="s^bu|qy^d^g" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.9,494)..id(Bed013.w.9,514)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1114" starttime="2626.23" endtime="2629.21" type="s" adjacency="12a+" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.9,515)..id(Bed013.w.9,523)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1121" starttime="2634.75" endtime="2639.91" type="s" adjacency="13a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.9,538)..id(Bed013.disfmarker.295)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1122" starttime="2641.06" endtime="2644.71" type="s" adjacency="13a+" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.9,557)..id(Bed013.disfmarker.296)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1171" starttime="2821.31" endtime="2825.59" type="s" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.10,133)..id(Bed013.w.10,148)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1172" starttime="2826.02" endtime="2827.56" type="s" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.10,149)..id(Bed013.w.10,155)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1173" starttime="2827.56" endtime="2833.7" type="s^df" adjacency="24a" original-type="s^df" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.10,156)..id(Bed013.w.10,177)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1175" starttime="2833.7" endtime="2834.73" type="s:qw" original-type="s:qw" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.10,178)..id(Bed013.w.10,184)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1176" starttime="2834.73" endtime="2836.71" type="s.%--" original-type="s.%--" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.10,185)..id(Bed013.disfmarker.323)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1177" starttime="2837.44" endtime="2842.85" type="s^cs" adjacency="25a" original-type="s^cs" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.10,199)..id(Bed013.w.10,225)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1178" starttime="2844.22" endtime="2851.1" type="s" adjacency="25a+" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.10,226)..id(Bed013.w.10,239)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1179" starttime="2852.66" endtime="2856.1" type="s" adjacency="25a++" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.10,240)..id(Bed013.w.10,263)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1181" starttime="2863.37" endtime="2863.73" type="qo" adjacency="26a" original-type="qo" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.10,269)..id(Bed013.w.10,270)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1182" starttime="2864.52" endtime="2865.26" type="qo" adjacency="26a+" original-type="qo" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.10,271)..id(Bed013.w.10,272)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1187" starttime="2868.19" endtime="2868.59" type="qo" original-type="qo" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.10,303)..id(Bed013.w.10,304)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1195" starttime="2900.96" endtime="2901.59" type="b" original-type="b" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.10,412)..id(Bed013.w.10,415)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1207" starttime="2933.17" endtime="2933.65" type="s^aa" adjacency="29b" original-type="s^aa" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.10,555)..id(Bed013.w.10,558)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1211" starttime="2934.98" endtime="2936.2" type="s" adjacency="30a" original-type="s" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.10,563)..id(Bed013.w.10,570)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1392" starttime="3359.96" endtime="3360.76" type="s^j" adjacency="21b.22a" original-type="s^j" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.12,280)..id(Bed013.w.12,283)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1410" starttime="3420.17" endtime="3421.22" type="qw^rt" adjacency="24b.25a" original-type="qw^rt" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.12,428)..id(Bed013.w.12,435)"/>
+   </dialogueact>
+   <dialogueact nite:id="Bed013.B.dialogueact1418" starttime="3433.1" endtime="3433.63" type="b" original-type="b" channel="c1" participant="me003">
+      <nite:child href="Bed013.B.words.xml#id(Bed013.w.12,495)..id(Bed013.w.12,496)"/>
+   </dialogueact>
+</nite:root>

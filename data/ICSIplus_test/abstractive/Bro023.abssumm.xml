@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nite:root xmlns:nite="http://nite.sourceforge.net/">
+<abstract nite:id="Bro023.abstract.1">
+<sentence nite:id="Bro023.s.1">The ICSI Meeting Recorder Group of Berkeley met for the first time in two weeks.</sentence>  <sentence nite:id="Bro023.s.2">Group members reported their progress in the areas of spectral subtraction, Wiener filtering and noise estimation.</sentence>  <sentence nite:id="Bro023.s.3">They also discusses topics relating to the rules and preferences of the project they are working on, including single vs multiple passes.</sentence>  <sentence nite:id="Bro023.s.4">A number of the group also took time to explain the basics of their approaches to the group.</sentence>  <sentence nite:id="Bro023.s.5">There are hopes that a visitor coming for three weeks, may lead to a longer term collaboration.</sentence>
+
+</abstract>
+<decisions nite:id="Bro023.decisions.1">
+<sentence nite:id="Bro023.s.6">The visitor works on spectral subtraction, so speaker me026 will make sure he talks to him.</sentence>  <sentence nite:id="Bro023.s.7">Speaker mn007 agreed, at me013's suggestion, to try his noise compensation scheme in compensation with the prior work on spectral subtraction.</sentence>
+
+</decisions>
+<problems nite:id="Bro023.problems.1">
+<sentence nite:id="Bro023.s.8">In implementing smoothing to the spectral subtraction, latency has been increased; while some feel this is nothing to worry about, others feel it is better to worry now, in case it turns out to be something to worry about.</sentence>
+
+</problems>
+<progress nite:id="Bro023.progress.1">
+<sentence nite:id="Bro023.s.9">Speaker me026 has been experimenting with spectral subtraction using different data window sizes.</sentence>  <sentence nite:id="Bro023.s.10">One possible idea is to use increasing windows as more data becomes available.</sentence>  <sentence nite:id="Bro023.s.11">Speaker mn049 has been working on Wiener filtering, and testing with just the base system provides 30% improvement.</sentence>  <sentence nite:id="Bro023.s.12">Using a second stage of filtering led to even more improvement.</sentence>  <sentence nite:id="Bro023.s.13">Speaker mn007 is working on spectral subtraction, still with minimal results.</sentence>  <sentence nite:id="Bro023.s.14">Smoothing seems to help, and implementing alongside the neural net should also be positive.</sentence>  <sentence nite:id="Bro023.s.15">He has also been working on noise estimation with an energy minima approach that does not require the voice activity detector.</sentence>
+
+</progress>
+</nite:root>

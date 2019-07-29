@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nite:root xmlns:nite="http://nite.sourceforge.net/">
+<abstract nite:id="Bro028.abstract.1">
+<sentence nite:id="Bro028.s.1">ICSI's Meeting Recorder Group met to discuss their progress in various aspects of the Aurora Project, but also to hear more about other developments relevant to the group.</sentence>  <sentence nite:id="Bro028.s.2">On the Aurora Project, there were reports on a project conference call, the status of the tandem neural networks, and progress with the Mississippi State recognizer.</sentence>  <sentence nite:id="Bro028.s.3">The latency limit has been set, and the group's system is performing very well, but is a little over.</sentence>  <sentence nite:id="Bro028.s.4">On the larger vocabulary task, there are still a few issues to resolve before work can really get started.</sentence>  <sentence nite:id="Bro028.s.5">The group heard of the plan of one of it's member's work into intermediate classifiers, and also of how a visiting research student's work into auditory models can be applied to their work.</sentence>
+
+</abstract>
+<decisions nite:id="Bro028.decisions.1">
+<sentence nite:id="Bro028.s.6">Speaker me013 wants to know how much memory the tandem network takes up.</sentence>  
+
+</decisions>
+<problems nite:id="Bro028.problems.1">
+<sentence nite:id="Bro028.s.7">It is only a minor problem that the latency limit has been set below the current systems level, and also keeping the number of features within limits only drops performance a little.</sentence>  <sentence nite:id="Bro028.s.8">A more significant problem is that the tandem approach may not fit in the memory space allowed, and removing it drops performance more.</sentence>  <sentence nite:id="Bro028.s.9">Some of the group had issues with mn007's approach to human performance testing, but this was considered more of a side issue.</sentence>  
+
+</problems>
+<progress nite:id="Bro028.progress.1">
+<sentence nite:id="Bro028.s.10">Speaker mn007 has been working on the tandem network approach, and the current results are good.</sentence>  <sentence nite:id="Bro028.s.11">He has found a good way of calculating the silence probabilities, that does not increase insertions.</sentence>  <sentence nite:id="Bro028.s.12">He also attempted to transcribe data himself, to establish a human performance level.</sentence>  <sentence nite:id="Bro028.s.13">Speaker me018 is working on Mississippi Sate recognizer for dealing with the Wall Street Journal Data.</sentence>
+
+</progress>
+</nite:root>

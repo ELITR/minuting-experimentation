@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nite:root xmlns:nite="http://nite.sourceforge.net/">
+<abstract nite:id="Bro018.abstract.1">
+<sentence nite:id="Bro018.s.1">The ICSI Meeting Recorder Group met once more to discuss their recent progress in various projects, as well as discuss some of the issues that have arisen in the last week.</sentence>  <sentence nite:id="Bro018.s.2">There has been further work on voiced/unvoiced detection, along with spectral subtraction.</sentence>  <sentence nite:id="Bro018.s.3">The group discussed one members attendance at a conference, and another groups code, which is proving hard to follow.</sentence>
+
+</abstract>
+<decisions nite:id="Bro018.decisions.1">
+blank
+
+</decisions>
+<problems nite:id="Bro018.problems.1">
+<sentence nite:id="Bro018.s.4">In trying to understand France Telecom's code, there does not appear to be a reason for a particular constant value.</sentence>
+
+</problems>
+<progress nite:id="Bro018.progress.1">
+<sentence nite:id="Bro018.s.5">Speaker fn002 reported on her work with mn007, who was absent attending a conference.</sentence>  <sentence nite:id="Bro018.s.6">They have been working on voiced/unvoiced detection, and have tried two different configuration of MLP, although results have not been improved greatly.</sentence>  <sentence nite:id="Bro018.s.7">She has also begun looking at France Telecom's recogniser code.</sentence>  <sentence nite:id="Bro018.s.8">Speaker me006 has been coming up with tests for his work using acoustic events.</sentence>  <sentence nite:id="Bro018.s.9">Speaker me018 is investigating differences in another system, and feels it maybe down to bugs.</sentence>  <sentence nite:id="Bro018.s.10">Speaker me026 has made real progress on his spectral subtraction work, with an implementation and early results.</sentence>
+
+</progress>
+</nite:root>

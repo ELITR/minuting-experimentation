@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nite:root xmlns:nite="http://nite.sourceforge.net/">
+<abstract nite:id="Bro022.abstract.1">
+<sentence nite:id="Bro022.s.1">A typical progress report meeting for the ICSI Meeting Recorder Group at Berkeley.</sentence>  <sentence nite:id="Bro022.s.2">Each of the group reported their most recent progress, and any results they have achieved.</sentence>  <sentence nite:id="Bro022.s.3">This then prompted discussion about the reasons behind such findings, which were for the most part not as expected.</sentence>  <sentence nite:id="Bro022.s.4">Topics the group touched upon included spectral subtraction, phase normalization, Voice activity detection, along with comparisons between systems.</sentence>
+
+</abstract>
+<decisions nite:id="Bro022.decisions.1">
+<sentence nite:id="Bro022.s.5">*NA*</sentence>
+
+</decisions>
+<problems nite:id="Bro022.problems.1">
+<sentence nite:id="Bro022.s.6">A couple of issues have arisen that need to be looked into further such as DC-offset and effects of PZM signals.</sentence>  <sentence nite:id="Bro022.s.7">Speaker Fn002 is worried about running VTS in the cepstral domain, because it requires a lot of work, and it is not clear that it will be much better than running it in the Mel domain.</sentence>  <sentence nite:id="Bro022.s.8">Similarly, since at the next stage of the project data will have marked boundaries, it is not clear that voice-activity detection is worth pursuing.</sentence>
+
+</problems>
+<progress nite:id="Bro022.progress.1">
+<sentence nite:id="Bro022.s.9">Speaker me026 has been trying mean subtraction on the SRI system, with good improvement for the far mike, though worse on near mike.</sentence>  <sentence nite:id="Bro022.s.10">This contradicts previous findings for HTK, though he has some theories to explain the difference.</sentence>  <sentence nite:id="Bro022.s.11">Has also been working on different phase normalization techniques, with no luck.</sentence>  <sentence nite:id="Bro022.s.12">Speaker Mn007 has also been looking at differences, differences between the SRI system and the groups Aurora project, and again, there are a number of possible explanations.</sentence>  <sentence nite:id="Bro022.s.13">He has also been looking at a problem with the VAD and SNR.</sentence>  <sentence nite:id="Bro022.s.14">Mn052 has sorted bugs in implementation of wiener filtering, and has been investigating smoothing and also SNR.</sentence>  <sentence nite:id="Bro022.s.15">Fn002 is ready to run experiment investigating VTS in the cepstral domain.</sentence>  <sentence nite:id="Bro022.s.16">Speaker me006 is still working on his proposal.</sentence>
+
+</progress>
+</nite:root>

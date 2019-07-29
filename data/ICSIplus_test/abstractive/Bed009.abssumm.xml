@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<nite:root xmlns:nite="http://nite.sourceforge.net/">
+<abstract nite:id="Bed009.abstract.1">
+<sentence nite:id="Bed009.s.1">The Berkeley Even Deeper Understanding group discussed plans and concerns regarding the architecture of SmartKom, its proposed modules, and the types of interactions expected to take place between modules.</sentence> <sentence nite:id="Bed009.s.2">The meeting was largely focused on SmartKom's decision making capacity and how to adapt this functionality to the tourist information domain.</sentence> 
+
+</abstract>
+<decisions nite:id="Bed009.decisions.1">
+<sentence nite:id="Bed009.s.3">The group set a date for assessing SmartKom plans.</sentence> <sentence nite:id="Bed009.s.4">It was decided that SmartKom's action plans should be represented in XML as a state transition network.</sentence> <sentence nite:id="Bed009.s.5">It was proposed that the term 'dialogue planner' should replace 'dialogue manager'.</sentence> <sentence nite:id="Bed009.s.6">Prolog will be phased out completely and replaced by Java code.</sentence> <sentence nite:id="Bed009.s.7">The dialogue manager must be capable of changing states, i.e. go from being event driven to answering a question from a planning module.</sentence> <sentence nite:id="Bed009.s.8">SmartKom should feature a well defined core interface, with domain-specific information kept external.</sentence> <sentence nite:id="Bed009.s.9">A syntactic analysis component that performs chunk parsing will be added to the system.</sentence>
+
+</decisions>
+<problems nite:id="Bed009.problems.1">
+<sentence nite:id="Bed009.s.10">As a functional module, the action planner is too restrictive for the tourist domain and requires complex slots from the dialogue manager.</sentence> <sentence nite:id="Bed009.s.11">What form will the language input have, and what will the action planner do with it?</sentence> <sentence nite:id="Bed009.s.12">Links must be in place between the input end, action planner, parser, and language feedback components for communicating the current state of plan.</sentence> <sentence nite:id="Bed009.s.13">Interactions in a deep map system between the spatial planner and the route planner are too convoluted.</sentence> <sentence nite:id="Bed009.s.14">SmartKom requires a fast and robust parser that includes language-specific extensions.</sentence> <sentence nite:id="Bed009.s.15">Which form of semantic construction grammar should be used, and how would such information be derived from the parsed input?</sentence>
+
+</problems>
+<progress nite:id="Bed009.progress.1">
+<sentence nite:id="Bed009.s.16">Efforts are in progress to complete and test the code, generate an English grammar like that used in the German system, and get the parser interface working.</sentence> <sentence nite:id="Bed009.s.17">A 'wizard of Oz' style data collection experiment is in progress to model users' underlying intentions when communicating with the dialogue component of a tourist domain GPS.</sentence> <sentence nite:id="Bed009.s.18">Corresponding interfaces and a belief net will be incorporated into the knowledge modelling module.</sentence> <sentence nite:id="Bed009.s.19">While the current focus is on decision making, a fuller implementation of SmartKom will enable it to query the user for desired information.</sentence> <sentence nite:id="Bed009.s.20">Stemming information is connected to the lexicon through the use of knowledge bases from Verbmobil.</sentence> 
+
+</progress>
+</nite:root>

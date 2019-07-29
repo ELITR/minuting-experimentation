@@ -94,11 +94,11 @@ def get_speakers_words(data_root, topics_folder, words_folder, meeting_name):
 
 # recover the default topics and their ids
 def parse_default_topics(data_root, ontologies_folder):
-    '''
+    """
     :param data_root: root folder of all data
     :param ontologies_folder: folder of ontologies
     :return default_topic_dict - dictionary of ids and topic descriptions
-    '''
+    """
     default_topics_dict = dict()
     default_topics = ET.parse(os.path.join(data_root, ontologies_folder, 'default-topics.xml')).getroot()
     for topic_names in default_topics:
@@ -111,14 +111,14 @@ def parse_default_topics(data_root, ontologies_folder):
 
 # returns words in topics and their description for each topic
 def get_words_in_topics(data_root, topics_folder, meeting_name, default_topics_dict, speakers_words):
-    '''
+    """
     :param data_root: root folder of all data
     :param topics_folder: folder of all topics
     :param meeting_name: name of the meeting being analyzed
     :param default_topic_dict: dictionary of default topics
     :param speakers_words: list of speakers each containing their list of words
     :return: words_in_topics, topic_description
-    '''
+    """
     # parsing a topic file
     meeting_topics = ET.parse(os.path.join(data_root, topics_folder, meeting_name + '.topic.xml'))
     root = meeting_topics.getroot()
@@ -228,7 +228,7 @@ def get_speaker_dialogue_acts(data_root, dialogue_acts_folder, meeting_name, spe
                 href = child.get('href').split('#')
                 speaker = href[0][href[0].find('.') + 1]
                 if has_pointer == 0:
-                    print('Unusual case! in meeting %s, speaker %c, dialogue act number %s' % (meeting_name, speaker, index))
+                    print('Unusual case! in meeting %s, speaker %c, dialogue act number %s: has no description' % (meeting_name, speaker, index))
                     speaker_das_descriptions[index] = 'None'
                     # Some unusual dialogue acts have no pointer and also no description!
                 else:
@@ -341,11 +341,11 @@ def save_meeting_extractive_summary(output_root, meeting, das_in_summary):
 
 
 def get_the_abstractive_summary(data_root, abstractive_sum_folder, meeting_name):
-    '''
+    """
     :param data_root:
     :param abstractive_sum_folder:
     :param meeting:
-    '''
+    """
     summ = ET.parse(os.path.join(data_root, abstractive_sum_folder, meeting_name + '.abssumm.xml'))
     root = summ.getroot()
     summaries = OrderedDict()
