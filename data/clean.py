@@ -63,15 +63,20 @@ def core_tokenize(text, alb=False):
 
 # removes dialogue speakers of the form A:, B: etc
 def remove_speakers(text):
-	text = re.sub(r'[A-Z]:', '', text)
-	return text
+	'''
+	:param text: long string of input text
+	:return clean_text: text after removing speakers
+	'''
+	clean_text = re.sub(r'[A-Z]:', '', text)
+	return clean_text
 
 # run with keep_speakers=False, lower=True to replicate TSD-28-
-def clean_text(text, keep_speakers=True, lower=False):
+def clean_text(text, keep_speakers=True, lower=False, eos=False):
 	'''
 	:param text: long string of input text
 	:param lower: lowercase or not the input text - boolean
 	:param speakers: keep or remove speakers from dialogues - boolean
+	:param eos: add or not <EOS> after each sentence
 	:return clean_text: long string of lowercased and tokenized input string
 	'''
 	# remove speakers from dialogues if required
@@ -98,7 +103,8 @@ def clean_text(text, keep_speakers=True, lower=False):
 	sent_list = [re.sub(r'<\s(([\w]+))\s>', r'<\1>', sent) for sent in sent_list]
 
 	# add <EOS> at the end of each sentence
-	sent_list = [s + ' <EOS>' for s in sent_list]
+	if eos:
+		sent_list = [s + ' <EOS>' for s in sent_list]
 
 	# join together all sentences in one text
 	clean_text = ' '.join(sent_list)
@@ -106,14 +112,14 @@ def clean_text(text, keep_speakers=True, lower=False):
 	return clean_text
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--src', default='./src', help='source file')
-parser.add_argument('--dest', default='./dest', help='destination file')
+parser.add_argument('--src', default='./src', help='source folder')
+parser.add_argument('--dest', default='./dest', help='destination folder')
 args = parser.parse_args()
 
 # main 
 if __name__=="__main__":
 	if len(sys.argv) != 5:
-		print("usage: python script --src <source_file> --dest <dest_file>")
+		print("usage: python script --src <source_dir> --dest <dest_dir>")
 		sys.exit()
 		
 	# create name of output file
@@ -125,7 +131,7 @@ if __name__=="__main__":
 		in_text = in_f.read()
 
 	# apply cleaning operations
-	out_text = clean_text(in_text, keep_speakers=False, lower=True)
+	out_text = clean_text(in_text, keep_speakers=False, lower=True, eos=True)
 
 	# write to output file
 	with open(out_file, 'wt') as out_f:
