@@ -1,0 +1,303 @@
+B:  So the one issue was that the  the , uh , lapel mike , uh , isn't as good as you would like . 
+B:  And so , uh , it  it 'd be better if we had close talking mikes for everybody . 
+
+A:  And actually in addition to that , that the  the close talking mikes are worn in such a way as to best capture the signal . 
+
+A:  it adds this extra , you know , vari variable for each speaker to  to deal with when the microphones aren't similar . 
+
+B:  uh , well one thing I was gonna say was that , um , i we could get more , uh , of the head mounted microphones 
+
+H:  So it 's towards the corner of your mouth so that breath sounds don't get on it . 
+H:  And then just sort of about , uh , a thumb or  a thumb and a half away from your  from your mouth . 
+
+A:  But if we could actually standardize , you know , the  the microphones , uh , as much as possible that would be really helpful . 
+
+B:  so why don't we just go out and  and get an order of  of 
+
+B:  uh , I 'd just get a half dozen of these things . 
+
+B:  So , uh  so we should go out to our full complement of whatever we can do , 
+B:  but have them all be the same mike . 
+B:  I think the original reason that it was done the other way was because , it w it was sort of an experimental thing 
+B:  and I don't think anybody knew whether people would rather have more variety or  <breath> or , uh , more uniformity , 
+
+G:  It 's the equipment and also how it 's worn . 
+
+G:  it 's really  <mike noise> it makes a big difference from the transcribers ' point of view 
+
+H:  Yeah , I think that the point of doing the close talking mike is to get a good quality signal . We 're not doing research on close talking mikes . 
+H:  So we might as well get it as uniform as we can . 
+
+H:  So , as  as I said , we 'll do a field trip and see if we can get all of the same mike that 's more comfortable than  than these things , which I think are horrible . 
+
+G:  And , um . OK , in terms of the multi - trans , well that  that 's being modified by Dave Gelbart to , uh , handle multi - channel recording . 
+
+G:  And , uh , that 's  that will enable us to do  nice um , tight time marking of the beginning and ending of overlapping segments . 
+G:  At present it 's not possible with limitations of  of the , uh , original  design of the software . 
+
+G:  In terms of , like , pre - segmentation , that  that continues to be , um , a terrific asset to the  to the transcribers . 
+
+C:  What  what I 'm doing right now is I 'm trying to include some information about which channel , uh , there 's some speech in . 
+
+C:  I 'm just trying to do this by comparing energies , uh  normalizing energies and comparing energies of the different channels . 
+
+C:  so to  to give the transcribers some information in which channel there 's  there 's speech in addition to  to the thing we  we did 
+C:  now which is just , uh , speech - nonspeech detection on the mixed file . 
+C:  So I 'm  I 'm relying on  on the segmentation of the mixed file 
+C:  but I 'm  I 'm trying to subdivide the speech portions into different portions if there is some activity in  in different channels . 
+
+B:  You know , maybe they 'd wanna stick an array mike here when we 're doing things 
+
+B:  uh , Dave Gelbart and I will be , uh , visiting with John Canny 
+B:  who i you know , is a CS professor , 
+B:  who 's interested in ar in array microphones . 
+
+B:  but they might wanna just ,  uh , you know , you could imagine them taking the four signals from these  these table mikes and trying to do something with them  
+
+E:  That  that reminds me , I had a  a thought of an interesting project that somebody could try to do with  the data from here , 
+
+E:  and that is to try to construct a map of where people were sitting , 
+
+H:  Well Dan  Dan had worked on that . Dan Ellis , 
+
+H:  So that  that 's the cross - correlation stuff , was  was doing b beam - forming . 
+
+E:  And so you could plot out who was sitting next to who 
+
+B:  if I 'm speaking , or if you 're speaking , or someone over there is speaking , it  if you look at cross - correlation functions , you end up with a  
+B:  if  if someone who was on the axis between the two is talking , then you  you get a big peak there . 
+
+B:  And then , uh , it  it  it even looks different if th t if the two  two people on either side are talking than if one in the middle . 
+B:  It  it actually looks somewhat different , 
+
+B:  The reason I didn't go for that here was because , uh , the focus , uh , both of my interest and of Adam 's interest was uh , in impromptu situations . 
+
+B:  All  all I know is that they 've been talking to me about a project that they 're going to start up recording people meet in meetings . 
+
+H:  NIST has  has done a big meeting room  instrumented meeting room with video and microphone arrays , and very elaborate software . 
+
+B:  They wanted to do it  
+B:  Uh , well I think they 've instrumented a room 
+B:  but I don't  think they  they haven't started recordings yet . 
+
+B:  And , uh , it is related to ours . 
+B:  They were interested in ours . 
+B:  They wanted to get some uniformity with us , uh , about the transcriptions and so on . 
+
+B:  but one  one , uh , difference from the audio side was that they are interested in using array mikes . 
+
+B:  we 're not recording a bunch of impromptu situations 
+
+B:  But the thing we ultimately wanted to aim at was a situation where you were talking with , uh , one or more other people i uh , in  in an p impromptu way , where you didn't  didn't actually know what the situation was going to be . 
+B:  And therefore it would not  it 'd be highly unlikely that room would be outfitted with  with some very carefully designed array of microphones . 
+
+B:  So it 's  it 's a good thing to do , but it doesn't solve the problem of how do you solve things when there 's one mike or at best two mikes in  in this imagined PDA that we have . 
+B:  So maybe  maybe we 'll do some more of it . 
+
+A:  it seems to me that there 's  you know , there are good political reasons for  for doing this , 
+
+A:  You know , it 'd be nice if we can have at least , uh , make use of the data that we 're recording as we go 
+A:  since it 's sort of  this is the first site that has really collected these really impromptu meetings , 
+A:  um , and just have this other information available . 
+A:  So , if we can get the investment in just for the infra infrastructure 
+
+A:  it 'd be g it 'd be good to have  have the recording . I think . 
+
+H:  You mean to  to actually get a microphone array and do that ? 
+
+A:  Um , but it  definitely in the case of microphone arrays , since if there was a community interested in this , then  
+
+B:  And so I think we could get a microphone array in here pretty easily 
+B:  and , uh , have it mixed to  to one channel of some sort . 
+B:  But , e I think for 
+
+B:  For  for maximum flexibility later you really don't want to end up with just one channel that 's pointed in the direction of the  the  the p the person with the maximum energy or something like that . 
+B:  I mean , you  you want actually to  you want actually to have multiple channels being recorded so that you can  
+
+B:  I 'm not so much worried about disk space actually . 
+
+B:  but the real issue is that , uh , there is no way to do a recording extended to what we have now with low skew . 
+
+B:  but if you 're d i the kind of person who 's doing array processing you actually care about funny little times . 
+B:  And  and so you actually wou would want to have a completely different set up than we have , 
+B:  one that would go up to thirty - two channels or something . 
+
+B:  So , I 'm kinda skeptical , 
+
+B:  But what we could do is if there was someone else who 's interested they could have a separate set up which they wouldn't be trying to synch with ours 
+B:  which might be useful for  for them . 
+
+B:  Yeah , we can o offer the meetings , and the physical space , 
+B:  and  and  yeah , the transcripts , and so on . 
+
+E:  Is there an interest in getting video recordings for these meetings ? 
+
+H:  Yes , absolutely . But it 's exactly the same problem , 
+
+H:  you have a problem with people not wanting to be video taped , 
+
+H:  that you have an infrastructure problem , 
+
+H:  and you have the problem that no one who 's currently involved in the project is really hot to do it . 
+
+E:  So there 's not enough interest to overcome all of  
+
+A:  but I know there is interest from other places that are interested in looking at meeting data and having the video . 
+
+B:  There 's this human subjects problem . 
+
+B:  So I think NIST or LDC , or somebody like that I think is much better shape to do all that . 
+
+B:  I mean , the thing is , once you actually have serious interest in any of these things then you actually have to put a lot of effort in . 
+
+G:  So first of all , um , I 've got eight transcribers . 
+
+G:  But the pre - segmentation really helps a huge amount . 
+
+G:  And , uh , meetings , you know , I think that they 're  they go as long as a  almost two hours in some  in some cases . 
+
+G:  Uh , seven of them are linguists . 
+G:  One of them is a graduate student in psychology . 
+
+G:  And , uh , also Dan Ellis 's innovation of the , uh  the multi - channel to here really helped a r a lot in terms of clearing  clearing up h hearings that involve overlaps . 
+
+G:  just out of curiosity I asked one of them how long  it was taking her , one of these two who has already finished her data set . 
+G:  She said it takes about , uh , sixty minutes transcription for every five minutes of real time . 
+
+G:  which is what we were thinking . 
+G:  It 's well in the range . 
+
+G:  but  But it 's word level , speaker change , the things that were mentioned . 
+
+H:  And so it 's  it 's a data representation and a set of tools for manipulating transcription graphs of various types . 
+
+H:  The  the one  the  what I think you 're referring to , they  they have this concept of an an annotated transcription graph representation . 
+
+G:  OK , now I wanted to mention the , um , teleconference I had with , uh , Jonathan Fiscus . 
+
+G:  He , um , um , he in indicated to me that they 've  that he 's been , 
+
+G:  but spending a lot of time with the ATLAS system . 
+
+G:  But it looks to me like that 's the name that has developed for the system that Bird and Liberman developed  for the annotated  graphs approach . 
+
+G:  and what we  what we will do and  uh , is to provide them with the u already transcribed meeting 
+G:  for him to be able to experiment with in this ATLAS System . 
+
+G:  and that he wants to experiment with taking our data 
+G:  and putting them in that format , and see how that works out . 
+
+G:  Well , except I can say that my transcribers use the mixed signal mostly 
+G:  unless there 's a huge disparity in terms of the volume on  on the mix . 
+G:  In which case , you know , they  they wouldn't be able to catch anything except the prominent  channel , 
+G:  then they 'll switch between . 
+
+H:  But I mean we had this  we 've had this discussion many times . 
+H:  And the answer is we don't actually know the answer because we haven't tried both ways . 
+
+G:  I told him he could SSH on and use multi - trans , and have a look at the already done , uh , transcription . And he  and he did . 
+G:  And what he said was that , um , what they 'll be providing is  will not be as fine grained in terms of the time information . 
+
+G:  Um , OK , now I also wanted to say in a different  a different direction is , Brian Kingsbury . 
+
+G:  He downloaded  from the CD onto audio tapes . 
+G:  And apparently he did it one channel per audio tape . 
+G:  So each of these people is  transcribing from one channel . 
+
+E:  But there could be problems , right ? with that . 
+
+A:  there are a lot of words that are so reduced phonetically that make sense when you know what the person was saying before . 
+
+E:  Given all of the effort that is going on here in transcribing why do we have I B M doing it ? 
+E:  Why not just do it all ourselves ? 
+
+B:  and , um , here 's , uh , a  a , uh , collaborating institution that 's volunteered to do it . 
+
+B:  uh , some point ago we thought that uh , it  " boy , we 'd really have to ramp up to do that " , 
+
+B:  So , that was a contribution they could make . Uh in terms of time , money , you know ? 
+
+H:  So , um , Liz , with  with the SRI recognizer ,  can it make use of some time marks ? 
+
+A:  um , I mean , for the SRI front - end , we really need to chop things up into pieces that are f not too huge . 
+A:  Um , but second of all , uh  in general because some of these channels , 
+
+A:  sorry , some of the segments have a lot of cross - talk . 
+A:  Um , it 's good to get sort of short segments if you 're gonna do recognition , 
+A:  especially forced alignment . 
+
+A:  So we have to sort of normalize  the front - end and so forth , and have these small segments . 
+A:  So we 've taken that and chopped it into pieces based always on your  your , um , cuts that you made on the mixed signal . 
+A:  And so that every  every speaker has the same cuts . 
+
+A:  Um , the problem is if we have no time marks , 
+A:  then for forced alignment we actually don't know where  you know , in the signal the transcriber heard that word . 
+
+A:  Th - but there 's going to be a real problem , 
+A:  uh , even if we chop up based on speech silence these , uh , the transcripts from I B M , we don't actually know where the words were , 
+A:  which segment they belonged to . 
+
+G:  Now wasn't  I thought that one of the proposals was that IBM was going to do an initial forced alignment , 
+
+B:  I  I think that they are , 
+
+B:  and so we  we have to have a dialogue with them about it . 
+
+B:  And the other one is , um , uh , is there some good use that we can make of the transcribers to do other things ? 
+
+B:  but how do we step out the recorded meetings ? 
+
+B:  Right , so I think we talking about three level  three things . 
+B:  One  one was uh , we had s had some discussion in the past about some very high level labelings , 
+B:  types of overlaps , and so forth that  that someone could do . 
+B:  Second was , uh , somewhat lower level 
+B:  just doing these more precise timings . 
+B:  And the third one is  is , uh , just a completely wild hair brained idea that I have 
+B:  which is that , um , if , uh  if we have time and people are able to do it , to take some subset of the data and do some very fine grained analysis of the speech . 
+B:  For instance , uh , marking in some overlapping  
+B:  potentially overlapping fashion , uh , the value of , uh , ar articulatory features . 
+
+B:  and then this would give some more ground work for people who were building statistical models that allowed for overlapping changes , different timing changes as opposed to just " click , 
+
+B:  No , I think  I think it 's  for  for  for that purpose I 'm just viewing meetings as being a  a neat way to get people talking naturally . 
+B:  And then you have i and then  and then it 's natural in all senses , 
+B:  in the sense that you have microphones that are at a distance that you know , one might have , 
+B:  and you have the close mikes , 
+B:  and you have people talking naturally . 
+B:  And the overlap is just indicative of the fact that people are talking naturally , 
+
+A:  I guess I wanted to , um , sort of make a pitch for trying to collect more meetings . 
+
+A:  because I think it 'd be good if  if we can get a few different sort of non - internal types of meetings 
+
+A:  Um , the other thing is that  there was a number of things at the transcription side that , um , transcribers can do , like dialogue act tagging , 
+A:  disfluency tagging , 
+A:  um , things that are in the speech that are actually something we 're y  working on for language modeling . 
+
+G:  which is , um , uh , uh , Jonathan Fiscus expressed primar uh y a major interest in having meetings which were all English speakers . 
+
+B:  so I think , you know , if he 's  if he 's thinking in terms of recognition kind of technology I  I  I think he would probably want , uh <breath> American English , 
+
+A:  All I meant is just that as sort of  as this pipeline of research is going on we 're also experimenting with different ASR , uh , techniques . 
+
+A:  but that , um , it would be helpful if I can stay in the loop somehow with , um , people who are doing any kind of post - processing , 
+
+E:  So the problem is like , uh , on the microphone of somebody who 's not talking they 're picking up signals from other people  and that 's <breath> causing problems ? 
+
+A:  R right , although if they 're not talking , using the  the inhouse transcriptions , were sort of O K 
+
+A:  Well we try to find as close of start and end time of  as we can to the speech from an individual speaker , 
+
+A:  for the forced alignment which is just to give us the time boundaries , 
+A:  because from those time boundaries then the plan is to compute prosodic features . 
+
+A:  because then we  we 're more guaranteed that the recognizer will  
+
+A:  And the sort of more space you have that isn't the thing you 're trying to align the more errors we have . 
+
+A:  uh , because of the fact that there 's enough acoustic signal there t for the recognizer to  to eat , <laugh> as part of a word . 
+
+A:  but we probably will have to do something like that in addition . 
+
+A:  because that  that 'll really help us . 
+

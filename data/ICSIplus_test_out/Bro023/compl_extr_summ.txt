@@ -1,0 +1,168 @@
+C:  And uh Hans - uh , Hans - Guenter will be here , um , I think by next  next Tuesday or so . 
+C:  So he 's  he 's going to be here for about three weeks , 
+
+A:  Just for a visit ? 
+
+C:  Uh , we 'll see . 
+C:  We might  might end up with some longer collaboration or something . 
+C:  So he 's gonna look in on everything we 're doing 
+C:  and give us his  his thoughts . 
+
+E:  Th - that 's his spectral subtraction group ? 
+E:  Is that right ? 
+
+C:  yeah . 
+
+E:  So I guess I should probably talk to him a bit too ? 
+
+C:  Yeah . 
+
+A:  So , um , <mouth>  I guess we got lots to catch up on . 
+A:  And we haven't met for a couple of weeks . 
+
+A:  why don't we  why don't we start with you , Dave , 
+
+E:  So , um , since we 're looking at putting this , um  mean log m magnitude spectral subtraction , um , into the SmartKom system , I I did a test seeing if , um , it would work using past only  and plus the present to calculate the mean . 
+E:  So , I did a test , um , <mouth> where I used twelve seconds from the past and the present frame to , um , calculate the mean . 
+
+E:  Twelve seconds , um , counting back from the end of the current frame , 
+
+E:  So it was , um , twen I think it was twenty - one frames 
+
+E:  And compared to , um , do using a twelve second centered window , I think there was a drop in performance 
+E:  but it was just a slight drop . 
+
+E:  So say twe twelve seconds in the earlier test seemed like a good length of time , 
+E:  but what happens if you have less than twelve seconds ? 
+
+E:  So I w bef before , um  Back in May , I did some experiments using , say , two seconds , or four seconds , or six seconds . 
+E:  In those I trained the models using mean subtraction with the means calculated over two seconds , or four seconds , or six seconds . 
+
+E:  here , I was curious , what if I trained the models using twelve seconds 
+E:  but I f I gave it a situation where the test set I was  subtracted using two seconds , or four seconds , or six seconds . 
+
+E:  And it seems like it  it  it hurts compared to if you actually train the models  using th that same length of time 
+
+C:  I mean , why would you do it , if you knew that you were going to have short windows in testing . 
+
+A:  Yeah , it seems like for your  I mean , in normal situations you would never get twelve seconds of speech , 
+
+C:  The other thing , um , which maybe relates a little bit to something else we 've talked about in terms of windowing and so on is , that , um , I wonder if you trained with twelve seconds , and then when you were two seconds in you used two seconds , 
+C:  and when you were four seconds in , you used four seconds , 
+C:  and when you were six  
+C:  and you basically build up to the twelve seconds . 
+C:  So that if you have very long utterances you have the best , 
+C:  but if you have shorter utterances you use what you can . 
+
+E:  And that 's actually what we 're planning to do in 
+
+C:  I don't know much about  as much as I should about the rest of the system 
+
+C:  But if you did first pass with , um , the  with  either without the mean sub subtraction or with a  a very short time one , 
+C:  and then , um , once you , uh , actually had the whole utterance in , if you did , um , the , uh , uh , longer time version then , based on everything that you had , um , and then at that point only used it to distinguish between , you know , top N , um , possible utterances or something , you  you might  it might not take very much time . 
+C:  I mean , I know in the large vocabulary stu uh , uh , systems , people were evaluating on in the past , some people really pushed everything in to make it in one pass 
+C:  but other people didn't and had multiple passes . 
+
+C:  the argument , um , against multiple passes was u u has often been " but we want to this to be r you know  have a nice interactive response " . 
+C:  And the counterargument to that which , say , uh , BBN I think had ,  was " yeah , 
+C:  but our second responses are  second , uh , passes and third passes are really , really fast " . 
+
+A:  uh , do you wanna go , Sunil ? 
+
+B:  So I 've been working on that Wiener filtering . 
+
+B:  found that , uh , s single  like , I just do a s normal Wiener filtering , like the standard method of Wiener filtering . 
+B:  And that doesn't actually give me any improvement over like  
+B:  I mean , uh , b it actually improves over the baseline 
+B:  but it 's not like  it doesn't meet something like fifty percent or something . 
+
+A:  Improves over the base line MFCC system ? 
+
+B:  So that 's  The improvement is somewhere around , like , thirty percent over the baseline . 
+
+C:  Is that using  in combination with something else ? 
+
+B:  No , 
+B:  just  just one stage Wiener filter 
+B:  which is a standard Wiener filter . 
+
+B:  uh , I ran this stuff with one more stage of Wiener filtering on it 
+B:  but the second time , what I did was I  estimated the new Wiener filter based on the cleaned up speech , and did , uh , smoothing in the frequency to  to reduce the variance  
+
+B:  And so by adding another stage of Wiener filtering , the results on the SpeechDat - Car was like , 
+
+B:  But the overall improvement was like fifty - six point four six . 
+
+C:  do we know yet ? 
+C:  about  as far as what they 're  what the rules are going to be and what we can use ? 
+
+D:  so actually I received a  a new document , describing this . 
+D:  And what they did finally is to , mmm , uh , not to align the utterances but to perform recognition , 
+D:  um , only on the close - talking microphone , 
+D:  and to take the result of the recognition to get the boundaries uh , of speech . 
+
+C:  Oh , so they will send files 
+C:  so everybody will have the same boundaries to work with ? 
+
+D:  Yeah . 
+
+A:  Can I ask just a  a high level question ? 
+A:  Can you just say like one or two sentences about Wiener filtering and why  why are people doing that ? 
+
+B:  I mean , so the basic principle of Wiener filter is like you try to minimize the , uh , d uh , difference between the noisy signal and the clean signal 
+
+A:  Do you wanna go , Stephane ? 
+
+D:  So , <clears throat> I 've been , uh , working still on the spectral subtraction . 
+
+D:  So to r to remind you <swallow> <mouth> a little bit of  of what I did before , is just <breath> to apply some spectral subtraction with an overestimation factor 
+
+D:  Um , doing just this , uh , either on the FFT bins or on the mel bands , um , t doesn't yield any improvement 
+
+D:  Well , actually I tried , <clears throat> something else based on this , um , is to  to put some smoothing , 
+D:  um , because it seems to  to help or it seems to help the Wiener filtering 
+
+D:  So what I did is , uh , some kind of nonlinear smoothing . 
+
+D:  uh , although I 've just  just tested on Italian and Finnish . 
+D:  And on Italian it seems  my result seems to be a little bit better than the Wiener filtering , 
+
+C:  Well , none of these systems , by the way , have  I mean , y you both are  are working with , um , our system that does not have the neural net , 
+
+C:  So one would hope , presumably , that the neural net part of it would  would improve things further as  as they did before . 
+
+D:  Yeah . 
+
+D:  Yeah , another thing that I  it 's important to mention is , um , that this has a this has some additional latency . 
+
+D:  And I noticed that it 's better if we take into account this latency . 
+
+C:  It 's depending on how all this stuff comes out 
+C:  we may or may not be able to add any latency . 
+
+D:  b but I don't think we have to worry too much on that right now while  you kno . 
+
+C:  I would worry about it a little . 
+C:  Because if we completely ignore latency , and then we discover that we really have to do something about it , we 're going to be  find ourselves in a bind . 
+
+C:  And  and that 's sort of one of the  
+C:  all of that sort of stuff is things that they 're debating in their standards committee . 
+
+D:  The second thing I was working on is to , um , try to look at noise estimation ,  mmm , and using some technique that doesn't need voice activity detection . 
+
+D:  and for this I u simply used some code that , uh , <breath-laugh> I had from  from Belgium , 
+D:  which is technique that , um , takes a bunch of frame , 
+
+D:  and for each frequency bands of this frame , takes a look at the minima of the energy . 
+D:  And then average these minima and take this as an  an energy estimate of the noise for this particular frequency band . 
+
+C:  But the spectral subtraction scheme that you reported on also re requires a  a noise estimate . 
+
+D:  Yeah . 
+
+C:  Couldn't you try this for that ? 
+C:  Do you think it might help ? 
+
+D:  Yeah , for  for sure I will . 
+D:  I can try also , mmm , the spectral subtraction . 
+

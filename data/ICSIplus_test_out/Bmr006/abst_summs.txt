@@ -1,0 +1,81 @@
+F:  um , but I 'd rather try to get more regular meetings of types that we know about , and hear , then sort of a mish - mosh of a bunch of one  one - time  
+abst_sum - abstract: The Berkeley Meeting Recorder group discussed research aims and corresponding concerns for future data collection.
+
+F:  And in that uh , regard , I thought we definitely w will need  it 'd b it 'd be nice for us to have a bunch of data from a few different domains , or a few different kinds of meetings . 
+F:  um , but I 'd rather try to get more regular meetings of types that we know about , and hear , then sort of a mish - mosh of a bunch of one  one - time  
+F:  but also data where we hold some parameters constant or fairly similar , 
+D:  Uh , for other kinds of research , particularly the acoustic oriented research , I actually feel the opposite need . 
+D:  I 'd like to have many different speakers . 
+D:  So , um I think I would also very much like us to have a fair amount of really random scattered meetings , of somebody coming down from campus , and  and uh , 
+F:  I 'd love to get people that are not linguists or engineers , cuz these are both weird  
+abst_sum - abstract: It was agreed that a substantial amount of meeting data is required from different domains, and comprising several speakers, to perform the types of discourse and acoustic analyses desired.
+
+C:  I have , eh , <clears throat> The result of my work during the last days . 
+C:  It 's a real problem ,  a frequently problem  uh , because you have overlapping zones eh , eh , eh , all the time . 
+C:  but , eh , my idea is , eh , is very interesting to  to work  in  in the line of , eh , automatic segmenter . 
+C:  No , I  I  plan to do that . 
+C:  Now , <mouth> eh , I need ehm , <mouth> to detect eh all the overlapping zones exactly . 
+D:  So the first thing is for you to  to build up something that will detect the overlaps . 
+abst_sum - abstract: Ongoing efforts by speaker mn005 to automatically  detect regions of speaker overlap were considered.
+
+D:  I would take just a few features . Instead of taking all the MFCC 's , or all the PLP 's or whatever , I would just take a couple . 
+D:  Uh , and uh on the other hand , the LPC residual , the energy in the LPC residual , <breath> will say how well , uh <breath> the low - order LPC <breath> model 's fitting it , which should be <breath> pretty poorly for two two or more <breath> people speaking at the same time , and it should be pretty well , for w for  for one . 
+D:  Well , that  that  that 's another reason why very simple features , things like energy , and things  things like harmonicity , and <breath> residual energy are uh , yeah are  are better to use than very complex ones because they 'll be more reliable . 
+abst_sum - abstract: It was suggested that speaker mn005 focus on a small set of acoustic parameters, e.g. energy and harmonics-related features, to distinguish regions of overlap from those containing the speech of just one speaker.
+
+D:  and <breath> then um , I guess another topic would be <breath> where are we in the whole disk resources  question 
+abst_sum - abstract: Disk space issues were discussed.
+
+B:  Um and then also anonymity , how we want to anonymize the data . 
+E:  the question becomes what symbol are you gonna put in there for everybody 's name , 
+E:  and whether you 're gonna put it in the text where he says " Hey Roger " or are we gonna put that person 's anonymized name in instead ? 
+B:  Because if we made the  the transcript be the tag that we 're using for Roger , someone who had the transcript and the audio would then have a mapping between the anonymized name and the real name , and we wanna avoid that . 
+E:  Um , how important is it for a person to be identified by first name versus full name ? 
+E:  However , taking one step further back , they 'd be identifiable anyway , even if we changed all the names . 
+E:  On the other hand , this is a small  this is a small pool , and people who say things about topic X e who are researchers and well - known in the field , they 'll be identifiable and simply from the  from the first name . 
+E:  Now , it would be very possible for me to take those data put them in a  in a study , and just change everybody 's name for the purpose of the publication . 
+E:  And within that , it may be that it 's sufficient to not uh change the  to not incorporate anonymization yet , but always , always in the publications we have to . 
+abst_sum - abstract: And, finally, the problem of speaker anonymization was explored.
+
+B:  Well , I think that , um  I think that the only thing we should say in the advertisement is that the meeting should be held in English . 
+abst_sum - decisions: Recordings must be of existing meetings that are conducted in English.
+
+D:  So I was  I was thinking more in terms of talking to professors uh , and  and  and uh , senior uh , uh , d and uh , doctoral students who are leading projects and offering to them that they have their  hold their meeting down here . 
+D:  I mean , it  it  I think that if we 're aiming at  at uh , groups of graduate students and professors and so forth who are talking about things together , and it 's from the Berkeley campus , probably most of it will be OK , 
+E:  And my point in m in my note to Liz was I think that undergrads are an iff iffy population . 
+abst_sum - decisions: Participants should ideally consist of professors and doctoral students, but no undergraduate students, who are willing to record their meetings at ICSI.
+
+F:  And in that uh , regard , I thought we definitely w will need  it 'd b it 'd be nice for us to have a bunch of data from a few different domains , or a few different kinds of meetings . 
+D:  I 'd like to have many different speakers . 
+D:  So , um I think I would also very much like us to have a fair amount of really random scattered meetings , of somebody coming down from campus , and  and uh , 
+F:  I 'd love to get people that are not linguists or engineers , cuz these are both weird  
+abst_sum - decisions: The Meeting Recorder corpus should comprise data from a large number of speakers representing different domains.
+
+None
+abst_sum - decisions: Attempts should also be made to optimize the speaker population for generating good language models.
+
+B:  Um , I had a  I spoke with some people up at Haas Business School who volunteered . 
+B:  Should I pursue that ? 
+F:  Oh , definitely , yeah . 
+abst_sum - decisions: Speaker me011 will pursue volunteers from the Haas Business School to record their weekly meetings at ICSI.
+
+D:  The o the o the other  The other thing is , uh , that we  we talked about is give to them  uh , burn an extra CD - ROM . 
+E:  We could burn it after it 's been cleared with the transcript stage . 
+E:  So , after the transcript screening phase . 
+abst_sum - decisions: A tentative decision was made to offer participants a recorded version of their meeting on a cd rom once the transcript screening phase is complete for that meeting.
+
+E:  If you have people who are using English as a  as an interlanguage because they  they don't  uh , they can't speak in their native languages and  but their interlanguage isn't really a match to any existing , uh , language model , 
+abst_sum - problems: Non-native speakers with a low proficiency in English are problematic for language modelling.
+
+D:  Uh , i We realized in discussion that the other thing is , what about this business of distant and close microphones ? 
+D:  If you 're talking about something simple , where you throw away a lot of these dimensions , then you can do that right away . 
+abst_sum - problems: The prospect of creating another recording setup requires the elimination certain more complicated dimensions of the existing setup, e.g. the use of close-talking and far-field microphones.
+
+E:  Then , uh , it seems to me that  Well , maybe I  uh it seems to me that if you change the name , the transcript 's gonna disagree with the audio , and you won't be able to use that . 
+E:  OK , well , but then there 's this issue of if we 're gonna use this for a discourse type of thing , then  and , you know , Liz was mentioning stuff in a previous meeting about gaze direction and who 's  who 's the addressee and all , then to have " Roger " be the thing in the utterance and then actually have the speaker identifier who was " Roger " be " Frank " , that 's going to be really confusing and make it pretty much useless for discourse analysis . 
+abst_sum - problems: Speaker anonymization poses problems for the transcription proccess, and also discourse analysis, as it makes it more difficult to track who is speaking and to whom a particular utterance is being addressed.
+
+B:  Well , the current one they don't do speaker identity . 
+B:  and so in their current conventions there are no multiple speaker conventions . 
+abst_sum - problems: As the current version of transcriptions does not include speaker identification labels, no multiple speaker transcription conventions are in use.
+

@@ -32,6 +32,7 @@ G:  <long inhale>
 D:  have these guys start to  <breath> 
 F:  OK . 
 A:  <breath> 
+topic_description:	opening
 
 
 F:  Why don't you go ahead , Dave ? <laugh> 
@@ -53,6 +54,7 @@ C:  d and , um ,
 C:  ap ap apart from that , I guess the  the main thing I have t ta I have to talk is , um , 
 H:  <mike noise> 
 C:  where I 'm planning to go over the next week . Um . 
+topic_description:	report from Dave, mean subtraction results
 
 
 C:  So I 've been working on integrating this mean subtraction approach into the SmartKom system . 
@@ -170,6 +172,7 @@ H:  <mike noise>
 C:  Right . OK . 
 D:  Yeah .  
 B:  <breath> 
+topic_description:	integrating into SmartKom system
 
 
 C:  And , um , 
@@ -191,6 +194,7 @@ C:  And , um , so ,
 C:  with the  the sampling rate I was using , one second or two seconds or four seconds is at a power of two 
 C:  um , number of samples and , um , I 'll  I 'll jus f for the ones in between I guess I 'll just zero - pad . 
 D:  Mm - hmm .  
+topic_description:	analysis window length
 
 
 D:  <breath> I guess one thing that might also be an issue , uh , cuz part of what you 're doing is you 're getting a  
@@ -223,6 +227,7 @@ D:  depending on
 D:  Could be . I don't know . 
 B:  <mike noise> 
 D:  <mike noise> 
+topic_description:	speech rate factors
 
 
 C:  And  and th the third thing , um , 
@@ -270,6 +275,7 @@ G:  <laugh>
 D:  Uh , 
 C:  Huh . 
 D:  Anyway .  
+topic_description:	LDA, alternative filters
 
 
 C:  o OK . So , um , 
@@ -433,6 +439,7 @@ C:  OK .
 C:  OK . So that was all I had , for now . 
 D:  Yeah . 
 D:  <breath> 
+topic_description:	cepstral mean subtraction, testing versus training
 
 
 F:  Do you wanna go , Barry ? 
@@ -496,6 +503,7 @@ A:  OK . Thanks .
 A:  Yeah . 
 F:  Is that it ? Hhh .  
 A:  That 's it . <breath> 
+topic_description:	report from Barry, thesis proposal, phoneme recognition
 
 
 F:  OK . Uh . Hhh .  Let 's see . So we 've got forty minutes left , and it seems like there 's a lot of material . An - any suggestions about 
@@ -537,6 +545,7 @@ B:  uh , for any non - stationary noise like " Babble " or " Subway " or any  " 
 B:  some " Restaurant " noise , it 's like  it 's not performing w very well . 
 B:  <mouth> So , 
 B:  <breath> the  <breath> So that  that 's the first thing I c uh , I could make out from this stuff . <breath> And  <breath> 
+topic_description:	report from Sunil, TI-digits, noise estimation results
 
 
 G:  <breath> Yeah , I think what is important to see is that there is a 
@@ -614,6 +623,7 @@ B:  Oh
 B:  Oh . Yeah . It 's not written anywhere . Yeah , it 's TI - digits . The first r spreadsheet is TI - digits . 
 D:  <breath> 
 G:  Hmm .  
+topic_description:	training mode differences
 
 
 D:  Mmm . How does clean training do for the , uh , " Car " 
@@ -722,6 +732,7 @@ G:  <breath>
 B:  So , 
 B:  that  that 's the  that 's about the results . <breath> And , uh , 
 A:  <breath> 
+topic_description:	"Car", multilanguage performance results
 
 
 B:  the summary is like  OK . So there are  the other thing what I tried was , which I explained in the last meeting , is using the 
@@ -788,6 +799,7 @@ E:  <sniff>
 G:  any type of processing . <breath> But it was  <breath> So , u u 
 G:  it  it seems to be the best what  wh wh what  what we can do in this moment is multi - condition training . <breath> 
 D:  <breath> 
+topic_description:	improving noise estimation, multi-condition training
 
 
 G:  And every when we now start 
@@ -863,6 +875,7 @@ G:  Mm - hmm .
 D:  looks more Gaussian . 
 E:  Mm - hmm .  
 G:  Hmm . 
+topic_description:	coping with artificial distortions
 
 
 G:  <breath> Yeah , y I  I was  whe w w just yesterday when I was thinking about it <breath> 
@@ -1012,6 +1025,7 @@ D:  Maybe .
 F:  So is , uh  Is that about it ? 
 E:  Mm - hmm .  
 H:  <mike noise> 
+topic_description:	using a random generator
 
 
 B:  Uh , so the  OK . So the other thing is the  
@@ -1135,6 +1149,7 @@ G:  No , I think I  I used this scheme as it was before .
 B:  OK . 
 B:  Ah . 
 B:  Mm - hmm . 
+topic_description:	LDA latency degredation
 
 
 F:  OK , we 've got twenty minutes so we should <breath> 
@@ -1874,6 +1889,7 @@ D:  Yeah . <laugh> Yeah .
 D:  Yeah . 
 D:  <breath> 
 D:  OK . 
+topic_description:	report from Stephane, VAD performance results
 
 
 F:  Carmen ? Do you , uh  
@@ -2047,6 +2063,7 @@ B:  <mike sounds>
 D:  And of course I 'd  we 'd  we 'd like to see it too . So , <breath> yeah . 
 H:  OK . 
 B:  <breath> 
+topic_description:	report from Carmen, VTS experiments summary
 
 
 F:  So , um , <breath> what 's  Do you think we , uh , should do the digits or skip it ? Or what are  what do you think ? 
@@ -2091,6 +2108,7 @@ A:  Yeah . <laugh>
 F:  <laugh> 
 D:  <mike noise> 
 A:  <laugh> 
+topic_description:	closing
 
 
 F:  This is transcript L dash two eight three .  
@@ -2208,5 +2226,6 @@ H:  <mike noise>
 A:  One five eight one , nine six three nine , five nine six seven .  
 D:  <breath> 
 A:  Five six , four two , five three , four seven , six two .  
+topic_description:	digit task
 
 

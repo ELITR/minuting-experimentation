@@ -1,0 +1,160 @@
+A:  So , I think this is gonna be a pretty short meeting because I have four agenda items , 
+abst_sum - abstract: This is a relatively short meeting of the Meeting Recorder group, with only a few agenda items.
+
+A:  three of them were requested by Jane who is not gonna be at the meeting today . 
+F:  Um  Well first of all with IBM I got a note from Brian yesterday saying that they finally made the tape for the thing that we sent them a  week or week and a half ago 
+F:  and hopefully next week we 'll have the transcription back from that . 
+E:  So we 're doing some in parallel . 
+abst_sum - abstract: Transcription was discussed briefly because Jane was not present, however this appears to be progressing well in parallel with IBM.
+
+F:  so I 've been trying to keep a web page uh up to date f showing what the current status is of the trans of all the things we 've collected 
+F:  That 's the thing that I sent out just to foo people saying can you update these pages 
+A:  So Jane also wanted to talk about participant approval , but I don't really think there 's much to talk about . 
+A:  I 'm gonna send out to the participants , uh , with links to web pages which contain the transcripts and allow them to  suggest edits . 
+C:  So but it 's just transcripts , not the  not the audio ? 
+A:  Nope , they 'll have access to the audio also . 
+A:  Because the transcripts might not be right . 
+F:  So , um the audio that they 're gonna have access to , will that be the uncompressed version ? 
+F:  Or will you have scripts that like uncompress the various pieces and  
+A:  Yeah , it 's  it 's probably going to have to be the uncompressed versions because , uh , uh , it takes too long to do random access decompression . 
+abst_sum - abstract: Web pages have been set up to show transcription status and to allow participants to approve transcripts.
+
+A:  Um , DARPA demo status , not much to say . 
+A:  The back - end stuff is working out fine . 
+E:  And , also um , I was just showing Andreas , I got um an X Waves kind of display , 
+E:  and I don't know how much more we can do with it  
+E:  with like the prosodic stuff where we have like stylized pitches and signals and the transcripts on the bottom 
+abst_sum - abstract: DARPA demos are progressing well with the back-end indexed to allow front-end filtering, and a potential demo ideas investigated which would use X Waves.
+
+C:  I 've been putting together uh Transcriber things for Windows 
+D:  But  But it would be cool if the Transcriber interface had like another window for the  you know , maybe above the waveform where it would show some arbitrary valued function that is  that is you know time synchron ti ti time synchronous with the wavform . 
+E:  and see the pitch contours also . 
+A:  Just record the audio clip and show an image and I think that 's  
+B:  and , <clear throat> the more live , the better , but uh , given the crunch of time , we may have to retreat from it to some extent . 
+B:  So I think   For a lot of reasons , I think it would be very nice to have this Transcriber interface be able to show some other interesting signal along with it 
+abst_sum - abstract: Transcriber is now working for Windows, however live pitch contours may not work in the time available.
+
+A:  And the last i item on the agenda is disk issues yet again . 
+A:  We 're  We 're only about thirty percent on the second disk . 
+A:  but we are like ninety five percent , ninety eight percent on the scratch disks for the expanded meetings . 
+abst_sum - abstract: Backed-up disk space is now fine, however temporary space is running out fast.
+
+B:  Uh , you know Dave Johnson is gone for , like , ten days , 
+B:  I mean it 's just a question of figuring out where they should be and hanging them , 
+B:  So this is a question that 's pretty hard to solve without talking to Dave , 
+B:  But at any rate I think that there 's a  there 's a longer term thing and there 's immediate need 
+abst_sum - abstract: Interim measures are discussed while sysadmin are away.
+
+D:  um yot I tested the uh  the sort of final version of the PLP configuration um on development test data for  for this year 's Hub - five test set . 
+D:  And the recognition performance was exactly , and I mean exactly up to the  you know , the first decimal , same as with the uh Mel Cepstra front - end . 
+D:  They  They were  The males I think were slightly better and the females were slightly worse but nothing really . 
+D:  And then the really nice thing was that if  if we combine the two systems we get a one and a half percent improvement . 
+abst_sum - abstract: Improvement has been made in the final version of the PLP, which shows better female performance, and combined with Mel Ceptra offers 1.5% improvement.
+
+D:  And then we had some results on  digits , uh , with um  
+D:  And the reason is basically there 's a whole bunch of read speech data in the Hub - five training set . 
+abst_sum - abstract: Digit performance also improved thanks to training using scripted speech data.
+
+D:  And then I th guess Chuck and I had some discussions about how to proceed with the tandem uh system 
+abst_sum - abstract: Progress has also been made in SRI alignment for tandem system.
+
+B:  so something that we wanna do next meeting is  is uh to put together um , a kind of reasonable list for ourselves of what is it , um , that we 've done . 
+B:  I mean just sort of bulletize I mean o e do do I can  I can dream up text but  this is basically gonna lead to the annual report . 
+A:  So just a week from tomorrow ? 
+D:  Um  Uh  One thing  I mean  we  <inbreath> <clear throat> in past meetings we had um also a you know various  variously talked about the um work that w uh was happening sort of on the  on the recognition side 
+D:  Well , it 's that  It 's just gonna be ver very boring for people who are not you know , sort of really interested in the details of the recognition system . 
+B:  Well , OK , so how many  how many people here would not be interested in uh  in a meeting about recognition ? 
+D:  Liz and Jane probably . 
+F:  Why don't we alternate this meeting every other week ? 
+F:  But I do I don't  I mean a lot of times lately it seems like we don't really have enough for a full meeting on Meeting Recorder . 
+B:  And then if we find , you know we 're just not getting enough done , there 's all these topics not coming up , then we can expand into another meeting . 
+B:  Uh . So uh . Um . Let 's chat about it with Liz and Jane  when we get a chance , see what they think and  
+abst_sum - abstract: The group note that the annual report needs to be worked on for next week, and it is also suggested to hold recognition meetings separately, however these issues will be discussed in more detail at the next meeting.
+
+D:  Because I  I need to ask Jane whether it 's  it would be OK for her  um , s some of her people to transcribe uh some of the initial data we got from the SmartKom data collection , which is these short like five or seven minute sessions . 
+D:  But to get going we would like some of the data transcribed right away so we can get started . 
+D:  And so um I wanted to ask Jane if  if uh , you know , maybe one of their transcribers could  could do  
+D:  I mean since these are very short , that should really be uh , 
+abst_sum - decisions: Jane will be contacted to see whether transcribers could work on a small amount of SmartKom data, in order to get the project moving.
+
+F:  I 'll send it out to the list telling people to look at it . 
+abst_sum - decisions: Details of the transcription status web page will be sent to the group.
+
+A:  So Jane also wanted to talk about participant approval , but I don't really think there 's much to talk about . 
+A:  I 'm gonna send out to the participants , uh , with links to web pages which contain the transcripts and allow them to  suggest edits . 
+C:  So but it 's just transcripts , not the  not the audio ? 
+A:  Nope , they 'll have access to the audio also . 
+A:  Because the transcripts might not be right . 
+F:  So , um the audio that they 're gonna have access to , will that be the uncompressed version ? 
+F:  Or will you have scripts that like uncompress the various pieces and  
+A:  Yeah , it 's  it 's probably going to have to be the uncompressed versions because , uh , uh , it takes too long to do random access decompression . 
+F:  Yeah , I was just wondering because we 're uh running out of the un - backed - up disk space on 
+abst_sum - decisions: Participants will be contacted to approve transcripts or suggest edits, however this depends upon decisions regarding disk space and (un)compression of audio files.
+
+B:  Uh , you know Dave Johnson is gone for , like , ten days , 
+B:  I mean it 's just a question of figuring out where they should be and hanging them , 
+B:  So this is a question that 's pretty hard to solve without talking to Dave , 
+B:  But at any rate I think that there 's a  there 's a longer term thing and there 's immediate need 
+abst_sum - decisions: There are disk space problems regarding scratch space, although the group decide that a solution about adding extra drives cannot be resolved without talking to sysadmin.
+
+E:  I have um  I have an eighteen gig drive hanging off of my computer . 
+B:  I mean it 's just a question of figuring out where they should be and hanging them , 
+B:  So this is a question that 's pretty hard to solve without talking to Dave , 
+B:  But at any rate I think that there 's a  there 's a longer term thing and there 's immediate need 
+abst_sum - decisions: Until they can be contacted, the group will use the hard drives on each other's machines.
+
+D:  But  But it would be cool if the Transcriber interface had like another window for the  you know , maybe above the waveform where it would show some arbitrary valued function that is  that is you know time synchron ti ti time synchronous with the wavform . 
+E:  and see the pitch contours also . 
+A:  Just record the audio clip and show an image and I think that 's  
+B:  and , <clear throat> the more live , the better , but uh , given the crunch of time , we may have to retreat from it to some extent . 
+B:  So I think   For a lot of reasons , I think it would be very nice to have this Transcriber interface be able to show some other interesting signal along with it 
+abst_sum - decisions: Displaying pitch contours live in Transcriber would be desirable for the demo, however, if the group run out of time, the group note that they could generate this statically using Powerpoint.
+
+D:  Um  Uh  One thing  I mean  we  <inbreath> <clear throat> in past meetings we had um also a you know various  variously talked about the um work that w uh was happening sort of on the  on the recognition side 
+D:  Well , it 's that  It 's just gonna be ver very boring for people who are not you know , sort of really interested in the details of the recognition system . 
+B:  Well , OK , so how many  how many people here would not be interested in uh  in a meeting about recognition ? 
+D:  Liz and Jane probably . 
+F:  Why don't we alternate this meeting every other week ? 
+F:  But I do I don't  I mean a lot of times lately it seems like we don't really have enough for a full meeting on Meeting Recorder . 
+B:  And then if we find , you know we 're just not getting enough done , there 's all these topics not coming up , then we can expand into another meeting . 
+B:  Uh . So uh . Um . Let 's chat about it with Liz and Jane  when we get a chance , see what they think and  
+abst_sum - decisions: The group decide that it may be more beneficial to have separate meetings to discuss recognition, since Jane and Liz are less likely to be interested in this.
+
+B:  Uh . So uh . Um . Let 's chat about it with Liz and Jane  when we get a chance , see what they think and  
+abst_sum - decisions: They will discuss this with them before going ahead.
+
+A:  but we are like ninety five percent , ninety eight percent on the scratch disks for the expanded meetings . 
+A:  And , my original intention was like we would just delete them as we needed more space , 
+A:  but unfortunately we 're in the position where we have to deal with all the meeting data  all at once , in a lot of different ways . 
+A:  You  we need about a gig per meeting . 
+E:  I have um  I have an eighteen gig drive hanging off of my computer . 
+B:  But at any rate I think that there 's a  there 's a longer term thing and there 's immediate need 
+abst_sum - problems: Scratch disk space used to store the uncompressed meetings when they are being processed is getting short - the group are using 98%.
+
+B:  Well , maybe it should get another rack . 
+B:  Uh , you know Dave Johnson is gone for , like , ten days , 
+E:  I have um  I have an eighteen gig drive hanging off of my computer . 
+B:  I mean it 's just a question of figuring out where they should be and hanging them , 
+F:  Well I sent that message out to , I guess , you and Dave asking for  if we could get some disk . 
+A:  The sysadmins would prefer to have one external drive per machine . 
+A:  So they don't want to stack up external drives . 
+B:  So this is a question that 's pretty hard to solve without talking to Dave , 
+F:  I think part of the reason why Dave can't get the  the new machines up is because he doesn't have room in the machine room right now . 
+B:  But at any rate I think that there 's a  there 's a longer term thing and there 's immediate need 
+abst_sum - problems: Various options are suggested about adding extra drives, externally to their machines, or to the server, but these cannot be resolved until after the relevant sysadmin person returns from a break in 10 days time.
+
+A:  Uh  The back - end is uh , going more slowly as I s I think I said before just cuz I 'm not much of a Tcl - TK programmer . 
+abst_sum - problems: Time is getting tight for some of the demo development, especially a lack of Tcl-TK skills slowing up back-end progress.
+
+D:  But  But it would be cool if the Transcriber interface had like another window for the  you know , maybe above the waveform where it would show some arbitrary valued function that is  that is you know time synchron ti ti time synchronous with the wavform . 
+E:  and see the pitch contours also . 
+A:  Just record the audio clip and show an image and I think that 's  
+B:  and , <clear throat> the more live , the better , but uh , given the crunch of time , we may have to retreat from it to some extent . 
+B:  So I think   For a lot of reasons , I think it would be very nice to have this Transcriber interface be able to show some other interesting signal along with it 
+abst_sum - problems: Additionally, time constraints may impinge upon the "live-ness" of the Transcriber pitch contour demo.
+
+B:  so something that we wanna do next meeting is  is uh to put together um , a kind of reasonable list for ourselves of what is it , um , that we 've done . 
+B:  I mean just sort of bulletize I mean o e do do I can  I can dream up text but  this is basically gonna lead to the annual report . 
+A:  So just a week from tomorrow ? 
+abst_sum - problems: Annual report is due next week, so this will need to be discussed at the next meeting.
+

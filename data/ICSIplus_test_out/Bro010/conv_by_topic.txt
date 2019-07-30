@@ -33,6 +33,7 @@ B:  Yeah .
 C:  tell us that , uh , the rules are different , uh , we 're still interested in 
 C:  doing what we 're doing . So what are you doing ? <laugh> 
 B:  Mm - hmm . 
+topic_description:	opening
 
 
 B:  <laugh> Uh , well , we 've  
@@ -49,6 +50,7 @@ C:  Who is doing that ?
 B:  Uh , us . Yeah . 
 C:  Oh , oh . Oh , OK . 
 D:  But  <outbreath> 
+topic_description:	spkr mn007, fn002 progress report, debugging, improving latency
 
 
 B:  So we took the filters  
@@ -102,6 +104,7 @@ B:  leave a lot of what 's above twenty - five hertz .
 C:  Yeah . 
 B:  Um , and so , yeah , this will be another filter which would add ten milliseconds again . 
 C:  Yeah . 
+topic_description:	IIR filters
 
 
 C:  You  you had a discussion with Sunil about this though ? 
@@ -129,6 +132,7 @@ C:  we did that with  had that thing with the latencies was indicative of the fa
 B:  <breath> Alright . Um , 
 C:  OK . 
 B:  Yeah . 
+topic_description:	communication with OGI
 
 
 B:  Um , 
@@ -159,6 +163,7 @@ C:  Hmm !
 C:  That 's a little bit of a problem . 
 B:  Yeah . 
 B:  Um , <breath> 
+topic_description:	normalization
 
 
 B:  But , well , when we add up everything it 's  it will be alright . 
@@ -317,6 +322,7 @@ A:  Yeah .
 C:  So . 
 C:  So , that 's what  that 's what you 're busy with , s messing around with this , yeah . 
 B:  Uh , yeah . <laugh> 
+topic_description:	improving latency times
 
 
 C:  And , uh , 
@@ -373,6 +379,7 @@ B:  Yeah .
 C:  At what stage do you do that ? Do you  you 're doing that , um  ?  
 D:  <laugh> 
 B:  So it would be on the um  
+topic_description:	spectral subtraction, KLT manipulations
 
 
 D:  We was think 
@@ -413,6 +420,7 @@ C:  energies I guess ? You do  doing the  ?
 D:  Mm - hmm . 
 B:  Mmm , yeah . 
 D:  Mm - hmm . 
+topic_description:	VAD, mel frequency bands
 
 
 C:  And you 're  you 're subtracting in the  in the  in the  
@@ -643,6 +651,7 @@ C:  you should  you should make it , uh , the center of the  center of the windo
 C:  uh , we 're already having problems with these delay , uh  <laugh> delay issues . So , uh , we 'll have to figure ways without it . 
 B:  Yeah , so . <outbreath> 
 C:  Um , 
+topic_description:	computing the noise spectrum, stationary noise
 
 
 A:  If they 're going to provide a , 
@@ -677,6 +686,7 @@ D:  No .
 D:  I do I have not here the proposal .  
 B:  <laugh> 
 C:  OK . 
+topic_description:	using VAD to detect speech boundaries
 
 
 C:  Um , <outbreath> 
@@ -795,6 +805,7 @@ A:  stuff . So .
 C:  Yeah , I think it 's an interesting  interesting way to go . Um , 
 E:  Cool . 
 C:  I say it like " said - int " . I think it has a number of good things . 
+topic_description:	speaker me006 progress report, subband feature detection
 
 
 C:  You know , it has a number of properties that I really liked . I mean , one is the going towards , um , 
@@ -844,6 +855,7 @@ E:  um , anything after that
 E:  it doesn't help . 
 C:  So  so that may or may t it  that aspect of what he 's doing may or may not be helpful because in a sense that 's the same sort of thing . You 're taking global information and determining what you  how you should   But this is  this is , uh , I th I think a little more direct . 
 C:  And  
+topic_description:	advantages of using low-level detectors
 
 
 A:  How did they measure the performance of their detector ? 
@@ -881,6 +893,7 @@ A:  Hmm .
 C:  That would  that 's  you 're right , that 's exactly the question to follow up this discussion , is suppose you did that , uh , got that right . Um , 
 C:  Yeah . 
 A:  Hmm . 
+topic_description:	implications for recognition performance
 
 
 B:  What could be the other low level detectors , I mean , for   
@@ -949,6 +962,7 @@ A:  <laugh>
 E:  <laugh> 
 C:  Yeah , so that 's  yeah , that 's , you know , a neat  neat thing and  and , uh  
 C:  <mouth> 
+topic_description:	other salient discriminatory features
 
 
 C:  Um , 
@@ -966,6 +980,7 @@ F:  @ @
 F:  And , um , 
 F:  <mouth> 
 F:  it looks like we 're gonna use the Meeting Recorder digits data for that . 
+topic_description:	speaker me026 progress report, far-microphone recognition
 
 
 B:  And the de - reverberation algorithm , do you have  
@@ -1008,6 +1023,7 @@ F:  and , um , feed that through the i
 F:  um , all pole filter and get enhanced speech with reverberation reduced . 
 B:  Mm - hmm . 
 B:  Mm - hmm . 
+topic_description:	de-reverberation algorithm
 
 
 C:  There 's also this , uh , um , 
@@ -1022,6 +1038,7 @@ B:  Mm - hmm .
 C:  through one method or another . Uh , that 's not a practical thing , 
 C:  uh , if you have a distant mike , you don't have a close mike ordinarily ,  but we thought that might make  also might make a good baseline . 
 C:  Uh , it still won't be perfect because there 's noise . 
+topic_description:	echo cancelation
 
 
 C:  Uh , but   And then there are s uh , there are 
@@ -1095,6 +1112,7 @@ F:  <laugh>
 C:  Yeah . Uh , so . 
 E:  <laugh> 
 B:  <mike noise> 
+topic_description:	single, multiple microphone approaches
 
 
 C:  Anyway , O K . Uh , I think that 's  that 's all we have this week . And , uh , I think it 's digit time . 
@@ -1129,5 +1147,6 @@ C:  Yeah , yeah , I 'll do my credit card number later . OK .
 D:  <laugh> 
 E:  <laugh> 
 D:  <laugh> 
+topic_description:	closing
 
 

@@ -1,0 +1,101 @@
+C:  So what are you doing ? 
+B:  Uh , well , we 've  a little bit worked on trying to see , uh , what were the bugs and the problem with the latencies . 
+abst_sum - abstract: The Berkeley Meeting Recorder Group discussed the progress of several of their members.
+
+None
+abst_sum - abstract: The progress being made on the group's main project, a speech recogniser for the cellular industry was reported.
+
+C:  You  you had a discussion with Sunil about this though ? 
+B:  No . 
+C:  Yeah , you should talk with him . 
+C:  uh , cuz they could be doing the same thing and  or something . 
+C:  We just  we just have to be in contact more . 
+C:  I think that  the  the fact that we  we did that with  had that thing with the latencies was indicative of the fact that there wasn't enough communication . 
+B:  But , well , when we add up everything it 's  it will be alright . 
+B:  So it would be around two hundred and forty  
+A:  What 's the allowable ? 
+C:  Two - fifty , 
+C:  Uh , well the people who had very low latency want it to be low  uh , very  <laugh> very very narrow , uh , latency bound . 
+C:  Unfortunately we 're the main ones with long latency , 
+A:  A person  I don't think a person can tell the difference between , uh , you know , a quarter of a second and a hundred milliseconds , 
+A:  I 'm not even sure if we can tell the difference between a quarter of a second and half a second . 
+A:  I mean it just  it feels so quick . 
+C:  uh , one thing that would be no  good to find out about from this conference call is that what they were talking about , what they 're proposing doing , was having a third party , um , run a good VAD , and  and determine boundaries . 
+C:  And then given those boundaries , then have everybody do the recognition . 
+C:  uh , I guess they argued about that yesterday 
+abst_sum - abstract: The group also touched upon matters that had broader implications for the work, such as the work of other groups on the same project.
+
+C:  Uh , maybe we can talk about a couple other things briefly , 
+C:  So you 're coming up with your quals proposal , 
+E:  Um , but I 'm , uh , looking into extending the work done by Larry Saul and John Allen and uh Mazin Rahim . 
+C:  so , uh , y you want to talk maybe a c two or three minutes about what we 've been talking about today and other days ? 
+F:  we 're interested in , um , methods for far mike speech recognition , 
+F:  um ,  mainly , uh , methods that deal with the reverberation  in the far mike signal . 
+abst_sum - abstract: There were also some progress reports from group members working on other projects.
+
+B:  Do you have news from the conference talk ? 
+D:  Yesterday morning on video conference . 
+C:  No , nobody 's told me anything . 
+C:  No , that would have been a good thing to find out before this meeting , 
+C:  I mean , let 's  let 's assume for right now that we 're just kind of plugging on ahead , 
+C:  because even if they tell us that , uh , the rules are different , uh , we 're still interested in doing what we 're doing . 
+C:  uh , one thing that would be no  good to find out about from this conference call is that what they were talking about , what they 're proposing doing , was having a third party , um , run a good VAD , and  and determine boundaries . 
+C:  And then given those boundaries , then have everybody do the recognition . 
+C:  uh , I guess they argued about that yesterday 
+C:  I don't  don't know the answer 
+C:  but we should find out . 
+abst_sum - decisions: No one from the group attended a recent video conference about their main project, but they need to find out what was discussed in it.
+
+C:  I mean , let 's  let 's assume for right now that we 're just kind of plugging on ahead , 
+C:  because even if they tell us that , uh , the rules are different , uh , we 're still interested in doing what we 're doing . 
+abst_sum - decisions: Until they do, they will continue on, assuming nothing major has been changed.
+
+C:  You  you had a discussion with Sunil about this though ? 
+B:  No . 
+C:  Yeah , you should talk with him . 
+C:  No , I mean , because the  the  the  the whole problem that happened before was coordination , 
+C:  So  so you need to discuss with him what we 're doing , 
+C:  uh , cuz they could be doing the same thing and  or something . 
+C:  We just  we just have to be in contact more . 
+C:  I think that  the  the fact that we  we did that with  had that thing with the latencies was indicative of the fact that there wasn't enough communication . 
+abst_sum - decisions: Need to discuss any new investigation with partners to make sure work is not repeated.
+
+B:  Do you have news from the conference talk ? 
+D:  Yesterday morning on video conference . 
+C:  No , nobody 's told me anything . 
+C:  No , that would have been a good thing to find out before this meeting , 
+C:  I mean , let 's  let 's assume for right now that we 're just kind of plugging on ahead , 
+C:  because even if they tell us that , uh , the rules are different , uh , we 're still interested in doing what we 're doing . 
+abst_sum - problems: There was a recent video conference meeting discussing the cellular project, but no one from the group attended and so do not know if it has any implications for their work, if any important decisions were made.
+
+B:  So it would be around two hundred and forty  
+C:  Just  just barely in there . 
+A:  What 's the allowable ? 
+C:  Two - fifty , 
+C:  unless they changed the rules . 
+C:  Which there is  there 's some discussion of . 
+A:  What were they thinking of changing it to ? 
+C:  Uh , well the people who had very low latency want it to be low  uh , very  <laugh> very very narrow , uh , latency bound . 
+C:  And the people who have longer latency don't . 
+C:  Unfortunately we 're the main ones with long latency , 
+B:  and basically the best proposal had something like thirty or forty milliseconds of latency . 
+abst_sum - problems: This includes decisions on the desired latency for the system, since the group is currently at the limit.
+
+D:  Also we were thinking to  to , uh , apply the eh , spectral subtraction from Ericsson 
+D:  and to  to change the contextual KLT for LDA . 
+C:  Well , there 's a lot of different ways of computing the noise spectrum . 
+A:  it seems like this kind of thing could add to the latency . 
+A:  I mean , depending on where the window was that you used to calculate  the signal - to - noise ratio . 
+C:  Not necessarily . 
+C:  Cuz if you don't look into the future , 
+B:  Actually , it 's a mmm  If - if you want to have a good estimation on non - stationary noise you have to look in the  in the future . 
+C:  but what does  what  what  what does Alcatel do ? 
+C:  And  and France Telecom . 
+B:  They just look in the past . 
+B:  I guess it works because the noise are , uh pret uh , almost stationary 
+C:  Yeah , y I mean , you 're talking about non - stationary noise 
+C:  but I think that spectral subtraction is rarely  is  is not gonna work really well for  for non - stationary noise , 
+C:  But it 's hard to  
+B:  that 's hard to do . 
+abst_sum - problems: Spectral subtraction, which the group is currently investigating as a method of dealing with noise, may add to the delay time, but also it is hard to do with non-linear noise.
+

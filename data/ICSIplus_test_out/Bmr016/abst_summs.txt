@@ -1,0 +1,63 @@
+D:  So the other topic with digits is uh , 
+D:  We have ASR results from Liz , 
+D:  transcript status from Jane , 
+D:  and disk space and storage formats from Don . 
+D:  Don , you had disk space and storage formats . 
+abst_sum - abstract: The Berkeley Meeting Recorder group discussed digits data, recent ASR results, the status of transcriptions, and disk space and storage format issues.
+
+D:  We have about two hours worth . 
+D:  So what that means is we have about an hour of transcribed digits that we can play with . 
+F:  And you 're saying two hours , uh , is digits , 
+abst_sum - abstract: Approximately two hours of digits have been recorded, half of which have been extracted.
+
+G:  um , leads us to believe that doing a better segmentation , like your channel - based segmentation , or some kind of uh , echo cancellation to get basically back down to the individual speaker utterances would be probably all that we would need to be able to do good recognition on the  on the close - talking mikes . 
+abst_sum - abstract: Researchers doing ASR are looking into methods for generating a better channel-based segmentation to improve recognition results for close-talking microphone data.
+
+E:  Alright so , first of all , um , there was a  an interest in the transcribe transcription , uh , checking procedures 
+abst_sum - abstract: Transcription checking procedures were reviewed, and efforts to coordinate the channelization and presegmention of data with the tightening of time bins were discussed.
+
+None
+abst_sum - abstract: The group also talked about downsampling and strategies for coping with low disk space.
+
+D:  OK so  so I can just add to the instructions to read it as digits 
+abst_sum - decisions: Digits forms will instruct speakers to read digits separately and not as connected numbers.
+
+None
+abst_sum - decisions: A tentative decision was made to collect overlapping digits from speakers.
+
+A:  Give it  Give one tr transcriber the  the channelized version of  of my speech - nonspeech detection 
+A:  and look if  if that 's helpful for them , 
+abst_sum - decisions: Transcribers will be given channelized data that has been segmented for speech/non-speech boundaries to determine whether such pre-processing facilitates the transcription process.
+
+D:  and they 're slowly s trickling in . 
+D:  and so we tried last week with them written out in English . 
+D:  And it just didn't work at all 
+D:  because no one grouped them together . 
+abst_sum - problems: Participants have been slow in returning the relevant forms necessary for matching digits data with speaker IDs. Forms containing digits that were written out in English were unsuccessful for obtaining desired prosodic groupings.
+
+G:  Especially for speakers that don't talk a lot . 
+G:  so we have a problem with acoustic adaptation , 
+abst_sum - problems: Acoustic adaptation is problematic for speakers who seldom talk during meetings.
+
+G:  it 's the fact that there 's overlap that causes recognition errors . 
+G:  so with a one - word utterance and ten insertions you know you got huge error rate . 
+abst_sum - problems: Speaker overlap causes recognition errors.
+
+G:  I guess the other neat thing is it shows for sure w that the lapel , you know within speaker is bad . 
+G:  And it 's bad because it picks up the overlapping speech . 
+abst_sum - problems: The lapel microphone is problematic as it picks up overlapping background speech.
+
+G:  That  that 's why we need more disk space 
+abst_sum - problems: More disk space is needed.
+
+G:  You can't load an hour of speech into X Waves . 
+abst_sum - problems: Loading long waveforms in X Waves is very time consuming.
+
+G:  but if there 's things that um , we change later , then we always have to keep our  the dictionary up to date . 
+abst_sum - problems: The dictionary must be updated with forms introduced as part of speaker fe008's set of transcription conventions.
+
+E:  Well , you know the problem  the problem is that some  some of the adjustments that they 're making are to bring  are to combine bins that were  time bins which were previously separate . 
+B:  But the  I guess the ef the effect for you guys , because you 're pulling out the little wave forms into separate ones , that would mean these boundaries are constantly changing 
+G:  but if you split inside something , you don't where the word  which words moved . 
+abst_sum - problems: The ongoing tightening of boundaries on time bins causes segment boundaries to change, indicating potential problems for other ongoing processing tasks.
+

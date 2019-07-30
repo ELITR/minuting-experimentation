@@ -33,11 +33,13 @@ D:  <mike noise>
 F:  But aside from that is there anything in particular that anybody wants to bring up 
 D:  Mmm . 
 F:  for today ? 
+topic_description:	opening
 
 
 F:  No ? OK . So why don't we just around and people can give updates . Uh , do you want to start , Stephane ? 
 E:  Oh . 
 D:  <mike noise> 
+topic_description:	report from Stephane
 
 
 C:  <mouth> Alright . Um . Well , the first thing maybe is that the p Eurospeech paper is , uh , accepted . 
@@ -70,6 +72,7 @@ C:  September . <breath>
 F:  Mmm . 
 D:  <mike noise> 
 C:  Mmm  <outbreath> 
+topic_description:	Eurospeech submission
 
 
 C:  Yeah . Then , uh , whhh  well , I 've been working on  on t mainly on on - line normalization this week . 
@@ -205,6 +208,7 @@ C:  Mmm .
 C:  Yeah . W um , <breath> 
 C:  <paper rustling> 
 C:  So that 's it , I think , for the on - line normalization . 
+topic_description:	on-line normalization
 
 
 C:  Um  <outbreath> 
@@ -364,6 +368,7 @@ C:  It was the same system .
 C:  Mmm . <outbreath> 
 C:  <clears throat> 
 C:  <mouth> 
+topic_description:	energy thresholding, additive noise
 
 
 C:  Oh , yeah . <laugh> 
@@ -508,6 +513,7 @@ C:  <breath> Mmm . <breath> <mouth>
 F:  <mouth> 
 F:  So do you have  more , Stephane , or  ? 
 C:  <mouth> Uh , that 's it , I think . <breath-laugh> Mmm . <outbreath> 
+topic_description:	selecting French Telecom features, LDA filter
 
 
 F:  <laugh> Do you have anything , Morgan , or  ? 
@@ -586,6 +592,7 @@ A:  Yeah .
 F:  Great . Uh  
 A:  So that 's  that 's it . 
 D:  <mike noise> 
+topic_description:	report from Barry, phone recognition experiments
 
 
 F:  OK . Um  <mouth> 
@@ -634,6 +641,7 @@ G:  OK .
 B:  So . <laugh> 
 G:  OK . 
 B:  Yeah .  
+topic_description:	report from Dave, spectral subtraction, SmartKom
 
 
 B:  Also , I guess we had  we 've had these , uh , little di discussions  I guess you ha haven't had a chance to work with it too much  about  
@@ -686,6 +694,7 @@ B:  um , as opposed to taking the log and subtracting .
 B:  So then , um , 
 B:  um , you know , there might be some numerical issues . We don't really know that . 
 B:  <breath> 
+topic_description:	phase normalization
 
 
 B:  The other thing we talked a little bit about was Taylor series expansion . 
@@ -715,6 +724,7 @@ B:  Uh , so there 's
 G:  OK . 
 B:  converges . <breath-laugh> But . 
 F:  Hmm . 
+topic_description:	Taylor series expansion
 
 
 F:  <mouth> OK . How about you , Sunil ? 
@@ -792,6 +802,7 @@ D:  And , um , <mouth>
 D:  uh  <pages turning> Yeah .  
 D:  I guess  Yep . I guess that 's it . And , uh , th th that 's where I am right now . 
 D:  So . 
+topic_description:	report from Sunil, Wiener filtering, Aurora
 
 
 F:  Oh . How about you , Carmen ? 
@@ -835,6 +846,7 @@ B:  the particular implementation and how much you 're adjusting it ? Or how muc
 E:  Pfft . I don't know because  
 D:  <mike noise> 
 E:  Hhh ,  
+topic_description:	report from Carmen, Vector Taylor Series
 
 
 C:  Are you still using only the ten first frame for noise estimation or  ? 
@@ -885,6 +897,7 @@ B:  Um .
 B:  So maybe if you tested it using that , <breath> 
 B:  you 'd have more reliable  stretches of nonspeech to do the estimation from and see if that helps . 
 E:  <mouth> 
+topic_description:	noise estimation
 
 
 E:  Yeah . Another thing is the , em  the codebook , the initial codebook . 
@@ -1438,6 +1451,7 @@ A:  <mike noise>
 E:  statistic approximation to remove the noise . 
 E:  I don't know . 
 B:  Right . 
+topic_description:	VTS method, removing noise from speech
 
 
 F:  Great . 
@@ -1463,6 +1477,7 @@ B:  <mouth>
 F:  OK . 
 G:  <mike noise> 
 B:  OK . S 
+topic_description:	closing
 
 
 B:  Transcript L dash one six nine . <breath>  
@@ -1509,5 +1524,6 @@ G:  Five nine three five , seven , five six zero .
 G:  Four eight eight , eight eight two , nine eight eight .  
 G:  Five nine , six seven , two five , zero six , nine four .  
 G:  Eight two , two zero , one nine , two six , nine one .  
+topic_description:	digit task
 
 

@@ -1,0 +1,77 @@
+None
+abst_sum - abstract: A detailed diagram of the belief-net had already been disseminated.
+
+B:  one of which is just lay out the influence structure of what we think influences what 
+abst_sum - abstract: Its structure was discussed during the meeting.
+
+B:  the way we had been designing this , there were three intermediate nodes 
+B:  uh which were the endpoint decision as seen from the uh user model as seen from the ontology and as seen from the discourse . 
+D:  These are all like saying EV or A , 
+abst_sum - abstract: There are several endpoints (User, Ontology, Discourse etc) with separate EVA (Enter/View/Approach) values.
+
+B:  one of which is just lay out the influence structure of what we think influences what 
+abst_sum - abstract: Details of how different inputs feed into them were discussed at length.
+
+E:  if it 's fixing things selling things , or servicing things 
+B:  so the idea would be that you might wanna merge those three 
+B:  you could have a node that 's  that was a measure of the match between the object 's feature , you know , the match between the object the entity , I 'm sorry and the user . 
+abst_sum - abstract: Ideas mentioned included grouping features of buildings like "selling", "fixing" and "exhibiting", as well as creating a User-compatibility node that would take different values depending on the situation and the user status.
+
+E:  So here is the  the  we had that the user 's budget may influence the outcome of decisions . 
+B:  Well the fir see the first thing is , getting back to thing we left out of the other is the actual discourse . 
+abst_sum - abstract: Similarly, a Go-there (towards a building) node can be influenced by things like the user's budget and discourse parameters amongst other things.
+
+B:  and we don't know what they are yet . 
+abst_sum - abstract: The latter are still ill-defined at this stage.
+
+B:  because uh we 're gonna want to know you know , which constructions indicate various of these properties 
+abst_sum - abstract: The study of the linguistic constructions that people use in this kind of navigational domain is expected to be prove useful in that respect.
+
+D:  So um recall the basic problem which is that um you have a belief - net and you have like a lot of different nodes all contributing to one node . 
+D:  So the problem is to specify the uh so the conditional property of this given all those , 
+abst_sum - abstract: As each node in the tree is the decision point of the combination of its parent nodes, which rules govern this combination is an important issue.
+
+D:  and we just take the uh we essentially take um averages , 
+D:  This is a hidden variable . 
+C:  W I was just , if you wanted to pay attention to more than one you could pass a w a weighting s system though too , 
+abst_sum - abstract: There are several approaches ranging from simply averaging the inputs to using a hidden variable in order to weight them differently depending on context.
+
+C:  OK , so they  they could either be hand coded or learned or 
+abst_sum - abstract: If the latter architecture is used, the net could -to an extent- be trained with the data that is currently being collected.
+
+None
+abst_sum - decisions: Although this was mainly a brainstorming meeting, some minor tasks were allocated for the near future.
+
+D:  Yeah , I  I mean , it might soon , if this is gonna be used in a serious way like java base then it might soon be necessary to uh start modifying it for our purposes . 
+abst_sum - decisions: Since the net architecture and possible decision algorithms were discussed, it is necessary to examine how much of this JavaBayes can accommodate and, if not, what modifications would be necessary.
+
+None
+abst_sum - decisions: Additionally, the german partners visiting the institute will need to see some results of the new system design.
+
+A:  so , I mean I know we 're going for sort of a rough and ready . 
+abst_sum - decisions: Finally, the analysis of the linguistic constructions for the current research domain can begin even with limited data, as, at this stage, they need not be very detailed.
+
+None
+abst_sum - problems: The is only a diagrammatic view of how the decision tree for the EVA task looks like.
+
+E:  we have the user interest is a  is a vector of five hundred values , 
+B:  that you 'd have to do see in order to do reference and stuff like that um you 've gotta have both the current discourse and the context to say I wanna go back there , 
+abst_sum - problems: A lot of the details have been glossed over: the user model can potentially comprise a huge number of factors; a planning "go-there" node needs input from several other areas of the net; there are intricate interactions between discourse and the situation model.
+
+B:  and we don't know what they are yet . 
+abst_sum - problems: Similarly, what discourse properties are of importance and how they influence EVA probabilities is still a mystery.
+
+D:  but then the question is do you  do we wanna propagate beliefs every single time it 's updated or only when we need to ? 
+abst_sum - problems: On a more general note, there is also the question of whether the net should be updated continuously or only when it is needed.
+
+None
+abst_sum - problems: No final decision was taken as to the rules of computation applying in the belief-net.
+
+C:  OK , so they  they could either be hand coded or learned or 
+C:  Based on training data , 
+D:  like , are we able to get these nodes from the data ? 
+abst_sum - problems: The more interesting solutions would ideally require training data, and it is still debatable whether the current collection would be appropriate for this particular task.
+
+D:  Yeah , I  I mean , it might soon , if this is gonna be used in a serious way like java base then it might soon be necessary to uh start modifying it for our purposes . 
+abst_sum - problems: In any case, how different architectures can be implemented in JavaBayes and what modifications would be necessary for the purposes of this project also need to be investigated.
+

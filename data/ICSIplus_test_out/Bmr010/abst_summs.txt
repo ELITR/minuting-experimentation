@@ -1,0 +1,67 @@
+F:  Well , um , I can  give you an update on the  transcription effort . 
+F:  because at present , <spike on /p/> <inbreath> um , because <spike on /b/> of the limitations of <inbreath> th the interface we 're using , 
+F:  overlaps are , uh , not being <spike on /b/> encoded by <spike on /b/> the transcribers in as complete <spike on /p/> and , uh , detailed a way as it might be , 
+A:  What our decision was is that  we 'll go ahead with what we have with a not very fine time scale on the overlaps . 
+abst_sum - abstract: The Berkeley Meeting Recorder group talked about the ongoing transcription effort and issues related to the Transcriber tool, which despite its limitations for capturing tight time markings for overlapping speech, will continue to remain in use.
+
+F:  The  we have great  great , uh , p steps forward in terms of the nonspeech - speech pre - segmenting of the signal . 
+C:  Um , so , uh , what we basically did so far was using the mixed file to  to detect s speech or nonspeech  portions in that . 
+F:  But <spike on "but"> it  it saves so much time  the  the <spike> transcribers 
+abst_sum - abstract: Speaker mn014 explained his efforts to pre-segment the signal into speech and non-speech portions for facilitating transcriptions.
+
+F:  Uh , maybe <mike spike> raise the issue of microphone , uh , um procedures 
+G:  Well , let 's  why don't we talk about microphone issues ? 
+G:  But I  I think that it  it doesn't hurt , uh , the naturalness of the situation to try to have people  wear the microphones properly , if possible , 
+B:  So , anything to reduce breathing is  is  is a good thing . 
+A:  So you want it enough to the side so that when you exhale through your nose , it doesn't  the wind doesn't hit the mike . 
+abst_sum - abstract: Recording equipment and procedures were discussed, with a focus on audible breathing and the need for standards in microphone wear and use.
+
+G:  But , I mean , the other things that we talked about is , uh , <inbreath> pitch - related things and harmonicity - related things , 
+G:  You know , have a  have a couple Markov models 
+G:  which is to say , don't worry so much about the , uh , features . 
+G:  and , uh , try to indi try to determine , you know , w when is th when are you in an overlap , when are you not in an overlap . 
+G:  And let the , uh , uh , statistical system  determine what 's the right way to look at the data . 
+D:  And I hope the  the next week I will have , eh , some results and we  we will show  we will see , eh , the  the parameter  the pitch , <inbreath> eh , tracking in  with the program . 
+G:  uh , the  has  has , uh , been exploring , uh , e largely the energy issue 
+G:  So far , um , uh , Jose has  has been  
+G:  but it may be  given that you have a limited time here , it  it just may not be the best thing to  <inbreath> to  to focus on for the remaining of it . 
+G:  Th - they were suggesting going to Markov models , 
+abst_sum - abstract: And, finally, it was determined that speaker mn005's efforts to detect speaker overlap using energy should instead be focussed on pitch- and harmonicity-related features or be guided by a non-featural, statistical approach, i.e. via the use of Markov models.
+
+A:  What our decision was is that  we 'll go ahead with what we have with a not very fine time scale on the overlaps . 
+F:  then <spike on /th/> when they 're encoding the overlaps <spike on /p/> it would be nice for them to be able to specify when  you know , the start points and end points of overlaps . 
+A:  And I hope that if we do a forced alignment with the close - talking mike , that will be enough to recover at least some of the time the time information of when the overlap occurred . 
+abst_sum - decisions: In the interest of time, it was decided that the group should continue using the existing Transcriber tool and perform a forced alignment on the close-talking microphones that will, it is hoped, help to recover some of the time information indicating where different speaker overlaps occurred in the signal.
+
+A:  Oh , we should definitely get with them then , 
+A:  agree upon a format . 
+abst_sum - decisions: A meeting will be arranged with NIST to decide on a common standard and format for doing transcriptions.
+
+A:  I think it would also be interesting to have , uh , a couple of the meetings have more than one transcriber do , 
+A:  cuz I 'm curious about inter - annotator agreement . 
+abst_sum - decisions: One or two meetings will be assigned to multiple transcribers to check for inter-annotator agreement.
+
+G:  But I  I think that it  it doesn't hurt , uh , the naturalness of the situation to try to have people  wear the microphones properly , if possible , 
+B:  So , anything to reduce breathing is  is  is a good thing . 
+A:  So you want it enough to the side so that when you exhale through your nose , it doesn't  the wind doesn't hit the mike . 
+abst_sum - decisions: To cut down on audible breaths during recordings, the group will institute some level of standards for microphone wear and use.
+
+G:  But , I mean , the other things that we talked about is , uh , <inbreath> pitch - related things and harmonicity - related things , 
+D:  And I hope the  the next week I will have , eh , some results and we  we will show  we will see , eh , the  the parameter  the pitch , <inbreath> eh , tracking in  with the program . 
+D:  But , eh , what did you think about the possibility of using the Javier software ? 
+A:  Right . So if we  if we fed the hand - segmentation to Javier 's and it doesn't work , then we know something 's wrong . 
+A:  Yeah . I think that 's probably worthwhile doing . 
+abst_sum - decisions: Speaker mn005 will feed his hand-segmented data into the speech segmenter developed by Javier to train it to identify different types of speech (i.e. that of single versus multiple speakers), as well as focussing on pitch- and harmonicity-related features for identifying overlapping speech.
+
+F:  Cuz there is one thing that we don't have right now and that is the automatic , um , channel identifier . 
+F:  That  that , you know , that would g help in terms of encoding of overlaps . 
+abst_sum - problems: There is no channel identifier to help in encoding speaker overlaps.
+
+B:  Well , the thing that you  is hard to deal with is whe <inbreath> when they speak while laughing . 
+abst_sum - problems: Speech uttered while laughing is problematic for ASR.
+
+G:  But the bottom line is it 's still not , uh , separating out very well . 
+G:  So far , um , uh , Jose has  has been  
+G:  and  and so far at least has not come up with <inbreath> any combination that really gave you an indicator . 
+abst_sum - problems: So far, speaker mn005's attempts to detect speaker overlap have been unsuccessful, as it has not been possible to normalize energy as a reliable indicator of overlap.
+

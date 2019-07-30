@@ -1,0 +1,259 @@
+E:  I  I have the program to insert the beeps . 
+E:  What I don't have is something to parse the output of the channelized transcripts to find out where to put the beeps , 
+E:  but that should be really easy to do . 
+
+A:  He generated , um , a channel - wise presegmented version of a meeting , 
+
+B:  Right , so we need to run Thilo 's thing on it , 
+B:  and then we go in and adjust the boundaries . 
+
+B:  how quickly can the transcribers scan over and fix the boundaries , 
+
+E:  Wow , excuse me , two or more times real time , 
+
+C:  So the first thing is the automatic thing , 
+C:  and then it 's  then it 's  then it 's the transcribers tightening stuff up , 
+C:  and then it 's IBM . 
+
+B:  We 're just doing the individual channels , 
+B:  right ? 
+
+A:  Yeah . 
+
+A:  so , I mean , the question is " should  should a transcriber listen to the entire thing or can it g can it be based on the mixed signal ? " 
+
+A:  I guess there is this issue of , you know , if  if the segmenter thought there was no speech on  on a particular stretch , on a particular channel , 
+A:  and there really was , then , if it didn't show up in a mixed signal to verify , then it might be overlooked , 
+
+C:  So you 're talking about tightening up time boundaries ? 
+
+E:  So , they have the normal channeltrans interface where they have each individual speaker has their own line , 
+E:  but you 're listening to the mixed signal and you 're tightening the boundaries , 
+E:  correcting the boundaries . 
+E:  You shouldn't have to tighten them too much because Thilo 's program does that . 
+
+D:  Except for <clears throat> it doesn't do well on short things , remember . 
+
+E:  Uh - huh . 
+
+D:  Like that . 
+
+E:  Well , so  so that 's something that the transcribers will have to  have to do . 
+
+A:  Yeah , but presumably , most of those they should be able to hear from the mixed signal unless they 're embedded in the heavil heavy overlap section 
+
+B:  but I guess if I didn't know anything about Transcriber and I was gonna make something to let them adjust boundaries , I would just show them one channel at a time , with the marks , and let them adju 
+
+E:  but then they  for this meeting they would have to do seven times real time , and it would probably be more than that . 
+
+A:  They could choose any signal to look at . 
+A:  I 've tried lookin but usually they look at the mixed . 
+A:  But I 've  I 've tried looking at the single signal and  and in order to judge when it  when it was speech and when it wasn't , 
+
+C:  But the procedure that you 're imagining , I mean , people vary from this , is that they have the mixed signal wave form in front of them , 
+
+C:  uh , well , let 's see , there isn't  we don't have transcription yet . 
+C:  So  but there 's markers of some sort that have been happening automatically , 
+C:  and those show up on the mixed signal ? 
+
+A:  they show up on the separate ribbons . 
+
+A:  then you don't have the correspondence of the times across the bins  uh across the ribbons 
+
+A:  and  and i i it 'll be  because it 's being segmented as channel at a time with his  with Thilo 's new procedure , 
+
+C:  OK , so The way you 're imaging is they kind of play it , 
+
+C:  and if it  if it  there 's a question on something , they stop and maybe look at the individual wave form . 
+
+E:  The problem is that  that  the Tcl - TK interface with the visuals , it 's very slow to load waveforms . 
+
+A:  You can  you can switch quickly between the audio , 
+A:  but you just can't get the visual display to show quickly . 
+
+E:  I think that if we decide that we need  that they need to see the visuals , we need to change the interface so that they can do that . 
+
+A:  Well , I  I do think that this  this will be a doable procedure , 
+A:  and have them starting with mixed 
+A:  and , um , then when they get into overlaps , just have them systematically check all the channels to be sure that there isn't something hidden from  from audio view . 
+
+E:  The mixed signal , the overlaps are pretty audible because it is volume equalized . 
+E:  So I think they should be able to hear . 
+E:  The only problem is  is , you know , counting how many and if they 're really correct or not . 
+
+D:  I don't know that you can locate them very well from the mixed signal , 
+
+C:  does anybody , uh , working on any  any Eurospeech submission related to this ? 
+
+E:  I would like to try to do something on digits 
+E:  but I just don't know if we have time . 
+
+C:  we had that one conversation about , uh , what  what  what did it mean for , uh , one of those speakers to be pathological , 
+
+E:  Whereas I think it it 's probably something pathologic 
+E:  and actually Stephane 's results , I think confirm that . 
+E:  He s he did the Aurora system 
+E:  also got very lousy average error , like fifteen or  or , uh , fifteen to twenty percent average ? 
+E:  But then he ran it just on the lapel , and got about five or six percent word error ? 
+E:  So that  that means to me that somewhere in the other recordings there are some pathological cases . 
+
+E:  It may be just some of the segments they 're just doing a lousy job on . 
+E:  So I 'll  I 'll listen to it and find out since you 'd actually split it up by segment . 
+
+B:  Did you run the  Andreas  the r SRI recognizer on the digits ? 
+
+F:  Since I considered those preliminary , I didn't . 
+
+F:  Yeah , it 's actually , um , it  uh  it was trimodal , actually  
+
+F:  there were  <inbreath> t there was  there was one h one bump at ze around zero , which were the native speakers , 
+
+B:  Zero percent error ? 
+
+C:  Y yeah . 
+
+F:  Then there was another bump at , um , <mouth> <inbreath> oh , like fifteen or something . 
+
+F:  Those were the non - natives . 
+F:  And then there was another distinct bump at , like , a hundred , <laugh> which must have been some problem . 
+
+G:  What is patho what do you mean by pathological ? 
+
+E:  Just  just something really wrong with  
+
+F:  In the recording 
+
+E:  A bug is what I mean , 
+
+F:  And there was this one meeting , I forget which one it was , where like , uh , six out of the eight channels were all , like  had a hundred percent error . 
+
+E:  Which probably means like there was a  th the recording interface crashed , 
+
+E:  or , uh , I extracted it incorrectly , 
+
+E:  or there was a short  you know , someone was jiggling with a cord 
+
+E:  it was transcribed incorrectly , 
+
+F:  So , if I excluded the pathological ones , <laugh> by definition , those that had like over ninety - five percent error rate , <inbreath> and the non - natives , then the average error rate was like one point four or something , 
+F:  which  which seemed reasonable given that , you know , the models weren't tuned for  <inbreath> for it . 
+F:  And the grammar wasn't tuned either . 
+
+D:  But there 's no overlap during the digit readings , so it shouldn't really matter . 
+
+F:  But if you p if you actually histogrammed it , and  it was a nice  uh , you know , it  it was  zero was the most of them , 
+
+F:  Oh , well , yeah , so I 've been struggling with the forced alignments . 
+
+F:  um , <mouth> <inbreath> most of the time it doesn't work very well . 
+
+F:  So , <inbreath> um , <mouth> I 'm still tinkering with it , 
+F:  but it might well be that we can't get clean alignments out of this  out of those , uh , <inbreath> channels , 
+
+C:  Unless maybe we do this , uh , um , cancellation business . 
+
+D:  but it 's clear from Dan that this is not something you can do in a short amount of time . 
+
+D:  so he thought well if we can do something quick and dirty because Dan said the cross - cancellation , it 's not straight - forward . 
+
+D:  so , it 's sort of good to hear that it was not straight - forward , thinking if we can get decent forced alignments , then at least we can do sort of a overall report of what happens with actual overlap in time , 
+
+B:  I thought he 's just saying you have to look over a longer time window when you do it . 
+
+B:  So you just have to look over longer time when you 're trying to align the things , 
+
+F:  The issue was that you have  to  you have have  you first have to have a pretty good speech detection on the individual channels . 
+
+D:  and it should work pretty well if you took care of this recording time difference . 
+
+D:  um , but then if you add the dynamic aspect of adapting distances , then it wasn't  
+
+D:  So  um , so I don't know what we can do if anything , that 's sort of worth , you know , a Eurospeech paper at this point . 
+
+B:  Well , Andreas , how well did it work on the non - lapel stuff ? 
+
+F:  I haven't checked those yet . 
+F:  It 's very tedious to check these . 
+F:  Um , we would really need , ideally , a transcriber <inbreath> to time mark the  you know , the be at least the beginning and s ends  of contiguous speech . 
+F:  Um , <mouth> <inbreath> and , you know , then with the time marks , you can do an automatic comparison of your  of your forced alignments . 
+
+B:  Because  really the  the  at least in terms of how we were gonna use this in our system was to get an ideal  an idea , uh , for each channel about the start and end boundaries . 
+B:  We don't really care about like intermediate word boundaries , 
+
+F:  but <inbreath> you don't wanna , uh , infer from the alignment that someone spoke who didn't . 
+
+F:  so I would need a k I would need a channel that has <inbreath> a speaker whose  who has a lot of overlap but s you know , is a non - lapel mike . 
+F:  And , um , <mouth> <inbreath> where preferably , also there 's someone sitting next to them who talks a lot . 
+
+D:  and , um , if you align the two hypothesis files across the channels , you know , just word alignment , you 'd be able to find that . 
+
+D:  Actually y we can tell from the data that we have , 
+
+D:  if Thilo can tell us that there 're boundaries here , we should be able to figure that out 
+D:  because the only thing transcribed in this channel is this word . 
+D:  But , um , you know , if there are things  
+
+E:  Two words . 
+
+D:  Yeah , if you have two and they 're at the edges , it 's like here and here , 
+D:  and there 's speech here , then it doesn't really help you , 
+
+A:  And then it 's coupled with the problem that sometimes , you know , with  with a fricative you might get the beginning of the word cut off 
+
+A:  cuz sometimes people will say , " And then I " and there 's a long pause 
+A:  and finish the sentence 
+A:  and  and sometimes it looks coherent and  and the  
+
+A:  but it 's possible that a script could be written to merge those two types of things . 
+
+E:  I was just thinking about the fact that if Thilo 's missed these short segments , that might be quite time - consuming for them to insert them . 
+
+A:  so it 's just a matter of  of , you know , from now on we 'll be able to have things channelized to begin with . 
+
+E:  And we 'll just have to see how hard that is . 
+
+A:  Well the problem is I  you know  I  I  it 's a  it 's a really good question , 
+A:  and I really find it a pain in the neck to delete things 
+
+D:  does it make sense to try to take what we have now , which are the ones that , you know , we have recognition on which are synchronous and not time - tightened , and try to get something out of those for sort of purposes of illustrating the structure and the nature of the meetings , or is it better to just , you know , forget that and tr 
+
+E:  Well , I think we 'll have to , eventually . 
+E:  And my hope was that we would be able to use the forced alignment to get it . 
+
+D:  because for feature extraction like for prosody or something , I mean , the meetings we have now , 
+D:  it 's a good chunk of data  
+
+D:  So we need some way to push these first chunk of meetings into a state where we get good alignments . 
+
+F:  and it 's possible that you get considerably better results if you , uh , manage to adapt the , <inbreath> uh , phone models to the speaker and the reject model to the  to  to all the other speech . 
+
+D:  But what you do wanna do is take the , even if it 's klugey , take the segments  the synchronous segments , the ones from the HLT paper , where only that speaker was talking . 
+D:  Use those for adaptation , 
+D:  cuz if you  if you use everything , then you get all the cross - talk in the adaptation , and it 's just sort of blurred . 
+
+D:  Like a third of it is bad for adaptation or so . 
+
+D:  the HLT paper is really more of a introduction - to - the - project paper , and , um  
+
+E:  Yeah , for Eurospeech we want some results 
+
+A:  I had , uh , one of the transcribers go through and tighten up the bins on one of the , uh , NSA meetings , 
+A:  and then I went through afterwards and double - checked it 
+A:  so that one is really very  very accurate . 
+
+D:  So that might actually be useful but they 're all non - native speakers . 
+
+D:  I mean , this is tough for a language model probably  
+
+E:  Well wh what it 's supposed to do is the backstrap is supposed to be under your crown , 
+
+E:  so it doesn't slide up . 
+
+E:  if you feel the back of your head , you feel a little lump , 
+E:  um , and so it 's supposed to be right under that . 
+
+E:  Cuz , I 'm just thinking , you know , we were  we 're  we 've been talking about changing the mikes , uh , for a while , 
+
+E:  acoustically they seem really good , 
+E:  but if they 're not comfortable , we have the same problems we have with these stupid things . 
+

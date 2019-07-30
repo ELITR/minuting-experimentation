@@ -1,0 +1,179 @@
+None
+abst_sum - abstract: The Berkley Meeting Recorder project is well underway, and this meeting discusses the progress and ongoing issues.
+
+F:  because <inbreath> it occurred to me that this is late May and the DARPA meeting is in  mid July . 
+F:  I mean in particular I would  I would really hope that when we do this DARPA meeting in July that we sort of have  we 're  we 're into production mode , somehow  
+F:  Um , we are gonna have this DARPA  meeting in the middle of July , 
+F:  given that we 've been  we 've given a couple public talks about it already , spaced by months and months , I think it 'd be pretty bad if we continued to say none of this is available . 
+abst_sum - abstract: A pressing concern for the group is the DARPA meeting in July, which is only a short time away, and for which they would like to have some progress.
+
+D:  And so he talked it over with the transcriber 
+D:  and the transcriber thought that the easiest thing for them would be if there was a beep and then the nu a number , a digit , and then a beep , uh , at the beginning of each one 
+F:  e e u u  The reason I 'm asking is because , uh , Jane and I have just been talking , and she 's just been doing . <laugh> Uh , e a , you know , further hiring of transcribers . 
+F:  And so we don't sort of really know exactly what they 'll be doing , how long they 'll be doing it , and so forth , 
+F:  because right now she has no choice but to operate in the mode that we already have working . 
+A:  I hired two transcribers today . I 'm thinking of hiring another one , 
+A:  which will  because we 've had a lot of attrition . 
+D:  Yeah . So , um , uh , Jane and Adam and I had a meeting where we talked about the reorganization of the  directory structure for all of the meeting  
+D:  For all the Meeting Recorder data . 
+abst_sum - abstract: Specifically, the group would like to have transcripts available, which would mean resolving legal issues for data use and on the basis of feedback from IBM get more transcription underway.
+
+F:  I know that we were gonna do something with the transcriber interface is one thing , 
+G:  Well , we were gonna do a mock - up , like , question answering or something , I thought , 
+F:  I was gonna ask Adam to , uh , say if he thought anymore about the demo stuff 
+abst_sum - abstract: Additionally they would also like to have the question answering mock-up and transcriber interface ready for then.
+
+F:  Is there stuff that 's happened about , um , uh , the  SRI recognizer et cetera , 
+F:  Y y you guys were doing a bunch of experiments with different front - ends and then with  
+D:  Now the  the  You saw the note that the PLP now is getting basically the same as the MFCC . 
+C:  um , it looks like the vocal tract length normalization is working beautifully , actually , 
+C:  Because in all our previous experiments , we had the  uh , you know , we were essentially cheating by having the , um , you know , the h the hand - segmentations as the basis of the recognition . 
+C:  And so now with Thilo 's segmenter working so well , I think we should  consider doing a  
+G:  And even  The good thing is that since you , um , have high recall ,  even if you have low precision cuz you 're over - generating , that 's good 
+F:  Has  has , uh  ? We just  I think , just talked about this the other day , but h has  has anybody had a chance to try changing , uh , insertion penalty sort of things with the  with the , uh  <breath> uh , using the tandem system input for the  ? 
+C:  But the PLP features work  um , uh , you know , continue to improve the , 
+abst_sum - abstract: PLP results for the front-end look good, with the group also reporting progress in segmentation: Thilo's segmenter will now be used and ways of improving performance investigated;
+
+G:  But we did find that some of the features that , I gue Jane would know about , that are expressing sort of the <breath> distance of , um , <mouth> boundaries from peaks in the utterance and <breath> some  local , um , range  pitch range effects , like how close people are to their floor , are showing up in these classifiers , 
+G:  Um , so we 're starting to see some patterns 
+G:  because the <breath> prosodic features are  very noisy and so you  you need a lot of data in order to model them . 
+abst_sum - abstract: The classifier segmentation is progressing well, especially in the use of prosody for identifying interruption.
+
+F:  Has  has , uh  ? We just  I think , just talked about this the other day , but h has  has anybody had a chance to try changing , uh , insertion penalty sort of things with the  with the , uh  <breath> uh , using the tandem system input for the  ? 
+C:  As I said before , the  uh using Dan 's , uh , uh , vocal tract normalization option works very well . 
+C:  But the PLP features work  um , uh , you know , continue to improve the , 
+C:  Well , but if you add them all up you have , uh , almost five percent difference now . 
+F:  And I think I agree with you that if we fixed lots of different things and they would all add up , we would probably have a  a  a competitive system . 
+F:  But I think not that much of it is due to the front - end per se . 
+F:  I think maybe a couple percent of it is , as far as I can see from this . 
+C:  eh At this point I 'm as I mean , you know  e I 'm wondering is it  Can we expect , uh , a tandem system to do better than a properly trained  you know , a Gaussian system trained directly on the features with , you know , the right ch choice of  parameters ? 
+abst_sum - abstract: Work on the front end continues, with improvements of 3-5% being made.
+
+G:  I mean , are we trying to do them <mike noise> in synchrony ? 
+G:  That might be fun . 
+F:  Well , it 's  <breath-laugh> it 's  it 's not  You know , it 's not gonna work out 
+F:  but we could  we could just , uh , uh , see if we find a rhythm , 
+abst_sum - decisions: The group discussed how the digits should be recorded in the meeting.
+
+G:  I mean , are we trying to do them <mike noise> in synchrony ? 
+G:  That might be fun . 
+F:  but we could  we could just , uh , uh , see if we find a rhythm , 
+F:  Well , it 's  <breath-laugh> it 's  it 's not  You know , it 's not gonna work out 
+abst_sum - decisions: In the end they decided to record these in unison for all of the meeting participants as a whole.
+
+C:  And so now with Thilo 's segmenter working so well , I think we should  consider doing a  
+G:  So we do need some kind of pre - segmentation . 
+C:  We should  we should consider doing some extra things , like , um , you know , retraining or adapting the  <breath> the models for background noise to the  to this environment , for instance . 
+G:  And , yeah , using Thilo 's , you know , posteriors or some kind of  or  
+abst_sum - decisions: To improve the performance of Thilo's automatic segmenter, this is going to be retrained and adapted to run with Thilo's posteriors and speaker background models.
+
+D:  And so he talked it over with the transcriber 
+F:  e e u u  The reason I 'm asking is because , uh , Jane and I have just been talking , and she 's just been doing . <laugh> Uh , e a , you know , further hiring of transcribers . 
+F:  And so we don't sort of really know exactly what they 'll be doing , how long they 'll be doing it , and so forth , 
+F:  because right now she has no choice but to operate in the mode that we already have working . 
+F:  You know , that we  we actually <breath> have a stream going and we know how  how well it does and how  and how it operates . 
+A:  I hired two transcribers today . I 'm thinking of hiring another one , 
+A:  which will  because we 've had a lot of attrition . 
+F:  but if we hire f you know , f we have five on staff  five or six on staff at any given time , then <inbreath> it 's a small enough number so we can be flexible either way . 
+abst_sum - decisions: Regarding transcription, no new transcribers will be employed until situation regarding IBM is clarified.
+
+F:  I mean in particular I would  I would really hope that when we do this DARPA meeting in July that we sort of have  we 're  we 're into production mode , somehow  
+F:  You know , that we  we actually <breath> have a stream going and we know how  how well it does and how  and how it operates . 
+F:  Right . So we can s we  we wanna be able to say " here is a subset that is available right now " 
+F:  and that 's has been through the legal issues and so forth . 
+C:  And they don't have to approve , you know , th an edited version , they can just give their approval to whatever version 
+F:  Well , in principle , yes . But , I mean , i if  if  if somebody actually did get into some legal issue with it then we 
+C:  Yeah . But th I mean , the editing will continue . Presumably if  if s errors are found , they will be fixed , 
+F:  I it  you know , there there is a point at which I agree it becomes ridiculous 
+A:  Unfortunately , uh , in  in the sign thing that they signed , it says " transcripts " . 
+A:  " You 'll be  you 'll be provided the transcripts when they 're available . " 
+F:  so let  let me just suggest that  <inbreath> uh , off - line that , uh , the people involved figure it out and take care of it before it 's July . 
+abst_sum - decisions: Legal issues surrounding the approval and signing off of transcripts by participants has proved to be very complicated, and so will be sorted out off line by those involved by July.
+
+C:  And , <breath> for instance , uh , Dan  @ @  Dan just sent me a message saying that CMU used , um , <mouth> something like ten Gaussians per cluster  
+C:  You know , each  each mixture has ten  Gaussians 
+D:  Hmm . We 're using sixty - four , 
+C:  so that 's <breath> obviously a big difference 
+C:  and give very poorly trained , uh , you know , Gaussians that way , 
+C:  The turn - around time on the training when we train only the  a male system with , uh , you know , our small training set , is <breath> less than twenty - four hours , 
+abst_sum - decisions: After finding discrepancies with the CMU researchers, the ICSI group have decided to tune the size of their Gaussian system.
+
+F:  Yeah . <inbreath> I  I would actually double check with Stephane at this point , 
+D:  Yeah . It 's hard with features , 
+D:  cuz you don't know what they should look like . 
+D:  I mean , you can't just , like , print the  the values out in ASCII and , you know , look at them , see if they 're  
+F:  Not unless you had a lot of time 
+abst_sum - decisions: After raising the difficulty of checking for bugs in their generation of tandem features, they decide to check with Stephane who has more experience of these procedures.
+
+F:  I was gonna ask Adam to , uh , say if he thought anymore about the demo stuff 
+F:  because <inbreath> it occurred to me that this is late May and the DARPA meeting is in  mid July . 
+F:  I know that we were gonna do something with the transcriber interface is one thing , 
+G:  Well , we were gonna do a mock - up , like , question answering or something , I thought , 
+F:  I mean in particular I would  I would really hope that when we do this DARPA meeting in July that we sort of have  we 're  we 're into production mode , somehow  
+D:  Yeah . So , um , uh , Jane and Adam and I had a meeting where we talked about the reorganization of the  directory structure for all of the meeting  
+D:  For all the Meeting Recorder data . 
+F:  Um , we are gonna have this DARPA  meeting in the middle of July , 
+F:  given that we 've been  we 've given a couple public talks about it already , spaced by months and months , I think it 'd be pretty bad if we continued to say none of this is available . 
+F:  Right . So we can s we  we wanna be able to say " here is a subset that is available right now " 
+abst_sum - problems: For the DARPA meeting in July, the group propose that they should have the question answering mock-up and transcriber interface ready for then, and also have data available.
+
+F:  so let  let me just suggest that  <inbreath> uh , off - line that , uh , the people involved figure it out and take care of it before it 's July . 
+A:  " You 'll be  you 'll be provided the transcripts when they 're available . " 
+A:  Unfortunately , uh , in  in the sign thing that they signed , it says " transcripts " . 
+F:  I it  you know , there there is a point at which I agree it becomes ridiculous 
+C:  Yeah . But th I mean , the editing will continue . Presumably if  if s errors are found , they will be fixed , 
+F:  Well , in principle , yes . But , I mean , i if  if  if somebody actually did get into some legal issue with it then we 
+C:  And they don't have to approve , you know , th an edited version , they can just give their approval to whatever version 
+F:  and that 's has been through the legal issues and so forth . 
+abst_sum - problems: Unfortunately, there are legal issues regarding the approval of transcripts.
+
+F:  because right now she has no choice but to operate in the mode that we already have working . 
+F:  You know , that we  we actually <breath> have a stream going and we know how  how well it does and how  and how it operates . 
+A:  I hired two transcribers today . I 'm thinking of hiring another one , 
+A:  which will  because we 've had a lot of attrition . 
+A:  But  but actually i it 's so correct for so much of the time , that it 's an enormous time saver 
+A:  and it just gets tweaked a little around the boundaries . 
+A:  The  the  the pre - segmentations are so much  are s so extremely helpful . 
+A:  Wha - what you 'd really like is that they started with pre - segmented and were pre - segmented all the way through . 
+G:  Yeah . As long as we have a record , I guess , of the original  automatic one , we can always find out how well  we would do fr from the recognition side by using those boundaries . 
+F:  Well , le let me put in another sort of a milestone kind of  as  as I did with the , uh , uh  the  the pipeline . 
+abst_sum - problems: Additionally, the group would like to have their data transcriptions in "production mode" by then.
+
+F:  e e u u  The reason I 'm asking is because , uh , Jane and I have just been talking , and she 's just been doing . <laugh> Uh , e a , you know , further hiring of transcribers . 
+F:  And so we don't sort of really know exactly what they 'll be doing , how long they 'll be doing it , and so forth , 
+F:  because right now she has no choice but to operate in the mode that we already have working . 
+abst_sum - problems: However the group do not want to hire more transcribers until IBM confirms in the next 2-3 weeks the acceptability of the data.
+
+C:  Because in all our previous experiments , we had the  uh , you know , we were essentially cheating by having the , um , you know , the h the hand - segmentations as the basis of the recognition . 
+C:  And so now with Thilo 's segmenter working so well , I think we should  consider doing a  
+abst_sum - problems: Segmentation for the recogniser has been done by hand which the group consider "cheating", instead now they want to use Thilo's automatic segmenter.
+
+G:  because we couldn't use the non - native  all non - native meetings 
+G:  and <breath> it 's , well , probably below threshold on enough data for us for the things we 're looking at 
+G:  because the <breath> prosodic features are  very noisy and so you  you need a lot of data in order to model them . 
+abst_sum - problems: The classifier segmentation work is going well, but needs more data to improve results since non-native speaker data cannot be used.
+
+C:  you know , Chuck and I talked and the  @ @  next thing to do is probably to tune the  um , the size of the Gaussian system , um , @ @  to  to this  to this feature vector , which we haven't done at all . 
+C:  We just used the same <breath> configuration as we used for the  <breath> for the standard system . 
+C:  And , <breath> for instance , uh , Dan  @ @  Dan just sent me a message saying that CMU used , um , <mouth> something like ten Gaussians per cluster  
+C:  You know , each  each mixture has ten  Gaussians 
+D:  Hmm . We 're using sixty - four , 
+C:  so that 's <breath> obviously a big difference 
+C:  and give very poorly trained , uh , you know , Gaussians that way , 
+C:  The turn - around time on the training when we train only the  a male system with , uh , you know , our small training set , is <breath> less than twenty - four hours , 
+C:  But the PLP features work  um , uh , you know , continue to improve the , 
+C:  As I said before , the  uh using Dan 's , uh , uh , vocal tract normalization option works very well . 
+abst_sum - problems: For the front-end, so far the group have been using a high number of Gaussians per cluster (64) rather than the ten per cluster used by researchers at CMU, therefore they need to tune their Gaussian system to the feature vector.
+
+C:  But there the main point is that , um , you know , it took us a while but we have the procedure for coupling the two systems <inbreath> debugged now 
+C:  and  I mean , there 's still conceivably some bug somewhere in the way we 're feeding the tandem features  
+C:  uh , either generating them or feeding them to this  to the <breath> SRI system , 
+C:  that  that  I think that 's  this  that 's essentially the same as we use with the ce with the P L P fe features . 
+D:  Yeah . There could be a bug in  in the  somewhere before that . 
+F:  Yeah . <inbreath> I  I would actually double check with Stephane at this point , 
+D:  Yeah . It 's hard with features , 
+D:  cuz you don't know what they should look like . 
+D:  I mean , you can't just , like , print the  the values out in ASCII and , you know , look at them , see if they 're  
+F:  Not unless you had a lot of time 
+abst_sum - problems: The group  observed that it would be difficult to check for bugs in the generation of tandem features for the SRI system.
+

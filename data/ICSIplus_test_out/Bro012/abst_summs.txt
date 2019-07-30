@@ -1,0 +1,165 @@
+A:  OK , so uh <breath> had some interesting mail from uh Dan Ellis . 
+F:  Uh . Since the last meeting we 've  we 've tried to put together um <mouth> the clean low - pass um downsampling , upsampling , I mean , 
+abst_sum - abstract: The Meeting Recorder group at Berkeley met to discuss recent progress.
+
+F:  Uh . Since the last meeting we 've  we 've tried to put together um <mouth> the clean low - pass um downsampling , upsampling , I mean , 
+F:  Uh the new filter that 's replacing the LDA filters , 
+abst_sum - abstract: Of greatest interest was the progress on improving the latency and performance of their recogniser.
+
+A:  OK , so uh <breath> had some interesting mail from uh Dan Ellis . 
+A:  where this came up was that uh I was showing off these wave forms that we have on the web 
+A:  and  and uh <breath> I just sort of hadn't noticed this , but that  the major , major component in the wave  in the second wave form in that pair of wave forms is actually the air conditioner . 
+A:  Can I ask a , I mean  a sort of top - level question , 
+A:  which is <breath> um " if  if most of what the OGI folk are working with is trying to <breath> integrate this other  other uh spectral subtraction , <breath> why are we worrying about it ? " 
+abst_sum - abstract: There was also concern over overlap of work with partners OGI, and a lack of a good example of room reverberation for demonstrations.
+
+A:  um The other thing that I don't know the answer to , but when people are using Feacalc here , uh whether they 're using it with the high - pass filter option or not . 
+A:  So when we 're doing all these things using our software there is  
+A:  and <breath> it 's  it 's pretty  it 's not a very severe 
+A:  filter . Doesn't affect speech frequencies , 
+A:  So . We  we  we want to go and check that in i for anything that we 're going to use the P D 
+A:  but if we do make use of the cheap mikes , <breath> uh we want to be sure to do that  that filtering before we <breath> process it . 
+abst_sum - decisions: Everyone must be sure and use the high-pass filtering option on the groups software, to deal with irregularities between mics.
+
+A:  Is there any further discussion about this  this idea of  of having some sort of source code control ? 
+F:  Well . For the moment they 're  
+F:  There is this Eurospeech deadline , 
+A:  Sounds like a great idea 
+A:  but  but I think that  that um <breath> he 's saying people are sort of scrambling for a Eurospeech deadline . 
+A:  But that 'll be uh , uh done in a week . 
+A:  So , maybe after <breath> this next one . 
+A:  Yeah . So , I mean , I  I think that you could certainly start looking at  at the issue 
+A:  uh but  but uh <breath> I think it 's probably , on s from what Stephane is saying , it 's  it 's unlikely to get sort of active participation from the two sides until after they 've  
+B:  but I could  try to look into like this uh CVS over the web . 
+B:  That seems to be a very popular <breath> way of  people distributing changes and  over , you know , multiple sites and things 
+B:  so maybe <breath> if I can figure out how do that easily and then pass the information on to everybody so that it 's <breath> you know , as easy to do as possible 
+B:  and  and people don't  it won't interfere with  their regular work , 
+C:  And if you 're interested in using CVS , I 've set it up here , 
+B:  so maybe I can ask you some questions . 
+C:  So . I 'll be away tomorrow and Monday but I 'll be back on Tuesday or Wednesday . 
+abst_sum - decisions: In order to coordinate better with OGI, some sort of source code control is required and me018 has offered to investigate, but only minimal progress can be made until after the upcoming deadline for Eurospeech.
+
+None
+abst_sum - decisions: When he returns me026 will help.
+
+A:  Do you remember when the next meeting is supposed to be ? 
+F:  It 's uh in June . 
+A:  H Hynek will be back in town uh the week after next , 
+A:  back  back in the country . 
+A:  And start  start organizing uh <breath> more visits and connections and so forth , 
+A:  working towards June . 
+abst_sum - decisions: Also, in two weeks one of the OGI members will return, and meetings should be arranged with him before the next big project meeting.
+
+A:  Um . Yeah , the other thing is that you saw that  that mail about uh the VAD  V A Ds performing quite differently ? 
+A:  This  there was this experiment of uh " what if we just take the baseline ? " 
+A:  and you inc incorporate the different V A 
+A:  And it looks like the  the French VAD is actually uh better  significantly better . 
+F:  Yeah but I don't know which VAD they use . 
+F:  It 's Pratibha that  that did this experiment . 
+F:  Um . We should ask which VAD she used . 
+D:  He  Actually , I think that he say with the good VAD of  from OGI 
+A:  I mean it was enough better that  that it would <mouth> uh account for a fair amount of the difference between our performance , actually . 
+A:  So if they have a better one , we should use it . 
+abst_sum - decisions: OGI seem to be having some good results with voice activation detection, so the group need to find out which is the best VAD and start using it.
+
+A:  OK , so uh <breath> had some interesting mail from uh Dan Ellis . 
+A:  where this came up was that uh I was showing off these wave forms that we have on the web 
+A:  and  and uh <breath> I just sort of hadn't noticed this , but that  the major , major component in the wave  in the second wave form in that pair of wave forms is actually the air conditioner . 
+A:  I <laugh> <breath> I have to be more careful about using that as a  as a  <breath> as a good illustration , 
+A:  uh , in fact it 's not , of uh  <breath> of the effects of room reverberation . 
+A:  It is isn't a bad illustration of the effects of uh room noise . <breath> on  on uh some mikes 
+A:  since I was talking about reverberation and showing this thing that was noise , it wasn't a good match , 
+A:  So I think we 'll change our  our picture on the web , when we 're @ @ . 
+A:  Dave , the other thing , actually , is  is this business about this wave form . 
+A:  Maybe you and I can talk a little bit at some point about <breath> coming up with a better <breath> uh demonstration of the effects of reverberation for our web page , 
+abst_sum - problems: The is a waveform example of room reverberation on the groups website that was used in a presentation.
+
+A:  OK , so uh <breath> had some interesting mail from uh Dan Ellis . 
+A:  where this came up was that uh I was showing off these wave forms that we have on the web 
+A:  and  and uh <breath> I just sort of hadn't noticed this , but that  the major , major component in the wave  in the second wave form in that pair of wave forms is actually the air conditioner . 
+A:  I <laugh> <breath> I have to be more careful about using that as a  as a  <breath> as a good illustration , 
+A:  uh , in fact it 's not , of uh  <breath> of the effects of room reverberation . 
+A:  It is isn't a bad illustration of the effects of uh room noise . <breath> on  on uh some mikes 
+A:  since I was talking about reverberation and showing this thing that was noise , it wasn't a good match , 
+A:  It made a good  good audio demonstration because when we could play that clip the  the  the really <breath> obvious difference is that you can hear two voices and  <breath> <laugh> in the second one and only hear  
+A:  but I mean you can't  when you play it back in a room with a  you know a big room , <breath> nobody can hear that difference really . 
+abst_sum - problems: It turns out that it is a good example of many things, but not the reverb it is supposed to contain.
+
+A:  So I think we 'll change our  our picture on the web , when we 're @ @ . 
+A:  um <breath> Another , I was thinking of was um <breath> taking some spectral slices , 
+A:  and look at the spectrum or cepstrum that you get out of there , 
+A:  Well , I mean um all the recognizers look at frames . 
+A:  at one point in time or uh twenty  over twenty milliseconds or something , <breath> you have a spectrum or a cepstrum . 
+A:  Maybe you and I can talk a little bit at some point about <breath> coming up with a better <breath> uh demonstration of the effects of reverberation for our web page , 
+A:  but I mean you can't  when you play it back in a room with a  you know a big room , <breath> nobody can hear that difference really . 
+A:  But for the  the visual , just , you know , I 'd like to have uh <breath> uh , you know , the spectrogram again , 
+A:  The other thing that we had in there that I didn't like was that um <breath> the most obvious characteristic of the difference uh when you listen to it is that there 's a second voice , 
+A:  and the  the  the  the  the uh <mouth> cuts that we have there actually don't correspond to the full wave form . 
+A:  But <breath> it  it 's um  <breath> it 's the first six seconds or something <breath> of it 
+A:  and it 's in <breath> the seventh or eighth second or something where @ @ the second voice comes in . 
+A:  So we  we would like to actually see <breath> the voice coming in , too , I think , 
+abst_sum - problems: Need to find a better example, maybe by just looking at a closer section of waveform.
+
+F:  It seems better when we look at the mismatched case 
+F:  but <mouth> I think we are like  like cheated here by the  th this problem 
+F:  that <breath> uh in some cases when you modify slight  slightly modify the initial condition you end up <breath> completely somewhere air somewhere else in the  in the space , <breath> the parameters . 
+F:  I don't  I don't think it means that the new system is more robust 
+F:  but I mean <breath> from this se seventy - eight um percent recognition rate system , <breath> I could change the transition probabilities for the  the first HMM and  it will end up to eighty - nine also . 
+F:  By using point five instead of point six , point four <breath> as in the  the HTK script . 
+B:  Yeah I looked at um  <breath> looked at the results when Stephane did that 
+B:  and it 's  it 's really wo really happens . 
+B:  I mean th the only difference is you change the self - loop transition probability by a tenth of a percent 
+B:  and it causes ten percent difference in the word error rate . 
+B:  and n not tenth of a percent , one tenth , 
+B:  it 's just very um  
+B:  you know get stuck in some local minimum 
+B:  and this thing throws you out of it I guess . 
+A:  Well , what 's  what are  according to the rules what  what are we supposed to do about the transition probabilities ? 
+B:  I think you 're not allowed to  
+B:  That 's supposed to be point six , for the self - loop . 
+B:  But changing it to point five I think is  
+B:  which gives you much better results , 
+B:  but that 's <breath> not allowed . 
+F:  Yeah , but even if you use point five , I 'm not sure it will always give you the better results 
+B:  Right . We only tested it on the  the medium mismatch , 
+abst_sum - problems: Minor experimenting found that by dropping the self-loop transition in the HMMs by just 0.1% can increase performance by 10%, but the rules of the task forbid this change.
+
+F:  Yeah , actually the way the final score is computed is quite funny . 
+F:  It 's not a mean of word error rate . 
+F:  It 's not a weighted mean of word error rate , 
+F:  it 's a weighted mean of improvements . 
+F:  Which means that <mouth> actually the weight on the well - matched is  
+F:  Well I well what what  What happened is that if you have a small improvement or a small if on the well - matched case <breath> it will have uh huge influence on the improvement compared to the reference 
+F:  because the reference system is  is  is quite good for  for the well - ma well - matched case also . 
+A:  So they do improvement in terms of uh accuracy ? rather than word error rate ? 
+F:  No , it 's compared to the word er it 's improvement on the word error rate , 
+A:  So if you have uh ten percent error and you get five percent absolute uh <breath> improvement then that 's fifty percent . 
+A:  OK . So what you 're saying then is that if it 's something that has a small word error rate , <breath> then uh a  even a relatively small improvement on it , in absolute terms , <breath> will show up as quite  quite large in this . 
+A:  But yeah that 's  that 's  it 's the notion of relative improvement . 
+A:  That 's why I 've been saying we should be looking at word error rate uh and  and not  not at <breath> at accuracies . 
+A:  I mean uh we probably should have standardized on that all the way through . 
+A:  but you 're  but when you look at the numbers , your sense of the relative size of things is quite different . 
+abst_sum - problems: There is some confusion over what the results produced mean, since it appears they are weighted, which biases improvements in some cases quite heavily.
+
+A:  Um . What I was asking , though , is uh  are  what 's  what 's the level of communication with uh <breath> the O G I gang now , about this 
+F:  Well , we are exchanging mail as soon as we  <breath-laugh> we have significant results . 
+F:  For the moment , they are working on integrating <breath> the um <mouth> spectral subtraction apparently from Ericsson . 
+F:  We are working on our side on other things like <breath> uh also trying a sup spectral subtraction 
+F:  but of  of our own , I mean , another <breath> spectral substraction . 
+A:  Can I ask a , I mean  a sort of top - level question , 
+A:  which is <breath> um " if  if most of what the OGI folk are working with is trying to <breath> integrate this other  other uh spectral subtraction , <breath> why are we worrying about it ? " 
+F:  It 's just uh  Well it 's another  
+F:  They are trying to u to use the um  <mouth> the Ericsson 
+F:  and we 're trying to use something  something else . 
+F:  And what they did at OGI is just <breath> uh they don't use on - line normalization , for the moment , on spectral subtraction 
+F:  I think as soon as they will try on - line normalization <breath> there will be a problem . 
+F:  So yeah , we 're working on the same thing but <breath> I think 
+F:  with different  different system 
+A:  Intellectually it 's interesting to work on things th uh one way or the other 
+A:  but I 'm  I 'm just wondering if um  <breath> on the list of things that there are to do , 
+A:  if there are things that we won't do because <breath> we 've got two groups doing the same thing . 
+A:  Just  just asking . 
+A:  In fact if you get  if you go into uh  a uh harmonics - related thing <breath> it 's definitely going to be different than what they 're doing 
+A:  should have some interesting properties in noise . 
+abst_sum - problems: Speaker me013 is worried that his groups work on spectral subtraction overlaps with that of OGI, and that it may be time better spent on other tasks.
+

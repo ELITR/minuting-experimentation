@@ -1,0 +1,101 @@
+E:  and Eva is using the Xalan style sheet processor to convert the XML that 's output by the Java Bayes for the  into the , uh , E Bayes input . 
+abst_sum - abstract: Minor technical issues,such as format conversions for XML and JavaBayes and the full translation of the SmartKom generation module in English, are currently being resolved.
+
+E:  Yep . We ha we have to change the voice . 
+abst_sum - abstract: The voice synthesiser will also be replaced by better technology.
+
+C:  Uh , w Which is  mental spaces and uh  and - or  
+C:  But the other part of it is the way they connect to these , uh , probabilistic relational models . 
+abst_sum - abstract: An important research issue to be investigated is how the concept of mental spaces and probabilistic relational models can be integrated into the belief-net.
+
+C:  so there probably are some , uh , relatively clean rules , 
+C:  is that people do manage to do this 
+abst_sum - abstract: Mental space interdependencies are based on relatively clean rules, since people seem to manage them easily.
+
+C:  No , I know , I th I I think that is gonna be sort of the key to this wh to th the big project of the summer of  of getting the constructions right 
+abst_sum - abstract: A step towards this goal is the construction formalism being put together.
+
+A:  which is the issue of , um , how do you simulate questions ? 
+C:  We didn't  we never did figure out how we were gonna do emphasis in  in uh , the semspec . 
+C:  incl including the questions  
+A:  Uh , no , all the focus stuff . 
+A:  and we 'll figure out exactly how to write that up and so on , 
+abst_sum - abstract: This module will eventually have to include ways to simulate questions, do emphasis and focus.
+
+A:  The question of whether the polysemy is sort of like in the construction or pragmatic . 
+A:  Well the question is basically , is this conventional or conversational implicature ? 
+abst_sum - abstract: The constructions could be built assuming either conventional or conversational implicature.
+
+C:  W we know for sure that we have to be able to do both . 
+C:  I mean it  th <inbreath> I can thi I can think of arguments in either direction on that . 
+abst_sum - abstract: At this stage both routes need to be examined.
+
+C:  Right . So . <laugh> Right . So thing  That 's part of why we want the formalism , 
+abst_sum - abstract: The formalism will also serve as a starting point for the definition of construal mechanisms.
+
+None
+abst_sum - abstract: Similarly, issues like time plans and discourse stacks are dependent on how the ontology and discourse history are going to be structured and linked.
+
+B:  priming a spreading activation 
+abst_sum - abstract: One suggestion was to use the spreading activation as a paradigm for activating nodes in the belief-net.
+
+B:  Which  uh , so far , in terms of like putting up all the constraints as , you know , pushing them into type constraints , the  when I 've , you know , propo then proposed it to linguists who haven't yet given me  you know , we haven't yet thought of a reason that that wouldn't work . 
+B:  Right ? As long as we allow our type constraints to be reasonably  complex . 
+abst_sum - abstract: Finally, using type constraints in the construction analysis should work, as long as they are complex enough not to generate too many parses.
+
+F:  Actually , maybe I could try , like , emailing the guy 
+F:  and see if he has any something already . 
+abst_sum - decisions: It is necessary to ask the JavaBayes programmer whether he already has XML conversion programs.
+
+D:  So I just need to  do the , uh  write a new set of  tree combining rules . 
+E:  And Fey has foolheartedly agreed to rewrite uh , the German concept uh syntax - to - prosody rules  
+abst_sum - decisions: For the SmartKom generation module, all the syntax-to-prosody rules are going to be re-written for English.
+
+E:  OGI has , uh , crafted a couple of diphone type voices that are really nice 
+abst_sum - decisions: Additionally, OGI can offer a range of synthesiser voices to choose from.
+
+C:  Anyway , uh , that we were  that we 're gonna try to get a uh , first cut at the revised formalism by the end of next week . 
+E:  So the idea is on Monday at two we 'll  we 'll see an intermediate version of the formalism for the constructions , 
+abst_sum - decisions: The focus of the next meeting, whose time was rescheduled, will be the discussion of the revised construction formalism.
+
+C:  Uh , just trying to write up essentially what  what you guys have worked out so that everybody has something to look at . 
+C:  Yeah . Well , if  if  I mean , i part of  of what the exercise is , t by the end of next week , is to say what are the things that we just don't have answers for yet . 
+abst_sum - decisions: The presentation will unify the existing ideas and help identify the areas in need of further work, such as how it can deal with time and tense use and how they affect inferences in belief-nets.
+
+A:  The question of whether the polysemy is sort of like in the construction or pragmatic . 
+A:  Well the question is basically , is this conventional or conversational implicature ? 
+C:  W we know for sure that we have to be able to do both . 
+C:  I mean it  th <inbreath> I can thi I can think of arguments in either direction on that . 
+abst_sum - decisions: The ambiguity in a "where is X?" construction can be coded in the formalism as a semantic feature or pushed forward to the belief-net where pragmatic features will disambiguate it: in terms of system design, both options need to be investigated at this stage.
+
+E:  That 's the LISP - type scheme . 
+D:  Well , I guess if you 're not used to functional programming , Scheme can be completely incomprehensible . 
+abst_sum - problems: As the translation of the german SmartKom into English moves on, the generation rules may prove difficult to tackle for someone without experience in functional programming, as they are written in LISP.
+
+C:  one of the things I w would like to do over the next , uh , month , it may take more ,  is to st understand to what extent we can not only figure out the constructions for them for multiple worlds 
+C:  uh sort of what the formalism will look like and where the slots and fillers will be , but also what that would translate into in terms of belief - net and the inferences . 
+C:  One is the linguistic part of what are the couplings 
+C:  and  and when you have a certain , uh , construction , that implies certain couplings and other couplings , 
+C:  and then we have this inference problem of exactly technically how does the belief - net work 
+abst_sum - problems: As far as the construction analysis is concerned, the two problems that will need to be solved are to identify the couplings between constructions in different mental spaces and to define how inferences will work in the belief-net from a technical point of view.
+
+A:  The question of whether the polysemy is sort of like in the construction or pragmatic . 
+A:  The question is whether the construction is semantic or like ambiguous between asking for location and asking for path . 
+A:  Well the question is basically , is this conventional or conversational implicature ? 
+C:  I mean it  th <inbreath> I can thi I can think of arguments in either direction on that . 
+abst_sum - problems: Additionally, in the example "Where is X?" construction, the ambiguity (Location or Path) could be coded either in the semantics of the construction or as if determined by context.
+
+C:  So I a I I th I agree with you that , um , it 's a disaster to try to make separate constructions for every uh , pragmatic reading , 
+abst_sum - problems: The former could mean creating a different construction for every slight pragmatic variation.
+
+C:  although there are some that will need to be there . 
+C:  so you could just as well tag the lexical construction with the fact that it 's a uh , you know , thirty percent increase in probability of entering . 
+abst_sum - problems: On the other hand, some of the belief-net probabilities could be instantiated in the lexicon.
+
+None
+abst_sum - problems: Specifying which approach to take when linking the ontology and the discourse history has also proven not to be straightforward.
+
+C:  uh , this is  this is , speaking of hard problems ,  this is a very good time um , to start trying to make explicit where construal comes in 
+C:  and  you know , where c where the construction per - se ends  and where construal comes in , 
+abst_sum - problems: Finally, it is still undecided where construal comes in, which would help delimit the constructions as well.
+

@@ -9,6 +9,7 @@ B:  <two breaths into the mike to test it> Hmm . Let 's see .
 B:  Move it bit . Test ? 
 A:  <breath> 
 B:  Test ? OK , I guess it 's alright . 
+topic_description:	opening
 
 
 B:  So , let 's see . 
@@ -30,6 +31,7 @@ D:  k <breath>
 B:  Yeah . 
 A:  It 's nine DB ? 
 B:  Yeah . Um  
+topic_description:	report from Morgan, ASRU, reverberation
 
 
 B:  And actually it brought up a question which may be relevant to the Aurora stuff too . 
@@ -171,6 +173,7 @@ A:  Yikes .
 B:  So they do it right at the beginning of the semester . 
 A:  Yeah . 
 B:  Yeah . 
+topic_description:	noise filters, SRI versus Aurora HTK
 
 
 B:  So , uh  Yep . I mean , that  that was sort of one  I mean , 
@@ -208,8 +211,10 @@ B:  So .
 B:  That 's sort of what we found . 
 D:  Hmm . 
 C:  <laugh-breath> 
+topic_description:	training set, recognition performance issues
 
 
+topic_description:	Adam's report on Mississippi State recognizer
 
 
 A:  I , um  
@@ -245,6 +250,7 @@ A:  So .
 A:  Um , but , the software seemed to compile fine and everything , so . 
 A:  And , um , <mouth> 
 A:  So . 
+topic_description:	downloads, compilation
 
 
 B:  Is there any word yet about the issues about , um , adjustments for different feature sets or anything ? 
@@ -326,6 +332,7 @@ D:  Yeah , OK .
 D:  OK , that 's fine . Yeah . 
 A:  Should be OK . Yeah , it compiled fine actually . No  no errors . Nothing . So . 
 D:  That 's good . 
+topic_description:	feature set adjustments
 
 
 B:  Uh , this is slightly off topic but , uh , 
@@ -354,8 +361,10 @@ B:  um
 A:  Hmm . 
 B:  So . 
 D:  Hmm . 
+topic_description:	Johns Hopkins workshop, graphical recognition models
 
 
+topic_description:	Stephane: VAD results after noise compensation
 
 
 C:  Um , I 've been playing with , first , the , um , VAD . 
@@ -405,6 +414,7 @@ B:  And , it 's a l it 's a lot better .
 A:  Wow . 
 C:  Yeah . Um  
 B:  That 's great . 
+topic_description:	comparison with previous version
 
 
 C:  So it 's  it 's not bad , but the problem is still that the latency is too large . 
@@ -634,6 +644,7 @@ A:  <sniff>
 B:  Um , 
 D:  <mike noise> 
 B:  <breath> 
+topic_description:	latency issues
 
 
 B:  Yeah . So , our , 
@@ -695,6 +706,7 @@ B:  and sixty - two with the  the , you know , quote , unquote , cheating VAD . 
 C:  Mm - hmm . 
 B:  <breath> That 's great . 
 B:  <swallow and swallow-breath> 
+topic_description:	error rate reduction, versus other VADs
 
 
 C:  Uh , yeah , the next thing is , I started to play  
@@ -734,6 +746,7 @@ B:  Yeah , h he likes to use them both , cuz then it has one part that 's discri
 C:  Yeah . Um  
 A:  Uh - huh . 
 A:  Right . OK . 
+topic_description:	tandem neural network
 
 
 C:  So , um , 
@@ -824,6 +837,7 @@ B:  It doesn't necessarily work that way .
 A:  Huh . 
 C:  Mm - hmm . 
 D:  <mike noise> 
+topic_description:	test results on SpeechDat-Car, TI-digits
 
 
 B:  So I wonder , um , 
@@ -996,6 +1010,7 @@ B:  acoustic conditions was just a good thing .
 C:  Mm - hmm . 
 C:  Yep . 
 D:  Mmm . 
+topic_description:	future experiments, training set, feature selection
 
 
 D:  So is it  is it though the performance , 
@@ -1092,6 +1107,7 @@ D:  on a clean training , or zero DB testing .
 C:  Yeah , we 'll  so we 'll see . Uh . Maybe . 
 D:  Yeah . Then it 's something to do . 
 C:  Mm - hmm . <breath> Yeah . 
+topic_description:	effects of noise compensation on SNRs, mismatch
 
 
 C:  Yeah , actually <clears throat> to s eh , what I observed in the HM 
@@ -1242,6 +1258,7 @@ D:  Yeah .
 B:  Yeah , it should be pretty close to cancelled out . 
 D:  Yeah . 
 C:  <sniff> Mm - hmm . 
+topic_description:	increased number of deletions
 
 
 A:  You know , I 've been wondering about something . In the , um  a lot of the , um  
@@ -1408,8 +1425,10 @@ B:  Does something . It doesn't work as well .
 C:  <laugh-breath> 
 B:  Yeah . 
 B:  Yeah . 
+topic_description:	LDAs, discriminative training
 
 
+topic_description:	Sunil, Stephane: VAD minus neural network
 
 
 D:  So , yeah , I 've been exploring a parallel VAD without neural network with , like , 
@@ -1464,6 +1483,7 @@ D:  after the p clean up  maybe , some ,
 D:  uh , correlation  auto - correlation or some s additional features of  to mainly 
 D:  the improvement of the VAD . 
 D:  I 've been trying . 
+topic_description:	results for non-cleaned speech
 
 
 B:  Now this  this  this , uh , 
@@ -1507,6 +1527,7 @@ C:  Mm - hmm .
 B:  Right ? And then   
 B:  <mouth> But , yeah , we 're  we 're not quite there yet . So we have to <laugh> figure out the neural nets , I guess . 
 C:  Yeah . 
+topic_description:	before-, after-clean as neural net feature
 
 
 D:  The uh , other thing I was wondering was , um , 
@@ -1598,6 +1619,7 @@ B:  Well , yeah . But this other thing isn't perfect .
 A:  Ah . 
 B:  So that you bring in some information from the net itself . 
 A:  Right , OK . That 's a good point . 
+topic_description:	feeding VAD information into neural net
 
 
 B:  Yeah . Now the only thing that  that bothers me about all this is that I  I  I  
@@ -1686,6 +1708,7 @@ B:  Yeah . Well , we just started working with it . But these are  these are som
 C:  <sniff> 
 C:  Mm - hmm . 
 C:  <mouth> 
+topic_description:	deletions
 
 
 C:  Yeah , and the other thing  Well , there are other issues maybe for the tandem , like , 
@@ -1770,10 +1793,12 @@ C:  <2 sniffs>
 C:  <sniff> 
 B:  Hmm . 
 B:  <breath> 
+topic_description:	tandem neural network, additional issues
 
 
 A:  OK . 
 B:  It 's a wrap . 
+topic_description:	closing
 
 
 B:  Well  
@@ -1874,6 +1899,7 @@ B:  Guess we 're done .
 A:  Should we do digits ? 
 B:  Digits ? Yep . 
 B:  <mike noise> 
+topic_description:	upcoming meetings, absences
 
 
 A:  Transcript L dash three five two .  
@@ -1913,5 +1939,6 @@ B:  Four , six nine three , one three , three six four , six .
 B:  Two , eight four six , four one , four four six , four .  
 B:  Two nine nine four , three two eight seven , eight seven four two .  
 B:  Four two eight , two zero , seven four eight zero .  
+topic_description:	digit task
 
 

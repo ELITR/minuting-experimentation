@@ -22,6 +22,7 @@ D:  <outbreath>
 B:  Um , 
 B:  Ha !  
 B:  Very nice . 
+topic_description:	opening
 
 
 C:  Also , I 'm somewhat boggled by that Hugin software . 
@@ -43,6 +44,7 @@ C:  figured out what  the terms in Hugin mean , versus what Java Bayes terms are
 B:  <cough>  
 A:  OK . 
 B:  <mike noise> 
+topic_description:	Bayes Net
 
 
 B:  Um , so we thought that , 
@@ -201,6 +203,7 @@ B:
 B:  <mike noise>  
 B:  then we  then we might conclude that he actually wants to 
 B:  just know where , uh t uh , he does want to go there . 
+topic_description:	situations in the Bayes Net
 
 
 B:  So , we have , um , 
@@ -253,6 +256,7 @@ B:  I would say .
 C:  Not a C Struct . That 's not what I was trying to k though yeah . 
 B:  Yeah . 
 B:  OK . 
+topic_description:	Go-there example
 
 
 C:  Uh , out of curiosity , is there a reason why we wouldn't 
@@ -353,6 +357,7 @@ B:  at ? " Nuh ?
 C:  Yeah , I know , but the Bayes - net would be able to  The weights on the  
 C:  on the nodes in the Bayes - net would be able to do all that , wouldn't it ? 
 B:  Mm - hmm . 
+topic_description:	why not combine nodes?
 
 
 C:  Here 's a k 
@@ -403,6 +408,7 @@ B:  We 're discussing this .
 A:  I don't think it can handle French , but anyway . 
 C:  <laugh> 
 A:  <laugh> 
+topic_description:	chitchat
 
 
 B:  So . 
@@ -451,6 +457,7 @@ C:  and I could look at those .
 A:  Yeah . 
 A:  Yes , I mean . Sure . You do need to know  I mean , to have that kind of information . 
 B:  Hmm . 
+topic_description:	'Where is X?' example
 
 
 B:  let 's just assume our Bayes - net just has three decision nodes for the time being . 
@@ -500,6 +507,7 @@ B:  has s stronger beliefs that he wants to know where it is , than actually wan
 A:  <clears throat> 
 D:  <clears throat> 
 B:  Right ? 
+topic_description:	relevant decision nodes
 
 
 C:  That it  Doesn't this assume , though , that they 're evenly weighted ? 
@@ -531,6 +539,7 @@ A:  Yeah , sure .
 D:  <laugh-breath> 
 C:  OK so , then , the question i So then my question is t to you then , would be  
 A:  <mike noise> 
+topic_description:	assume evenly weighted?
 
 
 C:  So is the only r reason we can make all these smaller Bayes - nets , because we know we can only deal with a finite set of constructions ? 
@@ -598,6 +607,7 @@ C:  Every construction .
 A:  Hmm .  
 A:  I don't  Not necessarily , I would think . I mean , it 's not based on constructions , it 's based on things like , uh , there 's gonna be a node for Go - there or not , and there 's gonna be a node for Enter , View , Approach . 
 C:  Wel - 
+topic_description:	only works with finite constructions?
 
 
 C:  So , someone asked a question . 
@@ -656,6 +666,7 @@ B:  It 's through the
 C:  So th s so , yeah , but some  So , some things would drop out , and some things would still be important . 
 A:  <mike noise> <breath> 
 B:  Mm - hmm . 
+topic_description:	posterior probabilities
 
 
 B:  Yeah , I 'm also agreeing that  a simple 
@@ -764,6 +775,7 @@ C:  was . And if it was false , you 'd wanna d look at
 C:  either Lo - Income Info - on or History . 
 A:  Yeah . 
 A:  That 's true , I guess . Yeah , <laugh> so , in a way you would have that . 
+topic_description:	computing posterior probabilities
 
 
 B:  Um , by the way , are  Do we know whether Jerry and Nancy are coming ? Or  ?  
@@ -893,6 +905,7 @@ A:  Sure .
 B:  OK . 
 B:  I 'll send an email , 
 B:  make a time suggestion . 
+topic_description:	planning
 
 
 B:  So we have , 
@@ -958,6 +971,7 @@ B:  And then it 's just , uh ,
 B:  edges , 
 B:  many of 
 B:  edges .  
+topic_description:	nodes have/missing
 
 
 B:  But we 're all going to be here on Tuesday again ? 
@@ -1017,6 +1031,7 @@ B:  Because , th you know ,
 B:  once we have the belief - net done  
 C:  You 're just gonna have to 
 C:  explain it to me , then , on Tuesday , how it 's all gonna work out . 
+topic_description:	meeting Tuesday
 
 
 B:  Yeah , I can worry about the ontology interface and you can  Keith can worry about the discourse . I mean , this is pretty  Um , I mean , I  I  I hope everybody uh knows that 
@@ -1065,6 +1080,7 @@ A:  Oops .
 D:  <laugh> 
 B:  And , um , 
 A:  <mike noise> 
+topic_description:	dummy values
 
 
 C:  Does th th does the H go b before the A or after the A ?  
@@ -1127,6 +1143,7 @@ D:  <laugh>
 C:  As long as that 's O K . I mean , I might slip out and say it accidentally . That 's all I 'm saying . 
 D:  Um . 
 D:  That 's fine . <laugh> 
+topic_description:	chitchat
 
 
 C:  Wait , maybe it 's OK , so that  
@@ -1212,6 +1229,7 @@ A:  Well , two to the power of the number of neurons .
 C:  Right . 
 C:  But still 
 C:  finite . 
+topic_description:	constructions
 
 
 D:  <laugh> 
@@ -1234,5 +1252,6 @@ C:
 D:   
 A:  <laugh> 
 A:   
+topic_description:	closing
 
 

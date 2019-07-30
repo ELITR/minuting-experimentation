@@ -1,0 +1,63 @@
+B:  I have a short thing about digits 
+B:  and then uh I wanna talk a little bit about naming conventions , 
+B:  So the only thing I wanna say about digits is , we are pretty much done with the first test set . 
+A:  Uh , the last one was  that you had there ,  was about naming ? 
+B:  We want some way of specifying , more than looking in the " key " file , what channel and what mike . What channel , what mike , and what broadcaster . 
+abst_sum - abstract: Topics discussed by the Berkeley Meeting Recorder group included the status of the first test set of digits data, naming conventions for files, speaker identification tags, and encoding files with details about the recording.
+
+A:  Uh , right , so  so I  I was just gonna talk briefly about the NSF ITR . 
+A:  OK , so uh e l I guess , let me , uh , get my  my short thing out about the NSF . 
+A:  so this was , uh , a , uh , proposal that we put in 
+A:  so is i for  it was a <mouth> proposal for the ITR program , 
+A:  Um ,  <clears throat> since we have such a short agenda list I guess I wi I will ask how  how are the transcriptions going ? 
+C:  And  and I 'm tried to  to , uh , adjust the  to  to improve , eh , an harmonicity , eh , detector that , eh , I  I implement . 
+C:  eh , and now I 'm  I 'm  I 'm trying to  to find , eh , some kind of a , um  <breath> of h of help , eh , using the energy to  to distinguish between possible harmonics , and  and other fre frequency peaks , that , eh , corres not harmonics . 
+A:  You 're trying distinguish between the case where there is , uh  where  where there are more than  uh , where there 's more than one speaker 
+A:  and the case where there 's only one speaker . 
+abst_sum - abstract: The group also discussed a proposal for a grant from the NSF's ITR (Information Technology Research) program, transcriptions, and efforts by speaker mn005 to detect speaker overlap using harmonicity-related features.
+
+F:  that there 's one third thing I wanted to  to ex raise as a to as an issue 
+F:  which is , um , how to handle breaths . 
+abst_sum - abstract: Particular focus was paid to questions about transcription procedures, i.e. how to deal with overlooked backchannels, and audible breaths.
+
+G:  Seems like we should just change the transcripts 
+abst_sum - decisions: A small percentage of transcripts will be changed to reflect mis-read, uncorrected digits.
+
+B:  that also brings up the point that we have to start assembling a speaker database so that we get those links back and forth 
+B:  and keep it consistent . 
+abst_sum - decisions: A speaker database will be compiled to establish consistent links between speakers and their corresponding identification tags.
+
+F:  Well so then  then , maybe the answer is to , uh , listen especially densely in places of overlap , 
+abst_sum - decisions: Sections of densely overlapping speech will require hand-checking so that overlooked backchannels may be manually segmented and labelled.
+
+G:  So I would say don't tell them to transcribe anything that 's outside of a grouping of words . 
+abst_sum - decisions: The transcribers should only code audible breaths within a grouping of words, and not outside regions of continuous speech.
+
+A:  I don't know  think it 'd be ideal . 
+A:  and breaths are part of real speech . 
+abst_sum - decisions: It was further determined that audible breaths are an important facet of recorded speech, and that removing them from the corpus would be contrary to the aims of the project.
+
+C:  I will prepare for the next week eh , all my results about the harmonicity 
+abst_sum - decisions: Speaker mn005 will prepare his results for detecting speaker overlap and present them in the next meeting.
+
+B:  But , um , the other problem we were thinking about is if you just put the numerals ,  they might say forty - three instead of four three . 
+abst_sum - problems: During digits readings, subjects tend to chunk numbers together rather than reading each number separately.
+
+F:  But , um , with the mixed , when you have an overlap , you only have a  a choice of one start and end time for that entire overlap , 
+abst_sum - problems: When working from the mixed channel, transcribers may select only one start and end time for overlapping speech, resulting in points of overlap that are less tightly tuned.
+
+F:  once in a while a backchannel will be overlooked by the transcriber . 
+abst_sum - problems: Transcribers are likely to overlook backchannels in densely populated sections of speaker overlap.
+
+E:  Yeah , but those backchannels will always be a problem I think . 
+E:  Uh especially if they 're really short 
+E:  and they 're not very loud 
+E:  and so it  it can  it  it will always happen that also the automatic s detection system will miss some of them , 
+abst_sum - problems: Speaker mn014 reported that this is also problematic for the automatic detection of speech and non-speech, as backchannels that are very short and not loud enough will inevitably be overlooked.
+
+None
+abst_sum - problems: Speaker mn005 reported problems distinguishing between possible harmonics and other frequency peaks, and creating an algorithm for obtaining the instantaneous frequency.
+
+F:  um , aside from the fact that they 're obviously very time - consuming to encode , 
+abst_sum - problems: The encoding of all audible breaths is too time-consuming.
+

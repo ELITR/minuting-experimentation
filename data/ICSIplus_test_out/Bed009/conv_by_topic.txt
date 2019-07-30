@@ -32,6 +32,7 @@ B:  uh each single , so just like I do it .
 A:  Mm - hmm . 
 B:  OK . 
 B:  First you read the transcript number . 
+topic_description:	opening
 
 
 B:  My transcript number is L ninety - five .  
@@ -63,6 +64,7 @@ A:  eight O seven three , one seven seven zero , seven five five six .
 A:  four four , five six , six O , four five , one O .  
 A:  eight four five , eight four one , one O three seven .  
 A:  one O seven two , six seven seven four , one seven O O .  
+topic_description:	digit task
 
 
 F:  OK . Let 's be done with this . 
@@ -94,6 +96,7 @@ B:  thing where we 're working on and that should be no problem
 B:  and then 
 B:  that can be sort of developed uh 
 B:  as needed when we get  enter the tourism domain . 
+topic_description:	summary of meeting agenda items
 
 
 B:  em we have talked this morning with the  with Tilman about the generator . 
@@ -163,6 +166,7 @@ B:  to get the er parser interface working .
 B:  They are thinning out and thickening out lattices and doing this kind of stuff to see what works best . 
 D:  Mmm , yep . 
 F:  Great . 
+topic_description:	changing grammars to English, parser interface
 
 
 F:  <inbreath> So , you guys enjoy your weekend ? 
@@ -246,8 +250,10 @@ F:  Thilo .
 B:  he 's actually 
 B:  knows everything about the SmartKom recognizer . 
 F:  OK well yeah maybe we 'll see if David could make it . That would be good . 
+topic_description:	arranging a meeting to discuss SmartKom plans
 
 
+topic_description:	anticipating the user's underlying intentions
 
 
 B:  OK so 
@@ -273,6 +279,7 @@ B:  And it breaks halfway through the experiment and a human operator comes on .
 B:  and 
 B:  part of that is sort of trying to find out whether people change their linguistic verbal behavior when first thinking they speak to a machine and then to a human . 
 A:  Yeah . 
+topic_description:	data collection, experimental design
 
 
 B:  and 
@@ -370,6 +377,7 @@ B:  Surely nobody 's gonna go ahead and implement it if it 's never gonna be use
 B:  What have I forgotten about ? Oh yeah , how we do it , yeah that 's the 
 F:  <inbreath> 
 F:  Well th uh 
+topic_description:	as an extension to the tourist domain
 
 
 F:  No no . It 's a good time to pause . I s I 
@@ -433,6 +441,7 @@ F:  <inbreath>
 A:  and I  I think that fits in perfectly 
 F:  So  well , let me  
 D:  Hmm . 
+topic_description:	integrating a knowledge module into SmartKom's architecture
 
 
 F:  Let me s  expand on that a little bit from the point of view of the generation . 
@@ -499,8 +508,10 @@ A:  Mm - hmm .
 D:  Hmm . 
 F:  in terms of querying about some of these decisions . 
 A:  Yep . 
+topic_description:	querying the dialogue planner
 
 
+topic_description:	action planner (a.k.a. dialogue manager) formalism
 
 
 A:  So  
@@ -580,6 +591,7 @@ A:  Yeah , yeah .
 B:  Mmm . 
 A:  Yeah , in that  in that sense yes , dialogue act , yeah . 
 F:  dialogue act . Yeah . 
+topic_description:	XML-ification of a state transition network
 
 
 F:  Um , I think tha I think it 's not going to  
@@ -654,6 +666,7 @@ B:  And um
 B:  mmm 
 B:  You don't know  OK th 
 B:  I 'll  I 'll talk to Michael 
+topic_description:	adapting to the tourist domain
 
 
 B:  it 's what I do anyway . Who  How far is the uh 
@@ -759,6 +772,7 @@ A:  And not just um say
 A:  um  um the dialogue um will consist of ten possible states 
 A:  and th these states really are fixed in  in a certain sense . 
 F:  <inbreath> 
+topic_description:	interaction with other modules
 
 
 F:  Would there be any chance 
@@ -807,6 +821,7 @@ F:  but I  I  I  I
 F:  think it 's really  really wrong headed for 
 F:  something that you  that 
 F:  has a lot of state , it 's gonna interact co in a complicated way with the uh understanding parts . 
+topic_description:	terminology, action planner versus dialogue manager
 
 
 B:  Yeah . 
@@ -842,6 +857,7 @@ D:  <laugh>
 A:  No . No , that 's gonna be phased out . 
 F:  Yeah . 
 B:  OK 
+topic_description:	Java implementation
 
 
 B:  But I do think the  the function modeling concept has a certain  
@@ -904,6 +920,7 @@ A:  Sure , ye yeah I  I think that 's  that 's the um
 F:  Yeah , yeah it  it  
 A:  concept that people have , yep . 
 F:  OK . 
+topic_description:	interaction with other modules, creating a well defined interface
 
 
 A:  And  and the  the underlying idea of course is 
@@ -945,6 +962,7 @@ B:  completely utopian at the moment , but
 B:  slowly , you know , getting into the realm of the uh 
 B:  contingent . 
 A:  Hmm . 
+topic_description:	kernal, core functionality, tourist domain
 
 
 B:  But we are facing of course much more 
@@ -1020,6 +1038,7 @@ D:  And they also have to be very robust .
 D:  cuz of um speech recognition errors and 
 F:  <mouth> 
 F:  OK . 
+topic_description:	parser implementation
 
 
 F:  So , um  So there was a chunk parser 
@@ -1148,6 +1167,7 @@ D:  Yes , uh the
 D:  um choice between uh this processing and that processing and my template matcher . 
 F:  Right . 
 F:  Right . 
+topic_description:	chunk parsers
 
 
 F:  So what about 
@@ -1222,6 +1242,7 @@ F:  Yeah , yeah , yeah .  No problem with that .
 A:  Sure , right . 
 D:  Oh yes . 
 F:  um 
+topic_description:	stem forms, the lexicon
 
 
 F:  Yeah and here 's the case where the English and the German might really be 
@@ -1260,6 +1281,7 @@ F:  Right .
 B:  We 're just gonna foreshadow what we saw that 
 F:  Right .  
 B:  and um 
+topic_description:	adapting to English
 
 
 F:  Now actually , 
@@ -1422,6 +1444,7 @@ F:  But Nancy isn't gonna talk about that , just about the
 A:  Yeah , oh yeah , I see , yeah yeah , really . 
 F:  um 
 B:  First steps . 
+topic_description:	mapping from discourse to the conceptual semantic level
 
 
 F:  Right . The  the construction grammar . 
@@ -1433,5 +1456,6 @@ F:  OK .
 G:  Is it i in , then , your place , in five  
 G:  five - A ? 
 A:  Alright . 
+topic_description:	closing
 
 

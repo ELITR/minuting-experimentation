@@ -1,0 +1,152 @@
+F:  Um , so Robert , why don't you bring us up to date on where we are with EDU ? 
+
+B:  uh in a  in a smaller group we had uh , talked and decided about continuation of the data collection . 
+B:  So Fey 's time with us is almost officially over , 
+B:  and she brought us some thirty subjects and , t collected the data , 
+B:  and ten dialogues have been transcribed 
+
+B:  Um , and we found another uh , cogsci student who 's interested in playing wizard for us . 
+B:  Here we 're gonna make it a little bit more complicated for the subjects , uh this round . 
+B:  She 's actually suggested to look um , at the psychology department students , 
+B:  because they have to partake in two experiments in order to fulfill some requirements . 
+
+B:  As for SmartKom , I 'm  the last SmartKom meeting I mentioned that we have some problems with the synthesis , 
+B:  which as of this morning should be resolved . 
+
+B:  so maybe uh uh , when tomorrow is over , we 're done . 
+
+B:  something happened , in  on Eva 's side with the PRM that we 're gonna look at today , 
+
+B:  we have a visitor from Bruchsal from the International University . 
+
+D:  I 've been looking at the PRM stuff . 
+
+D:  I sorta constructed a couple of classes . 
+D:  Like , a user class , a site class , and  and you know , a time , a route , and then  and a query class . 
+D:  And I tried to simplify it down a little bit , 
+
+D:  The red lines on the , um , graph are the um , relations between the different um , classes . 
+
+D:  this is more or less similar to the flat Bayes - net that I have , you know , with the input nodes and all that . 
+
+D:  So I tried to construct the dependency models , 
+
+D:  a lot of these stuff I got from the flat Bayes - net , 
+
+D:  and it turns out , you know , the CPT 's are really big , if I do that , 
+
+D:  Actually , you know , a class of  with different attributes that are the intermediate nodes , 
+D:  and one of them is like , time affordability money affordability , site availability , and the travel compatibility . 
+
+D:  but , if you look at travel compatibility for each of these factors , you need to look at a pair of , you know , what the um , preference of the user is 
+D:  versus , you know , what type of an event it is , 
+
+D:  And that makes the scenario a little different in a PRM , 
+
+D:  Um , so anyhow , using those intermediate nodes then , this  this would be the class that represent the intermediate nodes . 
+
+D:  with , you know , references to the user and the site and the time . 
+
+D:  And so , you know , it 's easier to specify the CPT and all . 
+
+D:  OK . So it only makes two decisions , in this model . 
+D:  And one is basically how desirable a site is 
+D:  meaning , um , how good it matches the needs of a user . 
+D:  And the other is the mode of the visit , 
+D:  whether th It 's the EVA decision . 
+
+F:  the  You  you didn't look at all yet to see if there 's anybody has a implementation . 
+
+F:  uh , we aren't gonna build our own interpreter , 
+
+F:  Uh , so one of the things that Eva 's gonna do over the next few weeks is see if we can track that down . 
+
+F:  the people at Stanford write papers as if they had one , 
+
+F:  So w Anyway . So that 's a  a major open issue . 
+
+F:  Uh , I actually think it is cleaner , 
+
+F:  I mean , the notion of instantiating your el elements from the ontology and stuff fits this very nicely and doesn't fit very well into the extended belief - net . 
+
+B:  And the , uh , other question I would have is that presumably , from the way the Stanford people talk about it , you can put the probabilities also on the relations . 
+
+D:  I remember them learning when , you know , you don't know the structure for sure , 
+D:  but I don't remember reading how you specify 
+
+F:  So , uh , the  the plan is  is when Daphne gets back , we 'll get in touch 
+F:  and supposedly , um , we 'll actually get s deep  seriously connected to  to their work 
+
+F:  somebody 'll  Uh , you know  If it 's a group meeting once a week probably someone 'll go down and , whatever . 
+
+B:  Good . Then , we can move on and see what Andreas has got out his sleeve . 
+
+C:  OK , so , um , what I started looking at , uh , to begin with is just uh , content management systems uh , i i in general . 
+
+C:  um , uh what 's uh  Sort of the state of the art there is to um  uh you have a bunch of  of uh documents or learning units or learning objects , 
+C:  um , and you store meta - data uh , associate to them . 
+C:  So there 's some international standards 
+
+C:  because there 's an implicit um , uh , assumption behind that 
+C:  is that uh , all the users of this system share the same interpretation of the keyword and the same interpretation of uh , whichever taxonomy is used , 
+
+C:  and uh  As a matter of fact , the only thing that m apparently really works out so far are library ordering codes , 
+
+C:  and so , what I want to build is basically a  a smart F A Q system . 
+C:  Now , what you uh need to do here is you need to provide some context information 
+
+C:  So , I want to be able to model information like , um , so in the  in the context of  in the context of developing distributed systems , of a at a computer science school , 
+
+C:  now , um , u using this you can infer more information , 
+C:  and you could then match this to the meta - data of um  off the documents you 're  you 're searching against . 
+
+C:  Now , the big problem that I 'm facing right now is um , it 's fairly easy to hack up a system uh quickly , that  that works in the small domain , 
+C:  but the problem is obviously the scalability . 
+
+C:  What I 'm also looking into is a probabilistic approach into this 
+
+C:  so it 's probably not that easy to simply have a symbolic uh , computational model . 
+
+C:  And I think a lot of the  even though it 's a  it 's a very different domain , but I think a lot of the , um , issues are  are fairly similar . 
+
+C:  Uh , I want to build a smart librarian , basically 
+C:  that can point you to the right reference . 
+C:  I don't wanna compute the answer , 
+
+A:  and I 'm guessing that you  you won't be doing that ? 
+
+C:  No . 
+
+A:  cuz some of us do pretty detailed linguistic analyses , 
+
+F:  On the other hand , uh , FrameNet could well be useful . 
+
+C:  cuz it 's  it 's very easy to whip up something quickly , 
+
+C:  and  and if we want to share and integrate things , they must  well , they must be well designed really . 
+
+F:  Uh , unfortunately , Srini , who is heavily involved in DAML and all this sort of stuff is himself out of town . 
+
+A:  The other person I thought of is Dan Gildea ? 
+
+A:  We  There 's someone in ICSI who actually has been working on  has worked on that kinda stuff , 
+
+B:  This uh  Oh , they refused the budget again ? 
+B:  Is it  so about CITRIS ? 
+B:  Yeah , still nothing . 
+
+F:  So , I  it turns out I wound up having lunch today with a guy named Tom Kalil . 
+
+F:  In fact he 's hired to run a lot of CITRIS , 
+
+F:  He said , " for example " , 
+
+F:  " if you had a adult literacy program that was as good as an individual tutor , 
+F:  and as compelling as a video game , 
+F:  then that would have a huge social impact " . 
+F:  I said , " Oh great ! That 's a good problem to work on . " 
+
+D:  And so I ended up making several classes  
+
+C:  Now , what I plan to do is I want to uh sort of do a uh  uh  try to improve the quality of the search results , 
+

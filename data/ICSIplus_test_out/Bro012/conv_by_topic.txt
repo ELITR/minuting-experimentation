@@ -2,6 +2,7 @@ C:  <breath>
 A:  <noise> 
 E:  Hello ? 
 B:  OK . We 're on . <breath> <breath> 
+topic_description:	opening
 
 
 A:  OK , so uh <breath> had some interesting mail from uh Dan Ellis . Actually , I think he  he <breath> 
@@ -56,6 +57,7 @@ A:  <breath>
 A:  We just run over the data before we deal with it . 
 B:  Mm - hmm . 
 A:  <breath> 
+topic_description:	PDA microphone filter adjustments
 
 
 A:  um The other thing that I don't know the answer to , but when people are using Feacalc here , 
@@ -108,6 +110,7 @@ A:  <breath>
 A:  uh depending on the option that the  our  our software is being run with , it 's  it 's quite possible that 's already being taken care of . 
 D:  <breath> 
 A:  <mouth> <breath> 
+topic_description:	Feacalc, high-pass filter option
 
 
 A:  uh But I also have to pick a different picture to show the effects of reverberation . 
@@ -148,6 +151,7 @@ B:  Hmm .
 A:  <breath> 
 A:  um . 
 A:  So . 
+topic_description:	room reverberation
 
 
 A:  <mouth> um 
@@ -236,6 +240,7 @@ E:  <laugh>
 A:  OK . <laugh> <breath> 
 B:  <laugh> <breath> 
 D:  <breath> <breath> 
+topic_description:	webpage demo, spectrogram, spectral slice images
 
 
 A:  Uh . What else  wh what 's  what else is going on ? 
@@ -257,6 +262,7 @@ F:  <laugh>
 E:  <laugh> That 's right . 
 F:  OK . <laugh> 
 A:  <breath> <laugh> <breath> 
+topic_description:	chitchat
 
 
 F:  Well , anyway . <breath> Um . 
@@ -348,6 +354,7 @@ A:  So I guess the question is if you can do better than this . If you can  if w
 F:  Mmm . 
 F:  Yeah . 
 F:  <inbreath> 
+topic_description:	speaker mn007 progress report, latency improvement results
 
 
 A:  <breath> Well , what 's  what are  according to the rules what  what are we supposed to do about the transition probabilities ? Are they supposed to be point five or point six ? 
@@ -381,6 +388,7 @@ F:  and for the well - match , it 's a mix of
 F:  close microphone and distant microphone and  <breath> Well . 
 B:  <mouth> <breath> I did notice uh something  <breath> 
 F:  So th I think the mismatch is the more difficult for the training part . 
+topic_description:	transition probability manipulations
 
 
 B:  Somebody , I think it was Morgan , suggested at the last meeting that I actually count to see <breath> how many parameters and how many frames . <breath> 
@@ -410,6 +418,7 @@ A:  Yeah . Cuz at forty thou I mean you could you could have uh  <breath>
 A:  Yeah , easily four times as many <breath> parameters . 
 E:  <mike noise> 
 B:  Mm - hmm . 
+topic_description:	parameter, frame counts
 
 
 B:  And I think also <breath> just seeing what we saw <breath> 
@@ -449,6 +458,7 @@ A:  Right . Sorry .
 A:  <mouth> 
 A:  <breath> 
 F:  <mouth> Um . 
+topic_description:	silence model, limiting the number of iterations
 
 
 F:  Well I well what what  
@@ -516,6 +526,7 @@ B:  I see . I see . Yeah .
 B:  That makes sense . 
 A:  Um . <breath> Um . 
 F:  Mmm . 
+topic_description:	weighting, accuracy improvements
 
 
 F:  Well anyway uh . So . Yeah . So it hurts a little bit on the well - match 
@@ -596,6 +607,7 @@ F:  And for the well - m uh HM they are also around one point five . <breath>
 A:  <breath> But  OK , so you  these  these degradations you were talking about were on the well - matched case <breath> 
 F:  So . 
 F:  Yeah . 
+topic_description:	well-matched condition
 
 
 A:  <breath> Uh , so . Um . What I was asking , though , is uh  are  what 's  what 's the level of communication with uh <breath> the O G I gang now , about this and  
@@ -618,6 +630,7 @@ F:  spectral substraction . <breath>
 F:  Um . <breath> 
 F:  Yeah . So I think it 's  it 's OK . It 's going  <breath> 
 A:  <breath> 
+topic_description:	communication, collaboration with OGI
 
 
 A:  Is there any further discussion about this  this idea of  of having some sort of source code control ? <breath> 
@@ -659,6 +672,7 @@ C:  Oh . So . I 'll be away tomorrow and Monday but I 'll be back on Tuesday or 
 B:  <breath> OK .  
 C:  <breath> 
 A:  <breath> 
+topic_description:	source control issues
 
 
 A:  Anybo - anybody in the  in this group do doing anything for Eurospeech ? Or , is that what  is that  
@@ -710,6 +724,7 @@ F:  Yeah . So it would be for the first deadline . <laugh>
 A:  Yeah . 
 F:  Nnn . 
 A:  <breath> 
+topic_description:	Eurospeech submissions
 
 
 A:  Yeah . Dave , the other thing , actually , is  is this business about this wave form . Maybe you and I can talk a little bit at some point about <breath> coming up with a better <breath> uh demonstration of the effects of reverberation for our web page , cuz uh <breath>  the uh <breath> um I mean , actually the  the uh 
@@ -767,6 +782,7 @@ F:  <mike noise>
 C:  Mm - hmm . 
 F:  <mike noise> 
 A:  So . <breath> <breath> 
+topic_description:	webpage reverberation demo, waveforms
 
 
 A:  Um . <breath> <breath> 
@@ -789,6 +805,7 @@ F:  So you have the C - zero parameters for
 D:  <noise> You can @ @ .  <noise> 
 F:  one uh Italian utterance . 
 F:  <mouth> And I plotted this for two channels . 
+topic_description:	speaker mn007 progress report, spectral subtraction results
 
 
 F:  Channel zero is the close mic microphone , and channel one is the distant microphone . <breath> 
@@ -822,6 +839,7 @@ F:  but also what happens on the noisy portion is that the variance of the noise
 A:  Mm - hmm . 
 B:  This is still being a plot of C - zero ? 
 F:  Yeah . This is still C - zero . <breath> 
+topic_description:	channel zero plots
 
 
 B:  OK . <breath> Can I ask um what does variance normalization do ? w What is the effect of that ? 
@@ -960,6 +978,7 @@ A:  <breath> Can I
 F:  So we could perhaps do just mean normalization before VAD . 
 B:  Mm - hmm . 
 A:  Mm - hmm .  
+topic_description:	variance normalization, VAD manipulations
 
 
 A:  <breath> Can I ask a , I mean  a sort of top - level question , which is <breath> um " if  if most of what the OGI 
@@ -1047,6 +1066,7 @@ A:  OK . <breath> Do you remember when the next meeting is supposed to be ? <bre
 F:  So . 
 F:  It 's uh in June . <breath> 
 F:  Yeah . 
+topic_description:	OGI's spectral subtraction module
 
 
 A:  Yeah . Um . 
@@ -1114,6 +1134,7 @@ D:  <noise>
 A:  working towards June . 
 F:  Yeah . 
 F:  Mm - hmm . 
+topic_description:	OGI's VAD performance
 
 
 D:  Also is Stephane was thinking that <breath> maybe it was useful to f to think about uh <breath> voiced - unvoiced  to work uh here in voiced - unvoiced detection . <breath> 
@@ -1233,6 +1254,7 @@ F:  They didn't .
 F:  Mmm . 
 B:  <breath> Oh , I 'm sorry . I  I missed that . 
 F:  Mmm . 
+topic_description:	voiced/unvoiced feature classification, 2nd stream development
 
 
 A:  Right ? <breath> I guess what you could do , maybe this would be w useful , if  if you have  if you view the second stream , <breath> 
@@ -1320,6 +1342,7 @@ F:  Mm - hmm .
 A:  actually  <breath> 
 F:  Mm - hmm . 
 F:  Yeah . <breath> 
+topic_description:	inputting probabilities into KLT
 
 
 F:  But we were thinking , we discussed with Barry about this , and <breath> perhaps <mouth> 
@@ -1447,6 +1470,7 @@ D:  <noise>
 A:  <breath> 
 D:  <mike noise> 
 A:  O K . 
+topic_description:	designing a cheating experiment
 
 
 B:  Can I just mention one other interesting thing ? <breath> 
@@ -1490,6 +1514,7 @@ B:  I thought " well if I only allow  " <breath>
 B:  Yeah , I guess I should have looked at  to see how often there was a mistake where a two - long or a three - long path was actually put out as a hypothesis . <breath> Um . But . 
 A:  Hmm . 
 B:  So to do that right you 'd probably want to have  <breath> allow for them all but then have weightings and things . So . I just thought that was a interesting <breath> thing about the data . <breath> 
+topic_description:	HTK's language model, digit sequences
 
 
 A:  <mouth> <inbreath> OK . So we 're gonna read some more digit strings I guess ? <breath> 
@@ -1502,6 +1527,7 @@ B:  <breath>
 A:  <breath> Uh transcript L twenty .  
 C:  <page turn> 
 A:  <mouth> 
+topic_description:	closing
 
 
 A:  five five five four zero one eight eight seven two  
@@ -1560,5 +1586,6 @@ D:  <noise>
 E:  one six five six eight seven five nine four  
 E:  three seven seven five O five zero three five six eight  
 E:  seven four seven nine nine nine one one nine  
+topic_description:	digit task
 
 

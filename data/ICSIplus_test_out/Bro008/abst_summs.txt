@@ -1,0 +1,53 @@
+None
+abst_sum - abstract: The Berkley Meeting Recorder Group discussed the most recent progress with their current project, a digit recognition system for use in cell phones.
+
+D:  So , I got , uh  these results from , uh , Stephane . 
+D:  Also , um , I think that , uh  um  we might hear later today , about other results . 
+D:  I think s that , uh , there were some other very good results that we 're gonna wanna compare to . 
+D:  But , <inbreath> r our results from other  other places , 
+D:  You know most of the time , even  I mean even though it 's true that the overall number for Danish  we didn't improve it 
+D:  I mean , I think that , uh , one of the things that Hynek was talking about was understanding what was in the other really good proposals 
+D:  and trying to see if what should ultimately be proposed is some , uh , combination of things . 
+D:  So  <nasal inbreath> um , since we have a bit farther to travel than <laugh> some of the others , <inbreath> uh , we 'll have to get done a little quicker . 
+D:  But , um , I mean , it 's just tracing down these bugs . 
+D:  I mean , just exactly this sort of thing of , you know , why  why these features seem to be behaving differently , uh , in California than in Oregon . 
+abst_sum - abstract: This included some discussion of results, comparing various other groups' systems, issues involving the set up, and plans for future work.
+
+D:  We have a little bit of time on that , actually . 
+D:  We have a day or so , 
+D:  When  when  when do you folks leave ? 
+D:  Sunday ? 
+D:  until Saturday midnight , or something , we have 
+C:  When is the development set  I mean , the , uh , uh , test set results due ? 
+D:  Uh , probably the day after they leave , 
+D:  but we 'll have to  <laugh> we 'll have to stop it the day before  we leave . 
+D:  I think tha I think the  the meeting is on the thirteenth or something . 
+A:  this Tuesday , 
+D:  And the  the , uh , results are due like the day before the meeting or something . 
+abst_sum - decisions: Results are required for an upcoming meeting, but since some group members will be away, results need to be in sooner.
+
+D:  The other thing that strikes me , just looking at these numbers is , just taking the best cases , 
+D:  I mean , some of these , of course , even with all of our  our wonderful processing , still are horrible kinds of numbers . 
+D:  But just take the best case , the well - matched  uh , German case after  er well - matched Danish after we  
+D:  the kind of numbers we 're getting are about eight or nine  uh  p percent  error  per digit . 
+D:  This is obviously not usable , 
+D:  I mean , if you have ten digits for a phone number  I mean , every now and then you 'll get it right . 
+D:  So , in a way , that 's , you know , that 's sort of the dominant thing 
+D:  is that even , say on the development set stuff that we saw , the , uh , the numbers that , uh , that Alcatel was getting when choosing out the best single numbers , <inbreath> it was just  you know , it wasn't good enough for  for  a  a  for a real system . 
+D:  So , uh , we still have stuff to do . 
+D:  Uh  <laugh> Uh  <laugh> I mean , they 're much better than they were , you know . 
+D:  We 're talking about thirty to sixty percent , uh , error rate reduction . 
+D:  That 's  that 's really great stuff to  to do that in relatively short time . 
+D:  But even after that it 's still , you know , so poor that  that , uh , no one could really use it . 
+abst_sum - problems: Although error rates have been greatly reduced, current rates are still unusable in a practical situation.
+
+A:  because , um , um , when we use the straight features , we are not able to get these nice number 
+D:  You know most of the time , even  I mean even though it 's true that the overall number for Danish  we didn't improve it 
+A:  Y Actually , uh , um , for the Danish , there 's still some kind of mystery 
+A:  with the ICSI OGI one , I mean . 
+A:  Uh , so , uh , that 's probably something wrong with the features that we get from OGI . 
+A:  Uh , and Sunil is working on  on trying to  to check everything . 
+D:  But , um , I mean , it 's just tracing down these bugs . 
+D:  I mean , just exactly this sort of thing of , you know , why  why these features seem to be behaving differently , uh , in California than in Oregon . 
+abst_sum - problems: There is a problem replicating some results found by partner OGI, but it is unclear why.
+

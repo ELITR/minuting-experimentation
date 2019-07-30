@@ -9,6 +9,7 @@ B:
 A:  Okay ? So we are here for the functional design meeting mm <other> so first I will show the agenda so we will uh I will take notes during this meeting so 
 B:  <other> 
 A:  I will try to summarise it and put that summary in the shared folder if you want to look at it afterwards so then uh each of you will uh lead a presentation on the task that has been required last time so user requirement specification , technical function design and working design . Then I will uh present you some new project requirements I received from uh the management board . Then we will take uh the decision on on the remote control uh needed functions and then I will assign you the task for the next part of the meeting . Of the  of the process . 
+topic_description:	opening_None
 
 
 A:  So uh who want to start the the presentation of what they did ? 
@@ -43,6 +44,7 @@ B:  Let's go and check . I'll go and check .
 C:  Yeah . Otherwise , could you just describe by hand ? With the the whiteboard ? 
 B:  Okay . Yeah . 
 A:  If you remember yeah but that's  
+topic_description:	agenda/equipment issues_None
 
 
 B:  Yeah . So uh . Basically <other> what we want here is a remote control right . <other> So um the question well first of all what to control . So <other> most people want to have a a remote for their hi-fi and T_V_ and stuff like that . And  but other people want th also remotes for <other> controlling uh and toys like robotic pets and little robots and stuff and other people also want to have remotes for controlling um whole house . 
@@ -77,6 +79,7 @@ B:  Yeah .
 A:  So that's uh that close your investigations ? 
 B:  Yeah . Uh yeah I think so . Not so far . 
 A:  Okay . 
+topic_description:	interface specialist presentation_None
 
 
 A:  Okay . Maybe we can have a look at the user requirements with  
@@ -165,6 +168,7 @@ D:  <other> An I s no , yeah . <other> I dunno if you see something else importa
 A:  <other> Okay these are the user requi 
 C:  <other> 
 A:  <other> 
+topic_description:	marketing expert presentation_None
 
 
 C:  I'm just thinking of some thing . Um  
@@ -192,6 +196,7 @@ B:  Uh yeah .
 A:  <laugh> 
 B:  Yeah . Okay 
 C:  Finish tonight . <laugh> 
+topic_description:	new requirements_None
 
 
 C:  But basically yeah maybe I can continue with my presentation , it would be al you  you  but I think we have some technical problem or so . So I'm just going to describe briefly what we do in the remote control . If fact  
@@ -227,6 +232,44 @@ A:  Standard button one .
 B:  Yeah . So the only time problem is the sp voice recognition . Yeah . Yeah . 
 D:  <cough> 
 C:  Yeah . Definitely . 
+topic_description:	industrial designer presentation_None
+
+
+A:  So do you have any idea of how long it would take to have voice recognition now ? 
+B:  <laugh> Ten years . 
+C:  I would say <laugh> . I would say uh about eight months to have the first results . 
+A:  <laugh> <laugh> 
+B:  <laugh> 
+A:  <laugh> Okay so i it's a bit long yeah . 
+C:  Yeah . I can  Um . 
+A:  One month for the standard one with button . Even if we have a L_C_D_ display ? 
+C:  Yeah . Yeah even . I mean that this is really standard devices now . Um eight . For uh speech recognition . 
+A:  Okay yeah . Okay so we can take this into account . So who think it would be good to go for uh like speech recognition ? 
+B:  But we don't have time to market . 
+A:  <other> Yeah it will . 
+C:  And also  how much uh I think 
+B:  I think we should contact management . 
+C:  during the kickoff meeting you say that we we shouldn't  we shouldn't go up to twelve point five Euro per unit so how many units should we sell to have a  
+D:  <cough> 
+A:  Euros . Yeah , yeah . 
+B:  Well . Uh  
+A:  Well each unit is is sell uh twenty five Euros . 
+C:  Yeah but how many  yeah . 
+B:  How muc how much do you get  how much do you  if you buy one million units h no , one hundred thousand units . 
+D:  <cough> 
+B:  Eh chips . We're gonna need chips right . 
+C:  Yeah . 
+B:  Yeah . How much will it cost for one hundred thousand ? 
+C:  <other> Usually this is less tha at two dollars per chip . 
+B:  Okay . 
+A:  Because we are  
+B:  So you have any idea for a powerful one that has uh good enough for do speech recognition . 
+C:  Yeah , we can  
+B:  Yeah ? Okay . So . No it doesn't . 
+A:  It seems that that we want to sell like four million units from the first meeting . 
+C:  Mm-hmm . 
+B:  Okay . Four million .  
+topic_description:	components, materials and energy sources_None
 
 
 A:  Okay . Maybe we can uh we can look at the new requirement I receive from the management board and discus discuss all function we want to have . 
@@ -275,6 +318,7 @@ B:  Mm-hmm .
 A:  These  these are  these two points are the main frustrations so maybe if we design something very simple and easy to uh find when lost it will uh add uh a serious competitive advantage without making something too complex and too long to develop . 
 D:  Mm . 
 B:  Mm-hmm . 
+topic_description:	look and usability_None
 
 
 A:  So but le let us see first the new requirement . So we don't have to  so this this uh is uh is um in the this is in the same direction as we were speaking so we don't have to make a very complex remote controls to access teletext and stuff like that  
@@ -289,12 +333,117 @@ A:  Yeah . I dunno . If i one button is still one more button . If  if  if we wa
 B:  So . Mm-hmm . 
 A:  Well anyway I have this point . We can discuss . Also um  so as as I told before uh it would be better if it's only for the T_V_ um because we want to be quick on on the market . And then also we have to make very uh uh clear that this uh this remote control is is part of of our products and show our corporate uh logo and and colours on the  on the design as well so that uh they identify it as one of our product . So this is the the key point . 
 D:  <cough> 
+topic_description:	new requirements_None
 
 
 A:  So before uh finishing we can uh define uh what would be the characteristic of the  o th of the control  of the remote control and which button do we need which function do we want etcetera . 
 B:  Capital . 
 D:  Mm . 
 A:  <laugh> 
+topic_description:	discussion_None
+
+
+A:  So do you um so so from from the the Marketing Expert I think a key aspect is the easy to use aspect , it should be very simple and most button are never used only ten per cent of the button are are used often so I think we have to do something very simple and I think we all agree on that point , no ? 
+D:  Mm . 
+C:  Mm-hmm . 
+D:  Mm . 
+B:  Well if it is going to be just a T_V_ remote control it is going to be very simple . 
+A:  Yeah okay . So yeah the key point here is simple . Maybe . <other> So few buttons , channel , volume control and what el what function do you see 
+B:  Well if it's going to be as simple as possible then just have the remote control , there is no other function that I can see 
+A:  in addition to that ? 
+B:  really . 
+A:  Yeah . Maybe switch T_V_ on and off <laugh> 
+B:  <laugh> Uh no you want to keep television on so that the advertising can  revenue can come back to us . Or something . 
+C:  <laugh> 
+A:  <other> <laugh> Yeah . Yeah . Volume , maybe a mute button , and then on off button . 
+D:  <cough> 
+C:  Mm . 
+A:  And that's all ? 
+C:  Uh I know that som you say that many people are doing plenty of  a lot of zapping . 
+D:  Mm-hmm . 
+A:  Mm . 
+B:  <other> 
+C:  I know tha I discovered that when I did a quick look , uh they do now som they do something which is quite nice now , you have a button , you you press it , and this is uh the previous channel which has come back . 
+B:  It's a memory , yeah . 
+A:  Okay . Yeah this is cool . Maybe we can include that also . Previous previous channel button . So we have like channel button , the previous channel button , the volume button , plus a mute button , and uh just the the traditional on off button . 
+C:  Mm-hmm . Mm-hmm . Mm-hmm . <other> 
+B:  And uh and of course the channel changing buttons . 
+A:  Yeah . I I talk about that , yeah ? 
+B:  How should they how should we implement that ? Because uh could be numerical only or could be also incremental . 
+A:  Yeah . Incremental definitely because zapping you you switch them . 
+C:  <other> 
+B:  Mm-hmm . 
+C:  Let's say that we can do something like that . This is uh incremental , but once you press it for a long time , you go five by five . 
+A:  We go faster ? 
+C:  To go fa to go faster . 
+A:  Mm . 
+B:  Mm . It's an interesting idea , that if you press it for a long time it does something else , in general . So if you you have your ten buttons for the  for the numeric the numerical buttons and you have  instead of having just one memory 
+D:  <cough> 
+C:  Yeah . 
+B:  you have if you press them for a long time  No . Doesn't work <other> does it . 
+A:  Maybe we should have also a digit button  
+B:  Maybe we should have a complete keyboard and just type console commands . <laugh> Change channel to eight . 
+A:  <laugh> 
+C:  <laugh> 
+A:  Yeah . <laugh> Maybe we have also to have digits or only incremental . I dunno bec because if you have the  
+B:  No . <other> Well if it's useful like if if you want to change between three channels for example then you h you cannot  you cannot cannot work with just memory being incremental . 
+A:  Uh . Yeah . Because you have your previous channel button if you have incremental only it's not uh it isn't worth it because the previous channel is eith either minus one or plus one . <laugh> So I think we need also digits . Maybe we we can make very obvious the channel and volume button button and smaller button down there with the the digits . 
+C:  Yeah . 
+B:  Yeah . Yeah . <laugh> 
+C:  Okay . 
+B:  Yeah when you zap usually you will have to press the same button all the time <sound imitating pressing buttons> and  
+A:  Yeah . 
+C:  <other> Or we can do something like that . We can design the remote control to have access . You know some remote control have uh protection and so you you y 
+B:  Yeah . 
+D:  <cough> 
+B:  Mm-hmm . 
+A:  Yeah . 
+B:  Hey I just thought this thing  there is a  I mean you know there is are some  with a wheel like this . Instead of having the up down buttons for uh you can have the wheel . <other> Yeah . 
+C:  You  
+A:  Yeah . 
+C:  Yeah , a kind of joystick . 
+A:  Yeah . Maybe we can have a wheel for incremental . Okay . So have a wheel for incremental , have the digits uh on the lower side that can be closed so as you say protected , 
+B:  <other> Yeah . 
+C:  Mm-hmm . 
+B:  Mm-hmm . 
+A:  <other> and uh yeah I think this is the basi 
+B:  On the lower side I think it  you have to turn it . No ? If we do that . 
+A:  And do we  do we have a  
+C:  Or a  or a ball , yeah , not a a wheel but a ball , and you say uh to  
+A:  No , a wheel is better . I would say the wheel is better . What is the expert of uh  
+B:  Yeah . Because of that <sound imitating mechanical noise> 
+C:  Yeah . 
+B:  Because it's uh it's it's not like a volume which is smooth yeah ? The channels change one by one . So you have to the user has to like to should feel the the the discrete sense a bit . 
+C:  Yeah . Yeah , the  yeah . 
+A:  Okay . Yeah . That's a good idea . 
+B:  Yeah . 
+A:  Well also we have to decide uh so it should be lightening in the dark I think because most people lost their remote control . 
+C:  'S quite  it's quite easy we do that w with back light on the  on the wheel . 
+A:  Okay . 
+D:  <other> 
+B:  Yeah . Even if i L_E_D_ uh or a if if it's the L_C_D_ feature uh whatever , yeah . 
+C:  A blue  a blue L_E_D_ and we sell that um . 
+topic_description:	look and usability_None
+
+
+A:  Yeah , and do we put an L_C_D_ display ? Because it was important for young customers if you remember . 
+D:  <other> 
+B:  Yeah . <other> I think it's only put on if cou have multi function . If you do not multi function then there is no p point in having L_C_D_ . Just increase the cost . <other> The user does not have an advantage really . 
+C:  Yeah . 
+A:  Okay . So no L_C_D_ ? 
+C:  Mm-hmm . 
+D:  Hmm . 
+A:  And so no speech as well because it w it would delay too much the development process . 
+C:  Okay . 
+B:  Well if it's going to delay yeah but uh <other> it will be cool . It would . Because a user could say C_N_N_ for example and it would go C_N_N_ . Mm . 
+D:  Mm-hmm . 
+A:  Yeah . That would be cool . But eight months is really long and  
+B:  Yeah . 
+A:  Maybe we can just uh  
+C:  <laugh> Ten years <laugh> 
+A:  <laugh> 
+B:  <laugh> 
+topic_description:	components, materials and energy sources_None
 
 
 A:  Okay . So um I I will uh  I will  so I we will move to next meeting so in  after the lunch break uh here are the individual uh action uh you are required to do but you will be uh recalled to the actions by uh email I think but you can take notes if you  if you want but well the instruction will be sent . So 
@@ -316,5 +465,6 @@ A:  <laugh>
 B:  How about uh  management or something . Who happens to be your friend . 
 A:  <cough> 
 B:   
+topic_description:	closing_None
 
 

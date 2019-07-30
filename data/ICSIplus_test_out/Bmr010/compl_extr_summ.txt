@@ -1,0 +1,220 @@
+F:  Well , um , I can  give you an update on the  transcription effort . 
+F:  Uh , maybe <mike spike> raise the issue of microphone , uh , um procedures 
+F:  with reference to the  cleanliness of the recordings . 
+
+F:  The  we have great  great , uh , p steps forward in terms of the nonspeech - speech pre - segmenting of the signal . 
+F:  Well , it 's a  it 's a big improvement . 
+
+C:  Um , so , uh , what we basically did so far was using the mixed file to  to detect s speech or nonspeech  portions in that . 
+C:  And what I did so far is I just used our old Munich system , 
+C:  which is an HMM - ba based system with Gaussian mixtures for s speech and nonspeech . 
+C:  And it was a system which used only one Gaussian for silence and one Gaussian for speech . 
+C:  And now I added , uh , multi - mixture possibility for  <inbreath> for speech and nonspeech . 
+C:  And I did some training on  on one dialogue , which was transcribed by  
+C:  Yeah . We  we did a nons s speech - nonspeech transcription . 
+
+C:  And I did some pre - segmentations for  for Jane . 
+
+F:  Uh , they  they think it 's a terrific improvement . 
+
+C:  And I 'm not sure how good they are or what  what the transcribers say . 
+
+C:  So I saw that there were loud  loudly speaking speakers and quietly speaking speakers . 
+C:  And so I did two mixtures , one for the loud speakers and one for the quiet speakers . 
+
+C:  It 's just our  our old Munich , uh , loudness - based spectrum 
+C:  on mel scale twenty  twenty critical bands and then loudness . 
+C:  And four additional features , which is energy , loudness , modified loudness , and zero crossing rate . 
+
+C:  You can specify <inbreath> the minimum length of speech or  and silence portions which you want . 
+
+C:  basically changing the minimum  minimum  length for s for silence 
+
+C:  to have more or less , uh , silence portions in inserted . 
+
+A:  Right . So this would work well for , uh , pauses and utterance boundaries and things like that . 
+
+F:  But <spike on "but"> it  it saves so much time  the  the <spike> transcribers 
+
+G:  Is there a  a transformation , uh , like principal components transformation or something ? 
+
+C:  No . W w we  originally we did that 
+
+C:  yeah , for our  for our recognizer in Munich  
+C:  we saw that w it 's  it 's not  it 's not so necessary . 
+C:  It  it works as well f with  with  without , uh , a LDA or something . 
+
+F:  because at present , <spike on /p/> <inbreath> um , because <spike on /b/> of the limitations of <inbreath> th the interface we 're using , 
+F:  overlaps are , uh , not being <spike on /b/> encoded by <spike on /b/> the transcribers in as complete <spike on /p/> and , uh , detailed a way as it might be , 
+
+F:  So we don't have start and end points <spike on /p/> at each point where there 's an overlap . 
+F:  We just have the  the <spike on "the"> overlaps <spike on /p/> encoded in a simple bin . 
+F:  Well , OK . So <spike> @ @ the limits of the <spike on "the"> over of  of the interface are <inbreath> such that we were  at this meeting we were entertaining how we might either expand <spike on /p/> the  the <inbreath> interface or find other tools which already  do what would be useful . 
+F:  Because what would ultimately be , um , ideal in my  my view 
+F:  and I think  I mean , I had the sense that it was consensus , 
+F:  is that , um , a thorough - going musical score notation would be <spike on /b/> the best way to go . 
+F:  Because <spike on /b/> you can have multiple channels , 
+F:  there 's a single time - line , 
+F:  it 's very clear , flexible , and all those nice things . 
+
+C:  Susanne Bur - Burger , who is at se CMU , he wa who was formally at  in Munich and w and is now at  with CMU , 
+C:  she said she has something 
+C:  which she uses to do eight channels , uh , trans transliterations , 
+
+A:  Well , maybe we should get it 
+A:  and if it 's good enough we 'll arrange Windows machines to be available . 
+
+F:  this  this is called Praat , PRAAT , <spike on /p/> which I guess means spee speech in Dutch or something . 
+
+A:  No , no . Praat isn't  Praat 's multi - platform . 
+
+A:  What our decision was is that  we 'll go ahead with what we have with a not very fine time scale on the overlaps . 
+
+F:  And  and I was just thinking that , um , <inbreath> if it were possible to bring that in , like , <breath> you know , this week , 
+F:  then <spike on /th/> when they 're encoding the overlaps <spike on /p/> it would be nice for them to be able to specify when  you know , the start points and end points of overlaps . 
+F:  uh Th - they 're <spike> making really quick progress . 
+
+F:  the hack to <inbreath> preserve the overlaps <spikes> better would be one which creates different output files for each channel , 
+F:  which then <spike on /th/> would also serve Liz 's request  of having , 
+
+F:  separable , uh , cleanly , easily separable , 
+F:  uh , transcript tied to a single channel , uh , audio . 
+
+F:  And Dan Ellis 's hack handles the , <inbreath> um , choice <spike on /ch/>  the ability to choose different waveforms <inbreath> from moment to moment . 
+
+F:  And  and , um , Dan Ellis 's hack already allows them to be <spike on /b/> able to display <inbreath> different <spikes on /d/ and /t/> waveforms to clarify overlaps and things , 
+
+A:  No . They can only display one , 
+
+F:  Well , <breath-laugh> uh , yes , but <spike on /b/> what I mean is  that , uh , from the transcriber 's <spike on /t/> perspective , uh , those <spike on /th/> two functions are separate . 
+
+A:  Oh , we should definitely get with them then , 
+
+G:  They <breath> seem to want to  get absolutely clear on standards for  transcription standards and so forth with  with us . 
+
+G:  Have , uh , folks from NIST been in contact with you ? 
+
+A:  agree upon a format . 
+
+F:  I 'm keeping the conventions  absolutely  as simple <spike on /p/> as possible . 
+
+F:  and Dan Gel - and Dave Gelbart is interested in pursuing the aspect <spike on /p/> of using amplitude <spike on /t/> as a  a  a  as a basis for the separation . 
+
+A:  Cross - correlation . 
+
+G:  I had mentioned this a couple times before , the c the commercial devices that do , uh , <inbreath> uh , voice , uh  you know , active miking , 
+G:  basically look at the amp at the energy at each of the mikes . 
+G:  And  and you basically compare the energy here to <inbreath> some function of all of the mikes . 
+
+G:  by doing that , you know , rather than setting any , uh , absolute threshold , you actually can do pretty good , uh , selection of who  who 's talking . 
+
+F:  Cuz there is one thing that we don't have right now and that is the automatic , um , channel identifier . 
+F:  That  that , you know , that would g help in terms of encoding of overlaps . 
+F:  The  the transcribers would have less , uh , disentangling to do  if that were available . 
+
+D:  OK . What  what are the different , uh , classes to  to code , uh , the  the overlap , you will use ? 
+
+F:  so types of overlap ? 
+
+F:  it <spike on /t/> i the  it 's basically a two - tiered structure where the first one is whether <spike on /th/> the person who 's interrupted continues or not . 
+F:  And then below that there 're <spike on /th/> subcategories , uh , that have more to do with , <spike on /th/> you know , is it , <inbreath> uh , simply <spike on first syllable> backchannel 
+F:  or is <spike> it , um , someone completing someone else 's thought , 
+F:  or is it someone in introducing a new thought . 
+
+A:  And I hope that if we do a forced alignment with the close - talking mike , that will be enough to recover at least some of the time the time information of when the overlap occurred . 
+
+G:  Well , let 's  why don't we talk about microphone issues ? 
+
+G:  But I  I think that it  it doesn't hurt , uh , the naturalness of the situation to try to have people  wear the microphones properly , if possible , 
+
+A:  so one thing is that I did look on Sony 's for a replacement for the mikes  <inbreath> for the head m head - worn ones 
+A:  cuz they 're so uncomfortable . 
+
+B:  So , anything to reduce breathing is  is  is a good thing . 
+
+A:  It seemed to me when I was using Dragon that it was really microphone placement helped an  in , uh  an enormous amount . 
+A:  So you want it enough to the side so that when you exhale through your nose , it doesn't  the wind doesn't hit the mike . 
+
+A:  And then just close enough so that you get good volume . 
+
+B:  One more remark , uh , concerning the SRI recognizer . 
+
+B:  It is useful to transcribe and then ultimately train models for things like breath , 
+B:  and also laughter is very , very frequent and important to  <inbreath> to model . 
+
+F:  They 're putting  Eh , so in curly brackets they put " inhale " or " breath " . 
+F:  It  they  and then in curly brackets they say " laughter " . 
+
+B:  Well , the thing that you  is hard to deal with is whe <inbreath> when they speak while laughing . 
+
+G:  The other thing we could do , actually , uh , is , uh , use them for a more detailed analysis of the overlaps . 
+
+F:  Well , you know , and I also thought , y Liz has this , eh , you know , and I do also , this  this interest in the types of overlaps that are involved . 
+F:  These people would be <spike on /b/> great choices for doing coding of that type if we wanted , 
+
+A:  I think it would also be interesting to have , uh , a couple of the meetings have more than one transcriber do , 
+A:  cuz I 'm curious about inter - annotator agreement . 
+
+D:  because , uh , I have the results , eh , of the study of different energy without the law length . 
+
+D:  the other , uh  the  the last w uh , meeting  
+
+D:  we have problem to  with the  <mouth> with  with the parameter  
+D:  with the representations of parameter , 
+D:  because the  the valleys and the peaks in the signal , eh , look like , eh , it doesn't follow to the  to the energy in the signal . 
+D:  And it was a problem , uh , with the scale . 
+
+D:  Eh , and I  I change the scale and we can see the  the variance . 
+
+G:  But the bottom line is it 's still not , uh , separating out very well . 
+
+G:  but  <inbreath> but you don't want to keep , uh  keep knocking at it if it 's  if you 're not getting any  any result with that . 
+G:  But , I mean , the other things that we talked about is , uh , <inbreath> pitch - related things and harmonicity - related things , 
+
+G:  a completely different tack on it wou is the one that was suggested , uh , by your colleagues in Spain , 
+G:  which is to say , don't worry so much about the , uh , features . 
+G:  That is to say , use , you know , as  as you 're doing with the speech , uh , nonspeech , use some very general features . 
+G:  And , uh , then , uh , look at it more from the aspect of modeling . 
+G:  You know , have a  have a couple Markov models 
+
+G:  and , uh , try to indi try to determine , you know , w when is th when are you in an overlap , when are you not in an overlap . 
+G:  And let the , uh , uh , statistical system  determine what 's the right way to look at the data . 
+
+D:  And , I  I have prepared the  the pitch tracker now . 
+D:  And I hope the  the next week I will have , eh , some results and we  we will show  we will see , eh , the  the parameter  the pitch , <inbreath> eh , tracking in  with the program . 
+
+G:  So you have , uh  you have , <inbreath> uh , nonspeech , single - person speech , and multiple - person speech ? 
+
+G:  And then you have a Markov model for each ? 
+
+C:  I  I thought about , uh , adding , uh , uh , another class too . 
+
+G:  So far , um , uh , Jose has  has been  
+
+G:  uh , the  has  has , uh , been exploring , uh , e largely the energy issue 
+
+G:  as with a lot of things , it is not  uh , like this , it 's not as simple as it sounds . 
+G:  And then there 's , you know  Is it energy ? Is it log energy ? Is it LPC residual energy ? Is it  is it  <inbreath> is it , uh , delta of those things ? 
+
+G:  Should there be a long window for the <inbreath> normalizing factor and a short window for what you 're looking at ? 
+
+G:  and  and so far at least has not come up with <inbreath> any combination that really gave you an indicator . 
+
+G:  but it may be  given that you have a limited time here , it  it just may not be the best thing to  <inbreath> to  to focus on for the remaining of it . 
+
+G:  But it seems like if we just wanna get something to work , 
+G:  that , uh , their suggestion of  of  
+G:  Th - they were suggesting going to Markov models , 
+G:  uh , but in addition there 's an expansion of what Javier did . 
+G:  And one of those things , looking at the statistical component , 
+G:  even if the features that you give it are maybe not ideal for it , it 's just sort of this general filter bank 
+
+D:  But , eh , what did you think about the possibility of using the Javier software ? 
+
+D:  eh , using the  the mark , eh , by hand , eh , eh , to distinguish be mmm , to train overlapping zone and speech zone . I mean , 
+
+D:  But it 's possible with my segmentation by hand  that we have information about the  the overlapping , 
+
+A:  Right . So if we  if we fed the hand - segmentation to Javier 's and it doesn't work , then we know something 's wrong . 
+A:  Yeah . I think that 's probably worthwhile doing . 
+

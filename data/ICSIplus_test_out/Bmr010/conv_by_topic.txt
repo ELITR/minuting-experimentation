@@ -28,6 +28,7 @@ G:  <laugh> OK . <sniff>
 C:  <laugh> 
 E:  <laugh> 
 D:  <laugh> 
+topic_description:	opening
 
 
 G:  Does anybody have an agenda ? 
@@ -103,6 +104,7 @@ G:  OK .
 B:  work that 's been  done on segmentation would be most  Yeah . 
 G:  <laugh> 
 F:  I think that would be a good thing to start with . 
+topic_description:	summary of meeting agenda items
 
 
 G:  Um , and , um , <mouth> the other thing , uh , which I 'll just say very briefly that maybe relates to that a little bit , which is that , um , 
@@ -164,8 +166,10 @@ G:  <inbreath>
 G:  so anyway , I just  reporting that . But , uh , uh  
 D:  <mouth> OK . 
 G:  <inbreath> 
+topic_description:	using non-silence boundaries in alignments
 
 
+topic_description:	speech, non-speech segmentation
 
 
 G:  So . Yeah , why don't we do the speech - nonspeech discussion ? 
@@ -286,6 +290,7 @@ C:  Yeah .
 D:  Right . 
 F:  Mm - hmm . 
 D:  <cough> 
+topic_description:	Thilo's results
 
 
 F:  <inbreath> OK . But then there 's another thing that also Thilo 's involved with , which is , um  
@@ -484,6 +489,7 @@ F:  you know , a single channel , separable , uh , cleanly ,
 G:  Mm - hmm . 
 F:  easily separable , uh , transcript tied to a single channel , uh , audio . 
 G:  Mm - hmm . 
+topic_description:	developing a tool for coding speaker overlap
 
 
 G:  <inbreath> Have , uh , folks from NIST been in contact with you ? 
@@ -526,6 +532,7 @@ A:  for the notation and the machine representation to be the same .
 F:  <mouth> 
 G:  Yeah . 
 A:  So . 
+topic_description:	NIST, transcription standards
 
 
 F:  N there was also this , <spike on /th/> uh , email from Dan regarding the  speech - non nonspeech segmentation thing . 
@@ -600,6 +607,7 @@ F:  Mm - hmm .
 D:  Mm - hmm . 
 B:  <breath> 
 F:  <mouth> 
+topic_description:	cross-correlation of microphone channels
 
 
 D:  OK . What  what are the different , uh , classes to  to code , uh , the  the overlap , you will use ? 
@@ -698,6 +706,7 @@ E:  <breath-laugh>
 F:  <laugh> That would be <spike on /b/> like  that 'd be like him . He 's great . 
 B:  <breath-laugh> 
 G:  Right . 
+topic_description:	forced alignment
 
 
 G:  So , uh , 
@@ -708,6 +717,7 @@ F:  Yeah . That 'd be great .
 E:  <sniff> 
 A:  <breath> <mouth> 
 D:  <laugh> 
+topic_description:	microphone issues
 
 
 A:  Um , 
@@ -748,6 +758,7 @@ B:  <breath>
 G:  Yeah . OK . 
 G:  Yeah . We  we can try and look at that together . 
 B:  <breath> 
+topic_description:	replacing head-mounted microphones
 
 
 A:  And then , uh  
@@ -928,8 +939,10 @@ A:  <laugh>
 G:  Anyway . <laugh> 
 F:  Mm - hmm . 
 E:  <laugh> 
+topic_description:	protocol for microphone placement
 
 
+topic_description:	transcriptions
 
 
 F:  <mouth> I could say something about  about the  Well , I don't know what you wanna do . Yeah . 
@@ -1128,6 +1141,7 @@ D:  <mouth> <laugh> Speech research . <laugh>
 F:  <breath-laugh> 
 C:  <laugh> 
 G:  Uh  
+topic_description:	transcribing audible breaths, laughter
 
 
 G:  Yeah . Why don why don't we just  since we 're on this vein , why don't we just continue with , uh , what you were gonna say about the transcriptions and  ? 
@@ -1328,6 +1342,7 @@ F:  <inbreath>
 F:  we haven't yet seen the  the type of transcript that we get from IBM , and it may just be , 
 F:  you know , pristine . But on the other hand , given the lesser interface  Cuz this is , you know  we 've got a good interface , we 've got 
 F:  great headphones , m um  
+topic_description:	transcriber pool
 
 
 G:  <inbreath> It could be that they will uh  theirs will end up being a kind of fir first pass or something . 
@@ -1375,6 +1390,7 @@ D:  <mike noise>
 D:  <mike noise> <cough> 
 F:  OK . 
 F:  Excellent . 
+topic_description:	alignment
 
 
 F:  <inbreath> I guess there 's another aspect , too , and I don't know  uh , this  this is  
@@ -1423,6 +1439,7 @@ A:  I mean , so if someone wants to use that data
 F:  OK . 
 G:  <inbreath> 
 F:  <inbreath> 
+topic_description:	classifying meeting events
 
 
 G:  We 're running a little short here . We , uh , uh , cou trying to  
@@ -1558,6 +1575,7 @@ D:  And I hope the  the next week I will have , eh , some results and we  we wil
 G:  I see . 
 D:  <inbreath> 
 D:  eh , tracking in  with the program . 
+topic_description:	Jose's update on detecting speaker overlap
 
 
 G:  <inbreath> Ha - h have you ever looked at the , uh , uh  Javier 's , uh , 
@@ -1658,6 +1676,7 @@ C:  So
 F:  <mouth> 
 C:  Yeah . 
 G:  <inbreath> 
+topic_description:	Javier's speech segmentation algorithm
 
 
 G:  The other thing one could do 
@@ -1770,6 +1789,7 @@ G:  <inbreath>
 G:  or cepstrum or something , um  
 D:  <clears throat> 
 G:  Eee <vocal gesture, intonation of "you know" but not segmentals> it 's in there somewhere probably . 
+topic_description:	feature based versus overall statistical approach
 
 
 D:  But , eh , what did you think about the possibility of using the Javier software ? 
@@ -1829,6 +1849,7 @@ G:  <mouth>
 A:  I  I have as well , so if you need  need help let me know . 
 D:  OK . 
 G:  <mouth> <long breath> 
+topic_description:	Javier's speech segmentation algorithm
 
 
 G:  Let 's read some digits . <breath-laugh> 
@@ -1845,6 +1866,7 @@ A:  <mike noise>
 A:  And we are  
 F:  That 's hard to focus on that , you know , really , it 's like  " alright , now where am I ? " <laugh>  
 E:  <mike turns off> 
+topic_description:	closing
 
 
 A:  Transcript two nine five one two nine seven O .  
@@ -1987,5 +2009,6 @@ F:  six three five two four
 F:  seven seven six four  
 F:  eight six two eight zero  
 F:  nine .  
+topic_description:	digit task
 
 

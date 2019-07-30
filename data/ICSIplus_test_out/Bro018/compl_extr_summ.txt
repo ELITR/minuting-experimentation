@@ -1,0 +1,76 @@
+C:  So uh , he 's not here , 
+
+D:  Yeah , I will try to explain the thing that I did this  this week  during this week . 
+D:  Well eh you know that I work  I begin to work with a new feature to detect voice - unvoice . 
+D:  What I trying two MLP to  to the  with this new feature and the fifteen feature uh from the eh bus base system 
+
+D:  And I tried to do some experiment of recognition with that 
+
+D:  And , well , the result are li a little bit better , but more or less similar . 
+
+D:  And I 'm trying two MLP , one one that only have t three output , 
+D:  voice , unvoice , and silence , 
+D:  and other one that have fifty - six output . 
+D:  The probabilities of the allophone . 
+
+D:  and only have result with  with the MLP with the three output . 
+
+D:  and also mmm I  H Hynek last week say that if I have time I can to begin to  to study 
+D:  well seriously the France Telecom proposal 
+D:  to look at the code 
+
+D:  I begin to  to work also in that . 
+D:  But the first thing that I don't understand is that they are using R - the uh log energy that this quite  
+D:  I don't know why they have some constant in the expression of the lower energy . 
+
+C:  OK , and wh when did Stephane take off ? 
+
+D:  I think that Stephane will arrive today or tomorrow . 
+
+C:  So he 's  he 's going to ICASSP which is good . 
+
+C:  Wanna talk a little bit about what we were talking about this morning ? 
+
+A:  Then uh I talked a little bit about <inbreath> um continuing with these dynamic ev um acoustic events , 
+A:  and um <inbreath> <mouth> we 're  we 're  we 're <inbreath> thinking about a way to test the completeness of a  a set of um dynamic uh events . 
+A:  Uh , completeness in the  in the sense that <inbreath> um if we  if we pick these X number of acoustic events , <inbreath> do they provide sufficient coverage <inbreath> for the phones that we 're trying to recognize <inbreath> or  or the f the words that we 're gonna try to recognize later on . 
+A:  And so Morgan and I were uh discussing <inbreath> um s uh s a form of a cheating experiment <inbreath> where we get  <mouth> um we have uh <inbreath> um a chosen set of features , or acoustic events , 
+A:  and we train up a hybrid <inbreath> um system to do phone recognition on TIMIT . 
+
+C:  So um have you had a chance to do this um thing we talked about yet with the uh  
+
+C:  but I was gonna ask about the  <inbreath> the um <mouth> changes to the data in comparing PLP and mel cepstrum for the SRI system . 
+
+C:  So we talked on the phone about this , that  that there was still a difference of a  of a few percent 
+C:  and <inbreath> you told me that there was a difference in how the normalization was done . 
+C:  And I was asking if you were going to do  <inbreath> redo it uh for PLP with the normalization done as it had been done for the mel cepstrum . 
+
+E:  no I haven't had a chance to do that . 
+E:  What I 've been doing is <outbreath> uh <outbreath> trying to figure out  
+E:  it just seems to me like there 's a um  
+E:  well it seems like there 's a bug , 
+E:  because the difference in performance is  it 's not gigantic 
+E:  but it 's big enough that it  it seems wrong . 
+
+C:  but I thought that the normalization difference was one of the possibilities , 
+
+E:  I guess I don't think that the normalization difference is gonna account for everything . 
+E:  So what I was working on is um just going through and checking the headers of the wavefiles , 
+
+B:  That 's  as far as my stuff goes , 
+
+B:  well I <inbreath> tried this mean subtraction method . 
+
+B:  Due to Avendano , <inbreath> I 'm taking s um <inbreath> six seconds of speech , 
+B:  um <inbreath> I 'm using two second <inbreath> FFT analysis frames , <inbreath> stepped by a half second 
+
+B:  And I calculate um <mouth> the spectral mean , <inbreath> of the log magnitude spectrum  over that N . 
+B:  I use that to normalize the s the current center frame <inbreath> by mean subtraction . 
+
+B:  And um <inbreath> the  I tried that with HDK , 
+B:  the Aurora setup of HDK training on clean TI - digits , 
+B:  and um <inbreath> it  it helped 
+B:  um in a phony reverberation case 
+B:  um <inbreath> where I just used the simulated impulse response um <inbreath> the error rate went from something like eighty it was from something like eighteen percent <inbreath> to um four percent . 
+B:  And on meeting rec recorder far mike digits , mike  on channel F , it went from um <mouth> <inbreath> forty - one percent error to eight percent error . 
+

@@ -1,0 +1,116 @@
+None
+abst_sum - abstract: The translation of SmartKom to english is in its final stages.
+
+None
+abst_sum - abstract: The synthesis module will be the last one to do, after the english syntax trees are completed.
+
+E:  Right now it 's brittle and you need to ch start it up and then make ts twenty changes on  on  on  on seventeen modules before they actually can stomach it , anything . 
+E:  we can even make a  sort of an internal demo , 
+E:  Um . <outbreath> Well it was just amazing to  to see uh how  how instable the whole thing is , 
+abst_sum - abstract: The system is still buggy and unstable, but it will soon be ready for a demonstration.
+
+C:  n no , to just get the dem get the demos they need . 
+C:  So th the demo the demo requirements for this Fall are sort of taken care of as of later this week or something . 
+abst_sum - abstract: This is the first of two working demos required for the project.
+
+C:  But , more focused on uh an idealized version than just getting the demo out . 
+abst_sum - abstract: Further than that, there are no restrictions on the focus of the research or its possible applications.
+
+C:  And so these issues about uh , reference , and  spatial  reference , discourse reference , uh - uh - uh - uh  all this sort of stuff , uh , deixis which is part of what you were talking about , 
+C:  So we gotta do all this . 
+abst_sum - abstract: For example, issues like spatial descriptions could be investigated.
+
+E:  On this scale , you have it either be ego or allocentric . 
+C:  So in addition to e ego and allocentric uh which appear all over the place , you also apparently have this proximal - distal thing which is very deeply uh embedded . 
+abst_sum - abstract: The variety of linguistic conventions seem to develop around an ego/allo-centric and a proximal/distal paradigm.
+
+C:  By the way , there  something that I didn't know until about a week ago or so , is apparently , there are separate brain areas for things within reach , and things that are out of reach . 
+abst_sum - abstract: The latter is also reflected in neuro-physiological data.
+
+C:  so , I think as far as this group goes , um , it 's certainly worth continuing for the next few weeks to get closure on the uh belief - net and the ideas that are involved in that , and what are th what are the concepts . 
+abst_sum - abstract: From an engineering perspective, the belief-net for the AVE task should be completed within a few weeks.
+
+C:  and we went through this , and , I think , more or less convinced ourselves that at least the vast majority of the nodes that we needed for the demo level we were thinking of , were in there . 
+abst_sum - abstract: The majority of the nodes are already there.
+
+C:  OK ? What all  you know , what are the considerations and how and what are the ways in which they relate . 
+abst_sum - abstract: This leaves the dependencies between them and the rules of computation to be set.
+
+C:  So " OK , we 're not using their system . That means we need our system . " 
+C:  But to do that we 're gonna need to make some decisions like ontology , 
+C:  i Does uh either the uh SmartKom project or one of the projects at EML have something that we can just p pull out , for that . 
+abst_sum - abstract: Since the whole system is going to be re-designed, there are major decisions to be taken regarding the parser and the ontology, as well as what can be re-used from past EML projects.
+
+C:  so The idea is there 's this uh , other subgroup that 's worrying about formalizing the nota getting a notation . 
+abst_sum - abstract: In parallel, another team is working on formalisation and notation.
+
+C:  Oh there 's yet another one of the incoming first   incoming first - year graduate students who 's expressed interest , 
+C:  And actually I talked today to a uh undergraduate who wants to do an honors thesis on this . 
+C:  And , while we 're at this level , uh , there 's at least one new doctoral student in computer science who will be joining the project , either next week or the first of August , depending on the blandishments of Microsoft . 
+abst_sum - abstract: Finally, more ideas are expected to come from students and their research.
+
+C:  So , c sh we could set that up as actually an institute wide thing ? 
+E:  Well d we  we do wanna have all the bugs out b where you have to sort of pipe in extra XML messages from left and right before you 're  
+abst_sum - decisions: The final english SmartKom demo will be presented to the whole institute once the system is de-bugged and stabilised.
+
+C:  So I 'd like to , for the summer turn into science mode . 
+C:  But , more focused on uh an idealized version than just getting the demo out . 
+C:  Uh . I mean there are a lot of issues , 
+C:  what 's the ontology look like , 
+C:  you know what do the constructions look like , 
+C:  what 's the execution engine look like , 
+abst_sum - decisions: After the demo, the focus of research can switch towards purely scientific goals, including issues on ontology, deep semantic constructions, execution engines etc.
+
+C:  So " OK , we 're not using their system . That means we need our system . " 
+C:  And so , uh , in addition to the business about just getting the linguistics right , and the formalism and stuff , we 're actually gonna build something 
+abst_sum - decisions: Moreover, a new system will be designed for the project and at least some parts of it should be built.
+
+C:  cuz we 're  we 're not only going  The plan is not only to lay out this thing , but to actually uh build some of it . 
+C:  It looks like we 're now in a position that the construction analyzer that we want for this applied project can be the same as the construction analyzer that Nancy needs for the child language modeling . 
+abst_sum - decisions: Similarly, the construction analyser should be a single, general tool working for both the tourist domain and child language modelling.
+
+C:  And one of the things we need to do is the um , and this I think is relatively tight  tightly constrained , is to finish up this belief - net stuff . 
+C:  so , I think as far as this group goes , um , it 's certainly worth continuing for the next few weeks to get closure on the uh belief - net and the ideas that are involved in that , and what are th what are the concepts . 
+abst_sum - decisions: The focus for the next meeting will be on the belief-net, of which a working demo should be complete in the next few weeks.
+
+C:  So uh what we 're gonna do initially is  is do design , and , i if you will , guess . 
+C:  but for the limited amount of stuff we have for this particular exercise I think we 'll just design it . 
+abst_sum - decisions: Since there are not enough data, its connections and weights will have to be designed.
+
+None
+abst_sum - decisions: Although JavaBayes has been the tool of choice until now, the possibility that Hugin could be a better option should be investigated.
+
+E:  And um , part of my responsibility is uh to use our internal " group - ware " server at EML , 
+E:  so that whatever we discuss in terms of parsing and  and generating and constructions w we  we sort of uh put it in there 
+E:  and they put what they do in there 
+E:  and maybe we can even um , get some overlap , get some synergy out of that . 
+abst_sum - decisions: In order to promote the collaboration with EML, the group-ware server there will be updated with all progress being made in the two sites.
+
+C:  and so anyway we c uh  We can m undoubtedly get Ami uh to give a talk at uh EML or something like that . While he 's in  in uh  
+C:  A lot of interest . Actually , either place , DFKI or uh  
+abst_sum - decisions: A talk on some of the issues will also be organised to take place at DFKI.
+
+E:  e the version  that is , the full version that 's on the server d does not work . 
+abst_sum - problems: The german SmartKom version available on the server does not work.
+
+E:  Right now it 's brittle and you need to ch start it up and then make ts twenty changes on  on  on  on seventeen modules before they actually can stomach it , anything . 
+E:  because it 's designed for this seevit thing , where you have the gestural recognition running with this s Siemens virtual touch screen , which we don't have here . 
+E:  but it 's working now , 
+E:  And I g I got the feeling that we are  the only ones right now who have a running system . 
+E:  Um . <outbreath> Well it was just amazing to  to see uh how  how instable the whole thing is , 
+abst_sum - problems: The english version, although still under development, does work, however, the system is still unstable as -apart from other reasons- it was initially built to work with a touch screen.
+
+E:  Well d we  we do wanna have all the bugs out b where you have to sort of pipe in extra XML messages from left and right before you 're  
+abst_sum - problems: De-bugging and cleaning up has to take place before any new modules are added on it.
+
+None
+abst_sum - problems: As regards the belief-net, no connections and dependencies have been built into it.
+
+C:  So uh what we 're gonna do initially is  is do design , and , i if you will , guess . 
+C:  but for the limited amount of stuff we have for this particular exercise I think we 'll just design it . 
+abst_sum - problems: These will have to be guessed instead of learnt through data, as not enough data is available for such a task.
+
+D:  JavaBayes does not support that . 
+E:  I  I also s would suggest not to d spend two weeks in  in  in changing the  the JavaBayes code . 
+abst_sum - problems: Finally, it has been noted that the JavaBayes GUI does not satisfy all the presentation requirements for this belief-net and modifying the underlying code would be too time-consuming.
+

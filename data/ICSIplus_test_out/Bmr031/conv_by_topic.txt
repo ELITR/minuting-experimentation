@@ -17,6 +17,7 @@ B:  Yeah .
 C:  <mouth> So . 
 C:  <breath> 
 C:  So , uh , you didn't  you didn't get an agenda , I guess . We 've got the usual  
+topic_description:	opening
 
 
 G:  There 're some words that weren't  
@@ -90,8 +91,10 @@ C:  <inbreath> Oh , you just get the door now . Yeah .
 F:  But he didn't shut the door . I got it  since  
 B:  <breath-laugh> 
 A:  <breath-laugh> 
+topic_description:	chitchat
 
 
+topic_description:	transcriptions
 
 
 F:  Well , because no one  no one ever rep responded  with any items . So I have  a couple of minor ones . Uh , 
@@ -203,6 +206,7 @@ G:  Mm - hmm .
 H:  <laugh>  
 C:  <mike noise> 
 G:  How do you transcribe that ? 
+topic_description:	IBM, transcriptions status
 
 
 F:  How much do we need transcribed before it 's worth doing some trainings ? 
@@ -226,6 +230,7 @@ G:  <inbreath> Yeah . I mean , uh
 B:  Maybe like twenty hours . We could try , but  
 B:  Maybe not counting the non - native 
 B:  speech , cuz if  That  that just doesn't translate very well . 
+topic_description:	amount of transcriptions needed
 
 
 G:  <mouth> Well , 
@@ -256,6 +261,7 @@ G:  do supervised adaptation . And then you start with the speaker adaptation fr
 C:  Right . 
 C:  Right . 
 C:  Yeah , yeah . Yeah , whatever this is . 
+topic_description:	speaker adaptation
 
 
 F:  <mouth> H how would you imagine doing a test set on this corpus ? A test set , training set division ? <inbreath> 
@@ -312,6 +318,7 @@ C:  <breath>
 F:  if we 're gonna do that we should  give some thought to how we wanna divide it up . 
 C:  Yeah . Yeah , so , you know , maybe someone else would do  a lot of the work where probably  your advice 
 G:  Yeah .  
+topic_description:	meeting data test set
 
 
 F:  Yeah . And similarly with digits . We now have a lot of digits but most of them aren't transcribed . 
@@ -332,6 +339,7 @@ F:  Yeah , certainly . He wants to pass the prelims . <breath-laugh>
 E:  <laugh> 
 H:  <breath-laugh> 
 G:  Hmm . 
+topic_description:	digit corpus transcriptions
 
 
 C:  Um , <mouth> 
@@ -360,6 +368,7 @@ F:  <mouth>
 G:  But it would be interesting to hear what they intend to do about the speaker overlap , for instance . 
 F:  Right . 
 C:  Yeah . 
+topic_description:	upcoming NIST meeting
 
 
 B:  What 's the plan if  were we still going to be like a  center for transcribing data ? What happens if 
@@ -396,6 +405,7 @@ C:  handle it then , you know , we 'll tell them .
 C:  But . 
 C:  Uh , although it would have been nice if that  their stuff had come earlier , it it 's in some ways a good thing , because we 've been <laugh-sniff> ironing out this  path . 
 C:  So .  
+topic_description:	future data collection, transcription plans
 
 
 F:  Um . Well , I got a email from one of the UW guys . They want to record the meetings at higher , uh , sampling rate than sixteen  kilohertz . Uh , 
@@ -706,6 +716,7 @@ C:  Yeah .
 G:  <breath> Right . 
 C:  <inbreath> 
 C:  Yeah . 
+topic_description:	sampling rates, storage, distribution issues
 
 
 F:  How are we on disk space , Chuck ? 
@@ -770,6 +781,7 @@ F:  Yeah . Yeah .
 C:  <long breath> 
 G:  <breath> 
 E:  <breath> 
+topic_description:	disk space, server issues
 
 
 C:  <breath> See , and that 's probably what we should send around for these  <laugh> to d for distribution <laugh> of this corpus . <breath-laugh> 
@@ -861,6 +873,7 @@ I:  <laugh>
 F:  Definitely true . 
 C:  <inbreath> Yeah . 
 C:  OK . 
+topic_description:	distribution
 
 
 F:  Any other items ? 
@@ -931,6 +944,7 @@ I:  I it ranges from being assigned to a transcriber ,
 I:  to  them finishing transcription , to then being checked , you know , with a double - check . 
 H:  Mm - hmm . 
 I:  <inbreath> 
+topic_description:	finished transcriptions
 
 
 I:  And so , when we say the total transcribed , that 's the one that 's gone through being checked , I believe . 
@@ -980,6 +994,7 @@ C:  Alright . So we still have a long  ways to go but maybe the , uh
 C:  the IBM thing will  will help push through the  the rest of it somewhat quicker . 
 C:  OK . 
 C:  <shuffling papers> <mike noise> 
+topic_description:	meeting participant approval checks
 
 
 F:  <mouth> And there 's still , uh , two people for whom I have not been able to get in touch  
@@ -1009,6 +1024,7 @@ E:  <laugh>
 H:  <laugh> 
 A:  <mouth> Long vacations . <laugh> 
 C:  Right . Hmm . <mouth> OK . 
+topic_description:	outstanding permission forms
 
 
 C:  Uh ,  www .  What else is going on ? 
@@ -1044,6 +1060,7 @@ F:  Right .
 A:  Yeah . I mean , you know , it 's an extra step . 
 D:  Yeah . 
 C:  OK . 
+topic_description:	hardware set-up
 
 
 C:  So , wha what 's your question ? 
@@ -1075,6 +1092,7 @@ C:  <sniff>
 D:  Yeah . Let me check with  Robert again , but I  I 'm  pretty sure that there 's nothing this week . 
 F:  OK . 
 C:  OK . 
+topic_description:	status of ongoing recordings
 
 
 C:  <breath> <mike noise> So , I was just thinking maybe just go around and just brief briefly look 
@@ -1160,8 +1178,10 @@ E:  <laugh>
 B:  <laugh> 
 F:  <laugh> 
 C:  What are we doing ? 
+topic_description:	chitchat
 
 
+topic_description:	speaker me011 progress report
 
 
 F:  I mean , I 'll start if you want . I 've been , uh , most recently rewriting Transcriber in Java for no particular reason . <laugh> 
@@ -1230,6 +1250,7 @@ I:  Right .
 I:  Right .  
 F:  So . 
 H:  <mike noise> 
+topic_description:	rewriting Transcriber in Java
 
 
 G:  Well , actually , I think it is worth doing because here 's the thing . We 're sort of  we 're starting to move from transcription to annotation . 
@@ -1272,6 +1293,7 @@ G:  <inbreath>
 G:  you have an , uh  you know , an  a tag attribute and the value of that encodes the choice . 
 F:  Right . 
 F:  Right . 
+topic_description:	adding a multiple choice labelling feature
 
 
 F:  <mouth> And then , uh , 
@@ -1332,6 +1354,7 @@ F:  <laugh>
 H:  <laugh> 
 E:  <laugh> 
 C:  OK . 
+topic_description:	chitchat
 
 
 D:  Yeah . I 've been doing a bunch of recognition experiments on  meeting data with different , uh , 
@@ -1374,8 +1397,10 @@ C:  Uh - huh . <laugh>
 D:  <breath-laugh> 
 C:  <breath-laugh> 
 C:  @ @ 
+topic_description:	speaker mn014 progress report, meeting data recognition experiments
 
 
+topic_description:	speaker me001 progress report
 
 
 H:  Um . Yeah , I just got back  from Chicago . So . 
@@ -1415,6 +1440,7 @@ I:  <breath-laugh>
 D:  <laugh> 
 E:  <breath-laugh> 
 H:  <inbreath> 
+topic_description:	chitchat
 
 
 H:  but right now I guess , uh , I 'm working on <inbreath> this 
@@ -1442,6 +1468,7 @@ H:  So . It 's gonna be a busy week .
 G:  Yeah . 
 G:  You know , I 'll bet  
 H:  <mike noise> 
+topic_description:	ISCA paper
 
 
 G:  You know , Bush went on this European trip recently and 
@@ -1489,12 +1516,14 @@ I:  <laugh>
 H:  <laugh> 
 D:  <laugh> 
 E:  <breath-laugh> 
+topic_description:	chitchat
 
 
 G:  Um . <outbreath> 
 I:  <sneeze> 
 G:  Yeah . Other than that , uh , 
 G:  we 're  Well , that 's pretty m pretty much it as far as meetings are concerned . 
+topic_description:	speaker mn017 progress report
 
 
 G:  Um , <mouth> 
@@ -1559,6 +1588,7 @@ C:  <mike noise>
 C:  <mike noise> 
 C:  <paper rustling> <breath> 
 G:  <inbreath> 
+topic_description:	UW collaboration, recognition results comparison
 
 
 C:  <inbreath> Yeah , I mean we 're doing , uh  
@@ -1608,6 +1638,7 @@ G:  OK .
 C:  So it so it 's  it 's very reasonable to think of as an alternative way  of getting this kind o kind of improvement . 
 G:  Mm - hmm . 
 C:  <inbreath> 
+topic_description:	speaker me013 progress report, ASRU paper
 
 
 C:  But I think what w ultimately what we have to face with it is that , um  I mean , he gets incredibly good results 
@@ -1636,6 +1667,7 @@ F:  Neat .
 G:  <breath> 
 C:  So we 're working on that . 
 G:  OK . 
+topic_description:	noise, reverberation effects
 
 
 G:  <inbreath> There 's some work , um , <outbreath> 
@@ -1678,8 +1710,10 @@ G:  Mm - hmm .
 C:  they found a particular set of parameters they liked  this week . And  we 're running with that for a while . But . 
 G:  OK . 
 C:  <breath> 
+topic_description:	CMU ICASSP results
 
 
+topic_description:	speaker fe016 progress report
 
 
 B:  So . Well , I 'll just really briefly , um  
@@ -1705,6 +1739,7 @@ H:  <laugh>
 D:  <laugh> 
 C:  <breath-laugh> 
 H:  <mike noise> 
+topic_description:	prosody paper, collaboration with UW
 
 
 B:  And then also , um , working with Jeremy on Communicator emotion labelling . And <inbreath> 
@@ -1750,6 +1785,7 @@ B:  It 's a feature we haven't used before . Um , and starting to , uh , r r tak
 B:  create a database that we can use sort of as a  
 B:  <inbreath> 
 B:  a large feature vector or table to feed to our decision trees , which will try to give us back an answer from the speech only as  to whether the person 's frustrated or not . 
+topic_description:	Communicator emotion labelling
 
 
 C:  <inbreath> That reminds me of something . We  we talked about something a ways back and I sort of lost track of it , about having a synthesizer driven with   <breath-laugh> 
@@ -1789,6 +1825,7 @@ B:  use the energy in Festival , that was
 G:  We have to do the English synthesis for SmartKom. What if we make the system really  annoyed ? 
 F:  <breath-laugh> 
 C:  <laugh> 
+topic_description:	synthesis modelling
 
 
 B:  OK - Anyway . <laugh> I  I should move on cuz we 're running late , but I wanted to say there 's one question in my mind , which maybe 
@@ -1810,6 +1847,7 @@ B:  So .
 B:  i Yeah . 
 B:  But that 's something we  would  be  glad to  have help on . 
 C:  OK . 
+topic_description:	normalizing spectral tilt
 
 
 B:  So . Go ahead , Jeremy . <outbreath>  
@@ -1838,6 +1876,7 @@ C:  <mike noise>
 E:  for labeller agreement . Um , so , 
 D:  Yeah . 
 E:  <inbreath> <mike spike> been looking at that as well . <outbreath> 
+topic_description:	speaker me051 progress report, spectral tilt
 
 
 C:  <inbreath> I mean , wh what  <clears throat> 
@@ -1968,6 +2007,7 @@ C:  in some sense sort of the first obvious thing to do , although  hardly anybo
 C:  it does work very well under some conditions and other conditions it doesn't . And now we 're understanding  trying to understand what those are . 
 G:  Mm - hmm . 
 C:  <mouth> It - it 's  it 's  it 's fun . 
+topic_description:	normalizing spectral tilt
 
 
 C:  Why  why don't we ? Yeah , let 's do that . 
@@ -1999,6 +2039,7 @@ A:  <mouth>
 C:  <laugh> 
 D:  <laugh> 
 F:  And we ' r 
+topic_description:	closing
 
 
 C:  <breath> <mouth> Do you want to add some anything ?  to say anything ? How was y Did you catch fish , or  ? 
@@ -2062,6 +2103,7 @@ G:  <laugh>
 D:  <laugh> 
 H:  <laugh> 
 F:  <mouth> Should we do , uh , simultaneous digits so that we actually have time for tea ? 
+topic_description:	chitchat
 
 
 G:  Six five .  
@@ -2148,5 +2190,6 @@ A:  One two two eight , seven , seven four one .
 C:  Eight four seven , six zero zero , zero zero zero .  
 H:  <mike noise> 
 E:  Eight two three five , six two six three , nine two seven three .  
+topic_description:	digit task
 
 

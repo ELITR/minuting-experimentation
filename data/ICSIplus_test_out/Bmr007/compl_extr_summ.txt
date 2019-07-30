@@ -1,0 +1,240 @@
+F:  so  Basically , <inbreath> um  as you know , uh  part of the encoding  includes a mark that indicates  an overlap . 
+F:  It 's not indicated  with , um  uh , tight precision , it 's just indicated that  OK , so , It 's indicated to  to  so the people know  what parts of sp which  which stretches of speech were in the clear , versus being overlapped by others . 
+
+F:  And , um  What you can see is the number of overlaps  and then  to the right ,  whether they involve two speakers , three speakers , or more than three speakers . 
+F:  And ,  um  and , what I was looking for sp sp specifically was the question of  whether they 're distributed evenly throughout or whether they 're  bursts of them . 
+
+F:  uh , you know  y this is just   eh  eh , this would  this is not statistically  verified ,  but it  did look to me as though there are bursts throughout , rather than being  localized to a particular region . 
+F:  The part down there , where there 's the maximum number of   of , um  overlaps is an area where we were discussing  <inbreath> whether or not it would be useful to indi to s to  code  stress ,  uh , sentence stress  as possible indication of , uh  information retrieval . 
+
+F:  Now ,  Another question is  is there  are there  individual differences in whether you 're likely to be overlapped with or to overlap with others . 
+
+F:  I , you know , my  I had this script  figure out , um  who  was the first speaker , who was the second speaker involved in a two - person overlap , I didn't look at the ones involving three or more . 
+
+F:  And ,  then if you look down in the summary table ,  then you see that , um  th they 're differences in  whether a person got overlapped with or  overlapped by . 
+F:  Raw counts . 
+
+F:  so . Of the times a person spoke and furthermore was involved in a two two - person overlap , <laugh> <inbreath> what percentage of the time were they the overlapper and what percent of the time were they th the overlappee ? 
+
+F:  um ,  that some people tend to be overlapped  with more often than they 're overlapped , 
+F:  but , of course , uh i e <laugh> this is just one meeting ,  uh  there 's no statistical testing involved , and that would be  required for a  for a finding  of  any  kind of  scientific  reliability . 
+
+F:  And actually ,  you know , the point is not about an individual , it 's the point about  tendencies toward  you know , different styles , different speaker styles . 
+F:  And  it would be , you know  of course ,  there 's also the question of what type of overlap was this , and w what were they , 
+F:  and i and I  and I know that I can distinguish at least three types and , probably more , 
+
+F:  So , um Then it beco  though  so  just  just superficially to give  um  a couple ideas of the types of overlaps involved , I have at the bottom several that I noticed . 
+F:  So ,  <inbreath> uh , there are backchannels , like what Adam just did now 
+F:  and , um  <inbreath> um , anticipating the end of a question and  simply answering it earlier , 
+
+F:  And places  also which I thought were interesting , where two or more people gave exactly th the same answer in unison  different words of course 
+
+F:  So , uh , the point is that , um  <inbreath> overlap 's not necessarily a bad thing and that it would be im  i useful to subdivide these further and see if there are individual differences in styles with respect to the types involved . 
+
+D:  Well , of course th the biggest ,  um  result here , which is one we 've   we 've talked about many times and isn't new to us , but which I think would be interesting to show someone who isn't familiar with this <inbreath>  is just the sheer number of overlaps . 
+
+D:  it 's a forty   forty plus minute  <inbreath> meeting , 
+
+D:  here 's a relatively short meeting , 
+
+D:  and not only were there two hundred and fifteen overlaps <laugh>  but ,  uh I think there 's one   one minute there where there  where  where there wasn't any overlap ? 
+
+E:  The duration is , uh  the variation  the variation of the duration is uh , very big on the dat 
+
+E:  but , uh  I  I will , uh I will do the  the study of the   with the  with the program with the  uh , the different , uh  the , nnn ,  distribution of the duration of the overlaps . 
+
+A:  It 'd be interesting to see what the total amount of time is in the overlaps , versus  
+
+F:  Uh , so  le let 's think about the case where <inbreath> A starts speaking  <inbreath> and then B overlaps with A ,  and then the minute boundary happens . 
+F:  And let 's say that <inbreath> after that minute boundary , <inbreath> um  B is still speaking ,  and A overlaps  with B , 
+F:  that would be a new overlap . 
+F:  But otherwise  um , let 's say B  comes to the conclusion of  of that turn without  anyone overlapping with him or her , 
+F:  in which case there would be no overlap counted in that second minute . 
+
+F:  We just haven't done th the precise second to sec you know ,  second to second coding of when they occur . 
+
+D:  So , um  we talked over the minute boundary . 
+D:  Is this  considered as one overlap in each of the minutes , the way you have done this . 
+
+F:  No , it wouldn't . 
+F:  It would be considered as an overlap in the first one . 
+
+G:  Other - otherwise you 'd get double counts , here and there . 
+
+H:  Cuz i i I find it interesting that there were a large number of overlaps and they were all two - speaker . 
+
+B:  So , the question is , you know , how many more overlaps  <inbreath> do you have  of , say the two - person type , by adding more people . to a meeting , 
+
+D:  But what I mean is <inbreath> that , um in Switchboard ,  despite the many  many other problems that we have , one problem that we 're not considering is overlap . 
+D:  And what we 're doing now is ,  aside from the many other differences in the task , we are considering overlap 
+D:  and one of the reasons that we 're considering it ,  you know , one of them not all of them , one of them is <inbreath> that w uh at least ,  you know I 'm very interested in <inbreath> the scenario in which , uh  both people talking are pretty much equally  audible , <inbreath> and from a single microphone . 
+D:  And so ,  in that case , it does get mixed in , <inbreath> and it 's pretty hard to jus  to just ignore it , to just do processing on one and not on the other . 
+
+B:  So it may be that having three people  <inbreath> is very different from having two people or it may not be . 
+
+B:  I  I agree that it 's an issue here  but it 's also an issue for Switchboard 
+
+B:  so , from the point of view of studying dialogue , I mean , which  Dan Jurafsky and Andreas and I had some projects on , you want to know the sequence of turns . 
+B:  So what happens is if you 're talking and I have a backchannel in the middle of your turn , and then you keep going what it looks like in a dialogue model is your turn and then my backchannel , 
+B:  even though my backchannel occurred completely inside your turn . 
+B:  So , for things like language modeling or dialogue modeling  <inbreath> it 's  We know that that 's wrong in real time . 
+B:  But , because of the acoustic segmentations that were done and the fact that some of the acoustic data in Switchboard were missing , people couldn't study it , 
+
+B:  It 's important to distinguish  that , you know , this project  is getting a lot of overlap  but other projects were too , but we just couldn't study them . 
+
+D:  what we 've learned about is overlaps in this situation , is that  the first   the first - order thing I would say is that there 's a lot of them . 
+
+D:  In fact  <inbreath> and it 's not just an overlap  bunch of overlaps  second - order thing is <inbreath> it 's not just a bunch of overlaps in one particular point , <inbreath> but that there 's overlaps , uh throughout the thing . 
+
+B:  But we should still be able to somehow say what  what is the added contra contribution to sort of overlap time of each additional person , or something like that . 
+
+F:  I mean , if a truck goes rolling past , <inbreath> adults will well , depending , but mostly , adults will  will   will hold off to what   to finish the end of the sentence till the  till the noise is past . 
+F:  And I think we generally do <inbreath> monitor things like that ,  about  whether we  whether our utterance will be in the clear or not . 
+F:  And partly it 's related to rhythmic structure in conversation , 
+
+F:  And  and , just to finish this , that um That I think that <inbreath> there may be an upper bound on how many overlaps you can have , simply from the standpoint of audibility and how loud the other people are who are already  in the fray . 
+
+F:  Now if it 's just backchannels , <inbreath> people  may be doing that  with less  intention of being heard ,  just sort of spontaneously doing backchannels , 
+F:  in which case  that  those might  there may be no upper bound on those . 
+
+G:  So  so actually , um That 's in part because the nodding , if you have visual contact ,  the nodding has the same function , 
+
+A:  Um  no , when  when  when there 's backchannel , I mean , just  I was just listening , and  and when there 's two people talking and there 's backchannel it seems like ,  um the backchannel happens when , you know , the pitch drops and the first person  
+
+B:  I think there 's a lot of the kind that Jose was talking about , where   I mean , this is called " precision timing " in  conversation analysis , where  <inbreath> they come in overlapping ,  but at a point where the  information is mostly  complete . 
+B:  So all you 're missing is some last syllables or something or the last word or some highly predictable words . 
+B:  So technically , it 's an overlap . 
+B:  But  you know , from information flow point of view it 's not an overlap in  the predictable information . 
+
+H:  Language model prediction of overlap , that would be really interesting . 
+
+B:  Well , that 's exactly , exactly why we wanted to study the precise timing of overlaps ins in uh Switchboard , 
+
+G:  Uh , to distinguish between , say , backchannels <inbreath>  precision timing  Sort of <inbreath> you know , benevolent overlaps , and  and  <inbreath>  and w and  and sort of , um  I don't know , hostile overlaps , where <inbreath> someone is trying to grab the floor from someone else . 
+
+G:  So  so here 's a  here 's a first interesting  labeling task . 
+
+F:  These were  these were  benevolent types , as people  finishing each other 's sentences , and  stuff . 
+
+D:  I have a feeling most of these things are  that   that are not  a benevolent kind are  are <laugh>  are , uh  um  <mouth> are  are competitive as opposed to real really  really hostile . 
+
+D:  You know , the other thing I was thinking was that ,  um  these  all these interesting questions are , of course , pretty hard to answer with , uh u  you know , a small amount of data . 
+
+D:  I mean <inbreath> we  most of our meetings are  uh , meetings currently with say five , six , seven , eight people 
+D:  Should we  really try to have some two - person meetings ,  or some three - person meetings and re record them <inbreath> just to  to  to beef up the  the statistics on that ? 
+
+G:  If  if the goal were to just look at overlap you would  you could serve yourself  save yourself a lot of time but not even transcri transcribe the words . 
+
+B:  Well , I was thinking you should be able to do this from the  acoustics , on the close - talking mikes , 
+
+B:  I guess my  my first comment was , um  only that <inbreath> um we should n not attribute overlaps only to meetings , 
+
+B:  but that <inbreath> in normal conversation with two people there 's an awful lot of the same kinds of overlap , 
+B:  and that it would be interesting to look at  whether there are these kinds of constraints that Jane mentioned , that <inbreath> what maybe the additional people add to this competition that happens right after a turn , 
+
+B:  To answer your question I  it  I don't think it 's crucial to have controls 
+B:  but I think it 's worth recording all the meetings we  can . 
+
+G:  we have  have in the past and I think continue  will continue to have a fair number of  uh phone conference calls . 
+G:  And , <inbreath> uh ,  and as a  to , um <outbreath> as another c  c comparison  condition ,  we could um see what  what what happens in terms of overlap , when you don't have visual contact . 
+
+D:  Well , we 're not really set up for it  to do that . 
+
+G:  Or , this is getting a little extravagant , we could put up some kind of blinds or something to   to remove , uh  visual contact . 
+
+D:  weren't we gonna take a picture  at the beginning of each of these meetings ? 
+
+H:  Um , what  I had thought we were gonna do is just take pictures of the whiteboards . rather than take pictures of the meeting . 
+
+F:  The  because you get then the spatial relationship of the speakers . 
+
+G:  Well , you could do that by just noting on the enrollment sheet the   the seat number . 
+
+H:  Seat number , that 's a good idea . 
+
+H:  I 'll do that on the next set of forms . 
+
+H:  So I 'm gonna put little labels on all the chairs with the seat number . 
+
+G:  Put them   Like ,  put them on the table where they  
+
+H:  Yeah , I 've been playing with , um uh , using the close - talking mike to do  to try to figure out who 's speaking . 
+H:  So my first attempt was just using thresholding and filtering , that we talked about  about two weeks ago , 
+
+H:  So if you fiddle around with it a little bit and you get good numbers you can actually do a pretty good job of segmenting when someone 's talking and when they 're not . 
+H:  But if you try to use the same paramenters on another speaker , it doesn't work anymore , 
+H:  even if you normalize it based on the absolute loudness . 
+H:  It does work for the one speaker throughout the whole meeting . 
+
+H:  The algorithm was , uh take o every frame that 's over the threshold , and then median - filter it , <outbreath> and then look for runs . 
+H:  So there was a minimum run length , 
+
+H:  So you take a  each frame , and you compute the energy 
+H:  and if it 's over the threshold you set it to one , and if it 's under the threshold you set it to zero , <inbreath> so now you have a bit stream  of zeros and ones . 
+H:  And then I median - filtered that <inbreath> using , um  a fairly long  filter length . 
+H:  Uh  well , actually I guess depends on what you mean by long , you know , tenth of a second sorts of numbers . 
+H:  Um and that 's to average out you know , pitch , you know , the pitch contours , and things like that . 
+H:  And then , uh looked for long runs . 
+H:  And that works O K , if you fil if you tune the filter parameters , if you tune <inbreath> how long your median filter is and how high you 're looking for your thresholds . 
+
+H:  OK and then the other thing I did , was I took <inbreath> Javier 's speaker - change detector  acoustic - change detector , and I implemented that with the close - talking mikes , 
+H:  and  unfortunately that 's not working real well , and it looks like it 's  
+H:  the problem is  he does it in two passes , 
+H:  the first pass <inbreath> is to find candidate places to do a break . 
+H:  And he does that using a neural net doing broad phone classification and he has the <inbreath> the , uh  one of the phone classes is silence . 
+
+H:  And then he has a second pass which is a modeling  a Gaussian mixture model . 
+H:  Um looking for <inbreath> uh <inbreath> whether it improves or  or degrades to split at one of those particular places . 
+H:  And what looks like it 's happening is that the  even on the close - talking mike the broad phone class classifier 's doing a really bad job . 
+
+H:  Um  So , at any rate , my next attempt ,  which I 'm in the midst of and haven't quite finished yet was actually using the <inbreath> uh , thresholding as the way of generating the candidates . 
+
+H:  And then feeding that into the acoustic change detector . 
+
+H:  But all of this is close - talking mike , 
+
+H:  So  s my intention for this is  is as an aide for ground truth . 
+
+D:  um  H how are you going to adapt whatever you can very quickly learn about the new data ? <inbreath> Uh , if it 's gonna be different from old data that you have ? 
+D:  And I think that 's a problem  with this . 
+
+H:  Well , also what I 'm doing right now is not intended to be an acoustic change detector for far - field mikes . 
+H:  What I 'm doing <inbreath> is trying to use the close - talking mike <inbreath> and just use   Can - and just generate candidate and just  try to get a first pass at something that sort of works . 
+
+G:  but , um  I can imagine  uh building  a  um  model of speaker change  detection  that <inbreath> takes into account  both the far - field and the <inbreath> uh  actually , not just the close - talking mike for that speaker , but actually for all of th  for all of the speakers . 
+
+H:  But I also wanted to find threshold  uh , excuse me , mol overlap . 
+
+H:  I was thinking about doing that originally to find out  who 's the loudest , 
+
+D:  but <inbreath> uh , what if you were just looking at very simple measures like energy measures but you don't just compare it to some threshold  overall but you compare it to the <inbreath> energy in the other microphones . 
+
+D:  but I  I think what I was s nnn noting just when he  when Andreas raised that , was that there 's other information to be gained from looking at all <inbreath> of the microphones and you may not need to look at very sophisticated things , 
+
+E:  I  I think it 's  it 's difficult , um <mouth>  only to en with energy to  to consider that in that zone We have eh , eh , overlapping zone Eh , if you process only the the energy of the , of each frame . 
+
+B:  It 'll be too hard to make barriers , I was thinking because they have to go all the way 
+
+B:  so we need a barrier that doesn't disturb  the sound , 
+
+D:  So this is the things that I think we did <laugh> in the last three months 
+
+D:  Um  in no particular order <inbreath> uh , one , uh , ten more hours of meeting r meetings recorded , something like that , you know from  from , uh  three months ago . 
+
+D:  Um , pilot data put together and sent to IBM for transcription , 
+D:  uh  next batch of recorded data put together on the CD - ROMs for shipment to IBM , 
+
+D:  Um  human subjects approval on campus , uh  and release forms worked out 
+D:  so the meeting participants have a chance to request audio pixelization of selected parts of the spee their speech . 
+D:  Um <inbreath> audio pixelization software written and tested . 
+D:  Um  <mouth> preliminary analysis of overlaps in the pilot data we have transcribed , 
+D:  and exploratory analysis of long - distance inferences for topic coherence , that was  I was   wasn't  sure if those were the right way   that was the right way to describe that because of that little exercise that  that you  and  and Lokendra did . 
+
+C:  Wh - what is " audio pixelization " ? 
+
+H:  It 's just , uh  beeping out parts that you don't want included in the meeting 
+
+F:  I think  what I  what this has , uh , caused me  so this discussion caused me to wanna subdivide these further . 
+F:  I 'm gonna take a look at the , uh  backchannels , 
+F:  how much we have anal I hope to have that for next time . 
+

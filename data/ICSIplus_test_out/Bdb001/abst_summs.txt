@@ -1,0 +1,93 @@
+F:  and <breath> the main thing that I was gonna ask people to help with today is  to give input on what kinds of database format we should  use in starting to link up things like word transcripts and annotations of word transcripts , 
+C:  Th - there are sort of two choices . 
+abst_sum - abstract: Two main options were discussed as to the organisation of the collected data.
+
+C:  I mean , we  I sort of already have developed an XML format for this sort of stuff . 
+C:  So tha it has a single time - line , 
+C:  I think for word - level , this would be OK . 
+abst_sum - abstract: On the one hand, a bespoke XML structure that connects transcriptions and annotations (down to the word-level) to a common timeline.
+
+C:  and I thought it was better if you 're looking at a raw file to be  t for the tags to say " it 's an utterance " , as opposed to the tag to say " it 's a link " . 
+C:  One of them is that it 's easy to parse . 
+F:  Can you  But you can add to those structures if you  
+C:  The other thing  the other way that I sort of established this was as easy translation to and from the Transcriber format . 
+abst_sum - abstract: Its advantages are that it is easier to read, parse, map onto the Transcriber format and to expand with extra features.
+
+C:  So I think it  it 's debatable whether you want to do phone - level in the same thing . 
+abst_sum - abstract: Phone-level analysis can be included in the same structure, or in a separate, linked file.
+
+C:  or  or any frame - level stuff I would use P - file . 
+C:  It 's ICS uh , ICSI has a format for frame - level representation of features . 
+C:  And we have a lot of tools already to deal with it . 
+C:  I mean , it 's something that we developed at ICSI . 
+C:  But , I mean , it is just something we developed at ICSI . 
+abst_sum - abstract: The respective frame-level representation can be handled by P-files, a technology developed at ICSI, which also comes with a library of tools.
+
+C:  More compact , 
+abst_sum - abstract: Separation of levels of analysis makes files more compact and manageable.
+
+C:  There 's a  standard again in XML , specifically for searching XML documents  structured X - XML documents , where you can specify both the content and the structural position . 
+C:  It 's  it 's  you would use that to build your tool to do that sort of search . 
+C:  What you would do is , someone would build a tool that used that as a library . 
+abst_sum - abstract: XML standards offer libraries that can be used for the development of search tools.
+
+C:  which was their file format is just nodes and links , 
+abst_sum - abstract: On the other hand, the ATLAS (NIST) technology offers a very similar, but more generic organisational scheme based on nodes and links.
+
+C:  and then " type " would be " utterance " . 
+abst_sum - abstract: These are labeled with domain specific types, like "utterance" or "speaker".
+
+C:  they 're developing a big infrastructure . 
+C:  Um , and apparently they 've also developed a lot of tools , 
+C:  One of the things that ATLAS is doing is they 're trying to define an API which is independent of the back store , 
+C:  so that , uh , you could define a single API and the  the storage could be flat XML files or a database . 
+abst_sum - abstract: This option offer well-developed infrastructure and flexibility as to the type of data storage (flat XML files or relational database).
+
+F:  But I thought it would be good to get something that we can  that other people can use or adopt for their own kinds of encoding . 
+F:  And so I wanted something where  all of this can be done in a elegant way 
+F:  and that if somebody wants to try something or compute something else , that it can be done flexibly . 
+abst_sum - abstract: In either case, it is important for the chosen format to allow for fast searches, flexible updates and, if possible, be reusable in future work.
+
+C:  We should look at ATLAS , 
+C:  Maybe I should . 
+C:  So I 'll  I 'll take a closer look at it . 
+abst_sum - decisions: In order to confirm the suitability of the data format provided by the ATLAS project, its current state of development will be investigated.
+
+A:  Do they already have something that 's  that would be useful for us in place ? 
+C:  Well , I think I 'm  I think w I had better look at it again 
+C:  but I 'm forgetting the exact level of nesting . 
+C:  I mean , I have to look at it again to see whether it can really do what we want , 
+abst_sum - decisions: More specifically, the issues that have to be ascertained are, firstly, whether the external file representation offers a format that would be appropriate for speech data, and, secondly, how the linking between the different annotations (eg, between word-level representations and prosodic-feature structures) can be achieved.
+
+A:  It seems to me you want to keep the frame - level stuff separate . 
+abst_sum - decisions: Regardless of the actual format, however, there was consensus that keeping levels of analysis (words, phones, frames, etc) on separate, inter-linked files can make their management easier.
+
+A:  I  I think if it 's conceptually close , and they already have or will have tools that everybody else will be using , I mean , <breath> it would be crazy to do something s you know , separate that  
+abst_sum - problems: Choosing a project-specific format for the representation of the data might not be optimal for future work.
+
+A:  Do they already have something that 's  that would be useful for us in place ? 
+C:  Um , th what would  would  would  what would worry me is that maybe we might miss a little detail 
+C:  I mean , I have to look at it again to see whether it can really do what we want , 
+abst_sum - problems: On the other hand, it is not yet clear whether a more standardised, but generic technology, like that of the ATLAS project, can accommodate all the requirements of speech analysis.
+
+C:  For lower than word - level , you 're talking about so much data that I just  I don't know . 
+F:  These are big files . 
+abst_sum - problems: Regardless of the particular format, including all annotations (sentences, words, phones, frames, etc) in one file could result in unmanageable file sizes.
+
+None
+abst_sum - problems: Searching, updating or simply parsing a file for a simple task can become an unwieldy process.
+
+F:  I mean these are long meetings 
+C:  But I think , a anything at frame - level , even P - file , is too verbose . 
+abst_sum - problems: Even P-files, which are only for frame-level annotation, may be too verbose for the amount of data resulting from hour-long recordings.
+
+C:  No matter what format you choose , you 're gonna have the trou you 're gonna have the difficulty of relating the  the frame - level features  
+abst_sum - problems: The actual mapping of word-level transcriptions to frame-level representations is expected to be problematic anyway.
+
+A:  And sometimes the word sequences even differ slightly because they were edited s at one place but not the other . 
+A:  But , see , if you 'd annotate dialogue acts , you don't necessarily want to  or topics  you don't really want to be dealing with time - marks . 
+abst_sum - problems: Likewise, problems will arise if, in the future, slightly different transcripts of the same data are annotated in formats that do not include time-marks.
+
+C:  The hard part is specifying what you mean by " merge " . 
+abst_sum - problems: Trying to merge such annotations later will not be easy, because of the combination of transcription discrepancies with the loss of the underlying connection offered by the time-marks.
+

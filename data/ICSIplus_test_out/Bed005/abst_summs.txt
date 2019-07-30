@@ -1,0 +1,111 @@
+B:  What we think is gonna happen is that , uh , in parallel starting about now <breath> we 're gonna get Fey <mouth> to , where you 're working with me and Robert , draft a note that we 're gonna send out to various CogSci c and other classes saying , " here 's an opportunity to be a subject . 
+B:  But what I 'd like to do , if it 's O K , <breath> is to s to , as I say , start the recruiting in parallel and possibly start running subjects next week . 
+abst_sum - abstract: The data collection running in parallel with the project can start shortly with recruiting subjects.
+
+C:  And , um  and now it 's  We have a complete English parser that does everything the German parser does . 
+C:  And it still is , now in English . 
+B:  That , these guys did in a  in a day . 
+abst_sum - abstract: Meanwhile, the german parser now works with english sentences.
+
+D:  One thing I was wondering , was , those functions there , are those things that modify the M - three - L basically ? 
+D:  I think each of those functions act on the current XML structure , and change it in some way , for example , by adding a  a l a field to it , or something . 
+B:  there were other actions uh , that  that s seemed to step  state variables somewhere , 
+B:  which , in German , uh , takes these t sentence templates and produces XML structures . 
+abst_sum - abstract: The parser's output modifies the XML used by the system to initiate actions and generate responses.
+
+C:  Uh  You  you have a route , 
+C:  And every  every element of that e r r f of that  Every segment we call a " route element " . 
+C:  where y where  you sort of end , and some points of interest along the way . 
+abst_sum - abstract: The XML for Map requests also comprise a route, route elements and points of interest along the way.
+
+C:  is one , um , <breath> <mouth> Also allocating , uh , some tags for our Action Schema Enter - Vista - Approach , 
+abst_sum - abstract: It is at this level that Enter/Vista/Approach tags will be added as action modes.
+
+B:  Uh , at some point we 're going to have to worry about the language end . 
+abst_sum - abstract: As the project evolves, further enrichment of the ontology (actions, linguistic features) will be necessary.
+
+B:  Eh  so , you  you  you may or  So , then you 'd have this little vector of , um , you know , Approach Mode or EVA Mode . 
+B:  It 's part of what you know about  a  an object , <breath> is its EVA vector . 
+abst_sum - abstract: Similarly, object representations will include an EVA vector.
+
+B:  If you know it for a specific landmark you put it there . 
+B:  If you don't , you just go up the hierarchy to the first place you find one . 
+B:  If it 's that type of thing , and we want its EVA vector , pppt - pppt !  it 's that . " 
+abst_sum - abstract: This can be incorporated in the database entry for a particular building or inherited from the ontology of the building type.
+
+D:  the typical example is that , um , these are all a bunch of cues for something , 
+D:  and this is a certain effect that we 'd like to conclude . 
+abst_sum - abstract: These elements will constitute only a small part of the inputs of the Bayes-net that determines the action mode.
+
+D:  And , that 's a lot of probabilities to put here , which is kind of a pain . 
+abst_sum - abstract: The actual number of the inputs can create a combinatorial explosion when setting the probabilities.
+
+D:  So  Noisy - ORs are a way to , uh , <breath> sort of deal with this . 
+D:  So we come up with these l little tables for each of those 
+D:  And the final thing is that , um  <breath> <mouth> this is a deterministic function of these , 
+B:  Th - c the full conditional probability table  with some function . 
+abst_sum - abstract: Noisy-OR's can help avoid this by simplifying the probability tables and applying a deterministic function to produce their complete version.
+
+None
+abst_sum - abstract: In any case, further to fulfilling the basic requirements (translating the parser and the generator into english), the project is entirely open-ended in terms of focus of research.
+
+B:  In parallel with that , we 're gonna need to actually do the script . 
+B:  This  The permission form . 
+abst_sum - decisions: As the data collection is about to begin, there are some minor changes to be done in the design of the experiment, the script and the permission forms.
+
+B:  What we think is gonna happen is that , uh , in parallel starting about now <breath> we 're gonna get Fey <mouth> to , where you 're working with me and Robert , draft a note that we 're gonna send out to various CogSci c and other classes saying , " here 's an opportunity to be a subject . 
+B:  not necessarily by any means all students 
+B:  But what I 'd like to do , if it 's O K , <breath> is to s to , as I say , start the recruiting in parallel and possibly start running subjects next week . 
+C:  which is we gonna check out our social infrastructures for possible subjects . 
+abst_sum - decisions: Subjects can be recruited either from within the university or through other social circles.
+
+B:  That , these guys did in a  in a day . 
+B:  Eh , but again , there 's one module in which there 's one piece <mouth> that we have to convert to English . 
+abst_sum - decisions: As to the system design, the next step is the translation of the generator into english.
+
+C:  And the next thing I would like to be able to do , and it seems like this would not be too difficult either , is <breath> to say , " OK let 's now pretend we actually wanted to not only change the  <breath> the mapping of  of , uh , words to the M - three - L but we also wanted to change  add a new sentence type 
+B:  So , yeah . I definitely think it 's  <breath> It 's worth the exercise of trying to actually add something that isn't there . 
+abst_sum - decisions: Moreover, it is important to test the system and its internal workings by adding new sentence types and modifying the parser.
+
+B:  It seems to me we can get <breath> all the complexity we want in actions and in language without going outside of tourists in Heidelberg . 
+B:  So , at least  unless somebody else wants t to suggest otherwise I think <breath> the general domain we don't have t to uh , broaden . 
+B:  That is , tourists in Heidelberg . 
+abst_sum - decisions: All further research will use the existing domain ("tourists in Heidelberg"), as this provides enough diversity for the purposes of the project.
+
+None
+abst_sum - decisions: The german partners for the project will realise all the necessary changes in the ontology.
+
+B:  So it seemed to me , what we ought to do is get our story together . 
+B:  And think about it some , internally , before asking them to make changes . 
+B:  OK . What are the thl class of things we think we might try to do in a year or two ? 
+B:  This is  this is everything that  that , um ,  <breath> you know , um  we might want to do in the next couple years . 
+abst_sum - decisions: It is therefore preferable for the group to exercise foresight and agree on the set of new tags they will need in the long run, so that they limit the number of change requests.
+
+D:  So  Noisy - ORs are a way to , uh , <breath> sort of deal with this . 
+B:  I think we definitely  I think it 's a great idea tha to  to pursue that . 
+abst_sum - decisions: Finally, on a more technical note, Noisy-OR's were discussed and considered a sensible approach to deal with the potential problems with the setting the conditional probabilities of the Bayes-nets.
+
+C:  And , um  and now it 's  We have a complete English parser that does everything the German parser does . 
+D:  I think each of those functions act on the current XML structure , and change it in some way , for example , by adding a  a l a field to it , or something . 
+B:  there were other actions uh , that  that s seemed to step  state variables somewhere , 
+A:  It 's mystery functions . 
+B:  That , these guys did in a  in a day . 
+abst_sum - problems: Although the parser has been modified to work with english, the details of its internal workings (calling functions, setting discourse variables, generating actions) are not yet clear.
+
+B:  Although th the <breath> To get at them from a language may not be trivial . 
+C:  So , it 's a relational database with persons , events , <breath> and , um , objects . 
+abst_sum - problems: Understanding the parsed data is helped by the database of objects, people and events accompanying the system, but the mapping of referring expressions to database objects can still be a hurdle.
+
+D:  And , that 's a lot of probabilities to put here , which is kind of a pain . 
+abst_sum - problems: On a different level, the Bayes-net used to generate the different action modes can easily become unmanageable as the number of features to be taken into account increases.
+
+D:  So  Noisy - ORs are a way to , uh , <breath> sort of deal with this . 
+abst_sum - problems: This can be tackled with the use of the Noisy-OR technique.
+
+B:  So , if Ba - JavaBayes won't do it for you , 
+B:  And then  But , the combination functions , and whether we can put those in Java Bayes , and all that sort of stuff , is , uh  is the bigger deal . 
+abst_sum - problems: The deterministic functions this requires cannot be introduced directly into JavaBayes, although some runaround ways can be implemented.
+
+B:  There 's this whole framework problem that I 'm feeling really uncomfortable about . 
+abst_sum - problems: A final, high-level issue, that has not been dealt with yet, is the definition of the constructions and the construction grammar framework analysis behind the whole enterprise.
+

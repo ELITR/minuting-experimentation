@@ -24,6 +24,7 @@ E:  Yeah .
 B:  That 's the best thing . <mike noise> 
 E:  Mm - hmm .  
 B:  <clears throat> So , tell me about it . 
+topic_description:	opening
 
 
 E:  <mouth> So it 's  well , it 's  spectral subtraction or Wiener filtering , 
@@ -76,8 +77,10 @@ B:  Um .
 E:  Mmm .  
 B:  So , it probably doesn't matter that much either way . 
 E:  <inbreath> Yeah .  
+topic_description:	report from Stephane, spectral subtraction, Wiener filtering
 
 
+topic_description:	software development
 
 
 B:  But , um , when you say u uh , unified do you mean , uh , it 's one piece of software now , or  ? 
@@ -167,6 +170,7 @@ C:  <laugh>
 A:  <laugh> 
 D:  <laugh> 
 B:  Uh .  
+topic_description:	summary of meeting with Hynek, Guenter
 
 
 A:  So  so you guys have combined  or you 're going to be combining the software ? 
@@ -224,6 +228,7 @@ D:  <mike noise>
 B:  <breath> 
 A:  Mm - hmm . 
 B:  And now we do . 
+topic_description:	development issues, parameter optimization
 
 
 A:  <inbreath> So will the  neural net operate on 
@@ -305,6 +310,7 @@ B:  So there 's the neural net issue . There 's the VAD issue . <breath>
 B:  And , uh , there 's the second stream  thing . 
 B:  And I think those that we  last time we agreed that those are the three things that have to get , uh , focused on . 
 A:  <cough> 
+topic_description:	neural net component
 
 
 A:  What was the issue with the VAD ? 
@@ -476,6 +482,7 @@ A:  Mm - hmm .
 B:  But if we get told otherwise then , you know , we may have to c clamp down a bit more . 
 D:  Mmm .  
 B:  <mike noise> 
+topic_description:	VAD, LDA issues, latency
 
 
 C:  So , the one  one  one difference is that  was there is like we tried computing the delta and then doing the frame - dropping . <outbreath> 
@@ -591,6 +598,7 @@ B:  OK .
 B:  <inbreath> So , uh , 
 B:  <inbreath> what 's , uh  ? 
 B:  That 's  that 's a good set of work that  that , uh   
+topic_description:	delta computation, frame dropping
 
 
 C:  Just one more thing . Like , should we do something f more for the noise estimation , because we still  ? 
@@ -715,6 +723,7 @@ B:  OK .
 B:  <laugh> 
 E:  <laugh> 
 C:  <laugh> 
+topic_description:	noise estimation
 
 
 E:  So , should we keep the same  ? I think we 
@@ -808,6 +817,7 @@ B:  And then , uh ,
 B:  <breath> 
 B:  later on in the month I think we wanna start including the  neural net at the end . 
 B:  <mouth> Um . 
+topic_description:	VAD, noise estimation neural net training
 
 
 B:  <inbreath> OK . Anything else ? 
@@ -843,6 +853,7 @@ B:  Uh , the idea was that , uh , we 'd  we 'd sort out where we were going
 B:  next with this  with this work before he , uh , left on this next trip . 
 D:  <mike noise> 
 B:  <mouth> Good . <outbreath> 
+topic_description:	chitchat
 
 
 B:  <mouth> Uh , Barry , you just got through your <breath-laugh> quals , so I don't know if you <laugh> have much to say . But , uh . 
@@ -906,6 +917,7 @@ D:  A  a  a set of small features and
 D:  continue to iterate and find , uh , a better set . 
 A:  Mm - hmm . 
 D:  Yeah . 
+topic_description:	report from Barry, John Ohala, Hynek's feedback
 
 
 B:  <breath> OK . Well , short meeting . 
@@ -932,6 +944,7 @@ A:  OK .
 E:  <blows into mike>  
 A:  And we 're off . 
 B:  Mm -  
+topic_description:	closing
 
 
 B:  Transcript L dash three two seven .  
@@ -982,5 +995,6 @@ D:  Three zero nine one , six zero five seven , six five two eight .
 D:  Three four one , one six four , seven three nine .  
 E:  <tapping on mike> 
 D:  Four five two eight , eight , five O seven .  
+topic_description:	digit task
 
 

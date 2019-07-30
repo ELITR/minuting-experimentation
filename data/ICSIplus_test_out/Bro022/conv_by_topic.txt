@@ -49,6 +49,7 @@ F:  <laugh>
 C:  <clears throat> 
 B:  since they 're here , they can talk about it themselves . 
 A:  <laugh> 
+topic_description:	opening
 
 
 F:  OK . So should I go so that , uh , 
@@ -139,6 +140,7 @@ F:  It 's a  it 's a month and  and a week .
 G:  <mike noise> 
 A:  Yeah . 
 F:  Yeah . 
+topic_description:	report from Barry, proposal, phoneme recognition
 
 
 A:  So , uh , you want to go next , Dave ? And we 'll do  
@@ -167,6 +169,7 @@ E:  depending on  the timing of the echo . So , um ,
 E:  <breath> I 'm gonna try training on a larger data set , and then , eh , the system will have seen more examples o of these artifacts and hopefully will be more robust to them . 
 E:  <breath> So I 'm planning to use the Macrophone 
 E:  set of , um , read speech , and , um  Hmm . 
+topic_description:	report from Dave, mean subtraction results
 
 
 B:  <inbreath> I had another thought just now , which is , uh , remember we were talking before about  
@@ -210,6 +213,7 @@ B:  Be pretty simple .
 E:  OK . 
 B:  I mean , you do it in a pretty conservative way so that if you made a mistake you were more likely to  keep in an echo than to throw out speech . 
 E:  Hmm . 
+topic_description:	manipulating low energy speech windows
 
 
 G:  Um , what is the reverberation time  like  there ? 
@@ -246,6 +250,7 @@ F:  <mike noise>
 F:  <mike noise> 
 B:  Uh , and if it 's a low  energy compo portion , you might actually hear some  funny things . 
 G:  Yeah . 
+topic_description:	reverberation time
 
 
 E:  O o one thing , um , I noticed is that , um , the mean subtraction seems to make the PZM signals louder after they 've been re - synthesized . 
@@ -338,6 +343,7 @@ B:  Uh , y you 'd think it shouldn't be larger , but
 B:  maybe in practice it is . 
 E:  Hmm .  
 B:  That 's something to think about . I don't know . 
+topic_description:	effects on PZM signals
 
 
 C:  I had a question about the system  the SRI system . So , <clears throat> you trained it on TI - digits ? 
@@ -383,6 +389,7 @@ G:  Oh . <breath-laugh>
 F:  That 's with the new IIR filters ? 
 C:  Uh . Yeah , yeah . So , yeah , we have  the new LDA filters , and  
 F:  OK . 
+topic_description:	system, training details
 
 
 C:  I think , maybe  I didn't look , but 
@@ -428,6 +435,7 @@ F:  <breath-laugh>
 G:  OK . 
 C:  <clears throat> 
 A:  So was that  was that everything , Dave ? 
+topic_description:	DC-offset compensation
 
 
 E:  Oh . And I also , um , did some experiments  about normalizing the phase . 
@@ -499,6 +507,7 @@ G:  <laugh-breath>
 F:  <laugh> 
 A:  All set ? 
 G:  <uncodeable syllable> 
+topic_description:	phase normalization experiments
 
 
 A:  Do you want to go , Stephane ? 
@@ -510,6 +519,7 @@ C:  And
 C:  Um . Yeah . So , I think I will maybe train , like , gender - dependent models , because  this is also one big difference between  the two systems . 
 B:  <breath> 
 F:  <breath> 
+topic_description:	report from Stephane, meeting digits, system comparison
 
 
 C:  Um , <clears throat> 
@@ -567,6 +577,7 @@ G:  Mm - hmm .
 C:  Mm - hmm .  
 C:  <inbreath> 
 F:  <breath> Hmm . 
+topic_description:	SRI acoustic models
 
 
 C:  And  
@@ -633,6 +644,7 @@ B:  Yes . OK , good . So they are helping . That 's good to hear . Yeah . <laugh
 C:  Mm - hmm . 
 C:  They are helping . <laugh> Yeah .  
 C:  Um . 
+topic_description:	SRI versus Aurora system results
 
 
 C:  Yeah . And another thing I  I maybe would like to do is to  just test 
@@ -695,6 +707,7 @@ C:  But , just testing on TI - digits would already give us some
 C:  information  about what 's going on . 
 C:  And  mm - hmm .  
 C:  Uh , yeah . OK . 
+topic_description:	comparing noisy TI- with meeting digits, Aurora
 
 
 C:  Uh , the next thing is this  this VAD problem that , 
@@ -888,6 +901,7 @@ B:  Mm - hmm .
 C:  <breath> 
 B:  <breath> <mike noise> 
 C:  Um . <mouth> 
+topic_description:	VAD problems
 
 
 C:  Uh , the second thing is the  this spectral subtraction . Um . 
@@ -949,6 +963,7 @@ C:  It  Maybe you can  I think it 's
 G:  <mouth> 
 C:  That 's it for me . <laugh> 
 G:  OK . 
+topic_description:	spectral subtraction
 
 
 G:  <mouth> So , uh  
@@ -1056,6 +1071,7 @@ G:  <mouth>
 G:  th you know , things , and I didn't work much on that . 
 B:  OK .  
 G:  <sigh> 
+topic_description:	report from Sunil, Wiener filter bugs
 
 
 A:  How about you , Carmen ? 
@@ -1149,6 +1165,7 @@ D:  Mm - hmm . <breath>
 B:  should be combined . 
 C:  Mm - hmm .  
 A:  <mouth> Is that it ? 
+topic_description:	report from Carmen, VTS experiments
 
 
 B:  <breath> OK . Why don't we read some digits ? 
@@ -1158,6 +1175,7 @@ A:  <breath>
 C:  <mike noise> 
 A:  <breath> 
 B:  O K .  
+topic_description:	closing
 
 
 B:  Transcript L dash two one two .  
@@ -1238,5 +1256,6 @@ D:  Four three seven , eight seven six , six eight five seven .
 D:  O three six , nine two six , O two nine .  
 D:  Three eight one , five five , eight four three four .  
 D:  Four one five , five O one , five two eight .  
+topic_description:	digit task
 
 

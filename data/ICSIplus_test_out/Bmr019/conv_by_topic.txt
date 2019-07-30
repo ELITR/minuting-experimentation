@@ -95,6 +95,7 @@ F:  I 'll let  I 'd let
 F:  I let , uh , my five - year - old have a try at the digits , eh . <mouth> 
 C:  <laugh> 
 B:  Yeah . 
+topic_description:	opening
 
 
 E:  <mouth> So , anyway , I can talk about digits . Um , did everyone get the results or shall I go over them again ? 
@@ -115,6 +116,7 @@ E:  Bell Digits .
 E:  Alright . 
 F:  <outbreath> Mm - hmm . 
 C:  <inbreath> 
+topic_description:	adaptation - digit recognition
 
 
 E:  I mean that it was basically  the only thing that was even slightly surprising was that the lapel did so well . 
@@ -170,6 +172,7 @@ F:  It is against my head .
 E:  OK . 
 B:  Yeah . 
 B:  <inbreath> 
+topic_description:	microphone choice
 
 
 B:  Um . Yeah , we actually talked about this in the , uh , front - end meeting this morning , too . 
@@ -253,6 +256,7 @@ B:  one  so there were a number of things we noted from this . One is , yeah , t
 F:  Hmm . 
 B:  <inbreath> this , you know , very limited training HTK system . 
 F:  Mm - hmm . 
+topic_description:	SRI adaptation
 
 
 B:  <inbreath> Uh , but the other is that , um , the digits 
@@ -315,6 +319,7 @@ F:  But  but , I would  Yeah . It 's  it 's easy enough to try , just run it on
 E:  Mm - hmm . So , Morgan , you 're getting a little breath noise . You might wanna move the mike down a little bit . 
 B:  Yeah . 
 B:  See w 
+topic_description:	acoustic differences in data
 
 
 F:  Now , eh , does  
@@ -382,6 +387,7 @@ E:  Right . <laugh>
 F:  That would be the , sort of  probably the safest way to do  
 E:  I might have to do that anyway to  to do  because we may have to do an extract to get the  amount of data per speaker about right . 
 F:  Uh - huh . 
+topic_description:	multiple speaker recognition
 
 
 F:  By the way , I think we can improve these numbers if we care to compr improve them 
@@ -421,6 +427,7 @@ A:  <mike noise>
 B:  Right . 
 B:  <inbreath> 
 B:  Yeah . So that 'd be anoth another interesting data point . I mean , I  I guess I 'm saying I don't know if we 'd want to do that as the  
+topic_description:	using adapted models
 
 
 E:  Other way . Liz  
@@ -518,6 +525,7 @@ E:  <inbreath>
 C:  That looks good . 
 E:  But it looks like it 's gonna bounce a lot . 
 B:  <laugh> 
+topic_description:	microphone problems
 
 
 B:  So , where were we ? Uh  <laugh> Yeah . 
@@ -528,6 +536,7 @@ B:  <inbreath>
 B:  um , factor of two , 
 B:  um  
 F:  What k u By the way , wh what factor of two did you  ? I mean  
+topic_description:	adaptation - digit recognition
 
 
 B:  Oh , yeah . I know what I was go w 
@@ -683,6 +692,7 @@ B:  So .
 H:  <cough> 
 B:  So that was  Yeah . So that was i interesting result . So like I said , the front - end guys are 
 B:  very much interested in  in this is as  as well and 
+topic_description:	far v near microphone
 
 
 F:  So  so , but where is this now ? I mean , what 's  where do we go from here ? I mean , 
@@ -757,6 +767,7 @@ F:  So . <outbreath>
 B:  <mouth> 
 B:  Cool . <outbreath> 
 F:  <clears throat> 
+topic_description:	integrating features
 
 
 B:  <mouth> OK . So the s the  the next thing we had on the agenda was something about alignments ? 
@@ -774,6 +785,7 @@ G:  <mike noise>
 A:  um , 
 F:  um , in regions where there was no real speech yet from the foreground speaker . 
 B:  Mm - hmm . 
+topic_description:	alignment
 
 
 A:  I think was both a  a pruning  problem and 
@@ -812,6 +824,7 @@ A:  Right .
 F:  significantly . 
 B:  Hmm . 
 F:  Um  because otherwise it would sort of do greedy alignment , 
+topic_description:	pruning
 
 
 F:  Um , <mouth> so that was one big factor that helped improve things and then the other thing was that , 
@@ -918,6 +931,7 @@ F:  the parameters of the  of the model , uh , to op to get the best  performanc
 B:  <mouth> 
 C:  <mouth> <inbreath>  
 A:  Yeah . 
+topic_description:	background speech
 
 
 B:  G given  I  I mean , I wa I wa I was gonna ask you anyway , uh , how you assessed that things were better . 
@@ -1118,6 +1132,7 @@ C:  <inbreath> and embedde embedded in overlaps . The other thing that was w int
 B:  Mm - hmm . 
 C:  that I picked up a lot of , um , backchannels which were hidden in the mixed signal , which , you know , I mean , you c not  not too surprising . 
 A:  Right . 
+topic_description:	hand correcting alignment
 
 
 C:  <inbreath> But the other thing that  
@@ -1200,6 +1215,7 @@ A:  <inbreath>
 A:  is there really more overlap in meetings or is it just because we don't have the other channel in Switchboard and we don't know what people are doing . 
 A:  Try to create a paper out of that . 
 B:  <mouth> 
+topic_description:	dealing with backchannels
 
 
 B:  <inbreath> Yeah . I mean , y y you folks have probably  already told me , but were  were you intending to do a Eurospeech submission , or  ? 
@@ -1341,6 +1357,7 @@ B:  <breath-laugh> Yeah .
 E:  Twenty percent relative gain . 
 F:  Yeah . 
 B:  Yeah . Yeah . 
+topic_description:	Eurospeech submission
 
 
 A:  we 'll try , because that 'll at least get us to the point where we have  We have this really nice database format that Andreas and I were working out that  
@@ -1517,6 +1534,7 @@ C:  In psy ps psycho - linguistics you have these experiments where people have 
 A:  Yeah , you sort of move things around until you get to a  low information point and yo then you can bring in the other person . So it 's 
 C:  Not the best  
 A:  <inbreath> actually not even possible , I think , for any person to listen to a mixed signal , even equalize , and make sure that they have all the words in the right order . 
+topic_description:	spurt format
 
 
 B:  By th by the way , this is totally unfair , you may  you may feel , but the  the , uh  the morning meeting folks actually have an  an extra month or so . 
@@ -1734,6 +1752,7 @@ F:  <laugh>
 A:  <laugh> 
 H:  <laugh> 
 B:  OK .  <laugh> 
+topic_description:	other systems
 
 
 B:  <inbreath> 
@@ -2224,6 +2243,7 @@ E:  <laugh>
 A:  <mike noise> 
 F:  No . 
 E:  And we 're off . 
+topic_description:	closing
 
 
 B:  Uh , one two three  Go ! 
@@ -2307,5 +2327,6 @@ H:  <mike noise>
 F:  one six three one , two , eight three eight ,  
 C:  <laugh> 
 F:  eight zero nine , zero seven four , one six four seven .  
+topic_description:	digit task
 
 

@@ -55,6 +55,7 @@ E:  <clear throat>
 B:  OK . So uh 
 B:   I also copied uh the results that we all got in the mail I think from uh  
 B:   from OGI and we 'll go  go through them also . 
+topic_description:	opening
 
 
 B:   So where are we on  
@@ -68,6 +69,7 @@ B:  Mm - hmm .
 D:  Uh , and we focused for the  the test part on the English and the Italian . 
 D:  Um . We 've trained uh several neural networks on  so  on the TI - digits English  and on the Italian data and also on the broad uh  English uh French and uh Spanish databases . 
 D:  Mmm , so there 's our result tables here , for the tandem approach , and um , actually what we  we @ @ observed is that if the network is trained on the task data it works pretty well . 
+topic_description:	neural net test results
 
 
 F:  <laugh> 
@@ -114,6 +116,7 @@ F:  Musical chairs everybody ! <laugh>
 H:  <laugh> 
 B:  Oh . 
 A:  <laugh> 
+topic_description:	chitchat
 
 
 B:  OK . 
@@ -624,6 +627,7 @@ B:   we hadn't seen yet was that if you added in the English , it 's still poor 
 D:  Yeah .  Still poor . <laugh> 
 B:  <laugh> Uh <laugh> 
 B:  <inbreath> 
+topic_description:	training data, language, task, feature comparisons
 
 
 B:  Um now , what 's the noise condition 
@@ -755,6 +759,7 @@ B:  just filling in the holes here or  or  ?
 D:  Uh , no we don't plan to fill the holes but 
 B:   pretty much ? 
 B:  OK . 
+topic_description:	noise condition
 
 
 D:   actually there is something important , 
@@ -859,6 +864,7 @@ B:  Right .
 D:   to  
 D:   even if the features are not  normalized . It  it will learn how to normalize and  <inbreath> 
 B:  Right . 
+topic_description:	on-line normalization
 
 
 B:  OK , but I think that 
@@ -914,6 +920,7 @@ F:  <mike noise>
 B:   uh , it 's  it 's really time to  
 B:   time to choose . 
 D:  Mm - hmm . 
+topic_description:	conclusions, decision for next week's testing
 
 
 B:  So do you  are you  w 
@@ -1076,6 +1083,7 @@ B:  but the  the real thing is if you 're interested in it you 'll probably try 
 B:   and  we 'll see . 
 D:  <sniff> 
 D:  <clear throat> 
+topic_description:	increasing the number of phonemic classes
 
 
 B:  So what i what is going on right now ? What 's right  you 've got 
@@ -1105,6 +1113,7 @@ B:   but  but yeah .
 E:  I don't know . 
 D:  Yeah . 
 B:  Uh , OK . 
+topic_description:	HTK testing
 
 
 D:  Uh so there is this combination , yeah . Working on combination obviously . 
@@ -1235,6 +1244,7 @@ B:  So that 's something that you 're  you haven't trained yet but are preparing
 D:  Yeah . 
 B:  Yeah . 
 D:  <sniff> 
+topic_description:	using both features, net outputs
 
 
 B:  Um , let me pass this out , 
@@ -1289,6 +1299,7 @@ D:  Mmm .
 B:   examples . 
 E:  <inbreath> 
 B:   Uh . 
+topic_description:	OGI voice activity detection (VAD) results
 
 
 E:  But they have a question of the result . Um how are trained the  the LDA filter ? 
@@ -1329,6 +1340,7 @@ E:  set .
 B:  Yeah , I don't know . 
 B:  Um ,  
 B:  but uh to tell you the  truth , I wasn't actually looking at the LDA so much when I  I was looking at it I was  mostly thinking about the   the VAD . 
+topic_description:	derivation of LDA filter
 
 
 B:  And um , it ap 
@@ -1369,6 +1381,7 @@ B:  OK .
 D:  It should be that , yeah . 
 D:  Because  
 B:  Shouldn't it be  
+topic_description:	baseline ASP
 
 
 A:  They s 
@@ -1480,6 +1493,7 @@ B:   with so many insertions and so forth would go away if they were better word
 B:   So 
 B:   this might just be a temporary thing . But  
 B:  But , on the other hand , and maybe  maybe it 's a decent idea . 
+topic_description:	application of VAD
 
 
 B:   So um 
@@ -1572,6 +1586,7 @@ B:   And now we 're
 B:   seem to be kind of in a position to actually  uh , 
 B:   look at stuff and  and  and compare things . 
 B:   So I think that 's  that 's pretty good . 
+topic_description:	collaboration with OGI(?), parameter selection, allocation
 
 
 B:  Um 
@@ -1603,6 +1618,7 @@ D:  <laugh>
 D:  Yeah . 
 B:   but uh 
 B:  Just curious . 
+topic_description:	how many parameters
 
 
 B:   How are we doing on the 
@@ -1693,6 +1709,7 @@ B:  turned my head your direction . That 's one thing you don't get in these rec
 A:  <laugh> 
 G:  <laugh> 
 B:   don't get the visuals but  
+topic_description:	disk resources, servers
 
 
 G:  I is it um  mostly um the neural network trainings that are  um slowing us down or the HTK runs that are slowing us down ? 
@@ -1767,6 +1784,7 @@ D:  Mmm .
 B:  I see . 
 A:  I don't what their scripts are  set up to do for the Aurora stuff , but  
 D:  Yeah . 
+topic_description:	neural net trainings, HTK runs, processing issues
 
 
 B:  Something that we haven't really settled on yet is other than 
@@ -1788,6 +1806,7 @@ B:  HMM  Gaussian - mixture - based HMM thing we use is gonna depend
 F:  <mike noise> 
 B:  uh 
 B:  <inbreath> 
+topic_description:	Aurora, large vocabulary training, testing
 
 
 B:  So with that , 
@@ -1821,6 +1840,7 @@ B:  Er everybody
 B:  Has everyone signed a consent form before , on previous meetings ? You don't have to do it again each time 
 B:  Yes . 
 B:  microphones off 
+topic_description:	closing
 
 
 B:  Two zero one one dash two zero three zero  
@@ -1976,5 +1996,6 @@ G:  four one
 G:  five two nine zero four  
 G:  six  
 G:  seven eight three six  
+topic_description:	digit task
 
 

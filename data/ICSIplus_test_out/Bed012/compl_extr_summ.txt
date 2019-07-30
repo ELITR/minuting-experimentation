@@ -1,0 +1,133 @@
+B:  What 's the situation like at the entity that is mentioned ? 
+B:  if we know anything about it ? 
+
+B:  That 's basically  just specifying the  the input for the  w what 's 
+
+C:  y Why are you specifying it in XML ? 
+
+B:  And , also , I mean , this is a  what the input is going to be . 
+
+B:  I mean , once  Once you have this sort of as  running as a module  
+
+B:  What you want is  You wanna say , " OK , give me the posterior probabilities of the Go - there  node , when this is happening . " 
+
+C:  So this is just a specification of all the possible inputs ? 
+
+B:  Yep . 
+
+B:  As , if I understand it correctly , it always gives you all the posterior probabilities for all the values of all decision nodes . 
+
+B:  and the question is what to do with it , 
+
+B:  how to interpret it , 
+
+B:  So the person said , um , " Where is X ? " 
+
+B:  we want to know , um , is  Does he want info ? 
+
+B:  or know the location ? 
+B:  Or does he want to go there ? 
+
+B:  I mean . It 's always gonna give us a value of how likely we think i it is that he wants to go there and doesn't want to go there , 
+B:  or how likely it is that he wants to get information . 
+
+B:  So , it  n I mean  a All I 'm saying is , whatever our input is , we 're always gonna get the full output . 
+B:  And some  some things will always be sort of too  not significant enough . 
+
+C:  You won't  it 'll be hard to decide . 
+
+C:  you could say , " Well , there  Here 's the Where - Is construction . " 
+C:  And for the Where - Is construction , we know we need to l look at this node , that merges these three things together 
+
+C:  I guess they are evenly weighted . 
+
+A:  The different decision nodes , you mean ? 
+
+A:  If we trusted the Go - there node more th much more than we trusted the other ones , then we would conclude , even in this situation , that he wanted to go there . 
+
+B:  What  what  what I am thinking , or what we 're about to propose here is we 're always gonna get the whole list of values and their posterior probabilities . 
+B:  And now we need an expert system or belief - net or something that interprets that , 
+
+C:  Yeah I know . But how do we weight what we get out ? 
+C:  As , which one i Which ones are important ? 
+C:  So my i So , if we were to it with a Bayes - net , we 'd have to have a node  for every question that we knew how to deal with , 
+C:  that would take all of the inputs and weight them appropriately for that question . 
+
+C:  Are we going to make a node for every question ? 
+
+C:  Every construction . 
+
+A:  I mean , in general , like , we won't just have those three , 
+
+A:  We 'll have , uh , like , many , many nodes . 
+A:  So we have to , like  So that it 's no longer possible to just look at the nodes themselves and figure out what the person is trying to say . 
+
+B:  Because there are interdependencies , 
+
+A:  I mean , it 's not based on constructions , 
+A:  it 's based on things like , uh , there 's gonna be a node for Go - there or not , and there 's gonna be a node for Enter , View , Approach . 
+
+C:  Oh , so if  Let 's say I had a construction parser , and I plug this in , I would know what each construction  the communicative intent of the construction was 
+C:  and so then I would know how to weight the nodes appropriately , in response . 
+
+C:  So then , the Bayes - net that would merge there , that would make the decision between Go - there , Info - on , and Location , would have a node to tell you which one of those three you wanted , 
+
+A:  Like , if you 're asked a Where - Is question , you may not even look  like , ask for the posterior probability of the , uh , EVA node , 
+
+A:  Cuz , that 's what  I mean , in the Bayes - net you always ask for the posterior probability of a specific node . 
+
+A:  you may not even bother to compute things you don't need . 
+
+B:  Yeah , but that 's  that 's just shifting the problem . 
+B:  Then you would have to make a decision , 
+B:  " OK , if it 's a Where - Is question , which decision nodes do I query ? " 
+
+D:  Well , eventually , you still have to pick out which ones you look at . 
+
+B:  I mean , maybe it does make a difference in terms of performance , computational time . 
+
+C:  So basically , you 'd have a decision tree  query ,  Go - there . 
+C:  If k if that 's false , query this one . If that 's true , query that one . 
+C:  And just basically do a binary search through the  ? 
+
+C:  Also , I 'm somewhat boggled by that Hugin software . 
+C:  I can't figure out how to get the probabilities into it . 
+
+B:  basically , what  where we also have decided , prior to this meeting is that we would have a rerun of the three of us sitting together 
+B:  sometime  this week  again 
+B:  and finish up the , uh , values of this . 
+B:  So we have , uh  Believe it or not , we have all the bottom ones here . 
+
+B:  So , we have to come up with values for this , and this , this , this , and so forth . 
+B:  And maybe just fiddle around with it a little bit more . 
+
+B:  And , um , we won't  meet next Monday . 
+
+A:  We 'll meet next Tuesday , I guess . 
+
+B:  OK , then . Let 's meet  meet again next Tuesday . 
+B:  And , um , finish up this Bayes - net . 
+
+B:  And we present our results , 
+
+B:  OK . Because then , once we have it sort of up and running , then we can start you know , defining the interfaces 
+B:  and then feed stuff into it 
+B:  and get stuff out of it , 
+B:  and then hook it up to some fake construction parser 
+
+B:  Yeah , I can worry about the ontology interface 
+B:  and you can  Keith can worry about the discourse . 
+
+C:  maybe it 's OK , so that  that  that we can  that we have one node per construction . 
+C:  Cuz even in people , like , they don't know what you 're talking about if you 're using some sort of strange construction . 
+
+B:  Yeah , they would still c sort of get the closest , best fit . 
+
+A:  But how many constructions do  could we possibly have  nodes for ? 
+
+C:  Any  any form - meaning pair , to my understanding , is a construction . 
+
+B:  But , I mean , you know , you can probably count  count the ways . 
+
+C:  as long as your analysis is finite . 
+

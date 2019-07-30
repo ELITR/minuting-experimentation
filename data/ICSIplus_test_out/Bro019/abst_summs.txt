@@ -1,0 +1,76 @@
+C:  Sunil 's here for the summer , 
+C:  Sunil since you 're <inbreath> haven't  haven't been at one of these yet , why don't yo you tell us what 's  what 's up with you ? 
+abst_sum - abstract: The ICSI Meeting Recorder Group at Berkley have a temporary new member on loan from research partner OGI.
+
+C:  Sunil since you 're <inbreath> haven't  haven't been at one of these yet , why don't yo you tell us what 's  what 's up with you ? 
+A:  uh , the other  other thing what I tried was , I just um , uh , took the baseline and then ran it with the endpoint inf uh th information , 
+A:  just the Aurora baseline , 
+A:  to see that how much the baseline itself improves 
+A:  by just supplying the information of the  I mean the w speech and nonspeech . 
+A:  I found that the baseline itself improves by twenty - two percent by just giving the wuh . 
+A:  because the  the second  the new phase is going to be with the endpointed speech . 
+A:  And just to get a feel of how much the baseline itself is going to change by adding this endpoint information , I just , uh , use  
+F:  So people won't even have to worry about , uh , doing speech - nonspeech then . 
+A:  Yeah 
+abst_sum - abstract: He began the meeting by reporting his recent activities, which included looking at the new baseline system.
+
+C:  and then just uh , I guess uh , progress reports individually , and then uh , plans for where we go between now and then , pretty much . 
+C:  so maybe uh , just briefly , you could remind us about the related experiments . 
+C:  Cuz you did some stuff that you talked about last week , 
+D:  The main thing that we did is just to take the spectral subtraction from the France Telecom , 
+D:  We are playing  we are also playing , trying to put other spectral subtraction mmm , in the code . 
+D:  it would be a very simple spectral subtraction , on the um , mel energies 
+C:  Anything else going on ? 
+B:  I don't have good result , with the  inc including the new parameters , 
+abst_sum - abstract: The other members of the group also reported their recent progress in areas such as spectral subtraction and voicing detection.
+
+A:  With what  what other new p new parameter ? 
+C:  So maybe  You probably need to back up a bit 
+B:  I tried to include another new parameter to the traditional parameter , 
+B:  that , like , the auto - correlation , the R - zero and R - one over R - zero 
+B:  and another estimation of the var the variance of the difference for  of the spec si uh , spectrum of the signal 
+B:  and  and the spectrum of time after filt mel filter bank . 
+B:  The idea is to found another feature for discriminate between voice sound and unvoice sound . 
+B:  And we try to use this new feature  feature . 
+C:  anything on your end you want to talk about ? 
+G:  Sunil hasn't  hasn't heard about uh , what I 've been doing . 
+G:  So basically that 's just , um , trying to propose um , uh , your next your  your following years of  of your PHD work , 
+G:  trying  trying to find a project to  to define and  and to work on . 
+G:  So , I 've been , uh , looking into , um , doing something about r uh , speech recognition using acoustic events . 
+G:  um , building robust um , primary detectors for these acoustic events , 
+G:  and using the outputs of these robust detectors to do speech recognition . 
+abst_sum - abstract: They also explained some of their projects to their guest.
+
+F:  I could say a few words about um , some of the uh , compute stuff that 's happening around here , 
+F:  so that people in the group know . 
+F:  So we just put in an order for about twelve new machines , uh , to use as sort of a compute farm . 
+F:  and Andreas has sort of gotten that all uh , fixed up and up to speed . 
+F:  And he 's got a number of little utilities that make it very easy to um , <mouth> run things using P - make and Customs . 
+F:  And I can send an email around 
+F:  or , maybe I should do an FAQ on the web site about it or something . 
+C:  How about an email that points to the FAQ , 
+F:  And , if you say that and then some job that you want to execute , uh , it will find the fastest currently available machine , and export your job to that machine , 
+F:  And , so , soon , when we get all the new machines up , <mouth> um , e then we 'll have lots more compute to use . 
+F:  there 's a lot of nice features to it 
+F:  and it kinda helps to balance the load of the machines 
+abst_sum - abstract: The group shall soon be taking delivery of more machines for a computation farm, and they discussed some software tools for running large processes.
+
+F:  And I can send an email around 
+F:  or , maybe I should do an FAQ on the web site about it or something . 
+C:  How about an email that points to the FAQ , 
+abst_sum - decisions: Speaker me018 will construct an FAQ about the new computing tools and setup, and email details.
+
+C:  I mean we 've had these discussions before , 
+C:  and  and one of the things that struck me was that  uh , about this line of thought that was particularly interesting to me was that we um  whenever you condense things , uh , in an irreversible way , um , you throw away some information . 
+C:  And so the question is , uh , can we figure out if there 's something we 've thrown away that we shouldn't have . 
+C:  when they were looking at the difference between the filter bank and the FFT that was going into the filter bank , I was thinking " oh , OK , 
+C:  so they 're picking on something 
+C:  they 're looking on it to figure out noise , or voice  voiced property whatever . " 
+C:  But for me sort of the interesting thing was , " well , but is there just something in that difference which is useful ? " 
+C:  So another way of doing it , maybe , would be just to take the FFT uh , power spectrum , and feed it into a neural network , 
+C:  And , you know , maybe if it 's used in combination , it will get at something that we 're missing . 
+C:  It 's just a thought . 
+B:  Yeah , 
+B:  I can  I will try to do that . 
+abst_sum - decisions: Fn002 agrees to try an alternative approach to her new feature for voicing detection.
+

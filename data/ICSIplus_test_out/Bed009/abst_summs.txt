@@ -1,0 +1,62 @@
+B:  um  so far I 've thought of it as sort of adding it onto the modeler knowledge module . 
+F:  We talked about this several times that  that  the  the input end is gonna need a fair amount of feedback from the planning end . 
+F:  So we talked about the fact that There 're going to be a certain number of decisions That you want the knowledge modeler to make , that will be then fed to the function module , that does uh , route planning . 
+abst_sum - abstract: The Berkeley Even Deeper Understanding group discussed plans and concerns regarding the architecture of SmartKom, its proposed modules, and the types of interactions expected to take place between modules.
+
+B:  and then that can be sort of developed uh as needed when we get  enter the tourism domain . 
+F:  We probably won't do this early on , because the current focus is more on the decision making and stuff like that . 
+abst_sum - abstract: The meeting was largely focused on SmartKom's decision making capacity and how to adapt this functionality to the tourist information domain.
+
+F:  so anyt we 'll find a time later in the week to uh get together and talk about  your understanding of what SmartKom plans are . 
+abst_sum - decisions: The group set a date for assessing SmartKom plans.
+
+A:  And they 're currently um Agreeing or  or in the process of agreeing on an X M L - ification of um something like a state - transition network of how dialogues would proceed . 
+abst_sum - decisions: It was decided that SmartKom's action plans should be represented in XML as a state transition network.
+
+A:  It oughta be called a  a dialogue manager . 
+abst_sum - decisions: It was proposed that the term 'dialogue planner' should replace 'dialogue manager'.
+
+A:  no he 's completely gonna rewrite everything . In Java . 
+A:  No , that 's gonna be phased out . 
+abst_sum - decisions: Prolog will be phased out completely and replaced by Java code.
+
+F:  and this  one of these planning modules comes along and says " hey , right now we need to ask a question " . 
+F:  So that forces the dialogue manager to change state . 
+abst_sum - decisions: The dialogue manager must be capable of changing states, i.e. go from being event driven to answering a question from a planning module.
+
+A:  And  and the  the underlying idea of course is that there is something like kernel modules with kernel functionality that you can plug uh certain applications like tourist information or um the home scenario with uh controlling a VCR and so on . 
+A:  and keep these things like uh tourist information external . 
+A:  That 's an additional reason to have this well - defined interface 
+F:  So if you can do this , then the notion would be that across a very large range of domains , you could use this deep conceptual basis as the interface . 
+abst_sum - decisions: SmartKom should feature a well defined core interface, with domain-specific information kept external.
+
+D:  um it 's to  to integrate and syntactic analysis . 
+F:  But  But uh given th the constraints , that you want it to be small and fast and so forth , my guess is you 're probably into some kind of chunk parsing . 
+abst_sum - decisions: A syntactic analysis component that performs chunk parsing will be added to the system.
+
+F:  you know th the functional module that  that interacts with  with where the tourism g stuff is going  probably is too restrictive . 
+A:  um is based on slots that have to be filled 
+A:  and I 'm not sure if  if complex slots of that type are really um being taken into consideration . 
+abst_sum - problems: As a functional module, the action planner is too restrictive for the tourist domain and requires complex slots from the dialogue manager.
+
+B:  I think the  the true key issues is how does the whatever comes out of the language input pipeline look like 
+B:  and then what the action planner does with it  
+abst_sum - problems: What form will the language input have, and what will the action planner do with it?
+
+F:  We talked about this several times that  that  the  the input end is gonna need a fair amount of feedback from the planning end . 
+abst_sum - problems: Links must be in place between the input end, action planner, parser, and language feedback components for communicating the current state of plan.
+
+B:  Yeah I think just the  the spatial planner and the route planner 
+B:  so  a printout of the communication between those two fills up 
+B:  I don't know how many pages 
+abst_sum - problems: Interactions in a deep map system between the spatial planner and the route planner are too convoluted.
+
+D:  Yeah , uh the problem is th that it has to be very fast 
+D:  And they also have to be very robust . cuz of um speech recognition errors 
+F:  But  But uh given th the constraints , that you want it to be small and fast and so forth , my guess is you 're probably into some kind of chunk parsing . 
+D:  Some extensions uh have to be made . For  for a English version 
+abst_sum - problems: SmartKom requires a fast and robust parser that includes language-specific extensions.
+
+F:  But the other half of the problem is How would you get that kind of information from the parsed input ? 
+abst_sum - problems: Which form of semantic construction grammar should be used, and how would such information be derived from the parsed input?
+

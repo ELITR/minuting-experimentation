@@ -10,6 +10,7 @@ D:  <sniff>
 A:  coming up and telling me I figured we should just wait a week and they can tell both  you know , all of us . 
 A:  So , um , <mouth> 
 A:  why don't we  why don't we start with you , Dave , and then , um , we can go on . So . 
+topic_description:	opening
 
 
 C:  And uh Hans - uh , Hans - Guenter will be here , um , I think by next  next Tuesday or so . 
@@ -44,6 +45,7 @@ A:  Yeah .
 C:  Yeah . He 's  he 's done a couple stays here . Yeah . 
 A:  <outbreath> 
 B:  Hmm . 
+topic_description:	upcoming Hans Geunter visit
 
 
 E:  Oh , OK . 
@@ -112,6 +114,7 @@ A:  So is that , uh
 A:  that it ? 
 E:  I guess that 's it . 
 A:  <laugh> 
+topic_description:	Dave's windowing results, training SmartKom
 
 
 C:  <inbreath> But I mean the other thing is that that 's  I mean , the other way of looking at this , going back to , uh , mean cepstral subtraction versus RASTA kind of things , is that you could look at 
@@ -181,6 +184,7 @@ A:  adaptations and
 E:  Mm - hmm . 
 C:  Right . 
 A:  <laugh> 
+topic_description:	filtering methods
 
 
 C:  Oh , the other thing I guess which  which , uh , 
@@ -228,6 +232,7 @@ C:  but , uh , which have very low energy .
 E:  Mm - hmm . 
 E:  OK . 
 C:  So , uh  I mean , there 's lots of things you can do in second passes , at all sorts of levels . Anyway , I 'm throwing too many things out . But . 
+topic_description:	single versus multiple passes
 
 
 A:  OK , uh , do you wanna go , Sunil ? 
@@ -398,6 +403,7 @@ B:  Mmm .
 A:  Tha - that it ? 
 B:  Yep . Yep . 
 A:  Cool . 
+topic_description:	Sunil's Wiener filtering results
 
 
 B:  And  
@@ -469,6 +475,7 @@ C:  Yeah .
 C:  Yeah , c 
 D:  Uh , well , working on the VAD is still  still important I think . 
 D:  Uh  
+topic_description:	VAD manipulations
 
 
 A:  <inbreath> Can I ask just a  a high level question ? 
@@ -573,6 +580,7 @@ A:  Yeah .
 A:  Mm - hmm . 
 A:  Mm - hmm . 
 A:  Cool , thanks . 
+topic_description:	Wiener filtering defined
 
 
 B:  So  so one of  one of the things that I tried , like I said , was to remove those zeros in the fri filter by doing some smoothing of the filter . 
@@ -636,6 +644,7 @@ B:  p putting a lot effort on this to make it work , on tuning things and other 
 C:  OK .  
 B:  I was like 
 B:  going parallely but not much of improvement . I 'm just  have some skeletons ready , need some more time for it . 
+topic_description:	smoothing, other performance enhancing manipulations
 
 
 A:  Do you wanna go , Stephane ? 
@@ -664,6 +673,7 @@ A:  Mm - hmm .
 D:  Um , doing just this , uh , either on the FFT bins or on the mel bands , um , 
 C:  Oh ! 
 D:  t doesn't yield any improvement 
+topic_description:	Stephane's spectral subtraction results
 
 
 C:  Um , uh , what are you doing with negative , uh , powers ? 
@@ -794,6 +804,7 @@ A:  Oh .
 C:  instead of half wave . But it was just a thought that  that it might be something to try . 
 D:  Mm - hmm . 
 D:  Mm - hmm . 
+topic_description:	using negative log energies
 
 
 D:  Yep . Well , actually I tried , <clears throat> something else based on this , um , 
@@ -893,6 +904,7 @@ D:  If you listen to it  uh , if you do this in the FFT bins , then you have spo
 D:  like , sounds , uh  
 A:  Mm - hmm . 
 D:  And  
+topic_description:	non-linear smoothing, results for Italian, Finnish
 
 
 A:  What is it the , um , 
@@ -930,6 +942,7 @@ B:  It 's similar in the smoothing and
 B:  Yeah . 
 B:  Yeah . 
 B:  The frequency domain . 
+topic_description:	comparison with French Telecom processing strategies
 
 
 C:  Well , none of these systems , by the way , have  I mean , y you both are  are working with , um , our system that does not have the neural net , right ? 
@@ -997,6 +1010,7 @@ C:  I mean , it  we 'll just have to see whether it helps more or less the same 
 D:  Mm - hmm . 
 C:  So in any event , all of this  I was just confirming that all of this was with a simpler system . OK ? 
 D:  Yeah , yeah . 
+topic_description:	neural net performance expectations
 
 
 D:  Um , 
@@ -1047,6 +1061,7 @@ B:  Yeah .
 D:  OK . Yeah , but in this experiment I did  I didn't use any VAD . I just used the twenty first frame to estimate the noise . And  
 D:  So I expected it to be a little bit better , <clears throat> if , uh , I use more  more frames . 
 D:  Um . 
+topic_description:	parameter optimization manipulations
 
 
 D:  Yeah , another thing that I  
@@ -1162,11 +1177,13 @@ A:  Hmm .
 C:  <sniff> 
 C:  <sniff> 
 D:  Mm - hmm . 
+topic_description:	accounting for latency
 
 
 D:  OK , that 's it for spectral subtraction . The second thing I was working on is to , um , 
 D:  try to look at noise estimation ,  
 D:  mmm , and using some technique that doesn't need voice activity detection .  
+topic_description:	Stephane's noise estimation results
 
 
 D:  Um , and for this I u simply used some code that , uh , <breath-laugh> I had from  from Belgium ,  
@@ -1213,6 +1230,7 @@ C:  Mm - hmm .
 D:  which is not the case if you rely on the voice activity detector . So even if there are no no speech pauses , you can track the noise level . 
 D:  The only requirement is that you must have , in these five hundred milliseconds segment ,  you must have voiced sound at least . 
 D:  Cuz this  these will help you to  to track the  the noise level . 
+topic_description:	using energy minima
 
 
 D:  Um . So what I did is just to simply replace the VAD - based , uh , noise estimate by this estimate , 
@@ -1261,6 +1279,7 @@ C:  Yeah .
 B:  So . I don't estimate the f noise on the ten frames but use his estimate . 
 D:  Mm - hmm . 
 C:  Yeah . 
+topic_description:	VAD manipulations, noise compensation
 
 
 D:  Um . 
@@ -1329,6 +1348,7 @@ C:  Mm - hmm .
 D:  you can improve from ten percent as Sunil showed , if you use the channel zero speech probabilities . For this it might help , um  
 C:  Mm - hmm . 
 C:  Mm - hmm . 
+topic_description:	spectral whitening using probabilities
 
 
 D:  S so , yeah . 
@@ -1370,6 +1390,7 @@ C:  Yeah , right .
 D:  <inbreath>  
 D:  Yeah .  
 D:  <clears throat> 
+topic_description:	voice activity detector enhancement
 
 
 C:  OK . Well , Hans - Guenter will be here next week so I think he 'll be interested in all  all of these things . And , so . 
@@ -1380,6 +1401,7 @@ C:  Yeah .
 A:  Want to go ahead , Morgan ? 
 C:  Sure . 
 A:  OK . 
+topic_description:	closing
 
 
 C:  Transcript L dash two zero nine .  
@@ -1431,5 +1453,6 @@ D:  Five three nine six , one zero five five , three three eight three .
 D:  Five zero one , one nine five , nine one zero .  
 D:  Five , three four three , one one , seven eight five , nine .  
 D:  Six zero five zero , one one eight seven , two three nine one .  
+topic_description:	digit task
 
 

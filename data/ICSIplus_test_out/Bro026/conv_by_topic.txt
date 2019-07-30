@@ -6,6 +6,7 @@ D:  <breath>
 B:  <breath> 
 D:  <breath> <mouth> 
 B:  <breath> 
+topic_description:	opening
 
 
 B:  OK , so  
@@ -106,6 +107,7 @@ B:  So , um .
 B:  Uh , 
 B:  maybe describe roughly what  
 B:  what we are keeping constant for now , or  ? 
+topic_description:	Stephane, Sunil's software code, update
 
 
 E:  Is the , um  
@@ -229,6 +231,7 @@ B:  Yeah .
 E:  Yeah . OK . Cool . 
 B:  Yeah .  
 B:  <breath> 
+topic_description:	CVS mechanism, remote, anonymous access
 
 
 B:  And , uh , so the initial thing which came from , uh , the meeting that we had down south 
@@ -319,6 +322,7 @@ A:  Yeah .
 D:  OK . 
 A:  Um . 
 A:  But , yeah , I think there are plenty of issues to work on for the feature net @ @ . 
+topic_description:	report from Stephane, Sunil, software development
 
 
 A:  Yeah . 
@@ -372,6 +376,7 @@ B:  <mike noise>
 B:  <inbreath> 
 B:  Actually , let me int eh , 
 B:  Dave isn't here to talk about it , but let me just interject . 
+topic_description:	Wiener filtering, noise suppression issues
 
 
 B:  This module , 
@@ -453,6 +458,7 @@ C:  <mike noise>
 B:  is going to have both things , 
 B:  we  we actually have to think about both at the same time . 
 E:  Hmm . 
+topic_description:	artificial versus natural reverberative effects
 
 
 B:  So , um  
@@ -512,6 +518,7 @@ A:  Mm - hmm .
 B:  Yeah .  
 B:  So the things that we , um , 
 B:  uh , 
+topic_description:	architectural scheme
 
 
 B:  I guess we sort of  uh , 
@@ -539,6 +546,7 @@ E:  That what you mean ?
 B:  Yeah , yeah , I mean , cuz we  we have  we have , uh , 
 B:  uh , half the  the , uh , 
 B:  data rate that they allow . 
+topic_description:	components needing modification
 
 
 E:  So if you took the system the way it is now , the way it 's fro you 're gonna freeze it , 
@@ -623,6 +631,7 @@ B:  Um , why are we using half ?
 E:  Yeah . 
 B:  Well , so you could  you c 
 E:  Or how are they using more than half , I guess maybe is what I   
+topic_description:	system performance, comparison with other systems
 
 
 B:  Yeah , so I  I think  
@@ -675,6 +684,7 @@ B:  you know , it may even end up with mel spectrum even though I 'm saying I th
 E:  Mm - hmm . 
 B:  Um . 
 B:  And you know , in the long run having something everybody will look at and say , " oh , yeah , I understand " , is  is very helpful . 
+topic_description:	normalization, downsampling
 
 
 E:  So you would  you 're  
@@ -736,6 +746,7 @@ B:  have some baseline that says , " OK , we don't normalize , this is what we g
 B:  But  
 B:  but the other question is  
 B:  So I think ultimately we 'll wind up doing some normalization . I agree . 
+topic_description:	mel spectrum, normalization issues
 
 
 C:  Would  would that fit on the handset , or  ? 
@@ -797,6 +808,7 @@ B:  uh ,
 B:  potentially , 
 B:  you know , it could be big . So . 
 C:  Mm - hmm . 
+topic_description:	handset, storage issues
 
 
 E:  What about the , um  
@@ -840,6 +852,7 @@ B:  the best way to work it . I 'll support it either way , so .
 A:  Mm - hmm 
 A:  Right . 
 B:  OK . 
+topic_description:	Wall Street Journal feature net evaluation
 
 
 E:  So what  how is the , uh , interaction supposed to happen ? 
@@ -1020,6 +1033,7 @@ B:  we have the data , just not the recognizer .
 B:  <laugh> 
 C:  <breath> 
 B:  OK . 
+topic_description:	collaboration, interaction with OGI
 
 
 E:  So this test may take quite a while to run , then . 
@@ -1071,6 +1085,7 @@ B:  Maybe not .
 B:  So . 
 B:  That 's that . 
 E:  <inbreath> 
+topic_description:	training, testing issues
 
 
 B:  Anybody have anything else ? 
@@ -1133,6 +1148,7 @@ B:  different features having different kinds of , uh , scaling characteristics 
 B:  you know , w w possibly having entirely different optimal values for  for the usual twiddle factors and what 's  what 's the plan about that ? 
 E:  OK . 
 C:  <breath> 
+topic_description:	download version, scripts details
 
 
 D:  So sh shall we , like , add Chuck also to the mailing lists ? 
@@ -1185,6 +1201,7 @@ D:  Yeah , it 's password protected .
 D:  So , like  like , it 's , like  
 C:  <breath> 
 B:  <inbreath> 
+topic_description:	mailing lists, correspondence archive
 
 
 B:  Uh . 
@@ -1215,6 +1232,7 @@ E:  Mm - hmm .
 C:  if we do that , then we would probably , um , at some point in the clustering algorithm 
 C:  find that we 've clustered things like , OK , thi this is a transition , um , this is a relatively stable  stable point . 
 C:  Um , and I 'm hoping to find other things of  of similarity and maybe use these things as the intermediate , um  intermediate categories that , uh , um , I 'll later classify . 
+topic_description:	report from Barry, data clustering
 
 
 C:  And , uh , I was looking at some of the work that , 
@@ -1252,6 +1270,7 @@ C:  um  broad categories ,
 B:  Mm - hmm .  
 C:  uh , corresponding to , uh , things like , uh , fricatives and , uh , vocalic , um , and , uh , stops . 
 C:  And , uh , one for silence and  and another one for schwa  schwa sounds . 
+topic_description:	TRAPS, Sangita's work
 
 
 B:  Are you looking at these in narrow bands ? 
@@ -1453,6 +1472,7 @@ E:  I 'm not sure how  <laugh> how to build that in .
 C:  <breath-laugh> 
 E:  Uh . 
 B:  <mouth> 
+topic_description:	narrow band, categorization issues
 
 
 B:  Yeah , I mean , I guess the other thing i is  is to think of a little bit  I mean , we when y when you start looking at these kind of results I think it usually is  is pretty intuitive , but start looking at 
@@ -1486,6 +1506,7 @@ B:  Uh .
 B:  If we 're not working on that then <laugh> we should work on something else and improve it , but  especially if it looks like the potential is there . So  
 D:  <mike noise> 
 B:  <mouth> 
+topic_description:	implicatons of added noise
 
 
 B:  <inbreath> Should we do some digits ? 
@@ -1497,6 +1518,7 @@ E:  OK .
 B:  <breath> That 's all folks . <outbreath> 
 B:  <mike noise> 
 E:  <mike noise> <breath> 
+topic_description:	closing
 
 
 B:  OK , transcript L dash three three eight .  
@@ -1529,5 +1551,6 @@ D:  Transcript L dash three three four . One three seven four zero nine one eigh
 C:  <mike noise> <breath> 
 D:  Eight two two one seven three five seven zero five nine one zero six three six three five nine four three nine six zero three nine two eight three eight .  
 D:  Zero six nine two zero nine one six nine zero two three eight four five eight eight three three zero .  
+topic_description:	digit task
 
 

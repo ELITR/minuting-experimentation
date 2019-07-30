@@ -1,0 +1,187 @@
+C:  So what I 've tried to do here is list all the decision nodes that we have identified on this  side . 
+C:  Commented and  what they 're about and sort of  the properties we may um give them . 
+C:  And here are the uh  tasks to be implemented via our data collection . 
+
+C:  And these are the data tasks where w we can assume the person would like to enter , view or just approach the thing . 
+
+C:  so there 's a lot of things where we have no analogous tasks , and  that may or may not be a problem . 
+C:  We can change the tasks slightly if we feel that we should have data for e sort of for every decision node 
+C:  so  trying to im um  implant the intention of going to a place now , going to a place later on the same tour , 
+
+D:  So What we 're gonna do today is two related things . 
+D:  Uh one of them is to work on the semantics of the belief - net which is going to be the main inference engine for thi the system uh making decisions . 
+D:  And decisions are going to turn out to be parameter choices for calls on other modules . 
+
+D:  And we 're also , sort of uh in the same process , going to work with Fey on what there should be in the dialogues . 
+
+C:  OK . We were gonna put this in front of people . 
+
+C:  Then  then they will read uh  a task where lots of German words are sort of thrown in between . 
+C:  And um  and they have to read isolated proper names 
+
+C:  And um  And then they gonna have to f um um choose from one of these tasks , which are listed here . 
+
+C:  Six different things they sort of think they would do if they were in Heidelberg or traveling someplace  
+C:  and um  and they have a map . 
+
+C:  Very sketchy , simplified map . 
+
+C:  And then they call this computer system that works perfectly , and understands everything . 
+
+C:  And um  And then after three tasks the system breaks down . 
+C:  And Fey comes on the phone as a human operator . 
+
+C:  And um  And Fey has some thirty subjects lined up ? 
+
+E:  Yeah . 
+
+C:  And um we 're still l looking for a room on the sixth floor because they stole away that conference room . Um  behind our backs . 
+
+C:  David and  and Jane and  and Lila are working on that as we speak . 
+
+C:  we get to the uh  uh belief - net just focusing on  on the g Go - there node . 
+
+C:  And what w what happened is that um design - wise I 'd sort of n noticed that we can  we still get a lot of errors from a lot of points to one of these sub Go - there User Go - there Situation nodes . 
+C:  So I came up with a couple of additional nodes here where um 
+
+C:  um  I can now sort of draw straight lines from these to here , meaning it g of course goes where the sub - S  
+C:  everything that comes from situation , everything that comes from user goes with the sub - U , 
+C:  and whatever we specify for the so - called " Keith node " , or the discourse , what comes from the  um  parser , construction parser , um will contribute to the D and the ontology to the sub - O node . 
+C:  And um one just s sort of has to watch which  also final decision node so it doesn't make sense  t to figure out whether he wants to enter , view or approach an object if he never wants to go there in the first place . 
+
+C:  And um  And for now uh the  the question is " How much of these decisions do we want to build in explicitly into our data collection ? " 
+
+D:  but  but s th point is to  to y to  build a system that 's got everything in it that might happen you do one thing . 
+D:  T to build a system that um  had the most data on a relatively confined set of things , you do something else . 
+D:  And the speech people , for example , are gonna do better if they  if  things come up uh  repeatedly . 
+
+D:  so if  if it 's one service , one luxury item , you know , one big - ish place , and so forth and so on , um  then my guess is that  that the data is going to be easier to handle . 
+D:  Now of course you have this I guess possible danger that somehow there 're certain constructions that people use uh when talking about a museum that they wouldn't talk about with a university and stuff , 
+
+B:  I mean  you know , if our goal is to really sort of be able to handle a whole bunch of different stuff , then throwing harder situations at people will get them to do more linguistic  more interesting linguistic stuff . 
+
+C:  Maybe  I suggest we make some fine tuning of these , get  sort of  run through ten or so subjects 
+
+C:  and see whether we wanna make it more complex or not , depending on what  what sort of results we 're getting . 
+
+B:  and I looked at one of them which was about ten sentences , found fifteen , twenty different construction types that we would have to look for and so on 
+
+E:  Um  I can  Yeah , I mean I s I think can probably schedule ten people , uh , whenever . 
+
+E:  Um  I  I would say maybe two weeks . 
+
+D:  Let 's plan next Monday , OK , to have a review of what we have so far . 
+
+C:  This means audio , but  
+
+D:  but it would be great if you could , um , not transcribe it all , but pick out uh , some stuff . 
+
+D:  Are you gonna have the audio on the web site ? 
+D:  OK . 
+
+C:  It 's actually like five minutes dialogue . 
+
+D:  I b My guess is it 's gonna be ten . 
+
+D:  Um But anyway  yeah , so I think  it 's a good idea to start with the sort of relatively straight forward res just response system . 
+D:  And then if we want to uh  get them to start doing  uh  multiple step planning with a whole bunch of things and then organize them 
+
+D:  tell them which things are near each other 
+
+D:  uh  You know , " Which things would you like to do Tuesday morning ? " 
+
+E:  That w maybe one thing we should do is go through this list and sort of select things that are categories and then o offer only one member of that category ? 
+
+D:  That 's what I was suggesting for the first round , yeah . 
+
+D:  like at you know , " attend a theater , symphony or opera " is  is a group , 
+D:  and " tour the university , castle or zoo " , 
+
+F:  But I mean i it seem that um  there is a difference between going  to see something , and things like " exchange money " or " dine out " 
+
+D:  So we  yeah we don't know how many we can get next door at the  uh shelter for example . 
+
+C:  I mean , Go - there is  is a yes or no . 
+
+C:  I 'm also interested in th in this " property " uh line here , 
+
+C:  um , timing was um  I have these three . 
+
+C:  Now , later on the same tour , sometimes on the next tour . 
+
+C:  Um , the reason why  why do we go there in the first place 
+C:  IE uh  it 's either uh  for sightseeing , for meeting people , for running errands , or doing business . 
+
+C:  Um , " mode " , 
+
+C:  " drive there " , " walk there " uh  or " be driven " , which means bus , taxi , BART . 
+
+C:  OK , " Length " is um , you wanna get this over with as fast as possible , 
+
+B:  I mean you 're  you 're talking about rather than having the user decide this you 're supposed t we 're supposed to figure it out ? 
+
+C:  Th - the user can always s say it , but it 's just sort of we  we hand over these parameters if we make  if we have a feeling that they are important . 
+C:  And that we can actually infer them to a significant de degree , or we ask . 
+
+D:  Or  eh so , y but there 's th but definitely a back - off position to asking . 
+
+C:  And , Timing , uh , uh , Length would definitely be part of it , 
+C:  " Costs " , 
+C:  " Little money , some money , lots of money " ? 
+
+C:  Um  " Object information " , 
+C:  " Do I  do I wanna know anything about that object ? " 
+
+D:  So " object " becomes " entity " , 
+
+D:  Alright , so um  So I think the order of things is that um , Robert will clean this up a little bit , although it looks pretty good . 
+
+D:  Uh Robert and Eva and Bhaskara are gonna actually  build a belief - net that  that , um , has CPT 's and , you know , tries to infer this from various kinds of information . 
+D:  And Fey is going to start collecting data , 
+D:  and we 're gonna start thinking a about  uh  what constructions we want to elicit . 
+
+C:  Well , I will tell you the German tourist data . 
+
+C:  Dialogues . SmartKom  
+
+B:  Those files that you sent me are the user side of some interaction with Fey ? 
+
+C:  Some data I collected in a couple weeks for training recognizers and email way back when . 
+
+C:  see this  this  this  uh  ontology node is probably something that I will try to expand . 
+
+D:  We are expecting Johno to build a parser , 
+
+D:  Uh  He 's g he 's hoping to do this for his masters ' thesis s by a year from now . 
+
+D:  Uh  limited . 
+
+D:  Well , the hope is that the parser itself is , uh , pretty robust . 
+
+D:  so the idea is  uh  first of all I misspoke when I said we thought you should do the constructions . 
+
+D:  OK , Because uh  we do wanna get them r u perfectly  but I think we 're gonna have to do a first cut at a lot of them to see how they interact . 
+
+B:  And I  I me it would it would be completely out of the question to really do more than , say , like , oh I don't know , ten , over the summer , 
+
+D:  so you can do f you know , f f uh  have a complete story ov of s of some piece of dialogue . 
+D:  And that 's gonna be much more useful than having all of the clausal constructions and nothing else , or  or  or something like that . 
+D:  So that the  the trick is going to be t to take this and pick a  some sort of lattice of constructions , 
+
+D:  whatever you need in order to uh , be able to then , uh , by hand , you know , explain , some fraction of the utterances . 
+
+C:  We could sit down and think of sort of the  the ideal speaker utterances , 
+
+C:  the ideal sentences where we have complete construction coverage and , sort of , they match nicely . 
+
+C:  Um , the action planner guy has wrote  has written a  a p lengthy  proposal on how he wants to do the action planning . 
+C:  And I responded to him , also rather lengthy , how he should do the action planning . 
+
+C:  And I tacked on a little paragraph about the fact that the whole world calls that module a dis disc dialogue manager , 
+
+C:  And also Rainer M Malaka is going to be visiting us shortly , 
+
+C:  And . if I care about it being open , accessible or not , I don't think there 's any middle ground there . 
+
+C:  And hopefully you can sort of also try to find out , you know , sooner or later in the course of the summer what we can expect to get from the discourse that might , you know  or the  
+

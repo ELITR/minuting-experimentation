@@ -1,0 +1,105 @@
+B:  Do you e um they mentioned  made some  uh when I was on the phone with Sunil they  they mentioned some weighting scheme that was used to evaluate all of these numbers . 
+
+C:  um well it 's uh forty percent for TI - digit , sixty for all the SpeechDat - Cars , 
+
+B:  Um and we don't have the TI - digits part yet ? 
+
+C:  Generally what you observe with TI - digits is that the result are very close whatever the  the system . 
+
+B:  And so have you put all these numbers together into a single number representing that ? 
+
+C:  Uh not yet . 
+
+B:  OK so that should be pretty easy to do and that would be good  
+B:  then we could compare the two and say what was better . 
+
+C:  actually OGI two is the  the baseline with the OGI features 
+C:  but this is not exactly the result that they have because they 've  they 're still made some changes in the features 
+C:  and  well but uh actually our results are better than their results . 
+C:  Um I don't know by how much because they did not send us the new results 
+
+B:  Uh OK so the one  one place where it looks like we 're messing things up a bit is in the highly mismatched Italian . 
+
+B:  Uh so one of the ideas that you had mentioned last time was having a  a second um silence detection . 
+
+C:  Um yeah so it seems f for the  the well match and mismatched condition 
+C:  it 's uh it brings something . 
+C:  Uh but uh actually apparently there are  there 's no room left for any silence detector at the server side because of the delay . 
+
+B:  Oh we can't do it . 
+
+C:  No . 
+
+B:  So  you know how many words are in uh one of these test sets ? 
+
+C:  Um it 's  it depends  well  the well matched is generally larger than the other sets 
+
+B:  So uh i if  if you had uh just you know  to give an example , if you had uh um if you had a thousand words then uh a  a tenth of a percent would just be one word , 
+
+B:  See the  I mean the reason I 'm asking is  is  is we have all these small differences and I don't know how seriously to take them , right ? 
+
+B:  So  so it wouldn't mean anything . 
+
+B:  um so um yeah it be kind of  I 'd kind of like to know what the sizes of these test sets were actually . 
+
+B:  well also just to know the numbers , 
+
+B:  so anyway if you could just mail out what those numbers are and then  then  that  that be great . 
+
+D:  It 's only one small experiment to know what happened . 
+D:  To apply also to in include also the  the silence of the MLP we have the fifty - six form and the silence to pick up the silence and we include those . 
+
+C:  No they 're  I think there is this silence in addition to the um KLT outputs 
+
+B:  The silence plus the KLT output ? 
+
+C:  it is because we  we  we just keep uh we don't keep all the dimensions after the KLT 
+
+D:  and we not s we are not sure if we pick  we have the silence . 
+
+C:  So we try to add the silence also in addition to the  these twenty - eight dimensions . 
+
+B:  so it looks to me  I guess the same  
+B:  given that we have to take the filt ones out of the  the running because of this delay problem  so it looks to me like the ones you said I agree are  are the ones to look at 
+B:  but I just would add the  the  the second row one 
+
+B:  so if we can know what  how many words are in each 
+B:  and then um Dave uh Dave promised to get us something tomorrow which will be there as far as they 've gotten <laugh> Friday 
+B:  and then we 'll operate with that 
+
+B:  do we fix the system uh tomorrow or do we fix the system on Tuesday ? 
+
+C:  I think we fixed on Tuesday , yeah . 
+
+B:  I  Yeah , OK except that we do have to write it up . 
+
+B:  so maybe what we do is we  we  we uh as soon as we get the data from them we start the training and so forth 
+B:  but we start the write - up right away because as you say there  there 's only minor differences between these . 
+
+C:  I think you  we could  we could start soon , yeah . 
+C:  Write up something . 
+
+B:  Yeah , and  and I  I would  you know , I would  I 'd kind of like to see it 
+B:  maybe I can  I can edit it a bit 
+
+B:  Well anyway , sounds like there 'll be a lot to do just to <laugh> work with our partners to fill out the tables <laugh> over the next uh next few days 
+
+B:  Yes , so I mean  I think we have to actually get it done Tuesday 
+
+B:  but my assumption is that we basically have to be done Tuesday . 
+B:  Um so then next Thursday we can sort of have a little aftermath 
+
+B:  and  and uh maybe next meeting we can start talking a little bit about where we want to go from here uh in terms of uh the research . 
+B:  Um you know what things uh did you think of when you were uh doing this process that uh you just didn't really have time to adequately work on 
+
+C:  so basically we will  I think we 'll try to  to focus on these three architectures 
+C:  and  and perhaps I was thinking also a fourth one with just  just a single KLT 
+
+B:  Yeah , I mean that would be pretty low maintenance to try it . 
+
+B:  um Oh well the other thing I guess that I will say is that uh the digits that we 're gonna record momentarily is starting to get  are starting to get into a pretty good size collection 
+B:  and um in addition to the SpeechDat stuff we will have those to work with really pretty soon now 
+B:  so that 's  that 's another source of data . 
+
+B:  uh today we 're looking at a number of uh things we 're trying 
+

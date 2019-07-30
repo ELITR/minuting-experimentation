@@ -1,0 +1,186 @@
+A:  New version of the presegmentation . 
+
+C:  New version of presegmentation . 
+C:  Update on transcripts . 
+
+G:  And I guess that includes some  the filtering for the , the ASI refs , too . 
+
+F:  OK well , the , w uh as you can see from the numbers on the digits we 're almost done . 
+F:  The digits goes up to  about four thousand . 
+F:  Um , and so , uh , we probably will be done with the TI - digits in , um , another couple weeks . um , depending on how many we read each time . 
+
+F:  And so , once we 're  it 's done it would be very nice to train up a recognizer and actually start working with this data . 
+
+D:  So we 'll have a corpus that 's the size of TI - digits ? 
+
+F:  One particular test set of TI - digits . 
+
+C:  So , I 'm impressed by what we could do , Is take the standard training set for TI - digits , train up with whatever , you know , great features we think we have , uh for instance , and then test on uh this test set . 
+C:  And presumably uh it should do reasonably well on that , 
+C:  and then , presumably , we should go to the distant mike , and it should do poorly . 
+
+F:  Um , but , in order to do that we need to extract out the actual digits . 
+F:  Um , so that  the reason it 's not just a transcript is that there 're false starts , and misreads , and miscues and things like that . 
+F:  And so I have a set of scripts and X Waves where you just select the portion , hit R , 
+F:  um , it tells you what the next one should be , and you just look for that . 
+
+F:  And so the  the question is , should we have the transcribers do that or should we just do it ? 
+
+B:  and I think it 's a  it 's a fine idea partly because , um , it 's not un unrelated to their present skill set , 
+
+C:  Yeah just by way of uh , uh , a uh , order of magnitude , uh , um , we 've been working with this Aurora , uh data set . 
+C:  And , uh , the best score , on the , nicest part of the data , that is , where you 've got training and test set that are basically the same kinds of noise and so forth , uh , is about , 
+
+C:  I think the best score was something like five percent , uh , error , per digit . 
+
+C:  So  So the  The point there , and this is uh car noise uh , uh things , but  but real  real situation , 
+
+C:  Um , the  uh there 's one microphone that 's close , that they have as  as this sort of thing , close versus distant . 
+C:  Uh but in a car , 
+C:  instead of  instead of having a projector noise it 's  it 's car noise . 
+
+C:  I think that we could have done better on the models , 
+C:  but the thing is that we got  this  this is the kind of typical number , for all of the , uh , uh , things in this task , all of the , um , languages . 
+
+C:  Um , so , uh . Anyway , just an indication once you get into this kind of realm even if you 're looking at connected digits it can be pretty hard . 
+
+F:  I mean the prosodics are not the same as TI - digits , for example . 
+
+F:  Um , just what we were talking about with grouping . 
+F:  That with these , the grouping , there 's no grouping at all , and so it 's just  the only sort of discontinuity you have is at the beginning and the end . 
+
+C:  but it was  but it 's  but I mean . The very best system that I saw in the literature was a point two five percent or something that somebody had at  at Bell Labs , or . Uh , but . But , uh , sort of pulling out all the stops . 
+
+D:  do we do on TI - digits ? 
+
+C:  Uh , I th no I think we got under a percent , 
+
+F:  But that  I mean it 's really  it 's  it 's close - talking mikes , no noise , clean signal , just digits , I mean , every everything is good . 
+
+F:  OK , so , um , what I 'll do then is I 'll go ahead and enter , this data . 
+F:  And then , hand off to Jane , and the transcribers to do the actual extraction of the digits . 
+
+C:  One question I have that  that I mean , we wouldn't know the answer to now but might , do some guessing , but I was talking before about doing some model modeling of arti uh , uh , marking of articulatory , features , with overlap and so on . 
+
+C:  One thought might be to do this uh , on  on the digits , or some piece of the digits . 
+
+C:  The reason for doing it is because the  the argument is that certainly with conversational speech , the stuff that we 've looked at here before , um , just doing the simple mapping , from , um , the phone , to the corresponding features that you could look up in a book , uh , isn't right . 
+
+C:  In fact there 's these overlapping processes where some voicing some up and then some , you know , some nasality is  comes in here , and so forth . 
+
+C:  You know i you should . It should be such that if you , if you , uh , if you had o um , all of the features , determined that you  that you were uh ch have chosen , that that would tell you , uh , in the steady - state case , uh , the phone . 
+
+C:  Yeah , I mean , I I I 'm jus at the moment of course we 're just talking about what , to provide as a tool for people to do research who have different ideas about how to do it . 
+
+F:  But  What I 'm imagining is a score - like notation , where each line is a particular feature . 
+
+F:  Well the other difference is that the  the features , are not synchronous , 
+
+F:  They overlap each other in weird ways . 
+F:  So it 's not a strictly one - dimensional signal . 
+
+F:  Well not with our current system but you could imagine designing a system , that the states were features , rather than phones . 
+
+G:  You can add the features in , uh , but it 'll be underspecified . 
+
+D:  Well , you know , um  I mean if we 're talking about , having the , annotators annotate these kinds of features , it seems like , 
+
+D:  The  the question is , do they do that on , meeting data ? 
+
+C:  So I mean i we 'll see wha how much we can , uh , get the people to do , and how much money we 'll have and all this sort of thing , 
+
+D:  But it  it might be good to do what Jane was saying uh , you know , seed it , with , guesses about what we think the features are , based on , you know , the phone or Steve 's transcriptions or something . to make it quicker . 
+
+C:  So I mean that 's probably the right way to go anyway , is to  is to start off with an automatic system with a pretty rich pronunciation dictionary that , that , um , you know , tries , to label it all . 
+C:  And then , people go through and fix it . 
+
+C:  So , I mean another way to look at this is to , is to , uh , do some stuff on Switchboard which has all this other , stuff to it . 
+C:  And then , um , As we get , further down the road and we can do more things ahead of time , we can , do some of the same things to the meeting data . 
+
+A:  Uh , oh yeah , um , <breath> I worked a little bit on the  on the presegmentation to  to get another version which does channel - specific , uh , speech - nonspeech detection . 
+A:  And , what I did is I used some normalized features which , uh , look in into the  which is normalized energy , uh , energy normalized by the mean over the channels and by the , minimum over the , other . 
+A:  within each channel . 
+A:  And to  to , mm , to , yeah , to normalize also loudness and  and modified loudness and things and that those special features actually are in my feature vector . 
+A:  And , and , therefore to be able to , uh , somewhat distinguish between foreground and background speech in  in the different  in  each channel . 
+A:  And , eh , I tested it on  on three or four meetings and it seems to work , well yeah , fairly well , I  I would say . 
+A:  There are some problems with the lapel mike . 
+
+F:  So new use ninetieth quartile , rather than , minimum . 
+
+A:  Yeah  yeah , then  I  I did some  some  some things like that , 
+
+A:  Then , the , yeah , there are  there are some problems with  with  with n with normalization , and , then , uh , there the system doesn't work at all . 
+
+A:  And , the thing is I  I , then the evaluation of  of the system is a little bit hard , as I don't have any references . 
+
+B:  I think I might have done what you 're requesting , though I did it in the service of a different thing . 
+B:  I have thirty minutes that I 've more tightly transcribed with reference to individual channels . 
+
+A:  so , yeah  yeah , that  that  that 's great , but what would be nice to have some more meetings , not just one meeting to  to be sure that  that , there is a system , 
+
+F:  Yeah , so if we could get a couple meetings done with that level of precision I think that would be a good idea . 
+
+A:  It seems to me that it would be good to have , a few minutes from  from different meetings , 
+
+B:  so , would you be training then , um , the segmenter so that , it could , on the basis of that , segment the rest of the meeting ? 
+
+A:  I  I could do a  a retraining with that , yeah . 
+
+A:  but , there are some  some  as I said some problems with the lapel mike , 
+A:  but , perhaps we can do something with  with cross - correlations to , to get rid of the  of those . 
+
+A:  Well  well what I want to do is to  to look into cross - correlations for  for removing those , false overlaps . 
+
+C:  and  and having as much variety for speaker certainly would be a big part of that I think . 
+
+C:  So this , blends nicely into the update on transcripts . 
+
+B:  it drifted into the afternoon ,  <inbreath> uh , concerning this issue of , um , the , well there 's basically the issue of the interplay between the transcript format and the processing that , they need to do for , the SRI recognizer . 
+
+B:  And  the , what we discussed this morning , I would summarize as saying that , um , these units that result , in a  a particular channel and a particular timeband , at  at that level , um , vary in length . 
+B:  And , um , <mike noise> their recognizer would prefer that the units not be overly long . 
+
+B:  So , as a first pass through , a first chance without having to do a lot of hand - editing , what we 're gonna do , is , I 'll run it through channelize , give them those data after I 've done the editing process and be sure it 's clean . 
+B:  And I can do that , pretty quickly , with just , that minimal editing , without having to hand - break things . 
+B:  And then we 'll see if the units that we 're getting , uh , with the  at that level , are sufficient . 
+
+B:  And if they do need to be further broken down then maybe it just be piece - wise , maybe it won't be the whole thing . 
+
+B:  also we discussed some adaptational things , 
+
+B:  uh  You know I hadn't , uh , incorporated , a convention explicitly to handle acronyms , for example , 
+
+B:  And then , a similar conv uh , convention for numbers . 
+
+B:  Um , and also I 'll be , um , encoding , as I do my post - editing , the , things that are in curly brackets , which are clarificational material . 
+
+B:  So , it 's gonna be either a gloss or it 's gonna be a vocal sound like a , laugh or a cough , or , so forth . 
+B:  Or a non - vocal sound like a doors door - slam , and that can be easily done with a , you know , just a  one little additional thing in the , in the general format . 
+
+G:  And  uh , Jane had this nice , uh , idea of having , like an extra , uh couple tiers , 
+
+G:  And then there 's also , things like door - slams that 's really in no one 's channel , 
+
+G:  And we were thinking , that is useful also when there 's uncertainties . 
+G:  So if they hear a breath and they don't know who breath it is it 's better to put it in that channel than to put it in the speaker 's channel 
+
+G:  So the idea is then , uh , Don can take , uh , Jane 's post - processed channelized version , and , with some scripts , you know , convert that to  to a reference for the recognizer 
+
+G:  So  when that 's , ready  you know , as soon as that 's ready , and as soon as the recognizer is here we can get , twelve hours of force - aligned and recognized data . 
+
+A:  I  I  I thought that perhaps the transcribers could start then from the  those mult multi - channel , uh , speech - nonspeech detections , if they would like to . 
+
+B:  That 's very important . 
+
+G:  I mean it 's probably good enough for force - alignment . 
+
+G:  uh , but for free recognition I 'm  it 'll probably not be good enough . 
+G:  We 'll probably get lots of errors because of the cross - talk , and , noises and things . 
+
+F:  It 's , um , it 's by Crown , 
+F:  and it 's one of these sort of mount around the ear thingies , 
+
+F:  Since , what I decided to do , on Morgan 's suggestion , was just get two , new microphones , um , and try them out . 
+
+B:  the microphones  the new microphones , 
+

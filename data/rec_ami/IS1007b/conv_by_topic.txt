@@ -6,6 +6,7 @@ A:  meeting now is to to make presentation about uh the work for each one . And 
 B:  Okay . <cough> 
 C:  Okay 
 A:  control . 
+topic_description:	opening_None
 
 
 A:  And we have  think I got a new project requirement . So I think 
@@ -13,6 +14,7 @@ C:  .
 A:  uh teletext becomes outdated . So the popularity of the  since the popularity of the internet , and I think we don't need lighting adaptive , so the remote control should be only used for the the television . 
 C:  Okay . 
 A:  And of course we should have our image  in the in the design . 
+topic_description:	new requirements_None
 
 
 A:  So , let's start with the 
@@ -35,6 +37,75 @@ C:  Uh open . <laugh>
 A:  Do you want to open  
 B:  Because it's open you mean . <laugh> 
 A:  <laugh> 
+topic_description:	industrial designer presentation_None
+
+
+C:  <laugh> Right , so um I will talk about the the w working design and  
+B:  <other> F_ five . 
+D:  Slide show , view slide show ,  . 
+A:  Ah . 
+C:  And um well I I will present my my first idea on how to build the  our new remote control for television . So uh can you go one page down , please . So I think the first things to do is to define the hardware components neededs to achieve uh what we want to do . So uh mm I'm thin uh <other> I think uh I I'll do a survey about what is uh what is available on the market and what what is the the cheapest possible <laugh> things we hav we can use . 
+B:  <laugh> <other> 
+C:  Then uh I will try with the technical team to to build a prototype and to see uh with uh h how this little box <laugh> would uh look look like . And how an and we can uh start troubleshooting first uh com communication problems or things like that . And when we are ready with this first prototype I I think we can add some software functionalities on a programmable chip like browsing by content or um things like that . Okay so can you go down uh  
+B:  <laugh> <cough> 
+C:  So , wha what I think <laugh> for now <laugh> is <other> we don't want to have a remote control w which is wired so uh I think we u we can use a battery for the  . Then two programmable chips for both software functionalities and communication . And the communication with the T_V_ set is uh made through uh infrared communication 
+B:  <laugh> 
+A:  <laugh> 
+C:  So uh this is the <laugh> the schema of the <laugh> o of the future uh remote controls so uh you can you can see the components , uh battery and uh the two chips goes to the infrared uh connection to the T_V_ set . 
+D:  <laugh> 
+B:  Did you draw it ? <laugh> 
+A:  <laugh> Wow . <laugh> 
+B:  This  . What is the other chip for ? The one on top . 
+A:  This  
+C:  The one on top is for the um  well the functionali the functionalities and the the th red um  sorry the green one is is to  well , putting things together , um f transform the data into uh qu into the format to to  uh to communicate with the T_V_ set . 
+B:  <cough> 
+D:  One is a communication . 
+B:  For men . To the  in  <other> Okay . 
+C:  And , that's it . I think we should use a F_P_G_A_ for <laugh> for the functionalities which is easy to to t 
+B:  Mm . What is F_P_G_A_ ? 
+C:  It's field programmable uh something array . <laugh> Yeah . 
+D:  <other> Gateway arrays . It's a field programmable gateway arrays . 
+B:  So why's it  how is it different from the Bluetooth ? 
+C:  Well , uh a F_P_G_A_ is just a chip you can uh you can  pr programme it uh wi with wh whatever you want . And uh well the Bluetooth chip is just responsible to uh make the communication uh between uh the two devices . 
+B:  Yeah . Programme it . 
+D:  Yeah  . 
+B:  Okay . Yeah . <other> Uh  So this are the  they have to work together ? Or ? Do they have to work together or two separate choice  
+C:  No . Well , th the F_P_G_A_ will produce the the data to send . 
+B:  Okay . 
+D:  Or it's something like  isn't hardware the first one ? And the second one is for the software . Yeah to run th to make it run . That's it . 
+B:  Is the is the software par alri okay . 
+C:  Yeah . 
+B:  Okay , okay . So you can control  if you want , right ? <laugh> 
+C:  Yeah <laugh> . Alright and that's it for the working design . So if you have any questions ? 
+D:  No . 
+B:  Mm . 
+D:  Okay , and how about the battery power ? Uh you mean that battery would be somewhere there and the remote contro the power to the battery comes through infrared ? 
+C:  Uh no no no no , I think uh we have uh to to uh have uh embedded uh b batteries in in the  yeah into the t . Yeah , yeah . And uh I I don't think it will need um <other> very uh much power to make it run , so  
+A:   . 
+D:  Into the <other> more compact and uh  okay ,  . 
+B:  <other> <other> Mm . Mm . 
+D:  Yeah , yeah . Okay . 
+B:  Mm . You can put it on the charger when uh you when you don't need to use it . 
+C:  Yeah . It's a good idea . 
+D:  Yeah , that's right . Having a charger rather than putting the battery cells always . People don't like it to have to buy the batteries when they run out . We just make a small charger and put it  
+B:  Yeah . Yeah , yeah . 
+C:  Yeah . 
+B:  Yeah . Mm . Uh  mm . Y yeah , yeah . Because you are using because you are using Bluetooth , if some people have P_D_A_ they can use their P_D_A_ to control the T_V_ if they want to , right ? 
+C:  That's a good idea . 
+A:  You can i yeah . 
+D:  <other> 
+A:  Ma 
+C:  Also , but but <laugh> I I I think uh the the goal is to sell our remote <laugh> control . <laugh> S <laugh> okay , so charger for  is the  . 
+D:  Bu <other> 
+A:  <other> 
+B:  <laugh> I dunno . <laugh> 
+A:  Yeah we can change the b  . 
+D:  Our remote , we do not want to make it P_D_A_ . <laugh> 
+A:  Yeah . 
+B:  <laugh> 
+A:  Um . 
+B:  <other> 
+topic_description:	components, materials and energy sources_None
 
 
 B:  So is mine . 
@@ -44,6 +115,106 @@ A:  Mm . Oh we have  so let's move to to user interface design  .
 B:  Yeah . <other> So you can open uh <laugh> three . 
 A:  Participant  
 B:  Yeah . 
+topic_description:	interface specialist presentation_None
+
+
+B:  <other> So  So I'm working on the technical functions design .  can you show the next slide . 
+C:  <laugh> 
+A:  <laugh> During the weekend . 
+C:  <laugh> 
+A:  That's good . <laugh> 
+C:  <laugh> <laugh> <laugh> 
+A:  Mm-hmm . 
+D:  G 
+B:  So the the purpose is to to find uh the important questions to ask is what effect should the apparatus have . So <laugh> so I found on a webs on the internet <laugh>  yeah . <laugh> I spent a lot of time searching <laugh> and uh and I found that uh the function of remote control is to send messages to television set . <laugh> For example switch on , switch off , switch the next channel and so on and so on . 
+topic_description:	look and usability_None
+
+
+B:  So I found two very good prototypes for <laugh> for this interface from our competitors so can you <other>  
+C:  <laugh> <laugh> 
+A:  This are usual functionality  . 
+B:  Yeah , yeah , yeah . Ours is a bit uh different . So these are two example . One is from <other>  the other one is from , yeah , uh engineering centr yeah . This is the most competing prototypes I've found <laugh> . But then uh loo but then I found if you look at  you see on the left one there are too many buttons  
+A:  Tasks . 
+C:  <laugh> <laugh> <laugh> 
+A:  And they are small  . 
+B:  Yeah . O on the right I tried to play with <other> the problem is that uh if I have hundred channels I have uh I have to choo press the other button to choose the hundred channels and I have to compose the number so it's very lousy . <laugh> So you <laugh> so you move to the next the next one . 
+C:  <laugh> Yeah . Of course . 
+A:  Mm-hmm . Yeah . 
+B:  Yeah , so I talk about the problem . And then I I look at the user manual they are a hundred pages thick , so we don't want that . <laugh> 
+topic_description:	existing products_None
+
+
+B:  So I propose the easy to use uh prototype . You can navigate on T_V_ screen and we can  the user's preference and we need to have the T_V_ connected to internet so we end  in order to access the T_V_ programmes by X_M_L_ and we need some  to do some preprocessing . From the technical aspect , the processing should be done on the T_V_ set than on the <laugh> on the remote controller , right ? <laugh> And then we  the speech recognition as uh Harry says we may just put in  we may K_I_V_ . 
+C:  <laugh> 
+A:  What do you mean by the pa pa processing will be done on the T_V_ 
+B:  Yeah , all the processing is done  the T_V_ is a compu has some processing power the  <laugh> 
+A:  than the  
+C:  <laugh> So we have to t 
+A:  So we should have specific T_V_ ? Or ? We can use this . 
+B:  Yeah . 
+C:  We have to sell a T_V_ with the remote control too . <laugh> 
+A:  Yeah , we don't <laugh>  
+D:  <laugh> 
+B:  <laugh> Yeah because  <laugh> are you just wondering what controller  okay . 
+A:  Yeah , I think so . J j just the remote control . 
+D:  Yeah , not the T_V_s . 
+C:  I think there there is there is al there there is a a technology like show view who is already available on most of the T_V_ set on recorders or thing like that and we can try t to get this information on to the remote control to to do the processing on the remote control because  
+B:  Yeah . Okay . 
+D:  Yeah . 
+B:  Yeah . <other> Okay . So i the processing on on the remote controller  so it can u be used in any T_V_ , any conventional T_V_ sets ? 
+D:  Yeah , that's right . 
+A:  Mm . Yeah , we  . Yeah . 
+B:  Mm . Okay . <laugh> 
+A:  Speech recognition . 
+B:  N yeah , that's all . The next one ? 
+topic_description:	components, materials and energy sources_None
+
+
+B:  So I come up with a simple design , just keep the v navigation buttons . <laugh> 
+C:  Yes , that's a good idea , I think . We d we don't we we don't need really much buttons to  i if we have a screen to navigate on on the T_V_ so uh <other>  
+A:  Keep the navigation but  
+B:  Yeah . <laugh> Yeah . <laugh> 
+C:  Well , f four five buttons , it's sufficient . It's easy to build , 
+B:  Yeah . Mm . <laugh> <other> 
+D:  Yeah , that's right . 
+C:  it does not consume much power . <laugh> 
+A:   . 
+B:  <laugh> Okay , that's all . <laugh> 
+D:  Oh , but you have a catch there , um assume that um if you want to go to  if you are watching channel two and if you want to go to channel ninety nine , then <imitates zapping> . 
+B:  <other> 
+C:  Well , then y you you go to the main menu and uh you have uh go to channel and then uh you  can  
+B:  Mm . Mm . No , because you choose by channel , so  you choose by T_V_ program so you don't have hundred channels to choose from . 
+C:  Yeah . Maybe you  
+D:  Uh-huh huh huh huh . 
+C:   . 
+D:  Mm-hmm hmm hmm . 
+B:  If you go by channel , you don't have to do that . 
+C:   but uh I I think i i  if you if you want to to make uh  well a a big jump <laugh>  but uh well you you have to to have a a a device when you could you could  
+D:  But  
+A:  So you are  
+B:  Ah . Ah , a big jump . 
+D:  Yeah then yeah that's right . 
+B:  A mouse or  
+C:  Well , not a mouse but uh something that that says more clearly that uh right , left , up , down , well , the to have the ability to to to write something to the navigator , maybe directly , or  
+B:  Yeah . 
+D:  Mm hmm hmm . Okay . 
+A:  Mm . 
+D:  Okay . 
+C:  So , we can think of buttons like in the telephone to send messages or things like that . 
+B:  Mm . <other> Mm-hmm . 
+C:  But we'll see . <laugh> 
+A:  How the  this remote ? 
+B:  Uh it's gonna be small . <laugh> <other> Yeah . So it'll beep if you wanna find it you just uh shout  y h just  it just has to re respond to you when you look for the device . <laugh> I dunno how bu <laugh> 
+C:  <laugh> 
+A:  Yeah , of course <laugh> small . 
+D:  <laugh>  too small that it goes under the sofa and we can't find it . <laugh> 
+A:  <laugh> 
+D:  Yeah , that's  . 
+C:  <laugh> 
+D:   just  give it a name and we call him . <laugh> Yeah , that's right . Yeah , that's right . 
+B:  <laugh> And  responds to you , and  <laugh> 
+C:  <laugh> 
+topic_description:	look and usability_None
 
 
 C:  Okay , so uh next presentation  <laugh> 
@@ -52,10 +223,109 @@ A:  Participant four . So Harry .
 D:  Okay , after having the inputs from <other> industrial design and user interface , I think most of the points which I want to are already covered here . And to find the most interesting features what the users would be interested , then what we have done is we have put a feedback forms in all the magazines , and the users send the feedbacks , and based on that  
 C:  Mm . <laugh> 
 B:  <laugh> 
+topic_description:	marketing expert presentation_None
+
+
+D:  These are the findings which we got and  yeah adding of a speech interface is always good for a T_V_ remote but the technology  We already know that  as discussed earlier  
+C:  Well I I think it will be a , yes , a bit complicated to um make a speech recognisers runs on the small uh ts 
+B:  <other> <other> 
+D:  An <other> it does  how feasible it is . 
+A:  <other> 
+B:  I- <other> mm . But I think if you  to recognise numbers it's a well-studied problem . I if you just recognise uh numbers is a limited  you have limited vocabulary  
+D:  Oh we can put an limited vocabulary as in the mobile phones . We just have the  
+C:  Yeah . And this can allow to choose the the program , for instance without uh adding uh buttons 
+B:  Mm . Yeah . 
+C:  so it's a good idea . 
+D:   it's not going to take much space also . It's going to be very slim . And next one was the size of the remote control . It has to be of course a very slim and small one . 
+B:  Mm . Mm . 
+D:  And of course most of the people are interested in if it's less expensive , so this is an important criteria here is  
+B:  Mm . 
+A:  Mm-hmm . 
+B:  <other> But  <other> 
+A:  But do you think what they sug suggested s possibility  . 
+B:  <other> 
+D:  I mean we have to look for a trade-off . The features and the cost . 
+B:  Mm . Yeah . <other> I no  I I think that uh i if we go for quality people may tolerate for high quality and of course comes with uh reasonable cost . Maybe not less , but they may be willing to pay 
+C:  <laugh> 
+A:  Yeah . <laugh> 
+D:  <other> Little bit more if it's with extra features . 
+B:  little bit more for comfort , yeah , extra features . 
+C:  Yeah . 
+A:  It  Yeah . 
+C:  Yeah , s s speech is a important extra feature I think  
+D:  Okay . Yeah , yeah . That's right . 
+B:  Mm . <other> Yeah . 
+A:  But is it useful or not u 
+C:  Well , uh <other>  
+A:  I don't know . There is  in the <laugh>  
+D:  I mean , for a lazy guys they could say nine and the nine channel comes . Or they say movie name  or I don't go for movie names but only for the numbers on the channel , or volume up , volume down , brightness , contrast . 
+C:  <laugh> 
+B:  Mm . Mm . Mm . 
+A:  Mm . 
+D:  So , I think this should be a good idea , to put this features . And the fourth one was the teletext in various languages . 
+C:  Well , we are  we we just have to find a mean how to to add a m a a a microphone or uh well  yes a microphone into the the remote control , so  
+D:  Mm , I think  
+C:  I  well  it will be alright . <laugh> 
+B:  <other> 
+A:  I think i <other> 
+D:  <other> 
+B:  What is the teletext ? 
+A:  <other> If it's necessary can  you can do that . We can integrate small microphone in the remote so it's not really a problem . 
+B:  Mm . 
+C:  Yeah . Okay . 
+A:  What about lighting adaptive options ? According to the re to the new requirements I think we don't need that . 
+D:  Yeah as discussed in the earlier meeting , but <other> I think uh not much people are really interested in this point if it's not really required . 
+A:  Yeah . 
+B:  It is interesting but we are only concerned with the remote controller . 
+A:  Mm . 
+B:  So you need s special T_V_ sets to do that ? Or it's it's done via this remote controller ? It's very complex . 
+D:  I mean  
+C:  Yeah , I think it's a bit complex too  
+B:  <other> 
+D:  I mean  yeah , it's for the um industrial design and users interface designers to decide if it's going to be working or not . 
+B:  Mm . 
+C:  For our next product , our new T_V_ set with uh automatical uh sound adjustment <laugh> light   
+D:  I think  
+B:  Yeah , then we can conclude that . 
+A:  <laugh> 
+B:  Yeah . Yeah , but it's quite possible but maybe not in this project . 
+topic_description:	user requirements_None
 
 
 A:  So we have  I think we have s still we have couple of minutes . Mm-mm . <other> So any things to to discuss ? 
 A:  Or any suggestions ? 
+topic_description:	discussion_None
+
+
+D:  I think as I discussed th that four points would be good for um marketing . 
+B:  <other> <laugh> 
+D:  The speech interface and uh less uh reasonable uh cost . 
+A:  Expensive . Price . 
+B:  Mm . 
+D:  And the lighting adaptation and the teletext . And regarding the teletext uh these are the subtitl these are the text information which you got on the televisions . If you are watching an foreign movie , you get  subtitles sometimes . And uh if you are a French guy watching an English movie you would like to have it in French . And if I am a German then I would like to have the  my options in German . So , the remote  it should have some  it should give me some flexibility of choosing the ch languages . That should be a good uh point . 
+B:  Mm . <other> Okay . Yeah . <other> Okay . Mm . 
+C:   . <laugh> Function . Yeah , but well what about the the new project's requirement ? I I I think we should give up with teletext , no ? 
+A:  I think we we can we   is the  . 
+C:  Yes . Well , so maybe we we can j we can already think uh <other> about a way to to access the internet via the television . 
+B:  Mm . 
+C:  Because if  
+B:  Using the T_V_ to access the internet ? Or what ? I didn't quite understand  
+C:  Yeah , but uh we can think that in a few years there will be T_V_ set that can access the internet . 
+A:  Yeah . 
+B:  Yeah , okay . 
+C:  So it's a good idea if i i if we i if if we uh think about how to to to build up our remote uh control w with this functionality in a  w which will c which will come in a few years . So if we already have it in our remote control  
+D:  We already have some  . 
+A:  So you have to anticipate the the future ? 
+C:  Yeah . <laugh> Yeah . 
+B:  Yeah . <other> The future demand , market demand . <laugh> 
+D:  <other> Yeah , that's right . 
+C:  Yeah , to desi well , not not to implement it , but to  well , to find a way to to add to add this functionality in a  yeah , in an in an easy manner , if is possible . <laugh> 
+B:  The functionality in the future . Alright . 
+A:   . In future . 
+B:  Yeah . Because all the T_V_ sets will be digital , right . All the programmes , everything will be in digital than analog . Th the system will change and we have to anticipate for those change . 
+C:  <other> Yeah , yeah . 
+D:  Yeah ,  . 
+topic_description:	other_marketing strategy
 
 
 C:  Okay . So  
@@ -64,5 +334,6 @@ C:  Okay , thank you .
 A:  we will meet after . 
 D:  Okay , thank you . 
 B:  Okay . Thank you . 
+topic_description:	closing_None
 
 

@@ -1,0 +1,89 @@
+D:  Uh one of them is to work on the semantics of the belief - net which is going to be the main inference engine for thi the system uh making decisions . 
+D:  And we 're also , sort of uh in the same process , going to work with Fey on what there should be in the dialogues . 
+abst_sum - abstract: The main focus of the meeting was firstly on the structure of the belief-net, its decision nodes and the parameters that influence them, and secondly, on the design of the data collection tasks.
+
+C:  And um  And Fey has some thirty subjects lined up ? 
+D:  So we  yeah we don't know how many we can get next door at the  uh shelter for example . 
+abst_sum - abstract: For the latter, there are already 30 subjects lined up and more are expected to be recruited off campus.
+
+C:  And um  And then they gonna have to f um um choose from one of these tasks , which are listed here . 
+D:  so if  if it 's one service , one luxury item , you know , one big - ish place , and so forth and so on , um  then my guess is that  that the data is going to be easier to handle . 
+E:  That w maybe one thing we should do is go through this list and sort of select things that are categories and then o offer only one member of that category ? 
+abst_sum - abstract: It was agreed that making subjects select from categories of tasks, such as "big place", "service", etc. could provide a better range of data.
+
+D:  I b My guess is it 's gonna be ten . 
+abst_sum - abstract: The duration of each dialogue will probably be no more than 10 minutes.
+
+None
+abst_sum - abstract: On the other hand, the organisation of the intermediate nodes of the belief-net and their properties is almost complete, although no conditional probabilities have been inserted yet.
+
+D:  And decisions are going to turn out to be parameter choices for calls on other modules . 
+abst_sum - abstract: These nodes represent decisions that will function as parameters to action calls in the system.
+
+C:  And that we can actually infer them to a significant de degree , or we ask . 
+D:  Or  eh so , y but there 's th but definitely a back - off position to asking . 
+abst_sum - abstract: Their values will either be inferred from the user-system interaction, or -as a last resort- requested directly from the user.
+
+D:  OK , Because uh  we do wanna get them r u perfectly  but I think we 're gonna have to do a first cut at a lot of them to see how they interact . 
+abst_sum - abstract: Finally, as to the semantic and syntactic constructions, work will start with more general and brief descriptions, before moving to exhaustive analysis of at least a subset.
+
+D:  We are expecting Johno to build a parser , 
+D:  Uh  He 's g he 's hoping to do this for his masters ' thesis s by a year from now . 
+D:  Uh  limited . 
+D:  Well , the hope is that the parser itself is , uh , pretty robust . 
+abst_sum - abstract: Similarly, the construction parser that is to be built within a year is expected to be relatively basic, yet robust.
+
+C:  Maybe  I suggest we make some fine tuning of these , get  sort of  run through ten or so subjects 
+D:  Um But anyway  yeah , so I think  it 's a good idea to start with the sort of relatively straight forward res just response system . 
+abst_sum - decisions: As the data collection is ready to start, it was agreed that for the first ten subjects the interaction with the system/instructor will be along the lines of a basic response system.
+
+C:  And um  And then they gonna have to f um um choose from one of these tasks , which are listed here . 
+E:  That w maybe one thing we should do is go through this list and sort of select things that are categories and then o offer only one member of that category ? 
+D:  like at you know , " attend a theater , symphony or opera " is  is a group , 
+D:  and " tour the university , castle or zoo " , 
+abst_sum - decisions: Tasks will be divided in categories ("tour", "attend" etc) and subjects are going to be asked to choose no more than one task out of each category .
+
+C:  so  trying to im um  implant the intention of going to a place now , going to a place later on the same tour , 
+C:  and see whether we wanna make it more complex or not , depending on what  what sort of results we 're getting . 
+E:  Um  I  I would say maybe two weeks . 
+D:  Let 's plan next Monday , OK , to have a review of what we have so far . 
+C:  This means audio , but  
+D:  but it would be great if you could , um , not transcribe it all , but pick out uh , some stuff . 
+D:  And then if we want to uh  get them to start doing  uh  multiple step planning with a whole bunch of things and then organize them 
+D:  tell them which things are near each other 
+D:  and we 're gonna start thinking a about  uh  what constructions we want to elicit . 
+abst_sum - decisions: This first run will probably take a couple of weeks, but the first results (audio files and selected highlights) will be discussed shortly, in order to decide whether more detail (complex spatial relationships, temporal planning etc) should be included in the design or particular constructions be elicited.
+
+C:  see this  this  this  uh  ontology node is probably something that I will try to expand . 
+C:  And hopefully you can sort of also try to find out , you know , sooner or later in the course of the summer what we can expect to get from the discourse that might , you know  or the  
+abst_sum - decisions: Regarding the completion of the belief-net, the remaining details, mainly the properties of the ontology and discourse nodes, should be added.
+
+D:  Uh Robert and Eva and Bhaskara are gonna actually  build a belief - net that  that , um , has CPT 's and , you know , tries to infer this from various kinds of information . 
+abst_sum - decisions: After building in the conditional probability tables, a working prototype of the net will be ready.
+
+D:  OK , Because uh  we do wanna get them r u perfectly  but I think we 're gonna have to do a first cut at a lot of them to see how they interact . 
+abst_sum - decisions: Finally, the initial work on constructions should focus on a general overview of the dialogues with brief descriptions.
+
+D:  whatever you need in order to uh , be able to then , uh , by hand , you know , explain , some fraction of the utterances . 
+abst_sum - decisions: Further analysis will follow from there in a top-down fashion.
+
+C:  so there 's a lot of things where we have no analogous tasks , and  that may or may not be a problem . 
+abst_sum - problems: Although there is an effort to include some of the key features of the belief-net in the design of the data gathering, not all of them can be built in.
+
+C:  And these are the data tasks where w we can assume the person would like to enter , view or just approach the thing . 
+D:  Now of course you have this I guess possible danger that somehow there 're certain constructions that people use uh when talking about a museum that they wouldn't talk about with a university and stuff , 
+abst_sum - problems: The tasks that the subjects will have to carry out will be categorised in ways that will indicate EVA intentions, however, this approach may limit the variety of possible constructions used within a single category of entities.
+
+None
+abst_sum - problems: On the other hand, generating more diverse dialogues may have an adverse effect from a speech recognition perspective.
+
+C:  And um we 're still l looking for a room on the sixth floor because they stole away that conference room . Um  behind our backs . 
+C:  David and  and Jane and  and Lila are working on that as we speak . 
+abst_sum - problems: A minor problem has arisen with the laboratory where recordings are supposed to take place, but this is currently being sorted out.
+
+None
+abst_sum - problems: As regards the completion of the belief-net, no work has been done on the CPT's yet.
+
+B:  And I  I me it would it would be completely out of the question to really do more than , say , like , oh I don't know , ten , over the summer , 
+abst_sum - problems: Finally, it was noted that although a general overview of the pertinent constructions is attainable, no more than ten of them can be analysed in detail with the summer months.
+

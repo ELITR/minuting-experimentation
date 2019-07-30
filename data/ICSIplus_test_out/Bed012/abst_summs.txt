@@ -1,0 +1,75 @@
+None
+abst_sum - abstract: The focus of the meeting was on a presentation of the work done already on the building of the Bayes-net.
+
+B:  That 's basically  just specifying the  the input for the  w what 's 
+A:  it 's based on things like , uh , there 's gonna be a node for Go - there or not , and there 's gonna be a node for Enter , View , Approach . 
+abst_sum - abstract: The input layer deriving information from things like the user and situation models, feeds into a set of decision nodes, such as the Enter/View/Approach (EVA) endpoint.
+
+B:  And some  some things will always be sort of too  not significant enough . 
+abst_sum - abstract: In any particular situation, most of the outputs will not be relevant to the given context.
+
+A:  Cuz , that 's what  I mean , in the Bayes - net you always ask for the posterior probability of a specific node . 
+abst_sum - abstract: Therefore, they will either have to be pruned a posteriori, or only a subset of the possible decision nodes will be computed in each occasion.
+
+B:  I mean , maybe it does make a difference in terms of performance , computational time . 
+C:  So basically , you 'd have a decision tree  query ,  Go - there . 
+C:  And just basically do a binary search through the  ? 
+abst_sum - abstract: The latter option could could follow a binary search-tree approach and it could also be better in computational terms.
+
+C:  You won't  it 'll be hard to decide . 
+abst_sum - abstract: In any case, on what basis the "winner" output is chosen is not clear.
+
+C:  And for the Where - Is construction , we know we need to l look at this node , that merges these three things together 
+C:  So my i So , if we were to it with a Bayes - net , we 'd have to have a node  for every question that we knew how to deal with , 
+C:  Every construction . 
+abst_sum - abstract: One suggestion was discussed: the particular constructions used can determine the pertinent decision (output) nodes.
+
+B:  And , um , finish up this Bayes - net . 
+B:  And we present our results , 
+abst_sum - abstract: The complete prototype of the Bayes-net will be presented in the next meeting.
+
+B:  OK . Because then , once we have it sort of up and running , then we can start you know , defining the interfaces 
+B:  and then hook it up to some fake construction parser 
+abst_sum - abstract: After that, it will be possible to define interfaces and a dummy construction parser, in order to test and link modules together.
+
+C:  Every construction . 
+abst_sum - decisions: The suggestion that the most appropriate decision node of the belief-net in each situation could be chosen as a function of what construction was used, was deemed unsuitable at this stage.
+
+B:  Because there are interdependencies , 
+abst_sum - decisions: There are many interdependencies between the output nodes that this approach could not take into account.
+
+B:  sometime  this week  again 
+B:  and finish up the , uh , values of this . 
+abst_sum - decisions: The rest of the values for the Bayes-net nodes will be built in within the week.
+
+B:  And , um , finish up this Bayes - net . 
+B:  And we present our results , 
+abst_sum - decisions: The finished prototype will be presented during the next meeting.
+
+B:  As , if I understand it correctly , it always gives you all the posterior probabilities for all the values of all decision nodes . 
+B:  So , it  n I mean  a All I 'm saying is , whatever our input is , we 're always gonna get the full output . 
+B:  What  what  what I am thinking , or what we 're about to propose here is we 're always gonna get the whole list of values and their posterior probabilities . 
+A:  Cuz , that 's what  I mean , in the Bayes - net you always ask for the posterior probability of a specific node . 
+abst_sum - problems: Any set of inputs will provide either the whole range of output values of the Bayes-net or an a priori selection of those outputs.
+
+B:  and the question is what to do with it , 
+B:  And now we need an expert system or belief - net or something that interprets that , 
+D:  Well , eventually , you still have to pick out which ones you look at . 
+abst_sum - problems: In both cases, what is needed is a way to single out the appropriate outputs for any given context.
+
+B:  So the person said , um , " Where is X ? " 
+B:  we want to know , um , is  Does he want info ? 
+B:  Or does he want to go there ? 
+abst_sum - problems: For example, in the case of a "where is" question, whether the prevalent output should be "Go-there" or "Info-on" or even a third option has to be computed somehow.
+
+None
+abst_sum - problems: In any case, there are many input values that have not been entered in the Bayes-net at this stage.
+
+B:  Yeah , I can worry about the ontology interface 
+B:  and you can  Keith can worry about the discourse . 
+abst_sum - problems: Furthermore, no inputs for the Ontology and Discourse can be built in yet, as they involve research that will be carried out in the future.
+
+C:  Also , I 'm somewhat boggled by that Hugin software . 
+C:  I can't figure out how to get the probabilities into it . 
+abst_sum - problems: Finally, there has been a problem with adding probabilities in a net created with the Hugin software, but this should be overcome very shortly.
+

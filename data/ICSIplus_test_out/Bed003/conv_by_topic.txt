@@ -64,8 +64,10 @@ D:  I 'm sorry I
 C:  Well , I mean ,  just to  
 B:  OK . Introduce . 
 D:  OK . 
+topic_description:	opening
 
 
+topic_description:	general discourse features for higher layers
 
 
 A:  Good . 
@@ -103,6 +105,7 @@ A:  Mm - hmm .
 C:  Yeah .  
 A:  So , 
 A:  um 
+topic_description:	belief network: intermediate nodes
 
 
 C:  <breath> Yeah , um <mouth> Well , " the search for the middle layer " .  It 's basically uh 
@@ -306,6 +309,7 @@ B:  <laugh>
 B:  My first approach failed . 
 D:  Right .  
 B:  What I learned . OK , so I think that uh our presentation 's finished . 
+topic_description:	me012's presentation of current system
 
 
 D:  <breath> Right . can I just ask the nice walls part of it is that <breath> 
@@ -353,6 +357,7 @@ D:  Right .
 D:  Something you want to inspect at close range  because it 's interesting . OK . 
 A:  The  
 B:  Exactly . 
+topic_description:	'nice walls' feature
 
 
 A:  Well there  there is a term  that 's often used . That 's " saliency " , or the " salience " of an object . 
@@ -390,6 +395,7 @@ D:  They 're not mutually exclusive ?
 B:  direct navigational  Yeah . 
 D:  Right . Right . Definitely . 
 B:  OK . 
+topic_description:	touristic 'landmark'
 
 
 B:  OK , So our initial idea was not very satisfying ,  
@@ -456,6 +462,7 @@ B:  Or they might be more likely to be using the place that they want to go to a
 B:  like a  navigational point to go to another place . 
 D:  Mm - hmm . 
 B:  Whether the destination was their final destination , whether the destination was closed . Those are all  
+topic_description:	set up features re tourist goals
 
 
 B:  " Let 's look at the belief - net "  OK . So that means that I should switch to the  other program . 
@@ -541,6 +548,7 @@ D:  So all of those
 D:  Some of them come from the utterance  and some of them are sort of <breath> 
 D:  either world knowledge or situational  things . Right ? So that you have no distinction between those and @ @ OK . 
 B:  Right . 
+topic_description:	look at belief net
 
 
 B:  OK . so one thing I  I 'm 
@@ -684,6 +692,7 @@ C:  Yeah , correct .
 D:  Mm - hmm . 
 D:  Um . 
 B:  Right . Excellent . 
+topic_description:	discuss various features
 
 
 C:  We can do a little demo . <breath> 
@@ -752,6 +761,7 @@ C:  Yeah .
 B:  If it 's night time ,  they have not discussed admission fee , and the n walls are nice . So , yeah . 
 B:  I guess that  sort of makes sense . 
 B:  The reason I say the  demo doesn't work very well is yesterday we uh   
+topic_description:	demo belief net
 
 
 D:  So . Are " doing business " versus " tourist "  They refer to your current task . Like  like current thing you want to do at this moment . <breath> 
@@ -830,6 +840,7 @@ A:  Mm - hmm .
 B:  We were th 
 C:  But uh  I don't know y what the right thing is to do for that . I 'm not  
 C:  I don't know if I totally am happy with <breath> the way it is . 
+topic_description:	context = tourist, business or unknown
 
 
 A:  How long would it take to  to add another  node on the observatory and , um , play around with it ? 
@@ -961,6 +972,7 @@ B:  <laugh>
 A:  from that point of view . 
 A:  Huh . 
 D:  <laugh> 
+topic_description:	'enterable' = variable?
 
 
 A:  Can we add , just so I can see how it 's done , uh , a " has door "  property or  ?  
@@ -1020,6 +1032,7 @@ B:  Oops .
 C:  Hmm . 
 A:  Maybe you can read in ? 
 C:  Ha - 
+topic_description:	shows how done
 
 
 C:  So have you used JavaBayes a lot ? 
@@ -1194,6 +1207,7 @@ B:  I could have misread the web page , I have a habit of doing that , but .
 D:  <breath-laugh> 
 A:  OK , wonderful . 
 C:  OK . 
+topic_description:	how JavaBayes works
 
 
 D:  So a more general thing than " discussed admission fee " um , could be  I  I 'm just wondering whether the context , the background context of the discourse <breath> 
@@ -1282,6 +1296,7 @@ A:  Yep .
 D:  Mm - hmm . 
 A:  Precisely . 
 A:  So . 
+topic_description:	general features from discourse context
 
 
 B:  One thing that 's kind of been bugging me 
@@ -1347,6 +1362,7 @@ A:  based on that result is never going to enter that building . You know ? Beca
 B:  Oh yeah , I think I see . 
 B:  So the discourse refers to " admission fee " but it just turns out that 
 B:  they change their mind in the middle of the discourse . 
+topic_description:	connecting 'admission fee' node
 
 
 B:  What sort of discourse  processing is uh  are the  
@@ -1416,6 +1432,7 @@ B:  <laugh-breath>
 A:  fees in his entire life ? 
 A:  And the dialogues are pretty  pretty you know <breath> 
 A:  concise and  Anyway . 
+topic_description:	discourse processing in SmartKom
 
 
 D:  So one thing that might be helpful which is implicit in the  
@@ -1464,6 +1481,7 @@ A:  You execute a whole plan of going through a hundred and fifty steps ,
 A:  you know , without any information other than " New York " , huh ? 
 A:  inferring everything from the context . So , 
 A:  works . 
+topic_description:	plan recognition helpful?
 
 
 A:  Um , even though there is probably no train from here to New York ,  right ? 
@@ -1560,6 +1578,7 @@ D:  Right .
 C:  <laugh> 
 C:  Yeah . 
 B:  <laugh> 
+topic_description:	chitchat
 
 
 D:  So by the way tha that structure  
@@ -1591,6 +1610,7 @@ D:  That feed into those ?
 A:  Nah ? 
 D:  Mm - hmm . 
 A:  Might be  might be a nice dichotomy of  of the world . 
+topic_description:	cue-based v task-based
 
 
 C:  Yeah , another thing to do , um , is also to , um  I guess to ask around people about other Bayes - net packages . 
@@ -1663,6 +1683,7 @@ A:  The other thing um
 A:  I will  
 A:  oh yeah , 
 A:  Yep . 
+topic_description:	how to proceed
 
 
 A:  I suggest w to  for  
@@ -1690,6 +1711,7 @@ A:  And then these should then connect somehow to the more plan - based deep spa
 C:  Yeah . 
 B:  Basically just refine  some of the 
 A:  Yep . 
+topic_description:	segmenting off regions of features
 
 
 C:  Yeah , this is totally like  The probabilities and all are completely ad - hoc . We need to look at all of them . 
@@ -1732,6 +1754,7 @@ D:  <inbreath> In which case you 're supposed to alert the authorities , <laugh>
 B:  <laugh> Yeah . 
 C:  <laugh> Yeah . 
 D:  <breath> 
+topic_description:	ad-hoc probabilities
 
 
 A:  OK , I have to report <breath> 
@@ -1816,6 +1839,7 @@ C:  <laugh>
 D:  <laugh> 
 C:  <breath-laugh> 
 A:  <breath-laugh> 
+topic_description:	data collection
 
 
 D:  So , is it a experimental setup for the 
@@ -1930,6 +1954,7 @@ D:  Exactly .
 A:  Whereas , you know , 
 A:  if we 'd just get data we 'd never know what they actually wanted , 
 A:  we 'd get no cues . 
+topic_description:	experimental setup
 
 
 B:  Alrighty . 
@@ -1953,5 +1978,6 @@ B:  <laugh>
 C:  <laugh> 
 D:  OK . Switching o  
 C:  <noise> 
+topic_description:	closing
 
 

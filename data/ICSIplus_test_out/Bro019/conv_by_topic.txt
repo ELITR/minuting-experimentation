@@ -58,6 +58,7 @@ C:  R - nineteen .
 F:  Yeah . We 're  This is session R - nineteen . 
 C:  If you say so . 
 C:  <inbreath> 
+topic_description:	opening
 
 
 C:  O K . Do we have anything like an agenda ? What 's going on ? Um . 
@@ -77,6 +78,7 @@ C:  Mm - hmm .
 C:  OK . 
 C:  Why don't you start with that ? That 's sort of  Yeah ? 
 F:  OK . 
+topic_description:	summary of meeting agenda items
 
 
 F:  We um  So we just put in an order for 
@@ -95,6 +97,7 @@ F:  find me .
 D:  Mmm . 
 F:  Especially with regard to the Aurora stuff . He  he knows that stuff better than I do . 
 A:  OK . 
+topic_description:	computing environment
 
 
 F:  So the plan for using these is , uh , we 're running P - make and Customs here and Andreas has sort of gotten that all 
@@ -191,6 +194,7 @@ G:  <laugh>
 F:  Yeah , so , um , yeah . I  I can  I 'm not sure about that one . But uh . 
 C:  yeah . 
 C:  <inbreath> OK . 
+topic_description:	P-Make, Customs network
 
 
 G:  Um , I have  I have a question about the uh , 
@@ -259,6 +263,7 @@ F:  But , if you
 F:  i It 's meant to be run one job at a time ? 
 F:  So you could fire off a thousand of those , and it doesn't know  any one of those doesn't know about the other ones that are running . 
 D:  <clears throat> 
+topic_description:	parallelization, running multiple jobs
 
 
 C:  <inbreath> OK . <outbreath> Well , why don't we uh , 
@@ -292,6 +297,7 @@ F:
 G:   
 C:   
 A:  And u 
+topic_description:	report from Sunil, speech enhancement
 
 
 A:  First I tried just LDA . And then I found that uh , 
@@ -346,6 +352,7 @@ A:  I just found that I have to reduce the value  I mean , I have to increase th
 A:  That 's all I found So I have to . 
 A:  Uh , 
 A:  Yeah . 
+topic_description:	LDA filter application
 
 
 A:  And uh , 
@@ -490,8 +497,10 @@ A:  Yep .
 A:  Yeah . 
 C:  Cool . 
 C:  <inbreath> 
+topic_description:	Aurora baseline performance, on-line normalization
 
 
+topic_description:	report from Andreas, Sunil, related experiments
 
 
 C:  Um , 
@@ -731,6 +740,7 @@ C:  that you would have a bunch of people driving around in a bunch of cars , an
 A:  Yeah , yeah , yeah . 
 C:  Uh , 
 C:  <inbreath> So <outbreath> 
+topic_description:	French Telecom feature manipulation, LDA filter
 
 
 C:  What else is going on ? 
@@ -816,6 +826,7 @@ C:  <laugh> Right , so he 's doing a signal subspace thing , maybe it would work
 D:  Yeah , mm - hmm . 
 A:  Yeah . 
 D:  Mm - hmm . 
+topic_description:	spectral subtraction
 
 
 A:  So I 've been thinking about combining the Wiener filtering with signal subspace , 
@@ -902,6 +913,7 @@ C:  <mike noise>
 D:  Yeah . 
 C:  OK . 
 A:  <mike noise> 
+topic_description:	combining Wiener filtering with signal subspace
 
 
 D:  Uh , yeah . So there is this . And 
@@ -972,6 +984,7 @@ C:  Another thing would be to have t to  to pick two pol two plausible things , 
 D:  Mm - hmm . 
 C:  but , w um , 
 C:  uh , he 'll have some ideas on that too . 
+topic_description:	Vector Taylor Series (VTS)
 
 
 A:  The other thing is to , uh  Most of the speech enhancement techniques have reported results on small vocabulary tasks . 
@@ -1054,6 +1067,7 @@ F:  <mike noise>
 C:  But um , 
 C:  Good . 
 C:  OK . 
+topic_description:	large vocabulary continuous speech tasks
 
 
 C:  Anything else going on ? at you guys ' end , or  ?  
@@ -1106,6 +1120,7 @@ B:  to have more information .
 A:  Yeah . Make it longer . 
 B:  Uh , sixty - two point five milliseconds I think . 
 A:  OK . 
+topic_description:	report from Carmen, voicing detection experiments
 
 
 B:  And 
@@ -1281,6 +1296,7 @@ C:  I mean , it doesn't do it very specifically , and
 D:  Mm - hmm . 
 C:  pretty  you know . But . 
 A:  Yep . 
+topic_description:	neural network application versus feature selection
 
 
 C:  Uh , anything on your end you want to talk about ? Uh . 
@@ -1315,6 +1331,7 @@ F:  Mmm .
 D:  <clears throat> 
 G:  um , 
 G:  and doing  doing TRAPS on  on these e events too , just , um , seeing  seeing if that 's possible . Uh , and 
+topic_description:	report from Barry, detecting acoustic events
 
 
 G:  um , other than that , uh , I was kicked out of I - house for living there for four years . 
@@ -1379,6 +1396,7 @@ D:  <laugh>
 G:  yeah 
 A:  Yeah . Yeah . <laugh> Yeah . 
 A:  Yeah . 
+topic_description:	chitchat
 
 
 C:  Um , 
@@ -1484,6 +1502,7 @@ C:  as what you  But  but yeah , you view each complex pair as essentially a sec
 C:  um  
 C:  But . 
 C:  Yeah . 
+topic_description:	report from speaker me026, PLP formant synthesizer
 
 
 C:  O K . So , uh , yeah , you 're going back today and then back in a week I guess , and . 
@@ -1501,6 +1520,7 @@ F:  You wanna go ahead ?
 B:  <outbreath> 
 C:  Sure . 
 F:  OK . 
+topic_description:	closing
 
 
 C:  Transcript L dash one four two  
@@ -1579,5 +1599,6 @@ D:  nine two three nine two nine zero zero five six
 D:  zero nine zero one seven nine eight five O five O five  
 D:  nine two five four four four three nine five  
 D:  eight nine eight four three zero four two three two nine seven  
+topic_description:	digit task
 
 

@@ -1,0 +1,155 @@
+F:  Let 's see , maybe we should just get a list of items  
+
+F:  I guess there 's the usual  updates , 
+F:  everybody going around and saying , uh , you know , what they 're working on , 
+F:  the things that happened the last week . 
+
+F:  Uh , do you want to start , Stephane ? 
+
+C:  Well , the first thing maybe is that the p Eurospeech paper is , uh , accepted . 
+
+C:  So it 's the paper that describe basically the , um , system that were proposed for the  Aurora . 
+
+C:  So and the , fff  comments seems  from the reviewer are good . 
+
+C:  well , I 've been working on  on t mainly on on - line normalization this week . 
+C:  Uh , I 've been trying different  slightly  slightly different approaches . 
+
+C:  This actually don't s doesn't seem to help , 
+C:  although it doesn't hurt . 
+
+C:  But  well , both  on - line normalization approach seems equivalent . 
+
+B:  So do you maybe make errors in different places ? 
+B:  Different kinds of errors ? 
+
+C:  I didn't look , uh , more closely . 
+
+B:  I I really would like to suggest looking , um , a little bit at the kinds of errors . 
+B:  I know you can get lost in that and go forever and not see too much , but  <breath> sometimes , 
+
+B:  just seeing that each of these things didn't make things better may not be enough . 
+B:  It may be that they 're making them better in some ways and worse in others , 
+B:  or increasing insertions and decreasing deletions , 
+
+B:  you know , helping with noisy case 
+B:  but hurting in quiet case . 
+B:  And if you saw that then maybe you  it would  <mouth> something would occur to you of how to deal with that . 
+
+C:  Yeah . I 've been playing a little bit with some kind of thresholding , 
+
+C:  as a first experiment , I think I 
+
+C:  no , the maximum energy of s each utterance 
+
+C:  Then put a threshold that 's fifteen DB below  
+
+C:  Actually it was not a threshold , 
+C:  it was just adding noise . 
+
+C:  When we look at  at the , um , MFCC that result from this , they are  a lot more smoother . 
+
+C:  And the result that we have in term of speech recognition , actually it 's not  it 's not worse , 
+C:  it 's not better neither , 
+
+C:  A third thing is that , um , <outbreath> I play a little bit with the , um  <outbreath> finding what was different between , um , 
+
+C:  he had the France Telecom blind equalization in the system . 
+
+C:  the number o of MFCC that was  were used was different . 
+C:  You used thirteen 
+C:  and we used fifteen . 
+
+D:  Uh , so the  the  right now , the  the system that is there in the  what we have in the repositories , with  uses fifteen . 
+
+D:  So , we haven't  w we have been always using , uh , fifteen coefficients , 
+D:  not thirteen ? 
+
+D:  um , I 'll t s run some experiments to see whether  once I have this <3 tongue taps>  noise compensation to see whether thirteen and fifteen really matters or not . 
+D:  Never tested it with the compensation , 
+D:  but without , <breath> uh , compensation it was like fifteen was s slightly better than thirteen , 
+
+F:  How about you , Barry ? 
+
+A:  Um , <mouth> still working on my  my quals preparation stuff . 
+A:  Um , <mouth> so I 'm  I 'm thinking about , um , starting some , <breath> uh , cheating experiments to , uh , determine the , um  <mouth> the relative effectiveness of , um , some intermediate categories that I want to classify . 
+A:  So , for example , um , <mouth> if I know where voicing occurs and everything , um , <mouth> I would do a phone  um , phone recognition experiment , 
+
+A:  And so this would be a useful thing , um , to know <breath> in terms of , like , which  which , um  which of these categories are  are good for , um , speech recognition . 
+
+A:  I hope to get those , uh  those experiments done by  by the time quals come  come around in July . 
+
+G:  Well , in my lunch talk last week I  I said I 'd tried phase normalization and gotten garbage results using that l um , long - term mean subtraction approach . 
+G:  It turned out there was a bug in my Matlab code . 
+
+G:  and , um , the results <clears throat> were  were better . 
+
+G:  But they still weren't as good as just subtracting the magnitude  the log magnitude means . 
+G:  And also I 've been talking to , um , Andreas and Thilo about the , um , SmartKom language model 
+G:  and about coming up with a good model for , um , far mike use of the SmartKom system . 
+
+G:  I 'm gonna be working on , um , implementing this mean subtraction approach in the <breath> far - mike system  
+G:  for the SmartKom system , I mean . 
+
+B:  Also , I guess we had  we 've had these , uh , little di discussions  
+
+B:  So , I mean , I  I guess that was something I could say would be that we 've talked a little bit about 
+B:  you just doing it all with complex arithmetic 
+
+B:  and not  not , uh , doing the polar representation with magnitude and phase . 
+
+G:  And so I thought at first , um , that , uh , what I should do is unwrap the phase 
+
+G:  Um , but I actually got worse results doing that unwrapping using the simple phase unwrapper that 's in Matlab than I did not unwrapping at all . 
+
+F:  How about you , Sunil ? 
+
+D:  So , um , I 've been , uh , implementing this , uh , Wiener filtering for this Aurora task . 
+
+D:  I  I actually thought it was  it was doing fine when I tested it once . 
+D:  I it 's , like , using a small section of the code . 
+
+D:  and I got , <breath> like , worse results than not using it . 
+
+D:  So , I 've been trying to find where the problem came from . 
+D:  And then it looks like I have some problem in the way  
+D:  there is some  some very silly bug somewhere . 
+
+D:  I  I mean , i uh , it actually  i it actually made the whole thing worse . 
+
+D:  and it 's , like  w it 's  it 's very horrible . 
+
+D:  I was like  I 'm trying to find where the m m problem came , 
+
+D:  Well , Hynek showed up one  suddenly on one day 
+
+D:  So I was actually  that day I was thinking about d doing something about the Wiener filtering , and then Carlos matter of stuff . 
+
+D:  And then he gave me a whole bunch of filters  
+D:  what Carlos used for his , uh , uh , thesis 
+
+D:  So instead of designing our own new Wiener filters , I may just use one of those Carlos filters in  in this implementation 
+
+D:  that  so that is the next thing . Once this  I  once I sort this pro uh , problem out maybe I 'll just go into that also . 
+
+D:  the  the other thing was about the subspace approach . 
+
+F:  Oh . How about you , Carmen ? 
+
+E:  Mmm . I 'm working with VTS . 
+
+E:  only with VTS and nothing more . 
+E:  Not VAD , 
+E:  no LDA , 
+E:  nothing more . 
+
+E:  To remove the noise too . 
+
+E:  And when we put the  m m the , em , VAD , the result is better . 
+E:  And we put everything , the result is better , 
+E:  but it 's not better than the result that we have without VTS . 
+
+B:  So that @ @  given that you 're using the VAD also , the effect of the VTS is not  so far  
+
+F:  So , um , <mouth> I guess I 'll just pass it on to Dave . 
+
