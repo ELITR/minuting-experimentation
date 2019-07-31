@@ -1,33 +1,55 @@
-import argparse
-import os
-import string
-import sys
+import os, sys
+import string, argparse
 import xml.etree.ElementTree as ET
 from collections import OrderedDict
+
+# output_root = './output'
+# data_root = './input'
+
+words_folder = 'words'
+topics_folder = 'topics'
+segments_folder = 'segments'
+dialogue_acts_folder = 'dialogueActs'
+extractive_sum_folder = 'extractive'
+abstractive_sum_folder = 'abstractive'
+ontologies_folder = 'ontologies'
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--src', default='./src', help='source directory')
+parser.add_argument('--dest', default='./dest', help='destination directory')
+args = parser.parse_args()
+
+data_root = parser.parse_args().src
+output_root = parser.parse_args().dest
+
+if not os.path.exists(data_root):
+    sys.exit('source directory does not exist.')
+if not os.path.exists(output_root):
+    os.makedirs(output_root)
 
 
 # check if a meeting has a topic file or not
 def has_topic(data_root, topics_folder, meeting_name):
-    """
+    '''
     :param data_root: root folder of all data
-    :param topics_folder:  folder of all topics
+    :param topics_folder: folder of all topics
     :param meeting_name: name of the meeting being analyzed
     :return boolean - topic folder exists or not
-    """
-    if not os.path.exists(os.path.join(data_root, topics_folder, meeting_name + '.topic.xml')):
+    '''
+    if not os.path.exists(os.path.join(data_root, topics_folder, meeting + '.topic.xml')):
         return False
     return True
 
 
 # recover the words of speaker_name in meating_name
 def parse_words_file(data_root, words_folder, meeting_name, speaker_name):
-    """
+    '''
     :param data_root: root folder of all data
     :param words_folder: folder of all words
     :param meeting_name: name of the meeting being analyzed
     :param speaker_name: name or letter of the speaker
     :return words: list of words of the speaker - list of strings
-    """
+    '''
     # list with speaker words
     words = []
     tree = ET.parse(os.path.join(data_root, words_folder, meeting_name + '.' + speaker_name + '.words.xml'))
@@ -46,15 +68,15 @@ def parse_words_file(data_root, words_folder, meeting_name, speaker_name):
 
 
 def get_speakers_words(data_root, topics_folder, words_folder, meeting_name):
-    """
+    '''
     :param data_root: root folder of all data
-    :param topics_folder: folder of all topics
     :param words_folder: folder of all words
     :param meeting_name: name of the meeting being analyzed
+    :param topics_folder: folder of all topics
     :return speakers_words: list of speakers containing lists of their words - list of lists of strings
-    """
+    '''
     # if there is no topic for this meeting, just ignore it
-    if not has_topic(data_root, topics_folder, meeting_name):
+    if not has_topic(data_root, topics_folder, meeting):
         return
 
     # list of speakers each containing their list of words
@@ -63,7 +85,7 @@ def get_speakers_words(data_root, topics_folder, words_folder, meeting_name):
     # get the words of meeting
     for c in string.ascii_uppercase:
         try:
-            speaker_words = parse_words_file(data_root, words_folder, meeting_name, c)
+            speaker_words = parse_words_file(data_root, words_folder, meeting, c)
             speakers_words.append(speaker_words)
         except FileNotFoundError:
             continue
@@ -181,11 +203,11 @@ def save_meeting_topics_descriptions(output_root, meeting_name, descriptions):
 
 # recover the default dialogue acts and their IDs
 def parse_default_dialogue_acts(data_root, ontologies_folder):
-    """
+    '''
     :param data_root: root folder of all data
     :param ontologies_folder: folder of ontologies
     :return default_das_dict - dictionary of IDs and dialogue acts
-    """
+    '''
     # get the default dialogue acts
     default_das_dict = dict()
     default_das = ET.parse(os.path.join(data_root, ontologies_folder, 'da-types.xml')).getroot()
@@ -225,7 +247,7 @@ def get_speaker_dialogue_acts(data_root, dialogue_acts_folder, meeting_name, spe
                 speaker = href[0][href[0].find('.') + 1]
                 if has_pointer == 0:
                     print('Unusual case! in meeting %s, speaker %c, dialogue act number %s: has no description' % (
-                        meeting_name, speaker, index))
+                    meeting_name, speaker, index))
                     speaker_das_descriptions[index] = 'None'
                     # Some unusual dialogue acts have no pointer and also no description!
                 else:
@@ -244,10 +266,10 @@ def get_speaker_dialogue_acts(data_root, dialogue_acts_folder, meeting_name, spe
 
 def save_meeting_dialogue_acts(output_root, meeting_name, speaker_das, c):
     """
-    :param output_root: destination folder for the outputs.
+    :param c: speaker name
+    :param data_root: root folder of all data
     :param meeting_name: name of the meeting being analyzed
     :param speaker_das: dialogue acts of the speaker
-    :param c: speaker name
     """
     # create a directory for meeting
     output_dir_for_meeting = os.path.join(output_root, meeting_name)
@@ -264,12 +286,12 @@ def save_meeting_dialogue_acts(output_root, meeting_name, speaker_das, c):
 
 
 def save_meeting_dialogue_acts_descriptions(output_root, meeting_name, speaker_das_descriptions, c):
-    """
-    :param output_root: destination folder for the outputs.
+    '''
+    :param c: speaker name
+    :param data_root: root folder of all data
     :param meeting_name: name of the meeting being analyzed
     :param speaker_das_descriptions: descriptions of speaker das
-    :param c: speaker name
-    """
+    '''
     # create a directory for meeting
     output_dir_for_meeting = os.path.join(output_root, meeting_name)
     if not os.path.exists(output_dir_for_meeting):
@@ -285,9 +307,8 @@ def save_meeting_dialogue_acts_descriptions(output_root, meeting_name, speaker_d
 
 def get_extractive_summary(data_root, extractive_sum_folder, meeting_name, speakers_das):
     """
-    :rtype: list of dialogue acts which are included in summary
     :param data_root: root folder of all data
-    :param extractive_sum_folder: folder of extractive summaries
+    :param extractive_sum_folder:
     :param meeting_name: name of the meeting being analyzed
     :param speakers_das: dialogue acts of all of speakers
     """
@@ -310,21 +331,21 @@ def get_extractive_summary(data_root, extractive_sum_folder, meeting_name, speak
                 for i in range(start_da, end_da + 1):
                     try:
                         selected_das.append(speakers_das[ord(speaker) - ord('A')][i])
-                    except KeyError:
+                    except KeyError as e:
                         # some dialogue acts are missing, its natural.
                         pass
                 das_in_summary.append(selected_das)
     return das_in_summary
 
 
-def save_meeting_extractive_summary(output_root, meeting_name, das_in_summary):
+def save_meeting_extractive_summary(output_root, meeting, das_in_summary):
     """
-    :param output_root: destination folder for the outputs.
-    :param meeting_name: name of the meeting_name being analyzed
-    :param das_in_summary: list of dialogue acts which are included in summary
+    :param output_root:
+    :param meeting:
+    :param das_in_summary:
     """
     # create a directory for meeting
-    output_dir_for_meeting = os.path.join(output_root, meeting_name)
+    output_dir_for_meeting = os.path.join(output_root, meeting)
     if not os.path.exists(output_dir_for_meeting):
         os.makedirs(output_dir_for_meeting)
 
@@ -340,9 +361,9 @@ def save_meeting_extractive_summary(output_root, meeting_name, das_in_summary):
 
 def get_the_abstractive_summary(data_root, abstractive_sum_folder, meeting_name):
     """
-    :param data_root: root folder of all data
-    :param abstractive_sum_folder: folder of abstractive summaries
-    :param meeting_name: name of the meeting being analyzed
+    :param data_root:
+    :param abstractive_sum_folder:
+    :param meeting:
     """
     summ = ET.parse(os.path.join(data_root, abstractive_sum_folder, meeting_name + '.abssumm.xml'))
     root = summ.getroot()
@@ -371,14 +392,6 @@ def get_the_abstractive_summary(data_root, abstractive_sum_folder, meeting_name)
 
 def get_the_dialogue_acts_related_to_abssumms(data_root, extractive_sum_folder, meeting_name, speakers_das,
                                               speakers_das_descriptions):
-    """
-    :param data_root: root folder of all data
-    :param extractive_sum_folder: folder of extractive summaries
-    :param meeting_name: name of the meeting being analyzed
-    :param speakers_das: dialogue acts of all of speakers
-    :param speakers_das_descriptions: descriptions of dialogue acts of all of speakers
-    :return: dictionaries from summaries to their corresponding dialogue acts and descriptions
-    """
     summ = ET.parse(os.path.join(data_root, extractive_sum_folder, meeting_name + '.summlink.xml'))
     root = summ.getroot()
     summ_to_da_dict = OrderedDict()
@@ -386,11 +399,13 @@ def get_the_dialogue_acts_related_to_abssumms(data_root, extractive_sum_folder, 
     for summlink in root.findall('summlink'):
         selected_das = []
         selected_das_desc = []
+        summary_id = ''
         for pointer in summlink:
             if pointer.get('role') == 'extractive':
                 href = pointer.get('href').split('#')
                 speaker = href[0][href[0].find('.') + 1]
                 da_id = int(href[1][href[1].rfind('.') + 1: href[1].find(')')])
+                # end_da = int(href[1][href[1].rfind('dharshi') + 8: href[1].rfind(')')])
                 selected_das = speakers_das[ord(speaker) - ord('A')][da_id].copy()
                 selected_das.insert(0, speaker + ': ')
                 try:
@@ -411,24 +426,23 @@ def get_the_dialogue_acts_related_to_abssumms(data_root, extractive_sum_folder, 
     return summ_to_da_dict, summ_to_da_desc_dict
 
 
-def save_meeting_abs_summaries_and_related_das(output_root, meeting_name, abs_summaries, summ_to_da_dict,
+def save_meeting_abs_summaries_and_related_das(output_root, meeting, abs_summeries, summ_to_da_dict,
                                                summ_to_da_desc_dict):
     """
-
-    :param summ_to_da_desc_dict: dictionary from summaries to their corresponding dialogue acts descriptions
-    :param output_root: destination folder for the outputs
-    :param meeting_name: name of the meeting being analyzed
-    :param abs_summaries: abstractive summaries
-    :param summ_to_da_dict: dictionary from summaries to their corresponding dialogue acts
+    :param summ_to_da_desc_dict:
+    :param output_root:
+    :param meeting:
+    :param abs_summeries:
+    :param summ_to_da_dict:
     """
     # create a directory for meeting
-    output_dir_for_meeting = os.path.join(output_root, meeting_name)
+    output_dir_for_meeting = os.path.join(output_root, meeting)
     if not os.path.exists(output_dir_for_meeting):
         os.makedirs(output_dir_for_meeting)
 
     # writing the summary file
     abstractiv_summary = open(output_dir_for_meeting + "/abst_summs.txt", "w+")
-    for abs_summ in abs_summaries:
+    for abs_summ in abs_summeries:
         if summ_to_da_dict.get(abs_summ) is None:
             # some abstract summaries are not mapped to any dialogue acts
             abstractiv_summary.write('None\n')
@@ -441,91 +455,78 @@ def save_meeting_abs_summaries_and_related_das(output_root, meeting_name, abs_su
             for da_desc in summ_to_da_desc_dict.get(abs_summ):
                 abstractiv_summary.write(da_desc)
                 abstractiv_summary.write(' ')
-        abstractiv_summary.write('\nabst_sum - ' + abs_summaries.get(abs_summ) + '\n\n')
+        abstractiv_summary.write('\nabst_sum - ' + abs_summeries.get(abs_summ) + '\n\n')
 
 
-def initialize_arguemnents():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--src', required=True, help='source directory')
-    parser.add_argument('--dest', default='./dest', help='destination directory')
-    args = parser.parse_args()
-    return args
+# get set of meetings' names
+name_of_meetings = {x.split('.')[0] for x in os.listdir(os.path.join(data_root, words_folder))}
+name_of_meetings = sorted(name_of_meetings)
 
+for meeting in name_of_meetings:
+    # list of speakers each containing their list of words
+    speakers_words = get_speakers_words(data_root, topics_folder, words_folder, meeting)
+    if speakers_words is None:
+        continue
 
-def recover_ami_from_source():
-    args = initialize_arguemnents()
+    # getting default topics
+    default_topics_dict = parse_default_topics(data_root, ontologies_folder)
+    words_in_topics, topic_description = get_words_in_topics(data_root, topics_folder, meeting, default_topics_dict,
+                                                             speakers_words)
+    save_meeting_converses_by_topic(output_root, meeting, words_in_topics, topic_description)
+    # save_meeting_topics_descriptions(output_root, meeting, topic_description)
 
-    data_root = args.src
-    output_root = args.dest
-
-    if not os.path.exists(data_root):
-        sys.exit('source directory does not exist.')
-    if not os.path.exists(output_root):
-        os.makedirs(output_root)
-
-    words_folder = 'words'
-    topics_folder = 'topics'
-    dialogue_acts_folder = 'dialogueActs'
-    extractive_sum_folder = 'extractive'
-    abstractive_sum_folder = 'abstractive'
-    ontologies_folder = 'ontologies'
-
-    # get set of meetings' names from source directory
-    name_of_meetings = {x.split('.')[0] for x in os.listdir(os.path.join(data_root, words_folder))}
-    name_of_meetings = sorted(name_of_meetings)
-
-    for meeting in name_of_meetings:
-        # list of speakers each containing their list of words
-        speakers_words = get_speakers_words(data_root, topics_folder, words_folder, meeting)
-        if speakers_words is None:
+    default_das_dict = parse_default_dialogue_acts(data_root, ontologies_folder)
+    # get the dialogue_acts
+    speakers_das = []
+    speakers_das_descriptions = []
+    for c in string.ascii_uppercase:
+        try:
+            speaker_das, speaker_das_descriptions = get_speaker_dialogue_acts(data_root, dialogue_acts_folder,
+                                                                              meeting, speakers_words, default_das_dict,
+                                                                              c)
+            speakers_das.append(speaker_das)
+            speakers_das_descriptions.append(speaker_das_descriptions)
+        except FileNotFoundError:
             continue
-        print(meeting)
-        # getting default topics
-        default_topics_dict = parse_default_topics(data_root, ontologies_folder)
-        words_in_topics, topic_description = get_words_in_topics(data_root, topics_folder, meeting, default_topics_dict,
-                                                                 speakers_words)
-        save_meeting_converses_by_topic(output_root, meeting, words_in_topics, topic_description)
-        # save_meeting_topics_descriptions(output_root, meeting, topic_description)
+        save_meeting_dialogue_acts(output_root, meeting, speaker_das, c)
+        save_meeting_dialogue_acts_descriptions(output_root, meeting, speaker_das_descriptions, c)
 
-        default_das_dict = parse_default_dialogue_acts(data_root, ontologies_folder)
-        # get the dialogue_acts
-        speakers_das = []
-        speakers_das_descriptions = []
-        for c in string.ascii_uppercase:
-            try:
-                speaker_das, speaker_das_descriptions = get_speaker_dialogue_acts(data_root, dialogue_acts_folder,
-                                                                                  meeting, speakers_words,
-                                                                                  default_das_dict,
-                                                                                  c)
-                speakers_das.append(speaker_das)
-                speakers_das_descriptions.append(speaker_das_descriptions)
-            except FileNotFoundError:
-                continue
-            save_meeting_dialogue_acts(output_root, meeting, speaker_das, c)
-            save_meeting_dialogue_acts_descriptions(output_root, meeting, speaker_das_descriptions, c)
+    # extractive_summary
+    try:
+        das_in_summary = get_extractive_summary(data_root, extractive_sum_folder, meeting, speakers_das)
+        save_meeting_extractive_summary(output_root, meeting, das_in_summary)
+    except FileNotFoundError:
+        print('Extractive Summary is not available for meeting ' + meeting)
 
-        # extractive_summary
-        try:
-            das_in_summary = get_extractive_summary(data_root, extractive_sum_folder, meeting, speakers_das)
-            save_meeting_extractive_summary(output_root, meeting, das_in_summary)
-        except FileNotFoundError:
-            print('Extractive Summary is not available for meeting ' + meeting)
+    # abstractive_summary
+    try:
+        abs_summeries = get_the_abstractive_summary(data_root, abstractive_sum_folder, meeting)
+        summ_to_da_dict, summ_to_da_desc_dict = get_the_dialogue_acts_related_to_abssumms(data_root,
+                                                                                          extractive_sum_folder,
+                                                                                          meeting,
+                                                                                          speakers_das,
+                                                                                          speakers_das_descriptions)
+        save_meeting_abs_summaries_and_related_das(output_root, meeting, abs_summeries, summ_to_da_dict,
+                                                   summ_to_da_desc_dict)
+    except FileNotFoundError:
+        # raise e
+        print('abstractive Summary is not available for meeting ' + meeting)
 
-        # abstractive_summary
-        try:
-            abs_summaries = get_the_abstractive_summary(data_root, abstractive_sum_folder, meeting)
-            summ_to_da_dict, summ_to_da_desc_dict = get_the_dialogue_acts_related_to_abssumms(data_root,
-                                                                                              extractive_sum_folder,
-                                                                                              meeting,
-                                                                                              speakers_das,
-                                                                                              speakers_das_descriptions)
-            save_meeting_abs_summaries_and_related_das(output_root, meeting, abs_summaries, summ_to_da_dict,
-                                                       summ_to_da_desc_dict)
-        except FileNotFoundError:
-            # raise e
-            print('abstractive Summary is not available for meeting ' + meeting)
+print("Done!")
 
-    print("Done!")
-
-
-recover_ami_from_source()
+# tree1 = ET.parse('data/words/ES2002a.A.words.xml')
+# root1 = tree1.getroot()
+# tree2 = ET.parse('data/words/ES2002a.B.words.xml')
+# root2 = tree2.getroot()
+#
+# words = []
+# for child in root1:
+#     words.append(child)
+#     # print(child.tag, child.attrib, child.text)
+# for child in root2:
+#     words.append(child)
+# words.sort(key=lambda x: float(x.get('starttime')))
+# for element in words:
+#     print(element.tag, element.attrib, element.text)
+# print("hi")
+# # print(root)
