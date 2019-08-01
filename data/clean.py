@@ -11,7 +11,7 @@ from nltk.tokenize.treebank import TreebankWordTokenizer
 from tqdm import *
 
 # function that tokenizes text same as Stanford CoreNLP
-def core_tokenize(text, alb=False):
+def core_tokenize(text):
     ''' Takes a text string and returns tokenized string using NLTK word_tokenize 
     same as in Stanford CoreNLP. space, \n \t are lost. "" are replace by ``''
     '''
@@ -41,12 +41,6 @@ def core_tokenize(text, alb=False):
     	# right match
         if re.match(r'\.[^.\s]{2,}', tok):
             tokens[i] = tok.replace('.', ' . ')
-
-        # corrections for albanian texts -- may add n' | t'
-        if alb:
-            p = re.match(r"(s' | c' | ç')([\w]+)", tok, re.VERBOSE) 
-            if p:
-                tokens[i] = ' '.join([p.group(1), p.group(2)])
 
     # put all tokens together
     text = ' '.join(tokens)
