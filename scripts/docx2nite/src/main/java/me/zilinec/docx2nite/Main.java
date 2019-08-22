@@ -53,6 +53,12 @@ public class Main {
     }
 
     public static void writeToXML(String to_filename, List<String> contents, String prefix) {
+        // split the directory name from the prefix, so it isn't included in nite ids
+        int dirPos = prefix.lastIndexOf("/");
+        if (dirPos < prefix.length() - 1) {
+            prefix = prefix.substring(dirPos + 1);
+        }
+
         BufferedWriter writer = null;
         try {
             writer = new BufferedWriter(new FileWriter(to_filename));
@@ -60,6 +66,7 @@ public class Main {
             e.printStackTrace();
             return;
         }
+        
         try {
             writer.write("<?xml version=\"1.0\"  encoding=\"ISO-8859-1\"?>\n");
             writer.write("<nite:root xmlns:nite=\"http://nite.sourceforge.net/\">\n");
