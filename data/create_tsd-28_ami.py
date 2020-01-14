@@ -126,7 +126,7 @@ def list_paths(src_dir, filt_string):
 	file_list = glob.glob(read_paths)
 	return file_list
 
-# function that reads the dialogues das and abstractive summaries from all files
+# reads the dialogues das and abstractive summaries from all files
 def read_records(file_list):
 	'''
 	:param file_list: list of file paths to read
