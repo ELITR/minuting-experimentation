@@ -106,19 +106,19 @@ def clean_text(text, keep_speakers=True, lower=False, eos=False):
 	return clean_text
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--src', default='./src', help='source folder')
-parser.add_argument('--dest', default='./dest', help='destination folder')
+parser.add_argument('--inpath', required=True, help='input folder for reading')
+parser.add_argument('--outpath', required=True, help='output folder for writing')
 args = parser.parse_args()
 
 # main 
 if __name__=="__main__":
 	if len(sys.argv) != 5:
-		print("usage: python script --src <source_dir> --dest <dest_dir>")
+		print("usage: python script --inpath <source_dir> --outpath <outpath_dir>")
 		sys.exit()
 		
 	# create name of output file
-	in_file = args.src
-	out_file= args.dest
+	in_file = args.inpath
+	out_file= args.outpath
 
 	# read text from input file
 	with open(in_file, 'rt') as in_f:
@@ -130,7 +130,3 @@ if __name__=="__main__":
 	# write to output file
 	with open(out_file, 'wt') as out_f:
 		out_f.write(out_text)
-
-
-
-
