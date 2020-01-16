@@ -2,7 +2,9 @@
 ''' write come comments here
 '''
 
-import os, sys, codecs, re, string, argparse, nltk
+import os, sys, codecs, re, string, argparse
+import nltk, collections, math
+from statistics import mean
 import numpy as np
 from sklearn.cluster import KMeans
 from nltk import PerceptronTagger
@@ -19,6 +21,7 @@ from scipy.spatial.distance import cdist
 from kneed import KneeLocator
 from gensim.test.utils import common_texts
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
+from nltk.corpus import stopwords
 
 # function that tokenizes text same as Stanford CoreNLP
 def core_tokenize(text):
@@ -134,12 +137,91 @@ def get_sents_from_trans(trans, keep_speakers=True):
 
 	return sent_lst
 
+def cluster_sentences(sent_lst, n_c):
+	'''create the clusters of sentences'''
+	vectorizer = TfidfVectorizer(stop_words=stopwords.words('english'),
+		max_df=0.9, min_df=0.1)
+	#builds a tf-idf matrix for the sentences
+	X = vectorizer.fit_transform(sent_lst)
+	kmeans = KMeans(n_clusters=n_c, init='k-means++', max_iter=100, n_init=1)
+	kmeans.fit(X)
+	clusters = collections.defaultdict(list)
+	for i, label in enumerate(kmeans.labels_):
+	        clusters[label].append(i)
+	return dict(clusters)
+
+def print_cluster_sents(sent_lst, clusters):
+	'''print the sentences of each cluster in a grouped form'''
+	for cl in range(len(clusters)):
+		print("cluster " + str(cl) + ":")
+		for i, s in enumerate(clusters[cl]):
+			print("\tsentence " + str(i) + ": " + sent_lst[s])
+
+def get_cluster_sents(clusters, sents):
+	'''form the list with sentence lists according to clusters'''
+	clustered_sents = []
+	for cl in range(len(clusters)):
+		this_cl_sents = []
+		cl_items = clusters.items()
+		for i, s in cl_items:
+			this_cl_sents.append(sents[i])
+		clustered_sents.append(this_cl_sents)
+	return clustered_sents
+
+def text_to_vec(t):
+	'''get vector representation of text to compute cosine similarities'''
+	WORD = re.compile(r'\w+')
+	words = WORD.findall(t)
+	return collections.Counter(words)
+
+def get_cosine_sim(vec1, vec2):
+	'''compute cosine similarity between vec1 and vec2'''
+	intersection = set(vec1.keys()) & set(vec2.keys())
+	numerator = sum([vec1[x] * vec2[x] for x in intersection])
+
+	sum1 = sum([vec1[x]**2 for x in vec1.keys()])
+	sum2 = sum([vec2[x]**2 for x in vec2.keys()])
+	denominator = math.sqrt(sum1) * math.sqrt(sum2)
+
+	if not denominator:
+		return 0.0
+	else:
+		return float(numerator) / denominator
+
+def get_avg_cosine_list(s_lst):
+	'''get cosine similarity between each pair of sents in sent_lst'''
+	# for c in range(len(s_lst)):
+	sent_pairs = [(s_lst[p1], s_lst[p2]) for p1 in range(len(s_lst)) for p2 in range(p1+1,len(s_lst))]
+	vec_pairs = [(text_to_vec(s_lst[p1]), text_to_vec(s_lst[p2])) for p1 in range(len(s_lst)) for p2 in range(p1+1,len(s_lst))]
+	sent_pair_sims = list(map(get_cosine_sim, *zip(*vec_pairs)))
+	this_c_avg = mean(sent_pair_sims)
+	return this_c_avg
+
+def get_avg_cluster_sim(clusters, sents):
+	'''
+	:param clusters: clusters dict like {0: [2, 3, 6], 1: [0, 1, 4, 5], ...}
+	:param sent_lst: list of all sentences
+	:return avg_cl_sim: average intracluster similarity
+	'''
+	cl_sents = get_cluster_sents(clusters, sents)
+
+	avg_cl_sim, sum_cl_sim = 0, 0
+	for c in range(len(cl_sents)):
+		sum_cl_sim += get_avg_cosine_list(cl_sents[c])
+	avg_cl_sim = sum_cl_sim / len(cl_sents)
+	return avg_cl_sim
+
 sent_lst = ["Nature is beautiful","I like green apples",
 "We should protect the trees","Fruit trees provide fruits",
 "Green apples are tasty", "Sun is a natural source of light", 
 "Staying in naure is beautiful", "Apples and pears are good fruits",
 "We need to plant more trees", "Fires burn and destroy trees"]
 
+nclusters = 5
+clusters = cluster_sentences(sent_lst, nclusters)
+print_cluster_sents(sent_lst, clusters)
+print("Avg cl sim: " + str(get_avg_cluster_sim(clusters, sent_lst)))
+sys.exit()
 # parser = argparse.ArgumentParser()
 # parser.add_argument('--inpath', required=True, help='input folder for reading')
 # parser.add_argument('--outpath', required=True, help='output folder for writing')
