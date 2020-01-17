@@ -6,7 +6,8 @@ import os, sys, codecs, re, string, argparse
 import nltk, collections, math
 from statistics import mean
 import numpy as np
-from sklearn.cluster import KMeans
+from sklearn.cluster import KMeans, AgglomerativeClustering, \
+AffinityPropagation, SpectralClustering
 from nltk import PerceptronTagger
 from nltk import tokenize
 from nltk.stem import PorterStemmer
@@ -140,18 +141,38 @@ def get_sents_from_trans(trans, keep_speakers=True):
 def cluster_sentences(sent_lst, n_c):
 	'''create the clusters of sentences'''
 	vectorizer = TfidfVectorizer(stop_words=stopwords.words('english'),
-		max_df=0.9, min_df=0.1)
+		max_df=0.9, min_df=0.1, lowercase=True)
 	#builds a tf-idf matrix for the sentences
 	X = vectorizer.fit_transform(sent_lst)
-	kmeans = KMeans(n_clusters=n_c, init='k-means++', max_iter=100, n_init=1)
-	kmeans.fit(X)
+
+	# k-means
+	model = KMeans(n_clusters=n_c, max_iter=100, n_init=1, random_state=7, n_jobs=4)
+	model.fit(X)
+	labels = model.labels_
+
+	# # Agglomerative
+	# model = AgglomerativeClustering(n_clusters=n_c, linkage="ward")
+	# model.fit(X.toarray())
+	# labels = model.labels_
+
+	# # Spectral
+	# model = SpectralClustering(n_clusters=n_c, random_state=7, n_jobs=4)
+	# model.fit(X)
+	# labels = model.labels_
+
+	# # Affinity Propagation
+	# model = AffinityPropagation()
+	# model.fit(X)
+	# labels = model.labels_
+
 	clusters = collections.defaultdict(list)
-	for i, label in enumerate(kmeans.labels_):
+	for i, label in enumerate(labels):
 	        clusters[label].append(i)
 	return dict(clusters)
 
 def print_cluster_sents(sent_lst, clusters):
 	'''print the sentences of each cluster in a grouped form'''
+	print("Number of clusters: ", len(clusters))
 	for cl in range(len(clusters)):
 		print("cluster " + str(cl) + ":")
 		for i, s in enumerate(clusters[cl]):
@@ -160,11 +181,12 @@ def print_cluster_sents(sent_lst, clusters):
 def get_cluster_sents(clusters, sents):
 	'''form the list with sentence lists according to clusters'''
 	clustered_sents = []
+	clustered_indexes = list(clusters.values())
 	for cl in range(len(clusters)):
 		this_cl_sents = []
-		cl_items = clusters.items()
-		for i, s in cl_items:
-			this_cl_sents.append(sents[i])
+		this_indexes = clustered_indexes[cl]
+		for s in this_indexes:
+			this_cl_sents.append(sents[s])
 		clustered_sents.append(this_cl_sents)
 	return clustered_sents
 
@@ -190,7 +212,9 @@ def get_cosine_sim(vec1, vec2):
 
 def get_avg_cosine_list(s_lst):
 	'''get cosine similarity between each pair of sents in sent_lst'''
-	# for c in range(len(s_lst)):
+	# return 0 if only 1 sentence in list
+	if len(s_lst) <= 1:
+		return 0
 	sent_pairs = [(s_lst[p1], s_lst[p2]) for p1 in range(len(s_lst)) for p2 in range(p1+1,len(s_lst))]
 	vec_pairs = [(text_to_vec(s_lst[p1]), text_to_vec(s_lst[p2])) for p1 in range(len(s_lst)) for p2 in range(p1+1,len(s_lst))]
 	sent_pair_sims = list(map(get_cosine_sim, *zip(*vec_pairs)))
@@ -211,17 +235,20 @@ def get_avg_cluster_sim(clusters, sents):
 	avg_cl_sim = sum_cl_sim / len(cl_sents)
 	return avg_cl_sim
 
-sent_lst = ["Nature is beautiful","I like green apples",
-"We should protect the trees","Fruit trees provide fruits",
+sent_lst = ["Nature is beautiful and inspiring","I like green and yellow apples",
+"We should protect the trees","Fruit trees provide tasty fruits",
 "Green apples are tasty", "Sun is a natural source of light", 
-"Staying in naure is beautiful", "Apples and pears are good fruits",
-"We need to plant more trees", "Fires burn and destroy trees"]
+"Staying in naure is great", "Apples and pears are good fruits",
+"We need to plant more trees", "Fires burn and destroy trees", 
+"Fires are very destructive", "Staying in the sun tans the skin"]
 
-nclusters = 5
+nclusters = 3
 clusters = cluster_sentences(sent_lst, nclusters)
 print_cluster_sents(sent_lst, clusters)
 print("Avg cl sim: " + str(get_avg_cluster_sim(clusters, sent_lst)))
+
 sys.exit()
+
 # parser = argparse.ArgumentParser()
 # parser.add_argument('--inpath', required=True, help='input folder for reading')
 # parser.add_argument('--outpath', required=True, help='output folder for writing')
@@ -265,6 +292,7 @@ for i, label in enumerate(final_model.labels_):
 final_clusers = dict(clusters)
 
 for cl in range(optimum_nc):
+	print("Number of clusters: ", optimum_nc)
 	print("cluster " + cl + ":")
 	for i, s in enumerate(final_clusers[cl]):
 		print("\tsentence " + i + ": " + sentences[sent_lst])
