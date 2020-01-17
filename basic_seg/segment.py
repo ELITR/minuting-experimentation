@@ -6,7 +6,7 @@ import os, sys, codecs, re, string, argparse
 import nltk, collections, math
 from statistics import mean
 import numpy as np
-from sklearn.cluster import KMeans, AgglomerativeClustering, \
+from sklearn.cluster import KMeans, AgglomerativeClustering, MeanShift, \
 AffinityPropagation, SpectralClustering
 from nltk import PerceptronTagger
 from nltk import tokenize
@@ -155,12 +155,17 @@ def cluster_sentences(sent_lst, n_c):
 	# model.fit(X.toarray())
 	# labels = model.labels_
 
+	# # MeanShift - finds n_clusters itself
+	# model = MeanShift(n_jobs=4)
+	# model.fit(X.toarray())
+	# labels = model.labels_
+
 	# # Spectral
 	# model = SpectralClustering(n_clusters=n_c, random_state=7, n_jobs=4)
 	# model.fit(X)
 	# labels = model.labels_
 
-	# # Affinity Propagation
+	# # Affinity Propagation - finds n_clusters itself
 	# model = AffinityPropagation()
 	# model.fit(X)
 	# labels = model.labels_
@@ -242,10 +247,10 @@ sent_lst = ["Nature is beautiful and inspiring","I like green and yellow apples"
 "We need to plant more trees", "Fires burn and destroy trees", 
 "Fires are very destructive", "Staying in the sun tans the skin"]
 
-nclusters = 3
+nclusters = 6
 clusters = cluster_sentences(sent_lst, nclusters)
 print_cluster_sents(sent_lst, clusters)
-print("Avg cl sim: " + str(get_avg_cluster_sim(clusters, sent_lst)))
+print("Average intracluster similarity: " + str(get_avg_cluster_sim(clusters, sent_lst)))
 
 sys.exit()
 
@@ -253,49 +258,6 @@ sys.exit()
 # parser.add_argument('--inpath', required=True, help='input folder for reading')
 # parser.add_argument('--outpath', required=True, help='output folder for writing')
 # args = parser.parse_args()
-
-# vectorize the sentences
-vectorizer = TfidfVectorizer(stop_words='english')
-X = vectorizer.fit_transform(sent_lst)
-# model = Doc2Vec(sent_lst, vector_size=5, window=2, min_count=1, workers=4)
-
-distortions, distances = [], [] 
-K = range(3, 8)
-print(X)
-print(type(X))
-# iterate to find optimal number of clusters (3 - 7)
-for n_c in K:
-	model = KMeans(n_clusters=n_c, init='k-means++', max_iter=100, n_init=1)
-	model.fit(X)
-	# distortions.append(model.inertia_)
-	print(model.cluster_centers_)
-	print(type(model.cluster_centers_))
-	distortions.append(sum(np.min(cdist(np.array(X), model.cluster_centers_, 'euclidean'), axis=1)) / X.shape[0])
-
-kn = KneeLocator(list(K), distortions, S=1.0, curve='convex', direction='decreasing')
-optimum_nc = kn.knee
-
-# # elbow method for finding the optimal number of clusters
-# for i in range(0, 5):
-# 	p1 = Point(initx=1,inity=distortions[0])
-# 	p2 = Point(initx=5,inity=distortions[4])
-# 	p = Point(initx=i+1,inity=distortions[i])
-# 	distances.append(p.distance_to_line(p1,p2))
-# optimum_nc = distances.index(max(distances)) + 3
-
-# building the final clustering model
-final_model = KMeans(n_clusters=optimum_nc, init='k-means++', max_iter=100, n_init=1)
-final_model.fit(X)
-clusters = collections.defaultdict(list)
-for i, label in enumerate(final_model.labels_):
-	clusters[label].append(i)
-final_clusers = dict(clusters)
-
-for cl in range(optimum_nc):
-	print("Number of clusters: ", optimum_nc)
-	print("cluster " + cl + ":")
-	for i, s in enumerate(final_clusers[cl]):
-		print("\tsentence " + i + ": " + sentences[sent_lst])
 
 # main 
 # if __name__=="__main__":
@@ -320,45 +282,10 @@ for cl in range(optimum_nc):
 # 		vectorizer = TfidfVectorizer(stop_words='english')
 # 		X = vectorizer.fit_transform(sent_lst)
 
-# 		distortions, distances = [], [] 
-# 		# iterate to find optimal number of clusters (3 - 7)
-# 		for n_c in range(5) + 3:
-# 			model = KMeans(n_clusters=n_c, init='k-means++', max_iter=100, n_init=1)
-# 			model.fit(X)
-# 			distortions.append(kmeans.inertia_)
-
-# 		# elbow method for finding the optimal number of clusters
-# 		for i in range(0, 5):
-# 			p1 = Point(initx=1,inity=distortions[0])
-# 			p2 = Point(initx=5,inity=distortions[4])
-# 			p = Point(initx=i+1,inity=distortions[i])
-# 			distances.append(p.distance_to_line(p1,p2))
-# 		optimum_nc = distances.index(max(distances)) + 3
-
-# 		# building the final clustering model
-# 		final_model = KMeans(n_clusters=optimum_nc, init='k-means++', max_iter=100, n_init=1)
-# 		final_model.fit(X)
-# 		clusters = collections.defaultdict(list)
-# 		for i, label in enumerate(final_model.labels_):
-# 			clusters[label].append(i)
-# 		final_clusers = dict(clusters)
-
-
-
-
-
-
-
-
-
-
 # 		# write content of fout 
 # 		with open(fout, 'wt') as o:
 # 			o.write()
 
-
-
-		
 # 	# create name of output file
 # 	in_file = args.src
 # 	out_file= args.dest
