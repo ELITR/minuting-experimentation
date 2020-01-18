@@ -123,9 +123,9 @@ def get_sents_from_trans(trans, keep_speakers=True):
 	'''
 	# remove speakers from dialogues if required - keep or remove...?
 	if not keep_speakers:
-		trans = remove_speakers(trans)
+		text = remove_speakers(text)
 	# strip leading and trailing white space
-	trans = trans.strip()
+	text = text.strip()
 
 	# split in sentences 
 	sent_lst = tokenize.sent_tokenize(trans)
@@ -138,7 +138,7 @@ def get_sents_from_trans(trans, keep_speakers=True):
 
 	return sent_lst
 
-def print_cluster_sents(clusters, sent_lst):
+def print_cluster_sents(sent_lst, clusters):
 	'''print the sentences of each cluster in a grouped form'''
 	print("Number of clusters: ", len(clusters))
 	for cl in range(len(clusters)):
@@ -203,7 +203,7 @@ def get_avg_cluster_sim(clusters, sents):
 	avg_cl_sim = sum_cl_sim / len(cl_sents)
 	return avg_cl_sim
 
-def cluster_sentences(n_c, sent_lst):
+def cluster_sentences(sent_lst, n_c):
 	'''create the clusters of sentences'''
 	vectorizer = TfidfVectorizer(stop_words=stopwords.words('english'),
 		max_df=0.9, min_df=0.1, lowercase=True)
@@ -240,63 +240,66 @@ def cluster_sentences(n_c, sent_lst):
 	        clusters[label].append(i)
 	return dict(clusters)
 
-# find optimal number of clusters for the list of sentences
-def optimal_cluster_num(sent_lst):
-	'''find optimal number of clusters for the list of sentences'''
-	avg_sims = []
-	for n_c in range(2, 8):
-		clusters = cluster_sentences(n_c, sent_lst)
-		avg_sims.append(get_avg_cluster_sim(clusters, sent_lst))
-	max_ind = avg_sims.index(max(avg_sims))
-	max_val = max(avg_sims)
-	# correcting to find optimal number of clusters
-	opt_cl_n = max_ind + 2 
-	return opt_cl_n
+sent_lst = ["Nature is beautiful and inspiring","I like green and yellow apples",
+"We should protect the trees","Fruit trees provide tasty fruits",
+"Green apples are tasty", "Sun is a natural source of light", 
+"Staying in naure is great", "Apples and pears are good fruits",
+"We need to plant more trees", "Fires burn and destroy trees", 
+"Fires are very destructive", "Staying in the sun tans the skin"]
 
-# format cluster texts for output files
-def format_clusters(clusters, sent_lst):
-	'''format cluster texts for output files'''
-	cluster_lst, out_text = [], ""
-	for cl in range(len(clusters)):
-		cluster_str = []
-		for s in clusters[cl]:
-			cluster_str.append(sent_lst[s])
-		cluster_lst.append('\n'.join(cluster_str))
-	out_text = '\n\n<cluster_separator>\n\n'.join(cluster_lst)
-	return out_text
+nclusters = 6
+clusters = cluster_sentences(sent_lst, nclusters)
+print_cluster_sents(sent_lst, clusters)
+print("Average intracluster similarity: " + str(get_avg_cluster_sim(clusters, sent_lst)))
+
+sys.exit()
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--inpath', required=True, help='input folder for reading')
 parser.add_argument('--outpath', required=True, help='output folder for writing')
 args = parser.parse_args()
 
-if __name__=="__main__":
-	if len(sys.argv) != 5:
-		print("usage: python script --inpath <source_dir> --outpath <dest_dir>")
-		sys.exit()
+# main 
+# if __name__=="__main__":
+# 	# if len(sys.argv) != 5:
+# 	# 	print("usage: python script --inpath <source_dir> --outpath <dest_dir>")
+# 	# 	sys.exit()
 
-	for filename in tqdm(os.listdir(args.inpath)):
+# 	for filename in tqdm(os.listdir(args.inpath)):
 
-		# full path of file being read and writen
-		fin = os.path.join(args.inpath, filename)
-		fout = os.path.join(args.outpath, filename)
+# 		# full path of file being read and writen
+# 		fin = os.path.join(args.inpath, filename)
+# 		fout = os.path.join(args.outpath, filename)
 
-		# read content of fin and split in sentences
-		with open(fin, 'rt') as i:
-			trans_txt = i.read()
-		# get the sentences
-		sent_lst = get_sents_from_trans(trans_txt, keep_speakers=False)
+# 		# read content of fin and split in sentences
+# 		with open(fin, 'rt') as i:
+# 			trans_txt = i.read()
 
-		# find optimal clusters
-		nclusters = optimal_cluster_num(sent_lst)
-		clusters = cluster_sentences(nclusters, sent_lst)
-		out_text = format_clusters(clusters, sent_lst)
-		# print("Avg sim: " + str(get_avg_cluster_sim(clusters, sent_lst)))
+# 		# get the sentences
+# 		sent_lst = get_sents_from_trans(trans_txt, keep_speakers=False)
 
-		# write content of fout 
-		with open(fout, 'wt') as o:
-			o.write(out_text)
+# 		# vectorize the sentences
+# 		vectorizer = TfidfVectorizer(stop_words='english')
+# 		X = vectorizer.fit_transform(sent_lst)
 
+# 		# write content of fout 
+# 		with open(fout, 'wt') as o:
+# 			o.write()
+
+# 	# create name of output file
+# 	in_file = args.src
+# 	out_file= args.dest
+
+# 	# read text from input file
+# 	with open(in_file, 'rt') as in_f:
+# 		in_text = in_f.read()
+
+# 	# apply cleaning operations
+# 	out_text = clean_text(in_text, keep_speakers=False, lower=True, eos=True)
+
+# 	# write to output file
+# 	with open(out_file, 'wt') as out_f:
+# 		out_f.write(out_text)
 
 
 
