@@ -1,5 +1,10 @@
 
-''' write come comments here
+''' 
+Unsupervised transcript segmentation script that reads all transcript files 
+of the input path and writes the corresponding files to the output path. Each
+transcript is split into sentences which are then thematically clustered. 
+The optimal number of clusters (from 2 to 7) is found comparing the 
+intracluster similarities between cluster sentences.
 '''
 
 import os, sys, codecs, re, string, argparse
@@ -271,10 +276,7 @@ parser.add_argument('--outpath', required=True, help='output folder for writing'
 args = parser.parse_args()
 
 if __name__=="__main__":
-	if len(sys.argv) != 5:
-		print("usage: python script --inpath <source_dir> --outpath <dest_dir>")
-		sys.exit()
-
+	# loop through all files of input path
 	for filename in tqdm(os.listdir(args.inpath)):
 
 		# full path of file being read and writen
@@ -296,8 +298,3 @@ if __name__=="__main__":
 		# write content of fout 
 		with open(fout, 'wt') as o:
 			o.write(out_text)
-
-
-
-
-

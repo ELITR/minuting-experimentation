@@ -1,5 +1,7 @@
 
-''' write come comments here
+''' 
+Script for benchmarking the performance of 5 clustering algorithms used to
+thematically segment the meeting transcript texts.
 '''
 
 import os, sys, codecs, re, string, argparse

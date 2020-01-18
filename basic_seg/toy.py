@@ -170,8 +170,6 @@ Y = vectorizer.transform(["My cat is hungry."])
 prediction = model.predict(Y)
 print(prediction)
 
-
-
 # distortions, distances = [], [] 
 # K = range(3, 8)
 # print(X)
