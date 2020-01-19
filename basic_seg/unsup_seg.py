@@ -13,8 +13,7 @@ from statistics import mean
 import numpy as np
 from sklearn.cluster import KMeans, AgglomerativeClustering, MeanShift, \
 AffinityPropagation, SpectralClustering
-from nltk import PerceptronTagger
-from nltk import tokenize
+from nltk import PerceptronTagger, tokenize
 from nltk.stem import PorterStemmer
 from nltk import word_tokenize, sent_tokenize
 from nltk.tokenize.treebank import TreebankWordTokenizer
@@ -143,6 +142,7 @@ def get_sents_from_trans(trans, keep_speakers=True):
 
 	return sent_lst
 
+# print the clusters and the corresponding sentences
 def print_cluster_sents(clusters, sent_lst):
 	'''print the sentences of each cluster in a grouped form'''
 	print("Number of clusters: ", len(clusters))
@@ -151,6 +151,7 @@ def print_cluster_sents(clusters, sent_lst):
 		for i, s in enumerate(clusters[cl]):
 			print("\tsentence " + str(i) + ": " + sent_lst[s])
 
+# transform the cluster dict into a list of lists
 def get_cluster_sents(clusters, sents):
 	'''form the list with sentence lists according to clusters'''
 	clustered_sents = []
@@ -163,12 +164,14 @@ def get_cluster_sents(clusters, sents):
 		clustered_sents.append(this_cl_sents)
 	return clustered_sents
 
+# vectorize the words of a sentence
 def text_to_vec(t):
 	'''get vector representation of text to compute cosine similarities'''
 	WORD = re.compile(r'\w+')
 	words = WORD.findall(t)
 	return collections.Counter(words)
 
+# compute the cosine similarity between two word vectors
 def get_cosine_sim(vec1, vec2):
 	'''compute cosine similarity between vec1 and vec2'''
 	intersection = set(vec1.keys()) & set(vec2.keys())
@@ -178,11 +181,13 @@ def get_cosine_sim(vec1, vec2):
 	sum2 = sum([vec2[x]**2 for x in vec2.keys()])
 	denominator = math.sqrt(sum1) * math.sqrt(sum2)
 
+	# mind the divizion by 0
 	if not denominator:
 		return 0.0
 	else:
 		return float(numerator) / denominator
 
+# compute cosine similarity between each pair of sents in sent_lst
 def get_avg_cosine_list(s_lst):
 	'''get cosine similarity between each pair of sents in sent_lst'''
 	# return 0 if only 1 sentence in list
@@ -194,6 +199,7 @@ def get_avg_cosine_list(s_lst):
 	this_c_avg = mean(sent_pair_sims)
 	return this_c_avg
 
+# compute the average similarity of sentences in a cluster
 def get_avg_cluster_sim(clusters, sents):
 	'''
 	:param clusters: clusters dict like {0: [2, 3, 6], 1: [0, 1, 4, 5], ...}
@@ -208,6 +214,7 @@ def get_avg_cluster_sim(clusters, sents):
 	avg_cl_sim = sum_cl_sim / len(cl_sents)
 	return avg_cl_sim
 
+# create clusters of sentences - 5 clustering algorithms available
 def cluster_sentences(n_c, sent_lst):
 	'''create the clusters of sentences'''
 	vectorizer = TfidfVectorizer(stop_words=stopwords.words('english'),
@@ -270,6 +277,7 @@ def format_clusters(clusters, sent_lst):
 	out_text = '\n\n<cluster_separator>\n\n'.join(cluster_lst)
 	return out_text
 
+# command line arguments
 parser = argparse.ArgumentParser()
 parser.add_argument('--inpath', required=True, help='input folder for reading')
 parser.add_argument('--outpath', required=True, help='output folder for writing')
