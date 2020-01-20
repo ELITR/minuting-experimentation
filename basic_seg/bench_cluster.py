@@ -125,9 +125,9 @@ def get_sents_from_trans(trans, keep_speakers=True):
 	'''
 	# remove speakers from dialogues if required - keep or remove...?
 	if not keep_speakers:
-		text = remove_speakers(text)
+		trans = remove_speakers(trans)
 	# strip leading and trailing white space
-	text = text.strip()
+	trans = trans.strip()
 
 	# split in sentences 
 	sent_lst = tokenize.sent_tokenize(trans)
@@ -140,7 +140,8 @@ def get_sents_from_trans(trans, keep_speakers=True):
 
 	return sent_lst
 
-def print_cluster_sents(sent_lst, clusters):
+# print the clusters and the corresponding sentences
+def print_cluster_sents(clusters, sent_lst):
 	'''print the sentences of each cluster in a grouped form'''
 	print("Number of clusters: ", len(clusters))
 	for cl in range(len(clusters)):
@@ -148,6 +149,7 @@ def print_cluster_sents(sent_lst, clusters):
 		for i, s in enumerate(clusters[cl]):
 			print("\tsentence " + str(i) + ": " + sent_lst[s])
 
+# transform the cluster dict into a list of lists
 def get_cluster_sents(clusters, sents):
 	'''form the list with sentence lists according to clusters'''
 	clustered_sents = []
@@ -160,12 +162,14 @@ def get_cluster_sents(clusters, sents):
 		clustered_sents.append(this_cl_sents)
 	return clustered_sents
 
+# vectorize the words of a sentence
 def text_to_vec(t):
 	'''get vector representation of text to compute cosine similarities'''
 	WORD = re.compile(r'\w+')
 	words = WORD.findall(t)
 	return collections.Counter(words)
 
+# compute the cosine similarity between two word vectors
 def get_cosine_sim(vec1, vec2):
 	'''compute cosine similarity between vec1 and vec2'''
 	intersection = set(vec1.keys()) & set(vec2.keys())
@@ -175,11 +179,13 @@ def get_cosine_sim(vec1, vec2):
 	sum2 = sum([vec2[x]**2 for x in vec2.keys()])
 	denominator = math.sqrt(sum1) * math.sqrt(sum2)
 
+	# mind the divizion by 0
 	if not denominator:
 		return 0.0
 	else:
 		return float(numerator) / denominator
 
+# compute cosine similarity between each pair of sents in sent_lst
 def get_avg_cosine_list(s_lst):
 	'''get cosine similarity between each pair of sents in sent_lst'''
 	# return 0 if only 1 sentence in list
@@ -191,6 +197,7 @@ def get_avg_cosine_list(s_lst):
 	this_c_avg = mean(sent_pair_sims)
 	return this_c_avg
 
+# compute the average similarity of sentences in a cluster
 def get_avg_cluster_sim(clusters, sents):
 	'''
 	:param clusters: clusters dict like {0: [2, 3, 6], 1: [0, 1, 4, 5], ...}
@@ -205,7 +212,8 @@ def get_avg_cluster_sim(clusters, sents):
 	avg_cl_sim = sum_cl_sim / len(cl_sents)
 	return avg_cl_sim
 
-def cluster_sentences(sent_lst, n_c):
+# create clusters of sentences - 5 clustering algorithms available
+def cluster_sentences(n_c, sent_lst):
 	'''create the clusters of sentences'''
 	vectorizer = TfidfVectorizer(stop_words=stopwords.words('english'),
 		max_df=0.9, min_df=0.1, lowercase=True)
@@ -242,6 +250,31 @@ def cluster_sentences(sent_lst, n_c):
 	        clusters[label].append(i)
 	return dict(clusters)
 
+# find optimal number of clusters for the list of sentences
+def optimal_cluster_num(sent_lst):
+	'''find optimal number of clusters for the list of sentences'''
+	avg_sims = []
+	for n_c in range(2, 8):
+		clusters = cluster_sentences(n_c, sent_lst)
+		avg_sims.append(get_avg_cluster_sim(clusters, sent_lst))
+	max_ind = avg_sims.index(max(avg_sims))
+	max_val = max(avg_sims)
+	# correcting to find optimal number of clusters
+	opt_cl_n = max_ind + 2 
+	return opt_cl_n
+
+# format cluster texts for output files
+def format_clusters(clusters, sent_lst):
+	'''format cluster texts for output files'''
+	cluster_lst, out_text = [], ""
+	for cl in range(len(clusters)):
+		cluster_str = []
+		for s in clusters[cl]:
+			cluster_str.append(sent_lst[s])
+		cluster_lst.append('\n'.join(cluster_str))
+	out_text = '\n\n<cluster_separator>\n\n'.join(cluster_lst)
+	return out_text
+
 sent_lst = ["Nature is beautiful and inspiring","I like green and yellow apples",
 "We should protect the trees","Fruit trees provide tasty fruits",
 "Green apples are tasty", "Sun is a natural source of light", 
@@ -249,7 +282,7 @@ sent_lst = ["Nature is beautiful and inspiring","I like green and yellow apples"
 "We need to plant more trees", "Fires burn and destroy trees", 
 "Fires are very destructive", "Staying in the sun tans the skin"]
 
-nclusters = 6
+nclusters = 5
 clusters = cluster_sentences(sent_lst, nclusters)
 print_cluster_sents(sent_lst, clusters)
 print("Average intracluster similarity: " + str(get_avg_cluster_sim(clusters, sent_lst)))

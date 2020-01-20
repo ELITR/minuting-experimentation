@@ -170,6 +170,7 @@ Y = vectorizer.transform(["My cat is hungry."])
 prediction = model.predict(Y)
 print(prediction)
 
+## methods for finding optimal number of clusters
 # distortions, distances = [], [] 
 # K = range(3, 8)
 # print(X)

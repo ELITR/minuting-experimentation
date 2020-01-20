@@ -23,7 +23,6 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import adjusted_rand_score
 from sklearn.metrics import silhouette_samples, silhouette_score
 from scipy.spatial.distance import cdist
-from kneed import KneeLocator
 from gensim.test.utils import common_texts
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 from nltk.corpus import stopwords
