@@ -1,5 +1,6 @@
 
-''' toy example of sentence clustering from:
+''' 
+Toy example of sentence clustering from:
 https://pythonprogramminglanguage.com/kmeans-text-clustering/
 '''
 import os, sys, codecs, re, string, argparse, nltk
