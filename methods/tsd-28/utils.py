@@ -1,4 +1,5 @@
 import numpy as np
+from tqdm import *
 
 def loadVocabulary(path):
     if not isinstance(path, str):

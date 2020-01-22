@@ -5,8 +5,7 @@
 # It defaults to CTM outputs where they don't match (about 5% tokens).
 #######################################################################
 
-import os
-import re
+import os, re, sys
 from collections import namedtuple
 from argparse import ArgumentParser
 

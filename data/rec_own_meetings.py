@@ -516,5 +516,5 @@ def recover_icsi_from_source():
 
         print(meeting)
 
-
-recover_icsi_from_source()
+if __name__=="__main__":
+    recover_icsi_from_source()
