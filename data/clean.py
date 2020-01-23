@@ -1,4 +1,6 @@
 
+''' Functions for cleaning and preprocessing meeting transcripts '''
+
 import os, sys, codecs, re, string, argparse
 import nltk
 import numpy as np

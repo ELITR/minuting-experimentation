@@ -1,3 +1,6 @@
+
+''' Recovering AMI corpus transcripts from the XML format '''
+
 import argparse
 import os
 import string
@@ -527,5 +530,5 @@ def recover_ami_from_source():
 
     print("Done!")
 
-
-recover_ami_from_source()
+if __name__=="__main__":
+    recover_ami_from_source()
