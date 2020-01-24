@@ -212,18 +212,24 @@ def get_avg_cluster_sim(clusters, sents):
 	avg_cl_sim = sum_cl_sim / len(cl_sents)
 	return avg_cl_sim
 
-# create clusters of sentences - 5 clustering algorithms available
-def cluster_sentences(n_c, sent_lst):
-	'''create the clusters of sentences'''
+# get tf-idf matrix from list of sentences
+def get_vector_matrix(sent_lst):
+	'''get tf-idf matrix from list of sentences'''
 	vectorizer = TfidfVectorizer(stop_words=stopwords.words('english'),
 		max_df=0.9, min_df=0.1, lowercase=True)
 	#builds a tf-idf matrix for the sentences
 	X = vectorizer.fit_transform(sent_lst)
+	return X
 
-	# k-means
-	model = KMeans(n_clusters=n_c, random_state=7, n_jobs=4)
-	model.fit(X)
-	labels = model.labels_
+# create clusters of sentences - 5 clustering algorithms available
+def cluster_sentences(n_c, sent_lst):
+	'''create the clusters of sentences'''
+	X = get_vector_matrix(sent_lst)
+
+	# # k-means
+	# model = KMeans(n_clusters=n_c, random_state=7, n_jobs=4)
+	# model.fit(X)
+	# labels = model.labels_
 
 	# # Agglomerative
 	# model = AgglomerativeClustering(n_clusters=n_c, linkage="ward")
@@ -247,7 +253,7 @@ def cluster_sentences(n_c, sent_lst):
 
 	clusters = collections.defaultdict(list)
 	for i, label in enumerate(labels):
-	        clusters[label].append(i)
+		clusters[label].append(i)
 	return dict(clusters)
 
 # find optimal number of clusters for the list of sentences
@@ -263,6 +269,77 @@ def optimal_cluster_num(sent_lst):
 	opt_cl_n = max_ind + 2 
 	return opt_cl_n
 
+# create clusters of sent_lst with kmeans algorithm
+def cluster_kmeans(n_c, sent_lst):
+	# get tf-idf vector representation
+	X = get_vector_matrix(sent_lst)
+	# k-means
+	model = KMeans(n_clusters=n_c, n_jobs=4)
+	model.fit(X)
+	labels = model.labels_
+	clusters = collections.defaultdict(list)
+	for i, label in enumerate(labels):
+		clusters[label].append(i)
+	return dict(clusters)
+
+# create clusters of sent_lst with agglomerative algorithm
+def cluster_agglomerative(n_c, sent_lst):
+	# get tf-idf vector representation
+	X = get_vector_matrix(sent_lst)
+	# k-means
+	model = AgglomerativeClustering(n_clusters=n_c, linkage="ward")
+	model.fit(X.toarray())
+	labels = model.labels_
+	clusters = collections.defaultdict(list)
+	for i, label in enumerate(labels):
+		clusters[label].append(i)
+	return dict(clusters)
+
+# create clusters of sent_lst with MeanShift algorithm
+def cluster_meanshift(n_c, sent_lst):
+	# get tf-idf vector representation
+	X = get_vector_matrix(sent_lst)
+
+	# MeanShift - finds n_clusters itself
+	model = MeanShift(n_jobs=4)
+	model.fit(X.toarray())
+	labels = model.labels_
+
+	clusters = collections.defaultdict(list)
+	for i, label in enumerate(labels):
+		clusters[label].append(i)
+	return dict(clusters)
+
+# create clusters of sent_lst with spectral algorithm
+def cluster_spectral(n_c, sent_lst):
+	# get tf-idf vector representation
+	X = get_vector_matrix(sent_lst)
+
+	# Spectral
+	model = SpectralClustering(n_clusters=n_c, n_jobs=4)
+	model.fit(X)
+	labels = model.labels_
+
+	clusters = collections.defaultdict(list)
+	for i, label in enumerate(labels):
+		clusters[label].append(i)
+	return dict(clusters)
+
+# create clusters of sent_lst with affinity algorithm
+def cluster_affinity(n_c, sent_lst):
+	# get tf-idf vector representation
+	X = get_vector_matrix(sent_lst)
+
+	# Affinity Propagation - finds n_clusters itself
+	model = AffinityPropagation()
+	model.fit(X)
+	labels = model.labels_
+
+	clusters = collections.defaultdict(list)
+	for i, label in enumerate(labels):
+		clusters[label].append(i)
+	return dict(clusters)
+
 # format cluster texts for output files
 def format_clusters(clusters, sent_lst):
 	'''format cluster texts for output files'''
@@ -274,6 +351,146 @@ def format_clusters(clusters, sent_lst):
 		cluster_lst.append('\n'.join(cluster_str))
 	out_text = '\n\n<cluster_separator>\n\n'.join(cluster_lst)
 	return out_text
+
+# find the average intracluster similarity for kmeans
+def benchmark_kmeans(sent_lst):
+	'''
+	:param sent_list: list of sentences to cluster
+	:return avg_sim: average intracluster similarity of 10 cycles
+	'''
+	# get the vectorized sentences
+	X = get_vector_matrix(sent_lst)
+
+	# find optimal number of clusters
+	avg_sims = []
+	for n_c in range(2, 8):
+		clusters = cluster_kmeans(n_c, sent_lst)
+		avg_sims.append(get_avg_cluster_sim(clusters, sent_lst))
+	max_ind = avg_sims.index(max(avg_sims))
+	max_val = max(avg_sims)
+	# correcting to find optimal number of clusters
+	opt_cl_n = max_ind + 2 
+
+	this_sim, avg_sim = 0, 0
+	# loop 10 times
+	for i in range(10):	
+		# create the clustering model - no fixed randomization seed
+		clusters = cluster_kmeans(opt_cl_n, sent_lst)
+		this_sim += get_avg_cluster_sim(clusters, sent_lst)
+	avg_sim = this_sim / 10
+	return avg_sim
+
+# find the average intracluster similarity for agglomerative
+def benchmark_agglomerative(sent_lst):
+	'''
+	:param sent_list: list of sentences to cluster
+	:return avg_sim: average intracluster similarity of 10 cycles
+	'''
+	# get the vectorized sentences
+	X = get_vector_matrix(sent_lst)
+
+	# find optimal number of clusters
+	avg_sims = []
+	for n_c in range(2, 8):
+		clusters = cluster_agglomerative(n_c, sent_lst)
+		avg_sims.append(get_avg_cluster_sim(clusters, sent_lst))
+	max_ind = avg_sims.index(max(avg_sims))
+	max_val = max(avg_sims)
+	# correcting to find optimal number of clusters
+	opt_cl_n = max_ind + 2 
+
+	this_sim, avg_sim = 0, 0
+	# loop 10 times
+	for i in range(10):	
+		# create the clustering model - no fixed randomization seed
+		clusters = cluster_agglomerative(opt_cl_n, sent_lst)
+		this_sim += get_avg_cluster_sim(clusters, sent_lst)
+	avg_sim = this_sim / 10
+	return avg_sim
+
+# find the average intracluster similarity for meanshift
+def benchmark_meanshift(sent_lst):
+	'''
+	:param sent_list: list of sentences to cluster
+	:return avg_sim: average intracluster similarity of 10 cycles
+	'''
+	# get the vectorized sentences
+	X = get_vector_matrix(sent_lst)
+
+	# find optimal number of clusters
+	avg_sims = []
+	for n_c in range(2, 8):
+		clusters = cluster_meanshift(n_c, sent_lst)
+		avg_sims.append(get_avg_cluster_sim(clusters, sent_lst))
+	max_ind = avg_sims.index(max(avg_sims))
+	max_val = max(avg_sims)
+	# correcting to find optimal number of clusters
+	opt_cl_n = max_ind + 2 
+
+	this_sim, avg_sim = 0, 0
+	# loop 10 times
+	for i in range(10):	
+		# create the clustering model - no fixed randomization seed
+		clusters = cluster_meanshift(opt_cl_n, sent_lst)
+		this_sim += get_avg_cluster_sim(clusters, sent_lst)
+	avg_sim = this_sim / 10
+	return avg_sim
+
+# find the average intracluster similarity for spectral
+def benchmark_spectral(sent_lst):
+	'''
+	:param sent_list: list of sentences to cluster
+	:return avg_sim: average intracluster similarity of 10 cycles
+	'''
+	# get the vectorized sentences
+	X = get_vector_matrix(sent_lst)
+
+	# find optimal number of clusters
+	avg_sims = []
+	for n_c in range(2, 8):
+		clusters = cluster_spectral(n_c, sent_lst)
+		avg_sims.append(get_avg_cluster_sim(clusters, sent_lst))
+	max_ind = avg_sims.index(max(avg_sims))
+	max_val = max(avg_sims)
+	# correcting to find optimal number of clusters
+	opt_cl_n = max_ind + 2 
+
+	this_sim, avg_sim = 0, 0
+	# loop 10 times
+	for i in range(10):	
+		# create the clustering model - no fixed randomization seed
+		clusters = cluster_spectral(opt_cl_n, sent_lst)
+		this_sim += get_avg_cluster_sim(clusters, sent_lst)
+	avg_sim = this_sim / 10
+	return avg_sim
+
+# find the average intracluster similarity for affinity
+def benchmark_affinity(sent_lst):
+	'''
+	:param sent_list: list of sentences to cluster
+	:return avg_sim: average intracluster similarity of 10 cycles
+	'''
+	# get the vectorized sentences
+	X = get_vector_matrix(sent_lst)
+
+	# find optimal number of clusters
+	avg_sims = []
+	for n_c in range(2, 8):
+		clusters = cluster_affinity(n_c, sent_lst)
+		avg_sims.append(get_avg_cluster_sim(clusters, sent_lst))
+	max_ind = avg_sims.index(max(avg_sims))
+	max_val = max(avg_sims)
+	# correcting to find optimal number of clusters
+	opt_cl_n = max_ind + 2 
+
+	this_sim, avg_sim = 0, 0
+	# loop 10 times
+	for i in range(10):	
+		# create the clustering model - no fixed randomization seed
+		clusters = cluster_affinity(opt_cl_n, sent_lst)
+		this_sim += get_avg_cluster_sim(clusters, sent_lst)
+	avg_sim = this_sim / 10
+	return avg_sim
 
 sent_lst = ["Nature is beautiful and inspiring","I like green and yellow apples",
 "We should protect the trees","Fruit trees provide tasty fruits",
@@ -294,11 +511,17 @@ parser.add_argument('--inpath', required=True, help='input folder for reading')
 parser.add_argument('--outpath', required=True, help='output folder for writing')
 args = parser.parse_args()
 
-# main 
-# if __name__=="__main__":
-# 	# if len(sys.argv) != 5:
-# 	# 	print("usage: python script --inpath <source_dir> --outpath <dest_dir>")
-# 	# 	sys.exit()
+main 
+if __name__=="__main__":
+	# if len(sys.argv) != 5:
+	# 	print("usage: python script --inpath <source_dir> --outpath <dest_dir>")
+	# 	sys.exit()
+
+	# read the dataset in a list of samples
+
+	# initicate a loop of 10 measurements for each algorithm
+	for i in range(10):
+
 
 # 	for filename in tqdm(os.listdir(args.inpath)):
 

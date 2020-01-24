@@ -1,10 +1,9 @@
-import argparse
-import os
-import string
-import sys
+
+''' Recover ELITR meeting transcripts from xml to plaintext format '''
+
+import argparse, os, string, sys
 import xml.etree.ElementTree as ET
 from collections import OrderedDict
-
 
 # check if a meeting has a topic file or not
 def has_topic(data_root, topics_folder, meeting_name):
@@ -17,7 +16,6 @@ def has_topic(data_root, topics_folder, meeting_name):
     if not os.path.exists(os.path.join(data_root, topics_folder, meeting_name + '.topic.xml')):
         return False
     return True
-
 
 # recover the words of speaker_name in meeting_name
 def parse_words_file(data_root, words_folder, meeting_name, speaker_name):

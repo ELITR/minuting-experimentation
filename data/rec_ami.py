@@ -1,10 +1,7 @@
 
-''' Recovering AMI corpus transcripts from the XML format '''
+''' Recovering AMI corpus transcripts from the XML to plaintext format '''
 
-import argparse
-import os
-import string
-import sys
+import argparse, os, string, sys
 import xml.etree.ElementTree as ET
 from collections import OrderedDict
 
