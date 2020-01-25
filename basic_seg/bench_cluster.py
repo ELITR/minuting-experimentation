@@ -117,6 +117,7 @@ def clean_text(text, keep_speakers=True, lower=False, eos=False):
 
 	return clean_text
 
+
 # split transcript into list of sentences 
 def get_sents_from_trans(trans, keep_speakers=True):
 	'''
@@ -161,6 +162,19 @@ def get_cluster_sents(clusters, sents):
 			this_cl_sents.append(sents[s])
 		clustered_sents.append(this_cl_sents)
 	return clustered_sents
+
+# format cluster texts for output files
+def format_clusters(clusters, sent_lst):
+	'''format cluster texts for output files'''
+	cluster_lst, out_text = [], ""
+	for cl in range(len(clusters)):
+		cluster_str = []
+		for s in clusters[cl]:
+			cluster_str.append(sent_lst[s])
+		cluster_lst.append('\n'.join(cluster_str))
+	out_text = '\n\n<cluster_separator>\n\n'.join(cluster_lst)
+	return out_text
+
 
 # vectorize the words of a sentence
 def text_to_vec(t):
@@ -221,7 +235,7 @@ def get_vector_matrix(sent_lst):
 	X = vectorizer.fit_transform(sent_lst)
 	return X
 
-# create clusters of sentences - 5 clustering algorithms available
+# create clusters of sentences - obsolete
 def cluster_sentences(n_c, sent_lst):
 	'''create the clusters of sentences'''
 	X = get_vector_matrix(sent_lst)
@@ -256,7 +270,7 @@ def cluster_sentences(n_c, sent_lst):
 		clusters[label].append(i)
 	return dict(clusters)
 
-# find optimal number of clusters for the list of sentences
+# find optimal number of clusters for the list of sentences - obsolete
 def optimal_cluster_num(sent_lst):
 	'''find optimal number of clusters for the list of sentences'''
 	avg_sims = []
@@ -268,6 +282,7 @@ def optimal_cluster_num(sent_lst):
 	# correcting to find optimal number of clusters
 	opt_cl_n = max_ind + 2 
 	return opt_cl_n
+
 
 # create clusters of sent_lst with kmeans algorithm
 def cluster_kmeans(n_c, sent_lst):
@@ -340,17 +355,6 @@ def cluster_affinity(n_c, sent_lst):
 		clusters[label].append(i)
 	return dict(clusters)
 
-# format cluster texts for output files
-def format_clusters(clusters, sent_lst):
-	'''format cluster texts for output files'''
-	cluster_lst, out_text = [], ""
-	for cl in range(len(clusters)):
-		cluster_str = []
-		for s in clusters[cl]:
-			cluster_str.append(sent_lst[s])
-		cluster_lst.append('\n'.join(cluster_str))
-	out_text = '\n\n<cluster_separator>\n\n'.join(cluster_lst)
-	return out_text
 
 # find the average intracluster similarity for kmeans
 def benchmark_kmeans(sent_lst):
@@ -373,7 +377,7 @@ def benchmark_kmeans(sent_lst):
 
 	this_sim, avg_sim = 0, 0
 	# loop 10 times
-	for i in range(10):	
+	for i in range(5):	
 		# create the clustering model - no fixed randomization seed
 		clusters = cluster_kmeans(opt_cl_n, sent_lst)
 		this_sim += get_avg_cluster_sim(clusters, sent_lst)
@@ -401,7 +405,7 @@ def benchmark_agglomerative(sent_lst):
 
 	this_sim, avg_sim = 0, 0
 	# loop 10 times
-	for i in range(10):	
+	for i in range(5):	
 		# create the clustering model - no fixed randomization seed
 		clusters = cluster_agglomerative(opt_cl_n, sent_lst)
 		this_sim += get_avg_cluster_sim(clusters, sent_lst)
@@ -429,7 +433,7 @@ def benchmark_meanshift(sent_lst):
 
 	this_sim, avg_sim = 0, 0
 	# loop 10 times
-	for i in range(10):	
+	for i in range(5):	
 		# create the clustering model - no fixed randomization seed
 		clusters = cluster_meanshift(opt_cl_n, sent_lst)
 		this_sim += get_avg_cluster_sim(clusters, sent_lst)
@@ -457,7 +461,7 @@ def benchmark_spectral(sent_lst):
 
 	this_sim, avg_sim = 0, 0
 	# loop 10 times
-	for i in range(10):	
+	for i in range(5):	
 		# create the clustering model - no fixed randomization seed
 		clusters = cluster_spectral(opt_cl_n, sent_lst)
 		this_sim += get_avg_cluster_sim(clusters, sent_lst)
@@ -485,79 +489,56 @@ def benchmark_affinity(sent_lst):
 
 	this_sim, avg_sim = 0, 0
 	# loop 10 times
-	for i in range(10):	
+	for i in range(5):	
 		# create the clustering model - no fixed randomization seed
 		clusters = cluster_affinity(opt_cl_n, sent_lst)
 		this_sim += get_avg_cluster_sim(clusters, sent_lst)
 	avg_sim = this_sim / 10
 	return avg_sim
 
-sent_lst = ["Nature is beautiful and inspiring","I like green and yellow apples",
-"We should protect the trees","Fruit trees provide tasty fruits",
-"Green apples are tasty", "Sun is a natural source of light", 
-"Staying in naure is great", "Apples and pears are good fruits",
-"We need to plant more trees", "Fires burn and destroy trees", 
-"Fires are very destructive", "Staying in the sun tans the skin"]
 
-nclusters = 5
-clusters = cluster_sentences(sent_lst, nclusters)
-print_cluster_sents(sent_lst, clusters)
-print("Average intracluster similarity: " + str(get_avg_cluster_sim(clusters, sent_lst)))
-
-sys.exit()
+# read transcript files
+def read_transcripts(read_path):
+	'''loop throught the files and return them as a list of sentence lists'''
+	trans_lst = []
+	for filename in os.listdir(args.inpath):
+		fin = os.path.join(args.inpath, filename)
+		# read content of fin and split in sentences
+		with open(fin, 'rt') as i:
+			trans_txt = i.read()
+		# get the sentences
+		sent_lst = get_sents_from_trans(trans_txt, keep_speakers=False)
+		trans_lst.append(sent_lst)
+	return trans_lst
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--inpath', required=True, help='input folder for reading')
-parser.add_argument('--outpath', required=True, help='output folder for writing')
 args = parser.parse_args()
 
-main 
 if __name__=="__main__":
 	# if len(sys.argv) != 5:
 	# 	print("usage: python script --inpath <source_dir> --outpath <dest_dir>")
 	# 	sys.exit()
 
-	# read the dataset in a list of samples
+	# read the files in a list of transcripts
+	trans_lst = read_transcripts(args.inpath)
+	km_sim, agg_sim, msh_sim, spec_sim, aff_sim = 0, 0, 0, 0, 0
 
-	# initicate a loop of 10 measurements for each algorithm
-	for i in range(10):
+	# loop through all transcripts
+	for trans in tqdm(range(len(trans_lst))):
+		km_sim += benchmark_kmeans(trans)
+		agg_sim += benchmark_agglomerative(trans)
+		msh_sim += benchmark_meanshift(trans)
+		spec_sim += benchmark_spectral(trans)
+		aff_sim += benchmark_affinity(trans)
 
+	# print the average intracluster similarity for each algorithm
+	print("Avg similarity for kmeans: ", km_sim / len(trans_lst))
+	print("Avg similarity for agglomerative: ", agg_sim / len(trans_lst))
+	print("Avg similarity for meanshift: ", msh_sim / len(trans_lst))
+	print("Avg similarity for spectral: ", spec_sim / len(trans_lst))
+	print("Avg similarity for affinity: ", aff_sim / len(trans_lst))
 
-# 	for filename in tqdm(os.listdir(args.inpath)):
-
-# 		# full path of file being read and writen
-# 		fin = os.path.join(args.inpath, filename)
-# 		fout = os.path.join(args.outpath, filename)
-
-# 		# read content of fin and split in sentences
-# 		with open(fin, 'rt') as i:
-# 			trans_txt = i.read()
-
-# 		# get the sentences
-# 		sent_lst = get_sents_from_trans(trans_txt, keep_speakers=False)
-
-# 		# vectorize the sentences
-# 		vectorizer = TfidfVectorizer(stop_words='english')
-# 		X = vectorizer.fit_transform(sent_lst)
-
-# 		# write content of fout 
-# 		with open(fout, 'wt') as o:
-# 			o.write()
-
-# 	# create name of output file
-# 	in_file = args.src
-# 	out_file= args.dest
-
-# 	# read text from input file
-# 	with open(in_file, 'rt') as in_f:
-# 		in_text = in_f.read()
-
-# 	# apply cleaning operations
-# 	out_text = clean_text(in_text, keep_speakers=False, lower=True, eos=True)
-
-# 	# write to output file
-# 	with open(out_file, 'wt') as out_f:
-# 		out_f.write(out_text)
 
 
 
