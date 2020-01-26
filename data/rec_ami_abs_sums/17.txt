@@ -1,0 +1,269 @@
+C:  now we are here at the functional design meeting . 
+C:  Um <other> hopefully this meeting I'll be doing a little bit less talking than I did last time 
+C:  'cause this is when you get to show us what you've been doing individually . 
+C:  The agenda for the meeting , I put it in the sh shared documents folder . 
+C:  Um <other> I'll act as secretary for this meeting 
+C:  and just take minutes as we go through , 
+C:  The main the main focus of this meeting is your presentations that you've been preparing during the time , 
+C:  Um then we need to briefly discuss the new project requirements that were sent to us . 
+C:  at the last minute , 
+C:  then we need to , by the end of the meeting come to some kind of decision on who our target group's going to be 
+C:  and what the functions of the remote control  
+A:  You said uh targ target groups , 
+A:  what does that mean ? 
+C:  As uh who it is that we're going to be trying to sell this thing to , 
+C:  yeah , we need to have a fairly defined group that that we want to focus on 
+C:  Just before you start , to make it easier , would you three mind emailing me your presentations ? Once we  
+C:  you don't have to do it now but when  once you go back , 
+C:  just so that I don't have to scribble everything down . 
+
+A:  <other> So n uh with uh with regard to the <other> uh working design of this uh uh remote control uh I've identified um <other> a few basic uh components of the remote 
+A:  and uh <other> se uh from the design , functional design perspective um w I c we can now uh know wha what exactly the components are 
+A:  Um the identification of the components , 
+A:  uh and uh since since I'm dealing only with the technical aspects , I would need feedback from the marketing person uh and <laugh> uh from the user interface person . 
+A:  Uh we'll then integrate this into the product design at a technical level 
+A:  these were the basic findings from today . 
+A:  The last three bullets have been integrated from uh the last minute uh email . 
+A:  as I told you the identification of how the remote control works and what are the various parts to it uh and what are the different processes um <other> and how the parts uh communicate with each other . 
+A:  also uh the remote control should be used only for television , 
+A:  because incorporating other features um makes it more comp complex . 
+A:  And the reason why teletext is outdated because uh of internet and uh the availability of internet over television . 
+A:  also the management wants that um our design should be unique 
+A:  so <other> it should incorporate um colour and the slogan uh that our company um has it as its standard . 
+A:  <other> Okay , so he he here is a functional overview of the remote control . 
+A:  there's basically an energy source at the heart uh which feeds into the chip and the user interface . 
+A:  The user interf interface communicates with the chip , 
+A:  if uh if this is our energy source and this is a cell , uh it communicates  uh it feeds energy into the into the chip , which basically finds out h uh how how to do everything . 
+A:  There is a user interface here . 
+A:  <other> So whe when the user presses a button , it feeds into the chip 
+A:  and the chip then generates a response 
+A:  and takes the response to an infrared terminal , 
+A:  Um the there can be uh a bulb here or something to indicate whether the remote is on or communicating . 
+A:  so the output of the chip is an infrared bit code , 
+A:  whatever new functions that we need to do , um make the chip more complicated uh and bigger , basically . 
+A:  i in my personal preferences um <other> I'm hoping that we can ke keep the design as simple and clear as possible . 
+A:  This would uh help us uh to upgrade our technology at a future point of time . 
+A:  And uh also if we can incorporate uh the latest features in our chip design , so that our um <other> uh remote control does not become outdated soon and it's compatible with mot most uh televisions . 
+C:  Do you have any um i idea about costs at this point ? 
+A:  <other> No , I don't have any idea about what each component costs . 
+C:  'Cause that's something to consider , I guess , 
+C:  if we're if we're using more advanced technology , it might increase the price . 
+A:  we definitely need to operate within our constraints , 
+
+D:  I think since since we were discussing some um design issues then I I I would like to continue  
+D:  So I'm going to speak about technical functions design 
+D:  uh my method was um to look at um other <other> um remote controls , 
+D:  uh so mostly just by searching on the web 
+D:  And then um after having got this inspiration and having compared what I found on the web um just to think about what the de what the user really needs and what um what the user might desire as additional uh functionalities . 
+D:  Um so the findings uh were <other> um that the main function of the remote control is is just sending messages to the television set , 
+D:  And uh w some of the main functions would be switching on , switching off , 
+D:  uh then the user would like to switch the channel 
+D:  um for example just m changing to the next channel to to flip through all all of the possible channels , 
+D:  or then mm <other> uh the other possibility would be that um she might just want to choose one particular channel , 
+D:  so we would need the numbers . 
+D:  And and also the volume is very important . 
+D:  Um um among the findings I found that m m most of the curr mm presently available remote controls also include other mm <other> functionalities um in their design , like operating a V_C_R_ , 
+D:  but they don't seem to be able to deal with D_V_D_ players , 
+D:  but according to the last minute update um actually um we do not want to have all this complicated functions added to our design . 
+D:  So my personal preferences would be uh to keep the mm the whole remote control small um just like the physical size . 
+D:  And then it must be easy to use , 
+D:  so it must follow some conventions um like whereabouts you find the on off button 
+D:  and maybe the colour tends to be red or something . 
+D:  But then um other functionalities um <other> could be just  
+D:  uh there could be a menu button 
+D:  and you could change things on the screen then , 
+D:  um for example brightness and mm similar functions could be just um <other> done through the menu . 
+D:  the last question I had about whether we wanted to incorporate n uh more functionalities , 
+D:  the answer was already no because of the last minute update . 
+C:  but if we had a a decent case for  that we really think it's important to include video and D_V_D_ , I could get back to them and see . 
+D:  and also it's it's um  other question is uh because there are so many different  And there are so many different things that could possibly be included 
+D:  because besides video and D_V_D_ there are the mm um video C_D_s and whatever , 
+D:  so it might be problematic to to choose between all these possible things . 
+
+D:  And uh w some of the main functions would be switching on , switching off , 
+D:  uh then the user would like to switch the channel 
+D:  um for example just m changing to the next channel to to flip through all all of the possible channels , 
+D:  or then mm <other> uh the other possibility would be that um she might just want to choose one particular channel , 
+D:  so we would need the numbers . 
+D:  And and also the volume is very important . 
+D:  But then um other functionalities um <other> could be just  
+D:  uh there could be a menu button 
+D:  and you could change things on the screen then , 
+D:  um for example brightness and mm similar functions could be just um <other> done through the menu . 
+
+D:  So my personal preferences would be uh to keep the mm the whole remote control small um just like the physical size . 
+D:  And then it must be easy to use , 
+D:  so it must follow some conventions um like whereabouts you find the on off button 
+D:  and maybe the colour tends to be red or something . 
+
+A:  and uh have some kind of a fancy user interface or something like that . 
+D:  Um well , I think the buttons are still mm kind of the most um easy for the user to use , 
+A:  or  I mean in  we can completely do away with buttons 
+A:  so so at this stage , uh how we go about implementing those button we will not identify 
+A:  <other> So in the u user interface requirements uh uh uh we we have been able to identify what are the basic buttons that we do want . 
+D:  I mean um what other options would you have ? 
+D:  A little screen or something , 
+D:  but this would be really kind of I think a lot of learning for the user 
+D:  and and I mean the user just wants to get um get a result um quickly , 
+D:  not to spend time in like um giving several orders um I dunno . 
+D:  I think I th I would I would think the put the buttons , 
+A:  Uh I think the co costs will also play a big role when we come to know about them . 
+A:  So well we can probably wait until t we have more knowledge on that . 
+A:  Uh i if the if the costs allow , we can have like an L_C_D_ display 
+A:  because we do want something fancy and fashionable as well . 
+
+B:  So what I have , wh where I've got my information from is a survey where the usability lab um observed remote control use with um a hundred subjects 
+B:  and then they gave them a questionnaire . 
+B:  What they found is that people don't like how current remote controls are , 
+B:  Um seventy five percent of users find most remote controls ugly . 
+B:  Uh eighty percent of users would spend more to get um you know , a nice looking remote control . 
+B:  Um current remote controls , they don't match the user behaviour well , 
+B:  Um I dunno what zapping is , 
+C:  It's um switching between channels , sort of randomly going through . 
+B:  But you have that little thing that comes up at the bottom and tells you what's on . 
+B:  Um okay , fifty percent of users say they only use ten percent of the buttons , 
+B:  so that's going back to what , you know , we were saying earlier about , you know , do you need all the buttons on the remote control , 
+B:  they just make it look ugly . 
+B:  Um so this is my little graph thing . 
+B:  what it shows is how much things are used relatively 
+B:  and what you can clearly see from that is the thing that's used most is the channel selection . 
+B:  What you can't see is volume selection , it's a little bit higher than all the others . 
+B:  so what the graph shows is that , you know , power , channel selection and volume selection are important , 
+B:  and the rest of them , you know , nobody really uses 
+B:  and so that's the the numbers along the top represent their like um their importance , you know , 
+B:  and , you know , channel selection and volume selection are absolutely essential , 
+B:  and the power , well it's not quite so essential , apparently , 
+B:  <laugh> um and everything else , I think , you know , you can forget about having those buttons on the remote control , 
+B:  so this is what people find annoying about remote controls . 
+B:  Uh that they get lost , 
+B:  that the uh you know , they're not intuitive 
+B:  and that they're bad for repetitive strain injury . 
+B:  you want something with an ergonomic t design that encourages good use of the remote control 
+B:  but that shows how people  whether they would pay more for voice recognition software . 
+B:  So you can see from that that , you know , younger people to the age of thirty five are quite likely to pay quite a lot more f well quite  are quite likely to pay more for voice recognition software , 
+B:  whereas as people get older , they're a bit more sceptical about it 
+B:  Um so clearly voice recognition is something to think about , 
+B:  but um you know I d I do wonder how well that would work given that a T_V_ , you know , tends to be people talking 
+B:  and um , you know , how are you going to stop it from just flipping channels whilst watching T_V_ . 
+B:  so these are my personal preferences . 
+B:  <other> So you have sleek , stylish , sophisticated , you know , 
+B:  so something that's , you know , a bit cool . 
+B:  Um you know , functional , so it's useful , but minimalist . 
+B:  so things should either be functional or beautiful or preferably both , 
+B:  Um okay , then a long battery life , like you were talking about earlier 
+B:  and um , you know , I was thinking that solar power would be quite cool 
+B:  because , you know , your remote control just sits there , 
+B:  and you could just sit it in the sunshine 
+B:  and save the environment a bit . 
+B:  Um and then like a locator , 
+B:  so you know , kind of like you have for a mobile phone or  
+A:  Some kind of a ring , 
+C:  Whistle and it <other> screams at you , yeah . 
+B:  <laugh> So yeah , so maybe something where you clap and then it beeps , 
+
+B:  so these are my personal preferences . 
+B:  <other> So you have sleek , stylish , sophisticated , you know , 
+B:  so something that's , you know , a bit cool . 
+B:  Um you know , functional , so it's useful , but minimalist . 
+B:  so things should either be functional or beautiful or preferably both , 
+B:  Um okay , then a long battery life , like you were talking about earlier 
+B:  and um , you know , I was thinking that solar power would be quite cool 
+B:  because , you know , your remote control just sits there , 
+B:  and you could just sit it in the sunshine 
+B:  and save the environment a bit . 
+B:  so you know , kind of like you have for a mobile phone or  
+A:  Some kind of a ring , 
+C:  Whistle and it <other> screams at you , yeah . 
+B:  <laugh> So yeah , so maybe something where you clap and then it beeps , 
+B:  Um and then like a locator , 
+
+C:  So , we've got about ten , fifteen minutes to discuss 
+A:  <other> I think one of the very interesting things that came up in um <other> uh Ka Kate Cat Cat's uh presentation was um <other> uh this this issue of uh uh like voice recognition being more popular with uh younger people . 
+A:  So if we need to have a target group um then uh <other> I think as far as the m motto of our company is concerned , if we want to have something sleek and uh you know , good looking uh we are better off targeting a younger audience then um you know , people who are comparatively elderly . 
+B:  I mean that's the thing is that it didn't say in the survey , you know , whether , you know , these are the people that will pay more for a more stylish remote control , 
+A:  Bu but but the survey did say that f things like voice recognition are more popular with them , 
+C:  Then again I guess the th where it was most popular was the fifteen to twenty five bracket 
+C:  and the  I don't know how often they're buying televisions . 
+C:  I would've thought it's it's more that twenty five to thirty five , when people are really moving out and they've got their first job and they want their nice toys and  
+A:  wh uh um people between twenty five to thirty five , uh how popular was  
+B:  Seventy six point three percent . 
+B:  but I mean it has been proven that that people of that age group have a higher disposable income 
+B:  I mean like it is an age group to target , really , I think . 
+C:  and if we're if we're talking twenty five Euros as a price , that's not unaffordable , even for young people . 
+D:  but the problem is whether people need it , whether they do have a T_V_ <laugh> to use its full  
+C:  and be a bit strange to have a fancy <laugh> rome remote . 
+B:  I think I think the fact that , you know , ninety one point two percent of fifteen to twenty five year olds are saying yes , I would pay more for a voice recognition remote control , does say quite a lot really . 
+D:  but at the same time I think maybe we can we can just decide to to have both of these groups as our target , 
+D:  because actually I mean they're all still re young people . 
+C:  Yeah , if we ta if we take fifteen to thirty five , 
+
+C:  but that then does imply that we should try and incorporate voice recognition . 
+C:  Is that gonna have a  an implication for the technical specs ? 
+A:  but voice recognition itself I'm not very sure about , 
+C:  With um  but with a T_V_ remote it's gonna be quite limited if we're t saying the main things people want to do is on off channel five , 
+C:  tha that should be relatively simple . 
+B:  y you'd maybe need a code word . 
+B:  but like so you'd just say remote five , you know , remote ten , remote one two nine . 
+C:  but maybe if you wanna look into that just to just to check . 
+D:  w well now the v the voice recognition if if it works wonderfully w we could possibly do away with all buttons , 
+D:  but I think this is not really the right moment yet , 
+D:  because people are just so used to buttons 
+A:  What wh uh <other> what I was thinking is that there is this uh separation between what the channels are on T_V_ and how they are numbered on the remote control . 
+A:  If we can do with  away with that , our product can be really popular 
+A:  uh in the sense that uh a person can say , I want to watch uh I_T_V_ one instead of saying that I want to go onto channel number forty five . 
+C:  So that if that was in the the voice recognition , that would be great . 
+B:  It's more like if you lost it and it's down the sofa sometime , you can yell at it <laugh> and it'll just change it , you can look for it later , yeah . 
+D:  Yeah but m but on the other hand , remote control isn't <other> as close to you you probably might just just uh speak into it 
+A:  yeah and it might become very difficult from a distance for the television to understand what you're saying because of the noise factor for the remote control 
+D:  No , but I I I was just defending the <other> the fact why why we want to keep the remote control close to us , a and uh not to yell at it from the distance . 
+A:  So uh <other> wh another thing uh that can be used is that uh there can be a beeper button on the T_V_ , 
+A:  so you can go and press that button and um and the remote control , wherever it is , it'll beep , 
+A:  so we we can probably come to know where it is . 
+C:  But if we go away with that that kind of general um <other> specification in mind that we're looking at fifteen to thirty five year olds , we want it to look simple , but still have the buttons so it's easy to use , but only those key buttons , the major buttons and then one sort of menu one , and then voice recognition included as an option 
+C:  um but that obviously needs a little bit more working out as to whether it's really feasible and some of those problems we were mentioning um . <other> 
+C:  What we have to do now is to go back to our little places , 
+C:  complete our questionnaire 
+C:  and some sort of summarisation , 
+C:  Send me your presentations so that I can use them to make the minutes , 
+C:  and after lunch we go back to our own little stations and have thirty minutes more work . 
+C:  Um I'll put the minutes in that project documents folder , 
+C:  but I'll send you an email when I do it , so that you know . 
+C:  You'll be looking <laugh> you'll be looking at the user interface concept , 
+C:  and you're watching trends to see how we go 
+C:  as to where we're going from here , you're going to look at the components concept . 
+C:  w before lunch we just have to complete the questionnaire and some sort of summary . 
+
+C:  What we have to do now is to go back to our little places , 
+C:  complete our questionnaire 
+C:  and some sort of summarisation , 
+C:  Send me your presentations so that I can use them to make the minutes , 
+C:  w before lunch we just have to complete the questionnaire and some sort of summary . 
+
+C:  You'll be looking <laugh> you'll be looking at the user interface concept , 
+
+C:  and you're watching trends to see how we go 
+
+C:  as to where we're going from here , you're going to look at the components concept . 
+
+B:  but um you know I d I do wonder how well that would work given that a T_V_ , you know , tends to be people talking 
+B:  Um so clearly voice recognition is something to think about , 
+B:  and um , you know , how are you going to stop it from just flipping channels whilst watching T_V_ . 
+C:  but that then does imply that we should try and incorporate voice recognition . 
+C:  Is that gonna have a  an implication for the technical specs ? 
+A:  but voice recognition itself I'm not very sure about , 
+C:  With um  but with a T_V_ remote it's gonna be quite limited if we're t saying the main things people want to do is on off channel five , 
+C:  tha that should be relatively simple . 
+B:  y you'd maybe need a code word . 
+B:  but like so you'd just say remote five , you know , remote ten , remote one two nine . 
+C:  but maybe if you wanna look into that just to just to check . 
+D:  w well now the v the voice recognition if if it works wonderfully w we could possibly do away with all buttons , 
+D:  but I think this is not really the right moment yet , 
+D:  because people are just so used to buttons 
+C:  So that if that was in the the voice recognition , that would be great . 
+B:  It's more like if you lost it and it's down the sofa sometime , you can yell at it <laugh> and it'll just change it , you can look for it later , yeah . 
+D:  Yeah but m but on the other hand , remote control isn't <other> as close to you you probably might just just uh speak into it 
+A:  yeah and it might become very difficult from a distance for the television to understand what you're saying because of the noise factor for the remote control 
+D:  No , but I I I was just defending the <other> the fact why why we want to keep the remote control close to us , a and uh not to yell at it from the distance . 
+C:  But if we go away with that that kind of general um <other> specification in mind that we're looking at fifteen to thirty five year olds , we want it to look simple , but still have the buttons so it's easy to use , but only those key buttons , the major buttons and then one sort of menu one , and then voice recognition included as an option 
+C:  um but that obviously needs a little bit more working out as to whether it's really feasible and some of those problems we were mentioning um . <other> 
+

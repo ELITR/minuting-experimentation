@@ -1,0 +1,242 @@
+A:  This is our functional design meeting . 
+A:  our agenda today um  
+A:  Um . I'm gonna do an opening , 
+A:  did you all get the minutes ? 
+A:  I e-mailed them to you . 
+A:  I'm also putting 'em  them in the shared folder . 
+A:  So um then I  we'll talk about our general objectives 
+A:  and have your three presentations . 
+A:  Um I'll talk about the new project requirements I've just received , 
+A:  and then we have to make a decision on our remote control functions . 
+A:  Uh we need to keep in mind the user requirement specification , what needs and desires are to be fulfilled , the  functions design , what effects the apparatus should have , and the working design , how the apparatus actually works to fulfil its function . 
+
+D:  I don't know if you guys are able to get access to um the report that was online 
+D:  or if I'm the only one who is . 
+D:  we're just gonna talk a little bit about the functional requirements that people specified when they were asked . 
+D:  They had a hundred subjects and their usability lab 
+D:  and recorded the frequency that they used particular buttons and the relevance that those buttons had . 
+D:  Focusing on their desires , um people specifically said that they thought remotes were ugly <laugh> , 
+D:  seventy five per cent of the a hundred subjects noted that 
+D:  more importantly though , eighty per cent said that they would be willing to pay more for a fancier looking remote . 
+D:  and found that the desire for voice recognition was inversely related to age , 
+D:  so younger people were more inclined to want something with voice recognition , 
+D:  That being people k um frustrated with losing their remotes . 
+D:  I think , over fifty percent of the people mentioned that that was their biggest frustration . 
+D:  People are also frustrated with the difficulty it is to learn how to use a remote 
+D:  and I think that ties back to what you were saying before 
+D:  just that there's too many buttons , 
+D:  It also mentioned something called R_S_I_ 
+D:  and I was hoping someone might be able to inform me as to what R_S_I_ is , 
+C:  Repetitive strain injury . 
+D:  So I guess sort of the carpal tunnel type thing , people do not like that , 
+D:  Um looking at the needs people specified , the problem right now is that people's remotes are not matching their operating behaviour . 
+D:  People are only using ten per cent of the buttons that they have offered to them on their remote . 
+D:  People also zap like to change the channel , about um sixty five per cent during an hour of use . 
+D:  So we really just need to focus in on those volumes and channel changers rather than things like the audio settings , the screen settings and the channel settings , 
+D:  the idea of an L_C_D_ screen was brought up 
+D:  although they didn't have any details on what people's preferences on that were , 
+D:  also just the phenomenon that less is more when it comes to the buttons on the remote 
+D:  make sure that , you know , something like an audio setting isn't given as much importance and visibility on the remote as something like channel changing that's used a lot more often . 
+D:  And basically in order for us to win over to the consumer we just need to focus on what it looks like , 
+
+C:  I'm gonna talk about the technical technical functions design of the remote control um . 
+C:  We need to start by considering what a remote control actually is . 
+C:  It's a device that allows us to produce certain effects on our television , 
+C:  it sends a message to the television 
+C:  First thing to do is to come up with the design specifications . 
+C:  so we need a a clear idea of exactly what this product does , 
+C:  and what the end-user is gonna want from this product . 
+C:  a way I'd suggest that we could go about this is by designing uh several different prototypes of user interfaces for this product , 
+C:  um and then uh trying to get some feedback uh about 
+C:  h how well these particular prototypes work , 
+C:  When a users using a remote control , he or she expects the buttons to be in certain places . 
+C:  So in some sense we're gonna we're gonna have to aim for a device which is fairly conventional in design 
+C:  But I think within that there is also room for us to introduce novel ideas 
+C:  Um also in in designing the user interface we need to consider practicalities . 
+C:  Uh the first of these is is technological 
+C:  uh we need to find a balance between features and price . 
+C:  things like voice recognition would would add to the price 
+C:  uh but it would also im improve the design of the product . 
+C:  Um personally wa what I want from a remote control is a device that's simple , 
+C:  uh it's got big buttons for doing the things I do most often , changing the volume , changing the channel . 
+C:  that's ergonomically designed . 
+C:  I think there's there's certainly a market for technology that looks cool . 
+
+C:  I had a look on the  on the web uh to see if I could find a few examples of existing television remote controls . 
+C:  In analysing these we can consider what what things  what's good about them , 
+C:  um how we can improve on the designs that that that I found 
+C:  Here's two examples uh probably at the extreme ends of the spectrum . 
+C:  Um on the left here we've got uh an engineering-based design for a remote control , 
+C:  so it's one that's got lots of buttons , 
+C:  The one on the right is a lot more basic . 
+C:  It would be a lot quicker to learn to use it , 
+C:  Uh there's a lot of features that are missing from that remote control . 
+C:  everything you might possibly want to do is there , 
+
+B:  this is our working design presentation . 
+B:  Um I had a bit of  some issues with this , 
+B:  because I wasn't able to find everything I needed , 
+B:  what we're trying to do as a working design is figure out how the aparata apparatus can fulfil its function . 
+B:  Um one of the examples that kept coming up for me is that a coffee grinder . 
+B:  because it converts electrical energy to grinding the beans 
+B:  because of the combination of electrical energy and then the other things that are brought in to make it work . 
+B:  So you make a schematic of the way that the the energy is converted tsh towards this practical function . 
+B:  the findings that I got uh very  just very briefly is that you have a choice of the way that the information is projected to the receiver 
+B:  and in my opinion infra-red is the best way to do that 
+B:  Um the user interface is critical here , 
+B:  because a lot of the things that happen in a remote control happen through the chip that controls  that converts the electrical energy into data , 
+B:  the components that we find here are the energy source , you know the battery or whatever that's gonna m make it work , then the chip , which converts the data , the user that's controlling the chip , and the infra-red bulb that's gonna let us move the data to the receiver . 
+B:  And <laugh> personal preferences , besides the fact that I can't spell , we need a long-lasting energy source , 
+B:  We need a chip that works well with the user interface , 
+B:  and we need a reliable and clear infra-red signal , 
+
+A:  requirements . We have a couple new requirements 
+A:  but we're not gonna work with teletext 
+A:  We didn't bring it up yet , or at all in the meetings so far , 
+D:  What's teletext ? 
+B:  Uh , it's a British thing . 
+C:  I suppose it's kind of similar to a very very basic web browser . 
+C:  this this kind of index appears on the television screen with just some some text and some very blocky looking graphics on it . 
+C:  and it gives you information , mostly rather boring stuff like what's on T_V_ next and share prices and that kind of thing . 
+C:  It's earl it's pretty old technology . 
+A:  like your question earlier um whether this is going to be t for television , video , or etcetera . Just for television . That's what we're focused on . 
+A:  Um otherwise becomes to complex , 
+A:  Um and finally there's more marketing , I think , um , our corporate image has to be recognisable . 
+A:  while we're gonna make it look pretty we need to use our colour and our slogan i in the new design . 
+C:  It's  It's kind of yellow colour with uh we put fashion in electronics . 
+A:  and we have that  the emphasis on the R_s in um  
+A:  Looks like , yeah , kind of a yellow and black 
+C:  It's like double R_ . 
+A:  we need to talk about our functions and our target group . 
+A:  You um in your analysis of different market um  of the marketing , you identified that different groups wanted different things 
+B:  if we're gonna say that function um fashion  we put the fashion in in electronics then you  automatically , I think , a sort of younger group that  that's  who's gonna be attracted to this . 
+D:  I do think , who's gonna have the money to buy that also , that one ? 
+A:  at least right now what we're doing is um deciding on just the remote itself , 
+D:  The only break-down that I was given in terms of age was the voice activation 
+D:  so it's like basically fifteen to thirty five that think that that's a good idea . 
+B:  that's probably uh a population w quite a little bit of disposable income for use on technology anyway , 
+A:  that's all specific for speech recognition . 
+A:  Are we gonna use that as one of our functions ? 
+C:  I I would say no , 
+C:  because it's gonna add too much to the price . 
+C:  And I wonder if we can get voice recognition into that twelve and a half Euros without having to make too many other compromises . 
+B:  but why are we why are we aiming for a technological advancement ? 
+B:  Everything we're talking about is ease of use and simple 
+D:  If someone's looking to buy a new remote , don't they want like an upgrade ? 
+A:  or we can look at um user-friendly . 
+A:  And we also need to talk about if we're only gonna have the very simple ones 
+A:  or also have the other ones just separate somehow 
+D:  like if it was just a simple , either this way or this way , 
+D:  that had like the main buttons 
+D:  and then you could like pull something out , 
+D:  'Cause then 's like people who don't wanna ever look at them , never even have to see them 
+A:  what are we emphasising ? I  what in this project ? 
+A:  which includes um an emphasis on making the infra-red very functional , 
+C:  Si simplicity and fashion . 
+D:  What can you do to like make the infra-red more functional , 
+A:  I think it's a lot <other> to do with battery , 
+D:  So 's just the quality of the chip . 
+A:  So our target group , we're saying , fifteen to thirty five ? 
+D:  I dunno how useful that number is if we're not doing  
+A:  S voice recognition , 
+D:  And if the whole idea is you're using a remote then why would you have voice , 
+D:  like you know what I mean and then it's like you wouldn't need a remote 
+C:  It's for , like , the ultimately lazy people , 
+D:  I mean if I get m more numbers , I'll e-mail you before the next meeting in terms of ages . 
+B:  but I th I think regardless we're we're aiming for the under sixty five or something . 
+A:  can we narrow it down to maybe um teenagers and families ? 
+A:  It's it's hard to narrow it down . 
+C:  I think the product appeals across a quite a broad range of ages . 
+C:  so it's going to appeal to people , maybe people who have problems with technology , you know , people who get scared by having lots of buttons , 
+D:  maybe we don't have to defi define the target group by the demographic of age , 
+A:  So maybe it's more useful to d d to define objectives like fashion and simplicity than to find specific target group as far as age is  
+A:  do we want some kind of thing to find it if it's lost ? 
+A:  Like a button on a T_V_ you can press 
+D:  It would be relevant to like the overall goal I think , 
+A:  Um so we want something to keep it from getting lost . 
+A:  And <other> we want um we want large buttons for the essential things . 
+A:  We want a possibility to um to get um a possibility to get the extra functions . 
+C:  Which are kind of hidden away in some way 
+A:  Battery ? Do we need a long-life battery ? 
+C:  We should maybe investigate whether it needs a battery at all . 
+B:  But you could maybe have it in a little charging station like a mobile phone , or like a little cradle for your iPod . 
+C:  Yeah , that's that's possible . Yeah . 
+B:  that might contribute to less people losing it too if it <laugh> it stays in one place . 
+A:  that's <other> that's a good idea , 
+
+A:  Um after the meeting we're gonna each complete a sks um a questionnaire and a summaries  summary . 
+
+A:  After that we have thirty minutes of individual work . 
+
+A:  Um I'll make sure to put up um the minutes and the project documentation and including these PowerPoint slides . 
+
+A:  If everyone could do that as well , that'd be great . 
+
+A:  I_ um I_D_ Industrial Design you've your components concept , 
+
+A:  User Interface , the user interface concept , 
+
+A:  market trend wa watching . 
+
+A:  We didn't bring it up yet , or at all in the meetings so far , 
+A:  but we're not gonna work with teletext 
+
+A:  like your question earlier um whether this is going to be t for television , video , or etcetera . Just for television . That's what we're focused on . 
+
+A:  Um and finally there's more marketing , I think , um , our corporate image has to be recognisable . 
+A:  while we're gonna make it look pretty we need to use our colour and our slogan i in the new design . 
+
+C:  Si simplicity and fashion . 
+
+C:  Si simplicity and fashion . 
+C:  I think the product appeals across a quite a broad range of ages . 
+C:  so it's going to appeal to people , maybe people who have problems with technology , you know , people who get scared by having lots of buttons , 
+D:  maybe we don't have to defi define the target group by the demographic of age , 
+A:  So maybe it's more useful to d d to define objectives like fashion and simplicity than to find specific target group as far as age is  
+
+A:  Um so we want something to keep it from getting lost . 
+
+A:  And <other> we want um we want large buttons for the essential things . 
+
+A:  We want a possibility to um to get um a possibility to get the extra functions . 
+
+D:  'Cause then 's like people who don't wanna ever look at them , never even have to see them 
+D:  and then you could like pull something out , 
+D:  that had like the main buttons 
+D:  like if it was just a simple , either this way or this way , 
+C:  Which are kind of hidden away in some way 
+
+A:  that's <other> that's a good idea , 
+B:  But you could maybe have it in a little charging station like a mobile phone , or like a little cradle for your iPod . 
+
+B:  if we're gonna say that function um fashion  we put the fashion in in electronics then you  automatically , I think , a sort of younger group that  that's  who's gonna be attracted to this . 
+D:  I do think , who's gonna have the money to buy that also , that one ? 
+D:  The only break-down that I was given in terms of age was the voice activation 
+D:  so it's like basically fifteen to thirty five that think that that's a good idea . 
+B:  that's probably uh a population w quite a little bit of disposable income for use on technology anyway , 
+A:  So our target group , we're saying , fifteen to thirty five ? 
+D:  I dunno how useful that number is if we're not doing  
+A:  S voice recognition , 
+B:  but I th I think regardless we're we're aiming for the under sixty five or something . 
+A:  can we narrow it down to maybe um teenagers and families ? 
+A:  It's it's hard to narrow it down . 
+
+A:  Are we gonna use that as one of our functions ? 
+C:  I I would say no , 
+C:  because it's gonna add too much to the price . 
+C:  And I wonder if we can get voice recognition into that twelve and a half Euros without having to make too many other compromises . 
+D:  And if the whole idea is you're using a remote then why would you have voice , 
+D:  like you know what I mean and then it's like you wouldn't need a remote 
+C:  It's for , like , the ultimately lazy people , 
+
+A:  which includes um an emphasis on making the infra-red very functional , 
+D:  What can you do to like make the infra-red more functional , 
+A:  I think it's a lot <other> to do with battery , 
+D:  So 's just the quality of the chip . 
+
+A:  Battery ? Do we need a long-life battery ? 
+C:  We should maybe investigate whether it needs a battery at all . 
+B:  But you could maybe have it in a little charging station like a mobile phone , or like a little cradle for your iPod . 
+C:  Yeah , that's that's possible . Yeah . 
+B:  that might contribute to less people losing it too if it <laugh> it stays in one place . 
+

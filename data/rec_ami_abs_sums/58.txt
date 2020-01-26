@@ -1,0 +1,272 @@
+B:  I will uh present here agenda with with with with slides to you . 
+B:  first uh just to mention I will take notes uh of this meeting 
+B:  I've also made notes of the previous meeting 
+B:  and um I was about to send them you 
+B:  but <other> then uh I had to go to this uh meeting 
+D:  So y you are the secretary also . 
+B:  Yes . Indeed . 
+B:  Then I hope you all have uh worked out <other> some some uh <laugh> some some presentations about uh about well you the the task given to you in the previous meeting . 
+B:  Um . W We will uh in a minute we will uh <other> start with them . 
+B:  Um then I will uh bring in some some some new requirements 
+B:  I try to work them out , 
+B:  they were quite abstract , 
+B:  and we can have maybe have com some discussion about it . Uh Um about the functions 
+B:  in this meeting we should really <other> try to reach a decision about the target group and the functionality of the  
+D:  You mean the social target group who we wants to target ? 
+B:  Yes I mean well yes w who are we going to uh to well to sell this , 
+B:  And then uh we will close this meeting uh 
+B:  and after this meeting we'll uh we'll have a lunch . 
+B:  uh Anna can you c do you have a presentations ? 
+A:  I c I can talk about it 
+A:  but I have no slides or anything . 
+
+B:  Yes yes maybe maybe you can uh can just talk about it 
+B:  or maybe you can use the whiteboard if necessary um . 
+A:  I've just been um presented with some research we've done in a small focus group 
+A:  a hundred people , just asked them about their remote control usage habits and what they want in a remote control . Um . 
+A:  I've just got a web page with some data on it . 
+A:  Um basically it's saying that users generally dislike the look and feel of their remote controls . 
+A:  Um seventy five u seventy five percent of users find most remote controls ugly . Um . 
+A:  Eighty percent of users would spend more money when a remote control would look fancy . 
+A:  Um . Current remote controls do not match well the operating behaviour of the user . 
+A:  Uh seventy five percent of users said they zap a lot , 
+A:  Uh . Fifty percent of users say that they only use ten percent of the buttons , 
+A:  so they've got a remote control with a lot of functionality 
+A:  but really most of the time they only use a small part of that . 
+B:  Do you Do you have this uh information on the web page you said ? 
+A:  I have an a web page yes . 
+B:  mayb maybe you can can send an email to me later uh . Uh about this . 
+A:  there's a breakdown of how much they use the different functions on a rem remote control . 
+A:  Um , power and volume selection are only used a few times within this uh per hour . 
+A:  Um , channel selection is used a hundred and sixty eight times um <other> 
+A:  and then there's things like channel settings , audio settings , which are only used very infrequently . 
+A:  Um . Teletext is used um fourteen times in the hour , 
+A:  so it is used but not nearly as much as the channel selection is used . Um . 
+A:  An interesting thing that this report has brought up 
+A:  is that um fifty fifty percent of users report that the remote control gets lost a lot of the time in the room , 
+A:  so some way of some way of locating the remote control would be very useful to a lot of users . Um . 
+A:  Thirty four percent said it takes too long to learn to use a remote control , 
+A:  they want something that's easier to use straight away , more intuitive perhaps . 
+A:  Um . And thirty  twenty six percent said remote controls are bad for R_S_I_ . 
+A:  I don't know how we'd go about combating that . 
+A:  Um and then it's got a demographic breakdown 
+D:  Maybe y y you cannot put this webpage online on the  
+A:  Uh I should be able to actually , if I email it to you now . 
+D:  these numbers have have to be have to be taken into account for the uh both yeah user interface and functional design . 
+D:  and we need to select to to constraint uh our design based on what is more important . 
+A:  Um , one thing is interesting is talking about um speech recognition in a remote control . 
+A:  And who would pay more for that and whether people would find it useful . 
+D:  it would be all based on speech . 
+D:  Interesting idea . 
+A:  I think that would not work so well . 
+A:  You wanna have both options . 
+B:  it would it would be a solution for uh when your remote control is lost , 
+B:  I mean when it has speech recognition then uh i then it doesn't matter where it is , my  well it's  we should be in range , 
+B:  or maybe it can respond and produce sound , so say where it is . 
+B:  I'm not sure whether we will we can make this for <laugh> for twelve Euro fi and fifty cents <laugh> . 
+D:  And we don't know where the state of the art of speech recognition is , 
+C:  there is uh it's a very small vocabulary that you want to do the operations like you want to say on , off , one , two , twenty three , 
+D:  But it's quite noisy if there is the T_V_ uh shouting . 
+A:  This is now talking about um who would pay for speech recognition in a remote control , who would pay more for it , um . 
+A:  Ninety percent of the fifteen to twenty five year old market said that they would pay more , 
+A:  seventy six percent for twenty five to thirty five , 
+A:  thirty five percent for thirty five to forty five , 
+A:  um twenty two percent for forty five to fifty five 
+A:  and then eight percent for fifty five to sixty five . 
+A:  it really depends where we're gonna be targeting this product , um , 
+A:  which we'll be talking about later I think . 
+A:  Another thing it's talking about there is the L_C_D_ screen 
+A:  but there's no figures apparently on that . 
+
+D:  I think as everybody knows uh I'm the uh Industrial Designer . 
+D:  And uh in this presentation uh this group presentation um <other> is gonna focus on the working design of the the remote control . 
+D:  Um I'd like first to give a quick a very simple introduction , how does it work , 
+D:  the basic function of a remote control is to send uh messages to another system that is fixed . 
+D:  an energy source feeds an integrated circuit , the chip , 
+D:  that can compose messages , usually uh through a um infrared bit 
+D:  and uh the user interface controls the chip and accordingly the the messages , 
+D:  the main point is that I would wish to to make a really functional product . 
+D:  I would prefer to have very functional um capabilities rather than fancy stuff that in fact is not used and doesn't work . 
+D:  as it's important to take into account the user requirements from the Marketing uh Expert uh Anna 
+D:  Uh we want an on off button , 
+D:  it's simple 
+D:  but it's it's important , and also uh  the to both channels as well as other buttons that come after , 
+D:  the components I quickly draw here , 
+D:  in this part you have the remote control the the sender and on the other part the receiver 
+D:  my aim would be to uh design the and choose the chips and the infrared um components to build the remote control 
+D:  of course we need energy sources and uh uh the receiver a a receiver . 
+D:  what I have found and <laugh> after a lot of work actually I <laugh> I draw this I draw for you this uh schema 
+D:  <laugh> <cough> <laugh> And uh that's it so I won't go into details about that 
+D:  but uh these are my preferences to use uh that kind of components . 
+B:  <other> And and why do you want these kind of component ? 
+B:  I mean , are they cheap , 
+B:  or are they uh reliable ? 
+D:  and yeah th you have always a compromise with uh reliability and uh i if it's expensive , 
+D:  this one also really uh reliable 
+D:  that's it for the working design , 
+B:  What I w what I was thinking about uh the the the schema uh about uh the sender and the receiver , 
+B:  can you can you get back to it ? 
+B:  the receiver is of course already in the television 
+B:  So we we must adapt to the to the receiver . 
+B:  I I suppose there is a standard uh way of communicating to televisions uh . 
+D:  We will use uh <other> infrared protocol uh using <other> yeah infrared 
+D:  and of course we need to adapt to that protocol that already exists 
+D:  but we what we can do is uh uh adapting <other> the the chips inside uh to the best uh chips and uh infrared bubbles . 
+C:  it's just you had to change the frequencies . 
+C:  <other> But you should be careful , 
+C:  like a guy has recently designed a remote 
+C:  uh uh uh which could switch off any other T_V_s <laugh> , so basically  through all the things . 
+D:  we should take that into account 
+B:  I think M Mael will will consider this uh th these things . 
+
+D:  we should agree on what are the technical functions uh for this remote control 
+D:  and I show you the the working design . 
+D:  my aim would be to uh design the and choose the chips and the infrared um components to build the remote control 
+
+C:  I'm going to talk a little bit about the technical function 
+C:  so wha what actually it's about what is the user going to do , 
+C:  basically the idea is to send a message to the T_V_ set , 
+C:  and usually we it is easier to have uh keys or buttons 
+C:  and then um changing a button will basically uh change the message which is being sent to the T_V_ 
+C:  as um Anna has said that this ki people are interested in things which are you don't need to k press the keys , 
+C:  people are can have a speech recognition 
+C:  but this is uh s a question which will we have to see later . 
+C:  there are two kinds of uh remote if you popularly in the household , 
+C:  And then you have uh what's the v video remote file 
+C:  usually it has almost all the keys over there 
+C:  but it then it has other options like stop uh and then you play the movie or uh or fo fast forward the movie or something like that so i it has those 
+
+C:  you have a standard T_V_ remote 
+C:  where you have just a on , off button and play , uh volume change and uh keys for the number and more than one digit option . 
+C:  And if you see for example righ right now uh uh even the one uh on more than one digit option is for two digit channel which is like ninety nine , 
+C:  but <other> tomorrow you might have one fifty channels you know to browse or two hundred channels to browse who knows , 
+C:  this is the standard one with without any fancy thing 
+C:  like i it doesn't have teletext option , 
+
+C:  personal preferences 
+C:  I would  uh basically think of having a kind of aim for the next generation thing 
+C:  where the  we could have both the uh the f a T_V_ and the remote  video remote control 
+C:  because uh some of the keys in the video's remote control and the T_V_ they could be integrated together 
+A:  How would that work ? 
+A:  so is it gonna be like a switch on the remote that says t use the T_V_ or use the V_C_R_ ? 
+C:  you can have a key which could tell y it could go to the video thing 
+C:  in that case when it you use that the function should be able to take up the V_C_R_ option 
+C:  in in few ye coming years you might even have a system where you have a separate uh sitting setup box 
+C:  suppose you are not able to watch some programme and actually it downloading all the time for you 
+C:  when you come back you could just switch on that thing and uh watch a program . 
+C:  In that case you want to browse faster , browse slow , you want to have those kind of functionalities <other> . 
+D:  These are kind of next generation <other> functionalities . 
+B:  I mean the hard disk uh recorders uh I I've seen them in the shop . 
+C:  and you and you you need basically the functionalities what you need in both uh uh video as well as in the standard T_V_ thing . 
+A:  But I don't think we're trying to make a universal remote here . 
+B:  W w w w we need to decide on on on on in how far we go to in this . 
+C:  for example uh the presently the video market actually uh this demand , video over-demand or what we call it as , it's presently <other> booming up actually 
+C:  you want to watch a movie and uh your p your provider gives a list of movies , and then you select those list . 
+
+B:  I have uh received some some some some well points of of thinking over of my account manager 
+B:  first thing is uh teletext is a well known feature of televisions 
+B:  but it's it's getting used less and less . 
+B:  That's that's especially because of the internet of course . 
+B:  Do we include it , and do we give it a prominent uh prominent uh place on on on the on well huh on the remote mot control itself . 
+B:  further yes we must think , uh do we stay uh to to television only , the television as we as we all know it with with broadcasting signals and you can't go back 
+B:  or do we uh uh go further as Matthew indicated by supporting uh uh recording uh devices ? 
+B:  Um , furthermore , uh , w we need really need to interest uh <other> y younger customers 
+B:  and then with younger customers I mean people uh below the age of forty , 
+B:  and our our current customers are mainly forty plus 
+B:  <other> younger people like trendy  trendy designs , 
+B:  so that's w we should make our our our R_C_ as trendy as possible 
+B:  but it should also be uh have a reliable image , 
+B:  so when it looks too too spacey or too fancy people will think well does it work at all . 
+
+A:  Mm . But I think taking the idea of getting inspiration from mobile phones is interesting , especially if we're going after a younger market , 
+A:  that's the the the mm the new and the funky things , 
+C:  for example you have uh presently uh keys like one , two , three like this , actually , and uh uh four five six like that and uh you can have keys like this in form like uh keys like that 
+A:  there's lot there's lots of pretty mobile phones , 
+A:  'Cause we haven't talked about demographic at all 
+A:  How much longer have we got for the meeting by the way ? 
+C:  you you you can have uh keys like uh which are which are like so . 
+C:  so we basically don't change the uh original order of them 
+C:  so the keys can be it looks you know not very much cluttered 
+B:  Uh we should now uh try to decide um on our target group . 
+A:  Um , basically we're trying to get people to buy a remote control <other>  
+A:  wouldn't they already have a remote control with their television when they buy one ? 
+B:  So our our our remote control has to be better . 
+A:  'cause it's only a low market , it's a cheap-end remote control , 
+A:  we might  we'll be able to <other> beat them on th the look of it , th the design of it 
+A:  they're not just going to buy a new remote control just 'cause it looks pretty , 
+A:  they have to actually need it as well . 
+B:  I think <other> many people said uh in your in in your research uh uh uh the appearance of the uh R_C_ is is important when they are buying one 
+A:  Mm . But if people are buying a new remote control for functionality they'll buy a universal remote . 
+A:  I've got friends who've got so many things they need a universal remote , 
+B:  So your you think we should go for a more u universal high-performance  
+A:  We We're not building a universal remote , 
+A:  we're not building a high end product . 
+D:  we have yeah twelve point five Euros uh per uh per R_ s R_C_ 
+D:  now you know that chips are very uh cheaps 
+D:  and uh we can include it in our control some new new features . 
+A:  If we're getting into universal remote territory , we're getting to L_C_D_ screens and things like that 
+A:  we can't , with the price range . 
+B:  I don't know . I don't know whether that's necessary . 
+B:  because uh universal remote controls uh tend to be uh quite expensive . 
+B:  S so we can try to go in between , 
+B:  and offer a product which is not as expensive and not as complicated 
+B:  because it has more uh it it is in some kind universal . 
+A:  But if we're going for the say fifteen to twenty five age group then not many of them would actually own T_V_s to use a remote control on . 
+B:  but w we're targeting I think on more on the on the twenty to forty group . 
+B:  People  yes . Who just have or already have a job and have the money but may not want to spend that much money on a on a universal universal control . 
+A:  I don't know really what the the price range for remote controls is . 
+A:  Are we gonna be at the very bottom of the price range , 
+B:  uh when we think it over I thi I think we are trying to offer the a kind of universal control for for less money . 
+C:  Well  Well I it's fine with me like the price as long as it is uh not too expensive . 
+D:  because we have to take into account that we are gonna b we are gonna sell uh four aro around four million 
+B:  then we we decide on on on going to this more universal kind of control . 
+C:  And uh basically you can look to the standards of other  
+D:  And if we want to get the market , we really need that . 
+A:  I guess what I'd like from a universal remote is maybe choosing between three devices , being able to switch between them , there may be stereo , V_C_R_ and T_V_ . 
+A:  And just be able to s use them all from the same remote , but not at the same time . 
+C:  you can also browse through all the standards you know , where are the limit of standards for all of them and you can just browse through them . 
+
+B:  uh m <other> maybe it is good when you try to find out which components you therefore need 
+B:  and y you will try to get more specific uh user interface content 
+B:  and uh maybe you can look on on what trends are in this uh in this type of market . 
+C:  and we'll I'm sure we'll up something good 
+B:  we uh we can have lunch now . 
+B:  after lunch you have uh we have uh thirty minutes of work 
+B:  and then we have the next meeting . 
+B:  But you will be informed via the computer . 
+
+B:  uh m <other> maybe it is good when you try to find out which components you therefore need 
+
+B:  and y you will try to get more specific uh user interface content 
+
+B:  and uh maybe you can look on on what trends are in this uh in this type of market . 
+
+B:  and then with younger customers I mean people uh below the age of forty , 
+B:  but w we're targeting I think on more on the on the twenty to forty group . 
+
+B:  first thing is uh teletext is a well known feature of televisions 
+B:  but it's it's getting used less and less . 
+
+B:  so that's w we should make our our our R_C_ as trendy as possible 
+B:  but it should also be uh have a reliable image , 
+B:  so when it looks too too spacey or too fancy people will think well does it work at all . 
+
+A:  But I don't think we're trying to make a universal remote here . 
+A:  Mm . But if people are buying a new remote control for functionality they'll buy a universal remote . 
+B:  So your you think we should go for a more u universal high-performance  
+A:  We We're not building a universal remote , 
+A:  we're not building a high end product . 
+A:  If we're getting into universal remote territory , we're getting to L_C_D_ screens and things like that 
+B:  I don't know . I don't know whether that's necessary . 
+B:  then we we decide on on on going to this more universal kind of control . 
+C:  And uh basically you can look to the standards of other  
+D:  And if we want to get the market , we really need that . 
+C:  you can also browse through all the standards you know , where are the limit of standards for all of them and you can just browse through them . 
+B:  uh m <other> maybe it is good when you try to find out which components you therefore need 
+
+D:  we have yeah twelve point five Euros uh per uh per R_ s R_C_ 
+A:  we can't , with the price range . 
+
+C:  and we'll I'm sure we'll up something good 
+C:  you can also browse through all the standards you know , where are the limit of standards for all of them and you can just browse through them . 
+

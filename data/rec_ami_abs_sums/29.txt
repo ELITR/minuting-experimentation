@@ -1,0 +1,263 @@
+B:  basically what I'm gonna have to talk to you about today is um component design 
+B:  and it's been brought to my attention that we may be somewhat limited as to what we can do 
+B:  Basically what I'm gonna be doing is talking to you about that . 
+B:  Um , components of a remote control , okay . We've already kind of gone over this 
+B:  but we're gonna have to get into more detail 
+B:  Energy source , um , our manufacturer offers a variety of energy sources , your standard battery , solar cells . 
+B:  Our manufacturer didn't say anything about lithium 
+B:  if we do go that route , we might have to look elsewhere . 
+B:  Um , and also there's a kinetic energy possibility . 
+B:  Basically , it's like a um  the idea of moving the remote would create enough energy to keep it running . 
+B:  but I don't know whether that would be powerful enough to illuminate a touch screen . 
+B:  Um , the case , we have a few options , plastic , rubber or wood . 
+B:  Um and then as far as the way it's shaped , we can do standard boring flat , 
+B:  which we probably don't wanna do , 
+B:  curved or very sexy double curved . 
+A:  What kind of th thickness are we looking at ? 
+B:  Um , I imagine that we could specify . 
+B:  Um , the buttons , there are multiple scroll buttons available from our manufacturer , 
+B:  but to use those we'd have to use more chips , 
+B:  And if we do go with the rubber doubled curved case um we'll have to use rubber push buttons 
+B:  because the other buttons aren't compatible with that . 
+B:  touch screen equals many chips 
+B:  which equals many Euro . 
+B:  Um , one thing that I noticed was that most remotes operate on a infrare on the infrared part of the spectrum . 
+B:  So you notice when you push a button on a remote you can't see anything coming out of it 
+B:  but in fact there is light coming out of the remote 
+B:  Uh one thing that I thought might be interesting 
+B:  was to use part  use visible light coming out of the remote , just kind of as a fun gimmick . 
+B:  So you could actually see something coming out of the remote when you pushed it . 
+A:  is there an option that we can have that off or on 
+A:  so a person can select like  
+B:  I am sure that we could do that . 
+B:  just as a fun gimmick . 
+B:  Um , and then on to the circuit board that we're gonna use , also known as the chip . 
+B:  Uh , we really don't have any way around the T_A_ one one eight three five . 
+B:  we're very limited by what our current manufacturers can offer , 
+B:  um and my question to all of you is , should we look to other manufacturies 
+B:  or should we just make do with what we have available ? 
+D:  I'd say shop around 
+D:  but with our time constraints , is that really a feasible option ? 
+B:  Um , if we do go the lithium battery route then we'll have to go outside our current manufacturer . 
+B:  My personal preference is  
+B:  uh I think we should probably go the solar battery route , 
+B:  just to kinda keep with the environmentally friendly theme that we have going on . 
+B:  Uh , I like the idea of the visible light signalling , 
+B:  and uh I was thinking about  I was thinking of ways that we could produce the remote in a variety of different case materials to suit different tastes . 
+
+D:  Um , basically I was looking at what's going on in the remote control market right now 
+D:  and what's going on in other design fields , 
+D:  to see sort of what's what's trendy , what's new , what's happening . 
+D:  Um , remote control right now  basically everybody says they want newer , fancier , more exciting  
+D:  um  that we need innovative design options 
+D:  and there needs to be an easy user interface . 
+D:  Um the challenge is that current trends right now , across the board in fashion , in furniture , in technology , is a very organic fruit and vegetable kind of thing . 
+D:  Now I'm not saying we should have , you know , tomato shaped remote controls or anything , 
+D:  but I think it is possible maybe to use um natural colours , 
+D:  like if wood is an option , that whole organic , sleek , clean , 
+D:  Different skin options , 
+D:  and th apparently the feel of the next couple of years is spongy , 
+D:  though if we can get around to getting piloting , I thought maybe a casing option like uh 
+D:  not like a skin , but like a holder almost if you could do like um , leather options or wood options or something  
+B:  As far as the rubber that we can use  we can use a rubber as part of the case , 
+B:  it has a consistency of those stress balls . 
+D:  I think perhaps the double curve thing and maybe this rubber option is our best way to go for right now . 
+D:  but then if the touch screen thing isn't gonna work out for us that's really a non-issue . 
+
+D:  like if wood is an option , that whole organic , sleek , clean , 
+D:  Different skin options , 
+D:  though if we can get around to getting piloting , I thought maybe a casing option like uh 
+D:  not like a skin , but like a holder almost if you could do like um , leather options or wood options or something  
+B:  As far as the rubber that we can use  we can use a rubber as part of the case , 
+B:  it has a consistency of those stress balls . 
+D:  I think perhaps the double curve thing and maybe this rubber option is our best way to go for right now . 
+B:  I like the idea of of rubber too 
+D:  I think that goes against the whole fancy something , a new line , 
+
+C:  interface concept by your faithful user interface designer . 
+C:  So yur user interface , guys , is basically aspects of a computer system that we can see or hear , or otherwise uh perceive . 
+C:  Uh , commands and mechanisms , that basically user uses to control the operator operating system . 
+C:  Here's a d series of different remote controls 
+C:  that are out on the market today . 
+C:  the following are a bunch of different uh interface uh concepts . 
+C:  Uh voice recognition , we we um actually have some new uh information from our research design team 
+C:  current voice recognition starts up to about eighty speech samples , 
+C:  um and basically you record your own verbal labels 
+C:  c and connect them to the remote control . 
+C:  our design team , research team , has been able to uh set up a system 
+C:  in which uh you can teach the remote control voice c recognition system to respond to um  with standard responses . 
+C:  Like you could say good morning uh remote control 
+C:  and it'll say in a sexy female voice , Good morning Joe . Um . 
+C:  Um , another concept is what uh Apple has come up with , the spinning wheel with uh L_C_ display like on the uh iPod 
+C:  Um and then we have the scroll button with integrated push-button , kind of like a modern  a bit bulky , a bit crazy , 
+C:  I don't think that's we're necessarily going for . 
+C:  And uh some special components , uh ideas like uh blocking , having the ability to block channels from your  for your children um and uh dedicated buttons for for commonly used uh channels and even uh ideas like secured or hidden programming 
+C:  but uh I  again if we go with touch screen I don't think that's a big issue . Um 
+C:  and uh this is kind of the uh the big daddy of remote controls here . 
+C:  Uh the jumbo universal remote control is almost impossible to misplace or lose . 
+C:  so I  I mean my ideas here and kind of where I think we're heading is something slightly larger than a regular iPod uh with a hard cla c uh plastic casing 
+C:  Uh changeable casings uh  our design team was possibly talking about including one extra face plate with the package 
+C:  Uh touch screen interface , um possibly having go-to buttons being uh stuck into the system 
+C:  so those don't move away from the screen , uh , the important ones like power , volume and jump between channels . 
+C:  Um , and of course our voice command system which I've talked a little bit about already 
+C:  and uh the use of recognisable colours and shapes to aid recognition of the features um that are around 
+C:  red for power , um arrows for different volume ups and downs and channels ups and downs and what not . 
+C:  And uh perhaps even adding in some stupid little jokes with the voice recognition idea 
+
+A:  Now we kind of have to come to some decisions , 
+A:  and all three of us can have a chat about it . Um . 
+
+A:  Based on what Nathan presented as far as the um <other> various costs and benefits um I think , I dunno , what do you guys think about the touch screen at this point ? 
+D:  I think it's our most marketable feature 
+D:  But can we really afford it 
+B:  My estimate is that in order to incorporate touch screen technology it's gonna cost us upwards of seventeen fifty Euro per remote , 
+B:  that's just an estimate though . 
+A:  it's just , it is a question of  and how much ca o does that mean we're gonna have to increase the price to make money . 
+C:  Where do you guys come up with these numbers ? 
+B:  That's just off the top of my head , 
+D:  I mean if you're gonna pay for an expensive high class remote , you're gonna expect it to do something  
+A:  we could probably maybe shrink the profit margins 
+A:  rather than selling for twenty five , sell 'em for thirty , 
+A:  but that's something that we can have finance deal with . 
+A:  Um , I say that we provisionally go with the touch screen 
+D:  and we can look into this other manufacturing option , 
+D:  and maybe we can get 'em somewhere else cheaper . 
+A:  let's let's say that okay so the touch screen will be our <other> um <other> our main selling point here . 
+C:  I mean I think that we really have two main selling points , 
+D:  'cause with voice recognition  
+C:  I think that our casing and the voice recognition  
+A:  I mean , <other> if if we're looking at bottom line , now we're looking at upping the cost to seventeen to get the touch screen on , 
+A:  I think we might have to drop the voice rec . 
+D:  I think we'd have to decide between 'em definitely . 
+C:  To be honest , we have the capa we have the design in-house , 
+C:  I mean we've we've come up with this , with this new voice  
+A:  What do you think on it Nathan ? About the voice rec ? 
+B:  I think if we  we do both the  obviously production costs are going to go way up 
+C:  I mean we we have to r reflect back on what our market research did say . 
+D:  and they said they wanted voice recognition . 
+D:  Course , maybe they hadn't thought of this whole touch screen option , 
+D:  but definitely we know the market is there for voice recognition 
+C:  Does having both really up our costs ? 
+A:  <other> I can't see how it wouldn't , 
+A:  so we have to pick between one of the two . Um . 
+D:  we already have research backing voice recognition as you know fiscally solvent . 
+D:  But uh I I I personally would tend to another direction 
+D:  but if that's what's gonna sell I think that's what we need to go with 
+B:  I think the voice recognition is simpler , 
+A:  Is it cheaper to do the V_R_ or to do the uh touch screen ? 
+B:  Um , this is just off the top of my head keep in mind , 
+B:  but um , since we already have the technology in-house for the voice recognition 
+B:  we're not gonna have to do as much design work 
+A:  more or less you guys think that o o of the two of 'em , the voice recognition will be better . 
+A:  We will omit the touch screen in favour of voice recognition . 
+
+A:  You discussed either a lithium or a solar power . 
+A:  Would the solar power be enough to fuel a voice recognition ? 
+B:  Um , the solar power definitely would be 
+B:  but I think just to keep people from getting annoyed , 
+B:  we should install a small backup battery . 
+D:  we can't guarantee sunlight everywhere 
+B:  it works about the same as a solar powered calculator , 
+B:  and you know how those those don't really require that much light , 
+C:  I'm willing to agree with everything that's been said . 
+
+C:  If we're really not uh handling the remote control to a great extent we could possibly get away from the idea of having a hand-held remote control 
+C:  and maybe kind of have a round remote control 
+C:  that kind of looks like a paperweight or something like that , kind of a sleek little uh neat thing that sits on your table or something . 
+B:  Why , why moving away from hand-held , why ? 
+C:  if you don't need to pick it up it could kind of be a selling point . 
+D:  if it's got voice recognition it can be technically anywhere in your room and still do its job . 
+B:  Do you think people that are  people that buy a remote , are they always gonna wanna use the voice recognition 
+D:  I think we're banking on selling it to more than just voice recognition people , 
+D:  like we want it to work fundamentally as a basic manual too , 
+A:  we have to have buttons on it too as well . 
+A:  I mean , why not have a little rounded kind of thing , 
+A:  it could still have the basic buttons on it . 
+A:  And maybe a menu button and so forth , 
+A:  use a channel button to scroll through the menu d if they want to record programmes or whatever 
+B:  because we need to escape the traditional shape of a remote . 
+D:  I'm thinking of the airport portal , 
+D:  you know like that little pod looking thing ? 
+A:  I'm recalling that she mentioned that we n need to get away from the surgical white kind of brushed aluminium thing 
+A:  but you could have a very tasteful um wood coloured or earth tone kind of um  
+D:  Terracotta bowl or something . <laugh> 
+
+A:  And the uh the material like the plastics and so forth , we were discussing that being uh  using like a rubber kind of softer feel , 
+A:  if you feel the the tip on this pen it's a bit  gives just a bit . 
+A:  something where it's uh a a more advanced f form of plastic that has some kind of a tactile response to it . 
+B:  Just kind of the squishy feel . 
+A:  let's see if we can do a squishy non-remote control-looking remote control . 
+
+D:  although I'm not saying we should completely rule out major functions , 
+D:  they should be secondary , at least if not functionally then visually , 
+A:  Like maybe have menu things . 
+B:  If , if we're not going the touch-screen route then we can um just incorporate maybe something that folds out 
+B:  and something that slides down to reveal the you know more complicated things . 
+A:  we could do a slide or a compartment , 
+A:  Or you know , a b a b a a series of you know three or four buttons with a menu button and then a side an s up and down type of thing , like on um  like on a D_V_D_ player . 
+B:  we need to figure out what kind of buttons we're going to use , 
+B:  are we going to use scroll buttons ? Rubber buttons ? Um  
+A:  it seems to me that we could just do the um  stick with the rubber 
+A:  'cause since we're probably gonna be using some kind of um <other> rubber for the outside case 
+C:  I think to a certain extent we have to stick with uh kind of uh a little bit traditional in terms of the buttons 
+B:  have we decided that we are gonna go with different style cases for different people ? 
+B:  because you have different cases 
+B:  and that might open up your market a little bit obviously , 
+B:  but obviously having more cases also costs more 
+A:  you could have uh a , you know , a um uh kind of a natural wood colour , like a stained wood and um , I don't know , olive green or something . 
+A:  That wouldn't be so much of a problem to incorporate into the colour of the  thing . 
+A:  let's work on <other> uh multiple case colours . 
+
+None
+
+A:  Um I need you guys to work together on making a prototype , <other> um <laugh> using um <other> prototype building materials um <laugh> . 
+
+A:  Nathan , I'd like you to work on just the basic look and feel , 
+A:  Um , what are our broad constraints before we deve design a prototype . <other> 
+
+A:  And um Ron if you can 
+A:  figure out how probably best to lay out this idea of this simple design with the voice recognition built in and also this kind of drop down or s on the side kind of menu options simple . 
+
+A:  Um , and if you can check product evaluation with m some pilots and stuff . 
+
+A:  We will omit the touch screen in favour of voice recognition . 
+
+A:  let's work on <other> uh multiple case colours . 
+
+C:  If we're really not uh handling the remote control to a great extent we could possibly get away from the idea of having a hand-held remote control 
+C:  and maybe kind of have a round remote control 
+D:  if it's got voice recognition it can be technically anywhere in your room and still do its job . 
+A:  stick with the same kind of kinda  yeah , the same basic non-remote kind of remote design . 
+
+A:  And the uh the material like the plastics and so forth , we were discussing that being uh  using like a rubber kind of softer feel , 
+B:  Just kind of the squishy feel . 
+
+B:  Um , the solar power definitely would be 
+B:  but I think just to keep people from getting annoyed , 
+B:  we should install a small backup battery . 
+
+B:  touch screen equals many chips 
+B:  which equals many Euro . 
+D:  But can we really afford it 
+B:  My estimate is that in order to incorporate touch screen technology it's gonna cost us upwards of seventeen fifty Euro per remote , 
+B:  that's just an estimate though . 
+A:  it's just , it is a question of  and how much ca o does that mean we're gonna have to increase the price to make money . 
+C:  Where do you guys come up with these numbers ? 
+B:  That's just off the top of my head , 
+A:  Um , I say that we provisionally go with the touch screen 
+A:  I mean , <other> if if we're looking at bottom line , now we're looking at upping the cost to seventeen to get the touch screen on , 
+A:  I think we might have to drop the voice rec . 
+D:  I think we'd have to decide between 'em definitely . 
+B:  I think if we  we do both the  obviously production costs are going to go way up 
+C:  Does having both really up our costs ? 
+A:  <other> I can't see how it wouldn't , 
+A:  so we have to pick between one of the two . Um . 
+D:  we already have research backing voice recognition as you know fiscally solvent . 
+B:  Um , this is just off the top of my head keep in mind , 
+
+B:  That's just off the top of my head , 
+C:  Where do you guys come up with these numbers ? 
+B:  Um , this is just off the top of my head keep in mind , 
+B:  Sorry about the uh lack of information on cost , 
+B:  I just haven't been provided that information by our manufacturers 
+
