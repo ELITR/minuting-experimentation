@@ -1,0 +1,89 @@
+A:  so the only agenda items were Jane  was Jane wanted to talk about some of the IBM transcription process . 
+F:  Uh , and you just sent off a Eurospeech paper , 
+F:  So , we should probably talk about the IBM transcription process stuff that  
+
+G:  Uh , the one was that the  just the  the amount of overlap 
+G:  But , even if you take out all the backchannels  
+G:  you still have significant overlap . 
+
+G:  And we rescored things um , a little bit more carefully . 
+G:  and then the second one was just basically the  <breath> the stuff we had in the  in the HLT paper on how overlaps effect the  recognition performance . 
+G:  But basically what we found is after we take out these regions  so we only score the regions that were certified as foreground speech ,  <breath> the recognition error went down to almost <breath> uh , the  level of the non - overlapped  speech . 
+
+G:  so at the end after a discourse marker or after backchannel or after filled pause , you 're much more likely to be interrupted <breath> than before . 
+
+G:  No . Well , according to the transcripts . 
+
+G:  although that 's  I  I take it that 's something that uh Don will  will look at 
+
+G:  and also , um , the other person that wants it  There is one person at SRI who wants to look at the <breath> um , you know , the uh  the data we have so far , 
+G:  and so I figured that FTP is the best  approach . 
+G:  So what I did is I um  <mouth> <breath> @ @  I made a n new directory 
+
+A:  so the only agenda items were Jane  was Jane wanted to talk about some of the IBM transcription process . 
+F:  So , we should probably talk about the IBM transcription process stuff that  
+
+C:  And , if the chunked files focused on the dominant speakers , <breath> then , when  when it got s patched together when it comes back from IBM , we can add the backchannels . 
+B:  and you just use the s the segments of the dominant speaker then ? For  for sending to  to IBM 
+B:  But then we could just use the  the output of the detector , and do the beeping on it , and send it to I B 
+D:  Without having her check anything . 
+F:  but  but I  I  I have  another suggestion on that , which is , <breath> since , really what this is , is  is  is trying to in the large , send the right thing to them and there is gonna be this  this post - processing step , 
+F:  and we 'll  we 'll fix things up 
+
+C:  so that if you  if you play  back that bin and have it in the mode where it stops at the boundary , <breath> it sounds like a normal word . 
+C:  but my general goal <breath> when there was  sufficient space , room , pause  after it  to have it be  kind of a natural feeling  gap . 
+
+G:  we should probably  uh  give them the non - downsampled versions . 
+E:  But , um  they probably w want the originals . 
+
+D:  Yeah , in fact after our meeting uh , this morning Thilo came in and said that <breath> um , there could be  other differences between <breath> the uh  already transcribed meeting with the beeps in it and one that has  just r been run through his process . 
+D:  So tomorrow , <breath> when we go to make the um  uh , chunked file <breath> for IBM , we 're going to actually compare the two . 
+D:  and then we 're gonna do the beep - ify on both , and listen to them and see if we notice any real differences . 
+
+A:  So what  what we 're probably gonna do is just write a script , that if two , chunks are very close to each other on the same channel we 'll just merge them . 
+C:  But I like this idea of  uh , for our purposes for the  for the IBM preparation , <breath> uh , n having these  joined together , 
+
+G:  Uh , because we could use that to fine tune our alignment process 
+G:  I mean w I mean what I would  I was interested in is having  <breath> a se having time marks for the beginnings and ends of speech 
+C:  I  I hand - adjusted two of them 
+G:  So  so at some point we will try to fine - tune our forced alignment 
+
+D:  We need to give Brian the beeps file , 
+D:  and we send it to IBM . 
+D:  The other one is <breath> we just run his thing and send it to IBM . 
+D:  send it off to IBM . 
+
+B:  But then we could just use the  the output of the detector , and do the beeping on it , and send it to I B 
+D:  So the  the one suggestion is you know we  <breath> we run Thilo 's thing 
+D:  The other one is <breath> we just run his thing and send it to IBM . 
+D:  and that is <breath> if we go ahead and we <breath> just run his , and we generate the beeps file , then we have somebody listen beeps file . 
+D:  put the beeps file , 
+
+C:  The other problem is , that when it  when it uh d i on the breathy ones , where you get <breath> <breath> breathing , uh , inti indicated as speech . 
+B:  So , I could run this on those breathy channels , 
+F:  and what that 'll do is just cut the time a little further . 
+
+F:  why don't we check through a bunch of things by sampling it ? 
+
+A:  What can you do ? 
+A:  and we 'll correct it when it comes back . 
+
+G:  We actually exceeded the delayed deadline by o another day , 
+G:  I hope they accept it . 
+
+G:  Well , we didn't get to look at that , 
+D:  Yeah , I just wonder if you have to normalize by the numbers of speakers or something . 
+A:  I bet there 's a weak dependence . 
+
+G:  There 's no statement about cause and effect . 
+
+D:  Yeah , in fact after our meeting uh , this morning Thilo came in and said that <breath> um , there could be  other differences between <breath> the uh  already transcribed meeting with the beeps in it and one that has  just r been run through his process . 
+A:  That 's because of channel overlap . 
+
+C:  But you know , I wanted to say , his segmentation is so good , that <breath> um , the part that I listened to with her yesterday <breath> didn't need any adjustments of the bins . 
+B:  I can't  really  hhh ,   Tsk .  I  don't have really representative numbers , I think . 
+
+B:  And i <laugh> the speech - nonspeech detector just assigns randomly the speech to  to one of the channels , 
+
+A:  a hand - transcriber would have trouble with that . 
+

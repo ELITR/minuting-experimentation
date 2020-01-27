@@ -1,0 +1,68 @@
+A:  So , should we just do the same kind of deal where we  go around and do , uh , status report  kind of things ? 
+
+A:  So , should we just do the same kind of deal where we  go around and do , uh , status report  kind of things ? 
+A:  Why don't you go ahead , Barry ? 
+F:  Well , this past week I 've just been , uh , getting down and dirty into writing my  my proposal . 
+A:  So , uh , you want to go next , Dave ? 
+E:  last week I finally got results from the SRI system about this mean subtraction approach . 
+E:  And I also , um , did some experiments  about normalizing the phase . 
+A:  Do you want to go , Stephane ? 
+C:  I 'm more interested in trying to figure out what 's still the difference between the SRI system and the Aurora system . 
+G:  th I 've been playing with this Wiener filter , like . 
+A:  How about you , Carmen ? 
+D:  Well , I am still working with , eh , VTS . 
+
+E:  wh why would that be , um , <breath> considering that we actually got an improvement in near - mike performance using HTK ? 
+E:  uh , with some input from , uh , Andreas , I have a theory in two parts . 
+C:  because  this is also one big difference between  the two systems . 
+C:  the other differences were  the fact that maybe the acoustic models of the SRI are more  SRI system are more complex . 
+B:  You know , they have channel adaptation . 
+A:  Well , there 's also the normalization . 
+
+C:  I 'm more interested in trying to figure out what 's still the difference between the SRI system and the Aurora system . 
+C:  Uh , the next thing is this  this VAD problem that , 
+C:  Uh , the second thing is the  this spectral subtraction . 
+C:  which I 've just started yesterday to launch a bunch of , uh , <noise> twenty - five experiments , 
+C:  uh , with different , uh , values for the parameters that are used . 
+
+None
+
+E:  O o one thing , um , I noticed is that , um , the mean subtraction seems to make the PZM signals louder after they 've been re - synthesized . 
+E:  So I was wondering , is it possible that one reason it helped with the Aurora baseline system is  just as a kind of gain control ? 
+E:  Cuz some of the PZM signals sound pretty quiet if you don't amplify them . 
+C:  I don't see why  why your signal is louder after processing , 
+B:  I don't think just multiplying the signal by two would have any effect . 
+B:  I mean , I think if you really have louder signals , what you mean is that you have  better signal - to - noise ratio . 
+C:  I think , maybe  I didn't look , but one thing that makes a difference is this DC offset compensation . 
+C:  Uh , eh  Do y did you have a look at  at the meet uh , meeting digits , if they have a DC component , 
+G:  No . The DC component could be negligible . 
+G:  I mean , any  all of the mikes have the DC removal  some capacitor sitting right in  that bias it . 
+B:  Yeah . The microphone isn't gonna pass any DC . 
+B:  Actually , there are  instrumentation mikes that  that do pass  go down to DC . 
+B:  no , it 's the electronics . 
+B:  then there 's amplification afterwards . 
+B:  You can have DC offset in the data . 
+
+D:  Well , we s decide to m to  to obtain the new expression if we work in the cepstral domain . 
+D:  but <laugh> I 'm not sure if that will be usefu useful . 
+D:  It 's quite a lot  It 's a lot of work . 
+D:  And I want to know if  if we have some  feeling that  the result  
+D:  I don't have any feeling if this will work better than apply VTS aft in cepstral domain will work better than apply in m mel  in filter bank domain . 
+D:  I don't  I don't know absolutely nothing . 
+B:  Yeah . Well , you 're  I think you 're the first one here to work with VTS , 
+B:  uh , maybe we could call someone else up who has , 
+B:  I don't  I don't have a good feeling for it . 
+
+C:  Uh , the next thing is this  this VAD problem that , 
+C:  So , I 'm just talking about the  the curves that I  I sent  <breath> I sent you  
+C:  so , whi that shows that <mouth> when the SNR decrease , <clears throat> uh , the current  VAD approach doesn't drop much frames  for some particular noises , 
+C:  uh , which might be then noises that are closer to speech , uh , acoustically . 
+B:  I i Just to clarify something for me . 
+B:  They were supp Supposedly , in the next evaluation , they 're going to be supplying us with boundaries . 
+B:  So does any of this matter ? 
+C:  First of all , the boundaries might be , uh  like we would have t two hundred milliseconds or  before and after speech . 
+C:  So removing more than that might still make  a difference  in the results . 
+B:  Do we  ? I mean , is there some reason that we think that 's the case ? 
+C:  No . 
+B:  But maybe we 'll get some insight on that when  when , uh , the gang gets back from Crete . 
+

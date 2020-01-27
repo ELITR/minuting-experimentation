@@ -1,0 +1,67 @@
+A:  So , um , <mouth>  I guess we got lots to catch up on . 
+A:  And we haven't met for a couple of weeks . 
+
+E:  So , um , since we 're looking at putting this , um  mean log m magnitude spectral subtraction , um , into the SmartKom system , I I did a test seeing if , um , it would work using past only  and plus the present to calculate the mean . 
+B:  So I 've been working on that Wiener filtering . 
+D:  So , <clears throat> I 've been , uh , working still on the spectral subtraction . 
+
+C:  I don't know much about  as much as I should about the rest of the system 
+C:  But if you did first pass with , um , the  with  either without the mean sub subtraction or with a  a very short time one , 
+C:  and then , um , once you , uh , actually had the whole utterance in , if you did , um , the , uh , uh , longer time version then , based on everything that you had , um , and then at that point only used it to distinguish between , you know , top N , um , possible utterances or something , you  you might  it might not take very much time . 
+C:  I mean , I know in the large vocabulary stu uh , uh , systems , people were evaluating on in the past , some people really pushed everything in to make it in one pass 
+C:  but other people didn't and had multiple passes . 
+C:  the argument , um , against multiple passes was u u has often been " but we want to this to be r you know  have a nice interactive response " . 
+C:  And the counterargument to that which , say , uh , BBN I think had ,  was " yeah , 
+C:  but our second responses are  second , uh , passes and third passes are really , really fast " . 
+C:  do we know yet ? 
+C:  about  as far as what they 're  what the rules are going to be and what we can use ? 
+D:  so actually I received a  a new document , describing this . 
+D:  And what they did finally is to , mmm , uh , not to align the utterances but to perform recognition , 
+D:  um , only on the close - talking microphone , 
+D:  and to take the result of the recognition to get the boundaries uh , of speech . 
+C:  Oh , so they will send files 
+C:  so everybody will have the same boundaries to work with ? 
+D:  Yeah . 
+C:  all of that sort of stuff is things that they 're debating in their standards committee . 
+C:  And  and that 's sort of one of the  
+C:  Because if we completely ignore latency , and then we discover that we really have to do something about it , we 're going to be  find ourselves in a bind . 
+
+A:  Can I ask just a  a high level question ? 
+A:  Can you just say like one or two sentences about Wiener filtering and why  why are people doing that ? 
+B:  I mean , so the basic principle of Wiener filter is like you try to minimize the , uh , d uh , difference between the noisy signal and the clean signal 
+D:  and for this I u simply used some code that , uh , <breath-laugh> I had from  from Belgium , 
+D:  which is technique that , um , takes a bunch of frame , 
+D:  and for each frequency bands of this frame , takes a look at the minima of the energy . 
+D:  And then average these minima and take this as an  an energy estimate of the noise for this particular frequency band . 
+
+A:  Just for a visit ? 
+C:  Uh , we 'll see . 
+C:  We might  might end up with some longer collaboration or something . 
+C:  So he 's gonna look in on everything we 're doing 
+C:  and give us his  his thoughts . 
+C:  And uh Hans - uh , Hans - Guenter will be here , um , I think by next  next Tuesday or so . 
+C:  So he 's  he 's going to be here for about three weeks , 
+
+E:  Th - that 's his spectral subtraction group ? 
+E:  Is that right ? 
+C:  yeah . 
+E:  So I guess I should probably talk to him a bit too ? 
+C:  Yeah . 
+
+C:  But the spectral subtraction scheme that you reported on also re requires a  a noise estimate . 
+D:  Yeah . 
+C:  Couldn't you try this for that ? 
+C:  Do you think it might help ? 
+D:  Yeah , for  for sure I will . 
+D:  I can try also , mmm , the spectral subtraction . 
+
+D:  Yeah , another thing that I  it 's important to mention is , um , that this has a this has some additional latency . 
+D:  And I noticed that it 's better if we take into account this latency . 
+C:  It 's depending on how all this stuff comes out 
+C:  we may or may not be able to add any latency . 
+D:  b but I don't think we have to worry too much on that right now while  you kno . 
+C:  I would worry about it a little . 
+C:  Because if we completely ignore latency , and then we discover that we really have to do something about it , we 're going to be  find ourselves in a bind . 
+C:  And  and that 's sort of one of the  
+C:  all of that sort of stuff is things that they 're debating in their standards committee . 
+

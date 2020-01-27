@@ -1,0 +1,86 @@
+A:  Um . <mouth> <breath> What are we talking about today ? 
+E:  Uh , well , first there are perhaps these uh Meeting Recorder digits that we tested . 
+
+E:  Uh , well , first there are perhaps these uh Meeting Recorder digits that we tested . 
+E:  Perhaps the point is that we 've been working on <breath> is , 
+E:  yeah , we have put the um the good VAD in the system 
+E:  and <breath> it really makes a huge difference . 
+E:  Yeah , and then we 've started to work with this of um voiced - unvoiced stuff . 
+D:  No , I w <breath> I begin to play <laugh> with Matlab and to found some parameter robust for voiced - unvoiced decision . 
+A:  What 's up with you ? 
+C:  so I 've been looking at Avendano 's work 
+C:  but it 's  it 's an approach to deal with <breath> reverberation or that  the aspect of his work that I 'm interested in 
+
+E:  Uh , well , first there are perhaps these uh Meeting Recorder digits that we tested . 
+A:  The  both the uh  <breath> the SRI System and the oth 
+C:  y you do  I think you read some of the  the zeros as O 's and some as zeros . 
+C:  Is there a particular way we 're supposed to read them ? 
+E:  Perhaps in the sheets there should be another sign for the  
+A:  I mean . I think people will do what they say . 
+A:  I mean in digit recognition we 've done before , you have  you have two pronunciations for that value , " O " and " zero " . 
+A:  No , they just write  
+E:  and  and people pronounce " O " or zero  
+A:  and you just  They just want people to read the digits as you ordinarily would 
+
+C:  uh I 'll try to write up in my next stat status report a nice description of <breath> what he 's doing , 
+
+A:  But to me it just  it just meant a practical <breath> point that um if we want to <breath> publish results on digits that  that people pay <breath> attention to we probably should uh  
+A:  Cuz we 've had the problem before that you get  show some <breath> nice improvement on something that 's  that 's uh , uh  it seems like too large a number , 
+A:  and uh <breath> uh people don't necessarily take it so seriously . 
+
+E:  Our back - end is  is fairly simple 
+E:  but until now , well , the attempts to improve it or  have fail 
+A:  I mean so to  <breath> So there 's  there 's  there 's two things being affected . 
+A:  I mean . One is that  that , you know , there 's something simple that 's wrong with the back - end . 
+A:  We 've been playing a number of states 
+A:  uh I  I don't know if he got to the point of playing with the uh number of Gaussians yet 
+A:  But , yeah , so far he hadn't gotten any big improvement , 
+A:  but that 's all with the same amount of data which is pretty small . 
+E:  perhaps it 's not related , the amount of data but the um recording conditions . 
+A:  I uh but I 'm  I 'm almost certain that it  it  <breath> I mean , that it has to do with the um amount of training data . 
+A:  It  it 's  it 's orders of magnitude off . 
+A:  let 's see , in the  in these multi - train things did we include noisy data in the training ? 
+A:  I mean , that could be hurting us actually , for the clean case . 
+A:  You know , I don't think there 's anything magical here . 
+A:  It 's , you know , we used a simple HTK system with a modest amount of data . 
+A:  And this is a  a , you know , modern <breath> uh system 
+A:  uh has  has a lot of nice points to it . 
+A:  So . I mean , the HTK is an older HTK , even . 
+A:  I mean , there 's  <breath> even though it 's close - miked there 's still  there really is background noise . 
+A:  Um . And <breath> uh I suspect when the TI - digits were recorded if somebody fumbled or said something wrong or something that they probably made them take it over . 
+A:  It was not  I mean there was no attempt to have it be realistic in any  in any sense at all . 
+E:  TI - digit is  it 's very , very clean and it 's like studio recording 
+E:  whereas these Meeting Recorder digits sometimes you have breath noise 
+
+E:  Uh . The problem is that it 's very big and <breath> <mouth> we still have to think how to  where to put it 
+E:  uh either some delay 
+E:  and we  if we put it on the server side , it doesn't work , 
+E:  because on the server side features you already have LDA applied <breath> from the f from the terminal side 
+E:  and <breath> so you accumulate the delay 
+
+A:  So wha where did this good VAD come from ? 
+E:  It 's um from OGI . 
+A:  This is the one they had originally ? 
+A:  Yeah , but they had to  get rid of it because of the space , 
+E:  But the abso assumption is that we will be able to make a VAD that 's small and that works fine . 
+
+A:  But the other thing is uh to use a different VAD entirely . 
+A:  I  I don't know what the thinking was amongst the  the  the <breath> the ETSI folk 
+A:  but um if everybody agreed sure let 's use this VAD and take that out of there  
+E:  They just want , apparently  they don't want to fix the VAD because they think there is some interaction between feature extraction and  and VAD or frame dropping 
+E:  But they still <mouth> want to  just to give some um <breath> requirement for this VAD 
+E:  because it 's  it will not be part of  they don't want it to be part of the standard . 
+E:  So there just will be some requirements that are still not  uh not yet uh ready I think . 
+A:  but I don't think we need to be stuck on using our or OGI 's  VAD . 
+A:  We could use somebody else 's if it 's smaller 
+A:  You know , as long as it did the job . 
+
+E:  yeah , it 's  it 's another problem . 
+E:  If you look at this um spectrum , 
+E:  Is it <breath> the mel - filters ? 
+E:  and what we clearly see is that in some cases , 
+E:  and the  the harmonics are resolved by the f 
+E:  Well , there are still appear after mel - filtering , 
+E:  and it happens <breath> for high pitched voice because the width of the lower frequency mel - filters <breath> is sometimes even smaller than the pitch . 
+E:  so we were thinking to modify the mel - spectrum to have something that  that 's smoother on low frequencies . 
+

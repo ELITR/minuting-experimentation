@@ -1,0 +1,80 @@
+A:  So what happened since , um , <breath> last week is  
+A:  well , from OGI , these experiments on  putting VAD on the baseline . 
+
+C:  I have something just fairly brief to report on . 
+C:  And  but it runs much much faster . 
+C:  I  I think m  it only took something like , uh , three or four hours to do the full training , 
+C:  as opposed to wh what , sixteen hours or something like that ? 
+C:  Oh , the other thing that I did was , um , <breath> I compiled  the HTK stuff for the Linux boxes . 
+A:  There was a conference call this Tuesday . 
+A:  I don't know yet the  <breath> what happened <breath> Tuesday , 
+A:  but <breath> the points that they were supposed to discuss is still , <mouth> uh , things like <breath> the weights , 
+A:  So what happened since , um , <breath> last week is  
+B:  There was a <breath> start of some effort on something related to voicing or something . 
+A:  So basically we try to , <breath> <breath> uh , find <breath> good features that could be used for voicing detection , 
+
+D:  N um , not not not much is new . 
+B:  Um , anything to  add ? 
+E:  Well , I 've been continuing reading . 
+E:  I went off on a little tangent this past week , 
+
+C:  I 've forgotten now what the name of that machine is 
+C:  but I can  I can send email around about it . 
+C:  Um , you have to make  you have to make sure that in your dot CSHRC , <breath> um , it detects whether you 're running on the Linux or a  a Sparc and points to the right executables . 
+C:  and you may not have had that in your dot CSHRC before , if you were always just running the Sparc . 
+C:  uh , I can  I can tell you exactly what you need to do to get all of that to work . 
+
+B:  When you say " we have that " , does Sunil have it now , too , 
+A:  No . 
+A:  Because we 're still testing . 
+A:  So we 'll perhaps <breath> <mouth> <breath> try to convince OGI people to use the new  <breath> the new filters 
+B:  Uh , has  has anything happened yet on this business of having some sort of standard , uh , source , 
+A:  not yet 
+A:  but I wi I will <breath> call them 
+A:  now they are  I think they have more time 
+A:  well , Eurospeech deadline is <breath> over 
+
+A:  There was a conference call this Tuesday . 
+A:  I don't know yet the  <breath> what happened <breath> Tuesday , 
+A:  but <breath> the points that they were supposed to discuss is still , <mouth> uh , things like <breath> the weights , 
+
+B:  Do you know who was  who was  since we weren't in on it , uh , do you know who was in from OGI ? 
+A:  but <breath> the points that they were supposed to discuss is still , <mouth> uh , things like <breath> the weights , 
+A:  I have no idea . 
+A:  So the points were the  the weights  how to weight the different error rates <breath> that are obtained from different language and  and conditions . 
+A:  it 's not clear that they will keep the same kind of weighting . 
+A:  Some people are arguing that it would be better to have weights on 
+A:  well , to  to combine error rates  before computing improvement . 
+A:  And so , perhaps they will change the weights to  
+B:  Well , I mean , the fact that it 's inconsistent is an obvious mistake . 
+B:  But the question is , do you average the relative improvements  or do you average the error rates and take the relative improvement maybe of that ? 
+B:  And the thing is it 's not just a pure average because there are these weightings . 
+B:  It 's just when you  when you get all done , I think that they pro 
+B:  but I think they started off this process with the notion that <breath> you should be  significantly better than the previous standard . 
+B:  so they said " how much is significantly better ? 
+B:  And  and so they said " well , <breath> you know , you should have half the errors , " or something , " that you had before " . 
+B:  But it does seem like 
+B:  i i it does seem like it 's more logical to combine them first 
+A:  But there is this  this  is this still this problem of weights . 
+A:  When  when you combine error rate it tends to  give more importance to the difficult cases , 
+A:  Some people think that <breath> it 's more important to look at  <breath> to have ten percent imp relative improvement on  well - matched case than to have fifty percent on the m mismatched , 
+A:  and other people think that it 's more important to improve a lot on the mismatch 
+C:  It sounds like they don't really have a good idea about what the final application is gonna be . 
+B:  I mean , they don they  they don't  they don't really  know , I think . 
+B:  So the argument for that being the  the  the more important thing , <breath> is that you 're gonna try and do that , <breath> but you wanna see how badly it deviates from that when  when  when the , uh  it 's a little different . 
+B:  The opposite argument is you 're never really gonna have a good sample of all these different things . 
+B:  I gather that in these meetings it 's  it 's really tricky to make anything <breath> ac <breath> make any  policy change 
+B:  because <breath> <clears throat> everybody has  has , uh , their own opinion 
+A:  but there is probably a  a big change that will <breath> be made 
+A:  is that the  the baseline  th they want to have a new baseline , perhaps , 
+A:  And apparently , <mouth> uh , some people are pushing to still keep this fifty percent number . 
+A:  So they want <breath> to have at least fifty percent improvement on the baseline , 
+B:  So whose VAD 
+A:  Uh , they didn't decide yet . 
+
+B:  and  he 's been doing all the talking 
+B:  This is  this by the way a bad thing . 
+B:  We 're trying to get , um , m more female voices in this record as well . 
+B:  Make sur make sure Carmen <laugh> talks as well . 
+F:  I don't know . 
+

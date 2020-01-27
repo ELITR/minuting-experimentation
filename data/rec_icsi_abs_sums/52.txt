@@ -1,0 +1,63 @@
+None
+
+C:  so , yeah , the  this past week I 've been main mainly occupied with , um , getting some results , u from the SRI system trained on this short Hub - five training set for the mean subtraction method . 
+B:  so the last week , uh , I showed some results with only SpeechDat - Car 
+B:  So I was like looking into " why , what is wrong with the TI - digits ? " . 
+B:  And I found that , the noise estimation is a reason for the TI - digits to perform worse than the baseline . 
+E:  yeah , there are two figures showing actually the , mmm , um , performance of the current VAD . 
+H:  Well , I only say that the  this is , a summary of the  of all the VTS experiments 
+
+C:  And then there 's um , another thing I wanna start looking at , um , <breath> wi is , um , the choice of the analysis window length . 
+C:  with the  with the HTK set - up I should be able to do some experiments , on just varying that length , 
+C:  say between one and three seconds , in a few different reverberation conditions , 
+D:  I guess one thing that might also be an issue , uh , cuz part of what you 're doing is you 're getting a  a spectrum over a bunch of different kinds of speech sounds . 
+D:  and so it might matter how fast someone was talking for instance . 
+D:  You know , if you  if  if  if there 's a lot of phones in one second maybe you 'll get a  a really good sampling of all these different things , 
+D:  and  <breath> and , uh , on the other hand if someone 's talking slowly maybe you 'd need more . 
+C:  a actually I was just thinking about what I was asking about earlier , wi which is about having <breath> less than say twelve seconds in the SmartKom system to do the mean subtraction . 
+C:  You said in <breath> systems where you use cepstral mean subtraction , they concatenate utterances 
+C:  and , <breath> do you know how they address this issue of , um , testing versus training ? 
+G:  I think what they do is they do it always on - line , 
+G:  I mean , that you just take what you have from the past , 
+G:  that you calculate the mean of this and subtract the mean . 
+C:  and , um , so  so in tha in that case , wh what do they do when they 're t um , performing the cepstral mean subtraction on the training data ? 
+C:  So  because you 'd have hours and hours of training data . 
+C:  So do they cut it off and start over ? 
+D:  and so if you 're splitting things up into utterances  
+D:  So , for instance , in a dialogue system ,  where you 're gonna be asking , uh , you know , th for some information , there 's some initial th something . 
+D:  and I think the heuristics of exactly how people handle that and how they handle their training I 'm sure vary from place to place . 
+C:  so you 'd  you  and so in training you would start over at  at every new phone call or at every <breath> new speaker . 
+G:  it  it seems to be the best what  wh wh what  what we can do in this moment is multi - condition training . 
+G:  And every when we now start introducing some  some noise reduction technique we  we introduce also somehow artificial distortions . 
+G:  And these artificial distortions  uh , I have the feeling that they are the reason why  why we have the problems in this multi - condition training . 
+G:  That means the H M Ms we trained , they are  they are based on Gaussians , 
+G:  And if we introduce now this  this u spectral subtraction , or Wiener filtering stuff  
+G:  I mean , this is your noise estimate and you somehow subtract it or do whatever . 
+G:  And then I think what you do is you introduce some  some artificial distribution in this 
+G:  in  in the models . 
+D:  So  So , basically our  our position is <breath> that , um , we shouldn't be unduly constraining the latency at this point 
+D:  because we 're all still experimenting with trying to make the performance better in the presence of noise . 
+D:  Uh , there is a minority in that group who is a arguing  who are arguing for <breath> um , uh , having a further constraining of the latency . 
+D:  So we 're s just continuing to keep aware of what the trade - offs are and , you know , what  what do we gain from having longer or shorter latencies ? 
+D:  Well , France Telecom was  was  was very short latency 
+G:  It was in the order of thirty milliseconds 
+
+G:  Maybe you  you are leaving in  in about two weeks Carmen . 
+G:  what  what I would do is I  I  I would pick @ @  the best consolation , which you think , 
+G:  and <breath> c create  create all the results for the whole database that you get to the final number as  as Sunil did it 
+G:  and maybe also to  to write somehow a document where you describe your approach , and what you have done . 
+H:  I was thinking to do that next week . 
+H:  I wi I  I will do that next week . 
+
+B:  So the other thing is the  I 'm just looking at a little bit on the delay issue where the delay of the system is like a hundred and eighty millisecond . 
+B:  So <breath> I just  just tried another sk system  I mean , another filter which I 've like shown at the end . 
+B:  Which is very similar to the existing uh , filter . 
+B:  Only  Uh , only thing is that the phase is  is like a totally nonlinear phase 
+B:  So it 's just like  it 's like a three percent relative degradation , 
+G:  But  but is there  is there a problem with the one hundred eighty milliseconds ? 
+
+E:  for Italian and Spanish it 's  th this value works good but not necessarily for Finnish . 
+E:  But unfortunately there is , like , this forty millisecond latency 
+E:  Yeah , so I would try to somewhat reduce this @ @ . 
+E:  I already know that if I completely remove this latency , so . <breath> um ,  it  um there is a three percent hit on Italian . 
+

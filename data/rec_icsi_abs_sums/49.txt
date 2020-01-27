@@ -1,0 +1,57 @@
+F:  Let 's see , maybe we should just get a list of items  
+F:  I guess there 's the usual  updates , 
+F:  everybody going around and saying , uh , you know , what they 're working on , 
+F:  the things that happened the last week . 
+
+C:  well , I 've been working on  on t mainly on on - line normalization this week . 
+C:  Uh , I 've been trying different  slightly  slightly different approaches . 
+C:  Yeah . I 've been playing a little bit with some kind of thresholding , 
+F:  How about you , Sunil ? 
+D:  So , um , I 've been , uh , implementing this , uh , Wiener filtering for this Aurora task . 
+F:  Oh . How about you , Carmen ? 
+E:  Mmm . I 'm working with VTS . 
+
+F:  How about you , Barry ? 
+A:  Um , <mouth> still working on my  my quals preparation stuff . 
+F:  So , um , <mouth> I guess I 'll just pass it on to Dave . 
+G:  Well , in my lunch talk last week I  I said I 'd tried phase normalization and gotten garbage results using that l um , long - term mean subtraction approach . 
+
+None
+
+B:  So do you maybe make errors in different places ? 
+B:  Different kinds of errors ? 
+C:  I didn't look , uh , more closely . 
+B:  I I really would like to suggest looking , um , a little bit at the kinds of errors . 
+B:  I know you can get lost in that and go forever and not see too much , but  <breath> sometimes , 
+B:  just seeing that each of these things didn't make things better may not be enough . 
+B:  It may be that they 're making them better in some ways and worse in others , 
+B:  or increasing insertions and decreasing deletions , 
+B:  you know , helping with noisy case 
+B:  but hurting in quiet case . 
+B:  And if you saw that then maybe you  it would  <mouth> something would occur to you of how to deal with that . 
+
+C:  A third thing is that , um , <outbreath> I play a little bit with the , um  <outbreath> finding what was different between , um , 
+C:  he had the France Telecom blind equalization in the system . 
+C:  the number o of MFCC that was  were used was different . 
+C:  You used thirteen 
+C:  and we used fifteen . 
+D:  Uh , so the  the  right now , the  the system that is there in the  what we have in the repositories , with  uses fifteen . 
+D:  So , we haven't  w we have been always using , uh , fifteen coefficients , 
+D:  not thirteen ? 
+D:  um , I 'll t s run some experiments to see whether  once I have this <3 tongue taps>  noise compensation to see whether thirteen and fifteen really matters or not . 
+D:  Never tested it with the compensation , 
+D:  but without , <breath> uh , compensation it was like fifteen was s slightly better than thirteen , 
+
+G:  Well , in my lunch talk last week I  I said I 'd tried phase normalization and gotten garbage results using that l um , long - term mean subtraction approach . 
+G:  It turned out there was a bug in my Matlab code . 
+D:  So , um , I 've been , uh , implementing this , uh , Wiener filtering for this Aurora task . 
+D:  I  I actually thought it was  it was doing fine when I tested it once . 
+D:  I it 's , like , using a small section of the code . 
+D:  and I got , <breath> like , worse results than not using it . 
+D:  So , I 've been trying to find where the problem came from . 
+D:  And then it looks like I have some problem in the way  
+D:  there is some  some very silly bug somewhere . 
+D:  I  I mean , i uh , it actually  i it actually made the whole thing worse . 
+D:  and it 's , like  w it 's  it 's very horrible . 
+D:  I was like  I 'm trying to find where the m m problem came , 
+

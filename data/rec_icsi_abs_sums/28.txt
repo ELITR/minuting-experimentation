@@ -1,0 +1,66 @@
+B:  And the interesting thing is that even though , <inbreath> yes , it 's a digits task and that 's a relatively small number of words and there 's a bunch of digits that you train on , <inbreath> it 's just not as good as having a  a l very large amount of data and training up a  a  a nice good big <inbreath> HMM . 
+
+E:  Two items , which was , uh , digits and possibly stuff on  on , uh , forced alignment , 
+A:  So we  we only r hav I only looked at actually alignments from one meeting that we chose , 
+
+B:  Uh , but the other is that , um , the digits <inbreath> recorded here in this room with these close mikes , i uh , are actually a lot harder than the  studio - recording TI - digits . 
+F:  If you have only one utterance per speaker you might actually screw up on estimating the  the warping , uh , factor . 
+G:  Well , I know there were some speaker labelling problems , um , after interruptions . 
+G:  But you 're actually saying that certain , uh , speakers were mis mis - identified . 
+
+A:  and  and  W we  we were able to get some definite improvement on the forced alignments by looking at them first and then realizing the kinds of errors  that were occurring 
+A:  So just sort of working through a bunch of debugging kinds of issues . 
+
+F:  So  so the key  thing that 's missing here is basically the ability to feed , you know , other features <outbreath> i into the recognizer 
+F:  and also then to train the system . 
+B:  we want to <inbreath> have the ability to feed it different features . 
+
+B:  Yeah , bu although I 'd be  I think it 'd be interesting to just take this exact actual system 
+B:  and try it out on TI - digits . 
+
+F:  So , we might have to modify that script to recognize the , um , speakers , <inbreath> um , in the  in the , uh , um , <mouth> TI - digits  database . 
+E:  because we may have to do an extract to get the  amount of data per speaker about right . 
+
+B:  Yeah . I  I know what I was thinking was that maybe , uh , i i we could actually t t try at least looking at , uh , some of the  the large vocabulary speech from a far microphone , 
+B:  But I 'm saying if you do the same kind of limited thing <inbreath> as people have done in Switchboard evaluations or as  a 
+E:  Could we do exactly the same thing that we 're doing now , but do it with a far - field mike ? 
+E:  but you use the acoustics from the far - field mike . 
+
+F:  So , <inbreath> we would need a hand - marked , um , <mouth> word - level alignments 
+F:  or at least sort of the boundaries of the speech betw you know , between the speakers . 
+F:  and tune the parameters of the  of the model , uh , to op to get the best  performance . 
+
+A:  You know , interface - wise if you 're looking at speech , you wanna be able to know really where the words are . 
+A:  um , and see if you can in maybe incorporate it into the Transcriber tool some way , 
+A:  Yeah , it wou the advantage would just be that when you brought up a bin you would be able  if you were zoomed in enough in Transcriber to see all the words , 
+A:  you would be able to , like , have the words sort of located in time , 
+
+None
+
+B:  Um , also you had the adaptation in the SRI system , which we didn't have in this . 
+F:  So there was a significant loss from not doing the adaptation . 
+
+B:  Uh , but the other is that , um , the digits <inbreath> recorded here in this room with these close mikes , i uh , are actually a lot harder than the  studio - recording TI - digits . 
+
+B:  Uh , but the other is that , um , the digits <inbreath> recorded here in this room with these close mikes , i uh , are actually a lot harder than the  studio - recording TI - digits . 
+F:  I suspect that to get sort of the last bit out of these higher - quality recordings you would have to in fact , uh , use models that , uh , were trained on wider - band data . 
+F:  That 's where the most m acoustic mismatch is between the currently used models and the  the r the set up here . 
+B:  the near versus far . 
+
+F:  If you have only one utterance per speaker you might actually screw up on estimating the  the warping , uh , factor . 
+
+E:  Because it 's further away from most of the people reading digits . 
+
+F:  you know , as Liz said the  we f enforce the fact that , uh , the foreground speech has to be continuous . 
+A:  things like words that do occur just by themselves  a alone , like backchannels or something that we did allow to have background speech around it  
+A:  those would be able to do that , 
+A:  but the rest would be constrained . 
+
+A:  We probably want to adapt at least the foreground speaker . 
+A:  But , I guess Andreas tried adapting both the foreground and a background generic speaker , 
+A:  and that 's actually a little bit of a f funky model . 
+A:  Like , it gives you some weird alignments , 
+A:  just because often the background speakers match better to the foreground than the foreground speaker . 
+
+A:  Tha - There are some cases like where the  the wrong speaker  uh , these ca Not a lot , but where the  the wrong person  the  the speech is addre attached to the wrong speaker 
+

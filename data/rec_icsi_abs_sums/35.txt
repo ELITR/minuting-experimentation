@@ -1,0 +1,199 @@
+F:  Um , We should talk a little bit about the plans for the uh  the field trip next week . 
+F:  And uh  mostly uh First though about the logistics for it . 
+F:  Then maybe later on in the meeting we should talk about what we actually you know , might accomplish . 
+F:  Uh , in and  kind of go around  see what people have been doing  talk about that ,  a r progress report . Um , Essentially . 
+F:  Um  And then uh  Another topic I had was that uh  uh  Uh  Dave here had uh said uh " Give me something to do . " 
+F:  And so maybe we can discuss that a little bit . 
+F:  uh , and uh , then uh , talk a little bit about  about disks and resource  resource issues that  that 's starting to get worked out . 
+A:  Did you  happen to find out anything about the OGI multilingual database ? 
+G:  One they call the multi - language database , and another one is a twenty - two language , something like that . 
+G:  But it 's also telephone speech . 
+G:  Well , actually , for the moment if we w do not want to use these phone databases , we  we already have uh  English , Spanish and French uh , with microphone speech . 
+G:  Uh , actually , these three databases are um generic databases . 
+G:  So w f for  for uh Italian , which is close to Spanish , French and , i i uh , TI - digits we have both uh , digits  training data and also  more general training data . 
+F:  Well , we also have this Broadcast News that we were talking about taking off the disk , which is  <laugh> is microphone data for  for English . 
+G:  Yeah , perhaps  yeah , there is also TIMIT . 
+
+upcoming field trip to visit research partners OGI; a number of
+members reported their progress to date; if there are any tasks that
+one member can help others with; an overall description of the Cube
+project, a multi-lingual speech recognition system for use by the
+cellular phone industry, along with consideration of some of the
+issues therein, specifically disk and resource issues.
+
+C:  Well , the inputs are one dimension of the cube , 
+F:  So , a a actually  maybe  now you 've got me sort of intrigued . 
+F:  Can you describe what  what 's on the cube ? 
+C:  basically , the  the cube will have three dimensions . 
+C:  The first dimension is the  the features that we 're going to use . 
+C:  And the second dimension , um , is the training corpus . 
+C:  And that 's the training on the discriminant neural net . 
+C:  And then , there 's the testing corpus . 
+
+training corpus; and test corpus.
+
+C:  Well , the inputs are one dimension of the cube , 
+C:  which , um , we 've talked about it being , uh , PLP , um , M F C Cs , um , J - JRASTA , JRASTA - LDA  
+C:  Um , for the training corpus  corpus , um , we have , um , the  the d  digits <tapping sounds, writing on whiteboard> from the various languages . 
+F:  So that 's , uh , three hundred and forty - three , uh , <laugh> different systems that are going to be developed . 
+F:  something like seven things in each , uh  each column . 
+F:  So it seems like there 's  there 's some peculiarities of the , uh  of each of these dimensions that are getting sorted out . 
+F:  And then , um , if  if you work on getting the , uh , assembly lines together , and then the  the pieces sort of get ready to go into the assembly line 
+F:  What 's  what 's great about this is it sets it up in a very systematic way , 
+F:  so that , uh , once these  all of these , you know , mundane but real problems get sorted out , we can just start turning the crank 
+F:  And , uh , the thing is that once you get a better handle on how much you can realistically do , uh , um , <mouth> concurrently on different machines , different SPERTs , and so forth , uh , and you see how long it takes on what machine and so forth , you can stand back from it and say , " OK , if we look at all these combinations we 're talking about , and combinations of combinations , and so forth , " you 'll probably find you can't do it all . 
+F:  so then at that point , uh , we should sort out which ones do we throw away . 
+F:  Which of the combinations across  you know , what are the most likely ones , 
+
+combinations of features to use, and what combinations of languages
+and broad/specific corpora to use for the training
+
+F:  Um , We should talk a little bit about the plans for the uh  the field trip next week . 
+F:  And uh  mostly uh First though about the logistics for it . 
+F:  those of you who are not , you know , used to this area , it can be very tricky to get to the airport at  at uh , you know , six thirty . 
+F:  OK , so if  if everybody can get here at six . 
+
+their field trip together.
+
+A:  Dan  David , um , put a new , um , drive onto Abbott , that 's an X disk , 
+A:  um , I 've been going through and copying data that is , you know , some kind of corpus stuff usually , that  that we 've got on a CD - ROM or something , onto that new disk to free up space  on other disks . 
+A:  We haven't deleted them off of the slash - DC disk that they 're on right now in Abbott , 
+A:  uh , but we  I would like to go through  sit down with you about some of these other ones and see if we can move them onto , um , this new disk also . 
+G:  Yeah , OK . 
+
+mn007.
+
+F:  I  maybe we 're already there , or almost there , is goals for the  for next week 's meeting . 
+F:  Uh . i i i it seems to me that we wanna do is flush out what you put on the board here . 
+F:  so w we can say what we 're doing , 
+F:  And , um , also , if you have  sorted out , um , this information about how long i roughly how long it takes to do on what and , you know , what we can  how many of these trainings , uh , uh , and testings and so forth that we can realistically do , uh , then one of the big goals of going there next week would be to  to actually settle on which of them we 're gonna do . 
+F:  And , uh , when we come back we can charge in and do it . 
+
+project, and an estimate of how long the entire process should take.
+
+F:  And , um , also , if you have  sorted out , um , this information about how long i roughly how long it takes to do on what and , you know , what we can  how many of these trainings , uh , uh , and testings and so forth that we can realistically do , uh , then one of the big goals of going there next week would be to  to actually settle on which of them we 're gonna do . 
+F:  And , uh , when we come back we can charge in and do it . 
+
+through the system.
+
+F:  And uh  and the other  the  the last topic I had here was , um , uh d Dave 's fine offer to  to , uh , do something  <laugh> on this . 
+F:  I mean he 's doing  <laugh>  he 's working on other things , 
+F:  but to  to do something on this project . 
+F:  So the question is , " Where  where could we , uh , uh , most use Dave 's help ? " 
+G:  and , um , <mouth> trying to have a closer look at the  perhaps the , um , <mouth> speech , uh , noise detection or , uh , voiced - sound - unvoiced - sound detection 
+F:  Let 's fall back to that . 
+F:  But I think the first responsibility is sort of to figure out if there 's something  that , uh , an  an additional  
+F:  What an additional clever person could help with when we 're really in a crunch for time . 
+F:  but if we could think of some  some piece that 's  that 's well defined , that he could help with , 
+F:  he 's expressing a will willingness to do that . 
+F:  So  wh that  so the  the other suggestion that just came up was , well what about having him  work on the , uh ,  multilingual super f superset  kind of thing . 
+F:  Uh , coming up with that and then , you know , training it  training a net on that , say , um , from  from , uh  from TIMIT or something . 
+
+things up, though creating the phoneme superset is a possibility.
+
+F:  Stephane , where you 're doing your computations . 
+G:  It 's Nutmeg and Mustard , I think , 
+F:  Well , you 're the  you 're the disk czar now . 
+A:  Well , I 'll check on that . 
+
+data on to find out what they are.
+
+F:  an another question occurred to me is  is what were you folks planning to do about normalization ? 
+G:  Well , we were thinking about using this systematically for all the experiments . 
+G:  but we think perhaps we can use the  the best , uh , um , uh , normalization scheme as OGI is using , 
+G:  so , with parameters that they use there , 
+F:  I mean it 's i i we  we seem to have enough dimensions as it is . 
+
+the project, whatever OGI finds the best will be used systematically.
+
+F:  clearly , there  there 's no way we can even begin to do an any significant amount here unless we use multiple machines . 
+F:  I mean there 's plenty of machines here 
+F:  and they 're n they 're often not in  in a great  great deal of use . 
+C:  Y you did a  you did it on a SPERT board . 
+E:  Yes . 
+F:  again , we do have a bunch of SPERT boards . 
+F:  You could set up , uh , you know , ten different jobs , or something , to run on SPERT  different SPERT boards 
+F:  or  or we 're not going to get through any significant number of these . 
+F:  so , with very limited time , we actually have really quite a  quite a bit of computational resource available 
+F:  if you , you know , get a look across the institute and how little things are being used . 
+F:  And , uh , the thing is that once you get a better handle on how much you can realistically do , uh , um , <mouth> concurrently on different machines , different SPERTs , and so forth , uh , and you see how long it takes on what machine and so forth , you can stand back from it and say , " OK , if we look at all these combinations we 're talking about , and combinations of combinations , and so forth , " you 'll probably find you can't do it all . 
+
+because they take so long.
+
+C:  So  so , maybe we could look at articulatory type stuff , 
+F:  because that 's  that 's the other route to go . 
+F:  To really mark articulatory features , you really wanna look at the acoustics and  and see where everything is , 
+F:  and we 're not gonna do that . 
+F:  uh , the second class way of doing it is  to look at the , uh , phones that are labeled 
+F:  and translate them into acoustic  uh , uh  articulatory , uh , uh , features . 
+F:  So it won't really be right . 
+F:  is that we could  we could , uh , just translate  instead of translating to a superset ,  just translate to articulatory features , some set of articulatory features and train with that . 
+A:  We could do an interesting cheating experiment with that too . 
+A:  So I was thinking , you know  it made me think about this , 
+A:  that if  it 'd be an interesting experiment just to see , you know , if you did get all of those right . 
+
+straight phonemes, though it wouldn't be perfect.
+
+F:  So it seems like there 's  there 's some peculiarities of the , uh  of each of these dimensions that are getting sorted out . 
+F:  And then , um , if  if you work on getting the , uh , assembly lines together , and then the  the pieces sort of get ready to go into the assembly line 
+F:  What 's  what 's great about this is it sets it up in a very systematic way , 
+F:  so that , uh , once these  all of these , you know , mundane but real problems get sorted out , we can just start turning the crank 
+F:  And , uh , the thing is that once you get a better handle on how much you can realistically do , uh , um , <mouth> concurrently on different machines , different SPERTs , and so forth , uh , and you see how long it takes on what machine and so forth , you can stand back from it and say , " OK , if we look at all these combinations we 're talking about , and combinations of combinations , and so forth , " you 'll probably find you can't do it all . 
+F:  so then at that point , uh , we should sort out which ones do we throw away . 
+F:  Which of the combinations across  you know , what are the most likely ones , 
+
+should be run in the cube project.
+
+F:  Cuz you don't know who 's gonna call , 
+F:  clearly , there  there 's no way we can even begin to do an any significant amount here unless we use multiple machines . 
+F:  And then , um , if  if you work on getting the , uh , assembly lines together , and then the  the pieces sort of get ready to go into the assembly line 
+F:  What 's  what 's great about this is it sets it up in a very systematic way , 
+F:  so that , uh , once these  all of these , you know , mundane but real problems get sorted out , we can just start turning the crank 
+F:  And , uh , the thing is that once you get a better handle on how much you can realistically do , uh , um , <mouth> concurrently on different machines , different SPERTs , and so forth , uh , and you see how long it takes on what machine and so forth , you can stand back from it and say , " OK , if we look at all these combinations we 're talking about , and combinations of combinations , and so forth , " you 'll probably find you can't do it all . 
+
+the processes are going to be large and processor and memory hungry.
+
+F:  uh  how do you know what language it is ? 
+F:  Somebody picks up the phone . 
+F:  So thi this is their image . 
+F:  so the phone doesn't know what a  what  what your language is . 
+F:  But the particular image that the cellular industry has right now is that it 's distributed speech recognition , where the , uh , uh , probabilistic part , and  and s semantics and so forth are all on the servers , and you compute features of the  uh , on the phone . 
+F:  We might  might or might not agree that that 's the way it will be in ten years , 
+F:  but that 's  that 's  that 's what they 're asking for . 
+F:  So  so I think that  th th it is an important issue whether it works cross - language . 
+
+speech recognition in that's what they are after.
+
+A:  Were the digits , um , hand - labeled for phones ? 
+C:  those were  those were automatically derived by  by Dan using , um , embedded  embedded training and alignment . 
+A:  I  I think you 're doing this test because you want to determine whether or not , uh , having s general speech performs as well as having specific  speech . 
+A:  so I was just wondering if the fact that TIMIT  you 're using the hand - labeled stuff from TIMIT might be  confuse the results that you get . 
+F:  It would be another interesting scientific question to ask , " Is it because it 's a broad source or because it was , you know , carefully ? " 
+
+hand marked, because it would be unclear which is the reason for
+improvement.
+
+B:  Isn't there like a limit  on the computation load , or d latency , or something like that for Aurora task ? 
+F:  so , there 's not really a limit . 
+F:  What it is is that there 's  there 's , uh  it 's just penalty , 
+F:  That  that if you 're using , uh , a megabyte , then they 'll say that 's very nice , 
+F:  but , of course , it will never go on a cheap cell phone . 
+
+one cheaper cell phones, which have limited memory capacity.
+
+F:  Has OGI done anything about this issue ? 
+F:  Do they have  Do they have any kind of superset that they already have ? 
+G:  Well , they  they  they 're going actually the  the other way , defining uh , phoneme clusters , apparently . 
+A:  So they just throw the speech from all different languages together , 
+A:  then cluster it into sixty or fifty or whatever clusters ? 
+G:  and e i perhaps u using broad phoneme classes , 
+G:  it 's  it 's OK for um , uh classifying the digits , 
+G:  but as soon as you will have more words , 
+G:  well , words can differ with only a single phoneme , and  which could be the same , uh , class . 
+A:  So you 're saying that there may not be enough information coming out of the net to help you discriminate the words ? 
+G:  Yeah , 
+B:  Fact , most confusions are within the phone  phone classes , right ? 
+
+working with clusters, which may be good enough for digits, but not
+for discriminating words.
+

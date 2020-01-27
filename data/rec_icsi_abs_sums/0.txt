@@ -1,0 +1,71 @@
+F:  and <breath> the main thing that I was gonna ask people to help with today is  to give input on what kinds of database format we should  use in starting to link up things like word transcripts and annotations of word transcripts , 
+C:  Th - there are sort of two choices . 
+
+C:  I mean , we  I sort of already have developed an XML format for this sort of stuff . 
+C:  So tha it has a single time - line , 
+C:  I think for word - level , this would be OK . 
+
+C:  and I thought it was better if you 're looking at a raw file to be  t for the tags to say " it 's an utterance " , as opposed to the tag to say " it 's a link " . 
+C:  One of them is that it 's easy to parse . 
+F:  Can you  But you can add to those structures if you  
+C:  The other thing  the other way that I sort of established this was as easy translation to and from the Transcriber format . 
+
+C:  So I think it  it 's debatable whether you want to do phone - level in the same thing . 
+
+C:  or  or any frame - level stuff I would use P - file . 
+C:  It 's ICS uh , ICSI has a format for frame - level representation of features . 
+C:  And we have a lot of tools already to deal with it . 
+C:  I mean , it 's something that we developed at ICSI . 
+C:  But , I mean , it is just something we developed at ICSI . 
+
+C:  More compact , 
+
+C:  There 's a  standard again in XML , specifically for searching XML documents  structured X - XML documents , where you can specify both the content and the structural position . 
+C:  It 's  it 's  you would use that to build your tool to do that sort of search . 
+C:  What you would do is , someone would build a tool that used that as a library . 
+
+C:  which was their file format is just nodes and links , 
+
+C:  and then " type " would be " utterance " . 
+
+C:  they 're developing a big infrastructure . 
+C:  Um , and apparently they 've also developed a lot of tools , 
+C:  One of the things that ATLAS is doing is they 're trying to define an API which is independent of the back store , 
+C:  so that , uh , you could define a single API and the  the storage could be flat XML files or a database . 
+
+F:  But I thought it would be good to get something that we can  that other people can use or adopt for their own kinds of encoding . 
+F:  And so I wanted something where  all of this can be done in a elegant way 
+F:  and that if somebody wants to try something or compute something else , that it can be done flexibly . 
+
+C:  We should look at ATLAS , 
+C:  Maybe I should . 
+C:  So I 'll  I 'll take a closer look at it . 
+
+A:  Do they already have something that 's  that would be useful for us in place ? 
+C:  Well , I think I 'm  I think w I had better look at it again 
+C:  but I 'm forgetting the exact level of nesting . 
+C:  I mean , I have to look at it again to see whether it can really do what we want , 
+
+A:  It seems to me you want to keep the frame - level stuff separate . 
+
+A:  I  I think if it 's conceptually close , and they already have or will have tools that everybody else will be using , I mean , <breath> it would be crazy to do something s you know , separate that  
+
+A:  Do they already have something that 's  that would be useful for us in place ? 
+C:  Um , th what would  would  would  what would worry me is that maybe we might miss a little detail 
+C:  I mean , I have to look at it again to see whether it can really do what we want , 
+
+C:  For lower than word - level , you 're talking about so much data that I just  I don't know . 
+F:  These are big files . 
+
+None
+
+F:  I mean these are long meetings 
+C:  But I think , a anything at frame - level , even P - file , is too verbose . 
+
+C:  No matter what format you choose , you 're gonna have the trou you 're gonna have the difficulty of relating the  the frame - level features  
+
+A:  And sometimes the word sequences even differ slightly because they were edited s at one place but not the other . 
+A:  But , see , if you 'd annotate dialogue acts , you don't necessarily want to  or topics  you don't really want to be dealing with time - marks . 
+
+C:  The hard part is specifying what you mean by " merge " . 
+

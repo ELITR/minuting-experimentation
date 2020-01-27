@@ -1,0 +1,111 @@
+C:  Oh , this was about  um , inferring intentions from features in context , and the words , 
+
+B:  So , <clears throat> what we found interesting is , first of all , intentions differ . 
+B:  Maybe you want to enter a building . 
+B:  Maybe you want to see it , 
+B:  Or maybe you actually want to come as close as possible to the building . 
+B:  If you don't have the intention of entering your building , but you know that something is really close to it , and you just want to approach it , or get to that building . 
+
+B:  But , um , since we are designing a  a  a  an , compared to this , even bigger data collection effort ,  um , we will definitely take care to put it in there , 
+
+B:  um , we can look at some factors that may make a difference . 
+B:  Um . Sometimes I found in the  Uh , looking at the data , in a superficial way , I found some s sort of modifiers that  that m may also give us a hint , 
+B:  And this leads us straight to the context which also should be considered . 
+B:  And I will try to  to sort of come up with a list of factors that we need to get out of there , 
+C:  there 's gonna be contextual things , 
+C:  there 're gonna be linguistic things , 
+C:  there 're gonna be discourse things , 
+C:  The issue is , can we find a way to , basically , featurize it 
+
+C:  like " s go to see " , or " visit " , or some 
+B:  This is of course a crucial factor , " what type of object is it ? " 
+B:  Then of course the  the actual phrases may give us some idea of what the person wants . 
+C:  Oh , another thing you want is some information abou I think , about the time of day . 
+C:  So if it turns out that , whatever it is , you want to know whether the person 's uh , a tourist or not , OK ? that becomes a feature . 
+
+C:  and we 're able to , by hand , extract the features to put in the belief - net . 
+C:  If that goes well , then we can start worrying about how we would extract them . 
+F:  So we 'll be like , hand , uh , doing all the probabilities . 
+
+B:  if we feed it through a belief - net or  or something along those lines . We 'd get an inferred intention , we  we produce a structure that differentiates between the Vista , the Enter , and the , um , Tango mode . 
+C:  And , my idea on how to combine them is with a belief - net , 
+C:  which is going to have as output , the conditional pr probability of one of three things , 
+C:  but the idea is to take as a first goal , see if we could actually build a belief - net that would make this three way distinction uh , in a plausible way , 
+C:  here 're the things which , if you get them out of  out of the language and discourse , and put them into the belief - net , it would tell you which of these three uh , intentions is most likely . " 
+C:  I think that , uh , if we can get the information , a belief - net is a perfectly good way of doing the inferential combination of it . 
+C:  JavaBayes or something ? 
+
+C:  So one thing you could do is build a little system that , said , " whenever you got a question like that I 've got one of three answers . 
+B:  u u Sort of I 'm , at the moment , curious and I 'm  I 'm  s w want to approach it from the end where we can s sort of start with this toy system that we can play around with , 
+C:  and then in the longer run , you would figure out how you could derive them . From previous discourse or w any anything else you knew . 
+C:  And , then as soon as we have it , I think we should start trying to populate it for this problem . 
+
+B:  Maybe for a deep understanding task , that 's a nice sort of playground or first little thing . " 
+C:  So we think it 's a well - formed , uh , starter task for this , uh , deeper understanding in the tourist domain . 
+
+C:  OK ? We  we have a  we know what the outcomes are gonna be , 
+B:  it all  all of a sudden it does much better . 
+
+C:  these  We have all these transcripts 
+B:  But , um , since we are designing a  a  a  an , compared to this , even bigger data collection effort ,  um , we will definitely take care to put it in there , 
+C:  and start recording subjects probably within a month or something . 
+
+C:  So , th they 're gonna give us some cr uh  or  We can assume that y you get this crude information . 
+C:  So , yeah , we 're sort of <mike noise> committed to XML as the kind of , uh , interchange . 
+
+C:  OK ? So  y so one of th one of the things we wanna do is actually , uh , pick a package , 
+C:  Yeah bu w I 'd like that this  y yeah , this week , to ha to n to <inbreath> have y guys , uh , you know , pick <mouth> the  y you know , belief - net package 
+
+C:  You know , we don't need the one that 'll solve massive , uh , belief - nets quickly . 
+C:  But we do want one in which it 's easy to interact with and , uh , modify . 
+C:  you want it stable , you want it  
+C:  And probably one in which it 's easy to have , um , what amounts to transcript files . 
+
+C:  an and there 're plenty of people around , students in the department who , you know , live and breathe Bayes - nets . 
+
+C:  Well , I 'd like to also , though , uh , ha have a first cut at what the belief - net looks like . 
+B:  is show the state and show the system and show that . 
+
+C:  And you probably need intermediate nodes . 
+C:  and then in the longer run , you would figure out how you could derive them . From previous discourse or w any anything else you knew . 
+
+C:  is , uh , one , where do you get this i  information from , 
+C:  If that goes well , then we can start worrying about how we would extract them . 
+B:  And then we can start worrying about where to get this input , 
+C:  The issue is , can we find a way to , basically , featurize it 
+C:  And , as soon as we have one , we can start trying to , uh , make a first cut at what 's going on . 
+
+B:  the street network of our geographic information system . 
+B:  A lot of parsers , um , 
+B:  That 's way beyond their scope , is  of interpreting that . 
+B:  Because i we can not differentiate , at the moment , between , you know , the intention of wanting to go there or the intention of just know wanting to know where  where it is . 
+
+B:  It would always use the closest point to the object , 
+
+B:  What we do know , is that the parser we use in the SmartKom system will never differentiate between any of these . 
+B:  So it 's  it 's  it 's way too crude to d capture those differences in intentions . 
+C:  What he was saying is , the M - three - L does not have any of that . 
+B:  That 's way beyond their scope , is  of interpreting that . 
+
+C:  there 's gonna be contextual things , 
+C:  there 're gonna be linguistic things , 
+C:  there 're gonna be discourse things , 
+C:  is , uh , one , where do you get this i  information from , 
+C:  But if we can't do that , then we 're in trouble . 
+C:  The real issue is , do what are the factors involved in determining this ? 
+C:  The issue is , can we find a way to , basically , featurize it 
+
+C:  and two , what 's the structure of the belief - net ? 
+C:  so that we get some discrete number of features so that , uh , when we know the values to all those features , or as many as possible , we can w come up with the best estimate of which of the , in this case three little intentions , are most likely . 
+
+C:  If that goes well , then we can start worrying about how we would extract them . 
+C:  and then in the longer run , you would figure out how you could derive them . From previous discourse or w any anything else you knew . 
+
+B:  Not from that data . 
+B:  But  It was never th th the goal of that data collection to  to serve for sat for such a purpose . 
+B:  So that 's why for example the tasks were not differentiated by intentionality , 
+C:  Uh , what one hopes is that when we understand how the analyzer works , we can both worry about converting it to English and worry about how it could ex extract the parameters we need for the belief - net . 
+
+C:  So . Uh , we  we have to have this discussion of th the experiment , and the data collection , and all that sorta stuff 
+C:  So , we that 's part of what we 'll have to figure out . 
+

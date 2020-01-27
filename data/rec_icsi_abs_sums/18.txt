@@ -1,0 +1,65 @@
+F:  um , but I 'd rather try to get more regular meetings of types that we know about , and hear , then sort of a mish - mosh of a bunch of one  one - time  
+
+F:  And in that uh , regard , I thought we definitely w will need  it 'd b it 'd be nice for us to have a bunch of data from a few different domains , or a few different kinds of meetings . 
+F:  um , but I 'd rather try to get more regular meetings of types that we know about , and hear , then sort of a mish - mosh of a bunch of one  one - time  
+F:  but also data where we hold some parameters constant or fairly similar , 
+D:  Uh , for other kinds of research , particularly the acoustic oriented research , I actually feel the opposite need . 
+D:  I 'd like to have many different speakers . 
+D:  So , um I think I would also very much like us to have a fair amount of really random scattered meetings , of somebody coming down from campus , and  and uh , 
+F:  I 'd love to get people that are not linguists or engineers , cuz these are both weird  
+
+C:  I have , eh , <clears throat> The result of my work during the last days . 
+C:  It 's a real problem ,  a frequently problem  uh , because you have overlapping zones eh , eh , eh , all the time . 
+C:  but , eh , my idea is , eh , is very interesting to  to work  in  in the line of , eh , automatic segmenter . 
+C:  No , I  I  plan to do that . 
+C:  Now , <mouth> eh , I need ehm , <mouth> to detect eh all the overlapping zones exactly . 
+D:  So the first thing is for you to  to build up something that will detect the overlaps . 
+
+D:  I would take just a few features . Instead of taking all the MFCC 's , or all the PLP 's or whatever , I would just take a couple . 
+D:  Uh , and uh on the other hand , the LPC residual , the energy in the LPC residual , <breath> will say how well , uh <breath> the low - order LPC <breath> model 's fitting it , which should be <breath> pretty poorly for two two or more <breath> people speaking at the same time , and it should be pretty well , for w for  for one . 
+D:  Well , that  that  that 's another reason why very simple features , things like energy , and things  things like harmonicity , and <breath> residual energy are uh , yeah are  are better to use than very complex ones because they 'll be more reliable . 
+
+D:  and <breath> then um , I guess another topic would be <breath> where are we in the whole disk resources  question 
+
+B:  Um and then also anonymity , how we want to anonymize the data . 
+E:  the question becomes what symbol are you gonna put in there for everybody 's name , 
+E:  and whether you 're gonna put it in the text where he says " Hey Roger " or are we gonna put that person 's anonymized name in instead ? 
+B:  Because if we made the  the transcript be the tag that we 're using for Roger , someone who had the transcript and the audio would then have a mapping between the anonymized name and the real name , and we wanna avoid that . 
+E:  Um , how important is it for a person to be identified by first name versus full name ? 
+E:  However , taking one step further back , they 'd be identifiable anyway , even if we changed all the names . 
+E:  On the other hand , this is a small  this is a small pool , and people who say things about topic X e who are researchers and well - known in the field , they 'll be identifiable and simply from the  from the first name . 
+E:  Now , it would be very possible for me to take those data put them in a  in a study , and just change everybody 's name for the purpose of the publication . 
+E:  And within that , it may be that it 's sufficient to not uh change the  to not incorporate anonymization yet , but always , always in the publications we have to . 
+
+B:  Well , I think that , um  I think that the only thing we should say in the advertisement is that the meeting should be held in English . 
+
+D:  So I was  I was thinking more in terms of talking to professors uh , and  and  and uh , senior uh , uh , d and uh , doctoral students who are leading projects and offering to them that they have their  hold their meeting down here . 
+D:  I mean , it  it  I think that if we 're aiming at  at uh , groups of graduate students and professors and so forth who are talking about things together , and it 's from the Berkeley campus , probably most of it will be OK , 
+E:  And my point in m in my note to Liz was I think that undergrads are an iff iffy population . 
+
+F:  And in that uh , regard , I thought we definitely w will need  it 'd b it 'd be nice for us to have a bunch of data from a few different domains , or a few different kinds of meetings . 
+D:  I 'd like to have many different speakers . 
+D:  So , um I think I would also very much like us to have a fair amount of really random scattered meetings , of somebody coming down from campus , and  and uh , 
+F:  I 'd love to get people that are not linguists or engineers , cuz these are both weird  
+
+None
+
+B:  Um , I had a  I spoke with some people up at Haas Business School who volunteered . 
+B:  Should I pursue that ? 
+F:  Oh , definitely , yeah . 
+
+D:  The o the o the other  The other thing is , uh , that we  we talked about is give to them  uh , burn an extra CD - ROM . 
+E:  We could burn it after it 's been cleared with the transcript stage . 
+E:  So , after the transcript screening phase . 
+
+E:  If you have people who are using English as a  as an interlanguage because they  they don't  uh , they can't speak in their native languages and  but their interlanguage isn't really a match to any existing , uh , language model , 
+
+D:  Uh , i We realized in discussion that the other thing is , what about this business of distant and close microphones ? 
+D:  If you 're talking about something simple , where you throw away a lot of these dimensions , then you can do that right away . 
+
+E:  Then , uh , it seems to me that  Well , maybe I  uh it seems to me that if you change the name , the transcript 's gonna disagree with the audio , and you won't be able to use that . 
+E:  OK , well , but then there 's this issue of if we 're gonna use this for a discourse type of thing , then  and , you know , Liz was mentioning stuff in a previous meeting about gaze direction and who 's  who 's the addressee and all , then to have " Roger " be the thing in the utterance and then actually have the speaker identifier who was " Roger " be " Frank " , that 's going to be really confusing and make it pretty much useless for discourse analysis . 
+
+B:  Well , the current one they don't do speaker identity . 
+B:  and so in their current conventions there are no multiple speaker conventions . 
+

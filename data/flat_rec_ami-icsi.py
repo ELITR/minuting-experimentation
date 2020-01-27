@@ -1,16 +1,16 @@
 
 '''
-Script that walks the folder structure of rec_ami, reads a certain 
+Script that walks the folder structure of rec_ami/rec_icsi, reads a certain 
 files (e.g. abst_summs.txt) of each meeting and stores them in 
-rec_ami_abs_sums folder.
+rec_ami_abs_sums/rec_icsi_abs_sums folder.
 '''
 
 import os, sys, fnmatch, re 
 from shutil import *
 from tqdm import *
 
-read_path = "./rec_ami/"
-write_path = "./rec_ami_abs_sums/"
+read_path = "./rec_icsi/"
+write_path = "./rec_icsi_abs_sums/"
 
 # filter out the descriptions and abstractive summaries from transcripts
 def filter_trans(trans):
@@ -33,11 +33,11 @@ if __name__=="__main__":
 		for file in files:
 			if file.endswith("abst_summs.txt"):
 				infile = os.path.join(root, file)
-				inf = open(infile, 'rt')
+				inf = open(infile, 'rt', encoding='utf-8')
 				trans = inf.read() ; inf.close()
 				trans = filter_trans(trans)
 				outfile = os.path.join(write_path, str(i) + ".txt")
-				outf = open(outfile, 'wt')
+				outf = open(outfile, 'wt', encoding='utf-8')
 				outf.write(trans) ; outf.close()
 				# copyfile(infile, os.path.join(write_path, str(i) + ".txt"))
 				i += 1

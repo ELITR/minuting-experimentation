@@ -1,0 +1,47 @@
+B:  um  so far I 've thought of it as sort of adding it onto the modeler knowledge module . 
+F:  We talked about this several times that  that  the  the input end is gonna need a fair amount of feedback from the planning end . 
+F:  So we talked about the fact that There 're going to be a certain number of decisions That you want the knowledge modeler to make , that will be then fed to the function module , that does uh , route planning . 
+
+B:  and then that can be sort of developed uh as needed when we get  enter the tourism domain . 
+F:  We probably won't do this early on , because the current focus is more on the decision making and stuff like that . 
+
+F:  so anyt we 'll find a time later in the week to uh get together and talk about  your understanding of what SmartKom plans are . 
+
+A:  And they 're currently um Agreeing or  or in the process of agreeing on an X M L - ification of um something like a state - transition network of how dialogues would proceed . 
+
+A:  It oughta be called a  a dialogue manager . 
+
+A:  no he 's completely gonna rewrite everything . In Java . 
+A:  No , that 's gonna be phased out . 
+
+F:  and this  one of these planning modules comes along and says " hey , right now we need to ask a question " . 
+F:  So that forces the dialogue manager to change state . 
+
+A:  And  and the  the underlying idea of course is that there is something like kernel modules with kernel functionality that you can plug uh certain applications like tourist information or um the home scenario with uh controlling a VCR and so on . 
+A:  and keep these things like uh tourist information external . 
+A:  That 's an additional reason to have this well - defined interface 
+F:  So if you can do this , then the notion would be that across a very large range of domains , you could use this deep conceptual basis as the interface . 
+
+D:  um it 's to  to integrate and syntactic analysis . 
+F:  But  But uh given th the constraints , that you want it to be small and fast and so forth , my guess is you 're probably into some kind of chunk parsing . 
+
+F:  you know th the functional module that  that interacts with  with where the tourism g stuff is going  probably is too restrictive . 
+A:  um is based on slots that have to be filled 
+A:  and I 'm not sure if  if complex slots of that type are really um being taken into consideration . 
+
+B:  I think the  the true key issues is how does the whatever comes out of the language input pipeline look like 
+B:  and then what the action planner does with it  
+
+F:  We talked about this several times that  that  the  the input end is gonna need a fair amount of feedback from the planning end . 
+
+B:  Yeah I think just the  the spatial planner and the route planner 
+B:  so  a printout of the communication between those two fills up 
+B:  I don't know how many pages 
+
+D:  Yeah , uh the problem is th that it has to be very fast 
+D:  And they also have to be very robust . cuz of um speech recognition errors 
+F:  But  But uh given th the constraints , that you want it to be small and fast and so forth , my guess is you 're probably into some kind of chunk parsing . 
+D:  Some extensions uh have to be made . For  for a English version 
+
+F:  But the other half of the problem is How would you get that kind of information from the parsed input ? 
+

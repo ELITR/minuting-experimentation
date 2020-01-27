@@ -1,0 +1,66 @@
+B:  anyway we  <clears throat> after coming back from QualComm we had , you know , very strong feedback 
+B:  and , uh , I think it was <breath> Hynek and Guenter 's and my opinion also that , um , you know , we sort of spread out to look at a number of different ways of doing noise suppression . 
+B:  But given the limited time , uh , it was sort of time to  choose one . 
+B:  Uh , and so , uh , th the vector Taylor series hadn't really worked out that much . 
+B:  Uh , the subspace stuff , uh , had not been worked with so much . 
+B:  Um , so it sort of came down to spectral subtraction versus Wiener filtering . 
+B:  Uh , we had a long discussion about how they were the same and how they were d uh , completely different . 
+
+B:  so instead they went to Yosemite and bonded , and  and they came out with a single  single piece of software . 
+B:  So it 's <breath> another  another victory for international collaboration . 
+A:  So  so you guys have combined  or you 're going to be combining the software ? 
+C:  Well , the piece of software has , like , plenty of options , 
+C:  So depending on that , it  it becomes either spectral subtraction or Wiener filtering . 
+B:  but the thing is  the important thing is that there is a piece of software that you  that we all will be using now . 
+
+E:  But , still  so , there will be a piece of software with , <mouth> <clears throat> uh , will give this system , the fifty - three point sixty - six , by default 
+A:  How  how is  how good is that ? 
+E:  It 's just one percent off of the  best proposal . 
+E:  It 's between  i we are second actually if we take this system . 
+A:  Compared to the last evaluation numbers ? Yeah . 
+C:  Yeah . 
+B:  So it  so , um , it 's  it it 's not using our full bal bag of tricks , if you will . 
+B:  And , uh , and it  it is , uh , very close in performance to the best thing that was there before . 
+B:  Uh , but , you know , looking at it another way , maybe more importantly , uh , <breath> we didn't have any explicit noise , uh , handling  
+B:  we didn't explicitly have anything to deal with stationary noise . 
+
+B:  I mean , I gather you have  it sounds like you have a few more days of  of nailing things down with the software and so on . 
+B:  But  and then  but , um , <sniff> arguably what we should do is , even though the software can do many things , we should for now pick a set of things , 
+B:  and not change that . 
+B:  And then focus on  everything that 's left . 
+B:  So there 's the neural net issue . 
+B:  There 's the VAD issue . 
+B:  And , uh , there 's the second stream  thing . 
+A:  What was the issue with the VAD ? 
+B:  I guess they still allow two hundred milliseconds on either side or some ? 
+E:  And all the speech pauses , 
+E:  which is  Sometimes on the SpeechDat - Car you have pauses that are more than one or two seconds . 
+E:  We cou we can do better , I think , 
+E:  So , our current VAD is  is more than twenty percent , 
+E:  while their is fourteen . 
+B:  That 's  that 's a good set of work that  that , uh  
+C:  Just one more thing . 
+C:  Like , should we do something f more for the noise estimation , 
+B:  Yeah . I was wondering about that . 
+
+B:  And I think , you know , that our goal should be by next week , when Hynek comes back , <breath> uh , to  uh , really just to have a firm path , uh , for the  you know , for the time he 's gone , 
+B:  of  of , uh , what things will be attacked . 
+
+B:  We do still , however , have to consider its latency . 
+B:  We can't have unlimited amounts of latency . 
+B:  Uh , y you know , that 's still being debated by the  by people in Europe 
+B:  but , <breath> uh , no matter how they end up there , it 's not going to be unlimited amounts , 
+C:  So we  I mean , if  so if we  if  so which is like if we reduce the delay of VA 
+C:  Yeah . The  you smooth it and then delay the decision by  
+B:  So that 's  that 's really not  not bad . 
+B:  So we may in fact  we 'll see what they decide . We may in fact have , <breath> um , the  the , uh , latency time available for  to have a neural net . 
+A:  What amount of latency are you thinking about when you say that ? 
+B:  You know , they 're saying , uh  one group is saying a hundred and thirty milliseconds and another group is saying two hundred and fifty milliseconds . 
+
+C:  So the frame - dropping is the last thing that we do . 
+B:  Did you happen to notice how much , <breath> uh , the change was due to just this frame - dropping problem ? 
+E:  Just the frame - dropping problem . 
+E:  And then we have to be careful with that also  with the neural net 
+E:  because in  the proposal the neural net was also , uh , working on  after frame - dropping . 
+B:  Oh , that 's a real good point . 
+

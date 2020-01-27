@@ -1,0 +1,42 @@
+C:  but um uh Jose and I were just talking about <inbreath> the uh <page turn> uh , speech e energy thing , 
+C:  He was  he  he was taking everything over two hundred milliseconds 
+C:  And so i i his  his  He 's making the constraint it has to be at least two hundred milliseconds . 
+
+C:  Right now , that he 's not really showing any kind of uh distinction , but uh  
+C:  Um . And uh one is that uh this is all in log energy 
+C:  um and  But one thing he was pointing out is when he  he looked at a bunch of examples in log domain , it is actually pretty hard to see <inbreath> the change . 
+C:  And when he 's looking in the log domain he 's not really seeing it . 
+
+C:  And when he 's looking in straight energy he is , 
+C:  Um  But  since  <inbreath> uh your intuition from looking at some of the data , is that when you looked at the regular energy , that it did in fact usually go up , <laugh> when two people were talking , <inbreath> that 's  eh you know , you should be able to come up with a measure which will  match your intuition . 
+
+B:  and I had plan to go through with it , of  of co coding the types of overlaps that people were involved in s just with reference to speaker style so , you know , with reference  
+B:  so I was planning to do a taxonomy of types overlaps with reference to that . 
+
+A:  Yeah this was the problem with these categories , 
+
+C:  Um  Another is that he needs to play with the  the different uh  uh temporal sizes . 
+C:  uh , and uh he 's going to vary that number and also look at moving windows , as we discussed before . 
+C:  Um And uh  and the other thing is that the  yeah doing the  <inbreath> subtracting off the mean and the variance in the   uh and dividing it by the  standard deviation in the log domain , <inbreath> may not be  the right thing to do . 
+C:  So yeah there  there  there  There 's a good chance then given that different people do talk different amounts  that there is  there  there is still a lot more to be gained from gain norm normalization with some sort 
+C:  Uh . But we were agreed that in addition to that  uh there should be  s stuff related to pitch and harmonics and so forth . 
+C:  Um And then we w I think we 're agreed that pitch - related things are  are  are going to be a  a really likely candidate to help . 
+C:  And then you can move on to the uh  uh more <mike loud pop> pitch related stuff . 
+C:  And then that should give us some indication  between those , should give us some indication of whether there 's anything to be achieved f from energy at all . 
+E:  Not consider the log energy . 
+C:  I think I would just sort of look at the energy  and then get into the harmonicity as  as a suggestion . 
+
+B:  and I had plan to go through with it , of  of co coding the types of overlaps that people were involved in s just with reference to speaker style so , you know , with reference  
+B:  so I was planning to do a taxonomy of types overlaps with reference to that . 
+
+D:  But it is definitely true that we need to have the time marks , 
+D:  and I was assuming that will be inherited because , if you have the words and they 're roughly aligned in time via forced alignment or whatever we end up using , then you know , this  student and I would be looking at the time marks 
+D:  Well , we  we wouldn't be able to do any work without a forced alignment anyway , 
+
+A:  So I 'm not sure what to do about the Region field for English variety . 
+A:  But I don't know how to  I don't know how to  I don't know how to categorize them . 
+A:  Yeah this was the problem with these categories , 
+
+A:  But the problem with it is the drawing of those waveforms is so slow that every time you do anything it just crawls . 
+A:  Just about anything , and it  it was so slow it was not usable . 
+

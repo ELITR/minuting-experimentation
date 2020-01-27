@@ -8,6 +8,7 @@ import os, sys, codecs, re, string, argparse
 import nltk, collections, math
 from statistics import mean
 import numpy as np
+import multiprocessing as mp
 from sklearn.cluster import KMeans, AgglomerativeClustering, MeanShift, \
 AffinityPropagation, SpectralClustering
 from nltk import PerceptronTagger
@@ -134,7 +135,7 @@ def get_sents_from_trans(trans, keep_speakers=True):
 	sent_lst = tokenize.sent_tokenize(trans)
 
 	# tokenize each sentence with core_tokenize
-	sent_lst = list(map(core_tokenize, sent_lst))
+	sent_lst = map(core_tokenize, sent_lst)
 
 	# correct speakers A : to A:
 	sent_lst = [re.sub(r'([a-zA-Z])\s+(:)', r'\1\2', sent) for sent in sent_lst]
@@ -235,7 +236,7 @@ def get_vector_matrix(sent_lst):
 	X = vectorizer.fit_transform(sent_lst)
 	return X
 
-# create clusters of sentences - obsolete
+# create clusters of sentences - obsolete!
 def cluster_sentences(n_c, sent_lst):
 	'''create the clusters of sentences'''
 	X = get_vector_matrix(sent_lst)
@@ -270,7 +271,7 @@ def cluster_sentences(n_c, sent_lst):
 		clusters[label].append(i)
 	return dict(clusters)
 
-# find optimal number of clusters for the list of sentences - obsolete
+# find optimal number of clusters for the list of sentences - obsolete!
 def optimal_cluster_num(sent_lst):
 	'''find optimal number of clusters for the list of sentences'''
 	avg_sims = []
@@ -289,7 +290,7 @@ def cluster_kmeans(n_c, sent_lst):
 	# get tf-idf vector representation
 	X = get_vector_matrix(sent_lst)
 	# k-means
-	model = KMeans(n_clusters=n_c, n_jobs=4)
+	model = KMeans(n_clusters=n_c)
 	model.fit(X)
 	labels = model.labels_
 	clusters = collections.defaultdict(list)
@@ -316,7 +317,7 @@ def cluster_meanshift(n_c, sent_lst):
 	X = get_vector_matrix(sent_lst)
 
 	# MeanShift - finds n_clusters itself
-	model = MeanShift(n_jobs=4)
+	model = MeanShift()
 	model.fit(X.toarray())
 	labels = model.labels_
 
@@ -331,7 +332,7 @@ def cluster_spectral(n_c, sent_lst):
 	X = get_vector_matrix(sent_lst)
 
 	# Spectral
-	model = SpectralClustering(n_clusters=n_c, n_jobs=4)
+	model = SpectralClustering(n_clusters=n_c)
 	model.fit(X)
 	labels = model.labels_
 
@@ -504,10 +505,13 @@ def read_transcripts(read_path):
 	for filename in os.listdir(args.inpath):
 		fin = os.path.join(args.inpath, filename)
 		# read content of fin and split in sentences
-		with open(fin, 'rt') as i:
+		with open(fin, 'rt', encoding='utf-8') as i:
 			trans_txt = i.read()
 		# get the sentences
 		sent_lst = get_sents_from_trans(trans_txt, keep_speakers=False)
+		# if list of sentences is empty, continue
+		if len(sent_lst) == 0:	
+			continue
 		trans_lst.append(sent_lst)
 	return trans_lst
 
@@ -522,22 +526,24 @@ if __name__=="__main__":
 
 	# read the files in a list of transcripts
 	trans_lst = read_transcripts(args.inpath)
-	km_sim, agg_sim, msh_sim, spec_sim, aff_sim = 0, 0, 0, 0, 0
+	km_sim, agg_sim, msh_sim, spec_sim, aff_sim = [], [], [], [], []
 
-	# loop through all transcripts
-	for trans in tqdm(range(len(trans_lst))):
-		km_sim += benchmark_kmeans(trans)
-		agg_sim += benchmark_agglomerative(trans)
-		msh_sim += benchmark_meanshift(trans)
-		spec_sim += benchmark_spectral(trans)
-		aff_sim += benchmark_affinity(trans)
+	# # loop through all transcripts
+	# for trans in tqdm(trans_lst):
+	p = mp.Pool(4)
+	km_sim = p.map(benchmark_kmeans, trans_lst, chunksize=4)
+	agg_sim = p.map(benchmark_agglomerative, trans_lst, chunksize=4)
+	msh_sim = p.map(benchmark_meanshift, trans_lst, chunksize=4)
+	spec_sim = p.map(benchmark_spectral, trans_lst, chunksize=4)
+	aff_sim = p.map(benchmark_affinity, trans_lst, chunksize=4)
+	p.close() ; p.join()
 
 	# print the average intracluster similarity for each algorithm
-	print("Avg similarity for kmeans: ", km_sim / len(trans_lst))
-	print("Avg similarity for agglomerative: ", agg_sim / len(trans_lst))
-	print("Avg similarity for meanshift: ", msh_sim / len(trans_lst))
-	print("Avg similarity for spectral: ", spec_sim / len(trans_lst))
-	print("Avg similarity for affinity: ", aff_sim / len(trans_lst))
+	print("Avg similarity for kmeans: ", sum(km_sim) / len(trans_lst))
+	print("Avg similarity for agglomerative: ", sum(agg_sim) / len(trans_lst))
+	print("Avg similarity for meanshift: ", sum(msh_sim) / len(trans_lst))
+	print("Avg similarity for spectral: ", sum(spec_sim) / len(trans_lst))
+	print("Avg similarity for affinity: ", sum(aff_sim) / len(trans_lst))
 
 
 

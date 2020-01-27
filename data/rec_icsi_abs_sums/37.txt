@@ -1,0 +1,197 @@
+D:  so , uh , you 've got some , uh , Xerox things to pass out ? 
+A:  OK , s so there is kind of summary of what has been done  
+A:  Summary of experiments since , well , since last week 
+A:  and also since the  we 've started to run  work on this . 
+A:  Um .  So since last week we 've started to fill the column with um <mouth> uh features w with nets trained on PLP with on - line normalization 
+
+D:  so , uh , you 've got some , uh , Xerox things to pass out ? 
+A:  Yeah , I 'm sorry for the table , 
+A:  but as it grows in size , uh , it . 
+D:  Uh , so for th the last column we use our imagination . 
+A:  OK , s so there is kind of summary of what has been done  
+A:  Summary of experiments since , well , since last week 
+A:  and also since the  we 've started to run  work on this . 
+A:  Um .  So since last week we 've started to fill the column with um <mouth> uh features w with nets trained on PLP with on - line normalization 
+A:  but with delta also , 
+A:  uh  when we use the large training set using French , Spanish , and English , you have one hundred and six without delta 
+A:  and eighty - nine with the delta . 
+D:  a And again all of these numbers are with a hundred percent being , uh , the baseline performance , 
+A:  and training with other languages is a little bit worse . 
+A:  we have a ninety - one number , 
+A:  so , it 's multi - English , 
+A:  And , yeah , and here the gap is still more important between using delta and not using delta . 
+A:  If y if I take the training s the large training set , it 's  we have one hundred and seventy - two , 
+A:  and one hundred and four when we use delta . 
+A:  Uh .  Even if the contexts used is quite the same , 
+A:  except for the multi - English , which is always one of the best . 
+A:  then we started to work on a large dat database containing , uh , sentences from the French , from the Spanish , from the TIMIT , from SPINE , uh from  uh English digits , and from Italian digits . 
+A:  and  uh , actually we did this before knowing the result of all the data , 
+A:  uh , so we have to to redo the uh  the experiment training the net with , uh PLP , but with delta . 
+B:  And first in the experiment - one I  I do  I  I use different MLP , 
+A:  Yeah , and test across everything . 
+D:  So I guess the other thing is to take  you know  if one were to take , uh , you know , a couple of the most successful of these , 
+D:  Yeah , try all these different tests . 
+A:  we still have to work on Finnish , 
+A:  um , basically , to make a decision on which MLP can be the best across the different languages . 
+A:  For the moment it 's the TIMIT network , and perhaps the network trained on everything . 
+A:  Uh , well , the next part of the document is , well , basically , a kind of summary of what  everything that has been done . 
+A:  So . We have seventy - nine M L Ps trained on 
+A:  ten  on ten different databases . 
+
+A:  Um , discussion with Hynek , Sunil and Pratibha for trying to plug in their our  our networks with their  within their block diagram , 
+A:  uh , where to plug in the  the network , uh , after the  the feature , 
+A:  before as um a as a plugin or as a anoth another path , 
+A:  actually Hynek would like to see , 
+A:  perhaps if you remember the block diagram there is , uh , temporal LDA followed b by a spectral LDA for each uh critical band . 
+A:  And he would like to replace these by a network 
+A:  which would , uh , make the system look like a TRAP . 
+A:  Um , there are still open questions there , 
+A:  The future work is ,  well , try to connect to the  to make  to plug in the system to the OGI 
+A:  where to put the MLP basically . 
+D:  So . Uh , we  we wanna get their path running here , 
+D:  If so , we can add this other stuff . 
+D:  as an additional path 
+A:  Yeah , the way we want to do it perhaps is to  just to get the VAD labels and the final features . 
+A:  So they will send us the  Well , provide us with the feature files , 
+D:  So we  So . First thing of course we 'd wanna do there is to make sure that when we get those labels of final features is that we get the same results as them . 
+D:  Without putting in a second path . 
+D:  Yeah just th w i i Just to make sure that we  have  we understand properly what things are , our very first thing to do is to  is to double check that we get the exact same results as them on HTK . 
+
+D:  So , on the MSG uh problem 
+D:  um , I think that in  in the  um , in the short  time  solution 
+D:  um , that is , um , trying to figure out what we can proceed forward with to make the greatest progress , 
+D:  I think it 's kind of in category that it 's , it  it may be complicated . 
+D:  And uh it might be  if someone 's interested in it , uh , certainly encourage anybody to look into it in the longer term , 
+D:  once we get out of this particular rush  uh for results . 
+D:  But in the short term , unless you have some  some s strong idea of what 's wrong , 
+D:  but  but my  my guess would be that it 's something that is a simple thing that could take a while to find . 
+
+D:  Yeah , that  seems like a good thing to do , probably , 
+D:  not uh again a short - term sort of thing . 
+A:  the two of the main issues perhaps are still the language dependency <inbreath> and the noise dependency . 
+A:  And perhaps to try to reduce the language dependency , we should focus on finding some other kind of training targets . 
+A:  For moment you use  we use phonetic targets 
+A:  but we could also use articulatory targets , soft targets , 
+A:  and perhaps even , um use networks that doesn't do classification 
+A:  but just regression 
+A:  and well , basically com com compute features and noit not , nnn , features without noise . I mean uh , transform the fea noisy features <inbreath> in other features that are not noisy . 
+
+D:  So I guess the other thing is to take  you know  if one were to take , uh , you know , a couple of the most successful of these , 
+A:  Yeah , and test across everything . 
+D:  Yeah , try all these different tests . 
+D:  but one of the core quote  " open questions " for that is um , um , if we take the uh  you know , the best ones here , 
+D:  maybe not just the best one , 
+D:  but the best few or something  
+D:  You want the most promising group from these other experiments . 
+D:  We know that there 's a mis there 's a uh  a  a loss in performance when the neural net is trained on conditions that are different than  than , uh we 're gonna test on , 
+D:  but well , if you look over a range of these different tests um , how well do these different ways of combining the straight features with the MLP features , uh stand up over that range ? 
+D:  look at these different ways of combining it . 
+D:  And just look  take that case and then look over all the different things . 
+D:  How does that  How does that compare between the  
+D:  All the different test sets , 
+D:  and for  and for the couple different ways that you have of  of  of combining them . 
+D:  Um .  How well do they stand up , over the  
+
+A:  But you have two  two effects , the effect of changing language 
+A:  and the effect of training on something that 's  Viterbi - aligned instead of hand  hand - labeled . 
+D:  Do you think the alignments are bad ? 
+D:  I mean , have you looked at the alignments at all ? 
+D:  What the Viterbi alignment 's doing ? 
+D:  Might be interesting to look at it . 
+A:  Yeah . But  Yeah . But , perhaps it 's not really the  the alignment that 's bad 
+A:  but the  just the ph phoneme string that 's used for the alignment 
+D:  The pronunciation models and so forth 
+A:  there  there might be errors just in the  in  in the ph string of phonemes . 
+A:  Yeah , so this is not really the Viterbi alignment , 
+
+D:  So . Uh , we  we wanna get their path running here , 
+D:  If so , we can add this other stuff . 
+D:  as an additional path 
+A:  Yeah , the way we want to do it perhaps is to  just to get the VAD labels and the final features . 
+A:  So they will send us the  Well , provide us with the feature files , 
+D:  So we  So . First thing of course we 'd wanna do there is to make sure that when we get those labels of final features is that we get the same results as them . 
+D:  Without putting in a second path . 
+D:  Yeah just th w i i Just to make sure that we  have  we understand properly what things are , our very first thing to do is to  is to double check that we get the exact same results as them on HTK . 
+
+D:  So , it it 's still  it hurts you  seems to hurt you a fair amount to add in this French and Spanish . 
+D:  I wonder why 
+C:  Well Stephane was saying that they weren't hand - labeled , 
+C:  the French and the Spanish . 
+A:  yeah !  As we mentioned , TIMIT is the only that 's hand - labeled , 
+A:  and perhaps this is what makes the difference . 
+A:  Yeah , the other are just Viterbi - aligned . 
+A:  Well , the TIMIT network is still the best 
+A:  the fact that it 's  it 's hand - labeled . 
+A:  But you have two  two effects , the effect of changing language 
+A:  and the effect of training on something that 's  Viterbi - aligned instead of hand  hand - labeled . 
+D:  Do you think the alignments are bad ? 
+D:  I mean , have you looked at the alignments at all ? 
+D:  What the Viterbi alignment 's doing ? 
+D:  Might be interesting to look at it . 
+A:  Yeah . But  Yeah . But , perhaps it 's not really the  the alignment that 's bad 
+A:  but the  just the ph phoneme string that 's used for the alignment 
+D:  The pronunciation models and so forth 
+A:  there  there might be errors just in the  in  in the ph string of phonemes . 
+A:  Yeah , so this is not really the Viterbi alignment , 
+A:  We can , we can tell which training set gives the best result , 
+A:  but <mouth> we don't know exactly why . 
+
+A:  Yeah , I 'm sorry for the table , 
+A:  but as it grows in size , uh , it . 
+D:  Uh , so for th the last column we use our imagination . 
+D:  a And again all of these numbers are with a hundred percent being , uh , the baseline performance , 
+A:  and eighty - nine with the delta . 
+A:  uh  when we use the large training set using French , Spanish , and English , you have one hundred and six without delta 
+A:  Yeah , 
+A:  so , it 's multi - English , 
+A:  we have a ninety - one number , 
+A:  and training with other languages is a little bit worse . 
+A:  If y if I take the training s the large training set , it 's  we have one hundred and seventy - two , 
+A:  and one hundred and four when we use delta . 
+A:  And this is  The results are on the other document . 
+A:  Yeah , we ju just to be clear , the numbers here are uh recognition accuracy . 
+B:  Yes , and the baseline  the baseline have  i is eighty - two . 
+D:  Baseline is eighty - two . 
+A:  Yeah , eh , actually , if w we look at the table , 
+A:  the huge table , 
+D:  when you said the baseline system was uh , uh eighty - two percent , that was trained on what and tested on what ? 
+D:  That was , uh Italian mismatched d uh , uh , digits , uh , is the testing , 
+D:  and the training is Italian digits ? 
+B:  Yeah . 
+D:  So the " mismatch " just refers to the noise and  and , uh microphone and so forth , 
+D:  So , um  So what that says is that in a matched condition , <sniff> we end up with a fair amount worse putting in the uh PLP . 
+D:  Now w would  do we have a number , I suppose for the matched  
+D:  I  I don't mean matched , 
+D:  but uh use of Italian  training in Italian digits for PLP only ? 
+A:  so this is  basically this is in the table . 
+A:  Uh  so the number is fifty - two , 
+B:  Another table . 
+D:  Fifty - two percent . 
+A:  Fift - So  No , it 's  it 's the  
+D:  No , fifty - two percent of eighty - two ? 
+A:  Of  of  of uh  eighteen  
+B:  Eighty . 
+A:  of eighteen . 
+A:  So it 's  it 's error rate , basically . 
+B:  It 's plus six . 
+A:  It 's er error rate ratio . 
+D:  Oh this is accuracy ! 
+B:  Yeah . 
+A:  Uh , so we have nine  nine  let 's say ninety percent . 
+D:  Oh , I 'm sorry , 
+D:  I k I keep getting confused 
+D:  because this is accuracy . 
+A:  Yeah , sorry . 
+
+D:  Here the problem seems to be is that we don't have a hug a really huge net with a really huge amount of training data . 
+D:  But we have s f  for this kind of task , I would think ,  sort of a modest amount . 
+D:  I mean , a million frames actually isn't that much . 
+D:  We have a modest amount of  of uh training data from a couple different conditions , 
+D:  and then uh  in  yeah , that  and the real situation is that there 's enormous variability that we anticipate in the test set in terms of language , 
+D:  and noise type 
+D:  uh , and uh ,  uh , channel characteristic , 
+
+D:  and then uh  in  yeah , that  and the real situation is that there 's enormous variability that we anticipate in the test set in terms of language , 
+D:  and noise type 
+D:  uh , and uh ,  uh , channel characteristic , 
+

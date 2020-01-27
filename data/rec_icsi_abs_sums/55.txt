@@ -1,0 +1,128 @@
+None
+
+C:  Um , I 've been playing with , first , the , um , VAD . 
+C:  Um , <clears throat> so it 's exactly the same approach , 
+
+C:  But well , we could probably put the delta , um , <mouth> before on - line normalization . 
+A:  What if you used a smaller window for the delta ? 
+A:  I mean , I guess there 's a lot of things you could do to  
+B:  So if you  if you put the delta before the , uh , ana on - line  If  
+B:  uh  then  then it could go in parallel . 
+C:  cuz the time constant of the on - line normalization is pretty long compared to the delta window , 
+B:  and you could experiment with cutting various pieces of these back a bit , 
+B:  I mean , we 're s we 're not  we 're not in terrible shape . 
+B:  Well , what 's your  what 's your thought about what to do next with it ? 
+C:  I 'm surprised , 
+C:  because I expected the neural net to help more when there is more mismatch , as it was the case for the  
+B:  Well , we might  uh , we might have to experiment with , uh better training sets . 
+B:  I  The other thing is , I mean , before you found that was the best configuration , but you might have to retest those things now that we have different  The rest of it is different , 
+B:  For instance , what 's the effect of just putting the neural net on without the o other  other path ? 
+B:  I mean , you know what the straight features do . 
+A:  In the , um  a lot of the , um  the Hub - five systems , um , recently have been using LDA . 
+A:  and  and they , um  They run LDA on the features right before they train the models . 
+D:  Uh , this LDA is different from the LDA that you are talking about . 
+D:  The LDA that you  saying is , like , you take a block of features , like nine frames or something ,  and then do an LDA on it , 
+D:  and then reduce the dimensionality to something like twenty - four or something like that . 
+D:  So this is a two dimensional tile . 
+D:  And the LDA that we are f applying is only in time , 
+D:  So it 's like  more like a filtering in time , 
+A:  but what if you put  ran the other kind of LDA , uh , on your features right before they go into the HMM ? 
+C:  But it 's  it 's like a nonlinear discriminant analysis . 
+A:  The tandem stuff is kind of like i nonlinear LDA . 
+A:  But I mean , w but the other features that you have , um , th the non - tandem ones , 
+C:  Well , in the proposal , they were transformed u using PCA , 
+C:  Yeah , it might be that LDA could be better . 
+D:  The uh , other thing I was wondering was , um , if the neural net , um , has any  because of the different noise con unseen noise conditions for the neural net , 
+D:  where , like , you train it on those four noise conditions , while you are feeding it with , like , a additional  some four plus some  f few more conditions which it hasn't seen , actually , 
+D:  instead of just h having c uh , those cleaned up t cepstrum , sh should we feed some additional information , like  The  the  
+D:  I mean , should we f feed the VAD flag , also , at the input so that it  it has some additional discriminating information at the input ? 
+D:  We have the VAD information also available at the back - end . 
+D:  So if it is something the neural net is not able to discriminate the classes  
+D:  So , by having an additional , uh , feature which says " this is speech and this is nonspeech " , I mean , it certainly helps in some unseen noise conditions for the neural net . 
+A:  So you 're saying , feed that , also , into  the neural net . 
+D:  Yeah . So it it 's an  additional discriminating information . 
+B:  The other thing  you could do is just , um , p modify the , uh , output probabilities of the  of the , uh , uh , um , neural net , tandem neural net ,  based on the fact that you have a silence probability . 
+
+B:  And actually it brought up a question which may be relevant to the Aurora stuff too . 
+B:  Um , I know that when you figured out the filters that we 're using for the Mel scale , there was some experimentation that went on at  at , uh  at OGI . 
+B:  but one of the differences that we found between the two systems that we were using ,  the  the Aurora HTK system baseline system  and the system that we were  the  the uh , other system we were using , the uh , the SRI system , was that the SRI system had maybe a , um , hundred hertz high - pass . 
+B:  still , it 's possible that we 're getting in some more noise . 
+B:  So I wonder , is it  @ @ Was there  their experimentation with , uh , say , throwing away that filter or something ? 
+B:  so I think when  when he gets done with his prelim study I think <laugh> one of the next things we 'd want to do is to take this , uh  uh , noise , uh , processing stuff and  and , uh  uh , synthesize some speech from it . 
+
+B:  So I won't be here for  
+B:  Uh , I 'm leaving next Wednesday . 
+B:  I 'm leaving  leaving next Wednesday . 
+B:  so next week I won't , 
+B:  and the week after I won't , 
+B:  cuz I 'll be in Finland . 
+B:  By that time you 'll be   Uh , you 'll both be gone  from here . 
+B:  So it 'll be a few weeks , really , before we have a meeting of the same cast of characters . 
+B:  and then uh , uh , we 'll start up again with Dave and  Dave and Barry and Stephane and us on the , uh , twentieth . 
+
+B:  Is there any word yet about the issues about , um , adjustments for different feature sets or anything ? 
+A:  You asked me to write to him 
+A:  Uh , I 'll  I 'll d I 'll double check that and ask him again . 
+B:  it 's like that  that could r turn out to be an important issue for us . 
+
+B:  For instance , what 's the effect of just putting the neural net on without the o other  other path ? 
+B:  I mean , you know what the straight features do . 
+B:  When you  in  in the old experiments when you ran with the neural net only , and didn't have this side path , um , uh , with the  the pure features as well , did it make things better to have the neural net ? 
+C:  It was  b a little bit worse . 
+B:  until you put the second path in with the pure features , the neural net wasn't helping at all . 
+C:  It was helping , uh , if the features are b were bad , 
+C:  as soon as we added LDA on - line normalization , and <clears throat> all these things , then  
+B:  Well , I still think it would be k sort of interesting to see what would happen if you just had the neural net without the side thing . 
+B:  And  and the thing I  I have in mind is , uh , maybe you 'll see that the results are not just a little bit worse . 
+B:  Maybe that they 're a lot worse . 
+B:  But if on the ha other hand , uh , it 's , say , somewhere in between what you 're seeing now and  and  and , uh , what you 'd have with just the pure features , then maybe there is some problem of a  of a , uh , combination of these things , or correlation between them somehow . 
+B:  If it really is that the net is hurting you at the moment , then I think the issue is to focus on  on , uh , improving the  the net . 
+
+B:  Is there any word yet about the issues about , um , adjustments for different feature sets or anything ? 
+B:  it 's like that  that could r turn out to be an important issue for us . 
+D:  Cuz they have , uh , already frozen those in i insertion penalties and all those stuff is what  I feel . 
+D:  And they have these tables with , uh , various language model weights , insertion penalties . 
+B:  So now , we may come back to the situation where we may be looking for a modification of the features to account for the fact that we can't modify these parameters . 
+B:  but it 's still worth , I think , just  since  you know , just chatting with Joe about the issue . 
+
+C:  but the problem is still that the latency is too large . 
+C:  the  the latency of the VAD is two hundred and twenty milliseconds . 
+A:  Wh - what 's the baseline you need to be under ? 
+B:  Well , we don't know . 
+B:  They 're still arguing about it . 
+B:  I mean , if it 's two  if  if it 's , uh  if it 's two - fifty , then we could keep the delta where it is if we shaved off twenty . 
+B:  If it 's two hundred , if we shaved off twenty , we could  we could , uh , meet it by moving the delta back . 
+A:  So , how do you know that what you have is too much if they 're still deciding ? 
+B:  I mean , the main thing is that since that we got burned last time , and  you know , by not worrying about it very much , we 're just staying conscious of it . 
+B:  I mean , if  if  if a week before we have to be done someone says , " Well , you have to have fifty milliseconds less than you have now " , it would be pretty frantic around here . 
+
+B:  You 're just using the full ninety features ? 
+C:  From the networks , it 's twenty - eight . 
+B:  And from the other side it 's forty - five . 
+B:  So it 's  you have seventy - three features , 
+C:  There 's a KLT after the neural network , as  as before . 
+A:  That 's how you get down to twenty - eight ? 
+C:  I wanted to do something very similar to the proposal as a first  first try . 
+C:  But we have to  for sure , we have to go down , 
+C:  because the limit is now sixty features . 
+C:  we have to find a way to decrease the number of features . 
+B:  they felt they wanted to set a limit . 
+B:  So they chose sixty . 
+B:  I  I  I think it 's kind of r arbitrary too . 
+
+C:  Yeah , actually <clears throat> to s eh , what I observed in the HM case is that the number of deletion dramatically increases . 
+C:  It  it doubles . 
+C:  When I added the num the neural network it doubles the number of deletions . 
+C:  Yeah , so I don't you know <laugh> how to interpret that , 
+B:  Me either . 
+A:  And  and did  an other numbers stay the same ? 
+C:  They p stayed the same , 
+B:  Did they increase the number of deletions even for the cases that got better ? 
+C:  No . 
+B:  So it 's only the highly mismatched ? 
+B:  Now the only thing that  that bothers me about all this is that I  I  I  The  the fact  
+B:  i i It 's sort of bothersome that you 're getting more deletions . 
+C:  So I might maybe look at , 
+C:  is it due to the fact that um , the probability of the silence at the output of the network , is , 
+C:  too  too high 
+
