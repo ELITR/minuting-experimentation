@@ -1,0 +1,275 @@
+D:  Um , so we 're pretty much out of digits . 
+
+D:  so I  I just have to go through them 
+D:  and uh pick out the ones that have problems , 
+D:  and either correct them or have them re - read . 
+
+D:  We have about two hours worth . 
+
+F:  but you think we 'll be able to retrieve the other hour , reasonably ? 
+
+D:  So it 's just a question of a little hand - editing of some files 
+D:  and then waiting for more people to turn in their speaker forms . 
+
+D:  So what that means is we have about an hour of transcribed digits that we can play with . 
+
+D:  and I sent mail to everyone who hadn't filled out a speaker form , 
+D:  and they 're slowly s trickling in . 
+
+F:  So the relevance of the speaker form here , s 
+
+D:  It 's for labeling the extracted audio files . 
+D:  By speaker ID and microphone type . 
+
+D:  So the other topic with digits is uh , 
+D:  Liz would like to elicit different prosodics , 
+D:  and so we tried last week with them written out in English . 
+D:  And it just didn't work at all 
+D:  because no one grouped them together . 
+
+G:  but I mean it seems to me that , at least for us , we can learn to read them as digits 
+
+G:  don't think that 'd be that hard to read them as single digits . 
+
+G:  because the digits are easier to recognize . 
+G:  They 're better trained than the numbers . 
+
+D:  Just let them read it how they read it . 
+
+G:  I just thought well we 're  if we 're collec collecting digits , and Adam had said we were running out of the TI forms , I thought it 'd be nice to have them in groups , 
+
+G:  and also w maybe we can just let them choose " zero " versus " O " as they  as they like 
+
+G:  and probably , all else being equal , it 'd be better for me to just have single digits 
+
+D:  OK so  so I can just add to the instructions to read it as digits 
+
+E:  The spaces already bias it toward being separated . 
+
+F:  I  I was just gonna say , so we have in the vicinity of forty hours of  of recordings now . 
+F:  And you 're saying two hours , uh , is digits , 
+
+F:  something like twenty  twenty to one . 
+
+F:  Um , yeah like you say , I think a couple hours for a  for a  for a test  test set 's OK . 
+
+B:  You said there 's like ten different groupings ? 
+
+G:  Right , just groupings in terms of number of groups in a line , 
+G:  and number of digits in a group , 
+G:  and the pattern of groupings . 
+G:  Um , I  I just roughly looked at what kinds of digit strings are out there , 
+G:  and they 're usually grouped into either two , three , or four , four digits at a time . 
+
+G:  I purposely didn't want them to look like they were in any kind of pattern . 
+
+D:  And which group appears is picked randomly , and what the numbers are are picked randomly . 
+D:  So unlike the previous one , which I d simply replicated TI - digits , this is generated randomly . 
+
+G:  so we have a problem with acoustic adaptation , 
+
+G:  and , I mean  so it 's  it 's nice to have the digits you know , replicated many times . 
+G:  Especially for speakers that don't talk a lot . 
+
+F:  but  but uh the truth is I 'm hoping that we  we through the  the stuff that  that you guys have been doing as you continue that , we get , uh , the best we can do on the spontaneous stuff uh , uh nearfield , 
+F:  and then um , we do a lot of the testing of the algorithms on the digits for the farfield , 
+F:  and at some point when we feel it 's mature and we understand what 's going on with it then we  we have to move on to the spontaneous data with the farfield . 
+
+G:  but we don't have any overlapping digits . 
+
+G:  but the people who wanna work on it we should talk to them . 
+
+F:  but I think having a little bit might at least be fun for somebody like Dan to play around with , 
+
+D:  I think maybe if we wanted to do that we would do it as a separate session , 
+
+D:  We have ASR results from Liz , 
+D:  transcript status from Jane , 
+D:  and disk space and storage formats from Don . 
+
+G:  um , it 's pretty preliminary in terms of ASR results 
+
+G:  like it 's not the speaking style that differs , 
+G:  it 's the fact that there 's overlap that causes recognition errors . 
+G:  And then , the fact that it 's almost all insertion errors , 
+
+G:  but you might also think that in the overlapped regions you would get substitutions and so forth , 
+G:  um , leads us to believe that doing a better segmentation , like your channel - based segmentation , or some kind of uh , echo cancellation to get basically back down to the individual speaker utterances would be probably all that we would need to be able to do good recognition on the  on the close - talking mikes . 
+
+G:  I guess the other neat thing is it shows for sure w that the lapel , you know within speaker is bad . 
+G:  And it 's bad because it picks up the overlapping speech . 
+
+D:  And someone said " oh " in the front  in the middle . 
+
+B:  So if there was a segment of speech this long 
+
+G:  and so the rec you know , there 're error rates 
+G:  because of insertion  
+G:  Insertions aren't bounded , 
+G:  so with a one - word utterance and ten insertions you know you got huge error rate . 
+
+G:  So I this is sort of what we expected , 
+
+G:  because right now we 're not able to actually report on recognition in a real paper , 
+
+G:  because it would look sort of premature . 
+
+G:  And also I just wanted to mention briefly that , um , uh Andreas and I called up Dan Ellis who 's still stuck in Switzerland , 
+G:  and we were gonna ask him if  if there 're  you know , what 's out there in terms of echo cancellation and things like that . 
+
+F:  It  just  it just to r to remove cross - talk . 
+
+G:  So the idea is to basically run this on the whole meeting . 
+G:  and get the locations , which gives you also the time boundaries of the individual speak 
+G:  Right . Except that there are many techniques for the kinds of cues , um , that you can use to do that . 
+
+G:  that 's really the next step 
+G:  because we can't do too much , you know , on term in terms of recognition results knowing that this is a big problem 
+G:  um , until we can do that kind of processing . 
+
+G:  So at this point we can sort of finalize the naming , and so forth , 
+G:  and we 're gonna basically re rewrite out these waveforms that we did 
+
+D:  Don , you had disk space and storage formats . 
+
+F:  Yeah , l I mean over all our data , we  we want to not downsample . 
+
+G:  I mean the r the front - end on the SRI recognizer just downsamples them on the fly , 
+
+G:  So we can't shorten them , 
+G:  but we can downsample them . 
+
+F:  As  yeah , as long as there is a  a form that we can come from again , that is not downsampled ,  then , 
+
+C:  Yeah those are gonna be kept . 
+
+G:  That  that 's why we need more disk space 
+
+B:  So the SRI front - end won't take a uh  an  an  a large audio file name and then a  a list of segments to chop out  from that large audio file ? 
+
+G:  Um , it 's better if they 're chopped out , 
+
+G:  cuz you can run them , you know , in different orders . 
+
+D:  And that 's the whole point about the naming conventions 
+
+G:  You can't load an hour of speech into X Waves . 
+G:  You need to s have these small files , 
+
+A:  No , with the Transcriber tool , it 's no problem . 
+
+E:  Alright so , first of all , um , there was a  an interest in the transcribe transcription , uh , checking procedures 
+
+E:  and the first thing I did was obviously a spell - check . 
+
+E:  And then , in addition to that , I did an exhaustive listing of the forms in the data file , 
+E:  which included n detecting things like f faulty punctuation and things  
+
+E:  And th and then another check involves , uh , being sure that every utterance has an identifiable speaker . 
+
+E:  Then there 's this issue of glossing s w so - called " spoken - forms " . 
+
+E:  mo for the most part , we 're keeping it standard wo word level transcription . 
+
+E:  However , things like " cuz " where you 're lacking an entire very prominent first syllable , 
+
+E:  those are r reasons  f for those reasons I  I kept that separate , 
+E:  and used the convention of using " CUZ " for that form , 
+E:  however , glossing it 
+E:  so that it 's possible with the script to plug in the full orthographic form for that one , 
+
+E:  And the way I tag ac pronounced acronyms is that I have underscores between the components . 
+
+E:  the things in curly brackets are viewed as comments . 
+E:  There 're comments of four types . 
+
+E:  One of them is , um , the gloss type we just mentioned . 
+
+E:  Uh , then you have if it 's  uh , there 're a couple different types of elements that can happen that aren't really properly words , 
+
+E:  And then the third type right now , <mouth> uh , is  m things that fall in the category of comments about what 's happening . 
+
+E:  I have frequencies . 
+E:  So you 'll see how often these different things occur . 
+
+E:  So , right now I 've standardized across all the existing data with these spoken forms . 
+
+E:  But , um , uh , the very front page deals with this , uh , final c pa uh , uh , aspect of the standardization 
+E:  which has to do with the spoken forms like " mm - hmm " and " mm - hmm " and " ha " and " uh - uh " and all these different types . 
+
+G:  So , it  it 's actually probably good for us to know the difference between the real " eh " and the one that 's just like " uh " or transcribed " aaa " 
+
+F:  what 's QUAL ? 
+
+E:  Qual - qualifier . 
+
+E:  Comment or contextual comment . 
+
+G:  We have this  there is this thing I was gonna talk to you about at some point about , you know , what do we do with the dictionary as we 're up updating the dictionary , 
+
+G:  but if there 's things that um , we change later , then we always have to keep our  the dictionary up to date . 
+
+D:  it seems like there are lots of different ways it 's being done . 
+
+D:  On the glosses for numbers , 
+
+D:  " NUMS " , 
+
+E:  which means this is part of the numbers task . 
+
+G:  Now why do we  what 's the reason for having like the point five have the " NUMS " on it ? 
+
+E:  Oh these are all these , the " NUMS point " , this all where they 're saying " point " something or other . 
+E:  And the other thing too is for readability of the transcript . 
+
+E:  And this is just really a  a way of someone who would handle th the data in a more discourse - y way to be able to follow what 's being said . 
+
+E:  where we 're gonna have a master file of the channelized data . 
+E:  Um , there will be scripts that are written to convert it into these t these main two uses 
+E:  and th some scripts will take it down th e into a f a for ta take it to a format that 's usable for the recognizer 
+E:  an uh , other scripts will take it to a form that 's usable for the  for linguistics an and discourse analysis . 
+E:  And , um , the implication that  that I have is that th the master copy will stay unchanged . 
+
+E:  that , um , Thilo requested , um , that we ge get some segments done by hand to e e s reduce the size of the time bins 
+
+D:  so you have that data don't you ? 
+
+A:  Yeah , that 's the training data . 
+
+E:  And he requested that there be , uh , similar , uh , samples done for five minute stretches c involving a variety of speakers and overlapping secti sections . 
+
+E:  I mean , if we could do the  the more fine grained tuning of this , uh , using an algorithm , that would be so much more efficient . 
+
+A:  So I  I thought we  we sh we sh perhaps we should try to  to start with those channelized versions 
+
+A:  Give it  Give one tr transcriber the  the channelized version of  of my speech - nonspeech detection 
+A:  and look if  if that 's helpful for them , 
+
+C:  So , uh , have those  e e the vis the ten hours that have been transcribed already , have those been channelized ? 
+
+E:  Yes , they have . 
+
+E:  Well , you know the problem  the problem is that some  some of the adjustments that they 're making are to bring  are to combine bins that were  time bins which were previously separate . 
+E:  And the reason they do that is sometimes there 's a word that 's cut off . 
+E:  And so , i i i it 's true that it 's likely to be adjusted in the way that the words are more complete . 
+
+C:  No I know  I know that adjusting those things are gonna  is gonna make it better . 
+
+C:  but do you have like a time frame when you can expect like all of it to be done , 
+
+E:  you know , it takes a couple hours t to do , uh , ten minutes . 
+
+B:  So I  I th I think probably the way it 'll go is that , you know , when we make this first general version and then start working on the script , that script @ @ that will be ma you know primarily come from what you 've done , um , we 'll need to work on a channelized version of those originals . 
+
+B:  and then we 'll rerun the script and produce better uh versions . 
+
+B:  uh , and then probably what will happen is as the transcribers finish tightening more and more , you know , that original version will get updated 
+
+B:  But the  I guess the ef the effect for you guys , because you 're pulling out the little wave forms into separate ones , that would mean these boundaries are constantly changing 
+B:  you 'd have to constantly re rerun that , 
+
+G:  The cutting of the waveforms is pretty trivial . 
+
+G:  So if you b merge two things , then you know that it 's the sum of the transcripts , 
+G:  but if you split inside something , you don't where the word  which words moved . 
+

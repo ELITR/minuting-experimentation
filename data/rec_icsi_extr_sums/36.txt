@@ -1,0 +1,213 @@
+B:  So where are we on   on uh <laugh>  our runs ? 
+
+D:  Uh so .  uh  We  So  As I was already said , we  we mainly focused on uh four kind of features . 
+D:  The PLP , the PLP with JRASTA , the MSG , and the MFCC from the baseline Aurora . 
+D:  Uh , and we focused for the  the test part on the English and the Italian . 
+D:  Um . We 've trained uh several neural networks on  
+D:  so  on the TI - digits English  and on the Italian data 
+D:  and also on the broad uh  English uh French and uh Spanish databases . 
+
+D:  and um , actually what we  we @ @ observed is that if the network is trained on the task data it works pretty well . 
+
+D:  But actually we didn't train network on  uh both types of data 
+
+D:  We only did either task  task data or  uh broad  data . 
+
+D:  The first testing is  with task data  
+
+D:  The second test is trained on a single language um with broad database , 
+D:  but the same language as the t task data . 
+D:  But for Italian we choose Spanish which  we assume is close to Italian . 
+D:  The third test is by using , um the three language database 
+
+D:  And the fourth test is uh  excluding from these three languages the language  that is  the task language . 
+
+B:  That 's including the w the   the  
+B:  the one that it 's  
+
+D:  Yeah . 
+
+A:  it 's the broad  data . 
+
+D:  uh . The error rate increase u of  of  of ten percent , relative . 
+
+D:  And then when we jump to the multilingual data it 's uh it become worse 
+
+D:  Twenty to  to thirty percent further . 
+
+D:  So . This was for the PLP , 
+
+D:  For the PLP with JRASTA the   the  we  
+D:  This is quite the same  tendency ,  with a slight increase of the error rate ,  uh if we go to  to TIMIT . 
+D:  And then it 's  it gets worse with the multilingual . 
+
+D:  There  there is a difference actually with  b between PLP and JRASTA 
+D:  is that  JRASTA  seems to  perform better with the highly mismatched  condition  but slightly  slightly worse  for the well matched condition . 
+
+B:  Uh <laugh> <inbreath> Um now , what 's the noise condition  um  of the training data  
+
+B:  The noise condition is the same  
+
+B:  So there 's not a  statistical  sta a strong st  statistically different  noise characteristic between  uh the training and test 
+
+D:  No these are the s s s same noises , 
+
+D:  At least  at least for the first   for the well - matched , 
+
+D:  Yeah , so for the Italian the results are <outbreath> uh  stranger 
+
+D:  So what appears is that perhaps Spanish is  not very close to Italian 
+D:  because uh , well ,  when using the  the network trained only on Spanish it 's   the error rate is  almost uh twice  the baseline error rate . 
+
+D:  There  there is  another difference , is that the noise  the noises are different . 
+D:  Well , For  for the Italian part I mean 
+D:  the  uh  the um  networks are trained with noise from  Aurora  TI - digits , 
+
+D:  And perhaps the noise are  quite different from the noises  in the speech that Italian . 
+
+D:  but  actually there is something important , 
+D:  is that  um we made a lot of assumption concerning the on - line normalization 
+D:  and we just noticed  uh recently that  uh the  approach that we were using  was not  uh  leading to very good results  when we  used the straight features to HTK . 
+
+D:  So  what we see that  is  there is that um  uh the way we were doing this was not correct , 
+
+D:  When we use the networks  our number are better that  uh Pratibha results . 
+
+D:  and  basically ,  the first thing is the mmm ,  alpha uh  value . 
+
+D:  um ,  I used point five percent ,  which was the default value in the   in the programs here . 
+D:  And Pratibha used five percent . 
+
+D:  I assume that this was not important because  uh previous results from  from Dan and  show that basically  the  both  both values g give the same  same  uh results . 
+D:  It was true on uh  TI - digits but it 's not true on Italian . 
+D:  Uh , second thing is the initialization of the  stuff . 
+D:  Actually ,  uh what we were doing is to start the recursion from the beginning of the  utterance . 
+D:  And using initial values that are the global mean and variances  measured across the whole database . 
+D:  And Pratibha did something different is 
+D:  that he  uh she initialed the um values of the mean and variance  by computing  this on the  twenty - five first frames of each utterance . 
+D:  Mmm . There were other minor differences , 
+
+D:  So .  Uh , I changed the code 
+D:  uh and now we have a baseline that 's similar to the OGI baseline . 
+
+D:  well , the  the  the networks are retaining with these new  features . 
+
+B:  OK , but I think that  given the pressure of time we probably want to draw  because of that  especially , we wanna draw some conclusions from this , 
+
+B:  and make some strong decisions for what we 're gonna do testing on before next week . 
+
+D:  uh so , act actually we have discussed uh  @ @ um , these  
+
+D:  and   and  we were thinking perhaps that  uh  the way we use the tandem is not  
+
+D:  If we trained the networks on the  on  a language and a t or a specific  task , 
+D:  um , what we ask is  to the network  is to put the bound the decision boundaries somewhere in the space . 
+D:  And uh  mmm and ask the network to put one ,  at one side of the  for  for a particular phoneme at one side of the boundary  decision boundary 
+
+D:  And  so there is kind of reduction of the information there that 's not correct 
+D:  because if we change task  and if the phonemes are not in the same context in the new task ,  obviously the  decision boundaries are not   should not be at the same  place . 
+D:  But the way the feature gives  The  the way the network gives the features is that it reduce completely the   it removes completely the information   a lot of information from the  the features  by uh  uh  placing the decision boundaries at  optimal places for  one kind of  data 
+
+D:  So uh what we were thinking about is perhaps  um one way  to solve this problem is increase the number of  outputs of the neural networks . 
+
+D:  well , basically context dependent phonemes . 
+
+B:  And once you  the other thing is that once you represent  start representing more and more context  it is  uh  much more  um specific  to a particular task in language . 
+
+B:  for instance you may have some kinds of contexts that will never occur  in one language and will occur frequently in the other , 
+
+B:  the issue of getting enough training  for a particular kind of context becomes harder . 
+B:  We already actually don't have a huge amount of training data 
+
+D:  the way we  we do it now is that we have a neural network 
+D:  and  basically  the net network is trained almost to give binary decisions . 
+
+B:  but it would still be even more of a binary decision . 
+
+B:  That would be even  even more distinct of a binary decision . 
+
+B:  I mean we  we could disagree about it at length 
+B:  but the  the real thing is if you 're interested in it you 'll probably try it 
+B:  and   and  we 'll see . 
+
+B:  Are there  is there  are there any H T K  trainings  testings going on ? 
+
+E:  I  I  I 'm trying the HTK with eh ,  PLP twelve on - line delta - delta and MSG filter  together . 
+E:  The combination , yeah . 
+E:  But I haven't result <laugh> at this moment . 
+
+D:  And  we  plan to work also on the idea of using both  features  and net outputs . 
+
+D:  So we have um  come up with um  different kind of  broad phonetic categories . 
+D:  And we have  Basically we have three  types of broad phonetic classes . 
+
+D:  Twenty - seven broad classes . 
+
+D:  So it 's  Well , it 's basically a standard net with fewer  classes . 
+
+F:  But including the features . 
+
+D:  because Well , I believe the effect that  of  of too reducing too much the information is  basically  basically what happens 
+
+B:  But you think if you include that  plus the other features , 
+
+B:  And then uh , just to remind me , all of that goes  into  uh , that all of that is transformed by uh , uh , K - KL or something , or  ? 
+
+D:  one single KL to transform everything 
+
+B:  So there 's a question of whether you would  
+
+B:  Whether you would transform together or just one . 
+
+B:  Might wanna try it both ways . 
+
+B:  So I think , you know , we need to  choose the  choose the experiments carefully , 
+B:  so we can get uh key   key questions answered  uh before then 
+
+B:  so I think Hynek will be here Monday . 
+
+B:  So they 're  they 're doing  the  the VAD 
+B:  I guess they mean voice activity detection So again , it 's the silence  
+
+B:  So um Their uh   the results look pretty good . 
+
+B:  So um I think that it 's  it 's nice to do that in this 
+B:  because in fact , it 's gonna give a better word error result 
+B:  and therefore will help within an evaluation . 
+
+B:  Um . Uh , as you know , part of the problem with evaluation right now is that the  word models are pretty bad 
+B:  and nobody wants   has  has approached improving them . 
+
+B:  So um The question we 're gonna wanna go  through next week when Hynek shows up I guess is given that we 've been  
+
+B:  we 're uh looking at  uh , 
+B:  by then I guess , combinations of features and multi - band 
+B:  Uh , and we 've been looking at  cross - language , cross  task  issues . 
+
+B:  But they 've been looking at uh   at these issues . 
+B:  At the on - line normalization and the uh  voice activity detection . 
+B:  And I guess when he comes here we 're gonna have to start deciding about  um what do we choose  from what we 've looked at  to um blend with  some group of things in what they 've looked at 
+B:  And once we choose that ,  how do we split up the  effort ? 
+
+B:  We have the  little tiny IBM machine <laugh>  that might someday grow up to be a big  IBM machine . 
+B:  It 's got s slots for eight , 
+
+B:  I think we only got two so far , 
+
+B:  Yeah , I mean you can check with uh  Dave Johnson . 
+
+B:  and   Somebody could do   you know , uh , check out  uh the multi - threading  libraries . 
+
+B:  I mean , I guess the prudent thing to do would be for somebody to do the work on   on getting our code running  on that machine with two processors  even though there aren't five or eight . 
+B:  There 's  there 's  there 's gonna be debugging hassles 
+B:  and then we 'd be set for when we did have five or eight , to have it really be useful . 
+B:  But .  Notice how I said somebody 
+B:  and <laugh> turned my head your direction . 
+B:  That 's one thing you don't get in these recordings . 
+
+G:  so ,  um I could try to get  um the train the neural network trainings or the HTK stuff running under Linux , and to start with I 'm  wondering which one I should pick first . 
+
+B:  Uh , probably the neural net 
+
+D:  example  uh when we go from TI - digits training to  TIMIT training  uh we lose  uh around ten percent , 
+

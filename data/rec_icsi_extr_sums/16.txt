@@ -1,0 +1,343 @@
+A:  topic of this meeting is I wanna talk a little bit about transcription . 
+A:  Um , I 've looked a little bit into commercial transcription services 
+A:  and Jane has been working on doing transcription . 
+
+A:  and then get an update on the electronics , 
+
+A:  Um , you know , eventually we 're probably gonna wanna distribute this thing 
+
+A:  I mean , it seems like it 's not a corpus which is  uh , has been done before . 
+
+A:  And  and so how we do we distribute the transcripts , 
+A:  how do we distribute the audio files , 
+
+A:  but  but so should we do it in the same format as LDC 
+
+B:  It 's not so much the actu The logistics of distribution are secondary to  preparing the data in a suitable form for distribution . 
+B:  And the other thing is that , um , University of Washington may want to start recording meetings as well , 
+B:  in which case w w we 'll have to decide what we 've actually got so that we can give them a copy . 
+
+A:  So I have a bunch of scripts with X Waves , and some Perl scripts , and other things that make it really easy to extract out <breath> and align where the digits are . 
+A:  And if U d UW 's going to do the same thing I think it 's worth while for them to do these digits tasks as well . 
+A:  And what I 've done is pretty ad - hoc , 
+A:  um , so we might wanna change it over to something a little more standard . 
+A:  You know , STM files , or XML , or something . 
+
+A:  So we were planning to do like thirty or forty hours worth of meetings . 
+
+C:  um , in addition to this issue about the UW stuff there was announced today , uh , via the LDC , um , a corpus from I believe Santa Barbara . 
+
+A:  because it would nice to be able to take that stuff and adapt it to a meeting setting . 
+
+C:  Well , what I was thinking is it may be useful in transcribing , if it 's far field stuff , 
+
+C:  In doing , um , some of our first automatic speech recognition models , it may be useful to have that kind of data 
+
+E:  They had people come in to a certain degree and they  and they have DAT recorders . 
+
+C:  Uh , in fact we get it for free 
+C:  cuz they 're distributing it through the LDC . 
+
+A:  So that would be  yeah , that would be something to look into . 
+
+C:  Maybe we should  maybe we should get a copy of it just to see what they did 
+C:  so  so that we can  we can compare . 
+
+A:  OK , why don't you go ahead and do that then Eric ? 
+
+E:  CSAE . 
+E:  Corpus of Spoken American English . 
+
+C:  But , it uh it would also maybe help be helpful for Liz , if she wanted to start working on some discourse issues , you know , looking at some of this data and then , 
+
+A:  Actually , that 's another thing I was thinking about is that maybe Jane should talk to Liz , to see if there are any transcription issues related to discourse that she needs to get marked . 
+
+A:  So , well w shall we move on and talk a little bit about transcription then ? 
+
+A:  What we 're using right now is a tool , um , from this French group , called " Transcriber " 
+
+A:  so it has a , uh , nice useful Tcl - TK user interface 
+
+A:  So we 're  we 're at this point only looking for word level . 
+
+A:  And so the things we  that we know  that I know I want are <breath> the text , the start and end , and the speaker . 
+A:  But other people are interested in for example stress marking . 
+
+A:  Um , and then things like repairs , and false starts , and , <breath> filled pauses , and all that other sort of stuff , <breath> we have to decide how much of that we wanna do . 
+
+A:  So what we wanted to do was have Jane do basically one meeting 's worth , 
+
+E:  As a pilot study . 
+
+A:  you know , forty minutes to an hour , 
+
+A:  is  and so one of the things was to get an estimate of how long it would take , 
+A:  and then also what tools we would use . 
+A:  And so the next decision which has to be made actually pretty soon is how are we gonna do it ? 
+
+A:  And apparently that 's happened in the past . 
+A:  And I think that 's probably the right way to do it . 
+
+A:  but I just can't imagine that we 're gonna get anything that much better from a commercial one . 
+
+E:  There 's some interesting human factors problems like , <breath> yeah , what span of  of time is it useful to segment the thing into in order to uh , transcribe it the most quickly . 
+
+D:  But  but is there anyway to  to wire a speech recognizer up to it 
+
+E:  so I mean , I 've been sort of playing with , uh , different ways of mar cuz I 'm thinking , you know , I mean , if you could get optimal instructions you could cut back on the number of hours it would take . 
+
+D:  First of all the time marking you 'd get  you could get by a tool . 
+
+B:  We don't  we don't know , actually . 
+B:  We haven't decided which  which time we care about , 
+B:  and that 's kind of one of the things that you 're saying , is like  <breath> you have the option to put in more or less timing data  
+B:  and , uh , be in the absence of more specific instructions , <breath> we 're trying to figure out what the most convenient thing to do is . 
+
+A:  so  so what  what she 's done so far , is sort of  more or less breath g not breath groups ,  sort of phrases , continuous phrases . 
+A:  And so , um , that 's nice because you  you separate when you do an extract , you get a little silence on either end . 
+
+E:  But , you know , obviously there 's a lag between when you hear it and when you can press the return key 
+
+E:  But then , you know , it 's like , <breath> uh , you press the tab key to stop the flow and  <breath> and , uh , the return key to p to put in a marking of the boundary . 
+
+D:  Are  are those d delays adjustable ? 
+
+A:  We could program that pretty easily , 
+
+E:  Could you get it so that with  so it would  it would detect volume on a channel and insert a marker ? 
+
+B:  Sure . 
+
+C:  maybe  maybe we could try the following experiment . 
+C:  Take the data that you 've already transcribed 
+
+C:  and  and throw out the words , 
+C:  but keep the time markings . 
+C:  And then go through  I mean , and go through and  and try and re - transcribe it , given that we had perfect boundary detection . 
+C:  And see if it  see if it  see if it feels easier to you . 
+
+E:  So I think though it 's a good proposal to be used on a new  a new batch of text that I haven't yet done yet in the same meeting . Could use it on the next segment of the text . 
+
+E:  Well , uh but there 's an extra problem which is that I didn't really keep accurate  
+E:  uh , it wasn't a pure task the first time , 
+
+C:  I mean , the  the question is , is it worth giving you the segmentation ? 
+
+A:  I could generate the segmentation and  and you could do the words , and time yourself on it . 
+
+A:  That would at least tell us whether it 's worth spending a week or two trying to get a tool , that will compute the segmentations . 
+
+D:  And the thing to keep in mind too about this tool , guys is that <breath> sure , you can do the computation for what we 're gonna do in the future 
+D:  but if  if UW 's talking about doing two , or three , or five times as much stuff and they can use the same tool , then obviously there 's a real multiplier there . 
+
+E:  And the other thing too is with  with speaker identification , 
+
+B:  but it seems like <breath> we  it doesn't  it seems like it 's not really not that hard to have an automatic tool to generate <breath> the phrase marks , and the speaker , and speaker identity without putting in the words . 
+
+E:  So , and then he has a script that will convert it into the  the thing that , uh , would indicate speaker ID . 
+
+A:  I mean , I looked at Cyber Transcriber 
+A:  which is a service that you send an audio file , 
+A:  they do a first - pass speech recognition . 
+A:  And then they  they do a clean up . 
+A:  But it 's gonna be horrible . 
+A:  They 're never gonna be able to do a meeting like this . 
+
+A:  And so  so what I 'm saying is that if we hire an external service I think we can expect three hundred dollars an hour . 
+
+C:  who knows if they 're gonna be able to m manage multal multiple channel data ? 
+
+A:  They won't . 
+
+A:  But at any rate , so we  we have a ballpark on how much it would cost if we send it out . 
+
+C:  But we can pay a graduate student seven dollars an hour . 
+
+A:  these are linguistics grad students . 
+
+C:  so that means that even if it takes them thirty times real time it 's cheaper to  to do graduate students . 
+
+A:  I mean , that 's why I said originally , that I couldn't imagine sending it out 's gonna be cheaper . 
+
+E:  The other thing too is that , uh , if they were linguistics they 'd be  you know , in terms of like the post editing , i uh  tu uh content wise they might be easier to handle 
+E:  cuz they might get it more right the first time . 
+
+A:  And also we would have control of  I mean , we could give them feedback . 
+A:  Whereas if we do a service it 's gonna be limited amount . 
+
+A:  And  and they 're not gonna provide  they 're not gonna provide stress , 
+A:  they 're not gonna re provide repairs , 
+
+A:  they  they may or may not provide speaker ID . 
+
+D:  Just hypoth hypothetically assuming that  that we go ahead and ended up using graduate students . 
+
+A:  I hope it 's Jane . 
+
+E:  Yeah , no , that  I  I would be interested in that  in becoming involved in the project in some aspect like that  
+
+E:  So as far as I 'm concerned those transcription conventions are fixed right now . 
+
+E:  So , um , <breath> one of them is the idea of how to indicate speaker change , 
+
+A:  Um , the user interface only allows two . 
+A:  And so if  if you 're using their interface to specify overlapping speakers you can only do two . 
+A:  But my script can handle any . 
+
+D:  Uh , did you ask them to change the interface for more speakers ? 
+
+A:  Yes , 
+A:  and they said that 's on  in  in the works for the next version . 
+
+A:  And they have  they 've actually asked if we are willing to do any development 
+A:  and I said , well , maybe . 
+A:  So if we want  if we did  if we did something like programmed in a delay , which actually I think is a great idea , um , I 'm sure they would want that incorporated back in . 
+
+E:  and  But so in terms of the con the conventions , then , <breath> uh , basically , <breath> uh , it 's strictly orthographic 
+E:  which means with some w provisions for , uh , w uh , <breath> colloquial forms . 
+
+C:  How are you handling backchannels ? 
+
+E:  Well , if it  if there was a word like " right " , you know , then I wou I would indicate <breath> that it happened within the same tem time frame 
+E:  but wouldn't say exactly when it happened . 
+
+B:  I transcribed a minute of this stuff 
+B:  and there was a lot of overlapping . 
+
+C:  or does it  does the fact that there 's a backchannel split the  the  the  it in two . 
+
+E:  OK , my  my focus was to try and maintain conten con content continuity and , uh , to keep it within what he was saying . 
+E:  Like <breath> I wouldn't say breath groups but prosodic or intonational groups as much as possible . 
+E:  So <breath> if someone said " mm - hmm " in the middle of a  of someone 's , <breath> uh , uh , intonational contour , <breath> I  I indicated it as , like what you just did . 
+E:  then I indicated it as a segment which contained <breath> @ @  this utterance plus an overlap . 
+
+B:  But that 's  but there 's only one  there 's only one time boundary for both speakers , 
+
+E:  Yeah , 
+
+E:  and so then , uh , in terms of like words like " uh " and " um " I just wrote them 
+
+C:  Huh - uh . 
+
+A:  We should probably mark areas that have no speakers as no speaker . 
+
+A:  If we use the  the little  the conventions that Jane has established , I have a script that will convert from that convention to their saved convention . 
+
+E:  Which allows five . 
+E:  And it can be m edited after the fact , 
+
+D:  But you 're saying that by the time you call it back in to  from their saved format it opens up a window with window with five speakers ? 
+
+A:  Right . 
+
+A:  the  the  the whole saved form the saved format and the internal format , all that stuff , handles multiple speakers . 
+A:  It 's just there 's no user interface for specifying multiple  any more than two . 
+
+D:  So your  your script solves  Doesn't it solve all our problems , 
+
+E:  And that works nicely cuz this so quick to enter . 
+E:  So I wouldn't wanna do it through the interface anyway adding which  worry who the speaker was . 
+
+E:  in terms of like the continuity of thought <breath> for transcriptions , it 's  i it isn't just words coming out , 
+
+E:  So I have  I have a convention of putting like a dash <breath> arrow just to indicate that this person 's utterance continues . 
+
+E:  sometimes <breath> we had the situation which is  you know , which you  which you get in conversations ,  of someone continuing someone else 's utterance , 
+E:  and in that case I did a tilde arrow versus a arrow tilde , <breath> to indicate that it was continuation 
+
+E:  But just , you know , the arrows showing continuation of a thought . 
+
+E:  and you 'd be able to <breath> look for the continuation . 
+
+A:  Well , so anyway , are we interested then in writing tools to try to generate any of this stuff automatically ? 
+
+C:  Maybe we should s consider also , um , starting to build up a web site around all of these things . 
+
+C:  I I 'd like to be able to  to pore through , you know , the  the types of tr conventions that you 've come up with and stuff like that . 
+
+B:  Alright . 
+B:  Let 's look at it anyway . 
+B:  So definitely we should  we should have some kind of access to the data . 
+
+A:  And we have  we have quite a disparate number of web and other sorts of documents on this project sort of spread around . 
+A:  I have several 
+A:  and Dan has a few , 
+
+C:  so we can add in links and stuff like that to other things . 
+
+C:  I think mostly internal . 
+
+E:  We could do an HT access which would accommodate those things . 
+
+A:  um , let 's move on to electronics . 
+
+D:  There 's a lip in these tables . 
+
+E:  And th " that " being a diagram . 
+
+D:  That  that 's the six tables that we 're looking at . 
+D:  These six tables here , <breath> with  with little boxes sort of , uh , in the middle here . 
+
+D:  The box is an inch thick 
+D:  so it hangs down a half an inch . 
+D:  And so the  the two <breath> head set jacks would be in the front 
+D:  and then the little LED to indicate that that box is live . 
+D:  The  the important issue about the LED is the fact that we 're talking about eight of these total , which would be sixteen channels . 
+
+D:  Uh , so this  this notion of putting down the P Z Ms <breath> and taking them away would somehow have to be turned into leaving them on the table 
+
+A:  Well , we wanna do that definitely . 
+
+B:  So that if t if you have two people sitting next to each other they can actually go into the same box . 
+
+D:  And to  See , thi this is really the way people sit on this table . 
+
+E:  Which means two at each station . 
+
+D:  Thi - thi thi this box is a one off deal . 
+
+D:  And , uh , it 's function is to s to , uh , essentially a wire converter to go from these little blue wires to these black wires , 
+D:  plus supply power to the microphones 
+D:  cuz the  the  he the , uh , cheap head mounteds all require low voltage . 
+
+D:  So I 'm ready to build it . 
+D:  Which is to say , uh , the neighborhood of a week to get the circuit board done . 
+
+A:  So I think the other thing I 'd like to do is , do something about the set up 
+A:  so that it 's a little more presentable and organized . 
+
+D:  Well I can build a cabinet . 
+
+D:  No , but w certainly one of the issues is  is the , uh  is security . 
+
+A:  then the other question is do we wanna try to do a user interface that 's available out here ? 
+
+A:  I mean , do we wanna try to get a monitor ? 
+
+D:  Which is to say just laptop with a wireless . 
+
+D:  So , I mean , either  either we figure out how to use a machine somebody already  in the group already owns , <breath> a a and the idea is that if it 's it perk , you know , it 's an advantage not  not a disadvan  <breath> or else we  we literally buy a machine e exactly for that purpose . 
+D:  Certainly it solves a lot of the problems with leaving a monitor out here all the time . 
+
+C:  What is the , um , projector supposed to be hooked up to ? 
+
+D:  There 's gonna be actually a  a plug at the front that 'll connect to people 's laptops so you can walk in and plug it in . 
+
+D:  But  but  but I think the idea of having a control panel it 's  that 's there in front of you is really cool . 
+
+D:  And it 's gonna be con connected to the machine at the back . 
+D:  So we certainly could use that as  as a constant reminder of what the VU meters are doing . 
+
+B:  So again , Washington wants to equip a system . 
+B:  Our system , we spent ten thousand dollars on equipment not including the PC . 
+B:  However , seven and a half thousand of that was the wireless mikes . 
+
+B:  But once we  once we 've done the intellectual part of these , uh , we can just knock them out , right ? 
+
+B:  Washington could have a system that didn't have any wireless but would had  what 's based on these 
+B:  and it would cost  
+B:  PC and two thousand dollars for the A - to - D stuff . 
+
+B:  P Z Ms cost a lot . 
+B:  But anyway you 'd save , on the seven  seven or eight thousand for the  for the wireless system . 
+

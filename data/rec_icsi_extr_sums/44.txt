@@ -1,0 +1,257 @@
+C:  I have something just fairly brief to report on . 
+
+C:  so what I was started playing with was the  th again , this is the HTK back - end . 
+
+C:  I was curious because the way that they train up the models , <breath> they go through about four sort of rounds of  of training . 
+
+C:  you know , that 's part of what takes so long to train the  the  the back - end for this . 
+
+C:  The first one is three , then seven , seven , and seven . 
+C:  And what these numbers refer to is the number of times that the , uh , HMM re - estimation is run . 
+
+C:  uh , I wanted to first test to see if we actually need to do  this many iterations early on . 
+
+C:  um , I  I ran a couple of experiments where I <breath> reduced that to l to be three , two , two , <breath> uh , five , I think , 
+C:  and I got almost the exact same results . 
+C:  And  but it runs much much faster . 
+
+C:  I  I think m  it only took something like , uh , three or four hours to do the full training , 
+C:  as opposed to wh what , sixteen hours or something like that ? 
+
+C:  even we don't do anything else , doing something like this could allow us to turn experiments around a lot faster . 
+C:  And when you have your final thing , we go back to this . 
+
+B:  And then when you have your final thing , do a full one , so it 's  
+
+C:  I mean , it 's like one little text file you edit and change those numbers , 
+
+C:  So we could do a lot more experiments and throw a lot more stuff in there . 
+
+C:  Oh , the other thing that I did was , um , <breath> I compiled  the HTK stuff for the Linux boxes . 
+C:  So we have this big thing that we got from IBM , 
+C:  which is a five - processor machine . 
+C:  Really fast , 
+C:  but it 's running Linux . 
+C:  So , you can now run your experiments on that machine 
+
+C:  I 've forgotten now what the name of that machine is 
+C:  but I can  I can send email around about it . 
+
+C:  Um , you have to make  you have to make sure that in your dot CSHRC , <breath> um , it detects whether you 're running on the Linux or a  a Sparc and points to the right executables . 
+
+C:  and you may not have had that in your dot CSHRC before , if you were always just running the Sparc . 
+
+C:  uh , I can  I can tell you exactly what you need to do to get all of that to work . 
+
+C:  So after I did that , then what I wanted to do  was try  increasing the number of mixtures , 
+C:  just to see , um  see how  how that affects performance . 
+
+B:  Yeah . In fact , you could do something like  keep exactly the same procedure and then add a fifth thing onto it 
+
+A:  There was a conference call this Tuesday . 
+
+A:  I don't know yet the  <breath> what happened <breath> Tuesday , 
+A:  but <breath> the points that they were supposed to discuss is still , <mouth> uh , things like <breath> the weights , 
+
+B:  Do you know who was  who was  since we weren't in on it , uh , do you know who was in from OGI ? 
+
+A:  I have no idea . 
+
+A:  So the points were the  the weights  how to weight the different error rates <breath> that are obtained from different language and  and conditions . 
+
+A:  it 's not clear that they will keep the same kind of weighting . 
+
+A:  Some people are arguing that it would be better to have weights on 
+
+A:  well , to  to combine error rates  before computing improvement . 
+
+A:  And so , perhaps they will change the weights to  
+
+B:  Well , I mean , the fact that it 's inconsistent is an obvious mistake . 
+
+B:  But the question is , do you average the relative improvements  or do you average the error rates and take the relative improvement maybe of that ? 
+B:  And the thing is it 's not just a pure average because there are these weightings . 
+
+B:  It 's just when you  when you get all done , I think that they pro 
+
+B:  but I think they started off this process with the notion that <breath> you should be  significantly better than the previous standard . 
+
+B:  so they said " how much is significantly better ? 
+
+B:  And  and so they said " well , <breath> you know , you should have half the errors , " or something , " that you had before " . 
+
+B:  But it does seem like 
+B:  i i it does seem like it 's more logical to combine them first 
+
+A:  But there is this  this  is this still this problem of weights . 
+A:  When  when you combine error rate it tends to  give more importance to the difficult cases , 
+
+A:  Some people think that <breath> it 's more important to look at  <breath> to have ten percent imp relative improvement on  well - matched case than to have fifty percent on the m mismatched , 
+A:  and other people think that it 's more important to improve a lot on the mismatch 
+
+C:  It sounds like they don't really have a good idea about what the final application is gonna be . 
+
+B:  I mean , they don they  they don't  they don't really  know , I think . 
+
+B:  So the argument for that being the  the  the more important thing , <breath> is that you 're gonna try and do that , <breath> but you wanna see how badly it deviates from that when  when  when the , uh  it 's a little different . 
+
+B:  The opposite argument is you 're never really gonna have a good sample of all these different things . 
+
+B:  I gather that in these meetings it 's  it 's really tricky to make anything <breath> ac <breath> make any  policy change 
+B:  because <breath> <clears throat> everybody has  has , uh , their own opinion 
+
+A:  but there is probably a  a big change that will <breath> be made 
+A:  is that the  the baseline  th they want to have a new baseline , perhaps , 
+
+A:  And apparently , <mouth> uh , some people are pushing to still keep this fifty percent number . 
+A:  So they want <breath> to have at least fifty percent improvement on the baseline , 
+
+B:  So whose VAD 
+
+A:  Uh , they didn't decide yet . 
+
+A:  well , from OGI , these experiments on  putting VAD on the baseline . 
+A:  And these experiments also are using , uh , some kind of noise compensation , 
+
+A:  So what happened since , um , <breath> last week is  
+
+A:  so spectral subtraction , 
+A:  and putting on - line normalization , um , just after this . 
+A:  So I think spectral subtraction , LDA filtering , and on - line normalization , 
+A:  so which is similar to <breath> the pro proposal - one , but with  spectral subtraction in addition , 
+A:  and it seems that on - line normalization doesn't help further when you have spectral subtraction . 
+
+A:  And what 's happened here is that we  
+A:  so we have this kind of new , um , reference system which <breath> use a nice  a  a clean downsampling - upsampling , 
+A:  which use a new filter <breath> that 's much shorter 
+A:  and which also cuts the frequency below sixty - four hertz , 
+
+B:  When you say " we have that " , does Sunil have it now , too , 
+
+A:  No . 
+
+A:  Because we 're still testing . 
+
+A:  Um , it seems to improve on the well - matched case , 
+A:  um , <mouth> but it 's a little bit worse on the mismatch and highly - mismatched  
+
+B:  But it has the , uh  
+B:  the latencies are much shorter . 
+
+A:  Latency is short  
+
+A:  So basically we try to , <breath> <breath> uh , find <breath> good features that could be used for voicing detection , 
+
+B:  There was a <breath> start of some effort on something related to voicing or something . 
+
+A:  we  w basically we are still playing with Matlab to  <laugh> to look at  at what happened , 
+
+C:  what sorts of features are you looking at ? 
+
+A:  So we would be looking at , um , the  variance of the spectrum of the excitation , 
+
+A:  which is  should be high for voiced sounds . 
+
+B:  what yo what you 're calling the excitation , as I recall , is you 're subtracting the  the , um  the mel  mel  <vocal squeak> mel filter , uh , spectrum from the FFT spectrum . 
+
+B:  So it 's  it 's not really an excitation , 
+B:  but it 's something that hopefully tells you something about the excitation . 
+
+A:  Yeah , that 's right . 
+
+A:  Right now we just are trying to find some features . 
+
+A:  Yeah . Hopefully , I think what we want to have is to put these features in s some kind of , 
+
+A:  well , to  to obtain a statistical model on these features 
+A:  and to  or just to use a neural network 
+
+C:  really that 's sort of a cartoon picture about what 's voiced and unvoiced . 
+
+B:  another way of looking at it is what characterization <breath> of the difference between  the raw data  and this smooth version  is something that you 're missing that could help ? 
+B:  So , I mean , looking at different statistical measures of that difference , 
+
+B:  and seeing if you add them onto the feature vector does that make things better or worse in noise , 
+
+B:  but it 's more that , <breath> you know , uh , uh , try some different statistical characterizations of that difference back to the raw data 
+
+B:  the way I 'm looking at it is not so much you 're trying to f find the best  the world 's best voiced - unvoiced , uh , uh , classifier , 
+
+B:  that  that in fact , well , the data itself is  <breath> that you 're working with is not perfect . 
+B:  So , what I 'm saying is maybe that 's not a killer 
+B:  because you 're just getting some characterization , 
+B:  one that 's driven by your intuition about voiced - unvoiced certainly , 
+
+B:  and , you know  and you 're not getting the excitation anyway , you know . 
+
+B:  And so this is saying , well , if you really do have that <breath> sort of vocal tract envelope , and you subtract that off , what you get is the excitation . 
+B:  And I call that lies because you don't really have that , 
+B:  you just have some kind of <breath> signal - processing trickery to get something that 's kind of smooth . 
+
+B:  so you 're not really getting the vocal excitation . 
+B:  That 's why I was going to the  why I was referring to it in a more  <breath> a more , uh , <breath> uh , <breath> conservative way , 
+B:  when I was saying " well , it 's  
+
+B:  it 's the excitation " . 
+B:  But it 's not really the excitation . 
+
+B:  well , you don't really get the excitation , 
+B:  but you get something related to it . 
+
+C:  And so you said this is pretty  
+C:  doing this kind of thing is pretty robust to noise ? 
+
+A:  It seems , 
+A:  yeah . 
+
+A:  So if  if you take this frame , <breath> uh , from the noisy utterance and the same frame from the clean utterance  
+
+C:  You end up with a similar difference 
+
+A:  So we 'll perhaps <breath> <mouth> <breath> try to convince OGI people to use the new  <breath> the new filters 
+
+B:  Uh , has  has anything happened yet on this business of having some sort of standard , uh , source , 
+
+A:  not yet 
+A:  but I wi I will <breath> call them 
+
+A:  now they are  I think they have more time 
+
+A:  well , Eurospeech deadline is <breath> over 
+
+B:  and  he 's been doing all the talking 
+
+B:  This is  this by the way a bad thing . 
+B:  We 're trying to get , um , m more female voices in this record as well . 
+
+B:  Make sur make sure Carmen <laugh> talks as well . 
+
+F:  I don't know . 
+
+F:  I think that for the recognizer for the meeting recorder that it 's better that I don't speak . 
+
+D:  N um , not not not much is new . 
+D:  So when I talked about what I 'm planning to do last time , <breath> I said I was , um , going to use Avendano 's method of , um , <breath> using a transformation , um , <mouth> to map from long analysis frames which are used for removing reverberation to short analysis frames for feature calculation . 
+
+D:  but , uh , um , I decided <breath> not to do that after all 
+D:  because I  I realized to use it I 'd need to have these short analysis frames get plugged directly into the feature computation somehow 
+D:  and right now I think our feature computation is set to up to , um , <breath> take , um , audio as input , in general . 
+D:  So I decided that I  I 'll do the reverberation removal on the long analysis windows 
+D:  and then just re - synthesize audio 
+
+B:  Um , anything to  add ? 
+
+E:  Well , I 've been continuing reading . 
+E:  I went off on a little tangent this past week , 
+
+E:  looking at , uh , <breath> uh , modulation s spectrum stuff , 
+
+E:  and  and learning a bit about what  what , um  what it is , 
+
+E:  And I found some  <breath> some , uh , neat papers , <breath> um , historical papers from , <mouth> um , <breath> Kanedera , Hermansky , and Arai . 
+E:  And they  they did a lot of experiments where th where , <breath> um , they take speech <breath> and , um , e they modify <breath> the , uh  
+E:  they  they  they measure the relative importance of having different , um , portions of the modulation spectrum intact . 
+E:  And they find that the  the spectrum between one and sixteen hertz in the modulation <breath> is , uh  is im important for speech recognition . 
+
+E:  Um , I was thinking more like using them as  as the inputs to  to the detectors . 
+

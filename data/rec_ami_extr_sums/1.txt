@@ -1,0 +1,328 @@
+B:  Okay , we've got half an hour for this one um to uh discuss the um functional design . 
+
+B:  and I've put the minutes of the last meeting in the project folder . 
+
+B:  so we don't really need to consider that in the functionality of the  of the remote control . 
+
+D:  And the slogan , like the actual written slogan , or just to embody the idea of the slogan ? 
+
+B:  <other> uh th because on the the company website , uh what does it say  
+
+D:  'Bout putting the fashion in electronics . 
+
+B:  I mean do they  <other> Is that something they want actually written on it , 
+
+B:  So those are the three things , 
+
+B:  time for presentations then . 
+
+C:   so this is the technical functions design . 
+
+C:  to do the um <other> the design I have I've had a look online , I've had a look at the homepage , 
+
+C:  Um I've had a look at the previous products to see what they offer 
+
+C:  Um , having a look at the existing products , I found out that um it tends to come in sort of two extremes , 
+
+C:   here um the button there and there . 
+
+C:  That one's perg and that one's prog , 
+
+C:  and it's just very hard to access the advanced functions . 
+
+C:  Um , my own preferences , I prefer the the clunky one . 
+
+C:  <other> Um so I believe the the advanced functions should maybe be hidden in a drawer , 
+
+C:  So , <other> now I'd like to ask for your preferences . 
+
+A:  Which which is the clunky one , the one on left or on the right?. . 
+
+C:  <other> Um , the clunky one is the one on the right . 
+
+B:  Well I think it's a valid point . 
+
+B:  Um so I see I see why yo you know you might prefer the simpler design , 
+
+B:  you know you get a lot of remote controls where you kind of flip the thing open , 
+
+C:  Um , <other> do we have any functions that um we'd want on it ? 
+
+B:  and then actual numbers for channels as well , yeah . 
+
+C:  Um , you say that's a h a required one or a requested one ? 
+
+B:  God , I wou I would say that's required , 
+
+B:  uh any kind of like display controls at all do you think we need to worry about , 
+
+D:  Well I think I think es essentially what we're doing right now is we're categorising . 
+
+C:  um we need to find out exactly what we have to have 
+
+B:  Um , so so far , just to recap you've got volume and channel control and  
+
+C:  There's um on and off , um volume and channel , and skip to certain channels with the numbers . 
+
+D:  Well , one one way I would look at this um would be that we a approach the different controls in terms of um like control types , 
+
+D:  Um so maybe we need to think about having three or more groupings of controls , 
+
+D:  and then others that are concealed . 
+
+B:  and then maybe just things that would be nice if it could do would be things like audio set up and display set up and things like that , 
+
+D:  I dunno whether this is for good or for bad 
+
+D:  what I've already started doing is cr I created a slide in in my presentation here 
+
+D:  so that we kind of think well what's the cumulative effect of what we've taken from your ideas and and mine , 
+
+D:  Obviously obviously what you've just told me what you've just told me impacts a lot on what um like market research mm that that I've been  
+
+B:  Mm hard to know what  where your role ends , yeah . 
+
+D:  Before I bring this up what I'll just say is um what I've what I've done is tried to collect some information so that I can then relay this to to you guys so that it's  now becomes a collective thing . 
+
+D:  So what I basically got is I just looked into some information 
+
+D:  and what kind of decisions we could take away from it 
+
+D:  So um I'm thinking here about uh primarily about customer needs , 
+
+D:  and what are issues with with um existing products . 
+
+D:  and also about  try and connect that as you see with the company vision 
+
+D:  So this is what I've found here , 
+
+D:  Um , users dislike the look and feel of current remote controls . 
+
+D:  Most people find them ugly . 
+
+D:  Um most people use only a f a very slim portion of all the controls . 
+
+D:  they tend to use the most simple controls 
+
+D:  if for me this is sorta like three different different um inspirations , you know , 
+
+D:  They get lost a lot , 
+
+D:  Um , takes time to learn how to use them . 
+
+D:  and I will admit I don't know what R_S_I_ stands for . 
+
+D:  uh adults at least would pay more for voice recognition . 
+
+D:  if that's possible we might consider getting into it . 
+
+D:  I think a recurring theme here is the company wants it to be  wants us to make something that's fashionable and sleek and trendy . 
+
+D:  You know , they like the aesthetics and the ergonomics . 
+
+B:  So it  you wanna group all the different kind of types of functions together , you know . 
+
+D:  my hope here is that I'm putting out this information so that we can then say okay , well how do we collectively move on with it . 
+
+B:  <other> Well , um one of the things that we have to decide on by the end of the meeting is who we're gonna be um  who's our our target audience , our target market . 
+
+D:  Where's the money , maybe . 
+
+B:  Yeah , who wou who would have the money to spend . 
+
+B:  it's somebody who's not gonna just use the remote that comes with their telly , I suppose , 
+
+A:  Um , I think it'll be the mid range to the high end market , in terms of people . 
+
+A:  Um so maybe not the high end range , but maybe middle , middle up-ish . 
+
+A:  'Cause twenty five Euros for a remote , how much is that lo locally in pounds ? 
+
+A:  is that a lot of money to buy an extra remote or a replacement remote ? 
+
+D:  Mostly focused around the twenty five age group . 
+
+B:  Um do you think then uh voice recognition is something we should really seriously consider ? 
+
+D:  It does it does fit with the market that we're sort of identifying , 
+
+B:  I think we are gonna have to narrow it down , 
+
+B:  and 'cause you know , there needs to be some kind of selling point to it . 
+
+B:  if we are going to include speech recognition , it's kind of between fifteen and thirty five seems to be like a really high response to that . 
+
+A:  I I think twenty five to thirty five is is is fair to add that in as a group as well 
+
+B:  Okay , so fifteen to thirty five , look fairly young . 
+
+A:  So these are people who are gadgety , right ? 
+
+B:  So they'll not sh not shy away from something quite high-tech . 
+
+B:  so shall we make the decision uh to include speech recognition 
+
+A:  I I think one thing we should try not to avoid is not to say we have to use speech recognition right now , 
+
+A:  Speech recognition might not be the simplest thing for somebody to use . 
+
+D:  Could it be an on off thing ? 
+
+A:  but what I'm saying is that we're we're trying to lock ourselves into a s particular kind of technology , 
+
+A:  but at end of the day we don't look at the technology , but we look at the function first . 
+
+B:  um might have been a good idea to all deliver our presentations and then discuss , 
+
+D:  well it's good to get ideas out while they're fresh in mind . 
+
+B:  is if we make it um speech reco if we incorporate speech recognition , that's appealing to people um maybe with a physical disability as well . 
+
+D:  And also it helps in terms of people not losing this , 
+
+C:  I reckon one problem with speech recognition is 
+
+C:  um I've actually seen one of them used 
+
+C:  so you end up yelling at the control for hours . 
+
+B:  Do you think maybe we need like further advances in that kind of area until it's worthwhile incorporating it though ? 
+
+C:  I think it'd probably quite expensive to put in . 
+
+A:  Well this is just the working design um . 
+
+A:  Um I guess I try to define like what we're doing now , 
+
+A:  but we're  we can't n we haven't narrowed down um exactly what the things we're trying to fulfil , like  
+
+A:  I think back  in the back of our minds we know what the basics are . 
+
+A:  so I'll go into the diagram first . 
+
+A:  from the basic technology point of view , 
+
+A:  'Kay , a battery or something , to keep it going . 
+
+A:  you need some power source . 
+
+A:  Um and that power source is important 
+
+A:  Like for example , voice recognition , right . 
+
+A:  so that's one perhaps constraint there . 
+
+A:  <other> Th Okay , the basic thing is there's a user interface 
+
+A:  You know , and that um picks up an input from a user , 
+
+A:  a series of logic has to decide what the user is telling the device , 
+
+A:  Um and then it needs to be able to send the signal out to the device itself 
+
+A:  like um voice recognition , right , 
+
+A:  if it's something which is important then we just add more power 
+
+A:  maybe you you wanna go back to what the functions are ? 
+
+B:  Well , do you wan do you wanna finish up your your whole presentation then ? 
+
+A:  Yeah , w I'm done . 
+
+A:  Um you have a transmitter , an input device , logic chip , 
+
+D:  Since we're on the topic of the technology , uh are there any like  what are our options ? 
+
+D:  Is this the only way that we go about it , or are there other thin 
+
+A:  Um , these these aren't technology options in that sense . 
+
+A:  a basic principles and basic components that are needed . 
+
+A:  So each component represents one function , 
+
+A:  Um there might be one other consideration which would be that the the transmission between the remote control and the T_V_ for example . 
+
+B:  Well well a worry that was was expressed in the new requirements was that if we made this too complex it would e it would effect um how long how long it took us to get this to market , 
+
+B:  um because I mean it it's tried and tested intra-red , 
+
+A:  Um if somebody's gonna h talk to the device , you ideally want them to hold it to them . 
+
+A:  so because if you're using infra-red , the line of sight um say the T_V_'s at that chair , and I'm standing in front of here and the transmitter is here , it blocks it . 
+
+D:  Uh does c is our controller is it have the option of being um on a standard uh frequency as all of the other equipment , 
+
+A:  There's there's not much specific specific information , 
+
+B:  In the new requirement spec they said just to focus on the T_V_ , 
+
+B:  Um , is it worth considering like having like a charging unit as opposed to just regular batteries ? 
+
+B:  or should we just consider running on regular batteries ? 
+
+A:  Okay , from from a from a component point of view there's added complexity , 
+
+A:  You need a docking cradle , for example , for you to put it in to charge . 
+
+A:  then I don't think rechargeable is something we should  you know , we really need to care about . 
+
+B:  Okay , so just stick to to regular  
+
+B:  was that um the the whole point of this meeting was to f absolutely finalise who we're gonna aim this at , 
+
+B:  I'm just gonna just recap uh what I said at the start , 
+
+B:  Are we all happy about the idea of um aiming the product at um the fifteen to thirty five bracket ? 
+
+D:  Yeah , that's good . 
+
+C:  I think we just say that it was gonna be the the most basic stuff possible . 
+
+B:  Um and also the funct the the actual functions of what it's gonna do . 
+
+D:  And is it going to include any of the uh the more advanced features , 
+
+C:  I think we include mute , 
+
+D:  is it not an option still that we include some things just as a sort of under  like sort of under a door or some  
+
+B:  Yeah , it's as optional functions . 
+
+D:  'Cause what what I'm  I'd be a bit worried about is if someone was h had previously developed habits of expecting to control surround sound or this and that with their controller and then and then they , you know , w they get ours and w it's doesn't have that . 
+
+A:  Another thing that you were saying about categorising the controls ? 
+
+A:  um it's something they do other things to like turn it on and turn it off . 
+
+A:  and then from there decide whether it's basic , or it's non-basic . 
+
+D:  Mm okay , great . 
+
+B:  um for uh our Industrial Designer , you're gonna be thinking about the components concept . 
+
+B:  Um so uh I guess just to just to confirm that we know what we're doing in the next  well in the thirty minutes after lunch anyway , 
+
+B:  Um and then we're gonna have thirty minutes of working on the next stage . 
+
+B:  and marketing you're gonna be thinking about trend watching . 
+
+D:  shall we agree for sake of um sort of clarity and when we when we r resume that we'll u use this idea David's proposed , 
+
+B:  Yeah , yeah I think that's definitely a good idea . 
+
+A:  Device is basically anything which we can't categorise , right . 
+
+B:  so you're gonna have um audio which is gonna be like you know your bass settings and actual volume  hi 
+
+A:  And then video is anything that you can see . 
+
+B:  Okay , so brightness , contrast , things like that , 
+
+D:  And then k I suppose quite likely what would happen is in the d device category there might be some which are just like the habitual standard 
+
+B:  Um so yeah , I guess just things to think about are you know like the fact it's gotta look good , 
+
+B:  Um something maybe kind of quirky in design maybe . 
+

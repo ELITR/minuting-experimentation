@@ -222,7 +222,7 @@ def cluster_sentences(n_c, sent_lst):
 	X = vectorizer.fit_transform(sent_lst)
 
 	# k-means
-	model = KMeans(n_clusters=n_c, random_state=7, n_jobs=4)
+	model = KMeans(n_clusters=n_c)
 	model.fit(X)
 	labels = model.labels_
 
@@ -232,12 +232,12 @@ def cluster_sentences(n_c, sent_lst):
 	# labels = model.labels_
 
 	# # MeanShift - finds n_clusters itself
-	# model = MeanShift(n_jobs=4)
+	# model = MeanShift()
 	# model.fit(X.toarray())
 	# labels = model.labels_
 
 	# # Spectral
-	# model = SpectralClustering(n_clusters=n_c, random_state=7, n_jobs=4)
+	# model = SpectralClustering(n_clusters=n_c)
 	# model.fit(X)
 	# labels = model.labels_
 

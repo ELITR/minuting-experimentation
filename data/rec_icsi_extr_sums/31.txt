@@ -1,0 +1,216 @@
+D:  but  but , uh , probably , if we had to pick something  that we would talk on for ten minutes or so while they 're coming here . Or I guess it would be , you think , reorganization status , 
+
+F:  I mean , I think , Chuck was the one who added out the agenda item . 
+F:  I don't really have anything to say other than that we still haven't done it . 
+
+A:  And I  and I think a crucial part of that is the idea of  of not wanting to do it until right before the next level zero back - up so that there won't be huge number of  of added , 
+
+F:  So , naming conventions and things like that , that I 've been trying to keep actually up to date . 
+
+F:  And I 've been sharing them with U - d UW folks also . 
+
+F:  So , we , uh  we did another version of the beeps , where we separated each beeps with a spoken digit . 
+F:  Chuck came up here and recorded some di himself speaking some digits , 
+
+D:  Well , maybe uh , since that  that was a pretty short one , maybe we should talk about the IBM transcription status . 
+
+E:  And we have done that on the  automatic segmentations . 
+
+F:  Um , I think they 'll have a b easier time keeping track of where they are in the file . 
+
+F:  We just sent it to IBM . 
+
+B:  And the main thing will be if we can align what they give us with what we sent them . 
+
+A:  I  I hire  I 've hired two extra people already , expect to hire two more . 
+
+A:  She 's also checking through and mar and  <breath> and monitoring , um , the transcription of another transcriber . 
+
+A:  which are now being edited by my head transcriber , <breath> in terms of spelling errors and all that . 
+
+A:  And , I 've moved on now to what I 'm calling set three . 
+A:  I sort of thought if I do it in sets  groups of five , then I can have , like , sort of a  a parallel processing through  through the  the current . 
+A:  And  and you indicated to me that we have a g a goal now , <breath> for the  for the , um , <click> <breath> the , uh , DARPA demo , of twenty hours . 
+A:  So , I 'm gonna go up to twenty hours , be sure that everything gets processed , and released , and    and that 's  that 's what my goal is . 
+
+D:  But I guess the other thing is that , um , that  that 's kinda twenty hours ASAP because the longer before the demo we actually have the twenty hours , the more time it 'll be for people to actually do cool things with it . 
+
+D:  Yeah , I mean , I guess the  So the difference if  if , um , if the IBM stuff works out , the difference in the job would be that they p primarily would be checking through things that were already done by someone else ? 
+
+A:  Well , <breath> I realize that , um , w i we we 're using the pre - segmented version , 
+A:  and , um , the pre - segmented version is extremely useful , 
+A:  and wouldn't it be , useful also to have the visual representation of those segments ? 
+A:  And so I 've   uh ,  I , uh , uh , I 've  trained the new one  uh , the new the newest one , <breath> to , um , <breath> use the visual from the channel that is gonna be transcribed at any given time . 
+
+A:  Because what happens then , is you scan across the signal and once in a while you 'll find a blip that didn't show up in the pre - segmentation . 
+
+A:  And , I think that we 're gonna end up with , uh  better coverage of the backchannels , 
+A:  but at the same time we 're benefitting tremendously from the pre - segmentation 
+
+F:  so , I was just wondering what people thought about how automated can we make the process of finding where the people read the digits , doing a forced alignment , and doing the timing . 
+
+D:  Well , forced alignment would be one thing . 
+D:  What about just actually doing recognition ? 
+
+D:  I was just asking , just out of curiosity , if  if with , uh  uh , the SRI recognizer getting one percent word error , 
+D:  uh , would we  would we do  better  ? 
+D:  So , if you do a forced alignment but the force but the  but the transcription you have is wrong because they actually made mistakes , uh , or <inbreath> false starts , it 's  it 's much less c <inbreath> it 's  much less common than one percent ? 
+
+F:  Well , I guess  yeah , I guess if we segmented it , we could get one percent on digits . 
+
+D:  I 'm not saying it should be one way or the other , but it 's  If  
+
+F:  Hire some people , or use the transcribers to do it . 
+
+F:  Um , or we could try some automated methods . 
+F:  And my  my tendency right now is , well , if IBM comes back with this meeting and the transcript is good , just let them do it . 
+
+I:  and  <inbreath> and  and , uh , one of the obvious things that occur to us was that we 're  since we now have Thilo 's segmenter and it works , you know , amazingly well , <inbreath> um , we should actually basically re - evaluate the recognition , um , results using  you know , without cheating on the segmentations . 
+
+I:  No , actually , um , NIST has , um m a fairly sophisticated scoring program <inbreath> that you can give a , um  <mouth> a time , 
+
+E:  The references for  for  those segments ? 
+
+I:  uh  You know , you basically just give two  time - marked sequences of words , and it computes the um  the ,  uh   you know , the  the  th 
+
+I:  So , it  we just  and we use that actually in Hub - five to do the scoring . 
+I:  Um . So what we 've been using so far was sort of a  simplified version of the scoring . 
+
+I:  It does time - constrained word - alignment . 
+
+I:  That Thilo wanted to use  the recognizer alignments to train up his , um , speech detector . 
+I:  Um , so that we could use , uh  you know there wouldn't be so much hand <inbreath> labelling needed to , uh  to generate training data for  for the speech detector . 
+
+F:  and the , uh  Porzel  and the , uh , SmartKom group are collecting some dialogues . 
+F:  Basically they have one person sitting in here , looking at a picture , and a wizard sitting in another room somewhere . 
+F:  And , uh , they 're doing a travel task . 
+
+F:  but it starts where the wizard is pretending to be a computer and it goes through a , uh , <breath> speech generation system . 
+
+F:  Should this be part of the corpus or not ? 
+F:  And my attitude was yes , because there might be people who are using this corpus for  acoustics , as opposed to just for language . 
+
+I:  We simulate a computer breakdown halfway through the session , and so then after that , the person 's told that they 're now talking to a , uh  to a human . 
+
+F:  But of course they don't know that it 's the same person both times . 
+
+F:  and I said , " well that 's silly , if  if we 're gonna try to do it for a corpus , there might be people who are interested in acoustics . " 
+
+D:  I  I would not say it was part of the meetings corpus . 
+
+F:  So it 's  It  it  I guess it  the  begs the question of what is the meeting corpus . 
+
+D:  I think it 's  I  I think  I th think the idea of two or more people conversing with one another is key . 
+
+F:  Well , this has two or more people conversing with each other . 
+
+F:  we give everyone who 's involved as their own user ID , give it session I Ds , <inbreath> let all the tools that handle Meeting Recorder handle it , or do we wanna special case it ? 
+
+I:  Well , it  it makes sense to handle it with the same infrastructure , since we don't want to duplicate things unnecessarily . 
+I:  But as far as distributing it , we shouldn't label it as part of this meeting corpus . 
+
+A:  And  and those  and this sounds like it 's more of an experimental setup . 
+
+A:  Because we have , like , meetings that have a reason . 
+
+D:  It 's scenario - based , it 's  it 's human - computer interface  <inbreath> it 's really pretty different . 
+
+D:  It 's just that it 's , you know , different directory , it 's called something different , it 's  
+
+F:  and just simply in the file you mark somewhere that this is this type of interaction , rather than another type of interaction . 
+
+D:  Well , I don I wouldn't call reading digits " meetings " . 
+
+F:  Well , but  but , <mouth> I put it under the same directory tree . 
+
+D:  I mean , I don't care what directory tree you have it under . 
+
+F:  So , once everything gets converted over to the disks we 're supposed to be using we 'll be probably , uh , seventy - five percent . 
+
+F:  We 're about  we 're about half  halfway through our disk right now . 
+
+F:  I 'm much more concerned about the backed - up . 
+
+F:  But , uh  I  I  you don't want to per p have your only copy on a media that fails . 
+
+I:  What about putting the stuff on , like , C - CD - ROM or DVD or something ? 
+
+I:  So  so how about putting them on that plus , like on a  on  on DAT or some other medium that isn't risky ? 
+
+F:  I mean , when I say two or three years what I 'm saying is that I have had disks which are gone in a year . 
+
+F:  ICSI already has a perfectly good tape system and it 's more reliable . 
+F:  So for archiving , we 'll just use tape . 
+
+F:  But even without that , the back - up system is becoming saturated . 
+
+I:  But  but this back - up system is smart enough to figure out that something hasn't changed and doesn't need to be  backed - up again . 
+
+A:  Well , but you can have it NW archive to  you can have , <inbreath> uh , a non - backed - up disk NW archived , 
+
+B:  N I 'm successfully , uh , increasing the error rate . 
+
+B:  So , I mean I 'm just playing with , um , the number of Gaussians that we use in the  the recognizer , and  
+
+I:  Well , you have to sa you have to  tell people that you 're  you 're doing  you 're trying the tandem features . 
+I:  A and I 'm still tinkering with the PLP features . 
+
+I:  That was  that was before I tried it on the females . 
+
+I:  we had reached the point where ,  um , on the male portion of the  development set , the , um  or one of the development sets , I should say  <inbreath> the , um  the male error rate with , uh , ICSI PLP features was pretty much identical with , uh , SRI features . 
+
+I:  Oh , and plus the  the vocal tract  length normalization didn't  actually made things worse . 
+
+I:  Um , and the test data is CallHome and Switchboard . 
+
+I:  So something 's really seriously wrong . 
+
+D:  So  but you see , now , between  between the males and the females , there 's certainly a much bigger difference in the scaling range , than there is , say , just within the males . 
+
+I:  d so the one thing that I then tried was to put in the low - pass filter , which we have in the  
+
+I:  Although , you know , normally , I mean , the channel goes to four  four thousand . 
+
+I:  Um  and it didn't hurt on the males either . 
+
+I:  Oh , and suddenly , also the v the vocal tract length normalization only in the test se on the test data . 
+
+I:  maybe between one and two percent , um , for the females . 
+
+F:  Well , you can try each one on a cross - validation set , 
+
+D:  Well , he was  he 's  it looked like the probabil at one point he was looking at the probabilities he was getting out  at the likelihoods he was getting out of PLP versus mel cepstrum , and they looked pretty different , 
+
+D:  But , you 're only talking about a percent or two . 
+
+I:  So , for the PLP features we use the triangular filter shapes . 
+I:  And for the  in the SRI front - end we use the trapezoidal one . 
+
+D:  So , is there something quick about Absinthe  that you  ? 
+
+F:  and got <mouth> <inbreath> a speedup roughly proportional to the number of processors times the clock cycle . 
+
+F:  But the  what it means is that it 's likely that for net training and forward passes , we 'll  Absinthe will be a good machine . 
+F:  Especially if we get a few more processors and upgrade the processors . 
+
+D:  So I guess the other thing that we were gonna talk about is  is , uh , demo . 
+D:  And , um , so , these are the demos for the  uh , July , uh , meeting  and , um  DARPA mee 
+
+D:  but maybe , uh  maybe we 'll just put that off for now , given that  
+D:  But I think maybe we should have a  a sub - meeting , 
+D:  I think , uh , probably , uh , Adam and  and , uh , Chuck and me should talk about  should get together and talk about that sometime soon . 
+
+D:  that the  that the , um , <inbreath> PLP , and  and the reason PLP has been advantageous in , uh , slightly noisy situations is because , <inbreath> PLP does the smoothing at the end by an auto - regressive model , 
+
+D:  We 've always viewed it , anyway , as the major difference between the two , is actually in the smoothing , 
+
+F:  We could let IBM transcribe it . 
+
+I:  So , most  most Hub - five systems actually band - limit the  uh , at about , uh , thirty - seven hundred , um , hertz . 
+
+I:  We 're looking at the discrepancy between the SRI system and the SRI system when trained with ICSI features . 
+
+I:  No , but with Baum - Welch , there shouldn't be an over - fitting issue , really . 
+
+D:  Or maybe  or maybe you 're doing one too many . 
+

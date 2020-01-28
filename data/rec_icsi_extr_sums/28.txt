@@ -1,0 +1,217 @@
+E:  I sh actually should 've picked a different one , 
+E:  because  that could be why the PDA is worse . 
+E:  Because it 's further away from most of the people reading digits . 
+
+F:  I mean , what 's  where do we go from here ? 
+
+B:  we want to <inbreath> have the ability to feed it different features . 
+B:  And then , um , <inbreath> from the point of view of the front - end research , it would be s uh , substituting for HTK . 
+
+B:  And then , um , uh , also Dave is  is thinking about using the data in different ways , uh , to <inbreath> um , uh , explicitly work on reverberation 
+
+F:  So  so the key  thing that 's missing here is basically the ability to feed , you know , other features <outbreath> i into the recognizer 
+F:  and also then to train the system . 
+
+F:  you know , if you want to use some new features , you have to dump them into individual files 
+
+E:  We do  we tend to do that anyway . 
+
+F:  Yeah , the  the  the cumbersome thing is  is , um  is that you actually have to dump out little  little files . 
+
+A:  and  and  W we  we were able to get some definite improvement on the forced alignments by looking at them first and then realizing the kinds of errors  that were occurring 
+
+A:  Actually it was better with  slightly better or about th 
+A:  it was the same with tighter pruning . 
+
+F:  So for free recognition , this  the lower pruning value is better . 
+
+F:  Um , but it turned out for  for  to get accurate alignments it was really important to open up the pruning significantly . 
+
+F:  Um , <mouth> so that was one big factor that helped improve things 
+
+B:  but I  I 'd like to see it on the same  exact same data set that  that we did the other thing on . 
+
+F:  So , the  what that means probably for the foreseeable future is that you have to , uh , dump out , um  
+
+F:  It 's  uh , I mean , the  the front - end is f i tha that 's in the SRI recognizer is very nice in that it does a lot of things on the fly 
+
+A:  and I think what we really want is some clever way to do this , 
+A:  where , um , you know , from the data or from maybe some hand - corrected alignments from transcribers that 
+
+F:  you know , as Liz said the  we f enforce the fact that , uh , the foreground speech has to be continuous . 
+
+A:  So , I think we have a version that 's pretty good for the native speakers . 
+
+A:  Um , so , and then there 's a background speech model . 
+
+A:  just because often the background speakers match better to the foreground than the foreground speaker . 
+
+A:  We probably want to adapt at least the foreground speaker . 
+
+F:  And you  and what we wanted to try with  you know , once we have this paper written and have a little more time , <inbreath> uh , t cloning that reject model 
+F:  and then one copy of it would be adapted to the foreground speaker to capture the rejects in the foreground , 
+
+F:  and the other copy would be adapted to the background speaker . 
+
+A:  So just sort of working through a bunch of debugging kinds of issues . 
+
+F:  So , <inbreath> we would need a hand - marked , um , <mouth> word - level alignments 
+F:  or at least sort of the boundaries of the speech betw you know , between the speakers . 
+
+F:  and tune the parameters of the  of the model , uh , to op to get the best  performance . 
+
+A:  And so , <inbreath> we can give you some examples of sort of what this output looks like , 
+A:  um , and see if you can in maybe incorporate it into the Transcriber tool some way , 
+
+A:  Yeah , it wou the advantage would just be that when you brought up a bin you would be able  if you were zoomed in enough in Transcriber to see all the words , 
+A:  you would be able to , like , have the words sort of located in time , 
+
+G:  Well , I know there were some speaker labelling problems , um , after interruptions . 
+
+C:  Fixed that . 
+
+G:  But you 're actually saying that certain , uh , speakers were mis mis - identified . 
+
+C:  The other thing that was w interesting to me was that I picked up a lot of , um , backchannels which were hidden in the mixed signal , 
+
+A:  We were  I guess the other thing we 're  we 're  I should say is that we 're gonna , um try  compare this type of overlap analysis to Switchboard , 
+
+A:  and CallHome , 
+A:  where we have both sides , so that we can try to answer this question of , you know , <inbreath> is there really more overlap in meetings or is it just because we don't have the other channel in Switchboard 
+A:  and we don't know what people are doing . 
+
+B:  but were  were you intending to do a Eurospeech submission , 
+
+A:  because that 'll at least get us to the point where we have  We have this really nice database format that Andreas and I were working out that  
+
+F:  It 's the  it 's the spurt format . 
+
+A:  I was trying to find what 's a word for  a continuous region with  pauses around it ? 
+
+F:  And so you extract the individual channels , uh , one sp spurt by spurt as it were . 
+F:  Um , and inside the words or between the words you now have begin and end  tags for overlaps . 
+F:  So , you  you basically have everything sort of lined up and in a form where you can look at the individual speakers and how their speech relates to the other speakers ' speech . 
+
+F:  All we care about is whether  that there 's a certain word was overlapped by someone else 's word . 
+F:  So you sort of  at that point , you discretize things into just having overlap or no overlap . 
+F:  Because we figure that 's about the level of analysis that we want to do for this paper . 
+
+B:  Uh , you  you and , uh  and Dan have  have a paper that  that 's going in . 
+B:  You know , that 's  that 's pretty solid , on the segmentation  stuff . 
+
+B:  And the Aurora folks here will  will definitely get something in on Aurora , 
+
+F:  th the other good thing about the alignments is that , um , it 's not always the machine 's fault if it doesn't work . 
+
+F:  You can find , uh , problems with  with the transcripts , 
+
+A:  Tha - There are some cases like where the  the wrong speaker  uh , these ca Not a lot , but where the  the wrong person  the  the speech is addre attached to the wrong speaker 
+
+A:  The bad numbers were from  the segments where there was overlap . 
+
+A:  things like words that do occur just by themselves  a alone , like backchannels or something that we did allow to have background speech around it  
+A:  those would be able to do that , 
+A:  but the rest would be constrained . 
+
+E:  Two items , which was , uh , digits and possibly stuff on  on , uh , forced alignment , 
+
+E:  I mean that it was basically  the only thing that was even slightly surprising was that the lapel did so well . 
+
+B:  uh , I mean , there the point of interest to the group was primarily that , um , <inbreath> the , uh  the system that we had that was based on H T K , that 's used by , you know ,  all the participants in Aurora , <inbreath> was so much worse <inbreath> than the  than the S R 
+B:  And the interesting thing is that even though , <inbreath> yes , it 's a digits task and that 's a relatively small number of words and there 's a bunch of digits that you train on , <inbreath> it 's just not as good as having a  a l very large amount of data and training up a  a  a nice good big <inbreath> HMM . 
+B:  Um , also you had the adaptation in the SRI system , which we didn't have in this . 
+
+F:  So there was a significant loss from not doing the adaptation . 
+
+B:  Yeah , bu although I 'd be  I think it 'd be interesting to just take this exact actual system 
+
+B:  and try it out on TI - digits . 
+
+B:  One is , yeah , the SRI system is a lot better than the HTK  
+
+B:  Uh , but the other is that , um , the digits <inbreath> recorded here in this room with these close mikes , i uh , are actually a lot harder than the  studio - recording TI - digits . 
+
+F:  But  remember , we 're using a telephone bandwidth front - end here , uh , on this , uh  on this SRI system , 
+
+F:  I suspect that to get sort of the last bit out of these higher - quality recordings you would have to in fact , uh , use models that , uh , were trained on wider - band data . 
+
+F:  Right . Uh , but I 'm not so much worried about the adaptation , actually , than  than the , um , <mouth> um  the , uh , VTL estimation . 
+F:  If you have only one utterance per speaker you might actually screw up on estimating the  the warping , uh , factor . 
+
+F:  So , we might have to modify that script to recognize the , um , speakers , <inbreath> um , in the  in the , uh , um , <mouth> TI - digits  database . 
+
+E:  because we may have to do an extract to get the  amount of data per speaker about right . 
+
+F:  By the way , I think we can improve these numbers if we care to compr improve them <inbreath> by , um , <mouth> not starting with the Switchboard models but by taking the Switchboard models and doing supervised adaptation on a small amount of digit data collected in this setting . 
+
+F:  That 's where the most m acoustic mismatch is between the currently used models and the  the r the set up here . 
+
+B:  But I think it 's an important data point , if you 're  if  
+
+B:  The other thing that  that , uh  of course , what Barry was looking at was  was just that , 
+B:  the near versus far . 
+
+B:  Yeah . I  I know what I was thinking was that maybe , uh , i i we could actually t t try at least looking at , uh , some of the  the large vocabulary speech from a far microphone , 
+
+B:  But I 'm saying if you do the same kind of limited thing <inbreath> as people have done in Switchboard evaluations or as  a 
+
+E:  Could we do exactly the same thing that we 're doing now , but do it with a far - field mike ? 
+E:  Cuz we extract the times from the near - field mike , 
+E:  but you use the acoustics from the far - field mike . 
+
+A:  In the H L T paper we took  segments that are channel  time - aligned , 
+
+A:  and we took cases where the transcribers said there was only one person talking here , 
+
+A:  and called that " non - overlap " . 
+
+B:  And that 's what we were getting those numbers from . 
+
+B:  Well , we could start with the good ones . 
+B:  But anyway  so I think that we should try it once with <inbreath> the same conditions that were used to create those , 
+B:  and in those same segments just use one of the P Z 
+
+F:  You want to probably choose the PZM channel that is closest to the speaker . 
+
+A:  But , I guess Andreas tried adapting both the foreground and a background generic speaker , 
+A:  and that 's actually a little bit of a f funky model . 
+A:  Like , it gives you some weird alignments , 
+
+A:  and it would be really useful to have , like , a  a transcriber who could use Waves , 
+
+A:  You know , interface - wise if you 're looking at speech , you wanna be able to know really where the words are . 
+
+C:  since our representation in Transcriber uses time marks , it seems like there should be some way of  of using that  benefitting from that . 
+
+A:  So we  we only r hav I only looked at actually alignments from one meeting that we chose , 
+
+C:  When I was looking at these backchannels , they were turning up usually  <inbreath> very often in  w well , I won't say " usually "  but anyway , very often , I picked them up in a channel <inbreath> w which was the person who had asked a question . 
+
+A:  But there are fewer  I think there are fewer " uh - huhs " . 
+
+A:  And " yeah " is way up there , 
+
+A:  if you looked at just a word frequency list of one - word short utterances . 
+
+A:  and I figured <inbreath> we 'll try , 
+
+A:  It 's just a ASCII line by line format , 
+
+A:  It  Yeah , we 're calling these " spurts " after Chafe . 
+
+F:  from each alignment we 're producing , uh , one of these CTM files , 
+F:  which essentially has  it 's just a linear sequence of words with the begin times for every word and the duration . 
+
+F:  Third column is the , um , start times of the words and the fourth column is the duration of the words . 
+
+F:  And the second column is the channel . 
+
+F:  OK . Then we have a messy alignment process where we actually insert into the sequence of words the , uh , tags 
+F:  for , like , where  where sentence  ends of sentence , 
+
+F:  And then we merge all the alignments from the various channels 
+F:  and we sort them by time . 
+
+A:  because even if you weren't studying overlaps , if you wanna get a transcription for the far - field mikes , how are you gonna know which words from which speakers occurred at which times relative to each other ? 
+A:  You have to be able to  get a transcript like  like this anyway , just for doing far - field recognition . 
+

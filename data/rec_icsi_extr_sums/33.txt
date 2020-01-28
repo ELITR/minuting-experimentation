@@ -1,0 +1,200 @@
+A:  So , I think this is gonna be a pretty short meeting because I have four agenda items , 
+A:  three of them were requested by Jane who is not gonna be at the meeting today . 
+
+F:  Um  Well first of all with IBM I got a note from Brian yesterday saying that they finally made the tape for the thing that we sent them a  week or week and a half ago 
+
+F:  and hopefully next week we 'll have the transcription back from that . 
+
+F:  Yeah , so um , I guess she 's hired some new transcribers 
+
+E:  So we 're doing some in parallel . 
+
+A:  So . They ' r they 're doing the full transcription process . 
+
+D:  Because I  I need to ask Jane whether it 's  it would be OK for her  um , s some of her people to transcribe uh some of the initial data we got from the SmartKom data collection , which is these short like five or seven minute sessions . 
+
+D:  And so um I wanted to ask Jane if  if uh , you know , maybe one of their transcribers could  could do  
+D:  I mean since these are very short , that should really be uh , 
+
+F:  so I 've been trying to keep a web page uh up to date f showing what the current status is of the trans of all the things we 've collected 
+
+F:  That 's the thing that I sent out just to foo people saying can you update these pages 
+
+A:  So Jane also wanted to talk about participant approval , but I don't really think there 's much to talk about . 
+
+F:  I 'll send it out to the list telling people to look at it . 
+
+A:  I 'm gonna send out to the participants , uh , with links to web pages which contain the transcripts and allow them to  suggest edits . 
+
+C:  So but it 's just transcripts , not the  not the audio ? 
+
+A:  Nope , they 'll have access to the audio also . 
+
+A:  Because the transcripts might not be right . 
+
+F:  So , um the audio that they 're gonna have access to , will that be the uncompressed version ? 
+F:  Or will you have scripts that like uncompress the various pieces and  
+
+A:  Yeah , it 's  it 's probably going to have to be the uncompressed versions because , uh , uh , it takes too long to do random access decompression . 
+
+F:  Yeah , I was just wondering because we 're uh running out of the un - backed - up disk space on 
+
+A:  Um , DARPA demo status , not much to say . 
+A:  The back - end stuff is working out fine . 
+
+A:  I 've added some stuff that uh indes indexes by the meeting type MR , EDU , et cetera 
+A:  and also by the user ID . 
+A:  So that the front - end can then do filtering based on that as well . 
+A:  Uh  The back - end is uh , going more slowly as I s I think I said before just cuz I 'm not much of a Tcl - TK programmer . 
+
+E:  And , also um , I was just showing Andreas , I got um an X Waves kind of display , 
+E:  and I don't know how much more we can do with it  
+E:  with like the prosodic stuff where we have like stylized pitches and signals and the transcripts on the bottom 
+
+C:  I 've been putting together uh Transcriber things for Windows 
+
+A:  Well Transcriber is Tcl - TK , very generic with Snack , 
+
+C:  but  But the problem is the version Transcriber works with , the Snack version , is one point six whatever 
+
+D:  But  But it would be cool if the Transcriber interface had like another window for the  you know , maybe above the waveform where it would show some arbitrary valued function that is  that is you know time synchron ti ti time synchronous with the wavform . 
+
+E:  and see the pitch contours also . 
+
+A:  Just record the audio clip and show an image and I think that 's  
+
+B:  and , <clear throat> the more live , the better , but uh , given the crunch of time , we may have to retreat from it to some extent . 
+B:  So I think   For a lot of reasons , I think it would be very nice to have this Transcriber interface be able to show some other interesting signal along with it 
+
+A:  So , uh , we have a little bit of time before that becomes critical , 
+
+A:  We 're  We 're only about thirty percent on the second disk . 
+
+A:  but we are like ninety five percent , ninety eight percent on the scratch disks for the expanded meetings . 
+A:  And , my original intention was like we would just delete them as we needed more space , 
+A:  but unfortunately we 're in the position where we have to deal with all the meeting data  all at once , in a lot of different ways . 
+
+B:  Well , maybe it should get another rack . 
+
+B:  Uh , you know Dave Johnson is gone for , like , ten days , 
+
+A:  You  we need about a gig per meeting . 
+
+E:  I have um  I have an eighteen gig drive hanging off of my computer . 
+
+B:  I mean it 's just a question of figuring out where they should be and hanging them , 
+
+F:  Well I sent that message out to , I guess , you and Dave asking for  if we could get some disk . 
+
+A:  The sysadmins would prefer to have one external drive per machine . 
+A:  So they don't want to stack up external drives . 
+
+B:  So this is a question that 's pretty hard to solve without talking to Dave , 
+
+F:  I think part of the reason why Dave can't get the  the new machines up is because he doesn't have room in the machine room right now . 
+
+A:  And so I think what he 's been concentrating on is uh the back  the  back up system , rather than on new disk . 
+
+B:  I mean just sort of bulletize I mean o e do do I can  I can dream up text but  this is basically gonna lead to the annual report . 
+
+B:  so something that we wanna do next meeting is  is uh to put together um , a kind of reasonable list for ourselves of what is it , um , that we 've done . 
+
+A:  So just a week from tomorrow ? 
+
+B:  But at any rate I think that there 's a  there 's a longer term thing and there 's immediate need 
+
+B:  Well , OK , so how many  how many people here would not be interested in uh  in a meeting about recognition ? 
+
+D:  Well , it 's that  It 's just gonna be ver very boring for people who are not you know , sort of really interested in the details of the recognition system . 
+
+D:  Um  Uh  One thing  I mean  we  <inbreath> <clear throat> in past meetings we had um also a you know various  variously talked about the um work that w uh was happening sort of on the  on the recognition side 
+
+D:  Liz and Jane probably . 
+
+F:  Why don't we alternate this meeting every other week ? 
+
+F:  But I do I don't  I mean a lot of times lately it seems like we don't really have enough for a full meeting on Meeting Recorder . 
+
+B:  And then if we find , you know we 're just not getting enough done , there 's all these topics not coming up , then we can expand into another meeting . 
+
+B:  Uh . So uh . Um . Let 's chat about it with Liz and Jane  when we get a chance , see what they think and  
+
+D:  um yot I tested the uh  the sort of final version of the PLP configuration um on development test data for  for this year 's Hub - five test set . 
+D:  And the recognition performance was exactly , and I mean exactly up to the  you know , the first decimal , same as with the uh Mel Cepstra front - end . 
+
+D:  They  They were  The males I think were slightly better and the females were slightly worse but nothing really . 
+
+D:  And then the really nice thing was that if  if we combine the two systems we get a one and a half percent improvement . 
+
+D:  Which u actually uses the whole N - best list from both systems  to  mmm , uh  c combine that . 
+
+D:  There 's one thing uh  I mean you don't want to overdo it because y every front - end  
+D:  You know , if you  you know you basically multiply your effort by N , where N is a number of different systems 
+
+D:  And then we had some results on  digits , uh , with um  
+
+D:  And the reason is basically there 's a whole bunch of read speech data in the Hub - five training set . 
+
+D:  The rest is  is read  is read TIMIT data and uh ATIS data and Wall Street Journal and stuff like that . 
+D:  A fifth would be maybe uh two hours something . 
+
+B:  Yeah , so I mean that 's actually not that different from the  amount of training that there was . 
+
+D:  But it definitely helps to have the other read data in there 
+
+D:  You know the error rate is half of what you do if you train only on ti uh TIMIT   uh not TIMIT uh TI - digits , 
+
+D:  And you can leave out all the conversational data with no performance penalty . 
+
+D:  So . Uh , more read speech data definitely helps . 
+
+B:  Because  because uh , it was apparent if you put in a bunch more data it would be better , 
+
+D:  Well , I mean that 's plenty of read speech data . 
+D:  I mean , Wall Street Journal ,  uh , take one example . 
+
+D:  So , you know that might be useful for the people who train the  the digit recognizers to  to use uh something other than TI - digits . 
+
+D:  And then I th guess Chuck and I had some discussions about how to proceed with the tandem uh system 
+
+F:  Yeah , so Andreas uh brought over the uh alignments that the SRI system uses . 
+F:  And so I 'm in the process of um converting those alignments into uh label files that we can use to train uh a new net with . 
+F:  And uh so then I 'll train the net . 
+
+D:  So the MLP would be trained on I think only forty - six or forty - eight  
+
+D:  Uh which is smaller than the um than the phone set that  that we 've been using so far . 
+
+D:  You know we want to try things like deltas on the tandem features . 
+D:  And so you h have to multiply everything by two or three . 
+D:  And so , you know , fewer dimensions in the  phone set would be actually helpful just from a logistics point of view . 
+
+B:  Although we  I mean , it 's not that many fewer and  and  and we take a KLT anyway so we could  
+
+D:  And then we wanted to s just limit it to maybe uh something on the same order of dimensions as we use in a standard um front - end . 
+D:  So that would mean just doing the top I don't know ten or twelve or something of the KLT dimensions . 
+
+D:  Once we have the new M L P trained up , uh one thing I wanted to try just for the fun of it was to actually run uh like a standard hybrid system that is based on you know , those features 
+D:  uh and uh retrain MLP and also the you know , the dictionary that we use for the Hub - five system . 
+
+B:  And the b And the base u starting off with the base of the alignments that you got from i from a pretty decent system . 
+
+D:  So it 's sort of a sanity check of the M L P outputs  before we go ahead and train up the  uh you know , use them as a basis for the tandem system . 
+
+B:  I mean , it 's  it 'd be context independent and so on . 
+
+D:  So you  you started training with outputs from a  with alignments that were generated by the Cambridge uh system ? 
+
+D:  That was probably because your initial system  I mean your system was ba worse than Cambridge 's . 
+
+A:  they were  they were comparable . 
+
+F:  I was wondering uh you know what size net I should  
+F:  Anybody have any intuitions or suggestions ? 
+
+B:  Uh , how much training data ? 
+
+D:  But to get going we would like some of the data transcribed right away so we can get started . 
+
+A:  And the last i item on the agenda is disk issues yet again . 
+

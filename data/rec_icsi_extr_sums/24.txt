@@ -1,0 +1,143 @@
+C:  I wanna talk a little bit about getting  how we 're gonna to get people to edit bleeps , parts of the meeting that they don't want to include . 
+
+E:  OK audio monitoring , Jane . 
+
+F:  In listening to  some of these meetings that have already been recorded there are sometimes big spikes on particular things , 
+
+B:  " Spikes " , you mean like uh , instantaneous click type spikes , or  ? 
+
+F:  Yeah . 
+
+E:  I guess  I would like to have a discussion about you know where we are on uh , recording , transcription 
+E:  you know , basically you know where we are on the corpus . 
+
+E:  The other topic I was thinking of was the sta status on microphones and channels , and all that . 
+
+C:  Um , the new microphones , the two new ones are in . 
+C:  Um .  And they are being assembled as we speak , I hope . 
+
+C:  First of all , if the other headsets are a lot more comfortable , we should probably just go ahead and get them . 
+C:  So we 'll have to evaluate that when they come in , 
+C:  and get people 's opinions on  on what they think of them . 
+
+E:  So how many channels do you get to have in a wireless setup ? 
+
+C:  Um , well , I 'm pretty sure that you can daisy - chain them together 
+C:  so what we would do is replace the wired mikes with wireless . 
+C:  So we currently have one base station with six wireless mike , 
+
+C:  And so we could replace our wired mikes with wireless if we bought another base station and more wireless mikes . 
+
+B:  So we 're not increasing the number of channels . 
+
+C:  No , we 're just replacing the wired  the two wired that are still working , 
+C:  along with a couple of the wired that aren't working , one of the wired that 's not working , with a wireless . 
+
+E:  Um I heard from UW that they 're  they 're uh very close to getting their , uh setup purchased . 
+
+C:  Well we should talk to them about it because I know that SRI is also in the process of looking at stuff , 
+C:  and so , you know , what we should try to keep everyone  on the same page with that . 
+
+E:  Was  the decision last time was that the  the uh transcribers were going to be doing stuff with the digits as well ? 
+E:  Has that started , or is that  ? 
+
+F:  Yeah . 
+
+C:  I  I don't think it 'll take too long . 
+C:  So , you know , just uh , a matter of a few days I suspect . 
+
+E:  Uh , transcriptions , uh , beyond the digits , where we are , and so on . 
+
+F:  Well , so um , should we  we don't wan wanna do the recording status first , or  ? 
+
+C:  Well , we have about thirty - two hours 
+
+C:  That 's including digits . 
+
+E:  There 's got to be more than thirty hour  
+
+C:  Of  of non - digits ? 
+
+C:  I mean , the digits don't take up that much time . 
+
+F:  but I  think it would come to about eleven hours that are finished uh , transcribing from them right now . 
+F:  The next step is to  that I 'm working on is to insure that the data are clean first , and then channelized . 
+F:  What I mean by clean is that they 're spell - checked , 
+F:  that the mark - up is consistent all the way throughout , 
+F:  and also that we now incorporate these additional conventions that uh , Liz requested in terms of um , um  in terms of having a s a systematic handling of numbers , and acronyms which I hadn't been specific about . 
+
+F:  So there are numbers , then there are acronyms , 
+F:  and then um , there 's a  he she wants the uh , actually a  an explicit marker of what type of comment this is , 
+F:  so i curly b inside the curly brackets I 'm gonna put either " VOC " for vocalized , 
+F:  like cough or like laugh or whatever , 
+F:  " NONVOC " for door - slam , 
+F:  and " GLOSS " for things that have to do with  if they said a s a spoken form with this  m this pronunciation error . 
+
+F:  So , um , <inbreath> um I 'm  I 'm going to convert that via a filter , into these tagged uh , subcategorized comments , 
+
+F:  But the numbers and acronyms have to be handled by hand , 
+
+C:  How are you doing the uh , acronyms so if I say PZM what would it appear on the transcript ? 
+
+F:  The letters would be separated in space 
+
+F:  the next step is to work on tightening up the boundaries of the time bins . 
+F:  And uh , Thilo had a  e e a breakthrough with this  this last week in terms of getting the channel - based um uh s s speech - nonspeech segmentation um , up and running 
+
+F:  actually um I have a segment of ten minutes that was transcribed by two of our transcribers , 
+F:  and I went through it last night , it 's  it 's almost spooky how similar these are , word for word . 
+
+A:  Oh , it 's just uh , I ran the recognizer  uh , the   speech - nonspeech detector on different channels 
+A:  and , it 's just in uh  in this new multi - channel format and output , 
+
+A:  as uh , apparently the recognizer had problems with those long chunks of speech , which took too much memory or whatever , 
+
+A:  The basic thing is this HMM base . 
+
+A:  Yeah , and I  and I tried t to normalize uh  uh the features , there 's loudness and modified loudness , um , within one channel , 
+A:  because they 're , <outbreath> yeah to  to be able to distinguish between foreground and background speech . 
+A:  And it works quite well . 
+A:  But , not always . 
+
+E:  the transcription part ? So I guess the next thing is this uh  bleep editing . 
+
+C:  We need to provide the transcripts to every participant of every meeting to give them an opportunity to bleep out sections they don't want . 
+
+E:  but the way I imagined it was that um , the largest set of people is gonna go " oh yeah , I didn't say anything funny in that meeting 
+E:  just go ahead , 
+E:  where 's the  where 's the release ? " 
+
+E:  OK there 'll be a subset of people , who um , will say uh " well , yeah , I really would like to see that . " 
+E:  And for them , the easiest way to flip through , if it 's a really large document , 
+E:  I mean unless you 're searching . 
+E:  Searching , of course , should be electronic , 
+
+B:  Are  are people going to be allowed to bleep out sections of a meeting where they weren't speaking ? 
+
+C:  If someone feels strongly enough about it , then I  I  I think they should be allowed to do that . 
+
+B:  So that means other people are editing what you say ? 
+
+E:  And , you know where it 's really gonna hurt somebody , in some way  
+E:  the one who said it or someone who is being spoken about ,  we definitely want to allow the option of it being bleeped out . 
+E:  But I really think we wanna make it the rare incidence . 
+E:  And  and uh , I am just a little worried about making it so easy for people to do , 
+
+C:  " If you agree to participate you 'll have the opportunity to have anything ex anything excised , which you would prefer not to have included in the data set . " 
+
+C:  the consent form is right in there if anyone wants to look at it , 
+
+C:  " Once a transcript is available we will ask your permission to include the data in the corpus for the r larger research community . 
+C:  There again you will be allowed to indicate any sections that you 'd prefer to have excised from the database , 
+C:  and they will m be removed both from the transcript and the recording . " 
+
+E:  So I  I just want it to be worded in such a way where it gives the strong impre it gives very , I mean nothing hidden , v very strongly the bias that we would really like to use all of these data . 
+E:  That  that we really would rather it wasn't a patchwork of things tossed out , 
+
+C:  It just sends me the time intervals . 
+C:  And then at some point I 'll incorporate them all and put bleeps . 
+
+C:  Well since you seem to feel heart uh , strongest about it , would you like to do the first pass ? 
+
+E:  Again let 's you know , sort of circulate the  the wording on each of these things and get it right , 
+

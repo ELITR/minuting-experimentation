@@ -1,0 +1,142 @@
+C:  Sunil 's here for the summer , 
+
+C:  and then just uh , I guess uh , progress reports individually , and then uh , plans for where we go between now and then , pretty much . 
+
+F:  I could say a few words about um , some of the uh , compute stuff that 's happening around here , 
+F:  so that people in the group know . 
+
+F:  So we just put in an order for about twelve new machines , uh , to use as sort of a compute farm . 
+
+F:  and Andreas has sort of gotten that all uh , fixed up and up to speed . 
+F:  And he 's got a number of little utilities that make it very easy to um , <mouth> run things using P - make and Customs . 
+
+F:  or , maybe I should do an FAQ on the web site about it or something . 
+
+C:  How about an email that points to the FAQ , 
+
+F:  And , if you say that and then some job that you want to execute , uh , it will find the fastest currently available machine , and export your job to that machine , 
+
+F:  And , so , soon , when we get all the new machines up , <mouth> um , e then we 'll have lots more compute to use . 
+
+F:  there 's a lot of nice features to it 
+F:  and it kinda helps to balance the load of the machines 
+
+C:  Sunil since you 're <inbreath> haven't  haven't been at one of these yet , why don't yo you tell us what 's  what 's up with you ? 
+
+A:  uh , the other  other thing what I tried was , I just um , uh , took the baseline and then ran it with the endpoint inf uh th information , 
+A:  just the Aurora baseline , 
+A:  to see that how much the baseline itself improves 
+A:  by just supplying the information of the  I mean the w speech and nonspeech . 
+
+A:  I found that the baseline itself improves by twenty - two percent by just giving the wuh . 
+
+A:  because the  the second  the new phase is going to be with the endpointed speech . 
+A:  And just to get a feel of how much the baseline itself is going to change by adding this endpoint information , I just , uh , use  
+
+F:  So people won't even have to worry about , uh , doing speech - nonspeech then . 
+
+A:  Yeah 
+
+C:  so maybe uh , just briefly , you could remind us about the related experiments . 
+C:  Cuz you did some stuff that you talked about last week , 
+
+C:  both of you I guess were both combining something from the uh , French Telecom system with <inbreath> the u uh  
+
+D:  The main thing that we did is just to take the spectral subtraction from the France Telecom , 
+
+D:  So we just tried directly to  to just , keep the system as it was 
+
+D:  when we plug the spectral subtraction it improves uh , signif significantly . 
+
+D:  You can remove on - line normalization , or put it , it doesn't change anything . 
+D:  Uh , uh , as long as you have the spectral subtraction . 
+
+D:  And , right now if we look at the results , it 's , um , always better than  it seems always better than France Telecom for mismatch and high - mismatch . 
+D:  And it 's still slightly worse for well - matched . 
+
+D:  but this is not significant . 
+
+D:  We are playing  we are also playing , trying to put other spectral subtraction mmm , in the code . 
+
+D:  it would be a very simple spectral subtraction , on the um , mel energies 
+
+D:  well we find some people so that <inbreath> uh , agree to maybe work with us , 
+
+D:  maybe we  
+
+D:  and they have implementation of VTS techniques 
+D:  so it 's um , Vector Taylor Series that are used to mmm , <outbreath> uh f to model the transformation between clean cepstra and noisy cepstra . 
+
+D:  it can be used for <mouth> uh , getting rid of the noise and the channel effect . 
+
+C:  Anything else going on ? 
+
+B:  I don't have good result , with the  inc including the new parameters , 
+B:  I don't have good result . 
+
+B:  I tried to include another new parameter to the traditional parameter , 
+
+B:  The idea is to found another feature for discriminate between voice sound and unvoice sound . 
+B:  And we try to use this new feature  feature . 
+
+B:  I do  I did two type of experiment to include this feature directly with the  with the other feature 
+
+B:  n with the neural network I have more or less the same result . 
+
+A:  As using just the cepstrum , 
+
+B:  sometime it 's worse , 
+B:  sometime it 's a little bit better , 
+
+C:  I mean we 've had these discussions before , 
+C:  and  and one of the things that struck me was that  uh , about this line of thought that was particularly interesting to me was that we um  whenever you condense things , uh , in an irreversible way , um , you throw away some information . 
+
+C:  And so the question is , uh , can we figure out if there 's something we 've thrown away that we shouldn't have . 
+
+C:  when they were looking at the difference between the filter bank and the FFT that was going into the filter bank , I was thinking " oh , OK , 
+C:  so they 're picking on something 
+C:  they 're looking on it to figure out noise , or voice  voiced property whatever . " 
+
+C:  But for me sort of the interesting thing was , " well , but is there just something in that difference which is useful ? " 
+C:  So another way of doing it , maybe , would be just to take the FFT uh , power spectrum , and feed it into a neural network , 
+
+C:  And , you know , maybe if it 's used in combination , it will get at something that we 're missing . 
+
+B:  I can  I will try to do that . 
+
+C:  It 's just a thought . 
+
+B:  Yeah , 
+
+A:  With what  what other new p new parameter ? 
+
+C:  So maybe  You probably need to back up a bit 
+
+B:  that , like , the auto - correlation , the R - zero and R - one over R - zero 
+B:  and another estimation of the var the variance of the difference for  of the spec si uh , spectrum of the signal 
+B:  and  and the spectrum of time after filt mel filter bank . 
+
+C:  anything on your end you want to talk about ? 
+
+G:  Sunil hasn't  hasn't heard about uh , what I 've been doing . 
+
+G:  So basically that 's just , um , trying to propose um , uh , your next your  your following years of  of your PHD work , 
+G:  trying  trying to find a project to  to define and  and to work on . 
+G:  So , I 've been , uh , looking into , um , doing something about r uh , speech recognition using acoustic events . 
+
+G:  um , building robust um , primary detectors for these acoustic events , 
+G:  and using the outputs of these robust detectors to do speech recognition . 
+
+C:  Is that  that something worth talking about , 
+
+E:  Well , um , it  I don't think it directly relates . 
+E:  Um , well , so , I was helping a speech researcher named Pierre Divenyi 
+E:  and he 's int He wanted to um , look at um , how people respond to formant changes , I think . 
+
+E:  So he  he created a lot of synthetic audio files of vowel - to - vowel transitions , 
+E:  and then he wanted a psycho - acoustic um , spectrum . 
+E:  And he wanted to look at um , how the energy is moving  over time in that spectrum 
+E:  and compare that to the  to the listener tests . 
+
+F:  And I can send an email around 
+

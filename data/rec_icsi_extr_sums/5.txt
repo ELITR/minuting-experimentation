@@ -1,0 +1,190 @@
+C:  Um , so we 're about to collect data 
+
+C:  And um we have a little description of asking peop subjects to contact Fey for you know recruiting them for our thing 
+
+C:  however there is always more people in a  in a facul uh in a department than are just taking his class or anybody else 's class at the moment 
+
+C:  Um and then , secondly , we had , you may remember , um the problem with the re - phrasing , 
+C:  that subject always re - phrase sort of the task that uh we gave them , 
+
+C:  there the idea is now that next actually we  we need to hire one more person to actually do that job 
+
+C:  Um <mouth> the idea now is to sort of come up with a high level of sort of abstract tasks 
+C:  " go shopping " 
+
+C:  So out of these f s these high level categories the subject can pick a couple , 
+
+C:  sort of make up their own itinerary a and  and tasks 
+
+G:  so um y you 'll have those say somewhere what their intention was  
+
+C:  the person is able to take notes on a map that we will give him and the map will be a tourist 's sort of schematic representation with  with symbols for the objects . 
+
+C:  And then we 're going to have another  we 're gonna have w another trial run 
+
+G:  so they 'll have a little bit more natural interaction ? 
+
+C:  Hopefully . 
+
+D:  It 's a tourist information web site , 
+
+C:  Talk to a machine and it breaks down and then the human comes on . 
+C:  The question is just sort of how do we get the tasks in their head that they have an intention of doing something and have a need to ask the system for something without giving them sort of a clear wording or phrasing of the task . 
+
+A:  Well , so the idea is to try to get the actual phrasing that they might use and try to interfere as little as possible with their choice of words . 
+
+A:  Well , u u the one experiment th that  that  that I 've read somewhere , it was  they u used pictures . 
+
+C:  However , not only was  the common census were  among all participants of Friday 's meeting was it 's gonna be very laborious to  to make these drawings for each different things , 
+
+C:  So all of a sudden we 'll get descriptions of pictures in there . 
+
+C:  let me make one more general remark , has sort of two  two side uh um actions , its um action items that we 're do dealing with , 
+C:  one is modifying the SmartKom parser and the other one is modifying the SmartKom natural language generation module . 
+
+C:  Uh , meaning that Tilman Becker , who does the German one , actually took out some time and already did it in English for us . 
+
+C:  And um I  I do have some good news for the natural language generation however . 
+
+C:  It 's the last week of April until the fourth of May 
+
+C:  and ask them more questions 
+
+C:  No it 's just um you know they 're coming for us so that we can bug them 
+
+C:  and they can give some nice talks and stuff . 
+
+C:  Um , the basic requirement is fulfilled almost . 
+C:  When Andreas Stolcke and  and his gang , 
+C:  when they have um changed the language model of the recognizer and the dictionary , then we can actually a put it all together 
+
+C:  you can speak into it and ask for TV and movie information 
+
+C:  if  if something actually happens and some answers come out , then we 're done . 
+
+C:  Then uh on to the modeling . 
+
+C:  The idea is , so , imagine we have a library of schema 
+C:  such as the Source - Path - Goal 
+C:  and then we have forced uh motion , 
+
+B:  And then those actions can be in multiple categories at the same time if necessary . 
+
+C:  We 're talking more on the sort of intention level , up there , 
+C:  and more on the  this is the  your basic bone um schema , down there . 
+
+B:  Basically , what this is  is that there 's an interface between what we are doing and the action planner 
+B:  and right now the way the interface is " action go " and then they have the  what the person claimed was the source and the person claimed as the goal passed on . 
+B:  And the problem is , is that the current system does not distinguish between goes of type " going into " , goes of type " want to go to a place where I can take a picture of " , et cetera . 
+
+C:  In the future though , the content of a hypothesis will not only be an object and an  an action and a domain object but an action , a domain object , and a rich action description , 
+
+B:  instead of just making it an attribute and which  which is just one thing we  we decided to make it 's own entity so that we could explode it out later on in case there is some structure that  that we need to exploit . 
+
+B:  Right , so the  the  the roles will be filled in with the schema 
+B:  and then what actual a action is chosen is  will be in the  in the action schema section . 
+
+G:  But if it is , then the top block is sort of like 
+
+G:  and maybe it has stuff about that specific to entering or viewing or approaching , 
+
+G:  and you can also describe them in a general way as Source - Path - Goal schema 
+
+G:  So all of those have um basically f either specific  frame specific roles or more general frame specific roles that might have binding . 
+
+G:  it  it 's somewhere in there that you need to represent that there is some container 
+G:  and the interior of it corresponds to some part of the Source - Path - Goal um you know goal  uh goal I guess in this case . 
+
+C:  a and the answer is absolutely . 
+
+C:  meaning we can reference . 
+
+C:  and link it to another one , and this not only within a document but also via documents , 
+
+C:  I mean personally , I 'm looking even more forward to the day when we 're going to have X forms , which l is a form of notation where it allows you to say that if the SPG action up there is Enter , then the goal type can never be a statue . 
+
+F:  S So um , like are you gonna have similar schemas for FM 
+F:  like forced motion and caused action and stuff 
+F:  like you have for SPG ? 
+
+C:  Yeah . 
+
+C:  so it would be considered valid if we have an SPG action " Enter " and no SPG schema , but a forced action schema . 
+
+C:  it 's  it 's crucially necessary , is that we can have multiple schemas and multiple action schemas in parallel . 
+
+G:  I mean you could have a flat structure and just say these are two independent things , 
+G:  but there 's also this sort of like causal , 
+G:  well , so one is really facilitating the other and it 's part of a compound action of some kind , which has structure . 
+
+G:  So there 's like levels of granularity . 
+
+C:  Well , I think we 're gonna hit a lot of interesting problems 
+
+C:  um well I should have  we should have added an ano an XML example , 
+
+C:  and  and this is on  on a  on  on my list of things until next  next week . 
+C:  It 's also a question of the recursiveness and  and a hier hierarchy um in there . 
+
+A:  Well  well you have to be careful with that uh uh thing 
+A:  because uh <inbreath> I mean many actions presuppose some  um almost <mouth> infinitely many other actions . 
+
+E:  What are some types of action schemas ? 
+E:  Well one of the types of action schemas is Source - Path - Goal action . 
+E:  And what are some types of that ? 
+E:  And an Enter , a View , an Approach . 
+
+B:  Inside of Enter there will be roles that can be filled basically . 
+B:  So if I want to go from outside to inside <inbreath> then you 'd have the roles that need to filled , where you 'd have a Source - Path - Goal set of roles . 
+
+B:  So if you wanted to have a new type of action you 'd create a new type of category . 
+
+G:  So there 's a bit a redundancy , 
+
+G:  Which is why I would think you would say Enter 
+G:  and then just say all the things that are relevant specifically to Enter . 
+G:  And then the things that are abstract will be in the abstract things as well . 
+G:  And that 's why the bindings become useful . 
+
+C:  Um and I agree that you know this is something we need to discuss , 
+
+G:  It 's just like a frame hierarchy , 
+
+C:  We will not end this discussion anytime soon . 
+C:  And it 's gonna get more and more complex the  the l complexer and larger our domains get . 
+
+G:  So like unless @ @  Are there reasons why one is better than the other I mean that come from other sources ? 
+
+C:  This is  this is a schema that defines XML messages that are passed from one module to another , 
+C:  mainly meaning from the natural language understanding , or from the deep language understanding to the action planner . 
+C:  Now the  the reason for  for not using this approach is because you always will have to go back , 
+C:  each module will try  have to go back to look up which uh you know entity can have which uh , you know , entity can have which parents , 
+
+C:  So you always need the whole body of  of y your model um to figure out what belongs to what . 
+C:  Or you always send it along with it , 
+
+C:  Yeah , we  I will promise for the next time to have fleshed out N  XML examples for a  a run through and  and see how this  this then translates , 
+
+C:  but the principal distinction between having the  the pure schema and their instantiations on the one hand , and adding some whatever , more intention oriented specification um on parallel to that  that  this approach seems to be uh workable to me . 
+
+C:  Meeting time rescheduling . 
+
+G:  I n Didn't you say something about Friday , 
+
+F:  So I mean clearly there 's  I can talk about the um the parser changes on Friday at least , 
+
+C:  and um if you can get that binding point also maybe with a nice example that would be helpful for Johno and me . 
+
+C:  but it 's  it  for me it seems to be conceptually important that we find out if we can s if  if there  if there are things in there that are sort of a general nature , 
+C:  we should distill them out 
+
+G:  So , in general they 'll be bindings across both intentions and the actions . 
+
+C:  and put them where the schemas are . 
+
+G:  Um are the  are the sample data that you guys showed sometime ago  
+
+G:  Cuz it 'd be nice for me to like look if I 'm thinking about examples 
+
+C:  and there 's gonna be s a lot of stuff on the Goal and blah - blah - blah , that a goal can be and so forth . 
+

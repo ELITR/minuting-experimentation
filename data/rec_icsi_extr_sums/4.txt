@@ -1,0 +1,236 @@
+B:  What we think is gonna happen is that , uh , in parallel starting about now <breath> we 're gonna get Fey <mouth> to , where you 're working with me and Robert , draft a note that we 're gonna send out to various CogSci c and other classes saying , " here 's an opportunity to be a subject . 
+
+B:  OK . So , we 're looking for a total of fifty people , 
+
+B:  In parallel with that , we 're gonna need to actually do the script . 
+
+B:  But what I 'd like to do , if it 's O K , <breath> is to s to , as I say , start the recruiting in parallel and possibly start running subjects next week . 
+
+B:  not necessarily by any means all students 
+
+C:  which is we gonna check out our social infrastructures for possible subjects . 
+
+B:  This  The permission form . 
+
+B:  and I think we 're just gonna use it as it is , 
+
+B:  Um , so what I 'd like to do is also have our subjects sign a waiver saying " I don't want to see the final transcript " . 
+
+C:  except that with Munich everything is fine now . 
+
+C:  They 're also gonna translate the , uh , German data from the TV and cinema stuff for Andreas . 
+
+C:  They 're gonna <breath> transcribe . 
+
+C:  And , um  and now it 's  We have a complete English parser that does everything the German parser does . 
+
+C:  And , uh , the reason was that the parser i c completely ignores the verb . 
+
+E:  So it really is key word matching , basically . 
+
+C:  Um . These are the  sort of the ten different sentence types that the uh  <breath> the parser was able to do . 
+C:  And it still is , now in English . 
+
+D:  And , of course , you can have i many variations in those sentences , they will still parse fine . 
+
+D:  One thing I was wondering , was , those functions there , are those things that modify the M - three - L basically ? 
+
+C:  Yep . 
+
+D:  One thing I was wondering was , <breath> those percentage signs , right ? 
+
+C:  And the value of the score is , v I assume , I guess , the more of these optional things that are actually in there , the higher the r score <breath> it is . 
+
+C:  OK . <breath> Um , let 's hope that the generation will not be more difficult , 
+
+C:  And the next thing I would like to be able to do , and it seems like this would not be too difficult either , is <breath> to say , " OK let 's now pretend we actually wanted to not only change the  <breath> the mapping of  of , uh , words to the M - three - L but we also wanted to change  add a new sentence type 
+C:  and and make up some  some new M - three - L  s " 
+
+C:  Well , we 'll find that out . 
+
+D:  those functions " Action " , " Goodbye " , and so on , right ? 
+
+D:  Um , are they present in the code for the parser ? 
+
+D:  I think each of those functions act on the current XML structure , and change it in some way , for example , by adding a  a l a field to it , or something . 
+
+B:  there were other actions uh , that  that s seemed to step  state variables somewhere , 
+
+A:  It 's mystery functions . 
+
+D:  Well , they 're defined somewhere , presumably . 
+
+B:  So , yeah . I definitely think it 's  <breath> It 's worth the exercise of trying to actually add something that isn't there . 
+
+C:  Sort of get a complete understanding of the whole thing . 
+
+C:  I got the , uh , M - three - L for the routes today . 
+
+B:  So these are  these are your friends back at EML . 
+
+C:  Uh  You  you have a route , 
+C:  and you cut it up in different pieces . 
+C:  And every  every element of that e r r f of that  Every segment we call a " route element " . 
+C:  And so , from A to B we cut up in three different steps , 
+C:  and every step has a " from object " where you start , a " to object " 
+C:  where y where  you sort of end , and some points of interest along the way . 
+
+C:  And I <breath> suggested that they should n be  k uh , kind enough to do s two things for us , 
+C:  is one , um , <breath> <mouth> Also allocating , uh , some tags for our Action Schema Enter - Vista - Approach , 
+
+C:  And the Approach mode , anyhow , is the default . 
+C:  That 's all they do it these days . 
+C:  Wherever you 'll find a route planner it n does nothing but get to the closest point where the street network is <breath> at minimal distance to the geometric center . 
+
+B:  The problem isn't the short ra range optimization . 
+
+B:  OK . What are the thl class of things we think we might try to do in a year or two ? 
+
+B:  and what do we want to request now <breath> that 's leave enough space to do all that stuff ? 
+
+B:  So it seemed to me , what we ought to do is get our story together . 
+
+B:  And think about it some , internally , before asking them to make changes . 
+
+B:  Uh , this  and this , of course , was just the <breath> <mouth> action end . 
+B:  Uh , at some point we 're going to have to worry about the language end . 
+
+B:  Oh . It 's beyond Source - Path - Goal , 
+
+B:  It seems to me we can get <breath> all the complexity we want in actions and in language without going outside of tourists in Heidelberg . 
+
+B:  This is  this is everything that  that , um ,  <breath> you know , um  we might want to do in the next couple years . 
+
+B:  So , at least  unless somebody else wants t to suggest otherwise I think <breath> the general domain we don't have t to uh , broaden . 
+B:  That is , tourists in Heidelberg . 
+
+B:  And , again , this is li in the databa this is also pretty well formed 
+B:  because there is an ontology , 
+B:  and the database , and stuff . 
+
+B:  Although th the <breath> To get at them from a language may not be trivial . 
+
+C:  Now , we hav the  the whole  Unfortunately , the whole database is , uh , <breath> in German . 
+C:  We have just commissioned someone to translate some bits of it , 
+
+C:  So , it 's a relational database with persons , events , <breath> and , um , objects . 
+
+B:  let 's say that by the end of spring break , I 'll try to come up with some <breath> general story about , um , construction grammar , 
+B:  and what constructions we 'd use 
+B:  and how all this might fit together . 
+B:  There 's this whole framework problem that I 'm feeling really uncomfortable about . 
+
+B:  is  is in this sort of over - arching story we  we worked it out for th as you say , this  the storytelling scenario . 
+B:  And I think it 's really worth thinking through <breath> <mouth> what it looks like . 
+B:  What is the simspec mean , et cetera . 
+
+B:  And we can  w we can do all sorts of things that don't fit into their framework at all . 
+
+B:  I mean , once we have fulfilled these requirements , 
+
+B:  So , if we want to turn it into u understan standing stories about Heidelberg , we can do that . 
+
+F:  what is the  the basic thing that  that you are , um , obligated to do , um , uh , by the summer before w uh y c we can move  
+
+B:  the  There 's two packages 
+B:  there 's a , uh , quote parser , 
+B:  there 's a particular piece <mouth> of this big system , 
+B:  which , in German , uh , takes these t sentence templates and produces XML structures . 
+B:  And one of our jobs was to make the English equivalent of that . 
+B:  That , these guys did in a  in a day . 
+B:  The other thing is , at the other end , roughly at the same level , there 's something that takes , uh , X M L structures , produces an output XML structure 
+
+B:  Eh , but again , there 's one module in which there 's one piece <mouth> that we have to convert to English . 
+
+B:  and then after that a s a synthesizer that goes from an XML structure to , uh , language generation , to actual specifications for a synthesizer . 
+
+B:  And then there 's a language generator , 
+
+B:  which is instructions for the generator . 
+
+D:  So , um  <breath> Recall that , uh , we want to have this kind of structure in our Bayes - nets . 
+
+D:  the typical example is that , um , these are all a bunch of cues for something , 
+D:  and this is a certain effect that we 'd like to conclude . 
+
+D:  Enter , V View , Approach , right ? 
+
+D:  Given N - nodes , and furthermore , the fact that there 's three things here , we need to specify " three times " , uh , " two to the N " probabilities . 
+
+D:  And , that 's a lot of probabilities to put here , which is kind of a pain . 
+D:  So  Noisy - ORs are a way to , uh , <breath> sort of deal with this . 
+
+D:  So , for example , if we don't really know <breath> if the thing is a landmark or not , Or , i if that just doesn't seem relevant , then that would be th sort of the Disting - the Distinguish state . 
+
+D:  Yeah . 
+
+B:  So , this is the Heckerman paper you 're working with ? 
+
+D:  So , you know , if it is a landmark , and no none of the other things really ap applicable , then  this would represent the probability distribution . 
+
+D:  So  The idea is that , each of these EI  is  <mouth> represents what this would be  if all the other ones were in the distinguish state . Right ? 
+
+D:  So we come up with these l little tables for each of those 
+
+B:  The important point is  that  Um  There is a  a  a general kind of idea of shortcutting the full CPT . 
+B:  Th - c the full conditional probability table  with some function . 
+
+D:  And the final thing is that , um  <breath> <mouth> this is a deterministic function of these , 
+
+D:  Um  <breath> <mike noise> The  so what we want , is basically JavaBayes to support deterministic , uh , functions . 
+
+B:  So , if Ba - JavaBayes won't do it for you , 
+
+B:  The f the  the  the Bayes - nets in general are quite good at saying , " if you have no current information about this variable just take the prior for that . " 
+
+B:  So , if you don't have any information about the discourse , you just use your priors of  of whatever  eh the  discourse  
+
+B:  And , I thi I think that 's the standard way people get around the  uh 
+
+B:  There are ways of breaking this up into s to  to subnets and stuff like that . 
+
+B:  I think we definitely  I think it 's a great idea tha to  to pursue that . 
+
+B:  uh , like the Noisy - OR function , really is one that 's essentially says , uh , take the max . 
+
+B:  Which is  The hierarchy that s comes with the ontology is just what you want for this . 
+
+B:  Let 's  OK , so we have <breath> the EVA vector for  for various kinds of landmarks . 
+B:  If you know it for a specific landmark you put it there . 
+B:  If you don't , you just go up the hierarchy to the first place you find one . 
+
+B:  but  but in any case  i View it logically as being in the ontology . 
+B:  It 's part of what you know about  a  an object , <breath> is its EVA vector . 
+
+B:  So , that 's a very pretty relationship between these local vectors and the ontology . 
+
+B:  We 're gonna need some way to either get a p tag in the ontology , or add fields , 
+
+C:  The reason is , <breath> given the craw bet uh , the  the  the projects that all carry their own taxonomy and , on all history , <breath> they 're really trying to build one top level ontology ft that covers all the EML projects , 
+
+C:  But , nevertheless , it 's going to be there by n by , uh , next Monday 
+
+C:  what I don't think is ever going to be in the ontology , is sort of , you know , the likelihood of , eh , people entering r town halls , and looking at town halls , and approaching town halls , 
+C:  especially since we are b dealing with a case - based , 
+C:  not an instance - based ontology . 
+
+C:  And , so , since the d decision was on types , on a d simply type - based , <breath> we now have to hook it up to instances . 
+
+B:  If it 's that type of thing , and we want its EVA vector , pppt - pppt !  it 's that . " 
+
+B:  And then  But , the combination functions , and whether we can put those in Java Bayes , and all that sort of stuff , is , uh  is the bigger deal . 
+
+B:  That 's the question is " to what extent does it allow us to put in these G functions ? " 
+
+D:  I don't see why the , uh , combining f functions have to be directly hacked into 
+D:  I mean , they 're used to create tables 
+D:  so we can just make our own little functions that create tables in XML . 
+
+C:  OK . And I I 'll  I 'll think s through this , uh , <breath> eh  getting EVA vectors dynamically out of ontologies one more time 
+
+B:  Well , you and I should talk about it . 
+
+B:  All the entities do have concrete reference . 
+
+B:  Eh  so , you  you  you may or  So , then you 'd have this little vector of , um , you know , Approach Mode or EVA Mode . 
+

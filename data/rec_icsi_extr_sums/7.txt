@@ -1,0 +1,137 @@
+B:  and then that can be sort of developed uh as needed when we get  enter the tourism domain . 
+
+B:  and just gonna say we have um again the recognizer to parser thing where we 're working on 
+
+B:  Either we do a syllable concatenating um grammar for the English generation which is sort of starting from scratch and doing it the easy way , 
+B:  or we simply adopt the ah um more in - depth um style that is implemented in the German system 
+
+F:  so anyt we 'll find a time later in the week to uh get together and talk about  your understanding of what SmartKom plans are . 
+
+B:  well for one thing we 're also using this room to collect data . 
+
+B:  no not meeting data but sort of  sort ah our version of a wizard experiment such 
+
+B:  and so it 's a  sort of a computer call system that gives you tourist information 
+
+B:  let 's say a simple parse from a s from an utterance won't really give us is what the person actually wants . 
+
+B:  And um so the idea is to construct uh um suitable interfaces and a belief - net for a module that actually tries to guess what the underlying intention  was . 
+
+B:  These ah these types of uh these bits of additional information are going to be embedded into the M - three - L structure in an  sort of subfield that we have reserved . 
+
+B:  um  so far I 've thought of it as sort of adding it onto the modeler knowledge module . 
+
+F:  But , uh th the current design suggests that if it seems to be an important decision and if the belief - net is equivocal so that it doesn't say that one of these is much more probable than the other , then an option is to go back and ask for the information you want . 
+
+F:  So one of the decisions is what we call this AVE thing . 
+
+F:  So that 's a a discrete decision . 
+
+F:  We probably won't do this early on , because the current focus is more on the decision making and stuff like that . 
+F:  But While we 're on the subject I just wanted to give you a sort of head 's up that it could be that some months from now we said " OK we 're now ready to try to close that loop " in terms of querying about some of these decisions . 
+
+A:  So  my suggestion then is that you um look into the currently ongoing discussion about how the action plans are supposed to look like . 
+A:  And they 're currently um Agreeing or  or in the process of agreeing on an X M L - ification of um something like a state - transition network of how dialogues would proceed . 
+
+F:  So we ha we have to get in on that . 
+
+F:  So action he action here means dia uh speech ac uh you know dialogue act . 
+
+F:  when  so , when you get to the tourist domain it 's not just an information retrieval system . 
+
+F:  people are gonna have to think this through a bit more carefully . 
+
+F:  you know th the functional module that  that interacts with  with where the tourism g stuff is going  probably is too restrictive . 
+
+A:  what 's called the action plan and what 's really the dialogue manager . 
+A:  um is based on slots that have to be filled 
+
+A:  whereas in the a um tourist domain it might be an entire route . 
+
+A:  and I 'm not sure if  if complex slots of that type are really um being taken into consideration . 
+
+B:  I think the  the true key issues is how does the whatever comes out of the language input pipeline look like 
+B:  and then what the action planner does with it  
+B:  and how that is uh specified . 
+
+F:  We talked about this several times that  that  the  the input end is gonna need a fair amount of feedback from the planning end . 
+
+F:  Would there be any chance of getting the terminology changed so that the dialogue planner was called a " dialogue planner " ? 
+
+A:  It oughta be called a  a dialogue manager . 
+
+F:  I if  if that c in persists then we 're gonna need another term . for the thing that actually does the planning of the uh routes and whatever we are doing for the tourist . 
+
+B:  Yeah I think just the  the spatial planner and the route planner 
+
+B:  so  a printout of the communication between those two fills up 
+B:  I don't know how many pages 
+
+A:  And he 's gonna be responsible for the implementation of this action planner . 
+
+A:  no he 's completely gonna rewrite everything . In Java . 
+
+B:  whether we 're  we 're gonna stick to Prolog or not . 
+
+A:  No , that 's gonna be phased out . 
+
+A:  And  and the  the underlying idea of course is that there is something like kernel modules with kernel functionality that you can plug uh certain applications like tourist information or um the home scenario with uh controlling a VCR and so on . 
+
+A:  and keep these things like uh tourist information external . 
+
+A:  That 's an additional reason to have this well - defined interface 
+
+F:  So the dialogue manager may think it 's in a dialogue state of one sort , 
+F:  and this  one of these planning modules comes along and says " hey , right now we need to ask a question " . 
+F:  So that forces the dialogue manager to change state . 
+
+B:  And language input for example , is of course uh crucial you know also when you do the sort of deep understanding analysis that we envision . 
+
+F:  Uh , So what are  what are the plans roughly ? 
+
+D:  um it 's to  to integrate and syntactic analysis . 
+
+F:  People at DFKI have written a fair number of parsers . 
+
+F:  None of them are suitable ? 
+
+D:  Yeah , uh the problem is th that it has to be very fast 
+
+D:  And they also have to be very robust . cuz of um speech recognition errors 
+
+F:  But  But uh given th the constraints , that you want it to be small and fast and so forth , my guess is you 're probably into some kind of chunk parsing . 
+
+D:  We have knowledge bases from  from Verbmobil system we can use 
+
+A:  but What  what 's happening on - line is just um um a  a retrieval from the lexicon which would give all the stemming information 
+
+F:  Yeah and here 's the case where the English and the German might really be significantly different . 
+F:  In terms of if you 're trying to build some fast parser and so forth 
+
+D:  Some extensions uh have to be made . For  for a English version 
+
+F:  So we talked about the fact that There 're going to be a certain number of decisions That you want the knowledge modeler to make , that will be then fed to the function module , that does uh , route planning . 
+
+F:  And then one half of this we talked about at little bit is how if you had the right information , 
+
+F:  and about th the something about was the agent a tourist or a native or a business person 
+
+F:  and also about the 
+F:  Uh , what we 're calling " the entity " , 
+
+F:  So all that kind of information could be combined into decision networks and give you decisions . 
+F:  But the other half of the problem is How would you get that kind of information from the parsed input ? 
+
+F:  and the idea that we 're really after is a very deep semantics based on cognitive linguistics 
+F:  and the notion that there are a relatively small number of primitive conceptual schemas that characterize a lot of activity . 
+
+F:  So , what we 're really trying to do is to map from the discourse to the conceptual semantics level . 
+
+F:  And that all sorts of things , particularly in the tourist domain , can be represented in terms of uh source , path and goal . 
+
+F:  So if you can do this , then the notion would be that across a very large range of domains , you could use this deep conceptual basis as the interface . 
+
+F:  And the idea of the belief - net is it combines the information from the dialogue which comes across in this general way , 
+
+F:  And so th the coupling to the situation comes in this model from , at th at th at the belief - net , combining evidence from the dialogue with the ontology with the situation . 
+

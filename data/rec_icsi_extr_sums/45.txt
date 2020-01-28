@@ -1,0 +1,303 @@
+E:  I was saying Hynek 'll be here next week , 
+E:  uh , Wednesday through Friday  
+E:  uh , through Saturday , 
+
+E:  But my suggestion is that , uh , at least for this meeting , people should go ahead , 
+E:  uh , cuz Hynek will be here , 
+
+E:  I won't be here Thursday and Friday . 
+
+F:  I don't really have , uh , anything new . 
+F:  Been working on  Meeting Recorder stuff . 
+
+E:  Do you think that would be the case for next week also ? 
+
+E:  What 's your projection on  ? 
+E:  Cuz the one thing  the one thing that seems to me we really should try , if you hadn't tried it before , because it hadn't occurred to me  
+
+E:  is , um , adjusting the , uh , sca the scaling and , uh , insertion penalty sorta stuff . 
+
+F:  I did play with that , actually , a little bit . 
+F:  Um . What happens is , uh , <clears throat> when you get to the noisy stuff , you start getting lots of insertions . 
+
+F:  so I 've tried playing around a little bit with , um , the insertion penalties and things like that . 
+
+F:  I mean , it  it didn't make a whole lot of difference . 
+F:  Like for the well - matched case , it seemed like it was pretty good . 
+F:  Um . <mouth> I could do more playing with that , though . 
+
+E:  But you were looking at mel cepstrum . 
+
+F:  Oh , you 're talking about for th <cough> for our features . 
+
+E:  So , I mean , i it it 's not the direction that you were working with that we were saying what 's the  uh , what 's the best you can do with  with mel cepstrum . 
+
+E:  Uh , so the next question to ask , which is I think the one that  that  that Andreas was dre addressing himself to in the lunch meeting , is , um , we 're not supposed to adjust the back - end , 
+E:  but anybody using the system would . 
+
+E:  if you were just adjusting the back - end , how much better would you do , uh , in noise ? 
+E:  Uh , because the language scaling and insertion penalties and so forth are probably set to be about right for mel cepstrum . 
+E:  But , um , they 're probably not at all set right for these things , 
+
+F:  so the experiment is to , um , run our front - end like normal , with the default , uh , insertion penalties and so forth , 
+F:  and then tweak that a little bit 
+F:  and see how much of a difference it makes 
+
+E:  So by " our front - end " I mean take , you know , the Aurora - two s take some version that Stephane has that is , you know , our current best version of something . 
+
+E:  How  how much , uh , does it improve if you actually adjust that ? 
+
+E:  When you adjusted those numbers for mel cepstrum , did it  ? 
+
+F:  Uh , I  I don't remember off the top of my head . 
+
+F:  Yeah . I didn't even write them down . 
+
+F:  Looking at the  I wrote down what the deletions , substitutions , and insertions were , 
+
+F:  for different numbers of states per phone . 
+F:  Um , but , uh , that  that 's all I wrote down . 
+
+F:  I would need to do that . 
+F:  I can do that for next week . 
+
+E:  but I think it would be  it 'd be good to know that . 
+
+F:  So maybe I can have that for next week when Hynek 's here . 
+
+F:  I wonder if there 's anything that we could do <breath> to the front - end that would affect the insertion  
+
+E:  So , if you have something that has a much smaller range or a much larger range , and taking the appropriate root . 
+
+E:  part of what 's going on , um , is the , uh , the range of values . 
+
+E:  If something is kind of like the equivalent of a bunch of probabilities multiplied together , you can take a root of some sort . 
+
+E:  because it changes the scale of the numbers  of the differences between different candidates from the acoustic model 
+E:  as opposed to what 's coming from the language model . 
+
+F:  So , in effect , that 's changing the value of your insertion penalty . 
+
+E:  I mean , it 's more directly like the  the language scaling or the , uh  the model scaling or acoustic scaling , 
+
+F:  So if we know what the insertion penalty is , then we can get an idea about what range our number should be in , 
+
+E:  If you 're operating in the wrong range  I mean , that 's why just in general , if you <inbreath> change what these  these penalties and scaling factors are , you reach some point that 's a  that 's a minimum . 
+
+E:  We do have to do well over a range of different conditions , 
+E:  some of which are noisier than others . 
+
+E:  But , um , I think we may get a better handle on that if we  if we see  
+
+E:  it 's if we actually could pick a  a  a more stable value for the range of these features , it , um , uh , could  
+
+E:  Even though it 's  it 's  it 's true that in a real situation you can in fact adjust the  these  these scaling factors in the back - end , and it 's ar artificial here that we 're not adjusting those , you certainly don't wanna be adjusting those all the time . 
+E:  And if you have a nice front - end that 's in roughly the right range  
+E:  I remember after we got our stuff more or less together in the previous systems we built , that we tended to set those scaling factors at kind of a standard level , 
+E:  and we would rarely adjust them again , 
+
+E:  As for these other things , it may turn out that , uh , <inbreath> it 's kind of reasonable . 
+
+E:  I mean , Andreas gave a very reasonable response , 
+E:  and he 's probably not gonna be the only one who 's gonna say this in the future  
+
+E:  people  people within this tight - knit community who are doing this evaluation <inbreath> are accepting , uh , more or less , that these are the rules . 
+E:  But , people outside of it who look in at the broader picture are certainly gonna say " Well , wait a minute . You 're doing all this standing on your head , uh , on the front - end , 
+E:  when all you could do is just adjust this in the back - end with one s one knob . " 
+
+E:  so we have to at least , I think , determine that that 's not true , 
+
+E:  And as you say  as you point out  finding ways to then compensate for that in the front - end <clears throat> also then becomes a priority for this particular test , 
+
+E:  What 's new with you ? 
+
+B:  So there 's nothing  new . 
+
+E:  What 's old with you that has developed over the last week or two ? 
+
+B:  Well , so we 've been mainly working on the report 
+
+B:  On the report  of the work that was already done . 
+
+F:  Any - anything new on the thing that , uh , you were working on with the , uh  ? 
+
+C:  I don't have results yet . 
+
+E:  So , what  wha <laugh> wh wha what what 's going on ? 
+
+C:  Well , we work in the report , too , 
+C:  because we have a lot of result , 
+C:  they are very dispersed , 
+C:  and was necessary to  to look in all the directory to  to  to give some more structure . 
+
+E:  I if I can summarize , basically what 's going on is that you 're going over a lot of material that you have generated in furious fashion , 
+E:  f generating many results and doing many experiments 
+E:  and trying to pull it together into some coherent form to be able to see wha see what happens . 
+
+B:  y yeah . Basically we we 've stopped , uh , experimenting , 
+B:  I mean . We 're just writing some kind of technical report . 
+
+C:  For ICSI . 
+C:  Just summary of the experiment and the conclusion 
+
+E:  So , my suggestion , though , is that you  you not necessarily finish that . 
+E:  But that you put it all together so that it 's  you 've got  you 've got a clearer structure to it . 
+E:  You know what things are , 
+E:  you have things documented , 
+E:  you 've looked things up that you needed to look up . 
+E:  So that , you know  so that such a thing can be written . 
+
+E:  When  when  when do you leave again ? 
+
+C:  First of July . 
+
+E:  And that you figure on actually finishing it in  in June . 
+E:  Because , you know , you 're gonna have another bunch of results to fit in there anyway . 
+E:  And right now it 's kind of important that we actually go forward with experiments . 
+E:  So  so , I  I think it 's good to pause , and to gather everything together and make sure it 's in good shape , 
+E:  so that other people can get access to it 
+E:  and so that it can go into a report in June . 
+E:  But I think <inbreath> to  to really work on  on fine - tuning the report n at this point is  is probably bad timing , I  I  think . 
+
+F:  Are you discovering anything , uh , that makes you scratch your head as you write this report , 
+F:  like why did we do that , 
+F:  or why didn't we do this , 
+
+B:  Uh . 
+B:  Yeah . 
+
+B:  Actually , there were some tables that were also with partial results . 
+B:  We just noticed that , 
+B:  wh while gathering the result that for some conditions we didn't have everything . 
+
+B:  We have , yeah , extracted actually the noises from  the SpeechDat - Car . 
+
+B:  we can train neural network with speech and these noises . 
+
+B:  It 's difficult to say what it will give , 
+
+B:  I think this is something we have to try anyway . 
+
+B:  adding the noises from  from the SpeechDat - Car . 
+
+E:  that 's permitted ? 
+
+B:  Well , 
+B:  OGI does  did that . 
+
+B:  At some point they did that for  for the voice activity detector . 
+
+E:  The rules as I understand it , is that in principle the Italian and the Spanish and the English  
+
+E:  Italian and the Finnish and the English ?  were development data 
+
+B:  And Spanish , yeah . 
+
+E:  on which you could adjust things . 
+E:  And the  and the German and Danish were the evaluation data . 
+E:  And then when they finally actually evaluated things they used everything . 
+
+E:  it  it doesn't appear that there 's strong evidence that even though things were somewhat tuned on those three or four languages , that  that going to a different language really hurt you . 
+E:  And the noises were not exactly the same . 
+
+E:  I mean they were different drives . 
+
+B:  Different cars . 
+
+E:  It 's tuned more than , you know , a  a  a  a  
+E:  You 'd really like to have something that needed no particular noise at all , 
+
+E:  But that 's not really what this contest is . 
+
+E:  That 's something I 'd like to understand before we actually use something from it , 
+
+F:  it 's probably something that , mmm , the  you know , the , uh , experiment designers didn't really think about , 
+F:  because I think most people aren't doing trained systems , or , you know , uh , systems that are like ours , where you actually use the data to build models . 
+F:  I mean , they just  doing signal - processing . 
+
+E:  except that , uh , that 's what we used in Aurora one , 
+E:  and then they designed the things for Aurora - two knowing that we were doing that . 
+
+F:  And they didn't forbid us  
+
+F:  to build models on the data ? 
+
+E:  No . 
+E:  But , I think  I think that it  it  
+E:  it probably would be the case that if , say , we trained on Italian , uh , data and then , uh , we tested on Danish data and it did terribly , uh , that  that it would look bad . 
+E:  And I think someone would notice 
+
+E:  Maybe  that 's maybe a topic  
+E:  Especially if you talk with him when I 'm not here , 
+E:  that 's a topic you should discuss with Hynek 
+E:  to , you know , double check it 's OK . 
+
+B:  there is also the spectral subtraction , 
+
+B:  I think maybe we should , uh , try to integrate it in  in our system . 
+
+B:  I think that would involve to  <breath> to mmm <mouth> use a big  a  al already a big bunch of the system of Ericsson . 
+B:  Because he has spectral subtraction , 
+B:  then it 's followed by , <mouth> um , other kind of processing that 's  are dependent on the  uh , if it 's speech or noi or silence . 
+
+B:  and s I  I think it 's important , um , <mouth> to reduce this musical noise and this  this increase of variance during silence portions . 
+
+B:  This was in this would involve to take almost everything from  from the  this proposal 
+
+B:  and then just add some kind of on - line normalization in  in the neural network . 
+
+E:  Well , this 'll be , I think , something for discussion with Hynek next week . 
+
+E:  How are , uh , uh  how are things going with what you 're doing ? 
+
+D:  I took a lot of time just getting my taxes out of the way  
+
+D:  So , I 'm  I 'm starting to write code now for my work 
+D:  but I don't have any results yet . 
+
+E:  do you wanna  say something about your stuff here ? 
+
+A:  I  just , um , continuing looking at , uh , ph uh , phonetic events , 
+A:  and , uh , this Tuesday gonna be , uh , meeting with John Ohala with Chuck to talk some more about these , uh , ph um , phonetic events . 
+A:  Um , came up with , uh , a plan of attack , 
+
+A:  It 's  that 's pretty much it . 
+
+A:  I  I was thinking getting  getting us a set of acoustic events to  um , to be able to distinguish between , uh , phones and words and stuff . 
+
+A:  we would figure out a set of these events that can be , you know , um , hand - labeled or  or derived , uh , from h the hand - labeled phone targets . 
+A:  Um , we could take these events and , um , <mouth noise> do some cheating experiments , 
+A:  um , where we feed , um , these events into  an SRI system , um , eh , and evaluate its performance on a Switchboard task . 
+
+D:  Can you give an example of an event ? 
+
+A:  So , he In this paper , um , it 's talking about phoneme recognition using acoustic events . 
+A:  So , things like frication or , uh , nasality . 
+
+A:  this is a paper by Hubener and Cardson  Benson  Bernds - Berndsen . 
+
+F:  just to expand a little bit on the idea of acoustic event . 
+F:  There 's , um  in my mind , anyways , there 's a difference between , um , acoustic features and acoustic events . 
+F:  And I think of acoustic features as being , um , things that linguists talk about , 
+
+F:  Stuff that 's not based on data , necessarily . 
+
+F:  That 's not based on , you know , acoustic data . 
+F:  So they talk about features for phones , 
+
+F:  which may or may not be all that easy to measure in the acoustic signal . 
+F:  Versus an acoustic event , which is just <mike noise> some <spikes> something in the acoustic signal <spike> that is fairly easy to measure . 
+
+F:  It 's kinda like the difference between top - down and bottom - up . 
+F:  I think of the acoustic  you know , phonetic features as being top - down . 
+F:  You know , you look at the phone 
+F:  and you say this phone is supposed to be  you know , have this feature , this feature , and this feature . 
+F:  Whether tha those features show up in the acoustic signal is sort of irrelevant . 
+F:  Whereas , an acoustic event goes the other way . 
+F:  Here 's the signal . 
+F:  Here 's some event . 
+
+F:  And then that  you know , that may map to this phone sometimes , 
+
+F:  And so it 's sort of a different way of looking . 
+
