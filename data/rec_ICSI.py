@@ -1,5 +1,8 @@
 
-''' Recovering ICSI corpus transcripts from the XML to plaintext format '''
+''' 
+Recovering ICSI corpus transcripts of raw_icsi from the XML to 
+plaintext format stored in rec_icsi
+'''
 
 import argparse, os, string, sys
 import xml.etree.ElementTree as ET

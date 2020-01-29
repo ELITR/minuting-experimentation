@@ -1,5 +1,8 @@
 
-''' Recovering AMI corpus transcripts from the XML to plaintext format '''
+''' 
+Recovering AMI corpus transcripts of raw_ami from the XML to 
+plaintext format stored in rec_ami
+'''
 
 import argparse, os, string, sys
 import xml.etree.ElementTree as ET

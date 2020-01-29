@@ -1,5 +1,8 @@
 
-''' Recover ELITR meeting transcripts from xml to plaintext format '''
+''' 
+Recover ELITR meeting transcripts of raw_own_meetings from xml 
+to plaintext format stored in rec_own_meetings
+'''
 
 import argparse, os, string, sys
 import xml.etree.ElementTree as ET
