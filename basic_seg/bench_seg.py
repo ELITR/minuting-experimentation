@@ -266,4 +266,6 @@ args = parser.parse_args()
 
 if __name__=="__main__":
 
+	# activate the supervised segmenter
+
 
