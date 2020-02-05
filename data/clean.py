@@ -13,19 +13,15 @@ from nltk.tokenize.treebank import TreebankWordTokenizer
 from tqdm import *
 
 # function that tokenizes text same as Stanford CoreNLP
-def core_tokenize(text):
+def core_tokenize(text, alb=False):
     ''' Takes a text string and returns tokenized string using NLTK word_tokenize 
     same as in Stanford CoreNLP. space, \n \t are lost. "" are replace by ``''
     '''
     # tokenize | _ ^ / ~ + = * that are not tokenized by word_tokenize
-    text = text.replace("|", " | ")
-    text = text.replace("_", " _ ")
-    text = text.replace("^", " ^ ")
-    text = text.replace("/", " / ")
-    text = text.replace("+", " + ")
-    text = text.replace("=", " = ")
-    text = text.replace("~", " ~ ")
-    text = text.replace("*", " * ") 
+    text = text.replace("|", " | ") ; text = text.replace("_", " _ ")
+    text = text.replace("^", " ^ ") ; text = text.replace("/", " / ")
+    text = text.replace("+", " + ") ; text = text.replace("=", " = ")
+    text = text.replace("~", " ~ ") ; text = text.replace("*", " * ") 
    
     # tokenize with word_tokenize preserving lines similar to Stanford CoreNLP
     tokens = word_tokenize(text, preserve_line=True)
@@ -43,6 +39,12 @@ def core_tokenize(text):
     	# right match
         if re.match(r'\.[^.\s]{2,}', tok):
             tokens[i] = tok.replace('.', ' . ')
+
+        # corrections for albanian texts -- may add n' | t'
+        if alb:
+            p = re.match(r"(s' | c' | ç')([\w]+)", tok, re.VERBOSE) 
+            if p:
+                tokens[i] = ' '.join([p.group(1), p.group(2)])
 
     # put all tokens together
     text = ' '.join(tokens)
@@ -64,6 +66,8 @@ def remove_speakers(text):
 	:return clean_text: text after removing speakers
 	'''
 	clean_text = re.sub(r'[A-Z]:', '', text)
+	# strip leading and trailing white space
+	clean_text = clean_text.strip()
 	return clean_text
 
 # run with keep_speakers=False, lower=True to replicate TSD-28-

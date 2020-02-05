@@ -2,7 +2,7 @@
 '''
 Script that walks the folder structure of rec_ami/rec_icsi, reads a certain 
 files (e.g. abst_summs.txt or compl_extr_summ.txt) of each meeting and 
-stores them in the respective rec_ami_*/rec_icsi_* folders.
+stores them in the respective rec_ami_*_sums/rec_icsi_*_sums folders.
 '''
 
 import os, sys, fnmatch, re 
