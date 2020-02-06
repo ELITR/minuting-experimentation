@@ -2,7 +2,7 @@
 '''
 Script that walks the folder structure of rec_ami/rec_icsi, reads certain 
 files (e.g. abst_summs.txt or compl_extr_summ.txt) of each meeting and 
-stores the dialogues and the respective summaries in rec_*_src-tgt/ folders.
+stores the dialogues-summaries in rec_ami-icsi_src-tgt/ folder.
 '''
 
 import os, sys, fnmatch, re, json
@@ -12,11 +12,6 @@ from nltk.stem import PorterStemmer
 from nltk import word_tokenize, sent_tokenize
 from nltk.tokenize.treebank import TreebankWordTokenizer
 from tqdm import *
-
-# read_path = "./rec_ami/"
-read_path = "./rec_icsi/"
-# write_path = "./rec_ami_src-tgt"
-write_path = "./rec_icsi_src-tgt"
 
 # function that tokenizes text same as Stanford CoreNLP
 def core_tokenize(text, alb=False):
@@ -157,7 +152,12 @@ def get_src_tgt(trans):
 # parser.add_argument('--outpath', required=True, help='output folder for writing')
 # args = parser.parse_args()
 
-i = 0
+read_path = "./rec_ami/"
+# read_path = "./rec_icsi/"
+write_path = "./rec_ami-icsi_src-tgt"
+samp_lst = []
+
+# i = 0
 if __name__=="__main__":
 	# walk in the directory to find all files named abst_summs.txt
 	for root, dir, files in os.walk(read_path):
@@ -170,11 +170,7 @@ if __name__=="__main__":
 				# clean and get discussions and summaries
 				trans_lst = break_trans(trans)
 				src_tgt_lst = map(get_src_tgt, trans_lst)
+				samp_lst.extend(src_tgt_lst)
 
-				outfile = os.path.join(write_path, str(i) + ".txt")
-				dictlst_to_file_lines(outfile, src_tgt_lst)
-
-				# outf = open(outfile, 'wt', encoding='utf-8')
-				# outf.write(trans) ; outf.close()
-				# copyfile(infile, os.path.join(write_path, str(i) + ".txt"))
-				i += 1
+	outfile = os.path.join(write_path, "ami.txt")
+	dictlst_to_file_lines(outfile, samp_lst)
