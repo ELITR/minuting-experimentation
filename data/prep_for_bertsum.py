@@ -2,7 +2,7 @@
 '''
 Script that walks the folder structure of rec_ami/rec_icsi, reads certain 
 files (e.g. abst_summs.txt or compl_extr_summ.txt) of each meeting and 
-stores each src-tgt in rec_ami-icsi_src-tgt/ folder.
+stores the dialogues-summaries in rec_ami-icsi_src-tgt/ folder.
 '''
 
 import os, sys, fnmatch, re, json
@@ -12,6 +12,14 @@ from nltk.stem import PorterStemmer
 from nltk import word_tokenize, sent_tokenize
 from nltk.tokenize.treebank import TreebankWordTokenizer
 from tqdm import *
+
+# read file json lines from given file path and return them in a list
+def file_lines_to_list(file_path):
+    '''read json lines and store them in a list that is returned'''
+    with open(file_path, "r") as inf:
+        # strips \n at the end of each line
+        line_list = [json.loads(line) for line in inf]
+    return line_list
 
 # function that tokenizes text same as Stanford CoreNLP
 def core_tokenize(text, alb=False):
@@ -79,7 +87,7 @@ def remove_speakers(text):
 	# strip leading and trailing white space
 	clean_text = clean_text.strip()
 	# filter out more than 2 consequetive spaces
-	clean_text = re.sub(r' {2,}', " ", clean_text)
+	clean_text = re.sub(r' {2,}', "", clean_text)
 	return clean_text
 
 # run with keep_speakers=False, lower=True to replicate TSD-28-
@@ -111,11 +119,8 @@ def clean_text(text, keep_speakers=True, lower=False, eos=False):
 	# correct speakers A : to A:
 	sent_list = [re.sub(r'([a-zA-Z])\s+(:)', r'\1\2', sent) for sent in sent_list]
 
-	# # correct description < other > to <other>
-	# sent_list = [re.sub(r'<\s(([\w]+))\s>', r'<\1>', sent) for sent in sent_list]
-
-	# remove all descriptions "<desc>" to ""
-	sent_list = [re.sub('<[^>]+>', '', s) for s in sent_list]
+	# correct description < other > to <other>
+	sent_list = [re.sub(r'<\s(([\w]+))\s>', r'<\1>', sent) for sent in sent_list]
 
 	# add <EOS> at the end of each sentence
 	if eos:
@@ -147,7 +152,7 @@ def get_src_tgt(trans):
 	src = clean_text(src, keep_speakers=False, lower=True)
 	tgt = clean_text(tgt, keep_speakers=False, lower=True)
 	disc = dict()
-	disc["src"] = src ; disc["tgt"] = tgt
+	disc["dialogue"] = src ; disc["summary"] = tgt
 	return disc
 
 # parser = argparse.ArgumentParser()
@@ -162,18 +167,6 @@ samp_lst = []
 
 # i = 0
 if __name__=="__main__":
-	# walk in the directory to find all files named abst_summs.txt
-	for root, dir, files in os.walk(read_path):
-		for file in files:
-			if file.endswith("abst_summs.txt"):
-				infile = os.path.join(root, file)
-				inf = open(infile, 'rt', encoding='utf-8')
-				trans = inf.read() ; inf.close()
+	# read all lines from file
+	file_lines_to_list(file_path)
 
-				# clean and get discussions and summaries
-				trans_lst = break_trans(trans)
-				src_tgt_lst = map(get_src_tgt, trans_lst)
-				samp_lst.extend(src_tgt_lst)
-
-	outfile = os.path.join(write_path, "ami2.txt")
-	dictlst_to_file_lines(outfile, samp_lst)
