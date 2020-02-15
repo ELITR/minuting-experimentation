@@ -87,7 +87,7 @@ def remove_speakers(text):
 	# strip leading and trailing white space
 	clean_text = clean_text.strip()
 	# filter out more than 2 consequetive spaces
-	clean_text = re.sub(r' {2,}', "", clean_text)
+	clean_text = re.sub(r' {2,}', " ", clean_text)
 	return clean_text
 
 # run with keep_speakers=False, lower=True to replicate TSD-28-
@@ -128,6 +128,9 @@ def clean_text(text, keep_speakers=True, lower=False, eos=False):
 
 	# join together all sentences in one text
 	clean_text = ' '.join(sent_list)
+
+	# filter out more than 2 consequetive spaces
+	clean_text = re.sub(r' {2,}', " ", clean_text)
 
 	return clean_text
 

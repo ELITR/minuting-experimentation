@@ -124,6 +124,9 @@ def clean_text(text, keep_speakers=True, lower=False, eos=False):
 	# join together all sentences in one text
 	clean_text = ' '.join(sent_list)
 
+	# filter out more than 2 consequetive spaces
+	clean_text = re.sub(r' {2,}', " ", clean_text)
+
 	return clean_text
 
 # break one transcript in several discussions 
@@ -155,8 +158,8 @@ def get_src_tgt(trans):
 # parser.add_argument('--outpath', required=True, help='output folder for writing')
 # args = parser.parse_args()
 
-read_path = "./rec_ami/"
-# read_path = "./rec_icsi/"
+# read_path = "./rec_ami/"
+read_path = "./rec_icsi/"
 write_path = "./rec_ami-icsi_src-tgt"
 samp_lst = []
 
@@ -175,5 +178,5 @@ if __name__=="__main__":
 				src_tgt_lst = map(get_src_tgt, trans_lst)
 				samp_lst.extend(src_tgt_lst)
 
-	outfile = os.path.join(write_path, "ami2.txt")
+	outfile = os.path.join(write_path, "icsi4.txt")
 	dictlst_to_file_lines(outfile, samp_lst)
