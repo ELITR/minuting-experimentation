@@ -5,9 +5,10 @@ files (e.g. abst_summs.txt or compl_extr_summ.txt) of each meeting and
 stores the dialogues-summaries in rec_ami-icsi_src-tgt/ folder.
 '''
 
-import os, sys, fnmatch, re, json
+import os, sys, fnmatch, re, json, argparse, pickle
 from shutil import *
 from nltk import tokenize
+import multiprocessing as mp
 from nltk.stem import PorterStemmer
 from nltk import word_tokenize, sent_tokenize
 from nltk.tokenize.treebank import TreebankWordTokenizer
@@ -158,18 +159,60 @@ def get_src_tgt(trans):
 	disc["dialogue"] = src ; disc["summary"] = tgt
 	return disc
 
-# parser = argparse.ArgumentParser()
-# parser.add_argument('--inpath', required=True, help='input folder for reading')
-# parser.add_argument('--outpath', required=True, help='output folder for writing')
-# args = parser.parse_args()
+# spliting text of src and tgt
+def split_src_tgt(dict_item):
+	new_item = dict()
+	new_src_lst, new_tgt_lst = [], []
+	# split the two texts
+	src_lst = dict_item["abstract"].split(' ')
+	tgt_lst = dict_item["title"].split(' ')
+	# append the lists in new lists to comply with the required format
+	new_src_lst.append(src_lst)
+	new_tgt_lst.append(tgt_lst)
+	# store in a new dict
+	new_item["src"] = new_src_lst
+	new_item["tgt"] = new_tgt_lst
+	return new_item
 
-read_path = "./rec_ami/"
-# read_path = "./rec_icsi/"
-write_path = "./rec_ami-icsi_src-tgt"
-samp_lst = []
+# spliting text of src and tgt
+def split_src_tgt2(dict_item):
+	new_item = dict()
+	new_src_lst, new_tgt_lst = [], []
+	# split the two texts
+	src_lst = dict_item["src"].split('.')
+	tgt_lst = dict_item["tgt"].split('.')
 
-# i = 0
+	src_lst = [l.split(' ') for l in src_lst]
+	tgt_lst = [l.split(' ') for l in tgt_lst]
+
+	# append the lists in new lists to comply with the required format
+	new_src_lst = src_lst
+	new_tgt_lst = tgt_lst
+	# store in a new dict
+	new_item["src"] = new_src_lst
+	new_item["tgt"] = new_tgt_lst
+	return new_item
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--infile', required=True, help='input file to process')
+parser.add_argument('--outfile', required=True, help='output file to write')
+args = parser.parse_args()
+
 if __name__=="__main__":
 	# read all lines from file
-	file_lines_to_list(file_path)
+	samp_lst = file_lines_to_list(args.infile)
+	out_lst = []
+
+	# pool for parallel processing
+	p = mp.Pool(6)
+	out_lst = list(p.map(split_src_tgt, samp_lst, chunksize=6))
+	p.close() ; p.join()
+
+	# for sample in samp_lst:
+	# 	out_lst.append(split_src_tgt(sample))
+
+	# save the big list of dicts as a json file
+	with open(args.outfile, 'w') as fout:
+		fout.write(json.dumps(out_lst))
+
 
