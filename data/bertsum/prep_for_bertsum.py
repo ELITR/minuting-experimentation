@@ -159,7 +159,7 @@ def get_src_tgt(trans):
 	disc["dialogue"] = src ; disc["summary"] = tgt
 	return disc
 
-# spliting text of src and tgt
+# spliting text of src and tgt in tokens
 def split_src_tgt(dict_item):
 	new_item = dict()
 	new_src_lst, new_tgt_lst = [], []
@@ -174,20 +174,28 @@ def split_src_tgt(dict_item):
 	new_item["tgt"] = new_tgt_lst
 	return new_item
 
-# spliting text of src and tgt
+# spliting text of src and tgt in sentences and then in tokens
 def split_src_tgt2(dict_item):
 	new_item = dict()
-	new_src_lst, new_tgt_lst = [], []
-	# split the two texts
-	src_lst = dict_item["src"].split('.')
-	tgt_lst = dict_item["tgt"].split('.')
+	new_src_lst, new_tgt_lst, tmp_lst = [], [], []
+	# split the two texts in sentences on . and ,
+	src_lst= re.split("[.,]", dict_item["abstract"])
+	tgt_lst= re.split("[.,]", dict_item["title"])
+	src_lst = list(filter(None, src_lst)) # filter []
+	tgt_lst = list(filter(None, tgt_lst)) # filter []
 
-	src_lst = [l.split(' ') for l in src_lst]
-	tgt_lst = [l.split(' ') for l in tgt_lst]
+	# split each sentence in tokens
+	for sent in src_lst:
+		tmp_lst = sent.split(' ')
+		tmp_lst = list(filter(None, tmp_lst)) # remove ""
+		new_src_lst.append(tmp_lst)
+	for sent in tgt_lst:
+		tmp_lst = sent.split(' ')
+		tmp_lst = list(filter(None, tmp_lst)) # remove ""
+		new_tgt_lst.append(tmp_lst)
 
-	# append the lists in new lists to comply with the required format
-	new_src_lst = src_lst
-	new_tgt_lst = tgt_lst
+	new_src_lst = list(filter(None, new_src_lst)) # filter []
+	new_tgt_lst = list(filter(None, new_tgt_lst)) # filter []
 	# store in a new dict
 	new_item["src"] = new_src_lst
 	new_item["tgt"] = new_tgt_lst
@@ -195,24 +203,39 @@ def split_src_tgt2(dict_item):
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--infile', required=True, help='input file to process')
-parser.add_argument('--outfile', required=True, help='output file to write')
+parser.add_argument('--outpath', required=True, help='output folder to write')
 args = parser.parse_args()
+
+shard_size = 2000
 
 if __name__=="__main__":
 	# read all lines from file
 	samp_lst = file_lines_to_list(args.infile)
-	out_lst = []
+	out_lst, write_lst, p_ct = [], [], 0
+	name, corp = "cnndm_sample", "test" # train, valid, test
+	n = args.outpath + "/" + name
 
 	# pool for parallel processing
-	p = mp.Pool(6)
-	out_lst = list(p.map(split_src_tgt, samp_lst, chunksize=6))
+	p = mp.Pool(8)
+	out_lst = p.map(split_src_tgt2, samp_lst, chunksize=8)
 	p.close() ; p.join()
 
-	# for sample in samp_lst:
-	# 	out_lst.append(split_src_tgt(sample))
+	# writing blocks to files
+	for s in out_lst:
+		write_lst.append(s)
+		if len(write_lst) > shard_size:
+			pt_file = "{:s}.{:s}.{:d}.json".format(n, corp, p_ct)
+			with open(pt_file, 'w') as save:
+				save.write(json.dumps(write_lst))
+				p_ct += 1
+				write_lst = []
 
-	# save the big list of dicts as a json file
-	with open(args.outfile, 'w') as fout:
-		fout.write(json.dumps(out_lst))
+	if len(write_lst) > 0:
+		pt_file = "{:s}.{:s}.{:d}.json".format(n, corp, p_ct)
+		with open(pt_file, 'w') as save:
+			save.write(json.dumps(write_lst))
+			p_ct += 1
+			write_lst = []
+
 
 
