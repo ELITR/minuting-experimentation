@@ -178,5 +178,5 @@ if __name__=="__main__":
 				src_tgt_lst = map(get_src_tgt, trans_lst)
 				samp_lst.extend(src_tgt_lst)
 
-	outfile = os.path.join(write_path, "icsi4.txt")
+	outfile = os.path.join(write_path, "icsi.txt")
 	dictlst_to_file_lines(outfile, samp_lst)
