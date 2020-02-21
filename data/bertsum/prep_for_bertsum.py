@@ -180,8 +180,8 @@ def split_src_tgt2(dict_item):
 	new_src_lst, new_tgt_lst, tmp_lst = [], [], []
 	# split the two texts in sentences on . and ,
 
-	src_lst = re.split("[.,]", dict_item["abstract"])
-	tgt_lst = re.split("[.,]", dict_item["title"])
+	src_lst = re.split("[.,]", dict_item["src"])
+	tgt_lst = re.split("[.,]", dict_item["tgt"])
 
 	# # splitting on . and preserving .
 	# src_lst = [s + '.' for s in  dict_item["abstract"].split('.')]
