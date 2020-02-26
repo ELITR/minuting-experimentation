@@ -1,0 +1,335 @@
+problems: there is a slight worry about the acceptance of the paper submitted to eurospeech as the deadline was exceeded .
+problems: as to the content of the paper , the overlap statistics have not been normalised against the number of participants in the conversation , although the dependency is probably going to be a weak one .
+problems: additionally , the correlation between pauses in speech and interruptions does not provide a cause-and-effect link for these phenomena .
+problems: the preparation of files for transcription by ibm is facing some minor difficulties , as some features ( hand-coded time boundaries , multiplicity of channels etc ) may complicate the generation of beep files .
+problems: besides this , the automatic pre-segmentation has been deemed to be good , but there are still no specific measurements to verify this .
+problems: the pre-segmentation tool also classifies synthesised speech used in a recording as `` normal speech '' and assigns a random channel to it .
+problems: the transcribers at ibm may not be able to differentiate between the two .
+abstract: a pressing concern for the group is the darpa meeting in july , which is only a short time away , and for which they would like to have some progress .
+abstract: specifically , the group would like to have transcripts available , which would mean resolving legal issues for data use and on the basis of feedback from ibm get more transcription underway .
+abstract: additionally they would also like to have the question answering mock-up and transcriber interface ready for then .
+abstract: plp results for the front-end look good , with the group also reporting progress in segmentation: thilo 's segmenter will now be used and ways of improving performance investigated ;
+abstract: the classifier segmentation is progressing well , especially in the use of prosody for identifying interruption .
+abstract: work on the front end continues , with improvements of 3-5 % being made .
+decisions: the group discussed how the digits should be recorded in the meeting .
+decisions: in the end they decided to record these in unison for all of the meeting participants as a whole .
+decisions: to improve the performance of thilo 's automatic segmenter , this is going to be retrained and adapted to run with thilo 's posteriors and speaker background models .
+decisions: regarding transcription , no new transcribers will be employed until situation regarding ibm is clarified .
+decisions: legal issues surrounding the approval and signing off of transcripts by participants has proved to be very complicated , and so will be sorted out off line by those involved by july .
+decisions: after finding discrepancies with the cmu researchers , the icsi group have decided to tune the size of their gaussian system .
+decisions: after raising the difficulty of checking for bugs in their generation of tandem features , they decide to check with stephane who has more experience of these procedures .
+problems: for the darpa meeting in july , the group propose that they should have the question answering mock-up and transcriber interface ready for then , and also have data available .
+problems: unfortunately , there are legal issues regarding the approval of transcripts .
+problems: additionally , the group would like to have their data transcriptions in `` production mode '' by then .
+problems: however the group do not want to hire more transcribers until ibm confirms in the next 2-3 weeks the acceptability of the data .
+problems: segmentation for the recogniser has been done by hand which the group consider `` cheating '' , instead now they want to use thilo 's automatic segmenter .
+problems: the classifier segmentation work is going well , but needs more data to improve results since non-native speaker data can not be used .
+problems: for the front-end , so far the group have been using a high number of gaussians per cluster ( 64 ) rather than the ten per cluster used by researchers at cmu , therefore they need to tune their gaussian system to the feature vector .
+problems: the group observed that it would be difficult to check for bugs in the generation of tandem features for the sri system .
+abstract: in particular , the group discuss their preparation of materials for the transcriptions of digits by ibm , and also the human transcribers who are working towards preparing the set of 20 for the darpa meeting .
+abstract: other discussion focuses on the re-evaluation of recognition without cheating on segmentation , and also how sri recognition can be improved , especially for the female group .
+abstract: a number of issues regarding the management of data are addressed by the group:
+abstract: the inclusion of different data types in the corpus , and the storage and back-up of the group 's data .
+abstract: progress has been made in naming conventions , with file reorganisation to be done at a later date , however this was not discussed fully due to chuck 's absence .
+abstract: finally , absinthe is now up and running with improved performance .
+abstract: discussion of demos for the july darpa meeting were left to the individuals concerned .
+decisions: a number of data issues were resolved:
+decisions: after discussing the human-computer interaction smartkom data , the group decide that different types of data can be included in the meeting corpus , but that it should be structured into different directories according to data type .
+decisions: some of the data storage problems can be overcome by backing up using the nw archive .
+decisions: however , file reorganisation will be left until just before zero-level back up .
+decisions: the group decide to use ibm transcription of the digits , in addition to automatic methods .
+decisions: if ibm methods work , transcribers will check and comment these .
+decisions: discussion of demos for the july meeting has been postponed: the individuals concerned will meet independently .
+problems: disk space is an issue for the group , especially in terms of back-up , which is 75 % full: dvds or cds are unreliable and can not be used , and although tape is reliable , this creates access issues .
+problems: experimentation with the sri recognition have shown greater error when using tandem features , with vocal tract normalisation also making results worse .
+problems: in particular more error is found with the female group which is 1-2 % worse than the males .
+abstract: here they discuss the querying and indexing tool which is progressing well albeit with a few front-end issues , and also the transcriber tool .
+abstract: transcription is progressing well , with new people hired , and double checking almost complete .
+abstract: work is also going on in parallel with ibm .
+abstract: additionally , the group have progressed further with data storage issues , with backing-up their data now regarded as a priority , and more disk space required .
+abstract: tools for accessing key file information have been developed which should ensure all meeting information is present .
+abstract: the collection of crosspad note-taking data will be pursued in future meetings .
+abstract: finally , other progress made includes getting the channeltrans interface working , ordering more wireless microphones , and analysing recognition runs .
+decisions: darpa demo illustrating prosody of meeting events will be completed by the end of the ( next ) month , so as to allow a week or so for transferring data across to laptops .
+decisions: after consulting others , the group decide that not backing up their meeting data is a bad idea , since this can not be recovered .
+decisions: therefore , meeting recorder data will be backed up , and also stored manually using the nw archive .
+decisions: more disk space will be purchased , however for now , data which is easily re-creatable will not be backed up .
+decisions: after evaluating the use of the crosspads , the group decide to return one , and also keep one which will be left out in meetings to encourage its use .
+decisions: use of pdas and buttons for note-taking will be investigated , along with using the data for a student research project .
+decisions: because of time constraints , the group decide to do simultaneous digits .
+problems: improving the thisl front-end user interface may be difficult if it is to run on windows as a web server tcl-tk may need to be used instead .
+problems: more information on xml transcription formats is required for the creation of the tools .
+problems: information for key files , such as microphone type , seating , and participant information , is not being properly recorded , and in some cases the microphones are n't working properly .
+problems: however this should be rectified by the use of appropriate xml tools .
+problems: the crosspads have not been used to their full potential , which is because of a number of problems regarding their use:
+problems: first , they need to be synchronised with the time of the meeting recording , and secondly , they use a non standard data format which needs converting .
+problems: additionally , some people tend not to make notes in meetings .
+abstract: this is a relatively short meeting of the meeting recorder group , with only a few agenda items .
+abstract: transcription was discussed briefly because jane was not present , however this appears to be progressing well in parallel with ibm .
+abstract: web pages have been set up to show transcription status and to allow participants to approve transcripts .
+abstract: darpa demos are progressing well with the back-end indexed to allow front-end filtering , and a potential demo ideas investigated which would use x waves .
+abstract: transcriber is now working for windows , however live pitch contours may not work in the time available .
+abstract: backed-up disk space is now fine , however temporary space is running out fast .
+abstract: interim measures are discussed while sysadmin are away .
+abstract: improvement has been made in the final version of the plp , which shows better female performance , and combined with mel ceptra offers 1.5 % improvement .
+abstract: digit performance also improved thanks to training using scripted speech data .
+abstract: progress has also been made in sri alignment for tandem system .
+abstract: the group note that the annual report needs to be worked on for next week , and it is also suggested to hold recognition meetings separately , however these issues will be discussed in more detail at the next meeting .
+decisions: jane will be contacted to see whether transcribers could work on a small amount of smartkom data , in order to get the project moving .
+decisions: details of the transcription status web page will be sent to the group .
+decisions: participants will be contacted to approve transcripts or suggest edits , however this depends upon decisions regarding disk space and ( un ) compression of audio files .
+decisions: there are disk space problems regarding scratch space , although the group decide that a solution about adding extra drives can not be resolved without talking to sysadmin .
+decisions: until they can be contacted , the group will use the hard drives on each other 's machines .
+decisions: displaying pitch contours live in transcriber would be desirable for the demo , however , if the group run out of time , the group note that they could generate this statically using powerpoint .
+decisions: the group decide that it may be more beneficial to have separate meetings to discuss recognition , since jane and liz are less likely to be interested in this .
+decisions: they will discuss this with them before going ahead .
+problems: scratch disk space used to store the uncompressed meetings when they are being processed is getting short - the group are using 98 % .
+problems: various options are suggested about adding extra drives , externally to their machines , or to the server , but these can not be resolved until after the relevant sysadmin person returns from a break in 10 days time .
+problems: time is getting tight for some of the demo development , especially a lack of tcl-tk skills slowing up back-end progress .
+problems: additionally , time constraints may impinge upon the `` live-ness '' of the transcriber pitch contour demo .
+problems: annual report is due next week , so this will need to be discussed at the next meeting .
+abstract: although the meeting recorder group only list two agenda items , this meeting explores transcription , and in particular , consent forms in depth , and at times results in heated debate .
+abstract: with regard to obtaining consent , the group discuss the extent to which they need to attempt to contact people , which methods are most appropriate , and how much responsibility rests on participants being available and checking their e-mail regularly .
+abstract: the group suggest sending reminder e-mails , although since many participants are local they can be contacted by other means if necessary .
+abstract: transcriptions are back from ibm , and the group discuss the checking of these , particularly since the pre-segmenter has interfered with back-channel data .
+abstract: checking of the nsa meetings has revealed that this non-native english meeting data contains transcription inaccuracies due to the use of foreign language terms and technical vocabulary .
+abstract: additional topics covered more briefly in this meeting are disk space , the darpa annual report , progress with the demo , conference submissions and attendance , and requests from the university of washington for data .
+decisions: the group discuss whether this meeting will relate to either meeting recorder or speech recognition issues .
+decisions: they decide that covering such topics over alternate weeks will commence at the next meeting , although other topics will be discussed if time allows .
+decisions: the group decide that it would be good to set a date for having the non-native network services group data , and one or two weeks before the 15th of july is suggested .
+decisions: with regard to contacting participants to request consent , the group decide that no signature is required , and an e-mail would be enough .
+decisions: however for `` boundary cases '' legal advice would be sought .
+decisions: as soon as the next set of data is ready for checking , participants should be contacted , so that this process is on-going .
+decisions: when the deadline for giving consent is approaching , a reminder e-mail should be sent out .
+decisions: in cases where no consent response is given , participants could be chased up since many are local .
+decisions: original uncensored copies of meetings will be kept , with all of the old signal deleted and replaced with new when censoring .
+problems: gaining consent from participants for the use of the meeting data is raising a number of issues for the group , some of which may have legal implications .
+problems: firstly a relatively arbitrary deadline of 15 july has been set , and since this is during the summer break , the group debate whether enough action has been made to contact participants .
+problems: if people do n't respond in time , the group discuss what facility should there be for later amendments , and whether a meeting can be used if they do n't respond at all .
+problems: checking of the nsa meeting transcripts has shown that although acoustically fine , some errors have shown up , especially relating to foreign language terms and jargon or technical terminology .
+problems: additionally , the discussions reveal that there is a shortage of headphones amongst group members , and also that disk space is in short supply , especially if original copies of edited transcripts are retained .
+abstract: the main topics discussed were arrangements and objectives of an upcoming field trip to visit research partners ogi ; a number of members reported their progress to date ; if there are any tasks that one member can help others with ; an overall description of the cube project , a multi-lingual speech recognition system for use by the cellular phone industry , along with consideration of some of the issues therein , specifically disk and resource issues .
+abstract: essentially the cube consists of three dimension: input features ; training corpus ; and test corpus .
+abstract: most important concerns are which combinations of features to use , and what combinations of languages and broad / specific corpora to use for the training
+decisions: the group will meet at the building at 6am to go to the airport for their field trip together .
+decisions: speaker me018 needs to discuss files that can be moved with speaker mn007 .
+decisions: for the ogi meeting they need to take a clear description of the cube project , and an estimate of how long the entire process should take .
+decisions: at the meeting they should discuss what they will ultimately put through the system .
+decisions: people are to consider what me034 could do on the project to speed things up , though creating the phoneme superset is a possibility .
+decisions: speaker me018 is to look into the machines that mn007 has been running data on to find out what they are .
+decisions: rather than consider level of normalization as a further dimension to the project , whatever ogi finds the best will be used systematically .
+decisions: need to use multiple machines and spert boards to run processes on because they take so long .
+decisions: they will consider looking at articulatory features rather than straight phonemes , though it would n't be perfect .
+problems: it is not clear what combinations of dimensions , which features , should be run in the cube project .
+problems: it is important to know because the processes are going to be large and processor and memory hungry .
+problems: to bear in mind is the fact that the cellular industry has an image of speech recognition in that 's what they are after .
+problems: must be careful if using a broad training source that is carefully hand marked , because it would be unclear which is the reason for improvement .
+problems: memory is of concern , because final product needs to run potentially one cheaper cell phones , which have limited memory capacity .
+problems: ogi does n't have a phoneme superset ready prepared , for they are working with clusters , which may be good enough for digits , but not for discriminating words .
+abstract: the meeting was dominated by a discussion of the first results coming in .
+abstract: there have been four types of test , in which the training data varies , and a variety of input features have been tried .
+abstract: the process and results were explained to the group , the implications of the results discussed , and plans for moving forward were made .
+abstract: there was also discussion of some of the work being conducted by research partners ogi , including how the two groups should best work together .
+abstract: the group also briefly touched upon resource issues .
+decisions: speaker mn007 would like to investigate increasing the context of the phonemes .
+decisions: speaker mn013 does agree with mn007s assessment of the outcome , and points out the lack of data , but acknowledges that if mn007 is interested he will go ahead with it .
+decisions: must be careful in choosing which experiments to perform as an important visitor is coming soon .
+decisions: also need to come up with a stronger plan for collaboration with ogi .
+decisions: must decide what from both can be brought together , and how then can the work be divided .
+decisions: someone ( implied with gestures in the meeting ) must speak to a person outside the group with regards to using a multiprocessor linux machine that is available .
+decisions: debugging the process while there are just two processors bodes well for when they have 8 to multi-thread .
+decisions: speaker mn026 volunteers to get some training running under linux .
+decisions: it is agreed that he should start with the neural net training , then work on htk .
+problems: incorrect assumptions were made when considering the on-line normalization for the main task . members used different values to a previous study , and whilst it was believed not to make a difference , it does , so networks are being retrained .
+problems: currently working with noise conditions being the same in training and test data , but there is nothing which matches the noise on the italian test data .
+problems: spanish was being used to train for italian as it was assumed they were the most similar , but that may not be as close a match as thought .
+problems: ogi have an interesting approach to voice activation detection for removing blocks of silence , that shows good results , but currently the word model being used is too poor to make good use of this and no one is working on improving it .
+abstract: the main topic for discussion by the berkeley meeting recorder group was progress on the experiments run as part of the groups main project , a speech recogniser for the cellular industry .
+abstract: this included reporting the results , and making conclusions to shape future work .
+abstract: also discussed were the details of the continued collaboration with project partner ogi .
+decisions: further investigation into the lack of difference using msg features makes should not be made while they are on their current short time scale for results .
+decisions: same goes for anything else that comes up and looks interesting , leave it for just now .
+decisions: really should pick which results are looking the best at this stage , and take only them further .
+decisions: someone should look closely at the non-timit databases , their viterbi alignments , and their phoneme strings to see is that is why timit is better .
+decisions: need to get ogi 's system from them , and get it running like they do , before integrating into it .
+problems: it is unclear if the english timit database is providing the best results because english is the best language or timit is the most accurately labelled dataset because it was hand labelled .
+problems: the results table was very large and difficult to follow ; it was unclear which of the numbers were error or accuracy rate , and straight rates or percentages of the baseline .
+problems: there is very limited training data , over only a few conditions .
+problems: test and real data is likely to encompass much more variability .
+abstract: they discussed most recent results , finalized plans to continue and discussed the work required and timing needed for completion of this stage of the project .
+decisions: mn007 and fn002 need to find a way of combining result figures into one easily comparable way of judging performance .
+decisions: they were also asked to mail round numbers detailing the size of their test-sets , so that group members can assess the seriousness of figures such as word error rates .
+decisions: there are now just 4 architectures that will be carried forward for testing .
+decisions: though the final system is not due to be fixed , until tuesday , writing it up must begin sooner .
+decisions: anything written must go through me013 for editing .
+decisions: discussion on future work once this stage is out of the way will be held at the next meeting .
+problems: while using a second silence detection system it was found that while providing some improvement , it added too great a delay on the server side of the system .
+abstract: this included some discussion of results , comparing various other groups ' systems , issues involving the set up , and plans for future work .
+decisions: results are required for an upcoming meeting , but since some group members will be away , results need to be in sooner .
+problems: although error rates have been greatly reduced , current rates are still unusable in a practical situation .
+problems: there is a problem replicating some results found by partner ogi , but it is unclear why .
+abstract: the berkeley meeting recorder group discussed the progress of several of their members .
+abstract: the group also touched upon matters that had broader implications for the work , such as the work of other groups on the same project .
+abstract: there were also some progress reports from group members working on other projects .
+decisions: no one from the group attended a recent video conference about their main project , but they need to find out what was discussed in it .
+decisions: until they do , they will continue on , assuming nothing major has been changed .
+decisions: need to discuss any new investigation with partners to make sure work is not repeated .
+problems: there was a recent video conference meeting discussing the cellular project , but no one from the group attended and so do not know if it has any implications for their work , if any important decisions were made .
+problems: this includes decisions on the desired latency for the system , since the group is currently at the limit .
+problems: spectral subtraction , which the group is currently investigating as a method of dealing with noise , may add to the delay time , but also it is hard to do with non-linear noise .
+abstract: the berkeley meeting recorder group met to discuss their recent progress .
+abstract: this included a recap of a meeting with one of the members of their research partner ogi .
+abstract: there were progress reports from group members working on echo cancellation , acoustic feature detection , and htk optimization , along with discussion of many issues arising from this topics .
+decisions: the group must try to communicate more with research partners ogi .
+problems: there have been communication problems between the group and their partners at ogi , with both groups waiting for the other to be the one to make contact .
+problems: this has made it hard to coordinate efforts .
+problems: when looking at articulatory features , the data will be continuous , so may need a mapping to binary decisions .
+problems: this could end up as a huge research project by itself , so must be careful .
+abstract: the meeting recorder group at berkeley met to discuss recent progress .
+abstract: of greatest interest was the progress on improving the latency and performance of their recogniser .
+abstract: there was also concern over overlap of work with partners ogi , and a lack of a good example of room reverberation for demonstrations .
+decisions: everyone must be sure and use the high-pass filtering option on the groups software , to deal with irregularities between mics .
+decisions: in order to coordinate better with ogi , some sort of source code control is required and me018 has offered to investigate , but only minimal progress can be made until after the upcoming deadline for eurospeech .
+decisions: also , in two weeks one of the ogi members will return , and meetings should be arranged with him before the next big project meeting .
+decisions: ogi seem to be having some good results with voice activation detection , so the group need to find out which is the best vad and start using it .
+problems: the is a waveform example of room reverberation on the groups website that was used in a presentation .
+problems: it turns out that it is a good example of many things , but not the reverb it is supposed to contain .
+problems: need to find a better example , maybe by just looking at a closer section of waveform .
+problems: minor experimenting found that by dropping the self-loop transition in the hmms by just 0.1 % can increase performance by 10 % , but the rules of the task forbid this change .
+problems: there is some confusion over what the results produced mean , since it appears they are weighted , which biases improvements in some cases quite heavily .
+problems: speaker me013 is worried that his groups work on spectral subtraction overlaps with that of ogi , and that it may be time better spent on other tasks .
+abstract: the main purpose of the meeting of icsi 's meeting recorder group at berkeley was to discuss the recent progress of it 's members .
+abstract: this includes reports on the progress of the groups main digit recogniser project , with interest on voice-activity detectors and voiced / unvoiced detection , work on acoustic feature detection , and research into dealing with reverberation .
+abstract: there was also talk of comparing different recognition systems and training datasets , and a discussion of the pronunciation of the digit zero for the recording at the end of the meeting .
+decisions: in his next status report , me026 will summarise the work he has been researching .
+problems: the digit recognition system is still not working well enough , they must get better results if they want to publish and be noticed .
+problems: they have not really made many improvements , which may be due to their comparatively small training set , or the conditions the data is recorded under .
+problems: the new vad is quite a large network , and adds a delay to the process .
+problems: this caused ogi to drop it , though speaker mn007 is assuming that a smaller and equally effective system can be developed .
+problems: the alternative is to get yet another vad form somewhere else , though it 's not clear if they will even be required in the final system .
+problems: there are some problems with the voiced / unvoiced feature detection , because some pitches are slipping through the filtering .
+abstract: the icsi meeting recorder group at berkeley met to discuss progress on their main project , aurora .
+abstract: they discussed a conference call with project partners , there have been some developments that should help speed up experiments , along with some progress made in the current area they are looking , voiced / unvoiced detection .
+abstract: a number of other members of the group also reported the progress they were making on their work .
+decisions: me018 will mail people with details about changes to their system in order to run code on the ibm linux machine , along with the name of the machine .
+decisions: mn007 is going to try and convince ogi to use his new filters , and enquire as to the setting of a standard for the system .
+problems: there was a conference call for the aurora project , but no one from icsi was involved .
+problems: not only are the group unsure what if anything was decided , but project changes are being considered including changing the baseline and improvement weighting , though everyone has their own opinion on these matters .
+problems: the group needs more female voices in the meeting recorder data , though fn002 does not consider herself very suitable .
+abstract: although the members of icsi 's meeting recorder group at berkeley had little progress to report , there were still a number of issues relating to their work to discuss .
+abstract: these included making plans for upcoming experiments , clarifying definitions , and approaches which may or may not be against the rules of the aurora project , alongside alternatives that would not be .
+abstract: there was also debate about the necessary continuation of a group report .
+abstract: plans were also made with regard to a visitor from research partner ogi
+decisions: for next weeks meeting , speaker me018 will provide numbers on his experiments into adjusting insertion penalties .
+decisions: speaker me013 feels that mn007 and fn002 should just put together the coherent bare-bones of their report , and move back to experimenting , leaving the report for the end of the project .
+decisions: he also feels that they should discuss some aspects of future work , for clarity 's sake , with the visitor from ogi .
+problems: the main project the group is working on , aurora , has a number of rules attaches as to what developers can and can not play with , but this needs to be clarified .
+problems: the rules are adhered to in the small community , but make no sense from a broader research perspective .
+problems: while writing their report , mn007 and fn002 have noticed some tables contain only partial results , and there are things they do not recall the reasoning behind .
+abstract: he reported on a recent project meeting from his group 's perspective .
+abstract: there was much politics involved , and disagreement between groups .
+abstract: he also brought the icsi members up to date with his group 's latest work .
+abstract: the icsi group reported their most recent progress and detailed their recent findings .
+abstract: having discussed this with the icsi project leader , the ogi member told of some future investigation they had devised , which would look at the adjusting the importance of some features .
+abstract: there were also further calls for greater communication between the groups .
+decisions: icsi currently has no mailing list which includes ogi personnel , so they will set one up .
+problems: there was disagreement at the project meeting over two group development of voice activity detectors , particularly since one group makes their code available to all and the others do not .
+problems: there were also issues relating to the amount of improvement required if the baseline is improved .
+abstract: there has been further work on voiced / unvoiced detection , along with spectral subtraction .
+abstract: the group discussed one members attendance at a conference , and another groups code , which is proving hard to follow .
+problems: in trying to understand france telecom 's code , there does not appear to be a reason for a particular constant value .
+abstract: the icsi meeting recorder group at berkley have a temporary new member on loan from research partner ogi .
+abstract: he began the meeting by reporting his recent activities , which included looking at the new baseline system .
+abstract: the other members of the group also reported their recent progress in areas such as spectral subtraction and voicing detection .
+abstract: they also explained some of their projects to their guest .
+abstract: the group shall soon be taking delivery of more machines for a computation farm , and they discussed some software tools for running large processes .
+decisions: speaker me018 will construct an faq about the new computing tools and setup , and email details .
+decisions: fn002 agrees to try an alternative approach to her new feature for voicing detection .
+abstract: the icsi meeting recorder group at berkeley met once more to discuss group members ' progress .
+abstract: the majority of the group are working on tasks related to the aurora project , including on-line normalization and wiener filtering .
+abstract: other progress was also reported .
+decisions: at me013 's behest , the group need to look closer at the errors made in tests on the aurora project , because the error rate may not be telling the whole picture .
+decisions: mn052 volunteers to run some experiments into how different numbers of mfccs affect results .
+problems: some previously reported results from me026 were determined to be garbage due to a bug in the code speaker mn052 also feels that his strange results are down to a bug .
+abstract: a typical progress report meeting for the icsi meeting recorder group at berkeley .
+abstract: each of the group reported their most recent progress , and any results they have achieved .
+abstract: this then prompted discussion about the reasons behind such findings , which were for the most part not as expected .
+abstract: topics the group touched upon included spectral subtraction , phase normalization , voice activity detection , along with comparisons between systems .
+problems: a couple of issues have arisen that need to be looked into further such as dc-offset and effects of pzm signals .
+problems: speaker fn002 is worried about running vts in the cepstral domain , because it requires a lot of work , and it is not clear that it will be much better than running it in the mel domain .
+problems: similarly , since at the next stage of the project data will have marked boundaries , it is not clear that voice-activity detection is worth pursuing .
+abstract: the icsi meeting recorder group of berkeley met for the first time in two weeks .
+abstract: group members reported their progress in the areas of spectral subtraction , wiener filtering and noise estimation .
+abstract: they also discusses topics relating to the rules and preferences of the project they are working on , including single vs multiple passes .
+abstract: a number of the group also took time to explain the basics of their approaches to the group .
+abstract: there are hopes that a visitor coming for three weeks , may lead to a longer term collaboration .
+decisions: the visitor works on spectral subtraction , so speaker me026 will make sure he talks to him .
+decisions: speaker mn007 agreed , at me013 's suggestion , to try his noise compensation scheme in compensation with the prior work on spectral subtraction .
+problems: in implementing smoothing to the spectral subtraction , latency has been increased ; while some feel this is nothing to worry about , others feel it is better to worry now , in case it turns out to be something to worry about .
+abstract: the groups regulars reported progress on their work on mean subtraction , noise estimation , voice activity detection and the vector taylor series .
+abstract: while on these topics , related areas discussed included recognition window length , training versus test set sizes , artificial distortion and latency concerns .
+decisions: speaker fn002 is soon to be leaving the group , and so she will choose her best setup , run a complete set of experiments , and write up her work , procedure and results for next week .
+problems: new filters introduced to reduce latency by mn052 , performed slightly worse than those they replaced .
+problems: whereas mn007 has added some latency to the process which he feels he can reduce .
+abstract: icsi 's meeting recorder group have returned from a meeting with some important decisions to make .
+abstract: they have developed a piece of software which allows them to implement their two main approaches to dealing with noise .
+abstract: the base rate is currently set at the second best rate as of the last project evaluation , and it does not yet include everything the group have been working on .
+abstract: with this in mind , they have decided to set most things , and concentrate on studying only a few key aspects , the neural network , the voice activity detector , and the noise estimation .
+decisions: by the time a senior member of their research partners ogi returns , they want to have a firm plan of what they will be doing .
+problems: system latency is still an issue , but limits have still not been set by the project heads .
+problems: the group have encountered problems with frame-dropping , and will need to bear that in mind since their neural network would come after that stage .
+abstract: some members of the group met recently with research partners to settle on the current state of their software , and decide on the future work they would investigate , and these decisions were relayed to the rest of the group .
+abstract: of the three areas for the future , they touched mostly upon the use of a second , parallel , data stream .
+abstract: the group also discussed a new part to the evaluation , the use of a chunk of the wall street journal .
+abstract: speaker me006 is working on data clustering , and discussion of related issues led to more general acoustic matters .
+decisions: after the meeting , mn052 volunteered to get the second data stream up and running in the current software .
+decisions: since he has been asked to assist in a particular aspect of the work , me018 has to contact the relevant persons in order to be added to the according mailing list .
+problems: there is a new system coming from ogi for dealing with the wall street journal data , and me013 wanted everyone to pay attention to areas where the groups might get hurt because of their features .
+abstract: the main areas being worked on were the voice activity detector and the tandem data streams .
+abstract: the group discussed possible further investigations that arose from these areas , including better linking the two .
+abstract: they also consider how aspects of an absent member 's work might be applied to the current project .
+abstract: the meeting closed with a discussion of upcoming absences , and how meetings would continue .
+decisions: speaker me018 must confirm what is needed to work with the new software in terms of adjustments with someone further up the project chain .
+decisions: the system at it 's current stage employs the neural networks and second stream , but the group leader would like the network investigated separately , incase it is hurting performance .
+problems: there are worries regarding the need to make adjustments so the new software can handle the group 's different feature set .
+problems: the system , whilst improved , also has increased latency , and while the limit has not been set , the group need to reduce it .
+problems: likewise the number of features the use in their system , since this has been set at an arbitrarily low value .
+problems: there has been an increase in the number of deletion in the errors , which is of some concern .
+abstract: on the aurora project , there were reports on a project conference call , the status of the tandem neural networks , and progress with the mississippi state recognizer .
+abstract: the latency limit has been set , and the group 's system is performing very well , but is a little over .
+abstract: on the larger vocabulary task , there are still a few issues to resolve before work can really get started .
+abstract: the group heard of the plan of one of it 's member 's work into intermediate classifiers , and also of how a visiting research student 's work into auditory models can be applied to their work .
+decisions: speaker me013 wants to know how much memory the tandem network takes up .
+problems: it is only a minor problem that the latency limit has been set below the current systems level , and also keeping the number of features within limits only drops performance a little .
+problems: a more significant problem is that the tandem approach may not fit in the memory space allowed , and removing it drops performance more .
+problems: some of the group had issues with mn007 's approach to human performance testing , but this was considered more of a side issue .
+abstract: the discussion concerned mainly ideas about data collection and the nature and generation of queries on meetings .
+abstract: meeting notes taken by participants as standard minutes or summaries , or on devices like crosspads can provide useful information .
+abstract: there is also interest in the speech community for fusion of speech with visual data .
+abstract: taking some photos of the whiteboard and the positioning of participants is easy enough to do .
+abstract: another option would be the recording by participants of short oral summaries of the meeting .
+abstract: summaries could be used to bootstrap for queries , the exact nature of which remained nebulous .
+abstract: candidate types are keyword searches , action items , elaboration on points of interest , and agreement between participants .
+abstract: an initial prototype system to test any hypotheses can be pipelined .
+abstract: the recorded data will be stored on cd-rom 's and sent to ibm for transcription .
+abstract: there is also work being done on the annotation of prosody .
+abstract: the corpus could be enriched with found data ( public or collected by other projects ) , if those prove appropriate for use in the project .
+abstract: finally , project web pages and mailing list are being set up and uw are going to investigate the suitability of their recording equipment .
+decisions: within the piloting of data collection ideas , it was decided that crosspads are going to be used for detection of `` hot points '' during the meeting .
+decisions: other ideas to be tested are the use of summaries or minutes -if a group normally produce them- and the recording of oral summaries by individual participants after the meeting .
+decisions: photographing the contents of the board and the positions of the meeting participants will provide extra information .
+decisions: for query generation purposes , all participants will also be asked for their highlight of the meeting .
+decisions: the general goal regarding the corpus is to investigate the acquisition of further appropriate data through public sources or available collections of other institutions .
+decisions: as to recordings at icsi , the group agreed that imposing rules of participation in order to avoid speaker overlaps was not desirable .
+decisions: instead , they will aim for collecting stylistically varied data ( different group dynamics and types of meeting ) .
+decisions: further action will also be taken to close other pending issues: the web pages will be organised , the recording room will be finalised and uw will also test their recording infrastructure .
+problems: the recording of meetings and any possible additional tasks must be set up in a user-friendly way , otherwise it would be difficult to recruit volunteers .
+problems: asking participants to do more than they normally would in a meeting could put people off .
+problems: the video-recording of meetings , apart from adding an extra level of instrumentation complexity , can also make people apprehensive .
+problems: the usability and usefulness of crosspads is not certain .
+problems: acquiring data from other sources will not be straightforward , as they may either not be suitable for this project or not publicly available .
+problems: querying is also a major issue: what users would ask from a system is not clear .
+problems: how this system would resolve high-level queries ( eg regarding agreement between participants ) is also hard to tell at this stage .
+problems: as transcription has not started yet , there was concern as to how ibm will deal with multi-channel data .
+problems: the abundance of speaker overlaps may also affect the quality of the trascription .
+problems: however , it was accepted that some problems with the transcription of jargon are , to an extent , unavoidable .
