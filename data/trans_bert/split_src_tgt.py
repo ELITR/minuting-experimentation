@@ -1,8 +1,9 @@
 
 '''
-Script that walks the folder structure of rec_ami/rec_icsi, reads certain 
-files (e.g. abst_summs.txt or compl_extr_summ.txt) of each meeting and 
-stores the dialogues-summaries in rec_ami-icsi_src-tgt/ folder.
+Script that prepares the data for transfer learning summarization using BERT
+https://github.com/santhoshkolloju/Abstractive-Summarization-With-Transfer-Learning
+The source samples are the ones of ami-icsi_train and ami-icsi_test. The source
+and target texts are separated and stored in different files.   
 '''
 
 import os, sys, fnmatch, re, json, argparse, pickle
@@ -263,7 +264,3 @@ if __name__ == "__main__":
 		else:
 			print("Wrong file! Skipping...")
 			continue
-
-
-
-
