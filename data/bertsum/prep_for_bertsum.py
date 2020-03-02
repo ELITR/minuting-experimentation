@@ -1,8 +1,7 @@
 
 '''
-Script that walks the folder structure of rec_ami/rec_icsi, reads certain 
-files (e.g. abst_summs.txt or compl_extr_summ.txt) of each meeting and 
-stores the dialogues-summaries in rec_ami-icsi_src-tgt/ folder.
+Script used to convert the ami-icsi samples in a json format making them 
+compatible with the bertsum and presum formats.
 '''
 
 import os, sys, fnmatch, re, json, argparse, pickle

@@ -1,8 +1,8 @@
 
 '''
-Script that walks the folder structure of rec_ami/rec_icsi, reads certain 
-files (e.g. abst_summs.txt or compl_extr_summ.txt) of each meeting and 
-stores each src-tgt in rec_ami-icsi_src-tgt/ folder.
+Script used to read the files of CNNDM and check the length of the target
+in each sample. It it is more than 2 sentences, that sample is removed 
+from the set.
 '''
 
 import os, sys, fnmatch, re, json
