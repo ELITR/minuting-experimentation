@@ -1,2 +1,2 @@
 # minuting-experimentation
-The MDSF code for conducting preliminary experiment with automatic minuting.
+The code of our preliminary experiment automatic summarization of meeting dialogues (minuting).
