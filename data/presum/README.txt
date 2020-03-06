@@ -1,2 +1,1 @@
-# minuting-experimentation
 Scripts for preparing CNNDM data to work with extractive and abstractive models using pretrained BERT.
