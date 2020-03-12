@@ -14,4 +14,4 @@ The JAR will be located at ```build/libs/docx2nite-all.jar```
 The generated XML file will be saved with suffix ".annotation.xml".
 
 ## Examples
-See ```examples/```.
+See ```examples/```
