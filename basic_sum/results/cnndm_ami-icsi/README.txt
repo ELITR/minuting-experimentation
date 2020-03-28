@@ -1,1 +1,1 @@
-Results of training the extractive BERT on the short samples (with max 2 sentences in the target) of CNNDM and testing on ami-icsi. 
+Results of training the extractive BERT on the short samples (with max 2 sentences in the target) of CNNDM and testing on ami-icsi data. 

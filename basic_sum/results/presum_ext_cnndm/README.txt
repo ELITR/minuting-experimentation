@@ -1,1 +1,1 @@
-Results of training the extractive BERT on full CNNDM and testing on full test set of CNNDM. 
+Results of training the extractive BERT on full CNNDM and testing it on full test set of CNNDM. 
