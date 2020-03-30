@@ -1,5 +1,5 @@
 
-''' converting recovered ami data in the format they use in TSD-28 '''
+''' converting recovered ICSI data in the format they use in TSD-28 '''
 
 import os, sys, glob, re
 import string, argparse
