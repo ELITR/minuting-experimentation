@@ -1,1 +1,1 @@
-Literature methods tried and compared with.
+Dialogue summarization methods from the literature.
