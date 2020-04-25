@@ -1,0 +1,41 @@
+ELITR Surge Organisation 
+Thu, March of 26th, 2020
+10:40, (place?)
+
+Attendees: Ondřej, Sangeet, Matúš, Dominik
+The purpose: A summary of the work, which was done.
+
+Vojtěch
+Preparing the domain adaptation for the Monday seminar done through Zoom
+    Two Monday seminars at all - both English speaking 
+
+Possibility of measuring word error rate increase caused by quality degradation at the remotely organized Monday seminar
+    It can also be tested at some older audios to access loss in precision.
+
+Sangeet
+Forced alignment 
+    Through the README and Slack to explain Mohamed, how to run ut
+Log for Mock conference 
+    To put the path here
+ASR for Daniel and Anna
+IWSLT - MT
+To integrate live audio visualizer - implemented by Matúš
+Log for Lang tool
+    To preserve segment level timing
+    The format of interleaved lines - some lines are text, some lines contain just the numeric timestamp.
+
+Matúš
+Audio visualization tool is finished
+The model training for all the languages from data set in UEDIN
+To do - evaluate the model on all the languages, if it works to describe it as well
+    After the evaluation, the model should be comparable with other models
+
+The deadline for IWSLT was extended - April of 20th - it is for the system outputs, but not for the paper submission
+
+Discussion between Matúš and Sangeet about commands repository
+
+Dominik
+Paper submission
+Evaluation of ten English to German, English to Czech MT models for IWSLT - still working on that
+
+ 

@@ -1,0 +1,813 @@
+(Moderator): I hope that everybody's fine with recording this meeting, eh, yes.
+
+Yes. 
+
+(Moderator): Ok eh, thank you eh.
+
+(Moderator): And I see, that it is indeed being recording so eh being recorded, so, eh, that's good. 
+
+(Moderator): Eh,Yeah, so.
+
+(Moderator): I'll try to share my screen, because I was given the presentation options, so probably you see my screen now? I'll
+
+(Miloš): Yes, we do.
+
+(Miloš): At least I do. 
+
+(Moderator): Okay, and, yeah and there is this, eh, <parallel_talk> I'll minimize this </parallel_talk>, so there is a small agenda for eh the call today. 
+
+(Moderator): Unfortunately, there is no overlap between eh AlphaView and pervoice eh in this week, so I'll (try to do) the poll for the next week as well eh and hopefully, we will find something eh there.
+
+(Moderator): If no, then we'll, I'll just transfer whatever is whatever is needed. 
+
+(Moderator): Umm, yeah. 
+
+(Moderator): Okay, so eh for today, we have this eh small call and the news is, eh, are there any news from SAO about the status? 
+
+(Moderator):Because you have the official contact points and eh I'm not  sure whether you have received any response from them whatsoever. 
+
+(Miloš): I am not sure either but I hope, that there will be a resistent answer soon. 
+
+I was tasked to prepare the exact questions we are asking so I hope that's on track, but (Darrio): I'm not sure. 
+
+(Moderator): Yeah, so that it's already like two weeks since you have contacted them, at least. 
+
+(Moderator): So hopefully they will be able to respond in some reasonable time. 
+
+(Moderator): Eh, the second question is: can we go on and, like split the budget, that we previously allocated for SAO, among other parties? 
+
+(Moderator): This is the (our) internal SAO decision, and I know, that you are like not the "this is a very decisive person", but still, do you think do (sense), that within SAO, the idea is, that you don't want to get any money from this project, eh? 
+
+(Moderator): Is that correct?
+
+(Darrio): Yes, that's actually correct, we don't want any money.  
+
+(Darrio): I, that that could be considered official already, mm. 
+
+(Moderator): Yeah, okay, so we will we will proceed and will modify the budget without you. 
+
+(Moderator): But at the same time we will allocate person months to you. 
+
+(Moderator): Or like you should allocate those in the Overleaf and I will somehow make it clear in the tables, that the person months that are by SAO will not be paid for from the budget, but you will be assumed to have your own funding for those person months. 
+
+(Moderator): Ehm, so I don't know, how this is going to be checked by the commission afterwards, but just promise some sensible number of person months, that you could indeed claim, that you have worked on project, and definitely, it should tasks you want to do within the scope eh, of the project, so just like (broadcasters) further within SAO.
+
+(Moderator): Thank you.
+
+(Moderator): So then the, eh the speech to speech translation is something that eh AlphaView doesn't want to have in the eh, like they don't want to ship translated audio to the partners parties in the, eh remote conference calls. 
+
+(Moderator): I don't think that this is a big problem. 
+
+(Moderator): I think that we'll just make sure that in the project, there is no promise on this, and eh eh with per-voice, this makes the situation easier, because you would only eh make sure that the platform (??) produces subtitles and sends them to to AlphaView.
+
+(Moderator): For the real use case, like not remote, eh but but eh, the physical world use case, eh we are  still probably undecided how are we going to ship the translations to the participants, but my baseline eh idea is some web page that gets updated, so that would be again speech to text translation, and eh eh, I don't know em, Darrio, whether you have experience with shipping voice to individual cell phones or, how should we approach this for the for the conference or the workshops at eh at SAO events.
+
+(Darrio): No, we don't have experience. 
+
+(Darrio): We always provided subtitles, basically.
+
+(Moderator): Yes.
+
+(Darrio): We have to identify eh, in fact, how the the final platform for the delivery of the of the  translation, I think, but the ehmm, text to speech doesn't add so much information to the text, in fact, and probably -
+
+(Moderator): That actually -
+
+(Darrio): Please. 
+
+(Moderator): Yeah, eh, I just wanted to confirm that I also think that it actually makes the information harder to digest eh.
+
+(Darrio): Yes, because it's ehh  it doesn't provide any (prozaic) information, so that's the
+
+(Darrio): The text to speech doesn't provide any information more than that.
+
+(Moderator): Yeah, okay, yeah, thank you.
+
+(Moderator): So, we will (board) in the project as you specified or you, within the integration work package should, like make sure the description is clear, and SAO should be aware of this, like for their workshops.
+
+(Moderator): That SAO should somehow make sure that participants have some devices at hand, that can display the subtitles in in some form. 
+
+(Moderator): Because each of the- the idea is, that each of the participants will be seeing the translations in his own language.
+
+(Moderator): Eh, so the eh pervoice eh eh integration should eh translate from the single speech signal that comes in to a into the many target languages, and ship those subtitles to the different eh users at eh the workshop. 
+
+(Darrio): Yes, that's correct.
+
+(Darrio): Just a question, because maybe it was not clear to me. 
+
+(Darrio): Eh the ehmm application to provide the subtitle would be AlphaView application, correct? 
+
+(Moderator): That's for the remote meetings, but I don't think that this is the case for the live meetings eh the SAO the EUROSAI congress, so there is the plenary session of the EUROSAI congress and then, there is the individual meetings, like the workshops.
+
+(Moderator): And eh, in the plenary session, there is the single speech given by the speaker, and then possibly some some questions, and we'll try to connect to the (interpretors) eh and eh and eh transcribe their voices, and or directly the main one eh and then eh, this will be shipping the subtitles to somewhere.
+
+(Moderator): Eh, and this somewhere, eh in a very baseline solution, can be just the web page with, like autorefresh <laugh> eh and
+
+(Unknown_voice): Yeah (??). 
+
+(Moderator): And, yea.  
+
+(Darrio): Sorry, it wasn't clear to me, so I will also (??) asking the integration work package for the let me say presentation application development.
+
+(Moderator): Yes, yes  for live meetings?
+
+Yes, yes.
+
+(Moderator): So, the idea is that that you, in this project, you are the integrator for all the technologies, and you are also the final eh application provider for their live use case. 
+
+(Moderator): Because AlphaView will not be involved in the the live meetings eh. 
+
+(Moderator): And I think, that the AlphaView should be in, like present at the at the conference at the the EUROSAI congress for dissemination purposes, because there will be also the eh meetings eh done remotely among the SAO delivery SAI institute. 
+
+(Moderator): And for the remote meetings, they will use the AlphaView platform, and then the subtitles are delivered through pervoice into the AlphaView platform.
+
+Okay, that's that's fine.
+
+(Moderator): Yeah, yeah.
+
+(Moderator): So this was this was this was also for Miloš, just to make to make that eh, to like, known in within SAO that ehm.
+
+(Moderator): And maybe, SAO should contribute to that integration task some person-month on like, agreeing on the interface.
+
+(Miloš): You mean for the EUROSAI congress? 
+
+(Moderator): Yes, and for the workshop, for the live events.
+
+(Miloš):Yeah, that's, for me, it's a part of the congress. 
+
+(Miloš): Yea, of course, this has to be.
+
+(Moderator): <parallel_talk><other_noise> Hm, hm, hm. <other_sigh> </parallel_talk>
+
+(Moderator): Yea, so simply,  Darrio will create a task in the work package 7 in the integration, and this task should have some like many more person month by pervoice, because they need to develop this. 
+
+(Moderator): But also, there should be some small amounts of person month by SAO to, like make sure that SAO is aware of what the platform needs and and how to, like make sure that the participants can use it. 
+
+(Unknown_speaker): <other_noise>
+
+(Darrio): Yes, okay.
+
+(Moderator): Yea.
+
+(Darrio): Okay. 
+
+(Moderator): Thank you, so now let's move to the next eh, item in the agenda, and there's the task and the task and (deliverables) related to the EUROSAI congress, and other SAO events, and this is something, that would like to just clarify how I see it, and make sure that you you see it similarly.
+
+(Moderator): Eh, so there will be the main EUROSAI congress eh, in the middle of the project, and then, before that, there could be some dry runs workshops, or there will be some, we will make sure that there are some. 
+
+(Moderator): And after that, there will be also other events again, this workshop style eh events mainly.
+
+(Moderator): So when I say workshop style, I mean: it's a live meeting of up to twenty people, and each of them strives to speak English, but they are non-native speakers and there is the subtitling running, and that subtitling translates this non-native English into all the participants languages, so that they can eh follow the discussion with, like more input and better confidence. 
+
+(Moderator): I hope that everybody sees it the same way?
+
+(Moderator): So, SAO should make sure that there is that there is enough events happening and that we know about them, and that we like, connect to them. 
+
+(Moderator): Aside of the main EUROSAI congress. 
+
+(Moderator): And pervoice should be ready to.
+
+(Moderator): Well, I don't know, maybe maybe maybe you should have like. 
+
+(Moderator): You definitely have person month and travel eh plans eh in the budget for the main congress, but maybe you should add some extra for the other events. 
+
+(Moderator): The dry run and also the follow-up ones.
+
+(Darrio): Yes (the) we have the non-apriori the number of events, that would be eh manageable.  
+
+(Darrio): I think but at least one event per project (a) year should be very important. 
+
+(Darrio): Also, for the view for the-
+
+(Moderator): Yeah.
+
+(Darrio): Review meetings.
+
+(Moderator): Yeah, exactly.  
+
+(Moderator): So, I think, that in the first year, we should have at least one dry-run workshop, eh which is like actually a complete test, but it's still before the main EUROSAI congress. 
+
+(Moderator): In the second year, there definitely should be the main congress, and then eh maybe one more in the same second year, or eh like two in the third year.
+
+(Moderator): So I would eh ask eh SAO, if it seems reasonable to have one dry-run, one main congress and then two follow up workshops. 
+
+(Moderator): Could you check, if this is eh if this is feasible, or if we have to go for just one dry run main conference and then one follow-up?
+
+(Miloš): Well, it is, I believe it s not decided yet eh.
+
+(Miloš): We have only a vague idea that, of course, something will be happening the year after the congress, but what and how many is not decided yet. 
+
+(Miloš): But also, you reminded me an important thing: I need to also ask about the way the follow up thing will work. 
+
+(Miloš): Because there is the clear distinction now between your plenary and the workshops. 
+
+(Miloš): And from yo your your speech, I get the idea, that you are interested mainly in the workshop-type thing.
+
+(Moderator): Yes, that's because it's eh like ehh it's more in line with the speech research partners want to focus on, that's non-native speech. 
+
+(Moderator): And, it like reduces the the further burden of the source languages, so eh it's maybe the more important setting.
+
+(Moderator): The congress with the plenary sessions is something too to show off, but the eh the workshops are eh, like more practical, I would say. 
+
+(Moderator): So, that's the that's why I kind of promote them now. 
+
+(Moderator): A bit more.
+
+(Miloš): Yes, it makes sense, but I need to ask.
+
+(Miloš): I have no idea what (forum) the other events will be in.
+
+(Moderator): Yeah, I've understood that from what I've heard from your colleagues, I've understood, that it's mainly these workshop-style sessions that the congress is with plenary sessions is is something eh, not that frequent.
+
+(Moderator): So, I think that ehh, Darrio, for now, I think, we're quite on the safe side to say that will have one dry run, one main and then two follow-up experiments. 
+
+(Moderator): So if you can plan four events in total, one of them being the the longer one, that that will probably be easy to to accomplish.
+
+(Darrio): I (was about) to answer the anchor point you put into the google doc. 
+
+(Darrio): I wouldn't create I wouldn't like not to create separate task, but to have a one single task SAO events. 
+
+(Moderator): Okay. 
+
+(Darrio): (and) one believable (prior).
+
+(Moderator): Okay, eh, yea. 
+
+(Moderator): So, eh so the then this task should be planned for the all the three years, like ehh, maybe starting at month 7, because nothing could happen earlier, but running until the end without any specific dates, right? 
+
+(Darrio): Exactly.
+
+(Moderator): Okay, so let's make this one task for SAO events, and then, in the task description, we will say, that we plan to have the dry run and then the main and then the two follow ups.  
+
+(Moderator): Yeah, so that's clear.
+
+(Darrio): Exactly.
+
+(Moderator): Yeah, okay thank you.
+
+(Moderator): And then,  related thing is the eh the view, like where the events should be mentioned, and I've put it into that into the agenda here.
+
+(Moderator): So the the integration work package eh is the one that makes sure that everything runs. 
+
+(Moderator): That actually delivers the software and the tool to that to those events. 
+
+(Moderator): While the work package 7 dissemination helps to promote the project and its results at these events.
+
+(Moderator): So this is like, collocated activity and the dissemination is something, ehh that ehh should include eh AlphaView. 
+
+(Moderator): Whereas the eh integration for the events does not need AlphaView. 
+
+(Moderator): Because the AlphaView is not providing eh anything any remote platform eh into these events. 
+
+(Moderator): Is that clear?
+
+(Darrio): Yes. 
+
+(Moderator): Yea, okay.
+
+(Moderator): Yeah, so now let's move on to the next item, which is the the Italian. 
+
+(Moderator): So I understand that the pervoice  would like Italian.
+
+(Darrio): Yes.
+
+(Moderator): I'm not sure how the (word) extend is like covered in Italian. 
+
+(Moderator): Well, we don't have Karlsruhe on the call.  
+
+(Moderator): But they already have some Italian.
+
+(Moderator): Eh, so, eh  I don't know, how much person-months do we have to devote to Italian to, to move it to level where eh where per-voice would like it. 
+
+(Moderator): And at the same time, we need to justify eh this additional resources for Italian.
+
+(Moderator): From like the (overall) project's use case. 
+
+(Moderator): Eh, so maybe, Darrio if you could say more about like what the level of Italian, how much effort is needed there, or eh and then SAO will comment on on eh eh, like, the availability of the need of of that, or maybe, we can squeeze some of this need from AlphaView, possibly. 
+
+(Moderator): I'm just guessing. 
+
+(Moderator): So if yea. 
+
+(Darrio): Okay, just let me add one thing to this.
+
+(Darrio): And also per-voice is active in the ASR field and provide ASR for not only for Italian language but but for thirty language, currently.
+
+(Darrio): So Italian -
+
+(Darrio): So Italian, obviously, being our mother tongue language, is that the one where we perform better.
+
+(Darrio): And we already specialize the Italian ASR the for many many eh, domains, so called domains. 
+
+(Darrio): Currently one of our customer is the constitutional (court) (??) and depending on the availability of the data, the person-months required the for training and dedicated the Italian model, for the Italian ASR model eh let me say, can vary from eh three to six month person months for maximum.
+
+(Moderator): Yeah.
+
+(Darrio): So, it's not a huge task and we can we have perform the eh tests also on the on a at the Italian parliament. 
+
+(Darrio): We have been competing for the Italian parliament, and we reach the accuracy up to ninety eight percent of accuracy.
+
+(Darrio): That, emm 
+
+(Moderator): Yeah. 
+
+(Darrio): It is considered the most accurate Italian speech recognition system, so it's
+
+(Moderator): Okay, yeah.
+
+(Moderator): That's, that's very good and I think, that the that needs to be like advertised for in the project proposal as well, and that extends your role from being just the integrator to also working directly on the ASR work package, right? 
+
+(Darrio): Yes. 
+
+(Moderator): Yeah, so please make sure that your person months are already are also included in ASR work package and in the description, the ASR work package is not yet (populated) very much. 
+
+(Moderator): So Karlsruhe role is even a little slower than we are with the writing. 
+
+(Moderator): So this like very good, you can easily propose your own person months there in the work packages and then they will see that you want to be a body or in touch with them anyway, probably. 
+
+(Moderator): So a  just let's let's make that clear in the proposal, and Italian is not one of the big languages of SAO, but it's still one of the official languages, so it it's totally acceptable to to have that in.
+
+(Moderator): And since we have the italian partner and the best eh ASR system for Italian in, it's, it would be a pity not to use it i would say.
+
+(Moderator): So eh so it's up to you to to put three or six person months there it's I just see that it's not too much effort needed, which is good, at the same time, it's it's good to put that effort in so the justification is something that can, like be easily (awarded), it it's that's perfect.
+
+(Moderator): Eh, okay eh thank you. 
+
+(Moderator): So we probably do not need any specific need from from SAO on this, but still, maybe ask around and or mention, that in the project, there is this partner, who has the best Italian recognition in the world, so that there is the chance to to use it. 
+
+(Moderator): Miloš, right? 
+
+(Miloš): Ehm I guess i can ask around, but I'll probably get the official reply reply again that it would be unfair to prioritize any non primary language over the other.  <laugh>
+
+(Miloš): But what to do is probably for you to decide to talk about it in this way anyway.
+
+(Moderator): Yeah, yeah, okay. 
+
+(Moderator): So eh, yea, I see. <laugh>
+
+(Moderator): So SAO, yeah. <laugh>
+
+(Moderator): So simplified well.  
+
+(Moderator): Eh, mention it only when when appropriate and when no eh no one could be offended by the fact that we are interested Italian than (doing) Italian as well. <laugh>
+
+(Moderator): Eh, okay. 
+
+(Moderator): So now the the the next item is the this table on the (re-speaker) data. 
+
+(Moderator): So if we can open that, that's part of the eh, budget, that's the third sheet on the budget. 
+
+(Moderator): And this is something where we need to eh like eh.
+
+<cough>
+
+(Moderator): This is for us, this is for our (SAO), and estimate, how many person months should we allocate eh in the data collection work package eh and ehh ehh, this is already eh doing eh detailed accounting on how many hours per speaker do we need ehhh for ehh to be able to adapt to to <other_unknown> (??) the speaker. 
+
+(Moderator): And in which languages do we plan this eh and so on.
+
+(Moderator): So eh, and also eh.
+
+(Moderator): So, one purpose is to adapt to the speaker and second purpose is to have this person as the re-speaker at one of the live events. 
+
+(Moderator): So eh as you see on online 17 and below, eh there is what i entered for for our SAO's but this is a very raw guess, and i don't know, Rico is is here, but maybe per-voice also knows. 
+
+(Moderator): How many hours per speaker do we need to be able to adapt to them? 
+
+(Moderator): So my understanding is that for each re-speaker or interpreter that we want to reliably recognise, we will ask them to sit a certain number of hours and read aloud some written text. 
+
+(Moderator): And record this. 
+
+(Moderator): Is that the way this is done? 
+
+(Moderator): Or is it done differently, the speaker adaptation? 
+
+Speaker adaptation is done essentially how you described, usually. 23:29 
+
+The number of hours depends on the ASR system. 
+
+Because the (ability) to record the forty hours of speech is
+
+(Moderator): That's a lot of work. 
+
+Yes, yes. 
+
+(Moderator): I know it's I know it's I know it's a lot of work, so I don't know how much should we say that we need per speaker. 
+
+Ehmm, let me say (whether) usually, we collect eh fewer data in order to eh maximise both the ehh effort needed and the result.
+
+But we really (ask), let me say a maximum of a one hour. 
+
+But I'll repeat, it depends on the ASR (engine).
+
+And also (obviously) eh the more the data the (most) effect that the adaptation has.
+
+So it's eh always eh.
+
+(Moderator): So what if we said like for hours instead of forty. <laugh> 
+
+(Moderator): Four hours to adapt to each of the Czech speakers, like we would have three re-speakers eh eh eh, that that could be like eh  some re-speakers and also like the main person giving the plenaries (interactory) speech eh. 
+
+(Moderator): And then, for English, eh we, as Charles University would have like to get hold of two of them and each of them eh this this re-speakers could be, may be asked to do more, maybe up to five hours per per re-speaker. 
+
+(Moderator): And then, for the presence eh of these re-speakers, at the conference, that actually needs to estimate the full duration of the event. 
+
+(Moderator): So three full days of dry run, and five for main conference.
+
+(Moderator): Now i heard, that the main conferences is four days, right? 
+
+(Moderator): Miloš, is the main conference four days? 
+
+(Miloš): From the top of my head i don't know. 
+
+(Moderator): I think it's i think it's four days .  
+
+(Moderator): So this is here is a formula that eh <parallel_talk> it doesn't really work eh </parallel_talk>. 
+
+(Moderator): Here's a formula that <parallel_talk> I'll edit it, can I edit it? </parallel_talk> 
+
+(Moderator): That estimates eh at now like seventy hours that need to be covered and this is obviously no longer like uninterrupted speech. 
+
+(Moderator): So this eh hours per speaker should be also like the eh total hours, so we need the speaker for. 
+
+(Moderator): So if there is like some training phase or whatever, that should be included in this, so that's why when Darrio said that you ask the person to speak for one hour, it's it would be probably good to put here like two hours and if I say four, then I actually expect than I don't get more than three hours of the recording or something like that. 
+
+(Moderator): Eh, so, I would like now ehh (everyone).
+
+(Darrio): You just to
+
+(Darrio): Because I was being eh about the numbers. 
+
+(Darrio): The adaptation starts from an already existing acoustic model for the language. 
+
+(Darrio): So all of the -
+
+(Moderator): Yes.
+
+(Darrio): Okay. 
+
+(Darrio): So it's mandatory -
+
+(Moderator): So - 
+
+(Darrio):To have a a a Czech and the English an acoustic model to ehmmm start with the adaptation.
+
+(Moderator): Yeah, yea. 
+
+(Moderator): So, i assume that the the adaptation model for, ehh, so, well, actually, when the when the recording happens, eh, you need just the person and a proper device to record the voice. 
+
+(Moderator): But, then to actually make use of these data, you do have to have the model. 
+
+(Darrio): Yes.
+
+(Moderator):And I have, I assume, that for English. 
+
+(Darrio): I have lost you on (??)
+
+<other_noise>
+
+(Darrio): Eh (believing), okay?  
+
+(Moderator): Or what did you say? 
+
+(Darrio): I have lost the your sentence, I have lost eh  <other_unrecognisable speech>.
+
+(Moderator): Yeah, yea. 
+
+(Moderator): So, i was just saying, that for the recording, you have only the person and the device, and then, for the usage of this recording for the actual model adaptation, you need to have the the baseline acoustic model and I assume, that for English, this will be given to to or provided eh to the project by Karlsruhe or Edinburgh, or possibly (even) per-voice.
+
+We we will try to create our own, but we are still starting with this, so i don't expect that we'll be able to to have eh like the best perform models ourselves. 
+
+(Moderator): And for Czech, of eh I'm in touch with the Czech radio and they should be able to provide us with eh like a considerable number of hours em.
+
+(Moderator): I'm like getting the numbers right now and put them into proposal a to create the baseline acoustic model.
+
+(Moderator): So, there will be more person-months necessary to process this, eh and like clean and train the acoustic model on that, but we should not need any recordings for the baseline acoustic model for Czech. 
+
+(Moderator): Hopefully, the data is already out there somewhere. 
+
+(Darrio): Okay and eeh most important for the also for the adaptation, is to also have the transcription of these which -
+
+(Moderator): Yes, yes so, that's what the Czech radio also has, an there has there was a a a project here, that also did this transcribing of of eh Czech recordings, so there is some transcribe data for Czech.
+
+(Darrio): My eh, my final suggest in regarding the adaptation is to be able to collect real eh re-speaking sessions in order to also be able to model not only the voice, but also the way it is.
+
+(Darrio): The speech during a real life session. 
+
+(Darrio): Because you know, reading ehmm without the pressure of the event is different than on the event.
+
+(Moderator): Yeah, i see.  
+
+(Moderator): Yeah, so let's that that's a very good idea eh i will make sure that we have this like, it it actually fits nicely in the eh in the hours here in this table, so we could have like one more purpose and that would be, eh like recording or adapting eh at at  re- re-spoken events, so that could be part of this these conferences already. 
+
+(Moderator): Or it could be a separate thing. 
+
+(Moderator): I think this is, that in the proposal, that we should write that this will happen at the dry-run, but we may want to have like more such re-speaking sessions eh as well.
+
+<other_noise>
+
+(Moderator): Yeah.
+
+(Darrio): Okay.
+
+(Moderator): Yeah - thank you.
+
+(Moderator): So for Italian and for the other languages: eh, can you please populate this table eh as i said this is for us, eh, so eh the idea is, that we will eh like this this table, the upper parts eh in on this sheet do the add ups so this, the blue one adds the hours eh by the different languages that we want to record, and the red sub-table summarises these person-months by a partner. 
+
+(Moderator): So then, each of you once like, you have indicated, that on that type of language and the type of a speaker, we'll see how many person months it creates and this number should be accounted for in the in the data work package. 
+
+(Unknown_voice): Okay.
+
+(Moderator): So we we can obviously process also English speaking a re-speakers like giving short term contracts to them and to and do the recording here in Prague eh, so if if eh, for example eh,  Edinburgh would suggest, that they want to have some English re-speakers like at hand, then just make sure that you, like create this line here and say that it is to be included in our budget, because, like we should be paying those people, but it is for the purposes that Edinburgh wants to do something specific. 
+
+(Moderator): If that would be the case.
+
+(Darrio): Eh, but this has to be filled by each partner.
+
+(Moderator): All the teams, who-.
+
+<other_unrecognisable speech> add the needs for German.
+
+(Moderator): Yes, so all that, this should be filled by all the teams, that want to get, like direct access to data for speaker adaptation, and I would leave this to up to the Karlsruhe to decide, how much time do they want to invest into speaker adaptation for German. 
+
+(Moderator): The the project eh will so, so, eh yeah, it's it's it's like, very uncertain at the moment, but we hope to get hold of eh of  the actual interpreters, who will be interpreting at the sa- EUROSAI congress, and it would be great get these for the adaptations sessions. 
+
+(Moderator): And these would be speaking German, French, a a as well eh, so eh, maybe our create here like all these, for for each of these languages some Charles University-handled re-speakers and hope that we will get these people and record those. 
+
+(Moderator): But if Karlsruhe or your would like to have more data for your particle language of interest, then enter this here eh.
+
+(Moderator): Well, as i said this is only for us to see how much how many person months do we have to have in in work package 1 on the data.
+
+(Moderator): And this is, this is what we'll add there.
+
+(Moderator): So, eh then, these person month here do not make it directly to the eh to the spreadsheet here, to the efforts.
+
+(Moderator): They should get to hear only through the Overleaf involvement in (the) data collection task.
+
+(Darrio): Okay.
+
+(Moderator): Yea, Yea. 
+
+(Moderator): So, is there there's one more thing, and that would be the other direct eh  the other direct costs. 
+
+(Moderator): So for the equipment: eh yeah, it's i don't know, how to how to go about this, but Darrio, you previously said, that you were just fine for for the conference interpreting that you already ran, for the for the insurance company. 
+
+(Moderator): You are just fine with the audio equipment that was there. 
+
+(Moderator): Can we simply trust that the same luck will happen for the EUROSAI congress, or do we want to be specific, as i initially suggested, that like you would describe what equipment is is needed and SAO will then eh include this in their eh call for (tenders) or? 
+
+(Darrio): Ehm let me say, that i've started checking the availability of specific hardware, eh, especially for the re-speakers. 
+
+(Darrio): Because, you know, if we have re-speakers, they have to be, they have to use a specific headset in order to be sure. 
+
+(Darrio): But the audio signal is the the better for eh for us. 
+
+(Darrio): So it's, I will add some ehm hardware costs for the equipment, because we will have also to set up the local infrastructure for publishing.
+
+(Darrio): We will have to get all of the all of the audio from the emm all of the audio from the emm equipment and send this audio to all of the ASR, we have to ehh identify, whether one of the engines will decide, if remotely or locally in during the EUROSAI and (??) conference. 
+
+(Darrio): And then, also the hardware for the publishing services service. 
+
+(Darrio): Basically for publishing the result. 
+
+(Darrio): So that would be also some equipment on per-voice side. 
+
+(Darrio): I will make a rough estimation as soon as possible, obviously.
+
+(Moderator): Yeah, yeah.
+
+(Darrio): About the cost.
+
+(Moderator): Yeah, so this so the idea where this belongs eh the thanks for (??) that this belongs exactly to this sheet tool that detailed other direct sheet in the Google sheet, eh so so far you don't have any line for equipment, because I haven't realised this. 
+
+(Moderator): And then, just write down, like insert one line here and write down that this is for equipment, and write down that this is the equipment for the re-speaker recordings and this is the other equipment, this is the hardware for the conference or or eh whatever, whatever is is needed. 
+
+(Moderator): And this should get automatically edit up for each of the partner here eh and also it should get listed by type, like edit up by type.
+
+(Moderator): And if there are more types, if you need to create more types than just to create those and I will fix this table so that the (??) work (again). 
+
+(Moderator): And the total numbers, the eh subtitles per partner, then get automatically copied to this first sheet so you'll see how that balances the overall budget. 
+
+(Darrio): Okay.
+
+(Moderator): Some for, for the equipment eh, I think, that we will also need some of those devices for the re-speaker adaptation. 
+
+(Moderator): So if you could, like estimate how much is like one kit, ehh for recording one person em, so that we can do the recordings with the re-speakers here.
+
+(Moderator): And then we will, depending on how much is that, we will probably purchase eh like two or or maybe even more for this (site) so that we can do the recordings of the re-speakers here. 
+
+(Darrio): Okay, okay.
+
+(Moderator): So if you can make like a separate line for one kit, of for for (??) recording and I'll copy that for ourselves then.
+
+(Darrio): Okay. 
+
+(Darrio): I will eh eh let me say, put the note, that this is the one unity eh cost of eh the equipment. 
+
+(Moderator): Yeah, okay eh, thank you.
+
+(Moderator): So this should, we will have a next call a without per-voice but with others on Thursday, so if you could do this before Thursday with some rough numbers, that would probably be good, well the time is running up. 
+
+(Moderator): It's we have like fourteen days to finish eh the proposal and that's that's very little. 
+
+(Moderator): Okay, so the last bit is the missing text parts, and eh here, i think that it's probably more efficient, if we just say goodbye and everybody will spend the remaining fifteen minutes in writing and writing and writing. 
+
+(Moderator): Or do you have any other ideas how to make sure that we - create a good proposal? <laugh>
+
+(Moderator): Is there anything (remain) to discuss?
+
+(Darrio): I think it's eh important, also for the integration part, the other parties needs to integrate because all of the parties will need to integrate, also participate in the drafting the text.
+
+Putting, just putting ideas i can elaborate on an ideas to improve the integration. 
+
+But so from my side. 
+
+(Moderator): Yeah, so there's one thing actually that I want to wanted to comment on. 
+
+(Moderator): Thanks, already, you created the tasks in the integration work package, but primal titles only, and it was not clear to me what is the integration with publishing platform, so the publishing platform is for the minutes, that's like the, eh, or wha- wha- that's task 6.4. 
+
+(Moderator): <parallel_talk> Emm I'll try to open that here, if I- </parallel_talk>
+
+(Darrio): Task 6.4 eh was the one what was not so clear to me and yo- we already thought about that before and if-  <other_unrecognisable speech>
+
+(Moderator): I see.
+
+The the imple-, the development of the plot- of the publishing platform of the <other_unrecognisable speech>
+
+(Moderator): Ah, yea, I see, okay.
+
+For live meeting yet.
+
+(Moderator): Yeah, so as of now, the tasks I I I like it's hard for me to locate it, but the task integration <paralell_talk> still, I should, maybe (not here), where's the Overleaf, Overleaf, Overleaf, yeah. </parallel_talk> 
+
+(Moderator): So, task 6.1 is the integration of ASR (essential) from multiple partners into the per-voice's platform, and eh that's, so everybody is involved in there, which is expect- to be expected. 
+
+(Moderator): The integration of multi target empty engine should definitely include us and Edinburgh, i guess.
+
+(Rico): Yes. 
+
+(Moderator): So, Rico, make sure that you are there as well.
+
+(Moderator): I'm talking about this, if you can see my screen then I'm talking about task 6.2. 
+
+(Moderator): Yeah. 
+
+(Moderator): And then, we have this automatic minuting, there will be more involvement eh from us and eh from al- from AlphaView.
+
+(Moderator): Ehm, I'm not sure about so this is record regarding the other e-mail, the the work package leadership.
+
+(Moderator): I don't know how much you want to eh delve into minuting yourself or how much (causes) you want to delve into minuting.  
+
+(Moderator): Eh, so  depending on that <other_unrecognisable speech>
+
+(Darrio): We can discuss on (??) properly on the other (??) 
+
+(Moderator): Yeah, exactly.
+
+(Moderator): Yeah, yeah, exactly. 
+
+(Moderator): So this is this is where your involvement could also eh raise in our (submitting) there, and the integration with publishing platform is probably something, which will be mainly per voice and almost nothing from others.
+
+(Moderator): Or maybe exclusively per-voice, right? 
+
+(Darrio):  Yeah, maybe I will eh, I would like to also add that SAO of all of the design and testing purposes because that would be something-
+
+(Moderator): Yeah, good one, exactly, yeah, so SAO SAO and per-voice should be here. 
+
+(Moderator): At the EUROSAI congress, this is actually something, which was fairly named today, but it should be at all the SAO events and these should include eh everyone eh, because everyone will be a eh, like eh at eh like everyone should be available for the EUROSAI congress, and also for the other  for the other events.
+
+(Moderator): So, that, the involvements in terms of first months will vary, but eh everybody should eh eh be there.
+
+(Rico): Yeah.
+
+(Moderator): Yeah, okay.
+
+(Moderator): So, the deliverables. 
+
+(Moderator): I think that will probably promise reports only. 
+
+(Moderator): Or systems? 
+
+(Moderator): I don't know, yeah, maybe, maybe (Rico) could comment on there design of deliverables, because that's what like in the spoken language translation, and maybe we could mimic this layout in, in in the integration work package 2. 
+
+(Rico): Yeah, so what can I say here. 
+
+(Rico): Em, in (??) project, we had similar we had similar (??) division that we had to prototype to (??) the actual systems. 
+
+(Rico): That we eh packed into the deliverables and we had some reports that we wrote. (Rico): Em, the thing we pay attention here is that there is a kind of a ehh ehh (??) so not all is the deliverable ones and we had to find a prototype a couple of months before the end of the project to allow the integration of it as well.
+
+(Rico): Well, I'm not a hundred percent sure like eh whether all the prototypes should be deliverables, we just promised to deliver systems that (??) be ready for em starting the integration thing, that was mentioned some months, six was mentioned somewhere, eh, but maybe that shouldn't be a deliverable (for) (??) the prototypes, so I don't know all (??) and other work.
+
+(Moderator): That's a milestone.
+
+(Moderator): That's a milestone.
+
+(Rico): A milestone, okay.
+
+(Moderator): Yeah.
+
+(Moderator): So milestones are, I've heard that milestones are something, that you just tick off in the system where's for each deliverable, even if it's software, there has to be like a cover letter, cover report, is that true?
+
+(Rico): Yeah. 
+
+(Moderator): I think it is, yea. 
+
+(Rico): So deliverable is a (typical) pdf, and copied (??)
+
+(Moderator): Yea, exactly. 
+
+(Rico): Well, we did a (few) prototypes.
+
+(Rico): In fact, those were small reports, to be said well, this is a prototype, just how you install it, this is the number of languages covered here's what it stands for, ehm.
+
+(Moderator): (Promo).
+
+(Rico): The prototype, like eh I (prepared a few amateurs) (??) and stuff like that. 
+
+(Rico): So it ended up being (??) report.
+
+(Moderator): Yeah, yeah.
+
+(Moderator): Let's eh, so I suggest, that to do the same thing. 
+
+(Moderator): Is the question, the hard question is the timing. 
+
+(Moderator): Eh, so, eh, maybe, Darrio, if you eh  could suggest something for a for your for your work package?
+
+(Moderator): Like by when should be what version available, and then we will check it. 
+
+(Moderator): In the timing of the deliverables should be somewhat in line with the timing of the work packages. 
+
+(Moderator): And this the work package that we have just talked about is eh spoken English translation and that's that's 3, work package 3, so recourse tasks all run throughout the whole project. 
+
+(Moderator): So the organisation is then, kind of eh taken over by the individual prototypes and the releases. 
+
+(Moderator): I would slightly prefer to have some, like progress visible also in the tasks, and that's what I do for my multilingual mission translation. 
+
+(Moderator): Eh, so this is like the current tentative plan that will first focus on multi-target and then multi-source and then flexible multi-source and whatever. 
+
+(Moderator): And there g- will be deliverables related to those, and I like the idea of having a few months between the software and the report and the integration, so eh, for the ASR, eh, sorry, for the integration work package, work package number 6, there is also this like compact block of eh, of tasks. 
+
+(Moderator): All tasks running through all the project duration. 
+
+(Moderator): ;And I would like to see this somehow eh, somehow graded. 
+
+(Moderator): Eh, so the for for example the minuting integration is definitely something that can start only like in the middle of the project. 
+
+(Moderator): So I'll-
+
+(Unknown_voice): Yeah, yea. 
+
+(Moderator): So, will just either Darrio or myself will just review that. 
+
+(Moderator): The more you do, Darrio, the better, because the more reliable the estimates are. 
+
+(Moderator): I would just make something up, but if you do it.
+
+(Moderator): Yeah. <laugh>
+
+(Darrio): Just to speed up, so the text the (let me say) development of the the right (??). 
+
+Is it okay if I write it in a doc, a  word document?
+
+(Moderator): Yes, yes.
+
+(Darrio): It's much faster for me to wor-  <other_unrecognisable speech>.
+
+(Moderator): Yes, totally okay.
+
+(Moderator): Totally okay, I prefer Google doc, if you don't mind, so, well I don't have Microsoft Word at all, so if you send me a Word doc, I will upload it to Google doc anyway to just open it, actually, eh.
+
+(Darrio): Okay. 
+
+(Moderator): So, if you start a Google doc, separate one then I'll, I'm happy to do the merging of the text into the Overleaf. 
+
+(Darrio): Okay, that's fine. 
+
+(Darrio): Google doc is fine for me.
+
+(Moderator): Yeah.
+
+(Moderator): Okay, so I think that's that's it for now, let's indeed eh close the call, unless there's any other questions?   <other_unrecognisable speech>
+
+(Darrio): No more questions from my side.
+
+(Moderator): Yeah, okay.
+
+(Moderator): So thanks very much everybody for joining today and eh, Rico, we'll talk again on Thursday, and otherwise we keep exchanging e-mails and, hopefully, the text will like get created quickly, yeah.
+
+(Moderator): Thanks. 
+
+(Moderator): Thanks.
+
+(Darrio): Bye.
+
+(Moderator): Yeah, thank you, bye bye.
+
+(Rico): Bye bye.
+
+(Unknown_voice): Goodbye. 
+
+(Moderator): (another_language)Tak, Miloši?
+
+(Miloš): No, jasně? 
+
+(Moderator): Jo, jo, teďka schválně, jestli to můžeš nějak uzavřít, uložit a pak mi poslat. (/another language)

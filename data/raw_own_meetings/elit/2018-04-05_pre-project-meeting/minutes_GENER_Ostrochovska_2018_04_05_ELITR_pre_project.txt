@@ -1,0 +1,130 @@
+﻿ELITR Pre-project meeting 2018
+Fri, May 04, 2018
+time and place?
+Attendees: CUNI, Karlsruhe, UEDIN, Alfaview, ?
+The purpose: To familiarize attendees with individual work-packages, to discuss the division of labor and tune some details about the project
+
+An update on SAO status
+● A partner in the B part, in the actual application 3rd part, linked through other partners 
+● A separate columns in the budget draft especially for SAO - later included in total afterward
+● Technically, standalone partner contributing a few person-months
+
+Leadership of work-packages
+● CUNI - multilingual MT, management and probably also keeps minuting
+● UEDIN will lead data work-package
+
+Involvement on partners in the integration work-package 6
+● Everybody to check and provide input till tomorrow to draft should be completed
+
+Deliverables 
+● Publishing platform - software and report (not confirmed yet)
+● Other events after the EUROSAI event for month 32 - a report about running
+
+Milestones
+● first engine integrated with the platform
+● first preparatory event at SAO
+● Unified communication platform integrated - could also be deliverable, it’s on the agreement between Alfaview and PerVoice
+● EUROSAI event - also deliverable - a report in the form of journal paper describing technical aspects of the running the event
+● Automatic minuting integrated with platform - first version
+
+The project name
+● Probably ELITR - nicer content and spelled-out version
+
+Presentation of the respective work-packages by work-package leaders - at first to decide who leads which WP
+WP1 - Data
+The data for speaker and accent adaptation
+● KIT - the leading partner
+● A budget contribution - KIT and UEDIN to consider:
+● Number of demanded hours per speaker, number of speakers for recordings - adaptation purposes and presence at the conferences
+External resources for MT and SLT
+● A new data will be created only for the ASR adaptation
+● KIT to add tasks and UEDIN to estimate the number of devoted person-months
+ Collecting minuting data
+● To gather existing online meetings and manually revise the transcript
+● Creating and collecting documents - agendas, minutes for making training and test sets
+ Deliverables
+● Initial release if the training data month 6, a final release at the end of second year
+● Three different test sets months 10, 20, 30
+● The corpus of the minutes - training data for the summarization
+WP2 ASR
+Robustness of acoustic modeling
+Semi-supervised language adaptation
+Lifelong learning during deployment
+Deliverables missing
+
+WP3 SLT
+Transcript normalization
+Developing methods to increase the robustness of MT systems towards noisy input texts
+End-to-end speech text translation
+Deliverables
+● Three prototypes - alignment of prototypes are required
+● Reports in the middle and at the end of the project
+ Suggestion to include some languages for business reasons
+● A question to Alfaview about languages in their interest - English, Spanish, Chinese would also be good
+● Actually is also listed Arabic and Kazakh
+
+WP4 Multilingual MT
+ The baseline model - CUNI, KIT, UEDIN - It runs during the first half on first year
+● Two purposes: delivery of the MT to PerVoice into the integration and for the research afterward
+● Suggestion to go some of the languages only for the multilingual systems
+ Document-level translation - Runs throughout three years
+● For speech and also for the test
+Multi-target MT - in the first year
+● For the conference in the middle of the second year - translation from 6 to 43 languages
+ Multi-source - second year
+● Training on more sources of language to gain in translation quality
+ Flexible multilingual MT
+● Capable of translating from one-more languages into one-more languages at the same time
+Deliverables missing - probably yearly reports and one deliverable on the baseline MT models
+
+The gaps in introductory sections
+● Partner description - everybody has to mention two people
+
+Objectives, the relation to the work program, the early parts of the concept
+● Everyone should read it and comment it
+
+Methodology polishment required - two partners for each part
+● Remote conferencing - reviewed by KIT
+● The state of ASR missing - to write by KIT and UEDIN to review
+● MT incomplete - CUNI to fill and UEDIN will review it
+● SLT - hopefully written by UEDIN, reviewed by CUNI
+● The summarization is also probably finished - KIT to review it
+● Minuting tools - reviewed by Alfaview
+● Handling people - should be reviewed by everyone
+
+The concept seems rather weak - Alfaview to provide further dissemination
+
+Ambition missing - will be written by CUNI
+Expected impacts - Everyone to review it, every suggestion is welcome
+
+Impact maximization - Alfaview to derive specific tasks for dissemination work-package
+● Managing social media, local press releases, CeBIT - description and planned activities
+
+WP5 Minuting
+Discussion about the task “The live minute platform.”
+● Collaboration between CUNI and Alfaview is necessary
+● According to Alfaview, it is not doable with the scope of this project - only in case, it would be found some co-editing solution, especially for the actual project.
+●  The first year - only research focused on online solutions - in case of failure end here for a while
+● The second year - a possibility of implementing the interface
+● Deliverables - two research reports to first year (initial, final) and demonstrator
+
+WP6 The integration of the system 
+The integration with the unified platform - Alfaview to describe the task
+The integration of the minuting: AV, CUNI, PV - clarification of the role of PV - transcript generation
+Task 6.3 will be replaced by task 5.5
+
+WP7 Dissemination
+ Lead by Alfaview - to populate tasks and to specify activities 
+ Workshop on NLP technology at the EUROSAI Congress
+● To promote and disseminate technologies and collect user feedback
+● CUNI also plans to contribute to the organization of the workshop and feedback collection
+ Deliverables - A short report about the workshop
+
+Every task should be put into some specific time
+
+CUNI or Alfaview have to create task related to the website
+
+France should focus only on the platform task, Brigitte and Carolina mainly to dissemination task
+
+
+Minutes submitted by Dominika Ostrochovská

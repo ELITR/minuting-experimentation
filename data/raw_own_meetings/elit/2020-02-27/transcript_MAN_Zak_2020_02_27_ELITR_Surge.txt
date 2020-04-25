@@ -1,0 +1,79 @@
+(??)
+(D) Thanks, it is better (??) passing to Sangeet.
+(S) So yeah, (??) its Jonas right?
+So.
+So, for last two weeks i've been working, i started with training new language model for domain adaptation, (??) ASR.
+So now we have, now we can have better (??) adaptation, before like meetings and all.
+Secondly I was trying to (??). 
+Yeah yeah.
+(J) What tool are you using for the language model adaptation?
+(S) (??) script that was shared by Tyson.
+So I dont think i would understand whats in the.
+So I just (??) and data (??) with text data.
+English text data.
+And i think that we can have better language model because if we use the, text, like some text data (??).
+Maybe like sentences from his presentation, and if we (??) into language (??) and build the language model then we can have a adaptation, because until now we were just writing, (??) and mapping them to some other words that did not exist in the earlier language model.
+So this is going to be better.
+And nextly I was trying to run the, (??) docker on U4 machine, and its like (??).
+(??) with that, so yeah thats like (??), apart from this I also done automatic audio transcription and there were a lot of transcription (??).
+Next I trained new model for Czech (??) using the Czech (??) data set and I currently have two models.
+And they are both, they are both right on the GitHub.
+Depositary (??) Czech segmenter.
+Apart from that currently I am working on (??) to get SLT into action.
+And I'm also fixing the (??) from Dominik.
+And I'm also planning a new Czech segmenter using the data set that user (??) Jonas (??).
+And they were like a lot of sentences, so I just took 6 million of them, and lets see how the (??) be (??) new model.
+And next I'm planning to (??) models using Czech, using Czech data, so (??) I'll use Czech data.
+So that's all from me.
+For yeah.
+Any questions Jonas?
+<other_noise>
+(J) Regarding the domain adaptation of the language model, we can maybe (??).
+Sometimes I work on kind of similar things for Czech.
+(A) Sure sure sure sure
+(J) Yeah, I I started I think I mentioned it in previous meeting, I worked on like (??)
+like data based (??), so how it worked is that you have some domain (??).
+And you have large corpus of some other language for example.
+(A) Yeah, yeah, yes.
+(J) On the like, domain (??) data based (??) sentences to your domain.
+(??) like this week.
+(??) work (??) model, and a can you hear me?
+(S) Yeah, I can hear you, I had to turn my microphone off to hear you.
+(J) Oh okay i see.
+So yeah, just maybe it could be interesting if we meet and yeah we can try to coordinate the work on the language adaptation together.
+(S) So, (??) maybe (??) find some time to work (??) and actually whats happening inside.
+And we can make together.
+(J) I would actually be like interested like what toolkit they use for the language modeling or if they have like, their their own um, toolkit for that or if they use for example the (??).
+So, because I use the KenLM toolkit and there is quite nice option, they have quite good performance in terms of interpolations of different language models, so you dont train only one language model, but you have like some big baseline language model and then you have a some small domain model and you interpolate between them like based on some development set on which you tune the (??) city.
+(S) Um-hum, yeah, yeah yeah.
+(J) There would be option to (??) ngram model, I think it could be interesting as well to try maybe use can LM it give.
+(S) Yeah sure, we can discuss more details when we meet in person, and lets see if we can achieve more better language model adaptation.
+Domain adaptation, domain data, and yeah.
+(J) Yeah sure.
+(S) Okay thats all from me now, Atul will speak.
+(A) Last week I worked data collection, basically (??), but during when we started translation this week, so I worked some again (??) model language data.
+So right now I'm working on training, so (??), I am waiting for Matus (??).
+(D) Which languages?
+(A) English and French.
+So right now I have started with German, French.
+But I'm (??) last week to discuss with Matus, because Matus is already working on (??) translation then, (??) record some (??) then you'll start (??) translation systems.
+So I dont see any update from Matus, so I am waiting.
+Okay I will send an email to Matus.
+So thats it. 
+(??)
+<other_noise>
+Yes.
+Yes, so now Jonas, can you hear us?
+(J) Yes, so, yeah I basically been working on a pipeline I've connected this sentence embedings that I've already mentioned with like this Subaczech corpus, which is basically a huge corpus of a Czech news articles, and there is always headline of the article and a short abstract and then there is full text, so what I'm doing I got some, like domain sentences and based on these i searched through the abstracts and headlines to find the most like similar articles that match my domain and then i take the full article texts and use them to extend the language model to make the adaptation for that domain so yeah I'm working on it as part of my diplomathysis so I'm like have like 5 domains different from each other and um, yeah I'm trying to do this techniques for each of them.
+And to see if there are some improvements, actually I measured and seems seems to give seems to give like quite the constant improvements across the domains, so it yeah, I'm so that was yeah, that was the main I have been working on this week.
+(D) Okay thanks.
+Can you write it to the document?
+Jonas?
+(J) I will write there.
+(D) So this is mostly for Ondrej now.
+Cause we had to, Ondrej wants to read it and (??).
+Thank you I think we can you can quit the meeting.
+If you dont have any questions.
+So bye
+(J) Bye, see you.
+(A) Bye bye bye.

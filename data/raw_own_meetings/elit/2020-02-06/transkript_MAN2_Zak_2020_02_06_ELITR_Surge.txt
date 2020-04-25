@@ -1,0 +1,265 @@
+(?speaking in czech language?)
+(O) So it- it would be great if you could quickly explain what is yourcurent status of the speaker adaptation data collection interface that you are-you are working on and in the document the ELITR surge 2020 organisation, I've one or two points that mention your name and the one that I would like to specifically focus on is the "regular" data flow from you to Sangeet.
+And what I mean by that is that I would like in the very few coming weeks, that you two are in close touch and whenever you Vojtech have some data in the system then you know where to- like how to share them with the- with Sangeet.
+So that the data actually makes it to the models.
+So this is something that is- it is like the final part the final stage of what you are developing.
+You are developing to what people will upload things and all that.
+But in the end we want to have the benefit from that and the benefit is that it will be included in the particular systems.
+So this is something that I would like to set up soon and test at all the possible occasions.
+So that this final integration is actually he most stable and best tested part.
+Sorry.
+<other_noise>
+(?phone call in czech language?)
+So that's another collegue will join.
+So now Vojtech if you can describe what is the status, what you are working on and ehm specific what would be the best way to link your work directly to Sangeet.
+(V) Oh yeah sure.
+First of all I would like to apologize because I was busy wit- with exams but tomorrow I have a final exam for this exam perial so I should be more availa- avai- whatever.
+And the current status is that I have some scripts for converting the data and extracting the most of common words from the data and furthering the words comparing to the dictionary of already known words.
+But these scripts are working but they aren't in the pipeline.
+So I know I have to run one script then run second script then run third script.
+So right now my goal is to compress all the scripts to single one, so in the end all- in the end it would work like- like this.
+You have a directory with all the documents, downloaded from the web containing the- the relevant domain-specific dat- data and then you just run the script and the output of the script are the most common words from the- from the corpus.
+And optionally filtering that corpus using the dictionary of already known words.
+(O) Okay, I would like to make sure that-
+So this sounds good and it's totally ok that you had your time for the exams, that's- you don't need to apologize for that.
+But it's good to mentioned it and-
+I'd just like to double check that script the final one which will take the directory and do the all the processing is kind of re-interend.
+Not in the sense that you should be able to run it twice at the same time, but- so the correct word is actually idempotent or idempotent (different pronounciation).
+So that you- if you give it the same directory once and then for the second time it will emit the exact same result and the reason for it is that we expect these directories to grow in time.
+So we want some permanent version of dictionary and then we find further documents related to the speaker so we just dump them to the-
+Yes,yes.
+And we want the process again to convert what has not been converted and merge what is new and- so
+So I think the most expensive part is the four file format conversion so if you make some reasonable policy about the file naming, then you can easily simply create the non-existent (??) files and non-existence segment files and then re-do the dictionary from scratch that is not- usually not too expensive.
+It could be expensive it's a large corpus of files in which case again you would have dictionaries per source and the step that you would repeat would be merging of this- already- like collective agregated dictionaries.  
+So this is-
+Yeah so I'm already checking for that you- so your already existing script as our base line for converting the data and a that script contin checking for already converted files so-
+(O) Yeah, ok
+(V) (??) files are actually converted
+(O) Yeah, that's great.
+I have another question, and that question is related to the front end, if you have started, probably not yet on, like, reviving what Daniel has implemented the collection of source.
+So the web front end where people can upload their files.
+Have you started doing anything about this?
+(V) Ehm excuse me, I missed the question.
+(O) So the uestion is, at the beginning of your pipeline there's the user the presenter who is bringing his files and in one of the links I've provided you at the beginning was a link to Daniel Suchý who has already implemented very simple web collector web file collector, some simple web page where people can upload-
+(V) Oh,yes.
+(O) Their files to folders each folder per talk.
+One folder per talk.
+So my question is whether you have already started looking at this or not.
+(V) Ehm right now I'm not using that I-I just manually put the folders put- put the folders into the (??) but the -
+(O) Yeah, ok.
+Ok, so that's ok.
+The reason I'm asking is to mention what we have discussed today at the supreme audit office.
+So they are definitely going to have many source files for us.
+The structure of the talks will still evolve, so we need to be flexible with that but we are discussing what is the best way for them to give us all these files and I said that in March, in a month fom now, we should hopefully be able to propose to to suggest interface where they could upload the files and if the some restructuring of the folders we can do it behind the scene and then tell them ok,now the directories are-are updated to your current agenda and please keep uploading the files again.
+So this is- this is something which would be good to have running in March when they could start uploading their documents and there we would also test whatever formats they have and what other problems it this creates.
+So I hope that it the timing is good for you.
+That around March you should be able to have this running.
+I think it's possible.
+(V) Well what should I give.
+(O) Yeah and there's one more thing and that is the confidentallity of the data.
+So therefore they indicated that some of the files that they ill have will be public files which should- maybe they have- there are URLs (??) so it's downloadable from somewhere or they simply know the files will be published and they can give them to us as files and that's ok but there will also be another set of files which are strictly confidential for like the project.
+And I suggested that we could have two copies of this user interface like two views.
+And one of the view woul be green on green ground and that would be all the files which are non-sensitive and then there will be another like layer of that that would be like copy of that uploaded interface and that would have red background that would be used for files which must not leave the the faculty they can't be used.
+The whole process of processing and  including is ok but the files as such can not be compiled into to any corpus or whatever.
+So this is one more feature request on that user interface to separate like layers or types of permissions for files.
+(V) Yeah, sure, I- I will take it into the consideration
+(O) Yeah ok, so that's- that's very good progress and now to my original question.
+What is the best type of collaboration that you could start with Sangeet, the regular data flow.
+(V) You mean meatings like this?
+(O) Yes, exactly.
+So if there is a session going to happen, what I would like to- to be able to is just like dump the files on you and then you would process them your system will process it and you would pass it to Saneet and then I would tell-.
+So I would- I would simply know that we are going to give the demo on one particle day.
+It would be this person talking about this and that.
+I would dump the files for you ehm on you.
+And get the models or- ask Sangeet to run it and Sangeet would run and adapt it model on that.
+So this- this is the transfer of the data, well actually should be all on UFAL disks so its not reveal transfer the data.
+But you need some communication protocol kind of so that Sangeet knows where to pick it up and how to integrate it and this needs to be polished.
+It will take a while until you stabilize on the procedure.
+So that why im asking early.
+(V) Yes, sure, so- basically except Thursday, on Thursday I'm busy with school.
+(O) Yeah,ok, so after the exam period is over you can start loking into this.
+(V) Yes- yes, after the I have-I have school basically, I will be busy on Thursday.
+(V) So- so from when- from when should Sangeet contact you about this?
+So when you are going to be available?
+(V) If (??)
+(?speaking in czech language?)
+(O) Ok, so do we have anybody-
+Oh we have Ota connected so Ota can you hear us?
+We don't hear you.
+Maybe Vojtech will be available- Sangeet- (???)
+Yes exactly.
+So- so far we have been doing talk adaptations kind of on the just manually.
+And I would like talkable adaptations the automated as much as possible and this adapta- this- this automatization is that I throw files on- on Vojtech and he gives everything and the language modul and all that to-
+(??)
+He has- so- something that would- has to be discussed but he has the text.
+So that would be the best I think, yes.
+(OT) Okay, I can hear you now. 
+(O) Yes.
+(czech language)
+(OT) I could- I heard before but you didnt hear me.
+(O)Yeah, yes ok.
+So Ota please let us know what you are working on.
+(OT) So I I'm trying to make the webster kit connection working.
+that I- I use for uploading the data to browser, or to online text club and I'm using the socket IO framework for it, but it kind of tall(??) and (??) some packet.
+So i looking in to the plain webster kit connection would probably be more predictible and more easier to the (??) maybe.
+So maybe also some set up on the apache that needs to be done.
+But i have you know i read the web and try it to ehm kind of solve it.
+Hopefully I will have something by tomorrow.
+And the, so that we ready for next week.
+And the system is working.
+(O) Yes, on are you going to yes, I hope you are, but I'm sure-
+(OT) I'm- I'm.
+(O) On wednesday the dry run session.
+(OT) Yes.
+(O) And on Monday from one we have like pre-drive run here in Charles University.
+I don't know whether you have to be there or not thats not important, Wednesday is more important-
+Wednesday?
+And we could make it as a live test of i dont know if they will have full twenty five machines watching the- watching these the sub- the subtitles of what we are saying.
+So that would- that would be threst test for you so it would be good to see you.
+I know.
+So you're planning for that, excellent.
+(OT) I'm yeah
+(O) Ok
+(OT) (??) mentioned, I need to put together documentations with Chiara, actually didn't contact her yet, probably I should.
+So I wanna say so these webster kits 
+<other_noise>
+and (??) tomorrow to work on it.
+I didn't have much time-
+(O) Yes
+(OT) I hope to contact her- i also- i have some documentation already but I will reflect that it's the webster kit.
+So, yeah, I will then send it to her maybe early next week she should know, so that we can- we can (??)
+(O) And this documentation that you are sending to Chiara that is also related to their- to the document that she sent where there were the functional requirement on the presentation platform or not?
+(OT) Was it there in reply to your- 
+I'm not sure I have the document because I- I know you wrote to me that Chiara will be involved and I don't know if she required (??) going on.
+I probably need to read once again your message and the-
+(O) Yes.
+So do I.
+So I recieved an e-mail from Chiara yesterday that she's already busy this week and she- we should like schedule call maybe for the next week.
+So please when you are doing this please stop (??) but then we should probably sold all to Chiara with one call.
+<other_noise>
+So that.
+S youre now my deputy for communication with Chiara.
+(OT) Ok, ok, ok.
+And do you have already some meeting planned?
+(O) No not yet exactly so this (??) to start it.
+(OT)Ok, yeah.
+(O) Ok, thank you.
+(O) Ota will (??) the discussion with Chiara on documenting and also functional requirements on presentation platforms (??).
+So thank you that was Ota and there is no one else remotely present so maybe Dominik if you could start (??) what- what we have here.
+Whats your status.
+(D)So I'm working on multi-source speech consilation and I now I'm going to train we fix the (??)
+<other_noise>
+empty models to work on prefixes into prefixes.
+I'm just starting to work with- work alliance.
+(O) Yeah, thank you.
+So thats good.
+(B) Okay guys, evaluation to the set (??) it should test it on the real data.
+Dominik sent me some files from European I think parlament something like that so I-
+I think I started to download them and re-check if they- I can convert them to our suitable formats.
+And also (??) I will check the light files so- Sangeet send me to them morning and I just-
+I think we should (??) most important test now is to prepare data for IWSLT.
+I think thats something like that we promised to make them ready this week something like this.
+And by me and Ondrej should finalize this test now and that's all I think.
+(O) Ok thank you.
+(D) We already have to (??) scripts for spoken language translation.
+(B Yes, but if- the problem is the format of input should be exactly some- some (??)
+Yes, yes, if- yes, now it's ready-
+(D) Where can I find it?
+(B) Hm? Where you can find it?
+(B) I think-
+(O) So let's discuss that after that but during today, like right after we close the screening-
+(C) So since Monday I was busing transcribing recordings that was share by Daniel (??) 
+There were like quite a number of (??) and then today I also processed timestamped lock (??) for Ibrahim's evaluation tools.
+I also fixed the tool (??) for english segmenter that capitalizating the first letter for proper nouns but I still need to do this manually for the czech segmenter.
+Like- yeah, so-
+I'll discuss it it how to do that and yesterday I with help of Dominik and IT department fixed- (??) so that was good move.
+I mean, that yes our (??) on to run the (??)
+So that was good move
+So did-
+(O) So we can totally run (??) on Monday, we can start everything ourselves-
+(C) Yes, so the docker, I'm working on the docker images that was shared by Felix
+(O) So we don't have the segmentor yet.
+(C) Not the segmentor, only the (??) worker on some machines.
+(O) I would again try, since we got the docker file for that as well-
+(C)Yes.
+(O) I would try installing it from scratch so than we don't have to (??) it, right?
+Yes.
+Ok, it's right.
+(mumbling)
+So I'm very much afraid of running the docker on some virtual machine-
+(??)
+That's even worse,like that's something that we-
+(C) Yeah
+So that's what I- if it's possible, so if we can have separate account with docker support in (??) file
+(O) So the way they handle it (??) is that they would create virtual machine for us where they'll allow docker.
+(C) If they can do that-
+(O) So please ask Dominik and Sange- or Sangeet, please ask Jindra-
+(C) Ok.
+(O) That- and show him the docker file that we have and that we need to process this in pipe line actually.
+So it doesn't have to be really in pipe line it has to be (??) so (??) which connects to mediator, right?
+It is-
+Yeah.
+So, like a stand a low virtual machine docker is something that- that would do the job
+(C) Yeah, but this is what we need like for permanent use.
+Because we cannot turn too many segmentors from the laptop.
+(O) Yes, exactly, so we need a few instances of it actually.
+(??)
+(O) Yes.
+(C) Yeah we got a GPU.
+(O) So please ask for virtual machine for this and try to set it up-
+Maybe ask today and we don't need it for Monday we can-
+We could make use of that on Wednesday and we definitely need it for next Monday because there is a very high risk of- of not having calculate system.
+(C) Alright.
+And apart from focusing in text segmentor like analyzing the first word letter of the proper nouns, I would like to discuss how to increase the f- I mean the recall for that for the stop and periods.
+So one solution which I propose is that (??) smaller segments I would like to except and it can be once use not to fix.
+(D) Did you try to (??)
+(??) segmentor process the source as it comes so one (??) start.
+(O) That's (??) yours.
+(D) (??) yours when there process-
+(C) From the beginning-
+(D) Segmentor from the beginning, it can be process as the beginning of the sentence it must be (??)
+(C) Yes, the last segment that message.
+(O) So I don't know the details-
+(C) (??)
+(D) (??) somehow find a way (??) just to take the last message the (??)
+(C) So I think I then need to use the timestamps to-
+(D) Yes.
+(C) Ok.
+(D) We (??) the time stamps (??)
+(C) And what about how to fix the mediant?
+(D) I actually don't know what's the (??) to look to some outputs.
+(C) So, actually Ondrej was right that we have a list number of periods.
+So if-
+(O) So recall it's low proposing pits frequently.
+(C) Frequently, we need more frequent for the stops and the text
+(D) (??) period (??)
+(O) So like you would think reduce the (??) or something like that.
+(C) I- I have to look on it, maybe there's something
+Yeah that's all from me and-
+(O) Ok, thank you.
+So I think that we don't have anyone else on the call.
+No.
+Ok, let's- let's like oficially close this session with the reminder that everybody should enter themselves for specific things they have done to the- to the Google sheet.
+So that I can add some point for that.
+So remember that, it's quite important.
+And also if you have not filled the Youtube- sorry, the doodle (??) for regular meetings, please do so.
+I was expecting to see soon it and after here because both of them mentioned in the doodle (??) that they are available but-
+Yeah, ok.
+I'll talk to them seperately, maybe my misunderstanding for they- it
+Ok.
+(C) One thing I want to- so about the search for the (??) we were contact few days back and also I was not willing to-
+So basically the fix (??) and the output with phone it was not supported by EB plan so I proposed that we meet it- we meet physically in his office and fix it-
+(O) Yes.
+(??) in the office.
+Maybe tomorrow he is in the building.
+(C) Yes, tomorrow he's coming.
+I just want (??) I just (??) instantly and this needs to be fix, it's like-
+(O) Yes.
+(C)More instantly like-
+(O) Exactly, yeah, yeah.
+Thank you.
+So that's it.
+I think it's everything for today.
+So thanks for those who are on the remote call and we'll be in touch by e-mail.
+So remember to fill the Doodle of your availability, ok?
+Thank you, bye bye.

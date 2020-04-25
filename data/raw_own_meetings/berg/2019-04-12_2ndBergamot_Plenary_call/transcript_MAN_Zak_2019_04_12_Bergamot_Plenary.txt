@@ -1,0 +1,470 @@
+(KA) (??)
+Yes.
+Okay, so these.
+They are not terribly interesting, but their plans that we have to submit to (??) you and dig around graves on.
+I should see if we can get the sample dissemination plan or data management plan from another project, because I think it would be helpful to see what (??) is looking for, and to be perfectly honest (??) written in the data management plan before.
+(B) I think i can actually get form.
+I guess its (??).
+dissemination plan(??).
+(KA)Um.
+I'm sure we have some from other grants that and they (??)
+I guess they are usually confidential deliverable, but I do not think a project (??) sharing them (??) longer.
+And okay, uh, moving on our apparently with cluster ourselves together, um.
+I dont know where (??) actually can can someone go down the hall and grab (??) someone not working on the (??) 
+OK so.
+We the next thing we have to deliver by the 31st of August is software that goes past and the (??)
+(KD) So at the moment, we have (??).
+(??)
+And (??) include (??) mortifications, and it can be more (??), so that we do not have to convert (??) before doing (??) multiplication, and then convert back again.
+And (??) and our software toolkit is at least three times faster, then (??) and they promise that they were going fix it (??)
+(??)
+You are being recorded.
+(KD) Okay
+And (??) get our own solution faster then (??) library, (??).
+(KA) Experimental (??) So we ran with log quantization, and retraining.
+And if we can do four (??), with one (??) for both the activations and the parameters.
+And and if we just compress the parameters, to four than its point four blue loss. 
+(??) should help with download size that minimum, and we are using log quantization to quantizing the log.
+So its one bit sign.
+And then three bits (??) tet us start in there.
+It is terrible (??) just the (??) system and do not retrain it by with retraining it does do pretty well and then long return question is.
+Can we turn this into something that actually efficiently runs on the CPU.
+Worst case scenario we unpack (??) bit and just save the memory bandwidth.
+Ideally, we can abuse some (??) instructions to better than that.
+(O) Quickly just repeat what is the procedure to train the models so that the model is four bit only.
+Because you need to train (??).
+(KA) (??) Can you mute, because Ondrej (??) we can (??) the noise that came when you showed up.
+(O) Should i repeat the question
+(KA) Yes
+(O) Yeah, so my question was if if you would quickly repeat the procedure to get the model trained.
+So the the model os four bit only, because as as far as understood, you have now an implementation of the inference, so that you can translate on CPUs with four bit models, but if you take normal model and just (??)
+(??)
+And if you properly adapted uh, it will be the one (??) of loss, which is, which (??)
+(KA) OK to be clear, we have (??) pitch fixed point, integer implementation.
+And we have simulation experiments on four bit, where we quantize and then restore to float and actually are running and float, per four bits,  right now.
+(O) And so that is the the model was saved in four bits.
+But then it was like when when loading it was (??) float, and the inference running floats on CPU.
+(KA) Yes.
+(O) Okay.
+(KA) This is grossly inefficient.
+The point is to test quality, on four bit we are currently trying to find, what can we get away with it from a quality perspective before implementing a four bit (??).
+(O) Yeah.
+And and to get and the the integer (??) the eight bit integer model.
+You run the training on the (??)
+(KA) Um.
+Okay, to get in a eight bit model.
+We just train (??) on a GPU or whatever, and then (??) someone who (??).
+(R)It is Robin.
+I 'm just trying to get on here.
+I (??) have a a a very good connection.
+(KA) Hi Robin uh, yes your connection is bouncing a bit and your arrival is well timed, because we will be talking about the UI in the next point.
+We are currently on five C (??)
+(O) So can I just finish?
+You have a regular model (??) 
+(KA) (??) especially Robin who (??).
+(R) Hold on.
+I 'm on a mobile, that is what it is.
+(KA) You can still mute your phone.
+(R) Yeah, hold on
+(KA) (??) so anyway, um, if we train in normal model, quantize everything to eight bits and Ryan inference (??) fixed point integers.
+Then we do not lose any quality.
+You just did tune the maximum value to be that maximum absolute value (??) in there.
+So you take the largest wind and map that to a 127, um, that does not work at all you lose way too much (??).
+If you try doing that trick with four bit.
+Explain.
+So with four bit we are taking logs.
+And we have to do retraining.
+You lose about ten blue points.
+If you do not retrain, but for bit.
+Uh, so the procedure is training right now.
+And this is the (??).
+The procedures train a normal system and then write some code that quantizes, both the activations and the and model, and then continue training running that quantization code again, and we keep the residuals for the stuff.
+(??) rounding error and quantization.
+When you apply the (??).
+We keep that is the residual and accumulate small residual so that small updates can eventually change the quantize value.
+(??)
+(O) It is intertwined with the more (??) training in some way.
+But then there
+(KA) (??)
+(??) to be perfectly honest.
+And then we will move onto the Robin, who will talk about UI.
+Who still muted.
+(R) causes also to trouble (??)
+So as far as my update hopefully next Friday.
+I 'm interviewing for the UI (??).
+So we should have someone actually in place in me, because they can if it is this person agrees that can start immediately.
+Um, otherwise we have also got some, um, previous data that I 'm hoping to start analyzing and looking at error a detection in the translated text.
+So i 'm going to start with,(??) then build on to that, whith the and firefox (??) system.
+(KA) And I told Robin, by the way that he should just go ahead and turn the ground for the Google (??) subscription, and be able to test on people, without any of our code being ready (??).
+(R) Yeah.
+So the the plan is to start from no our stuff.
+(L) (??), so you are going to start designing the UI for the testing, and then get human them.
+(R) (??) over already got some set up for looking at how to have both monolingual and the multilingual, actually spot errors in machine translated text.
+So when they look at it.
+(??) have a feeling of confident (??) no, and it from just sort of reading studies.
+And then I 'm also going to start looking at the UI that exists.
+And just see if there is any sort of problems, or what the issues are with that, as it stands. (??).
+(L) (??) look at how humans (??)
+(R)Yeah.
+That is right.
+There is different categories of errors, and whether they can spot, even if it even monolingual to (??) the original text.
+If the just can read read things in (??) that does not seem quite right.
+(L) (??)
+(R) So what I have.
+I have actually got is a small (??) and machine translated text that includes errors in it.
+(??) examples.
+(??) they are looking.
+(KA) (??) database come from?
+(R)And it was two (??) of the us and previous competition, (??).
+(KA) I 'm asking you (??) and this is your statistical or neural system because the statistical result should probably be thrown out of the (??)
+(R) I 'm trying to think how many years was a one of one (??) of the few years back from the German to English English (??).
+I can 't remember, which exact one it may be, but (??)
+I 'm not too worried about how the area to generate (??) but that different types from (??) different types of things things (??)
+(O) But I would like to have the more general question.
+How that fits in the overall set of (??) because I think that you are doing a fair bit of quality estimation estimation work.
+So that should actually not be part of the UI (??) just to separate it.
+You should be able to work on that, but we should included mentally quality estimation.
+Are you planning to make use of (??) available at the users (??) points at the at the browser.
+This is an interesting possibility, and it is becoming more and more likely, because there is software eyetrackers who just use the webcam, and, they are not involved in enough but they could be (??) the next two years.
+(KA) Do you mean, as an (??) like with his subjects agreeing to this as I could see very bad press for the Firefox translation (??).
+(R) Yeah, that was exactly my (??).
+(O) Yeah, exactly.
+These are the things that we need you to discuss (??).
+And I think the research is interesting.
+(KA) (??)
+(O) (??)
+As an experiment it makes sense.
+But I do not think it makes much sense in their real sitting, even if there was no risk, of this negative (??) from that.
+So even if we assume that everybody would be totally happy from the computer looking back at his eyes.
+What would we use, how would we use the information that they frowned when they are looking at this empty output, would be like hide it on the spot.
+So how does that fit in the in the final use case that that was my question.
+(R) (??) as really just to judge he at the time of development.
+I was not planning and building in (??) or recommending it in for the actual system.
+But the idea of being able to monitor points of confusion can be detected in the labs experiment (??).
+(L) Robin (??) you have a new transmission data that has been (??) by humans for errors.
+So we can exchange emails and see if any of that will be useful, it is not (??) this new (??)
+And it is quite an (??).
+(R) (??) stuff that would be more appropriate, and that would be helpful.
+(KA) (??) microphone (??).
+(O) And (??) when I mentioned (??).
+And (??) work fits better (??) quality estimation (??) UI.
+As I said, I think it is totally good and interesting.
+If you keep working on this on this qualities estimation with the help of (??) data or whatever.
+But I think we really, we really rely on the you, doing also the UI stuff and the UI stuff would be how to display of that the (??) is not so good in this area.
+So this is, this is the type of studies that we primarily one from the work package on UI.
+So that is what I wanted to say.
+(KA) I agree with Ondrej.
+We primarily a need to be doing like how do we display (??)
+And thats (??) UI work package is, and whether or not someone rounds when they see something (??)
+(R) Right, because I felt that part of the (??) is is to make sure that that was the only translated version.
+We are confident in it in that way.
+And therefore part of that is the the response.
+So it monolinguals um, how they actually interact with the information.
+(KA) So we wrote bunch of (??) Monolinguals and how they (??) sentences or not , um, which was largely (??) there as motivation for the quality estimation package (??) to get all.
+And from a UI perspective the question is how do we display that quality estimation, information to the user, and did they actually understand it.
+(R) (??) that is what I learned a building into this.
+That is the the purpose of his as well.
+It is that the is the (??) 
+(L) (??) Robin (??)
+Yes, he could do simillar experiments with eye tracking where (??) different (??) displaying (??) their predictions, but this (??) human (??)
+So at this stage, there (??) detections or (??).
+(KA) Uh, I think we need to add some notes from the UI.
+And, quality estimation people into these minutes here, (??) parallel with that being the notes on that discussion.
+We can move on to Mark talking about (??) page shoes, then metadata, and how I should be dumping pair (??).
+(M) (??) That is us.
+Basically that is as far as we got, we have not discussed (??).
+Since the last time, the only singly decided is that (??).
+But that (??) new data, but we have not identified any specific (??) of (??), which will use or extract or so on.
+And this is the (??).
+(??)
+And so on.
+And so we will not leave this until September, we will probably make a decision and starts collecting, or extracting the data some time around me.
+That is the update on this (??).
+(KA) We need to be getting Mark access to the files (??).
+(M) No wait, uh, the we had a brief look last time off to be (??) that he makes his, which included I thing that full Roy Html in it.
+And that also have emitted (??).
+(KA) We are not (??) html.
+(M) (??) he only have one line segments.
+(KA) or we are actually releasing (??) html (??).
+(M) (??) might be this one confusing it, because we might have gotten a sample from Barry, or something like that.
+(KA) (??) and what what you are what public (??) is incredibly (??) data in the sense that it is the stuff that we think it is translated.
+Which is like point, one percent of the data that actually exists.
+And the wrong crawl it is about three terrabytes of crawl data, and we should just dumped that on you.
+And I assume you have somewhere to put it because you can afford three terrabytes of harddrive (??).
+(M) Yeah.
+I 'm sure we can, are you not holding them forever
+(KA) I mean, we are.
+I presume you want to (??).
+(M) Yeah, we would probably need to process.
+Basically the safest option is (??) and stroke them somewhere.
+But uh, we will return to that.
+I mean, so far what we quickly discussed and decided was that there is not any clear piece of  metadata that is obviously will increase the translation quality by (??).
+There are pieces there that might help a bit like figuring out what the language is from different bits of (??).
+But none of them is like reliable and 100 percent of (??).
+But Yeah, that is that is it.
+So we have been mostly doing (??), which is the off line the main adaptation.
+And also quality estimation stuff.
+(KA) Okay.
+I will put some notes here.
+(??)
+I 'm promising to get you
+And, um, then we will move on to (??) talking about Firefox in (??), which (??) which they (??).
+(B) OK.
+(??) few different services (??) Google, and a sort of a nice coincidence of things (??) about two weeks (??) boss around Berlin.
+(??) different things.
+I guess this work.
+And then also on (??) engine.
+(??).
+And so then then, then from the first time, I can actually start working then begin (??) started China actually getting getting the UI back to actual (??).
+So that is my hope in another thing which (??) can be nice.
+Two is the one that (??) situations.
+(??) downloading the models, there is like are are going to solve this (??) once and use it to multiple times said (??). 
+(KA) (??) has been mentioned permission to use unlimited storage.
+(B)Yeah.
+(??) are going to actually download the models like (??).
+It is on updating the models and blah-blah-blah.
+(??) have it.
+(KA) (??) hosted.
+(B) Yeah,yeah,yeah.
+How the models update it, like how this version to control blah-blah-blah-blah-blah.
+(KA) Okay, um, fortunately, we dont need that for the initial Firefox immigration (??) will be served side, and wont even bother havin the model inside of Firefox.
+It will it will be excellent to have a demo.
+(B) Yeah I agree.
+<laugh>
+(KA) So, um, the last point here is partly, as negotiation with the project officer, since we had to change some (??) agreed to this early review thing with deliverables by the 30th of September.
+So Lucia/(??) is on the hook for some sort of progress report on quality estimation thats not a formal deliverable, 30th of September.
+(L) So, make some text reporting what we've done so far, that we are going to this report.
+Is that what you need?
+(KA) Yeah (??) quality estimation, did you participate in your shared task?
+(L) (??) participate like Fred.
+<laugh>
+(KA) (??) wasnt running anymore.
+(L) Its Mark's now.
+(KA) We dont know exactly what the form of this is.
+But I suspect they are going to want to report saying it happened doing nothing.
+For the entire-
+(F) (??) We have some work going on on refactoring deep quest to make it easier and faster (??).
+But we also discussed from last meeting that we could have functionality feature like a client server (??) deep quest where you say ok, you provide us with sentence pass or (??) then we provide you, but with some (??) labels on it.
+So thats something we are expecting to have at some point.
+So I have a meeting this afternoon with the engineer working on this so hopefully some good news on the spot.
+And thats something we could expect to show in September as well along with (??) we have QE (??) for a fueling, which pairs for a project.
+(KA) What is what is the press (??) high level, whats the model structure.
+(F) So we have different models, from (??) we have a simple Byron and models model.
+We also have implementation of the Plustech system, which was the the very well performing model for 2017 and I mean we have we are going on (??) learning so (??) enhanced models available in deep quest as well.
+(KA) Okay, the part of the reason I 'm asking is maybe we can do some of the efficiency work underneath you and run it in the same model, or or in the same code.
+(L) Do you mean if, some of the efficiency, making sure our (??).
+(KA) So okay, (??) can I take yourk model structure and just copy it in (??), and then run it.
+(L) It should be very easy its just (??) direction (??).
+(KA) So I I guess what I 'm saying is to the extent that we're paying to make Marian go efficiently, and also paying to make deep quest go efficiently, there is scope for the duplicating or combining some efforts if its easy to (??) directional or N model over.
+(L) Yes, (??) we are using for sentence level (??) for word level may be a bit trickier.
+We can still use that but we still dont know if thats enough .
+I think its probably better to have to to keep the tune (??) separate but to keep deep quest (??) running experience and trying different things.
+And then according to Marian what is wh- what is enough enough, and can be made efficient I think thats good.
+The reason we are refracturing deep quest is not only because of the project we also want to release it as and easier to use toolkit, but if you think its a good idea to (??) according (??) so we could definitely (??) predictor.
+And that would be good starting point (??) if you want to do that ready for the first report are.
+(KA) I dont think it has to be done for the first report, but what.
+It would be good to do before quality estimation is integrated into the browser.
+(L)Yep,yep.
+(O) So can you still hear me?
+I had to reconnect in the.
+Because the network totally failed for me for now.
+So I 'm an hour and (??).
+Finally, I was curious this extra review meeting.
+Is it going to be physical or just remote.
+So I'm not sure.
+(KA) Remote, as far as I understand the project officer is going to take the deliverables, we provide as well as Lucia, so my first deliverable, and committee will look at it.
+There is no song and dance in Luxembourg.
+(O) Ok, because then later in the call.
+It says that the the Marathon was supposed to be linked with that was like our internal preparation for this remote review.
+If you look at the at the Google doc for the.
+(KB) (??)
+That we will host the (??) Marathon either the last week of August or the first week of September.
+With the first one (??).
+(KA) We've been working on some room reservation stuff.
+It wont be in Luxembourg.
+I 'm as all all I have telling me about this review is that it will be remote and it will look at the deliverables and the easiest way for me to get more information is to go to this thing on April 26th.
+(O) Ok so its its fine to, I'll learn all the details on April 26th as well.
+(KA) Yeah, I will see you then.
+(T) Okay, it was actually my question, because ah, during the kickoff.
+There was some.
+I duno know we were talking about it, and the result I got from it might be at September in Prague.
+So ah, it would be work for me to prepare if it should be like face-to-face meeting, if we all get there up here.
+So ah, if it will be just from (??), then or somewhere else.
+Then its fine.
+(KA) (??)
+But I was under the impression (??) remote, if we want to have our own meeting independent of that we can (??) its not necessarily required being in September or anything.
+(O) Yeah, so we should not be mixing two things.
+One of the things is this review meeting that the PO requires, and that is very likely just remote.
+And other thing is our annual meeting for the project, and that was discussed to be held in Prague.
+But then the last line of of the of the meeting minutes today such as they could be co-located with empty Marathon in Edinburgh and also this.
+This meeting the annual meeting of the project could be kind of preparation, or the final check for this review meeting by the for the review, for the remote review meeting by the PO.
+So thats just like three ways of looking at it, and two events, that should not be mixed.
+(KA) Ok.
+So I guess the question is, since we are hosting them the Marathon here anyway should we have a side meeting next to that (??) to give them talk about um something that empty Marathon, for instance, um, and I suppose we can also run a Bergamot project, at MT Marathon of some description.
+(F) Something like integrating (??) that.
+<laugh>
+(KA) I see what you did there Fred.
+You are welcome to run that project.
+<laugh>
+So,
+<other_noise>
+we need to pin down when exactly empty Marathon will be among those two weeks, and honestly lets say (??) satisfaction problem on our end right now.
+And then I suspect we should set a date within that to have a dissapearing talk (??) Bergamot (??), Marathon for some (??) time.
+(L) (??) two weeks again (??).
+(KA) Last week of August, first week of September.
+(F) I will be here at the week of August, so if you want me to lead the project (??) would be first week of September for me.
+(L) I wont be here either of the weeks.
+Yeah, (??).
+(KA) Right, I've never been a fan of trying to schedule meetings within the meeting, because they go on perpetually, so I'm going to squish this (??).
+Try to move on to more things.
+So point 6 updates not in the above.
+Somewhat unsurprisingly, we've been building WMT systems.
+I imagine other people, especially the Czechs have been building and I dunno, I havent checked the matrix recently.
+But I imagine other people are building WMT systems as well.
+I guess the question is actually who is winning.
+You have been building.
+(??)
+(O) Sorry, that was too quiet
+(KA) He's been building determining your English (??) system, and (??) most of GPU time, but that hasnt been going well.
+But the other people and then.
+I have downloaded my Chinese (??).
+Yeah, but Bergamot doesnt care about Chinese.
+Or we could put it in as a bonus.
+(KC) They havent done anything.
+(KA) Yeah, well no you've been doing  integer stuck.
+We did exactly, and you have a system (??).
+(O) Yes, yes, colleagues are working on on them, various ones and also one of my student the unsupervised, a German to Czech system, which well we'll see how that works.
+So we we surely have some systems, but I think the the question here should be more Bergamot oriented.
+So, of course, the the more important question for us is which set up is best for which I which pair, and and who winsm but the for Bergamot I think its good to talk about the languages that we kind of internally promised to ourselves to provide, because as far as I understand.
+There is no promise in the description of work.
+So the you cannot demand any languages.
+Or can they is there a list of the language pairs that we promised to do.
+(KA) Why (??) in the proposal.
+I remember yeah.
+(M) Couple of German I think.
+(O) Ok, so if there is the list.
+Then, then here and this minutes, where should be a record of this.
+Like we have these promises.
+And these people have these languages covered by their systems.
+And here are the outstanding language pairs that no one has a picked up yet but the you can ask us to to have them.
+So this is I think what we should we should double check.
+(KA) Being handed German, French, Spanish,Polish, Czech and Estonian.
+(O) Ok so yeah, Czech is covered, Germany's covered, but we are probably totally ignoring French and Spanish right?
+(KA) (??) Polish.
+(O) And Polish, yeah.
+So I 'm wondering what the or the strategy of Bergamot with respect to these promises should be.
+So I definitely agree that its its fine.
+And and the best thing to do to reuse the WMT systems, but we need to follow the Bergamot timeline, and have all the pairs that Bergamot promised.
+And if its not.
+(KA) We need to have all the pair I dont think (??) by the 30th of September.
+Honestly I'm more concerned about having something that has to be zero and works in one language.
+And then one one's.
+Actually I think the bigger problem is getting things set up so that we have a a type of system with hyperparameters that runs reasonably efficiently, and then replicating that for other languages, rather than trying to do all the languages, um chaotically with very different models.
+(O) I agree.
+(M) But, when we were talking about covering those languages.
+Do we mean including them in the data, which we are trying to not collect or extract or save, or d- d- d- do we just talk about including them in the experiments, or is it just about having kept the final stages some systems also apply to these languages.
+(KA) We should have (??) product as, translation pairs people can do.
+And that also includes the expectation that the domain adaptation quality estimation in outbound translation will work with them.
+(O) So I 'm sorry, I missed the question if it was for me.
+(M) My question was whether adding those languages well covering tose languages by finding somebody responsible for them does it mean that we have to include them in the experiments on our paper, and so on, or is it just about delivering final systems covering those, and then can I said that, at least, we have to make sure that the methods were trying to develop all the domain adaptation quality estimation all on translation.
+They are tested on those.
+They work on those.
+(KA) I dont think there is a requirement that if you are paid by Bergamot every paper you may cast a cover all of those languages, the requirement.
+(M) We have to show at the end that shallow stuff works.
+(KA) I think its not a good idea to try into all languages upfront.
+Its more like (??) none of the languages, into all of them by the end.
+But in particular this means that if the and this was actually included in some of the work packages that, for instance, there is (??) for all the (??) languages (??) the estimation.
+So yeah.
+I was looking in our (??) deliverables none of them inherently promises that it will have all of those languages supported, and I dont actually think thats the best use of resources, because honestly, we are probably be rebuilding those systems over the course of the project.
+(O) Yeah, I totally agree, I just wanted this still be in the minutes like that there is some formal promise on some languages.
+And I agree with you that its more important to well, concentrate on the full pipeline for just a subset of those only those that are interesting for us, and later on, we will simply run the training.
+Also for the other ones, so that this formal requirement is satisfied and (??).
+(M) As far as reporting in papers goes then we can keep on developing methods based on the languages we already have and just show that.
+And we also applied these final selected methods to those three, four languages, also.
+We show that it totally (??).
+(KA) Hopefully something will with them.
+Okay, when we were on our last call, we had a lot of conversation between the quality estimation and outbound translation people if you look at the minutes.
+So I guess this is asking if asking for a progress report about have you actually spoken to each other since the last call?
+(O) Halfway.
+<laugh>
+Halfway, I have <other_noise> (??) respond, but we've asked for the the system the the updates the up to date system.
+And I was off line for that short period when (??) today mentioned the deep QA uh the QE.
+So if if Lucia could quickly repeat, what is the status of deep QE.
+And if we could get hold of that, because that is probably the easiest system to to get running, and also the best performing I would guess.
+(L) I mean, yes, unfortunetaly its not the best performing but if we want something (??) can run in the browser then its probably the best thing we can do now.
+(??) what time into sol- transfer learning and and and keeping the models light.
+Yeah, deep quest is variable, there is refactoring going on but that doesnt affect the results.
+So you could take the current version of it, and to run the light version deep by an end version.
+And we can help you with that if you want, but yeah, (??) email with more details.
+(O) Sorry, for the echo again, so we dont need for now for the experiments, we dont need the lightweight model.
+It is important for the finely integration.
+But for now, we are happy was even heavy implementations.
+So in your answer please include also the best performing system to use.
+Thank you.
+(KA) Okay, next, um, there is another update on WMT.
+(M) I just so wanted to use this opportunity to say, hi to Ondrej.
+Who should really put up description of the magic task up.
+So all the potential participant (??) regards.
+(O) We will get to know all the participants in personally by email, because they keep asking where the details are, yes that's my fault.
+I'll put up the webpage.
+So that even unexpected participants can participate.
+(M) Even I have been getting emails about it.
+So I do not know why, so correct me if I 'm wrong, but I've been responding that is going to be on a logical to last year, as in all of the languages included(??) and (??) with humans and just (??).
+(O) Your answer was perfect.
+I've read your answer.
+(KA) Other way I am going back, and editing the notes that someone else for can (??) support.
+Models into Marian and and making them more bit (??) thing, rather than me doing it for you. 
+Moving on.
+There is a show or sign them for the EU on April the 26th, and I'm just going to write the park, but we also have apparently need a poster or some fire to stand in front of, and and Lucia 's jumping them empty Marathon.
+So I sent an email to browser translation.
+It is a dissemination activity and Mozilla has the designers and this is not like to conference poster we do not want an abstract in the full description of stuff, and its a but closer to marketing material.
+But I think you are only knows enough about project to provide some contents to the EU.
+(KC) Its a its (??), its a bit difficult right now because we do not have anymore (??) 
+(KA) Its in the proposal.
+(KC) Um, okay, are otherwise I would I would suggest that we basically just (??) a few keywords out of the proposal.
+To attract people I think you should be very lied on the on the actual text on the poster, because too much reading is not interesting for people, so should be couple of keywords thats like the list we actually have in the abstract in the proposal.
+That highlight the features.
+(KA) It sounds like.
+Thank you for that great outline of the work you will now.
+I guess we can 't remove the next agenda item which is using this conference platform for things, because we are using it any way, so I'm just gonna delete that.
+(O) So by the way, who was the one with with the hardest voice or the the the hardest echo impact.
+What what type of br- connection is that a a browser based, web browser based connection from a cell phone, or what is a technical issue here.
+(KA) You even have Robin on anymore?
+Internet issue.
+We are now going if I understand this UI correctly which I may or may not have missing both Robin and Lucia had the biggest problems.
+And Lucia was informed that the project has budget to purchase microphone.
+And I think we already did the next okay, we did the, like actually meeting thing honestly, we need to figure out what MT Marathon is going to be and maybe people will or will not be able to make it back.
+And then.
+The last issue is a is timing.
+So we were men-, same time, same tape that, and we should turn this into a regular meeting.
+I should send something out for approximately the same day, in May, which.
+Oh, it may not be 10th though it might be the 17th because I have got travel to the or yet another project.
+So we will send out but same time, same week, very simply (??) variable.
+Okay.
+One more thing regarding the recording, so at the very top of this minutes I've put a link because we also need your consent with that.
+So everybody please follow that link and fill the Google form.
+If we are allowed to so so that we have the full record like what we are allowed to do with your voice in this.
+(F) Do we have to do it if we have already done it last time?
+(O) So the, I think its safer to do it every time.
+(KA) (??) every time.
+(O) Like I'm happy to prepare form which we do it for all the time.
+So would you be happy, because I didnt get any response from anyone on the actual content of this consent form.
+So I assume that you are all fine with the warning, but I take this and for the next time I 'm
+I 'm happy to prepare very, which says for all the penery calls.
+Yeah,yeah.
+So what do, should make these general consent then?
+(M) Sure.
+(O) Okay, so I 
+So, for now, please its not much work its the label of the meeting has been prefilled for you.
+So just like two clicks, and and typing your name, which is the the official new legal way of signing yourself with the keyboard.
+Uh, so so so sign yourself with the with the keyboard.
+But for the for the next one we'll have general one, which will apply to all the plenery calls.
+Thank you.
+(KA) Ok, we'll set a date in at least I will be here, and then people can object, and then maybe we'll have to change it, for the next meeting, and (??) plans 30th of June.
+Have fun with the final throws of  WMT everyone.
+Or at least the WMT (??) matrix task.
+Bye.
+(M) Ah, thanks.
+(F) Bye.
+(O) Bye.
+(T) Bye.

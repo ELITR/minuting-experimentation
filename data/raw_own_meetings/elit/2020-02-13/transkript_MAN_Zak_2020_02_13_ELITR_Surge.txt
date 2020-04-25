@@ -1,0 +1,326 @@
+(O) So we have (??) here.
+Again we are recording this for the purposes of minuting.
+And one of the early sessions is actually already being, or it could be transcribed by an annotator.
+So the news from me are that, we had session like live workshop (??) run at the Supreme Audit office on Wednesday and all the presentations went kind of well for the people who could understand English, because that was run in English, and people who had to rely on our subtitling were totally lost.
+<laugh>
+So, the, the head of the particle division of the Supreme Audit office was at first very angry like not, not allowed to, to everybody, but I was talking to him for more than five minutes, maybe ten minutes in the corridor.
+And he was expecting that the technology will be already useful for the users and I've confirmed that the technology is now only working technically.
+And I do realize that it is not usable for, for those who don't speak English.
+So we, we knew this beforehand, so the next the planned session with Sangit that we have is, we don't have date for that yet.
+But we will be watching some, for example French video, that we are kind of curious about the continent, but we don't speak French.
+And we would like, so it has to be something that we can ASR, and French is the, the best next option, and we will try to rely on the live generated translations into English, for example, and we will see how bad the translations will be.
+And we will also diagnose, the flicker, because for, if you don't understand the source language, then you probably prefer longer delay, and less of flicker, but that's something that has to be tested.
+So if anybody can join us, if anybody does not speak French, and would you have an idea what we would like to see, what what what would be an interesting French talk, please email us, get in touch and we'll do it as as, like joined watching.
+So that's, that's one piece of news another bit is that the critically required, and as part of the usability for the users, the critical required the video and subtitles or the slides, and subtitles to be on the same screen.
+And, this is something that we also know about, Milos Kloucek has created something which is perhaps better than streaming of video, because the standard video players are designed,
+<other_noise> 
+to play in a continues way.
+And they don't care about the like, and if the like is being groan, then it's too bad for us, but not too bad for the standard video players.
+So for that reason, um, Milos Kloucek created something which at the server side the presenting machine is really taking screenshots.
+And if the screenshots change, um, then it will, it will send it as an updated picture to the, to the browser, so the client will be the, simply displaying the most recent picture.
+And, this is something that 
+(M) Look like, the very (??) solution, right? 
+Taking screenshots.
+(O) (?another language?) sorry?
+(M) Um, I was saying that it looks like very like (??) solution, like you know, hitting with hitting it with the hammer
+(O) Yes, but it's, I don't think it's too bad solution, because it's intended for slides, there is usually no, it's, it's not good for videos obviously, there is no way this would work for videos, but it's good for static slides, and the setup that we have on Monday seminars all the time, and, um.
+<other_noise>
+Excuse me.
+And the, on the, on the Monday seminars the static slides they even, they even hide the, the watch, so there is like clock.
+So there is no change on the slides for a couple of dozen seconds.
+And I think that's, that's reasonable solution.
+So that's, that's, that's the current thing that we have, but we still need to somehow organize the the layout to provide subtitles next to either subtitles or the paragraph you next to the slides.
+So we have one more person who just came, and that's James Level, he was um, visiting master students so to say, for semester here, and how, he's now going to leave back for Zurich or, yeah Zurich (??).
+Matus, you are in Zurich, right?
+(M) Yeah, I am here.
+<laugh>
+(J) Where are you studying?
+(M) I am studying at ATH.
+(J) Okay, (??), living in Zurich whole time.
+(M) Yeah? And what are you studying?
+(J) I am studying also computer science (??).
+(M) Um-hum, yeah, nice to meet you.
+(J) Thank you, also.
+(O) So, so you could meet him in person, (??), yeah.
+So, James agreed to join us for the surge, depending on his availability he's or his some some paper to finish that, like project to finish, to make into paper, and then also help us in whatever is needed, so that the the surge documents.
+Ok.
+So that was his since, I really have limited time, the last bit is that on Monday at two I'm giving a talk on the Monday seminar.
+I'll again inviting people to help, and I was curious, especially about Vojtech, he was like successful with his exams, and if he could now work on domain adaptation, so that we could feed in computational linguistics language model for, like English talk on computational linguistics, and if that would be, if we if we could plug this into the into the current setup.
+So that's the last bit from (??), and I'd like you to do standard round, everybody saying: "What what you have done." 
+Again, I'm reminding you of, of the sheet, please enter your achievements, so as soon as you've accomplished something, and the line there, otherwise we'll forget who did what, and that's too bad for the bonuses.
+<laugh>
+Ok, so who can start?
+(V) Well, if I may start.
+(O) Yeah, okay.
+(V) Alright, so I managed to would almost (??).
+<other_noise>
+(??) into bigger script, so the processing should now be faster.
+(O) Um-hum.
+(V) And I also looked into the, into the pronounce and fluxes.
+<other_noise>
+I, I've sent email to the (??), about the, what I found, so if (??) look into it, and say something, it would be great.
+(O) Ah, I'm (??), I double check.
+Yeah, well, (??) no one responded.
+<laugh>
+Yeah, okay, so we'll (??), yeah, it's it's something that goes beyond the the time limit that that we have now.
+So the idea is that we need to provide all the forms, so as soon as the a word is found in, because your processing all the related materials, if the related materials, we are focusing on Czech, if the related materials contain one word.
+Then we need to include this word in the language model in all its forms.
+And, I dunno know, what is the the the key part of of your question, I would for simplicity assign all the words all these forms of the same word, the same probability.
+So I would like to, a replacement word, well actually not, I would choose a replacement word and use the corresponding forms of the replacement words.
+So if the new word is well, "reference", such as the reference translation.
+And so that's feminine known "reference", then I would use that list of all Czech word forms to generate all the forms of this word, so "reference, "referenci", "referenci" this is actually boring, so this, this is very few.
+"Referencích", "referencemi", all these, all these variants.
+And I would the pronunciation is something that you easily generate, and the replacement word should be some random feminine known, again, the similar, ideally with similar declaration pattern.
+And then you would use the corresponding form.
+So, "reference", "růže", "růžích", and you would replace it with with all these words.
+Does that make sense?
+(V) Yes, it does.
+(O) Does it answer your question?
+<laugh>
+(V) In the email, I was asking about.
+<other_noise>
+The internet coprocess, I should process the, the (??), because you mentioned some, you mentioned the (??) transcript for using that, but from my findings, I'm not sure if it does.
+<other_noise>
+(??)
+(O) Okay, yeah, so yeah, I'll have a look at that.
+Thank you.
+<cough>
+So, is there any chance that you would have some files ready for the Monday talk, or not at all if not that's not a problem, either, but there is all of the semesters are starting, so every Monday there will be some more technical talk in English, mostly in English on (??)
+<other_noise>
+meeting.
+So as soon as we have some domain adaptation data, we can plug them in, and that would be good.
+So what is the status?
+Is there any chance that he would have something for this Monday?
+(V) Yeah should, I guess.
+(O) Yeah, so please get in touch with Sangit, I dunno where is Sangit today, I forgot to, uh, I haven't seen him in the office.
+So please get in touch with Sangit, and make sure that you feed those files to him, and he can use them.
+(V) Okay, I will get in touch with Sangit. 
+(O) Yeah, okay, thank you.
+So then maybe Jonas?
+(JO) Okay, so I have (??) mostly the work and the (??), I have it for Czech, but (??) too difficult to modify for English, so, um, I (??), I received some domain input sentences, then I could search the database, and return a list of a singular sentence states, and some large focus, and it should also work on word level, so if I give it uh, (??), then it will find a sentences that are like (??), so it maybe, because I will be in the mountains on the weekend, but I will be back in like Sunday night, so (??) for the Monday, and then I will be able to provide something, but probably either like Monday morning or Sunday late night, (??).
+<other_noise>
+(O) (??)
+Thank you, so I don't think that (??) ready and used for this Monday, but it will be very good if you synchronize with Vojtech, and if you provided this to Vojtech
+<other_noise>.
+Vojtech would use the files that we like find for the speaker, and as soon as we have the the the either you or Vojtech, well that doesn't matter who does that.
+But as soon as we have the talk specific corpus, so which is papers related to the (??) is going to talk about and all like that.
+Then if you could search before, search through a huge corpus of the (??) language, Czech or English for similar sentences and see how much much this corpus expansion can provide us with related other texts, other sentences.
+(JO) Okay, but like this is not related to this Monday seminar.
+(O) Yes, yes, (??) not yet all.
+(JO) Okay, okay, so it will be best to if you synchronize (??), you can try (??), I'm not sure how how, it can be like I just (??).
+<other_noise>
+(O) It depends on the domain, so if you are searching for (??), the chances (??) zero.
+<laugh>
+But if you are searching for the domain (??) the Supreme Audit office, (??).
+That you should get in touch with Vojtech, because Vojtech (??) some language model data related to my talk on Monday, so it would be great, if you to try to put this to Monday (??).
+(JO) Okay and (??), I have (??) that (??), they mostly (??) presentation platform and how it could be (??), I (??).
+(O) Yeah, thank you, okay, so that's from Voj from Jonas, and then Matus.
+(M) Yeah.
+(O) So that we do the first people who are online, yeah?
+(M) So actually, I worked on on three different things this week.
+And the first thing is the visualization, how was it called, real time audio visualization tool on the old realization tool, which is 
+<cough>
+which basically I, I implemented I implemented a back end and the front end.
+The back end is a server in C++, which is just reads the has gently reads the microphone signal, and then it sends it over web socket to the client, which is just a JavaScript piece of code that can be included in any webpage even on a remote machine.
+So that could make it possible to visualize the sound from the microphone the longer we, we have the volume.
+I also made it so that the the colors different colors, depending on the volume, though, the the last problem is that I'm not sure how to stand those thresholds, and I wrote into email to (??) that that they could do in in like three ways either I could just like. 
+Use like a random value that I think is correct.
+Or I could just choose a recording from the from the minuting corpus, and I could perhaps, play the recording hopefully for myself and see how loud it is, and then see whether the.
+(O) (??)
+(M) Threshold.
+(O) Yeah, so, for now for now please choose random thresholds.
+
+But as soon as we have the evaluation running, we can directly.
+(M) (??) bit ready, yeah.
+(O) So you, Sangit, you have already measured word rate a few times.
+(S) (??) 
+(O) Yeah, so, but you have the scripts to test the ASR.
+(S) Yeah, yeah, yeah.
+(O) So maybe Sangit could email.
+(S) Yeah, I will email.
+(O) Okay, yeah, yeah.
+So if you if you have the the big pick, any of their recordings and played at various loudness levels, 
+<other_noise>
+the level, and and as indicated or is calculated by your application, and then sat the threshold, so that they work for this, and if you are running any problem problems just set it to some random value.
+It's only for indication so far, so we need to to like to polish the the the indicators, and it's not, it's not critical in this development stage.
+Once it is set up, it will be very useful tool.
+But it is not blocking anything so sat it someway and we'll see.
+So maybe the output could be a little bit more verbose so, that some number, would appear next to the next to the the image as well, so that when Sangit is observing the session, and he notices that something is too quiet, and or too loud, he could mark down the number, so that he doesn't have to take a screenshot and then.
+(M) That's a good idea, yeah, yeah.
+(O)Okay, thank you, so that's the first thing
+(M) Um, and also, I worked on the other paraphrasing model.
+(O) Uh-hum.
+(M) Like the the many to many machine translation model and I used the cloud TPU to train it, at first, I just used a data set of 300 million open subtitles from various languages.
+And I'm going to deploy this data, and this trained model model today hopefully.
+It looks like the paraphrases are much better than the previous model.
+(O) Okay, okay.
+(M) The problem is is that, the problem is just that, because it was trained with TPU that, there are some other like, ways of how it, how it saves the models.
+So I just haven't been able to export it so far, so hopefully I will get through this obstacle today.
+And I also received new data from Edinburgh, and I'm going to get it training today, and hopefully I will have some results, until until the end of the week, and.¨
+(O) Yeah, okay, that's great, that's absolutely great news.
+So as soon as you have the Marian models, that correctly load on our GPU's, please email.
+(M) Yeah, that's the problem that that.
+So the problem is that that this wasn't trained on Marian.
+(O) Oh, okay.
+(M) But I had to do it just in (??), because of the TPU support, so so most likely I will have to export it as.
+<laugh>
+(O) I don't think it's possible to export.
+(M) Yeah, well, there is one for (??) actually, that I could use it's called open neural network exchange format.
+I'm not sure if I'm not sure if if they support it, but it could be worth a try
+(O) I don't think (??), is it?
+Open neural network.
+(M) It's called open NMT.
+(O) No it's not open NMT
+It's like, neural network export format, but the critical thing is is that you have to know the architecture of the network.
+And in the architecture.
+(M) Yeah, that's the thing, yeah.
+Yeah, you are right yeah, yeah there is probably, there is probably not a high chance that the architecture Marian is precisely the same.
+(O) Chances are very low to.
+(M) Not for the, not for the paraphrasing server, or like for other use (??).
+I think that that they they can, it can be safely if we (??) with the food like deserve fellow serving, which is just (??). 
+So, so.
+(O) Well.
+(M) So I think that it still be deployed.
+(O) Yeah, so that's great news for paraphrasing, like projects, but I don't think there is any way in which we could benefit from that for Elitr, because 
+(M) Does it have to be in Marian?
+(O) No, we are also serving, so that's a good, um, question.
+So are we running the Czech English from Lindat, or not, because on Lindat, there is Tenderflow serving behind the scenes.
+So the English Czech model is on Tenderflow serving, but I’m afraid that we are running Marian models.
+So we are running Marian models, which are trained in a similar way, but still the well, Marian, Marian only and not Tenderflow serving.
+So we we don't have uh, the the connection to the the integration of Tenderflow models, do we?
+I don't think if any.
+So we can we can ask, but perhaps it's it's they really good to evaluate this, like offline.
+(M) Yeah definitely, so that we don't burn time.
+(O) Yeah, and see if we, so that's a thing for Sangit again, as we are growing, we still have not collect, obtained any single number from our models, in the in as they are in this setup, but we should get to that in in in the two weeks of February at the latest, so within these two weeks.
+We would know, how will these models, our models perform, and you should apply those models also on the same data, and we will see how big improvement, we can get.
+(M) If you could just send me, just some data set or or a link, or or just if it's new stats what it is.
+So i can just run it.
+(O) Sources, English sources, and you will provide all the target languages that you can.
+Matus, right?
+(M) Uh, sorry.
+(O) It's English in to many.
+(M) No, it's many to many actually.
+(O) Many to many, yeah, so we are mostly.
+(M) But it is, but it is trained like in English centric way, and and when I evaluated it on English, it has much better performance than in the other languages obviously, because it sees English all the time.
+(O) Yeah, that's the paraphrasing, but for Elitr purposes, simply the send all the various recordings that we have already transcribed, and we don't have translation for that, so we need to polish the data set, but just for.
+Let's just give it a try.
+So the best corpus is actually the the best file in the (??) file which you have also translated into German.
+The one word they are talking about the cat and drawing the animals.
+So that one please.
+Yeah, yeah, so we will send you something.
+(M) Okay.
+(O) Okay, thank you.
+And you mentioned the third thing 
+(M) Oh yeah, the third thing was the paraphrasing server itself, so.
+(O) Okay.
+(M) So it is running, but the other results aren't satisfactory.
+(O) Yeah, okay, great, that's running when we won't need it.
+Okay, thank you, great.
+Perfect, so that was Matus, and then there is nobody else on the remote call, so maybe Artur 
+(A) This week i worked on data collection, is basically four five languages, (??) five languages so almost all the languages have finished, but some (??) remaining.
+So I think I will finish in this week.
+And I will see all the parts with you and your and Elitr folder, I will copy all the files.
+(O) That's actually something which would be worthwhile if Matus could translate all these languages into English, and English 
+(M) Which language is it again?
+(O) So, it's the it's the big ones, English, French,German, Spanish and.
+(M) Yeah, so I would just make a model where I would throw away the low resource languages, and I would just use the main ones.
+(O) And why would create a special model?
+Because you think.
+(M) No, no no, sorry I didn't.
+(O) So Artur is collecting multilingual data, and that means that we need to translate this to create synthetic pararell data.
+(M) Ah, yes.
+(O) So, this is something that we want to like bootstrap so what we'll do (??) of that.
+And if you have now these models, if you believe these models.
+(M) Yeah.
+(O) Are better than the old Edinburgh one, I believe that as well, then this is the good model to do the offline translations of all these large data.
+(M) Yeah, yeah. 
+Yeah, definitely.
+(A) The languages can be used.
+(O) Is it pararell?
+(A) No no, right now it isn't modeling (??) some documents
+(??) available on pararell
+(O) But we've we've agreed that the pararell data extraction will be done by Edinburgh.
+(A) Edinburgh, yes, I already mentioned the.
+(O) So just like leave those pararell files for them and let's use this single, the single side of those for the for the back translation.
+So please Artur send the path, Matus has access to the to the clusters and Matus can run all the competition.
+So please send the path to all the source files that you had to Matus and Matus will apply the models, and we will get the first follow synthetic, very much in domain corpus, across these six main languages, and then redo this also with all the other 30 something languages.
+(A) Um-hum, okay.
+(O) Yeah, great that's that's good thing.
+So that that would I really happened during the next week, and we'll see how then like what the data look like.
+And then we should try creating Marian model on all this translation.
+Yeah, okay, that's good.
+(M) Okay.
+(O) Great, so that's it.
+So now James, I don't know if you have anything.
+(J) Just let you know, I'm just going back next week, I work part time, so that's the reason I just had limited time for this project, and most of my tasks are (??) translations from English to German to feed anything (??).
+If I have additional time, I will look at this, (??).
+(O) Yeah yeah, yeah, thank you.
+And then Sangit.
+(S) Hi everyone, so I'll just make it quick (??) how much this week, so i spend most of the time like preparing for the dry run.
+(??)
+And we also worked on implementing the segmenter worker on (??) and I am freezing some issues.
+The, and I'm not able to run the script basically to deploy their worker on the mediator, and the installation was succesful, so this is like few our tasks, which I concerned (??).
+Dominik helped me integrating buffer in the Czech segmenter.
+So we have now more segmented Czech text.
+So that's all from me.
+(O) So increasingly.
+(S) (??)
+But how her later I observed that when you give the complete, output (??) at once segmenter, it gives a very impressive segments in the text.
+But when it isn't (??) text keeps on coming, (??) very less.
+(O) So is there a way in which you could train it so that it is more similar to the ASR output.
+(S) So that's how Dominik helped me, (??) buffer, I will be taking all the text and so that we like, all incoming text will.
+(O) Watch out it must not slow down too much
+(S) Yeah, exactly, so we are yet to (??).
+(O) Yeah.
+(S) So basically the whole incoming text will to keep on increasing entrance (??) full context and it will help the segmenter making more segments basically, so.
+(O) Yeah, okay, so that's the buffer must not grow too big.
+(S) Yeah, yeah.
+(O) And another question, for what you are training on, because if you are training on correct text, and that's the case, then there is like a domain mismatch of looked again, and a few sentences that Martin Popel was like saying in his Czech presentation.
+And naturally, he is a repeating phrases it's jumping out of the sentence, and then and then coming back to the sentence and this is some, this is a second output which we can handle.
+(S) I was reading newspaper, and I came across that they trained (??) data set, and they also used some in domain (??) data and all select auto domain.
+(O) Yeah.
+(S) So they mixed both of them, (??) train the, so I am probably looking for this contact, maybe Jonas to get me some Czech in domain data.
+(O) So that's a good question for Jonas, what data set has the correct transcript which are as this (??) as the natural speech.
+(S) Yeah.
+And so select, these sentences should be in like connected to the (??) conversations.
+(O) Yeah, that's also another, yeah, conversation.
+I don't know what is more important.
+The the the fact that the Jason sentences are on the same topic or whether the sentences are as the (??) as in normal speech.
+I don't know what is more important.
+(S) What the combinations should be okay, it should definitely be in domain data.
+(O) Yeah.
+<cough>
+So Jonas, do you have anything, any idea what data set could we use?
+(JO) I'm sorry, there was some buffering, do you mean data for like Czech conversations talk?
+(S) No, I mean data (??) Czech segment (??), domain data.
+Like Czech and (??).
+(JO) Czech domain data.
+(S) Yeah.
+I'll probably send you an email so that (??). 
+(JO) Okay, okay, yeah, that would be better I think
+We can get in touch and definitely I can like, try to help you with that.
+(S) Yeah.
+(M) I have a quick idea, could we perhaps make just something like, Wikipedia page, or something like that with at least all possible data sets or all possible like you know purposes, so that so that when someone like has a new one, we can always just add it there, so it can be used by everyone else.
+(O) I didn't quite understand.
+(S) He proposes some Wiki page of all the data that we are using, or we plan to use.
+(O) Oh, uh.
+(S) Is that right, for Elitr only?
+(M) Yeah, for Elitr only.
+(O) So the our data ambassador is Daniel Suchy, who is on vacation this week.
+<laugh>
+And I'm not sure if he is coming this week.
+But he would be the person to uh, to organize this, and he knows (??) the most.
+So just please hold on, and we are kind of what you want
+(M) Yeah, okay, okay, because like I, I also have some (??) data that I collected, and so, so I could send it somewhere and so on.
+(O) Uh-hum.
+(M) You wouldn't believe how much work it is to convert it to, to (??) record.
+<laugh>
+(O) Yeah.
+(M) (??) 
+(O) Other data and know about them, work for Daniel Suchy.
+Okay, so I'll have to run just now.
+So, thank you very much for coming, next I'll email everybody again, at the latest on Wednesday, when are we reading next week, and there is due to Paul, so please keep that (??) like up to date because the (??) applies to regular weekly time, and we will find the date, which time which suits most of you.
+Okay, thanks a lot.
+(S) Thank you.
+(O) Thank you, and I disconnect.
+(M) Bye bye.

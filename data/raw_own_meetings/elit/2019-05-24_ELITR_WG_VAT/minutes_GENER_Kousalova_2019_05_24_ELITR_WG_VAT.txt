@@ -1,0 +1,27 @@
+﻿ELITR_WG_VAT
+2019/05/24
+Attendees: Ondřej, Dominik, Chiara, Tea, Phil, Tyson
+Purpose of meeting: Informative meeting
+
+Summary of meeting:
+
+• Ondřej and Phil discuss about Marian worker and preprocessing. Probably is needed adaptation. Marian model would be trained to work reasonably well. 
+
+• Ondřej and Phil discuss about handling of timestamps. Limitation is that we can handle only like one single timestamp at the beginning and would be the end of the segment. Only timestamps that we have are the beginnig and end of the sentence. 
+Ondřej and Chiara continue and discuss about textfield. They needs to discuss the updates versus history of textfields. Phil will be informed if needed.
+
+• Ondřej and Chiara discuss about prototype. The first presentable prototype should be at the 15th of June. Ondřej prefer prototype sooner.
+
+• Ondřej discuss with Tyson the plan to run any AlphaView workers in Prague. Ondřej thought it would be interesting to start as many workers as possible in Carlsruhe and if there is hardware limits it is possible to run some from Prague. Ondřej ask Tyson for discuss this with Sebastian.
+After the call, Ondřej will test the AlphaView.
+
+• Ondřej, Dominik, Chiara, Tyson discuss the ASR worker bug. Dominik inform that sometimes one worker can handle several sessions, but then it stocks and it doesn't return any output. Ondřej say that it's very important that Tyson create a script that will like replicate it this bug. There could be a set up support per voice mediator, use fingerprint as input and keep like loading importer or keep requesting ASR from one copy. Production client from Dominik is different from the simple one by change the default parameters and he removed to Windows version.
+
+• Ondřej inform others that in case they have problem with calls they could put it in the document and will be found a slightly different hour. It is needed to synchronize.
+
+Next meeting will be next Friday.
+		
+2019/05/24
+
+
+

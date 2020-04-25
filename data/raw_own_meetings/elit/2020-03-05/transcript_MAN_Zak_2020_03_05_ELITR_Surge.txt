@@ -1,0 +1,118 @@
+(S) (??)
+<parallel_talk>
+<other_noise>
+Its just me and Dominik.
+So I dunno who.
+<parallel_talk>
+Hello Dominik, can you hear me?
+(D) Yes, I hear you.
+(S) Okay, so.
+Its just me and you.
+And I dont see anyone.
+(D) (??)
+(S) (??) updated summary in my Google Doc.
+So, okay.
+I'll start first.
+So, yeah, so I fixed the changes that you (??) in the (??).
+So basically (??) used to do is that it always acted only on sentence level.
+So then we, so like t- the problem which you faced was that you just (??) complete paragraph comprising of multiple sentences, and there it failed.
+So, what I did is that.
+(??) will put you give the, you give us text split into sentences and it will apply (??) on sentences.
+On each sentence, they got it has been trained on sentence level.
+Yeah, so that has been fixed.
+And, so yeah, and I tried with different data like your Polish (??) the best results and have (??) with the segmenter, Czech segmenter.
+However like if you remember I discussed with (??) regarding the, it discuss regarding the, what about that.
+Okay, nevermind, if I remember.
+And (??) it was also disable (??) and currently I am working on forced (??), and preparing and preparing timestamp outputs for all the (??) the (??) the manuality vice transcripts that we have from Elitr and for Elitr, so I'm preparing (??) timestamps for each these transcripts.
+And tommorow we also have (??) watching session so I will prepare for that also.
+And next I need to prepare data for (?? ) SLT, and Ondrej proposed that he needs a volunteer to test (??) check for Vojtech's data collection application, so I think I should be the one doing it ecause, when he used the (??) from his domain adaptation I just used to add it to the dictionary, but now when we have the language model scripts we can (??) we can build a new language model by adding text to the current corpus, and I think that he'll improve the ASR.
+Yeah.
+And Ondrej also proposed that because he was also proposing that a few onths ago that Daniel he left I think, because he was improvising the test set for Elitr (??) that we will be using, and so he was saying that we need to find someone to look into this data set and in the worst case scenario I'll be the one doing this, but yeah, that's all from me.
+Hello Dominik.
+(D) Can you hear me now?
+(S) Yeah, I can hear you now.
+(D) Okay, (??).
+<other_noise>
+(S) Did you hear me when I what I spoke?
+(D) Yes, I heard you, I couldn't speak only.
+So I need to ask when you say (??) better on some data.
+Data set, so how did you test it?
+(S) So (??) and recall.
+(D) On which test set?
+(S) So test set fro- test set from each from each of this data set.
+So there was like no common test set.
+(D) Okay.
+So, we we still dont know how does it improve the overall ASR, right?
+(S) We are all (??), ASR?
+(D) Yes, yes.
+So it would be good if you if you integrated and then run ASR and have someone who speaks Czech to say whether its better or not, and if you can process some some file and estimate (??) rate, and see whether its better with (??) or without it, so this would be proper set.
+(S) (??), so I will write this to the Google Doc and, I will (??), I think this would be much appropriate and better option to process the (??) so yeah.
+(D) Yes of course.
+(??) maybe (??) would be to just take someone speaking Czech and let him guess whats better, and second it would be to evaluate it (??) test set.
+It would be maybe more complicated.
+Okay.
+(S) (??), yeah and about that data collection supervising data collection test, data collection for ELITR.
+So (??).
+(D) (??) what is it.
+If (??) set.
+(S) So (??) collection.
+(??) What were you saying?
+(D) So (??) test set for IWSLT.
+(S) Not for IWSLT, not for IWSLT but for ELITR.
+(D) Okay.
+(S) All the data set for test that we will be using for ELITR, so (??) was actually supervising that.
+Maybe on (??).
+But this is the like outline story like.
+(D) Yes.
+Okay, so, can I start?
+(S) Yes, sure you can start, so I'll pause my microphone.
+(D) Yes, so I have the MT (??) already know.
+(S) Yeah, exactly so (??) with, because I have time now.
+(D) Yeah, so its, it can be integrated with our (??) MTs and later I can (??) option to disable (??) and then it would be easily integrated with Edinburgh (??) models if its necessary and I can update it (??) models to enable batching and talk to Edinburgh to update it on their side, specially the rainbow model.
+And the code need some refactorization.
+Yeah, so I, we realize that the prefix empty on which i was walking last week, its not working better than the baseline that we already have,
+Maybe better training could fix the quality but not latency and flicker.
+So until tomorrow I am writing papers, one is already done and the other must be written.
+Its the (??) about the subtitler (??) to ACL.
+(??).
+And I have to talk to Ondrej about about my other tasks for next week and decide the suggestion, (??) meets AlfaView (??) proccesing tool.
+The, to download the meetings done at AlfaView from from their website and to process it to format for mediators.
+Just to cut many many short videos, no audios.
+I should work on ELITR IWSLT submission.
+This is, it start at 17. March and at the end of march so this is not critical and I sh- I can work on the ASR mediator binding finally, and before we use to plan interpreting analysis and write a paper about it until I (??) for coaling.
+So maybe to ask Ondrej, what to do next.
+You, I guess you dont know, right?
+(S) Yeah.
+So okay, just a moment.
+(??) I can update Lindat MT to enable batching so (??) its just batching going to affect liek what situation do you have (??).
+So we.
+Yeah, so.
+(D) Right now we expect that the translation time is immediate, so when so when ASR emmits one hypothesis then the translation takes zero seconds and zero milisecond and is ready to display to the user.
+But in reality the translation take some time, about 200 miliseconds for, I dont know 50 words.
+And doing the translation ASR emmits new hypothesis which updates the previous one, so we can skip the already outdated hypothesis between between translating.
+So, (??) that it so one (??) the input ASR, and the other is sending it to sending it to empty and if two two sentences are updated at once then they are (??) they are (??) and send to empty at once and empty is (??) is able to translate them to its able to translate 16 sentences in the same time as the one sentences.
+In a batch, for this means that we can (??) 2 sentences at once and receive the translation.
+(S) Okay, so you mean all the 16 sentences will be translated partirarly at once.
+(D) Yes.
+In the same time.
+Independently.
+(S) Um-hum, okay.
+So but during live translation I think how th- (??) really going to benefit as like how is it like to benefit does during live translation, because doing live translation I believe we do not have much text at once to translate.
+(D) Yes, we have the incoming and its (??) very often (??) once.
+(S) Um-hum, so these.
+(D) So maybe (??) up to (??) sentences at once.
+Can be sent at one batch, and usually we can have four opened sentences.
+Yeah.
+I am not saying anything right now.
+(S) Okay, so sorry.
+I dont have any more questions.
+So, and we dont have anyone else.
+(D) Yes.
+(S) So.
+(D) Yeah, so we can close the session.
+(S) Yeah, we can close the session and (??) discuss in person on, about supervising test set for data collection for ELITR.
+(D) Yes.
+(S) (??)
+(D) See you.
+(S) See you, bye bye.
+(D) Bye

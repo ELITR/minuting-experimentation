@@ -1,0 +1,865 @@
+(J) Hey Sangeet.
+
+(S) Hey (??) how are you?
+
+(J) I'm good, how how are you?
+
+(S) I'm going well too, thanks.
+
+(J) So where did quarantine go to?
+
+Like are you at the dormitory?
+
+(S) Yes, I'm in the dormitory, I haven't left the floor since 4 days.
+
+(J) Oh.
+
+Sounds dep- depressing.
+
+(S) Yeah, (??)
+
+(E) Hey.
+
+(J) Hello.
+
+(E) (??) because Ondrej sent e-mail (??) and he can join us.
+
+(??) I'm not sure he he gets in on time.
+
+(??) just now.
+
+Good morning guys.
+
+(S) Good morning.
+
+(E) (??) Ondrej (??)
+
+(S) (??) he didn't mention (??)
+
+I think Ondrej (??)
+
+(E) I think now he, yes, he join.
+
+(O) Yeah, hello.
+
+(S) Hi.
+
+(E) Hi.
+
+(J) Hi Ondrej.
+
+(O) Yeah, so I'm happy that it works and I'm happy to see more people than normally on Thursday.
+
+So that's, that's great.
+
+And we have, the time is limited quite sharply.
+
+We should spend 30 minutes and then there is 15 minutes Slack of like extra time.
+
+But the session will close at 45 pas, at quarter to 5.
+
+So we must not speak longer.
+
+So thanks for joining, thanks for those who are still still coming in.
+
+I see that Sangeet has already briefly summerize so, yes.
+
+So that's a message for Matus who is also on the call, that Sangeet is struggling with boost.
+
+In some way.
+
+And aside from that so I'll I'll briefly start with what I've been doing.
+
+I've I was with help of Sangeet and Dominik as well I was running zoom subtitling and also I'm now using my talks on Thursday, my lectures on Thursday to do the subtitling tests.
+
+And we ran into new into new issue and that was simply one of the workers running on a slower machine, because the machine was swompt.
+
+So that's another issue that we have that we have struggled with.
+
+For unknown reason until it took us about an hour to figure out that we need to restart the workers and reserve the full machine for for them.
+
+And other that I'm supervising the the creation of adoble SLT test set, the forced alignments which will hopefully be finished soon.
+
+And I'm also-
+
+So that's you know that Atul is, for example Atul and others are working on ELITR test set.
+
+That's what will hear in the second from them.
+
+The deadlines as heard that probably the Congress will be in a year from now, so postponed.
+
+And that gives us more time, but still all the test set we have prove that our systems are not very good.
+
+Like not stable.
+
+And we have not done any progress in the multilingual setting like in the run where we have many input channels.
+
+So I'd like to ask Sangeet when he he's talking to say if he had any chance to get to the mock conferences.
+
+That's would be ehm a thing and then so that's that's one of the deadlines which got delayed by far.
+
+The other deadline that I wanted to mention is the adoble SLT task, which has the deadline not today but on the twentieth of April.
+
+So I still haven't updated the deafset but I would like to make sure that we use the splendid days to make better better submission than we've done so far.
+
+So Dominik has provided good baseline but good means that it runs not good that it recognizes and translate correctly.
+
+The the performance (??) is very bad.
+
+Because it's a harsh test set.
+
+So that's delibered.
+
+We wanted to have the test set hard, but we should now try to to improve that little.
+
+So another think that what I would like to ask anybody who is working with the data, maybe Dominik is the the best person to know, he's not here but maybe Sangeet could also remember.
+
+Or Jonas would know.
+
+We for for Peter Polaks thesis we need Czech speech which is ehm Czech speech which is translated into English.
+
+And I don't know whether whether we can ha- find that in any way anywhere.
+
+So that's-
+
+If you have any idea, please let me know.
+
+Ok that's from me and I'm, so please start talking and I'll try to increasing the capacity of the room, because I'm afraid that with all loaded.
+
+(J) Can I just have a quick question about the test sets?
+
+There was a e-mail like 4 days ago about the about the new set up of the repository for the test sets.
+
+And you you said that we should also put the ASR test sets into this Github repository.
+
+But did you mean just like the text files or like links to the actual audios on the cluster?
+
+Because-
+
+(O) So the, you mean ELITR test sets, yes.
+
+That is not related to adoble SLT.
+
+Please put there MP3 file, that are reasonably small.
+
+And if the files are too long, even in MP3, then please just put them somewhere to the cluster and to the repository upload some file which says these like a read me or whatever.
+
+These files live on UFAL here and here.
+
+(?) Ok, ok, thanks for the clarification.
+
+(O) So I'm trying to figure out if we can increase the the size of the room, but I don't know whether is possible.
+
+Yeah, ok.
+
+Yeah, so please now go fo- one by one, to say what what you have done recently.
+
+And this doesn't really work.
+
+So whoever, Sangeet I think I've interrupted you.
+
+(S) (??)
+
+I was basically working on domain adaptation and I basically run and issue with fading the language model.
+
+So basically I think it means establishing of the download speak- (??) and I'm-
+
+(??) and see what he says.
+
+(??) I'm struggling with establishing issue (??)
+
+Recently I've been (??)
+
+So I think that's all from me.
+
+(??)
+
+So yeah Jonas you can speak next.
+
+(J) Ehm, ok, though I've been mostly working on my theses for last couple of weeks.
+
+So I've been running quite extensive experiment.
+
+I have like a 4 different levels of domain adaptation of of the Czech ASR system.
+
+And I'm evaluating these adaptation levels on 5 different test sets.
+
+So right now I'm working on like analyzing precisely I have like a set of domain words from each of these test sets.
+
+And I'm evaluating how many of these domain words were caught by (??) adaptation level.
+
+Yeah so so I've been I've been just turning many many experiments and mostly writing up my theses.
+
+And maybe one additional thing that I've been like partially working on in free time was like on functination system as well I have found quite nice implementation from this Nvidia tool kit.
+
+So maybe I can I can send it to Sangeet if you are interested, it's like it's based on (??) model and it trains both the punctuation and the capitalization task.
+
+So I'm I'm it's like the version they have in their repository, it works for offline transcription.
+
+So there would-
+
+But but I think it it's very interesting I'm getting really nice results with this model, so maybe we can, I can send you the link or you can chat about it.
+
+(S) Yeah, sure (??) the Czech segmenter is not that impressive as it should be.
+
+There's lot of (??).
+
+(J) Yeah, so maybe I can I will send you an e-mail after the meeting.
+
+Yeah.
+
+(O) Or maybe put it put it to the surge document.
+
+(J) Oh ok, yeah, yeah.
+
+I will I will I will put it in.
+
+Ok so I think this this is all from me.
+
+(O) Thanks.
+
+So the next one could be whoever, Ebrahim?
+
+(E) Hi everybody in here.
+
+About (??) as you know I think this week I didn't do anything  (??)
+
+Just I (??)
+
+And I worked on the (??) and and 2 different scripts for to get easier for other people when they want to run and do everything automaticly.
+
+And as you can see, there in SMT week, (??) help me for this one, I think we changed a lot and examples and the code output and killing it and make it more beautiful.
+
+And now if it see I think it's somehow the last version.
+
+We can use it for your evaluation.
+
+And maybe if Ondrej can help time to check it, we can-
+
+(O) Yeah, yeah.
+
+This is on my to do list, I'm I'm failing to get to that.
+
+But I know, I will.
+
+I won't-
+
+(E) And also (??), now it's using (??) inside, so I think it's based on our conversation everything we wanted to do it's done.
+
+So it has a lots of impatient and we can, we should (??) somehow.
+
+We can limit something from it.
+
+(O) Yeah, so maybe Dominik would be the best person to provide additional test sets that we know how they behave.
+
+So Dominik not only has test set he also has his own SLT style evaluation.
+
+But maybe we should run SLT F on other data.
+
+So if Dominik can comment on this.
+
+Now or later.
+
+Ok, so let's move to someone further.
+
+So we had Sangeet.
+
+So maybe Atul.
+
+Atul is now ready.
+
+(A) Ok, hi.
+
+I have already app- updated in (??) test so yesterday I throw up an e-mail to Phil and Phillip Williams because I wrote an one website cult of justice of the European Union.
+
+And this (??) we have lots of data for test, it's basically for EU languages.
+
+So I have started and to extract the, extract the data from this website using bytext.
+
+So it is running and before that I I extrated target data from the-
+
+What is the name, I forgot the name.
+
+But I have already mention in the UFAL SLT data sits.
+
+Independent audio reput.
+
+So-
+
+And policy data is almost finish and some cleaning part is remaining.
+
+So I will upload as soon as possible.
+
+So we can ex- do experiment with English's police and because English policy is not available in the other WMT 19.
+
+(O) Yeah.
+
+And I was curious what whether you have the the description for the annotators.
+
+Those who are already like in the queue and waiting for jobs.
+
+Like how they should proceed and where should they upload files, where should get, they get the files from.
+
+Some like, this management of annotators who will be doing the curation or the refinement of the test set.
+
+How this is far-
+
+This is this is like management work, but it needs to be done well because we have quite a few of them already.
+
+(A) Ehm, I have not prepared right right now.
+
+But I think I can send you by tonight.
+
+(O) Yes, so no no not send it to me, please update the document which the annotators have also seen.
+
+(A) In the gate up repository?
+
+(O) No, they well.
+
+The annotators are people who are not very technical.
+
+So they, we have the Google document for that, that describes and also includes like one section or will include one section per language.
+
+(A) Ok.
+
+(O) And this is where the nor vision is mention for example.
+
+This is this is where we should have all the instructions for them.
+
+In clear but concise way.
+
+So that they know how to proceed.
+
+And the the sooner you get this the sooner you get in touch with them, the sooner they will start doing something.
+
+So then it will like save your time, so you don't-
+
+(A) Yeah definitely.
+
+Because I spent too much time for the cleaning sometimes unnecessary characters (??).
+
+I don't know what is-
+
+(O) Yeah, this is exactly what what the annotators should be doing.
+
+So you should you should like do the automated jobs and all the manual refinement should be then put them.
+
+Because it will save your time.
+
+(A) Ok, sure.
+
+(O) So that's the, that's the point.
+
+That you do the automation, you do the honey line and other things.
+
+Maybe the PDF conversion, but primary the honey line, the conversion of the Google sheet, if they are not able to to process text files which only very little of them would be.
+
+And then converting back from the Google sheet like the trick or two column view or 3 column view.
+
+And then to to put it to the Github repository.
+
+(A) Sure, sure, I will do.
+
+(O) Yeah, ok, thank you.
+
+(A) Thank you.
+
+(O) So that's Atul.
+
+Then we have Dominik.
+
+For example.
+
+Aha, I don't know if Dominik can speak or not.
+
+So Dominik -
+
+(S) (??) he seems (??)
+
+(O) He was writing to the document and he's yep.
+
+Dominik, does it work?
+
+So before Dominik successful-
+
+Yeah.
+
+Does it work Dominik?
+
+Or not.
+
+So then Matus, in like while Dominik is trying to connect.
+
+(M) Yeah, ok.
+
+So since Thursday I have-
+
+I implemented the evaluation for for my multilingual model.
+
+And my all of my implementation is almost ready to, so that I can release it somewhere on Github as open source.
+
+And I'm right now trying to evaluate ehm my multilingual model switch I have two of them.
+
+I have I have one for 42 languages and one for 6 languages.
+
+I'm trying to evaluate them on IWSLT 2015.
+
+And I will know the results in about an hour.
+
+But so far I have I have evaluated before on new test 2018.
+
+And it is giving me on on German English and English German it's getting about 31 blue score.
+
+Which is which is given that it's 42 languages I think it's quite quite all right.
+
+(O) Yeah, so this is something we really should put into the pipelines.
+
+And have it tested in our way.
+
+And there is so far no standard way for us.
+
+So I think that I'll send you also the the link to the ELITR test set.
+
+And I would like to ask probably you to to like, well.
+
+Yes, definitely you to put the edible SLT language pairs into this ELITR test set directory.
+
+And then you and Sangeet to negotiate what is the best way of regular testing of this models.
+
+So this is very similar what Jonas has been doing for Czech ASR.
+
+We need to regularly test the system, so your system and also the the normal standard deployed system on large number of test set parts.
+
+So like the test set consist of multiple multiple documents and multiple sources.
+
+And we need to observe this this progress.
+
+So I'll I'll include you so that you should test it on the ELITR test set.
+
+Which should include the test set that you have now and it should also include our test sets from from the past.
+
+So this is, this is something that like will help us to to polish the test sets.
+
+Yep, ok so that's that's an important thing.
+
+Thank you.
+
+And what else did I want.
+
+(M) Ok, yeah and for Sangeet, we were just discussing that there was an issue with with boost installation on his machine.
+
+So hopefully you'll be you'll figure it our with Sangeet and-
+
+(S) Yeah, yeah.
+
+(M) Understand.
+
+(D) Hi, can you hear me?
+
+(O) Yes, yes, it works.
+
+Ok, great.
+
+So now is your turn actually.
+
+You can start talking directly.
+
+(D) Yes, so, so implemented the batching for Edinburgh workers with Phil.
+
+And Ebrahim and Mohamed process SLT F on my data but it's it's useless for now because I can't interpret the results because I don't know what is the definition of the latency.
+
+(O) So please talk directly to Ebrahim and clarify it.
+
+(D) (??) and he replied finally that that there are too many (??) because they are not decided which which one are use- use language, they will really use in future.
+
+And we didn't move from this part.
+
+(O) Yeah.
+
+So please try going like one by one, and discussing what they are technically.
+
+And then help with the selection.
+
+(??)
+
+(A) Oh sorry, (??) I think that problem is yes, there is a lot of numbers and but, but maybe some (??) system which number is because, ok we have number and we don't know it's good or not.
+
+Maybe now the problem of Dominik is something (??).
+
+(D) Yes.
+
+So we should plan to watch watch the outputs from in subtitler.
+
+And then you will see.
+
+And I propose to choose the the major from the Google paper.
+
+Which I implemented.
+
+That's that's the issue.
+
+And I have right now, I finish the edible SLT litter board.
+
+And I'm going to (??) I can share screen with you (??).
+
+Can you see this?
+
+(?) Yeah.
+
+(D) So, so here at the top is the the values on all documents into Czech for the workers into Czech, so we have this rainbow (??).
+
+This is Czech from (??) it's from Martin Popel, and this is my Czech worker, and this is alternative Edi- Edinburgh worker.
+
+And this is the (??) from the original speech-
+
+So from the transcribed audio, this is from the ASR.
+
+This is normalized (??) so it's a flicker measure.
+
+This is average (??) and this is translation lag in miliseconds.
+
+So so their lag caused by only by empty not together with ASR.
+
+So it's two point eight seconds late for the finalization of.
+
+And here here it's for German.
+
+And some values are missing for the kit, this is the kit worker,this is again multi target Edinburgh and this is during that worker.
+
+I don't have this for (??) and the latency for for kit Karlsruhe is minimalise for now.
+
+But I I would need lots of work to improve it.
+
+Yeah and it's evaluated on documents and we have two (??) references and it's very unstable so the blas cores are not not thing anything, for example this untercorp, untercorp to has quite very big blas core according, in comparison with other documents because the final, the very last sentence is thank you, and it was translated correctly.
+
+So one sentence has blas corp one hundred and it and it shift the average to very high number, but there are (??) the others.
+
+Do you have questions about it?
+
+And later (??) by e-mail and suggest the others to improve ASR, because it seems to be the the worst component in the pipeline.
+
+(??) writing a paper and maybe (??)
+
+(O) Yeah, perfect, thank you.
+
+So I think-
+
+(?) Maybe (??)
+
+(A) Can I say something?
+
+(O) Yes, please do.
+
+(A) In the last 2 days I (??) to the results and if you want I can run again SLT with (??) you can see a better maybe (??) result up it.
+
+And then we can discuss about that.
+
+If we agree.
+
+(D) Ok.
+
+(A) I will run just (??) the results.
+
+(D) Do you want my my table or-
+
+I don't have any update- updated runs from (??)
+
+(A) Ok, so I'll be ok.
+
+In this case I will run and I will evaluate them and give you the new version of results and you can discuss about it later.
+
+(D) Ok.
+
+(A) Thank you.
+
+(O) Yeah, ok, so it's amazing, time is exactly 30 minutes.
+
+And I suggest that we really close the meeting at this point.
+
+Next week same time, four o'clock.
+
+And please double check the report from today, like whether you have added all the details and remember to to get in touch with everybody.
+
+I think we've done a great job in in the synchronization.
+
+I know that if there were other people, such as Daniel Suchy, but he cannot make it at this time, not for surely, then we would again move a bit, but yeah.
+
+Let's let's keep up this this good work.
+
+Ok, so thanks a lot.
+
+And do the PerVoice communications as you wish.
+
+Is there anyone who would like to keep talking for 15 minutes on the call, while the call is still running?
+
+(M) Maybe if I could ask Dominik somethings about the about the assets.
+
+(D) Yes.
+
+(O) Yeah, so other all others who don't want to talk (??) but Atul, maybe Atul should be listening as well.
+
+So Atul please stay here and Matus you ask and I also stay in and double check.
+
+So thanks to all, thanks the rest-
+
+Yeah, thanks.
+
+(D) Yeah, so what do you want to ask, Matus?
+
+(M) Ok, so right now, basically, I have I have the IWSLT data set, which is just two examiles files.
+
+One in German, one in English, right?
+
+(D) Hmm.
+
+(M) Then apairs from that, yeah?
+
+(D) It doesn't have to be examile, you can have two text files.
+
+One as source-
+
+(M) Yeah, ok, but but like I have the default examile and now I have the outputs from your ASR.
+
+Which is, which is like 12 or something text files with the outputs.
+
+(D) Yes.
+
+One for each document.
+
+(M) Yeah, for for each of the of the talks.
+
+(D) Yes.
+
+(M) And now, I'd like to somehow align it and merge it into one document, so that I can compare it with the standard data set, right?
+
+(D) Yes.
+
+If you want to evaluate (??) on the whole document, or the whole data set, then there is some-
+
+(M) No I just want to evaluate exactly like like you did, so.
+
+Maybe.
+
+(D) Yes, so then align with MWS segmentor, every document seperately.
+
+Then (??) them.
+
+Then then run (??) to the difference.
+
+(M) Ok, so if I just (??) them in the in the order they they are in?
+
+It will, I can run the (??) between this and the original data set?
+
+Or or what is the reference?
+
+(D) I can show you.
+
+I'm going to share the screen again.
+
+So here I have compact data.
+
+Can you see it?
+
+(M) Yeah.
+
+(D) SLT test 2015 and full-
+
+Yes, it's examal.
+
+So the reference is here.
+
+Sentence by sentence.
+
+There is this file order.
+
+So you must (??) in this order.
+
+(M) Ahh, ok.
+
+(D) And then.
+
+Somewhere I have-
+
+But I have references somewhere else, where is it.
+
+And (??) I think there are text from the excel (??)
+
+So I can pass it to you.
+
+And actually you can evaluate on more languages.
+
+Here.
+
+So in the Google paper, somewhere, they have link to to TED TED webpage, where you can download the subtitles for for any language which is available for any talk ID.
+
+So I downloaded references for around 10 languages.
+
+You can-
+
+And I have script for it.
+
+Which-
+
+(M) I have the same data as you.
+
+(D) Yeah, sure, I will find it and sends it to you.
+
+(M) Thanks.
+
+(D) And also removed the words in paranthesis, because there were usually music or laughter or applause and so on.
+
+This is not not spoken.
+
+I have a script which (??)
+
+(M) And also I have been thinking about like how to, how to make sure that when you are translating para show para show outputs, how to make sure that the that it doesn't you know change wildly when you just add one one word to the end of the input, right?
+
+When the ASR produces partial outputs.
+
+(D) Mmm, I send you only the final.
+
+Hypothesis.
+
+(M) Yeah, I know, I know, I know I have been just thinking about this.
+
+And.
+
+(D) We evaluate (??) only on the final hypothesis.
+
+(M) Yeah, yeah, yeah I know.
+
+This is like a difference different think.
+
+So so I just like to hear your like your thoughts.
+
+I have been thinking about it, and I have like two two things that came to my mind.
+
+And one thing is that we could like use our data to train the model also with the partial inputs and we could use like a special token, like end of stre- something like (??) but the different one to indicate that that just the partial output.
+
+And we could like train them in sequence.
+
+And my second idea is that I could try it just initializing the decoder when when when I'm translating when I have like you know a partial output and then I have like the next output, then I could initialize the decoder with the last translated sentence.
+
+And maybe maybe that could also help to like have the have the translations close to to each other.
+
+So that they don't change too much.
+
+(D) Yes, so you have ideas how to stabilize the output.
+
+How to-
+
+(M) Yeah, basically.
+
+(D) How to reduce the flicker and (??) every others.
+
+(M) Yeah, I haven't done any research of this.
+
+(D) Yes, we have ideas but it works need implementation in Mariam and C plus plus, in into the coder.
+
+And for example the prefixes are always the same, or the decoded prefixes are usually same so it will be good idea to cash them and start translating things from the prefix.
+
+And and so it saves translation time.
+
+And, but it's difficult to to do it for us in Mariam (??)
+
+(M) Yeah, I also actually (??) the prefixes.
+
+And actually discover that if you don't use any prefix at all, than it will it will produce a valid translation.
+
+But it will decide on its own.
+
+In which language each token will be, which means that that they will get the perfectly valid translation, like most of the words will be in Czech and just some of them will be English, but it's still like a valid sentence that someone might said (??) from me.
+
+(D) Yeah.
+
+Definitely.
+
+And the only way how to stabilize the input we tried was masking last key word of the ASR output from unfinished sentences.
+
+Because they- cause their tail is usually unstable and this changed so much.
+
+So our translation is always five words behind or some key words.
+
+This simple (??) which works.
+
+And the other some others (??) translation strategies for long form simultaneous spoken language translation.
+
+So paper from Google, and they put it only to archives and they have the-
+
+(M) Could you say it again?
+
+(D) The translation strategies-
+
+(M) Translation strategies.
+
+(D) Redetranslation stragies.
+
+(M) (??) because I can't hear it very well.
+
+(D) Ok, I send it to you on Slack.
+
+(M) Yeah, thanks.
+
+(O) Yep.
+
+So there are still 4 minutes and then the call will probably close.
+
+And I see that Mohamad Mahmudi has join the call.
+
+He's our intern who was supposed to be in Prague since the beginning of of March, already.
+
+And he won't be able to come in person from Iran at all.
+
+He's been supervised by mainly by Ebrahim and then partly me.
+
+So he is working on the forced alignments like running them and all that.
+
+And let me just test if the connection from Mohamed is is good enough so whether it make sense for him to to join these calls.
+
+Mohamed, can you hear us and can you say something?
+
+Yep.
+
+So it doesn't look very-
+
+(D) (??) time to start it in Pexip.
+
+And I have issues.
+
+(O) Yeah, yeah, yeah.
+
+So there is, you have to unmute yourself which is at the bottom of the screen, probably.
+
+(D) I can't use any headphones because they have broken mike.
+
+(O) Oh, yeah.
+
+So I just brought but you should you should order some new ones there's there is twenty headphones in a box now in our room and I put it to secretary yet.
+
+So there is plenty of headphones at UFAL but you're you're elsewhere.
+
+(D) If you can send them send them to me by post.
+
+(O) Yeah you know what what the post office looks like.
+
+There is a queue of of like half a kilometer in front of every post office.
+
+(M) Recieving like one one letter from from Slovakia birthdays.
+
+(O) Yeah, so probably it doesn't work with Mohamed so let-
+
+I'll try to chat with him.
+
+So, Mohamed can you say something, do you hear us?
+
+So let's see.
+
+Ok, so I've send in the meantime not yet send, this is test, in a second I will send an e-mail to Matus and also Dominik and Daniel Suchy and Sangeet.
+
+On the test set, ELITR test set.
+
+So I would really like everybody who is developing any type of system for ELITR, to move to using this ELITR test set.
+
+The you will read that in the read me for for that repository.
+
+But there is directory called in this is  and that's for (??) and each of these (??) correspond or contains the subset of files which are relevant for a particular type of evaluation...
