@@ -4,4 +4,4 @@ The code of the preliminary experiments on automatic summarization of meeting di
 1. Transcript preprocessing
 2. Transcript segmentation
 3. Segment compression
-4. Minute formation
+4. Minute creation
