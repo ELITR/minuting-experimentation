@@ -1,5 +1,5 @@
 # minuting-experimentation
-The code and results of our preliminary experiments on automatic text summarization of meeting dialogues (minuting). The workflow of the basic minuting prototype follows these steps:
+The code and the preliminary results of our experiments on automatic text summarization of meeting dialogues (minuting). The workflow of the basic minuting prototype follows these steps:
 
 1. Transcript preprocessing
 2. Transcript segmentation
