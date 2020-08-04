@@ -1,1 +1,0 @@
-Python scripts for preparing CNNDM data to work with extractive and abstractive models using pretrained BERT.
