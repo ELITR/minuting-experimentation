@@ -221,15 +221,15 @@ def cluster_sentences(n_c, sent_lst):
 	#builds a tf-idf matrix for the sentences
 	X = vectorizer.fit_transform(sent_lst)
 
-	# k-means
-	model = KMeans(n_clusters=n_c)
-	model.fit(X)
-	labels = model.labels_
-
-	# # Agglomerative
-	# model = AgglomerativeClustering(n_clusters=n_c, linkage="ward")
-	# model.fit(X.toarray())
+	# # k-means
+	# model = KMeans(n_clusters=n_c)
+	# model.fit(X)
 	# labels = model.labels_
+
+	# Agglomerative - the best according to the conducted experiments
+	model = AgglomerativeClustering(n_clusters=n_c, linkage="ward")
+	model.fit(X.toarray())
+	labels = model.labels_
 
 	# # MeanShift - finds n_clusters itself
 	# model = MeanShift()
