@@ -163,6 +163,7 @@ args = parser.parse_args()
 ## write path of the built dataset
 write_path = os.path.join(args.outpath + "elitr_minuting_dataset.txt")
 
+## main 
 if __name__=="__main__":
 	files = get_file_paths(args.inpath)			# get all file paths
 	contents = []								# to hold the content strings
