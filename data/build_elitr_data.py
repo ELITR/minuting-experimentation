@@ -1,7 +1,12 @@
 
-# Script that walks the folder structure of ELITR minuting data, reads 
-# files named basic_sample.txt of each meeting and builds the entire 
-# ELITR minuting dataset
+'''
+Author:		Erion Çano
+Descript:	Script that walks the folder structure of ELITR minuting data, 
+			reads files named basic_sample.txt of each meeting and builds 
+			the entire ELITR minuting dataset
+Language: 	Python 3.6
+Usage:		python build_elitr_data.py -i INPATH -o OUTPATH
+'''
 
 import os, sys, fnmatch, re , argparse, json
 from shutil import *

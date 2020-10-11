@@ -1,5 +1,9 @@
 
-''' Functions for cleaning and preprocessing meeting transcripts '''
+'''
+Author:		Erion ?ano
+Descript:	Functions for cleaning and preprocessing meeting transcripts
+Language: 	Python 3.6
+'''
 
 import os, sys, codecs, re, string, argparse
 import nltk
