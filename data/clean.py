@@ -1,8 +1,8 @@
 
 '''
-Author:		Erion ?ano
-Descript:	Functions for cleaning and preprocessing meeting transcripts
-Language: 	Python 3.6
+Author:	Erion Çano
+Desc:	Functions for cleaning and preprocessing meeting transcripts
+Lang: 	Python 3.6
 '''
 
 import os, sys, codecs, re, string, argparse
@@ -46,7 +46,7 @@ def core_tokenize(text, alb=False):
 
         # corrections for albanian texts -- may add n' | t'
         if alb:
-            p = re.match(r"(s' | c' | ç')([\w]+)", tok, re.VERBOSE) 
+            p = re.match(r"(s' | c' | รง')([\w]+)", tok, re.VERBOSE) 
             if p:
                 tokens[i] = ' '.join([p.group(1), p.group(2)])
 
