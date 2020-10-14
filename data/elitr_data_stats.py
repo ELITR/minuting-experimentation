@@ -1,3 +1,11 @@
+
+'''
+Author:	Erion Çano
+Desc:	Printing length statistics of ELITR dataset
+Lang: 	Python 3.6
+Use:	python elitr_data_stats.py
+'''
+
 import pandas as pd
 import numpy as np
 import os, sys, json 
