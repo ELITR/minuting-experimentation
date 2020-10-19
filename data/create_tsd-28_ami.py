@@ -1,5 +1,10 @@
 
-''' Converting recovered AMI data in the format they use in TSD-28 '''
+'''
+Auth:	Erion Çano
+Desc:	Converting recovered AMI data in the format they use in TSD-28
+Lang: 	Python 3.6
+Use:	python build_elitr_data.py -i INPATH -o OUTPATH
+'''
 
 import os, sys, glob, re
 import string, argparse
@@ -48,7 +53,7 @@ def core_tokenize(text, alb=False):
 
         # corrections for albanian texts -- may add n' | t'
         if alb:
-            p = re.match(r"(s' | c' | ç')([\w]+)", tok, re.VERBOSE) 
+            p = re.match(r"(s' | c' | รง')([\w]+)", tok, re.VERBOSE) 
             if p:
                 tokens[i] = ' '.join([p.group(1), p.group(2)])
 
@@ -193,5 +198,4 @@ write_abst = "{}/{}".format(args.dest, "abst.txt")
 write_list(src_list, write_src)
 write_list(da_list, write_da)
 write_list(abst_list, write_abst)
-
 

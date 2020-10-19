@@ -1,8 +1,11 @@
 
 '''
-Script that walks the folder structure of rec_ami/rec_icsi, reads certain 
-files (e.g. abst_summs.txt or compl_extr_summ.txt) of each meeting and 
-stores each src-tgt in rec_ami-icsi_src-tgt/ folder.
+Auth:	Erion Çano
+Desc:	Script that walks the folder structure of rec_ami/rec_icsi, reads 
+        certain files (e.g. abst_summs.txt or compl_extr_summ.txt) of 
+        each meeting and stores each src-tgt in rec_ami-icsi_src-tgt/ folder.
+Lang: 	Python 3.6.9
+Use:	python flat_rec_ami-icsi.py
 '''
 
 import os, sys, fnmatch, re, json
@@ -43,7 +46,7 @@ def core_tokenize(text, alb=False):
 
         # corrections for albanian texts -- may add n' | t'
         if alb:
-            p = re.match(r"(s' | c' | ç')([\w]+)", tok, re.VERBOSE) 
+            p = re.match(r"(s' | c' | รง')([\w]+)", tok, re.VERBOSE) 
             if p:
                 tokens[i] = ' '.join([p.group(1), p.group(2)])
 

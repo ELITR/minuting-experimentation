@@ -1,6 +1,6 @@
 
 '''
-Author:	Erion Çano
+Auth:	Erion Çano
 Desc:	Walks the folder structure of rec_ami/rec_icsi, reads certain
         files (e.g., abst_summs.txt or compl_extr_summ.txt) of each
         meeting and stores them in the respective 

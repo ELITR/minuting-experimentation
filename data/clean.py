@@ -1,6 +1,6 @@
 
 '''
-Author:	Erion Çano
+Auth:	Erion Çano
 Desc:	Functions for cleaning and preprocessing meeting transcripts
 Lang: 	Python 3.6
 '''
