@@ -1,7 +1,10 @@
 
-''' 
-Recover ELITR meeting transcripts of raw_own_meetings from xml 
-to plaintext format stored in rec_own_meetings
+'''
+Auth:	Ahmad Mohammadkhani, Erion Çano 
+Desc:	Recover ELITR meeting transcripts of raw_own_meetings from xml 
+        to plaintext format stored in rec_own_meetings
+Lang: 	Python 3.6.9
+Use:	python rec_icsi.py
 '''
 
 import argparse, os, string, sys

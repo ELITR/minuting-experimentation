@@ -1,7 +1,10 @@
 
-''' 
-Recovering AMI corpus transcripts of raw_ami from the XML to 
-plaintext format stored in rec_ami
+'''
+Auth:	Ahmad Mohammadkhani, Erion Çano 
+Desc:	Recovering AMI corpus transcripts of raw_ami from the XML to 
+        plaintext format stored in rec_ami
+Lang: 	Python 3.6.9
+Use:	python rec_ami.py
 '''
 
 import argparse, os, string, sys
