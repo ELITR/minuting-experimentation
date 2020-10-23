@@ -1,9 +1,9 @@
 
 '''
 Author:	Erion Çano
-Desc:	Printing length statistics of ELITR dataset
-Lang: 	Python 3.6.9
-Use:	python elitr_data_stats.py
+Descri:	Printing length statistics of ELITR dataset
+Langu:	Python 3.6.9
+Usage:	python elitr_data_stats.py
 '''
 
 import pandas as pd
