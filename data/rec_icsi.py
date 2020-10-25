@@ -1,10 +1,10 @@
 
 '''
-Auth:	Ahmad Mohammadkhani, Erion Çano 
-Desc:	Recovering ICSI corpus transcripts of raw_icsi from the XML to 
+Author:	Ahmad Mohammadkhani, Erion Çano 
+Descri:	Recovering ICSI corpus transcripts of raw_icsi from the XML to 
         plaintext format stored in rec_icsi
-Lang: 	Python 3.6.9
-Use:	python rec_icsi.py
+Langu: 	Python 3.6.9
+Usage:	python rec_icsi.py
 '''
 
 import argparse, os, string, sys
