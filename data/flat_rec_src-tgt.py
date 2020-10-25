@@ -1,11 +1,11 @@
 
 '''
-Auth:	Erion Çano
-Desc:	Script that walks the folder structure of rec_ami/rec_icsi, reads 
+Author:	Erion Çano
+Descri:	Script that walks the folder structure of rec_ami/rec_icsi, reads 
         certain files (e.g. abst_summs.txt or compl_extr_summ.txt) of 
         each meeting and stores each src-tgt in rec_ami-icsi_src-tgt/ folder.
-Lang: 	Python 3.6.9
-Use:	python flat_rec_ami-icsi.py
+Langu: 	Python 3.6.9
+Usage:	python flat_rec_ami-icsi.py
 '''
 
 import os, sys, fnmatch, re, json
