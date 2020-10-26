@@ -1,7 +1,10 @@
 
-''' 
-Script for benchmarking the performance of 5 clustering algorithms used to
-thematically segment the meeting transcript texts.
+'''
+Author:	Erion Çano
+Descri:	Script for benchmarking the performance of 5 clustering algorithms 
+        used to thematically segment the meeting transcript texts.
+Langu: 	Python 3.6.9
+Usage:	python flat_rec_ami-icsi.py
 '''
 
 import os, sys, codecs, re, string, argparse
