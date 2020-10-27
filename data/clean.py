@@ -1,8 +1,8 @@
 
 '''
-Auth:	Erion Çano
-Desc:	Functions for cleaning and preprocessing meeting transcripts
-Lang: 	Python 3.6
+Author:	Erion Çano 
+Descri:	Functions for cleaning and preprocessing meeting transcripts
+Langu: 	Python 3.6.9
 '''
 
 import os, sys, codecs, re, string, argparse
