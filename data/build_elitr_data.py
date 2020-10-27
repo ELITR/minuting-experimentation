@@ -1,11 +1,11 @@
 
 '''
-Auth:	Erion Çano
-Desc:	Script that walks the folder structure of ELITR minuting data, 
+Author:	Erion Çano
+Descri:	Script that walks the folder structure of ELITR minuting data, 
         reads files named basic_sample.txt of each meeting and builds the entire 
         ELITR minuting dataset.
-Lang: 	Python 3.6.9
-Use:	python build_elitr_data.py -i INPATH -o OUTPATH
+Langu: 	Python 3.6.9
+Usage:	python build_elitr_data.py -i INPATH -o OUTPATH
 '''
 
 import os, sys, fnmatch, re , argparse, json
