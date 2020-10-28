@@ -1,9 +1,9 @@
 
 '''
-Auth:	Erion Çano
-Desc:	Converting recovered AMI data in the format they use in TSD-28
-Lang: 	Python 3.6
-Use:	python build_elitr_data.py -i INPATH -o OUTPATH
+Author:	Erion Çano
+Descri:	Converting recovered AMI data in the format they use in TSD-28
+Langu: 	Python 3.6.9
+Usage:	python build_elitr_data.py -i INPATH -o OUTPATH
 '''
 
 import os, sys, glob, re
