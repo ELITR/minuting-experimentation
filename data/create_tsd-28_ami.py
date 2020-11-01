@@ -3,7 +3,7 @@
 Author:	Erion Çano
 Descri:	Converting recovered AMI data in the format they use in TSD-28
 Langu: 	Python 3.6.9
-Usage:	python build_elitr_data.py -i INPATH -o OUTPATH
+Usage:	python create_tsd-28_ami.py --src SRCDIR --dest DESTDIR
 '''
 
 import os, sys, glob, re
