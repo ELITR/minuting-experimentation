@@ -1,8 +1,11 @@
 
-''' 
-Script for benchmarking the performance of the best unsupervised 
-segmenter agains the supervised solution that is available at
-https://github.com/koomri/text-segmentation
+'''
+Author:	Erion Çano
+Descri: Script for benchmarking the performance of the best unsupervised 
+        segmenter agains the supervised solution that is available at
+        https://github.com/koomri/text-segmentation
+Langu: 	Python 3.6.9
+Usage:	python bench_seg.py --inpath INDIR --outpath OUTDIR
 '''
 
 import os, sys, codecs, re, string, nltk, argparse
