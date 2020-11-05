@@ -1,10 +1,14 @@
 
-''' 
-Unsupervised transcript segmentation script that reads all transcript files 
-of the input path and writes the corresponding files to the output path. Each
-transcript is split into sentences which are then thematically clustered. 
-The optimal number of clusters (from 2 to 7) is found comparing the 
-intracluster similarities between cluster sentences.
+'''
+Author:	Erion Çano
+Descri: Unsupervised transcript segmentation script that reads all transcript 
+        files of the input path and writes the corresponding files to the 
+        output path. Each transcript is split into sentences which are then 
+        thematically clustered. The optimal number of clusters (from 2 to 7) 
+        is found comparing the intracluster similarities between cluster 
+		sentences. 
+Langu: 	Python 3.6.9
+Usage:	python unsup_seg.py --inpath INDIR --outpath OUTDIR
 '''
 
 import os, sys, codecs, re, string, argparse
