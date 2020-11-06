@@ -1,9 +1,12 @@
 
 '''
-Script that prepares the data for transfer learning summarization using BERT
-https://github.com/santhoshkolloju/Abstractive-Summarization-With-Transfer-Learning
-The source samples are the ones of ami-icsi_train and ami-icsi_test. The source
-and target texts are separated and stored in different files.   
+Author:	Erion ?ano
+Descri:	Script that prepares the data for transfer learning summarization using BERT
+        https://github.com/santhoshkolloju/Abstractive-Summarization-With-Transfer-Learning
+        The source samples are the ones of ami-icsi_train and ami-icsi_test. The source
+        and target texts are separated and stored in different files.  
+Langu: 	Python 3.6.9
+Usage:	python split_src_tgt.py -inpath INDIR -outpath OUTDIR
 '''
 
 import os, sys, fnmatch, re, json, argparse, pickle
