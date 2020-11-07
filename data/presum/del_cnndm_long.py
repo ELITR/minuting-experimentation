@@ -1,8 +1,11 @@
 
 '''
-Script used to read the files of CNNDM and check the length of the target
-in each sample. It it is more than 2 sentences, that sample is removed 
-from the set.
+Author:	Erion ?ano
+Descri:	Script used to read the files of CNNDM and check the length of the 
+        target in each sample. It it is more than 2 sentences, that sample 
+        is removed from the set.
+Langu: 	Python 3.6.9
+Usage:	python del_cnndm_long.py
 '''
 
 import os, sys, fnmatch, re, json
