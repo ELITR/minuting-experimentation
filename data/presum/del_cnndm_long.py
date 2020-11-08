@@ -1,6 +1,6 @@
 
 '''
-Author:	Erion ?ano
+Author:	Erion Çano
 Descri:	Script used to read the files of CNNDM and check the length of the 
         target in each sample. It it is more than 2 sentences, that sample 
         is removed from the set.
@@ -47,7 +47,7 @@ def core_tokenize(text, alb=False):
 
         # corrections for albanian texts -- may add n' | t'
         if alb:
-            p = re.match(r"(s' | c' | ç')([\w]+)", tok, re.VERBOSE) 
+            p = re.match(r"(s' | c' | รง')([\w]+)", tok, re.VERBOSE) 
             if p:
                 tokens[i] = ' '.join([p.group(1), p.group(2)])
 
