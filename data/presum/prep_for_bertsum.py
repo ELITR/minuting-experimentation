@@ -1,7 +1,11 @@
 
 '''
-Script used to convert the ami-icsi samples in a json format making them 
-compatible with the bertsum and presum formats.
+Author: Erion Çano
+Descri:	Script used to convert the ami-icsi samples in a json format making 
+        them compatible with the bertsum and presum formats.
+Langu: 	Python 3.6.9
+Usage:	python prep_for_bertsum.txt --infile INFILE --outpath OUTDIR
+
 '''
 
 import os, sys, fnmatch, re, json, argparse, pickle
@@ -51,7 +55,7 @@ def core_tokenize(text, alb=False):
 
         # corrections for albanian texts -- may add n' | t'
         if alb:
-            p = re.match(r"(s' | c' | ç')([\w]+)", tok, re.VERBOSE) 
+            p = re.match(r"(s' | c' | รง')([\w]+)", tok, re.VERBOSE) 
             if p:
                 tokens[i] = ' '.join([p.group(1), p.group(2)])
 
@@ -246,6 +250,3 @@ if __name__=="__main__":
 			save.write(json.dumps(write_lst))
 			p_ct += 1
 			write_lst = []
-
-
-
