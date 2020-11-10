@@ -1,1 +1,1 @@
-Summarization method tried for meeting dialogue summarization.
+Summarization method tried (or to try) for meeting dialogue summarization.
